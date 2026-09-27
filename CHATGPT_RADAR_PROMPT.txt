@@ -40,6 +40,280 @@ If the full dataset cannot be processed in the available run, do NOT claim
 complete coverage. State exactly how many items/batches were processed versus
 the total and label the result as PARTIAL COVERAGE.
 
+
+==================================================
+PERSISTENT OPPORTUNITY LEDGER + CROSS-DAY DEDUPLICATION
+==================================================
+
+The 72-hour NEWS window is rolling, but IDEA MEMORY must be persistent.
+
+GitHub repository:
+Sadikkucuk/lovable-opportunity-radar
+
+Persistent state files:
+- state/idea_history.json
+- state/current_run/manifest.json
+- state/current_run/raw-batch-XXX.json
+- state/current_run/candidates.json
+- state/current_run/final.json
+
+The scheduled run MUST use the connected GitHub integration to read and write
+these files. The state files are part of the analysis pipeline, not optional
+documentation.
+
+------------------------------
+A. START-OF-RUN STATE LOAD
+------------------------------
+
+Before processing the first news batch:
+
+1. Read state/idea_history.json.
+2. Treat it as the persistent semantic memory of ideas already reported in
+   previous runs. It is NOT limited by the 72-hour feed window.
+3. Overwrite state/current_run/manifest.json with:
+   - run_status: "running"
+   - run_started_at
+   - source_generated_at from batch index
+   - total_items
+   - batch_count
+   - batches_processed: 0
+   - raw_opportunity_count: 0
+   - merged_candidate_count: 0
+   - new_idea_count: 0
+   - duplicate_suppressed_count: 0
+   - materially_updated_count: 0
+
+------------------------------
+B. PERSIST RAW OPPORTUNITIES AFTER EVERY BATCH
+------------------------------
+
+After EACH batch is processed, immediately write:
+
+state/current_run/raw-batch-XXX.json
+
+Do not wait until all 25 batches are complete.
+
+Each raw opportunity record must be concise and contain at least:
+
+- raw_id
+- batch_number
+- supporting_article_ids
+- supporting_article_titles
+- supporting_sources
+- discovery_urls
+- novelty_delta
+- target_customer
+- buyer if known
+- job_to_be_done
+- current_friction
+- product_mechanism
+- one_sentence_concept
+- zero_cost_feasibility: plausible / doubtful
+- estimated_lovable_credits
+- draft_canonical_key
+
+The raw ledger is an INTERMEDIATE DISCOVERY ARTIFACT.
+Do NOT perform full competitor verification before writing it.
+
+After writing each batch ledger:
+- update state/current_run/manifest.json
+- increment batches_processed
+- increment raw_opportunity_count
+
+This persistence rule prevents opportunity discoveries from being lost if the
+run later hits context/runtime limits.
+
+------------------------------
+C. SAME-RUN MERGE + CANDIDATE FILE
+------------------------------
+
+After EVERY batch has been persisted:
+
+1. Read/merge all raw-batch files from the current run.
+2. Perform cross-article combination discovery.
+3. Merge true semantic duplicates.
+4. Apply productization and zero-cost/Lovable feasibility.
+5. Create state/current_run/candidates.json BEFORE competition research.
+
+Each candidate must contain:
+
+- candidate_id
+- canonical_key
+- idea_name
+- core_job
+- target_customer
+- buyer
+- product_mechanism
+- triggering_article_ids
+- supporting_article_ids
+- why_now
+- zero_cost_stack_outline
+- estimated_lovable_credits
+- history_match_key or null
+- history_match_reason or null
+- candidate_status
+
+------------------------------
+D. CANONICAL IDEA IDENTITY
+------------------------------
+
+Do NOT identify an idea by its product name.
+
+The canonical identity is based primarily on:
+
+TARGET CUSTOMER
++
+CORE JOB TO BE DONE
++
+PRODUCT MECHANISM / WORKFLOW
+
+Create a normalized canonical_key such as:
+
+target-customer|core-job|product-mechanism
+
+Semantic matching is mandatory. Exact text equality is NOT required.
+
+The following changes DO NOT make a new idea by themselves:
+- a different product name
+- a new article about the same underlying change
+- a different publication/source
+- a new publication date
+- a different pricing estimate
+- a different Lovable credit estimate
+- a different marketing channel
+- a competitor count changing from 1 to 2
+- wording changes
+- cosmetic feature additions
+
+Example:
+
+"QR Asset Guard"
+and
+"Printed QR Security Monitor"
+
+are the SAME IDEA if both serve brands/agencies to monitor printed QR
+destination integrity using QR inventory + redirect/DNS monitoring.
+
+------------------------------
+E. CROSS-DAY DUPLICATE SUPPRESSION
+------------------------------
+
+Compare EVERY candidate with state/idea_history.json BEFORE final output.
+
+If the same semantic idea has already been reported:
+
+1. DO NOT output it again under NEW QUALIFIED IDEAS.
+2. DO NOT output it again under COMPETITION NOT VERIFIED.
+3. Mark it internally as DUPLICATE_SUPPRESSED.
+4. Update the matching history entry:
+   - last_seen_at
+   - times_seen += 1
+   - append genuinely new supporting article titles/URLs where useful
+   - refresh last_known_competition_count if researched
+5. Increment duplicate_suppressed_count.
+
+An overlapping 72-hour news window is therefore expected and must NOT cause
+the same product idea to be presented on consecutive days.
+
+------------------------------
+F. MATERIAL UPDATE TO AN EXISTING IDEA
+------------------------------
+
+A previous idea may be shown again ONLY in a separate section titled:
+
+MEVCUT FİKİRDE ÖNEMLİ GÜNCELLEME
+
+and only when there is a MATERIAL CHANGE, such as:
+
+- a new law/regulation makes the workflow mandatory;
+- a new free API/open standard makes an earlier infeasible MVP feasible;
+- the core workflow materially changes;
+- the target customer materially changes, creating a genuinely different job;
+- an unverified candidate becomes fully qualified after competition evidence;
+- competition changes enough to invalidate or newly qualify the opportunity;
+- a major platform capability creates a materially different product mechanism.
+
+A new supporting article alone is NOT a material change.
+
+Do not count a material update as a new idea.
+
+------------------------------
+G. HISTORY WRITE-BACK
+------------------------------
+
+At the end of the run, update state/idea_history.json.
+
+Add a new history record for EVERY idea actually shown to the user for the
+first time, including:
+- fully qualified new ideas
+- competition-not-verified new ideas
+
+History records should remain compact and contain:
+- canonical_key
+- idea_name
+- core_job
+- target_customer
+- product_mechanism
+- first_reported_at
+- last_seen_at
+- times_seen
+- status
+- source_titles
+- source_urls when useful
+- last_known_turkiye_direct_competitors
+- last_known_global_direct_competitors
+
+Do NOT delete old history records merely because their triggering articles
+have left the 72-hour rolling window.
+
+If an existing history entry changes status, update that record rather than
+creating a second idea.
+
+------------------------------
+H. FINAL RUN STATE
+------------------------------
+
+Write state/current_run/final.json containing:
+- run_started_at
+- run_completed_at
+- coverage: processed_items / total_items
+- emitted_new_ideas
+- suppressed_duplicates
+- materially_updated_existing_ideas
+- competition_not_verified
+- counts for each category
+
+Update state/current_run/manifest.json:
+- run_status: "completed"
+- final counts
+- run_completed_at
+
+If any GitHub state write fails:
+- continue the analysis if possible;
+- state clearly in the final response:
+  STATE WRITE FAILED — CROSS-DAY DEDUPLICATION NOT GUARANTEED
+- never pretend persistence succeeded.
+
+------------------------------
+I. FINAL OUTPUT DEDUPE RULE
+------------------------------
+
+The user-facing report is NEW-IDEA-ONLY by default.
+
+If today's 72-hour window produces only ideas that already exist in history,
+say so explicitly and do NOT recycle yesterday's ideas just to fill the report.
+
+At the very end, include only a compact run summary such as:
+
+Coverage: 1000/1000 items
+New qualified ideas: X
+New competition-not-verified ideas: Y
+Existing duplicates suppressed: Z
+Material updates to existing ideas: W
+
+Do not list suppressed duplicate ideas in detail unless the user explicitly asks.
+
+
 PRIMARY OBJECTIVE
 Do not produce a news summary.
 
@@ -856,10 +1130,10 @@ Possible models include:
 The product must be sellable online without requiring a large offline sales or service organization.
 
 ==================================================
-OUTPUT — QUALIFIED IDEAS
+OUTPUT — NEW QUALIFIED IDEAS
 ==================================================
 
-List EVERY fully qualifying idea.
+List EVERY NEW fully qualifying idea that is not already present in state/idea_history.json.
 
 LANGUAGE AND WRITING STYLE
 - Write the final output in clear, simple Turkish, as if explaining the idea to a smart friend who understands business but is not a software engineer.
@@ -1112,6 +1386,28 @@ Tek ve test edilebilir bir validation sorusu yaz.
 - Gerekiyorsa zero-cost API / open-data / technical dependency URLs
 
 ==================================================
+OUTPUT — MATERIAL UPDATES TO EXISTING IDEAS
+==================================================
+
+Only include this section when an idea already stored in idea_history.json has
+a MATERIAL CHANGE under the persistent-state rules.
+
+Title this user-facing section:
+
+MEVCUT FİKİRDE ÖNEMLİ GÜNCELLEME
+
+For each material update provide only:
+- Existing idea name
+- What materially changed
+- Triggering source + URL
+- Why the change matters commercially/technically
+- Updated competition status if relevant
+- Updated MVP/stack only if it actually changed
+
+Do NOT repeat the full 23-field new-idea template for ordinary duplicate news.
+Do NOT show an existing idea here merely because a second article supports it.
+
+==================================================
 OUTPUT — COMPETITION NOT VERIFIED
 ==================================================
 
@@ -1153,7 +1449,9 @@ OUTPUT RULES
 - Do NOT rank the ideas.
 - Do NOT choose a winner.
 - Do NOT produce a Top N list.
-- List ALL fully qualifying ideas found in the current dataset.
+- List ALL NEW fully qualifying ideas found in the current dataset after semantic comparison with state/idea_history.json.
+- Never repeat a previously reported semantic idea just because the 72-hour rolling window still contains its triggering news.
+- If there are zero new ideas, report zero new ideas rather than recycling historical ideas.
 - Do NOT discard a qualifying idea merely because another idea appears stronger.
 - Do NOT summarize away niche ideas.
 - Do NOT invent competitor counts.
