@@ -9,8 +9,11 @@ After each GitHub Actions run:
 - `docs/feed.xml` — combined RSS 2.0 feed
 - `docs/latest.json` — richer machine-readable version for ChatGPT
 - `docs/status.json` — source-by-source health report
+- `docs/batches/` — deterministic 40-item analysis batches
+- `state/idea_history.json` — persistent semantic history of ideas already reported
+- `state/current_run/` — per-run raw opportunity ledgers, merged candidates and final state
 
-The workflow runs **hourly** and retains the latest **72 hours**. Your ChatGPT radar prompt can then analyze exactly the previous 24 hours.
+The workflow runs **hourly** and retains a rolling **72-hour** news window. The ChatGPT radar analyzes the full current 72-hour dataset in deterministic 40-item batches.
 
 ## Important source note
 
@@ -52,7 +55,7 @@ Replace `YOUR_USERNAME` and `YOUR_REPOSITORY`:
 
 Paste the JSON URL into ChatGPT together with the contents of `CHATGPT_RADAR_PROMPT.txt`.
 
-For a recurring 07:00 Türkiye radar, schedule ChatGPT for **07:00 Europe/Istanbul** and tell it to read the JSON URL and analyze only the prior 24 hours.
+For the recurring 07:00 radar, ChatGPT reads the master prompt, processes every batch in the current 72-hour window, and uses persistent GitHub state to avoid repeating ideas already reported on previous days.
 
 ## Manual refresh
 
@@ -86,7 +89,11 @@ A few source failures do not stop the workflow. `docs/status.json` records succe
 ├── docs/
 │   ├── feed.xml
 │   ├── latest.json
-│   └── status.json
+│   ├── status.json
+│   └── batches/
+├── state/
+│   ├── idea_history.json
+│   └── current_run/
 ├── aggregate.py
 ├── sources.opml
 ├── requirements.txt
