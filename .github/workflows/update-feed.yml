@@ -56,4 +56,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/feed.xml docs/latest.json docs/status.json docs/batches
           git commit -m "Update combined RSS"
+          # The repository can receive prompt/code commits while this job is running.
+          # Rebase before push so an unrelated newer commit does not reject the feed update.
+          git pull --rebase origin main
           git push
