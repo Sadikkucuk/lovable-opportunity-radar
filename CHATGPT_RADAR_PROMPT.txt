@@ -795,111 +795,255 @@ OUTPUT — QUALIFIED IDEAS
 
 List EVERY fully qualifying idea.
 
-For each idea provide:
+LANGUAGE AND WRITING STYLE
+- Write the final output in clear, simple Turkish, as if explaining the idea to a smart friend who understands business but is not a software engineer.
+- Keep technical English abbreviations and standard product/technology terms exactly in English when that is the normal industry usage.
+- Examples that should remain in English: API, SaaS, B2B, B2C, MVP, LLM, RAG, webhook, PostgreSQL, CRUD, OCR, JSON, CSV, UI, DB, workflow, rule engine, dashboard, authentication, free tier.
+- Do not translate technical terms into awkward Turkish equivalents.
+- Avoid corporate jargon, vague startup language and inflated claims.
+- Explain the practical logic of the product in plain Turkish.
+- Use short paragraphs and compact bullets.
+- Do NOT expose internal chain-of-thought or hidden reasoning. Present only concise conclusions and supporting evidence.
 
-1. IDEA NAME
+For EACH fully qualified idea, use this exact structure:
 
-2. ONE-SENTENCE PRODUCT DESCRIPTION
+--------------------------------------------------
+[FİKİR ADI]
+--------------------------------------------------
 
-3. TRIGGERING NEWS / DEVELOPMENT
-   - article/source
-   - publication date if available
-   - what changed
+1. HABER / TETİKLEYİCİ GELİŞME
+- Kaynak:
+- Haber başlığı:
+- Yayın tarihi:
+- URL:
+- Bu haberde ne değişti?:
+  1–3 kısa cümleyle, yalnızca kaynağın desteklediği olguyu yaz.
 
-4. BEFORE → AFTER → DELTA
-   - BEFORE
-   - AFTER
-   - DELTA type(s)
+2. CORE FİKİR — USER STORY
+Bir kısa paragraf halinde yaz.
 
-5. CAUSAL IMPACT
-   - first-order consequence
-   - second-order consequence
-   - new workflow/problem created
+Tercihen şu mantığı kullan:
+"Bir [kullanıcı tipi] olarak, [bugünkü problem/iş] için [ürünün yaptığı şey] istiyorum; böylece [ölçülebilir veya somut fayda] elde edebilirim."
 
-6. PROBLEM
-   - exact job to be done
-   - exact pain point
-   - current workaround
-   - why the workaround is inadequate
+Ardından ürünü 2–4 sade cümleyle anlat:
+- ürün tam olarak ne yapıyor,
+- kim kullanıyor,
+- neden para ödenebilir bir değer yaratıyor.
 
-7. TARGET CUSTOMER
-   - user
-   - buyer
-   - geography: Türkiye / specific international market / global
+3. MEVCUT DURUM — BEFORE
+Ali'ye anlatır gibi açıkla:
+- Kullanıcı bugün bu işi nasıl yapıyor?
+- Excel, email, WhatsApp, telefon, manuel kontrol veya dağınık sistemler kullanılıyor mu?
+- Nerede zaman, para, doğruluk veya kontrol kaybı oluşuyor?
+- Temel pain point nedir?
 
-8. PRODUCT MECHANISM
-   - which opportunity operator(s) produced this idea
-   - why this mechanism fits the problem
+4. HEDEFLENEN DURUM — AFTER
+Uygulama kullanıldığında süreç nasıl değişiyor?
 
-9. PRODUCTIZATION TEST
-   - trigger
-   - input
-   - process
-   - output
-   - repeatability
-   - value
-   - self-service delivery
+Basit akışla göster:
+INPUT
+→ PROCESS
+→ OUTPUT
 
-10. WHY NOW
+Gerekirse bir örnek kullanıcı akışı ekle.
 
-11. COMPETITION CHECK — TÜRKİYE
-   - search terms used
-   - direct competitors found: MUST BE 0
-   - adjacent/non-direct alternatives found, if useful
+5. NEDEN ŞİMDİ?
+- Haberdeki hangi DELTA bu ürünü bugün mümkün, gerekli veya ekonomik hale getiriyor?
+- Yeni API, regulation, open data, AI capability, maliyet düşüşü, davranış değişimi, yeni infrastructure veya yeni business model varsa belirt.
+- BEFORE → AFTER farkını 2–4 cümlede özetle.
 
-12. COMPETITION CHECK — GLOBAL
-   - search terms used
-   - direct competitors found: 0, 1, 2 or 3 only
-   - competitor names + URLs
-   - short explanation of why each is considered direct
+6. HEDEF MÜŞTERİ
+- User:
+- Buyer:
+- Pazar:
+  Türkiye / belirli ülke / bölgesel / global
+- En çok fayda görecek ilk niche:
 
-13. DIFFERENTIATION / MARKET GAP
+7. TÜRKİYE REKABETİ
+Mutlak "rakip yok" iddiası kurma.
 
-14. LOVABLE MVP
-   - essential screens
-   - essential workflows
-   - data model/entities
-   - minimum feature set required to charge money
+Şu formatı kullan:
+- Tespit edilen DIRECT competitor sayısı: 0
+- Kullanılan temel arama terimleri:
+- Bulunan adjacent / indirect alternatifler:
+- Neden bunlar DIRECT competitor sayılmıyor?:
 
-15. ZERO-COST STACK
-   - Lovable components
-   - database/auth/hosting
-   - APIs/data sources
-   - automation
-   - AI/model if any
-   - explicitly state why each external dependency costs $0 for MVP usage
+Bir fikir fully qualified olabilmek için:
+Tespit edilen DIRECT competitor sayısı = 0 olmalıdır.
 
-16. LOVABLE CREDIT ESTIMATE
-   - UI/data model
-   - workflows
-   - integrations
-   - testing/fixes
-   - launch polish
-   - TOTAL
+8. GLOBAL REKABET
+Şu formatı kullan:
+- Tespit edilen DIRECT competitor sayısı: 0 / 1 / 2 / 3
+- Kullanılan temel arama terimleri:
 
-17. EXTERNAL CASH COST
-   - MUST equal 0
+Her direct competitor için:
+- Ürün / şirket adı:
+- URL:
+- Hedef müşteri:
+- Aynı core job'u nasıl çözüyor?:
+- Neden DIRECT competitor olarak sayıldı?:
 
-18. BUILD TIME
-   - founder hours/days estimate
+Bir fikir fully qualified olabilmek için:
+Tespit edilen DIRECT competitor sayısı <= 3 olmalıdır.
 
-19. MONETIZATION
-   - pricing concept
-   - who pays
-   - how the first customer could buy online
+Adjacent ürünleri direct competitor sayısına dahil etme.
 
-20. FIRST CUSTOMER ACQUISITION CHANNEL
+9. MARKET GAP / FARKLILAŞMA
+- Mevcut çözümlerin hangi boşluğunu dolduruyor?
+- Bu ürün neden sadece "bir başka dashboard / AI wrapper" değil?
+- Kullanıcının satın alacağı spesifik fark nedir?
 
-21. MAIN RISKS
+10. İŞ MODELİ OLASILIKLARI
+Uygun olan tüm gerçekçi modelleri yaz:
+- SaaS subscription
+- freemium
+- usage-based
+- one-time digital purchase
+- transaction fee
+- marketplace commission
+- lead fee
+- premium report/export
+- team/workspace plan
+- paid professional tier
+- başka uygun model
 
-22. EVIDENCE STRENGTH
-   - Strong / Medium / Weak
+Her uygun model için:
+- Kim öder?
+- Ne için öder?
+- Tahmini fiyatlama örneği nedir?
+
+Fiyat örneklerinin tahmin olduğunu açıkça belirt.
+
+11. MVP — İLK SATILABİLİR VERSİYON
+Sadece para alınabilecek minimum ürünü tanımla.
+
+Yaz:
+- essential screens
+- essential workflows
+- temel data model / entities
+- minimum feature set
+- MVP dışında bırakılacak nice-to-have özellikler
+
+MVP'yi gereksiz özelliklerle şişirme.
+
+12. ÇALIŞMA LOGIC'İ
+Teknik olmayan birinin anlayabileceği şekilde arka plandaki çalışma mantığını yaz.
+
+Tercihen şu yapıda:
+Kullanıcı ne girer?
+→ sistem neyi kontrol eder?
+→ hangi rule / logic / calculation / matching yapılır?
+→ hangi DB verisi kullanılır?
+→ hangi çıktı üretilir?
+→ kullanıcı bundan sonra ne yapar?
+
+Örnek:
+"Kullanıcı CSV yükler → sistem kolonları validate eder → rule engine kayıtları sınıflandırır → PostgreSQL'e kaydeder → dashboard ve exception listesi üretir."
+
+AI gerçekten gerekli değilse AI ekleme.
+
+13. LOVABLE CREDIT TAHMİNİ
+Gerçekçi yaklaşık dağılım ver:
+
+- UI + data model:
+- Core workflows:
+- Integrations:
+- Testing / fixes:
+- Launch polish:
+- TOTAL:
+
+TOTAL <= 500 Lovable credits olmalıdır.
+
+Her fikir için otomatik olarak 500 yazma.
+Tahmini ihtiyaca göre hesapla.
+
+14. KULLANILACAK TEKNOLOJİLER VE HARİCİ KAYNAKLAR
+Her bileşeni tek tek yaz.
+
+Örnek format:
+- Lovable — uygulama geliştirme
+- Supabase / PostgreSQL — DB
+- Supabase Auth — authentication
+- GitHub Actions — scheduled automation
+- OpenStreetMap — map data
+- public government API — source data
+- browser-side JavaScript — local processing
+
+Her external dependency için ayrıca belirt:
+- FREE / open-source / free tier
+- ücretsiz kota veya önemli limit
+- MVP için bu limitin neden yeterli olduğu
+
+Paid dependency kullanma.
+
+15. HARİCİ NAKİT MALİYET
+Şu format zorunlu:
+
+External cash cost: 0
+
+Lovable dışındaki herhangi bir bileşenin MVP aşamasında ödeme gerektirdiği anlaşılırsa fikir fully qualified değildir.
+
+16. BUILD TIME
+- Tahmini founder süresi:
+- Gün / saat:
+- En zor teknik bölüm:
+- En yüksek implementation riski:
+
+17. PAZARLAMA STRATEJİSİ
+Genel "social media yap" tavsiyesi verme.
+
+Şunları yaz:
+- İlk 10 müşteriyi nereden buluruz?
+- Hangi kanal daha mantıklı?
+- Hangi mesajla yaklaşılır?
+- Product-led mi, outbound mı, SEO mu, niche community mi, marketplace mi?
+- Global ürünse hangi ülke/segment ile başlanmalı?
+- Ücretsiz acquisition kanalları öncelikli olsun.
+
+Uygun kanallar:
+SEO, LinkedIn outreach, Reddit, niche communities, industry associations,
+directories, Product Hunt, GitHub, partner referrals, cold email,
+content marketing, free calculator/tool strategy.
+
+Paid ads önermemeye çalış çünkü external cash cost hedefi 0'dır.
+
+18. İLK MÜŞTERİ EDİNME PLANI
+Somut yaz:
+- İlk müşteri profili:
+- Nerede bulunur:
+- İlk outreach mesajının ana vaadi:
+- İlk 10 müşteri için uygulanacak yöntem:
+- İlk satış online olarak nasıl tamamlanabilir?:
+
+19. EN BÜYÜK RİSK / BİLİNMEYEN
+Tek kısa paragraf:
+- Teknik risk mi?
+- Veri erişimi mi?
+- Regulation mı?
+- willingness-to-pay mi?
+- acquisition mı?
+- free-tier limitleri mi?
+
+En kritik olanı açıkça söyle.
+
+20. DOĞRULANMASI GEREKEN VARSAYIM
+Tek ve test edilebilir bir validation sorusu yaz.
+
+Örnek:
+"10 lojistik şirketinden en az 3'ü bu reconciliation problemini haftalık olarak yaşıyor mu ve aylık €20–50 ödemeye istekli mi?"
+
+21. EVIDENCE STRENGTH
+- Strong / Medium / Weak
+- 1–2 cümle gerekçe
+
+22. COMPETITION CONFIDENCE
+- High / Medium
+- 1–2 cümleyle neden
 
 23. SOURCE LINKS
-
-24. COMPETITION CONFIDENCE
-   - High / Medium
-   - explain uncertainty briefly
+- Triggering news URL
+- Direct competitor URLs
+- Gerekiyorsa zero-cost API / open-data / technical dependency URLs
 
 ==================================================
 OUTPUT — COMPETITION NOT VERIFIED
@@ -909,23 +1053,32 @@ After the fully qualified list, add a separate section titled:
 
 COMPETITION NOT VERIFIED — REQUIRES MORE RESEARCH
 
-Put potentially interesting ideas here only when they appear to satisfy the build/cost constraints but you cannot confidently establish:
-- zero direct competitors in Türkiye, and/or
-- no more than three direct competitors globally.
+Bu bölümde de Türkçe ve aynı sade anlatım stilini kullan.
 
-Do not mix these with the fully qualified ideas.
+Buraya yalnızca:
+- build/cost constraints'i büyük ölçüde sağlayan,
+- fakat Türkiye'de 0 direct competitor veya globalde <=3 direct competitor şartı güvenilir biçimde doğrulanamayan
+fikirleri koy.
 
-For each such idea, still provide:
-- idea name
-- one-sentence description
-- triggering development
-- BEFORE → AFTER → DELTA
-- target customer
-- product mechanism
+Bu fikirleri silently delete etme.
+
+Her fikir için daha kısa format kullan:
+
+- Fikir adı
+- Haber / kaynak / URL
+- Core fikir — User Story
+- Mevcut durum
+- Hedeflenen durum
+- Hedef müşteri
+- Çalışma logic'i
 - Lovable MVP
-- estimated Lovable credits
-- external cash cost
-- unresolved competition question
+- Tahmini Lovable credits
+- External cash cost
+- Kullanılacak free technologies / external sources
+- İş modeli olasılıkları
+- Pazarlama yaklaşımı
+- Tespit edilen competitor bilgisi
+- Hangi competition sorusu henüz doğrulanamadı?
 
 ==================================================
 OUTPUT RULES
@@ -934,14 +1087,19 @@ OUTPUT RULES
 - Do NOT rank the ideas.
 - Do NOT choose a winner.
 - Do NOT produce a Top N list.
-- Do NOT discard qualifying ideas because they look weaker than other qualifying ideas.
+- List ALL fully qualifying ideas found in the current dataset.
+- Do NOT discard a qualifying idea merely because another idea appears stronger.
 - Do NOT summarize away niche ideas.
 - Do NOT invent competitor counts.
+- Say "tespit edilen DIRECT competitor sayısı", not an absolute claim that no competitor exists anywhere.
 - Do NOT confuse adjacent tools with direct competitors.
 - Cite the triggering news and competitor evidence.
+- Include actual URLs for news sources and competitors.
 - Be explicit when evidence is incomplete.
 - Favor concrete product concepts over vague categories.
 - Every fully qualified idea must be technically feasible within <=500 Lovable credits and $0 external MVP cash cost.
 - Competition research must happen after opportunity generation, not before.
 - Explore all reasonable zero-cost substitutions before rejecting an idea on technical-cost grounds.
 - Keep unresolved but promising opportunities in the separate COMPETITION NOT VERIFIED section rather than silently deleting them.
+- The final reader should be able to understand each idea without reading the original article.
+- Technical English abbreviations and standard terms must remain in English.
