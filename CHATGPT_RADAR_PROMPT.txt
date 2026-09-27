@@ -21,8 +21,593 @@ The opportunity may target:
 
 A product does NOT need to be Türkiye-focused. Global online service sales are explicitly in scope.
 
+==================================================
+ARTICLE-TO-OPPORTUNITY ENGINE
+==================================================
+
+Do NOT jump directly from an article headline to a product idea.
+
+Process EVERY article through the following structured pipeline.
+
+For each article, first create an internal ARTICLE RECORD.
+
+--------------------------------------------------
+STAGE 1 — ARTICLE DECOMPOSITION
+--------------------------------------------------
+
+Extract only facts supported by the article/source.
+
+ARTICLE RECORD:
+
+A. EVENT
+- What exactly happened?
+- Who did it?
+- Where?
+- When?
+- Is it already deployed, announced, tested, regulated, funded, launched,
+  discovered, proposed, or merely predicted?
+
+B. ACTORS
+Identify all relevant actors:
+- companies
+- customers
+- employees
+- governments/regulators
+- suppliers
+- distributors
+- developers
+- consumers
+- intermediaries
+- professional groups
+
+C. OBJECT
+What changed?
+
+Examples:
+- technology
+- product
+- API
+- regulation
+- business model
+- price
+- process
+- infrastructure
+- standard
+- customer behavior
+- data availability
+- distribution channel
+- market structure
+- cost structure
+- labor availability
+- compliance burden
+- transaction model
+- access model
+
+D. QUANTITATIVE SIGNALS
+Extract numbers whenever available:
+- cost reduction
+- time reduction
+- adoption
+- growth
+- market size
+- transaction volume
+- failure rate
+- labor hours
+- regulatory deadline
+- performance improvement
+- price
+- capacity
+- throughput
+- conversion
+- utilization
+- compliance penalty
+- market penetration
+
+E. WORKFLOW AFFECTED
+Identify the real-world workflow affected by the development.
+
+Represent it as:
+
+INPUT
+→ CURRENT PROCESS
+→ DECISION / ACTION
+→ OUTPUT
+
+Do not remain at the abstract industry level.
+
+--------------------------------------------------
+STAGE 2 — NOVELTY EXTRACTION
+--------------------------------------------------
+
+Determine the actual DELTA created by the article.
+
+Express it explicitly as:
+
+BEFORE:
+What was previously impossible, expensive, slow, manual, illegal,
+inaccessible, fragmented, inaccurate, risky or uncommon?
+
+AFTER:
+What has become possible, cheaper, faster, mandatory, available,
+automatable, measurable, scalable or commercially viable?
+
+DELTA:
+AFTER minus BEFORE.
+
+The DELTA is the primary innovation signal.
+
+Classify every meaningful delta into one or more:
+
+CAPABILITY_DELTA
+COST_DELTA
+SPEED_DELTA
+ACCESS_DELTA
+DATA_DELTA
+REGULATION_DELTA
+BEHAVIOR_DELTA
+INFRASTRUCTURE_DELTA
+BUSINESS_MODEL_DELTA
+DISTRIBUTION_DELTA
+RISK_DELTA
+LABOR_DELTA
+STANDARDIZATION_DELTA
+
+Do not call something a novelty merely because it is news.
+
+--------------------------------------------------
+STAGE 3 — CAUSAL IMPACT MAP
+--------------------------------------------------
+
+For every DELTA ask:
+
+WHAT DOES THIS CHANGE MAKE POSSIBLE?
+
+WHAT DOES THIS CHANGE MAKE NECESSARY?
+
+WHAT DOES THIS CHANGE MAKE OBSOLETE?
+
+WHAT DOES THIS CHANGE MAKE CHEAPER?
+
+WHAT DOES THIS CHANGE MAKE FASTER?
+
+WHAT DOES THIS CHANGE MAKE MORE COMPLEX?
+
+WHAT NEW DATA DOES THIS CREATE?
+
+WHAT NEW DECISION MUST SOMEONE NOW MAKE?
+
+WHAT NEW COORDINATION PROBLEM DOES IT CREATE?
+
+WHAT NEW COMPLIANCE / PROOF / RECORD-KEEPING NEED DOES IT CREATE?
+
+WHAT EXISTING WORKFLOW BECOMES INEFFICIENT BECAUSE OF THE CHANGE?
+
+WHAT NEW USER SEGMENT CAN NOW PARTICIPATE?
+
+WHAT NEW SUPPLIER / INTERMEDIARY / OPERATOR ROLE APPEARS?
+
+Generate first-order AND second-order consequences.
+
+Example logic:
+
+new capability
+→ adoption
+→ new workflow
+→ coordination problem
+→ software opportunity
+
+new regulation
+→ new obligation
+→ evidence requirement
+→ repetitive administrative work
+→ compliance workflow software
+
+cost reduction
+→ new users enter market
+→ transaction count increases
+→ manual process no longer scales
+→ operations SaaS opportunity
+
+new data source
+→ previously invisible event becomes measurable
+→ decision can now be automated
+→ monitoring / alert / optimization opportunity
+
+new infrastructure
+→ more participants enter the system
+→ fragmented operations emerge
+→ orchestration / reconciliation / scheduling opportunity
+
+--------------------------------------------------
+STAGE 4 — PROBLEM SURFACE DISCOVERY
+--------------------------------------------------
+
+For every consequence identify every affected stakeholder.
+
+For each stakeholder determine:
+
+JOB TO BE DONE
+What are they trying to accomplish?
+
+CURRENT METHOD
+How do they solve it today?
+
+FRICTION
+What is:
+- manual?
+- repetitive?
+- slow?
+- error-prone?
+- fragmented?
+- expensive?
+- difficult to verify?
+- difficult to coordinate?
+- difficult to compare?
+- difficult to track?
+- legally risky?
+- dependent on spreadsheets/email/WhatsApp?
+- dependent on expert knowledge?
+- dependent on phone calls?
+- dependent on copying data between systems?
+- difficult to audit?
+- difficult to prove?
+- difficult to monetize?
+- difficult to scale?
+
+TRIGGER
+Why does the news/development make this problem newly important,
+larger, more frequent or newly solvable?
+
+VALUE
+What measurable outcome would software improve?
+
+Examples:
+- save labor hours
+- prevent loss
+- increase revenue
+- reduce error
+- reduce compliance risk
+- increase utilization
+- shorten sales cycle
+- improve matching
+- improve visibility
+- automate documentation
+- reduce transaction friction
+- reduce coordination overhead
+- increase conversion
+- improve evidence quality
+- improve resource allocation
+
+Do not create a software idea until a concrete JOB + FRICTION exists.
+
+--------------------------------------------------
+STAGE 5 — OPPORTUNITY EXPANSION
+--------------------------------------------------
+
+For EVERY valid problem/capability combination, systematically test
+the following PRODUCT TRANSFORMATION OPERATORS.
+
+Do not stop after finding the first plausible application.
+
+Can it become a:
+
+TRACKER
+MONITOR
+ALERTING TOOL
+WORKFLOW MANAGER
+AUTOMATION TOOL
+CALCULATOR
+ESTIMATOR
+SIMULATOR
+OPTIMIZER
+COMPARISON ENGINE
+MATCHING ENGINE
+MARKETPLACE
+DIRECTORY WITH TRANSACTIONAL VALUE
+COMPLIANCE MANAGER
+AUDIT / EVIDENCE MANAGER
+DOCUMENT GENERATOR
+VALIDATION TOOL
+VERIFICATION TOOL
+RECONCILIATION TOOL
+SCHEDULER
+RESOURCE ALLOCATION TOOL
+CONFIGURATOR
+SELF-SERVICE PORTAL
+ASSESSMENT TOOL
+BENCHMARKING TOOL
+DATA NORMALIZATION TOOL
+DATA AGGREGATOR
+REPORTING TOOL
+DECISION SUPPORT TOOL
+PROCUREMENT TOOL
+LEAD GENERATION TOOL
+TRANSACTION LAYER
+COLLABORATION TOOL
+CUSTOMER PORTAL
+MICRO-SaaS
+NICHE PROFESSIONAL TOOL
+DIGITAL MARKETPLACE
+API / DATA PRODUCT
+BROWSER-BASED UTILITY
+ONBOARDING TOOL
+ELIGIBILITY CHECKER
+APPLICATION / SUBMISSION MANAGER
+QUOTE / PRICING TOOL
+CAPACITY PLANNER
+QUEUE / REQUEST MANAGER
+MAINTENANCE / SERVICE LOG
+INVENTORY / ASSET LEDGER
+FORM / INTAKE BUILDER
+RULE ENGINE
+EXCEPTION MANAGEMENT TOOL
+
+For every operator that creates genuine customer value,
+generate a RAW OPPORTUNITY.
+
+There is no maximum number of RAW OPPORTUNITIES.
+
+--------------------------------------------------
+STAGE 6 — COMBINATION DISCOVERY
+--------------------------------------------------
+
+Do not analyze news articles only in isolation.
+
+After processing all articles, identify combinations where:
+
+ARTICLE A supplies a new capability
++
+ARTICLE B reveals a customer problem
++
+ARTICLE C supplies free infrastructure/data
+=
+NEW PRODUCT OPPORTUNITY
+
+Also search for:
+
+REGULATION + AUTOMATION
+NEW API + OLD MANUAL PROCESS
+CHEAPER TECHNOLOGY + UNDERSERVED CUSTOMER
+OPEN DATA + DECISION PROBLEM
+NEW STANDARD + COMPLIANCE WORKFLOW
+NEW MARKET + COORDINATION PROBLEM
+AI CAPABILITY + STRUCTURED PROFESSIONAL WORKFLOW
+LABOR SHORTAGE + SELF-SERVICE SOFTWARE
+NEW HARDWARE + SOFTWARE MANAGEMENT LAYER
+NEW INFRASTRUCTURE + OPERATIONS SOFTWARE
+NEW DATA + VERIFICATION PROBLEM
+NEW DISTRIBUTION CHANNEL + NICHE SELLER
+NEW BUSINESS MODEL + BACK-OFFICE FRICTION
+NEW CUSTOMER BEHAVIOR + NEW TRANSACTION WORKFLOW
+NEW REGULATION + REPORTING / EVIDENCE BURDEN
+
+These cross-article combinations are mandatory.
+
+--------------------------------------------------
+STAGE 7 — PRODUCTIZATION TEST
+--------------------------------------------------
+
+Convert a RAW OPPORTUNITY into a product concept only if you can define:
+
+USER
+Who uses it?
+
+BUYER
+Who pays?
+
+TRIGGER
+What event causes them to need it?
+
+INPUT
+What data does the product receive?
+
+PROCESS
+What transformation does the software perform?
+
+OUTPUT
+What useful result does the customer receive?
+
+REPEATABILITY
+Why will this be used more than once?
+
+VALUE
+Why is the result worth paying for?
+
+DELIVERY
+Can the value be delivered primarily through a web application?
+
+SELF-SERVICE
+Can the customer receive the core value without a large manual-service operation?
+
+If these cannot be specified concretely,
+keep the opportunity as an unresolved hypothesis rather than inventing a product.
+
+--------------------------------------------------
+STAGE 8 — ZERO-COST / LOVABLE FEASIBILITY
+--------------------------------------------------
+
+Apply the hard build constraints only AFTER opportunity generation.
+
+TOTAL LOVABLE CREDITS <= 500
+
+EXTERNAL CASH COST = 0
+
+The MVP must work without:
+- paid APIs
+- paid hosting
+- paid LLM APIs
+- paid datasets
+- paid scraping
+- paid automation
+- paid email services
+- paid domains
+- paid authentication
+- paid storage
+- paid analytics
+- paid transaction infrastructure required before first revenue
+
+Try substitutions before rejecting an opportunity:
+
+paid API
+→ public/open API
+→ downloadable public data
+→ user-provided data
+→ browser-side processing
+→ manual CSV import
+→ rule-based processing
+
+paid AI API
+→ deterministic logic
+→ browser/local model if practical
+→ user-supplied model/API key
+→ remove AI from MVP
+
+paid integration
+→ CSV import/export
+→ webhook
+→ email forwarding
+→ manual synchronization
+
+paid automation
+→ GitHub Actions
+→ scheduled database function
+→ client-side execution
+
+paid scraping
+→ public RSS
+→ public webpage input supplied by user
+→ browser-side extraction
+→ manual URL submission
+→ open dataset
+
+Only after attempting zero-cost substitutions determine feasibility.
+
+--------------------------------------------------
+STAGE 9 — COMPETITION DISCOVERY
+--------------------------------------------------
+
+Competition research happens AFTER the opportunity has been clearly defined.
+
+For every opportunity create a one-sentence CORE JOB:
+
+"For [customer], software that [specific job] when [trigger]."
+
+Search competitors using the CORE JOB rather than only the product name.
+
+Perform separate searches for:
+
+TÜRKİYE
+- Turkish problem terminology
+- Turkish industry terminology
+- Turkish customer language
+- English product terminology + Türkiye
+- Turkish SaaS/product directories where relevant
+
+GLOBAL
+- product category
+- job-to-be-done
+- workflow description
+- industry terminology
+- alternative terminology
+- startup terminology
+- SaaS directories / marketplaces where relevant
+
+If the opportunity originates in a non-English market, also use local-language search terms where useful.
+
+Use multiple search formulations.
+
+DIRECT COMPETITOR TEST:
+
+A company is direct ONLY IF:
+
+SAME TARGET CUSTOMER
++
+SAME CORE JOB
++
+SUBSTANTIALLY SAME WORKFLOW
+
+If one is missing, classify it as ADJACENT rather than DIRECT.
+
+Qualified requirement:
+
+Türkiye direct competitors = 0
+
+Global direct competitors <= 3
+
+Do not fabricate absence of competition.
+
+--------------------------------------------------
+STAGE 10 — OPPORTUNITY EXPANSION CHECK
+--------------------------------------------------
+
+Before finishing an article, ask:
+
+"Have I extracted every distinct commercial consequence from this article?"
+
+Specifically verify that you considered:
+
+1. software created because something NEWLY EXISTS
+2. software created because something became CHEAPER
+3. software created because something became MANDATORY
+4. software created because something became MEASURABLE
+5. software created because something became AUTOMATABLE
+6. software created because something became MORE COMPLEX
+7. software created because adoption creates a NEW SECONDARY PROBLEM
+8. software replacing a manual workaround
+9. software serving suppliers around the new market
+10. software serving customers around the new market
+11. software serving regulators/auditors/operators around the new market
+12. software that connects two newly relevant actors
+13. software that packages newly available data
+14. software that verifies or proves a newly required condition
+15. software that helps a new participant enter a newly opened market
+16. software that manages exceptions created by the new workflow
+17. software that monetizes a previously non-transactional interaction
+
+Only then move to the next article.
+
+--------------------------------------------------
+STAGE 11 — CROSS-DATASET SATURATION CHECK
+--------------------------------------------------
+
+After all articles have been processed:
+
+Group discoveries by:
+
+PROBLEM
+CUSTOMER
+WORKFLOW
+CAPABILITY
+INDUSTRY
+TRIGGER
+PRODUCT MECHANISM
+
+Merge true duplicates.
+
+But DO NOT remove distinct business models, distinct customer segments,
+distinct workflows, or distinct geographies simply because they originated
+from the same news development.
+
+Continue discovering opportunities until another complete pass through
+the dataset produces no new distinct:
+
+PROBLEM
++
+CUSTOMER
++
+PRODUCT MECHANISM
+
+combination.
+
+This is the stopping condition.
+
+There is NO arbitrary Top-N stopping condition.
+
+==================================================
 HARD BUILD CONSTRAINTS
-Every listed idea must satisfy ALL of these constraints:
+==================================================
+
+Every fully qualified idea must satisfy ALL of these constraints:
 
 1. The first commercially usable MVP must be realistically buildable with a TOTAL budget of no more than 500 Lovable credits.
 2. Outside Lovable, cash spending must be exactly $0 / €0 / ₺0 for the MVP.
@@ -35,8 +620,11 @@ Every listed idea must satisfy ALL of these constraints:
 9. Avoid products that require custom hardware, physical inventory, regulated licenses, a large operations team, or substantial manual service delivery before the software itself creates value.
 10. The MVP must be achievable primarily by one founder using Lovable, with only lightweight coding/configuration outside Lovable when necessary.
 
+==================================================
 COMPETITION HARD CONSTRAINTS
-Every listed idea must also satisfy BOTH conditions below:
+==================================================
+
+Every fully qualified idea must also satisfy BOTH conditions below:
 
 A. TÜRKİYE
 There must be ZERO identifiable DIRECT competitors in Türkiye.
@@ -56,21 +644,19 @@ Do NOT automatically count the following as direct competitors unless they offer
 - large horizontal SaaS platforms with only loosely related features.
 
 COMPETITOR VERIFICATION IS MANDATORY
-For EACH candidate idea, perform fresh web research before listing it.
+For EACH candidate idea, perform fresh web research before placing it in the fully qualified list.
 
 Search at minimum:
 - Turkish-language queries,
 - English-language queries,
-- the terminology used by the target industry,
+- terminology used by the target industry,
 - product directories/startup databases that are publicly searchable,
 - relevant app/SaaS marketplaces when applicable.
-
-If the target opportunity originates in a non-English market, also use local-language search terms where useful.
 
 Do not claim "no competitor" merely because the first search returns nothing.
 Try multiple descriptions, synonyms, customer-job phrases and category names.
 
-Only classify a competitor as direct when it matches the definition above.
+Only classify a competitor as direct when it matches the direct-competitor test above.
 
 If competition cannot be verified with reasonable confidence, mark the idea:
 COMPETITION STATUS: NOT VERIFIED
@@ -78,21 +664,10 @@ and keep it separate from the fully qualified opportunity list.
 
 Do not silently assume that an idea has zero competitors.
 
-DISCOVERY LOGIC
-For each potential opportunity, preserve this evidence chain:
-
-CURRENT NEWS / DEVELOPMENT
-→ NEW CAPABILITY, REGULATION, COST SHIFT, BEHAVIOR CHANGE OR MARKET CHANGE
-→ CONCRETE PROBLEM / UNMET JOB
-→ WHO EXPERIENCES THE PROBLEM
-→ WHY EXISTING METHODS ARE INADEQUATE
-→ COMPETITION GAP
-→ WEB APP / ONLINE SERVICE OPPORTUNITY
-→ ZERO-COST TECHNICAL APPROACH
-→ LOVABLE MVP
-→ MONETIZATION
-
+==================================================
 FOCUS AREAS
+==================================================
+
 Search broadly across all supplied news rather than limiting yourself to a small set of sectors.
 
 Especially consider:
@@ -129,7 +704,10 @@ Especially consider:
 - newly created regulatory obligations
 - underserved micro-niches
 
+==================================================
 IDEA GENERATION RULE
+==================================================
+
 Generate ALL distinct ideas supported by the available news and the hard constraints.
 
 Do NOT stop at Top 5, Top 10, Top 20, or any arbitrary number.
@@ -143,11 +721,15 @@ Do NOT eliminate or suppress qualifying ideas merely because:
 - the target market is outside Türkiye,
 - the source development is niche.
 
-The only exclusion gates are the HARD BUILD CONSTRAINTS and COMPETITION HARD CONSTRAINTS above.
+Merge only genuine duplicates or ideas that solve essentially the same problem
+for the same customer with the same core product mechanism.
 
-Merge only genuine duplicates or ideas that solve essentially the same problem for the same customer.
+Do not rank ideas and do not select a winner.
 
+==================================================
 ZERO-COST TECHNICAL DESIGN
+==================================================
+
 For every idea, explicitly design an MVP that stays within the constraints.
 
 Prefer:
@@ -168,9 +750,13 @@ Prefer:
 - free analytics or simple built-in event logging.
 
 Do NOT add AI merely for marketing value.
+
 If an AI model is essential, identify a genuinely zero-cash-cost approach for the MVP and state its quota/limitations. If none exists, the idea is not eligible.
 
+==================================================
 500 LOVABLE CREDIT BUDGET
+==================================================
+
 For each idea, estimate Lovable usage in credits and split it approximately into:
 - initial UI/data model,
 - core workflows,
@@ -182,7 +768,10 @@ The total must be <= 500 credits.
 
 Use realistic estimates rather than automatically assigning every idea 500 credits.
 
+==================================================
 COMMERCIAL REQUIREMENT
+==================================================
+
 Every idea must have a plausible path to revenue.
 
 Possible models include:
@@ -200,73 +789,122 @@ Possible models include:
 
 The product must be sellable online without requiring a large offline sales or service organization.
 
+==================================================
 OUTPUT — QUALIFIED IDEAS
+==================================================
+
 List EVERY fully qualifying idea.
 
 For each idea provide:
 
 1. IDEA NAME
+
 2. ONE-SENTENCE PRODUCT DESCRIPTION
+
 3. TRIGGERING NEWS / DEVELOPMENT
    - article/source
    - publication date if available
    - what changed
-4. PROBLEM
+
+4. BEFORE → AFTER → DELTA
+   - BEFORE
+   - AFTER
+   - DELTA type(s)
+
+5. CAUSAL IMPACT
+   - first-order consequence
+   - second-order consequence
+   - new workflow/problem created
+
+6. PROBLEM
+   - exact job to be done
    - exact pain point
    - current workaround
    - why the workaround is inadequate
-5. TARGET CUSTOMER
+
+7. TARGET CUSTOMER
    - user
    - buyer
    - geography: Türkiye / specific international market / global
-6. WHY NOW
-7. COMPETITION CHECK — TÜRKİYE
+
+8. PRODUCT MECHANISM
+   - which opportunity operator(s) produced this idea
+   - why this mechanism fits the problem
+
+9. PRODUCTIZATION TEST
+   - trigger
+   - input
+   - process
+   - output
+   - repeatability
+   - value
+   - self-service delivery
+
+10. WHY NOW
+
+11. COMPETITION CHECK — TÜRKİYE
    - search terms used
    - direct competitors found: MUST BE 0
    - adjacent/non-direct alternatives found, if useful
-8. COMPETITION CHECK — GLOBAL
+
+12. COMPETITION CHECK — GLOBAL
    - search terms used
    - direct competitors found: 0, 1, 2 or 3 only
    - competitor names + URLs
    - short explanation of why each is considered direct
-9. DIFFERENTIATION / MARKET GAP
-10. LOVABLE MVP
-    - essential screens
-    - essential workflows
-    - data model/entities
-    - minimum feature set required to charge money
-11. ZERO-COST STACK
-    - Lovable components
-    - database/auth/hosting
-    - APIs/data sources
-    - automation
-    - AI/model if any
-    - explicitly state why each external dependency costs $0 for MVP usage
-12. LOVABLE CREDIT ESTIMATE
-    - UI/data model
-    - workflows
-    - integrations
-    - testing/fixes
-    - launch polish
-    - TOTAL
-13. EXTERNAL CASH COST
-    - MUST equal 0
-14. BUILD TIME
-    - founder hours/days estimate
-15. MONETIZATION
-    - pricing concept
-    - who pays
-    - how the first customer could buy online
-16. FIRST CUSTOMER ACQUISITION CHANNEL
-17. MAIN RISKS
-18. EVIDENCE STRENGTH
-    - Strong / Medium / Weak
-19. SOURCE LINKS
-20. COMPETITION CONFIDENCE
-    - High / Medium
-    - explain uncertainty briefly
 
+13. DIFFERENTIATION / MARKET GAP
+
+14. LOVABLE MVP
+   - essential screens
+   - essential workflows
+   - data model/entities
+   - minimum feature set required to charge money
+
+15. ZERO-COST STACK
+   - Lovable components
+   - database/auth/hosting
+   - APIs/data sources
+   - automation
+   - AI/model if any
+   - explicitly state why each external dependency costs $0 for MVP usage
+
+16. LOVABLE CREDIT ESTIMATE
+   - UI/data model
+   - workflows
+   - integrations
+   - testing/fixes
+   - launch polish
+   - TOTAL
+
+17. EXTERNAL CASH COST
+   - MUST equal 0
+
+18. BUILD TIME
+   - founder hours/days estimate
+
+19. MONETIZATION
+   - pricing concept
+   - who pays
+   - how the first customer could buy online
+
+20. FIRST CUSTOMER ACQUISITION CHANNEL
+
+21. MAIN RISKS
+
+22. EVIDENCE STRENGTH
+   - Strong / Medium / Weak
+
+23. SOURCE LINKS
+
+24. COMPETITION CONFIDENCE
+   - High / Medium
+   - explain uncertainty briefly
+
+==================================================
 OUTPUT — COMPETITION NOT VERIFIED
+==================================================
+
 After the fully qualified list, add a separate section titled:
 
 COMPETITION NOT VERIFIED — REQUIRES MORE RESEARCH
@@ -277,7 +915,22 @@ Put potentially interesting ideas here only when they appear to satisfy the buil
 
 Do not mix these with the fully qualified ideas.
 
+For each such idea, still provide:
+- idea name
+- one-sentence description
+- triggering development
+- BEFORE → AFTER → DELTA
+- target customer
+- product mechanism
+- Lovable MVP
+- estimated Lovable credits
+- external cash cost
+- unresolved competition question
+
+==================================================
 OUTPUT RULES
+==================================================
+
 - Do NOT rank the ideas.
 - Do NOT choose a winner.
 - Do NOT produce a Top N list.
@@ -289,3 +942,6 @@ OUTPUT RULES
 - Be explicit when evidence is incomplete.
 - Favor concrete product concepts over vague categories.
 - Every fully qualified idea must be technically feasible within <=500 Lovable credits and $0 external MVP cash cost.
+- Competition research must happen after opportunity generation, not before.
+- Explore all reasonable zero-cost substitutions before rejecting an idea on technical-cost grounds.
+- Keep unresolved but promising opportunities in the separate COMPETITION NOT VERIFIED section rather than silently deleting them.
