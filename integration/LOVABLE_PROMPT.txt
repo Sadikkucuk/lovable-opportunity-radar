@@ -1,0 +1,635 @@
+LOVABLE IMPLEMENTATION PROMPT — AIStartup
+
+OBJECTIVE
+
+Refactor the existing Lovable application currently published as:
+https://fikir-rehberi-ai.lovable.app
+
+Rename the product/brand to:
+
+AIStartup
+
+The application must become a clean, database-driven idea catalog whose ONLY idea source is the GitHub radar repository below.
+
+Do not preserve the old idea cards, old idea tags, old category logic, old hard-coded idea content, or obsolete idea fields unless they are explicitly included in the new ideas schema below.
+
+Do NOT create an approval workflow.
+Ideas coming from GitHub should be published automatically.
+
+==================================================
+1. PRESERVE THESE EXISTING THINGS
+==================================================
+
+Before making destructive changes, inspect the current project.
+
+Preserve:
+- existing Supabase/Lovable Cloud project
+- existing authentication
+- existing users
+- existing admin user(s)
+- existing admin-role mechanism if one already exists
+- current visual theme where it still makes sense
+- current deployment
+
+Do NOT delete or recreate auth.users.
+
+Do NOT create a second conflicting admin/role system if the project already has one.
+
+If the current project already has a profiles/user_roles/admin mechanism, reuse it.
+
+==================================================
+2. RENAME THE SITE TO AISTARTUP
+==================================================
+
+Change the visible product name everywhere from the old name to:
+
+AIStartup
+
+Update:
+- navbar/logo text
+- page titles
+- browser document title
+- metadata
+- OpenGraph title/description
+- footer branding
+- login/admin branding
+- empty states
+
+Use "AIStartup" exactly with this capitalization.
+
+If Lovable can safely change the project/public slug without recreating or breaking the existing deployment, change the slug to a suitable AIStartup slug such as:
+aistartup
+
+If changing the Lovable public URL is not safely supported inside the existing project, keep the current lovable.app URL and change all visible branding/metadata to AIStartup. Do not break the live app merely to change the URL.
+
+==================================================
+3. GITHUB IS THE ONLY IDEA SOURCE
+==================================================
+
+Canonical GitHub idea catalog:
+
+https://raw.githubusercontent.com/Sadikkucuk/lovable-opportunity-radar/main/state/idea_catalog.json
+
+JSON schema reference:
+
+https://raw.githubusercontent.com/Sadikkucuk/lovable-opportunity-radar/main/schemas/idea-catalog.schema.json
+
+GitHub repository:
+https://github.com/Sadikkucuk/lovable-opportunity-radar
+
+The application must NOT contain hard-coded idea records.
+
+The application must NOT create its own independent idea generation logic.
+
+The application must mirror the GitHub idea catalog into Supabase.
+
+canonical_key is the unique business identity of an idea.
+
+==================================================
+4. ONE-TIME RESET OF CURRENT IDEAS
+==================================================
+
+This is intentionally destructive ONLY for the existing idea content/model.
+
+Delete all CURRENT idea records from the existing application.
+
+Remove old hard-coded idea arrays/data.
+
+Remove obsolete idea-specific tags, categories, metadata fields and join tables if they are used only by the old idea model.
+
+Do NOT delete:
+- users
+- auth
+- admin roles
+- unrelated application/security configuration
+
+After the reset, import ONLY the records currently present in:
+state/idea_catalog.json
+
+After migration, the public website must initially show only the GitHub catalog records.
+
+==================================================
+5. REBUILD THE IDEAS TABLE
+==================================================
+
+Make public.ideas the single source of truth for idea content in the application.
+
+Use this data model.
+
+Required fields:
+
+id uuid primary key
+canonical_key text unique not null
+idea_name text not null
+
+scope_tier text not null
+Allowed values EXACTLY:
+- Lüleburgaz
+- Türkiye
+- Dünya
+- Evren
+
+scope_reason text
+
+news_source text
+news_title text
+news_date date
+news_url text
+source_links jsonb
+
+core_idea text
+user_story text
+
+before_state text
+after_state text
+why_now text
+
+target_customer text
+buyer text
+market text
+
+turkiye_direct_competitor_count integer
+global_direct_competitor_count integer
+
+direct_competitors jsonb
+adjacent_competitors jsonb
+
+market_gap text
+business_models jsonb
+
+lovable_credits_total integer
+lovable_credit_breakdown jsonb
+
+technologies jsonb
+external_cash_cost numeric
+
+mvp text
+working_logic text
+build_time text
+
+marketing_strategy text
+first_customer_plan text
+
+main_risk text
+validation_assumption text
+
+evidence_strength text
+competition_confidence text
+
+verification_status text
+Allowed:
+- qualified
+- competition_not_verified
+
+status text
+Allowed:
+- published
+- archived
+
+source_system text default 'github_radar'
+
+is_deleted boolean default false
+deleted_at timestamptz nullable
+deleted_by uuid nullable
+
+first_reported_at date
+last_updated_at date
+
+created_at timestamptz
+updated_at timestamptz
+
+Constraints:
+- lovable_credits_total must be <= 500
+- external_cash_cost must equal 0 for imported GitHub opportunities
+- canonical_key must be unique
+- scope_tier must be one of the four allowed values
+
+A reference SQL migration exists in the GitHub repository:
+integration/aistartup_ideas.sql
+
+You may adapt the SQL to the current Supabase project, but preserve the semantics above.
+
+==================================================
+6. SCOPE TIER — LÜLEBURGAZ / TÜRKİYE / DÜNYA / EVREN
+==================================================
+
+This is a first-class field, not an arbitrary tag.
+
+Display the value clearly but minimally.
+
+Meanings:
+
+Lüleburgaz:
+Idea is primarily local to Lüleburgaz / nearby industrial-commercial ecosystem.
+
+Türkiye:
+Idea primarily depends on Turkish regulation, institutions, market structure or Türkiye-specific workflows.
+
+Dünya:
+Globally sellable online or realistically applicable across multiple countries.
+
+Evren:
+Only genuine space/off-Earth opportunities such as satellite, orbital, lunar, planetary, space infrastructure, space logistics or off-Earth operations.
+
+Do not invent these values in the frontend.
+Always use scope_tier from the GitHub/Supabase ideas record.
+
+==================================================
+7. AUTOMATIC GITHUB → SUPABASE SYNC
+==================================================
+
+Implement a secure server-side synchronization path.
+
+Preferred implementation inside this Lovable/Supabase project:
+
+Create a Supabase Edge Function named something like:
+
+sync-github-ideas
+
+The Edge Function must:
+
+1. Fetch:
+https://raw.githubusercontent.com/Sadikkucuk/lovable-opportunity-radar/main/state/idea_catalog.json
+
+2. Validate:
+- schema_version
+- canonical_key exists
+- scope_tier is valid
+- lovable_credits_total <= 500
+- external_cash_cost = 0
+
+3. Upsert each idea into public.ideas using:
+canonical_key
+
+4. Never overwrite these admin-owned fields during sync:
+- is_deleted
+- deleted_at
+- deleted_by
+
+This is critical:
+if an admin deletes an idea from the website, the next GitHub sync must NOT make it visible again.
+
+5. For an existing canonical_key:
+update its content fields from GitHub but preserve its admin deletion state.
+
+6. For a new canonical_key:
+insert a new published idea automatically.
+
+7. Do NOT require approval.
+
+8. If a source_system='github_radar' row exists in Supabase but no longer exists in the GitHub catalog, archive it rather than publicly displaying stale content:
+status='archived'
+Do not change is_deleted.
+
+9. Never expose Supabase service-role credentials in frontend/client code.
+
+10. Log failures server-side without exposing secrets.
+
+==================================================
+8. AUTOMATIC SCHEDULE
+==================================================
+
+The site should automatically synchronize from GitHub.
+
+Set up a Supabase scheduled job / Cron mechanism to invoke sync-github-ideas regularly.
+
+Use a reasonable interval such as every 30 minutes.
+
+The point is:
+after the 07:00 ChatGPT radar writes new ideas to GitHub, AIStartup should ingest them automatically without any human approval.
+
+Also add an ADMIN-ONLY button:
+
+"GitHub'dan Şimdi Senkronize Et"
+
+This is only a manual fallback/debug action.
+Normal operation must remain automatic.
+
+==================================================
+9. GITHUB-SIDE PUSH SYNC IS ALSO PREPARED
+==================================================
+
+The GitHub repository already contains:
+
+scripts/sync_aistartup_supabase.py
+.github/workflows/sync-aistartup.yml
+
+This can optionally be used as a second/fallback push-based sync path.
+
+If we later configure GitHub repository secrets:
+- AISTARTUP_SUPABASE_URL
+- AISTARTUP_SUPABASE_SERVICE_ROLE_KEY
+
+GitHub can push the catalog directly to Supabase.
+
+Do NOT require this path for the website to function if the scheduled Supabase pull sync is working.
+
+==================================================
+10. ADMIN DELETE PERMISSION
+==================================================
+
+Only admin user(s) may delete/hide ideas.
+
+Public/normal users:
+- can read published ideas
+- cannot insert ideas
+- cannot update ideas
+- cannot delete ideas
+
+Admin:
+- sees a "Sil" action
+- deletion requires a confirmation dialog
+- deletion must be implemented as SOFT DELETE:
+
+is_deleted = true
+deleted_at = now()
+deleted_by = auth.uid()
+
+Do not physically remove the row.
+
+Reason:
+GitHub remains the canonical catalog and a hard delete would cause the next sync to recreate the idea.
+
+Public queries must always exclude:
+is_deleted = true
+
+A deleted idea must disappear immediately from:
+- home page
+- search
+- scope filters
+- idea detail routes
+- counts
+
+If a user manually tries to open a deleted idea URL, show Not Found / unavailable.
+
+==================================================
+11. RLS / SECURITY
+==================================================
+
+Enable RLS on public.ideas.
+
+Public SELECT:
+only rows where:
+status = 'published'
+AND is_deleted = false
+
+Use the current project's EXISTING admin-role mechanism to allow admin updates/soft-delete.
+
+Do not allow anonymous/client-side INSERT into ideas.
+
+Do not allow anonymous/client-side UPDATE.
+
+GitHub synchronization must happen server-side.
+
+Never expose:
+- service_role key
+- database secrets
+- admin secrets
+
+==================================================
+12. DELETE THE OLD IDEA CARD DESIGN
+==================================================
+
+The existing idea summary card currently contains too many tags/fields.
+
+Remove all old tags, badges, scores, labels, categories and metadata that are not part of the new useful view.
+
+Do not keep legacy fields merely because they existed before.
+
+Rebuild the summary card from public.ideas.
+
+SUMMARY CARD SHOULD SHOW ONLY:
+
+1. idea_name
+2. scope_tier — one small badge
+3. core_idea — short 2–3 line preview
+4. news_source + news_date
+5. "Türkiye direct: X"
+6. "Global direct: X"
+7. "Lovable: ~X credits"
+8. a single "Detayı Gör" action
+
+Optional:
+If verification_status = competition_not_verified,
+show ONE small warning line:
+"Rakip doğrulaması tamamlanmadı."
+
+Do not add any other tag cloud.
+
+Do not show technologies, business models, evidence strength, risk etc. on the card.
+
+Those belong on the detail page.
+
+==================================================
+13. HOME / IDEA LIST PAGE
+==================================================
+
+Rebuild the home/list page around the ideas table.
+
+Default ordering:
+first_reported_at DESC
+then created_at DESC
+
+Add only useful controls:
+
+- Search:
+  idea_name + core_idea + target_customer
+
+- Scope filter:
+  Tümü
+  Lüleburgaz
+  Türkiye
+  Dünya
+  Evren
+
+Avoid old category/tag filters unless they are truly needed by the new table.
+Do not recreate obsolete tag systems.
+
+Use a clean responsive grid/list.
+
+Do not show deleted or archived rows.
+
+==================================================
+14. IDEA DETAIL PAGE
+==================================================
+
+Rebuild the idea detail page entirely from the ideas table.
+
+Use this clear section order:
+
+1. Fikir Adı
+2. Scope Tier + short scope_reason
+
+3. HABER / TETİKLEYİCİ GELİŞME
+- news_source
+- news_title
+- news_date
+- clickable news_url
+- additional source_links
+
+4. CORE FİKİR — USER STORY
+- user_story
+- core_idea
+
+5. MEVCUT DURUM — BEFORE
+- before_state
+
+6. HEDEFLENEN DURUM — AFTER
+- after_state
+
+7. NEDEN ŞİMDİ?
+- why_now
+
+8. HEDEF MÜŞTERİ
+- target_customer
+- buyer
+- market
+
+9. TÜRKİYE REKABETİ
+- turkiye_direct_competitor_count
+- relevant competitor data
+
+10. GLOBAL REKABET
+- global_direct_competitor_count
+- direct_competitors with clickable URLs
+
+11. MARKET GAP / FARKLILAŞMA
+- market_gap
+
+12. İŞ MODELİ OLASILIKLARI
+- business_models
+
+13. MVP
+- mvp
+
+14. ÇALIŞMA LOGIC'İ
+- working_logic
+
+15. LOVABLE CREDIT TAHMİNİ
+- lovable_credits_total
+- lovable_credit_breakdown
+
+16. KULLANILACAK TEKNOLOJİLER VE HARİCİ KAYNAKLAR
+- technologies
+
+17. HARİCİ NAKİT MALİYET
+- external_cash_cost
+
+18. BUILD TIME
+- build_time
+
+19. PAZARLAMA STRATEJİSİ
+- marketing_strategy
+
+20. İLK MÜŞTERİ EDİNME PLANI
+- first_customer_plan
+
+21. EN BÜYÜK RİSK
+- main_risk
+
+22. DOĞRULANMASI GEREKEN VARSAYIM
+- validation_assumption
+
+23. KANIT / REKABET GÜVENİ
+- evidence_strength
+- competition_confidence
+- verification_status
+
+Keep the page simple.
+Use headings, paragraphs and compact tables where useful.
+
+Do NOT convert every value into a colorful badge.
+
+URLs must be clickable and open safely in a new tab.
+
+==================================================
+15. UI WRITING STYLE
+==================================================
+
+The content is already written in simple Turkish.
+
+Preserve technical English terms such as:
+API
+SaaS
+B2B
+B2C
+MVP
+LLM
+RAG
+webhook
+PostgreSQL
+CRUD
+OCR
+JSON
+CSV
+workflow
+rule engine
+dashboard
+authentication
+free tier
+
+Do not awkwardly translate these terms.
+
+==================================================
+16. REMOVE LEGACY IDEA FIELDS FROM THE UI
+==================================================
+
+Inspect the current app and remove old idea-specific UI fields/tags that are not represented in the new ideas table.
+
+Examples:
+- old arbitrary tags
+- old category chips
+- old manual scores
+- old duplicated feasibility labels
+- old hard-coded source labels
+- old fields that no longer have a database source
+
+Do not show blank placeholders for removed fields.
+
+All visible idea content must come from public.ideas.
+
+==================================================
+17. INITIAL IMPORT
+==================================================
+
+After the database migration:
+
+1. delete old idea rows;
+2. run sync-github-ideas;
+3. verify that the current GitHub idea catalog is inserted;
+4. verify canonical_key uniqueness;
+5. verify scope_tier values;
+6. verify all public cards come from Supabase;
+7. verify old ideas no longer appear;
+8. verify admin can soft-delete one test idea;
+9. verify a subsequent GitHub sync does NOT resurrect the soft-deleted test idea;
+10. restore the test idea only if needed for testing, without changing the sync design.
+
+==================================================
+18. ACCEPTANCE CRITERIA
+==================================================
+
+The task is complete only when ALL are true:
+
+- Branding says AIStartup.
+- Existing auth/users/admin are preserved.
+- Old ideas are removed.
+- Old hard-coded idea data is removed.
+- Old unnecessary idea tags/fields are removed from the UI.
+- public.ideas is the single database source for idea content.
+- GitHub idea_catalog.json is the only upstream idea source.
+- Automatic scheduled GitHub sync works.
+- New GitHub ideas appear without approval.
+- canonical_key prevents duplicate rows.
+- scope_tier supports exactly Lüleburgaz / Türkiye / Dünya / Evren.
+- Admin can soft-delete an idea.
+- A deleted idea does not reappear after sync.
+- Public users cannot modify ideas.
+- Summary cards are minimal.
+- Detail pages use the new table fields only.
+- Source and competitor URLs are clickable.
+- No service-role secret appears in browser/client code.
+- Mobile and desktop layouts both work.
+
+Do not stop after only changing the UI.
+Complete database migration, sync logic, RLS, admin delete behavior and initial GitHub import as part of the same implementation.
