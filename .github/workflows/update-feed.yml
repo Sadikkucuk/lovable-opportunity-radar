@@ -1,0 +1,53 @@
+name: Update combined RSS
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Every hour at minute 10 (UTC). GitHub schedules can be delayed.
+    - cron: "10 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-combined-rss
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Merge feeds
+        env:
+          RETENTION_HOURS: "72"
+          MAX_ITEMS: "1000"
+          MAX_PER_SOURCE: "30"
+          FETCH_WORKERS: "20"
+          FETCH_TIMEOUT: "20"
+        run: python aggregate.py
+
+      - name: Commit updated feed
+        run: |
+          if git diff --quiet -- docs/feed.xml docs/latest.json docs/status.json; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/feed.xml docs/latest.json docs/status.json
+          git commit -m "Update combined RSS"
+          git push
