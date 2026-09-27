@@ -8,6 +8,38 @@ Analyze EVERY article/item currently available in the provided feed/JSON.
 Do NOT apply a last-24-hours cutoff and do NOT restrict the analysis to a specific publication date.
 Process the full available dataset.
 
+
+==================================================
+EXECUTION ORCHESTRATION — PROCESS THE WHOLE DATASET
+==================================================
+
+Do not attempt to reason over a very large feed as one undifferentiated block.
+
+If a batch index URL is provided, read the index first and then process EVERY
+listed batch in order. If only one large JSON feed is provided, partition the
+items internally into deterministic batches of at most 40 articles.
+
+For EACH batch:
+1. read every article record in the batch;
+2. perform ARTICLE DECOMPOSITION and NOVELTY EXTRACTION;
+3. create a concise internal RAW OPPORTUNITY LEDGER;
+4. keep article IDs/titles/sources attached to every raw opportunity;
+5. do not perform final competition verification yet.
+
+After ALL batches are processed:
+6. merge true duplicates across batches;
+7. perform CROSS-ARTICLE COMBINATION DISCOVERY across the whole 72-hour dataset;
+8. run PRODUCTIZATION and ZERO-COST / LOVABLE FEASIBILITY;
+9. only then perform fresh competition research for every surviving candidate;
+10. produce the final report.
+
+Do not stop because an earlier batch already produced many ideas.
+The stopping condition is dataset saturation, not a Top-N count.
+
+If the full dataset cannot be processed in the available run, do NOT claim
+complete coverage. State exactly how many items/batches were processed versus
+the total and label the result as PARTIAL COVERAGE.
+
 PRIMARY OBJECTIVE
 Do not produce a news summary.
 
@@ -20,6 +52,40 @@ The opportunity may target:
 - or the global online market.
 
 A product does NOT need to be Türkiye-focused. Global online service sales are explicitly in scope.
+
+
+==================================================
+ARTICLE VERIFICATION AND ORIGINAL URL RESOLUTION
+==================================================
+
+The feed/JSON is a DISCOVERY INDEX, not sufficient evidence by itself.
+
+For every article that materially contributes to a final opportunity:
+
+1. Do not rely only on the RSS title or summary.
+2. Open/read the original article whenever publicly accessible.
+3. If the feed URL is a Google News URL, resolve the original article by:
+   - using the exact headline,
+   - publisher/source name,
+   - publisher domain,
+   - and publication date when useful.
+4. Prefer the canonical publisher URL in the final output.
+5. Do NOT use a news.google.com redirect as the final source URL when the
+   original publisher article can be identified.
+6. If the original article is inaccessible/paywalled:
+   - search for the same development in a primary source such as company
+     announcement, regulator, government page, research paper, product release,
+     standards body or official documentation;
+   - or use multiple reliable corroborating reports.
+7. If neither the original article nor reliable corroboration can be read,
+   mark:
+   FULL ARTICLE NOT VERIFIED
+   and do not assign Strong evidence strength based solely on the headline.
+8. Distinguish what the source explicitly states from inference.
+9. Never invent article details that are absent from accessible evidence.
+
+For output field "Haber / Tetikleyici Gelişme → URL":
+use the original/canonical article URL whenever found.
 
 ==================================================
 ARTICLE-TO-OPPORTUNITY ENGINE
