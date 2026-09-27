@@ -43,11 +43,12 @@ DOCS.mkdir(exist_ok=True)
 RETENTION_HOURS = int(os.getenv("RETENTION_HOURS", "72"))
 MAX_ITEMS = int(os.getenv("MAX_ITEMS", "1000"))
 MAX_PER_SOURCE = int(os.getenv("MAX_PER_SOURCE", "40"))
+BATCH_SIZE = int(os.getenv("BATCH_SIZE", "40"))
 FETCH_WORKERS = int(os.getenv("FETCH_WORKERS", "20"))
 TIMEOUT = int(os.getenv("FETCH_TIMEOUT", "20"))
 
 UA = (
-    "Mozilla/5.0 (compatible; LovableOpportunityRadar/2.0; "
+    "Mozilla/5.0 (compatible; LovableOpportunityRadar/3.0; "
     "+https://github.com/Sadikkucuk/lovable-opportunity-radar)"
 )
 
@@ -139,6 +140,24 @@ PROFILE_TERMS_LOCAL = {
         "BUSINESS_TECH": ["IA", "software", "automazione", "robotica", "semiconduttori", "industria", "startup", "logistica", "energia", "digitale"],
         "STARTUP": ["startup", "SaaS", "IA", "software", "piattaforma", "finanziamento", "automazione"],
     },
+    "sv": {
+        "INDUSTRIAL": ["industri", "tillverkning", "automation", "robotik", "AI", "halvledare", "energi", "leveranskedja", "mjukvara"],
+        "BUSINESS_TECH": ["teknik", "AI", "mjukvara", "startup", "automation", "robotik", "halvledare", "energi"],
+    },
+    "no": {
+        "INDUSTRIAL": ["industri", "produksjon", "automatisering", "robotikk", "AI", "halvleder", "energi", "forsyningskjede", "programvare"],
+        "BUSINESS_TECH": ["teknologi", "AI", "programvare", "startup", "automatisering", "robotikk", "halvleder", "energi"],
+    },
+}
+
+# These publications are primarily consumed/indexed in English even though
+# their geographic folder is China/Japan/Korea. Querying them only with local-
+# language terms can incorrectly return zero items.
+ENGLISH_SOURCE_NAMES = {
+    "China Daily", "EqualOcean", "Pandaily", "TechNode", "Gasgoo",
+    "CnEVPost", "China Money Network", "South China Morning Post — China Tech",
+    "Nikkei Asia", "The Japan Times", "JETRO",
+    "TheElec", "Korea Herald — Technology/Business", "Pulse by Maeil Business",
 }
 
 # Specialized sources are already narrow; general/broad publications need a
@@ -271,6 +290,14 @@ def locale_for(meta: dict[str, str]) -> tuple[str, str, str, str]:
     name = meta["name"]
     folder = meta["folder"]
 
+    if name in ENGLISH_SOURCE_NAMES:
+        return ("en", "en-US", "US", "US:en")
+
+    if name == "Ny Teknik":
+        return ("sv", "sv", "SE", "SE:sv")
+    if name == "Teknisk Ukeblad":
+        return ("no", "no", "NO", "NO:no")
+
     if folder.startswith("China"):
         return ("zh", "zh-CN", "CN", "CN:zh-Hans")
     if "Japan" in folder:
@@ -394,7 +421,7 @@ def fetch_one(meta: dict[str, str]) -> dict[str, Any]:
         result["raw_items"] = len(parsed.entries)
         entries = []
 
-        for entry in parsed.entries[:MAX_PER_SOURCE]:
+        for entry in parsed.entries:
             title = clean_text(entry.get("title"))
             link = entry.get("link", "").strip()
             if not title or not link:
@@ -407,13 +434,25 @@ def fetch_one(meta: dict[str, str]) -> dict[str, Any]:
             published = parse_entry_date(entry)
             entry_id = str(entry.get("id") or entry.get("guid") or link)
 
+            source_info = entry.get("source") or {}
+            publisher_url = str(source_info.get("href") or "").strip()
+            publisher_name = clean_text(source_info.get("title") or "")
+
             entries.append({
                 "title": title,
                 "url": link,
                 "summary": summary[:1200],
                 "published_at": iso(published) if published else None,
                 "entry_id": entry_id,
+                "publisher_url": publisher_url,
+                "publisher_name": publisher_name,
             })
+
+            # MAX_PER_SOURCE now means maximum RELEVANT items kept, not merely
+            # "look at the first N results". This avoids losing relevant items
+            # ranked below noisy/filtered results.
+            if len(entries) >= MAX_PER_SOURCE:
+                break
 
         result["items"] = entries
         result["ok"] = True
@@ -491,6 +530,9 @@ def merge_items(results: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 ).hexdigest()[:24],
                 "title": item["title"],
                 "url": item["url"],
+                "discovery_url": item["url"],
+                "publisher_url": item.get("publisher_url") or result["site_url"],
+                "publisher_name": item.get("publisher_name") or result["name"],
                 "summary": item["summary"],
                 "published_at": item["published_at"],
                 "seen_at": iso(now),
@@ -532,7 +574,7 @@ def write_json(items: list[dict[str, Any]], results: list[dict[str, Any]]) -> No
         "successful_sources": sum(1 for r in results if r["ok"]),
         "failed_sources": sum(1 for r in results if not r["ok"]),
         "item_count": len(items),
-        "filter_version": "sector-focused-v2",
+        "filter_version": "sector-focused-v3",
         "items": items,
     }
 
@@ -543,7 +585,7 @@ def write_json(items: list[dict[str, Any]], results: list[dict[str, Any]]) -> No
 
     status = {
         "generated_at": iso(now),
-        "filter_version": "sector-focused-v2",
+        "filter_version": "sector-focused-v3",
         "source_count": len(results),
         "successful_sources": sum(1 for r in results if r["ok"]),
         "failed_sources": sum(1 for r in results if not r["ok"]),
@@ -569,6 +611,54 @@ def write_json(items: list[dict[str, Any]], results: list[dict[str, Any]]) -> No
 
     (DOCS / "status.json").write_text(
         json.dumps(status, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+
+def write_batches(items: list[dict[str, Any]]) -> None:
+    """Write deterministic smaller JSON files so ChatGPT can consume the
+    complete rolling window without relying on one very large latest.json."""
+    batch_dir = DOCS / "batches"
+    batch_dir.mkdir(exist_ok=True)
+
+    # Remove stale batch files from a previous run.
+    for old in batch_dir.glob("batch-*.json"):
+        old.unlink()
+
+    base_raw = "https://raw.githubusercontent.com/Sadikkucuk/lovable-opportunity-radar/main/docs/batches/"
+    batches = []
+
+    for start in range(0, len(items), BATCH_SIZE):
+        batch_items = items[start:start + BATCH_SIZE]
+        number = (start // BATCH_SIZE) + 1
+        filename = f"batch-{number:03d}.json"
+        payload = {
+            "batch_number": number,
+            "batch_size": len(batch_items),
+            "total_items": len(items),
+            "items": batch_items,
+        }
+        (batch_dir / filename).write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        batches.append({
+            "batch_number": number,
+            "item_count": len(batch_items),
+            "path": f"docs/batches/{filename}",
+            "url": base_raw + filename,
+        })
+
+    index = {
+        "generated_at": iso(utcnow()),
+        "retention_hours": RETENTION_HOURS,
+        "total_items": len(items),
+        "batch_size": BATCH_SIZE,
+        "batch_count": len(batches),
+        "batches": batches,
+    }
+    (batch_dir / "index.json").write_text(
+        json.dumps(index, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
 
@@ -629,6 +719,7 @@ def main() -> None:
 
     items = merge_items(results)
     write_json(items, results)
+    write_batches(items)
     write_rss(items)
 
     ok = sum(1 for r in results if r["ok"])
