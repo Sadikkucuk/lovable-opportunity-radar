@@ -1,0 +1,42 @@
+name: Sync AIStartup ideas
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "state/idea_catalog.json"
+      - "scripts/sync_aistartup_supabase.py"
+      - ".github/workflows/sync-aistartup.yml"
+  schedule:
+    # Fallback reconciliation every hour at minute 35 UTC.
+    - cron: "35 * * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-aistartup-ideas
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Sync catalog to AIStartup Supabase
+        env:
+          AISTARTUP_SUPABASE_URL: ${{ secrets.AISTARTUP_SUPABASE_URL }}
+          AISTARTUP_SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.AISTARTUP_SUPABASE_SERVICE_ROLE_KEY }}
+        run: python scripts/sync_aistartup_supabase.py
