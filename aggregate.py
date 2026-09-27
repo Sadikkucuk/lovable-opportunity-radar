@@ -1,11 +1,19 @@
 #!/usr/bin/env python3
 """
-Merge all RSS/Atom feeds listed in sources.opml into:
+Lovable Opportunity Radar feed aggregator.
+
+What this version does differently:
+1) Converts each broad Google News domain feed into a source-specific,
+   sector-focused Google News query at runtime.
+2) Uses local-language search terms for China/Japan/Korea and major EU markets.
+3) Applies an additional relevance guard to broad/general-news sources.
+4) Removes old irrelevant items from the rolling JSON on the next run.
+5) Exposes the effective query/profile in status.json for auditability.
+
+Outputs:
   docs/feed.xml
   docs/latest.json
   docs/status.json
-
-Designed for GitHub Actions. The OPML may contain nested folders.
 """
 
 from __future__ import annotations
@@ -21,7 +29,7 @@ import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
-from urllib.parse import urlparse
+from urllib.parse import urlencode, urlparse
 import xml.etree.ElementTree as ET
 
 import feedparser
@@ -34,13 +42,122 @@ DOCS.mkdir(exist_ok=True)
 
 RETENTION_HOURS = int(os.getenv("RETENTION_HOURS", "72"))
 MAX_ITEMS = int(os.getenv("MAX_ITEMS", "1000"))
-MAX_PER_SOURCE = int(os.getenv("MAX_PER_SOURCE", "30"))
+MAX_PER_SOURCE = int(os.getenv("MAX_PER_SOURCE", "40"))
 FETCH_WORKERS = int(os.getenv("FETCH_WORKERS", "20"))
 TIMEOUT = int(os.getenv("FETCH_TIMEOUT", "20"))
 
 UA = (
-    "Mozilla/5.0 (compatible; LovableOpportunityRadar/1.0; "
-    "+https://github.com/)"
+    "Mozilla/5.0 (compatible; LovableOpportunityRadar/2.0; "
+    "+https://github.com/Sadikkucuk/lovable-opportunity-radar)"
+)
+
+# Compact profiles: broad enough to discover opportunities, narrow enough to
+# remove politics/sports/celebrity/general-news noise.
+PROFILE_TERMS_EN = {
+    "INDUSTRIAL": [
+        "manufacturing", "factory", "industrial software", "automation",
+        "robotics", "digital twin", "supply chain", "AI", "energy",
+        "semiconductor", "maintenance", "quality"
+    ],
+    "TECH": [
+        "AI", "software", "SaaS", "enterprise", "automation", "cloud",
+        "cybersecurity", "semiconductor", "robotics", "data", "API",
+        "digital platform"
+    ],
+    "STARTUP": [
+        "startup", "SaaS", "AI", "enterprise software", "marketplace",
+        "automation", "fintech", "climate tech", "logistics", "funding",
+        "business model", "platform"
+    ],
+    "SEMICONDUCTOR": [
+        "semiconductor", "chip", "electronics", "AI hardware", "EDA",
+        "fab", "packaging", "sensor", "memory", "processor", "foundry"
+    ],
+    "LOGISTICS": [
+        "supply chain", "logistics", "freight", "warehouse", "procurement",
+        "transportation", "fleet", "automation", "AI", "software",
+        "inventory", "shipping"
+    ],
+    "ENERGY_MOBILITY": [
+        "energy", "grid", "battery", "renewable", "EV", "electric vehicle",
+        "charging", "fleet", "mobility", "storage", "climate", "software"
+    ],
+    "ROBOTICS": [
+        "robot", "robotics", "automation", "AI", "autonomous", "warehouse",
+        "factory", "drone", "machine vision", "humanoid"
+    ],
+    "BUSINESS_TECH": [
+        "technology", "AI", "software", "startup", "automation",
+        "semiconductor", "energy", "supply chain", "digital",
+        "robotics", "regulation", "platform"
+    ],
+}
+
+PROFILE_TERMS_LOCAL = {
+    "zh": {
+        "INDUSTRIAL": ["制造", "工厂", "工业软件", "自动化", "机器人", "数字孪生", "供应链", "人工智能", "新能源", "半导体", "芯片"],
+        "TECH": ["人工智能", "AI", "软件", "SaaS", "企业服务", "自动化", "云计算", "网络安全", "半导体", "机器人", "数据"],
+        "STARTUP": ["创业", "初创", "融资", "SaaS", "人工智能", "企业服务", "平台", "市场", "物流", "新能源"],
+        "SEMICONDUCTOR": ["半导体", "芯片", "电子", "晶圆", "封装", "传感器", "存储", "处理器", "EDA"],
+        "LOGISTICS": ["供应链", "物流", "货运", "仓储", "采购", "运输", "车队", "自动化", "软件"],
+        "ENERGY_MOBILITY": ["新能源", "电池", "电动车", "充电", "储能", "能源", "电网", "智能驾驶", "软件"],
+        "ROBOTICS": ["机器人", "自动化", "人工智能", "无人机", "智能制造", "机器视觉", "人形机器人"],
+        "BUSINESS_TECH": ["科技", "人工智能", "软件", "创业", "自动化", "半导体", "新能源", "供应链", "数字化", "机器人"],
+    },
+    "ja": {
+        "INDUSTRIAL": ["製造", "工場", "産業ソフトウェア", "自動化", "ロボット", "デジタルツイン", "サプライチェーン", "AI", "半導体"],
+        "TECH": ["AI", "人工知能", "ソフトウェア", "SaaS", "クラウド", "自動化", "サイバーセキュリティ", "半導体", "ロボット"],
+        "STARTUP": ["スタートアップ", "SaaS", "AI", "資金調達", "企業向けソフトウェア", "マーケットプレイス", "物流"],
+        "SEMICONDUCTOR": ["半導体", "チップ", "電子", "EDA", "ファブ", "パッケージング", "センサー"],
+        "LOGISTICS": ["サプライチェーン", "物流", "倉庫", "調達", "輸送", "自動化", "ソフトウェア"],
+        "ENERGY_MOBILITY": ["エネルギー", "電池", "EV", "電気自動車", "充電", "蓄電", "モビリティ"],
+        "ROBOTICS": ["ロボット", "自動化", "AI", "自律", "倉庫", "工場", "ドローン"],
+        "BUSINESS_TECH": ["テクノロジー", "AI", "ソフトウェア", "スタートアップ", "自動化", "半導体", "エネルギー", "物流"],
+    },
+    "ko": {
+        "INDUSTRIAL": ["제조", "공장", "산업 소프트웨어", "자동화", "로봇", "디지털 트윈", "공급망", "AI", "반도체"],
+        "TECH": ["AI", "인공지능", "소프트웨어", "SaaS", "클라우드", "자동화", "사이버보안", "반도체", "로봇"],
+        "STARTUP": ["스타트업", "SaaS", "AI", "투자", "기업용 소프트웨어", "마켓플레이스", "물류"],
+        "SEMICONDUCTOR": ["반도체", "칩", "전자", "EDA", "파운드리", "패키징", "센서"],
+        "LOGISTICS": ["공급망", "물류", "창고", "조달", "운송", "자동화", "소프트웨어"],
+        "ENERGY_MOBILITY": ["에너지", "배터리", "전기차", "충전", "저장", "모빌리티", "소프트웨어"],
+        "ROBOTICS": ["로봇", "자동화", "AI", "자율", "창고", "공장", "드론"],
+        "BUSINESS_TECH": ["기술", "AI", "소프트웨어", "스타트업", "자동화", "반도체", "에너지", "공급망", "로봇"],
+    },
+    "de": {
+        "BUSINESS_TECH": ["KI", "Software", "Automatisierung", "Robotik", "Halbleiter", "Industrie", "Startup", "Lieferkette", "Energie", "Digitalisierung"],
+        "INDUSTRIAL": ["Produktion", "Fertigung", "Automatisierung", "Robotik", "Industriesoftware", "Lieferkette", "KI", "Halbleiter"],
+        "STARTUP": ["Startup", "SaaS", "KI", "Software", "Plattform", "Finanzierung", "Automatisierung"],
+        "SEMICONDUCTOR": ["Halbleiter", "Chip", "Elektronik", "Sensor", "EDA", "Fertigung"],
+    },
+    "fr": {
+        "BUSINESS_TECH": ["IA", "logiciel", "automatisation", "robotique", "semi-conducteurs", "industrie", "startup", "logistique", "énergie", "numérique"],
+        "INDUSTRIAL": ["industrie", "usine", "production", "automatisation", "robotique", "logiciel industriel", "IA", "semi-conducteurs"],
+        "STARTUP": ["startup", "SaaS", "IA", "logiciel", "plateforme", "financement", "automatisation"],
+    },
+    "it": {
+        "BUSINESS_TECH": ["IA", "software", "automazione", "robotica", "semiconduttori", "industria", "startup", "logistica", "energia", "digitale"],
+        "STARTUP": ["startup", "SaaS", "IA", "software", "piattaforma", "finanziamento", "automazione"],
+    },
+}
+
+# Specialized sources are already narrow; general/broad publications need a
+# stronger post-query relevance guard.
+STRICT_SOURCE_NAMES = {
+    "Reuters Technology", "Caixin", "Yicai / 第一财经", "The Paper / 澎湃新闻",
+    "China Daily", "Xinhua", "China Economic Net", "Securities Times / STCN",
+    "Cailian Press / CLS", "South China Morning Post — China Tech",
+    "Huxiu", "Sohu Technology", "Tencent Technology", "Sina Technology",
+    "Handelsblatt", "Les Echos", "Il Sole 24 Ore", "Nikkei Asia",
+    "The Japan Times", "JETRO", "The Logic", "Korea Herald — Technology/Business",
+    "Pulse by Maeil Business", "Economic Times — Technology"
+}
+
+GENERIC_TITLE_RE = re.compile(
+    r"^\s*[-–—|:]*\s*(startupitalia|caixin|搜狐网|财新网|xinhua|reuters|"
+    r"china daily|the japan times|handelsblatt|les echos|il sole 24 ore)"
+    r"\s*[-–—|:]*\s*$",
+    re.I,
 )
 
 def utcnow() -> datetime:
@@ -96,20 +213,175 @@ def parse_opml() -> list[dict[str, str]]:
 
     return feeds
 
+def profile_for(name: str) -> str:
+    n = name.lower()
+
+    if any(k in n for k in (
+        "semiconductor", "ee times", "eefocus", "electronics weekly",
+        "bits&chips", "theelec"
+    )):
+        return "SEMICONDUCTOR"
+
+    if any(k in n for k in (
+        "robot report", "robotstart", "robotics & automation"
+    )):
+        return "ROBOTICS"
+
+    if any(k in n for k in (
+        "supply chain", "freightwaves"
+    )):
+        return "LOGISTICS"
+
+    if any(k in n for k in (
+        "utility dive", "trellis", "greenbiz", "electric autonomy",
+        "the driven", "cnevpost", "gasgoo"
+    )):
+        return "ENERGY_MOBILITY"
+
+    if any(k in n for k in (
+        "industryweek", "manufacturing", "automation world",
+        "control engineering", "machine design", "design news",
+        "plant services", "quality magazine", "food engineering",
+        "packaging world", "the manufacturer", "the engineer",
+        "produktion", "industrie.de", "usine nouvelle", "ny teknik",
+        "teknisk ukeblad", "eit manufacturing", "monoist"
+    )):
+        return "INDUSTRIAL"
+
+    if any(k in n for k in (
+        "36kr", "equalocean", "pandaily", "technode", "china money network",
+        "sifted", "tech.eu", "eu-startups", "silicon canals", "tnw",
+        "maddyness", "startupitalia", "betakit", "innovationaus",
+        "startup daily", "tech in asia", "dealstreetasia", "yourstory",
+        "inc42", "venturebeat"
+    )):
+        return "STARTUP"
+
+    if any(k in n for k in (
+        "ieee spectrum", "technology review", "techcrunch", "ars technica",
+        "the register", "iot world today", "heise", "computerwoche",
+        "zdnet", "it world canada", "itnews", "ithome", "ofweek",
+        "leiphone", "nikkei xtech", "itmedia", "impress watch", "etnews"
+    )):
+        return "TECH"
+
+    return "BUSINESS_TECH"
+
+def locale_for(meta: dict[str, str]) -> tuple[str, str, str, str]:
+    name = meta["name"]
+    folder = meta["folder"]
+
+    if folder.startswith("China"):
+        return ("zh", "zh-CN", "CN", "CN:zh-Hans")
+    if "Japan" in folder:
+        return ("ja", "ja", "JP", "JP:ja")
+    if "South Korea" in folder:
+        return ("ko", "ko", "KR", "KR:ko")
+
+    if name in {"Heise", "Handelsblatt", "Computerwoche", "Produktion", "Industrie.de"}:
+        return ("de", "de", "DE", "DE:de")
+    if name in {"L'Usine Nouvelle", "Les Echos", "Maddyness", "ZDNet France"}:
+        return ("fr", "fr", "FR", "FR:fr")
+    if name in {"Il Sole 24 Ore", "StartupItalia"}:
+        return ("it", "it", "IT", "IT:it")
+
+    if "Canada" in folder:
+        return ("en", "en-CA", "CA", "CA:en")
+    if "Australia" in folder:
+        return ("en", "en-AU", "AU", "AU:en")
+    if "India" in folder:
+        return ("en", "en-IN", "IN", "IN:en")
+    if "Singapore" in folder:
+        return ("en", "en-SG", "SG", "SG:en")
+    if folder.startswith("Europe"):
+        return ("en", "en-GB", "GB", "GB:en")
+
+    return ("en", "en-US", "US", "US:en")
+
+def domain_for(meta: dict[str, str]) -> str:
+    site = meta.get("site_url") or meta.get("feed_url") or ""
+    host = urlparse(site).netloc.lower()
+    if host.startswith("www."):
+        host = host[4:]
+    return host
+
+def terms_for(meta: dict[str, str], profile: str, lang: str) -> list[str]:
+    local = PROFILE_TERMS_LOCAL.get(lang, {}).get(profile)
+    if local:
+        return local
+    return PROFILE_TERMS_EN[profile]
+
+def effective_feed(meta: dict[str, str]) -> tuple[str, str, str]:
+    profile = profile_for(meta["name"])
+    lang, hl, gl, ceid = locale_for(meta)
+    domain = domain_for(meta)
+    terms = terms_for(meta, profile, lang)
+
+    or_terms = []
+    for term in terms:
+        if " " in term and not (term.startswith('"') and term.endswith('"')):
+            or_terms.append(f'"{term}"')
+        else:
+            or_terms.append(term)
+
+    query = f"site:{domain} (" + " OR ".join(or_terms) + ")"
+    url = "https://news.google.com/rss/search?" + urlencode({
+        "q": query,
+        "hl": hl,
+        "gl": gl,
+        "ceid": ceid,
+    })
+    return url, profile, query
+
+def relevance_terms(meta: dict[str, str], profile: str) -> list[str]:
+    lang, _, _, _ = locale_for(meta)
+    terms = []
+    terms.extend(PROFILE_TERMS_EN[profile])
+    local = PROFILE_TERMS_LOCAL.get(lang, {}).get(profile, [])
+    terms.extend(local)
+    return [t.strip('"').lower() for t in terms if t]
+
+def relevant_text(text: str, terms: list[str]) -> bool:
+    normalized = text.lower()
+    return any(term.lower() in normalized for term in terms)
+
+def is_entry_relevant(meta: dict[str, str], profile: str, title: str, summary: str) -> bool:
+    if not title or len(title.strip()) < 6:
+        return False
+    if GENERIC_TITLE_RE.match(title):
+        return False
+
+    # Query-level filtering is enough for specialist sources.
+    if meta["name"] not in STRICT_SOURCE_NAMES:
+        return True
+
+    combined = f"{title} {summary}"
+    return relevant_text(combined, relevance_terms(meta, profile))
+
 def fetch_one(meta: dict[str, str]) -> dict[str, Any]:
     started = time.monotonic()
+    effective_url, profile, query = effective_feed(meta)
+
     result: dict[str, Any] = {
         **meta,
+        "effective_feed_url": effective_url,
+        "focus_profile": profile,
+        "focus_query": query,
         "ok": False,
         "status": None,
         "error": None,
+        "raw_items": 0,
         "items": [],
         "elapsed_ms": None,
     }
+
     try:
         r = requests.get(
-            meta["feed_url"],
-            headers={"User-Agent": UA, "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*"},
+            effective_url,
+            headers={
+                "User-Agent": UA,
+                "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
+            },
             timeout=TIMEOUT,
         )
         result["status"] = r.status_code
@@ -119,15 +391,22 @@ def fetch_one(meta: dict[str, str]) -> dict[str, Any]:
         if getattr(parsed, "bozo", False) and not parsed.entries:
             raise RuntimeError(str(getattr(parsed, "bozo_exception", "feed parse error")))
 
+        result["raw_items"] = len(parsed.entries)
         entries = []
+
         for entry in parsed.entries[:MAX_PER_SOURCE]:
             title = clean_text(entry.get("title"))
             link = entry.get("link", "").strip()
             if not title or not link:
                 continue
-            published = parse_entry_date(entry)
+
             summary = clean_text(entry.get("summary") or entry.get("description") or "")
+            if not is_entry_relevant(meta, profile, title, summary):
+                continue
+
+            published = parse_entry_date(entry)
             entry_id = str(entry.get("id") or entry.get("guid") or link)
+
             entries.append({
                 "title": title,
                 "url": link,
@@ -138,10 +417,13 @@ def fetch_one(meta: dict[str, str]) -> dict[str, Any]:
 
         result["items"] = entries
         result["ok"] = True
+
     except Exception as exc:
         result["error"] = f"{type(exc).__name__}: {exc}"
+
     finally:
         result["elapsed_ms"] = int((time.monotonic() - started) * 1000)
+
     return result
 
 def dedupe_key(item: dict[str, Any]) -> str:
@@ -156,9 +438,9 @@ def load_existing() -> list[dict[str, Any]]:
         data = json.loads(path.read_text(encoding="utf-8"))
         if isinstance(data, dict):
             return data.get("items", [])
-        return []
     except Exception:
-        return []
+        pass
+    return []
 
 def normalize_date(value: str | None) -> datetime | None:
     if not value:
@@ -168,21 +450,38 @@ def normalize_date(value: str | None) -> datetime | None:
     except Exception:
         return None
 
+def old_item_relevant(item: dict[str, Any]) -> bool:
+    # Re-evaluate rolling-history items so irrelevant results from the previous
+    # broad-domain version disappear immediately after this upgrade.
+    source = item.get("source", "")
+    folder = item.get("folder", "")
+    meta = {
+        "name": source,
+        "folder": folder,
+        "site_url": item.get("source_site", ""),
+        "feed_url": item.get("source_feed", ""),
+    }
+    profile = profile_for(source)
+    return is_entry_relevant(
+        meta,
+        profile,
+        clean_text(item.get("title")),
+        clean_text(item.get("summary")),
+    )
+
 def merge_items(results: list[dict[str, Any]]) -> list[dict[str, Any]]:
     now = utcnow()
     cutoff = now - timedelta(hours=RETENTION_HOURS)
     all_items: list[dict[str, Any]] = []
 
-    # Keep recent historical items so a temporary feed failure does not erase them.
     for old in load_existing():
         dt = normalize_date(old.get("published_at")) or normalize_date(old.get("seen_at"))
-        if dt and dt >= cutoff:
+        if dt and dt >= cutoff and old_item_relevant(old):
             all_items.append(old)
 
     for result in results:
         for item in result["items"]:
             published = normalize_date(item["published_at"])
-            # Undated items are retained because some feeds omit timestamps.
             if published and published < cutoff:
                 continue
 
@@ -197,8 +496,10 @@ def merge_items(results: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 "seen_at": iso(now),
                 "source": result["name"],
                 "source_site": result["site_url"],
-                "source_feed": result["feed_url"],
+                "source_feed": result["effective_feed_url"],
+                "source_original_feed": result["feed_url"],
                 "folder": result["folder"],
+                "focus_profile": result["focus_profile"],
             })
 
     unique: dict[str, dict[str, Any]] = {}
@@ -207,15 +508,17 @@ def merge_items(results: list[dict[str, Any]]) -> list[dict[str, Any]]:
         current = unique.get(key)
         if not current:
             unique[key] = item
-        else:
-            # Prefer the copy with an explicit publication timestamp.
-            if not current.get("published_at") and item.get("published_at"):
-                unique[key] = item
+        elif not current.get("published_at") and item.get("published_at"):
+            unique[key] = item
 
     items = list(unique.values())
 
     def sort_key(x: dict[str, Any]) -> datetime:
-        return normalize_date(x.get("published_at")) or normalize_date(x.get("seen_at")) or datetime.min.replace(tzinfo=timezone.utc)
+        return (
+            normalize_date(x.get("published_at"))
+            or normalize_date(x.get("seen_at"))
+            or datetime.min.replace(tzinfo=timezone.utc)
+        )
 
     items.sort(key=sort_key, reverse=True)
     return items[:MAX_ITEMS]
@@ -229,8 +532,10 @@ def write_json(items: list[dict[str, Any]], results: list[dict[str, Any]]) -> No
         "successful_sources": sum(1 for r in results if r["ok"]),
         "failed_sources": sum(1 for r in results if not r["ok"]),
         "item_count": len(items),
+        "filter_version": "sector-focused-v2",
         "items": items,
     }
+
     (DOCS / "latest.json").write_text(
         json.dumps(payload, ensure_ascii=False, indent=2),
         encoding="utf-8",
@@ -238,6 +543,7 @@ def write_json(items: list[dict[str, Any]], results: list[dict[str, Any]]) -> No
 
     status = {
         "generated_at": iso(now),
+        "filter_version": "sector-focused-v2",
         "source_count": len(results),
         "successful_sources": sum(1 for r in results if r["ok"]),
         "failed_sources": sum(1 for r in results if not r["ok"]),
@@ -245,17 +551,22 @@ def write_json(items: list[dict[str, Any]], results: list[dict[str, Any]]) -> No
             {
                 "name": r["name"],
                 "folder": r["folder"],
-                "feed_url": r["feed_url"],
+                "focus_profile": r["focus_profile"],
+                "focus_query": r["focus_query"],
+                "original_feed_url": r["feed_url"],
+                "effective_feed_url": r["effective_feed_url"],
                 "site_url": r["site_url"],
                 "ok": r["ok"],
                 "http_status": r["status"],
-                "items_received": len(r["items"]),
+                "raw_items_received": r["raw_items"],
+                "items_kept": len(r["items"]),
                 "elapsed_ms": r["elapsed_ms"],
                 "error": r["error"],
             }
             for r in sorted(results, key=lambda x: (x["folder"], x["name"].lower()))
         ],
     }
+
     (DOCS / "status.json").write_text(
         json.dumps(status, ensure_ascii=False, indent=2),
         encoding="utf-8",
@@ -266,12 +577,12 @@ def rfc2822(dt: datetime) -> str:
     return format_datetime(dt.astimezone(timezone.utc))
 
 def write_rss(items: list[dict[str, Any]]) -> None:
-    ET.register_namespace("atom", "http://www.w3.org/2005/Atom")
     rss = ET.Element("rss", version="2.0")
     channel = ET.SubElement(rss, "channel")
-    ET.SubElement(channel, "title").text = "Lovable Opportunity Radar — Combined Feed"
+    ET.SubElement(channel, "title").text = "Lovable Opportunity Radar — Focused Combined Feed"
     ET.SubElement(channel, "description").text = (
-        "Combined recent articles from the Lovable Opportunity Radar source universe."
+        "Sector-focused opportunity feed across technology, industry, AI, "
+        "automation, startups, logistics, energy and semiconductors."
     )
     ET.SubElement(channel, "language").text = "en"
     ET.SubElement(channel, "lastBuildDate").text = rfc2822(utcnow())
@@ -291,6 +602,7 @@ def write_rss(items: list[dict[str, Any]]) -> None:
         if item.get("summary"):
             desc_parts.append(item["summary"])
         desc_parts.append(f'Source: {item["source"]}')
+        desc_parts.append(f'Focus: {item.get("focus_profile", "")}')
         if item.get("folder"):
             desc_parts.append(f'Folder: {item["folder"]}')
         if item.get("source_site"):
@@ -321,9 +633,13 @@ def main() -> None:
 
     ok = sum(1 for r in results if r["ok"])
     failed = len(results) - ok
-    print(f"Sources: {len(results)} | OK: {ok} | Failed: {failed} | Items: {len(items)}")
+    raw = sum(r["raw_items"] for r in results)
+    kept = sum(len(r["items"]) for r in results)
+    print(
+        f"Sources: {len(results)} | OK: {ok} | Failed: {failed} | "
+        f"Raw: {raw} | Kept this run: {kept} | Rolling items: {len(items)}"
+    )
 
-    # Don't fail the whole workflow for a few unavailable sources.
     if ok == 0:
         raise SystemExit("All source fetches failed")
 
