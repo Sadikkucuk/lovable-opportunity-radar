@@ -2,7 +2,7 @@
   "schema_version": 1,
   "site_name": "AIStartup",
   "description": "Canonical persistent idea catalog consumed by the AIStartup web application.",
-  "updated_at": "2026-09-27T00:00:00Z",
+  "updated_at": "2026-09-27T08:30:00Z",
   "ideas": [
     {
       "canonical_key": "competition-organizer|enforce-ai-use-policy-on-submissions|declaration-rule-engine-review-evidence",
@@ -559,6 +559,248 @@
       "validation_assumption": "10 agency/brand'den en az 3'ünün 100+ active printed QR asset'i var mı ve bunların merkezi inventory'si yok mu?",
       "evidence_strength": "Strong",
       "competition_confidence": "High",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-09-27",
+      "last_updated_at": "2026-09-27"
+    },
+    {
+      "canonical_key": "ev-charge-operator|size-storage-under-turkiye-contract-power-rule|epdk-aware-bess-feasibility-calculator",
+      "idea_name": "ŞarjDepo — EPDK BESS Fizibilite",
+      "scope_tier": "Türkiye",
+      "scope_reason": "Ürünün temel değeri EPDK'nın Türkiye'ye özgü yeni şarj istasyonu + depolama kuralını anlaşma gücü ve BESS boyutlandırma kararına çevirmesidir.",
+      "news_source": "PetroTurk",
+      "news_title": "EPDK’dan elektrikli araç şarj altyapısına yeni düzenleme",
+      "news_date": "2026-09-25",
+      "news_url": "https://www.petroturk.com/manset/epdkdan-elektrikli-arac-sarj-altyapisina-yeni-duzenleme",
+      "source_links": [
+        {
+          "label": "PetroTurk — EPDK yeni düzenleme",
+          "url": "https://www.petroturk.com/manset/epdkdan-elektrikli-arac-sarj-altyapisina-yeni-duzenleme"
+        },
+        {
+          "label": "EPDK — Enerji Dönüşümü / şarj altyapısı",
+          "url": "https://epdk.gov.tr/Detay/Icerik/12-1040/enerji-donusumu"
+        },
+        {
+          "label": "NREL EVI-X",
+          "url": "https://www.nrel.gov/transportation/evi-x.html"
+        },
+        {
+          "label": "QDTB PV + Storage + EV Charging Configurator",
+          "url": "https://qdtb-transformer.com/calculators/pv-storage-charging-configurator"
+        }
+      ],
+      "core_idea": "Şarj ağı işletmecisi veya lokasyon sahibi; mevcut anlaşma gücü, planlanan DC charger gücü, eşzamanlı araç sayısı ve talep profilini girer. Sistem yeni EPDK çerçevesine göre şebeke anlaşma gücünü aşmadan hizmet verebilmek için yaklaşık BESS kW/kWh ihtiyacını, kontrol şartlarını ve 'şebeke artırımı mı depolama mı?' senaryosunu çıkarır.",
+      "user_story": "Bir şarj istasyonu yatırımcısı olarak lokasyonumun anlaşma gücünü büyütmeden daha yüksek güçlü charger kurmak istiyorum; gerekli BESS gücünü ve kapasitesini hızlıca hesaplayıp yatırım seçeneğini daha mühendislik ihalesine çıkmadan önce görmek istiyorum.",
+      "before_state": "Yatırımcı çoğu zaman charger gücü, anlaşma gücü, eşzamanlı kullanım ve batarya ihtiyacını ayrı ayrı Excel hesapları veya EPC danışmanlığıyla değerlendiriyor. Yeni depolama esnekliğinin ekonomik etkisini hızlı karşılaştırmak zor.",
+      "after_state": "Anlaşma gücü + charger konfigürasyonu + beklenen yük → peak deficit hesabı → BESS kW/kWh senaryoları → EPDK kontrol şartları checklist → şebeke artırımı / BESS karşılaştırma raporu.",
+      "why_now": "25 Eylül 2026'da duyurulan düzenleme, şarj istasyonuna bütünleşik depolamanın anlaşma gücünden daha yüksek deşarj gücüyle kullanılabilmesine imkân verirken şebekeye enerji basılmasını ve anlaşma gücü aşımını önleyen otomatik kontrol/kesme şartları getiriyor. Bu, daha önce sınırlı olan bir yatırım seçeneğini doğrudan fizibilite problemine dönüştürüyor.",
+      "target_customer": "şarj ağı işletmecileri, akaryakıt istasyonları, otoyol tesisleri, AVM/otel/filo lokasyon sahipleri ve EV charging EPC firmaları",
+      "buyer": "şarj yatırımı yapan işletme sahibi, CPO yatırım ekibi veya EPC satış/proje ekibi",
+      "market": "Türkiye",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 2,
+      "direct_competitors": [
+        {
+          "name": "NREL EVI-X / EVI-EnSite",
+          "url": "https://www.nrel.gov/transportation/evi-x.html",
+          "reason": "EV charging site design içinde behind-the-meter storage sizing ve site optimization yapıyor; ticari SaaS değil ama aynı karar işinin güçlü bir alternatifi."
+        },
+        {
+          "name": "QDTB PV + Storage + EV Charging Configurator",
+          "url": "https://qdtb-transformer.com/calculators/pv-storage-charging-configurator",
+          "reason": "PV + battery storage + EV charging kapasite eşleştirme ve ekonomi hesabı yapan doğrudan web configurator."
+        }
+      ],
+      "adjacent_competitors": [
+        "Türkiye'deki EV CSMS/CPMS ürünleri — istasyon operasyonunu yönetiyor, yatırım öncesi EPDK-aware BESS sizing ana işi değil",
+        "EPC/enerji danışmanlık firmaları — manuel proje/fizibilite hizmeti",
+        "genel BESS sizing araçları — Türkiye şarj mevzuatı workflow'una özel değil"
+      ],
+      "market_gap": "Basit bir BESS calculator değil; Türkiye'deki anlaşma gücü kısıtı, EPDK kontrol şartları ve EV charger peak demand'i aynı pre-feasibility workflow'unda birleştirir.",
+      "business_models": [
+        {
+          "model": "per-site feasibility report",
+          "estimate": "€29–79/site"
+        },
+        {
+          "model": "EPC/CPO SaaS",
+          "estimate": "€49–149/month"
+        },
+        {
+          "model": "team workspace",
+          "estimate": "multi-site portfolio subscription"
+        }
+      ],
+      "lovable_credits_total": 390,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 70,
+        "core_workflows": 125,
+        "calculation_rule_engine": 75,
+        "testing_fixes": 75,
+        "launch_polish": 45
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "web application",
+          "cost": "existing Lovable credits"
+        },
+        {
+          "name": "Supabase/PostgreSQL",
+          "purpose": "saved projects, scenarios and rules",
+          "cost": "free tier"
+        },
+        {
+          "name": "TypeScript",
+          "purpose": "deterministic load/BESS calculations",
+          "cost": "free"
+        },
+        {
+          "name": "EPDK public documentation",
+          "purpose": "versioned regulatory checklist",
+          "cost": "public/free"
+        },
+        {
+          "name": "CSV import",
+          "purpose": "optional hourly charging/load profile",
+          "cost": "browser-side/free"
+        },
+        {
+          "name": "client-side PDF export",
+          "purpose": "pre-feasibility report",
+          "cost": "open-source/free"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Project/site form; agreement power and charger configuration; hourly/manual demand profile input; peak-deficit and BESS kW/kWh calculator; regulatory checklist; 3 scenario comparison; PDF pre-feasibility report. No live OCPP integration in MVP.",
+      "working_logic": "Kullanıcı anlaşma gücünü, charger adet/güçlerini ve kullanım varsayımlarını girer → sistem saatlik/peak güç açığını hesaplar → seçilen destek süresine göre minimum BESS power/energy aralığını üretir → EPDK kontrol şartlarını checklist olarak uygular → farklı batarya senaryolarını şebeke artırımıyla karşılaştırır → rapor üretir.",
+      "build_time": "7–10 founder days",
+      "marketing_strategy": "Ücretsiz 'BESS gerekir mi?' calculator ile lead generation; LinkedIn'de CPO/EPC/akaryakıt/AVM enerji yöneticilerine outbound; EPDK düzenlemesini açıklayan SEO içerikleri.",
+      "first_customer_plan": "Yeni DC fast charger lokasyonu planlayan 10 EPC/CPO veya akaryakıt tesisiyle ücretsiz ilk fizibilite; hesap sonrası detaylı proje raporu için SaaS dönüşümü.",
+      "main_risk": "MVP yalnız pre-feasibility vermeli; gerçek elektrik projesi, koruma koordinasyonu ve dağıtım şirketi onayı yerine geçiyormuş gibi konumlandırılırsa teknik/hukuki risk doğar.",
+      "validation_assumption": "10 CPO/EPC yatırım ekibinden en az 3'ü yeni kural sonrası 'anlaşma gücünü artırmak mı BESS kurmak mı?' hesabını tekrar eden bir problem olarak yaşıyor ve self-service pre-feasibility için ödeme yapar mı?",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-09-27",
+      "last_updated_at": "2026-09-27"
+    },
+    {
+      "canonical_key": "fresh-produce-exporter|decide-route-with-permit-quota-border-delay-and-shelf-life|shipment-scenario-decision-ledger",
+      "idea_name": "FreshRoute TR — İhracat Geçiş ve Raf Ömrü Masası",
+      "scope_tier": "Türkiye",
+      "scope_reason": "İlk ürün Türkiye'den yaş meyve-sebze ihracatında ülke geçiş belgesi kotaları, sınır beklemeleri ve Türkiye çıkışlı taşıma kararlarını birlikte yönetmeye odaklanır.",
+      "news_source": "Dünya",
+      "news_title": "Meyve sebze ihracatçısının lojistik sorunlarına Bakanlık neşteri",
+      "news_date": "2026-09-25",
+      "news_url": "https://www.dunya.com/sektorler/meyve-sebze-ihracatcisinin-lojistik-sorunlarina-bakanlik-nesteri-haberi-841427",
+      "source_links": [
+        {
+          "label": "Dünya — sektörün lojistik sorunları",
+          "url": "https://www.dunya.com/sektorler/meyve-sebze-ihracatcisinin-lojistik-sorunlarina-bakanlik-nesteri-haberi-841427"
+        },
+        {
+          "label": "UHDGM — 2026 yılı geçiş belgeleri",
+          "url": "https://uhdgm.uab.gov.tr/duyurular/2026-yili-gecis-belgeleri-hakkinda-bilgilendirme"
+        },
+        {
+          "label": "TOBB GEBOS",
+          "url": "https://www.tobb.org.tr/gebos/Sayfalar/AnaSayfa.php"
+        },
+        {
+          "label": "ShelfCastAI",
+          "url": "https://www.shelfcastai.com/"
+        },
+        {
+          "label": "Citrus Freight",
+          "url": "https://www.citrusfreight.com/"
+        }
+      ],
+      "core_idea": "Yaş meyve-sebze ihracatçısı her sevkiyat için ürünün kalan ticari raf ömrünü, hedef ülkeyi, taşıma modunu, tahmini sınır beklemesini ve geçiş belgesi/kota durumunu tek ekrana girer. Sistem 'bu sevkiyat bu rotada hâlâ mantıklı mı?' sorusuna risk, alternatif rota/mod ve kayıp-maliyet senaryosu üretir; aynı zamanda yaşanan gecikmeleri kanıtlı bir issue ledger'da toplar.",
+      "user_story": "Bir yaş meyve-sebze ihracatçısı olarak ürün kamyona yüklenmeden önce kota, sınır bekleme ve raf ömrü riskini aynı yerde görmek istiyorum; böylece yanlış rota yüzünden ürünün değer kaybetmesini veya teslimatın yetişmemesini azaltabilirim.",
+      "before_state": "Geçiş belgesi bilgisi GEBOS/duyurularda, operasyon bilgisi WhatsApp/telefon/Excel'de, ürünün kalan raf ömrü ise ekip tecrübesinde kalıyor. Rota kararı çoğu zaman bu veriler tek hesapta birleşmeden veriliyor.",
+      "after_state": "Shipment + ürün/raf ömrü + ülke/rota + permit/quota state + bekleme varsayımı + taşıma maliyeti → risk score → go/hold/reroute kararı → alternatif senaryo → gecikme/kayıp evidence ledger.",
+      "why_now": "25 Eylül 2026 tarihli sektör haberinde yıllık 7 milyar doların üzerindeki ihracatın 10 milyar dolar hedefi için Rusya güvenlik koridoru, sınır bekleme süreleri, geçiş belgesi kotaları, hava kargo ve liman maliyetleri doğrudan darboğaz olarak Bakanlığa taşındı. UHDGM'nin 2026 sistemi de ülke bazlı belgelerin dönemsel açılması ve özel kota kurallarını gösteriyor.",
+      "target_customer": "Türkiye'deki yaş meyve-sebze ihracatçıları, ihracat operasyon ekipleri ve reefer taşımacılığı yapan forwarder'lar",
+      "buyer": "ihracat operasyon müdürü, lojistik müdürü veya orta ölçekli ihracatçı firma sahibi",
+      "market": "Türkiye",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [
+        "TOBB GEBOS — geçiş belgesi tahsisi/durumu; ürün raf ömrü ve rota ekonomik kararını çözmüyor",
+        "ShelfCastAI — shelf-life based routing; uluslararası geçiş belgesi/kota workflow'u yok",
+        "Citrus Freight — reefer booking/forwarding; Türkiye road permit + shelf-life decision desk değil",
+        "genel TMS/cold-chain yazılımları — operasyon/izleme yapıyor, bu dar pre-dispatch decision problemine odaklanmıyor"
+      ],
+      "market_gap": "TMS olmaya çalışmaz. Türkiye çıkışlı bozulabilir ürün sevkiyatında permit/quota + border delay + remaining shelf-life + alternatif taşıma maliyetini tek go/no-go kararında birleştiren küçük decision-support layer olur.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "€39–99/month per exporter"
+        },
+        {
+          "model": "usage-based",
+          "estimate": "shipment scenario packs"
+        },
+        {
+          "model": "team workspace",
+          "estimate": "export operations team plan"
+        }
+      ],
+      "lovable_credits_total": 420,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 85,
+        "core_workflows": 135,
+        "calculation_rule_engine": 80,
+        "testing_fixes": 75,
+        "launch_polish": 45
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "web application",
+          "cost": "existing Lovable credits"
+        },
+        {
+          "name": "Supabase/PostgreSQL",
+          "purpose": "shipments, routes, permit rules and issue ledger",
+          "cost": "free tier"
+        },
+        {
+          "name": "UHDGM public permit tables/announcements",
+          "purpose": "baseline permit rules and opening periods",
+          "cost": "public/free"
+        },
+        {
+          "name": "manual CSV / user entry",
+          "purpose": "GEBOS/quota status and company-specific costs where no public API exists",
+          "cost": "free"
+        },
+        {
+          "name": "TypeScript rule engine",
+          "purpose": "shelf-life buffer, delay and route scenario calculations",
+          "cost": "free"
+        },
+        {
+          "name": "client-side PDF/CSV export",
+          "purpose": "decision/evidence report",
+          "cost": "open-source/free"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Shipment intake; product shelf-life presets/manual value; target country/route; permit rule table; user-entered quota/border wait; road/air/sea scenario cost; freshness-at-arrival buffer; go/hold/reroute indicator; issue ledger and exportable report. No live GPS or paid freight API.",
+      "working_logic": "Kullanıcı ürün, hasat/paketleme zamanı, kalan raf ömrü, hedef ülke, rota ve taşıma maliyetini girer → sistem permit rule/kota bilgisini kontrol eder → bekleme süresini raf ömründen düşer → varıştaki freshness buffer ve ekonomik kayıp riskini hesaplar → alternatif rota/modları yan yana gösterir → karar ve gerçekleşen gecikme issue ledger'a kaydedilir.",
+      "build_time": "8–12 founder days",
+      "marketing_strategy": "Akdeniz/Ege yaş meyve-sebze ihracatçı birlikleri ve LinkedIn üzerinden operasyon yöneticilerine doğrudan outreach; ücretsiz 'shipment freshness buffer' calculator; sınır/kota değişiklikleri için SEO içerikleri.",
+      "first_customer_plan": "Rusya/AB hatlarında reefer karayolu ihracatı yapan 10 orta ölçekli firma ile geçmiş 20 sevkiyat üzerinden ücretsiz back-test; kayıp/gecikme kararını gerçekten değiştiren firmalara pilot.",
+      "main_risk": "Gerçek zamanlı sınır bekleme ve GEBOS kota verisinin açık API olmaması. MVP bu nedenle user-entered/CSV veriyle karar desteği verir; 'live data' iddiası taşımaz.",
+      "validation_assumption": "10 yaş meyve-sebze ihracatçısından en az 3'ü sevkiyat öncesinde geçiş belgesi/kota + sınır bekleme + ürün raf ömrünü bugün tek bir modelde birleştiremediğini ve bu karar desteğine aylık ödeme yapacağını söylüyor mu?",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium",
       "verification_status": "qualified",
       "status": "published",
       "first_reported_at": "2026-09-27",
