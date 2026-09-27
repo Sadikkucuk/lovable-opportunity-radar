@@ -1,0 +1,203 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Sadikkucuk/lovable-opportunity-radar/main/schemas/idea-catalog.schema.json",
+  "title": "AIStartup Idea Catalog",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "site_name",
+    "updated_at",
+    "ideas"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "site_name": {
+      "type": "string",
+      "const": "AIStartup"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "ideas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "canonical_key",
+          "idea_name",
+          "scope_tier",
+          "news_source",
+          "news_title",
+          "news_url",
+          "core_idea",
+          "user_story",
+          "before_state",
+          "after_state",
+          "target_customer",
+          "turkiye_direct_competitor_count",
+          "global_direct_competitor_count",
+          "business_models",
+          "lovable_credits_total",
+          "technologies",
+          "external_cash_cost",
+          "mvp",
+          "working_logic",
+          "marketing_strategy",
+          "verification_status",
+          "status",
+          "first_reported_at",
+          "last_updated_at"
+        ],
+        "properties": {
+          "canonical_key": {
+            "type": "string",
+            "minLength": 5
+          },
+          "idea_name": {
+            "type": "string",
+            "minLength": 2
+          },
+          "scope_tier": {
+            "type": "string",
+            "enum": [
+              "Lüleburgaz",
+              "Türkiye",
+              "Dünya",
+              "Evren"
+            ]
+          },
+          "scope_reason": {
+            "type": "string"
+          },
+          "news_source": {
+            "type": "string"
+          },
+          "news_title": {
+            "type": "string"
+          },
+          "news_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "news_url": {
+            "type": "string"
+          },
+          "source_links": {
+            "type": "array"
+          },
+          "core_idea": {
+            "type": "string"
+          },
+          "user_story": {
+            "type": "string"
+          },
+          "before_state": {
+            "type": "string"
+          },
+          "after_state": {
+            "type": "string"
+          },
+          "why_now": {
+            "type": "string"
+          },
+          "target_customer": {
+            "type": "string"
+          },
+          "buyer": {
+            "type": "string"
+          },
+          "market": {
+            "type": "string"
+          },
+          "turkiye_direct_competitor_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "global_direct_competitor_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "direct_competitors": {
+            "type": "array"
+          },
+          "adjacent_competitors": {
+            "type": "array"
+          },
+          "market_gap": {
+            "type": "string"
+          },
+          "business_models": {
+            "type": "array"
+          },
+          "lovable_credits_total": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 500
+          },
+          "lovable_credit_breakdown": {
+            "type": "object"
+          },
+          "technologies": {
+            "type": "array"
+          },
+          "external_cash_cost": {
+            "type": "number",
+            "const": 0
+          },
+          "mvp": {
+            "type": "string"
+          },
+          "working_logic": {
+            "type": "string"
+          },
+          "build_time": {
+            "type": "string"
+          },
+          "marketing_strategy": {
+            "type": "string"
+          },
+          "first_customer_plan": {
+            "type": "string"
+          },
+          "main_risk": {
+            "type": "string"
+          },
+          "validation_assumption": {
+            "type": "string"
+          },
+          "evidence_strength": {
+            "type": "string"
+          },
+          "competition_confidence": {
+            "type": "string"
+          },
+          "verification_status": {
+            "type": "string",
+            "enum": [
+              "qualified",
+              "competition_not_verified"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "published",
+              "archived"
+            ]
+          },
+          "first_reported_at": {
+            "type": "string"
+          },
+          "last_updated_at": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
