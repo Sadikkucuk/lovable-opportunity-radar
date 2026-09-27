@@ -314,6 +314,130 @@ Material updates to existing ideas: W
 Do not list suppressed duplicate ideas in detail unless the user explicitly asks.
 
 
+
+==================================================
+AISTARTUP WEBSITE CATALOG
+==================================================
+
+In addition to idea_history.json, maintain this persistent canonical website file:
+
+state/idea_catalog.json
+
+This is the ONLY GitHub data source that the AIStartup website should mirror
+into its ideas table.
+
+For every NEW idea actually shown to the user for the first time:
+- append a full record to state/idea_catalog.json;
+- use canonical_key as the unique identity;
+- do not create a second record for the same semantic idea;
+- if the idea later receives a material update, update the existing record.
+
+The catalog must preserve these fields:
+
+- canonical_key
+- idea_name
+- scope_tier
+- scope_reason
+- news_source
+- news_title
+- news_date
+- news_url
+- source_links
+- core_idea
+- user_story
+- before_state
+- after_state
+- why_now
+- target_customer
+- buyer
+- market
+- turkiye_direct_competitor_count
+- global_direct_competitor_count
+- direct_competitors
+- adjacent_competitors
+- market_gap
+- business_models
+- lovable_credits_total
+- lovable_credit_breakdown
+- technologies
+- external_cash_cost
+- mvp
+- working_logic
+- build_time
+- marketing_strategy
+- first_customer_plan
+- main_risk
+- validation_assumption
+- evidence_strength
+- competition_confidence
+- verification_status
+- status
+- first_reported_at
+- last_updated_at
+
+Allowed verification_status values:
+- qualified
+- competition_not_verified
+
+Default status:
+- published
+
+Do not put suppressed duplicates into idea_catalog.json as new rows.
+
+------------------------------
+SCOPE TIER CLASSIFICATION
+------------------------------
+
+Every idea MUST receive exactly one scope_tier:
+
+Lüleburgaz
+Türkiye
+Dünya
+Evren
+
+Use the following rule:
+
+Lüleburgaz:
+The practical paying market or primary operational problem is specifically
+local to Lüleburgaz or its immediate industrial/commercial ecosystem.
+
+Türkiye:
+The product primarily depends on Turkish law, Turkish institutions, Turkish
+market structure, Turkish language/workflow, or a Türkiye-specific operational
+problem, even if the software is technically accessible online elsewhere.
+
+Dünya:
+The product can realistically be sold as an online service across multiple
+countries without its core value depending on one local jurisdiction.
+
+Evren:
+Use ONLY for a genuine space/off-Earth economy or operations opportunity:
+satellites, orbital infrastructure, lunar/planetary operations, space logistics,
+space data-center operations, off-Earth resource/asset management, etc.
+Do not use "Evren" merely because the idea sounds futuristic.
+
+Always include scope_reason in one concise sentence.
+
+When geography is ambiguous, choose the narrowest geography that accurately
+describes the first realistic paying market.
+
+------------------------------
+CATALOG WRITE SAFETY
+------------------------------
+
+Before writing state/idea_catalog.json:
+1. read the current file;
+2. match by canonical_key and semantic identity;
+3. preserve all unrelated existing idea records;
+4. update only the intended records;
+5. set updated_at on the catalog;
+6. never delete an old catalog record merely because its triggering news left
+   the 72-hour rolling window.
+
+If the catalog write fails, state:
+AISTARTUP CATALOG WRITE FAILED — WEBSITE MAY NOT RECEIVE THIS RUN
+
+
 PRIMARY OBJECTIVE
 Do not produce a news summary.
 
@@ -1198,6 +1322,8 @@ Gerekirse bir örnek kullanıcı akışı ekle.
 - Pazar:
   Türkiye / belirli ülke / bölgesel / global
 - En çok fayda görecek ilk niche:
+- Scope Tier: Lüleburgaz / Türkiye / Dünya / Evren
+- Scope gerekçesi:
 
 7. TÜRKİYE REKABETİ
 Mutlak "rakip yok" iddiası kurma.
@@ -1467,3 +1593,5 @@ OUTPUT RULES
 - Keep unresolved but promising opportunities in the separate COMPETITION NOT VERIFIED section rather than silently deleting them.
 - The final reader should be able to understand each idea without reading the original article.
 - Technical English abbreviations and standard terms must remain in English.
+- Every newly emitted idea must also be persisted to state/idea_catalog.json using the exact website catalog schema.
+- Every idea must have exactly one scope_tier: Lüleburgaz, Türkiye, Dünya or Evren.
