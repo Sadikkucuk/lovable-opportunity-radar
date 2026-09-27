@@ -37,8 +37,11 @@ import requests
 
 ROOT = Path(__file__).resolve().parent
 OPML_PATH = ROOT / "sources.opml"
-DOCS = ROOT / "docs"
-DOCS.mkdir(exist_ok=True)
+OUTPUT_DIR = os.getenv("OUTPUT_DIR", "docs").strip().strip("/") or "docs"
+DOCS = ROOT / OUTPUT_DIR
+DOCS.mkdir(parents=True, exist_ok=True)
+SOURCE_FOLDER_PREFIX = os.getenv("SOURCE_FOLDER_PREFIX", "").strip()
+LOAD_EXISTING = os.getenv("LOAD_EXISTING", "1").strip().lower() not in {"0", "false", "no"}
 
 RETENTION_HOURS = int(os.getenv("RETENTION_HOURS", "72"))
 MAX_ITEMS = int(os.getenv("MAX_ITEMS", "1000"))
@@ -48,7 +51,7 @@ FETCH_WORKERS = int(os.getenv("FETCH_WORKERS", "20"))
 TIMEOUT = int(os.getenv("FETCH_TIMEOUT", "20"))
 
 UA = (
-    "Mozilla/5.0 (compatible; LovableOpportunityRadar/3.0; "
+    "Mozilla/5.0 (compatible; LovableOpportunityRadar/4.0; "
     "+https://github.com/Sadikkucuk/lovable-opportunity-radar)"
 )
 
@@ -148,6 +151,16 @@ PROFILE_TERMS_LOCAL = {
         "INDUSTRIAL": ["industri", "produksjon", "automatisering", "robotikk", "AI", "halvleder", "energi", "forsyningskjede", "programvare"],
         "BUSINESS_TECH": ["teknologi", "AI", "programvare", "startup", "automatisering", "robotikk", "halvleder", "energi"],
     },
+    "tr": {
+        "INDUSTRIAL": ["sanayi", "üretim", "fabrika", "otomasyon", "robotik", "endüstriyel yazılım", "dijital dönüşüm", "tedarik zinciri", "yapay zeka", "enerji", "bakım", "kalite"],
+        "TECH": ["yapay zeka", "AI", "yazılım", "SaaS", "bulut", "otomasyon", "siber güvenlik", "veri", "API", "dijital platform", "fintech", "robotik"],
+        "STARTUP": ["girişim", "startup", "yatırım", "fonlama", "SaaS", "yapay zeka", "fintech", "pazaryeri", "platform", "iş modeli", "lojistik", "iklim teknolojisi"],
+        "SEMICONDUCTOR": ["yarı iletken", "çip", "elektronik", "sensör", "işlemci", "bellek", "paketleme", "üretim"],
+        "LOGISTICS": ["lojistik", "tedarik zinciri", "taşımacılık", "nakliye", "depo", "depolama", "filo", "stok", "envanter", "liman", "kargo", "otomasyon"],
+        "ENERGY_MOBILITY": ["enerji", "elektrik", "şebeke", "batarya", "yenilenebilir", "güneş", "rüzgar", "elektrikli araç", "şarj", "mobilite", "depolama"],
+        "ROBOTICS": ["robot", "robotik", "otomasyon", "yapay zeka", "otonom", "drone", "makine görüşü", "üretim", "depo"],
+        "BUSINESS_TECH": ["teknoloji", "yapay zeka", "AI", "yazılım", "girişim", "startup", "otomasyon", "sanayi", "üretim", "enerji", "lojistik", "tedarik zinciri", "e-ticaret", "dijital", "mevzuat", "yönetmelik", "tebliğ", "destek", "teşvik", "yatırım", "KOBİ", "siber güvenlik", "fintech"],
+    },
 }
 
 # These publications are primarily consumed/indexed in English even though
@@ -160,6 +173,29 @@ ENGLISH_SOURCE_NAMES = {
     "TheElec", "Korea Herald — Technology/Business", "Pulse by Maeil Business",
 }
 
+SOURCE_PROFILE_OVERRIDES = {
+    "Webrazzi": "STARTUP",
+    "eGirişim": "STARTUP",
+    "Startups.watch": "STARTUP",
+    "StartupCentrum": "STARTUP",
+    "StartupTeknoloji": "STARTUP",
+    "FinTech İstanbul": "STARTUP",
+    "TechInside": "TECH",
+    "ShiftDelete.Net": "TECH",
+    "BT Haber": "TECH",
+    "ICT Media": "TECH",
+    "Turk-internet.com": "TECH",
+    "ST Endüstri": "INDUSTRIAL",
+    "Sanayi Gazetesi": "INDUSTRIAL",
+    "UTA Lojistik": "LOGISTICS",
+    "Lojistik Hattı": "LOGISTICS",
+    "Deniz Haber": "LOGISTICS",
+    "Enerji Günlüğü": "ENERGY_MOBILITY",
+    "Enerji Portalı": "ENERGY_MOBILITY",
+    "PetroTurk": "ENERGY_MOBILITY",
+    "Yeşil Ekonomi": "ENERGY_MOBILITY",
+}
+
 # Specialized sources are already narrow; general/broad publications need a
 # stronger post-query relevance guard.
 STRICT_SOURCE_NAMES = {
@@ -169,7 +205,14 @@ STRICT_SOURCE_NAMES = {
     "Huxiu", "Sohu Technology", "Tencent Technology", "Sina Technology",
     "Handelsblatt", "Les Echos", "Il Sole 24 Ore", "Nikkei Asia",
     "The Japan Times", "JETRO", "The Logic", "Korea Herald — Technology/Business",
-    "Pulse by Maeil Business", "Economic Times — Technology"
+    "Pulse by Maeil Business", "Economic Times — Technology",
+    "Ekonomim", "Dünya", "Bloomberg HT", "Forbes Türkiye", "Fortune Türkiye",
+    "Fast Company Türkiye", "Capital", "Ekonomist", "Marketing Türkiye",
+    "MediaCat", "Digital Age", "Perakende.org", "Retail Türkiye", "Gıda Hattı",
+    "Resmi Gazete", "Ticaret Bakanlığı", "Sanayi ve Teknoloji Bakanlığı",
+    "KOSGEB", "TÜBİTAK", "BTK", "EPDK", "KVKK", "Rekabet Kurumu",
+    "SPK", "BDDK", "TCMB", "Trakya Kalkınma Ajansı",
+    "Lüleburgaz TSO", "Lüleburgaz Belediyesi", "Kırklareli Valiliği"
 }
 
 GENERIC_TITLE_RE = re.compile(
@@ -230,9 +273,15 @@ def parse_opml() -> list[dict[str, str]]:
     for child in body.findall("outline"):
         walk(child, [])
 
+    if SOURCE_FOLDER_PREFIX:
+        feeds = [f for f in feeds if f["folder"].startswith(SOURCE_FOLDER_PREFIX)]
+
     return feeds
 
 def profile_for(name: str) -> str:
+    if name in SOURCE_PROFILE_OVERRIDES:
+        return SOURCE_PROFILE_OVERRIDES[name]
+
     n = name.lower()
 
     if any(k in n for k in (
@@ -297,6 +346,9 @@ def locale_for(meta: dict[str, str]) -> tuple[str, str, str, str]:
         return ("sv", "sv", "SE", "SE:sv")
     if name == "Teknisk Ukeblad":
         return ("no", "no", "NO", "NO:no")
+
+    if folder.startswith("Türkiye"):
+        return ("tr", "tr", "TR", "TR:tr")
 
     if folder.startswith("China"):
         return ("zh", "zh-CN", "CN", "CN:zh-Hans")
@@ -470,6 +522,8 @@ def dedupe_key(item: dict[str, Any]) -> str:
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()
 
 def load_existing() -> list[dict[str, Any]]:
+    if not LOAD_EXISTING:
+        return []
     path = DOCS / "latest.json"
     if not path.exists():
         return []
@@ -574,7 +628,7 @@ def write_json(items: list[dict[str, Any]], results: list[dict[str, Any]]) -> No
         "successful_sources": sum(1 for r in results if r["ok"]),
         "failed_sources": sum(1 for r in results if not r["ok"]),
         "item_count": len(items),
-        "filter_version": "sector-focused-v3",
+        "filter_version": "sector-focused-v4-tr",
         "items": items,
     }
 
@@ -585,7 +639,7 @@ def write_json(items: list[dict[str, Any]], results: list[dict[str, Any]]) -> No
 
     status = {
         "generated_at": iso(now),
-        "filter_version": "sector-focused-v3",
+        "filter_version": "sector-focused-v4-tr",
         "source_count": len(results),
         "successful_sources": sum(1 for r in results if r["ok"]),
         "failed_sources": sum(1 for r in results if not r["ok"]),
@@ -625,7 +679,8 @@ def write_batches(items: list[dict[str, Any]]) -> None:
     for old in batch_dir.glob("batch-*.json"):
         old.unlink()
 
-    base_raw = "https://raw.githubusercontent.com/Sadikkucuk/lovable-opportunity-radar/main/docs/batches/"
+    batch_rel = batch_dir.relative_to(ROOT).as_posix().rstrip("/") + "/"
+    base_raw = "https://raw.githubusercontent.com/Sadikkucuk/lovable-opportunity-radar/main/" + batch_rel
     batches = []
 
     for start in range(0, len(items), BATCH_SIZE):
@@ -712,7 +767,8 @@ def write_rss(items: list[dict[str, Any]]) -> None:
 def main() -> None:
     feeds = parse_opml()
     if not feeds:
-        raise RuntimeError("No feeds found in sources.opml")
+        scope = f" for folder prefix {SOURCE_FOLDER_PREFIX!r}" if SOURCE_FOLDER_PREFIX else ""
+        raise RuntimeError("No feeds found in sources.opml" + scope)
 
     with cf.ThreadPoolExecutor(max_workers=FETCH_WORKERS) as pool:
         results = list(pool.map(fetch_one, feeds))
