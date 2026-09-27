@@ -5,6 +5,11 @@ on:
   schedule:
     # Every hour at minute 10 (UTC). GitHub schedules can be delayed.
     - cron: "10 * * * *"
+  push:
+    paths:
+      - "aggregate.py"
+      - "sources.opml"
+      - ".github/workflows/update-feed.yml"
 
 permissions:
   contents: write
@@ -35,7 +40,7 @@ jobs:
         env:
           RETENTION_HOURS: "72"
           MAX_ITEMS: "1000"
-          MAX_PER_SOURCE: "30"
+          MAX_PER_SOURCE: "40"
           FETCH_WORKERS: "20"
           FETCH_TIMEOUT: "20"
         run: python aggregate.py
