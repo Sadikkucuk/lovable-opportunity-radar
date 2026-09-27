@@ -1,6 +1,6 @@
 # Lovable Opportunity Radar — Combined RSS
 
-This repository turns the **105-source OPML** into one combined feed that ChatGPT can read.
+This repository turns the **155-source OPML** into one combined feed that ChatGPT can read.
 
 ## What it creates
 
@@ -9,6 +9,7 @@ After each GitHub Actions run:
 - `docs/feed.xml` — combined RSS 2.0 feed
 - `docs/latest.json` — richer machine-readable version for ChatGPT
 - `docs/status.json` — source-by-source health report
+- `docs/batches/` — 40-item analysis batches for ChatGPT
 - `docs/batches/` — deterministic 40-item analysis batches
 - `state/idea_history.json` — persistent semantic history of ideas already reported
 - `state/current_run/` — per-run raw opportunity ledgers, merged candidates and final state
@@ -17,7 +18,7 @@ The workflow runs **hourly** and retains a rolling **72-hour** news window. The 
 
 ## Important source note
 
-The supplied OPML currently uses **Google News domain-restricted RSS queries** for the 105 source websites. This makes the whole set importable without Inoreader Pro, but it is not identical to native RSS coverage.
+The supplied OPML currently uses **Google News domain-restricted RSS queries** for the 155 source websites. This makes the whole set importable without Inoreader Pro, but it is not identical to native RSS coverage.
 
 You can later replace any `xmlUrl` in `sources.opml` with a site's native RSS/Atom URL. The merger script needs no other change.
 
@@ -71,7 +72,7 @@ In `.github/workflows/update-feed.yml`:
 
 - `RETENTION_HOURS=72`
 - `MAX_ITEMS=1000`
-- `MAX_PER_SOURCE=30`
+- `MAX_PER_SOURCE=40`
 - `FETCH_WORKERS=20`
 - `FETCH_TIMEOUT=20`
 
@@ -100,3 +101,9 @@ A few source failures do not stop the workflow. `docs/status.json` records succe
 ├── CHATGPT_RADAR_PROMPT.txt
 └── README.md
 ```
+
+## Türkiye sources
+
+The source registry now contains **155 sources total**, including **50 Türkiye sources** across startups/technology, industry, retail, logistics, energy, public regulation and local Trakya/Lüleburgaz institutions.
+
+A one-time Türkiye-only snapshot is stored under `docs/turkey-only/`. Normal hourly refreshes use all 155 sources together.
