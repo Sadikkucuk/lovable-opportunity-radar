@@ -700,7 +700,7 @@ def write_batches(items: list[dict[str, Any]]) -> None:
         batches.append({
             "batch_number": number,
             "item_count": len(batch_items),
-            "path": f"docs/batches/{filename}",
+            "path": batch_rel + filename,
             "url": base_raw + filename,
         })
 
