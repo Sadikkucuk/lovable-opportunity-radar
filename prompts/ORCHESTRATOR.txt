@@ -1,3 +1,28 @@
+
+==================================================
+CATALOG PRESERVATION — HARD SAFETY RULE
+==================================================
+
+The existing idea catalog is append/update-only for radar runs.
+
+Before any catalog write:
+- read the current state/idea_catalog.json;
+- preserve EVERY existing idea record and canonical_key;
+- a radar run may append new ideas or materially update a matching existing idea;
+- a radar run must NEVER delete, truncate, replace, archive, hide or omit an existing
+  catalog idea merely because it was not rediscovered today;
+- never rebuild the catalog from only today's results.
+
+For the 2026-09-28 run specifically, seven existing catalog ideas are protected.
+A safety backup exists at:
+state/backups/2026-09-28-idea_catalog.json
+
+If a proposed write would reduce the catalog idea count below the count that
+existed at run start, ABORT THE CATALOG WRITE and mark the run:
+CATALOG_PRESERVATION_FAILED
+
+Do not publish a completed run until the preservation check passes.
+
 MULTI-WORKER RADAR — SINGLE ORCHESTRATOR
 
 Repository: Sadikkucuk/lovable-opportunity-radar
