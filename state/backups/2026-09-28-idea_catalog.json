@@ -1,0 +1,810 @@
+{
+  "schema_version": 1,
+  "site_name": "AIStartup",
+  "description": "Canonical persistent idea catalog consumed by the AIStartup web application.",
+  "updated_at": "2026-09-27T08:30:00Z",
+  "ideas": [
+    {
+      "canonical_key": "competition-organizer|enforce-ai-use-policy-on-submissions|declaration-rule-engine-review-evidence",
+      "idea_name": "AI Submission Policy Gate",
+      "scope_tier": "Dünya",
+      "scope_reason": "Global online SaaS; competition, award, publishing and event organizers in multiple countries can use the same workflow.",
+      "news_source": "UK Games Expo",
+      "news_title": "UK Games Expo AI Policy",
+      "news_date": "2026-09-27",
+      "news_url": "https://www.ukgamesexpo.co.uk/exhibit/exhibitor-resources/uk-games-expo-ai-policy/",
+      "source_links": [
+        {
+          "label": "UK Games Expo AI Policy",
+          "url": "https://www.ukgamesexpo.co.uk/exhibit/exhibitor-resources/uk-games-expo-ai-policy/"
+        },
+        {
+          "label": "UNE Cover Art Competition terms",
+          "url": "https://www.une.edu.au/coverartcomp-2026/cover-art-competition-tc"
+        },
+        {
+          "label": "WIPO Moot Court rules",
+          "url": "https://www.wipo.int/documents/d/youth-engagement/docs-en-wipo-ip-moot-court-competition-2024-rules.pdf"
+        }
+      ],
+      "core_idea": "Organizatör kendi AI kullanım politikasını tanımlar; katılımcı AI kullanımını yapılandırılmış biçimde beyan eder; sistem declaration'ı rule engine ile kontrol eder ve yalnızca şüpheli veya kurala aykırı başvuruları reviewer'a gönderir.",
+      "user_story": "Bir yarışma, ödül, fuar veya yayın organizatörü olarak katılımcıların AI kullanımını kendi politikama göre standart biçimde beyan etmesini istiyorum; sistem beyanı otomatik kontrol etsin ve yalnız şüpheli veya kurala aykırı başvuruları bana göndersin.",
+      "before_state": "Policy, declaration, kanıt dosyaları ve reviewer kararları farklı form, email ve dosyalarda tutuluyor. Kontrol büyük ölçüde manuel.",
+      "after_state": "Entrant declaration → policy rules → automatic evaluation → reviewer queue → evidence record → final decision.",
+      "why_now": "AI-use declaration yarışma, yayın ve creative submission süreçlerine girmeye başladı; organizatörlerin yalnızca checkbox değil, policy-driven bir review workflow'una ihtiyacı oluşuyor.",
+      "target_customer": "competition / award / event / publishing organizers",
+      "buyer": "association, publisher, conference veya competition organizer",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [
+        "generic form builders",
+        "competition platforms with embedded AI-use declaration"
+      ],
+      "market_gap": "AI detector olmak yerine policy → structured declaration → deterministic rule check → human review → evidence zincirini yönetir.",
+      "business_models": [
+        {
+          "model": "per-event",
+          "estimate": "€29–99/event"
+        },
+        {
+          "model": "annual SaaS",
+          "estimate": "€149–399/year"
+        },
+        {
+          "model": "freemium",
+          "estimate": "first 25 submissions free"
+        }
+      ],
+      "lovable_credits_total": 340,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 70,
+        "core_workflows": 130,
+        "integrations_rule_engine": 45,
+        "testing_fixes": 55,
+        "launch_polish": 40
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "frontend/full-stack app",
+          "cost": "existing Lovable credits"
+        },
+        {
+          "name": "Supabase/PostgreSQL",
+          "purpose": "DB",
+          "cost": "free tier"
+        },
+        {
+          "name": "Supabase Auth",
+          "purpose": "authentication",
+          "cost": "free tier"
+        },
+        {
+          "name": "Web Crypto SHA-256",
+          "purpose": "asset evidence hashing",
+          "cost": "browser-native/free"
+        },
+        {
+          "name": "client-side PDF export",
+          "purpose": "evidence report",
+          "cost": "open-source/free"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Policy Builder, Submission Declaration Form, Review Queue, Evidence/Decision Record. Entities: Organization, Event, Policy, Rule, Submission, AIUsage, Asset, Review, Decision.",
+      "working_logic": "Organizer rule girer → entrant declaration doldurur → rule engine declaration'ı policy ile karşılaştırır → risk/status üretir → reviewer karar verir → asset hash + policy version + declaration + karar saklanır.",
+      "build_time": "6–9 founder days",
+      "marketing_strategy": "Free AI Use Declaration Template Generator + SEO + LinkedIn/email outreach to organizers already publishing AI policies.",
+      "first_customer_plan": "AI policy yayınlamış fakat declaration/review sürecini Google Form veya custom form ile yöneten küçük creative competitions, hackathons ve professional awards.",
+      "main_risk": "Organizatörler mevcut form sistemini yeterince iyi bulabilir.",
+      "validation_assumption": "20 organizatörden en az 5'i manuel AI declaration review problemi yaşıyor mu ve en az 2'si event başına €49+ öder mi?",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-09-27",
+      "last_updated_at": "2026-09-27"
+    },
+    {
+      "canonical_key": "marketing-agency|manage-ai-disclosure-per-asset-platform-jurisdiction|asset-register-rule-engine-approval-evidence",
+      "idea_name": "AI Disclosure Ops",
+      "scope_tier": "Dünya",
+      "scope_reason": "Cross-border marketing agencies and brand teams can use the service globally; rules are jurisdiction-specific but the product is online and multi-country.",
+      "news_source": "ETNews / T.C. Ticaret Bakanlığı",
+      "news_title": "AI-generated content disclosure expectations and Türkiye advertising rule changes",
+      "news_date": "2026-09-26",
+      "news_url": "https://www.etnews.com/20260926000021",
+      "source_links": [
+        {
+          "label": "ETNews",
+          "url": "https://www.etnews.com/20260926000021"
+        },
+        {
+          "label": "T.C. Ticaret Bakanlığı",
+          "url": "https://www.ticaret.gov.tr/haberler/aldaticici-reklam-ve-haksiz-ticari-uygulamalarla-mucadelede-yeni-donem-basliyor"
+        },
+        {
+          "label": "Ticaret Bakanlığı DABM",
+          "url": "https://dabm.ticaret.gov.tr/haberler/ticaret-bakanligi-tarafindan-ticari-reklam-ve-haksiz-ticari-uygulamalar-yonetmeliginde-yapilan-degisikliklerle-tuketicilerin-aldatici-reklam-ve-ticari-uygulamalara-karsi-korunmasi-guclendiriliyor"
+        }
+      ],
+      "core_idea": "Marketing agency ve brand ekipleri her asset için kullanılan AI seviyesini, hedef ülkeyi ve platformu girer; rule engine gerekli disclosure'ı, wording'i ve evidence record'u üretir.",
+      "user_story": "Bir marketing agency olarak müşterilerim için hazırladığım yüzlerce görsel/video reklamda hangi ülkede ve platformda hangi AI disclosure'ın gerektiğini Excel'den araştırmak yerine asset'i sisteme kaydedip doğru disclosure kararını ve kanıt dosyasını otomatik almak istiyorum.",
+      "before_state": "Platform policy, regulation ve müşteri policy'si farklı yerlerde tutuluyor; disclosure kararı manuel araştırılıyor ve kanıt izi dağınık kalıyor.",
+      "after_state": "Asset + AI usage + platform + geography → rule engine → required disclosure → wording → approval → evidence record.",
+      "why_now": "AI-generated content disclosure beklentisi ve reklam düzenlemeleri aynı anda sıkılaşıyor; asset-level compliance workflow ihtiyacı doğuyor.",
+      "target_customer": "marketing agencies / brand compliance teams",
+      "buyer": "agency owner, brand compliance veya marketing operations",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 3,
+      "direct_competitors": [
+        {
+          "name": "AIDisclose",
+          "url": "https://disclosure.normsuite.com/"
+        },
+        {
+          "name": "Disclara",
+          "url": "https://disclara.eu/"
+        },
+        {
+          "name": "ClearLabel AI Disclosure Wizard",
+          "url": "https://library.mikesailab.com/library/Apps/Prototypes/June_2026/clear-label_2026-06-18/"
+        }
+      ],
+      "adjacent_competitors": [
+        "generic compliance platforms",
+        "generic DAM systems"
+      ],
+      "market_gap": "Türkiye + EU cross-border agencies için local regulation depth, asset register, approval ve evidence workflow'unu tek üründe birleştirir.",
+      "business_models": [
+        {
+          "model": "SaaS freelancer",
+          "estimate": "€9–15/month"
+        },
+        {
+          "model": "SaaS small agency",
+          "estimate": "€29/month"
+        },
+        {
+          "model": "team plan",
+          "estimate": "€49–79/month"
+        },
+        {
+          "model": "freemium",
+          "estimate": "10 assets/month free"
+        }
+      ],
+      "lovable_credits_total": 390,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 85,
+        "core_workflows": 145,
+        "integrations_rule_engine": 55,
+        "testing_fixes": 65,
+        "launch_polish": 40
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "app development",
+          "cost": "existing Lovable credits"
+        },
+        {
+          "name": "Supabase/PostgreSQL",
+          "purpose": "DB",
+          "cost": "free tier"
+        },
+        {
+          "name": "Supabase Auth",
+          "purpose": "authentication",
+          "cost": "free tier"
+        },
+        {
+          "name": "Web Crypto SHA-256",
+          "purpose": "asset version evidence",
+          "cost": "browser-native/free"
+        },
+        {
+          "name": "client-side PDF",
+          "purpose": "evidence export",
+          "cost": "open-source/free"
+        },
+        {
+          "name": "manually maintained rule dataset",
+          "purpose": "jurisdiction/platform logic",
+          "cost": "free"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Asset intake, AI Usage Manifest, platform/country selector, rule engine, disclosure result, review/approval and evidence export.",
+      "working_logic": "Agency asset oluşturur → AI involvement işaretler → target countries + platforms seçer → versioned rule DB çalışır → required disclosure gösterilir → reviewer approve eder → asset hash ve decision saklanır.",
+      "build_time": "8–12 founder days",
+      "marketing_strategy": "SEO around AI advertising disclosure + free asset checker + LinkedIn outreach to Türkiye-based agencies serving EU/US clients.",
+      "first_customer_plan": "Türkiye'den EU/US müşterilerine hizmet veren digital agencies; ilk 20 AI-assisted asset için ücretsiz compliance check.",
+      "main_risk": "Rule database'in sürekli güncel tutulması ürünün temel operasyonel sorumluluğu olur.",
+      "validation_assumption": "10 agency'den en az 3'ü ayda 50+ AI-assisted asset üretiyor ve disclosure kararını manuel veriyor mu?",
+      "evidence_strength": "Strong",
+      "competition_confidence": "High",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-09-27",
+      "last_updated_at": "2026-09-27"
+    },
+    {
+      "canonical_key": "ai-auditor|validate-trace-trust-records|browser-validator-signature-check-human-readable-report",
+      "idea_name": "TRACE Inspector",
+      "scope_tier": "Dünya",
+      "scope_reason": "TRACE is an open vendor-neutral specification intended for globally deployed AI agent runtimes; the validator is a browser-based global utility.",
+      "news_source": "@IT / Linux Foundation TRACE",
+      "news_title": "AI agent audit evidence standardized with TRACE",
+      "news_date": "2026-09-25",
+      "news_url": "https://atmarkit.itmedia.co.jp/ait/articles/2609/25/news056.html",
+      "source_links": [
+        {
+          "label": "@IT",
+          "url": "https://atmarkit.itmedia.co.jp/ait/articles/2609/25/news056.html"
+        },
+        {
+          "label": "TRACE specification",
+          "url": "https://github.com/agentrust-io/trace-spec"
+        },
+        {
+          "label": "TRACE tests / quickstart",
+          "url": "https://tests.agentrust-io.com/docs/quickstart/"
+        }
+      ],
+      "core_idea": "Auditor veya compliance kullanıcısı TRACE Trust Record JSON dosyasını browser'a yükler; sistem schema ve signature kontrolü yapar, policy/tool/data alanlarını insanın okuyacağı audit report'a çevirir.",
+      "user_story": "Bir auditor/security/compliance çalışanı olarak bana gönderilen TRACE JSON dosyasının geçerli olup olmadığını command line öğrenmeden web browser'dan kontrol etmek ve insanın okuyacağı audit report'a çevirmek istiyorum.",
+      "before_state": "TRACE reference implementation ve CLI geliştirici odaklı; non-developer auditor için kullanımı zor.",
+      "after_state": "TRACE JSON + trusted key → schema validation → signature validation → policy/data/tool summary → human-readable report.",
+      "why_now": "Yeni open standard oluşuyor; standardın çevresinde inspector, validator ve reporting layer ihtiyacı doğuyor.",
+      "target_customer": "AI auditors / security / compliance teams",
+      "buyer": "security/compliance team lead veya audit firm",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [
+        "TRACE CLI/reference implementation",
+        "generic AI-agent governance platforms"
+      ],
+      "market_gap": "Developer CLI yerine drag-and-drop, browser-side verification ve auditor-friendly evidence report sunar.",
+      "business_models": [
+        {
+          "model": "free single verification",
+          "estimate": "free"
+        },
+        {
+          "model": "batch verification",
+          "estimate": "€19/month"
+        },
+        {
+          "model": "team workspace",
+          "estimate": "€49–99/month"
+        },
+        {
+          "model": "premium report/export",
+          "estimate": "paid add-on"
+        }
+      ],
+      "lovable_credits_total": 415,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 90,
+        "core_workflows": 140,
+        "crypto_schema_integration": 70,
+        "testing_fixes": 70,
+        "launch_polish": 45
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "web app",
+          "cost": "existing Lovable credits"
+        },
+        {
+          "name": "TypeScript/JavaScript",
+          "purpose": "validation logic",
+          "cost": "free"
+        },
+        {
+          "name": "JSON Schema",
+          "purpose": "schema validation",
+          "cost": "open standard"
+        },
+        {
+          "name": "Web Crypto / Ed25519 library",
+          "purpose": "signature verification",
+          "cost": "open-source/free"
+        },
+        {
+          "name": "RFC8785 JCS library",
+          "purpose": "canonicalization",
+          "cost": "open-source/free"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Trust Record upload, schema validator, signature verification, record explainer, compare two records, audit report export.",
+      "working_logic": "JSON upload → TRACE schema check → RFC 8785 canonicalization → public-key signature verification → field/policy/tool extraction → PASS/WARN/FAIL → report.",
+      "build_time": "8–12 founder days",
+      "marketing_strategy": "GitHub + TRACE/AgentTrust ecosystem + SEO for TRACE validator/Trust Record viewer + security/compliance communities.",
+      "first_customer_plan": "TRACE integration deneyen ekipler ve onların developer olmayan auditor/compliance paydaşları.",
+      "main_risk": "Cryptographic implementation correctness ve standardın adoption hızının belirsizliği.",
+      "validation_assumption": "TRACE kullanan ilk 20 ekipten en az 5'i developer olmayan bir auditor'a Trust Record göstermek zorunda kalıyor mu?",
+      "evidence_strength": "Medium",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-09-27",
+      "last_updated_at": "2026-09-27"
+    },
+    {
+      "canonical_key": "property-manager|pre-assess-building-digital-connectivity-readiness|questionnaire-scoring-gap-report",
+      "idea_name": "ConnectReady — Property Connectivity Pre-Assessment",
+      "scope_tier": "Dünya",
+      "scope_reason": "The initial trigger is India, but the self-assessment workflow applies to commercial properties in many markets.",
+      "news_source": "TRAI / Press Information Bureau India",
+      "news_title": "Digital Connectivity Rating Platform for properties",
+      "news_date": "2026-09-25",
+      "news_url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2314867&lang=1&reg=3",
+      "source_links": [
+        {
+          "label": "PIB India",
+          "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2314867&lang=1&reg=3"
+        },
+        {
+          "label": "TRAI DCRA objectives",
+          "url": "https://www.trai.gov.in/dcra-portal/about-us/objectives"
+        }
+      ],
+      "core_idea": "Property owner veya manager pahalı certification öncesinde binanın fiber, mobile coverage, Wi-Fi ve resilience readiness'ını self-service questionnaire ile ölçer ve gap/improvement report alır.",
+      "user_story": "Bir bina sahibi veya property manager olarak pahalı bir resmi certification sürecine girmeden önce binamın digital connectivity açısından nerede zayıf olduğunu kendim ölçmek ve yatırım yapmadan önce improvement checklist almak istiyorum.",
+      "before_state": "Fiber, indoor mobile coverage, Wi-Fi ve in-building infrastructure bilgileri dağınık toplanıyor ve tek readiness score'a dönüşmüyor.",
+      "after_state": "Building questionnaire + infrastructure evidence + speed/coverage observations → rules → readiness score → gap analysis → improvement checklist.",
+      "why_now": "Digital connectivity property quality metric'i olarak resmi framework'lere giriyor; self-service pre-assessment katmanı için pazar oluşuyor.",
+      "target_customer": "property managers / landlords / developers",
+      "buyer": "commercial property manager, landlord veya developer",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 2,
+      "direct_competitors": [
+        {
+          "name": "WiredScore",
+          "url": "https://wiredscore.com/certify-a-building/wiredscore/"
+        },
+        {
+          "name": "TRAI DCR",
+          "url": "https://www.trai.gov.in/dcra-portal/about-us/objectives"
+        }
+      ],
+      "adjacent_competitors": [
+        "ISP coverage tools",
+        "generic network speed tests"
+      ],
+      "market_gap": "Certification iddiası olmadan 15 dakikalık self-service readiness score ve improvement checklist sunar.",
+      "business_models": [
+        {
+          "model": "per-property report",
+          "estimate": "€19–49"
+        },
+        {
+          "model": "property manager SaaS",
+          "estimate": "€19/month"
+        },
+        {
+          "model": "portfolio plan",
+          "estimate": "€49–99/month"
+        },
+        {
+          "model": "freemium",
+          "estimate": "basic score free"
+        }
+      ],
+      "lovable_credits_total": 365,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 85,
+        "core_workflows": 125,
+        "scoring": 45,
+        "testing_fixes": 65,
+        "launch_polish": 45
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "app",
+          "cost": "existing Lovable credits"
+        },
+        {
+          "name": "Supabase/PostgreSQL",
+          "purpose": "DB",
+          "cost": "free tier"
+        },
+        {
+          "name": "browser network tests",
+          "purpose": "basic measurements",
+          "cost": "free"
+        },
+        {
+          "name": "user-entered measurements",
+          "purpose": "coverage/readiness input",
+          "cost": "free"
+        },
+        {
+          "name": "client-side PDF",
+          "purpose": "report",
+          "cost": "open-source/free"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Building questionnaire, evidence upload, connection/manual metrics, rule-based scoring, gap report, improvement checklist and PDF export.",
+      "working_logic": "Bina bilgileri → fiber/mobile/Wi-Fi/resilience questionnaire → evidence → deterministic scoring matrix → category scores → weaknesses → recommended actions.",
+      "build_time": "7–10 founder days",
+      "marketing_strategy": "Free building connectivity score + SEO + LinkedIn outbound to small commercial landlords, coworking spaces and boutique developers.",
+      "first_customer_plan": "Small commercial property managers with leasing/sales friction caused by uncertain internet/connectivity quality.",
+      "main_risk": "Scoring modelinin credible olması; resmi certification gibi sunulmaması gerekir.",
+      "validation_assumption": "10 property manager'dan en az 3'ü connectivity sorunlarını leasing/satış öncesinde sistematik değerlendirmek istiyor mu ve report için €20+ öder mi?",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-09-27",
+      "last_updated_at": "2026-09-27"
+    },
+    {
+      "canonical_key": "brand-agency|monitor-printed-qr-destination-integrity|qr-inventory-dns-redirect-monitoring",
+      "idea_name": "QR Asset Guard",
+      "scope_tier": "Dünya",
+      "scope_reason": "Printed QR assets are used globally by brands, agencies and retail chains; the product is location-independent SaaS.",
+      "news_source": "iTnews",
+      "news_title": "Abandoned QR code subdomains open to hijacking, researcher says",
+      "news_date": "2026-09-25",
+      "news_url": "https://www.itnews.com.au/news/abandoned-qr-code-subdomains-open-to-hijacking-researcher-says-629200",
+      "source_links": [
+        {
+          "label": "iTnews",
+          "url": "https://www.itnews.com.au/news/abandoned-qr-code-subdomains-open-to-hijacking-researcher-says-629200"
+        },
+        {
+          "label": "Cloudflare DNS-over-HTTPS",
+          "url": "https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-https/make-api-requests/"
+        }
+      ],
+      "core_idea": "Brand veya agency basılı QR kodlarını fiziksel kullanım yeriyle birlikte inventory'ye alır; sistem destination, redirect chain ve DNS/CNAME bütünlüğünü düzenli kontrol edip riskli asset'leri gösterir.",
+      "user_story": "Bir marka veya agency olarak binlerce broşür, ambalaj, tabela ve ürün üzerinde basılı QR kodlarım var; bunların bugün hâlâ doğru domaine gittiğini ve eski vendor/DNS ayarı yüzünden ele geçirilebilir hale gelmediğini tek panelden görmek istiyorum.",
+      "before_state": "QR basıldıktan sonra proje kapanıyor; landing page, vendor account, domain veya CNAME değişse bile fiziksel QR yıllarca sahada kalabiliyor.",
+      "after_state": "QR inventory → scheduled URL/DNS check → expected destination comparison → anomaly → affected physical assets.",
+      "why_now": "Yeni security research, basılı QR kodlarının yalnız broken-link değil trusted physical asset security problemi olduğunu gösteriyor.",
+      "target_customer": "brands / packaging and marketing agencies / retail chains",
+      "buyer": "marketing operations, packaging agency veya brand security/IT",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 2,
+      "direct_competitors": [
+        {
+          "name": "GhostLink Monitoring",
+          "url": "https://www.ghostlinkmonitor.com/resources/qr-code-destination-monitoring/"
+        },
+        {
+          "name": "qrilo",
+          "url": "https://qrilo.app/qr-code-uptime-monitoring"
+        }
+      ],
+      "adjacent_competitors": [
+        "dynamic QR platforms",
+        "generic uptime monitors",
+        "subdomain takeover scanners"
+      ],
+      "market_gap": "QR'ın nerede basıldığını, expected destination'ı, redirect integrity'yi ve DNS/CNAME ownership riskini tek physical-asset workflow'unda birleştirir.",
+      "business_models": [
+        {
+          "model": "freemium",
+          "estimate": "25 QR free"
+        },
+        {
+          "model": "SaaS",
+          "estimate": "€9/month for 250 QR"
+        },
+        {
+          "model": "SaaS",
+          "estimate": "€29/month for 2,500 QR"
+        },
+        {
+          "model": "agency workspace",
+          "estimate": "€49/month"
+        }
+      ],
+      "lovable_credits_total": 405,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 80,
+        "core_workflows": 130,
+        "dns_url_checks": 80,
+        "testing_fixes": 70,
+        "launch_polish": 45
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "app",
+          "cost": "existing Lovable credits"
+        },
+        {
+          "name": "Supabase/PostgreSQL",
+          "purpose": "DB",
+          "cost": "free tier"
+        },
+        {
+          "name": "GitHub Actions",
+          "purpose": "scheduled checks",
+          "cost": "free for public repo subject to GitHub limits"
+        },
+        {
+          "name": "Cloudflare DNS-over-HTTPS",
+          "purpose": "DNS/CNAME lookup",
+          "cost": "public/free"
+        },
+        {
+          "name": "standard HTTP requests",
+          "purpose": "redirect-chain checks",
+          "cost": "free"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "QR asset inventory, location/placement metadata, expected destination, DNS/CNAME status, redirect-chain check, status history and alert dashboard.",
+      "working_logic": "URL ekle → HTTP redirect chain follow → expected domain compare → DNS CNAME query → rule engine risk üretir → affected printed assets listelenir.",
+      "build_time": "8–12 founder days",
+      "marketing_strategy": "Free QR Security Check + SEO + direct outreach to packaging agencies, restaurant chains, manufacturers and retail marketing teams.",
+      "first_customer_plan": "Agencies and brands with 100+ printed QR assets and no central inventory.",
+      "main_risk": "GhostLink aynı alana doğrudan giriyor; differentiation DNS security + physical placement inventory üzerinde net olmalı.",
+      "validation_assumption": "10 agency/brand'den en az 3'ünün 100+ active printed QR asset'i var mı ve bunların merkezi inventory'si yok mu?",
+      "evidence_strength": "Strong",
+      "competition_confidence": "High",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-09-27",
+      "last_updated_at": "2026-09-27"
+    },
+    {
+      "canonical_key": "ev-charge-operator|size-storage-under-turkiye-contract-power-rule|epdk-aware-bess-feasibility-calculator",
+      "idea_name": "ŞarjDepo — EPDK BESS Fizibilite",
+      "scope_tier": "Türkiye",
+      "scope_reason": "Ürünün temel değeri EPDK'nın Türkiye'ye özgü yeni şarj istasyonu + depolama kuralını anlaşma gücü ve BESS boyutlandırma kararına çevirmesidir.",
+      "news_source": "PetroTurk",
+      "news_title": "EPDK’dan elektrikli araç şarj altyapısına yeni düzenleme",
+      "news_date": "2026-09-25",
+      "news_url": "https://www.petroturk.com/manset/epdkdan-elektrikli-arac-sarj-altyapisina-yeni-duzenleme",
+      "source_links": [
+        {
+          "label": "PetroTurk — EPDK yeni düzenleme",
+          "url": "https://www.petroturk.com/manset/epdkdan-elektrikli-arac-sarj-altyapisina-yeni-duzenleme"
+        },
+        {
+          "label": "EPDK — Enerji Dönüşümü / şarj altyapısı",
+          "url": "https://epdk.gov.tr/Detay/Icerik/12-1040/enerji-donusumu"
+        },
+        {
+          "label": "NREL EVI-X",
+          "url": "https://www.nrel.gov/transportation/evi-x.html"
+        },
+        {
+          "label": "QDTB PV + Storage + EV Charging Configurator",
+          "url": "https://qdtb-transformer.com/calculators/pv-storage-charging-configurator"
+        }
+      ],
+      "core_idea": "Şarj ağı işletmecisi veya lokasyon sahibi; mevcut anlaşma gücü, planlanan DC charger gücü, eşzamanlı araç sayısı ve talep profilini girer. Sistem yeni EPDK çerçevesine göre şebeke anlaşma gücünü aşmadan hizmet verebilmek için yaklaşık BESS kW/kWh ihtiyacını, kontrol şartlarını ve 'şebeke artırımı mı depolama mı?' senaryosunu çıkarır.",
+      "user_story": "Bir şarj istasyonu yatırımcısı olarak lokasyonumun anlaşma gücünü büyütmeden daha yüksek güçlü charger kurmak istiyorum; gerekli BESS gücünü ve kapasitesini hızlıca hesaplayıp yatırım seçeneğini daha mühendislik ihalesine çıkmadan önce görmek istiyorum.",
+      "before_state": "Yatırımcı çoğu zaman charger gücü, anlaşma gücü, eşzamanlı kullanım ve batarya ihtiyacını ayrı ayrı Excel hesapları veya EPC danışmanlığıyla değerlendiriyor. Yeni depolama esnekliğinin ekonomik etkisini hızlı karşılaştırmak zor.",
+      "after_state": "Anlaşma gücü + charger konfigürasyonu + beklenen yük → peak deficit hesabı → BESS kW/kWh senaryoları → EPDK kontrol şartları checklist → şebeke artırımı / BESS karşılaştırma raporu.",
+      "why_now": "25 Eylül 2026'da duyurulan düzenleme, şarj istasyonuna bütünleşik depolamanın anlaşma gücünden daha yüksek deşarj gücüyle kullanılabilmesine imkân verirken şebekeye enerji basılmasını ve anlaşma gücü aşımını önleyen otomatik kontrol/kesme şartları getiriyor. Bu, daha önce sınırlı olan bir yatırım seçeneğini doğrudan fizibilite problemine dönüştürüyor.",
+      "target_customer": "şarj ağı işletmecileri, akaryakıt istasyonları, otoyol tesisleri, AVM/otel/filo lokasyon sahipleri ve EV charging EPC firmaları",
+      "buyer": "şarj yatırımı yapan işletme sahibi, CPO yatırım ekibi veya EPC satış/proje ekibi",
+      "market": "Türkiye",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 2,
+      "direct_competitors": [
+        {
+          "name": "NREL EVI-X / EVI-EnSite",
+          "url": "https://www.nrel.gov/transportation/evi-x.html",
+          "reason": "EV charging site design içinde behind-the-meter storage sizing ve site optimization yapıyor; ticari SaaS değil ama aynı karar işinin güçlü bir alternatifi."
+        },
+        {
+          "name": "QDTB PV + Storage + EV Charging Configurator",
+          "url": "https://qdtb-transformer.com/calculators/pv-storage-charging-configurator",
+          "reason": "PV + battery storage + EV charging kapasite eşleştirme ve ekonomi hesabı yapan doğrudan web configurator."
+        }
+      ],
+      "adjacent_competitors": [
+        "Türkiye'deki EV CSMS/CPMS ürünleri — istasyon operasyonunu yönetiyor, yatırım öncesi EPDK-aware BESS sizing ana işi değil",
+        "EPC/enerji danışmanlık firmaları — manuel proje/fizibilite hizmeti",
+        "genel BESS sizing araçları — Türkiye şarj mevzuatı workflow'una özel değil"
+      ],
+      "market_gap": "Basit bir BESS calculator değil; Türkiye'deki anlaşma gücü kısıtı, EPDK kontrol şartları ve EV charger peak demand'i aynı pre-feasibility workflow'unda birleştirir.",
+      "business_models": [
+        {
+          "model": "per-site feasibility report",
+          "estimate": "€29–79/site"
+        },
+        {
+          "model": "EPC/CPO SaaS",
+          "estimate": "€49–149/month"
+        },
+        {
+          "model": "team workspace",
+          "estimate": "multi-site portfolio subscription"
+        }
+      ],
+      "lovable_credits_total": 390,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 70,
+        "core_workflows": 125,
+        "calculation_rule_engine": 75,
+        "testing_fixes": 75,
+        "launch_polish": 45
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "web application",
+          "cost": "existing Lovable credits"
+        },
+        {
+          "name": "Supabase/PostgreSQL",
+          "purpose": "saved projects, scenarios and rules",
+          "cost": "free tier"
+        },
+        {
+          "name": "TypeScript",
+          "purpose": "deterministic load/BESS calculations",
+          "cost": "free"
+        },
+        {
+          "name": "EPDK public documentation",
+          "purpose": "versioned regulatory checklist",
+          "cost": "public/free"
+        },
+        {
+          "name": "CSV import",
+          "purpose": "optional hourly charging/load profile",
+          "cost": "browser-side/free"
+        },
+        {
+          "name": "client-side PDF export",
+          "purpose": "pre-feasibility report",
+          "cost": "open-source/free"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Project/site form; agreement power and charger configuration; hourly/manual demand profile input; peak-deficit and BESS kW/kWh calculator; regulatory checklist; 3 scenario comparison; PDF pre-feasibility report. No live OCPP integration in MVP.",
+      "working_logic": "Kullanıcı anlaşma gücünü, charger adet/güçlerini ve kullanım varsayımlarını girer → sistem saatlik/peak güç açığını hesaplar → seçilen destek süresine göre minimum BESS power/energy aralığını üretir → EPDK kontrol şartlarını checklist olarak uygular → farklı batarya senaryolarını şebeke artırımıyla karşılaştırır → rapor üretir.",
+      "build_time": "7–10 founder days",
+      "marketing_strategy": "Ücretsiz 'BESS gerekir mi?' calculator ile lead generation; LinkedIn'de CPO/EPC/akaryakıt/AVM enerji yöneticilerine outbound; EPDK düzenlemesini açıklayan SEO içerikleri.",
+      "first_customer_plan": "Yeni DC fast charger lokasyonu planlayan 10 EPC/CPO veya akaryakıt tesisiyle ücretsiz ilk fizibilite; hesap sonrası detaylı proje raporu için SaaS dönüşümü.",
+      "main_risk": "MVP yalnız pre-feasibility vermeli; gerçek elektrik projesi, koruma koordinasyonu ve dağıtım şirketi onayı yerine geçiyormuş gibi konumlandırılırsa teknik/hukuki risk doğar.",
+      "validation_assumption": "10 CPO/EPC yatırım ekibinden en az 3'ü yeni kural sonrası 'anlaşma gücünü artırmak mı BESS kurmak mı?' hesabını tekrar eden bir problem olarak yaşıyor ve self-service pre-feasibility için ödeme yapar mı?",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-09-27",
+      "last_updated_at": "2026-09-27"
+    },
+    {
+      "canonical_key": "fresh-produce-exporter|decide-route-with-permit-quota-border-delay-and-shelf-life|shipment-scenario-decision-ledger",
+      "idea_name": "FreshRoute TR — İhracat Geçiş ve Raf Ömrü Masası",
+      "scope_tier": "Türkiye",
+      "scope_reason": "İlk ürün Türkiye'den yaş meyve-sebze ihracatında ülke geçiş belgesi kotaları, sınır beklemeleri ve Türkiye çıkışlı taşıma kararlarını birlikte yönetmeye odaklanır.",
+      "news_source": "Dünya",
+      "news_title": "Meyve sebze ihracatçısının lojistik sorunlarına Bakanlık neşteri",
+      "news_date": "2026-09-25",
+      "news_url": "https://www.dunya.com/sektorler/meyve-sebze-ihracatcisinin-lojistik-sorunlarina-bakanlik-nesteri-haberi-841427",
+      "source_links": [
+        {
+          "label": "Dünya — sektörün lojistik sorunları",
+          "url": "https://www.dunya.com/sektorler/meyve-sebze-ihracatcisinin-lojistik-sorunlarina-bakanlik-nesteri-haberi-841427"
+        },
+        {
+          "label": "UHDGM — 2026 yılı geçiş belgeleri",
+          "url": "https://uhdgm.uab.gov.tr/duyurular/2026-yili-gecis-belgeleri-hakkinda-bilgilendirme"
+        },
+        {
+          "label": "TOBB GEBOS",
+          "url": "https://www.tobb.org.tr/gebos/Sayfalar/AnaSayfa.php"
+        },
+        {
+          "label": "ShelfCastAI",
+          "url": "https://www.shelfcastai.com/"
+        },
+        {
+          "label": "Citrus Freight",
+          "url": "https://www.citrusfreight.com/"
+        }
+      ],
+      "core_idea": "Yaş meyve-sebze ihracatçısı her sevkiyat için ürünün kalan ticari raf ömrünü, hedef ülkeyi, taşıma modunu, tahmini sınır beklemesini ve geçiş belgesi/kota durumunu tek ekrana girer. Sistem 'bu sevkiyat bu rotada hâlâ mantıklı mı?' sorusuna risk, alternatif rota/mod ve kayıp-maliyet senaryosu üretir; aynı zamanda yaşanan gecikmeleri kanıtlı bir issue ledger'da toplar.",
+      "user_story": "Bir yaş meyve-sebze ihracatçısı olarak ürün kamyona yüklenmeden önce kota, sınır bekleme ve raf ömrü riskini aynı yerde görmek istiyorum; böylece yanlış rota yüzünden ürünün değer kaybetmesini veya teslimatın yetişmemesini azaltabilirim.",
+      "before_state": "Geçiş belgesi bilgisi GEBOS/duyurularda, operasyon bilgisi WhatsApp/telefon/Excel'de, ürünün kalan raf ömrü ise ekip tecrübesinde kalıyor. Rota kararı çoğu zaman bu veriler tek hesapta birleşmeden veriliyor.",
+      "after_state": "Shipment + ürün/raf ömrü + ülke/rota + permit/quota state + bekleme varsayımı + taşıma maliyeti → risk score → go/hold/reroute kararı → alternatif senaryo → gecikme/kayıp evidence ledger.",
+      "why_now": "25 Eylül 2026 tarihli sektör haberinde yıllık 7 milyar doların üzerindeki ihracatın 10 milyar dolar hedefi için Rusya güvenlik koridoru, sınır bekleme süreleri, geçiş belgesi kotaları, hava kargo ve liman maliyetleri doğrudan darboğaz olarak Bakanlığa taşındı. UHDGM'nin 2026 sistemi de ülke bazlı belgelerin dönemsel açılması ve özel kota kurallarını gösteriyor.",
+      "target_customer": "Türkiye'deki yaş meyve-sebze ihracatçıları, ihracat operasyon ekipleri ve reefer taşımacılığı yapan forwarder'lar",
+      "buyer": "ihracat operasyon müdürü, lojistik müdürü veya orta ölçekli ihracatçı firma sahibi",
+      "market": "Türkiye",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [
+        "TOBB GEBOS — geçiş belgesi tahsisi/durumu; ürün raf ömrü ve rota ekonomik kararını çözmüyor",
+        "ShelfCastAI — shelf-life based routing; uluslararası geçiş belgesi/kota workflow'u yok",
+        "Citrus Freight — reefer booking/forwarding; Türkiye road permit + shelf-life decision desk değil",
+        "genel TMS/cold-chain yazılımları — operasyon/izleme yapıyor, bu dar pre-dispatch decision problemine odaklanmıyor"
+      ],
+      "market_gap": "TMS olmaya çalışmaz. Türkiye çıkışlı bozulabilir ürün sevkiyatında permit/quota + border delay + remaining shelf-life + alternatif taşıma maliyetini tek go/no-go kararında birleştiren küçük decision-support layer olur.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "€39–99/month per exporter"
+        },
+        {
+          "model": "usage-based",
+          "estimate": "shipment scenario packs"
+        },
+        {
+          "model": "team workspace",
+          "estimate": "export operations team plan"
+        }
+      ],
+      "lovable_credits_total": 420,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 85,
+        "core_workflows": 135,
+        "calculation_rule_engine": 80,
+        "testing_fixes": 75,
+        "launch_polish": 45
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "web application",
+          "cost": "existing Lovable credits"
+        },
+        {
+          "name": "Supabase/PostgreSQL",
+          "purpose": "shipments, routes, permit rules and issue ledger",
+          "cost": "free tier"
+        },
+        {
+          "name": "UHDGM public permit tables/announcements",
+          "purpose": "baseline permit rules and opening periods",
+          "cost": "public/free"
+        },
+        {
+          "name": "manual CSV / user entry",
+          "purpose": "GEBOS/quota status and company-specific costs where no public API exists",
+          "cost": "free"
+        },
+        {
+          "name": "TypeScript rule engine",
+          "purpose": "shelf-life buffer, delay and route scenario calculations",
+          "cost": "free"
+        },
+        {
+          "name": "client-side PDF/CSV export",
+          "purpose": "decision/evidence report",
+          "cost": "open-source/free"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Shipment intake; product shelf-life presets/manual value; target country/route; permit rule table; user-entered quota/border wait; road/air/sea scenario cost; freshness-at-arrival buffer; go/hold/reroute indicator; issue ledger and exportable report. No live GPS or paid freight API.",
+      "working_logic": "Kullanıcı ürün, hasat/paketleme zamanı, kalan raf ömrü, hedef ülke, rota ve taşıma maliyetini girer → sistem permit rule/kota bilgisini kontrol eder → bekleme süresini raf ömründen düşer → varıştaki freshness buffer ve ekonomik kayıp riskini hesaplar → alternatif rota/modları yan yana gösterir → karar ve gerçekleşen gecikme issue ledger'a kaydedilir.",
+      "build_time": "8–12 founder days",
+      "marketing_strategy": "Akdeniz/Ege yaş meyve-sebze ihracatçı birlikleri ve LinkedIn üzerinden operasyon yöneticilerine doğrudan outreach; ücretsiz 'shipment freshness buffer' calculator; sınır/kota değişiklikleri için SEO içerikleri.",
+      "first_customer_plan": "Rusya/AB hatlarında reefer karayolu ihracatı yapan 10 orta ölçekli firma ile geçmiş 20 sevkiyat üzerinden ücretsiz back-test; kayıp/gecikme kararını gerçekten değiştiren firmalara pilot.",
+      "main_risk": "Gerçek zamanlı sınır bekleme ve GEBOS kota verisinin açık API olmaması. MVP bu nedenle user-entered/CSV veriyle karar desteği verir; 'live data' iddiası taşımaz.",
+      "validation_assumption": "10 yaş meyve-sebze ihracatçısından en az 3'ü sevkiyat öncesinde geçiş belgesi/kota + sınır bekleme + ürün raf ömrünü bugün tek bir modelde birleştiremediğini ve bu karar desteğine aylık ödeme yapacağını söylüyor mu?",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-09-27",
+      "last_updated_at": "2026-09-27"
+    }
+  ]
+}
