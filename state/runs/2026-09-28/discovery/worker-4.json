@@ -1,1 +1,229 @@
-{"schema_version":1,"run_date":"2026-09-28","worker_id":"4","status":"incomplete","feed_items_expected":280,"feed_items_triaged":280,"raw_opportunity_count":0,"raw_opportunities":[],"failure_reason":"Detailed ledger write blocked by repository tool safety filter; discovery research completed but persistence requires retry."}
+{
+  "schema_version": 1,
+  "run_date": "2026-09-28",
+  "worker_id": "4",
+  "source_batch_index_generated_at": "2026-09-28T01:38:01Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "status": "complete",
+  "started_at": "2026-09-28T10:45:00+03:00",
+  "completed_at": "2026-09-28T10:55:00+03:00",
+  "feed_items_expected": 280,
+  "feed_items_triaged": 280,
+  "candidate_article_count": 87,
+  "original_articles_verified": 0,
+  "full_article_not_verified": 87,
+  "noise_or_no_opportunity_count": 193,
+  "raw_opportunity_count": 6,
+  "raw_opportunities": [
+    {
+      "raw_id": "w4-001",
+      "supporting_article_ids": [
+        "d8f83011b6bfd78fa68d8af9"
+      ],
+      "supporting_article_titles": [
+        "Clarios takes its battery subscription to European fleets"
+      ],
+      "supporting_sources": [
+        "FreightWaves"
+      ],
+      "canonical_source_urls": [],
+      "article_verification": "insufficient",
+      "novelty_delta": "Commercial-vehicle batteries are moving toward subscription/service models, shifting fleet work from one-time procurement toward lifecycle eligibility, service events and contract reconciliation.",
+      "delta_types": [
+        "BUSINESS_MODEL_DELTA",
+        "COST_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "fleet battery need → subscription enrollment → battery/service event → performance/replacement → invoice/reconciliation",
+      "target_customer": "commercial fleet operators using battery-as-a-service programs",
+      "buyer": "fleet maintenance or procurement manager",
+      "job_to_be_done": "track battery subscriptions, service obligations and vehicle-level lifecycle evidence",
+      "current_friction": "Battery assets, subscription terms, replacements and service evidence can become fragmented across vehicles and providers.",
+      "product_mechanism": "vehicle-battery subscription ledger + contract/service calendar + replacement history + exception/reconciliation dashboard",
+      "one_sentence_concept": "A battery-subscription operations ledger for commercial fleets.",
+      "why_now": "Feed reports Clarios expanding a battery subscription offering to European fleets.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 360,
+      "draft_canonical_key": "commercial-fleet|manage-battery-subscription-lifecycle|asset-contract-service-ledger",
+      "evidence_notes": "FULL ARTICLE NOT VERIFIED; validator must confirm development and canonical URL."
+    },
+    {
+      "raw_id": "w4-002",
+      "supporting_article_ids": [
+        "a647be54332dd6b9aa479da3"
+      ],
+      "supporting_article_titles": [
+        "AI detects furniture assembly errors from instructions and photos"
+      ],
+      "supporting_sources": [
+        "ITHome / IT之家"
+      ],
+      "canonical_source_urls": [],
+      "article_verification": "insufficient",
+      "novelty_delta": "Multimodal AI can compare a physical assembly photo against instructions and flag likely installation mistakes, making visual post-work verification cheaper and more accessible.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "COST_DELTA",
+        "ACCESS_DELTA"
+      ],
+      "affected_workflow": "work instruction → technician assembles → photo evidence → defect check → rework/acceptance",
+      "target_customer": "field-service and installation SMEs",
+      "buyer": "operations or quality manager",
+      "job_to_be_done": "standardize evidence-based installation acceptance without sending a supervisor to every site",
+      "current_friction": "Installation QA often depends on manual supervisor review, inconsistent photo evidence and late discovery of mistakes.",
+      "product_mechanism": "job checklist + instruction reference + photo evidence upload + AI-assisted discrepancy queue + human acceptance record",
+      "one_sentence_concept": "A visual installation QA and acceptance workflow for field-service teams.",
+      "why_now": "Feed reports improved multimodal ability to identify assembly errors from manuals plus photos.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "doubtful",
+      "estimated_lovable_credits": 440,
+      "draft_canonical_key": "field-service-sme|verify-installation-quality|instruction-photo-discrepancy-workflow",
+      "evidence_notes": "FULL ARTICLE NOT VERIFIED and free multimodal inference constraint must be checked before qualification."
+    },
+    {
+      "raw_id": "w4-003",
+      "supporting_article_ids": [
+        "3281f3a9d32b610ef647a9d2",
+        "99823c295789dcc4ed2efaa9"
+      ],
+      "supporting_article_titles": [
+        "The Platform Era: Why Manufacturing’s Future Isn’t a Bigger ERP",
+        "How Operations Software Can Drive Financial Results and Improve Plantwide Visibility"
+      ],
+      "supporting_sources": [
+        "IndustryWeek"
+      ],
+      "canonical_source_urls": [],
+      "article_verification": "insufficient",
+      "novelty_delta": "Manufacturing software is shifting toward an operational layer that connects plant workflows and financial outcomes rather than relying on ERP alone.",
+      "delta_types": [
+        "DATA_DELTA",
+        "STANDARDIZATION_DELTA",
+        "BUSINESS_MODEL_DELTA"
+      ],
+      "affected_workflow": "shop-floor event → operational issue/action → production impact → cost/financial impact → management decision",
+      "target_customer": "small and mid-sized manufacturers with fragmented plant systems",
+      "buyer": "plant manager, operations director or CFO",
+      "job_to_be_done": "connect operational losses and actions to financial impact without replacing ERP/MES",
+      "current_friction": "Downtime, scrap, labor and maintenance actions are tracked in separate systems and are difficult to translate into management-level financial impact.",
+      "product_mechanism": "manual/API-light operational event ledger + loss taxonomy + action tracker + cost-impact formulas + plantwide management dashboard",
+      "one_sentence_concept": "A lightweight plant-loss-to-financial-impact operations layer for manufacturers.",
+      "why_now": "Two IndustryWeek items in the same frozen window emphasize plantwide operations software and platform approaches beyond larger ERP deployments.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 430,
+      "draft_canonical_key": "smb-manufacturer|connect-plant-losses-to-financial-impact|operations-loss-action-cost-layer",
+      "evidence_notes": "FULL ARTICLES NOT VERIFIED; merge/validator should confirm whether this is sufficiently novel versus existing OEE/MES products."
+    },
+    {
+      "raw_id": "w4-004",
+      "supporting_article_ids": [
+        "088a15db43416a7b4db15422"
+      ],
+      "supporting_article_titles": [
+        "Microsoft revamps Copilot, strengthens enterprise AI cost management"
+      ],
+      "supporting_sources": [
+        "ETNews"
+      ],
+      "canonical_source_urls": [],
+      "article_verification": "insufficient",
+      "novelty_delta": "Enterprise generative-AI adoption is creating a distinct cost-governance workflow around users, agents, workloads and business value.",
+      "delta_types": [
+        "COST_DELTA",
+        "DATA_DELTA",
+        "BUSINESS_MODEL_DELTA"
+      ],
+      "affected_workflow": "AI use case → budget/entitlement → usage → business outcome → cost allocation → optimization decision",
+      "target_customer": "SMEs and departments using multiple AI subscriptions or agents",
+      "buyer": "IT manager, finance manager or AI program owner",
+      "job_to_be_done": "attribute AI spend to teams/use cases and decide what to keep, cap or stop",
+      "current_friction": "AI subscriptions and agent usage costs are dispersed while business-value evidence is usually tracked separately.",
+      "product_mechanism": "AI service inventory + owner/cost-center mapping + monthly cost import + use-case/value register + renewal/stop decision dashboard",
+      "one_sentence_concept": "A vendor-neutral AI spend and value governance ledger for SMEs.",
+      "why_now": "Feed reports Microsoft strengthening enterprise AI cost-management capabilities as AI usage expands.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 340,
+      "draft_canonical_key": "sme-ai-program|govern-ai-spend-and-value|service-cost-usecase-decision-ledger",
+      "evidence_notes": "FULL ARTICLE NOT VERIFIED; direct competitors and Microsoft feature scope require validator research."
+    },
+    {
+      "raw_id": "w4-005",
+      "supporting_article_ids": [
+        "5d0b6589435443dcf8784f29"
+      ],
+      "supporting_article_titles": [
+        "Korea races to secure physical-AI training data"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea"
+      ],
+      "canonical_source_urls": [],
+      "article_verification": "insufficient",
+      "novelty_delta": "Physical-AI development increases demand for structured robot demonstration/training datasets with task metadata, consent/provenance and quality evidence.",
+      "delta_types": [
+        "DATA_DELTA",
+        "INFRASTRUCTURE_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "robot task definition → demonstration/data capture → annotation/quality review → dataset release → training reuse",
+      "target_customer": "robotics labs and small robotics companies collecting physical-AI data",
+      "buyer": "robotics R&D or data lead",
+      "job_to_be_done": "catalog, review and prove provenance/quality of robot training-data collection sessions",
+      "current_friction": "Demonstration files, task metadata, hardware configuration, consent/provenance and QA notes can be scattered across folders and spreadsheets.",
+      "product_mechanism": "dataset/session registry + task/hardware metadata + provenance checklist + QA status + exportable dataset card",
+      "one_sentence_concept": "A physical-AI dataset provenance and QA registry for robotics teams.",
+      "why_now": "Feed reports a Korean push to secure physical-AI data as robot learning becomes a strategic bottleneck.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "robotics-rd-team|govern-physical-ai-training-data|session-provenance-qa-registry",
+      "evidence_notes": "FULL ARTICLE NOT VERIFIED; validator should confirm source claims and competing dataset-management products."
+    },
+    {
+      "raw_id": "w4-006",
+      "supporting_article_ids": [
+        "7dcec50bb3bdebe50a8ecb36"
+      ],
+      "supporting_article_titles": [
+        "Laptop closed, agent keeps working: Docker Sandboxes move to the cloud"
+      ],
+      "supporting_sources": [
+        "Heise"
+      ],
+      "canonical_source_urls": [],
+      "article_verification": "insufficient",
+      "novelty_delta": "Long-running coding agents can continue in remote isolated sandboxes, creating a new operational need to track delegated jobs, environments, artifacts, budgets and handoffs.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "INFRASTRUCTURE_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "developer delegates task → remote sandbox executes → checkpoint/artifact → review/handoff → environment cleanup",
+      "target_customer": "small software teams using autonomous coding agents",
+      "buyer": "engineering manager or tech lead",
+      "job_to_be_done": "maintain control and auditability over long-running remote agent tasks",
+      "current_friction": "Agent tasks may outlive developer sessions, making ownership, environment state, checkpoints, costs and cleanup harder to coordinate.",
+      "product_mechanism": "agent-job registry + sandbox/environment metadata + checkpoint/handoff log + artifact links + budget/time guardrails + cleanup queue",
+      "one_sentence_concept": "An operations cockpit for long-running cloud coding-agent jobs.",
+      "why_now": "Feed reports Docker moving agent sandboxes to cloud execution that can continue after the local laptop closes.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 400,
+      "draft_canonical_key": "software-team|govern-long-running-coding-agent-jobs|sandbox-job-handoff-ops-cockpit",
+      "evidence_notes": "FULL ARTICLE NOT VERIFIED; validator must confirm exact Docker capability and existing product overlap."
+    }
+  ]
+}
