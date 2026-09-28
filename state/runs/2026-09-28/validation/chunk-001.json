@@ -1,0 +1,376 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-09-28",
+  "chunk_number": 1,
+  "candidate_ids": [
+    "c-001",
+    "c-002",
+    "c-003",
+    "c-004",
+    "c-005"
+  ],
+  "status": "complete",
+  "validated_candidate_count": 5,
+  "completed_at": "2026-09-28T11:45:00+03:00",
+  "results": [
+    {
+      "candidate_id": "c-001",
+      "validation_index": 1,
+      "canonical_key": "ai-datacenter-developer|compare-cooling-capacity-and-qualification|thermal-scenario-qualification-desk",
+      "development_verified": true,
+      "canonical_news_source": "LG Electronics",
+      "canonical_news_title": "LG Electronics’ 2.6-Megawatt Coolant Distribution Unit Qualifies as NVIDIA DSX Ready CDU",
+      "canonical_news_date": "2026-09-22",
+      "canonical_news_url": "https://www.lgcorp.com/media/release/30597",
+      "source_links": [
+        "https://www.lgcorp.com/media/release/30597",
+        "https://www.datacenterchill.com/",
+        "https://www.silicondata.com/products/site-iq"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "DataCenterChill",
+          "url": "https://www.datacenterchill.com/",
+          "reason": "Same AI-data-center buyer workflow: compare cooling architectures/products/suppliers and evidence before purchase."
+        },
+        {
+          "name": "SiliconSiteIQ",
+          "url": "https://www.silicondata.com/products/site-iq",
+          "reason": "Same early-stage AI data-center capacity/cooling planning job with cooling requirement validation."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Schneider Electric AI Factory design tools",
+          "url": "https://www.se.com/nl/en/work/solutions/ai-factory/reference-designs/",
+          "reason": "Broader engineering/DCIM stack; overlaps calculations and planning but is not the same lightweight vendor-qualification desk."
+        }
+      ],
+      "competition_search_terms": [
+        "Türkiye veri merkezi soğutma kapasite planlama yazılımı CDU",
+        "AI data center cooling capacity planning software vendor comparison"
+      ],
+      "market_gap": "Problem is real, but the proposed comparison/pre-feasibility workflow already has direct global products.",
+      "mvp": "Load intake, CDU capacity calculator, qualification matrix, gap checklist, vendor comparison export.",
+      "working_logic": "User enters IT/rack thermal load and constraints; deterministic formulas calculate capacity envelope; vendor evidence is entered/imported; qualification checklist scores gaps and exports decision record.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "TypeScript",
+        "CSV/manual inputs"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 420,
+      "lovable_credit_breakdown": {
+        "ui": 120,
+        "data": 80,
+        "calculators": 90,
+        "comparison": 70,
+        "reports_testing": 60
+      },
+      "build_time": "10-14 days",
+      "business_models": [
+        "subscription",
+        "project workspace"
+      ],
+      "marketing_strategy": "Technical SEO around CDU sizing and AI-data-center pre-feasibility; partner outreach to integrators.",
+      "first_customer_plan": "Pilot with one cooling integrator using an active pre-design RFQ.",
+      "main_risk": "Direct competition and need for engineering-grade trust.",
+      "validation_assumption": "MVP is decision support, not stamped engineering design.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "At least two global products substantially overlap target customer, core job and workflow."
+    },
+    {
+      "candidate_id": "c-002",
+      "validation_index": 2,
+      "canonical_key": "building-operator|reconcile-people-lifecycle-with-access|hr-access-mismatch-ledger",
+      "development_verified": true,
+      "canonical_news_source": "Mitsubishi Electric Building Solutions",
+      "canonical_news_title": "MELSAFETY-R related cloud/service integration development",
+      "canonical_news_date": "2026-09-25",
+      "canonical_news_url": "https://www.mebs.co.jp/press/260925.html",
+      "source_links": [
+        "https://www.mebs.co.jp/press/260925.html",
+        "https://unifabriq.com/solutions/hr",
+        "https://www.oloid.com/integrations/oloid-workday-integration",
+        "https://xpass.com.tr/gecis-kontrol-yazilimi/"
+      ],
+      "turkiye_direct_competitor_count": 1,
+      "turkiye_competitors": [
+        {
+          "name": "XPass",
+          "url": "https://xpass.com.tr/gecis-kontrol-yazilimi/",
+          "reason": "Turkish physical-access product synchronizes personnel/HR data and centrally manages access rights."
+        }
+      ],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "Unifabriq",
+          "url": "https://unifabriq.com/solutions/hr",
+          "reason": "Directly synchronizes HR lifecycle events with physical access and reconciles outcomes."
+        },
+        {
+          "name": "OLOID",
+          "url": "https://www.oloid.com/integrations/oloid-workday-integration",
+          "reason": "Automates physical-access provisioning/deprovisioning from Workday employee lifecycle changes."
+        }
+      ],
+      "adjacent_competitors": [],
+      "competition_search_terms": [
+        "Türkiye fiziksel erişim kontrolü İK entegrasyonu personel yetki",
+        "physical access HR employee lifecycle reconciliation software"
+      ],
+      "market_gap": "The CSV-first lightweight angle is cheaper, but the core job is already directly served.",
+      "mvp": "CSV HR/access imports, mismatch rules, expiry review, owner tasks, audit export.",
+      "working_logic": "Upload HR and PACS exports; normalize employee identifiers; compare employment/role/site state to access grants; create mismatch tasks; record closure evidence.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "TypeScript",
+        "CSV parser"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 380,
+      "lovable_credit_breakdown": {
+        "ui": 100,
+        "data": 80,
+        "reconciliation": 90,
+        "tasks": 55,
+        "exports_testing": 55
+      },
+      "build_time": "8-12 days",
+      "business_models": [
+        "subscription",
+        "per-site"
+      ],
+      "marketing_strategy": "Facility/security operations content and CSV reconciliation template lead magnet.",
+      "first_customer_plan": "Test with one multi-site facility that currently reconciles HR and access in spreadsheets.",
+      "main_risk": "Established PACS/IAM integration vendors already solve the same lifecycle job.",
+      "validation_assumption": "Manual CSV import is acceptable for MVP.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Direct competitors exist in Türkiye/global markets for the same HR-to-physical-access lifecycle workflow."
+    },
+    {
+      "candidate_id": "c-003",
+      "validation_index": 3,
+      "canonical_key": "commercial-fleet|manage-battery-subscription-lifecycle|asset-contract-service-ledger",
+      "development_verified": true,
+      "canonical_news_source": "Clarios / FreightWaves",
+      "canonical_news_title": "Clarios takes its battery subscription to European fleets",
+      "canonical_news_date": "2026-09-26",
+      "canonical_news_url": "https://www.freightwaves.com/news/clarios-battery-manager-europe-fleets",
+      "source_links": [
+        "https://www.freightwaves.com/news/clarios-battery-manager-europe-fleets",
+        "https://www.clarios.com/insights/news/news-details/battery-manager-pro-tmc-2026",
+        "https://www.clarios.com/products-and-services/connected-services",
+        "https://filobakimtakip.com/"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 1,
+      "global_competitors": [
+        {
+          "name": "Clarios Battery Manager Pro",
+          "url": "https://www.clarios.com/products-and-services/connected-services",
+          "reason": "The triggering product itself provides managed battery lifecycle monitoring, predictive replacement and subscription-based fleet battery operations."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Filo 7/24",
+          "url": "https://filobakimtakip.com/",
+          "reason": "Turkish fleet maintenance platform; broader vehicle maintenance rather than battery-subscription lifecycle."
+        }
+      ],
+      "competition_search_terms": [
+        "Türkiye filo akü batarya takip yönetim yazılımı",
+        "fleet battery monitoring subscription predictive replacement software"
+      ],
+      "market_gap": "A vendor-neutral reconciliation layer is conceivable, but the source product already owns most of the operational job for its subscribers.",
+      "mvp": "Vehicle-battery contract ledger, service calendar, replacement history, invoice/exception reconciliation.",
+      "working_logic": "Import vehicle/battery list and subscription terms; schedule obligations; record alerts/replacements; reconcile service events and monthly charges.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "TypeScript",
+        "CSV/manual inputs"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 360,
+      "lovable_credit_breakdown": {
+        "ui": 90,
+        "data": 80,
+        "contract_calendar": 70,
+        "reconciliation": 65,
+        "reports_testing": 55
+      },
+      "build_time": "8-10 days",
+      "business_models": [
+        "per-vehicle subscription",
+        "fleet workspace"
+      ],
+      "marketing_strategy": "Target mixed-vendor fleets and maintenance consultants.",
+      "first_customer_plan": "Interview a fleet using multiple battery suppliers before build.",
+      "main_risk": "The triggering vendor already bundles the operational workflow.",
+      "validation_assumption": "There is demand for vendor-neutral management across multiple battery programs.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Clarios Battery Manager Pro substantially performs the same battery lifecycle management job for the same fleet customer."
+    },
+    {
+      "candidate_id": "c-004",
+      "validation_index": 4,
+      "canonical_key": "industrial-service-team|convert-veteran-knowledge|expert-gap-approval-ledger",
+      "development_verified": true,
+      "canonical_news_source": "Hitachi Construction Machinery / Ramblr",
+      "canonical_news_title": "True AI Assistant prototype / field knowledge capture",
+      "canonical_news_date": "2026-09",
+      "canonical_news_url": "https://www.hitachicm.com/us/en/news/2026/hitachi-construction-machinery-to-unveil-true-ai-assistant-proto/",
+      "source_links": [
+        "https://www.hitachicm.com/us/en/news/2026/hitachi-construction-machinery-to-unveil-true-ai-assistant-proto/",
+        "https://ramblr.ai/use-cases/hitachi-construction-machinery",
+        "https://www.siemens.com/en-gb/products/augmented-industries-flow-tool-ai-operator-assistant/",
+        "https://sightcall.com/platform/xpert-knowledge/",
+        "https://www.quintess.ai/"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 3,
+      "global_competitors": [
+        {
+          "name": "Siemens FLOW TOOL AI Operator Assistant",
+          "url": "https://www.siemens.com/en-gb/products/augmented-industries-flow-tool-ai-operator-assistant/",
+          "reason": "Captures expert industrial knowledge and turns it into governed instructions/training."
+        },
+        {
+          "name": "SightCall Xpert Knowledge",
+          "url": "https://sightcall.com/platform/xpert-knowledge/",
+          "reason": "Captures field-service expertise, structures it into procedures and supports expert review/approval."
+        },
+        {
+          "name": "Quintess",
+          "url": "https://www.quintess.ai/",
+          "reason": "Captures technician knowledge during maintenance work and turns confirmed fixes into reusable structured knowledge."
+        }
+      ],
+      "adjacent_competitors": [],
+      "competition_search_terms": [
+        "Türkiye saha servis uzman bilgi yönetimi teknisyen bilgi bankası yapay zeka",
+        "industrial field service expert knowledge capture software"
+      ],
+      "market_gap": "The pain is validated, but multiple products directly address expert knowledge capture, validation and reuse.",
+      "mvp": "Knowledge-gap register, recurring-question intake, source/owner assignment, approved procedure and review calendar.",
+      "working_logic": "Log unresolved/repeated questions; assign expert; capture source/procedure; review and approve; publish reusable record; schedule review.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "TypeScript"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 350,
+      "lovable_credit_breakdown": {
+        "ui": 90,
+        "data": 75,
+        "workflow": 80,
+        "approval": 55,
+        "search_testing": 50
+      },
+      "build_time": "8-10 days",
+      "business_models": [
+        "per-team subscription",
+        "per-seat"
+      ],
+      "marketing_strategy": "Maintenance knowledge-loss content and retirement-risk assessment.",
+      "first_customer_plan": "Pilot with a 10-30 technician service team dependent on a few senior experts.",
+      "main_risk": "Crowded direct-competition set with richer AI capture features.",
+      "validation_assumption": "A much simpler pre-RAG workflow could still sell on price, but that is insufficient for radar novelty gate.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Three global products substantially match the same customer/job/workflow."
+    },
+    {
+      "candidate_id": "c-005",
+      "validation_index": 5,
+      "canonical_key": "local-service-business|standardize-ai-phone-intake|policy-outcome-escalation-desk",
+      "development_verified": true,
+      "canonical_news_source": "Google / TechCrunch",
+      "canonical_news_title": "Google tests letting Gemini call businesses for you",
+      "canonical_news_date": "2026-09-24",
+      "canonical_news_url": "https://techcrunch.com/2026/09/24/google-tests-letting-gemini-make-phone-calls-initially-for-us-pixel-owners/",
+      "source_links": [
+        "https://techcrunch.com/2026/09/24/google-tests-letting-gemini-make-phone-calls-initially-for-us-pixel-owners/",
+        "https://support.google.com/gemini/answer/18336420?hl=en-GB",
+        "https://www.sesvia.com/",
+        "https://www.callwisey.com/",
+        "https://help.gohighlevel.com/support/solutions/articles/155000006598-voice-ai-outbound-calling"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 0,
+      "global_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "Sesvia",
+          "url": "https://www.sesvia.com/",
+          "reason": "Turkish AI receptionist handles inbound human calls; not a readiness/governance layer for calls initiated by consumer AI agents."
+        },
+        {
+          "name": "CallWisey",
+          "url": "https://www.callwisey.com/",
+          "reason": "Turkish AI voice receptionist; opposite side of the interaction."
+        },
+        {
+          "name": "HighLevel Voice AI",
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000006598-voice-ai-outbound-calling",
+          "reason": "Creates outbound AI calls and compliance workflows; does not prepare recipient businesses to handle third-party consumer agents."
+        }
+      ],
+      "competition_search_terms": [
+        "Türkiye işletme yapay zeka telefon çağrı karşılama AI agent",
+        "business readiness for consumer AI agent phone calls policy intake"
+      ],
+      "market_gap": "Fresh searches found AI receptionist/calling products but no direct product focused on recipient-business policy, structured outcomes and escalation for third-party consumer AI callers.",
+      "mvp": "AI-caller policy builder, call-purpose templates, disclosure/consent rules, structured outcome form, escalation queue and incident log.",
+      "working_logic": "Business defines which agent-initiated requests may be handled and required fields; staff follow structured scripts/outcome states; exceptions are escalated and patterns reviewed.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "TypeScript",
+        "manual policy templates"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 320,
+      "lovable_credit_breakdown": {
+        "ui": 85,
+        "data": 65,
+        "policy_builder": 70,
+        "workflow": 55,
+        "reports_testing": 45
+      },
+      "build_time": "7-9 days",
+      "business_models": [
+        "location subscription",
+        "multi-location plan",
+        "template packs"
+      ],
+      "marketing_strategy": "SEO for AI-agent calls to businesses plus partnerships with appointment-heavy local-business consultants.",
+      "first_customer_plan": "Recruit 5 US-facing service businesses receiving reservation/availability calls and run a manual policy pilot.",
+      "main_risk": "Demand may be premature until consumer AI calling volume becomes material.",
+      "validation_assumption": "Businesses will want a governance/operations layer separate from their telephony provider.",
+      "evidence_strength": "strong",
+      "competition_confidence": "medium-high",
+      "qualification_status": "qualified",
+      "rejection_reason": null
+    }
+  ]
+}
