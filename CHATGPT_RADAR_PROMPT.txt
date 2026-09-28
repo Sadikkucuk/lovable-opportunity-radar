@@ -1,3 +1,23 @@
+SCHEDULED EXECUTION MODE — IMPORTANT
+
+The production daily radar now runs as a staged multi-worker pipeline.
+Stage-specific prompts under prompts/ are authoritative for orchestration:
+- prompts/DISCOVERY_WORKER.txt
+- prompts/MERGE_WORKER.txt
+- prompts/VALIDATOR_WORKER.txt
+- prompts/FINALIZER.txt
+
+When this master prompt is read from one of those stage prompts, the stage prompt
+OVERRIDES any older all-in-one execution/orchestration instructions below.
+The research definitions, feasibility constraints, competitor definitions,
+deduplication semantics, Turkish output format and catalog schema in this file
+remain authoritative.
+
+A final "0 ideas" result is valid only when the FINALIZER records
+overall_status="FULL_RADAR_COMPLETE".
+
+==================================================
+
 DEEP RESEARCH: GLOBAL LOVABLE WEB APP OPPORTUNITY RADAR — ZERO-EXTERNAL-COST MVP
 
 INPUT
