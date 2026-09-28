@@ -1,0 +1,90 @@
+MULTI-WORKER RADAR — MERGE / CANDIDATE BUILDER
+
+Repository: Sadikkucuk/lovable-opportunity-radar
+Use Europe/Istanbul date for state/runs/YYYY-MM-DD.
+
+Read:
+- docs/batches/index.json
+- state/runs/YYYY-MM-DD/discovery/worker-1.json
+- worker-2.json
+- worker-3.json
+- worker-4.json
+- state/idea_history.json
+- CHATGPT_RADAR_PROMPT.txt for productization/feasibility definitions.
+
+FIRST APPLY A HARD COVERAGE GATE.
+
+Expected assignments:
+worker 1 = batches 1-6
+worker 2 = batches 7-12
+worker 3 = batches 13-18
+worker 4 = batches 19 through final batch (normally 25)
+
+If ANY worker file is missing, status != complete, assigned batches are wrong,
+or the sum of feed_items_triaged != docs/batches/index.json total_items:
+- write state/runs/YYYY-MM-DD/merge/status.json with status="blocked_incomplete_discovery"
+- include exact missing/failed workers and coverage
+- DO NOT create a completed candidates file
+- STOP.
+
+If discovery coverage is complete:
+
+1. Merge all raw opportunities.
+2. EVENT CLUSTER duplicate/syndicated developments across sources. Preserve all
+   supporting sources but do not let one event create duplicated product candidates.
+3. SEMANTIC IDEA DEDUPE using:
+   target customer + core JTBD + product mechanism/workflow.
+   Product name/headline/date alone never makes a new idea.
+4. Perform dataset-wide cross-article combination discovery using all raw ledgers.
+5. Apply productization test.
+6. Apply zero-external-cash MVP feasibility and <=500 Lovable-credit internal
+   feasibility constraint. Explore free/open-source/public-data substitutes before rejection.
+7. Pre-match each candidate against state/idea_history.json, but do NOT suppress it
+   from validation; mark likely history matches so the finalizer can decide after evidence.
+8. Assign deterministic validation_index 1..N after sorting by canonical_key.
+   Odd indexes belong to validator A; even indexes to validator B.
+9. Do NOT perform final direct-competitor research here.
+
+Write:
+- state/runs/YYYY-MM-DD/merge/candidates.json
+- state/runs/YYYY-MM-DD/merge/status.json
+
+candidates.json fields for each candidate:
+- candidate_id
+- validation_index
+- validator_assignment: A|B
+- canonical_key
+- idea_name
+- core_job
+- target_customer
+- buyer
+- product_mechanism
+- triggering_article_ids
+- supporting_article_ids
+- canonical_source_urls
+- article_verification_summary
+- before_state
+- after_state
+- why_now
+- market_gap_hypothesis
+- scope_hint
+- zero_cost_stack_outline
+- estimated_lovable_credits
+- history_match_key or null
+- history_match_reason or null
+- candidate_status: needs_validation
+
+status.json must include:
+- status: complete
+- feed_items_total
+- feed_items_triaged
+- discovery_workers_complete: 4
+- raw_opportunity_count
+- event_cluster_count
+- semantic_unique_count
+- candidate_count
+- validator_a_expected
+- validator_b_expected
+- completed_at
+
+Do not call this a full radar result. This is the candidate gate only.
