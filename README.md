@@ -107,3 +107,41 @@ A few source failures do not stop the workflow. `docs/status.json` records succe
 The source registry now contains **155 sources total**, including **50 Türkiye sources** across startups/technology, industry, retail, logistics, energy, public regulation and local Trakya/Lüleburgaz institutions.
 
 A one-time Türkiye-only snapshot is stored under `docs/turkey-only/`. Normal hourly refreshes use all 155 sources together.
+
+## Daily multi-worker analysis
+
+The old single 07:00 all-in-one ChatGPT run is deprecated.
+
+The production analysis is staged:
+
+```text
+07:00  Discovery workers 1-4 in parallel
+       W1 batches 01-06
+       W2 batches 07-12
+       W3 batches 13-18
+       W4 batches 19-end
+
+08:15  Merge / candidate builder
+
+08:45  Validators A and B in parallel
+       A = odd validation_index
+       B = even validation_index
+
+10:00  Finalizer / publication gate
+```
+
+Daily state is persisted under `state/runs/YYYY-MM-DD/`.
+
+The finalizer publishes to `state/idea_catalog.json` only when all discovery,
+merge and validation coverage gates pass. If any stage is incomplete, the catalog
+and persistent idea history are not changed and the run is marked
+`RADAR_INCOMPLETE`.
+
+This separates these metrics:
+- feed records triaged
+- original articles actually verified
+- raw opportunities generated
+- candidates competition-validated
+- final new ideas
+
+Therefore `1000/1000 feed records` no longer means that 1,000 full articles were opened.
