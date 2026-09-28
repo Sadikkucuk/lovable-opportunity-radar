@@ -1,0 +1,95 @@
+MULTI-WORKER RADAR — FINALIZER / PUBLICATION GATE
+
+Repository: Sadikkucuk/lovable-opportunity-radar
+Use Europe/Istanbul date for state/runs/YYYY-MM-DD.
+
+Read:
+- docs/batches/index.json
+- all 4 discovery worker files
+- merge/status.json
+- merge/candidates.json
+- validation/validator-a.json
+- validation/validator-b.json
+- state/idea_history.json
+- state/idea_catalog.json
+- CHATGPT_RADAR_PROMPT.txt for final Turkish idea format and catalog schema.
+
+HARD COMPLETION GATE — NO EXCEPTIONS
+
+FULL_RADAR_COMPLETE requires ALL:
+1. discovery workers 1,2,3,4 exist and status="complete";
+2. their triaged item counts sum exactly to docs/batches/index.json total_items;
+3. merge/status.json status="complete";
+4. merge candidate_count equals candidates.json candidate count;
+5. validator A and B both status="complete";
+6. validator-a expected == validated and validator-b expected == validated;
+7. union of both validator result candidate_ids equals the candidate set exactly,
+   with no missing and no duplicate validation;
+8. every candidate has a qualification_status.
+
+If ANY condition fails:
+- write state/runs/YYYY-MM-DD/final/report.json with:
+  overall_status="RADAR_INCOMPLETE"
+  and exact stage coverage/failure;
+- DO NOT modify state/idea_history.json;
+- DO NOT modify state/idea_catalog.json;
+- DO NOT publish a "0 ideas" result;
+- user-facing message must say radar incomplete and identify the missing stage.
+STOP.
+
+IF AND ONLY IF FULL_RADAR_COMPLETE:
+
+1. Combine validator results.
+2. Compare every qualified or competition_not_verified candidate semantically with
+   persistent idea_history using target customer + core job + product mechanism.
+3. Suppress previously reported semantic duplicates even if name/source/date differs.
+4. Allow an old idea to surface only under MEVCUT FİKİRDE ÖNEMLİ GÜNCELLEME
+   when the material-update rules in the master prompt are satisfied.
+5. For genuinely new ideas assign exactly one scope_tier:
+   Lüleburgaz / Türkiye / Dünya / Evren.
+6. Build the full website/catalog record in the exact idea_catalog schema.
+7. Update state/idea_history.json atomically/preserving unrelated records.
+8. Update state/idea_catalog.json atomically/preserving unrelated records.
+9. Write state/runs/YYYY-MM-DD/final/report.json.
+
+final/report.json must include:
+- overall_status: "FULL_RADAR_COMPLETE"
+- run_date
+- feed_records_total
+- feed_records_triaged
+- original_articles_verified_total
+- raw_opportunity_count
+- candidate_count
+- candidates_validated
+- new_qualified_count
+- new_competition_not_verified_count
+- duplicate_suppressed_count
+- material_update_count
+- rejected_counts_by_reason
+- emitted_new_ideas
+- competition_not_verified
+- suppressed_duplicate_keys
+- material_updates
+- completed_at
+
+Only after successful history + catalog writes may the user-facing result say complete.
+
+A zero-new-idea result is valid ONLY here, after all gates passed.
+
+User-facing output:
+- Turkish, simple "Ali'ye anlatır gibi" language;
+- technical English terms preserved;
+- show only NEW ideas plus MATERIAL updates;
+- do not show suppressed duplicates in detail;
+- conclude with exact coverage metrics:
+  Feed records processed
+  Original articles verified
+  Raw opportunities generated
+  Candidates competition-validated
+  New qualified ideas
+  New competition-not-verified ideas
+  Existing duplicates suppressed
+  Material updates
+  Overall status
+
+Never use "1000/1000 processed" as a synonym for full article verification.
