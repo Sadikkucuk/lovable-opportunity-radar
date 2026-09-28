@@ -808,9 +808,9 @@
     },
     {
       "canonical_key": "local-service-business|standardize-ai-phone-intake|policy-outcome-escalation-desk",
-      "idea_name": "AgentCall Ready",
+      "idea_name": "AgentCall Ready — AI Arama Karşılama Masası",
       "scope_tier": "Dünya",
-      "scope_reason": "Validated scope based on target customer and workflow.",
+      "scope_reason": "Telefonla müşteri talebi alan yerel işletmelere yönelik, farklı ülkelerde uygulanabilecek çevrimiçi bir SaaS workflow'udur.",
       "news_source": "Google / TechCrunch",
       "news_title": "Google tests letting Gemini call businesses for you",
       "news_date": "2026-09-24",
@@ -821,23 +821,23 @@
           "url": "https://techcrunch.com/2026/09/24/google-tests-letting-gemini-make-phone-calls-initially-for-us-pixel-owners/"
         }
       ],
-      "core_idea": "AI-call intake policy desk with scripts, disclosure rules, structured outcomes and escalation queue",
-      "user_story": "Bir local service businesses receiving phone requests olarak standardize intake from consumer AI callers istiyorum; böylece operasyonu tek bir izlenebilir workflow üzerinden yönetebilirim.",
-      "before_state": "Phone workflows are designed for humans, creating ambiguity around agent disclosure and escalation.",
-      "after_state": "AI-call intake policy desk with scripts, disclosure rules, structured outcomes and escalation queue",
-      "why_now": "Consumer AI agents are beginning to call businesses on users' behalf.",
-      "target_customer": "local service businesses receiving phone requests",
-      "buyer": "small-business operations manager",
+      "core_idea": "Telefonla müşteri talebi alan işletmeler için, müşteriler adına arama yapan AI asistanlarının nasıl karşılanacağını standartlaştıran bir operasyon masası. Görüşme kuralları, hazır senaryolar, sonuç kayıtları ve gerektiğinde çalışana yönlendirme tek yerde yönetilir.",
+      "user_story": "Telefonla müşteri talebi alan yerel bir işletme olarak, müşteriler adına arama yapan AI asistanlarından gelen talepleri standart şekilde karşılamak istiyorum; böylece tüm süreci tek ve izlenebilir bir workflow üzerinden yönetebilirim.",
+      "before_state": "Telefon süreçleri insan arayan müşterilere göre tasarlanmış durumda. AI asistanı aradığında kimlik açıklaması, hangi bilgilerin alınacağı ve hangi durumda çalışana aktarılacağı belirsiz kalabiliyor.",
+      "after_state": "AI asistanından gelen arama → görüşme amacının belirlenmesi → gerekli bilgilerin standart biçimde alınması → sonuç kaydı → gerekiyorsa çalışana yönlendirme.",
+      "why_now": "Tüketici tarafındaki AI asistanları kullanıcılar adına işletmeleri telefonla aramaya başlıyor. İşletmelerin bu yeni arama tipini nasıl yöneteceğine ilişkin operasyon standardı ihtiyacı oluşuyor.",
+      "target_customer": "Telefonla müşteri talebi alan yerel işletmeler",
+      "buyer": "Küçük işletme sahibi veya operasyon yöneticisi",
       "market": "Global",
       "turkiye_direct_competitor_count": 0,
       "global_direct_competitor_count": 0,
       "direct_competitors": [],
       "adjacent_competitors": [],
-      "market_gap": "No direct recipient-business readiness product found for third-party consumer AI callers.",
+      "market_gap": "Üçüncü taraf tüketici AI asistanlarından gelen aramaların kabul kurallarını, sonuç kaydını ve çalışana yönlendirilmesini yöneten doğrudan bir ürün tespit edilmedi.",
       "business_models": [
         {
-          "model": "subscription",
-          "estimate": "validate with first customers"
+          "model": "SaaS aboneliği",
+          "estimate": "İlk müşterilerle fiyat doğrulaması"
         }
       ],
       "lovable_credits_total": 320,
@@ -847,18 +847,18 @@
       "technologies": [
         {
           "name": "Lovable + Supabase",
-          "purpose": "MVP",
-          "cost": "free/existing"
+          "purpose": "MVP uygulaması ve veri saklama",
+          "cost": "mevcut/free tier"
         }
       ],
       "external_cash_cost": 0,
-      "mvp": "AI-caller policy builder, call-purpose templates, disclosure/consent rules, structured outcome form, escalation queue and incident log.",
-      "working_logic": "Define allowed agent requests and required fields; staff follow structured outcomes; exceptions escalate.",
+      "mvp": "AI arama politikası oluşturucu, görüşme amacı şablonları, açıklama/onay kuralları, yapılandırılmış sonuç formu, çalışana yönlendirme kuyruğu ve olay kaydı.",
+      "working_logic": "İşletme hangi AI taleplerini kabul edeceğini ve gerekli bilgileri tanımlar → çalışan görüşmeyi standart forma göre işler → sonuç kaydedilir → istisnai durumlar ilgili çalışana yönlendirilir.",
       "build_time": "7-9 days",
-      "marketing_strategy": "Targeted outbound + problem-specific SEO + partner channels.",
-      "first_customer_plan": "Manual pilot with target-customer design partners.",
-      "main_risk": "Demand may be premature until consumer AI calling volume becomes material.",
-      "validation_assumption": "Validate willingness to adopt/pay with first design partners.",
+      "marketing_strategy": "Telefonla yoğun talep alan yerel işletmelere doğrudan erişim, probleme özel SEO içerikleri ve sektör iş ortakları.",
+      "first_customer_plan": "Telefonla yoğun rezervasyon veya hizmet talebi alan küçük işletmelerle manuel pilot.",
+      "main_risk": "Tüketici AI asistanlarından gelen arama hacmi kısa vadede yeterince yüksek olmayabilir.",
+      "validation_assumption": "İlk hedef işletmelerin AI kaynaklı telefon taleplerini ayrı bir süreç olarak yönetme ihtiyacı ve ödeme isteği doğrulanmalı.",
       "evidence_strength": "Strong",
       "competition_confidence": "medium-high",
       "verification_status": "qualified",
@@ -868,9 +868,9 @@
     },
     {
       "canonical_key": "robotaxi-fleet-operator|standardize-vehicle-turnaround|service-reset-readiness-ledger",
-      "idea_name": "RoboTurn — Robotaxi Turnaround Ops",
+      "idea_name": "RoboTurn — Robotaksi Servis Hazırlık Yönetimi",
       "scope_tier": "Dünya",
-      "scope_reason": "Validated scope based on target customer and workflow.",
+      "scope_reason": "Robotaksi filolarının bulunduğu pazarlarda kullanılabilecek küresel bir operasyon workflow'udur.",
       "news_source": "The Robot Report",
       "news_title": "From 14 cities to 15,000: What it will take to scale robotaxis?",
       "news_date": "2026-09",
@@ -881,23 +881,23 @@
           "url": "https://www.therobotreport.com/from-14-cities-to-15000-what-it-will-take-to-scale-robotaxis/"
         }
       ],
-      "core_idea": "turnaround work orders + station checklist + defect escalation + readiness evidence + SLA dashboard",
-      "user_story": "Bir robotaxi fleet operators and service partners olarak standardize robotaxi vehicle turnaround before release to service istiyorum; böylece operasyonu tek bir izlenebilir workflow üzerinden yönetebilirim.",
-      "before_state": "Cleaning, charging, reset, inspection and defect evidence can be fragmented across depot workflows.",
-      "after_state": "Auditable vehicle turnaround job with release-to-service evidence and SLA measurement.",
-      "why_now": "Robotaxi fleets are scaling and require repeatable local/depot turnaround operations.",
-      "target_customer": "robotaxi fleet operators and service partners",
-      "buyer": "fleet/depot operations manager",
+      "core_idea": "Robotaksinin yeniden hizmete çıkmadan önce temizlik, şarj, sistem sıfırlama, kontrol ve arıza işlemlerini standartlaştıran operasyon sistemi.",
+      "user_story": "Bir robotaksi filo veya servis işletmecisi olarak, araçların yeniden hizmete çıkmadan önceki hazırlık sürecini standartlaştırmak istiyorum; böylece hiçbir kontrol adımı atlanmadan aracın hizmete hazır olduğunu kanıtlayabilirim.",
+      "before_state": "Temizlik, şarj, sistem sıfırlama, fiziksel kontrol ve arıza kayıtları farklı ekipler ve araçlar arasında dağınık yürütülebiliyor.",
+      "after_state": "Araç servise gelir → standart kontrol listesi uygulanır → arıza varsa yönlendirilir → kanıt ve onay kaydedilir → araç hizmete bırakılır → SLA ölçülür.",
+      "why_now": "Robotaksi filoları büyüdükçe araçların servis noktalarında hızlı, tekrarlanabilir ve kanıtlanabilir biçimde yeniden hizmete hazırlanması gerekiyor.",
+      "target_customer": "Robotaksi filo işletmecileri ve servis operasyonu sağlayıcıları",
+      "buyer": "Filo veya servis noktası operasyon yöneticisi",
       "market": "Global",
       "turkiye_direct_competitor_count": 0,
       "global_direct_competitor_count": 0,
       "direct_competitors": [],
       "adjacent_competitors": [],
-      "market_gap": "No direct standalone product found for outsourced/local robotaxi turnaround readiness and SLA proof.",
+      "market_gap": "Robotaksi servis noktalarında araç hazırlığı, arıza yönlendirmesi, hizmete hazır olma kanıtı ve SLA takibini birlikte yöneten bağımsız bir ürün tespit edilmedi.",
       "business_models": [
         {
-          "model": "subscription",
-          "estimate": "validate with first customers"
+          "model": "SaaS aboneliği",
+          "estimate": "İlk müşterilerle fiyat doğrulaması"
         }
       ],
       "lovable_credits_total": 420,
@@ -907,18 +907,18 @@
       "technologies": [
         {
           "name": "Lovable + Supabase",
-          "purpose": "MVP",
-          "cost": "free/existing"
+          "purpose": "MVP uygulaması ve veri saklama",
+          "cost": "mevcut/free tier"
         }
       ],
       "external_cash_cost": 0,
-      "mvp": "Turnaround work orders, station checklist, defect/escalation queue, readiness evidence and SLA dashboard.",
-      "working_logic": "Arrival job → checklist → defect/escalation → evidence/signoff → release → SLA.",
+      "mvp": "Araç hazırlık iş emirleri, servis noktası kontrol listesi, arıza/yönlendirme kuyruğu, hazır olma kanıtları ve SLA dashboard'u.",
+      "working_logic": "Araç giriş kaydı → temizlik/şarj/sıfırlama/kontrol listesi → arıza varsa yönlendirme → kanıt ve onay → hizmete dönüş → servis noktası SLA ölçümü.",
       "build_time": "10-14 days",
-      "marketing_strategy": "Targeted outbound + problem-specific SEO + partner channels.",
-      "first_customer_plan": "Manual pilot with target-customer design partners.",
-      "main_risk": "Addressable robotaxi operations remain geographically concentrated.",
-      "validation_assumption": "Validate willingness to adopt/pay with first design partners.",
+      "marketing_strategy": "Robotaksi işletmecileri, filo servis ortakları ve araç hazırlık operasyonu yapan firmalara doğrudan B2B erişim.",
+      "first_customer_plan": "Küçük bir filo veya servis ortağında tek servis noktasıyla pilot.",
+      "main_risk": "Robotaksi operasyonları henüz az sayıda şehir ve işletmede yoğunlaşıyor.",
+      "validation_assumption": "Filo işletmecilerinin mevcut araç hazırlık sürecinde kontrol, kanıt veya SLA takibi kaynaklı operasyon problemi yaşadığı doğrulanmalı.",
       "evidence_strength": "Strong",
       "competition_confidence": "medium-high",
       "verification_status": "qualified",
@@ -928,31 +928,31 @@
     },
     {
       "canonical_key": "satellite-operator|govern-in-orbit-refuelling-readiness|compatibility-gate-evidence-desk",
-      "idea_name": "OrbitReady — In-Orbit Servicing Readiness",
+      "idea_name": "OrbitReady — Yörüngede Servis Hazırlık Yönetimi",
       "scope_tier": "Evren",
-      "scope_reason": "Validated scope based on target customer and workflow.",
+      "scope_reason": "Uydu işletmecileri ve yörüngede servis sağlayıcıları için küresel uzay operasyonlarına yönelik niş bir SaaS workflow'udur.",
       "news_source": "Space-sector corroboration",
       "news_title": "Reported BeiDou in-orbit refuelling operation",
       "news_date": "2026-09",
       "news_url": null,
       "source_links": [],
-      "core_idea": "servicing candidate register + compatibility checklist + mission readiness gates + evidence vault + post-service record",
-      "user_story": "Bir satellite operators and in-orbit servicing providers olarak screen and govern satellites for in-orbit refuelling missions istiyorum; böylece operasyonu tek bir izlenebilir workflow üzerinden yönetebilirim.",
-      "before_state": "Servicing readiness, interface compatibility, approvals and evidence are fragmented across engineering artifacts.",
-      "after_state": "Vendor-neutral compatibility/readiness gate and mission evidence workflow.",
-      "why_now": "In-orbit servicing/refuelling is moving from demonstrations toward operational planning.",
-      "target_customer": "satellite operators and in-orbit servicing providers",
-      "buyer": "mission operations or fleet planning manager",
+      "core_idea": "Bir uydunun yörüngede yakıt ikmali veya servis operasyonuna uygunluğunu, gerekli kontrolleri, onayları ve kanıtları tek yerde yöneten hazırlık masası.",
+      "user_story": "Bir uydu işletmecisi veya yörüngede servis sağlayıcısı olarak, hangi uyduların servis veya yakıt ikmali için uygun olduğunu sistematik biçimde değerlendirmek istiyorum; böylece görev öncesi uyumluluk, onay ve kanıt sürecini izlenebilir şekilde yönetebilirim.",
+      "before_state": "Servis hazırlığı, arayüz uyumluluğu, teknik kısıtlar, onaylar ve kanıtlar farklı mühendislik dokümanlarında tutulabiliyor.",
+      "after_state": "Uydu kaydı → teknik kısıtlar → uyumluluk kontrolü → görev hazırlık kapıları → onay ve kanıt paketi → servis sonucu kaydı.",
+      "why_now": "Yörüngede servis ve yakıt ikmali çalışmaları gösterim aşamasından operasyonel planlama aşamasına ilerliyor.",
+      "target_customer": "Uydu işletmecileri ve yörüngede servis sağlayıcıları",
+      "buyer": "Görev operasyonları veya uydu filosu planlama yöneticisi",
       "market": "Global",
       "turkiye_direct_competitor_count": 0,
       "global_direct_competitor_count": 0,
       "direct_competitors": [],
       "adjacent_competitors": [],
-      "market_gap": "No direct standalone vendor-neutral readiness/evidence desk found.",
+      "market_gap": "Belirli bir servis sağlayıcısına bağlı olmayan; uyumluluk, görev hazırlığı ve kanıt sürecini yöneten bağımsız bir yazılım tespit edilmedi.",
       "business_models": [
         {
-          "model": "subscription",
-          "estimate": "validate with first customers"
+          "model": "SaaS aboneliği",
+          "estimate": "İlk müşterilerle fiyat doğrulaması"
         }
       ],
       "lovable_credits_total": 410,
@@ -962,18 +962,18 @@
       "technologies": [
         {
           "name": "Lovable + Supabase",
-          "purpose": "MVP",
-          "cost": "free/existing"
+          "purpose": "MVP uygulaması ve veri saklama",
+          "cost": "mevcut/free tier"
         }
       ],
       "external_cash_cost": 0,
-      "mvp": "Servicing candidate register, compatibility checklist, mission readiness gates, evidence vault and post-service record.",
-      "working_logic": "Register spacecraft → constraints → compatibility → approvals → evidence package → service outcome.",
+      "mvp": "Servis adayı uydu kayıt ekranı, uyumluluk kontrol listesi, görev hazırlık kapıları, kanıt kasası ve servis sonrası kayıt.",
+      "working_logic": "Uydu kaydedilir → görev ve arayüz kısıtları girilir → uyumluluk kontrol edilir → gerekli onaylar tamamlanır → kanıt paketi oluşturulur → servis sonucu kaydedilir.",
       "build_time": "10-14 days",
-      "marketing_strategy": "Targeted outbound + problem-specific SEO + partner channels.",
-      "first_customer_plan": "Manual pilot with target-customer design partners.",
-      "main_risk": "Very small customer universe and domain-expertise barrier.",
-      "validation_assumption": "Validate willingness to adopt/pay with first design partners.",
+      "marketing_strategy": "Uydu işletmecileri, NewSpace şirketleri ve yörüngede servis girişimlerine doğrudan B2B erişim.",
+      "first_customer_plan": "Kritik uçuş kontrolü içermeyen bir hazırlık/kanıt workflow'u için küçük uydu işletmecisi veya servis girişimiyle pilot.",
+      "main_risk": "Müşteri evreni küçük ve güçlü alan uzmanlığı gerekiyor.",
+      "validation_assumption": "Ürün yörünge dinamiği veya görev kontrolü yapmadan yalnız hazırlık ve kanıt yönetimi olarak değer üretebilmeli.",
       "evidence_strength": "Strong",
       "competition_confidence": "medium",
       "verification_status": "qualified",
@@ -983,9 +983,9 @@
     },
     {
       "canonical_key": "subscription-business|prepare-retention-for-consumer-agents|cancel-path-save-policy-audit",
-      "idea_name": "AgentCancel Ready",
+      "idea_name": "AgentCancel Ready — AI Abonelik İptal Hazırlığı",
       "scope_tier": "Dünya",
-      "scope_reason": "Validated scope based on target customer and workflow.",
+      "scope_reason": "Abonelikle çalışan dijital işletmelerde küresel olarak uygulanabilecek bir SaaS workflow'udur.",
       "news_source": "Neoteo / Meta Muse reporting",
       "news_title": "Meta Muse subscription-management capability",
       "news_date": "2026-09",
@@ -996,23 +996,23 @@
           "url": "https://www.neoteo.com/en/meta-muse-can-flag-subscriptions-heres-how-to-cancel-its-plan"
         }
       ],
-      "core_idea": "cancellation-path inventory + machine-readable policy checklist + save-offer rules + agent-origin churn evidence",
-      "user_story": "Bir subscription businesses and SaaS teams olarak prepare cancellation and retention flows for consumer agents istiyorum; böylece operasyonu tek bir izlenebilir workflow üzerinden yönetebilirim.",
-      "before_state": "Retention flows are designed for human navigation and lose visibility when agents act.",
-      "after_state": "Agent-readable cancellation/save policy and agent-origin churn evidence workflow.",
-      "why_now": "Consumer assistants are beginning to manage subscriptions on users' behalf.",
-      "target_customer": "subscription businesses and SaaS teams",
-      "buyer": "retention/customer-success lead",
+      "core_idea": "Müşterinin yerine işlem yapan AI asistanlarının abonelik iptali yapabildiği dünyada, şirketin iptal kanallarını, teklif kurallarını ve AI kaynaklı müşteri kaybını yönetmeye hazırlayan sistem.",
+      "user_story": "Abonelikle çalışan bir işletme olarak, müşteriler adına işlem yapan AI asistanlarının iptal sürecimi doğru kullanabilmesini ve bu kanaldan oluşan müşteri kaybını ölçebilmeyi istiyorum; böylece mevcut müşteri tutundurma stratejimi yeni AI kanalına uyarlayabilirim.",
+      "before_state": "İptal ve müşteri tutundurma süreçleri insan kullanıcıların ekranları kullanmasına göre tasarlanıyor; AI asistanı işlem yaptığında hangi kuralın uygulandığı ve neden iptal gerçekleştiği görünmez kalabiliyor.",
+      "after_state": "İptal kanalları ve kuralları tanımlanır → AI tarafından anlaşılabilir uygunluk ve teklif kuralları hazırlanır → süreç test edilir → AI kaynaklı iptal nedeni ve sonucu kaydedilir → kayıp ve politika hataları analiz edilir.",
+      "why_now": "Tüketici AI asistanları kullanıcılar adına abonelikleri bulma ve yönetme yetenekleri kazanmaya başlıyor.",
+      "target_customer": "Abonelik modeliyle çalışan şirketler ve SaaS ekipleri",
+      "buyer": "Müşteri tutundurma, Customer Success veya abonelik operasyonu yöneticisi",
       "market": "Global",
       "turkiye_direct_competitor_count": 0,
       "global_direct_competitor_count": 0,
       "direct_competitors": [],
       "adjacent_competitors": [],
-      "market_gap": "No direct product found for external consumer-agent cancellation readiness.",
+      "market_gap": "Harici tüketici AI asistanlarının gerçekleştirdiği iptallere özel hazırlık, teklif politikası ve kanıt yönetimi yapan doğrudan bir ürün tespit edilmedi.",
       "business_models": [
         {
-          "model": "subscription",
-          "estimate": "validate with first customers"
+          "model": "SaaS aboneliği",
+          "estimate": "İlk müşterilerle fiyat doğrulaması"
         }
       ],
       "lovable_credits_total": 300,
@@ -1022,18 +1022,18 @@
       "technologies": [
         {
           "name": "Lovable + Supabase",
-          "purpose": "MVP",
-          "cost": "free/existing"
+          "purpose": "MVP uygulaması ve veri saklama",
+          "cost": "mevcut/free tier"
         }
       ],
       "external_cash_cost": 0,
-      "mvp": "Cancellation-path inventory, machine-readable policy checklist, save-offer rules and agent-origin churn evidence.",
-      "working_logic": "Map channels/policies → define agent-readable rules → test path → record outcome → review leakage.",
+      "mvp": "İptal kanalı envanteri, AI tarafından okunabilir politika kontrol listesi, müşteri tutundurma teklif kuralları ve AI kaynaklı iptal kayıtları.",
+      "working_logic": "İptal kanalları ve politikalar haritalanır → uygunluk ve teklif kuralları tanımlanır → AI işlem yolu test edilir → iptal nedeni/sonucu kaydedilir → kayıp ve politika hataları incelenir.",
       "build_time": "7-9 days",
-      "marketing_strategy": "Targeted outbound + problem-specific SEO + partner channels.",
-      "first_customer_plan": "Manual pilot with target-customer design partners.",
-      "main_risk": "Market may be early and standards may change rapidly.",
-      "validation_assumption": "Validate willingness to adopt/pay with first design partners.",
+      "marketing_strategy": "Abonelik modeli kullanan SaaS ve dijital hizmet şirketlerinin retention/Customer Success ekiplerine doğrudan erişim ve probleme özel SEO.",
+      "first_customer_plan": "İptal süreci çevrimiçi yürüyen küçük veya orta ölçekli abonelik şirketleriyle manuel pilot.",
+      "main_risk": "Pazar henüz erken aşamada ve AI asistanlarının abonelik yönetimi standartları hızlı değişebilir.",
+      "validation_assumption": "Abonelik şirketlerinin AI kaynaklı iptal işlemlerini ayrı izlemek ve politika hazırlığı yapmak için ödeme isteği doğrulanmalı.",
       "evidence_strength": "Strong",
       "competition_confidence": "medium-high",
       "verification_status": "qualified",
@@ -1043,9 +1043,9 @@
     },
     {
       "canonical_key": "turkish-company-founder|navigate-company-lifecycle-obligations|official-process-checklist-vault",
-      "idea_name": "ŞirketYol — Türkiye Company Lifecycle Navigator",
+      "idea_name": "ŞirketYol — Şirket Yaşam Döngüsü Rehberi",
       "scope_tier": "Türkiye",
-      "scope_reason": "Validated scope based on target customer and workflow.",
+      "scope_reason": "Ürün doğrudan Türkiye'de şirket kuran ve işleten girişimcilerin resmi süreçlerine odaklanır.",
       "news_source": "Dünya / OVP reporting",
       "news_title": "Türkiye ‘Dijital Şirket’ modeli nasıl olmalı?",
       "news_date": "2026-09-28",
@@ -1056,23 +1056,27 @@
           "url": "https://www.dunya.com/kose-yazisi/turkiye-dijital-sirket-modeli-nasil-olmali/841627"
         }
       ],
-      "core_idea": "personalized lifecycle map + deadline/evidence checklist + official-link handoff",
-      "user_story": "Bir Türkiye-based and foreign founders forming a Turkish company olarak know the next lifecycle obligation and required evidence istiyorum; böylece operasyonu tek bir izlenebilir workflow üzerinden yönetebilirim.",
-      "before_state": "Company setup and post-setup obligations are fragmented across institutions and advisers.",
-      "after_state": "Personalized obligation map with deadlines, evidence, official sources and completion state.",
-      "why_now": "Türkiye's Digital Company direction increases demand for navigable digital company processes.",
-      "target_customer": "Türkiye-based and foreign founders forming a Turkish company",
-      "buyer": "founder / small-company owner",
+      "core_idea": "Türkiye'de şirket kuran girişimciye şirketin özelliklerine göre hangi resmi işlemi ne zaman yapması gerektiğini, hangi belgeyi hazırlayacağını ve hangi resmi kaynağa gideceğini gösteren kişiselleştirilmiş süreç rehberi.",
+      "user_story": "Türkiye'de şirket kuran bir girişimci olarak, kuruluş sonrasında sıradaki resmi yükümlülüğümün ne olduğunu ve hangi kanıt veya belgeyi hazırlamam gerektiğini tek yerde görmek istiyorum; böylece önemli bir işlemi veya tarihi kaçırmadan şirketimi yönetebilirim.",
+      "before_state": "Şirket kuruluşu ve sonrasındaki yükümlülükler farklı kamu kurumları, mevzuat sayfaları ve mali müşavir/hukuk danışmanı bilgileri arasında dağınık durumda.",
+      "after_state": "Şirket profili → uygulanacak yükümlülükler → tarih/olay tetikleyicileri → gerekli belge ve kanıtlar → resmi kaynak bağlantısı → tamamlanma kaydı.",
+      "why_now": "Türkiye'de şirket süreçlerinin dijitalleşmesine yönelik çalışmalar, girişimcinin resmi süreçleri daha anlaşılır ve tek noktadan takip edebilmesine yönelik ihtiyacı artırıyor.",
+      "target_customer": "Türkiye'de şirket kuran yerli ve yabancı girişimciler",
+      "buyer": "Girişimci veya küçük işletme sahibi",
       "market": "Türkiye",
       "turkiye_direct_competitor_count": 0,
       "global_direct_competitor_count": 0,
       "direct_competitors": [],
       "adjacent_competitors": [],
-      "market_gap": "No direct Turkish persistent founder workspace found for personalized lifecycle obligations and evidence.",
+      "market_gap": "Şirket özelliklerine göre yükümlülükleri, tarihleri, gerekli kanıtları ve resmi işlem bağlantılarını kişiselleştirerek kalıcı bir çalışma alanında yöneten doğrudan bir Türkiye ürünü tespit edilmedi.",
       "business_models": [
         {
-          "model": "subscription",
-          "estimate": "validate with first customers"
+          "model": "Yıllık SaaS aboneliği",
+          "estimate": "İlk kullanıcılarla fiyat doğrulaması"
+        },
+        {
+          "model": "Mali müşavir çoklu müşteri çalışma alanı",
+          "estimate": "B2B paket"
         }
       ],
       "lovable_credits_total": 390,
@@ -1082,18 +1086,18 @@
       "technologies": [
         {
           "name": "Lovable + Supabase",
-          "purpose": "MVP",
-          "cost": "free/existing"
+          "purpose": "MVP uygulaması ve veri saklama",
+          "cost": "mevcut/free tier"
         }
       ],
       "external_cash_cost": 0,
-      "mvp": "Company profile intake, obligation map, deadline/evidence checklist, official-source links, completion vault and change log.",
-      "working_logic": "Profile → deterministic obligation rules → official source/deadline/evidence → completion → roadmap refresh.",
+      "mvp": "Şirket profil formu, yükümlülük haritası, tarih ve kanıt kontrol listesi, resmi kaynak bağlantıları, tamamlanan işlemler kasası ve değişiklik günlüğü.",
+      "working_logic": "Şirket türü, faaliyet, çalışan ve diğer özellikler girilir → deterministik kurallar ilgili yükümlülükleri etkinleştirir → her yükümlülüğe resmi kaynak, tarih/olay tetikleyicisi ve gerekli kanıt bağlanır → tamamlanan işlemler kaydedilir → profil değiştikçe yol haritası güncellenir.",
       "build_time": "9-12 days",
-      "marketing_strategy": "Targeted outbound + problem-specific SEO + partner channels.",
-      "first_customer_plan": "Manual pilot with target-customer design partners.",
-      "main_risk": "Regulatory maintenance burden and liability if rules become stale.",
-      "validation_assumption": "Validate willingness to adopt/pay with first design partners.",
+      "marketing_strategy": "Şirket kuruluşu ve yükümlülükleri üzerine SEO içerikleri; girişimci toplulukları, mali müşavirler ve şirket kuruluş hizmetleriyle iş ortaklıkları.",
+      "first_customer_plan": "Yeni şirket kurmuş girişimciler ve çok sayıda küçük şirket yöneten mali müşavirlerle pilot.",
+      "main_risk": "Mevzuat değişikliklerinin sürekli takip edilmemesi yanlış yönlendirme ve hukuki risk yaratabilir.",
+      "validation_assumption": "Kullanıcıların resmi kaynaklara dağınık erişim yerine kişiselleştirilmiş yükümlülük takibi için ödeme isteği doğrulanmalı.",
       "evidence_strength": "Strong",
       "competition_confidence": "medium-high",
       "verification_status": "qualified",
