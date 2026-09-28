@@ -8,8 +8,16 @@ Those values are authoritative.
 
 Read:
 - CHATGPT_RADAR_PROMPT.txt for opportunity-discovery definitions and constraints.
-- docs/batches/index.json
-- every assigned docs/batches/batch-XXX.json.
+- docs/batches/index.json ONCE at the start of the run.
+- every assigned docs/batches/batch-XXX.json from that same index.
+
+Capture these immutable input identifiers from the index:
+- source_batch_index_generated_at
+- source_total_items
+- source_batch_count
+
+All four 07:00 workers must normally see the same source_batch_index_generated_at.
+Do not re-read a newer index later in the same worker run.
 
 IMPORTANT OVERRIDE:
 You are NOT the final radar. Do NOT process batches outside your assignment.
@@ -41,6 +49,9 @@ The JSON must contain:
   "schema_version": 1,
   "run_date": "YYYY-MM-DD",
   "worker_id": "1|2|3|4",
+  "source_batch_index_generated_at": "...",
+  "source_total_items": N,
+  "source_batch_count": N,
   "assigned_batches": [..],
   "status": "complete|incomplete",
   "started_at": "...",
@@ -80,7 +91,11 @@ Every raw opportunity must include:
 
 Mark status="complete" ONLY if:
 - every assigned batch was successfully read, AND
-- feed_items_triaged == the sum of item_count for those assigned batches.
+- feed_items_triaged == the sum of item_count for those assigned batches, AND
+- source_batch_index_generated_at is recorded.
+
+Do not compare against a later/current index after starting. The merge/orchestrator
+will compare the four workers' captured source_batch_index_generated_at values.
 
 If anything prevents exhaustive assigned coverage, write status="incomplete" with:
 - missing_batches
