@@ -1,0 +1,310 @@
+MULTI-WORKER RADAR — SINGLE ORCHESTRATOR
+
+Repository: Sadikkucuk/lovable-opportunity-radar
+Use Europe/Istanbul local date for state/runs/YYYY-MM-DD.
+
+PURPOSE
+
+This is the only post-discovery scheduled task. It is invoked several times
+during the day. Each invocation advances EXACTLY ONE unfinished stage and then
+stops. This bounds runtime while keeping the total number of active ChatGPT
+automations at five.
+
+Production tasks:
+- Discovery W1
+- Discovery W2
+- Discovery W3
+- Discovery W4
+- This Orchestrator
+
+Read:
+- CHATGPT_RADAR_PROMPT.txt
+- prompts/MERGE_WORKER.txt for merge semantics
+- prompts/VALIDATOR_WORKER.txt for competition/evidence semantics
+- prompts/FINALIZER.txt for publication semantics
+- state/idea_history.json
+- state/idea_catalog.json
+- current day's state/runs/YYYY-MM-DD/ files
+
+DO NOT use the current docs/batches/index.json as the completion denominator
+after discovery has started. The collector refreshes hourly. Instead, the four
+discovery workers must have captured the SAME immutable
+source_batch_index_generated_at and source_total_items at 07:00.
+
+==================================================
+STAGE SELECTION — ONE STAGE PER INVOCATION
+==================================================
+
+At the start, inspect today's run state and choose the FIRST applicable stage:
+
+0. If final/report.json exists with overall_status="FULL_RADAR_COMPLETE":
+   do nothing further. Return only: "Bugünkü radar zaten tamamlandı."
+
+1. DISCOVERY GATE / REPAIR
+2. MERGE
+3. VALIDATE NEXT CHUNK
+4. FINALIZE
+
+Run exactly one of these stages per invocation.
+
+==================================================
+1. DISCOVERY GATE / REPAIR
+==================================================
+
+Expected workers and assignments:
+- worker 1: batches 1-6
+- worker 2: batches 7-12
+- worker 3: batches 13-18
+- worker 4: batches 19 through source_batch_count
+
+Read:
+state/runs/YYYY-MM-DD/discovery/worker-1.json
+...
+worker-4.json
+
+A worker is acceptable only if:
+- file exists
+- status="complete"
+- assigned batches are correct
+- feed_items_triaged == feed_items_expected
+- source_batch_index_generated_at exists
+
+All four acceptable workers must have identical:
+- source_batch_index_generated_at
+- source_total_items
+- source_batch_count
+
+And:
+sum(feed_items_triaged across workers) == source_total_items
+
+If one worker is missing/incomplete BUT the other complete workers all share one
+source_batch_index_generated_at AND the current docs/batches/index.json still has
+that exact generated_at, repair ONLY ONE missing/incomplete worker in this invocation
+using prompts/DISCOVERY_WORKER.txt and that worker's assignment. Then stop.
+
+If the current index no longer matches the workers' captured generation, do NOT
+mix generations. Write:
+state/runs/YYYY-MM-DD/orchestrator-status.json
+
+with:
+status="RADAR_INPUT_MISMATCH"
+and exact worker generations/coverage.
+
+Do not publish. Stop.
+
+If all four workers pass the gate, proceed to stage selection on the NEXT invocation
+unless merge already exists. For this invocation, write/update orchestrator-status.json:
+status="DISCOVERY_COMPLETE"
+with:
+- source_batch_index_generated_at
+- feed_records_total
+- feed_records_triaged
+- candidate_articles_seen
+- original_articles_verified
+- raw_opportunity_count
+
+Then stop.
+
+==================================================
+2. MERGE
+==================================================
+
+Run only when discovery gate is complete and
+state/runs/YYYY-MM-DD/merge/status.json is absent or not complete.
+
+Use the merge rules in prompts/MERGE_WORKER.txt, with these overrides:
+- trust the frozen worker generation, not the current live feed index;
+- combine all four raw ledgers;
+- event-cluster syndicated/duplicate developments;
+- semantic idea identity = target customer + core JTBD + product mechanism;
+- run dataset-wide cross-article combination discovery;
+- apply productization and zero-cost/Lovable feasibility;
+- pre-match history but do not suppress before validation;
+- do NOT perform final competition research.
+
+Write:
+state/runs/YYYY-MM-DD/merge/candidates.json
+state/runs/YYYY-MM-DD/merge/status.json
+
+Candidate fields include:
+- candidate_id
+- validation_index
+- canonical_key
+- idea_name
+- core_job
+- target_customer
+- buyer
+- product_mechanism
+- triggering_article_ids
+- supporting_article_ids
+- canonical_source_urls
+- article_verification_summary
+- before_state
+- after_state
+- why_now
+- market_gap_hypothesis
+- scope_hint
+- zero_cost_stack_outline
+- estimated_lovable_credits
+- history_match_key
+- history_match_reason
+- candidate_status="needs_validation"
+
+Sort deterministically by canonical_key and assign validation_index 1..N.
+
+Write merge/status.json with:
+- status="complete"
+- source_batch_index_generated_at
+- feed_items_total
+- feed_items_triaged
+- raw_opportunity_count
+- event_cluster_count
+- semantic_unique_count
+- candidate_count
+- completed_at
+
+Initialize if absent:
+state/runs/YYYY-MM-DD/validation/progress.json
+
+{
+  "schema_version": 1,
+  "run_date": "YYYY-MM-DD",
+  "candidate_count": N,
+  "validated_candidate_count": 0,
+  "validated_candidate_ids": [],
+  "next_chunk_number": 1,
+  "status": "pending"
+}
+
+Then stop.
+
+==================================================
+3. VALIDATE NEXT CHUNK
+==================================================
+
+Run when merge/status.json status="complete" and not all candidates are validated.
+
+Read:
+- merge/candidates.json
+- validation/progress.json
+- all existing validation/chunk-*.json
+
+Validate the next MAXIMUM 5 candidates in ascending validation_index that do not
+already appear in validated_candidate_ids.
+
+For EVERY selected candidate perform the full fresh research defined in
+prompts/VALIDATOR_WORKER.txt:
+
+- re-verify triggering development/original source
+- Türkiye DIRECT competitor search
+- global DIRECT competitor search
+- strict same-customer + same-job + substantially-same-workflow test
+- adjacent competitor separation
+- <=500 internal Lovable-credit feasibility
+- external cash cost exactly 0
+- source/evidence strength
+- no rankings
+
+Each validation result must contain the complete fields required by
+prompts/VALIDATOR_WORKER.txt, including qualification_status.
+
+Write one immutable chunk:
+state/runs/YYYY-MM-DD/validation/chunk-NNN.json
+
+Top level:
+{
+  "schema_version":1,
+  "run_date":"YYYY-MM-DD",
+  "chunk_number":N,
+  "candidate_ids":[...],
+  "expected_candidate_count":K,
+  "validated_candidate_count":K,
+  "status":"complete|incomplete",
+  "results":[...],
+  "completed_at":"..."
+}
+
+Only if the chunk is complete, update validation/progress.json:
+- append candidate IDs
+- validated_candidate_count
+- next_chunk_number += 1
+- status="complete" if validated_candidate_count == candidate_count else "in_progress"
+
+Never mark candidates validated if the research was not actually completed.
+
+Stop after this one chunk, even if more candidates remain.
+
+==================================================
+4. FINALIZE
+==================================================
+
+Run only when validation/progress.json says:
+validated_candidate_count == candidate_count
+and status="complete".
+
+Hard gate:
+- all 4 discovery workers complete and same frozen generation
+- total triaged == source_total_items
+- merge complete
+- candidate_count matches candidate file
+- union of complete validation chunks contains every candidate exactly once
+- no candidate is missing or duplicated
+- every candidate has qualification_status
+
+If any gate fails:
+write final/report.json with overall_status="RADAR_INCOMPLETE".
+Do NOT update idea_history.json.
+Do NOT update idea_catalog.json.
+Never publish "0 ideas".
+Stop.
+
+If every gate passes:
+
+1. Combine all validation results.
+2. Compare qualified and competition_not_verified candidates semantically with
+   state/idea_history.json.
+3. Suppress cross-day duplicates using target customer + core job + product mechanism.
+4. Surface an old idea only as a material update under the master-prompt rules.
+5. Assign one exact scope_tier to each genuinely new idea:
+   Lüleburgaz / Türkiye / Dünya / Evren.
+6. Build full catalog records in state/idea_catalog.json schema.
+7. Preserve unrelated history/catalog records.
+8. Update idea_history.json and idea_catalog.json only after all validations are complete.
+9. Write state/runs/YYYY-MM-DD/final/report.json with:
+   - overall_status="FULL_RADAR_COMPLETE"
+   - source_batch_index_generated_at
+   - feed_records_total
+   - feed_records_triaged
+   - original_articles_verified_total
+   - raw_opportunity_count
+   - candidate_count
+   - candidates_validated
+   - new_qualified_count
+   - new_competition_not_verified_count
+   - duplicate_suppressed_count
+   - material_update_count
+   - rejected_counts_by_reason
+   - emitted_new_ideas
+   - competition_not_verified
+   - suppressed_duplicate_keys
+   - material_updates
+   - completed_at
+
+A zero-new-idea result is valid ONLY after this point.
+
+User-facing final message:
+- Turkish, simple language;
+- show only NEW ideas and MATERIAL updates;
+- do not repeat suppressed duplicates;
+- distinguish these metrics:
+  Feed records processed
+  Original articles verified
+  Raw opportunities generated
+  Candidates competition-validated
+  New qualified ideas
+  New competition-not-verified ideas
+  Existing duplicates suppressed
+  Material updates
+  Overall status
+
+Never equate "feed records processed" with "full articles verified".
