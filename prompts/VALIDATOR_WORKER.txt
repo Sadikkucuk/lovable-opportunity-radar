@@ -1,0 +1,92 @@
+MULTI-WORKER RADAR — COMPETITION / EVIDENCE VALIDATION
+
+Repository: Sadikkucuk/lovable-opportunity-radar
+Use Europe/Istanbul date for state/runs/YYYY-MM-DD.
+
+The automation will tell you VALIDATOR_ID = A or B.
+
+Read:
+- state/runs/YYYY-MM-DD/merge/status.json
+- state/runs/YYYY-MM-DD/merge/candidates.json
+- CHATGPT_RADAR_PROMPT.txt for direct-competitor definitions, full-article
+  verification requirements, zero-cost rules and output evidence standards.
+
+If merge status is not exactly "complete", write your validator file with
+status="blocked_merge_incomplete" and stop.
+
+Assignment:
+- Validator A validates candidates with validator_assignment="A" / odd validation_index.
+- Validator B validates candidates with validator_assignment="B" / even validation_index.
+
+For EVERY assigned candidate, perform fresh web research:
+1. Re-check the triggering development against the original article/primary source.
+2. Search Türkiye for DIRECT competitors using Turkish terminology and relevant
+   industry/local-language terms.
+3. Search globally for DIRECT competitors using English and other useful local terms.
+4. Apply the strict direct definition:
+   same target customer + same core job + substantially same workflow.
+   Keep generic ERP/CRM/project/AI/consulting/horizontal tools as adjacent unless
+   they actually solve the same job.
+5. Capture competitor name + canonical URL + short reason for direct/adjacent classification.
+6. Verify the MVP can be built primarily with Lovable within <=500 internal credits
+   and external cash cost = 0 using genuinely sufficient free tiers/open-source/public data.
+7. Verify source URLs and classify evidence strength.
+8. Do not rank candidates.
+9. Do not update idea_history.json or idea_catalog.json.
+
+For each assigned candidate produce:
+- candidate_id
+- validation_index
+- canonical_key
+- development_verified: true|false|partial
+- canonical_news_source
+- canonical_news_title
+- canonical_news_date
+- canonical_news_url
+- source_links
+- turkiye_direct_competitor_count
+- turkiye_competitors
+- global_direct_competitor_count
+- global_competitors
+- adjacent_competitors
+- competition_search_terms
+- market_gap
+- mvp
+- working_logic
+- technologies
+- external_cash_cost
+- lovable_credits_total
+- lovable_credit_breakdown
+- build_time
+- business_models
+- marketing_strategy
+- first_customer_plan
+- main_risk
+- validation_assumption
+- evidence_strength
+- competition_confidence
+- qualification_status:
+    qualified |
+    competition_not_verified |
+    rejected_competition |
+    rejected_cost |
+    rejected_evidence
+- rejection_reason if applicable
+
+Write:
+state/runs/YYYY-MM-DD/validation/validator-VALIDATOR_ID_LOWERCASE.json
+
+Top-level fields:
+- schema_version
+- run_date
+- validator_id
+- status: complete|incomplete|blocked_merge_incomplete
+- expected_candidate_count
+- validated_candidate_count
+- completed_at
+- results
+
+status="complete" ONLY if every assigned candidate has one validation result and
+validated_candidate_count == expected_candidate_count.
+
+Never infer complete validation from a partial sample.
