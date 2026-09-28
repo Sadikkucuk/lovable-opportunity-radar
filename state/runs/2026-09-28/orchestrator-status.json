@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-09-28",
+  "status": "DISCOVERY_REPAIR_REQUIRED",
+  "source_batch_index_generated_at": "2026-09-28T01:38:01Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "acceptable_workers": [
+    "1"
+  ],
+  "missing_workers": [
+    "2",
+    "3"
+  ],
+  "incomplete_workers": [
+    {
+      "worker_id": "4",
+      "feed_items_expected": 280,
+      "feed_items_triaged": 280,
+      "failure_reason": "Detailed ledger write blocked by repository tool safety filter; raw opportunity ledger was not persisted."
+    }
+  ],
+  "observed_coverage": {
+    "fully_persisted_complete_feed_items": 240,
+    "worker4_triaged_but_not_persisted_raw_ledger": 280
+  },
+  "action_taken": "No merge/publication performed. Frozen input generation still matches current batch index. Waiting for/repairing missing discovery workers on subsequent orchestrator invocations.",
+  "catalog_preservation": "Existing 7 catalog ideas untouched."
+}
