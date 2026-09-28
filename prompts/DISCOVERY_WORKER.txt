@@ -1,0 +1,90 @@
+MULTI-WORKER RADAR — DISCOVERY STAGE
+
+Repository: Sadikkucuk/lovable-opportunity-radar
+Timezone/date for run paths: Europe/Istanbul.
+
+The automation calling this prompt will tell you WORKER_ID and ASSIGNED_BATCHES.
+Those values are authoritative.
+
+Read:
+- CHATGPT_RADAR_PROMPT.txt for opportunity-discovery definitions and constraints.
+- docs/batches/index.json
+- every assigned docs/batches/batch-XXX.json.
+
+IMPORTANT OVERRIDE:
+You are NOT the final radar. Do NOT process batches outside your assignment.
+Do NOT perform final competitor research. Do NOT update idea_history.json or
+idea_catalog.json. Your job is exhaustive discovery over your assigned feed records.
+
+For EVERY feed record in the assigned batches:
+1. Count it as triaged exactly once.
+2. Use title, summary, source and date for a LIGHT relevance/development pass.
+3. Reject obvious noise (sports, celebrity, generic politics, entertainment,
+   product-review noise, duplicate category/index pages) without opening the article.
+4. If it may contain a capability/regulation/data/infrastructure/cost/behavior/
+   workflow delta that could create a commercial web-app opportunity, resolve and
+   read the original/canonical article or a reliable primary/corroborating source.
+5. From verified candidate articles perform:
+   EVENT → BEFORE → AFTER → DELTA → affected workflow → concrete friction/JTBD
+   → target customer/buyer → product mechanism → raw opportunity.
+6. Generate ALL distinct raw opportunities supported by the assigned material.
+   Do not rank and do not stop at a target count.
+7. A candidate article may produce multiple distinct raw opportunities.
+8. Cross-article combinations are allowed only among articles in your assigned batches;
+   the merge stage will later perform dataset-wide combinations.
+
+Write exactly one file:
+state/runs/YYYY-MM-DD/discovery/worker-WORKER_ID.json
+
+The JSON must contain:
+{
+  "schema_version": 1,
+  "run_date": "YYYY-MM-DD",
+  "worker_id": "1|2|3|4",
+  "assigned_batches": [..],
+  "status": "complete|incomplete",
+  "started_at": "...",
+  "completed_at": "...",
+  "feed_items_expected": N,
+  "feed_items_triaged": N,
+  "candidate_article_count": N,
+  "original_articles_verified": N,
+  "full_article_not_verified": N,
+  "noise_or_no_opportunity_count": N,
+  "raw_opportunity_count": N,
+  "raw_opportunities": [...]
+}
+
+Every raw opportunity must include:
+- raw_id
+- supporting_article_ids
+- supporting_article_titles
+- supporting_sources
+- canonical_source_urls
+- article_verification: full / corroborated / insufficient
+- novelty_delta
+- delta_types
+- affected_workflow
+- target_customer
+- buyer
+- job_to_be_done
+- current_friction
+- product_mechanism
+- one_sentence_concept
+- why_now
+- scope_hint: Lüleburgaz / Türkiye / Dünya / Evren / unclear
+- zero_cost_feasibility: plausible / doubtful
+- estimated_lovable_credits
+- draft_canonical_key
+- evidence_notes
+
+Mark status="complete" ONLY if:
+- every assigned batch was successfully read, AND
+- feed_items_triaged == the sum of item_count for those assigned batches.
+
+If anything prevents exhaustive assigned coverage, write status="incomplete" with:
+- missing_batches
+- failure_reason
+- exact feed_items_triaged
+
+Never claim complete coverage from the number of feed records fetched alone.
