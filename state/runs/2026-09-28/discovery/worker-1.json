@@ -1,0 +1,414 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-09-28",
+  "worker_id": "1",
+  "source_batch_index_generated_at": "2026-09-28T01:38:01Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "status": "complete",
+  "started_at": "2026-09-28T08:08:54+03:00",
+  "completed_at": "2026-09-28T08:14:00+03:00",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 31,
+  "original_articles_verified": 10,
+  "full_article_not_verified": 21,
+  "noise_or_no_opportunity_count": 209,
+  "raw_opportunity_count": 11,
+  "raw_opportunities": [
+    {
+      "raw_id": "w1-001",
+      "supporting_article_ids": [
+        "c6fa729365723df4be59b5f7",
+        "fe8eb4d5ed10fa4e9a4ca3ed"
+      ],
+      "supporting_article_titles": [
+        "ファナックがAI溶接エージェント実演 ロボット制御装置が安全PLCに",
+        "世界から見た日本製造業の人件費／ファナックがAI溶接エージェントのデモを披露"
+      ],
+      "supporting_sources": [
+        "MONOist",
+        "FANUC"
+      ],
+      "canonical_source_urls": [
+        "https://www.fanuc.co.jp/en/profile/pr/newsrelease/2026/notice20260911.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Engineering drawing to welding parameters and robot motion can now be generated with near-zero teaching on FANUC CRX.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "LABOR_DELTA",
+        "SPEED_DELTA"
+      ],
+      "affected_workflow": "drawing → engineering interpretation → robot teaching → trial → production",
+      "target_customer": "small/mid-size metal fabricators and welding integrators",
+      "buyer": "production engineering manager",
+      "job_to_be_done": "govern a new AI-generated weld job before production",
+      "current_friction": "Factories still need review, fixture/material readiness, acceptance criteria and sign-off.",
+      "product_mechanism": "weld-job readiness and approval ledger with drawing metadata, review, trial results, deviations and reusable recipe",
+      "one_sentence_concept": "A pre-production governance layer for factories adopting drawing-to-weld AI agents.",
+      "why_now": "FANUC announced drawing-to-weld AI with shipments planned by end-Dec 2026.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 360,
+      "draft_canonical_key": "metal-fabricator|govern-ai-generated-weld-job|weld-readiness-review-ledger",
+      "evidence_notes": "Primary FANUC release verified."
+    },
+    {
+      "raw_id": "w1-002",
+      "supporting_article_ids": [
+        "37bac46c170dc3c186fb84d3"
+      ],
+      "supporting_article_titles": [
+        "EOL後も半導体を安定供給、長期運用システムを支えるRochesterの「TLS360」"
+      ],
+      "supporting_sources": [
+        "EE Times Japan",
+        "Rochester Electronics"
+      ],
+      "canonical_source_urls": [
+        "https://electronics-sourcing.com/2026/09/10/lifecycle-assurance-without-compromise/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Selected semiconductor families can receive explicit lifecycle assurance horizons instead of only reactive EOL handling.",
+      "delta_types": [
+        "RISK_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "BOM → monitor lifecycle → buy/redesign decision",
+      "target_customer": "long-lifecycle industrial/medical/transport manufacturers",
+      "buyer": "component engineering or procurement manager",
+      "job_to_be_done": "plan BOM obsolescence before EOL",
+      "current_friction": "Lifecycle risk is scattered across spreadsheets and notices.",
+      "product_mechanism": "BOM upload + lifecycle horizon ledger + affected-product mapping + decision deadlines + evidence owners",
+      "one_sentence_concept": "A BOM lifecycle decision desk for redesign and buy planning.",
+      "why_now": "TLS360 adds structured lifecycle horizons and extended active status.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 410,
+      "draft_canonical_key": "long-lifecycle-manufacturer|plan-bom-obsolescence|component-horizon-decision-ledger",
+      "evidence_notes": "Program mechanics corroborated; no paid live feeds assumed."
+    },
+    {
+      "raw_id": "w1-003",
+      "supporting_article_ids": [
+        "e47977a893e7654bb0668ada"
+      ],
+      "supporting_article_titles": [
+        "Türkiye “Dijital Şirket” modeli nasıl olmalı?"
+      ],
+      "supporting_sources": [
+        "Dünya"
+      ],
+      "canonical_source_urls": [
+        "https://www.dunya.com/kose-yazisi/turkiye-dijital-sirket-modeli-nasil-olmali/841627"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Türkiye's 2027–2029 OVP targets a Digital Company application with easier formation and startup exemptions.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "ACCESS_DELTA"
+      ],
+      "affected_workflow": "founder → formation → tax/SGK/chamber/bank/e-doc/employment/export obligations",
+      "target_customer": "Türkiye-based and foreign founders forming a Turkish company",
+      "buyer": "founder / small-company owner",
+      "job_to_be_done": "know the next lifecycle obligation and required evidence",
+      "current_friction": "Company setup and post-setup obligations are fragmented across institutions and advisers.",
+      "product_mechanism": "personalized lifecycle map + deadline/evidence checklist + official-link handoff",
+      "one_sentence_concept": "A Türkiye Digital Company lifecycle navigator.",
+      "why_now": "OVP explicitly targets Digital Company implementation.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "turkish-company-founder|navigate-company-lifecycle-obligations|official-process-checklist-vault",
+      "evidence_notes": "Dünya article verified; guidance only, not official filing."
+    },
+    {
+      "raw_id": "w1-004",
+      "supporting_article_ids": [
+        "cf2622ae00a12ecbbb1ff227"
+      ],
+      "supporting_article_titles": [
+        "Companies can build RAG in days. Making it reliable enough to run the business is much harder"
+      ],
+      "supporting_sources": [
+        "VentureBeat"
+      ],
+      "canonical_source_urls": [
+        "https://venturebeat.com/orchestration/companies-can-build-rag-in-days-making-it-reliable-enough-to-run-the-business-is-much-harder"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "RAG bottleneck has shifted from demos to governing conflicting/outdated documents, permissions and retrieval behavior.",
+      "delta_types": [
+        "RISK_DELTA",
+        "DATA_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "documents → ingestion → retrieval → answer/citation → reliability review",
+      "target_customer": "SMEs running document-grounded RAG assistants",
+      "buyer": "AI/product or knowledge-management lead",
+      "job_to_be_done": "prove a RAG knowledge base is fresh, permission-safe and answerable",
+      "current_friction": "Teams lack lightweight governance for conflicts, stale sources and recurring tests.",
+      "product_mechanism": "source register + authority/freshness rules + conflict queue + permission matrix + golden-question tests",
+      "one_sentence_concept": "A lightweight RAG reliability cockpit.",
+      "why_now": "Production RAG reliability is harder than demo construction.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 450,
+      "draft_canonical_key": "sme-rag-owner|prove-rag-knowledge-reliability|source-governance-and-golden-test-cockpit",
+      "evidence_notes": "Original VentureBeat article verified; MVP has no paid model dependency."
+    },
+    {
+      "raw_id": "w1-005",
+      "supporting_article_ids": [
+        "dc21b44392e68f39b4a03a96"
+      ],
+      "supporting_article_titles": [
+        "三菱電機ビルソリューションズ、人事SaaSなどと連携できる統合ビルセキュリティシステム「MELSAFETY-R」を提供"
+      ],
+      "supporting_sources": [
+        "Impress Watch",
+        "Mitsubishi Electric Building Solutions"
+      ],
+      "canonical_source_urls": [
+        "https://www.mebs.co.jp/press/260925.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Building access control is moving toward cloud services integrated with other building equipment.",
+      "delta_types": [
+        "INFRASTRUCTURE_DELTA",
+        "LABOR_DELTA"
+      ],
+      "affected_workflow": "HR/tenant change → access rights → building operations → audit",
+      "target_customer": "multi-tenant building operators",
+      "buyer": "facility/security operations manager",
+      "job_to_be_done": "reconcile people lifecycle changes with access rights",
+      "current_friction": "HR, tenant lists and access permissions drift apart.",
+      "product_mechanism": "CSV-based HR/access mismatch detection + expiry reviews + owner tasks + evidence export",
+      "one_sentence_concept": "A reconciliation layer for stale building-access permissions.",
+      "why_now": "MELSAFETY-R illustrates cloud/service integration and labor-saving building operations.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 380,
+      "draft_canonical_key": "building-operator|reconcile-people-lifecycle-with-access|hr-access-mismatch-ledger",
+      "evidence_notes": "Mitsubishi primary release verified."
+    },
+    {
+      "raw_id": "w1-006",
+      "supporting_article_ids": [
+        "baace8102eae9cb547ee875c"
+      ],
+      "supporting_article_titles": [
+        "Google Gemini, kullanıcılar adına işletmeleri arayabilecek"
+      ],
+      "supporting_sources": [
+        "FinTech İstanbul"
+      ],
+      "canonical_source_urls": [
+        "https://www.deskofai.com/news/google-tests-letting-gemini-call-businesses-for-you"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Consumer AI agents can place end-to-end phone calls to businesses while users monitor.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "BEHAVIOR_DELTA"
+      ],
+      "affected_workflow": "consumer request → business phone intake → booking/stock/appointment response",
+      "target_customer": "local service businesses receiving phone requests",
+      "buyer": "small-business operations manager",
+      "job_to_be_done": "standardize intake from consumer AI callers",
+      "current_friction": "Phone workflows are designed for humans, creating ambiguity around agent disclosure and escalation.",
+      "product_mechanism": "AI-call intake policy desk with scripts, disclosure rules, structured outcomes and escalation queue",
+      "one_sentence_concept": "An AI-caller readiness desk for local businesses.",
+      "why_now": "Google Call for Me preview demonstrates agentic phone intake becoming real.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 320,
+      "draft_canonical_key": "local-service-business|standardize-ai-phone-intake|policy-outcome-escalation-desk",
+      "evidence_notes": "Current reports corroborate capability; MVP does not make calls."
+    },
+    {
+      "raw_id": "w1-007",
+      "supporting_article_ids": [
+        "a1b8b32a8afda876009e9256",
+        "03d9e93a199772c0dcdf1aa2"
+      ],
+      "supporting_article_titles": [
+        "결제 내역 살피고 구독 해지까지…메타 AI '뮤즈', 새는 돈 줄인다",
+        "Can Muse overcome Meta’s trust issues?"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea",
+        "TechCrunch"
+      ],
+      "canonical_source_urls": [
+        "https://www.neoteo.com/en/meta-muse-can-flag-subscriptions-heres-how-to-cancel-its-plan"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Consumer agents can identify recurring charges and initiate cancellation with user approval.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "BEHAVIOR_DELTA"
+      ],
+      "affected_workflow": "customer notices charge → finds cancel path → cancels; agent now detects and acts",
+      "target_customer": "subscription businesses and SaaS teams",
+      "buyer": "retention/customer-success lead",
+      "job_to_be_done": "prepare cancellation and retention flows for consumer agents",
+      "current_friction": "Retention teams design for human navigation and lose visibility when agents act.",
+      "product_mechanism": "cancellation-path inventory + machine-readable policy checklist + save-offer rules + churn-reason evidence",
+      "one_sentence_concept": "A subscription-retention readiness tool for agent-mediated cancellation.",
+      "why_now": "Muse functionality demonstrates agent-mediated subscription management.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 300,
+      "draft_canonical_key": "subscription-business|prepare-retention-for-consumer-agents|cancel-path-save-policy-audit",
+      "evidence_notes": "Capability corroborated; primary Meta docs to be checked by validator."
+    },
+    {
+      "raw_id": "w1-008",
+      "supporting_article_ids": [
+        "ec8738f1a17e78fd12b4a8e5"
+      ],
+      "supporting_article_titles": [
+        "「○○さんに聞けば分かる」をAIに 日立建機がベテランの知恵を共有したワケ"
+      ],
+      "supporting_sources": [
+        "ITmedia",
+        "Hitachi Construction Machinery"
+      ],
+      "canonical_source_urls": [
+        "https://www.hitachicm.com/us/en/news/2026/hitachi-construction-machinery-to-unveil-true-ai-assistant-proto/",
+        "https://ramblr.ai/use-cases/hitachi-construction-machinery"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Fragmented manuals, videos and veteran expertise can be retrieved as contextual AI guidance for field staff.",
+      "delta_types": [
+        "ACCESS_DELTA",
+        "LABOR_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "field issue → search sources → call expert → action",
+      "target_customer": "equipment dealers and industrial service teams",
+      "buyer": "service operations manager",
+      "job_to_be_done": "turn veteran-only knowledge into validated procedures",
+      "current_friction": "Critical know-how stays with a few specialists and scattered media.",
+      "product_mechanism": "expert-knowledge gap ledger with recurring questions, source, owner, approved procedure and review date",
+      "one_sentence_concept": "A pre-RAG knowledge-capture workflow for industrial service teams.",
+      "why_now": "Hitachi/Ramblr Assist Pro demonstrates the move toward multimodal AI field guidance.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 350,
+      "draft_canonical_key": "industrial-service-team|convert-veteran-knowledge|expert-gap-approval-ledger",
+      "evidence_notes": "Hitachi primary and Ramblr use case corroborated."
+    },
+    {
+      "raw_id": "w1-009",
+      "supporting_article_ids": [
+        "04b39d21bd4f5df2779e9db9"
+      ],
+      "supporting_article_titles": [
+        "ダイフクが物流倉庫の完全自動化へヒューマノイドを開発、2030年に実証実験"
+      ],
+      "supporting_sources": [
+        "MONOist"
+      ],
+      "canonical_source_urls": [
+        "https://humanoidintel.ai/news/daifuku-humanoid-robots-logistics-2029/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Warehouse automation is expanding from fixed systems toward humanoids for human-designed tasks and spaces.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "LABOR_DELTA"
+      ],
+      "affected_workflow": "manual task inventory → automation selection → pilot → acceptance",
+      "target_customer": "warehouse operators considering humanoid pilots",
+      "buyer": "warehouse engineering manager",
+      "job_to_be_done": "select tasks suitable for humanoid pilots",
+      "current_friction": "Operators lack a task inventory linking variability, environment, safety and acceptance criteria.",
+      "product_mechanism": "task readiness matrix + constraints + human minutes + variability + safety + pilot score + acceptance evidence",
+      "one_sentence_concept": "A warehouse humanoid pilot planner.",
+      "why_now": "Major logistics automation vendors are setting humanoid pilot/deployment timelines.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 370,
+      "draft_canonical_key": "warehouse-operator|select-humanoid-pilot-tasks|task-readiness-acceptance-matrix",
+      "evidence_notes": "Development corroborated; exact timeline needs primary-source recheck."
+    },
+    {
+      "raw_id": "w1-010",
+      "supporting_article_ids": [
+        "c916f8e37491380d76b0b9fb"
+      ],
+      "supporting_article_titles": [
+        "セキュリティテスト、日本の正答率3％から見える課題"
+      ],
+      "supporting_sources": [
+        "TechTarget Japan"
+      ],
+      "canonical_source_urls": [],
+      "article_verification": "insufficient",
+      "novelty_delta": "AI adoption is widening faster than employee security literacy.",
+      "delta_types": [
+        "RISK_DELTA",
+        "BEHAVIOR_DELTA"
+      ],
+      "affected_workflow": "employee AI use → data-handling decision → policy compliance",
+      "target_customer": "SMEs rolling out generative AI",
+      "buyer": "IT/security/HR manager",
+      "job_to_be_done": "measure role-specific compliance with internal AI rules",
+      "current_friction": "Generic awareness quizzes do not map to real AI workflows.",
+      "product_mechanism": "role-scenario quiz builder + approved action/rationale + remediation and retest tracker",
+      "one_sentence_concept": "A company-specific AI security behavior test.",
+      "why_now": "Feed signals a measurable AI/security-awareness gap.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 280,
+      "draft_canonical_key": "sme-ai-adopter|measure-ai-policy-behavior|role-scenario-remediation-ledger",
+      "evidence_notes": "FULL ARTICLE NOT VERIFIED; retain only for later validation."
+    },
+    {
+      "raw_id": "w1-011",
+      "supporting_article_ids": [
+        "934a62ce2bc9b2d3b78c7fbd",
+        "453ff5823adfc9f8b07bccdf"
+      ],
+      "supporting_article_titles": [
+        "管住AI，成了一门新生意",
+        "Labor defends AI crackdown over Medicare data breach"
+      ],
+      "supporting_sources": [
+        "The Paper",
+        "Startup Daily"
+      ],
+      "canonical_source_urls": [],
+      "article_verification": "insufficient",
+      "novelty_delta": "AI governance is shifting from abstract policy toward evidence-heavy operational controls.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "AI use case → data/risk assessment → approval → review evidence",
+      "target_customer": "small regulated organizations adopting multiple AI tools",
+      "buyer": "risk/compliance/IT manager",
+      "job_to_be_done": "maintain an auditable AI use-case inventory and controls",
+      "current_friction": "Departmental AI use spreads faster than centralized governance.",
+      "product_mechanism": "AI use-case register + risk questionnaire + approval/exception + evidence + review calendar",
+      "one_sentence_concept": "A lightweight operational AI governance register for regulated SMEs.",
+      "why_now": "Multiple feed signals point to operational AI governance demand.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 400,
+      "draft_canonical_key": "regulated-sme|govern-ai-use-cases|ai-register-risk-approval-evidence",
+      "evidence_notes": "FULL ARTICLE NOT VERIFIED; requires later validation."
+    }
+  ]
+}
