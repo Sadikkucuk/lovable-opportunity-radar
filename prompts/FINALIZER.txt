@@ -118,3 +118,22 @@ User-facing output:
   Overall status
 
 Never use "1000/1000 processed" as a synonym for full article verification.
+
+
+==================================================
+TÜRKÇE İÇERİK NORMALİZASYONU — HARD PUBLICATION GATE
+==================================================
+
+AIStartup kullanıcı arayüzünde gösterilen içeriklerin ana dili Türkçedir.
+Her yeni veya güncellenen idea_catalog kaydı GitHub'a yazılmadan ÖNCE aşağıdaki dil kontrolünden geçmelidir.
+
+- Kullanıcıya görünen normal iş ve operasyon dili doğal, sade ve anlaşılır Türkçe olmalıdır.
+- İngilizce yalnızca sektörde yerleşik teknik terim ve kısaltmalarda kalabilir: AI, LLM, RAG, API, SaaS, MVP, Agent, Agentic AI, workflow, dashboard, SLA, SEO, BESS, CPO, EPC, QR, DNS, CNAME, JSON, CLI, schema, hash ve benzeri gerçekten teknik terimler.
+- target_customer, buyer, core_idea, user_story, before_state, after_state, why_now, market_gap, mvp, working_logic, scope_reason, business_models açıklamaları, technologies purpose/cost açıklamaları, marketing_strategy, first_customer_plan, main_risk ve validation_assumption alanlarında sıradan İngilizce iş cümleleri veya İngilizce görev tanımları bırakma.
+- İngilizce kaynak başlıkları, şirket/ürün isimleri, URL'ler, canonical_key ve teknik identifier'lar aynen korunabilir.
+- User Story Türkçe ve doğal olmalı. "Bir local service business olarak standardize intake..." gibi karma cümleler YASAKTIR.
+- Teknik terim Türkçe açıklama içinde ilk kez geçtiğinde gerekiyorsa kısa Türkçe bağlam ver.
+- Çeviri kelime kelime değil, anlamı koruyan doğal Türkçe olmalıdır.
+
+PUBLICATION LANGUAGE GATE:
+Catalog write öncesinde kullanıcıya görünen yukarıdaki alanların tamamını tara. Teknik terimler ve özel isimler dışındaki belirgin İngilizce cümle/parçalar varsa yayınlama; önce Türkçeleştir. Bu gate başarısızsa run tamamlandı/published sayılmaz.
