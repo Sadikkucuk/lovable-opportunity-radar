@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-09-28",
+  "worker_id": "3",
+  "source_batch_index_generated_at": "2026-09-28T01:38:01Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "status": "complete",
+  "started_at": "2026-09-28T10:31:00+03:00",
+  "completed_at": "2026-09-28T10:42:00+03:00",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 92,
+  "original_articles_verified": 4,
+  "full_article_not_verified": 88,
+  "noise_or_no_opportunity_count": 148,
+  "raw_opportunity_count": 5,
+  "raw_opportunities": [
+    {
+      "raw_id": "w3-001",
+      "supporting_article_ids": [
+        "1d696656edbb6025488521fa"
+      ],
+      "supporting_article_titles": [
+        "Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India"
+      ],
+      "supporting_sources": [
+        "TechCrunch"
+      ],
+      "canonical_source_urls": [
+        "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AI shopping interfaces are moving from product discovery to transaction initiation and checkout handoff.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "DISTRIBUTION_DELTA",
+        "BEHAVIOR_DELTA"
+      ],
+      "affected_workflow": "merchant catalog → AI discovery → purchase intent → checkout → order",
+      "target_customer": "online merchants and marketplace sellers",
+      "buyer": "e-commerce operations or channel manager",
+      "job_to_be_done": "make products and checkout flows ready for AI-mediated purchasing",
+      "current_friction": "Merchant teams optimize storefronts and feeds for human browsing but lack a structured readiness workflow for AI-agent discovery, offer accuracy and checkout handoff.",
+      "product_mechanism": "agent-commerce readiness register with catalog/offer checks, machine-readable policy fields, checkout-path tests and exception evidence",
+      "one_sentence_concept": "An AI-commerce readiness desk for merchants preparing for purchases initiated inside AI assistants.",
+      "why_now": "Google is testing Flipkart purchasing through Gemini and AI Mode in India.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "online-merchant|prepare-for-ai-mediated-purchasing|agent-commerce-readiness-checklist",
+      "evidence_notes": "TechCrunch development independently verified during repair."
+    },
+    {
+      "raw_id": "w3-002",
+      "supporting_article_ids": [
+        "0d3c534d74e2efe47913ecfb"
+      ],
+      "supporting_article_titles": [
+        "AI agents are exposing a security gap between the data they read and the systems they can change"
+      ],
+      "supporting_sources": [
+        "VentureBeat"
+      ],
+      "canonical_source_urls": [
+        "https://venturebeat.com/security/ai-agents-are-exposing-a-security-gap-between-the-data-they-read-and-the-systems-they-can-change"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Enterprise AI agents increasingly read untrusted data and take write actions through tools, shifting security risk from model-only concerns to workflow permissions, approvals, logging and circuit breakers.",
+      "delta_types": [
+        "RISK_DELTA",
+        "CAPABILITY_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "agent use case → data/tool permissions → action → approval/logging → incident review",
+      "target_customer": "SMEs deploying tool-using AI agents",
+      "buyer": "IT/security/platform manager",
+      "job_to_be_done": "prove each AI agent has proportionate permissions, approval gates and audit evidence",
+      "current_friction": "Agent permissions, trust boundaries, human approvals and observability are often documented inconsistently across teams.",
+      "product_mechanism": "agent inventory + tool/permission matrix + risk-tier approval checklist + circuit-breaker register + audit evidence export",
+      "one_sentence_concept": "A lightweight AI-agent action-control and governance register.",
+      "why_now": "Production agents increasingly call APIs and modify business systems, creating workflow-level security risks.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 430,
+      "draft_canonical_key": "sme-agent-operator|govern-agent-action-permissions|permission-approval-audit-register",
+      "evidence_notes": "Full VentureBeat article verified during repair."
+    },
+    {
+      "raw_id": "w3-003",
+      "supporting_article_ids": [
+        "63c733ec40c45e491ca0a756"
+      ],
+      "supporting_article_titles": [
+        "From 14 cities to 15,000: What it will take to scale robotaxis?"
+      ],
+      "supporting_sources": [
+        "The Robot Report"
+      ],
+      "canonical_source_urls": [
+        "https://www.therobotreport.com/from-14-cities-to-15000-what-it-will-take-to-scale-robotaxis/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Robotaxi scaling is shifting attention from autonomous-driving capability to repeatable local fleet servicing, cleaning, reset and operational readiness.",
+      "delta_types": [
+        "INFRASTRUCTURE_DELTA",
+        "LABOR_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "vehicle finishes trip → inspect/clean/reset/service → evidence → return to autonomous fleet",
+      "target_customer": "robotaxi fleet operators and local service partners",
+      "buyer": "fleet operations manager",
+      "job_to_be_done": "standardize vehicle turnaround and prove readiness before returning a robotaxi to service",
+      "current_friction": "Local servicing steps and acceptance evidence can vary by site and partner as fleets expand.",
+      "product_mechanism": "turnaround work-order templates + station checklist + defect/escalation queue + readiness evidence + SLA dashboard",
+      "one_sentence_concept": "A robotaxi service-station operations and readiness ledger.",
+      "why_now": "Robotaxi expansion is creating an operational bottleneck around local vehicle servicing and reset infrastructure.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 420,
+      "draft_canonical_key": "robotaxi-fleet-operator|standardize-vehicle-turnaround|service-reset-readiness-ledger",
+      "evidence_notes": "Development corroborated by indexed Robot Report coverage and current web corroboration; primary article URL should be rechecked by validator."
+    },
+    {
+      "raw_id": "w3-004",
+      "supporting_article_ids": [
+        "2512852a111589748cd13ab2"
+      ],
+      "supporting_article_titles": [
+        "McDonald’s tests Archy, an AI drive-thru voice for English and Spanish"
+      ],
+      "supporting_sources": [
+        "The Next Web"
+      ],
+      "canonical_source_urls": [],
+      "article_verification": "insufficient",
+      "novelty_delta": "Multilingual voice AI is moving into high-throughput drive-thru ordering, creating new exception, handoff and quality-control workflows.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "LABOR_DELTA",
+        "BEHAVIOR_DELTA"
+      ],
+      "affected_workflow": "customer speaks → AI captures order → clarification/upsell → human exception → POS fulfillment",
+      "target_customer": "quick-service restaurant chains piloting voice AI",
+      "buyer": "restaurant operations or digital transformation manager",
+      "job_to_be_done": "measure and govern AI drive-thru exceptions before scaling locations",
+      "current_friction": "Pilot teams need consistent tracking of misunderstood orders, human takeovers, language issues and site-specific failure patterns.",
+      "product_mechanism": "location/pilot register + exception taxonomy + human-handoff log + accuracy sampling + rollout readiness dashboard",
+      "one_sentence_concept": "A voice-AI drive-thru pilot quality and rollout cockpit.",
+      "why_now": "Feed reports McDonald's testing a bilingual AI drive-thru voice system.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 360,
+      "draft_canonical_key": "qsr-chain|govern-voice-ai-drive-thru-pilots|exception-handoff-rollout-cockpit",
+      "evidence_notes": "FULL ARTICLE NOT VERIFIED during repair; retain for validator re-verification."
+    },
+    {
+      "raw_id": "w3-005",
+      "supporting_article_ids": [
+        "d0b222b530723c6aa8a80876"
+      ],
+      "supporting_article_titles": [
+        "Claims China’s BeiDou satellite was refuelled in orbit could change space race"
+      ],
+      "supporting_sources": [
+        "South China Morning Post"
+      ],
+      "canonical_source_urls": [],
+      "article_verification": "insufficient",
+      "novelty_delta": "If operational in-orbit refuelling is confirmed, satellite lifetime extension becomes a service workflow requiring mission readiness, compatibility and evidence coordination.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "INFRASTRUCTURE_DELTA",
+        "BUSINESS_MODEL_DELTA"
+      ],
+      "affected_workflow": "satellite fuel/life assessment → servicing candidate selection → compatibility/risk review → rendezvous/refuel → post-service evidence",
+      "target_customer": "satellite operators and in-orbit servicing providers",
+      "buyer": "mission operations or fleet planning manager",
+      "job_to_be_done": "screen and govern satellites for in-orbit refuelling missions",
+      "current_friction": "Servicing readiness data, interface compatibility, risk approvals and mission evidence are fragmented across engineering artifacts.",
+      "product_mechanism": "satellite servicing candidate register + compatibility checklist + mission readiness gates + evidence vault + post-service record",
+      "one_sentence_concept": "An in-orbit refuelling mission readiness and evidence desk.",
+      "why_now": "Recent reporting claims an operational BeiDou refuelling event that could signal a transition from demonstration to service operations.",
+      "scope_hint": "Evren",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 410,
+      "draft_canonical_key": "satellite-operator|govern-in-orbit-refuelling-readiness|compatibility-gate-evidence-desk",
+      "evidence_notes": "FULL ARTICLE NOT VERIFIED; claim must be confirmed by validator before qualification."
+    }
+  ]
+}
