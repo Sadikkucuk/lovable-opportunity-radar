@@ -1,0 +1,383 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-09-28",
+  "chunk_number": 2,
+  "candidate_ids": [
+    "c-006",
+    "c-007",
+    "c-008",
+    "c-009",
+    "c-010"
+  ],
+  "status": "complete",
+  "validated_candidate_count": 5,
+  "completed_at": "2026-09-28T12:10:00+03:00",
+  "results": [
+    {
+      "candidate_id": "c-006",
+      "validation_index": 6,
+      "canonical_key": "long-lifecycle-manufacturer|plan-bom-obsolescence|component-horizon-decision-ledger",
+      "development_verified": true,
+      "canonical_news_source": "Electronics Sourcing",
+      "canonical_news_title": "Lifecycle assurance without compromise",
+      "canonical_news_date": "2026-09-10",
+      "canonical_news_url": "https://electronics-sourcing.com/2026/09/10/lifecycle-assurance-without-compromise/",
+      "source_links": [
+        "https://electronics-sourcing.com/2026/09/10/lifecycle-assurance-without-compromise/",
+        "https://www.z2data.com/products/lifecycle-management/",
+        "https://www.siliconexpert.com/manage-obsolescence/"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "Z2Data Lifecycle Management",
+          "url": "https://www.z2data.com/products/lifecycle-management/",
+          "reason": "Same long-lifecycle manufacturer job: BOM-level EOL forecasting, last-time-buy decisions, case ownership and audit trail."
+        },
+        {
+          "name": "SiliconExpert",
+          "url": "https://www.siliconexpert.com/manage-obsolescence/",
+          "reason": "Same BOM obsolescence forecasting, redesign/last-time-buy planning and lifecycle alerts."
+        }
+      ],
+      "adjacent_competitors": [],
+      "competition_search_terms": [
+        "Türkiye BOM komponent obsolescence EOL yönetim yazılımı",
+        "BOM lifecycle obsolescence last time buy decision software"
+      ],
+      "market_gap": "Core workflow is already directly served by mature global platforms.",
+      "mvp": "BOM upload, lifecycle horizon ledger, product impact mapping, decision deadlines and evidence owners.",
+      "working_logic": "Upload BOM; attach lifecycle status/horizon; roll risk to affected products; create redesign/LTB decisions; assign owners and deadlines.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "TypeScript",
+        "CSV"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 410,
+      "lovable_credit_breakdown": {
+        "ui": 100,
+        "data": 80,
+        "bom_mapping": 90,
+        "workflow": 75,
+        "reports_testing": 65
+      },
+      "build_time": "10-14 days",
+      "business_models": [
+        "subscription",
+        "per-BOM workspace"
+      ],
+      "marketing_strategy": "Long-lifecycle OEM procurement/engineering content.",
+      "first_customer_plan": "Pilot with one electronics OEM currently tracking EOL in spreadsheets.",
+      "main_risk": "Direct mature competitors with proprietary lifecycle data.",
+      "validation_assumption": "Manual lifecycle inputs avoid paid data APIs but reduce product value.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Z2Data and SiliconExpert substantially match target customer, core job and workflow."
+    },
+    {
+      "candidate_id": "c-007",
+      "validation_index": 7,
+      "canonical_key": "metal-fabricator|govern-ai-generated-weld-job|weld-readiness-review-ledger",
+      "development_verified": true,
+      "canonical_news_source": "FANUC",
+      "canonical_news_title": "FANUC Accelerates Physical AI in Arc Welding with the New AI Welding Agent",
+      "canonical_news_date": "2026-09-11",
+      "canonical_news_url": "https://www.fanuc.co.jp/en/profile/pr/newsrelease/2026/notice20260911.html",
+      "source_links": [
+        "https://www.fanuc.co.jp/en/profile/pr/newsrelease/2026/notice20260911.html",
+        "https://www.weldeye.com/solutions/quality-management",
+        "https://www.weldeye.com/solutions/welding-procedures-and-personnel-qualifications"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 1,
+      "global_competitors": [
+        {
+          "name": "WeldEye",
+          "url": "https://www.weldeye.com/",
+          "reason": "Same fabrication/quality buyer workflow around WPS, procedure acceptance, trial/test documentation, deviations and weld traceability; not AI-job-specific but substantially covers proposed governance layer."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "FANUC AI Welding Agent",
+          "url": "https://www.fanuc.co.jp/en/profile/pr/newsrelease/2026/notice20260911.html",
+          "reason": "Trigger technology generates/executes weld programs; not an independent approval ledger."
+        }
+      ],
+      "competition_search_terms": [
+        "Türkiye kaynak kalite WPS WPQR takip yazılımı",
+        "robot welding job approval WPS deviation traceability software"
+      ],
+      "market_gap": "AI-generated-job framing is new, but the proposed review/acceptance/deviation record is substantially covered by welding quality-management software.",
+      "mvp": "Drawing/job metadata, WPS link, readiness checklist, trial result, deviation, approval and reusable recipe.",
+      "working_logic": "Register AI-generated weld job; link drawing/WPS; require material/fixture/reviewer gates; capture trial; record deviations; approve/reject and preserve recipe.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "TypeScript"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 360,
+      "lovable_credit_breakdown": {
+        "ui": 90,
+        "data": 70,
+        "workflow": 85,
+        "approvals": 60,
+        "reports_testing": 55
+      },
+      "build_time": "8-11 days",
+      "business_models": [
+        "per-site subscription",
+        "per-project"
+      ],
+      "marketing_strategy": "Target small robotic welding integrators adopting AI programming.",
+      "first_customer_plan": "Pilot alongside one FANUC/integrator proof-of-concept.",
+      "main_risk": "Existing welding QMS can add an AI-origin field rather than buy another tool.",
+      "validation_assumption": "AI-origin creates enough new governance complexity to justify a separate layer.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "WeldEye substantially covers the same readiness, procedure, deviation, acceptance and traceability workflow."
+    },
+    {
+      "candidate_id": "c-008",
+      "validation_index": 8,
+      "canonical_key": "online-merchant|prepare-for-ai-mediated-purchasing|agent-commerce-readiness-checklist",
+      "development_verified": true,
+      "canonical_news_source": "TechCrunch / current agentic-commerce ecosystem",
+      "canonical_news_title": "Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India",
+      "canonical_news_date": "2026-09-26",
+      "canonical_news_url": "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india",
+      "source_links": [
+        "https://www.webtures.com/tr/agentic-commerce-readiness/",
+        "https://www.visifyagentic.com/",
+        "https://commerceclarity.com/solutions/agentic-commerce",
+        "https://about.ads.microsoft.com/en/solutions/technology/agentic-commerce"
+      ],
+      "turkiye_direct_competitor_count": 1,
+      "turkiye_competitors": [
+        {
+          "name": "Webtures Agentic Commerce Hazırlığı",
+          "url": "https://www.webtures.com/tr/agentic-commerce-readiness/",
+          "reason": "Same merchant readiness job: product/feed readability, protocol readiness, checkout and measurement."
+        }
+      ],
+      "global_direct_competitor_count": 3,
+      "global_competitors": [
+        {
+          "name": "Visify Agentic",
+          "url": "https://www.visifyagentic.com/",
+          "reason": "Merchant readiness infrastructure with feeds, manifests, verification and checkout."
+        },
+        {
+          "name": "CommerceClarity Agentic Commerce",
+          "url": "https://commerceclarity.com/solutions/agentic-commerce",
+          "reason": "Same catalog/feed readiness and publishing workflow for shopping agents."
+        },
+        {
+          "name": "ReadyAgent",
+          "url": "https://goreadyagent.com/",
+          "reason": "Scores and remediates merchant catalog/feed/checkout readiness for AI agents."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Microsoft Merchant Center/UCP",
+          "url": "https://about.ads.microsoft.com/en/solutions/technology/agentic-commerce",
+          "reason": "Platform-native onboarding/readiness tooling."
+        }
+      ],
+      "competition_search_terms": [
+        "Türkiye agentic commerce hazırlığı e-ticaret AI ajan alışveriş",
+        "merchant agentic commerce readiness feed checkout software"
+      ],
+      "market_gap": "Rapidly emerging but already occupied in Türkiye and globally.",
+      "mvp": "Catalog/offer checklist, machine-readable policy fields, checkout tests, exception evidence.",
+      "working_logic": "Import catalog/feed; test required fields/policies; map protocol readiness; run checkout-path checklist; log blockers and fixes.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "TypeScript",
+        "public URL/CSV checks"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 390,
+      "lovable_credit_breakdown": {
+        "ui": 95,
+        "data": 70,
+        "checks": 100,
+        "scoring": 65,
+        "reports_testing": 60
+      },
+      "build_time": "9-12 days",
+      "business_models": [
+        "subscription",
+        "per-store audit"
+      ],
+      "marketing_strategy": "Agentic-commerce readiness SEO and ecommerce-agency partnerships.",
+      "first_customer_plan": "Run free readiness audits for 10 Turkish D2C stores.",
+      "main_risk": "Category is becoming crowded extremely quickly.",
+      "validation_assumption": "Checklist-only product could differentiate on Turkish localization.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "At least one Turkish and multiple global products/services directly solve the same merchant-readiness workflow."
+    },
+    {
+      "candidate_id": "c-009",
+      "validation_index": 9,
+      "canonical_key": "qsr-chain|govern-voice-ai-drive-thru-pilots|exception-handoff-rollout-cockpit",
+      "development_verified": true,
+      "canonical_news_source": "The Next Web",
+      "canonical_news_title": "McDonald’s tests Archy, an AI drive-thru voice for English and Spanish",
+      "canonical_news_date": "2026-09-26",
+      "canonical_news_url": "https://thenextweb.com/news/mcdonalds-archy-ai-drive-thru-english-spanish",
+      "source_links": [
+        "https://thenextweb.com/news/mcdonalds-archy-ai-drive-thru-english-spanish",
+        "https://hi.auto/product/",
+        "https://hi.auto/resources/glossary/headset-integration/",
+        "https://www.soundhound.com/use-cases/drive-thru"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "Hi Auto",
+          "url": "https://hi.auto/product/",
+          "reason": "Same QSR AI drive-thru buyer and substantially same rollout-quality workflow: completion/accuracy KPIs, intervention/fallback and multi-store operations."
+        },
+        {
+          "name": "SoundHound OASYS",
+          "url": "https://www.soundhound.com/use-cases/drive-thru",
+          "reason": "Drive-thru AI platform includes human escalation plus operational insights across locations, overlapping proposed exception/rollout cockpit."
+        }
+      ],
+      "adjacent_competitors": [],
+      "competition_search_terms": [
+        "Türkiye drive thru yapay zeka sipariş sesli restoran",
+        "AI drive thru pilot quality exception handoff monitoring software"
+      ],
+      "market_gap": "A vendor-neutral cockpit is narrower, but vendor platforms already expose the critical exception, accuracy, handoff and multi-location operating metrics.",
+      "mvp": "Pilot/location register, exception taxonomy, handoff log, accuracy samples and rollout-readiness dashboard.",
+      "working_logic": "Import/manual-log pilot interactions; classify failures/handoffs; sample accuracy; compare locations; gate rollout based on thresholds.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "TypeScript",
+        "CSV"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 360,
+      "lovable_credit_breakdown": {
+        "ui": 90,
+        "data": 70,
+        "taxonomy": 65,
+        "kpi_dashboard": 75,
+        "reports_testing": 60
+      },
+      "build_time": "8-11 days",
+      "business_models": [
+        "per-location subscription",
+        "pilot package"
+      ],
+      "marketing_strategy": "QSR innovation/operations outreach.",
+      "first_customer_plan": "Pilot with a franchise group testing more than one voice-AI vendor.",
+      "main_risk": "Telemetry lives inside vendor platforms and direct products already provide operating insights.",
+      "validation_assumption": "Chains want vendor-neutral cross-vendor governance.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Hi Auto and SoundHound substantially cover exception/handoff/performance monitoring for the same QSR drive-thru workflow."
+    },
+    {
+      "candidate_id": "c-010",
+      "validation_index": 10,
+      "canonical_key": "regulated-sme|govern-ai-use-cases|ai-register-risk-approval-evidence",
+      "development_verified": true,
+      "canonical_news_source": "EU AI Act / 2026 governance market",
+      "canonical_news_title": "Operational AI governance requirements and registration/evidence workflows",
+      "canonical_news_date": "2026-09",
+      "canonical_news_url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-49",
+      "source_links": [
+        "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-49",
+        "https://www.ulustech.com/urunler/ai-governance-yapay-zek%C3%A2-y%C3%B6neti%C5%9Fim-ve-uyum-platformu",
+        "https://aizec.ai/",
+        "https://www.holisticai.com/ai-governance-platform",
+        "https://airegister.ie/"
+      ],
+      "turkiye_direct_competitor_count": 2,
+      "turkiye_competitors": [
+        {
+          "name": "Ulustech AI Governance",
+          "url": "https://www.ulustech.com/urunler/ai-governance-yapay-zek%C3%A2-y%C3%B6neti%C5%9Fim-ve-uyum-platformu",
+          "reason": "Same centralized AI inventory, risk assessment, approvals and traceability workflow."
+        },
+        {
+          "name": "AIZEC",
+          "url": "https://aizec.ai/",
+          "reason": "Same inventory → triage → risk/control → approval/evidence workflow in Türkiye."
+        }
+      ],
+      "global_direct_competitor_count": 3,
+      "global_competitors": [
+        {
+          "name": "AI Register Ireland",
+          "url": "https://airegister.ie/",
+          "reason": "Explicitly practical SME AI register with owners, obligations and evidence."
+        },
+        {
+          "name": "AIGOY",
+          "url": "https://www.aigoy.de/en/",
+          "reason": "European SME AI inventory, risk classification, approvals and audit trail."
+        },
+        {
+          "name": "Holistic AI",
+          "url": "https://www.holisticai.com/ai-governance-platform",
+          "reason": "AI inventory, risk/compliance workflows, sign-off and audit evidence."
+        }
+      ],
+      "adjacent_competitors": [],
+      "competition_search_terms": [
+        "Türkiye yapay zeka yönetişim envanter risk onay kanıt yazılımı",
+        "SME AI governance register inventory risk approval evidence software"
+      ],
+      "market_gap": "No defensible novelty gap remains: the exact workflow exists both in Türkiye and globally, including SME-focused products.",
+      "mvp": "AI use-case inventory, risk classification, approval workflow, controls/evidence register and export.",
+      "working_logic": "Register use case; classify role/risk; assign controls; route approvals; attach evidence; maintain review dates and audit export.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "TypeScript"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 400,
+      "lovable_credit_breakdown": {
+        "ui": 95,
+        "data": 75,
+        "risk_rules": 80,
+        "workflow": 80,
+        "reports_testing": 70
+      },
+      "build_time": "10-14 days",
+      "business_models": [
+        "subscription",
+        "consultant workspace"
+      ],
+      "marketing_strategy": "EU AI Act/ISO 42001 readiness content for SMEs.",
+      "first_customer_plan": "Not recommended under radar novelty gate.",
+      "main_risk": "Highly crowded category with direct Turkish products.",
+      "validation_assumption": "A simpler/cheaper product would be enough differentiation; research does not support treating that as a new market gap.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Direct competitors exist in Türkiye and globally for the same inventory, risk, approval and evidence workflow."
+    }
+  ]
+}
