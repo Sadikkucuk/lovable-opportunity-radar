@@ -14,9 +14,9 @@
     24,
     25
   ],
-  "status": "incomplete",
-  "started_at": "2026-09-29T07:01:36Z",
-  "completed_at": "2026-09-29T07:15:00Z",
+  "status": "complete",
+  "started_at": "2026-09-29T08:41:25Z",
+  "completed_at": "2026-09-29T08:55:00Z",
   "feed_items_expected": 280,
   "feed_items_triaged": 280,
   "candidate_article_count": 8,
@@ -24,7 +24,245 @@
   "full_article_not_verified": 1,
   "noise_or_no_opportunity_count": 272,
   "raw_opportunity_count": 7,
-  "raw_opportunities": [],
-  "missing_batches": [],
-  "failure_reason": "All assigned records were triaged and candidate research was completed, but persistence of the detailed raw-opportunity ledger was blocked by the write safety layer. Per the persistence hard gate, this worker is not marked complete."
+  "raw_opportunities": [
+    {
+      "raw_id": "w4-001",
+      "supporting_article_ids": [
+        "a6e8131110109c22d294f53a"
+      ],
+      "supporting_article_titles": [
+        "The Download: rogue agent liability and the AI Hype Index"
+      ],
+      "supporting_sources": [
+        "MIT Technology Review"
+      ],
+      "canonical_source_urls": [
+        "https://www.technologyreview.com/"
+      ],
+      "article_verification": "insufficient",
+      "novelty_delta": "Autonomous AI agents create consequential actions whose authorization and responsibility can be unclear.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "agent action proposal to policy check to approval to execution to evidence log",
+      "target_customer": "organizations deploying AI agents",
+      "buyer": "IT, compliance or operations lead",
+      "job_to_be_done": "Control consequential AI-agent actions and preserve authorization evidence.",
+      "current_friction": "Permissions, approvals and action evidence are scattered across application logs.",
+      "product_mechanism": "Agent action registry with policy rules, approval queue and evidence export.",
+      "one_sentence_concept": "A control desk for high-impact AI-agent actions and approvals.",
+      "why_now": "Agent autonomy is moving from content generation toward consequential actions.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 360,
+      "draft_canonical_key": "ai-agent-organization|authorize-agent-actions|policy-approval-evidence-ledger",
+      "evidence_notes": "Original article not fully verified; validator must corroborate before qualification."
+    },
+    {
+      "raw_id": "w4-002",
+      "supporting_article_ids": [
+        "ec51231d33375694f742e7ec"
+      ],
+      "supporting_article_titles": [
+        "Singapore resets cyber defences as AI-era intrusions deepen"
+      ],
+      "supporting_sources": [
+        "Economic Times Technology"
+      ],
+      "canonical_source_urls": [
+        "https://ciosea.economictimes.indiatimes.com/news/security/singapore-resets-cyber-defences-as-ai-era-intrusions-deepen/134542021"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Security posture is shifting from perimeter-only defence toward internal monitoring, supply-chain scrutiny and faster threat hunting.",
+      "delta_types": [
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "supplier/system inventory to evidence collection to exception queue to remediation proof",
+      "target_customer": "mid-market organizations with many technology suppliers",
+      "buyer": "CISO, IT manager or compliance lead",
+      "job_to_be_done": "Maintain recurring evidence that critical suppliers and systems meet cyber controls.",
+      "current_friction": "Supplier questionnaires and control evidence are periodic and spreadsheet-heavy.",
+      "product_mechanism": "Supplier attestation, evidence expiry, control mapping, exception and remediation workspace.",
+      "one_sentence_concept": "A lightweight cyber evidence desk for supplier and internal-control proof.",
+      "why_now": "Sophisticated intrusions are increasing supply-chain and continuous-monitoring scrutiny.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 420,
+      "draft_canonical_key": "midmarket-organization|maintain-cyber-control-evidence|supplier-evidence-remediation-workspace",
+      "evidence_notes": "Original article verified."
+    },
+    {
+      "raw_id": "w4-003",
+      "supporting_article_ids": [
+        "6125186e7bf1d187d5d2371a"
+      ],
+      "supporting_article_titles": [
+        "Electric trucks are cheaper to operate than diesel in most markets"
+      ],
+      "supporting_sources": [
+        "The Driven"
+      ],
+      "canonical_source_urls": [
+        "https://thedriven.io/2026/09/28/electric-trucks-are-cheaper-to-operate-than-diesel-in-most-markets-and-offer-two-year-paybacks-in-some-new-survey-finds/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Electric heavy trucks now show lower total cost of ownership than diesel in several major markets, while charging and toll assumptions materially affect payback.",
+      "delta_types": [
+        "COST_DELTA",
+        "INFRASTRUCTURE_DELTA"
+      ],
+      "affected_workflow": "fleet profile to route and energy assumptions to diesel-versus-electric scenario to payback decision",
+      "target_customer": "small and mid-size road-freight fleets",
+      "buyer": "fleet owner, transport manager or finance lead",
+      "job_to_be_done": "Decide which trucks and routes should electrify first.",
+      "current_friction": "Generic calculators often miss route duty cycle, depot charging and fleet-specific assumptions.",
+      "product_mechanism": "Fleet electrification scenario ledger with payback sensitivity and replacement queue.",
+      "one_sentence_concept": "A fleet-by-fleet electrification decision desk.",
+      "why_now": "Electric-truck economics have crossed total-cost parity in multiple markets.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "road-freight-fleet|prioritize-electric-truck-replacement|fleet-tco-scenario-ledger",
+      "evidence_notes": "Original article verified."
+    },
+    {
+      "raw_id": "w4-004",
+      "supporting_article_ids": [
+        "f798dea87c7fcb6685804361"
+      ],
+      "supporting_article_titles": [
+        "TikTok, 100 milyon dolarlık uzlaşmanın ardından gençler için günlük kullanım sınırını kabul etti"
+      ],
+      "supporting_sources": [
+        "Webrazzi"
+      ],
+      "canonical_source_urls": [
+        "https://webrazzi.com/2026/09/28/tiktok-100-milyon-dolarlik-uzlasmanin-ardindan-gencler-icin-gunluk-kullanim-sinirini-kabul-etti/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "A major platform settlement makes daily limits, age verification and parental controls concrete youth-safety workflows.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "minor sign-up to age and guardian evidence to limit assignment to compliance evidence",
+      "target_customer": "small apps serving minors",
+      "buyer": "founder, product or compliance lead",
+      "job_to_be_done": "Operate and evidence age-tiered usage limits and guardian controls.",
+      "current_friction": "Age, consent, limits and guardian exceptions are often embedded in separate application logic.",
+      "product_mechanism": "Configurable youth-safety policy ledger for age bands, consent, limits and evidence export.",
+      "one_sentence_concept": "A policy desk for apps serving minors to manage consent and usage-limit evidence.",
+      "why_now": "Recent enforcement makes these controls a visible operational requirement pattern.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 410,
+      "draft_canonical_key": "app-serving-minors|operate-age-tiered-controls|guardian-consent-limit-ledger",
+      "evidence_notes": "Original Webrazzi article verified."
+    },
+    {
+      "raw_id": "w4-005",
+      "supporting_article_ids": [
+        "6fb6d061224f602de5e606da"
+      ],
+      "supporting_article_titles": [
+        "Akaryakıta ÖTV zammı yolda"
+      ],
+      "supporting_sources": [
+        "Enerji Günlüğü"
+      ],
+      "canonical_source_urls": [
+        "https://www.enerjigunlugu.net/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Fuel tax and price changes can abruptly alter transport operating costs and invalidate static customer quotes.",
+      "delta_types": [
+        "COST_DELTA",
+        "REGULATION_DELTA"
+      ],
+      "affected_workflow": "fuel change to lane cost update to customer surcharge recalculation to approval",
+      "target_customer": "Türkiye road-freight SMEs",
+      "buyer": "owner, operations or finance manager",
+      "job_to_be_done": "Rapidly reflect fuel-cost changes in lane margins and customer pricing.",
+      "current_friction": "Fuel changes are commonly propagated through disconnected spreadsheets.",
+      "product_mechanism": "Lane-cost and fuel-surcharge scenario ledger with customer impact queue.",
+      "one_sentence_concept": "A small-carrier pricing desk for rapid fuel-cost repricing.",
+      "why_now": "Fuel-price volatility makes static transport quotes fragile.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 330,
+      "draft_canonical_key": "turkiye-road-carrier|reprice-after-fuel-change|fuel-surcharge-margin-ledger",
+      "evidence_notes": "Same-source current reporting corroborates fuel volatility; exact article requires validator confirmation."
+    },
+    {
+      "raw_id": "w4-006",
+      "supporting_article_ids": [
+        "705a9e25642cf35fbbbd7799"
+      ],
+      "supporting_article_titles": [
+        "Retrofit: Wann sich Modernisierung bestehender Anlagen rechnet"
+      ],
+      "supporting_sources": [
+        "Produktion"
+      ],
+      "canonical_source_urls": [
+        "https://www.produktion.de/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Modernization options expand what aging equipment can retain, making retrofit-versus-replace economics more scenario-dependent.",
+      "delta_types": [
+        "COST_DELTA",
+        "CAPABILITY_DELTA"
+      ],
+      "affected_workflow": "asset baseline to retrofit scope to downtime and maintenance assumptions to investment decision",
+      "target_customer": "small and mid-size manufacturers with aging equipment",
+      "buyer": "plant or maintenance manager",
+      "job_to_be_done": "Decide whether to retrofit or replace a machine before expensive engineering work.",
+      "current_friction": "Maintenance history, supplier quotes and capital assumptions are split across sources.",
+      "product_mechanism": "Asset retrofit pre-feasibility workspace comparing downtime, maintenance, remaining life and replacement.",
+      "one_sentence_concept": "A retrofit-versus-replace decision desk for manufacturers.",
+      "why_now": "Software-defined automation expands modernization options while capital constraints increase decision pressure.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 400,
+      "draft_canonical_key": "manufacturer|decide-retrofit-versus-replace|asset-pre-feasibility-workspace",
+      "evidence_notes": "Exact article not fully retrieved; validator should resolve canonical source."
+    },
+    {
+      "raw_id": "w4-007",
+      "supporting_article_ids": [
+        "24052262671fd55f88af9b21"
+      ],
+      "supporting_article_titles": [
+        "Shivani Shah, docteure en IA, au service de la sécurité des industries"
+      ],
+      "supporting_sources": [
+        "Les Echos Entrepreneurs"
+      ],
+      "canonical_source_urls": [
+        "https://entrepreneurs.lesechos.fr/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "AI-assisted industrial safety can increase the volume of detected findings, shifting the bottleneck toward corrective-action closure and evidence.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "DATA_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "safety finding to corrective action owner to deadline to closure evidence to recurrence review",
+      "target_customer": "industrial SMEs",
+      "buyer": "HSE manager or plant manager",
+      "job_to_be_done": "Close safety findings and prove corrective actions.",
+      "current_friction": "Findings and actions often live in email, spreadsheets and separate reports.",
+      "product_mechanism": "Safety finding and corrective-action ledger accepting manual or CSV inputs.",
+      "one_sentence_concept": "A lightweight industrial safety corrective-action desk.",
+      "why_now": "AI-assisted detection can increase findings faster than manual closure workflows scale.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 350,
+      "draft_canonical_key": "industrial-sme|close-safety-findings|corrective-action-evidence-ledger",
+      "evidence_notes": "Feed article relevant; full source text should be re-verified by validator."
+    }
+  ]
 }
