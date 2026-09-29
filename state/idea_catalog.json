@@ -2,7 +2,7 @@
   "schema_version": 1,
   "site_name": "AIStartup",
   "description": "Canonical persistent idea catalog consumed by the AIStartup web application.",
-  "updated_at": "2026-09-28T12:28:00+03:00",
+  "updated_at": "2026-09-29T13:15:00+03:00",
   "ideas": [
     {
       "canonical_key": "competition-organizer|enforce-ai-use-policy-on-submissions|declaration-rule-engine-review-evidence",
@@ -1104,6 +1104,573 @@
       "status": "published",
       "first_reported_at": "2026-09-28",
       "last_updated_at": "2026-09-28"
+    },
+    {
+      "canonical_key": "agentic-commerce|prove-intent-checkout-payment-authorization|authorization-receipt-ledger",
+      "idea_name": "Agentic Checkout Receipt — AI Alışveriş Yetki Kanıtı",
+      "scope_tier": "Dünya",
+      "scope_reason": "AI agent'ların alışveriş ve ödeme yaptığı tüm pazarlarda kullanılabilecek küresel bir SaaS.",
+      "news_source": "Shopify Developer",
+      "news_title": "WebMCP support for checkout",
+      "news_date": "2026-09-28",
+      "news_url": "https://shopify.dev/changelog/posts/webmcp-support-for-checkout",
+      "source_links": [
+        {
+          "label": "Ana kaynak",
+          "url": "https://shopify.dev/changelog/posts/webmcp-support-for-checkout"
+        },
+        {
+          "label": "Destek kaynağı 1",
+          "url": "https://shopify.dev/docs/agents/carts-and-checkout/checkout-mcp"
+        }
+      ],
+      "core_idea": "AI agent'ın kullanıcı adına checkout veya ödeme yaparken kullanıcının neye izin verdiğini, agent'ın neyi değiştirdiğini ve son onayın nasıl verildiğini kanıtlayan işlem kayıt sistemi.",
+      "user_story": "Agentic commerce veya ödeme ürünü yöneten bir ekip olarak, kullanıcının verdiği yetki ile AI agent'ın yaptığı checkout ve ödeme işlemlerini karşılaştırıp kanıtlamak istiyorum; böylece hatalı veya yetkisiz işlemleri izleyebilirim.",
+      "before_state": "Standart sipariş ve ödeme kayıtları, kullanıcının başlangıç niyeti ile AI agent'ın seçim ve değişikliklerini birlikte göstermiyor.",
+      "after_state": "Kullanıcı niyeti kaydedilir → checkout değişiklikleri karşılaştırılır → harcama politikası kontrol edilir → gerekiyorsa insan onayı alınır → yetki makbuzu oluşturulur.",
+      "why_now": "Shopify WebMCP gibi gelişmeler AI agent'ların checkout aşamasına doğrudan erişmesini mümkün kılıyor.",
+      "target_customer": "",
+      "buyer": "",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 1,
+      "direct_competitors": [
+        {
+          "name": "Permission Protocol",
+          "url": "https://permissionprotocol.com/platforms",
+          "reason": "Agent actions için policy check, human approval ve signed receipt; authorization-evidence workflow'u doğrudan örtüşüyor."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Shopify Checkout MCP",
+          "url": "https://shopify.dev/docs/agents/carts-and-checkout/checkout-mcp",
+          "reason": "Checkout execution altyapısı; bağımsız intent-vs-agent authorization receipt governance ürünü değil."
+        }
+      ],
+      "market_gap": "Türkiye'de doğrudan ürün doğrulanmadı; globalde authorization receipt katmanı var ancak commerce'e özel intent/checkout diff yaklaşımı için alan bulunuyor.",
+      "business_models": [
+        {
+          "model": "SaaS abonelik",
+          "estimate": "İlk müşterilerle fiyat doğrulaması"
+        },
+        {
+          "model": "işlem hacmi tier'ları",
+          "estimate": "İlk müşterilerle fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 430,
+      "lovable_credit_breakdown": {
+        "total": 430
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        },
+        {
+          "name": "Supabase free tier",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        },
+        {
+          "name": "browser-side rules",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        },
+        {
+          "name": "WebMCP/JSON import",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Intent snapshot, checkout diff, spend policy, approval queue, immutable-style receipt export.",
+      "working_logic": "Agent checkout öncesi intent kaydı → değişiklik diff'i → policy → gerekirse insan onayı → receipt → audit export.",
+      "build_time": "3-4 hafta",
+      "marketing_strategy": "Agentic-commerce geliştiricileri ve payment risk ekiplerine teknik demo/receipt örneği.",
+      "first_customer_plan": "Shopify/WebMCP kullanan küçük bir merchant-tech veya ödeme ürün ekibiyle pilot.",
+      "main_risk": "Authorization layer kategorisinde mevcut global ürünün hızla commerce dikeyine inmesi.",
+      "validation_assumption": "Merchant/payment ekipleri genel authorization ürününden ayrı commerce-semantic receipt ister.",
+      "evidence_strength": "high",
+      "competition_confidence": "medium-high",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-09-29",
+      "last_updated_at": "2026-09-29"
+    },
+    {
+      "canonical_key": "dataset-owner|repeat-privacy-recheck|versioned-review-ledger",
+      "idea_name": "Dataset Privacy Recheck — AI Veri Seti Gizlilik Yeniden İnceleme",
+      "scope_tier": "Dünya",
+      "scope_reason": "AI veri seti yayımlayan kurumların farklı ülkelerde kullanabileceği veri yönetişimi workflow'u.",
+      "news_source": "ZDNet Korea",
+      "news_title": "AI Hub datasets undergo renewed privacy review",
+      "news_date": "2026-09-29",
+      "news_url": "https://zdnet.co.kr/view/?no=20260929102554",
+      "source_links": [
+        {
+          "label": "Ana kaynak",
+          "url": "https://zdnet.co.kr/view/?no=20260929102554"
+        },
+        {
+          "label": "Destek kaynağı 1",
+          "url": "https://iapp.org/resources/article/ai-governance-vendor-report"
+        }
+      ],
+      "core_idea": "Yayımlanmış AI veri setlerini sürüm bazında yeniden gizlilik incelemesine alan, bulguları sorumlu kişilere atayan ve düzeltme kanıtını saklayan çalışma alanı.",
+      "user_story": "AI veri seti sahibi olarak yayımdan sonra veri setimi tekrar gizlilik açısından incelemek istiyorum; böylece hangi sürümde hangi bulgunun çıktığını ve nasıl giderildiğini kanıtlayabilirim.",
+      "before_state": "Sonradan yapılan gizlilik kontrollerinde veri seti sürümü, bulgu, sorumlu ve düzeltme kanıtı yeniden toplanmak zorunda kalıyor.",
+      "after_state": "Veri seti ve sürüm kaydedilir → kontrol listesi uygulanır → bulgu açılır → sorumlu ve tarih atanır → düzeltme kanıtı eklenir → yeniden kontrol edilip kapatılır.",
+      "why_now": "Güney Kore'nin yayımlanmış AI Hub veri setlerini kişisel veri açısından yeniden incelemesi post-publication kontrol ihtiyacını görünür hale getirdi.",
+      "target_customer": "",
+      "buyer": "",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "General AI governance/privacy platforms",
+          "url": "https://iapp.org/resources/article/ai-governance-vendor-report",
+          "reason": "AI governance/privacy inventory and risk functions exist, but fresh search did not verify same post-publication dataset re-inspection + versioned finding/remediation workflow as a direct product."
+        }
+      ],
+      "market_gap": "Fresh searchte aynı post-publication, sürümlü privacy re-inspection workflow'unu sunan doğrudan ürün doğrulanmadı.",
+      "business_models": [
+        {
+          "model": "SaaS abonelik",
+          "estimate": "İlk müşterilerle fiyat doğrulaması"
+        },
+        {
+          "model": "dataset/review tier'ları",
+          "estimate": "İlk müşterilerle fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 360,
+      "lovable_credit_breakdown": {
+        "total": 360
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        },
+        {
+          "name": "Supabase free tier",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        },
+        {
+          "name": "CSV/manual metadata import",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        },
+        {
+          "name": "client-side rules",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Dataset register, version snapshots, privacy-review checklist, findings, owner/deadline, remediation evidence, recheck sign-off.",
+      "working_logic": "Dataset/version → review template → finding → remediation owner → evidence → recheck → signed closure/history.",
+      "build_time": "2-3 hafta",
+      "marketing_strategy": "AI dataset publishers, universities, data governance teams; privacy recheck template lead magnet.",
+      "first_customer_plan": "Public/academic dataset owner with recurring privacy review.",
+      "main_risk": "Generic data governance suites may add this workflow quickly.",
+      "validation_assumption": "Teams need lightweight case workflow rather than automated PII scanning; scanning remains external/manual to preserve zero cost.",
+      "evidence_strength": "medium-high",
+      "competition_confidence": "medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-09-29",
+      "last_updated_at": "2026-09-29"
+    },
+    {
+      "canonical_key": "exam-operator|review-remote-integrity-exceptions|evidence-case-ledger",
+      "idea_name": "Exam Integrity Case Desk — Uzaktan Sınav İhlal İnceleme",
+      "scope_tier": "Dünya",
+      "scope_reason": "Çevrimiçi sınav ve sertifikasyon kuruluşlarının küresel olarak kullanabileceği vendor-neutral inceleme workflow'u.",
+      "news_source": "NCBE / 2026 remote-proctoring evidence",
+      "news_title": "NCBE Completes Its First Remotely Proctored Pilot Test",
+      "news_date": "2026-09-09",
+      "news_url": "https://www.ncbex.org/news-resources/ncbe-completes-its-first-remotely-proctored-pilot-test",
+      "source_links": [
+        {
+          "label": "Ana kaynak",
+          "url": "https://www.ncbex.org/news-resources/ncbe-completes-its-first-remotely-proctored-pilot-test"
+        },
+        {
+          "label": "Destek kaynağı 1",
+          "url": "https://honorlock.com/proctored-exam-integrity/"
+        }
+      ],
+      "core_idea": "Uzaktan sınavlarda oluşan kimlik, gözetim ve davranış anomalilerini kanıt dosyasına dönüştürüp insan incelemesi ve itiraz sürecini yöneten sistem.",
+      "user_story": "Çevrimiçi sınav işletmecisi olarak şüpheli oturumları tek bir kanıt dosyasında incelemek istiyorum; böylece karar ve itiraz sürecini denetlenebilir biçimde yönetebilirim.",
+      "before_state": "Kimlik kontrolü, proctor notları, anomali kayıtları ve itirazlar farklı sistemlerde kalabiliyor.",
+      "after_state": "Oturum kaydı → anomali → kanıt dosyası → reviewer kararı → itiraz → nihai karar ve export.",
+      "why_now": "Uzaktan gözetimli yüksek önem düzeyindeki sınavların yaygınlaşması, ihlal kararlarının kanıtlanabilir olmasını daha önemli hale getiriyor.",
+      "target_customer": "",
+      "buyer": "",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 1,
+      "direct_competitors": [
+        {
+          "name": "Honorlock",
+          "url": "https://honorlock.com/",
+          "reason": "Remote exam identity/integrity monitoring, evidence capture and human review substantially overlap; broader proctoring suite."
+        }
+      ],
+      "adjacent_competitors": [],
+      "market_gap": "Proctoring suite'lerinde güçlü örtüşme var; ancak vendor-neutral bağımsız exception/evidence/appeal case desk için doğrudan rakip kesin doğrulanamadı.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "İlk müşterilerle fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 400,
+      "lovable_credit_breakdown": {
+        "total": 400
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        },
+        {
+          "name": "Supabase free tier",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        },
+        {
+          "name": "manual/CSV event import",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Session checklist, evidence attachments, anomaly queue, reviewer decision, appeal pack.",
+      "working_logic": "Session → anomaly/import → evidence case → reviewer decision → appeal → export.",
+      "build_time": "3 hafta",
+      "marketing_strategy": "small certification operators",
+      "first_customer_plan": "small online certification body",
+      "main_risk": "Proctoring vendors bundle review workflow.",
+      "validation_assumption": "A vendor-neutral post-proctoring case desk may serve multi-provider operators.",
+      "evidence_strength": "medium-high",
+      "competition_confidence": "medium",
+      "verification_status": "competition_not_verified",
+      "status": "published",
+      "first_reported_at": "2026-09-29",
+      "last_updated_at": "2026-09-29"
+    },
+    {
+      "canonical_key": "industrial-sme|close-safety-findings|corrective-action-evidence-ledger",
+      "idea_name": "Safety Action Ledger — Endüstriyel Güvenlik Düzeltici Faaliyet",
+      "scope_tier": "Dünya",
+      "scope_reason": "Üretim ve sanayi KOBİ'lerinde kullanılabilecek hafif HSE düzeltici faaliyet SaaS'ı.",
+      "news_source": "Les Echos Entrepreneurs",
+      "news_title": "Shivani Shah, docteure en IA, au service de la sécurité des industries",
+      "news_date": "2026-09-28",
+      "news_url": "https://entrepreneurs.lesechos.fr/",
+      "source_links": [
+        {
+          "label": "Ana kaynak",
+          "url": "https://entrepreneurs.lesechos.fr/"
+        }
+      ],
+      "core_idea": "İş güvenliği bulgularını sorumlu, termin, düzeltici faaliyet ve kapanış kanıtıyla izleyen hafif operasyon sistemi.",
+      "user_story": "Bir sanayi tesisinde HSE yöneticisi olarak güvenlik bulgularının gerçekten kapatıldığını kanıtlamak istiyorum; böylece açık aksiyonları ve tekrar eden sorunları tek yerden takip edebilirim.",
+      "before_state": "Güvenlik bulguları, e-postalar, Excel dosyaları ve ayrı raporlarda dağınık kalabiliyor.",
+      "after_state": "Bulgu → risk/sorumlu → düzeltici faaliyet → kanıt → reviewer kapanışı → tekrar kontrolü.",
+      "why_now": "AI destekli güvenlik tespiti bulgu sayısını artırdıkça darboğaz tespitten aksiyonların kapatılmasına kayıyor.",
+      "target_customer": "",
+      "buyer": "",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Tam EHS paketleri adjacent; aynı KOBİ müşterisine yalnız safety finding closure ve corrective-action evidence sunan direct ürün yeterince doğrulanamadı.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "İlk müşterilerle fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 350,
+      "lovable_credit_breakdown": {
+        "total": 350
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        },
+        {
+          "name": "Supabase free tier",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        },
+        {
+          "name": "CSV/manual import",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Safety finding register, owner/deadline, corrective action, closure evidence, recurrence review.",
+      "working_logic": "Finding → risk/owner → corrective action → evidence → reviewer closure → recurrence review.",
+      "build_time": "2-3 hafta",
+      "marketing_strategy": "industrial SMEs/HSE consultants",
+      "first_customer_plan": "50-250 çalışanlı üretim tesisinde pilot",
+      "main_risk": "Triggering article canonical content could not be fully reverified and horizontal EHS suites may overlap.",
+      "validation_assumption": "Lightweight corrective-action-only positioning can remain distinct from full EHS suites.",
+      "evidence_strength": "medium",
+      "competition_confidence": "medium-low",
+      "verification_status": "competition_not_verified",
+      "status": "published",
+      "first_reported_at": "2026-09-29",
+      "last_updated_at": "2026-09-29"
+    },
+    {
+      "canonical_key": "manufacturer|decide-retrofit-versus-replace|asset-pre-feasibility-workspace",
+      "idea_name": "Retrofit Karar Masası — Modernize Et mi Değiştir mi?",
+      "scope_tier": "Dünya",
+      "scope_reason": "Yaşlanan makine parkına sahip üreticiler ve bakım ekipleri için küresel bir ön fizibilite SaaS'ı.",
+      "news_source": "Automation World",
+      "news_title": "Retrofit vs Replace For Your Next Automation Initiative",
+      "news_date": "2026-09-28",
+      "news_url": "https://www.automationworld.com/factory/plant-maintenance/podcast/55408101/retrofit-vs-replace-for-your-next-automation-initiative",
+      "source_links": [
+        {
+          "label": "Ana kaynak",
+          "url": "https://www.automationworld.com/factory/plant-maintenance/podcast/55408101/retrofit-vs-replace-for-your-next-automation-initiative"
+        },
+        {
+          "label": "Destek kaynağı 1",
+          "url": "https://www.oemmagazine.org/engineering/machine-design/article/22965558/retrofit-vs-replace-smart-machine-maintenance-decision"
+        }
+      ],
+      "core_idea": "Bir makinenin retrofit edilmesi ile tamamen değiştirilmesini; yatırım, duruş, bakım, kalan ömür ve operasyon varsayımlarıyla karşılaştıran ön fizibilite sistemi.",
+      "user_story": "Bakım veya fabrika yöneticisi olarak pahalı mühendislik çalışmasına başlamadan önce bir makineyi modernize etmenin mi yoksa değiştirmenin mi daha mantıklı olduğunu karşılaştırmak istiyorum.",
+      "before_state": "Bakım geçmişi, tedarikçi teklifleri, duruş süresi ve yatırım varsayımları farklı dosyalarda değerlendiriliyor.",
+      "after_state": "Varlık bilgileri → retrofit senaryosu → yeni makine senaryosu → maliyet/duruş/ömür karşılaştırması → hassasiyet analizi → karar kaydı.",
+      "why_now": "Software-defined automation retrofit seçeneklerini artırırken sermaye baskısı yatırım kararını daha senaryo bağımlı hale getiriyor.",
+      "target_customer": "",
+      "buyer": "",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "SRT Engineering decision framework",
+          "url": "https://www.srt-engineering.com/repair-vs-retrofit-vs-replace.html",
+          "reason": "Structured engineering framework/content, not verified as a SaaS pre-feasibility workspace."
+        }
+      ],
+      "market_gap": "Fresh searchte aynı üretici + asset-level retrofit-vs-replace ön fizibilite workflow'unu sunan doğrudan SaaS doğrulanmadı.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "İlk müşterilerle fiyat doğrulaması"
+        },
+        {
+          "model": "consultant white-label",
+          "estimate": "İlk müşterilerle fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 400,
+      "lovable_credit_breakdown": {
+        "total": 400
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        },
+        {
+          "name": "Supabase free tier",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        },
+        {
+          "name": "browser-side deterministic calculator",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Asset baseline, condition/obsolescence inputs, downtime/capex/opex scenarios, assumptions, decision pack.",
+      "working_logic": "Asset → condition/requirements → retrofit scenario + replace scenario → downtime/lifecycle economics → sensitivity → decision record.",
+      "build_time": "3 hafta",
+      "marketing_strategy": "maintenance managers, retrofit integrators and OEM service partners",
+      "first_customer_plan": "Turkish automation integrator uses it for customer pre-assessments.",
+      "main_risk": "Inputs require engineering judgment; tool must clearly remain pre-feasibility, not engineering certification.",
+      "validation_assumption": "Customers value structured economic/operational screening before paid engineering.",
+      "evidence_strength": "high",
+      "competition_confidence": "medium-high",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-09-29",
+      "last_updated_at": "2026-09-29"
+    },
+    {
+      "canonical_key": "road-freight-fleet|prioritize-electric-truck-replacement|fleet-tco-scenario-ledger",
+      "idea_name": "eTruck TCO Desk — Elektrikli Kamyon Dönüşüm Önceliği",
+      "scope_tier": "Dünya",
+      "scope_reason": "Karayolu taşımacılığı filolarının farklı pazarlarda kullanabileceği filo elektrifikasyon karar aracı.",
+      "news_source": "The Driven",
+      "news_title": "Electric trucks are cheaper to operate than diesel in most markets",
+      "news_date": "2026-09-28",
+      "news_url": "https://thedriven.io/2026/09/28/electric-trucks-are-cheaper-to-operate-than-diesel-in-most-markets-and-offer-two-year-paybacks-in-some-new-survey-finds/",
+      "source_links": [
+        {
+          "label": "Ana kaynak",
+          "url": "https://thedriven.io/2026/09/28/electric-trucks-are-cheaper-to-operate-than-diesel-in-most-markets-and-offer-two-year-paybacks-in-some-new-survey-finds/"
+        }
+      ],
+      "core_idea": "Filodaki hangi kamyon ve rotanın önce elektrikliye dönmesi gerektiğini TCO, şarj, görev döngüsü ve geri ödeme hassasiyetiyle karşılaştıran karar masası.",
+      "user_story": "Küçük veya orta ölçekli bir filo yöneticisi olarak hangi araç ve rotayı önce elektrikliye çevirmem gerektiğini görmek istiyorum; böylece yatırımımı en uygun sırayla planlayabilirim.",
+      "before_state": "Genel TCO hesapları rota görev döngüsü, depo şarjı ve filoya özel varsayımları yeterince yansıtmayabiliyor.",
+      "after_state": "Araç/rota → görev döngüsü → enerji/şarj/yatırım varsayımları → TCO ve geri ödeme → hassasiyet → dönüşüm kuyruğu.",
+      "why_now": "Elektrikli ağır kamyonların bazı pazarlarda toplam sahip olma maliyetinde dizelle rekabet edebilir hale gelmesi karar ihtiyacını artırıyor.",
+      "target_customer": "",
+      "buyer": "",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Doğrudan hafif ürün kesin doğrulanamadı; daha geniş filo elektrifikasyon araçları ve danışmanlık çözümleriyle rekabet sınırı hâlâ belirsiz.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "İlk müşterilerle fiyat doğrulaması"
+        },
+        {
+          "model": "fleet consultant white-label",
+          "estimate": "İlk müşterilerle fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 390,
+      "lovable_credit_breakdown": {
+        "total": 390
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        },
+        {
+          "name": "Supabase free tier",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        },
+        {
+          "name": "browser-side calculator",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        },
+        {
+          "name": "CSV import",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Fleet import, route duty assumptions, diesel-vs-EV TCO, charging assumptions, sensitivity, replacement queue.",
+      "working_logic": "Truck/route → duty cycle → energy/charging/capex assumptions → TCO/payback → sensitivity → prioritized replacement queue.",
+      "build_time": "3 hafta",
+      "marketing_strategy": "small fleets, leasing firms, EV truck dealers",
+      "first_customer_plan": "10-50 truck fleet assessment",
+      "main_risk": "Accurate local electricity, charging and residual-value assumptions.",
+      "validation_assumption": "Manual configurable assumptions are sufficient for MVP without paid data APIs.",
+      "evidence_strength": "medium-high",
+      "competition_confidence": "medium",
+      "verification_status": "competition_not_verified",
+      "status": "published",
+      "first_reported_at": "2026-09-29",
+      "last_updated_at": "2026-09-29"
+    },
+    {
+      "canonical_key": "sme-manufacturer|trace-unit-quality-history|csv-first-genealogy-ledger",
+      "idea_name": "Genealogy Lite — KOBİ Üretim İzlenebilirliği",
+      "scope_tier": "Dünya",
+      "scope_reason": "MES ölçeğinde yatırım yapmayan KOBİ üreticilere yönelik küresel, CSV-first bir kalite izlenebilirlik SaaS'ı.",
+      "news_source": "Manufacturers' Monthly",
+      "news_title": "Hysata launches AI manufacturing platform",
+      "news_date": "2026-09-29",
+      "news_url": "https://www.manmonthly.com.au/hysata-launches-ai-manufacturing-platform/",
+      "source_links": [
+        {
+          "label": "Ana kaynak",
+          "url": "https://www.manmonthly.com.au/hysata-launches-ai-manufacturing-platform/"
+        }
+      ],
+      "core_idea": "Makine ve kalite verilerini CSV veya manuel girişle birleştirip ürün/lot geçmişini, muayene sonuçlarını ve NCR kayıtlarını birbirine bağlayan hafif genealogy sistemi.",
+      "user_story": "MES kullanmayan bir KOBİ üreticisi olarak her ürün veya lotun üretim ve kalite geçmişini tek yerde görmek istiyorum; böylece sorun çıktığında hangi süreç ve kontrolden geçtiğini hızla bulabilirim.",
+      "before_state": "Makine çıktıları, muayene tabloları ve NCR kayıtları ayrı dosyalarda tutulabiliyor.",
+      "after_state": "CSV/manual veri → ürün/lot genealogy → muayene bağlantısı → NCR bağlantısı → uyarı → geçmiş ve trend görünümü.",
+      "why_now": "Üretimde birim bazlı dijital kayıt ve inline kalite geri bildirimi giderek uygulanabilir hale geliyor.",
+      "target_customer": "",
+      "buyer": "",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "MES/QMS ürünleri yaygın; ancak özellikle MES kullanmayan KOBİ'lere yönelik CSV-first hafif genealogy workflow'unda doğrudan rakip ayrımı kesinleşmedi.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "İlk müşterilerle fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 470,
+      "lovable_credit_breakdown": {
+        "total": 470
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        },
+        {
+          "name": "Supabase free tier",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        },
+        {
+          "name": "CSV parser",
+          "purpose": "MVP geliştirme ve işletim",
+          "cost": "free tier / açık kaynak"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "CSV/manual ingest, lot/unit genealogy, inspection links, NCR links, alerts, trend board.",
+      "working_logic": "Import unit/lot/process records → build genealogy → attach inspections/NCR → exceptions → trace/history export.",
+      "build_time": "4 hafta",
+      "marketing_strategy": "SME manufacturers and quality consultants",
+      "first_customer_plan": "manufacturer currently using spreadsheets for lot traceability",
+      "main_risk": "Existing MES/QMS vendors may qualify as direct after deeper product-level verification.",
+      "validation_assumption": "CSV-first/no-MES positioning creates a distinct workflow/segment.",
+      "evidence_strength": "medium-high",
+      "competition_confidence": "medium",
+      "verification_status": "competition_not_verified",
+      "status": "published",
+      "first_reported_at": "2026-09-29",
+      "last_updated_at": "2026-09-29"
     }
   ]
 }
