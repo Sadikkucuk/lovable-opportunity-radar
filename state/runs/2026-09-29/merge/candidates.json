@@ -1,0 +1,695 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-09-29",
+  "source_batch_index_generated_at": "2026-09-29T05:39:45Z",
+  "candidates": [
+    {
+      "candidate_id": "c-001",
+      "validation_index": 1,
+      "validator_assignment": "A",
+      "canonical_key": "agentic-commerce|prove-intent-checkout-payment-authorization|authorization-receipt-ledger",
+      "idea_name": "Agentic Checkout Receipt",
+      "core_job": "prove what the user authorized versus what the agent selected",
+      "target_customer": "agentic-commerce and payment product teams",
+      "buyer": "payments product or risk lead",
+      "product_mechanism": "intent snapshot + decision diff + spend policy + approval checkpoint + authorization receipt",
+      "triggering_article_ids": [
+        "e525a992ca851806495ff096",
+        "195307c0363d175c354f3423"
+      ],
+      "supporting_article_ids": [
+        "e525a992ca851806495ff096",
+        "195307c0363d175c354f3423"
+      ],
+      "canonical_source_urls": [
+        "https://www.asiae.co.kr/en/article/2026092914134006340",
+        "https://techcrunch.com/2026/09/28/shopify-opens-checkout-to-browser-based-ai-agents/"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Normal receipts do not capture semantic intent-to-payment decisions.",
+      "after_state": "intent snapshot + decision diff + spend policy + approval checkpoint + authorization receipt",
+      "why_now": "KB Kookmin Card has started an AI-agent payment proof of concept.",
+      "market_gap_hypothesis": "agentic-commerce and payment product teams için prove what the user authorized versus what the agent selected işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 430,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-002",
+      "validation_index": 2,
+      "validator_assignment": "B",
+      "canonical_key": "ai-agent-operator|authorize-consequential-agent-actions|policy-approval-action-receipt-ledger",
+      "idea_name": "Agent Authority Desk",
+      "core_job": "prove agent actions stayed within user-granted authority",
+      "target_customer": "organizations deploying action-taking AI agents",
+      "buyer": "AI product or governance lead",
+      "product_mechanism": "permission registry + approval gates + action receipts + exception ledger",
+      "triggering_article_ids": [
+        "adb99e96eacc86df194152bb",
+        "a6e8131110109c22d294f53a"
+      ],
+      "supporting_article_ids": [
+        "adb99e96eacc86df194152bb",
+        "a6e8131110109c22d294f53a"
+      ],
+      "canonical_source_urls": [
+        "https://www.theguardian.com/technology/2026/sep/28/metas-ai-agent-muse-home-address",
+        "https://www.technologyreview.com/"
+      ],
+      "article_verification_summary": "mixed",
+      "before_state": "User intent is rarely translated into explicit per-action authority.",
+      "after_state": "permission registry + approval gates + action receipts + exception ledger",
+      "why_now": "A reported marketplace-agent incident exposed the gap between broad delegation and specific consent.",
+      "market_gap_hypothesis": "organizations deploying action-taking AI agents için prove agent actions stayed within user-granted authority işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 420,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-003",
+      "validation_index": 3,
+      "validator_assignment": "A",
+      "canonical_key": "ai-agent-team|prove-tool-and-stop-controls|safety-evidence-workspace",
+      "idea_name": "AI agent ekipleri için izin sınırı ve kill-switch doğrulama masası",
+      "core_job": "agent izin ve durdurma kontrollerini sürüm öncesi kanıtlamak",
+      "target_customer": "AI agent geliştiren yazılım ekipleri",
+      "buyer": "AI platform lead veya CTO",
+      "product_mechanism": "Agent safety test-case registry ve evidence workspace",
+      "triggering_article_ids": [
+        "441424bbb8cd0642c2a6c31b"
+      ],
+      "supporting_article_ids": [
+        "441424bbb8cd0642c2a6c31b"
+      ],
+      "canonical_source_urls": [
+        "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Veri, kanıt ve kararlar farklı araçlarda dağınık.",
+      "after_state": "Agent safety test-case registry ve evidence workspace",
+      "why_now": "28 Eylül 2026 tarihli gelişme mevcut workflow'daki yeni risk veya karar ihtiyacını görünür hale getirdi.",
+      "market_gap_hypothesis": "AI agent geliştiren yazılım ekipleri için agent izin ve durdurma kontrollerini sürüm öncesi kanıtlamak işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 390,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-004",
+      "validation_index": 4,
+      "validator_assignment": "B",
+      "canonical_key": "app-serving-minors|operate-age-tiered-controls|guardian-consent-limit-ledger",
+      "idea_name": "A policy desk for apps serving minors to manage consent and usage-limit evidence",
+      "core_job": "Operate and evidence age-tiered usage limits and guardian controls.",
+      "target_customer": "small apps serving minors",
+      "buyer": "founder, product or compliance lead",
+      "product_mechanism": "Configurable youth-safety policy ledger for age bands, consent, limits and evidence export.",
+      "triggering_article_ids": [
+        "f798dea87c7fcb6685804361"
+      ],
+      "supporting_article_ids": [
+        "f798dea87c7fcb6685804361"
+      ],
+      "canonical_source_urls": [
+        "https://webrazzi.com/2026/09/28/tiktok-100-milyon-dolarlik-uzlasmanin-ardindan-gencler-icin-gunluk-kullanim-sinirini-kabul-etti/"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Age, consent, limits and guardian exceptions are often embedded in separate application logic.",
+      "after_state": "Configurable youth-safety policy ledger for age bands, consent, limits and evidence export.",
+      "why_now": "Recent enforcement makes these controls a visible operational requirement pattern.",
+      "market_gap_hypothesis": "small apps serving minors için Operate and evidence age-tiered usage limits and guardian controls. işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 410,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-005",
+      "validation_index": 5,
+      "validator_assignment": "A",
+      "canonical_key": "dataset-owner|repeat-privacy-recheck|versioned-review-ledger",
+      "idea_name": "Versioned privacy re-inspection ledger for AI datasets",
+      "core_job": "run repeatable post-publication privacy rechecks",
+      "target_customer": "AI dataset owners and publishers",
+      "buyer": "data governance or privacy lead",
+      "product_mechanism": "dataset register + review checklist + finding ledger + remediation workflow",
+      "triggering_article_ids": [
+        "0382aa82f5255879803057f5"
+      ],
+      "supporting_article_ids": [
+        "0382aa82f5255879803057f5"
+      ],
+      "canonical_source_urls": [
+        "https://zdnet.co.kr/view/?no=20260929102554"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Later reviews require reconstructing versions, findings and owners.",
+      "after_state": "dataset register + review checklist + finding ledger + remediation workflow",
+      "why_now": "South Korea is rechecking 150 public AI Hub datasets for residual personal information.",
+      "market_gap_hypothesis": "AI dataset owners and publishers için run repeatable post-publication privacy rechecks işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 360,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-006",
+      "validation_index": 6,
+      "validator_assignment": "B",
+      "canonical_key": "distribution-center|prove-gate-fraud-controls|sop-exception-evidence-ledger",
+      "idea_name": "Lojistik kapılar için fraud kontrolü ve exception kararlarını yöneten gate-risk masası",
+      "core_job": "kapı kontrollerini ve exception kararını kanıtlamak",
+      "target_customer": "depo ve dağıtım merkezi işletmecileri",
+      "buyer": "yard/gate operasyon veya güvenlik yöneticisi",
+      "product_mechanism": "gate SOP rulebook + checklist + exception queue + evidence ledger",
+      "triggering_article_ids": [
+        "c9afc3bda3454e49f71843a7"
+      ],
+      "supporting_article_ids": [
+        "c9afc3bda3454e49f71843a7"
+      ],
+      "canonical_source_urls": [
+        "https://www.freightwaves.com/news/a-conversation-with-eaigles-leadership-on-cargo-theft-data-ownership-and-what-a-smart-gate-actually-knows"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "SOP, belge, kimlik ve istisna kararları farklı kayıtlarda kalabilir",
+      "after_state": "gate SOP rulebook + checklist + exception queue + evidence ledger",
+      "why_now": "FreightWaves 28 Eylül 2026'da gerçek saha fraud kontrollerini yayımladı.",
+      "market_gap_hypothesis": "depo ve dağıtım merkezi işletmecileri için kapı kontrollerini ve exception kararını kanıtlamak işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 390,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-007",
+      "validation_index": 7,
+      "validator_assignment": "A",
+      "canonical_key": "enterprise-ai-user|separate-ai-memory-at-offboarding|classification-signoff-ledger",
+      "idea_name": "AI-memory offboarding desk",
+      "core_job": "separate portable employee AI context from company-owned context",
+      "target_customer": "companies using persistent-memory AI assistants",
+      "buyer": "IT, HR or AI governance lead",
+      "product_mechanism": "context inventory + ownership classification + retain/export/delete workflow + sign-off",
+      "triggering_article_ids": [
+        "cb594cf8b4c2635fde3537ab"
+      ],
+      "supporting_article_ids": [
+        "cb594cf8b4c2635fde3537ab"
+      ],
+      "canonical_source_urls": [
+        "https://v.daum.net/v/20260929101655134"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Traditional offboarding handles files and accounts, not mixed AI memory.",
+      "after_state": "context inventory + ownership classification + retain/export/delete workflow + sign-off",
+      "why_now": "Current reporting is raising ownership questions around AI records after employment ends.",
+      "market_gap_hypothesis": "companies using persistent-memory AI assistants için separate portable employee AI context from company-owned context işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 410,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-008",
+      "validation_index": 8,
+      "validator_assignment": "B",
+      "canonical_key": "eu-exporting-sme-manufacturer|prepare-dpp-evidence|sku-readiness-workspace",
+      "idea_name": "KOBİ üreticiler için SKU bazlı DPP hazırlık masası",
+      "core_job": "SKU için DPP alan ve kanıtlarını piyasaya çıkmadan tamamlamak",
+      "target_customer": "AB'ye ürün satan KOBİ üreticiler",
+      "buyer": "uyum veya ihracat yöneticisi",
+      "product_mechanism": "SKU readiness workspace; alan şablonu, kanıt indeksi, tedarikçi görevleri ve export paketi.",
+      "triggering_article_ids": [
+        "6839c9b22ca884005a0a1646"
+      ],
+      "supporting_article_ids": [
+        "6839c9b22ca884005a0a1646"
+      ],
+      "canonical_source_urls": [
+        "https://ntplusfisco.ilsole24ore.com/channel/quotidianiverticali/type/articolo/uuid/AJjjSyRB"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Veriler ERP, e-posta, Excel ve PDF'lerde dağınık.",
+      "after_state": "SKU readiness workspace; alan şablonu, kanıt indeksi, tedarikçi görevleri ve export paketi.",
+      "why_now": "DPP operasyonelleştikçe sürekli veri ve kanıt yönetimi gerekiyor.",
+      "market_gap_hypothesis": "AB'ye ürün satan KOBİ üreticiler için SKU için DPP alan ve kanıtlarını piyasaya çıkmadan tamamlamak işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 360,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-009",
+      "validation_index": 9,
+      "validator_assignment": "A",
+      "canonical_key": "exam-operator|review-remote-integrity-exceptions|evidence-case-ledger",
+      "idea_name": "Remote-exam integrity case desk",
+      "core_job": "manage remote-test integrity exceptions with auditable evidence",
+      "target_customer": "smaller exam and certification operators moving online",
+      "buyer": "assessment operations manager",
+      "product_mechanism": "session checklist + evidence capture + anomaly queue + reviewer decision + appeal pack",
+      "triggering_article_ids": [
+        "d7d060d2412ccd7db0d24d91"
+      ],
+      "supporting_article_ids": [
+        "d7d060d2412ccd7db0d24d91"
+      ],
+      "canonical_source_urls": [
+        "https://www.koreaherald.com/article/10887639"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Identity checks, proctor notes and appeals are often split across tools.",
+      "after_state": "session checklist + evidence capture + anomaly queue + reviewer decision + appeal pack",
+      "why_now": "South Korea announced an AI/digital TOPIK overhaul with at-home testing and stronger integrity controls.",
+      "market_gap_hypothesis": "smaller exam and certification operators moving online için manage remote-test integrity exceptions with auditable evidence işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 400,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-010",
+      "validation_index": 10,
+      "validator_assignment": "B",
+      "canonical_key": "finance-team|prove-accounting-agent-controls|decision-control-evidence-workspace",
+      "idea_name": "Finans AI agent karar ve kontrol kanıtlarını denetime hazırlayan governance workspace",
+      "core_job": "finans AI agent karar ve kontrol kanıtlarını denetime hazır tutmak",
+      "target_customer": "finans süreçlerinde AI agent kullanan şirketler",
+      "buyer": "CFO veya iç denetim yöneticisi",
+      "product_mechanism": "agent register + control owner matrix + evidence import + exception queue",
+      "triggering_article_ids": [
+        "07a0a7c9d0de05a5f419f7d4"
+      ],
+      "supporting_article_ids": [
+        "07a0a7c9d0de05a5f419f7d4"
+      ],
+      "canonical_source_urls": [
+        "https://www.techtarget.com/enterprise-software/tip/What-CFOs-need-to-know-about-AI-agent-governance-in-accounting"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "karar logları, veri kaynağı ve kontrol kanıtı dağınık kalabilir",
+      "after_state": "agent register + control owner matrix + evidence import + exception queue",
+      "why_now": "Güncel rehber audit trail, data lineage ve ownership'i temel kontrol olarak vurguluyor.",
+      "market_gap_hypothesis": "finans süreçlerinde AI agent kullanan şirketler için finans AI agent karar ve kontrol kanıtlarını denetime hazır tutmak işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 400,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-011",
+      "validation_index": 11,
+      "validator_assignment": "A",
+      "canonical_key": "industrial-sme|close-safety-findings|corrective-action-evidence-ledger",
+      "idea_name": "A lightweight industrial safety corrective-action desk",
+      "core_job": "Close safety findings and prove corrective actions.",
+      "target_customer": "industrial SMEs",
+      "buyer": "HSE manager or plant manager",
+      "product_mechanism": "Safety finding and corrective-action ledger accepting manual or CSV inputs.",
+      "triggering_article_ids": [
+        "24052262671fd55f88af9b21"
+      ],
+      "supporting_article_ids": [
+        "24052262671fd55f88af9b21"
+      ],
+      "canonical_source_urls": [
+        "https://entrepreneurs.lesechos.fr/"
+      ],
+      "article_verification_summary": "corroborated",
+      "before_state": "Findings and actions often live in email, spreadsheets and separate reports.",
+      "after_state": "Safety finding and corrective-action ledger accepting manual or CSV inputs.",
+      "why_now": "AI-assisted detection can increase findings faster than manual closure workflows scale.",
+      "market_gap_hypothesis": "industrial SMEs için Close safety findings and prove corrective actions. işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 350,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-012",
+      "validation_index": 12,
+      "validator_assignment": "B",
+      "canonical_key": "manufacturer|decide-retrofit-versus-replace|asset-pre-feasibility-workspace",
+      "idea_name": "A retrofit-versus-replace decision desk for manufacturers",
+      "core_job": "Decide whether to retrofit or replace a machine before expensive engineering work.",
+      "target_customer": "small and mid-size manufacturers with aging equipment",
+      "buyer": "plant or maintenance manager",
+      "product_mechanism": "Asset retrofit pre-feasibility workspace comparing downtime, maintenance, remaining life and replacement.",
+      "triggering_article_ids": [
+        "705a9e25642cf35fbbbd7799"
+      ],
+      "supporting_article_ids": [
+        "705a9e25642cf35fbbbd7799"
+      ],
+      "canonical_source_urls": [
+        "https://www.produktion.de/"
+      ],
+      "article_verification_summary": "corroborated",
+      "before_state": "Maintenance history, supplier quotes and capital assumptions are split across sources.",
+      "after_state": "Asset retrofit pre-feasibility workspace comparing downtime, maintenance, remaining life and replacement.",
+      "why_now": "Software-defined automation expands modernization options while capital constraints increase decision pressure.",
+      "market_gap_hypothesis": "small and mid-size manufacturers with aging equipment için Decide whether to retrofit or replace a machine before expensive engineering work. işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 400,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-013",
+      "validation_index": 13,
+      "validator_assignment": "A",
+      "canonical_key": "medical-device-quality|prove-capa-effectiveness|systemic-review-ledger",
+      "idea_name": "CAPA closure guard for quality teams",
+      "core_job": "prove systemic CAPA effectiveness before closure",
+      "target_customer": "small and mid-sized medical-device manufacturers",
+      "buyer": "quality manager",
+      "product_mechanism": "CAPA checklist + similar-risk matrix + scheduled effectiveness checks + evidence pack",
+      "triggering_article_ids": [
+        "c8fe2eb8a797ff1a2b6a65ed"
+      ],
+      "supporting_article_ids": [
+        "c8fe2eb8a797ff1a2b6a65ed"
+      ],
+      "canonical_source_urls": [
+        "https://www.qualitymag.com/articles/99948-when-capa-fails-a-four-pillar-framework-for-protecting-patients"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "CAPAs can close without cross-product review or later effectiveness evidence.",
+      "after_state": "CAPA checklist + similar-risk matrix + scheduled effectiveness checks + evidence pack",
+      "why_now": "Current quality guidance highlights recurring root-cause and effectiveness-verification failures.",
+      "market_gap_hypothesis": "small and mid-sized medical-device manufacturers için prove systemic CAPA effectiveness before closure işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 440,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-014",
+      "validation_index": 14,
+      "validator_assignment": "B",
+      "canonical_key": "midmarket-organization|maintain-cyber-control-evidence|supplier-evidence-remediation-workspace",
+      "idea_name": "A lightweight cyber evidence desk for supplier and internal-control proof",
+      "core_job": "Maintain recurring evidence that critical suppliers and systems meet cyber controls.",
+      "target_customer": "mid-market organizations with many technology suppliers",
+      "buyer": "CISO, IT manager or compliance lead",
+      "product_mechanism": "Supplier attestation, evidence expiry, control mapping, exception and remediation workspace.",
+      "triggering_article_ids": [
+        "ec51231d33375694f742e7ec"
+      ],
+      "supporting_article_ids": [
+        "ec51231d33375694f742e7ec"
+      ],
+      "canonical_source_urls": [
+        "https://ciosea.economictimes.indiatimes.com/news/security/singapore-resets-cyber-defences-as-ai-era-intrusions-deepen/134542021"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Supplier questionnaires and control evidence are periodic and spreadsheet-heavy.",
+      "after_state": "Supplier attestation, evidence expiry, control mapping, exception and remediation workspace.",
+      "why_now": "Sophisticated intrusions are increasing supply-chain and continuous-monitoring scrutiny.",
+      "market_gap_hypothesis": "mid-market organizations with many technology suppliers için Maintain recurring evidence that critical suppliers and systems meet cyber controls. işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 420,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-015",
+      "validation_index": 15,
+      "validator_assignment": "A",
+      "canonical_key": "midmarket-shippers|benchmark-lane-carrier|cooperative-benchmark-workspace",
+      "idea_name": "Shipper'ların anonim veri havuzuyla lane ve carrier performansını kıyasladığı masa",
+      "core_job": "lane/carrier sapmasının aksiyon gerektirip gerektirmediğini anlamak",
+      "target_customer": "Orta ölçekli shipper ve lojistik ekipleri",
+      "buyer": "logistics manager",
+      "product_mechanism": "Anonim cooperative freight benchmark workspace",
+      "triggering_article_ids": [
+        "9082db387f862abe18ec3434"
+      ],
+      "supporting_article_ids": [
+        "9082db387f862abe18ec3434"
+      ],
+      "canonical_source_urls": [
+        "https://www.supplychaindive.com/spons/the-intelligence-advantage-moving-beyond-benchmarking-to-network-wide-insi/830975/"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Veri, kanıt ve kararlar farklı araçlarda dağınık.",
+      "after_state": "Anonim cooperative freight benchmark workspace",
+      "why_now": "28 Eylül 2026 tarihli gelişme mevcut workflow'daki yeni risk veya karar ihtiyacını görünür hale getirdi.",
+      "market_gap_hypothesis": "Orta ölçekli shipper ve lojistik ekipleri için lane/carrier sapmasının aksiyon gerektirip gerektirmediğini anlamak işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 440,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-016",
+      "validation_index": 16,
+      "validator_assignment": "B",
+      "canonical_key": "publishers-award-panels|review-authorship-claims|evidence-case-workspace",
+      "idea_name": "Yayıncı ve ödül kurulları için AI-authorship/plagiarism inceleme masası",
+      "core_job": "AI/plagiarism şüphesinde savunulabilir inceleme dosyası oluşturmak",
+      "target_customer": "Yayıncılar ve ödül kurulları",
+      "buyer": "editorial operations",
+      "product_mechanism": "Authorship review evidence workspace",
+      "triggering_article_ids": [
+        "c985cf86e59149027890e2ec"
+      ],
+      "supporting_article_ids": [
+        "c985cf86e59149027890e2ec"
+      ],
+      "canonical_source_urls": [
+        "https://thenextweb.com/news/goncourt-drops-orelien-novel-ai-claims"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Veri, kanıt ve kararlar farklı araçlarda dağınık.",
+      "after_state": "Authorship review evidence workspace",
+      "why_now": "28 Eylül 2026 tarihli gelişme mevcut workflow'daki yeni risk veya karar ihtiyacını görünür hale getirdi.",
+      "market_gap_hypothesis": "Yayıncılar ve ödül kurulları için AI/plagiarism şüphesinde savunulabilir inceleme dosyası oluşturmak işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 370,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-017",
+      "validation_index": 17,
+      "validator_assignment": "A",
+      "canonical_key": "road-freight-fleet|prioritize-electric-truck-replacement|fleet-tco-scenario-ledger",
+      "idea_name": "A fleet-by-fleet electrification decision desk",
+      "core_job": "Decide which trucks and routes should electrify first.",
+      "target_customer": "small and mid-size road-freight fleets",
+      "buyer": "fleet owner, transport manager or finance lead",
+      "product_mechanism": "Fleet electrification scenario ledger with payback sensitivity and replacement queue.",
+      "triggering_article_ids": [
+        "6125186e7bf1d187d5d2371a"
+      ],
+      "supporting_article_ids": [
+        "6125186e7bf1d187d5d2371a"
+      ],
+      "canonical_source_urls": [
+        "https://thedriven.io/2026/09/28/electric-trucks-are-cheaper-to-operate-than-diesel-in-most-markets-and-offer-two-year-paybacks-in-some-new-survey-finds/"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Generic calculators often miss route duty cycle, depot charging and fleet-specific assumptions.",
+      "after_state": "Fleet electrification scenario ledger with payback sensitivity and replacement queue.",
+      "why_now": "Electric-truck economics have crossed total-cost parity in multiple markets.",
+      "market_gap_hypothesis": "small and mid-size road-freight fleets için Decide which trucks and routes should electrify first. işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 390,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-018",
+      "validation_index": 18,
+      "validator_assignment": "B",
+      "canonical_key": "small-carrier|govern-parallel-ai-load-negotiation|offer-approval-booking-ledger",
+      "idea_name": "AI broker pazarlıklarını tek teklif ve onay kuyruğunda yöneten dispatch masası",
+      "core_job": "AI broker görüşmelerinde teklifleri ve insan onayını kontrol etmek",
+      "target_customer": "owner-operator ve küçük filolar",
+      "buyer": "filo sahibi veya dispatch yöneticisi",
+      "product_mechanism": "negotiation inbox + offer normalization + commitment guard + human approval",
+      "triggering_article_ids": [
+        "859ae49dc04c3612654102e3"
+      ],
+      "supporting_article_ids": [
+        "859ae49dc04c3612654102e3"
+      ],
+      "canonical_source_urls": [
+        "https://www.freightwaves.com/news/5-hours-to-book-a-truck-ai-is-coming-for-that"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "paralel görüşmelerde teklif ve taahhütler parçalanabilir",
+      "after_state": "negotiation inbox + offer normalization + commitment guard + human approval",
+      "why_now": "FreightWaves 28 Eylül 2026'da 5-10 broker ile paralel AI görüşmesini aktardı.",
+      "market_gap_hypothesis": "owner-operator ve küçük filolar için AI broker görüşmelerinde teklifleri ve insan onayını kontrol etmek işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 430,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-019",
+      "validation_index": 19,
+      "validator_assignment": "A",
+      "canonical_key": "sme-agent-team|translate-job-to-controls|guided-policy-builder",
+      "idea_name": "No-code policy builder for agent permissions",
+      "core_job": "turn an agent business role into least-privilege policy and evidence",
+      "target_customer": "SME software teams deploying autonomous agents",
+      "buyer": "CTO or AI governance lead",
+      "product_mechanism": "guided policy wizard + job-permission matrix + policy export + evidence log",
+      "triggering_article_ids": [
+        "db1e79dc219ac7f04f8ce554"
+      ],
+      "supporting_article_ids": [
+        "db1e79dc219ac7f04f8ce554"
+      ],
+      "canonical_source_urls": [
+        "https://nvidianews.nvidia.com/news/open-agent-safety-platform"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Teams must manually decide allowed tools, data and actions.",
+      "after_state": "guided policy wizard + job-permission matrix + policy export + evidence log",
+      "why_now": "NVIDIA released open components for controlling agent execution.",
+      "market_gap_hypothesis": "SME software teams deploying autonomous agents için turn an agent business role into least-privilege policy and evidence işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 390,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-020",
+      "validation_index": 20,
+      "validator_assignment": "B",
+      "canonical_key": "sme-manufacturer|trace-unit-quality-history|csv-first-genealogy-ledger",
+      "idea_name": "Lightweight manufacturing genealogy desk",
+      "core_job": "link each unit or lot to process and inspection evidence",
+      "target_customer": "SME manufacturers lacking MES-scale genealogy",
+      "buyer": "quality or production manager",
+      "product_mechanism": "CSV/manual ingest + unit genealogy + alerts + NCR links + trend board",
+      "triggering_article_ids": [
+        "9a657179c29698f5e37c463f"
+      ],
+      "supporting_article_ids": [
+        "9a657179c29698f5e37c463f"
+      ],
+      "canonical_source_urls": [
+        "https://www.manmonthly.com.au/hysata-launches-ai-manufacturing-platform/"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Machine exports, inspection sheets and NCRs are often separated.",
+      "after_state": "CSV/manual ingest + unit genealogy + alerts + NCR links + trend board",
+      "why_now": "HysataFab demonstrates per-unit digital records, inline testing and continuous feedback.",
+      "market_gap_hypothesis": "SME manufacturers lacking MES-scale genealogy için link each unit or lot to process and inspection evidence işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Dünya",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 470,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-021",
+      "validation_index": 21,
+      "validator_assignment": "A",
+      "canonical_key": "turkiye-cross-border-seller|prepare-customs-before-sale|readiness-launch-gate",
+      "idea_name": "Türkiye'den cross-border satış yapan KOBİler için gümrük hazırlık masası",
+      "core_job": "SKU'yu ülkeye satışa açmadan gümrük veri/belge readiness kontrolü yapmak",
+      "target_customer": "Türkiye'den cross-border e-ticaret yapan KOBİ satıcılar",
+      "buyer": "e-ticaret operasyon yöneticisi",
+      "product_mechanism": "SKU/ülke customs-readiness launch-gate workspace",
+      "triggering_article_ids": [
+        "22812467a00bbc2a8ae64196"
+      ],
+      "supporting_article_ids": [
+        "22812467a00bbc2a8ae64196"
+      ],
+      "canonical_source_urls": [
+        "https://www.perakende.org/"
+      ],
+      "article_verification_summary": "corroborated",
+      "before_state": "Veri, kanıt ve kararlar farklı araçlarda dağınık.",
+      "after_state": "SKU/ülke customs-readiness launch-gate workspace",
+      "why_now": "28 Eylül 2026 tarihli gelişme mevcut workflow'daki yeni risk veya karar ihtiyacını görünür hale getirdi.",
+      "market_gap_hypothesis": "Türkiye'den cross-border e-ticaret yapan KOBİ satıcılar için SKU'yu ülkeye satışa açmadan gümrük veri/belge readiness kontrolü yapmak işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Türkiye",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 410,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    },
+    {
+      "candidate_id": "c-022",
+      "validation_index": 22,
+      "validator_assignment": "B",
+      "canonical_key": "turkiye-road-carrier|reprice-after-fuel-change|fuel-surcharge-margin-ledger",
+      "idea_name": "A small-carrier pricing desk for rapid fuel-cost repricing",
+      "core_job": "Rapidly reflect fuel-cost changes in lane margins and customer pricing.",
+      "target_customer": "Türkiye road-freight SMEs",
+      "buyer": "owner, operations or finance manager",
+      "product_mechanism": "Lane-cost and fuel-surcharge scenario ledger with customer impact queue.",
+      "triggering_article_ids": [
+        "6fb6d061224f602de5e606da"
+      ],
+      "supporting_article_ids": [
+        "6fb6d061224f602de5e606da"
+      ],
+      "canonical_source_urls": [
+        "https://www.enerjigunlugu.net/"
+      ],
+      "article_verification_summary": "corroborated",
+      "before_state": "Fuel changes are commonly propagated through disconnected spreadsheets.",
+      "after_state": "Lane-cost and fuel-surcharge scenario ledger with customer impact queue.",
+      "why_now": "Fuel-price volatility makes static transport quotes fragile.",
+      "market_gap_hypothesis": "Türkiye road-freight SMEs için Rapidly reflect fuel-cost changes in lane margins and customer pricing. işini özel bir workflow ile yönetme fırsatı.",
+      "scope_hint": "Türkiye",
+      "zero_cost_stack_outline": "Lovable + Supabase/free tier + browser-side rules/manual/CSV inputs; paid API required değil.",
+      "estimated_lovable_credits": 330,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation"
+    }
+  ]
+}
