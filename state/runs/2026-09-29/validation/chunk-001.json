@@ -1,0 +1,331 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-09-29",
+  "chunk_number": 1,
+  "candidate_ids": [
+    "c-001",
+    "c-002",
+    "c-003",
+    "c-004",
+    "c-005"
+  ],
+  "expected_candidate_count": 5,
+  "validated_candidate_count": 5,
+  "status": "complete",
+  "results": [
+    {
+      "candidate_id": "c-001",
+      "validation_index": 1,
+      "canonical_key": "agentic-commerce|prove-intent-checkout-payment-authorization|authorization-receipt-ledger",
+      "development_verified": true,
+      "canonical_news_source": "Shopify Developer",
+      "canonical_news_title": "WebMCP support for checkout",
+      "canonical_news_date": "2026-09-28",
+      "canonical_news_url": "https://shopify.dev/changelog/posts/webmcp-support-for-checkout",
+      "source_links": [
+        "https://shopify.dev/changelog/posts/webmcp-support-for-checkout",
+        "https://shopify.dev/docs/agents/carts-and-checkout/checkout-mcp"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 1,
+      "global_competitors": [
+        {
+          "name": "Permission Protocol",
+          "url": "https://permissionprotocol.com/platforms",
+          "reason": "Agent actions için policy check, human approval ve signed receipt; authorization-evidence workflow'u doğrudan örtüşüyor."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Shopify Checkout MCP",
+          "url": "https://shopify.dev/docs/agents/carts-and-checkout/checkout-mcp",
+          "reason": "Checkout execution altyapısı; bağımsız intent-vs-agent authorization receipt governance ürünü değil."
+        }
+      ],
+      "competition_search_terms": [
+        "agentic commerce authorization receipt",
+        "AI checkout approval audit receipt",
+        "Türkiye AI agent ödeme yetkilendirme"
+      ],
+      "market_gap": "Commerce/payment'e özel intent snapshot + checkout diff + authorization receipt paketi için Türkiye'de direct ürün bulunamadı; globalde authorization receipt katmanı mevcut.",
+      "mvp": "Intent snapshot, checkout diff, spend policy, approval queue, immutable-style receipt export.",
+      "working_logic": "Agent checkout öncesi intent kaydı → değişiklik diff'i → policy → gerekirse insan onayı → receipt → audit export.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "browser-side rules",
+        "WebMCP/JSON import"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 430,
+      "lovable_credit_breakdown": "UI/workflows 170; data model 90; rules/diff 80; receipt/export 60; QA 30",
+      "build_time": "3-4 hafta",
+      "business_models": [
+        "SaaS abonelik",
+        "işlem hacmi tier'ları"
+      ],
+      "marketing_strategy": "Agentic-commerce geliştiricileri ve payment risk ekiplerine teknik demo/receipt örneği.",
+      "first_customer_plan": "Shopify/WebMCP kullanan küçük bir merchant-tech veya ödeme ürün ekibiyle pilot.",
+      "main_risk": "Authorization layer kategorisinde mevcut global ürünün hızla commerce dikeyine inmesi.",
+      "validation_assumption": "Merchant/payment ekipleri genel authorization ürününden ayrı commerce-semantic receipt ister.",
+      "evidence_strength": "high",
+      "competition_confidence": "medium-high",
+      "qualification_status": "qualified"
+    },
+    {
+      "candidate_id": "c-002",
+      "validation_index": 2,
+      "canonical_key": "ai-agent-operator|authorize-consequential-agent-actions|policy-approval-action-receipt-ledger",
+      "development_verified": true,
+      "canonical_news_source": "The Guardian / corroborated by current agent-safety reporting",
+      "canonical_news_title": "Meta Muse marketplace agent privacy incident",
+      "canonical_news_date": "2026-09-28",
+      "canonical_news_url": "https://www.theguardian.com/technology/2026/sep/28/metas-ai-agent-muse-home-address",
+      "source_links": [
+        "https://permissionprotocol.com/",
+        "https://maetra.io/",
+        "https://github.com/whataboutyou-ai/eunomia"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "Permission Protocol",
+          "url": "https://permissionprotocol.com/",
+          "reason": "Agent action authorization, human approval ve signed receipts doğrudan aynı core job/workflow."
+        },
+        {
+          "name": "Maetra",
+          "url": "https://maetra.io/",
+          "reason": "Agent action policy checkpoints, approvals, signed decisions ve effect receipts ile substantially same workflow."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Eunomia",
+          "url": "https://github.com/whataboutyou-ai/eunomia",
+          "reason": "Agent authorization katmanı; approval/action-receipt case-management kapsamı daha dar."
+        }
+      ],
+      "competition_search_terms": [
+        "AI agent authorization approval receipts",
+        "agent governance signed action receipt",
+        "Türkiye AI agent yetkilendirme onay kayıt"
+      ],
+      "market_gap": "Türkiye direct ürün bulunamadı; globalde aynı job ve workflow'u yapan en az iki ürün mevcut.",
+      "mvp": "Permission registry, approval gates, action receipts, exception ledger.",
+      "working_logic": "Action request → policy → approval/deny → signed/structured receipt → execution evidence → exception review.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "JSON webhook/manual ingest"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 420,
+      "lovable_credit_breakdown": "UI 150; policy model 100; approvals 70; receipts 70; QA 30",
+      "build_time": "3-4 hafta",
+      "business_models": [
+        "SaaS"
+      ],
+      "marketing_strategy": "AI agent product ekipleri.",
+      "first_customer_plan": "Küçük agent platform ekibi.",
+      "main_risk": "Direct competition.",
+      "validation_assumption": "Generic authorization products already satisfy core need.",
+      "evidence_strength": "high",
+      "competition_confidence": "high",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Global direct competitors Permission Protocol and Maetra substantially match target customer, core job and workflow."
+    },
+    {
+      "candidate_id": "c-003",
+      "validation_index": 3,
+      "canonical_key": "ai-agent-team|prove-tool-and-stop-controls|safety-evidence-workspace",
+      "development_verified": true,
+      "canonical_news_source": "NVIDIA / AP",
+      "canonical_news_title": "Open Agent Safety Platform",
+      "canonical_news_date": "2026-09-28",
+      "canonical_news_url": "https://apnews.com/article/3c4d7c1cfde82851c0577d1fa29b8621",
+      "source_links": [
+        "https://apnews.com/article/3c4d7c1cfde82851c0577d1fa29b8621",
+        "https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "NVIDIA Open Agent Safety Platform",
+          "url": "https://nvidianews.nvidia.com/news/open-agent-safety-platform",
+          "reason": "Agent permission boundaries, monitoring and quarantine/stop controls directly address the safety-control job."
+        },
+        {
+          "name": "AgentGuard",
+          "url": "https://tooloracle.io/agentguard/",
+          "reason": "Risk policies, scoped permissions, audit trail and emergency kill switch substantially overlap."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Microsoft open trust stack",
+          "url": "https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/",
+          "reason": "Agent evals/runtime controls broader developer stack; evidence case workspace only part of scope."
+        }
+      ],
+      "competition_search_terms": [
+        "agent safety test registry kill switch permissions",
+        "AI agent control evidence platform",
+        "Türkiye AI agent güvenlik test kill switch"
+      ],
+      "market_gap": "Türkiye'de direct ürün bulunamadı ancak global direct competition güçlü.",
+      "mvp": "Test-case registry, expected permission boundaries, stop-control test evidence, release gate.",
+      "working_logic": "Agent version → test suite → tool/permission scenarios → stop test → evidence → release decision.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "manual/JSON test-result import"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 390,
+      "lovable_credit_breakdown": "Registry 100; test cases 100; evidence 80; release gate 70; QA 40",
+      "build_time": "3 hafta",
+      "business_models": [
+        "SaaS"
+      ],
+      "marketing_strategy": "Agent developer teams.",
+      "first_customer_plan": "Open-source agent project pilot.",
+      "main_risk": "Platform vendors bundle controls.",
+      "validation_assumption": "Evidence workspace differentiation is insufficient against integrated safety platforms.",
+      "evidence_strength": "high",
+      "competition_confidence": "high",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "NVIDIA Open Agent Safety Platform and AgentGuard substantially cover permission/stop-control safety workflow."
+    },
+    {
+      "candidate_id": "c-004",
+      "validation_index": 4,
+      "canonical_key": "app-serving-minors|operate-age-tiered-controls|guardian-consent-limit-ledger",
+      "development_verified": true,
+      "canonical_news_source": "Webrazzi / broader age-assurance ecosystem corroboration",
+      "canonical_news_title": "TikTok settlement and youth daily-use limits",
+      "canonical_news_date": "2026-09-28",
+      "canonical_news_url": "https://webrazzi.com/2026/09/28/tiktok-100-milyon-dolarlik-uzlasmanin-ardindan-gencler-icin-gunluk-kullanim-sinirini-kabul-etti/",
+      "source_links": [
+        "https://www.privo.com/home",
+        "https://product.k-id.com/p/putting-character-into-ai-introducing-the-ai-harness-in-the-k-id-cdk",
+        "https://withpersona.com/use-case/compliance/age-assurance"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 3,
+      "global_competitors": [
+        {
+          "name": "k-ID",
+          "url": "https://www.k-id.com/",
+          "reason": "Age assurance, parental consent, feature-level permissions, jurisdiction defaults and audit trails match core workflow."
+        },
+        {
+          "name": "PRIVO",
+          "url": "https://www.privo.com/home",
+          "reason": "Age assurance, parental consent, minor access controls and compliance records substantially overlap."
+        },
+        {
+          "name": "Persona",
+          "url": "https://withpersona.com/use-case/compliance/age-assurance",
+          "reason": "Age assurance plus verifiable parental consent and configurable consent workflows."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Socure",
+          "url": "https://www.socure.com/use-cases/age-assurance",
+          "reason": "Strong age/guardian verification orchestration; broader identity platform."
+        }
+      ],
+      "competition_search_terms": [
+        "child app parental consent age assurance compliance platform",
+        "youth feature permissions audit trail",
+        "Türkiye çocuk uygulama yaş doğrulama ebeveyn onayı"
+      ],
+      "market_gap": "Türkiye'de direct yerel ürün bulunamadı; global kategori olgun ve aynı workflow'u sunan çok sayıda sağlayıcı var.",
+      "mvp": "Age-band policy ledger, guardian consent record, usage-limit configuration, evidence export.",
+      "working_logic": "Jurisdiction/age band → required consent/limit → guardian evidence → feature permissions → exceptions → audit export.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "manual/platform age-signal import"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 410,
+      "lovable_credit_breakdown": "Policy UI 120; consent records 100; limits 70; evidence 80; QA 40",
+      "build_time": "3-4 hafta",
+      "business_models": [
+        "SaaS"
+      ],
+      "marketing_strategy": "Çocuk/teen app geliştiricileri.",
+      "first_customer_plan": "Küçük edtech/game pilot.",
+      "main_risk": "Identity/age verification itself cannot be robustly delivered at zero external cash cost.",
+      "validation_assumption": "MVP can manage evidence but not replace verification providers.",
+      "evidence_strength": "high",
+      "competition_confidence": "high",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "k-ID, PRIVO and Persona directly cover age-aware controls, parental consent and compliance evidence workflows."
+    },
+    {
+      "candidate_id": "c-005",
+      "validation_index": 5,
+      "canonical_key": "dataset-owner|repeat-privacy-recheck|versioned-review-ledger",
+      "development_verified": true,
+      "canonical_news_source": "ZDNet Korea",
+      "canonical_news_title": "AI Hub datasets undergo renewed privacy review",
+      "canonical_news_date": "2026-09-29",
+      "canonical_news_url": "https://zdnet.co.kr/view/?no=20260929102554",
+      "source_links": [
+        "https://zdnet.co.kr/view/?no=20260929102554",
+        "https://iapp.org/resources/article/ai-governance-vendor-report"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 0,
+      "global_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "General AI governance/privacy platforms",
+          "url": "https://iapp.org/resources/article/ai-governance-vendor-report",
+          "reason": "AI governance/privacy inventory and risk functions exist, but fresh search did not verify same post-publication dataset re-inspection + versioned finding/remediation workflow as a direct product."
+        }
+      ],
+      "competition_search_terms": [
+        "AI dataset privacy reinspection remediation workflow",
+        "dataset privacy review version findings ledger",
+        "Türkiye veri seti gizlilik yeniden inceleme yazılımı"
+      ],
+      "market_gap": "Fresh searchte aynı müşteri + aynı iş + aynı versioned re-inspection workflow'u sunan direct ürün doğrulanamadı.",
+      "mvp": "Dataset register, version snapshots, privacy-review checklist, findings, owner/deadline, remediation evidence, recheck sign-off.",
+      "working_logic": "Dataset/version → review template → finding → remediation owner → evidence → recheck → signed closure/history.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "CSV/manual metadata import",
+        "client-side rules"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 360,
+      "lovable_credit_breakdown": "Registry/versioning 90; checklist 70; findings 80; remediation 70; export/QA 50",
+      "build_time": "2-3 hafta",
+      "business_models": [
+        "SaaS abonelik",
+        "dataset/review tier'ları"
+      ],
+      "marketing_strategy": "AI dataset publishers, universities, data governance teams; privacy recheck template lead magnet.",
+      "first_customer_plan": "Public/academic dataset owner with recurring privacy review.",
+      "main_risk": "Generic data governance suites may add this workflow quickly.",
+      "validation_assumption": "Teams need lightweight case workflow rather than automated PII scanning; scanning remains external/manual to preserve zero cost.",
+      "evidence_strength": "medium-high",
+      "competition_confidence": "medium",
+      "qualification_status": "qualified"
+    }
+  ],
+  "completed_at": "2026-09-29T12:37:00+03:00"
+}
