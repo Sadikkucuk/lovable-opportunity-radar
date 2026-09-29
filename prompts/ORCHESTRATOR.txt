@@ -102,10 +102,13 @@ All four acceptable workers must have identical:
 And:
 sum(feed_items_triaged across workers) == source_total_items
 
-If one worker is missing/incomplete BUT the other complete workers all share one
-source_batch_index_generated_at AND the current docs/batches/index.json still has
-that exact generated_at, repair ONLY ONE missing/incomplete worker in this invocation
-using prompts/DISCOVERY_WORKER.txt and that worker's assignment. Then stop.
+If ONE OR MORE workers are missing/incomplete BUT every currently complete worker
+shares one source_batch_index_generated_at AND the current docs/batches/index.json
+still has that exact generated_at, repair EXACTLY ONE missing/incomplete worker in
+this invocation using prompts/DISCOVERY_WORKER.txt and that worker's assignment.
+Choose the lowest worker_id needing repair. Persist its worker JSON successfully,
+then stop. A failed persistence is not a completed repair and must not disable any
+worker or the orchestrator.
 
 If the current index no longer matches the workers' captured generation, do NOT
 mix generations. Write:
@@ -333,3 +336,14 @@ User-facing final message:
   Overall status
 
 Never equate "feed records processed" with "full articles verified".
+
+
+==================================================
+AUTOMATION RESILIENCE — HARD RULE
+==================================================
+- A GitHub read/write failure must NEVER disable Discovery W1-W4 or this Orchestrator.
+- Never report a stage as advanced unless its required state file was successfully persisted.
+- On a later invocation, re-read repository state and retry the first unfinished stage.
+- Never synthesize or backfill a worker from feed counts alone.
+- If a frozen generation is no longer available in docs/batches/index.json, do not repair
+  against a newer generation. Mark RADAR_INPUT_MISMATCH and wait for an explicit clean rerun.
