@@ -342,6 +342,9 @@ Never equate "feed records processed" with "full articles verified".
 AUTOMATION RESILIENCE — HARD RULE
 ==================================================
 - A GitHub read/write failure must NEVER disable Discovery W1-W4 or this Orchestrator.
+- For a required state path that does NOT exist, use the GitHub create-file operation.
+- For a required state path that already exists, fetch its current blob SHA and use the GitHub update-file operation.
+- Never call update-file without a current SHA, and never treat a create/update API error as a completed stage.
 - Never report a stage as advanced unless its required state file was successfully persisted.
 - On a later invocation, re-read repository state and retry the first unfinished stage.
 - Never synthesize or backfill a worker from feed counts alone.
