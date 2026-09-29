@@ -103,3 +103,11 @@ If anything prevents exhaustive assigned coverage, write status="incomplete" wit
 - exact feed_items_triaged
 
 Never claim complete coverage from the number of feed records fetched alone.
+
+
+PERSISTENCE HARD GATE
+- The worker is successful only after worker-WORKER_ID.json is actually persisted in GitHub.
+- If the target file already exists for the same frozen generation, update it only when
+  repairing an incomplete worker; never overwrite a complete worker from another generation.
+- If GitHub persistence fails, report the write failure; do not claim the worker completed.
+- Never disable this worker automation because of a persistence failure.
