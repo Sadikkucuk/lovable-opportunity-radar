@@ -5,7 +5,14 @@
   "source_batch_index_generated_at": "2026-09-29T05:39:45Z",
   "source_total_items": 1000,
   "source_batch_count": 25,
-  "assigned_batches": [13,14,15,16,17,18],
+  "assigned_batches": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
   "status": "incomplete",
   "feed_items_expected": 240,
   "feed_items_triaged": 240,
@@ -13,7 +20,42 @@
   "original_articles_verified": 10,
   "full_article_not_verified": 2,
   "noise_or_no_opportunity_count": 228,
-  "raw_opportunity_count": 0,
-  "raw_opportunities": [],
+  "raw_opportunity_count": 1,
+  "raw_opportunities": [
+    {
+      "raw_id": "w3-001",
+      "supporting_article_ids": [
+        "6839c9b22ca884005a0a1646"
+      ],
+      "supporting_article_titles": [
+        "Passaporto digitale di prodotto con meno oneri"
+      ],
+      "supporting_sources": [
+        "Il Sole 24 Ore"
+      ],
+      "canonical_source_urls": [
+        "https://ntplusfisco.ilsole24ore.com/channel/quotidianiverticali/type/articolo/uuid/AJjjSyRB"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AB Digital Product Passport süreçlerinde ürün verisi ve kanıtların yaşam döngüsü boyunca hazırlanması daha önemli hale geliyor.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "SKU oluşturma → veri ve kanıt toplama → eksik kontrolü → doğrulama → sunma",
+      "target_customer": "AB'ye ürün satan KOBİ üreticiler",
+      "buyer": "uyum veya ihracat yöneticisi",
+      "job_to_be_done": "SKU için DPP alan ve kanıtlarını piyasaya çıkmadan tamamlamak",
+      "current_friction": "Veriler ERP, e-posta, Excel ve PDF'lerde dağınık.",
+      "product_mechanism": "SKU readiness workspace; alan şablonu, kanıt indeksi, tedarikçi görevleri ve export paketi.",
+      "one_sentence_concept": "KOBİ üreticiler için SKU bazlı DPP hazırlık masası.",
+      "why_now": "DPP operasyonelleştikçe sürekli veri ve kanıt yönetimi gerekiyor.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 360,
+      "draft_canonical_key": "eu-exporting-sme-manufacturer|prepare-dpp-evidence|sku-readiness-workspace",
+      "evidence_notes": "Kaynak doğrulandı; fikir operasyonel veri ve kanıt ihtiyacından türetildi."
+    }
+  ],
   "failure_reason": "Raw opportunity persistence is being retried after successful triage and source verification."
 }
