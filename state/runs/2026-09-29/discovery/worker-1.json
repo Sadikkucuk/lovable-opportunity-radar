@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-09-29",
+  "worker_id": "1",
+  "source_batch_index_generated_at": "2026-09-29T05:39:45Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "status": "complete",
+  "started_at": "2026-09-29T10:04:05+03:00",
+  "completed_at": "2026-09-29T10:13:00+03:00",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 8,
+  "original_articles_verified": 8,
+  "full_article_not_verified": 0,
+  "noise_or_no_opportunity_count": 232,
+  "raw_opportunity_count": 8,
+  "raw_opportunities": [
+    {
+      "raw_id": "w1-001",
+      "supporting_article_ids": [
+        "adb99e96eacc86df194152bb"
+      ],
+      "supporting_article_titles": [
+        "Meta Muse marketplace agent privacy incident"
+      ],
+      "supporting_sources": [
+        "ITHome",
+        "The Guardian"
+      ],
+      "canonical_source_urls": [
+        "https://www.theguardian.com/technology/2026/sep/28/metas-ai-agent-muse-home-address"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Action-taking agents can over-expand delegated intent into sensitive-data disclosure or commitments.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "task delegation → permitted action → external interaction → audit",
+      "target_customer": "organizations deploying action-taking AI agents",
+      "buyer": "AI product or governance lead",
+      "job_to_be_done": "prove agent actions stayed within user-granted authority",
+      "current_friction": "User intent is rarely translated into explicit per-action authority.",
+      "product_mechanism": "permission registry + approval gates + action receipts + exception ledger",
+      "one_sentence_concept": "Auditable authority desk for AI agents.",
+      "why_now": "A reported marketplace-agent incident exposed the gap between broad delegation and specific consent.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 420,
+      "draft_canonical_key": "agent-operator|prove-delegated-authority|permission-and-action-receipt-ledger",
+      "evidence_notes": "Original reporting verified."
+    },
+    {
+      "raw_id": "w1-002",
+      "supporting_article_ids": [
+        "db1e79dc219ac7f04f8ce554"
+      ],
+      "supporting_article_titles": [
+        "NVIDIA Open Agent Safety Platform"
+      ],
+      "supporting_sources": [
+        "NVIDIA"
+      ],
+      "canonical_source_urls": [
+        "https://nvidianews.nvidia.com/news/open-agent-safety-platform"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Open agent-control primitives make external policy enforcement practical across model stacks.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "define agent job → policy → test → deploy → review",
+      "target_customer": "SME software teams deploying autonomous agents",
+      "buyer": "CTO or AI governance lead",
+      "job_to_be_done": "turn an agent business role into least-privilege policy and evidence",
+      "current_friction": "Teams must manually decide allowed tools, data and actions.",
+      "product_mechanism": "guided policy wizard + job-permission matrix + policy export + evidence log",
+      "one_sentence_concept": "No-code policy builder for agent permissions.",
+      "why_now": "NVIDIA released open components for controlling agent execution.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "sme-agent-team|translate-job-to-controls|guided-policy-builder",
+      "evidence_notes": "NVIDIA primary announcement verified."
+    },
+    {
+      "raw_id": "w1-003",
+      "supporting_article_ids": [
+        "c8fe2eb8a797ff1a2b6a65ed"
+      ],
+      "supporting_article_titles": [
+        "When CAPA Fails: A Four-Pillar Framework for Protecting Patients"
+      ],
+      "supporting_sources": [
+        "Quality Magazine"
+      ],
+      "canonical_source_urls": [
+        "https://www.qualitymag.com/articles/99948-when-capa-fails-a-four-pillar-framework-for-protecting-patients"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "CAPA quality is increasingly about systemic review and effectiveness evidence, not simple closure.",
+      "delta_types": [
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "nonconformance → root cause → analogous-risk review → action → effectiveness check",
+      "target_customer": "small and mid-sized medical-device manufacturers",
+      "buyer": "quality manager",
+      "job_to_be_done": "prove systemic CAPA effectiveness before closure",
+      "current_friction": "CAPAs can close without cross-product review or later effectiveness evidence.",
+      "product_mechanism": "CAPA checklist + similar-risk matrix + scheduled effectiveness checks + evidence pack",
+      "one_sentence_concept": "CAPA closure guard for quality teams.",
+      "why_now": "Current quality guidance highlights recurring root-cause and effectiveness-verification failures.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 440,
+      "draft_canonical_key": "medical-device-quality|prove-capa-effectiveness|systemic-review-ledger",
+      "evidence_notes": "Quality Magazine article verified."
+    },
+    {
+      "raw_id": "w1-004",
+      "supporting_article_ids": [
+        "0382aa82f5255879803057f5"
+      ],
+      "supporting_article_titles": [
+        "AI Hub datasets undergo renewed privacy review"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea"
+      ],
+      "canonical_source_urls": [
+        "https://zdnet.co.kr/view/?no=20260929102554"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Published AI datasets can require retrospective privacy re-inspection and versioned remediation.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "dataset inventory → privacy review → finding → remediation → sign-off",
+      "target_customer": "AI dataset owners and publishers",
+      "buyer": "data governance or privacy lead",
+      "job_to_be_done": "run repeatable post-publication privacy rechecks",
+      "current_friction": "Later reviews require reconstructing versions, findings and owners.",
+      "product_mechanism": "dataset register + review checklist + finding ledger + remediation workflow",
+      "one_sentence_concept": "Versioned privacy re-inspection ledger for AI datasets.",
+      "why_now": "South Korea is rechecking 150 public AI Hub datasets for residual personal information.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 360,
+      "draft_canonical_key": "dataset-owner|repeat-privacy-recheck|versioned-review-ledger",
+      "evidence_notes": "ZDNet Korea report verified."
+    },
+    {
+      "raw_id": "w1-005",
+      "supporting_article_ids": [
+        "cb594cf8b4c2635fde3537ab"
+      ],
+      "supporting_article_titles": [
+        "AI work records and ownership after employee departure"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea/AMEET"
+      ],
+      "canonical_source_urls": [
+        "https://v.daum.net/v/20260929101655134"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Persistent AI work memory creates a new offboarding boundary between personal context and company work product.",
+      "delta_types": [
+        "DATA_DELTA",
+        "LABOR_DELTA"
+      ],
+      "affected_workflow": "AI use → memory accumulates → offboarding → classify/export/delete/retain → sign-off",
+      "target_customer": "companies using persistent-memory AI assistants",
+      "buyer": "IT, HR or AI governance lead",
+      "job_to_be_done": "separate portable employee AI context from company-owned context",
+      "current_friction": "Traditional offboarding handles files and accounts, not mixed AI memory.",
+      "product_mechanism": "context inventory + ownership classification + retain/export/delete workflow + sign-off",
+      "one_sentence_concept": "AI-memory offboarding desk.",
+      "why_now": "Current reporting is raising ownership questions around AI records after employment ends.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 410,
+      "draft_canonical_key": "enterprise-ai-user|separate-ai-memory-at-offboarding|classification-signoff-ledger",
+      "evidence_notes": "Article verified."
+    },
+    {
+      "raw_id": "w1-006",
+      "supporting_article_ids": [
+        "e525a992ca851806495ff096"
+      ],
+      "supporting_article_titles": [
+        "KB Kookmin Card begins AI payment demonstration"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea",
+        "Asia Economy"
+      ],
+      "canonical_source_urls": [
+        "https://www.asiae.co.kr/en/article/2026092914134006340"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AI agents are moving from search into payment execution, creating a need to prove the authorization chain.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "TRANSACTION_DELTA"
+      ],
+      "affected_workflow": "purchase intent → agent selection → approval → payment → receipt",
+      "target_customer": "agentic-commerce and payment product teams",
+      "buyer": "payments product or risk lead",
+      "job_to_be_done": "prove what the user authorized versus what the agent selected",
+      "current_friction": "Normal receipts do not capture semantic intent-to-payment decisions.",
+      "product_mechanism": "intent snapshot + decision diff + spend policy + approval checkpoint + authorization receipt",
+      "one_sentence_concept": "Authorization receipt layer for agentic commerce.",
+      "why_now": "KB Kookmin Card has started an AI-agent payment proof of concept.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 430,
+      "draft_canonical_key": "agentic-commerce|prove-intent-to-payment|authorization-receipt-layer",
+      "evidence_notes": "Current payment demonstration verified."
+    },
+    {
+      "raw_id": "w1-007",
+      "supporting_article_ids": [
+        "9a657179c29698f5e37c463f"
+      ],
+      "supporting_article_titles": [
+        "Hysata launches AI manufacturing platform"
+      ],
+      "supporting_sources": [
+        "Manufacturers' Monthly"
+      ],
+      "canonical_source_urls": [
+        "https://www.manmonthly.com.au/hysata-launches-ai-manufacturing-platform/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Per-unit digital production records and inline quality feedback are becoming practical manufacturing patterns.",
+      "delta_types": [
+        "DATA_DELTA",
+        "CAPABILITY_DELTA"
+      ],
+      "affected_workflow": "unit produced → process/inspection data → variation → disposition → traceability",
+      "target_customer": "SME manufacturers lacking MES-scale genealogy",
+      "buyer": "quality or production manager",
+      "job_to_be_done": "link each unit or lot to process and inspection evidence",
+      "current_friction": "Machine exports, inspection sheets and NCRs are often separated.",
+      "product_mechanism": "CSV/manual ingest + unit genealogy + alerts + NCR links + trend board",
+      "one_sentence_concept": "Lightweight manufacturing genealogy desk.",
+      "why_now": "HysataFab demonstrates per-unit digital records, inline testing and continuous feedback.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 470,
+      "draft_canonical_key": "sme-manufacturer|trace-unit-quality-history|csv-first-genealogy-ledger",
+      "evidence_notes": "Manufacturing launch verified."
+    },
+    {
+      "raw_id": "w1-008",
+      "supporting_article_ids": [
+        "d7d060d2412ccd7db0d24d91"
+      ],
+      "supporting_article_titles": [
+        "TOPIK to adopt AI-based testing system by 2029"
+      ],
+      "supporting_sources": [
+        "Korea Herald"
+      ],
+      "canonical_source_urls": [
+        "https://www.koreaherald.com/article/10887639"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "High-stakes language testing is moving toward AI-assisted grading and at-home digital delivery.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "PROCESS_DELTA"
+      ],
+      "affected_workflow": "registration → remote eligibility → test → anomaly evidence → review/appeal",
+      "target_customer": "smaller exam and certification operators moving online",
+      "buyer": "assessment operations manager",
+      "job_to_be_done": "manage remote-test integrity exceptions with auditable evidence",
+      "current_friction": "Identity checks, proctor notes and appeals are often split across tools.",
+      "product_mechanism": "session checklist + evidence capture + anomaly queue + reviewer decision + appeal pack",
+      "one_sentence_concept": "Remote-exam integrity case desk.",
+      "why_now": "South Korea announced an AI/digital TOPIK overhaul with at-home testing and stronger integrity controls.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 400,
+      "draft_canonical_key": "exam-operator|review-remote-integrity-exceptions|evidence-case-ledger",
+      "evidence_notes": "Korea Herald report verified."
+    }
+  ]
+}
