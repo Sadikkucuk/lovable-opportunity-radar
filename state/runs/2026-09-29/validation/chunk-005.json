@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-09-29",
+  "chunk_number": 5,
+  "candidate_ids": [
+    "c-021",
+    "c-022"
+  ],
+  "expected_candidate_count": 2,
+  "validated_candidate_count": 2,
+  "status": "complete",
+  "results": [
+    {
+      "candidate_id": "c-021",
+      "validation_index": 21,
+      "canonical_key": "turkiye-cross-border-seller|prepare-customs-before-sale|readiness-launch-gate",
+      "development_verified": true,
+      "canonical_news_source": "T.C. Ticaret Bakanlığı",
+      "canonical_news_title": "AB'ye e-ticaret ihracatında dijital kolaylık: A.TR belgesi artık otomatik oluşturuluyor",
+      "canonical_news_date": "2026-08-05",
+      "canonical_news_url": "https://koop.ticaret.gov.tr/haberler/abye-e-ticaret-ihracatinda-dijital-kolaylik-a-tr-belgesi-artik-otomatik-olusturuluyor",
+      "source_links": [
+        "https://koop.ticaret.gov.tr/haberler/abye-e-ticaret-ihracatinda-dijital-kolaylik-a-tr-belgesi-artik-otomatik-olusturuluyor",
+        "https://www.ticaret.gov.tr/duyurular/basitlestirilmis-gumruk-beyannamesi-kapsaminda-abye-ihracatta-elektronik-a-tr-dolasim-belgesi-sistemi-kullanima-sunuldu",
+        "https://apps.shopify.com/customs-readiness-doctor?locale=tr",
+        "https://bulutegra.com/en/"
+      ],
+      "turkiye_direct_competitor_count": 2,
+      "turkiye_competitors": [
+        {
+          "name": "Bulutegra",
+          "url": "https://bulutegra.com/en/",
+          "reason": "Türkiye sellers için SKU/order aşamasında micro-export paperwork, currency ve customs details hazırlıyor; same customer/job substantially overlaps."
+        },
+        {
+          "name": "PR e-İhracat",
+          "url": "https://pr.net.tr/e-ihracat",
+          "reason": "Türkiye'den cross-border sellers için ETGB/customs, international shipping and export workflow in one platform."
+        }
+      ],
+      "global_direct_competitor_count": 1,
+      "global_competitors": [
+        {
+          "name": "Customs Readiness Doctor",
+          "url": "https://apps.shopify.com/customs-readiness-doctor?locale=tr",
+          "reason": "Cross-border seller catalogunu shipment öncesi HS code, origin, weight, SKU/category eksikleri için tarayıp prioritized readiness issues/cleanup export sunuyor; proposed launch-gate job ile doğrudan örtüşüyor."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "x7trade",
+          "url": "https://www.x7trade.com/",
+          "reason": "Customs pre-validation/clearance automation, fakat primary customer logistics/customs operators rather than Turkish SME sellers."
+        }
+      ],
+      "competition_search_terms": [
+        "Türkiye e-ihracat SKU gümrük readiness yazılımı",
+        "cross border seller customs readiness HS origin SKU",
+        "ETGB e-ihracat gümrük yazılımı"
+      ],
+      "market_gap": "2026 düzenlemeleri ihtiyacı doğruluyor ancak SKU/customs readiness ve Türkiye e-ihracat operasyonu halihazırda doğrudan ürünleşmiş.",
+      "mvp": "SKU/ülke checklist, HS/origin/weight/document completeness, issue queue, launch gate.",
+      "working_logic": "SKU + destination → required customs fields/docs → completeness checks → issues/owners → ready/not-ready gate.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "manual/CSV catalog import",
+        "browser-side rules"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 410,
+      "lovable_credit_breakdown": "catalog 80; country/rule templates 90; checks 90; issue queue 70; export/QA 80",
+      "build_time": "3-4 hafta",
+      "business_models": [
+        "SaaS"
+      ],
+      "marketing_strategy": "Türkiye cross-border SMEs",
+      "first_customer_plan": "Shopify/Etsy/Amazon exporter",
+      "main_risk": "Existing seller platforms and Shopify apps already solve core readiness workflow.",
+      "validation_assumption": "Standalone Türkiye localization is insufficient novelty.",
+      "evidence_strength": "high",
+      "competition_confidence": "high",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Bulutegra/PR e-İhracat and Customs Readiness Doctor substantially overlap the same seller-side pre-shipment customs readiness job."
+    },
+    {
+      "candidate_id": "c-022",
+      "validation_index": 22,
+      "canonical_key": "turkiye-road-carrier|reprice-after-fuel-change|fuel-surcharge-margin-ledger",
+      "development_verified": true,
+      "canonical_news_source": "Maersk",
+      "canonical_news_title": "Turkey Intermodal Fuel Fee Update",
+      "canonical_news_date": "2026-06-12",
+      "canonical_news_url": "https://www.maersk.com/news/articles/2026/06/12/turkey-intermodal-fuel-fee-update-july",
+      "source_links": [
+        "https://www.maersk.com/news/articles/2026/06/12/turkey-intermodal-fuel-fee-update-july",
+        "https://play.google.com/store/apps/details?hl=tr&id=com.navlunmatik.app",
+        "https://iskaysoft.com/lojistik-yazilimi?dil=en"
+      ],
+      "turkiye_direct_competitor_count": 2,
+      "turkiye_competitors": [
+        {
+          "name": "NavlunMatik",
+          "url": "https://play.google.com/store/apps/details?hl=tr&id=com.navlunmatik.app",
+          "reason": "Türkiye TIR/nakliye firmaları için mazot fiyatı, yakıt tüketimi, navlun geliri ve net kârı hesaplayarak hızlı teklif kararını destekliyor; same customer/core pricing job substantially overlaps."
+        },
+        {
+          "name": "İskaysoft Lojistik Yazılımı",
+          "url": "https://iskaysoft.com/lojistik-yazilimi?dil=en",
+          "reason": "Freight rate, fuel consumption/cost, tolls and trip net profit workflow for carriers; same customer and margin calculation workflow overlaps."
+        }
+      ],
+      "global_direct_competitor_count": 0,
+      "global_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "Maersk fuel surcharge mechanism",
+          "url": "https://www.maersk.com/news/articles/2026/06/12/turkey-intermodal-fuel-fee-update-july",
+          "reason": "Confirms operational repricing need but is a carrier pricing policy, not software sold to SMEs."
+        }
+      ],
+      "competition_search_terms": [
+        "Türkiye navlun yakıt maliyeti kar hesaplama uygulaması",
+        "nakliye mazot fiyatı navlun teklif karlılık yazılımı",
+        "fuel surcharge margin pricing road carrier software"
+      ],
+      "market_gap": "Fuel volatility and surcharge repricing are real, but Turkish carrier pricing/fuel/margin tools already cover the central job. Proposed customer-impact queue adds workflow depth but not enough to make the core job novel.",
+      "mvp": "Lane cost baseline, fuel price update, margin delta, surcharge scenario, customer repricing queue.",
+      "working_logic": "Fuel price change → affected lanes/customers → margin recalculation → proposed surcharge/new quote → approval/action queue.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "manual fuel-price input",
+        "browser-side calculator"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 330,
+      "lovable_credit_breakdown": "lane/customer model 70; calculator 80; scenarios 60; queue 60; reporting/QA 60",
+      "build_time": "2-3 hafta",
+      "business_models": [
+        "SaaS"
+      ],
+      "marketing_strategy": "Türkiye road-freight SMEs",
+      "first_customer_plan": "5-20 truck carrier",
+      "main_risk": "Low-price local calculator/logistics products already satisfy much of the buyer need.",
+      "validation_assumption": "Automated repricing queue alone is not sufficient differentiation.",
+      "evidence_strength": "high",
+      "competition_confidence": "high",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "NavlunMatik and İskaysoft substantially overlap Turkish carrier fuel-cost, freight pricing and trip-margin decision workflow."
+    }
+  ],
+  "completed_at": "2026-09-29T13:05:00+03:00"
+}
