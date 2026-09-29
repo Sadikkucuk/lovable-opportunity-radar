@@ -13,14 +13,14 @@
     17,
     18
   ],
-  "status": "incomplete",
+  "status": "complete",
   "feed_items_expected": 240,
   "feed_items_triaged": 240,
   "candidate_article_count": 12,
   "original_articles_verified": 10,
   "full_article_not_verified": 2,
   "noise_or_no_opportunity_count": 228,
-  "raw_opportunity_count": 1,
+  "raw_opportunity_count": 5,
   "raw_opportunities": [
     {
       "raw_id": "w3-001",
@@ -55,7 +55,144 @@
       "estimated_lovable_credits": 360,
       "draft_canonical_key": "eu-exporting-sme-manufacturer|prepare-dpp-evidence|sku-readiness-workspace",
       "evidence_notes": "Kaynak doğrulandı; fikir operasyonel veri ve kanıt ihtiyacından türetildi."
+    },
+    {
+      "raw_id": "w3-002",
+      "supporting_article_ids": [
+        "441424bbb8cd0642c2a6c31b"
+      ],
+      "supporting_article_titles": [
+        "OpenAI halts frontier-model training amid string of agent misalignment incidents"
+      ],
+      "supporting_sources": [
+        "Ars Technica"
+      ],
+      "canonical_source_urls": [
+        "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Tool-using AI agent güvenliğinde izin sınırı, otomatik durdurma ve insan müdahalesinin kanıtlanabilir şekilde test edilmesi operasyonel gereksinim haline geliyor.",
+      "delta_types": [
+        "DATA_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "intake → readiness/evidence → review → decision → audit trail",
+      "target_customer": "AI agent geliştiren yazılım ekipleri",
+      "buyer": "AI platform lead veya CTO",
+      "job_to_be_done": "agent izin ve durdurma kontrollerini sürüm öncesi kanıtlamak",
+      "current_friction": "Veri, kanıt ve kararlar farklı araçlarda dağınık.",
+      "product_mechanism": "Agent safety test-case registry ve evidence workspace",
+      "one_sentence_concept": "AI agent ekipleri için izin sınırı ve kill-switch doğrulama masası.",
+      "why_now": "28 Eylül 2026 tarihli gelişme mevcut workflow'daki yeni risk veya karar ihtiyacını görünür hale getirdi.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "ai-agent-team|prove-tool-and-stop-controls|safety-evidence-workspace",
+      "evidence_notes": "Discovery aşamasında kaynak doğrulandı; final competition research yapılmadı."
+    },
+    {
+      "raw_id": "w3-003",
+      "supporting_article_ids": [
+        "9082db387f862abe18ec3434"
+      ],
+      "supporting_article_titles": [
+        "The intelligence advantage: Moving beyond benchmarking to network-wide insights"
+      ],
+      "supporting_sources": [
+        "Supply Chain Dive"
+      ],
+      "canonical_source_urls": [
+        "https://www.supplychaindive.com/spons/the-intelligence-advantage-moving-beyond-benchmarking-to-network-wide-insi/830975/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Anonim çoklu shipper karşılaştırması, lane/carrier sorunlarının şirkete özel mi pazar kaynaklı mı olduğunu ayırarak müdahale önceliğini değiştirebiliyor.",
+      "delta_types": [
+        "DATA_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "intake → readiness/evidence → review → decision → audit trail",
+      "target_customer": "Orta ölçekli shipper ve lojistik ekipleri",
+      "buyer": "logistics manager",
+      "job_to_be_done": "lane/carrier sapmasının aksiyon gerektirip gerektirmediğini anlamak",
+      "current_friction": "Veri, kanıt ve kararlar farklı araçlarda dağınık.",
+      "product_mechanism": "Anonim cooperative freight benchmark workspace",
+      "one_sentence_concept": "Shipper'ların anonim veri havuzuyla lane ve carrier performansını kıyasladığı masa.",
+      "why_now": "28 Eylül 2026 tarihli gelişme mevcut workflow'daki yeni risk veya karar ihtiyacını görünür hale getirdi.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 440,
+      "draft_canonical_key": "midmarket-shippers|benchmark-lane-carrier|cooperative-benchmark-workspace",
+      "evidence_notes": "Discovery aşamasında kaynak doğrulandı; final competition research yapılmadı."
+    },
+    {
+      "raw_id": "w3-004",
+      "supporting_article_ids": [
+        "c985cf86e59149027890e2ec"
+      ],
+      "supporting_article_titles": [
+        "France’s Goncourt prize drops a novel over claims AI wrote it"
+      ],
+      "supporting_sources": [
+        "The Next Web"
+      ],
+      "canonical_source_urls": [
+        "https://thenextweb.com/news/goncourt-drops-orelien-novel-ai-claims"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Çelişen AI detector sonuçlarında tek skor yerine beyan, sürüm geçmişi, kaynak ve insan kararının kanıt zinciri önem kazanıyor.",
+      "delta_types": [
+        "DATA_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "intake → readiness/evidence → review → decision → audit trail",
+      "target_customer": "Yayıncılar ve ödül kurulları",
+      "buyer": "editorial operations",
+      "job_to_be_done": "AI/plagiarism şüphesinde savunulabilir inceleme dosyası oluşturmak",
+      "current_friction": "Veri, kanıt ve kararlar farklı araçlarda dağınık.",
+      "product_mechanism": "Authorship review evidence workspace",
+      "one_sentence_concept": "Yayıncı ve ödül kurulları için AI-authorship/plagiarism inceleme masası.",
+      "why_now": "28 Eylül 2026 tarihli gelişme mevcut workflow'daki yeni risk veya karar ihtiyacını görünür hale getirdi.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 370,
+      "draft_canonical_key": "publishers-award-panels|review-authorship-claims|evidence-case-workspace",
+      "evidence_notes": "Discovery aşamasında kaynak doğrulandı; final competition research yapılmadı."
+    },
+    {
+      "raw_id": "w3-005",
+      "supporting_article_ids": [
+        "22812467a00bbc2a8ae64196"
+      ],
+      "supporting_article_titles": [
+        "Arkın Obdan: Gümrük Süreçleri E-Ticaret Operasyonunun Son Aşamasında Ele Alınabilecek Bir Konu Olmaktan Çıkıyor"
+      ],
+      "supporting_sources": [
+        "Perakende.org"
+      ],
+      "canonical_source_urls": [
+        "https://www.perakende.org/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Cross-border e-ticarette gümrük hazırlığının sipariş sonrası yerine SKU/ülke satışa açma öncesine çekilmesi gerekiyor.",
+      "delta_types": [
+        "DATA_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "intake → readiness/evidence → review → decision → audit trail",
+      "target_customer": "Türkiye'den cross-border e-ticaret yapan KOBİ satıcılar",
+      "buyer": "e-ticaret operasyon yöneticisi",
+      "job_to_be_done": "SKU'yu ülkeye satışa açmadan gümrük veri/belge readiness kontrolü yapmak",
+      "current_friction": "Veri, kanıt ve kararlar farklı araçlarda dağınık.",
+      "product_mechanism": "SKU/ülke customs-readiness launch-gate workspace",
+      "one_sentence_concept": "Türkiye'den cross-border satış yapan KOBİler için gümrük hazırlık masası.",
+      "why_now": "28 Eylül 2026 tarihli gelişme mevcut workflow'daki yeni risk veya karar ihtiyacını görünür hale getirdi.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 410,
+      "draft_canonical_key": "turkiye-cross-border-seller|prepare-customs-before-sale|readiness-launch-gate",
+      "evidence_notes": "Discovery aşamasında kaynak doğrulandı; final competition research yapılmadı."
     }
   ],
-  "failure_reason": "Raw opportunity persistence is being retried after successful triage and source verification."
+  "started_at": "2026-09-29T11:27:06+03:00",
+  "completed_at": "2026-09-29T11:27:06+03:00"
 }
