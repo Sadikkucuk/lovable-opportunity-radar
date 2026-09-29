@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-09-29",
+  "worker_id": "2",
+  "source_batch_index_generated_at": "2026-09-29T05:39:45Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "status": "complete",
+  "started_at": "2026-09-29T11:12:00+03:00",
+  "completed_at": "2026-09-29T11:25:00+03:00",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 4,
+  "original_articles_verified": 4,
+  "full_article_not_verified": 0,
+  "noise_or_no_opportunity_count": 236,
+  "raw_opportunity_count": 4,
+  "raw_opportunities": [
+    {
+      "raw_id": "w2-001",
+      "supporting_article_ids": [
+        "195307c0363d175c354f3423"
+      ],
+      "supporting_article_titles": [
+        "Shopify opens checkout to browser-based AI agents"
+      ],
+      "supporting_sources": [
+        "TechCrunch"
+      ],
+      "canonical_source_urls": [
+        "https://techcrunch.com/2026/09/28/shopify-opens-checkout-to-browser-based-ai-agents/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AI alışveriş agent'ları checkout ve ödeme adımına geçiyor; merchant tarafında agent işlemlerinin yetki ve kanıt zincirini yönetme ihtiyacı oluşuyor.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "TRANSACTION_DELTA"
+      ],
+      "affected_workflow": "agent ürün seçer → checkout'u değiştirir → kullanıcı yetkisi → sipariş → işlem kanıtı",
+      "target_customer": "agentic commerce'e açılan e-ticaret işletmeleri",
+      "buyer": "e-ticaret operasyon veya risk yöneticisi",
+      "job_to_be_done": "agent checkout değişiklikleri ve siparişlerde kullanıcı yetkisini kanıtlamak",
+      "current_friction": "standart sipariş kaydı agent'ın değişiklik ve yetki zincirini açıklamayabilir",
+      "product_mechanism": "checkout receipt ledger + yetki snapshot'ı + değişiklik diff'i + exception queue",
+      "one_sentence_concept": "AI agent checkout işlemlerinin yetki ve değişiklik kanıtını tutan denetim masası.",
+      "why_now": "Shopify 28 Eylül 2026'da WebMCP checkout desteğini açtı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 410,
+      "draft_canonical_key": "agentic-commerce-merchant|prove-agent-checkout-authorization|checkout-change-receipt-ledger",
+      "evidence_notes": "Fresh web research ile doğrulandı."
+    },
+    {
+      "raw_id": "w2-002",
+      "supporting_article_ids": [
+        "859ae49dc04c3612654102e3"
+      ],
+      "supporting_article_titles": [
+        "5 Hours to Book a Truck? AI Is Coming for That"
+      ],
+      "supporting_sources": [
+        "FreightWaves"
+      ],
+      "canonical_source_urls": [
+        "https://www.freightwaves.com/news/5-hours-to-book-a-truck-ai-is-coming-for-that"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Yük rezervasyonu AI ile aynı anda çok sayıda broker'la pazarlık yapılabilen paralel workflow'a dönüşüyor.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "PROCESS_DELTA"
+      ],
+      "affected_workflow": "yük → broker adayları → paralel pazarlık → teklif karşılaştırma → onay → booking",
+      "target_customer": "owner-operator ve küçük filolar",
+      "buyer": "filo sahibi veya dispatch yöneticisi",
+      "job_to_be_done": "AI broker görüşmelerinde teklifleri ve insan onayını kontrol etmek",
+      "current_friction": "paralel görüşmelerde teklif ve taahhütler parçalanabilir",
+      "product_mechanism": "negotiation inbox + offer normalization + commitment guard + human approval",
+      "one_sentence_concept": "AI broker pazarlıklarını tek teklif ve onay kuyruğunda yöneten dispatch masası.",
+      "why_now": "FreightWaves 28 Eylül 2026'da 5-10 broker ile paralel AI görüşmesini aktardı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 430,
+      "draft_canonical_key": "small-carrier|govern-parallel-ai-load-negotiation|offer-approval-booking-ledger",
+      "evidence_notes": "Fresh web research ile doğrulandı."
+    },
+    {
+      "raw_id": "w2-003",
+      "supporting_article_ids": [
+        "c9afc3bda3454e49f71843a7"
+      ],
+      "supporting_article_titles": [
+        "A Conversation With EAIGLE's Leadership on Cargo Theft, Data Ownership and What a Smart Gate Actually Knows"
+      ],
+      "supporting_sources": [
+        "FreightWaves"
+      ],
+      "canonical_source_urls": [
+        "https://www.freightwaves.com/news/a-conversation-with-eaigles-leadership-on-cargo-theft-data-ownership-and-what-a-smart-gate-actually-knows"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Otomatik tesis kapıları BOL, plaka, DOT ve ekipman kimliğini birlikte kontrol eden fraud/risk karar noktalarına dönüşüyor.",
+      "delta_types": [
+        "RISK_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "kamyon → belge/kimlik eşleştirme → risk → exception → giriş kararı → kanıt",
+      "target_customer": "depo ve dağıtım merkezi işletmecileri",
+      "buyer": "yard/gate operasyon veya güvenlik yöneticisi",
+      "job_to_be_done": "kapı kontrollerini ve exception kararını kanıtlamak",
+      "current_friction": "SOP, belge, kimlik ve istisna kararları farklı kayıtlarda kalabilir",
+      "product_mechanism": "gate SOP rulebook + checklist + exception queue + evidence ledger",
+      "one_sentence_concept": "Lojistik kapılar için fraud kontrolü ve exception kararlarını yöneten gate-risk masası.",
+      "why_now": "FreightWaves 28 Eylül 2026'da gerçek saha fraud kontrollerini yayımladı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "distribution-center|prove-gate-fraud-controls|sop-exception-evidence-ledger",
+      "evidence_notes": "Fresh web research ile doğrulandı."
+    },
+    {
+      "raw_id": "w2-004",
+      "supporting_article_ids": [
+        "07a0a7c9d0de05a5f419f7d4"
+      ],
+      "supporting_article_titles": [
+        "Accounting AI agent governance controls"
+      ],
+      "supporting_sources": [
+        "TechTarget Japan"
+      ],
+      "canonical_source_urls": [
+        "https://www.techtarget.com/enterprise-software/tip/What-CFOs-need-to-know-about-AI-agent-governance-in-accounting"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Muhasebe AI agent'larında karar logu, data lineage, sorumluluk ve periyodik kontrol ayrı bir finance governance workflow'u haline geliyor.",
+      "delta_types": [
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "agent use-case → kontrol sahibi → karar → evidence → exception → review",
+      "target_customer": "finans süreçlerinde AI agent kullanan şirketler",
+      "buyer": "CFO veya iç denetim yöneticisi",
+      "job_to_be_done": "finans AI agent karar ve kontrol kanıtlarını denetime hazır tutmak",
+      "current_friction": "karar logları, veri kaynağı ve kontrol kanıtı dağınık kalabilir",
+      "product_mechanism": "agent register + control owner matrix + evidence import + exception queue",
+      "one_sentence_concept": "Finans AI agent karar ve kontrol kanıtlarını denetime hazırlayan governance workspace.",
+      "why_now": "Güncel rehber audit trail, data lineage ve ownership'i temel kontrol olarak vurguluyor.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 400,
+      "draft_canonical_key": "finance-team|prove-accounting-agent-controls|decision-control-evidence-workspace",
+      "evidence_notes": "Fresh web research ile doğrulandı."
+    }
+  ]
+}
