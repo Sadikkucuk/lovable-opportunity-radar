@@ -72,6 +72,19 @@ IF AND ONLY IF FULL_RADAR_COMPLETE:
    when the material-update rules in the master prompt are satisfied.
 5. For genuinely new ideas assign exactly one scope_tier:
    Lüleburgaz / Türkiye / Dünya / Evren.
+
+   SCOPE AUTHORITY / LOCAL PUBLICATION RULE:
+   - Use validator validated_scope_hint as the authoritative scope input when present.
+   - Assign scope_tier="Lüleburgaz" only when local_scope_verified=true AND
+     local_scope_evidence contains concrete industrial evidence that the target
+     customer/workflow exists in Lüleburgaz or a directly relevant Trakya industrial
+     footprint AND the validation explains a realistic Lüleburgaz pilot path.
+   - A discovery scope_hint or trakya_transferability_hypothesis alone is insufficient.
+   - Never promote an idea to Lüleburgaz merely to populate the tab.
+   - If local validation fails but the idea otherwise qualifies, publish under the
+     appropriate Türkiye/Dünya/Evren tier instead of rejecting it.
+   - When multiple merged raw opportunities support the same candidate, retain and use
+     the union of their local evidence during this decision.
 6. Build the full website/catalog record in the exact idea_catalog schema.
 7. Update state/idea_history.json atomically/preserving unrelated records.
 8. Update state/idea_catalog.json atomically/preserving unrelated records.
