@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-09-30",
+  "worker_id": "1",
+  "source_batch_index_generated_at": "2026-09-30T02:05:12Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "status": "complete",
+  "started_at": "2026-09-30T06:58:44+03:00",
+  "completed_at": "2026-09-30T07:13:00+03:00",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 18,
+  "original_articles_verified": 5,
+  "full_article_not_verified": 13,
+  "noise_or_no_opportunity_count": 222,
+  "raw_opportunity_count": 5,
+  "raw_opportunities": [
+    {
+      "raw_id": "w1-20260930-001",
+      "supporting_article_ids": [
+        "22143e9cb44e2a04d85d01a3"
+      ],
+      "supporting_article_titles": [
+        "Lisanssız Elektrik Üretim Tesisleri ve İlişkili Olduğu Tüketim Tesislerinin Mahsuplaşma İşlemlerine İlişkin Usul ve Esaslar"
+      ],
+      "supporting_sources": [
+        "Resmi Gazete",
+        "EPDK"
+      ],
+      "canonical_source_urls": [
+        "https://www.lexpera.com.tr/mevzuat/kurul-kararlari/enerji-piyasasi-duzenleme-kurulunun-30-04-2026-tarihli-ve-14531-sayili-karari-14531-1",
+        "https://www.iso.org.tr/duyurular/resm%C3%AE-gazete/lisanssiz-elektrik-uretim-tesisleri-ve-iliskili-oldugu-tuketim-tesislerinin-mahsuplasma-islemlerine-iliskin-usul-ve-esaslar-yayimlandi/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Lisanssız üretim-tüketim mahsuplaşmasının saatlik, VKN ve grup bazlı kurallarla yürütülmesi; üretim/tüketim profili uyumunu ve bedelli/bedelsiz enerji ayrımını operasyonel bir hesaplama problemine dönüştürüyor.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "DATA_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "sayaç/üretim-tüketim verisi → saatlik eşleştirme → grup/VKN kural kontrolü → mahsuplaşma sonucu → ihtiyaç fazlası/şebekeden çekiş raporu",
+      "target_customer": "Türkiye'de lisanssız GES/RES sahibi ticari ve sanayi işletmeleri ile enerji danışmanları",
+      "buyer": "enerji yöneticisi, mali işler/operasyon yöneticisi veya enerji danışmanı",
+      "job_to_be_done": "Saatlik üretim ve tüketim verisini yeni mahsuplaşma kurallarına göre önceden simüle edip fatura/enerji sonucunu açıklamak.",
+      "current_friction": "Kurallar ve sayaç verileri farklı kaynaklarda; işletmeler Excel ile saatlik eşleştirme, grup ve limit kontrolü yapmak zorunda kalabiliyor.",
+      "product_mechanism": "CSV sayaç verisi içe aktarımı + deterministik saatlik mahsuplaşma motoru + VKN/grup kural kontrolü + sapma/sonuç raporu.",
+      "one_sentence_concept": "Lisanssız üretim sahipleri için EPDK kurallarına göre saatlik mahsuplaşmayı önceden simüle eden web aracı.",
+      "why_now": "30 Nisan 2026 tarihli 14531 sayılı karar 5 Mayıs 2026'da yürürlüğe girdi ve mahsuplaşmanın operasyonel veri yapısını netleştirdi.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "turkiye-unlicensed-generation-owner|simulate-hourly-netting-and-explain-settlement|csv-hourly-rule-engine",
+      "evidence_notes": "14531 sayılı EPDK kararı ve İSO açıklaması saatlik mahsuplaşma, VKN ve grup kurallarını doğruluyor."
+    },
+    {
+      "raw_id": "w1-20260930-002",
+      "supporting_article_ids": [
+        "ece5e27fe2ebdfc6a495511f"
+      ],
+      "supporting_article_titles": [
+        "Marka Tescil Başvurularına Ait Mal ve Hizmetlerin Sınıflandırılmasına İlişkin Tebliğ (TÜRKPATENT: 2026/2)"
+      ],
+      "supporting_sources": [
+        "Resmi Gazete",
+        "TÜRKPATENT"
+      ],
+      "canonical_source_urls": [
+        "https://www.turkpatent.gov.tr/marka-nice-siniflandirma",
+        "https://tim.org.tr//TR/marka-basvurularinda-yeni-donem"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "2026 NICE mal/hizmet listesi ve yeni nesil ürünlerin işlev/amaç/kullanıma en yakın sınıfa göre değerlendirilmesi, özellikle yeni dijital ürünlerde doğru sınıf seçimini güncel bir karar problemine dönüştürüyor.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "ürün/hizmet tanımı → faaliyet özellikleri → olası NICE sınıfları → kapsama boşluğu/çakışma kontrolü → başvuru hazırlığı",
+      "target_customer": "Türkiye'de marka başvurusu hazırlayan KOBİ, girişimci ve marka vekilliği öncesi self-service kullanıcılar",
+      "buyer": "girişimci, KOBİ sahibi, pazarlama/hukuk operasyonu",
+      "job_to_be_done": "Ürün veya hizmetimi 2026 TÜRKPATENT sınıflandırmasına göre hangi sınıf ve alt kalemlerle tarif etmem gerektiğini ön değerlendirmek.",
+      "current_friction": "45 sınıf ve ayrıntılı liste özellikle yeni teknoloji hizmetlerinde uzman olmayan kullanıcı için yorum gerektiriyor.",
+      "product_mechanism": "Ürün/hizmet soru akışı + resmi 2026 sınıf listesinden kural tabanlı eşleştirme + alternatif sınıf gerekçesi + başvuru öncesi checklist.",
+      "one_sentence_concept": "Girişimci ve KOBİ'ler için 2026 TÜRKPATENT/NICE sınıf ön-seçim asistanı.",
+      "why_now": "TÜRKPATENT:2026/2 26 Şubat 2026'da yürürlüğe girdi ve 2026 sınıflandırma listesini güncelledi.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 280,
+      "draft_canonical_key": "turkiye-trademark-applicant|preselect-nice-classes-for-new-product-service|official-list-rule-guided-questionnaire",
+      "evidence_notes": "TÜRKPATENT resmi NICE sayfası 2026 sınıflandırma listesini yayımlıyor; TİM düzenlemenin 45 ana sınıf ve yeni nesil ürün yaklaşımını açıklıyor."
+    },
+    {
+      "raw_id": "w1-20260930-003",
+      "supporting_article_ids": [
+        "dc67bbd2a50b9578d75a577c",
+        "7722e97fab74f959ac68c7b8"
+      ],
+      "supporting_article_titles": [
+        "Add one more AI worry to the nightmare scenario: self-replicating prompt injections",
+        "AI 안전망 넓히는 오픈AI, 에이전트 보안 강화"
+      ],
+      "supporting_sources": [
+        "The Register",
+        "ZDNet Korea",
+        "OpenAI Alignment"
+      ],
+      "canonical_source_urls": [
+        "https://alignment.openai.com/misalignment-reports/self-replicating-prompt-injections-exist/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Prompt injection artık yalnız tek bir agent oturumunu saptırmakla kalmayıp e-posta, dosya, kod yorumu ve çok-adımlı mesaj kanallarında kendini yeniden üretebilen bir yayılım riski olarak doğrulandı.",
+      "delta_types": [
+        "RISK_DELTA",
+        "CAPABILITY_DELTA"
+      ],
+      "affected_workflow": "agent input channel → untrusted-content scan → tool/action request → outbound content → propagation-risk check → quarantine/approval",
+      "target_customer": "e-posta, dosya, Slack/Teams veya kod deposuna erişen AI agent kullanan küçük ve orta ölçekli ekipler",
+      "buyer": "CTO, security lead, AI platform owner",
+      "job_to_be_done": "Agentlar arası içerik akışında prompt injection'ın yeniden üretilip yayılmasını görünür kılmak ve riskli çıktıyı insan onayına almak.",
+      "current_friction": "Klasik tek-girdi filtreleri bir agentın çıktısının sonraki agent için saldırı girdisine dönüşmesini yeterince modellemiyor.",
+      "product_mechanism": "Agent/channel envanteri + güven sınırı haritası + metin tabanlı propagation heuristics + outbound quarantine/approval ledger + incident evidence export.",
+      "one_sentence_concept": "Agentlar arasında yayılan prompt-injection zincirlerini izleyen hafif bir propagation-risk ve onay masası.",
+      "why_now": "OpenAI 25 Eylül 2026'da self-replicating prompt injections'ın simülasyonlarda mümkün olduğunu açıkladı; e-posta, dosya, kod yorumları ve multi-hop akışları örnekledi.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 430,
+      "draft_canonical_key": "teams-running-connected-ai-agents|detect-and-contain-propagating-prompt-injection|channel-trust-map-quarantine-ledger",
+      "evidence_notes": "OpenAI birincil raporu bulguyu doğruluyor ve gerçek dünya etkisi gözlenmediğini açıkça belirtiyor; ürün bu nedenle önleyici risk yönetimi olarak konumlanmalı."
+    },
+    {
+      "raw_id": "w1-20260930-004",
+      "supporting_article_ids": [
+        "cc8fb10c6a470e007952fde0"
+      ],
+      "supporting_article_titles": [
+        "ASIC to review banking sector AI use and customer impacts"
+      ],
+      "supporting_sources": [
+        "iTnews",
+        "Reuters"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/business/finance/australian-regulator-review-banking-sector-ai-use-customer-impacts-2026-09-29/",
+        "https://www.itnews.com.au/news/asic-to-review-banking-sector-ai-use-and-customer-impacts-629307"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Avustralya bankacılık düzenleyicisinin yeni ve planlanan müşteri-facing AI use case'lerini ve müşteri etkilerini formal incelemeye alması, AI kullanım envanteri ile müşteri-etki kanıtını yönetim kurulu seviyesinde kayıt altına alma ihtiyacını artırıyor.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA",
+        "GOVERNANCE_DELTA"
+      ],
+      "affected_workflow": "AI use-case önerisi → müşteri etkisi/risk sınıflama → owner/control/evidence → board review → regulator-ready export",
+      "target_customer": "Avustralya'daki orta/küçük finans kuruluşları ve regüle fintech'ler",
+      "buyer": "risk/compliance yöneticisi, AI governance owner, CIO",
+      "job_to_be_done": "Müşteriye dokunan AI use case'lerini, risklerini, kontrollerini ve kanıtlarını tek bir regulator-ready envanterde tutmak.",
+      "current_friction": "AI use case'leri ekipler arasında dağınık; yeni kullanım alanlarının müşteri etkisi ve cyber kontrol kanıtı sürekli güncellenmek zorunda.",
+      "product_mechanism": "AI use-case register + customer-impact questionnaire + control/evidence attachments + board approval trail + review export.",
+      "one_sentence_concept": "ASIC incelemesine hazırlanan finans kuruluşları için müşteri-facing AI use-case ve kanıt kayıt masası.",
+      "why_now": "ASIC 29 Eylül 2026'da bankaların yeni ve planlanan AI kullanımlarını ve müşteri etkilerini formal olarak inceleyeceğini bildirdi.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 350,
+      "draft_canonical_key": "regulated-financial-institution|maintain-customer-ai-usecase-impact-evidence|ai-register-control-evidence-workflow",
+      "evidence_notes": "Reuters ve iTnews, ASIC'in bankalarda AI kullanımını ve müşteri etkilerini inceleyeceğini doğruluyor."
+    },
+    {
+      "raw_id": "w1-20260930-005",
+      "supporting_article_ids": [
+        "2c2421de0a88d19bd79232b6"
+      ],
+      "supporting_article_titles": [
+        "OpenClaw launches free enterprise control plane for persistent AI agents, backed by OpenAI, Red Hat and Nvidia"
+      ],
+      "supporting_sources": [
+        "VentureBeat",
+        "OpenClaw"
+      ],
+      "canonical_source_urls": [
+        "https://venturebeat.com/orchestration/openclaw-launches-free-enterprise-control-plane-for-persistent-ai-agents-backed-by-openai-red-hat-and-nvidia"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Ücretsiz, MIT lisanslı ve self-host edilebilir enterprise agent control plane'in ortaya çıkması; küçük ekiplerin pahalı bir agent-governance platformu satın almadan kalıcı agent filosu üzerinde merkezi izin, lifecycle ve audit altyapısı kurabilmesini mümkün kılıyor.",
+      "delta_types": [
+        "ACCESS_DELTA",
+        "COST_DELTA",
+        "INFRASTRUCTURE_DELTA"
+      ],
+      "affected_workflow": "agent talebi → kimlik/izin profili → deploy → periyodik access review → audit/event evidence → decommission",
+      "target_customer": "birden fazla kalıcı AI agent çalıştırmaya başlayan KOBİ ve teknoloji ekipleri",
+      "buyer": "CTO, IT admin, AI platform owner",
+      "job_to_be_done": "Open-source control plane üzerinde çalışan agent filosunun iş amacı, owner, izin ve periyodik erişim gözden geçirmesini operasyonel olarak yönetmek.",
+      "current_friction": "Agent runtime/control plane teknik güvenlik katmanını sağlasa da küçük ekiplerde business owner, access review ve audit follow-up işleri spreadsheet/ticket sistemlerine dağılabiliyor.",
+      "product_mechanism": "OpenClaw/OCE deployment metadata içe aktarımı veya manuel kayıt + owner/purpose registry + permission review calendar + exception/approval ledger + audit export.",
+      "one_sentence_concept": "Open-source agent control plane kullanan ekipler için business-level agent inventory ve access-review workflow'u.",
+      "why_now": "OpenClaw Enterprise 29 Eylül 2026'da ücretsiz ve açık kaynak enterprise control plane olarak duyuruldu; persistent agentların merkezi governance ihtiyacını görünür hale getiriyor.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 320,
+      "draft_canonical_key": "smb-running-persistent-agents|govern-agent-ownership-permission-reviews|agent-registry-review-ledger",
+      "evidence_notes": "VentureBeat duyuruyu, MIT lisansını, self-hosting'i, merkezi permission/audit/lifecycle özelliklerini ve pilot durumunu ayrıntılı doğruluyor."
+    }
+  ]
+}
