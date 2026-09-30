@@ -36,6 +36,12 @@ If discovery coverage is complete:
    target customer + core JTBD + product mechanism/workflow.
    Product name/headline/date alone never makes a new idea.
 4. Perform dataset-wide cross-article combination discovery using all raw ledgers.
+   LOCAL SIGNAL PRESERVATION: when raw opportunities contain a trakya_transferability_hypothesis,
+   Lüleburgaz scope_hint, or concrete Trakya/Lüleburgaz industrial evidence, preserve that
+   evidence through semantic dedupe. If a local and non-local raw opportunity collapse into
+   the same semantic candidate, union their local evidence; never discard it merely because
+   the canonical candidate came from a global/Türkiye article. Local evidence does not make
+   two otherwise identical ideas semantically distinct.
 5. Apply productization test.
 6. Apply zero-external-cash MVP feasibility and <=500 Lovable-credit internal
    feasibility constraint. Explore free/open-source/public-data substitutes before rejection.
@@ -68,6 +74,8 @@ candidates.json fields for each candidate:
 - why_now
 - market_gap_hypothesis
 - scope_hint
+- trakya_transferability_hypothesis or null
+- local_scope_evidence_hints
 - zero_cost_stack_outline
 - estimated_lovable_credits
 - history_match_key or null
