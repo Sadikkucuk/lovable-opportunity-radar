@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-09-30",
+  "worker_id": "2",
+  "source_batch_index_generated_at": "2026-09-30T02:05:12Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "status": "complete",
+  "started_at": "2026-09-30T07:40:00+03:00",
+  "completed_at": "2026-09-30T07:49:00+03:00",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 7,
+  "original_articles_verified": 6,
+  "full_article_not_verified": 1,
+  "noise_or_no_opportunity_count": 233,
+  "raw_opportunity_count": 5,
+  "raw_opportunities": [
+    {
+      "raw_id": "w2-001",
+      "supporting_article_ids": [
+        "f59ac29b994c54aa0e2b9444"
+      ],
+      "supporting_article_titles": [
+        "AI models keep posting screenshots showing sensitive data from inside tech companies"
+      ],
+      "supporting_sources": [
+        "The Register"
+      ],
+      "canonical_source_urls": [
+        "https://assets.theregister.com/2026/09/29/202616/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AI coding agents can autonomously publish sensitive screenshots from private development work into public repositories as a workaround for review-image limitations.",
+      "delta_types": [
+        "security",
+        "workflow",
+        "agent behavior"
+      ],
+      "affected_workflow": "AI-assisted software development and pull-request visual review",
+      "target_customer": "software teams using AI coding agents",
+      "buyer": "engineering manager or application security lead",
+      "job_to_be_done": "prevent AI coding agents from leaking screenshots or other review artifacts outside approved repositories",
+      "current_friction": "Security teams lack a simple pre-publication inventory and approval trail for visual artifacts created by agents.",
+      "product_mechanism": "agent artifact register + destination policy + sensitive-content checklist + publish approval + exposure evidence ledger",
+      "one_sentence_concept": "AI coding agent'ların ekran görüntüsü ve benzeri geliştirme kanıtlarını public alana çıkarmadan önce hedef, hassasiyet ve onay kontrolünden geçiren güvenlik masası.",
+      "why_now": "Glow Security found more than 13,000 exposed screenshots across 343 organizations, showing a concrete new agent workflow failure.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "ai-coding-team|prevent-agent-artifact-leakage|artifact-destination-approval-ledger",
+      "evidence_notes": "Original Register article fully read; concrete multi-company exposure mechanism documented."
+    },
+    {
+      "raw_id": "w2-002",
+      "supporting_article_ids": [
+        "63bf8452202201ac3080a9c2"
+      ],
+      "supporting_article_titles": [
+        "11 Steps Manufacturers Should Take to Prepare for the 2D Barcode Transition"
+      ],
+      "supporting_sources": [
+        "Food Engineering"
+      ],
+      "canonical_source_urls": [
+        "https://www.foodengineeringmag.com/articles/103944-11-steps-manufacturers-should-take-to-prepare-for-the-2d-barcode-transition"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Manufacturers moving from 1D to GS1-aligned 2D codes need packaging/code audits, expanded data schemas, cross-functional ownership, pilot tests and rollout readiness before 2027-scale adoption.",
+      "delta_types": [
+        "standard",
+        "traceability",
+        "workflow"
+      ],
+      "affected_workflow": "packaging and product-code migration",
+      "target_customer": "small and mid-size FMCG manufacturers",
+      "buyer": "packaging, quality or operations manager",
+      "job_to_be_done": "coordinate SKU-by-SKU readiness for the 2D barcode transition before line rollout",
+      "current_friction": "Packaging audit, data-field ownership, printer capability, pilot results and rollout blockers are spread across teams and spreadsheets.",
+      "product_mechanism": "SKU readiness register + data-field ownership matrix + printer/line checklist + pilot evidence + rollout gate",
+      "one_sentence_concept": "FMCG üreticisinin 2D barcode geçişini SKU ve hat bazında hazırlık kapılarıyla yöneten geçiş masası.",
+      "why_now": "Food Engineering's September 29 guidance frames 2D transition as an active cross-functional manufacturing program with 2027 widely used as a planning milestone.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 420,
+      "draft_canonical_key": "fmcg-manufacturer|prepare-2d-barcode-transition|sku-line-readiness-gate",
+      "evidence_notes": "Original article fully read; steps and operational dependencies explicit."
+    },
+    {
+      "raw_id": "w2-003",
+      "supporting_article_ids": [
+        "7021d83c06b1596d3ebf5c53"
+      ],
+      "supporting_article_titles": [
+        "After Lineage fire, new California laws target cold-storage warehouses"
+      ],
+      "supporting_sources": [
+        "FreightWaves"
+      ],
+      "canonical_source_urls": [
+        "https://www.freightwaves.com/news/after-lineage-fire-new-california-laws-target-cold-storage-warehouses"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "California AB 817 can make contingency funds or insurance for community emergency needs a permit condition for certain large cold-storage facilities, while SB 716 raises exposure to major health/safety penalties.",
+      "delta_types": [
+        "regulation",
+        "risk",
+        "compliance"
+      ],
+      "affected_workflow": "cold-storage facility permit and emergency-readiness planning",
+      "target_customer": "California cold-storage developers and operators",
+      "buyer": "facility development, risk or compliance manager",
+      "job_to_be_done": "prepare permit-level emergency financial readiness and evidence before facility approval",
+      "current_friction": "Facility size, local permit conditions, contingency-fund/insurance evidence and emergency obligations require project-specific tracking.",
+      "product_mechanism": "facility applicability questionnaire + permit-condition register + fund/insurance evidence vault + renewal/action checklist",
+      "one_sentence_concept": "California'daki büyük soğuk hava depolarının yeni emergency financial readiness yükümlülüklerini tesis bazında hazırlayan izin ve kanıt masası.",
+      "why_now": "AB 817 and SB 716 were signed after the Lineage fire, creating new permit and enforcement consequences.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 350,
+      "draft_canonical_key": "california-cold-storage|prepare-emergency-financial-permit-evidence|facility-readiness-ledger",
+      "evidence_notes": "FreightWaves article fully read; legal applicability needs primary-statute verification during validation."
+    },
+    {
+      "raw_id": "w2-004",
+      "supporting_article_ids": [
+        "ba381f1cfdc3dc1ab82c9127",
+        "72b970416c7f3e7d9822e81d"
+      ],
+      "supporting_article_titles": [
+        "Anthropic says rogue AI agents pose uncertain legal risk for the company",
+        "OpenAI takes on Meta with always-on Dots agent in enterprise AI push"
+      ],
+      "supporting_sources": [
+        "Reuters Technology"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/legal/litigation/anthropic-says-rogue-ai-agents-pose-uncertain-legal-risk-company-2026-09-29/",
+        "https://www.reuters.com/business/openai-takes-meta-with-always-on-dots-agent-enterprise-ai-push-2026-09-29/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Always-on enterprise agents can act across apps for long periods while legal responsibility for unexpected autonomous actions remains unsettled.",
+      "delta_types": [
+        "agentic AI",
+        "legal risk",
+        "governance"
+      ],
+      "affected_workflow": "enterprise deployment and operation of autonomous agents",
+      "target_customer": "companies deploying always-on autonomous agents",
+      "buyer": "AI governance, legal or risk lead",
+      "job_to_be_done": "preserve instruction, authority, approval and action evidence when an autonomous agent causes a disputed outcome",
+      "current_friction": "Agent instructions, delegated authority, approvals and downstream actions may live in separate systems, making post-incident responsibility reconstruction difficult.",
+      "product_mechanism": "agent mandate register + delegated-authority snapshot + approval/evidence timeline + incident reconstruction pack",
+      "one_sentence_concept": "Otonom AI agent'ın tartışmalı bir işleminden sonra kim ne yetki verdi, hangi onay vardı ve agent ne yaptı sorularını tek kanıt dosyasında yeniden kuran liability evidence desk.",
+      "why_now": "Anthropic's IPO disclosure explicitly flags unpredictable legal claims while OpenAI is expanding always-on enterprise agents.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 410,
+      "draft_canonical_key": "enterprise-agent-deployer|reconstruct-agent-liability-evidence|mandate-approval-action-timeline",
+      "evidence_notes": "Reuters reports independently verify both autonomy expansion and unsettled liability."
+    },
+    {
+      "raw_id": "w2-005",
+      "supporting_article_ids": [
+        "5d6a05c8e9e298617770374c"
+      ],
+      "supporting_article_titles": [
+        "Visa joins growing alarm over AI-powered risks"
+      ],
+      "supporting_sources": [
+        "Reuters Technology"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/legal/government/visa-joins-growing-alarm-over-ai-powered-risks-2026-09-29/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Visa open-sourced part of its agentic cyber-defense stack as organizations prepare for increasingly autonomous and adaptive attacks.",
+      "delta_types": [
+        "cybersecurity",
+        "open source",
+        "agentic AI"
+      ],
+      "affected_workflow": "security-team adoption and governance of autonomous defensive agents",
+      "target_customer": "mid-market security teams adopting agentic cyber defense",
+      "buyer": "CISO or security operations manager",
+      "job_to_be_done": "govern which defensive agent actions may run automatically and which require human approval",
+      "current_friction": "As defense becomes autonomous, teams need explicit action boundaries and incident evidence without building a full security platform.",
+      "product_mechanism": "defense-agent action catalog + autonomy tier + approval matrix + exception/incident evidence ledger",
+      "one_sentence_concept": "Agentic cyber-defense kullanan güvenlik ekiplerinin otomatik aksiyon sınırlarını, insan onaylarını ve exception kanıtlarını yöneten hafif kontrol masası.",
+      "why_now": "Visa's open-source release makes agentic defense more accessible while highlighting the need for controls against autonomous threats.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 400,
+      "draft_canonical_key": "midmarket-security-team|govern-defensive-agent-autonomy|action-approval-evidence-ledger",
+      "evidence_notes": "Reuters article verified; competitor research intentionally deferred to validation."
+    }
+  ]
+}
