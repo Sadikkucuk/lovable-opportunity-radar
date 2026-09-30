@@ -57,6 +57,52 @@ discovery workers must have captured the SAME immutable
 source_batch_index_generated_at and source_total_items at 07:00.
 
 ==================================================
+SAME-DAY SOURCE REFRESH — GENERATION-SAFE RUNS
+==================================================
+
+A source/feed regeneration can occur after today's first discovery started, especially
+after sources.opml or aggregate.py changes. Never overwrite or mix an earlier frozen run.
+
+At invocation start compare:
+- current docs/batches/index.json generated_at
+- the generation of today's primary run, if any
+- any existing refresh run generations.
+
+If the current index generated_at is newer than the generation already processed today,
+create/use a generation-specific refresh namespace:
+
+state/runs/YYYY-MM-DD/refresh-GENKEY/
+
+where GENKEY is the UTC generated_at compacted as YYYYMMDDTHHMMSSZ
+(example: 20260930T061311Z).
+
+Inside that refresh namespace use the same structure:
+- discovery/worker-1.json ... worker-4.json
+- merge/candidates.json and merge/status.json
+- validation/progress.json and validation/chunk-NNN.json
+- final/report.json
+- orchestrator-status.json
+
+The refresh generation is immutable once its first worker is written. All four workers,
+merge, validation and finalization MUST use that exact generation. Never mix files from
+the primary daily run or another refresh generation.
+
+When a refresh namespace is active, every path in stages 1-4 below is relative to that
+refresh namespace instead of state/runs/YYYY-MM-DD/.
+
+A completed primary daily run does NOT block a newer refresh. Stage 0 applies only when
+the newest available generation has a FULL_RADAR_COMPLETE report. If a newer current
+generation exists, process it as a refresh first.
+
+Publication remains append/update-only. Refresh finalization must compare against the
+current idea_history and idea_catalog, so ideas already published by the earlier same-day
+run are semantically deduplicated rather than emitted twice.
+
+Do not create a refresh merely because the hourly collector timestamp changed with no
+meaningful source/config change during an active normal day. A refresh is required when
+the newer generation follows a source/config change or an explicit clean-rerun request.
+
+==================================================
 STAGE SELECTION — ONE STAGE PER INVOCATION
 ==================================================
 
