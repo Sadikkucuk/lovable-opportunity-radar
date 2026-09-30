@@ -73,7 +73,13 @@ Never manufacture a Lüleburgaz idea to satisfy a quota. Zero local ideas is acc
 when evidence is absent. Locality changes discovery attention, not qualification standards.
 
 Write exactly one file:
-state/runs/YYYY-MM-DD/discovery/worker-WORKER_ID.json
+- normal daily run: state/runs/YYYY-MM-DD/discovery/worker-WORKER_ID.json
+- generation refresh when the orchestrator supplies REFRESH_GENKEY:
+  state/runs/YYYY-MM-DD/refresh-REFRESH_GENKEY/discovery/worker-WORKER_ID.json
+
+When REFRESH_GENKEY is supplied it is authoritative. Do not read, repair or overwrite
+the normal daily worker file. The worker's source_batch_index_generated_at MUST equal
+the refresh generation represented by REFRESH_GENKEY.
 
 The JSON must contain:
 {
