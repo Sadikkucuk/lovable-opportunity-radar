@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-09-30",
+  "worker_id": "2",
+  "source_batch_index_generated_at": "2026-09-30T06:13:11Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "status": "complete",
+  "started_at": "2026-09-30T11:03:49+03:00",
+  "completed_at": "2026-09-30T11:16:00+03:00",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 12,
+  "original_articles_verified": 5,
+  "full_article_not_verified": 7,
+  "noise_or_no_opportunity_count": 228,
+  "raw_opportunity_count": 5,
+  "raw_opportunities": [
+    {
+      "raw_id": "refresh-w2-20260930-001",
+      "supporting_article_ids": [
+        "7db45eae0130fec19c011d3f"
+      ],
+      "supporting_article_titles": [
+        "Flexport launches MCP Server for AI agents to book freight"
+      ],
+      "supporting_sources": [
+        "FreightWaves",
+        "Flexport"
+      ],
+      "canonical_source_urls": [
+        "https://www.freightwaves.com/news/flexport-mcp-server-ai-agents-freight-booking"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Freight booking, quoting, tracking and exception workflows can now be initiated directly by external AI agents through MCP, moving logistics from human-operated portals toward agent-to-agent execution.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "WORKFLOW_DELTA",
+        "ACCESS_DELTA"
+      ],
+      "affected_workflow": "shipment request → rate search → booking → tracking → exception/customs handling",
+      "target_customer": "freight forwarders, shippers and logistics teams adopting AI agents",
+      "buyer": "logistics operations manager or digital transformation lead",
+      "job_to_be_done": "allow AI agents to execute freight actions without losing approval, policy and exception control",
+      "current_friction": "agent-initiated bookings can cross financial and operational boundaries while evidence, authority and exception ownership remain fragmented",
+      "product_mechanism": "carrier-neutral agent freight approval desk with action limits, booking approval rules, exception queue and audit ledger",
+      "one_sentence_concept": "AI agentların navlun teklifi ve rezervasyon işlemlerini yetki, onay ve istisna kurallarıyla yöneten bağımsız operasyon masası.",
+      "why_now": "Flexport exposed quote, track and booking functions to external AI agents through MCP and routes exceptions to humans.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 420,
+      "draft_canonical_key": "logistics-teams|govern-agent-initiated-freight-bookings|approval-exception-audit-desk",
+      "evidence_notes": {
+        "verified": "FreightWaves article dated 2026-09-29 describes MCP-based agent quoting/tracking/booking and human exception routing.",
+        "trakya_transferability_hypothesis": "Trakya'daki üretici, ihracatçı ve lojistik işletmelerinde navlun rezervasyonu ve istisna yönetimi aynı iş akışına sahiptir; yerel kapsam validator tarafından doğrulanmalıdır."
+      }
+    },
+    {
+      "raw_id": "refresh-w2-20260930-002",
+      "supporting_article_ids": [
+        "7ff9b13087333c85bde05dfe"
+      ],
+      "supporting_article_titles": [
+        "Descartes launches AI agent for global trade data research"
+      ],
+      "supporting_sources": [
+        "FreightWaves",
+        "Descartes"
+      ],
+      "canonical_source_urls": [
+        "https://www.freightwaves.com/news/descartes-launches-ai-agent-for-global-trade-data-research"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Natural-language agents can interrogate shipment-level trade datasets while returning underlying evidence records, reducing specialist query work.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "DATA_DELTA",
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "supplier/market question → trade-data query → evidence review → sourcing/risk decision",
+      "target_customer": "SME importers, exporters and procurement teams without enterprise trade-intelligence tooling",
+      "buyer": "procurement or supply-chain manager",
+      "job_to_be_done": "turn fragmented supplier and shipment evidence into traceable sourcing research",
+      "current_friction": "SMEs research suppliers manually across directories, spreadsheets and shipment sources and struggle to preserve evidence behind decisions",
+      "product_mechanism": "evidence-led supplier research workspace that stores questions, candidate suppliers, source records, risk notes and approval decisions; no proprietary paid trade dataset required for MVP",
+      "one_sentence_concept": "Tedarikçi araştırmasını soru, kanıt, risk notu ve satın alma kararı halinde izlenebilir tek dosyada yöneten web uygulaması.",
+      "why_now": "Descartes reports conversational analysis over shipment-level data with evidence records, demonstrating a new evidence-first procurement workflow.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 360,
+      "draft_canonical_key": "sme-importers-procurement|traceable-supplier-research|evidence-led-sourcing-workspace",
+      "evidence_notes": {
+        "verified": "FreightWaves article dated 2026-09-29 reports Datamyne AI Agent and underlying shipment evidence.",
+        "trakya_transferability_hypothesis": "Trakya sanayi firmalarının hammadde ve alternatif tedarikçi araştırmasında aynı kanıt/karar workflow'u uygulanabilir; Lüleburgaz etiketi için yerel müşteri kanıtı gerekir."
+      }
+    },
+    {
+      "raw_id": "refresh-w2-20260930-003",
+      "supporting_article_ids": [
+        "4524f982dbbe9525acadc57f"
+      ],
+      "supporting_article_titles": [
+        "NVIDIA主導“暴走するAIエージェント”対策の新基盤 MicrosoftやAnthropicなど100社超参画"
+      ],
+      "supporting_sources": [
+        "ITmedia",
+        "NVIDIA"
+      ],
+      "canonical_source_urls": [
+        "https://www.itmedia.co.jp/enterprise/spv/2609/30/news035.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Agent safety is moving below application prompts into enforceable runtime boundaries with operation tracking and policy enforcement.",
+      "delta_types": [
+        "SECURITY_DELTA",
+        "INFRASTRUCTURE_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "agent registration → authority definition → runtime action → policy check → incident/evidence review",
+      "target_customer": "SMEs deploying autonomous AI agents but lacking enterprise agent-security infrastructure",
+      "buyer": "IT manager, security lead or AI program owner",
+      "job_to_be_done": "define and evidence what each agent may do before deploying heavyweight runtime controls",
+      "current_friction": "SMEs often lack a simple inventory of agent identities, tools, credentials, forbidden actions and owners",
+      "product_mechanism": "pre-runtime agent control register with owner, allowed tools/data, forbidden actions, approval points, incident log and exportable evidence",
+      "one_sentence_concept": "Şirketin AI agentlarını, yetkilerini, yasaklarını, insan onay noktalarını ve olay kayıtlarını tek yerde yöneten hafif kontrol sicili.",
+      "why_now": "NVIDIA announced Open Agent Safety Platform after reported cases of agents bypassing application-layer controls; more than 100 organizations participate.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "smes-deploying-ai-agents|govern-agent-authority-before-runtime|agent-control-register",
+      "evidence_notes": {
+        "verified": "ITmedia 2026-09-30 describes OpenShell policy enforcement and action tracking plus Sentry isolation.",
+        "trakya_transferability_hypothesis": null
+      }
+    },
+    {
+      "raw_id": "refresh-w2-20260930-004",
+      "supporting_article_ids": [
+        "5696f6a499ac43862bdc0e27"
+      ],
+      "supporting_article_titles": [
+        "Why Inventory Software Isn’t Enough for Manufacturers"
+      ],
+      "supporting_sources": [
+        "Manufacturing.net"
+      ],
+      "canonical_source_urls": [
+        "https://www.manufacturing.net/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Manufacturing inventory problems are increasingly framed as synchronization between production, purchasing and storage rather than simple stock counting.",
+      "delta_types": [
+        "WORKFLOW_DELTA",
+        "INTEGRATION_DELTA"
+      ],
+      "affected_workflow": "production demand → material availability → warehouse movement → shortage/overstock exception → action",
+      "target_customer": "small and mid-sized manufacturers operating with ERP plus spreadsheets",
+      "buyer": "plant, production or supply-chain manager",
+      "job_to_be_done": "surface production-to-storage mismatches before they stop a line or delay shipment",
+      "current_friction": "inventory systems record stock but operational teams still reconcile shortages, staging and production needs manually",
+      "product_mechanism": "ERP-light production/storage exception board importing CSVs, reconciling expected vs actual material movement and assigning shortage/overstock actions",
+      "one_sentence_concept": "Üretim ile depo arasındaki malzeme uyuşmazlıklarını CSV verilerinden yakalayıp sorumlu ve aksiyon atayan hafif operasyon panosu.",
+      "why_now": "Recent manufacturing coverage highlights the operational gap between production and storage as automation and production speed increase.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 440,
+      "draft_canonical_key": "sme-manufacturers|resolve-production-storage-mismatches|material-exception-board",
+      "evidence_notes": {
+        "verified": "Original feed item identified; same-day independent manufacturing coverage corroborates production/storage disconnect causing inaccurate stock and line delays.",
+        "trakya_transferability_hypothesis": "Üretim-depo senkronizasyonu Trakya fabrikalarına doğrudan aktarılabilir bir workflow'dur; somut Lüleburgaz tesisi validator aşamasında aranmalıdır."
+      }
+    },
+    {
+      "raw_id": "refresh-w2-20260930-005",
+      "supporting_article_ids": [
+        "ea87fe608697a6a4dd54557f"
+      ],
+      "supporting_article_titles": [
+        "AIの年間予算が半年弱で枯渇、企業を襲う「トークン爆発」"
+      ],
+      "supporting_sources": [
+        "Nikkei XTECH"
+      ],
+      "canonical_source_urls": [
+        "https://xtech.nikkei.com/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Enterprise AI consumption can exhaust annual budgets in months, turning token/credit usage into an operational FinOps control problem rather than a static procurement budget.",
+      "delta_types": [
+        "COST_DELTA",
+        "WORKFLOW_DELTA",
+        "GOVERNANCE_DELTA"
+      ],
+      "affected_workflow": "AI service allocation → team/model usage → budget burn → threshold alert → model/workload decision",
+      "target_customer": "SMEs using multiple metered AI services",
+      "buyer": "finance controller, IT manager or AI program owner",
+      "job_to_be_done": "see AI budget burn by team/use case and intervene before credits or annual budgets are exhausted",
+      "current_friction": "usage and credits are fragmented across vendors; teams discover overruns only after quotas or budgets are depleted",
+      "product_mechanism": "vendor-neutral AI spend ledger with manual/CSV usage imports, budget envelopes, burn-rate forecast, threshold alerts and decision log",
+      "one_sentence_concept": "Farklı AI servislerindeki kredi ve token tüketimini bütçe, ekip ve kullanım amacı bazında izleyip tükenmeden önce uyaran AI FinOps panosu.",
+      "why_now": "Nikkei XTECH reports enterprises exhausting annual AI budgets in roughly five and a half months or monthly quotas mid-month.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 350,
+      "draft_canonical_key": "smes-multi-ai-services|prevent-ai-budget-exhaustion|vendor-neutral-ai-spend-ledger",
+      "evidence_notes": {
+        "verified": "Feed item plus same-day indexed excerpt corroborate budget exhaustion/token explosion; full Nikkei article was not independently opened.",
+        "trakya_transferability_hypothesis": null
+      }
+    }
+  ]
+}
