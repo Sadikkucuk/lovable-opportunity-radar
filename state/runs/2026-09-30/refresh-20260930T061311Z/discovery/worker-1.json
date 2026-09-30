@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-09-30",
+  "worker_id": "1",
+  "source_batch_index_generated_at": "2026-09-30T06:13:11Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "status": "complete",
+  "started_at": "2026-09-30T10:00:58+03:00",
+  "completed_at": "2026-09-30T10:14:00+03:00",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 9,
+  "original_articles_verified": 5,
+  "full_article_not_verified": 4,
+  "noise_or_no_opportunity_count": 231,
+  "raw_opportunity_count": 5,
+  "raw_opportunities": [
+    {
+      "raw_id": "refresh-w1-20260930-001",
+      "supporting_article_ids": [
+        "7ded79851ee6b877a98d683a"
+      ],
+      "supporting_article_titles": [
+        "Sanayi Sicil Tebliği (SGM 2026/4)"
+      ],
+      "supporting_sources": [
+        "Resmi Gazete"
+      ],
+      "canonical_source_urls": [
+        "https://www.lexpera.com.tr/resmi-gazete/metin/sanayi-sicil-tebligi-sgm-2026-4"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Sanayi sicil belgesinin geçerliliği yıllık işletme cetveline bağlandı; çok tesisli işletmelerde her üretim yeri için ayrı başvuru ve SSBS üzerinden elektronik işlem kuralları netleşti.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "tesis envanteri → belge/geçerlilik takibi → yıllık işletme cetveli → değişiklik bildirimi → SSBS başvuru kanıtı",
+      "target_customer": "Türkiye'deki çok tesisli sanayi işletmeleri ve sanayi sicil süreçlerini yöneten mali/idari ekipler",
+      "buyer": "mali işler, idari işler veya fabrika uyum yöneticisi",
+      "job_to_be_done": "Her üretim yerinin sanayi sicil yükümlülüklerini ve belge geçerliliğini tek takvim ve kanıt dosyasında eksiksiz takip etmek.",
+      "current_friction": "SSBS işlemleri elektronik olsa da tesis bazlı son tarih, değişiklik, yıllık cetvel ve belge geçerliliği şirket içinde dağınık takip edilebilir.",
+      "product_mechanism": "tesis bazlı yükümlülük envanteri + son tarih motoru + belge checklist'i + değişiklik günlüğü + SSBS işlem kanıt arşivi",
+      "one_sentence_concept": "Çok tesisli üreticilerin sanayi sicil belgesi, yıllık işletme cetveli ve SSBS işlemlerini tesis bazında yöneten uyum masası.",
+      "why_now": "SGM 2026/4 yeni başvuru, geçerlilik ve yıllık cetvel esaslarını 2026'da yeniden düzenledi.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 260,
+      "draft_canonical_key": "turkish-industrial-plants|track-industrial-registry-obligations|plant-compliance-ledger",
+      "evidence_notes": {
+        "verified_sources": [
+          "https://www.lexpera.com.tr/resmi-gazete/metin/sanayi-sicil-tebligi-sgm-2026-4"
+        ],
+        "trakya_transferability_hypothesis": "Trakya'daki çok tesisli sanayi işletmelerine doğrudan uygulanabilir; Lüleburgaz etiketi için ayrıca yerel müşteri/tesis kanıtı gerekir."
+      }
+    },
+    {
+      "raw_id": "refresh-w1-20260930-002",
+      "supporting_article_ids": [
+        "795f7f4fe3e475b5973ba9bb"
+      ],
+      "supporting_article_titles": [
+        "Diğer Üretim Faaliyetlerinde Mevcut En İyi Teknikler Tebliği"
+      ],
+      "supporting_sources": [
+        "Resmi Gazete"
+      ],
+      "canonical_source_urls": [
+        "https://www.lexpera.com.tr/resmi-gazete/metin/diger-uretim-faaliyetlerinde-mevcut-en-iyi-teknikler-tebligi-33093"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "MET uyumu ve çevresel performans skoru, tekstil, gıda, deri, kağıt ve diğer üretim sektörlerinde SYD belgelendirmesi için ölçülebilir bir uyum veri problemine dönüştü.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "DATA_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "tesis/faaliyet eşleme → genel ve sektörel MET checklist'i → kanıt toplama → emisyon/enerji/su verisi → uyum puanı → SYD hazırlığı",
+      "target_customer": "Türkiye'de MET kapsamındaki üretim tesisleri ve çevre/enerji danışmanları",
+      "buyer": "çevre yöneticisi, sürdürülebilirlik yöneticisi veya fabrika müdürü",
+      "job_to_be_done": "Tesisin hangi MET maddelerine uyduğunu, hangi kanıtların eksik olduğunu ve SYD hazırlık durumunu sürekli görmek.",
+      "current_friction": "Genel ve sektörel MET gereklilikleri, emisyon seviyeleri ve kanıtlar farklı ekip/dosyalarda tutulabilir; puanlama öncesi hazırlık manuel kalır.",
+      "product_mechanism": "sektör kapsam sihirbazı + MET kontrol matrisi + kanıt deposu + eksik aksiyon kuyruğu + puanlama hazırlık dashboard'u",
+      "one_sentence_concept": "Sanayi tesisleri için MET/SYD uyum gerekliliklerini kanıt ve aksiyon bazında yöneten hazırlık platformu.",
+      "why_now": "MET tebliğleri yürürlükte ve SYD belgelendirme süreci için somut teknik/ölçüm gereklilikleri tanımlıyor.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "turkish-industrial-plants|prepare-and-evidence-met-syd-compliance|bat-readiness-ledger",
+      "evidence_notes": {
+        "verified_sources": [
+          "https://www.lexpera.com.tr/resmi-gazete/metin/diger-uretim-faaliyetlerinde-mevcut-en-iyi-teknikler-tebligi-33093"
+        ],
+        "trakya_transferability_hypothesis": "Tekstil, gıda ve diğer üretim kümeleri nedeniyle Trakya'ya güçlü biçimde aktarılabilir; Lüleburgaz kapsamı validator tarafından somut tesis/sektör kanıtıyla doğrulanmalı."
+      }
+    },
+    {
+      "raw_id": "refresh-w1-20260930-003",
+      "supporting_article_ids": [
+        "deae0180c480d0a65bfeaa1f"
+      ],
+      "supporting_article_titles": [
+        "Wie KI-Agenten die Instandhaltung verändern können"
+      ],
+      "supporting_sources": [
+        "Produktion"
+      ],
+      "canonical_source_urls": [
+        "https://www.produktion.de/instandhaltung/diese-trends-veraendern-2026-produktion-und-wartung/2587498"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Endüstriyel bakımda AI agent'ların pilotlardan operasyonel iş akışlarına geçmesi; insan rolünün supervisor/troubleshooter'a kayması bakım kararlarında görev, yetki ve kanıt yönetimi ihtiyacını büyütüyor.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "arıza/bakım sinyali → agent önerisi → insan onayı → iş emri → uygulama → sonuç/kanıt",
+      "target_customer": "bakım ekipleri olan üretim tesisleri",
+      "buyer": "bakım müdürü veya fabrika operasyon yöneticisi",
+      "job_to_be_done": "AI agent önerilerinin hangi bakım aksiyonuna dönüştüğünü, kimin onayladığını ve sonucunu izlenebilir tutmak.",
+      "current_friction": "Agent önerileri CMMS, mesajlaşma ve operatör kararları arasında dağılabilir; özellikle pilotlardan üretime geçişte sorumluluk izi zayıflar.",
+      "product_mechanism": "agent öneri inbox'ı + risk/öncelik sınıflama + insan onay kapısı + iş emri bağlantısı + sonuç/kanıt günlüğü",
+      "one_sentence_concept": "Fabrika bakımında AI agent önerilerini insan onayı ve kanıt zinciriyle kontrollü iş emrine dönüştüren operasyon masası.",
+      "why_now": "2026 endüstri kaynakları AI agent'ların üretim ve bakımda ölçeklenmesini, fakat entegrasyon ve governance engellerinin sürdüğünü gösteriyor.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 410,
+      "draft_canonical_key": "manufacturing-maintenance-teams|govern-ai-maintenance-actions|agent-maintenance-approval-ledger",
+      "evidence_notes": {
+        "verified_sources": [
+          "https://www.produktion.de/instandhaltung/diese-trends-veraendern-2026-produktion-und-wartung/2587498",
+          "https://www.produktion.de/wirtschaft/ki-agenten-80-prozent-sind-noch-nicht-im-regelbetrieb/2739785"
+        ],
+        "trakya_transferability_hypothesis": "Bakım yoğun üretim tesislerinde aynı workflow doğrudan uygulanabilir; Lüleburgaz için yerel tesis kanıtı validator aşamasında aranmalı."
+      }
+    },
+    {
+      "raw_id": "refresh-w1-20260930-004",
+      "supporting_article_ids": [
+        "8323bf13ea541b892ffe8731"
+      ],
+      "supporting_article_titles": [
+        "Wie KI-Agenten im Einkauf prüfbar bleiben"
+      ],
+      "supporting_sources": [
+        "Industrie.de"
+      ],
+      "canonical_source_urls": [
+        "https://topsoft.ch/themen/agentic-ai-im-indirekten-einkauf-vom-hype-zum-echten-nutzen/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Agentic procurement, talep toplama, teklif karşılaştırma ve fatura eşleştirme gibi P2P adımlarını otomatikleştirirken insanın karar yetkisini koruyan denetlenebilir onay katmanını yeni bir operasyon ihtiyacı haline getiriyor.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "WORKFLOW_DELTA",
+        "GOVERNANCE_DELTA"
+      ],
+      "affected_workflow": "satın alma talebi → agent tedarik/teklif ön çalışması → politika kontrolü → insan onayı → sipariş → fatura eşleme → audit trail",
+      "target_customer": "AI destekli satın alma kullanan orta ve büyük işletmeler",
+      "buyer": "satın alma müdürü veya iç kontrol yöneticisi",
+      "job_to_be_done": "AI agent'ın satın alma öneri ve aksiyonlarını politika, onay ve kanıt zinciriyle denetlenebilir tutmak.",
+      "current_friction": "Otonom P2P adımları hız kazanırken karar gerekçesi, istisna ve insan onayı farklı sistemlerde kalabilir.",
+      "product_mechanism": "agent işlem kuyruğu + satın alma politika kuralları + insan onay matrisi + istisna kaydı + denetim export'u",
+      "one_sentence_concept": "AI satın alma agent'larının yaptığı öneri ve işlemleri politika ve insan onayıyla denetlenebilir hale getiren kontrol masası.",
+      "why_now": "2026'da agentic procurement no-touch P2P'ye yaklaşırken karar yetkisinin insanda kalması ve auditability temel uygulama şartı haline geliyor.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 360,
+      "draft_canonical_key": "procurement-teams|audit-and-approve-agentic-p2p-actions|procurement-agent-control-desk",
+      "evidence_notes": {
+        "verified_sources": [
+          "https://topsoft.ch/themen/agentic-ai-im-indirekten-einkauf-vom-hype-zum-echten-nutzen/"
+        ],
+        "trakya_transferability_hypothesis": "Üretim şirketlerinin dolaylı satın alma süreçlerine aktarılabilir; yerel kapsam için doğrulama gerekir."
+      }
+    },
+    {
+      "raw_id": "refresh-w1-20260930-005",
+      "supporting_article_ids": [
+        "2c2421de0a88d19bd79232b6",
+        "c5f3527a3bb20537ff094120"
+      ],
+      "supporting_article_titles": [
+        "OpenClaw launches free enterprise control plane for persistent AI agents",
+        "Josys adds MCP server capability for identity management"
+      ],
+      "supporting_sources": [
+        "VentureBeat",
+        "Impress Watch"
+      ],
+      "canonical_source_urls": [
+        "https://venturebeat.com/orchestration/openclaw-launches-free-enterprise-control-plane-for-persistent-ai-agents-backed-by-openai-red-hat-and-nvidia",
+        "https://www.prnewswire.com/news-releases/josys-unlocks-autonomous-it-operations-with-ai-powered-identity-governance-platform-302702114.html"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Kalıcı AI agent'lar üretim sistemleri, kimlikler ve MCP araçlarına eriştikçe agent kimliği, yetkisi, yaşam döngüsü ve audit kayıtları ayrı bir yönetişim katmanı gerektiriyor.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "SECURITY_DELTA",
+        "GOVERNANCE_DELTA"
+      ],
+      "affected_workflow": "agent oluşturma → kimlik/yetki atama → araç/MCP erişimi → aksiyon → denetim → yetki kaldırma",
+      "target_customer": "birden fazla AI agent kullanan KOBİ ve kurumsal BT ekipleri",
+      "buyer": "BT yöneticisi, bilgi güvenliği veya AI platform sahibi",
+      "job_to_be_done": "Her AI agent'ın kimliğini, erişebildiği sistemleri, onay sınırlarını ve yaptığı işlemleri tek yerde görünür tutmak.",
+      "current_friction": "Agent yetkileri model, MCP, SaaS ve altyapı katmanlarına dağılır; insan IAM süreçleri agent yaşam döngüsünü tam karşılamayabilir.",
+      "product_mechanism": "agent registry + owner/identity map + izin matrisi + MCP/tool allowlist + onay kuralları + audit ledger",
+      "one_sentence_concept": "Şirket içindeki AI agent'lar için sahiplik, erişim, onay ve audit kaydını birleştiren hafif yönetişim sicili.",
+      "why_now": "OpenClaw Enterprise'ın 29 Eylül 2026 duyurusu kalıcı agent'larda merkezi izin, izolasyon ve audit ihtiyacını doğrudan ürünleştiriyor; kimlik platformları da MCP üzerinden AI operasyonuna açılıyor.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 440,
+      "draft_canonical_key": "enterprise-ai-teams|govern-agent-identities-permissions-and-actions|agent-governance-registry",
+      "evidence_notes": {
+        "verified_sources": [
+          "https://venturebeat.com/orchestration/openclaw-launches-free-enterprise-control-plane-for-persistent-ai-agents-backed-by-openai-red-hat-and-nvidia",
+          "https://www.prnewswire.com/news-releases/josys-unlocks-autonomous-it-operations-with-ai-powered-identity-governance-platform-302702114.html"
+        ]
+      }
+    }
+  ]
+}
