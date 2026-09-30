@@ -2,7 +2,7 @@
   "schema_version": 1,
   "site_name": "AIStartup",
   "description": "Canonical persistent idea catalog consumed by the AIStartup web application.",
-  "updated_at": "2026-09-29T13:15:00+03:00",
+  "updated_at": "2026-09-30T08:55:00+03:00",
   "ideas": [
     {
       "canonical_key": "competition-organizer|enforce-ai-use-policy-on-submissions|declaration-rule-engine-review-evidence",
@@ -1671,6 +1671,510 @@
       "status": "published",
       "first_reported_at": "2026-09-29",
       "last_updated_at": "2026-09-29"
+    },
+    {
+      "canonical_key": "ai-coding-team|prevent-agent-artifact-leakage|artifact-destination-approval-ledger",
+      "idea_name": "Artifact Guard — AI Geliştirme Kanıtı Güvenlik Masası",
+      "scope_tier": "Dünya",
+      "scope_reason": "AI coding agent kullanan yazılım ekiplerinin küresel güvenlik problemine yöneliktir.",
+      "news_source": "The Register",
+      "news_title": "AI models keep posting screenshots showing sensitive data from inside tech companies",
+      "news_date": "2026-09-29",
+      "news_url": "https://assets.theregister.com/2026/09/29/202616/",
+      "source_links": [
+        {
+          "label": "Ana kaynak",
+          "url": "https://assets.theregister.com/2026/09/29/202616/"
+        }
+      ],
+      "core_idea": "AI agentların oluşturduğu ekran görüntüsü ve geliştirme kanıtlarını dışarı göndermeden önce hedef, hassasiyet ve insan onayı kontrolünden geçirir.",
+      "user_story": "Bir yazılım ekibi olarak AI agentların oluşturduğu geliştirme kanıtlarının yanlışlıkla herkese açık alanlara çıkmasını önceden kontrol etmek istiyorum.",
+      "before_state": "AI kanıtları farklı araçlarda oluşuyor; hassas içerik ve hedef kontrolü standart değil.",
+      "after_state": "Kanıt kaydı → hedef ve hassasiyet kontrolü → insan onayı → yayın kararı → kanıt kaydı.",
+      "why_now": "AI coding agentların hassas ekran görüntülerini açığa çıkarabildiğine ilişkin yeni bulgular bu kontrolü somutlaştırdı.",
+      "target_customer": "AI coding agent kullanan yazılım ekipleri",
+      "buyer": "Mühendislik yöneticisi veya uygulama güvenliği sorumlusu",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Doğrudan rekabet araştırması henüz kesinleştirilmedi; bu nedenle fikir competition_not_verified olarak yayınlanıyor.",
+      "business_models": [
+        {
+          "model": "SaaS subscription",
+          "estimate": "Fiyat ilk müşteri görüşmeleriyle doğrulanacak"
+        }
+      ],
+      "lovable_credits_total": 390,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Uygulama geliştirme",
+          "cost": "mevcut Lovable kredisi"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "DB ve authentication",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Kayıt, kural/checklist, inceleme, kanıt ve raporlama için ilk satılabilir web workflow'u.",
+      "working_logic": "Kullanıcı veriyi girer → sistem deterministik kontrolleri uygular → eksik veya riskli kayıtları gösterir → insan kararını ve kanıtı saklar.",
+      "build_time": "2–4 hafta",
+      "marketing_strategy": "Dar hedef müşteri grubuna doğrudan B2B erişim ve workflow demosu.",
+      "first_customer_plan": "5 hedef kullanıcı görüşmesi ve 1 design-partner pilotu.",
+      "main_risk": "Doğrudan rekabet henüz yeterli güvenle doğrulanmadı.",
+      "validation_assumption": "Hedef müşterilerden en az üçü problemin düzenli olduğunu ve çözüm için ödeme isteğini doğruluyor mu?",
+      "evidence_strength": "Medium",
+      "competition_confidence": "Medium",
+      "verification_status": "competition_not_verified",
+      "status": "published",
+      "first_reported_at": "2026-09-30",
+      "last_updated_at": "2026-09-30"
+    },
+    {
+      "canonical_key": "california-cold-storage|prepare-emergency-financial-permit-evidence|facility-readiness-ledger",
+      "idea_name": "ColdStore Ready — Kaliforniya Acil Durum Kanıt Masası",
+      "scope_tier": "Dünya",
+      "scope_reason": "İlk pazar Kaliforniya soğuk hava deposu işletmeleridir.",
+      "news_source": "California Governor",
+      "news_title": "Governor signs AB 817 and SB 716 on cold-storage facility accountability",
+      "news_date": "2026-09-27",
+      "news_url": "https://www.gov.ca.gov/2026/09/27/governor-newsom-signs-bills-to-strengthen-accountability-for-cold-storage-facilities-following-emergency-in-boyle-heights/",
+      "source_links": [
+        {
+          "label": "Ana kaynak",
+          "url": "https://www.gov.ca.gov/2026/09/27/governor-newsom-signs-bills-to-strengthen-accountability-for-cold-storage-facilities-following-emergency-in-boyle-heights/"
+        }
+      ],
+      "core_idea": "Soğuk hava deposu projelerinin acil durum finansal hazırlık ve izin kanıtlarını tesis bazında toplar.",
+      "user_story": "Bir soğuk hava deposu işletmecisi olarak izin sürecindeki finansal hazırlık ve kanıtları tesis bazında takip etmek istiyorum.",
+      "before_state": "İzin şartları ve belgeler farklı dosyalarda tutuluyor.",
+      "after_state": "Tesis → uygulanabilirlik → izin şartları → kanıt → görev → rapor.",
+      "why_now": "Yeni Kaliforniya düzenlemeleri tesis hesap verebilirliğini artırıyor.",
+      "target_customer": "Kaliforniya soğuk hava deposu geliştiricileri ve işletmecileri",
+      "buyer": "Tesis geliştirme, risk veya uyum yöneticisi",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Doğrudan rekabet araştırması henüz kesinleştirilmedi; bu nedenle fikir competition_not_verified olarak yayınlanıyor.",
+      "business_models": [
+        {
+          "model": "SaaS subscription",
+          "estimate": "Fiyat ilk müşteri görüşmeleriyle doğrulanacak"
+        }
+      ],
+      "lovable_credits_total": 350,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Uygulama geliştirme",
+          "cost": "mevcut Lovable kredisi"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "DB ve authentication",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Kayıt, kural/checklist, inceleme, kanıt ve raporlama için ilk satılabilir web workflow'u.",
+      "working_logic": "Kullanıcı veriyi girer → sistem deterministik kontrolleri uygular → eksik veya riskli kayıtları gösterir → insan kararını ve kanıtı saklar.",
+      "build_time": "2–4 hafta",
+      "marketing_strategy": "Dar hedef müşteri grubuna doğrudan B2B erişim ve workflow demosu.",
+      "first_customer_plan": "5 hedef kullanıcı görüşmesi ve 1 design-partner pilotu.",
+      "main_risk": "Doğrudan rekabet henüz yeterli güvenle doğrulanmadı.",
+      "validation_assumption": "Hedef müşterilerden en az üçü problemin düzenli olduğunu ve çözüm için ödeme isteğini doğruluyor mu?",
+      "evidence_strength": "Medium",
+      "competition_confidence": "Medium",
+      "verification_status": "competition_not_verified",
+      "status": "published",
+      "first_reported_at": "2026-09-30",
+      "last_updated_at": "2026-09-30"
+    },
+    {
+      "canonical_key": "eu-android-ai-vendor|prove-dma-ai-interoperability-readiness|requirement-permission-evidence-matrix",
+      "idea_name": "Android AI DMA Ready — Entegrasyon Hazırlık Masası",
+      "scope_tier": "Dünya",
+      "scope_reason": "AB pazarındaki Android AI ekiplerine çevrimiçi satılabilir.",
+      "news_source": "European Commission",
+      "news_title": "Commission provides guidance to Google for AI interoperability on Android",
+      "news_date": "2026-07-16",
+      "news_url": "https://digital-markets-act.ec.europa.eu/commission-provides-guidance-google-ai-interoperability-android-and-sharing-google-search-data-under-2026-07-16_en",
+      "source_links": [
+        {
+          "label": "Ana kaynak",
+          "url": "https://digital-markets-act.ec.europa.eu/commission-provides-guidance-google-ai-interoperability-android-and-sharing-google-search-data-under-2026-07-16_en"
+        }
+      ],
+      "core_idea": "Android AI interoperability gereksinimlerini ürün, izin ve teknik kanıtlarla eşleştirir.",
+      "user_story": "Bir Android AI ürün ekibi olarak değişen AB interoperability gereksinimlerini hangi ürün özelliği ve teknik kanıtla karşıladığımı görmek istiyorum.",
+      "before_state": "Regülasyon, Android izinleri ve teknik kanıtlar dağınık.",
+      "after_state": "Gereksinim → özellik/izin → uygulama işi → kanıt → hazırlık kontrolü.",
+      "why_now": "AB interoperability tedbirleri ve itiraz süreci sürümlü takip ihtiyacı yaratıyor.",
+      "target_customer": "AB pazarına çalışan küçük Android AI uygulama ekipleri",
+      "buyer": "Ürün yöneticisi, mobil ekip lideri veya uyum sorumlusu",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Doğrudan rekabet araştırması henüz kesinleştirilmedi; bu nedenle fikir competition_not_verified olarak yayınlanıyor.",
+      "business_models": [
+        {
+          "model": "SaaS subscription",
+          "estimate": "Fiyat ilk müşteri görüşmeleriyle doğrulanacak"
+        }
+      ],
+      "lovable_credits_total": 350,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Uygulama geliştirme",
+          "cost": "mevcut Lovable kredisi"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "DB ve authentication",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Kayıt, kural/checklist, inceleme, kanıt ve raporlama için ilk satılabilir web workflow'u.",
+      "working_logic": "Kullanıcı veriyi girer → sistem deterministik kontrolleri uygular → eksik veya riskli kayıtları gösterir → insan kararını ve kanıtı saklar.",
+      "build_time": "2–4 hafta",
+      "marketing_strategy": "Dar hedef müşteri grubuna doğrudan B2B erişim ve workflow demosu.",
+      "first_customer_plan": "5 hedef kullanıcı görüşmesi ve 1 design-partner pilotu.",
+      "main_risk": "Doğrudan rekabet henüz yeterli güvenle doğrulanmadı.",
+      "validation_assumption": "Hedef müşterilerden en az üçü problemin düzenli olduğunu ve çözüm için ödeme isteğini doğruluyor mu?",
+      "evidence_strength": "Medium",
+      "competition_confidence": "Medium",
+      "verification_status": "competition_not_verified",
+      "status": "published",
+      "first_reported_at": "2026-09-30",
+      "last_updated_at": "2026-09-30"
+    },
+    {
+      "canonical_key": "japan-sme-customer-support|operate-and-prove-digital-customer-harassment-controls|policy-rule-incident-evidence-desk",
+      "idea_name": "Customer Harassment Desk — Japonya Müşteri Tacizi Uyum Masası",
+      "scope_tier": "Dünya",
+      "scope_reason": "İlk pazar Japonya'daki KOBİ'lerdir.",
+      "news_source": "Japan Ministry of Health, Labour and Welfare",
+      "news_title": "Customer harassment prevention measures mandatory from October 1, 2026",
+      "news_date": "2026",
+      "news_url": "https://www.mhlw.go.jp/stf/newpage_76214.html",
+      "source_links": [
+        {
+          "label": "Ana kaynak",
+          "url": "https://www.mhlw.go.jp/stf/newpage_76214.html"
+        }
+      ],
+      "core_idea": "Dijital müşteri tacizi önlemlerini politika, olay kaydı, escalation ve kanıt zinciriyle işletir.",
+      "user_story": "Bir Japon KOBİ'si olarak dijital müşteri tacizi olaylarını aynı politika altında kaydetmek ve aldığım önlemleri kanıtlamak istiyorum.",
+      "before_state": "Politika ve olay kayıtları farklı kanallarda tutuluyor.",
+      "after_state": "Olay → kural → escalation → sorumlu → kapanış kanıtı → rapor.",
+      "why_now": "Japonya'da işveren önlemlerinin zorunlu hale gelmesi ihtiyacı artırıyor.",
+      "target_customer": "Japon KOBİ'leri",
+      "buyer": "İK, müşteri hizmetleri veya uyum yöneticisi",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Doğrudan rekabet araştırması henüz kesinleştirilmedi; bu nedenle fikir competition_not_verified olarak yayınlanıyor.",
+      "business_models": [
+        {
+          "model": "SaaS subscription",
+          "estimate": "Fiyat ilk müşteri görüşmeleriyle doğrulanacak"
+        }
+      ],
+      "lovable_credits_total": 360,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Uygulama geliştirme",
+          "cost": "mevcut Lovable kredisi"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "DB ve authentication",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Kayıt, kural/checklist, inceleme, kanıt ve raporlama için ilk satılabilir web workflow'u.",
+      "working_logic": "Kullanıcı veriyi girer → sistem deterministik kontrolleri uygular → eksik veya riskli kayıtları gösterir → insan kararını ve kanıtı saklar.",
+      "build_time": "2–4 hafta",
+      "marketing_strategy": "Dar hedef müşteri grubuna doğrudan B2B erişim ve workflow demosu.",
+      "first_customer_plan": "5 hedef kullanıcı görüşmesi ve 1 design-partner pilotu.",
+      "main_risk": "Doğrudan rekabet henüz yeterli güvenle doğrulanmadı.",
+      "validation_assumption": "Hedef müşterilerden en az üçü problemin düzenli olduğunu ve çözüm için ödeme isteğini doğruluyor mu?",
+      "evidence_strength": "Medium",
+      "competition_confidence": "Medium",
+      "verification_status": "competition_not_verified",
+      "status": "published",
+      "first_reported_at": "2026-09-30",
+      "last_updated_at": "2026-09-30"
+    },
+    {
+      "canonical_key": "smb-manufacturer|assess-ai-use-case-integration-readiness|dependency-map-gap-backlog",
+      "idea_name": "AI Integration Ready — Üretim AI Hazırlık Haritası",
+      "scope_tier": "Dünya",
+      "scope_reason": "Üretim KOBİ'lerinde veri ve entegrasyon hazırlığı küresel bir problemdir.",
+      "news_source": "IndustryWeek",
+      "news_title": "The Platform Era: Why Manufacturing's Future Isn't a Bigger ERP",
+      "news_date": "2026",
+      "news_url": "https://www.industryweek.com/webinars/webinar/55406392/the-platform-era-why-manufacturings-future-isnt-a-bigger-erp",
+      "source_links": [
+        {
+          "label": "Ana kaynak",
+          "url": "https://www.industryweek.com/webinars/webinar/55406392/the-platform-era-why-manufacturings-future-isnt-a-bigger-erp"
+        }
+      ],
+      "core_idea": "Her AI use case için gerekli sistem, veri ve owner bağımlılıklarını çıkarıp eksikleri backlog'a dönüştürür.",
+      "user_story": "Bir üretim şirketi olarak AI pilotuna başlamadan önce gerekli veri ve entegrasyonların hazır olup olmadığını görmek istiyorum.",
+      "before_state": "AI pilotları bağımlılıklar netleşmeden başlayabiliyor.",
+      "after_state": "Use case → bağımlılıklar → hazırlık kontrolü → gap backlog → pilot onayı.",
+      "why_now": "Üretimde AI kullanımının artması bağlantılı veriyi somut ön koşula dönüştürüyor.",
+      "target_customer": "Küçük ve orta ölçekli üreticiler",
+      "buyer": "IT yöneticisi veya dijital dönüşüm lideri",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Doğrudan rekabet araştırması henüz kesinleştirilmedi; bu nedenle fikir competition_not_verified olarak yayınlanıyor.",
+      "business_models": [
+        {
+          "model": "SaaS subscription",
+          "estimate": "Fiyat ilk müşteri görüşmeleriyle doğrulanacak"
+        }
+      ],
+      "lovable_credits_total": 390,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Uygulama geliştirme",
+          "cost": "mevcut Lovable kredisi"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "DB ve authentication",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Kayıt, kural/checklist, inceleme, kanıt ve raporlama için ilk satılabilir web workflow'u.",
+      "working_logic": "Kullanıcı veriyi girer → sistem deterministik kontrolleri uygular → eksik veya riskli kayıtları gösterir → insan kararını ve kanıtı saklar.",
+      "build_time": "2–4 hafta",
+      "marketing_strategy": "Dar hedef müşteri grubuna doğrudan B2B erişim ve workflow demosu.",
+      "first_customer_plan": "5 hedef kullanıcı görüşmesi ve 1 design-partner pilotu.",
+      "main_risk": "Doğrudan rekabet henüz yeterli güvenle doğrulanmadı.",
+      "validation_assumption": "Hedef müşterilerden en az üçü problemin düzenli olduğunu ve çözüm için ödeme isteğini doğruluyor mu?",
+      "evidence_strength": "Medium",
+      "competition_confidence": "Medium",
+      "verification_status": "competition_not_verified",
+      "status": "published",
+      "first_reported_at": "2026-09-30",
+      "last_updated_at": "2026-09-30"
+    },
+    {
+      "canonical_key": "teams-running-connected-ai-agents|detect-and-contain-propagating-prompt-injection|channel-trust-map-quarantine-ledger",
+      "idea_name": "Prompt Propagation Guard — Agent Zinciri Karantina Masası",
+      "scope_tier": "Dünya",
+      "scope_reason": "Bağlantılı AI agent güvenliği küresel bir problemdir.",
+      "news_source": "OpenAI Alignment",
+      "news_title": "Self-replicating prompt injections exist",
+      "news_date": "2026-09-25",
+      "news_url": "https://alignment.openai.com/misalignment-reports/self-replicating-prompt-injections-exist/",
+      "source_links": [
+        {
+          "label": "Ana kaynak",
+          "url": "https://alignment.openai.com/misalignment-reports/self-replicating-prompt-injections-exist/"
+        }
+      ],
+      "core_idea": "Agentlar arasındaki güven sınırlarını haritalar ve riskli prompt yayılımını karantinaya alır.",
+      "user_story": "Birden fazla bağlı AI agent çalıştıran ekip olarak zararlı prompt'un diğer agentlara yayılmasını görmek ve riskli çıktıyı karantinaya almak istiyorum.",
+      "before_state": "Tek giriş filtresi çok adımlı yayılımı görünür kılmayabilir.",
+      "after_state": "Kanal haritası → risk kontrolü → karantina → insan onayı → kanıt.",
+      "why_now": "Self-replicating prompt injection çalışması multi-hop riski somutlaştırdı.",
+      "target_customer": "Bağlantılı AI agent kullanan ekipler",
+      "buyer": "CTO, güvenlik lideri veya AI platform sorumlusu",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Doğrudan rekabet araştırması henüz kesinleştirilmedi; bu nedenle fikir competition_not_verified olarak yayınlanıyor.",
+      "business_models": [
+        {
+          "model": "SaaS subscription",
+          "estimate": "Fiyat ilk müşteri görüşmeleriyle doğrulanacak"
+        }
+      ],
+      "lovable_credits_total": 430,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Uygulama geliştirme",
+          "cost": "mevcut Lovable kredisi"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "DB ve authentication",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Kayıt, kural/checklist, inceleme, kanıt ve raporlama için ilk satılabilir web workflow'u.",
+      "working_logic": "Kullanıcı veriyi girer → sistem deterministik kontrolleri uygular → eksik veya riskli kayıtları gösterir → insan kararını ve kanıtı saklar.",
+      "build_time": "2–4 hafta",
+      "marketing_strategy": "Dar hedef müşteri grubuna doğrudan B2B erişim ve workflow demosu.",
+      "first_customer_plan": "5 hedef kullanıcı görüşmesi ve 1 design-partner pilotu.",
+      "main_risk": "Doğrudan rekabet henüz yeterli güvenle doğrulanmadı.",
+      "validation_assumption": "Hedef müşterilerden en az üçü problemin düzenli olduğunu ve çözüm için ödeme isteğini doğruluyor mu?",
+      "evidence_strength": "Medium",
+      "competition_confidence": "Medium",
+      "verification_status": "competition_not_verified",
+      "status": "published",
+      "first_reported_at": "2026-09-30",
+      "last_updated_at": "2026-09-30"
+    },
+    {
+      "canonical_key": "turkiye-unlicensed-generation-owner|simulate-hourly-netting-and-explain-settlement|csv-hourly-rule-engine",
+      "idea_name": "EPDK Mahsuplaşma Simülatörü",
+      "scope_tier": "Türkiye",
+      "scope_reason": "Temel değer Türkiye EPDK lisanssız üretim kurallarına bağlıdır.",
+      "news_source": "EPDK / İstanbul Sanayi Odası",
+      "news_title": "Lisanssız elektrik üretim tesislerinin mahsuplaşma işlemlerine ilişkin usul ve esaslar",
+      "news_date": "2026-05-05",
+      "news_url": "https://www.iso.org.tr/duyurular/resm%C3%AE-gazete/lisanssiz-elektrik-uretim-tesisleri-ve-iliskili-oldugu-tuketim-tesislerinin-mahsuplasma-islemlerine-iliskin-usul-ve-esaslar-yayimlandi/",
+      "source_links": [
+        {
+          "label": "Ana kaynak",
+          "url": "https://www.iso.org.tr/duyurular/resm%C3%AE-gazete/lisanssiz-elektrik-uretim-tesisleri-ve-iliskili-oldugu-tuketim-tesislerinin-mahsuplasma-islemlerine-iliskin-usul-ve-esaslar-yayimlandi/"
+        }
+      ],
+      "core_idea": "Saatlik üretim-tüketim verisini EPDK kurallarına göre simüle edip mahsuplaşma sonucunu açıklar.",
+      "user_story": "Lisanssız üretim sahibi bir işletme olarak sayaç CSV verimi yükleyip saatlik mahsuplaşma sonucunu önceden görmek istiyorum.",
+      "before_state": "Sayaç verisi ve mevzuat farklı kaynaklarda; hesaplar Excel ile yapılabiliyor.",
+      "after_state": "CSV → doğrulama → EPDK rule engine → grup/VKN kontrolü → sonuç raporu.",
+      "why_now": "Yeni usul ve esaslar saatlik mahsuplaşmanın operasyonel veri yapısını netleştirdi.",
+      "target_customer": "Türkiye'deki lisanssız GES/RES sahipleri ve enerji danışmanları",
+      "buyer": "Enerji yöneticisi veya enerji danışmanı",
+      "market": "Türkiye",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Doğrudan rekabet araştırması henüz kesinleştirilmedi; bu nedenle fikir competition_not_verified olarak yayınlanıyor.",
+      "business_models": [
+        {
+          "model": "SaaS subscription",
+          "estimate": "Fiyat ilk müşteri görüşmeleriyle doğrulanacak"
+        }
+      ],
+      "lovable_credits_total": 390,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Uygulama geliştirme",
+          "cost": "mevcut Lovable kredisi"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "DB ve authentication",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Kayıt, kural/checklist, inceleme, kanıt ve raporlama için ilk satılabilir web workflow'u.",
+      "working_logic": "Kullanıcı veriyi girer → sistem deterministik kontrolleri uygular → eksik veya riskli kayıtları gösterir → insan kararını ve kanıtı saklar.",
+      "build_time": "2–4 hafta",
+      "marketing_strategy": "Dar hedef müşteri grubuna doğrudan B2B erişim ve workflow demosu.",
+      "first_customer_plan": "5 hedef kullanıcı görüşmesi ve 1 design-partner pilotu.",
+      "main_risk": "Doğrudan rekabet henüz yeterli güvenle doğrulanmadı.",
+      "validation_assumption": "Hedef müşterilerden en az üçü problemin düzenli olduğunu ve çözüm için ödeme isteğini doğruluyor mu?",
+      "evidence_strength": "Medium",
+      "competition_confidence": "Medium",
+      "verification_status": "competition_not_verified",
+      "status": "published",
+      "first_reported_at": "2026-09-30",
+      "last_updated_at": "2026-09-30"
+    },
+    {
+      "canonical_key": "us-heavy-duty-fleet|compare-2027-nox-compliance-procurement-scenarios|versioned-rule-cost-scenario-calculator",
+      "idea_name": "NOx 2027 Fleet Scenario — Ağır Vasıta Karar Masası",
+      "scope_tier": "Dünya",
+      "scope_reason": "İlk pazar ABD ağır vasıta filolarıdır.",
+      "news_source": "FreightWaves / U.S. EPA",
+      "news_title": "Daimler concerned about using cash to avoid new NOx rules",
+      "news_date": "2026-09",
+      "news_url": "https://www.freightwaves.com/news/daimler-concerned-about-using-cash-to-avoid-new-nox-rules",
+      "source_links": [
+        {
+          "label": "Ana kaynak",
+          "url": "https://www.freightwaves.com/news/daimler-concerned-about-using-cash-to-avoid-new-nox-rules"
+        }
+      ],
+      "core_idea": "2027 NOx uyumlu araç seçeneklerini değişen kural ve maliyet senaryolarıyla karşılaştırır.",
+      "user_story": "Bir ağır vasıta filo ekibi olarak 2027 NOx kuralları değişirken satın alma seçeneklerini aynı hesapta karşılaştırmak istiyorum.",
+      "before_state": "Kural ayrıntıları ve maliyet varsayımları farklı belgelerde.",
+      "after_state": "Kural sürümü → araç seçeneği → maliyet/NCP varsayımı → karşılaştırma → karar notu.",
+      "why_now": "2027 NOx motorları ve NCP ekonomisi satın alma kararında yeni belirsizlik yaratıyor.",
+      "target_customer": "ABD ağır vasıta filo satın alma ekipleri",
+      "buyer": "Filo satın alma veya uyum yöneticisi",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Doğrudan rekabet araştırması henüz kesinleştirilmedi; bu nedenle fikir competition_not_verified olarak yayınlanıyor.",
+      "business_models": [
+        {
+          "model": "SaaS subscription",
+          "estimate": "Fiyat ilk müşteri görüşmeleriyle doğrulanacak"
+        }
+      ],
+      "lovable_credits_total": 330,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Uygulama geliştirme",
+          "cost": "mevcut Lovable kredisi"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "DB ve authentication",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Kayıt, kural/checklist, inceleme, kanıt ve raporlama için ilk satılabilir web workflow'u.",
+      "working_logic": "Kullanıcı veriyi girer → sistem deterministik kontrolleri uygular → eksik veya riskli kayıtları gösterir → insan kararını ve kanıtı saklar.",
+      "build_time": "2–4 hafta",
+      "marketing_strategy": "Dar hedef müşteri grubuna doğrudan B2B erişim ve workflow demosu.",
+      "first_customer_plan": "5 hedef kullanıcı görüşmesi ve 1 design-partner pilotu.",
+      "main_risk": "Doğrudan rekabet henüz yeterli güvenle doğrulanmadı.",
+      "validation_assumption": "Hedef müşterilerden en az üçü problemin düzenli olduğunu ve çözüm için ödeme isteğini doğruluyor mu?",
+      "evidence_strength": "Medium",
+      "competition_confidence": "Medium",
+      "verification_status": "competition_not_verified",
+      "status": "published",
+      "first_reported_at": "2026-09-30",
+      "last_updated_at": "2026-09-30"
     }
   ]
 }
