@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-09-30",
+  "worker_id": "4",
+  "source_batch_index_generated_at": "2026-09-30T02:05:12Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "status": "complete",
+  "started_at": "2026-09-30T07:03:02+03:00",
+  "completed_at": "2026-09-30T07:03:02+03:00",
+  "feed_items_expected": 280,
+  "feed_items_triaged": 280,
+  "candidate_article_count": 7,
+  "original_articles_verified": 7,
+  "full_article_not_verified": 0,
+  "noise_or_no_opportunity_count": 273,
+  "raw_opportunity_count": 7,
+  "raw_opportunities": [
+    {
+      "raw_id": "w4-20260930-001",
+      "supporting_article_ids": [
+        "a94a5613f330177c590fd73f"
+      ],
+      "supporting_article_titles": [
+        "지식재산처, 리터놀 2026 최고 IP 스타트업 선정…AI가 반품 검수하고 폐기율 낮춰"
+      ],
+      "supporting_sources": [
+        "ETNews"
+      ],
+      "canonical_source_urls": [
+        "https://www.etnews.com/20260929000046"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AI-based return inspection reduced reported disposal rate from 25% to 6%, making automated disposition decisions materially more viable.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "COST_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "returned item received → visual/condition inspection → resale/refurbish/discard decision → inventory disposition",
+      "target_customer": "e-commerce merchants and 3PL return centers",
+      "buyer": "returns operations or warehouse manager",
+      "job_to_be_done": "standardize return-item grading and reduce unnecessary disposal",
+      "current_friction": "manual inspection is inconsistent, slow and can discard resellable goods",
+      "product_mechanism": "photo-led return case intake + defect checklist + evidence record + rules-assisted resale/refurbish/discard recommendation",
+      "one_sentence_concept": "A lightweight returns disposition desk that standardizes inspection evidence and routes returned goods to resale, refurbishment or disposal.",
+      "why_now": "A 2026 Korean startup case reports a large disposal-rate reduction from AI-assisted return inspection, demonstrating the workflow's economic leverage.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 430,
+      "draft_canonical_key": "ecommerce-return-ops|standardize-return-grading-and-disposition|photo-evidence-rules-workflow",
+      "evidence_notes": "ETNews article published 2026-09-29 reports automated AI return inspection and disposal rate falling 25%→6%; MVP should avoid claiming equivalent AI accuracy and can start with structured photo/checklist evidence."
+    },
+    {
+      "raw_id": "w4-20260930-002",
+      "supporting_article_ids": [
+        "bf7b41d3950503d0906b2b72"
+      ],
+      "supporting_article_titles": [
+        "AGEST、パッチ適用後のテストをAIで高速に実施する「AGEST ZERO TEST」の提供を開始"
+      ],
+      "supporting_sources": [
+        "Impress Watch"
+      ],
+      "canonical_source_urls": [
+        "https://agest.co.jp/news/2026-09-28_2/",
+        "https://agest.co.jp/zerotest-en/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "URL-driven before/after regression exploration can work without maintained specifications or authored test code, shrinking patch verification from manual hours toward automated cycles.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "SPEED_DELTA",
+        "LABOR_DELTA"
+      ],
+      "affected_workflow": "patch planned → capture pre-change behavior → patch → replay/explore → diff changed screens/flows → release decision",
+      "target_customer": "SMEs and internal IT teams maintaining web applications without strong automated regression suites",
+      "buyer": "IT manager, QA lead or application owner",
+      "job_to_be_done": "prove that a patch did not break existing web workflows when specifications/tests are weak",
+      "current_friction": "manual regression checks are slow and institutional knowledge is often undocumented",
+      "product_mechanism": "browser baseline recorder + deterministic replay + DOM/screenshot/network diff + human review queue + release evidence report",
+      "one_sentence_concept": "A zero-paid-API regression evidence desk that records critical browser flows before a patch and highlights only post-patch differences.",
+      "why_now": "AGEST commercially launched URL-led regression automation on 2026-09-28 and published benchmark evidence, validating demand for specification-light regression workflows.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 480,
+      "draft_canonical_key": "small-webapp-it-team|verify-patch-regressions-without-maintained-tests|browser-baseline-replay-diff-evidence",
+      "evidence_notes": "AGEST primary source says URL/test account can initiate exploration, comparison and reporting; their product uses local AI. Lovable MVP must be narrower: user-recorded critical flows and deterministic Playwright-style diffs, not a claim of autonomous AI equivalence."
+    },
+    {
+      "raw_id": "w4-20260930-003",
+      "supporting_article_ids": [
+        "a20-muse"
+      ],
+      "supporting_article_titles": [
+        "Meta expands Muse AI agent for small businesses"
+      ],
+      "supporting_sources": [
+        "Reuters Technology"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/business/media-telecom/meta-expands-muse-ai-agent-small-businesses-2026-09-29/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "A mainstream agent can now connect a small business's storefront, books, payments, marketing and work tools while retaining approval gates for consequential actions.",
+      "delta_types": [
+        "ACCESS_DELTA",
+        "CAPABILITY_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "business tools emit tasks/data → agent proposes cross-tool actions → owner approves → action executes → evidence/status retained",
+      "target_customer": "small businesses adopting multi-tool AI agents",
+      "buyer": "owner-operator or operations manager",
+      "job_to_be_done": "control what an AI agent may do across connected business systems and retain an auditable approval trail",
+      "current_friction": "cross-tool agents create permission, approval and accountability complexity that small firms rarely document systematically",
+      "product_mechanism": "agent action policy register + approval matrix + sensitive-action queue + decision log + connector inventory",
+      "one_sentence_concept": "An agent-governance desk for small businesses that defines approval rules and logs consequential actions across connected SaaS tools.",
+      "why_now": "Reuters reported on 2026-09-29 that Meta Muse for Small Business connects dozens of business tools but requires user approval for publishing, messaging and purchases, making approval governance an explicit workflow.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 360,
+      "draft_canonical_key": "small-business-ai-agent-user|govern-cross-tool-agent-actions|policy-approval-audit-ledger",
+      "evidence_notes": "Reuters verifies integrations and approval gates. MVP is a governance/ledger layer, not a competing autonomous agent and requires no paid API if approvals/actions are logged manually or via free webhooks."
+    },
+    {
+      "raw_id": "w4-20260930-004",
+      "supporting_article_ids": [
+        "e76bf6243c8192846b96deb3"
+      ],
+      "supporting_article_titles": [
+        "OVHcloud décroche un contrat avec l'agence spatiale européenne"
+      ],
+      "supporting_sources": [
+        "ZDNet France",
+        "Reuters"
+      ],
+      "canonical_source_urls": [
+        "https://corporate.ovhcloud.com/en/newsroom/news/ovhcloud-cgi-selected-to-build-earth-observation-europe/",
+        "https://www.reuters.com/science/esa-taps-ovhcloud-cgi-build-system-earth-observation-data-2026-09-28/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "European Earth-observation infrastructure is being federated with storage, compute and AI tools, lowering access friction to very large sovereign EO datasets for public and commercial users.",
+      "delta_types": [
+        "INFRASTRUCTURE_DELTA",
+        "ACCESS_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "define area/asset → select EO datasets → request/record processing → compare observations → document operational decision",
+      "target_customer": "small environmental consultancies, municipalities and infrastructure operators using European Earth-observation data",
+      "buyer": "GIS/environmental project manager",
+      "job_to_be_done": "turn recurring Earth-observation checks into a repeatable evidence workflow without building a full geospatial platform",
+      "current_friction": "datasets and processing environments are fragmented and analysts manually assemble evidence across projects",
+      "product_mechanism": "AOI/project registry + dataset/job metadata + observation comparison checklist + issue/evidence ledger + exportable report",
+      "one_sentence_concept": "A lightweight EO evidence workspace that organizes recurring satellite-data checks and operational decisions around assets or areas.",
+      "why_now": "ESA's Digital EO contract is explicitly designed to federate storage, compute, AI and national/European EO systems as data is projected to exceed 500 PB by 2035.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 410,
+      "draft_canonical_key": "small-eo-operations-team|standardize-recurring-earth-observation-evidence|aoi-dataset-job-decision-ledger",
+      "evidence_notes": "OVHcloud primary release and Reuters corroborate 30-month Digital EO contract, federation goal and >500 PB expectation. MVP should use metadata/manual links or open EO sources, not paid compute APIs."
+    },
+    {
+      "raw_id": "w4-20260930-005",
+      "supporting_article_ids": [
+        "0da90057a790484e36591333"
+      ],
+      "supporting_article_titles": [
+        "Google tar strid mot EU – pressas att öppna Android för andra AI-tjänster"
+      ],
+      "supporting_sources": [
+        "Ny Teknik"
+      ],
+      "canonical_source_urls": [
+        "https://c-level.folha.uol.com.br/ia/2026/09/google-recorre-de-decisao-da-uniao-europeia-sobre-dados-de-busca-e-android.shtml"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "EU DMA implementation is pushing Android toward rival AI-service interoperability, creating a concrete readiness burden around permissions, privacy and integration behavior.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "ACCESS_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "AI app capability request → Android integration/permission mapping → privacy/security evidence → release-readiness check → change log",
+      "target_customer": "small EU Android AI-app vendors and product teams",
+      "buyer": "product manager, mobile lead or compliance owner",
+      "job_to_be_done": "track Android AI interoperability obligations and technical readiness evidence as DMA requirements evolve",
+      "current_friction": "legal requirements, platform changes, permissions and implementation evidence live in separate documents and teams",
+      "product_mechanism": "requirement register + Android capability/permission matrix + evidence attachments + readiness checklist + deadline/change log",
+      "one_sentence_concept": "A DMA Android-AI interoperability readiness workspace linking regulatory requirements to permissions, product changes and evidence.",
+      "why_now": "On 2026-09-29 Google appealed EU requirements to open Android to rival AI services; reported implementation deadlines make interoperability a concrete product/compliance workflow rather than an abstract policy issue.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 350,
+      "draft_canonical_key": "eu-android-ai-vendor|prove-dma-ai-interoperability-readiness|requirement-permission-evidence-matrix",
+      "evidence_notes": "Corroborated reporting describes Google's appeal and EU DMA Android AI-access mandate. Final validator must verify exact Commission decision/deadlines from primary EU materials before qualification."
+    },
+    {
+      "raw_id": "w4-20260930-006",
+      "supporting_article_ids": [
+        "8d4aaa93bb39000a41adfe13"
+      ],
+      "supporting_article_titles": [
+        "約108万円で320B LLM をオフライン実行できる「EVO-X5 Pro」"
+      ],
+      "supporting_sources": [
+        "PC Watch"
+      ],
+      "canonical_source_urls": [
+        "https://www.gmktec.com/blogs/news/gmktec-evo-x5-pro-officially-launched-192gb-of-memory-amd-ryzen%E2%84%A2-ai-max-pro-495-and-offline-320b-ai",
+        "https://pc.watch.impress.co.jp/docs/news/2138676.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Desktop-class hardware with 192 GB unified memory can now run roughly 300B-class LLMs locally, widening practical offline AI options for privacy-sensitive teams.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "INFRASTRUCTURE_DELTA",
+        "PRIVACY_DELTA"
+      ],
+      "affected_workflow": "choose local model → record hardware/model fit → benchmark private workload → approve deployment → track versions and resource use",
+      "target_customer": "privacy-sensitive SMEs evaluating local/offline LLM deployment",
+      "buyer": "IT manager, security lead or AI project owner",
+      "job_to_be_done": "decide which local model/hardware configuration is sufficient for a private workload and document the decision",
+      "current_friction": "teams compare model size, quantization, memory and workload requirements ad hoc across spreadsheets and vendor claims",
+      "product_mechanism": "hardware/model compatibility catalog + workload questionnaire + memory/context estimator + benchmark evidence ledger + deployment decision report",
+      "one_sentence_concept": "A local-LLM deployment decision desk that maps private workloads to hardware/model configurations and records benchmark evidence.",
+      "why_now": "GMKtec's September 2026 launch demonstrates that very large offline LLM inference is moving into desktop hardware rather than requiring datacenter/cloud infrastructure.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 320,
+      "draft_canonical_key": "privacy-sensitive-sme|select-local-llm-hardware-for-private-workload|compatibility-estimator-benchmark-ledger",
+      "evidence_notes": "GMKtec primary launch and PC Watch verify 192 GB unified memory and offline ~300B/320B positioning. MVP uses user-entered/open benchmark data and does not require buying the hardware."
+    },
+    {
+      "raw_id": "w4-20260930-007",
+      "supporting_article_ids": [
+        "iw-platform-era"
+      ],
+      "supporting_article_titles": [
+        "The Platform Era: Why Manufacturing’s Future Isn’t a Bigger ERP"
+      ],
+      "supporting_sources": [
+        "IndustryWeek"
+      ],
+      "canonical_source_urls": [
+        "https://www.industryweek.com/webinars/webinar/55406392/the-platform-era-why-manufacturings-future-isnt-a-bigger-erp"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Manufacturing AI adoption is shifting from isolated ERP customization toward interoperable cloud/data ecosystems, making integration readiness itself a recurring operational decision.",
+      "delta_types": [
+        "INFRASTRUCTURE_DELTA",
+        "STANDARDIZATION_DELTA",
+        "CAPABILITY_DELTA"
+      ],
+      "affected_workflow": "inventory systems/data → identify AI use case → map required data/integrations → expose gaps → sequence remediation → approve pilot",
+      "target_customer": "small and mid-sized manufacturers with fragmented ERP/CRM/OT data",
+      "buyer": "IT manager, digital transformation lead or operations director",
+      "job_to_be_done": "determine whether a proposed AI use case is actually integration/data-ready before buying or building it",
+      "current_friction": "AI pilots start before teams map source systems, ownership, interfaces and data gaps, causing slow integration and failed pilots",
+      "product_mechanism": "AI-use-case intake + system/data dependency map + readiness score + gap backlog + pilot evidence checklist",
+      "one_sentence_concept": "A manufacturing AI-readiness mapper that turns each proposed AI use case into a concrete integration and data-gap backlog.",
+      "why_now": "IndustryWeek's 2026 platform-era material explicitly frames connected governed data and interoperable systems as prerequisites for adopting AI agents in weeks rather than years.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "smb-manufacturer|assess-ai-use-case-integration-readiness|dependency-map-gap-backlog",
+      "evidence_notes": "IndustryWeek page is sponsored webinar content, so evidence is commercially framed but directly supports the stated integration-readiness problem; validator should seek independent corroboration before strong qualification."
+    }
+  ]
+}
