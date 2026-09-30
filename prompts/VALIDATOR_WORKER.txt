@@ -34,6 +34,22 @@ For EVERY assigned candidate, perform fresh web research:
 8. Do not rank candidates.
 9. Do not update idea_history.json or idea_catalog.json.
 
+
+LOCAL SCOPE VALIDATION — LÜLEBURGAZ / TRAKYA
+For any candidate carrying a Lüleburgaz scope_hint or trakya_transferability_hypothesis,
+perform fresh web research before assigning local scope:
+- verify that the target sector/workflow has a real Lüleburgaz or immediately relevant
+  Trakya industrial footprint;
+- seek concrete company/facility, sector-cluster, OSB/industry-association or credible
+  industrial evidence rather than generic city news;
+- verify that the candidate's buyer/customer type can realistically exist in that footprint;
+- record local evidence URLs and a short local applicability rationale;
+- if local evidence is insufficient, do NOT reject an otherwise good idea: downgrade its
+  local scope to Türkiye/unclear as appropriate.
+
+Local evidence does not replace direct-competitor research. A Lüleburgaz label must never
+be assigned solely because the idea concerns manufacturing or because Lüleburgaz is in Trakya.
+
 For each assigned candidate produce:
 - candidate_id
 - validation_index
@@ -65,6 +81,10 @@ For each assigned candidate produce:
 - validation_assumption
 - evidence_strength
 - competition_confidence
+- local_scope_verified: true|false|not_applicable
+- local_scope_evidence
+- local_applicability_rationale
+- validated_scope_hint
 - qualification_status:
     qualified |
     competition_not_verified |
