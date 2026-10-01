@@ -1,0 +1,412 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-01",
+  "worker_id": "2",
+  "source_batch_index_generated_at": "2026-10-01T00:32:19Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "status": "complete",
+  "started_at": "2026-10-01T07:01:55+03:00",
+  "completed_at": "2026-10-01T07:14:00+03:00",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 13,
+  "original_articles_verified": 12,
+  "full_article_not_verified": 1,
+  "noise_or_no_opportunity_count": 227,
+  "raw_opportunity_count": 10,
+  "raw_opportunities": [
+    {
+      "raw_id": "w2-001",
+      "supporting_article_ids": [
+        "4e91ee4977c24527b32bca0f",
+        "af1cd2314924db8ed3268394"
+      ],
+      "supporting_article_titles": [
+        "FTC opens probe into AI giants including Anthropic and OpenAI",
+        "Yapay zekâ devlerinden Beyaz Saray’da güvenlik mutabakatı"
+      ],
+      "supporting_sources": [
+        "Reuters Technology",
+        "Digital Age"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/business/ftc-opens-probe-into-ai-giants-including-anthropic-openai-new-york-post-reports-2026-09-30/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Frontier AI agent safety moved from voluntary lab practice toward formal consumer-protection investigation and outside-audit expectations after rogue-agent incidents.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "agent release → capability/sandbox test → evidence capture → external review → deployment approval",
+      "target_customer": "companies deploying high-autonomy AI agents",
+      "buyer": "AI governance, security or risk lead",
+      "job_to_be_done": "prove before deployment that an autonomous agent stayed within permissions and that required safety controls were tested",
+      "current_friction": "agent tests, permissions, incident traces and approvals are fragmented across engineering/security artifacts",
+      "product_mechanism": "vendor-neutral agent safety evidence register with test-case inventory, permission boundary checklist, incident trace links, remediation and approval record",
+      "one_sentence_concept": "A lightweight evidence desk for teams to document and approve agent safety tests before production.",
+      "why_now": "FTC opened a formal probe into AI labs over potential consumer harms while major labs also accepted outside safety audits.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 380,
+      "draft_canonical_key": "ai-agent-deployer|prove-agent-safety-before-release|safety-evidence-register",
+      "evidence_notes": {
+        "source": "Reuters 2026-09-30",
+        "trakya_transferability_hypothesis": null
+      }
+    },
+    {
+      "raw_id": "w2-002",
+      "supporting_article_ids": [
+        "44ab394e0de020195af33d72"
+      ],
+      "supporting_article_titles": [
+        "We asked five AI tools to build accessible websites. All 15 sites failed."
+      ],
+      "supporting_sources": [
+        "VentureBeat"
+      ],
+      "canonical_source_urls": [
+        "https://venturebeat.com/technology/we-asked-five-ai-tools-to-build-accessible-websites-all-15-sites-failed"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AI website builders can rapidly ship pages while systematically reproducing accessibility defects; all 15 tested sites failed WCAG Level A despite accessibility instructions.",
+      "delta_types": [
+        "RISK_DELTA",
+        "QUALITY_DELTA",
+        "SPEED_DELTA"
+      ],
+      "affected_workflow": "AI-generated site → pre-publish accessibility check → defect assignment → remediation evidence → release",
+      "target_customer": "small teams and agencies shipping websites with AI/vibe-coding tools",
+      "buyer": "agency owner, product lead or web developer",
+      "job_to_be_done": "catch accessibility failures in AI-generated sites before publishing and retain proof of remediation",
+      "current_friction": "teams trust generated code and discover keyboard/screen-reader failures late or after complaints",
+      "product_mechanism": "URL/page inventory plus free automated accessibility scan import, manual keyboard/screen-reader checklist, severity queue, remediation owner and evidence export",
+      "one_sentence_concept": "An accessibility release gate designed specifically for AI-generated websites.",
+      "why_now": "A 2026 test found all 15 AI-generated sites failed basic WCAG Level A and 91% of issues were medium/high severity.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 360,
+      "draft_canonical_key": "ai-website-builder-user|prevent-accessibility-release-failures|accessibility-release-evidence-gate",
+      "evidence_notes": {
+        "source": "VentureBeat/AudioEye 2026-09-30",
+        "trakya_transferability_hypothesis": null
+      }
+    },
+    {
+      "raw_id": "w2-003",
+      "supporting_article_ids": [
+        "8c335fa035d8ee002804f48d",
+        "04592e6827e4610b0742c1a0"
+      ],
+      "supporting_article_titles": [
+        "Restate lands $20M as the need for durable infrastructure increases with AI agents",
+        "Berlin-based Restate raises $20M"
+      ],
+      "supporting_sources": [
+        "TechCrunch",
+        "Tech.eu"
+      ],
+      "canonical_source_urls": [
+        "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Long-running agent workflows expose failure/retry/reproducibility problems that were less acute in short deterministic software calls.",
+      "delta_types": [
+        "INFRASTRUCTURE_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "agent task → multi-step tool execution → failure/retry → human escalation → outcome audit",
+      "target_customer": "SMBs operating business-critical AI-agent workflows",
+      "buyer": "operations or automation lead",
+      "job_to_be_done": "know which agent jobs are stuck, duplicated or partially completed and recover them safely",
+      "current_friction": "agent actions can span many steps and unpredictable paths; a mid-process failure can leave unclear business state",
+      "product_mechanism": "application-level run ledger over existing agent/webhook systems: step status, idempotency key, checkpoint, retry/escalation queue and outcome reconciliation",
+      "one_sentence_concept": "A no-infrastructure agent run control desk for SMB automations.",
+      "why_now": "Restate reports strong demand for durable execution as agent workflows become longer and less predictable.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 420,
+      "draft_canonical_key": "smb-agent-operator|recover-and-reconcile-long-agent-jobs|agent-run-control-ledger",
+      "evidence_notes": {
+        "source": "TechCrunch 2026-09-30",
+        "trakya_transferability_hypothesis": "Factories and logistics operators using agentic back-office workflows could use the same run/recovery ledger without plant integration."
+      }
+    },
+    {
+      "raw_id": "w2-004",
+      "supporting_article_ids": [
+        "0a9f72e0cac6665071fc121b"
+      ],
+      "supporting_article_titles": [
+        "7 in 10 enterprises expected to abandon vendor-built agentic AI by 2028"
+      ],
+      "supporting_sources": [
+        "The Register"
+      ],
+      "canonical_source_urls": [
+        "https://www.theregister.com/ai-and-ml/2026/09/30/7-in-10-enterprises-expected-to-abandon-vendor-built-agentic-ai-by-2028/5300021"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Enterprises face growing lock-in and maintainability risk from vendor-built agent systems that depend on outside forward-deployed expertise.",
+      "delta_types": [
+        "RISK_DELTA",
+        "BUSINESS_MODEL_DELTA"
+      ],
+      "affected_workflow": "agent procurement → vendor implementation → knowledge transfer → dependency review → exit/replace decision",
+      "target_customer": "enterprises buying custom or vendor-built agentic AI",
+      "buyer": "CIO, procurement, enterprise architecture or AI program lead",
+      "job_to_be_done": "measure whether an agent deployment can be operated, changed and exited without the vendor",
+      "current_friction": "ownership of prompts, tools, credentials, data mappings, runbooks and operational knowledge is often unclear until exit becomes costly",
+      "product_mechanism": "agent vendor portability register scoring artifact ownership, exportability, credential control, runbook coverage, internal skills and exit readiness",
+      "one_sentence_concept": "A vendor-exit readiness scorecard for enterprise AI-agent deployments.",
+      "why_now": "The Register reports an expectation that seven in ten enterprises will abandon vendor-built agentic AI by 2028, highlighting dependency risk.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 300,
+      "draft_canonical_key": "enterprise-agent-buyer|measure-vendor-exit-readiness|agent-portability-register",
+      "evidence_notes": {
+        "source": "The Register 2026-09-30",
+        "trakya_transferability_hypothesis": "Industrial companies procuring vendor AI can apply the same ownership and exit checklist."
+      }
+    },
+    {
+      "raw_id": "w2-005",
+      "supporting_article_ids": [
+        "b0ec386b0a28d60998313059"
+      ],
+      "supporting_article_titles": [
+        "500 appareils sont concernés : un sous-traitant de Leonardo plombe la qualité du fuselage des A321neo d’Airbus"
+      ],
+      "supporting_sources": [
+        "L'Usine Nouvelle"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/business/aerospace-defense/airbus-alerts-customers-a321neo-defect-potentially-affecting-over-500-aircraft-2026-09-24/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "A second-tier supplier process deviation propagated into roughly 500 aircraft, exposing how supplier/process evidence can become a fleet-scale containment problem.",
+      "delta_types": [
+        "RISK_DELTA",
+        "SUPPLY_CHAIN_DELTA",
+        "QUALITY_DELTA"
+      ],
+      "affected_workflow": "supplier process/spec → lot shipment → incoming/production use → defect discovery → affected-lot trace → containment/corrective action",
+      "target_customer": "manufacturers with multi-tier supplier quality chains",
+      "buyer": "supplier quality manager or quality director",
+      "job_to_be_done": "trace a newly discovered supplier-process deviation to affected lots/products and coordinate containment evidence",
+      "current_friction": "second-tier process evidence and lot genealogy are often split across email, spreadsheets, ERP attachments and supplier portals",
+      "product_mechanism": "supplier deviation case ledger linking supplier/process/spec, affected lots, downstream products, containment actions, evidence and closure approvals",
+      "one_sentence_concept": "A lightweight supplier-deviation containment desk for multi-tier manufacturers.",
+      "why_now": "Airbus confirmed a coating-quality deviation affecting about 500 A321neo aircraft, with investigation extending into a subcontractor layer.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 430,
+      "draft_canonical_key": "multi-tier-manufacturer|contain-supplier-process-deviation|supplier-deviation-genealogy-ledger",
+      "evidence_notes": {
+        "source": "Reuters corroboration 2026-09-24/29",
+        "trakya_transferability_hypothesis": "Automotive, machinery, plastics, glass and other Trakya suppliers plausibly face the same supplier-deviation/lot-containment workflow; local existence needs validation."
+      }
+    },
+    {
+      "raw_id": "w2-006",
+      "supporting_article_ids": [
+        "54fb3267caff8c0b04915987"
+      ],
+      "supporting_article_titles": [
+        "National cargo theft blitz leads to arrests, $635K in recovered freight"
+      ],
+      "supporting_sources": [
+        "FreightWaves"
+      ],
+      "canonical_source_urls": [
+        "https://www.freightwaves.com/news/national-cargo-theft-blitz-leads-to-arrests-635k-in-recovered-freight"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Cargo theft increasingly exploits identity/document handoffs and cross-dock/jurisdiction transitions; one recovered shipment used a fraudulent bill of lading and moved through several cross-docks.",
+      "delta_types": [
+        "RISK_DELTA",
+        "COORDINATION_DELTA"
+      ],
+      "affected_workflow": "load tender → carrier/driver/document verification → pickup → cross-dock handoff → delivery → incident escalation",
+      "target_customer": "freight brokers, shippers and warehouse/cross-dock operators",
+      "buyer": "transport security, brokerage operations or warehouse manager",
+      "job_to_be_done": "preserve a verifiable chain of custody and flag identity/document inconsistencies at each freight handoff",
+      "current_friction": "handoff evidence is fragmented and fraudulent company/document identities can survive multiple transfers before anyone sees the full chain",
+      "product_mechanism": "shipment handoff ledger with party/document checklist, photo/reference evidence, exception flags and cross-dock custody timeline",
+      "one_sentence_concept": "A chain-of-custody evidence desk for high-risk freight handoffs.",
+      "why_now": "A coordinated US cargo-theft operation recovered $635K; a $600K transformer load had been moved via fraudulent bill of lading through several cross-docks.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "freight-handoff-operator|prove-chain-of-custody-and-detect-document-mismatch|shipment-custody-evidence-ledger",
+      "evidence_notes": {
+        "source": "FreightWaves 2026-09-30",
+        "trakya_transferability_hypothesis": "The Lüleburgaz-Çorlu-Çerkezköy industrial/logistics corridor plausibly has multi-carrier and warehouse handoffs; concrete local fraud evidence still needs validation."
+      }
+    },
+    {
+      "raw_id": "w2-007",
+      "supporting_article_ids": [
+        "937817895511464997d28e2d"
+      ],
+      "supporting_article_titles": [
+        "Fresh Data, Clear Access Rules: The Foundation For Reliable AI Applications"
+      ],
+      "supporting_sources": [
+        "Inc42"
+      ],
+      "canonical_source_urls": [
+        "https://inc42.com/buzz/fresh-data-clear-access-rules-the-foundation-for-reliable-ai-applications/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "As AI agents connect directly to operational databases/documents, freshness, lineage and field-level access rules become runtime prerequisites rather than background data-governance concerns.",
+      "delta_types": [
+        "DATA_DELTA",
+        "ACCESS_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "AI use case → data-source inventory → freshness/lineage check → access approval → production connection → periodic review",
+      "target_customer": "mid-market companies deploying internal AI/RAG/agent applications",
+      "buyer": "data owner, IT/security lead or AI product owner",
+      "job_to_be_done": "decide whether each data source is fresh, authoritative and permitted for a specific AI use case before connecting it",
+      "current_friction": "data location, sensitivity, freshness and allowed AI uses are scattered across teams and added piecemeal at application level",
+      "product_mechanism": "AI data-access registry mapping use case to source, owner, sensitivity, freshness SLA, permitted fields, legal/compliance basis and review date",
+      "one_sentence_concept": "A lightweight preflight registry for AI data access and freshness.",
+      "why_now": "PhonePe and other CTOs described data freshness, lineage and element-level access controls as prerequisites for reliable AI at scale.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 350,
+      "draft_canonical_key": "midmarket-ai-team|approve-fresh-authorized-data-for-ai-use|ai-data-access-preflight-registry",
+      "evidence_notes": {
+        "source": "Inc42 2026-09-30",
+        "trakya_transferability_hypothesis": "Manufacturers introducing internal AI over ERP/quality/maintenance documents face the same source-ownership and access-approval problem."
+      }
+    },
+    {
+      "raw_id": "w2-008",
+      "supporting_article_ids": [
+        "db944ab7b7597aa652f81773",
+        "ffdf636e892d5d90d459496f"
+      ],
+      "supporting_article_titles": [
+        "Amaysim slugged with $138,600 penalty for unverified number ports"
+      ],
+      "supporting_sources": [
+        "iTnews"
+      ],
+      "canonical_source_urls": [
+        "https://www.itnews.com.au/news/amaysim-slugged-with-138600-penalty-for-unverified-number-ports-629309"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "A small number of verification bypasses triggered a six-figure penalty plus independent review, quarterly full-population audits and board-approved compliance reporting.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA",
+        "EVIDENCE_DELTA"
+      ],
+      "affected_workflow": "high-risk customer request → required identity check → override/exception → audit sample/full review → board/regulator report",
+      "target_customer": "regulated service providers with staff override paths in identity-sensitive workflows",
+      "buyer": "compliance, fraud or operations-control lead",
+      "job_to_be_done": "prove that manual overrides of mandatory verification were justified, reviewed and included in compliance reporting",
+      "current_friction": "override permissions and evidence can bypass the normal digital control path and become visible only after incidents",
+      "product_mechanism": "verification-override register with reason/evidence, approver, affected transaction, periodic audit queue and board-report export",
+      "one_sentence_concept": "A compliance evidence ledger for manual overrides of mandatory identity checks.",
+      "why_now": "Amaysim paid A$138,600 after 13 ports lacked required verification and agreed to independent governance review and quarterly audits.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 320,
+      "draft_canonical_key": "regulated-service-provider|govern-manual-verification-overrides|verification-override-audit-ledger",
+      "evidence_notes": {
+        "source": "iTnews 2026-09-30",
+        "trakya_transferability_hypothesis": null
+      }
+    },
+    {
+      "raw_id": "w2-009",
+      "supporting_article_ids": [
+        "966b9e8bd615e8f5f1e13a5b"
+      ],
+      "supporting_article_titles": [
+        "Cloudflare plans to issue quantum-safe TLS certificates"
+      ],
+      "supporting_sources": [
+        "Ars Technica"
+      ],
+      "canonical_source_urls": [
+        "https://arstechnica.com/security/2026/09/cloudflare-plans-to-issue-quantum-safe-tls-certificates/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Quantum-safe TLS is moving from protocol planning toward certificate issuance, creating a concrete inventory/migration decision for organizations with many public endpoints.",
+      "delta_types": [
+        "STANDARDIZATION_DELTA",
+        "INFRASTRUCTURE_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "domain/service inventory → certificate/crypto dependency inventory → readiness classification → migration owner/date → evidence",
+      "target_customer": "SMBs and agencies managing many domains and public web services",
+      "buyer": "IT/security lead or managed-service provider",
+      "job_to_be_done": "know which public services are ready for post-quantum TLS changes and track migration without a heavyweight PKI platform",
+      "current_friction": "domain inventories, certificate issuers and application dependencies are often undocumented across small organizations",
+      "product_mechanism": "manual/imported endpoint inventory with crypto-readiness questionnaire, dependency/owner mapping, migration backlog and evidence export",
+      "one_sentence_concept": "A post-quantum TLS migration readiness register for smaller organizations.",
+      "why_now": "Cloudflare announced plans to issue quantum-safe TLS certificates, making migration readiness a nearer operational concern.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 280,
+      "draft_canonical_key": "smb-web-estate-owner|plan-post-quantum-tls-migration|crypto-readiness-register",
+      "evidence_notes": {
+        "source": "Ars Technica 2026-09-30",
+        "trakya_transferability_hypothesis": null
+      }
+    },
+    {
+      "raw_id": "w2-010",
+      "supporting_article_ids": [
+        "705ed04e7460b77916448708"
+      ],
+      "supporting_article_titles": [
+        "Inside McDonald's push to have AI price your Big Mac"
+      ],
+      "supporting_sources": [
+        "iTnews/Reuters"
+      ],
+      "canonical_source_urls": [
+        "https://www.itnews.com.au/news/inside-mcdonalds-push-to-have-ai-price-your-big-mac-629333"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AI-driven local pricing can optimize store-level prices but creates franchisee pressure, deviation tracking, reputational risk and antitrust scrutiny around how recommendations are produced and followed.",
+      "delta_types": [
+        "BUSINESS_MODEL_DELTA",
+        "RISK_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "pricing recommendation → rule/rationale → franchisee accept/deviate → approval/evidence → consumer/regulatory review",
+      "target_customer": "franchise networks and multi-location retailers using algorithmic pricing recommendations",
+      "buyer": "pricing, franchise operations, legal/compliance lead",
+      "job_to_be_done": "document why a location-level algorithmic price recommendation was accepted or rejected and prove guardrails were followed",
+      "current_friction": "pricing engines can use sensitivity/competitor signals while local operators face pressure and legal/reputation questions without a simple decision trail",
+      "product_mechanism": "algorithmic pricing decision ledger recording recommendation, allowed inputs/guardrails, operator decision, deviation reason, approval and periodic fairness/compliance review",
+      "one_sentence_concept": "An audit trail for human decisions around AI-generated location pricing.",
+      "why_now": "Reuters reporting shows McDonald's AI pricing engine tracks local willingness-to-pay and franchisee deviations while the company warns of antitrust scrutiny.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 370,
+      "draft_canonical_key": "franchise-pricing-operator|prove-human-governance-of-ai-price-recommendations|algorithmic-pricing-decision-ledger",
+      "evidence_notes": {
+        "source": "Reuters/iTnews 2026-09-30",
+        "trakya_transferability_hypothesis": "Multi-location food/retail operators in Türkiye could use the same recommendation/deviation audit workflow; local algorithmic-pricing adoption requires validation."
+      }
+    }
+  ]
+}
