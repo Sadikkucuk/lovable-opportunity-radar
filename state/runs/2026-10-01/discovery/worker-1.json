@@ -1,0 +1,331 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-01",
+  "worker_id": "1",
+  "source_batch_index_generated_at": "2026-10-01T00:32:19Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "status": "complete",
+  "started_at": "2026-10-01T07:02:00+03:00",
+  "completed_at": "2026-10-01T07:12:00+03:00",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 18,
+  "original_articles_verified": 8,
+  "full_article_not_verified": 10,
+  "noise_or_no_opportunity_count": 222,
+  "raw_opportunity_count": 8,
+  "raw_opportunities": [
+    {
+      "raw_id": "w1-001",
+      "supporting_article_ids": [
+        "c7dd42b2440073beddaec993"
+      ],
+      "supporting_article_titles": [
+        "Pack Spec Drives Inventory: Nestlé's Supply Chain Strategy"
+      ],
+      "supporting_sources": [
+        "Packaging World"
+      ],
+      "canonical_source_urls": [
+        "https://www.packworld.com/trends/logistics-supply-chain/article/22975502/pack-spec-drives-inventory-nestls-supply-chain-strategy"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Packaging/SKU complexity can be quantified as inventory positions and working-capital risk before product specifications are locked, enabling a repeatable pre-launch decision workflow.",
+      "delta_types": [
+        "DATA_DELTA",
+        "COST_DELTA",
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "new product/pack design → SKU/pack configuration → sourcing constraints → inventory positions → P&L approval",
+      "target_customer": "CPG and food manufacturers",
+      "buyer": "supply-chain, packaging or product-operations manager",
+      "job_to_be_done": "quantify the inventory and working-capital penalty of pack/SKU choices before launch",
+      "current_friction": "Brand and packaging choices create combinatorial inventory positions, single-source dependencies and later repacking/firefighting; the cost is often discovered after specs are fixed.",
+      "product_mechanism": "web calculator/decision ledger that converts flavor × pack count × distribution-node choices, MOQ, shelf life and sourcing constraints into inventory positions, working-capital-at-risk and simpler alternatives",
+      "one_sentence_concept": "A pre-launch Pack Complexity Cost Desk that shows brand teams the dollar cost of each packaging/SKU choice before it is approved.",
+      "why_now": "Nestlé described a concrete 3×4×3 example producing 36 inventory positions and advocated translating complexity into dollars before design lock.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 330,
+      "draft_canonical_key": "cpg-manufacturer|quantify-pack-sku-complexity-before-launch|inventory-position-working-capital-decision-ledger",
+      "evidence_notes": {
+        "source_fact": "Packaging World article fully read; Nestlé example and workflow are explicit.",
+        "trakya_transferability_hypothesis": "Food and packaged-goods plants in the Trakya industrial corridor plausibly face pack-count, MOQ and packaging-spec complexity; local existence should be verified before Lüleburgaz scope."
+      }
+    },
+    {
+      "raw_id": "w1-002",
+      "supporting_article_ids": [
+        "358142a3734d37e2e3b4dc57"
+      ],
+      "supporting_article_titles": [
+        "New ANSI Standard Completes Industrial Mobile Robot Safety Series"
+      ],
+      "supporting_sources": [
+        "Automation World"
+      ],
+      "canonical_source_urls": [
+        "https://www.automationworld.com/factory/robotics/news/55408868/association-for-advancing-automation-new-ansi-standard-completes-industrial-mobile-robot-safety-series"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "ANSI/A3 R15.08-3-2026 adds explicit user-side lifecycle duties for daily IMR operation, including risk assessment, management of change, training, reviews and inspections.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "STANDARDIZATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "IMR deployment → daily operation → change management → training → periodic inspection/review → evidence retention",
+      "target_customer": "factories and warehouses operating industrial mobile robots",
+      "buyer": "EHS manager, automation manager or plant manager",
+      "job_to_be_done": "maintain auditable day-to-day IMR safety obligations after commissioning",
+      "current_friction": "Robot safety evidence is often split across risk assessments, training records, change logs and inspection sheets, while the new standard emphasizes continued-use responsibilities.",
+      "product_mechanism": "IMR safety lifecycle register with robot/application inventory, change-control workflow, training matrix, inspection schedule, risk-review reminders and evidence export",
+      "one_sentence_concept": "A lightweight IMR Safety Ops desk that turns continued-use robot safety duties into recurring evidence workflows.",
+      "why_now": "Part 3 was announced as completing the R15.08 series and specifically addresses user responsibilities during continued operation.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 360,
+      "draft_canonical_key": "imr-operator|maintain-auditable-continued-use-safety|robot-safety-lifecycle-register",
+      "evidence_notes": {
+        "source_fact": "Automation World article fully read; requirements listed explicitly.",
+        "trakya_transferability_hypothesis": "Automotive suppliers, warehouses and manufacturers in Trakya adopting AMR/IMR systems could pilot the workflow; local installed-base evidence requires validation."
+      }
+    },
+    {
+      "raw_id": "w1-003",
+      "supporting_article_ids": [
+        "91b844197c9524f87b7f6d65"
+      ],
+      "supporting_article_titles": [
+        "How Pearl Crop Turned to Rented Robots to Combat Seasonal Labor Concerns"
+      ],
+      "supporting_sources": [
+        "Food Engineering"
+      ],
+      "canonical_source_urls": [
+        "https://www.foodengineeringmag.com/articles/103948-how-pearl-crop-turned-to-rented-robots-to-combat-seasonal-labor-concerns"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Robot rental/try-before-buy makes automation economically accessible for short seasonal peaks rather than requiring permanent capex.",
+      "delta_types": [
+        "BUSINESS_MODEL_DELTA",
+        "ACCESS_DELTA",
+        "LABOR_DELTA"
+      ],
+      "affected_workflow": "season forecast → temporary labor/throughput gap → automation suitability → rental duration/robot count → deployment → ROI review",
+      "target_customer": "seasonal food processors and manufacturers",
+      "buyer": "plant manager, operations manager or owner",
+      "job_to_be_done": "decide when renting robots beats seasonal labor or buying automation",
+      "current_friction": "Seasonal peaks create short-lived palletizing/material-handling bottlenecks, but capex automation can be hard to justify and temporary labor is scarce.",
+      "product_mechanism": "rental-vs-labor-vs-purchase scenario calculator with peak-window demand, shift hours, case weights, throughput, rental term and payback/constraint comparison",
+      "one_sentence_concept": "A Seasonal Automation Planner that tells processors how many rental robots they need and whether rental beats labor or purchase.",
+      "why_now": "Pearl Crop reported using six rented robots for a two-month harvest concentration and immediate throughput/safety benefits.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 300,
+      "draft_canonical_key": "seasonal-processor|choose-rental-robot-vs-labor-vs-purchase|peak-automation-scenario-planner",
+      "evidence_notes": {
+        "source_fact": "Food Engineering case study fully read.",
+        "trakya_transferability_hypothesis": "Food/agri processing and seasonal production workflows are transferable to Trakya; specific Lüleburgaz pilot sectors need fresh local validation."
+      }
+    },
+    {
+      "raw_id": "w1-004",
+      "supporting_article_ids": [
+        "1ad6a7ab7e8a6a24d8d694ef"
+      ],
+      "supporting_article_titles": [
+        "Cargo thieves are ‘laundering freight’ through the supply chain, Cornell warns"
+      ],
+      "supporting_sources": [
+        "FreightWaves"
+      ],
+      "canonical_source_urls": [
+        "https://www.freightwaves.com/news/cargo-thieves-are-laundering-freight-through-the-supply-chain-cornell-warns"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Cargo theft increasingly uses document/identity changes across cross-docks and transfers; an auditable chain of changes to commodity descriptions, BOLs and seals can expose laundering patterns.",
+      "delta_types": [
+        "RISK_DELTA",
+        "DATA_DELTA",
+        "PROCESS_DELTA"
+      ],
+      "affected_workflow": "load tender → pickup → cross-dock/transfer → BOL/commodity/seal changes → port/export → buyer receipt",
+      "target_customer": "3PLs, shippers, freight brokers, warehouses and cargo insurers",
+      "buyer": "security/risk manager, logistics director or claims investigator",
+      "job_to_be_done": "detect suspicious shipment identity changes and preserve an auditable custody trail",
+      "current_friction": "A stolen load can be repeatedly transferred and re-papered until legitimate buyers cannot recognize its origin; each document change breaks visibility.",
+      "product_mechanism": "shipment identity ledger that fingerprints load attributes and flags changes in BOL, commodity description, carrier/broker, seal, cross-dock and custody events; supports QR/scannable verification and case evidence export",
+      "one_sentence_concept": "A Freight Identity Ledger that flags when a shipment’s paperwork and custody mutate in ways consistent with cargo laundering.",
+      "why_now": "FreightWaves reported TAPA expert Scott Cornell describing freight laundering and explicitly pointing to digital bills of lading and auditable description changes as a countermeasure.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 440,
+      "draft_canonical_key": "shipper-3pl|detect-cargo-identity-laundering|shipment-document-custody-change-ledger",
+      "evidence_notes": {
+        "source_fact": "FreightWaves article fully read; mechanism and proposed digital trail are explicit.",
+        "trakya_transferability_hypothesis": "Trakya's road freight, warehouses and European export corridor make the workflow potentially relevant; local theft/problem evidence must be validated."
+      }
+    },
+    {
+      "raw_id": "w1-005",
+      "supporting_article_ids": [
+        "4c34912f1b77f8b223184890"
+      ],
+      "supporting_article_titles": [
+        "USPS, Amazon partner on same-day delivery pilot"
+      ],
+      "supporting_sources": [
+        "Supply Chain Dive"
+      ],
+      "canonical_source_urls": [
+        "https://www.supplychaindive.com/news/usps-amazon-partner-on-same-day-delivery-pilot/831647/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "A second midday injection into an incumbent last-mile network allows orders placed later in the day to qualify for same-day service, creating a capacity/cutoff orchestration problem.",
+      "delta_types": [
+        "DISTRIBUTION_DELTA",
+        "SPEED_DELTA",
+        "INFRASTRUCTURE_DELTA"
+      ],
+      "affected_workflow": "order cutoff → midday injection → facility sort capacity → route allocation → same-day delivery window",
+      "target_customer": "regional parcel carriers, retailers and 3PLs operating same-day networks",
+      "buyer": "last-mile operations manager",
+      "job_to_be_done": "model extra same-day injection windows without overloading sort/route capacity",
+      "current_friction": "Adding later cutoffs changes facility volume caps, route requirements and dispatch windows; spreadsheet planning can hide infeasible promises.",
+      "product_mechanism": "same-day injection scenario planner using cutoff, drop time, facility cap, route count, driver capacity and delivery window to test service promises",
+      "one_sentence_concept": "A Same-Day Cutoff Simulator for carriers and retailers adding midday injection waves to existing last-mile networks.",
+      "why_now": "USPS/Amazon pilot adds a 12–1 p.m. injection with explicit facility volume and route caps for 2–8 p.m. delivery.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 280,
+      "draft_canonical_key": "last-mile-operator|test-extra-same-day-injection-window|cutoff-capacity-route-scenario-planner",
+      "evidence_notes": {
+        "source_fact": "Supply Chain Dive article fully read.",
+        "trakya_transferability_hypothesis": "Transferable to regional delivery/3PL operations but no Lüleburgaz-specific evidence in assigned material."
+      }
+    },
+    {
+      "raw_id": "w1-006",
+      "supporting_article_ids": [
+        "1ee5019615a416b53e93e5dc"
+      ],
+      "supporting_article_titles": [
+        "Mars hikes sustainably sourced cocoa but falls short of 2025 100% goal"
+      ],
+      "supporting_sources": [
+        "Supply Chain Dive"
+      ],
+      "canonical_source_urls": [
+        "https://www.supplychaindive.com/news/mars-hikes-sustainably-sourced-cocoa-but-falls-short-of-2025-100-goal/831689/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Responsible-sourcing programs increasingly combine supplier sourcing percentages, land-conversion rules, farmer programs and disease/climate interventions, creating evidence reconciliation beyond a single certification field.",
+      "delta_types": [
+        "DATA_DELTA",
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "supplier program → sourced-volume evidence → farm/land criteria → intervention evidence → annual target reconciliation/report",
+      "target_customer": "food brands and ingredient importers with responsible-sourcing commitments",
+      "buyer": "sustainability/procurement manager",
+      "job_to_be_done": "reconcile supplier evidence against sourcing targets and explain gaps before annual reporting",
+      "current_friction": "Progress data spans supplier volumes, land-use criteria, farmer programs and interventions; annual target misses are discovered during reporting rather than continuously.",
+      "product_mechanism": "supplier evidence ledger with target denominator, verified-volume numerator, criteria checklist, gap forecast, intervention log and audit-ready annual evidence pack",
+      "one_sentence_concept": "A Responsible Sourcing Gap Ledger that continuously reconciles supplier evidence against public sourcing targets.",
+      "why_now": "Mars reported 98% responsible-sourcing coverage versus a 100% target and described multi-country supplier/farmer interventions.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 350,
+      "draft_canonical_key": "food-brand|reconcile-responsible-sourcing-target-evidence|supplier-target-gap-evidence-ledger",
+      "evidence_notes": {
+        "source_fact": "Supply Chain Dive article fully read.",
+        "trakya_transferability_hypothesis": "Transferable to food manufacturers/importers but local scope needs evidence."
+      }
+    },
+    {
+      "raw_id": "w1-007",
+      "supporting_article_ids": [
+        "806d8f202d0173b981bf67c3"
+      ],
+      "supporting_article_titles": [
+        "OpenAI apes AWS Marketplace while Anthropic remains stubbornly Microsoftian"
+      ],
+      "supporting_sources": [
+        "The Register"
+      ],
+      "canonical_source_urls": [
+        "https://www.theregister.com/columnists/2026/09/30/openai-apes-aws-marketplace-while-anthropic-remains-stubbornly-microsoftian/5300056"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AI model distribution is becoming a multi-provider marketplace problem rather than a single-cloud procurement decision, increasing the need to compare deployment/provider constraints.",
+      "delta_types": [
+        "DISTRIBUTION_DELTA",
+        "ACCESS_DELTA",
+        "BUSINESS_MODEL_DELTA"
+      ],
+      "affected_workflow": "AI use case → model choice → inference provider/marketplace → data/residency/cost constraints → approval → deployment",
+      "target_customer": "SMEs and enterprise AI/platform teams using multiple model/inference providers",
+      "buyer": "AI platform lead, solution architect or procurement lead",
+      "job_to_be_done": "document and compare model-provider deployment choices without locking evaluation to one marketplace",
+      "current_friction": "The same model ecosystem can be exposed through different inference providers and marketplaces, while teams track price, region, data handling and contractual constraints manually.",
+      "product_mechanism": "vendor-neutral model deployment decision register with model/provider matrix, residency/contract fields, evaluation evidence and approval trail",
+      "one_sentence_concept": "A Model Deployment Decision Desk that separates model choice from inference-provider and marketplace choice.",
+      "why_now": "The Register reported OpenAI expanding a marketplace approach including third-party inference provider Baseten, highlighting provider-neutral distribution.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 320,
+      "draft_canonical_key": "enterprise-ai-team|choose-model-and-inference-provider-separately|provider-neutral-deployment-decision-register",
+      "evidence_notes": {
+        "source_fact": "The Register article verified; opportunity is an inference from distribution fragmentation."
+      }
+    },
+    {
+      "raw_id": "w1-008",
+      "supporting_article_ids": [
+        "d9bfe306173a15a9cd596365"
+      ],
+      "supporting_article_titles": [
+        "Bayer invests €30 million in its Villefranche-sur-Saône factory"
+      ],
+      "supporting_sources": [
+        "L'Usine Nouvelle"
+      ],
+      "canonical_source_urls": [
+        "https://www.usinenouvelle.com/quotidien-des-usines/le-site-francais-a-ete-prefere-a-une-unite-allemande-pour-lutter-contre-la-concurrence-chinoise-bayer-investit-30-millions-deuros-dans-son-usine-de-villefranche-sur-saone.O7V2HGK25BFMDJ74FUA4EXWD2Y.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Manufacturing footprint investment decisions increasingly hinge on comparing sites under global cost/competition pressure, creating a structured pre-capex evidence problem.",
+      "delta_types": [
+        "COST_DELTA",
+        "INFRASTRUCTURE_DELTA",
+        "BUSINESS_MODEL_DELTA"
+      ],
+      "affected_workflow": "capacity need → candidate site comparison → labor/energy/logistics/qualification constraints → capex case → investment approval",
+      "target_customer": "multi-site manufacturers and industrial groups",
+      "buyer": "industrial strategy, operations finance or plant-network manager",
+      "job_to_be_done": "build a repeatable evidence-based comparison for which existing site should receive incremental capex",
+      "current_friction": "Site-investment cases are assembled in bespoke spreadsheets and presentations, making assumptions and non-financial constraints hard to compare or audit across plants.",
+      "product_mechanism": "multi-site capex decision ledger with weighted cost, capacity, labor, energy, logistics, regulatory and strategic criteria plus scenario/sensitivity report",
+      "one_sentence_concept": "A Plant Capex Site Comparator that standardizes the evidence behind which existing factory wins the next investment.",
+      "why_now": "L'Usine Nouvelle reported Bayer choosing its French site over a German unit for a €30m investment amid Chinese competitive pressure.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 300,
+      "draft_canonical_key": "multi-site-manufacturer|choose-site-for-incremental-capex|plant-investment-scenario-decision-ledger",
+      "evidence_notes": {
+        "source_fact": "L'Usine Nouvelle article verified; opportunity is a generalized workflow inference.",
+        "trakya_transferability_hypothesis": "Multi-site industrial companies and suppliers in Trakya could use the same capex comparison workflow; local evidence needed before assigning Lüleburgaz."
+      }
+    }
+  ]
+}
