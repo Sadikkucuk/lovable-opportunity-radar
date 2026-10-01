@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-01",
+  "worker_id": "2",
+  "source_batch_index_generated_at": "2026-10-01T07:10:13Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "status": "complete",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 6,
+  "original_articles_verified": 5,
+  "full_article_not_verified": 1,
+  "noise_or_no_opportunity_count": 234,
+  "raw_opportunity_count": 5,
+  "raw_opportunities": [
+    {
+      "raw_id": "rw2-001",
+      "supporting_article_ids": [
+        "fc8cee6f39fff16a99f36213"
+      ],
+      "supporting_article_titles": [
+        "Azure maintenance disrupted hybrid clouds and VPNs"
+      ],
+      "supporting_sources": [
+        "The Register"
+      ],
+      "canonical_source_urls": [
+        "https://www.theregister.com/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Cloud maintenance can cascade into hybrid connectivity and dependent services.",
+      "delta_types": [
+        "infrastructure",
+        "resilience"
+      ],
+      "affected_workflow": "planned cloud maintenance readiness",
+      "target_customer": "SMBs with hybrid cloud dependencies",
+      "buyer": "IT operations lead",
+      "job_to_be_done": "map maintenance dependencies and prepare rollback/continuity actions",
+      "current_friction": "maintenance notices are not connected to business dependencies",
+      "product_mechanism": "dependency map plus maintenance impact and readiness checklist",
+      "one_sentence_concept": "Hybrid-cloud maintenance impact desk.",
+      "why_now": "Recent maintenance disruption exposed cross-service dependency risk.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 330,
+      "draft_canonical_key": "hybrid-cloud-smb|prepare-for-cloud-maintenance-impact|dependency-readiness-desk",
+      "evidence_notes": "Candidate article corroborated; primary incident details require validation."
+    },
+    {
+      "raw_id": "rw2-002",
+      "supporting_article_ids": [
+        "cb2a3a2b73424649522b49e8"
+      ],
+      "supporting_article_titles": [
+        "AI agent permissions still use shared keys"
+      ],
+      "supporting_sources": [
+        "VentureBeat"
+      ],
+      "canonical_source_urls": [
+        "https://venturebeat.com/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Agent adoption is outpacing identity design, leaving shared human credentials in machine workflows.",
+      "delta_types": [
+        "security",
+        "identity",
+        "governance"
+      ],
+      "affected_workflow": "AI agent credential provisioning",
+      "target_customer": "SMB teams operating AI agents across SaaS tools",
+      "buyer": "CTO / security lead",
+      "job_to_be_done": "inventory each agent identity, credential owner, permissions and rotation evidence",
+      "current_friction": "shared keys obscure which agent can do what and who owns access",
+      "product_mechanism": "agent identity and credential ownership ledger with permission review workflow",
+      "one_sentence_concept": "Agent credential ownership and permission-review desk.",
+      "why_now": "Agentic workflows increasingly act across enterprise systems while identity controls remain human-centric.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 370,
+      "draft_canonical_key": "smb-agent-operator|control-agent-credentials-permissions|identity-owner-review-ledger",
+      "evidence_notes": "Full candidate article reviewed in discovery context."
+    },
+    {
+      "raw_id": "rw2-003",
+      "supporting_article_ids": [
+        "4154cfcd588a2a4523b9d143"
+      ],
+      "supporting_article_titles": [
+        "AI did it is no defense in software-agent dispute"
+      ],
+      "supporting_sources": [
+        "Ars Technica"
+      ],
+      "canonical_source_urls": [
+        "https://arstechnica.com/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Agent actions can create externally attributable legal/security incidents even when autonomous.",
+      "delta_types": [
+        "liability",
+        "security",
+        "auditability"
+      ],
+      "affected_workflow": "external AI-agent action authorization and incident reconstruction",
+      "target_customer": "small software companies using coding or browsing agents",
+      "buyer": "engineering lead / security lead",
+      "job_to_be_done": "reconstruct which agent action, authorization and credential produced an external change",
+      "current_friction": "agent action logs and human approvals are fragmented",
+      "product_mechanism": "external-action authorization and evidence timeline",
+      "one_sentence_concept": "Agent external-action accountability ledger.",
+      "why_now": "Legal disputes increasingly test responsibility for autonomous agent actions.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 400,
+      "draft_canonical_key": "software-team|reconstruct-agent-external-actions|authorization-evidence-timeline",
+      "evidence_notes": "Article reviewed; liability interpretation reserved for validation."
+    },
+    {
+      "raw_id": "rw2-004",
+      "supporting_article_ids": [
+        "0bb997a7d04ecc2f40b0a553"
+      ],
+      "supporting_article_titles": [
+        "Reddit ending public API access and RSS feeds because of AI bots"
+      ],
+      "supporting_sources": [
+        "TechCrunch"
+      ],
+      "canonical_source_urls": [
+        "https://techcrunch.com/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Public data sources can abruptly restrict feeds/API access in response to AI scraping.",
+      "delta_types": [
+        "data-access",
+        "platform-policy"
+      ],
+      "affected_workflow": "third-party data-source dependency management",
+      "target_customer": "small products relying on public feeds or APIs",
+      "buyer": "product / engineering lead",
+      "job_to_be_done": "know which product features break when a source changes access terms and prepare substitutes",
+      "current_friction": "source dependencies are embedded in code and discovered only after breakage",
+      "product_mechanism": "external-source dependency register with policy-change impact and migration checklist",
+      "one_sentence_concept": "External data-source dependency and policy-change desk.",
+      "why_now": "Major platforms are tightening machine access as AI bot traffic grows.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 310,
+      "draft_canonical_key": "data-dependent-smb|manage-external-source-access-change|dependency-policy-migration-desk",
+      "evidence_notes": "TechCrunch candidate article reviewed."
+    },
+    {
+      "raw_id": "rw2-005",
+      "supporting_article_ids": [
+        "a5133dc6fcf34310edb35061"
+      ],
+      "supporting_article_titles": [
+        "Universal Robots launches Gen 7 AI-ready industrial automation platform"
+      ],
+      "supporting_sources": [
+        "Machine Design"
+      ],
+      "canonical_source_urls": [
+        "https://www.machinedesign.com/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Industrial robot platforms are becoming AI-ready, increasing retrofit/integration choices for smaller factories.",
+      "delta_types": [
+        "automation",
+        "manufacturing",
+        "capability"
+      ],
+      "affected_workflow": "industrial automation retrofit planning",
+      "target_customer": "SMB manufacturers evaluating robot-cell upgrades",
+      "buyer": "plant engineering / operations manager",
+      "job_to_be_done": "compare retrofit versus replacement and document integration dependencies before procurement",
+      "current_friction": "robot, safety, tooling and software dependencies are assessed manually",
+      "product_mechanism": "robot-cell retrofit readiness matrix and decision record",
+      "one_sentence_concept": "Robot-cell retrofit readiness desk for smaller manufacturers.",
+      "why_now": "New AI-ready robot generations increase upgrade paths and integration complexity.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 350,
+      "draft_canonical_key": "smb-manufacturer|assess-robot-cell-retrofit-readiness|dependency-decision-matrix",
+      "evidence_notes": {
+        "trakya_transferability_hypothesis": "Manufacturing plants in the Trakya industrial corridor plausibly face reusable robot-cell retrofit and integration decisions; local presence requires validation."
+      }
+    }
+  ]
+}
