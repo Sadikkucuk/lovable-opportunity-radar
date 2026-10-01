@@ -1,0 +1,295 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-01",
+  "worker_id": "4",
+  "source_batch_index_generated_at": "2026-10-01T00:32:19Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "status": "complete",
+  "started_at": "2026-10-01T07:04:40+03:00",
+  "completed_at": "2026-10-01T07:18:00+03:00",
+  "feed_items_expected": 280,
+  "feed_items_triaged": 280,
+  "candidate_article_count": 7,
+  "original_articles_verified": 7,
+  "full_article_not_verified": 0,
+  "noise_or_no_opportunity_count": 273,
+  "raw_opportunity_count": 7,
+  "raw_opportunities": [
+    {
+      "raw_id": "w4-20261001-001",
+      "supporting_article_ids": [
+        "deae0180c480d0a65bfeaa1f"
+      ],
+      "supporting_article_titles": [
+        "Wie KI-Agenten die Instandhaltung verändern können"
+      ],
+      "supporting_sources": [
+        "Produktion"
+      ],
+      "canonical_source_urls": [
+        "https://www.produktion.de/mediathek/wie-ki-agenten-die-instandhaltung-veraendern-koennen/2742385"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Bakım arıza bildirimlerinde çeviri, sınıflandırma, önceliklendirme, ekip atama ve doküman/operatör yükümlülüğü hazırlığı tek tek insan koordinasyonundan agent destekli çok-adımlı hazırlığa kayıyor.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "LABOR_DELTA",
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "Arıza bildirimi → triage → öncelik → ekip/uzman atama → doküman/yedek parça bilgisi → insan onayı → bakım aksiyonu",
+      "target_customer": "orta ölçekli üretim tesisleri ve endüstriyel bakım ekipleri",
+      "buyer": "bakım müdürü / teknik işletme müdürü",
+      "job_to_be_done": "Dağınık arıza bildirimlerini standartlaştırıp doğru bakım ekibine hızlı ve izlenebilir biçimde yönlendirmek",
+      "current_friction": "Çok dilli serbest metin bildirimler, dağınık dokümanlar ve emekli olan çalışanlarla kaybolan tecrübe triage ve koordinasyonu yavaşlatıyor.",
+      "product_mechanism": "CMMS yerine geçmeyen bakım intake + triage + knowledge-prep web katmanı; kullanıcı bildirimi ve asset listesinden standart iş emri taslağı, öncelik, ekip önerisi ve kaynak paketi üretir, son aksiyonu insana bırakır.",
+      "one_sentence_concept": "KOBİ fabrikalar için arıza bildirimini insan onaylı bakım iş paketine dönüştüren hafif agentic maintenance desk.",
+      "why_now": "Produktion 30 Eylül 2026'da AI agentlarının bakım bildirimlerini çevirebildiğini, kategorize/önceliklendirebildiğini ve ekibe atayabildiğini; artan yazılım karmaşıklığı ve bilgi kaybının bakım yükünü büyüttüğünü aktardı.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 420,
+      "draft_canonical_key": "mid-size-manufacturer|standardize-maintenance-intake-and-triage|human-approved-agentic-maintenance-desk",
+      "evidence_notes": {
+        "source_fact": "Produktion article verified directly.",
+        "trakya_transferability_hypothesis": "Trakya/Lüleburgaz üretim tesislerinde bakım, arıza triage ve tecrübe bilgisinin korunması aynı workflow problemidir; yerel pilot hipotezi merge/validation aşamasında somut yerel sektör kanıtıyla doğrulanmalı."
+      }
+    },
+    {
+      "raw_id": "w4-20261001-002",
+      "supporting_article_ids": [
+        "bb8402e965e07cadd0255988"
+      ],
+      "supporting_article_titles": [
+        "行业热点丨一文读懂欧盟数字电池护照的挑战与落地方案"
+      ],
+      "supporting_sources": [
+        "OFweek"
+      ],
+      "canonical_source_urls": [
+        "https://batterydays.com/news/2026-W32/",
+        "https://industrialdigitaltwin.org/en/news-dates/digital-battery-passport-open-standard-provides-investment-and-implementation-security-7404"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "EU Digital Product Passport Registry'nin canlıya alınması ve 18 Şubat 2027 batarya pasaportu zorunluluğunun yaklaşması, batarya tedarikçilerinin veri-hazırlık ve passport issuance readiness'ını teorik uyumdan operasyonel onboarding problemine dönüştürüyor.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "DATA_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "Batarya/SKU → tedarikçi veri talebi → zorunlu alan eşleme → eksik veri → passport-ready dataset → registry/issuer handoff → audit evidence",
+      "target_customer": "AB'ye batarya, EV/LMT veya 2 kWh üzeri endüstriyel batarya ihraç eden üretici ve ithalatçılar",
+      "buyer": "sürdürülebilirlik / compliance / kalite / ihracat yöneticisi",
+      "job_to_be_done": "Her batarya/SKU için zorunlu DPP verisinin eksiksiz olup olmadığını sevkiyat öncesi kanıtlamak",
+      "current_friction": "Tedarikçi verileri Excel/e-posta/dokümanlarda dağınık; zorunlu alanların sahipliği ve eksikler geç fark ediliyor.",
+      "product_mechanism": "Passport issuer olmadan önce çalışan readiness ledger: ürün/SKU bazlı zorunlu alan matrisi, supplier request, evidence link, missing-field queue ve exportable readiness pack.",
+      "one_sentence_concept": "AB batarya pasaportu için tedarikçi verisini passport-ready hale getiren pre-registry readiness workspace.",
+      "why_now": "DPP Registry Temmuz 2026'da operasyonel oldu; batarya pasaportu 18 Şubat 2027'de zorunlu hale geliyor ve açık AAS/SAMM veri modeli uygulanabilir bir temel sunuyor.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 430,
+      "draft_canonical_key": "eu-battery-exporter|prepare-battery-passport-data-before-registry|supplier-data-readiness-ledger",
+      "evidence_notes": {
+        "source_fact": "Feed signal corroborated with BatteryDays and IDTA; competition is intentionally not researched in discovery."
+      }
+    },
+    {
+      "raw_id": "w4-20261001-003",
+      "supporting_article_ids": [
+        "e0f5e425737ffe2071f1ebfd"
+      ],
+      "supporting_article_titles": [
+        "Japan court rules voice is protected as publicity right in AI cloning case"
+      ],
+      "supporting_sources": [
+        "Nikkei Asia"
+      ],
+      "canonical_source_urls": [
+        "https://www.nippon.com/en/news/yjj2026093000118/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Tokyo District Court'un insan sesini publicity-right koruması kapsamında tanıması, AI voice kullanımında sadece dosya/asset yönetimini değil rıza, kapsam, süre ve ticari kullanım kanıtını izleme ihtiyacını güçlendirdi.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "Ses sahibi → consent/license → izin verilen model/kampanya/kapsam → üretim → yayın → süre/geri çekme → kullanım kanıtı",
+      "target_customer": "AI voice kullanan ajanslar, içerik stüdyoları, oyun/anime yapımcıları ve voice talent temsilcileri",
+      "buyer": "prodüksiyon yöneticisi / legal ops / talent manager",
+      "job_to_be_done": "Bir AI voice assetinin nerede, hangi izinle ve hangi süreyle kullanılabildiğini yayın öncesi kanıtlamak",
+      "current_friction": "Rıza ve lisans belgeleri sözleşme/e-posta klasörlerinde; üretilen kliplerle izin kapsamı arasında izlenebilir bağ kurulması zor.",
+      "product_mechanism": "Voice consent registry + permitted-use matrix + asset-to-consent linkage + expiry/revocation queue + evidence export.",
+      "one_sentence_concept": "AI ses klonlama kullanımını rıza ve lisans kapsamına bağlayan voice-rights evidence ledger.",
+      "why_now": "30 Eylül 2026 kararı Japonya'da ilk kez kişinin sesini publicity rights kapsamında korunan kişilik sembolü olarak tanıdı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 360,
+      "draft_canonical_key": "ai-voice-content-producer|prove-consent-and-license-scope-for-synthetic-voice|voice-rights-evidence-ledger",
+      "evidence_notes": {
+        "source_fact": "Court development corroborated by Jiji/Nippon.com; jurisdiction-specific legal interpretation must be validated later."
+      }
+    },
+    {
+      "raw_id": "w4-20261001-004",
+      "supporting_article_ids": [
+        "22143e9cb44e2a04d85d01a3"
+      ],
+      "supporting_article_titles": [
+        "Lisanssız Elektrik Üretim Tesisleri ve İlişkili Olduğu Tüketim Tesislerinin Mahsuplaşma İşlemlerine İlişkin Usul ve Esaslar"
+      ],
+      "supporting_sources": [
+        "Resmi Gazete"
+      ],
+      "canonical_source_urls": [
+        "https://www.iso.org.tr/duyurular/resm%C3%AE-gazete/lisanssiz-elektrik-uretim-tesisleri-ve-iliskili-oldugu-tuketim-tesislerinin-mahsuplasma-islemlerine-iliskin-usul-ve-esaslar-yayimlandi/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Türkiye'de lisanssız üretim/tüketim mahsuplaşmasının saatlik ve vergi kimlik numarası bazlı kurallarla yürütülmesi, çok tesisli öz-tüketim işletmelerinde aylık toplam yerine saatlik veri mutabakatı ve açıklanabilir fark analizi ihtiyacını artırıyor.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "DATA_DELTA",
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "Saatlik üretim + saatlik tüketim → tesis/VKN eşleme → mahsuplaşma simülasyonu → beklenen sonuç → piyasa/fatura sonucu → fark/reconciliation",
+      "target_customer": "Türkiye'de lisanssız GES ve ilişkili tüketim tesisi bulunan çok tesisli işletmeler",
+      "buyer": "enerji yöneticisi / finans kontrol / tesis yöneticisi",
+      "job_to_be_done": "Saatlik mahsuplaşma sonucunu fatura gelmeden simüle edip beklenen-gerçekleşen farkını açıklamak",
+      "current_friction": "Üretim, tüketim, tesis eşleşmesi ve finansal sonuç farklı dosya/sistemlerde; saatlik baz manuel Excel kontrolünü büyütüyor.",
+      "product_mechanism": "CSV tabanlı saatlik üretim-tüketim ledger'ı; VKN/tesis ilişkilendirme, kural bazlı mahsuplaşma simülasyonu, exception queue ve reconciliation report.",
+      "one_sentence_concept": "Türkiye lisanssız enerji tesisleri için saatlik mahsuplaşma ön-kontrol ve reconciliation masası.",
+      "why_now": "2026 düzenlemeleri aylık yaklaşım yerine saatlik mahsuplaşmayı ve piyasa işletmecisi süreçlerini netleştirdi.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "turkiye-unlicensed-generation-owner|reconcile-hourly-generation-consumption-offset|hourly-settlement-ledger",
+      "evidence_notes": {
+        "source_fact": "2026 EPDK framework corroborated via ISO and legal summaries.",
+        "trakya_transferability_hypothesis": "Çatı/arazi GES kullanan Trakya sanayi işletmeleri için doğrudan uygulanabilir; Lüleburgaz scope ancak yerel tesis kanıtı validation'da doğrulanır."
+      }
+    },
+    {
+      "raw_id": "w4-20261001-005",
+      "supporting_article_ids": [
+        "a208543097c59285dcce9028"
+      ],
+      "supporting_article_titles": [
+        "マクニカとGMOサイバーセキュリティ byイエラエ、中小製造業の製品セキュリティを支援する「monosec360」を提供"
+      ],
+      "supporting_sources": [
+        "Impress Watch"
+      ],
+      "canonical_source_urls": [
+        "https://www.macnica.co.jp/public-relations/news/2026/150505/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Ürün güvenliği/CRA/IEC 62443 pratikleri danışmanlık bilgisinden web tabanlı şablon, maturity assessment, threat analysis ve issue-management workflow'una ürünleşiyor; bu, KOBİ üreticilerde PSIRT readiness işinin standardize edilebilir olduğunu gösteriyor.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "STANDARDIZATION_DELTA",
+        "ACCESS_DELTA"
+      ],
+      "affected_workflow": "Ürün → security maturity → sorumluluk/PSIRT → threat/risk kayıtları → vulnerability issue → evidence → sürekli iyileştirme",
+      "target_customer": "bağlantılı ürün veya endüstriyel ekipman geliştiren KOBİ üreticiler",
+      "buyer": "kalite müdürü / ürün geliştirme müdürü / bilgi güvenliği sorumlusu",
+      "job_to_be_done": "Ürün güvenliği sorumluluklarını ve kanıtlarını danışmanlık projesi olmadan düzenli bir workflow içinde yürütmek",
+      "current_friction": "Uzman personel ve know-how eksikliği; PSIRT, threat analysis, vulnerability handling ve mevzuat kanıtları kişilere bağımlı.",
+      "product_mechanism": "Ürün bazlı security-readiness checklist, PSIRT role matrix, threat/issues ledger, evidence repository ve recurring improvement queue.",
+      "one_sentence_concept": "KOBİ üreticiler için hafif product-security readiness ve evidence workspace.",
+      "why_now": "Macnica ve GMO'nun 29 Eylül 2026'da monosec360'ı piyasaya sürmesi, KOBİ üretimde bu workflow'un somut ve ürünleştirilebilir bir ihtiyaç olduğunu doğruluyor.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 410,
+      "draft_canonical_key": "sme-connected-product-manufacturer|run-product-security-readiness-and-evidence|psirt-readiness-workspace",
+      "evidence_notes": {
+        "source_fact": "Macnica primary release verified.",
+        "trakya_transferability_hypothesis": "Trakya'daki makine/otomotiv yan sanayi/elektrikli ürün üreticilerine transfer edilebilir; doğrudan rakip araştırması final validation'a bırakıldı."
+      }
+    },
+    {
+      "raw_id": "w4-20261001-006",
+      "supporting_article_ids": [
+        "93f133fd77add59e3ccad921"
+      ],
+      "supporting_article_titles": [
+        "공공부문 44% 'AI 도입 성과 공백'…“진단체계 혁신해야”"
+      ],
+      "supporting_sources": [
+        "ETNews"
+      ],
+      "canonical_source_urls": [
+        "https://www.etnews.com/20260930000417"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AI kullanımı yaygınlaşırken kurumların %44,2'sinde nicel sonuç bulunmaması/ölçülmemesi, adoption metriğinden workflow-outcome ölçümüne geçiş ihtiyacını görünür kılıyor.",
+      "delta_types": [
+        "BEHAVIOR_DELTA",
+        "DATA_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "AI use case → baseline → kullanım → iş sonucu/KPI → kanıt → periyodik değerlendirme → devam/durdur/iyileştir kararı",
+      "target_customer": "AI araçlarını departmanlara dağıtmış kamu kurumları ve orta/büyük işletmeler",
+      "buyer": "CIO / dönüşüm ofisi / AI governance / PMO",
+      "job_to_be_done": "AI lisansı ve kullanım sayısı yerine her use case'in gerçek iş sonucunu kanıtlamak",
+      "current_friction": "AI adoption sayılıyor fakat baseline, KPI sahibi, ölçüm periyodu ve kanıt aynı yerde tutulmadığı için değer üretimi gösterilemiyor.",
+      "product_mechanism": "AI use-case registry + baseline/KPI contract + monthly evidence capture + before/after outcome + continue/stop/scale review board.",
+      "one_sentence_concept": "Kurumsal AI use-case'lerini kullanım oranından iş sonucuna bağlayan AI value realization ledger.",
+      "why_now": "ETNews'in 30 Eylül 2026 araştırmasında 43 kamu kuruluşunun %90,7'si AI kullanırken %44,2'sinde nicel performans bulunmadığı veya ayrıca ölçülmediği bildirildi.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 350,
+      "draft_canonical_key": "organization-with-ai-use-cases|prove-business-outcomes-from-ai-adoption|ai-value-realization-ledger",
+      "evidence_notes": {
+        "source_fact": "ETNews article directly verified; 43 organizations, 90.7% usage, 44.2% quantitative-performance gap."
+      }
+    },
+    {
+      "raw_id": "w4-20261001-007",
+      "supporting_article_ids": [
+        "374e962316a264f3286ccb14",
+        "dae148b227c1dee19d657930"
+      ],
+      "supporting_article_titles": [
+        "OpenAI startet Dots: Dauerhaft aktive KI-Agenten mit eigenem Cloud-Computer",
+        "OpenAI'dan verilen görevler üzerinde 7/24 çalışabilen kişisel yapay zeka agent'ı: Dots"
+      ],
+      "supporting_sources": [
+        "Heise",
+        "Webrazzi"
+      ],
+      "canonical_source_urls": [
+        "https://www.macrumors.com/2026/09/29/openai-launches-dots/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Always-on agentların kendi cloud computer/browser'ı, binlerce app bağlantısı ve sürekli arka plan çalışması, tek seferlik chatbot kullanımından kalıcı delegated-work yönetimine geçiş yaratıyor; işletmeler için görev sınırı, approval ve sonuç denetimi ayrı bir operasyon problemi oluyor.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "WORKFLOW_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Delegated goal → izin/rule set → sürekli agent execution → approval checkpoint → deliverable → human review → audit trail",
+      "target_customer": "always-on AI agent kullanan küçük ekipler ve ajanslar",
+      "buyer": "operasyon lideri / ekip yöneticisi / AI governance owner",
+      "job_to_be_done": "Sürekli çalışan agentlara hangi görevlerin verildiğini, hangi onayların gerektiğini ve hangi çıktının kabul edildiğini tek yerde denetlemek",
+      "current_friction": "Agent çalışması sohbet/task akışlarında dağınık; ownership, approval SLA, exception ve deliverable acceptance ekip seviyesinde görünmez kalabilir.",
+      "product_mechanism": "Vendor-independent delegated-work register: goal, owner, allowed actions, approval gates, exception queue, deliverable acceptance ve audit export; agentı çalıştırmaz, yönetişim katmanı olur.",
+      "one_sentence_concept": "Always-on AI agent ekipleri için delegation, approval ve deliverable-control workspace.",
+      "why_now": "OpenAI Dots 29 Eylül 2026'da always-on cloud-computer agent modeliyle duyuruldu; 4.000+ app bağlantısı ve custom approval rules sürekli delegated work'ü ana akıma taşıyor.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 330,
+      "draft_canonical_key": "team-using-always-on-ai-agents|govern-delegated-agent-work-and-approvals|agent-delegation-control-ledger",
+      "evidence_notes": {
+        "source_fact": "Feed signals corroborated with current Dots coverage; this is governance/workflow discovery, not a claim of direct integration."
+      }
+    }
+  ]
+}
