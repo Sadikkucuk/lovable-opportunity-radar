@@ -2179,97 +2179,284 @@
     {
       "canonical_key": "data-dependent-smb|manage-external-source-access-change|dependency-policy-migration-desk",
       "idea_name": "SourceShift — Veri Kaynağı Değişim Masası",
-      "core_job": "Harici API, feed veya veri kaynağının erişim/politika değişikliğinde hangi ürün özelliklerinin etkileneceğini ve hangi alternatif kaynağa geçileceğini yönetmek.",
-      "target_customer": "Harici API, RSS veya açık veri kaynaklarına bağımlı küçük yazılım ürünleri",
-      "product_mechanism": "kaynak bağımlılık kaydı + politika değişikliği etki analizi + alternatif kaynak/migration checklist",
-      "first_reported_at": "2026-10-01",
-      "last_seen_at": "2026-10-01",
-      "times_seen": 1,
-      "status": "competition_not_verified",
-      "source_titles": [
-        "Reddit ending public API access and RSS feeds because of AI bots"
-      ],
-      "source_urls": [
+      "scope_tier": "Dünya",
+      "scope_reason": "Harici API, RSS ve veri erişim politikası değişiklikleri coğrafyadan bağımsız dijital ürün problemidir.",
+      "news_source": "TechCrunch",
+      "news_title": "Reddit ending public API access and RSS feeds because of AI bots",
+      "news_date": "2026-10-01",
+      "news_url": "https://techcrunch.com/",
+      "source_links": [
         "https://techcrunch.com/"
       ],
-      "last_known_turkiye_direct_competitors": 0,
-      "last_known_global_direct_competitors": 1
+      "core_idea": "Harici veri kaynağının API, RSS, lisans veya erişim politikası değiştiğinde etkilenen ürün özelliklerini, alternatif kaynakları ve geçiş işlerini tek yerde yöneten bağımlılık değişim masası.",
+      "user_story": "Harici veri kaynaklarına bağımlı bir yazılım işletmesi olarak bir kaynak erişimini veya politikasını değiştirdiğinde hangi özelliklerimin etkilendiğini ve hangi alternatife nasıl geçeceğimi görmek istiyorum; böylece hizmet kesintisini azaltabilirim.",
+      "before_state": "Kaynak bağımlılıkları kod, doküman ve ekip hafızasına dağılmıştır; politika değişikliği geldiğinde etki manuel araştırılır.",
+      "after_state": "Kaynak → özellik bağımlılıkları kayıtlıdır; değişiklik etki analizi, alternatif kaynak ve migration checklist üretir.",
+      "why_now": "AI crawler baskısı, API erişim kısıtları ve veri lisanslama değişiklikleri dış veri bağımlılığını operasyonel risk haline getiriyor.",
+      "buyer": "CTO / ürün sahibi",
+      "market": "Global SaaS ve veri tabanlı KOBİ yazılımları",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 1,
+      "direct_competitors": [
+        {
+          "name": "API Dependency Monitor",
+          "url": "https://github.com/ApiDepWatch/API-Dependency-Monitor"
+        }
+      ],
+      "adjacent_competitors": [
+        "API monitoring",
+        "vendor status monitoring"
+      ],
+      "market_gap": "Teknik API diff araçlarından farklı olarak erişim/politika değişikliğini ürün etkisi ve migration kararıyla birleştiren hafif operasyon katmanı.",
+      "business_models": [
+        "Aylık SaaS aboneliği",
+        "Kaynak sayısına göre paket"
+      ],
+      "lovable_credits_total": 310,
+      "lovable_credit_breakdown": "UI 90 + veri modeli 60 + kural/etki akışı 90 + raporlama 40 + test 30",
+      "technologies": [
+        "Lovable",
+        "Supabase",
+        "GitHub",
+        "RSS/HTTP"
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Kaynak envanteri, özellik bağımlılık matrisi, değişiklik kaydı, etki seviyesi, alternatif kaynak ve migration görevleri.",
+      "working_logic": "Kaynak kaydedilir → bağlı özellikler eşlenir → erişim/politika değişikliği girilir → etkilenen özellikler çıkarılır → alternatif ve migration planı oluşturulur.",
+      "build_time": "5–8 gün",
+      "marketing_strategy": "API kullanan micro-SaaS ve veri ürünlerine founder-led outreach; erişim değişikliği yaşayan topluluklarda problem odaklı içerik.",
+      "first_customer_plan": "Birden fazla üçüncü taraf veri kaynağı kullanan 10 micro-SaaS ile ücretsiz dependency audit.",
+      "main_risk": "Genel API monitoring ürünleri özelliği genişletebilir.",
+      "validation_assumption": "Küçük ekipler teknik uptime izlemeden ayrı olarak iş etkisi ve migration planı için ödeme yapar.",
+      "evidence_strength": "medium",
+      "competition_confidence": "medium",
+      "verification_status": "competition_not_verified",
+      "last_updated_at": "2026-10-01",
+      "target_customer": "Harici API, RSS veya açık veri kaynaklarına bağımlı küçük yazılım ürünleri",
+      "status": "competition_not_verified",
+      "first_reported_at": "2026-10-01"
     },
     {
       "canonical_key": "research-lab|approve-sensitive-external-collaboration|collaborator-data-access-case-file",
       "idea_name": "Research Collaboration Guard — Araştırma İşbirliği Güvenlik Masası",
-      "core_job": "Hassas araştırma verisi veya teknoloji paylaşılmadan önce dış işbirlikçiyi, veri erişimini ve proje kapsamını tek bir onay dosyasında incelemek.",
-      "target_customer": "üniversite laboratuvarları ve küçük araştırma enstitüleri",
-      "product_mechanism": "işbirlikçi + proje kapsamı + veri erişimi + risk incelemesi + onay/ret + kanıt dosyası",
-      "first_reported_at": "2026-10-01",
-      "last_seen_at": "2026-10-01",
-      "times_seen": 1,
-      "status": "competition_not_verified",
-      "source_titles": [
-        "UK warns universities about research espionage targeting AI and technology"
-      ],
-      "source_urls": [
+      "scope_tier": "Dünya",
+      "scope_reason": "Araştırma güvenliği ve hassas veri/teknoloji işbirliği kontrolü uluslararası araştırma kuruluşlarının ortak problemidir.",
+      "news_source": "Reuters",
+      "news_title": "Research collaboration security scrutiny around sensitive technology",
+      "news_date": "2026-10-01",
+      "news_url": "https://www.reuters.com/",
+      "source_links": [
         "https://www.reuters.com/"
       ],
-      "last_known_turkiye_direct_competitors": 0,
-      "last_known_global_direct_competitors": 0
+      "core_idea": "Dış araştırma işbirliğini başlamadan önce işbirlikçi, proje kapsamı, hassas veri erişimi, paylaşılacak teknoloji ve onayları tek bir case file içinde değerlendiren hafif araştırma güvenliği masası.",
+      "user_story": "Bir araştırma laboratuvarı olarak dış kurum veya araştırmacıyla hassas çalışma başlatmadan önce kimlerin hangi veriye ve teknolojiye erişeceğini doğrulamak istiyorum; böylece işbirliğini izlenebilir bir kararla onaylayabilirim.",
+      "before_state": "Kontroller e-posta, form ve politika dokümanları arasında dağınıktır.",
+      "after_state": "Her işbirliği için taraflar, erişimler, riskler, kararlar ve kanıtlar tek dosyada tutulur.",
+      "why_now": "Hassas teknoloji ve araştırma işbirliklerine yönelik güvenlik incelemeleri artıyor.",
+      "buyer": "Araştırma güvenliği / teknoloji transfer ofisi yöneticisi",
+      "market": "Üniversiteler, araştırma enstitüleri, küçük Ar-Ge kuruluşları",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [
+        "Third-party risk platforms",
+        "institutional research-security workflows"
+      ],
+      "market_gap": "Kurumsal risk platformlarından daha dar, araştırma işbirliği onayına özel hafif case-file workflow.",
+      "business_models": [
+        "Kurum aboneliği",
+        "Aktif proje sayısına göre paket"
+      ],
+      "lovable_credits_total": 380,
+      "lovable_credit_breakdown": "UI 100 + case workflow 100 + risk matrisi 70 + evidence vault 70 + test 40",
+      "technologies": [
+        "Lovable",
+        "Supabase",
+        "Role-based access",
+        "PDF export"
+      ],
+      "external_cash_cost": 0,
+      "mvp": "İşbirlikçi profili, proje kapsamı, veri/teknoloji erişim matrisi, risk soruları, onay zinciri ve evidence export.",
+      "working_logic": "İşbirliği açılır → taraf ve erişim kapsamı girilir → risk soruları çalışır → eksikler atanır → yetkili onay/ret verir → kanıt paketi oluşur.",
+      "build_time": "7–10 gün",
+      "marketing_strategy": "Araştırma ofisleri ve teknoloji transfer birimlerine örnek güvenlik checklist'i üzerinden doğrudan erişim.",
+      "first_customer_plan": "Bir üniversite laboratuvarıyla 5 gerçek işbirliği dosyasında pilot.",
+      "main_risk": "Kurumların mevcut iç formlarını yeterli görmesi.",
+      "validation_assumption": "Küçük/orta araştırma kurumlarında merkezi research-security yazılım boşluğu vardır.",
+      "evidence_strength": "strong",
+      "competition_confidence": "medium",
+      "verification_status": "competition_not_verified",
+      "last_updated_at": "2026-10-01",
+      "target_customer": "üniversite laboratuvarları ve küçük araştırma enstitüleri",
+      "status": "competition_not_verified",
+      "first_reported_at": "2026-10-01"
     },
     {
       "canonical_key": "construction-contractor|assess-autonomous-fleet-readiness|site-safety-escalation-matrix",
       "idea_name": "Autonomous Fleet Ready — Otonom Şantiye Hazırlık Masası",
-      "core_job": "Otonom iş makinesi filosuna geçmeden önce saha, ekipman, rota, güvenlik ve insan müdahalesi gereksinimlerini değerlendirmek.",
-      "target_customer": "otonom iş makinesi değerlendiren inşaat yüklenicileri",
-      "product_mechanism": "saha/rota + ekipman + güvenlik + exception + insan escalation readiness matrix",
-      "first_reported_at": "2026-10-01",
-      "last_seen_at": "2026-10-01",
-      "times_seen": 1,
-      "status": "competition_not_verified",
-      "source_titles": [
-        "Autonomous construction fleets partnership"
-      ],
-      "source_urls": [
+      "scope_tier": "Dünya",
+      "scope_reason": "Otonom ağır ekipman hazırlığı küresel inşaat ve madencilik operasyonlarına uygulanabilir.",
+      "news_source": "The Robot Report",
+      "news_title": "Autonomous construction fleets partnership",
+      "news_date": "2026-10-01",
+      "news_url": "https://www.therobotreport.com/",
+      "source_links": [
         "https://www.therobotreport.com/"
       ],
-      "last_known_turkiye_direct_competitors": 0,
-      "last_known_global_direct_competitors": 0
+      "core_idea": "Otonom iş makinesi satın alma veya pilotundan önce şantiye koşulları, rota, ekipman uyumu, güvenlik istisnaları ve insan müdahale gereksinimlerini değerlendiren readiness masası.",
+      "user_story": "Bir inşaat yüklenicisi olarak otonom ekipman pilotundan önce hangi sahaların ve iş akışlarının uygun olduğunu görmek istiyorum; böylece pahalı bir pilotu yanlış sahada başlatmam.",
+      "before_state": "Karar vendor görüşmeleri, saha keşfi ve dağınık güvenlik kontrollerine dayanır.",
+      "after_state": "Her saha ve kullanım senaryosu standart readiness matrisiyle karşılaştırılır ve pilot engelleri görünür olur.",
+      "why_now": "Otonom construction fleet çözümleri saha pilotlarına yaklaşıyor ve deployment öncesi hazırlık yeni bir karar problemi yaratıyor.",
+      "buyer": "Operasyon direktörü / filo yöneticisi",
+      "market": "İnşaat, taş ocağı ve saha lojistiği işletmeleri",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [
+        "Fleet management",
+        "construction safety platforms",
+        "vendor deployment services"
+      ],
+      "market_gap": "Vendor bağımsız pre-deployment readiness ve human-escalation karar katmanı.",
+      "business_models": [
+        "Saha başına değerlendirme",
+        "Yıllık filo aboneliği"
+      ],
+      "lovable_credits_total": 390,
+      "lovable_credit_breakdown": "UI 90 + readiness matrix 100 + site/equipment model 80 + reporting 70 + test 50",
+      "technologies": [
+        "Lovable",
+        "Supabase",
+        "Rules engine",
+        "PDF export"
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Saha profili, araç/use-case kaydı, rota ve güvenlik checklist'i, exception matrisi, human escalation ve readiness raporu.",
+      "working_logic": "Saha/use case girilir → gereksinimler eşlenir → safety/operational gap hesaplanır → insan müdahale noktaları belirlenir → pilot readiness kararı oluşturulur.",
+      "build_time": "7–10 gün",
+      "marketing_strategy": "Otonom ekipman değerlendiren yüklenicilere vendor-neutral readiness checklist ve pilot öncesi workshop.",
+      "first_customer_plan": "Bir yüklenicinin iki sahasını ücretsiz karşılaştırıp readiness raporu üretmek.",
+      "main_risk": "Vendorların aynı danışmanlığı satış sürecinde ücretsiz vermesi.",
+      "validation_assumption": "Filo sahibi vendor seçmeden önce bağımsız readiness karşılaştırmasına değer verir.",
+      "evidence_strength": "medium",
+      "competition_confidence": "medium",
+      "verification_status": "competition_not_verified",
+      "last_updated_at": "2026-10-01",
+      "target_customer": "otonom iş makinesi değerlendiren inşaat yüklenicileri",
+      "status": "competition_not_verified",
+      "first_reported_at": "2026-10-01"
     },
     {
       "canonical_key": "smb-ai-buyer|prove-ai-use-case-value-before-renewal|cost-baseline-outcome-ledger",
       "idea_name": "AI Value Renewal — AI Yatırım Yenileme Karar Masası",
-      "core_job": "Her AI kullanımının maliyetini, başlangıç durumunu ve ölçülebilir sonucunu yenileme kararı öncesinde aynı kayıtta karşılaştırmak.",
-      "target_customer": "birden fazla AI aracı veya pilotu kullanan KOBİ'ler",
-      "product_mechanism": "AI use case + maliyet + baseline + hedef/sonuç + sahip + renewal decision ledger",
-      "first_reported_at": "2026-10-01",
-      "last_seen_at": "2026-10-01",
-      "times_seen": 1,
-      "status": "competition_not_verified",
-      "source_titles": [
-        "Ascerta raises funding to show which AI pays off"
-      ],
-      "source_urls": [
+      "scope_tier": "Dünya",
+      "scope_reason": "AI araçlarının değerini yenileme öncesi ölçme problemi global KOBİ pazarında ortaktır.",
+      "news_source": "TNW",
+      "news_title": "AI value realization and renewal measurement",
+      "news_date": "2026-10-01",
+      "news_url": "https://thenextweb.com/",
+      "source_links": [
         "https://thenextweb.com/"
       ],
-      "last_known_turkiye_direct_competitors": 0,
-      "last_known_global_direct_competitors": 0
+      "core_idea": "KOBİ'nin kullandığı her AI aracı/use case için başlangıç maliyeti ve performans baseline'ını gerçek sonuçlarla karşılaştırıp yenile/devam/durdur kararını kanıtlayan ledger.",
+      "user_story": "Bir KOBİ yöneticisi olarak AI aboneliğini veya pilotunu yenilemeden önce hangi kullanımın gerçekten zaman, maliyet veya gelir faydası ürettiğini görmek istiyorum; böylece bütçeyi kanıta göre dağıtabilirim.",
+      "before_state": "AI araçları kart ekstresi ve kullanıcı görüşleriyle değerlendirilir; baseline ve outcome aynı yerde değildir.",
+      "after_state": "Her use case için maliyet, baseline, hedef, ölçülen sonuç ve renewal kararı tek kayıtta görünür.",
+      "why_now": "AI harcamaları arttıkça yönetimler kullanım yerine ölçülebilir değer ve ROI kanıtı istiyor.",
+      "buyer": "CFO / COO / IT yöneticisi",
+      "market": "AI araçları kullanan KOBİ'ler",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [
+        "FinOps",
+        "SaaS spend management",
+        "AI ROI consulting"
+      ],
+      "market_gap": "Spend management yerine use-case seviyesinde baseline→outcome→renewal evidence.",
+      "business_models": [
+        "Aylık abonelik",
+        "Aktif AI use-case sayısına göre paket"
+      ],
+      "lovable_credits_total": 350,
+      "lovable_credit_breakdown": "UI 80 + use-case ledger 80 + baseline/outcome 80 + dashboard 70 + test 40",
+      "technologies": [
+        "Lovable",
+        "Supabase",
+        "CSV import",
+        "Charts"
+      ],
+      "external_cash_cost": 0,
+      "mvp": "AI araç/use-case kaydı, aylık maliyet, baseline, KPI hedefi, gerçekleşen değer, owner ve renewal kararı.",
+      "working_logic": "Use case açılır → baseline ve maliyet girilir → KPI periyodik kaydedilir → gerçekleşen fayda hesaplanır → yenileme tarihinde evidence card üretilir.",
+      "build_time": "6–9 gün",
+      "marketing_strategy": "AI SaaS harcaması büyüyen KOBİ'lere ücretsiz AI spend/value audit ve CFO odaklı içerik.",
+      "first_customer_plan": "10 KOBİ'nin mevcut AI aboneliklerini ücretsiz value ledger'a aktarmak.",
+      "main_risk": "ROI ölçümünün manuel veri girişine bağımlı kalması.",
+      "validation_assumption": "KOBİ yöneticileri AI yenileme kararında merkezi evidence ledger ister.",
+      "evidence_strength": "strong",
+      "competition_confidence": "medium",
+      "verification_status": "competition_not_verified",
+      "last_updated_at": "2026-10-01",
+      "target_customer": "birden fazla AI aracı veya pilotu kullanan KOBİ'ler",
+      "status": "competition_not_verified",
+      "first_reported_at": "2026-10-01"
     },
     {
       "canonical_key": "small-online-seller|constrain-ai-selling-agent-actions|transaction-policy-action-ledger",
       "idea_name": "SellerAgent Guard — AI Satış Yetki Sınırı",
-      "core_job": "AI satış agent'ının fiyat değiştirme, kişisel veri paylaşma, müşteriyle iletişim ve escalation sınırlarını işlemden önce belirlemek ve yaptığı aksiyonları kaydetmek.",
-      "target_customer": "AI agent ile satış işlemi devreden küçük online satıcılar",
-      "product_mechanism": "fiyat limiti + veri disclosure kuralı + iletişim yetkisi + escalation + action ledger",
-      "first_reported_at": "2026-10-01",
-      "last_seen_at": "2026-10-01",
-      "times_seen": 1,
-      "status": "competition_not_verified",
-      "source_titles": [
-        "Consumer AI agent reportedly changed price and exposed address while selling an item"
-      ],
-      "source_urls": [
+      "scope_tier": "Dünya",
+      "scope_reason": "Autonomous selling agent yetki sınırları global e-commerce problemidir.",
+      "news_source": "36Kr",
+      "news_title": "AI selling agent transaction-boundary failure",
+      "news_date": "2026-10-01",
+      "news_url": "https://36kr.com/",
+      "source_links": [
         "https://36kr.com/"
       ],
-      "last_known_turkiye_direct_competitors": 0,
-      "last_known_global_direct_competitors": 0
+      "core_idea": "Küçük online satıcının AI satış agent'ına fiyat, indirim, kişisel veri, müşteri iletişimi ve işlem tamamlama için önceden yetki sınırları koyduğu ve tüm agent aksiyonlarını kaydettiği kontrol masası.",
+      "user_story": "AI agent ile satış yapan küçük bir satıcı olarak agent'ın hangi fiyatı değiştirebileceğini, hangi veriyi paylaşabileceğini ve ne zaman bana escalation yapacağını önceden belirlemek istiyorum; böylece satış otomasyonu kontrolüm dışında işlem yapmaz.",
+      "before_state": "Agent'a genel talimat verilir; fiyat, veri ve müşteri iletişim sınırları sohbet promptlarında kalır.",
+      "after_state": "Yetkiler yapılandırılmış policy olarak tanımlanır; her aksiyon izin/engel/escalation sonucu ve gerekçesiyle kaydedilir.",
+      "why_now": "Agentic commerce gerçek satış ve işlem aksiyonlarına yaklaştıkça prompt seviyesindeki sınırlar yeterli değildir.",
+      "buyer": "E-commerce işletme sahibi / operasyon yöneticisi",
+      "market": "AI selling agent kullanan küçük online satıcılar",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [
+        "Agentic payment authorization",
+        "marketplace policy engines"
+      ],
+      "market_gap": "Ödeme altyapısından bağımsız seller-defined commercial action boundary + evidence ledger.",
+      "business_models": [
+        "Aylık satıcı aboneliği",
+        "Agent/mağaza sayısına göre paket"
+      ],
+      "lovable_credits_total": 360,
+      "lovable_credit_breakdown": "UI 90 + policy engine 100 + action ledger 70 + escalation 60 + test 40",
+      "technologies": [
+        "Lovable",
+        "Supabase",
+        "Webhook/API",
+        "Rules engine"
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Fiyat/indirim limitleri, PII disclosure kuralları, iletişim yetkisi, işlem sınırı, escalation queue ve action ledger.",
+      "working_logic": "Satıcı policy tanımlar → agent aksiyon isteği kontrol edilir → izin ver/engelle/escalate sonucu üretilir → karar ve gerçekleşen aksiyon ledger'a yazılır.",
+      "build_time": "6–9 gün",
+      "marketing_strategy": "Agentic commerce kullanan Shopify/marketplace satıcılarına güvenlik ve kontrol checklist'i üzerinden erişim.",
+      "first_customer_plan": "AI satış otomasyonu kullanan 10 küçük mağazada policy mapping pilotu.",
+      "main_risk": "Agent platformlarının native policy controls eklemesi.",
+      "validation_assumption": "Küçük satıcılar agent'ın ticari yetkilerini prompt dışında bağımsız ve denetlenebilir biçimde yönetmek ister.",
+      "evidence_strength": "medium",
+      "competition_confidence": "medium",
+      "verification_status": "competition_not_verified",
+      "last_updated_at": "2026-10-01",
+      "target_customer": "AI agent ile satış işlemi devreden küçük online satıcılar",
+      "status": "competition_not_verified",
+      "first_reported_at": "2026-10-01"
     }
   ]
 }
