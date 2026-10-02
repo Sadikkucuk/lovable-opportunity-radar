@@ -2,7 +2,7 @@
   "schema_version": 1,
   "site_name": "AIStartup",
   "description": "Canonical persistent idea catalog consumed by the AIStartup web application.",
-  "updated_at": "2026-09-30T08:55:00+03:00",
+  "updated_at": "2026-10-02T15:20:00+03:00",
   "ideas": [
     {
       "canonical_key": "competition-organizer|enforce-ai-use-policy-on-submissions|declaration-rule-engine-review-evidence",
@@ -2457,6 +2457,282 @@
       "target_customer": "AI agent ile satış işlemi devreden küçük online satıcılar",
       "status": "competition_not_verified",
       "first_reported_at": "2026-10-01"
+    },
+    {
+      "canonical_key": "aurora-s3-application-teams|retire-unnecessary-history-copy-pipelines|compatibility-and-migration-assessment-ledger",
+      "idea_name": "Aurora S3 Migration Assessor",
+      "scope_tier": "Dünya",
+      "scope_reason": "AWS Aurora ve S3 kullanan uygulama ekiplerine yönelik küresel teknik migration değerlendirme SaaS'ı.",
+      "news_source": "Techzine",
+      "news_title": "AWS enables Aurora to analyze data directly from S3",
+      "news_date": "2026-10-01",
+      "news_url": "https://www.techzine.eu/news/analytics/144697/aws-enables-aurora-to-analyze-data-directly-from-s3/",
+      "source_links": [
+        {
+          "label": "Techzine",
+          "url": "https://www.techzine.eu/news/analytics/144697/aws-enables-aurora-to-analyze-data-directly-from-s3/"
+        }
+      ],
+      "core_idea": "Aurora ile S3 arasında tarihsel veriyi kopyalayan pipeline'ların hangilerinin doğrudan S3 sorgulama ile kaldırılabileceğini uyumluluk, maliyet, gecikme ve proof-test kanıtlarıyla değerlendirir.",
+      "user_story": "Aurora ve S3 kullanan bir ekip olarak gereksiz veri kopyalama pipeline'larını güvenle belirlemek, migration testlerini kanıtlamak ve kaldırma kararını kayıt altına almak istiyorum.",
+      "before_state": "Ekipler tarihsel veri için eski kopyalama pipeline'larını çalıştırıyor; bağımlılık, maliyet ve migration riski dağınık.",
+      "after_state": "Pipeline envanteri → uyumluluk → baseline → proof test → kaldır/devam kararı → evidence.",
+      "why_now": "Aurora'nın S3 üzerindeki tarihsel veriyi doğrudan sorgulayabilmesi bazı kopyalama pipeline'larını gereksiz hale getirebilir.",
+      "target_customer": "Aurora PostgreSQL ve S3 kullanan küçük/orta AWS uygulama ve veri ekipleri",
+      "buyer": "CTO, data engineer veya application architect",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Fresh araştırmada aynı assessment ve proof-test workflow'unu sunan doğrudan ürün doğrulanmadı.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 300,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 75,
+        "core_workflows": 90,
+        "integrations_rule_engine": 60,
+        "testing_fixes": 45,
+        "launch_polish": 30
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Pipeline envanteri → uyumluluk → baseline → proof test → kaldır/devam kararı → evidence.",
+      "working_logic": "Pipeline envanteri → uyumluluk → baseline → proof test → kaldır/devam kararı → evidence.",
+      "build_time": "2–5 hafta",
+      "marketing_strategy": "Hedef sektördeki ekip ve danışmanlara doğrudan pilot erişimi.",
+      "first_customer_plan": "Tek bir gerçek proje üzerinde design-partner pilot.",
+      "main_risk": "Adjacent platformların özelliği kendi ürünlerine eklemesi.",
+      "validation_assumption": "Fresh direct-competitor araştırmasının gerçek müşteri görüşmeleriyle doğrulanması gerekir.",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-02",
+      "last_updated_at": "2026-10-02"
+    },
+    {
+      "canonical_key": "automotive-engineering-team|prove-ai-vehicle-architecture-validation-coverage|architecture-evidence-matrix",
+      "idea_name": "Architecture Evidence Matrix",
+      "scope_tier": "Türkiye",
+      "scope_reason": "Türkiye'deki otomotiv yazılımı, elektronik ve Tier tedarikçi ekiplerine uygulanabilir; Lüleburgaz için yeterli yerel kanıt yok.",
+      "news_source": "Semiconductor Engineering",
+      "news_title": "AI-Defined Vehicles Push Compute, Memory, And Validation Limits",
+      "news_date": "2026-10-01",
+      "news_url": "https://semiengineering.com/tag/ai-defined-vehicles/",
+      "source_links": [
+        {
+          "label": "Semiconductor Engineering",
+          "url": "https://semiengineering.com/tag/ai-defined-vehicles/"
+        }
+      ],
+      "core_idea": "AI-defined vehicle programlarında mimari varsayımları gereksinimlere, test senaryolarına ve validation kanıtlarına bağlayan hafif izlenebilirlik workspace'i.",
+      "user_story": "Bir otomotiv engineering ekibi olarak her mimari varsayımın hangi gereksinim ve testlerle doğrulandığını tek ekranda görmek ve kanıtsız alanları release öncesinde yakalamak istiyorum.",
+      "before_state": "Mimari kararlar ve validation kanıtları farklı engineering araçlarında dağınık.",
+      "after_state": "Varsayım → gereksinim → test → evidence → coverage → release readiness.",
+      "why_now": "AI-defined araçlarda compute, memory/data movement ve validation sınırları birlikte zorlanıyor.",
+      "target_customer": "Türkiye'deki otomotiv yazılım/elektronik ekipleri ve Tier-1/Tier-2 tedarikçiler",
+      "buyer": "System architect, validation lead veya program manager",
+      "market": "Türkiye",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "ALM ürünleri adjacent; aynı hafif AI-vehicle architecture-assumption evidence ürünü doğrulanmadı.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 390,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 98,
+        "core_workflows": 117,
+        "integrations_rule_engine": 78,
+        "testing_fixes": 59,
+        "launch_polish": 38
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Varsayım → gereksinim → test → evidence → coverage → release readiness.",
+      "working_logic": "Varsayım → gereksinim → test → evidence → coverage → release readiness.",
+      "build_time": "2–5 hafta",
+      "marketing_strategy": "Hedef sektördeki ekip ve danışmanlara doğrudan pilot erişimi.",
+      "first_customer_plan": "Tek bir gerçek proje üzerinde design-partner pilot.",
+      "main_risk": "Adjacent platformların özelliği kendi ürünlerine eklemesi.",
+      "validation_assumption": "Fresh direct-competitor araştırmasının gerçek müşteri görüşmeleriyle doğrulanması gerekir.",
+      "evidence_strength": "Medium",
+      "competition_confidence": "Medium",
+      "verification_status": "competition_not_verified",
+      "status": "published",
+      "first_reported_at": "2026-10-02",
+      "last_updated_at": "2026-10-02"
+    },
+    {
+      "canonical_key": "california-employers|document-human-review-of-ai-employment-decisions|review-notice-evidence-ledger",
+      "idea_name": "California AI Employment Human Review Ledger",
+      "scope_tier": "Dünya",
+      "scope_reason": "İlk pazar California; benzer insan gözetimi kurallarına sahip pazarlara genişleyebilen online SaaS.",
+      "news_source": "State of California",
+      "news_title": "California’s nation-leading AI framework just got stronger, Governor Newsom signs more first-in-the-nation worker protections and more",
+      "news_date": "2026-09-30",
+      "news_url": "https://www.gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/",
+      "source_links": [
+        {
+          "label": "State of California",
+          "url": "https://www.gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/"
+        }
+      ],
+      "core_idea": "AI destekli önemli istihdam kararlarında AI çıktısını, bağımsız insan incelemesini, gerekçeyi, çalışan bildirimini ve evidence paketini tek workflow'da kaydeder.",
+      "user_story": "California'da AI destekli workforce araçları kullanan bir işveren olarak önemli kararın yalnız AI çıktısına dayanmadığını ve insan tarafından incelendiğini kanıtlamak istiyorum.",
+      "before_state": "AI önerisi, insan değerlendirmesi, dayanak ve çalışan bildirimi farklı sistemlerde kalabiliyor.",
+      "after_state": "Karar → AI çıktısı → insan doğrulaması → gerekçe → bildirim → evidence export.",
+      "why_now": "California 30 Eylül 2026'da AI kullanılan işyeri kararlarında yeni insan gözetimi ve çalışan korumaları getirdi.",
+      "target_customer": "California'da AI workforce sistemleri kullanan işverenler",
+      "buyer": "HR compliance, hukuk veya People Operations",
+      "market": "California / Global SaaS",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Fresh araştırmada aynı corroboration + notice + evidence workflow'unu sunan doğrudan ürün doğrulanmadı.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 240,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 60,
+        "core_workflows": 72,
+        "integrations_rule_engine": 48,
+        "testing_fixes": 36,
+        "launch_polish": 24
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Karar → AI çıktısı → insan doğrulaması → gerekçe → bildirim → evidence export.",
+      "working_logic": "Karar → AI çıktısı → insan doğrulaması → gerekçe → bildirim → evidence export.",
+      "build_time": "2–5 hafta",
+      "marketing_strategy": "Hedef sektördeki ekip ve danışmanlara doğrudan pilot erişimi.",
+      "first_customer_plan": "Tek bir gerçek proje üzerinde design-partner pilot.",
+      "main_risk": "Adjacent platformların özelliği kendi ürünlerine eklemesi.",
+      "validation_assumption": "Fresh direct-competitor araştırmasının gerçek müşteri görüşmeleriyle doğrulanması gerekir.",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-02",
+      "last_updated_at": "2026-10-02"
+    },
+    {
+      "canonical_key": "enterprise-system-migration-teams|map-workforce-roles-to-entitlements|reviewable-access-mapping-workspace",
+      "idea_name": "Access Migration Mapping Desk",
+      "scope_tier": "Dünya",
+      "scope_reason": "ERP, EHR ve IAM migration projelerinde küresel kullanılabilecek vendor-neutral workspace.",
+      "news_source": "iTnews",
+      "news_title": "NSW Health uses AI to help map staff access to digital patient record system",
+      "news_date": "2026-10-02",
+      "news_url": "https://www.itnews.com.au/news/nsw-health-uses-ai-to-help-map-staff-access-to-digital-patient-record-system-629328",
+      "source_links": [
+        {
+          "label": "iTnews",
+          "url": "https://www.itnews.com.au/news/nsw-health-uses-ai-to-help-map-staff-access-to-digital-patient-record-system-629328"
+        }
+      ],
+      "core_idea": "Migration projelerinde eski workforce rollerini hedef entitlement'lara eşler; istisnaları insan incelemesine gönderir ve onaylı mapping'i export eder.",
+      "user_story": "Bir migration ekibi olarak eski sistem rollerini hedef yetkilere kontrollü eşlemek, belirsiz eşleşmeleri reviewer'a göndermek ve onaylı mapping paketini kanıtıyla dışa aktarmak istiyorum.",
+      "before_state": "Legacy roller, hedef entitlement'lar ve reviewer onayları spreadsheet ve IAM araçlarında dağınık.",
+      "after_state": "Source role import → target entitlement matrix → mapping → exception review → sign-off → export.",
+      "why_now": "NSW Health'ın dönüşümü migration sırasında role-to-entitlement mapping ihtiyacını görünür hale getiriyor.",
+      "target_customer": "ERP, EHR, cloud ve IAM migration ekipleri ile sistem entegratörleri",
+      "buyer": "IAM lead, migration manager veya security architect",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "IGA ürünleri role mining yapıyor; aynı hafif migration-time mapping/sign-off ürünü doğrulanmadı.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 360,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 90,
+        "core_workflows": 108,
+        "integrations_rule_engine": 72,
+        "testing_fixes": 54,
+        "launch_polish": 36
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Source role import → target entitlement matrix → mapping → exception review → sign-off → export.",
+      "working_logic": "Source role import → target entitlement matrix → mapping → exception review → sign-off → export.",
+      "build_time": "2–5 hafta",
+      "marketing_strategy": "Hedef sektördeki ekip ve danışmanlara doğrudan pilot erişimi.",
+      "first_customer_plan": "Tek bir gerçek proje üzerinde design-partner pilot.",
+      "main_risk": "Adjacent platformların özelliği kendi ürünlerine eklemesi.",
+      "validation_assumption": "Fresh direct-competitor araştırmasının gerçek müşteri görüşmeleriyle doğrulanması gerekir.",
+      "evidence_strength": "Medium",
+      "competition_confidence": "Medium",
+      "verification_status": "competition_not_verified",
+      "status": "published",
+      "first_reported_at": "2026-10-02",
+      "last_updated_at": "2026-10-02"
     }
   ]
 }
