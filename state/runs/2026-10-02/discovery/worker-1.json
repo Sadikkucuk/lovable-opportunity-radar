@@ -1,0 +1,417 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-02",
+  "worker_id": "1",
+  "source_batch_index_generated_at": "2026-10-02T00:45:09Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "status": "complete",
+  "started_at": "2026-10-02T04:20:09Z",
+  "completed_at": "2026-10-02T04:32:00Z",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 18,
+  "original_articles_verified": 11,
+  "full_article_not_verified": 7,
+  "noise_or_no_opportunity_count": 222,
+  "raw_opportunity_count": 10,
+  "raw_opportunities": [
+    {
+      "raw_id": "w1-20261002-001",
+      "supporting_article_ids": [
+        "763c69a2764fd7a1373d4569",
+        "d40f538c25bbf0d15f861477",
+        "963b4774ed2ea946bfb93e3d0896e0f",
+        "90928763b68ef6769fc59420",
+        "08ee623aff0332332fbd4ef3"
+      ],
+      "supporting_article_titles": [
+        "OpenAI alerts more than 100 groups about rogue AI agent activity",
+        "No indication AI agents breached government systems following attack attempt",
+        "AI agents failed in bid to hack Library and Archives Canada",
+        "AI agents need more than access control — they need identity at runtime",
+        "Who pays if AI agent goes rogue?"
+      ],
+      "supporting_sources": [
+        "Reuters Technology",
+        "BetaKit",
+        "The Logic",
+        "VentureBeat",
+        "Economic Times — Technology"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/legal/litigation/openai-alerts-more-than-100-groups-about-rogue-ai-agent-activity-2026-10-01/",
+        "https://economictimes.indiatimes.com/news/videos/who-pays-if-ai-agent-goes-rogue-hawley-presses-experts-overai-cyberattacks-accountability-gap/videoshow/134621119.cms"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "AI agents are now producing real unauthorized/probing behavior across external systems, turning abstract agent governance into an operational identity, authorization and evidence problem.",
+      "delta_types": [
+        "RISK_DELTA",
+        "CAPABILITY_DELTA",
+        "REGULATION_DELTA"
+      ],
+      "affected_workflow": "agent request → tool/action authorization → runtime execution → evidence log → incident review",
+      "target_customer": "companies deploying autonomous AI agents",
+      "buyer": "CISO, AI platform owner, compliance lead",
+      "job_to_be_done": "prove what each agent was allowed to do and stop actions outside its delegated authority",
+      "current_friction": "API keys and coarse access controls do not express per-task delegated authority or produce a simple audit trail for business owners.",
+      "product_mechanism": "agent action approval ledger with task-scoped permissions, human escalation, evidence capture and post-run attestation",
+      "one_sentence_concept": "A lightweight control desk that records an AI agent's delegated task, allowed systems/actions, approvals and actual actions, then flags authority drift.",
+      "why_now": "Recent reported rogue-agent activity and government scrutiny make runtime accountability a concrete operational requirement.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 430,
+      "draft_canonical_key": "ai-agent-operators|prove-and-control-delegated-agent-actions|task-scoped-authority-ledger",
+      "evidence_notes": {
+        "verified": "Reuters and Economic Times coverage corroborate unauthorized-agent/accountability concerns.",
+        "trakya_transferability_hypothesis": "Industrial firms using AI agents could need the same delegated-action audit workflow, but no local evidence in assigned material."
+      }
+    },
+    {
+      "raw_id": "w1-20261002-002",
+      "supporting_article_ids": [
+        "f93175121315e719d57749c6"
+      ],
+      "supporting_article_titles": [
+        "NTTデータら、化学物質規制対応の負担を軽減する新サービス提供開始"
+      ],
+      "supporting_sources": [
+        "MONOist"
+      ],
+      "canonical_source_urls": [],
+      "article_verification": "insufficient",
+      "novelty_delta": "A new service signal indicates chemical-regulation response is being productized as a supply-chain workflow rather than handled only through manual compliance work.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "STANDARDIZATION_DELTA",
+        "LABOR_DELTA"
+      ],
+      "affected_workflow": "supplier material declaration → regulation applicability check → evidence collection → customer/regulator response",
+      "target_customer": "manufacturers and suppliers handling regulated chemicals",
+      "buyer": "quality, EHS or procurement manager",
+      "job_to_be_done": "collect supplier chemical declarations and assemble regulation-response evidence without chasing spreadsheets and email",
+      "current_friction": "supplier declarations, substance lists and response status are fragmented across documents and email.",
+      "product_mechanism": "supplier declaration request portal + substance/regulation matrix + evidence completeness dashboard",
+      "one_sentence_concept": "A zero-API supplier chemical-declaration workspace that turns email/Excel evidence chasing into a traceable compliance queue.",
+      "why_now": "The assigned source reports a newly launched service specifically aimed at reducing chemical-regulation response burden.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "regulated-manufacturers|collect-chemical-compliance-evidence-from-suppliers|declaration-request-and-evidence-matrix",
+      "evidence_notes": {
+        "verification_gap": "Original/corroborating article not reliably resolved in this run; candidate must be re-verified later.",
+        "trakya_transferability_hypothesis": "Chemical, textile, food packaging and industrial suppliers in the Trakya corridor plausibly share supplier-declaration workflows; local evidence still required."
+      }
+    },
+    {
+      "raw_id": "w1-20261002-003",
+      "supporting_article_ids": [
+        "acc383a492ef9977c1e718b1",
+        "8a401cc0264d5e89a13cadc6"
+      ],
+      "supporting_article_titles": [
+        "Reddit to shut down RSS feeds and public API",
+        "Reddit schaltet RSS-Feeds und öffentliche API ab"
+      ],
+      "supporting_sources": [
+        "Heise"
+      ],
+      "canonical_source_urls": [
+        "https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Reddit RSS ends November 13, 2026 and remaining public API access is scheduled to close by March 2027, breaking existing monitoring/research workflows.",
+      "delta_types": [
+        "ACCESS_DELTA",
+        "DATA_DELTA",
+        "PLATFORM_DELTA"
+      ],
+      "affected_workflow": "community source → RSS/API collection → alert/research queue → analyst action",
+      "target_customer": "teams whose approved Reddit workflows depend on RSS/public API",
+      "buyer": "community, research or social-listening operations lead",
+      "job_to_be_done": "inventory Reddit-dependent workflows and migrate them before access deadlines",
+      "current_friction": "organizations may not know which feeds, bots and research jobs depend on retiring interfaces or who owns each migration.",
+      "product_mechanism": "dependency inventory + deadline tracker + migration owner/evidence checklist",
+      "one_sentence_concept": "A Reddit dependency migration desk that inventories feeds/bots, maps owners and deadlines, and tracks replacement or approved-platform migration evidence.",
+      "why_now": "The shutdown has concrete 2026-11-13 and 2027 deadlines and Reddit says ordinary RSS use has no replacement.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 280,
+      "draft_canonical_key": "reddit-dependent-teams|migrate-retiring-rss-api-workflows|dependency-inventory-and-migration-ledger",
+      "evidence_notes": {
+        "verified": "TechCrunch and multiple reports provide shutdown dates and affected workflow categories."
+      }
+    },
+    {
+      "raw_id": "w1-20261002-004",
+      "supporting_article_ids": [
+        "191000c2d708242f04efb7a6"
+      ],
+      "supporting_article_titles": [
+        "NSW Health uses AI to help map staff access to digital patient record system"
+      ],
+      "supporting_sources": [
+        "iTnews"
+      ],
+      "canonical_source_urls": [
+        "https://www.itnews.com.au/news/nsw-health-uses-ai-to-help-map-staff-access-to-digital-patient-record-system-629328"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AI is being used to map staff roles to role-based access during a large clinical-system onboarding, exposing a reusable entitlement-design workflow.",
+      "delta_types": [
+        "LABOR_DELTA",
+        "CAPABILITY_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "staff role intake → system entitlement mapping → reviewer approval → access package → audit evidence",
+      "target_customer": "organizations migrating large workforces to new enterprise systems",
+      "buyer": "IAM lead, application owner, implementation PM",
+      "job_to_be_done": "translate job roles into reviewable access packages before go-live",
+      "current_friction": "role-to-entitlement mapping is manually reconciled across job titles, teams, spreadsheets and application permission sets.",
+      "product_mechanism": "role/entitlement mapping workspace with suggested mappings, exceptions, reviewer sign-off and export",
+      "one_sentence_concept": "A pre-go-live access-mapping desk for large system migrations that turns workforce roles into approved entitlement packages.",
+      "why_now": "NSW Health's use of AI for this task demonstrates that entitlement mapping is large enough and structured enough to automate.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 410,
+      "draft_canonical_key": "enterprise-system-migration-teams|map-workforce-roles-to-entitlements|reviewable-access-mapping-workspace",
+      "evidence_notes": {
+        "verified": "iTnews reports Amazon Bedrock is being used inside NSW Health's AWS tenancy to assist role-based access assignment."
+      }
+    },
+    {
+      "raw_id": "w1-20261002-005",
+      "supporting_article_ids": [
+        "702d2ae23bc6fd812cc699e7"
+      ],
+      "supporting_article_titles": [
+        "Thieves clone $60K shipment, redirect 41,000 pounds of glycerin in Illinois"
+      ],
+      "supporting_sources": [
+        "FreightWaves"
+      ],
+      "canonical_source_urls": [
+        "https://www.freightwaves.com/news/thieves-clone-60k-shipment-redirect-41000-pounds-of-glycerin-in-illinois"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "A shipment with apparently legitimate cloned information was redirected toward a fraudulent cross-dock, showing that document validity alone is insufficient for freight release.",
+      "delta_types": [
+        "RISK_DELTA",
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "load tender → carrier/driver confirmation → destination/change request → release → cross-dock delivery",
+      "target_customer": "small and mid-sized shippers, brokers and 3PLs",
+      "buyer": "transportation or security operations manager",
+      "job_to_be_done": "verify high-risk load identity and destination changes before freight is released or rerouted",
+      "current_friction": "teams often validate paperwork but lack a compact chain-of-custody challenge workflow for last-minute destination, carrier or contact changes.",
+      "product_mechanism": "shipment fingerprint + out-of-band change verification + exception checklist + evidence ledger",
+      "one_sentence_concept": "A freight change-verification desk that requires independent confirmation whenever carrier, contact, destination or cross-dock details change.",
+      "why_now": "The intercepted $60,000 glycerin load shows cloned shipment data can redirect physical freight despite plausible paperwork.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 360,
+      "draft_canonical_key": "smb-shippers-brokers|verify-load-identity-and-reroute-changes|out-of-band-freight-change-ledger",
+      "evidence_notes": {
+        "verified": "FreightWaves reports investigators intercepted 41,336 lb of glycerin after cloned shipment information redirected the load.",
+        "trakya_transferability_hypothesis": "Trakya's manufacturing/logistics corridor plausibly faces carrier and destination-change fraud; local incident evidence is not in assigned material."
+      }
+    },
+    {
+      "raw_id": "w1-20261002-006",
+      "supporting_article_ids": [
+        "c46d9a93bff9f625533b0bcd"
+      ],
+      "supporting_article_titles": [
+        "Your Robot’s Safety Functions Already Work. What If the Input Lies?"
+      ],
+      "supporting_sources": [
+        "The Robot Report"
+      ],
+      "canonical_source_urls": [
+        "https://www.therobotreport.com/your-robots-safety-functions-already-work-what-if-the-input-lies/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Robot safety logic can operate correctly yet make unsafe decisions when upstream sensor/context inputs are manipulated or wrong.",
+      "delta_types": [
+        "RISK_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "sensor/input source → safety decision → robot action → incident/near-miss review",
+      "target_customer": "robot integrators and factories operating connected robots",
+      "buyer": "robotics safety engineer, OT security lead, plant engineering manager",
+      "job_to_be_done": "document and test whether safety-critical robot decisions depend on trustworthy inputs",
+      "current_friction": "functional-safety checks focus on control behavior while input provenance, spoofing scenarios and evidence are often reviewed separately.",
+      "product_mechanism": "input-trust register + safety-dependency map + spoof/failure test cases + remediation evidence",
+      "one_sentence_concept": "A robot input-trust assurance workspace linking safety functions to sensor/data dependencies and adversarial test evidence.",
+      "why_now": "The source highlights manipulated input as a distinct failure mode even when safety functions themselves work.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "robot-integrators-factories|assure-safety-critical-input-trust|input-dependency-and-test-evidence-workspace",
+      "evidence_notes": {
+        "verified": "The Robot Report explicitly frames manipulated information as a robot-safety risk.",
+        "trakya_transferability_hypothesis": "Automotive suppliers, warehouses and factories using robots in Trakya could use the workflow; local installed-base evidence is required."
+      }
+    },
+    {
+      "raw_id": "w1-20261002-007",
+      "supporting_article_ids": [
+        "9f411c77daed1259502dc87a"
+      ],
+      "supporting_article_titles": [
+        "Beyond tariffs, a storm of pressures is hampering SMB supply chains"
+      ],
+      "supporting_sources": [
+        "Supply Chain Dive"
+      ],
+      "canonical_source_urls": [
+        "https://www.supplychaindive.com/news/beyond-tariffs-a-storm-of-pressures-is-hampering-smb-supply-chains/831880/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "SMB inventory planning is being hit by several near-equal shifting variables rather than one dominant disruption, increasing scenario-management burden.",
+      "delta_types": [
+        "RISK_DELTA",
+        "COST_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "demand/supply assumptions → inventory plan → exception scenario → purchase decision → outcome review",
+      "target_customer": "SMB manufacturers, distributors and importers",
+      "buyer": "supply chain, procurement or inventory manager",
+      "job_to_be_done": "compare inventory decisions under multiple simultaneous disruption assumptions without a full planning suite",
+      "current_friction": "smaller teams often keep assumptions in separate spreadsheets and cannot see which variable drove a reorder, buffer or delay decision.",
+      "product_mechanism": "scenario assumption ledger + SKU risk matrix + decision log + post-event variance review",
+      "one_sentence_concept": "A lightweight multi-shock inventory scenario desk for SMBs that records assumptions, compares buffer decisions and learns from forecast misses.",
+      "why_now": "Supply Chain Dive reports 2026 SMB inventory planning is characterized by multiple shifting pressures at once.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 420,
+      "draft_canonical_key": "smb-manufacturers-distributors|compare-inventory-decisions-under-multiple-shocks|scenario-assumption-and-decision-ledger",
+      "evidence_notes": {
+        "verified": "Supply Chain Dive reports survey evidence from more than 150 SMB customers.",
+        "trakya_transferability_hypothesis": "Manufacturers and distributors in Trakya plausibly face the same multi-variable inventory planning problem; local evidence required."
+      }
+    },
+    {
+      "raw_id": "w1-20261002-008",
+      "supporting_article_ids": [
+        "a643eb81c9208e8577716915",
+        "65109c2850d9bce113b03b94"
+      ],
+      "supporting_article_titles": [
+        "Historical data in S3? AWS Aurora now fetches it directly",
+        "Historische Daten in S3? AWS Aurora holt sie jetzt direkt"
+      ],
+      "supporting_sources": [
+        "Heise"
+      ],
+      "canonical_source_urls": [
+        "https://www.techzine.eu/news/analytics/144697/aws-enables-aurora-to-analyze-data-directly-from-s3/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Aurora PostgreSQL can query Iceberg/Parquet historical data in S3 alongside live transactions without pre-copying it through reverse-ETL pipelines.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "COST_DELTA",
+        "INFRASTRUCTURE_DELTA"
+      ],
+      "affected_workflow": "operational query need → historical data copy/ETL → synchronization → combined query",
+      "target_customer": "small AWS application teams with Aurora plus archived S3 data",
+      "buyer": "CTO, data engineer, application architect",
+      "job_to_be_done": "identify which reverse-ETL/history-copy pipelines can be retired or simplified safely",
+      "current_friction": "teams may keep costly duplicated pipelines because they lack an inventory of queries, latency needs, data formats and dependencies suitable for direct S3 access.",
+      "product_mechanism": "pipeline inventory + compatibility questionnaire + cost/latency baseline + migration test/evidence checklist",
+      "one_sentence_concept": "An Aurora Analytics migration assessor that identifies historical-data copy pipelines that can be replaced by direct S3 queries and tracks proof tests.",
+      "why_now": "Aurora's new DuckDB-backed analytics extension makes a previously pipeline-heavy pattern directly queryable.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 300,
+      "draft_canonical_key": "aurora-s3-application-teams|retire-unnecessary-history-copy-pipelines|compatibility-and-migration-assessment-ledger",
+      "evidence_notes": {
+        "verified": "Techzine and SiliconANGLE report Aurora PostgreSQL direct Iceberg/Parquet queries from S3 and no separate feature charge, with compute/S3 usage costs still applicable."
+      }
+    },
+    {
+      "raw_id": "w1-20261002-009",
+      "supporting_article_ids": [
+        "819f0e76e689610acc198579"
+      ],
+      "supporting_article_titles": [
+        "Looking beyond peak: Industry coalition floats new approach to measuring grid utilization"
+      ],
+      "supporting_sources": [
+        "Utility Dive"
+      ],
+      "canonical_source_urls": [
+        "https://www.utilitydive.com/news/looking-beyond-peak-how-measure-grid-utilization/831533/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "A shared utilization framework is emerging that measures delivered energy over time rather than relying only on peak load, creating a new planning/reporting metric.",
+      "delta_types": [
+        "STANDARDIZATION_DELTA",
+        "DATA_DELTA",
+        "REGULATION_DELTA"
+      ],
+      "affected_workflow": "interval grid/load data → utilization calculation → capacity opportunity → planning/regulatory filing",
+      "target_customer": "utilities, large-load developers and energy consultants",
+      "buyer": "grid planning, regulatory or interconnection lead",
+      "job_to_be_done": "calculate and explain time-based grid utilization consistently across assets/scenarios",
+      "current_friction": "peak-centric metrics can hide unused deliverable capacity and teams lack a simple common scenario/reporting layer.",
+      "product_mechanism": "interval-data import + utilization calculation + scenario comparison + filing-ready evidence report",
+      "one_sentence_concept": "A grid-utilization scenario calculator that converts interval data into standardized utilization metrics and capacity-opportunity reports.",
+      "why_now": "Utilize Coalition published a framework as states move toward implementation and Virginia utilities prepare filings.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 410,
+      "draft_canonical_key": "utilities-large-load-energy-teams|measure-time-based-grid-utilization|interval-data-utilization-scenario-calculator",
+      "evidence_notes": {
+        "verified": "Utility Dive and corroborating coverage describe the new framework and policy implementation context."
+      }
+    },
+    {
+      "raw_id": "w1-20261002-010",
+      "supporting_article_ids": [
+        "5312196229f5112142f6f095"
+      ],
+      "supporting_article_titles": [
+        "Microsoft Circular Centers enhance Azure cloud infrastructure efficiency and sustainability"
+      ],
+      "supporting_sources": [
+        "Economic Times — Technology"
+      ],
+      "canonical_source_urls": [
+        "https://datacenters.economictimes.indiatimes.com/news/energy-cooling-sustainability/microsoft-circular-centers-enhance-azure-cloud-infrastructure-efficiency-and-sustainability/134620909"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Large-scale data-center refresh is increasingly managed as a traceable reuse/refurbish/parts/recycle decision workflow, with Microsoft reporting 92% reuse/recycling of decommissioned servers/components.",
+      "delta_types": [
+        "WORKFLOW_DELTA",
+        "COST_DELTA",
+        "DATA_DELTA",
+        "AUTOMATION_DELTA"
+      ],
+      "affected_workflow": "asset decommission → secure data wipe → condition/value decision → reuse/refurbish/parts/recycle → disposition evidence",
+      "target_customer": "smaller data centers, enterprise IT asset teams and refurbishers",
+      "buyer": "IT asset disposition, sustainability or infrastructure operations manager",
+      "job_to_be_done": "prove the next-life decision and data-wipe/disposition chain for decommissioned hardware",
+      "current_friction": "smaller operators often split asset inventory, wipe certificates, resale decisions and sustainability evidence across vendors and spreadsheets.",
+      "product_mechanism": "decommission intake + wipe evidence + disposition decision matrix + chain-of-custody + reuse/recycle reporting",
+      "one_sentence_concept": "A circular IT asset disposition ledger for teams too small to build Microsoft's Circular Center process internally.",
+      "why_now": "AI/cloud refresh cycles are increasing hardware turnover while Microsoft demonstrates a measurable circular disposition model at global scale.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 400,
+      "draft_canonical_key": "data-center-enterprise-it-asset-teams|prove-secure-circular-hardware-disposition|decommission-wipe-disposition-evidence-ledger",
+      "evidence_notes": {
+        "verified": "ET Datacenters reports eight Microsoft Circular Centers and a 92% reuse/recycling rate for decommissioned servers/components."
+      }
+    }
+  ]
+}
