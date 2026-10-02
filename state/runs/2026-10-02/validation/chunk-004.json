@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-02",
+  "chunk_number": 4,
+  "candidate_ids": [
+    "c016",
+    "c017",
+    "c018",
+    "c019",
+    "c020"
+  ],
+  "expected_candidate_count": 5,
+  "validated_candidate_count": 5,
+  "status": "complete",
+  "results": [
+    {
+      "candidate_id": "c016",
+      "validation_index": 16,
+      "canonical_key": "plastic-manufacturer|prove-recycled-material-claims-by-lot|supplier-lot-evidence-passport",
+      "development_verified": true,
+      "canonical_news_source": "Addiplast",
+      "canonical_news_title": "Fakuma 2026 recycled-material sourcing passport announcement",
+      "canonical_news_date": "2026",
+      "canonical_news_url": "https://www.addiplast-group.com/category/non-classifiee/",
+      "source_links": [
+        "https://circulor.com/articles/circulor-s-recycled-content-software-demonstration",
+        "https://github.com/spherity/product-pass"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 1,
+      "global_competitors": [
+        {
+          "name": "Circulor PROVE",
+          "url": "https://circulor.com/articles/circulor-s-recycled-content-software-demonstration",
+          "reason": "Tracks recycled materials through the supply chain and proves origin, entry point and recycled-content percentage for downstream manufacturer claims."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Spherity Product Pass",
+          "url": "https://github.com/spherity/product-pass",
+          "reason": "Circular-plastics material/product passport links supplier material passports and proof-of-origin/quality credentials, but is broader passport infrastructure rather than a lightweight procurement/quality claim desk."
+        }
+      ],
+      "competition_search_terms": [
+        "recycled content traceability software plastics lot certificate",
+        "material passport recycled content claim supplier evidence",
+        "geri dönüştürülmüş içerik izlenebilirlik yazılımı plastik"
+      ],
+      "market_gap": "Lightweight UX is a possible positioning wedge, but recycled-content provenance and downstream claim proof are already directly productized.",
+      "mvp": "Supplier/lot passport, certificate registry, claim-to-evidence mapping, expiry/exception queue and PDF/QR pack.",
+      "working_logic": "Register supplier lot; attach declarations/certificates; map recycled-content claim to upstream evidence; flag missing/expired proof; export customer/audit pack.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "document upload",
+        "QR/PDF generation",
+        "rules"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 380,
+      "lovable_credit_breakdown": "UI 100; supplier/lot data 90; evidence/claims 110; exports 80",
+      "build_time": "3-5 weeks",
+      "business_models": [
+        "manufacturer SaaS",
+        "per-site workspace"
+      ],
+      "marketing_strategy": "Plastics converters, packaging and automotive suppliers.",
+      "first_customer_plan": "Pilot with one converter using PCR/PIR compounds.",
+      "main_risk": "Traceability incumbents and emerging DPP infrastructure already cover provenance.",
+      "validation_assumption": "Circulor meets same-customer + same-job + substantially-same-workflow test.",
+      "evidence_strength": "medium-high",
+      "competition_confidence": "high",
+      "local_scope_verified": false,
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "Trakya applicability is plausible but no concrete Lüleburgaz plastics buyer evidence was verified in this chunk.",
+      "validated_scope_hint": "Türkiye / Dünya",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Circulor already provides recycled-material traceability specifically to prove recycled-content claims downstream."
+    },
+    {
+      "candidate_id": "c017",
+      "validation_index": 17,
+      "canonical_key": "production-ai-teams|manage-ai-behavior-incidents|ai-incident-triage-remediation-ledger",
+      "development_verified": true,
+      "canonical_news_source": "AtmarkIT",
+      "canonical_news_title": "Production AI adoption changes SRE; 67% consider AI monitoring important",
+      "canonical_news_date": "2026-10-01",
+      "canonical_news_url": "https://atmarkit.itmedia.co.jp/ait/spv/2610/01/news027.html",
+      "source_links": [
+        "https://verifywise.ai/platform/incident-management",
+        "https://ordinum.org/",
+        "https://cabierconsulting.com/platform/ai-model-inventory"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "VerifyWise",
+          "url": "https://verifywise.ai/platform/incident-management",
+          "reason": "AI-specific incident taxonomy, lifecycle, ownership, corrective actions, approval-before-closure and audit trail directly match the proposed AI incident desk."
+        },
+        {
+          "name": "Ordinum",
+          "url": "https://ordinum.org/",
+          "reason": "Built for production AI teams; captures AI decisions/context, supports incident replay/resolution and audit-ready reports."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Cabier AI Incident Register",
+          "url": "https://cabierconsulting.com/platform/ai-model-inventory",
+          "reason": "AI governance suite includes detection, materiality, containment, notification, root cause and closure/remediation, but as part of a broader governance platform."
+        }
+      ],
+      "competition_search_terms": [
+        "AI behavior incident management platform remediation register",
+        "AI model incident register corrective actions software",
+        "yapay zeka olay yönetimi model hata kayıt yazılımı"
+      ],
+      "market_gap": "No defensible core gap: AI-specific incident lifecycle, taxonomy, ownership and remediation tracking are already shipping product capabilities.",
+      "mvp": "AI incident register, taxonomy/severity, owner, remediation tasks, evidence and reliability reports.",
+      "working_logic": "Ingest/manual-log event; classify behavior/policy failure; assign owner/severity; track containment/remediation; close with evidence and report.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "webhooks/CSV",
+        "rules"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 250,
+      "lovable_credit_breakdown": "UI 70; incident schema 60; workflow 70; reports 50",
+      "build_time": "2-3 weeks",
+      "business_models": [
+        "team SaaS",
+        "per-AI-system workspace"
+      ],
+      "marketing_strategy": "Small AI platform/SRE teams.",
+      "first_customer_plan": "Pilot with one production agent team lacking AI-specific incident workflow.",
+      "main_risk": "Fast-forming AI governance/incident category.",
+      "validation_assumption": "VerifyWise and Ordinum satisfy strict direct definition.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "Global software-team workflow.",
+      "validated_scope_hint": "Dünya",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "AI-specific incident management products already provide classification, ownership, remediation and audit evidence."
+    },
+    {
+      "candidate_id": "c018",
+      "validation_index": 18,
+      "canonical_key": "reddit-dependent-teams|migrate-retiring-rss-api-workflows|dependency-inventory-and-migration-ledger",
+      "development_verified": true,
+      "canonical_news_source": "TechCrunch",
+      "canonical_news_title": "Reddit is killing RSS feeds and ending public API access because of AI bots",
+      "canonical_news_date": "2026-09-30",
+      "canonical_news_url": "https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/",
+      "source_links": [
+        "https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 0,
+      "global_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "Generic IT dependency/application portfolio tools",
+          "url": "",
+          "reason": "Can inventory dependencies and owners, but fresh research did not verify a Reddit RSS/public-API shutdown migration workflow with deadlines and migration evidence."
+        }
+      ],
+      "competition_search_terms": [
+        "Reddit RSS API migration dependency inventory software",
+        "Reddit public API shutdown migration tracker",
+        "Reddit RSS geçiş bağımlılık envanteri"
+      ],
+      "market_gap": "Fresh search did not verify a direct point product for inventorying Reddit-dependent jobs and driving owner/deadline/evidence migration before the announced shutdowns.",
+      "mvp": "Dependency inventory, interface type, owner, deadline, replacement decision, migration checklist and evidence.",
+      "working_logic": "Register each feed/bot/job; map RSS/API dependency and owner; apply shutdown deadline; choose approved replacement/retirement; attach test evidence and close.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "CSV/manual import",
+        "deadline rules"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 280,
+      "lovable_credit_breakdown": "UI 80; inventory 60; deadlines/workflow 70; evidence/report 70",
+      "build_time": "2-3 weeks",
+      "business_models": [
+        "one-time migration workspace",
+        "small-team SaaS"
+      ],
+      "marketing_strategy": "Social-listening, research, community and automation teams with Reddit dependencies.",
+      "first_customer_plan": "Offer a free dependency audit to teams using Reddit RSS/API in scheduled jobs.",
+      "main_risk": "Very narrow and time-limited opportunity; generic dependency-management tooling can substitute.",
+      "validation_assumption": "No direct competitor found after exact-job searches; absence is not proof of nonexistence.",
+      "evidence_strength": "strong",
+      "competition_confidence": "medium",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "Global platform migration event.",
+      "validated_scope_hint": "Dünya",
+      "qualification_status": "qualified"
+    },
+    {
+      "candidate_id": "c019",
+      "validation_index": 19,
+      "canonical_key": "regulated-manufacturers|collect-chemical-compliance-evidence-from-suppliers|declaration-request-and-evidence-matrix",
+      "development_verified": "partial",
+      "canonical_news_source": "Assigned Japanese industry source",
+      "canonical_news_title": "NTT DATA and partners launch service to reduce chemical-regulation response burden",
+      "canonical_news_date": "2026",
+      "canonical_news_url": "",
+      "source_links": [
+        "https://www.assent.com/solutions/product-compliance/rohs-compliance-software/",
+        "https://sphera.bomcheck.com/",
+        "https://docs.bomcheck.com/en/user-guide/solution.html"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "Assent",
+          "url": "https://www.assent.com/solutions/product-compliance/rohs-compliance-software/",
+          "reason": "Manufacturer platform centralizes supplier RoHS/REACH data, supplier engagement, validation, dashboards and proof/reporting."
+        },
+        {
+          "name": "Sphera BOMcheck",
+          "url": "https://sphera.bomcheck.com/",
+          "reason": "Purpose-built cloud platform for manufacturers to request/gather supplier substance declarations, manage REACH/RoHS lists and produce compliance evidence."
+        }
+      ],
+      "adjacent_competitors": [],
+      "competition_search_terms": [
+        "supplier chemical declaration software REACH RoHS portal",
+        "supplier substance declaration compliance workflow",
+        "tedarikçi kimyasal beyan REACH RoHS yazılımı"
+      ],
+      "market_gap": "The proposed email/Excel replacement workflow is already a mature product category.",
+      "mvp": "Supplier request portal, substance/regulation matrix, declaration/evidence status and completeness dashboard.",
+      "working_logic": "Send supplier declaration request; collect declaration/evidence; map against regulation/substance list; flag gaps/expiry; export compliance status.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "forms",
+        "document upload",
+        "rules"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 390,
+      "lovable_credit_breakdown": "UI 100; supplier portal 100; matrix/rules 110; evidence/report 80",
+      "build_time": "3-5 weeks",
+      "business_models": [
+        "manufacturer SaaS",
+        "supplier-compliance workspace"
+      ],
+      "marketing_strategy": "Industrial quality/EHS/procurement teams.",
+      "first_customer_plan": "Pilot with a manufacturer currently chasing declarations by email.",
+      "main_risk": "Strong incumbents include regulatory content and supplier networks a lightweight product cannot match.",
+      "validation_assumption": "Assent and BOMcheck meet strict direct definition even though the trigger article itself was only partially reverified.",
+      "evidence_strength": "strong_competition_partial_trigger",
+      "competition_confidence": "high",
+      "local_scope_verified": false,
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "Trakya industrial applicability is plausible, but no Lüleburgaz-specific evidence was established in this chunk.",
+      "validated_scope_hint": "Türkiye / Dünya",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Assent and BOMcheck directly solve supplier chemical-declaration collection, substance/regulation mapping and compliance evidence."
+    },
+    {
+      "candidate_id": "c020",
+      "validation_index": 20,
+      "canonical_key": "retailer-it-team|prove-critical-systems-are-recoverable|restore-test-evidence-ledger",
+      "development_verified": true,
+      "canonical_news_source": "Kaspersky",
+      "canonical_news_title": "Almost one-fifth of retailers suffer permanent data loss from cyber attacks, Kaspersky survey",
+      "canonical_news_date": "2026-10-01",
+      "canonical_news_url": "https://www.kaspersky.co.za/about/press-releases/almost-one-fifth-of-retailers-suffer-permanent-data-loss-from-cyber-attacks-kaspersky-survey",
+      "source_links": [
+        "https://www.harness.io/products/resilience-testing/disaster-recovery",
+        "https://www.cristie.com/use-cases/recovery-testing",
+        "https://justhandledlabs.com/skills/restore-readiness-evidence-auditor/"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "Harness Resilience Testing",
+          "url": "https://www.harness.io/products/resilience-testing/disaster-recovery",
+          "reason": "Automates DR/restore testing, measures RTO/RPO, validates runbooks, schedules recurring tests and generates compliance evidence."
+        },
+        {
+          "name": "Cristie Recovery",
+          "url": "https://www.cristie.com/use-cases/recovery-testing",
+          "reason": "Automated recovery simulations with detailed reporting against RTO and RPO targets in isolated environments."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Restore Readiness Evidence Auditor",
+          "url": "https://justhandledlabs.com/skills/restore-readiness-evidence-auditor/",
+          "reason": "Audits supplied restore-test evidence against RPO/RTO/recency/dependencies and returns asset-level readiness, but does not execute restores."
+        }
+      ],
+      "competition_search_terms": [
+        "restore testing software RPO RTO evidence remediation",
+        "disaster recovery test evidence platform recoverability",
+        "backup restore test yönetimi RPO RTO yazılımı"
+      ],
+      "market_gap": "Retail-specific packaging is not enough to separate the core job; vendor-neutral restore-test proof and RPO/RTO evidence are already productized.",
+      "mvp": "Critical-system register, owner, restore-test calendar, RPO/RTO evidence, failed-test remediation and management report.",
+      "working_logic": "Register critical service; set RPO/RTO and owner; schedule test; record actual restore/validation evidence; open remediation on failure; report readiness.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "calendar",
+        "document links",
+        "rules"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 300,
+      "lovable_credit_breakdown": "UI 80; service/test registry 70; RPO/RTO/evidence 80; remediation/report 70",
+      "build_time": "2-4 weeks",
+      "business_models": [
+        "IT resilience SaaS",
+        "per-site subscription"
+      ],
+      "marketing_strategy": "Retail IT/security teams and MSPs.",
+      "first_customer_plan": "Pilot with a retailer that already has backups but lacks documented restore drills.",
+      "main_risk": "Recovery/resilience platforms can provide richer automated evidence from infrastructure.",
+      "validation_assumption": "Harness and Cristie satisfy same core job/workflow despite serving multiple industries.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "No local scope claim.",
+      "validated_scope_hint": "Dünya",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Existing resilience products already perform recurring recovery tests, RPO/RTO measurement and evidence/reporting."
+    }
+  ],
+  "completed_at": "2026-10-02T14:35:00+03:00"
+}
