@@ -1,0 +1,378 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-02",
+  "chunk_number": 5,
+  "candidate_ids": [
+    "c021",
+    "c022",
+    "c023",
+    "c024",
+    "c025"
+  ],
+  "expected_candidate_count": 5,
+  "validated_candidate_count": 5,
+  "status": "complete",
+  "results": [
+    {
+      "candidate_id": "c021",
+      "validation_index": 21,
+      "canonical_key": "robot-integrators-factories|assure-safety-critical-input-trust|input-dependency-and-test-evidence-workspace",
+      "development_verified": true,
+      "canonical_news_source": "The Robot Report",
+      "canonical_news_title": "Your Robot’s Safety Functions Already Work. What If the Input Lies?",
+      "canonical_news_date": "2026",
+      "canonical_news_url": "https://www.therobotreport.com/your-robots-safety-functions-already-work-what-if-the-input-lies/",
+      "source_links": [
+        "https://vicone.com/products/radeis/",
+        "https://xiumlabs.com/services/robotics-security-testing",
+        "https://dergipark.org.tr/en/pub/pajes/article/1813811"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 1,
+      "global_competitors": [
+        {
+          "name": "Radeis",
+          "url": "https://vicone.com/products/radeis/",
+          "reason": "Pre-deployment robot cyber-safety platform tests manipulated sensor/input scenarios, links cyber risk to unsafe robot behavior and prioritizes remediation before release."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Xium Labs Robotics Security Testing",
+          "url": "https://xiumlabs.com/services/robotics-security-testing",
+          "reason": "Tests sensor spoofing, model integrity and safety-related controls but is a security-testing service rather than an evidence workspace."
+        }
+      ],
+      "competition_search_terms": [
+        "robot sensor spoofing safety validation platform input trust",
+        "industrial robot cyber safety test evidence sensor spoofing",
+        "robot sensör spoofing güvenlik doğrulama yazılımı"
+      ],
+      "market_gap": "The evidence-workspace UX is lighter, but the core job of validating whether manipulated inputs can break otherwise-safe robot behavior is already directly productized.",
+      "mvp": "Input-trust register, safety-dependency matrix, spoof/failure test cases and remediation evidence.",
+      "working_logic": "Map safety function to sensor/data dependencies; define adversarial/failure cases; record test evidence; flag failed trust assumptions; track remediation.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "test-case/evidence registry",
+        "rules"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 390,
+      "lovable_credit_breakdown": "UI 100; dependency map 90; tests/evidence 110; remediation/report 90",
+      "build_time": "3-5 weeks",
+      "business_models": [
+        "robot integrator SaaS",
+        "per-cell/project workspace"
+      ],
+      "marketing_strategy": "Robot integrators, OT security and plant engineering.",
+      "first_customer_plan": "Pilot around one connected robot cell and its perception/safety inputs.",
+      "main_risk": "Specialized cyber-safety validation vendors own deeper simulation/testing.",
+      "validation_assumption": "Radeis meets strict same-customer + same-job + substantially-same-workflow test.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "local_scope_verified": false,
+      "local_scope_evidence": [
+        "https://dergipark.org.tr/en/pub/pajes/article/1813811"
+      ],
+      "local_applicability_rationale": "Turkish industrial-robot verification research confirms domestic relevance, but no concrete Lüleburgaz installed-base evidence was verified; local label is not assigned.",
+      "validated_scope_hint": "Türkiye / Dünya",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Radeis directly validates robot safety under manipulated sensor/input conditions and records remediation-oriented results."
+    },
+    {
+      "candidate_id": "c022",
+      "validation_index": 22,
+      "canonical_key": "shared-compute-programs|improve-accelerator-utilization|allocation-utilization-reclaim-ledger",
+      "development_verified": true,
+      "canonical_news_source": "Daum / Korean reporting",
+      "canonical_news_title": "정부 지원 GPU 70%, 가동률 50% 미만…AI 자원 관리 공백",
+      "canonical_news_date": "2026-10-01",
+      "canonical_news_url": "https://v.daum.net/v/20261001103143068",
+      "source_links": [
+        "https://aws.amazon.com/about-aws/whats-new/2026/03/sagemaker-hyperpod-idle-resource-sharing/",
+        "https://www.cncf.io/blog/2026/01/20/reclaiming-underutilized-gpus-in-kubernetes-using-scheduler-plugins/",
+        "https://github.com/eightmm/slurm-gpu-tui"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 1,
+      "global_competitors": [
+        {
+          "name": "Amazon SageMaker HyperPod Task Governance",
+          "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/sagemaker-hyperpod-idle-resource-sharing/",
+          "reason": "Shared accelerator governance monitors cluster allocation state, quota policy and idle capacity, then dynamically makes unused compute borrowable/reassignable across teams."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "ReclaimIdleResource",
+          "url": "https://www.cncf.io/blog/2026/01/20/reclaiming-underutilized-gpus-in-kubernetes-using-scheduler-plugins/",
+          "reason": "Utilization-aware GPU preemption/reclaim at scheduler level; directly solves idle reclaim but lacks program-level milestone/evidence workflow."
+        },
+        {
+          "name": "sgpu",
+          "url": "https://github.com/eightmm/slurm-gpu-tui",
+          "reason": "Tracks allocation versus compute, efficiency and wasted GPU-hours; monitoring/accounting rather than renewal/reclaim decision ledger."
+        }
+      ],
+      "competition_search_terms": [
+        "shared GPU allocation utilization reclaim governance software",
+        "GPU quota utilization idle reclaim program management",
+        "GPU tahsis kullanım geri alma yazılımı"
+      ],
+      "market_gap": "The proposed human program ledger adds milestones/reasons/renewal evidence, but the core allocation-utilization-reclaim job is already handled by shared-GPU governance/scheduler products.",
+      "mvp": "Allocation register, utilization CSV import, workload milestones, idle exceptions, reclaim alerts and decision history.",
+      "working_logic": "Register allocation/team; import utilization; compare against thresholds and milestones; request exception evidence; renew/reclaim/reallocate with decision record.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "CSV import",
+        "rules/alerts"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 260,
+      "lovable_credit_breakdown": "UI 70; allocation/utilization 70; exceptions/reclaim 70; reports 50",
+      "build_time": "2-3 weeks",
+      "business_models": [
+        "program SaaS",
+        "per-cluster workspace"
+      ],
+      "marketing_strategy": "Universities, accelerators and pooled AI infrastructure programs.",
+      "first_customer_plan": "Pilot with one shared GPU program using periodic utilization exports.",
+      "main_risk": "Cloud/cluster schedulers increasingly automate the core reclaim decision.",
+      "validation_assumption": "HyperPod meets the strict core-job test even though it is infrastructure-native rather than a standalone lightweight ledger.",
+      "evidence_strength": "strong",
+      "competition_confidence": "medium-high",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "No local claim.",
+      "validated_scope_hint": "Dünya",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Shared-GPU governance platforms already monitor allocations/quotas and dynamically reclaim or redistribute idle accelerator capacity."
+    },
+    {
+      "candidate_id": "c023",
+      "validation_index": 23,
+      "canonical_key": "small-shipper-forwarder|review-gateway-routing-assumptions-from-public-port-signals|port-stat-scorecard-and-routing-review-ledger",
+      "development_verified": true,
+      "canonical_news_source": "Port of Oakland",
+      "canonical_news_title": "Port of Oakland handles 173,818 TEUs in August as exports rise from July",
+      "canonical_news_date": "2026-09",
+      "canonical_news_url": "https://www.portofoakland.com/port-of-oakland-handles-173818-teus-in-august-as-exports-rise-from-july",
+      "source_links": [
+        "https://www.seavantage.com/",
+        "https://www.portcast.io/",
+        "https://www.seavantage.com/blog/best-port-congestion-tracking-software-in-2026-top-7-picks"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "SeaVantage",
+          "url": "https://www.seavantage.com/",
+          "reason": "Port/terminal congestion intelligence provides operational signals for routing/rebooking decisions and integrates them into container visibility workflows."
+        },
+        {
+          "name": "Portcast",
+          "url": "https://www.portcast.io/",
+          "reason": "Predictive port congestion and shipment visibility helps shippers/forwarders anticipate gateway disruption and adjust routing/operations."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "IMF PortWatch",
+          "url": "https://portwatch.imf.org/",
+          "reason": "Public/open port activity benchmarking signal source; does not itself provide the proposed decision ledger."
+        }
+      ],
+      "competition_search_terms": [
+        "port congestion analytics routing decision software shipper forwarder",
+        "port volume gateway routing intelligence software",
+        "liman yoğunluk rota optimizasyon forwarder yazılımı"
+      ],
+      "market_gap": "Using monthly public statistics is cheaper, but the customer job—turning port condition signals into routing review—is already served by predictive port-intelligence products.",
+      "mvp": "Monthly port-stat import, normalized scorecard, threshold alerts, routing-review tasks and decision history.",
+      "working_logic": "Import port statistics; normalize trend metrics; flag material shifts; open routing review; record route decision and later outcome.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "CSV/public-data import",
+        "rules"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 330,
+      "lovable_credit_breakdown": "UI 80; data import 80; scorecard/alerts 90; review/history 80",
+      "build_time": "2-4 weeks",
+      "business_models": [
+        "SMB logistics SaaS",
+        "per-lane workspace"
+      ],
+      "marketing_strategy": "Small forwarders/exporters and logistics consultants.",
+      "first_customer_plan": "Pilot with one forwarder monitoring 3-5 gateways.",
+      "main_risk": "Public monthly data is too lagging versus commercial predictive feeds.",
+      "validation_assumption": "SeaVantage and Portcast meet same customer/core decision workflow despite richer data.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "local_scope_verified": false,
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "Türkiye/Trakya exporters could use the workflow, but no Lüleburgaz-specific buyer/workflow evidence was established in this validation.",
+      "validated_scope_hint": "Türkiye / Dünya",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Predictive port-intelligence products already turn gateway congestion/activity signals into actionable routing and operational decisions."
+    },
+    {
+      "candidate_id": "c024",
+      "validation_index": 24,
+      "canonical_key": "smb-ai-operator|govern-agent-ownership-permissions-revocation|agent-authority-ledger",
+      "development_verified": true,
+      "canonical_news_source": "DigiCert",
+      "canonical_news_title": "Every AI agent needs a kill switch: DigiCert launches AI Trust Manager",
+      "canonical_news_date": "2026",
+      "canonical_news_url": "https://www.digicert.com/news/every-ai-agent-needs-a-kill-switch-digicert-launches-ai-trust-manager",
+      "source_links": [
+        "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-365-overview",
+        "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-actions",
+        "https://docs.cloud.google.com/agent-registry/overview",
+        "https://aws.amazon.com/blogs/machine-learning/manage-agents-tools-and-skills-at-scale-with-aws-agent-registry/"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 3,
+      "global_competitors": [
+        {
+          "name": "Microsoft Agent Registry / Agent 365",
+          "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-365-overview",
+          "reason": "Central agent inventory with ownership, governance gaps, lifecycle actions, block/unblock/delete/start/stop and owner reassignment."
+        },
+        {
+          "name": "Google Cloud Agent Registry",
+          "url": "https://docs.cloud.google.com/agent-registry/overview",
+          "reason": "Centralized catalog to register, discover and govern agents, tools and endpoints, directly addressing fragmented tool access and governance."
+        },
+        {
+          "name": "AWS Agent Registry",
+          "url": "https://aws.amazon.com/blogs/machine-learning/manage-agents-tools-and-skills-at-scale-with-aws-agent-registry/",
+          "reason": "Searchable governed catalog records what agents/tools exist, who owns them and whether they were reviewed."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "DigiCert AI Trust Manager",
+          "url": "https://www.digicert.com/news/every-ai-agent-needs-a-kill-switch-digicert-launches-ai-trust-manager",
+          "reason": "Stronger cryptographic identity/authority/revocation control plane; candidate explicitly proposed a lighter non-PKI alternative."
+        }
+      ],
+      "competition_search_terms": [
+        "AI agent registry ownership permissions revoke governance",
+        "agent inventory owner lifecycle deprovision software",
+        "AI agent envanter sahiplik yetki iptal yönetimi"
+      ],
+      "market_gap": "SMB/lightweight positioning does not create a distinct core workflow; major platforms now expose agent inventory, ownership and lifecycle governance directly.",
+      "mvp": "Agent registry, owner, permission manifest, expiry/review calendar, revoke runbook and audit export.",
+      "working_logic": "Register agent; assign accountable owner; record tools/data permissions; schedule review/expiry; trigger revoke/offboarding checklist; export evidence.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "forms/rules",
+        "audit export"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 310,
+      "lovable_credit_breakdown": "UI 80; registry 70; permissions/reviews 90; revoke/audit 70",
+      "build_time": "2-4 weeks",
+      "business_models": [
+        "SMB SaaS",
+        "per-workspace subscription"
+      ],
+      "marketing_strategy": "SMB IT/security teams adopting multiple agent platforms.",
+      "first_customer_plan": "Pilot with a 20-100 person company using agents across two platforms.",
+      "main_risk": "Native cloud/product admin consoles rapidly absorb governance basics.",
+      "validation_assumption": "Microsoft/Google/AWS registries satisfy same inventory/ownership/lifecycle governance job.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "Global AI governance workflow.",
+      "validated_scope_hint": "Dünya",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Microsoft, Google and AWS already provide governed agent registries with ownership and lifecycle controls; lightweight implementation is feature-level differentiation."
+    },
+    {
+      "candidate_id": "c025",
+      "validation_index": 25,
+      "canonical_key": "smb-manufacturers-distributors|compare-inventory-decisions-under-multiple-shocks|scenario-assumption-and-decision-ledger",
+      "development_verified": true,
+      "canonical_news_source": "Supply Chain Dive",
+      "canonical_news_title": "Beyond tariffs, a storm of pressures is hampering SMB supply chains",
+      "canonical_news_date": "2026",
+      "canonical_news_url": "https://www.supplychaindive.com/news/beyond-tariffs-a-storm-of-pressures-is-hampering-smb-supply-chains/831880/",
+      "source_links": [
+        "https://v5ultimate.com/solutions/ai-mrp-scenario-planner-software",
+        "https://www.sap.com/turkey/products/scm/supply-chain-planning.html",
+        "https://www.biltay.com.tr/urunler/satnet-scm/"
+      ],
+      "turkiye_direct_competitor_count": 1,
+      "turkiye_competitors": [
+        {
+          "name": "BilTAY SatNET SCM",
+          "url": "https://www.biltay.com.tr/urunler/satnet-scm/",
+          "reason": "Türkiye SCM product explicitly provides supply-chain simulation, scenario/what-if modeling, inventory visibility and proactive risk decisions."
+        }
+      ],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "V5 Ultimate AI MRP Scenario Planner",
+          "url": "https://v5ultimate.com/solutions/ai-mrp-scenario-planner-software",
+          "reason": "Multi-variable disruption scenarios across demand/supplier/capacity, safety-stock impact, comparable named scenarios and decision trail directly match the proposed job."
+        },
+        {
+          "name": "SAP Supply Chain Planning",
+          "url": "https://www.sap.com/turkey/products/scm/supply-chain-planning.html",
+          "reason": "Dynamic scenario planning, AI-supported inventory optimization, disruption response and cross-functional decision workflows cover the same planning job at enterprise scope."
+        }
+      ],
+      "adjacent_competitors": [],
+      "competition_search_terms": [
+        "SMB inventory disruption scenario planner multi variable safety stock",
+        "supply chain what-if scenario decision log inventory",
+        "Türkiye tedarik zinciri senaryo what-if stok planlama yazılımı"
+      ],
+      "market_gap": "A low-cost SMB interface could be simpler, but the scenario→inventory tradeoff→decision workflow is already directly productized, including by a Turkish vendor.",
+      "mvp": "Scenario assumption ledger, SKU risk matrix, buffer decision comparison, decision log and post-event variance review.",
+      "working_logic": "Define simultaneous shocks; apply to SKU/supplier assumptions; compare buffer/order/delay choices; record selected decision; review forecast miss after event.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "CSV import",
+        "deterministic scenario formulas"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 420,
+      "lovable_credit_breakdown": "UI 100; data/import 80; scenario engine 140; decision/variance 100",
+      "build_time": "3-5 weeks",
+      "business_models": [
+        "SMB SaaS",
+        "scenario workspace"
+      ],
+      "marketing_strategy": "Manufacturing/distributor associations and supply-chain consultants.",
+      "first_customer_plan": "Pilot with an SMB using spreadsheet-based inventory planning.",
+      "main_risk": "Established SCM tools and ERP modules already cover what-if planning.",
+      "validation_assumption": "V5 and BilTAY satisfy strict direct definition; SAP confirms category maturity.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "local_scope_verified": true,
+      "local_scope_evidence": [
+        "https://www.biltay.com.tr/urunler/satnet-scm/"
+      ],
+      "local_applicability_rationale": "The workflow is directly applicable to Turkish manufacturers/distributors, but no concrete Lüleburgaz buyer evidence in this validation supports a Lüleburgaz label.",
+      "validated_scope_hint": "Türkiye / Dünya",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Direct global and Turkish SCM products already provide multi-variable scenario/what-if inventory planning and decision support."
+    }
+  ],
+  "completed_at": "2026-10-02T14:52:00+03:00"
+}
