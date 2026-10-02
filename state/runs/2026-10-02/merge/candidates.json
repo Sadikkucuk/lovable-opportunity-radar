@@ -1,0 +1,1040 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-02",
+  "source_batch_index_generated_at": "2026-10-02T00:45:09Z",
+  "candidate_count": 27,
+  "candidates": [
+    {
+      "candidate_id": "c001",
+      "validation_index": 1,
+      "validator_assignment": "A",
+      "canonical_key": "ai-agent-operators|authorize-and-prove-high-impact-agent-actions|delegated-authority-approval-evidence-ledger",
+      "idea_name": "AI Agent Authority & Action Control Desk",
+      "core_job": "prove what each agent was allowed to do and stop actions outside its delegated authority / Prevent unauthorized or contextually unsafe agent actions while preserving an auditable approval chain.",
+      "target_customer": "companies deploying autonomous AI agents + enterprises deploying AI agents and automation across heterogeneous IT systems",
+      "buyer": "CISO, AI platform owner, compliance lead / CIO/CISO/IT operations and governance leaders",
+      "product_mechanism": "agent action approval ledger with task-scoped permissions, human escalation, evidence capture and post-run attestation + Vendor-neutral web approval/control plane that registers agents, maps policies and high-impact actions, routes approvals, and records decision evidence.",
+      "triggering_article_ids": [
+        "763c69a2764fd7a1373d4569",
+        "d40f538c25bbf0d15f861477",
+        "963b4774ed2ea946bfb93e3d0896e0f",
+        "90928763b68ef6769fc59420",
+        "08ee623aff0332332fbd4ef3",
+        "6b51d6340c5eca6897b72375"
+      ],
+      "supporting_article_ids": [
+        "763c69a2764fd7a1373d4569",
+        "d40f538c25bbf0d15f861477",
+        "963b4774ed2ea946bfb93e3d0896e0f",
+        "90928763b68ef6769fc59420",
+        "08ee623aff0332332fbd4ef3",
+        "6b51d6340c5eca6897b72375"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/legal/litigation/openai-alerts-more-than-100-groups-about-rogue-ai-agent-activity-2026-10-01/",
+        "https://economictimes.indiatimes.com/news/videos/who-pays-if-ai-agent-goes-rogue-hawley-presses-experts-overai-cyberattacks-accountability-gap/videoshow/134621119.cms",
+        "https://www.omnissa.com/newsroom/news/omnissa-one-amer-2026-elara-press-release/"
+      ],
+      "article_verification_summary": "corroborated, full",
+      "before_state": "API keys and coarse access controls do not express per-task delegated authority or produce a simple audit trail for business owners. / Permissions and change controls are fragmented by system; agents can act at machine speed across boundaries and shadow AI is difficult to govern.",
+      "after_state": "A lightweight control desk that records an AI agent's delegated task, allowed systems/actions, approvals and actual actions, then flags authority drift. / A lightweight AI Action Approval Desk for organizations that need human/policy gates before high-impact agent actions.",
+      "why_now": "Recent reported rogue-agent activity and government scrutiny make runtime accountability a concrete operational requirement. / Agentic systems are moving from assistance to execution, creating a new pre-action authorization and evidence requirement.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Türkiye / Dünya",
+      "trakya_transferability_hypothesis": "Industrial firms using AI agents could need the same delegated-action audit workflow, but no local evidence in assigned material.",
+      "local_scope_evidence_hints": [
+        "Industrial firms using AI agents could need the same delegated-action audit workflow, but no local evidence in assigned material."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 430,
+      "history_match_key": "agentic-commerce|prove-intent-checkout-payment-authorization|authorization-receipt-ledger",
+      "history_match_reason": "Adjacent history match: prior ideas constrain transaction-specific agents; this candidate is cross-system enterprise authority/control.",
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "OpenAI alerts more than 100 groups about rogue AI agent activity",
+        "No indication AI agents breached government systems following attack attempt",
+        "AI agents failed in bid to hack Library and Archives Canada",
+        "AI agents need more than access control — they need identity at runtime",
+        "Who pays if AI agent goes rogue?",
+        "Omnissaが「Elara」を発表 AIエージェントの暴走を防ぐ“実行前の権限レイヤー”とは"
+      ]
+    },
+    {
+      "candidate_id": "c002",
+      "validation_index": 2,
+      "validator_assignment": "B",
+      "canonical_key": "aurora-s3-application-teams|retire-unnecessary-history-copy-pipelines|compatibility-and-migration-assessment-ledger",
+      "idea_name": "An Aurora Analytics migration assessor that identifies historical-data copy pipelines that can be replaced by direct S3 queries and tracks proof tests.",
+      "core_job": "identify which reverse-ETL/history-copy pipelines can be retired or simplified safely",
+      "target_customer": "small AWS application teams with Aurora plus archived S3 data",
+      "buyer": "CTO, data engineer, application architect",
+      "product_mechanism": "pipeline inventory + compatibility questionnaire + cost/latency baseline + migration test/evidence checklist",
+      "triggering_article_ids": [
+        "a643eb81c9208e8577716915",
+        "65109c2850d9bce113b03b94"
+      ],
+      "supporting_article_ids": [
+        "a643eb81c9208e8577716915",
+        "65109c2850d9bce113b03b94"
+      ],
+      "canonical_source_urls": [
+        "https://www.techzine.eu/news/analytics/144697/aws-enables-aurora-to-analyze-data-directly-from-s3/"
+      ],
+      "article_verification_summary": "corroborated",
+      "before_state": "teams may keep costly duplicated pipelines because they lack an inventory of queries, latency needs, data formats and dependencies suitable for direct S3 access.",
+      "after_state": "An Aurora Analytics migration assessor that identifies historical-data copy pipelines that can be replaced by direct S3 queries and tracks proof tests.",
+      "why_now": "Aurora's new DuckDB-backed analytics extension makes a previously pipeline-heavy pattern directly queryable.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 300,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "Historical data in S3? AWS Aurora now fetches it directly",
+        "Historische Daten in S3? AWS Aurora holt sie jetzt direkt"
+      ]
+    },
+    {
+      "candidate_id": "c003",
+      "validation_index": 3,
+      "validator_assignment": "A",
+      "canonical_key": "automotive-engineering-team|prove-ai-vehicle-architecture-validation-coverage|architecture-evidence-matrix",
+      "idea_name": "AI-defined vehicle programlarında mimari varsayımları validation kanıtına bağlayan Architecture Evidence Matrix.",
+      "core_job": "AI vehicle architecture kararlarının gereksinim, test senaryosu ve validation evidence kapsamını izlenebilir biçimde bağlamak",
+      "target_customer": "otomotiv yazılım/elektronik ekipleri ve Tier-1/Tier-2 engineering suppliers",
+      "buyer": "system architect, validation lead, program manager",
+      "product_mechanism": "architecture assumption register + requirement-to-validation matrix + scenario coverage ledger + evidence links + release readiness dashboard",
+      "triggering_article_ids": [
+        "cafd83620e3f7dece10d8c2c"
+      ],
+      "supporting_article_ids": [
+        "cafd83620e3f7dece10d8c2c"
+      ],
+      "canonical_source_urls": [
+        "https://semiengineering.com/tag/ai-defined-vehicles/"
+      ],
+      "article_verification_summary": "corroborated",
+      "before_state": "Compute, memory, network, power ve validation kararları farklı engineering araçlarında; program yöneticisi hangi mimari varsayımın hangi test kanıtıyla kapandığını kolay göremiyor.",
+      "after_state": "AI-defined vehicle programlarında mimari varsayımları validation kanıtına bağlayan Architecture Evidence Matrix.",
+      "why_now": "1 Ekim 2026 Semiconductor Engineering analizi AI-defined araçlarda compute, memory/data movement ve validation sınırlarının birlikte zorlandığını işaret ediyor.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Türkiye / Dünya",
+      "trakya_transferability_hypothesis": "Otomotiv yan sanayi ve elektronik tedarikçilerinde requirement/validation evidence workflow'u Trakya'ya aktarılabilir; yerel firma kanıtı bu batch'te yok.",
+      "local_scope_evidence_hints": [
+        "Otomotiv yan sanayi ve elektronik tedarikçilerinde requirement/validation evidence workflow'u Trakya'ya aktarılabilir; yerel firma kanıtı bu batch'te yok."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 390,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "AI-Defined Vehicles Push Compute, Memory, And Validation Limits"
+      ]
+    },
+    {
+      "candidate_id": "c004",
+      "validation_index": 4,
+      "validator_assignment": "B",
+      "canonical_key": "california-employers|document-human-review-of-ai-employment-decisions|review-notice-evidence-ledger",
+      "idea_name": "A Human Review Ledger for AI-assisted employment decisions in California.",
+      "core_job": "Prove that consequential employment decisions received required human oversight and notice.",
+      "target_customer": "California employers using algorithmic or AI systems in workforce management",
+      "buyer": "HR compliance/legal/people operations",
+      "product_mechanism": "Decision-review queue that captures AI input, assigns a human reviewer, requires rationale/checklist completion, generates notices and preserves evidence.",
+      "triggering_article_ids": [
+        "0ece5cde9c4d61180e69101d",
+        "11b90e353c39436d6b40ba2d"
+      ],
+      "supporting_article_ids": [
+        "0ece5cde9c4d61180e69101d",
+        "11b90e353c39436d6b40ba2d"
+      ],
+      "canonical_source_urls": [
+        "https://apnews.com/article/1aa4935e3ee79519ae8b2458b2b9ebc1"
+      ],
+      "article_verification_summary": "corroborated",
+      "before_state": "AI recommendations may be generated in separate HR tools without a consistent human-review record, notice packet or evidence trail.",
+      "after_state": "A Human Review Ledger for AI-assisted employment decisions in California.",
+      "why_now": "California enacted worker-AI protections on September 30, 2026, creating immediate compliance workflow changes.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 240,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "美国加州《反机器人老板》法案生效，禁止完全依赖 AI 解雇或惩戒员工",
+        "加州州长纽森签署法案 禁止雇主仅靠AI解雇或惩罚员工"
+      ]
+    },
+    {
+      "candidate_id": "c005",
+      "validation_index": 5,
+      "validator_assignment": "A",
+      "canonical_key": "creator-agency|compare-cross-platform-performance-and-track-content-experiments|metric-normalization-and-experiment-ledger",
+      "idea_name": "A cross-platform creator experiment ledger that turns exported account metrics into comparable hypotheses, decisions and outcome tracking.",
+      "core_job": "compare account-specific performance evidence across platforms and keep a test/decision ledger rather than relying on generic content advice",
+      "target_customer": "creator agencies and brands managing creators across multiple social platforms",
+      "buyer": "creator manager, social-media lead or agency owner",
+      "product_mechanism": "CSV/manual metric import, normalized KPI view, hypothesis/experiment ledger, cross-platform comparison and decision history",
+      "triggering_article_ids": [
+        "5fa35b1c62583525b3b10d1d"
+      ],
+      "supporting_article_ids": [
+        "5fa35b1c62583525b3b10d1d"
+      ],
+      "canonical_source_urls": [
+        "https://techcrunch.com/2026/09/30/instagram-rolls-out-an-ai-video-assistant-for-creators/"
+      ],
+      "article_verification_summary": "corroborated",
+      "before_state": "native assistants are platform-specific while agencies often manage the same creator or brand across several channels and manually reconcile insights",
+      "after_state": "A cross-platform creator experiment ledger that turns exported account metrics into comparable hypotheses, decisions and outcome tracking.",
+      "why_now": "Instagram's Edits assistant now uses account metrics plus comments/trends to provide personalized analysis, validating demand for analysis rather than automated creativity.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 360,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "Instagram, içerik üreticileri için yapay zeka destekli video asistanını kullanıma sundu"
+      ]
+    },
+    {
+      "candidate_id": "c006",
+      "validation_index": 6,
+      "validator_assignment": "B",
+      "canonical_key": "data-center-enterprise-it-asset-teams|prove-secure-circular-hardware-disposition|decommission-wipe-disposition-evidence-ledger",
+      "idea_name": "A circular IT asset disposition ledger for teams too small to build Microsoft's Circular Center process internally.",
+      "core_job": "prove the next-life decision and data-wipe/disposition chain for decommissioned hardware",
+      "target_customer": "smaller data centers, enterprise IT asset teams and refurbishers",
+      "buyer": "IT asset disposition, sustainability or infrastructure operations manager",
+      "product_mechanism": "decommission intake + wipe evidence + disposition decision matrix + chain-of-custody + reuse/recycle reporting",
+      "triggering_article_ids": [
+        "5312196229f5112142f6f095"
+      ],
+      "supporting_article_ids": [
+        "5312196229f5112142f6f095"
+      ],
+      "canonical_source_urls": [
+        "https://datacenters.economictimes.indiatimes.com/news/energy-cooling-sustainability/microsoft-circular-centers-enhance-azure-cloud-infrastructure-efficiency-and-sustainability/134620909"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "smaller operators often split asset inventory, wipe certificates, resale decisions and sustainability evidence across vendors and spreadsheets.",
+      "after_state": "A circular IT asset disposition ledger for teams too small to build Microsoft's Circular Center process internally.",
+      "why_now": "AI/cloud refresh cycles are increasing hardware turnover while Microsoft demonstrates a measurable circular disposition model at global scale.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 400,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "Microsoft Circular Centers enhance Azure cloud infrastructure efficiency and sustainability"
+      ]
+    },
+    {
+      "candidate_id": "c007",
+      "validation_index": 7,
+      "validator_assignment": "A",
+      "canonical_key": "data-center-power-team|keep-onsite-generation-permits-and-conditions-ready|permit-evidence-commissioning-ledger",
+      "idea_name": "On-site data-center power projeleri için izin ve commissioning kanıtlarını tek workflow'da tutan Power Permit Readiness Desk.",
+      "core_job": "on-site generation projesinin permit, condition, evidence ve renewal yükümlülüklerini commissioning öncesi ve işletmede kaçırmamak",
+      "target_customer": "data-center operatorleri ve on-site power proje/EPC ekipleri",
+      "buyer": "facility/energy manager, project development lead, compliance manager",
+      "product_mechanism": "permit obligation register + evidence checklist + condition/limit ledger + renewal calendar + commissioning gate",
+      "triggering_article_ids": [
+        "42437aa822c0c765fd0f6d3f",
+        "a2f84a0e37ddecfb2790d241"
+      ],
+      "supporting_article_ids": [
+        "42437aa822c0c765fd0f6d3f",
+        "a2f84a0e37ddecfb2790d241"
+      ],
+      "canonical_source_urls": [
+        "https://datacenters.economictimes.indiatimes.com/"
+      ],
+      "article_verification_summary": "insufficient",
+      "before_state": "Permit şartları, engineering dokümanları, inspection dates ve operating limits proje klasörleri/e-posta/takvimlerde parçalı tutulabiliyor.",
+      "after_state": "On-site data-center power projeleri için izin ve commissioning kanıtlarını tek workflow'da tutan Power Permit Readiness Desk.",
+      "why_now": "1 Ekim 2026 feed'i AI-era resilience için on-site power talebi ile New Jersey'deki unpermitted generator cezasını aynı zaman penceresinde gösteriyor.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Türkiye / Dünya",
+      "trakya_transferability_hypothesis": "Industrial facilities adding behind-the-meter generation have analogous permit/evidence workflows, potentially transferable to Trakya, but local applicability requires jurisdiction-specific validation.",
+      "local_scope_evidence_hints": [
+        "Industrial facilities adding behind-the-meter generation have analogous permit/evidence workflows, potentially transferable to Trakya, but local applicability requires jurisdiction-specific validation."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 320,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "NJ fines AI data center over unpermitted on-site power generators",
+        "Data centres eye on-site power for AI era resilience"
+      ]
+    },
+    {
+      "candidate_id": "c008",
+      "validation_index": 8,
+      "validator_assignment": "B",
+      "canonical_key": "electronics-component-supplier|qualify-for-ai-datacenter-and-robotics-programs|capability-to-bom-readiness-matrix",
+      "idea_name": "A supplier-readiness workspace that maps an electronics manufacturer's capabilities to AI data-center and robotics sourcing packages.",
+      "core_job": "translate existing manufacturing capabilities into a qualification-ready opportunity map for new AI/robotics programs",
+      "target_customer": "electronics contract manufacturers and component suppliers trying to enter AI data-center or robotics supply chains",
+      "buyer": "business-development, sourcing or program manager",
+      "product_mechanism": "capability profile + target-program BOM/category matrix + evidence checklist + gap register + qualification action plan",
+      "triggering_article_ids": [
+        "6ecb3a0f2ad33a3f3ee33185"
+      ],
+      "supporting_article_ids": [
+        "6ecb3a0f2ad33a3f3ee33185"
+      ],
+      "canonical_source_urls": [
+        "https://electronics.economictimes.indiatimes.com/news/news/components-hardware/cyient-dlm-sees-next-big-opportunity-in-ai-data-centers-robotics-says-ceo-rajendra-velagapudi/134610014"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "suppliers can see market growth but must manually map their certifications, processes and component capabilities against unfamiliar program requirements",
+      "after_state": "A supplier-readiness workspace that maps an electronics manufacturer's capabilities to AI data-center and robotics sourcing packages.",
+      "why_now": "Cyient DLM says it is actively entering AI data-center and robotics supply chains, citing concrete component categories and 60–70 PCBs in humanoids.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Türkiye / Dünya",
+      "trakya_transferability_hypothesis": "Automotive/electronics suppliers in Trakya could reuse a capability-to-program qualification workflow, but the assigned evidence does not establish a Lüleburgaz electronics cluster strongly enough for local scope.",
+      "local_scope_evidence_hints": [
+        "Automotive/electronics suppliers in Trakya could reuse a capability-to-program qualification workflow, but the assigned evidence does not establish a Lüleburgaz electronics cluster strongly enough for local scope."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 400,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "Cyient DLM sees next big opportunity in AI data centers, robotics, says CEO Rajendra Velagapudi"
+      ]
+    },
+    {
+      "candidate_id": "c009",
+      "validation_index": 9,
+      "validator_assignment": "A",
+      "canonical_key": "enterprise-ai-team|move-ai-pilots-to-production|readiness-gates-blocker-evidence-ledger",
+      "idea_name": "AI pilotlarının neden production'a geçemediğini kanıt bazlı kapılarla yöneten lightweight AI Scale Readiness Desk.",
+      "core_job": "AI pilotlarını production'a geçmeden önce teknik, veri, regülasyon ve sahiplik engellerine göre standardize biçimde değerlendirmek",
+      "target_customer": "orta ve büyük işletmelerde AI/IT transformation ekipleri",
+      "buyer": "CIO, Head of AI, enterprise architecture veya transformation lead",
+      "product_mechanism": "AI use-case registry + production-readiness scorecard + blocker/evidence ledger + owner/deadline workflow + go/hold decision board",
+      "triggering_article_ids": [
+        "911f99fafe72e1782b81e38a"
+      ],
+      "supporting_article_ids": [
+        "911f99fafe72e1782b81e38a"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/world/china/ai-adoption-stalls-companies-struggle-scale-projects-despite-strong-returns-2026-10-01/"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Pilot başarı metrikleri dağınık; legacy bağımlılıkları, veri erişimi, compliance ve operasyonel owner eksikleri çoğu zaman ayrı Excel/slide/checklistlerde tutuluyor.",
+      "after_state": "AI pilotlarının neden production'a geçemediğini kanıt bazlı kapılarla yöneten lightweight AI Scale Readiness Desk.",
+      "why_now": "1 Ekim 2026 Reuters/BearingPoint bulgusu, olumlu ROI'ye rağmen AI ölçeklemesinin legacy ve regülasyon engellerinde takıldığını nicel olarak gösteriyor.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Türkiye / Dünya",
+      "trakya_transferability_hypothesis": "Trakya üretim şirketlerinde AI pilotlarının ERP/MES/legacy entegrasyonuna geçişi aynı readiness workflow'una uyarlanabilir; yerel varlık bu batch içinde doğrulanmadığı için scope Lüleburgaz yapılmadı.",
+      "local_scope_evidence_hints": [
+        "Trakya üretim şirketlerinde AI pilotlarının ERP/MES/legacy entegrasyonuna geçişi aynı readiness workflow'una uyarlanabilir; yerel varlık bu batch içinde doğrulanmadığı için scope Lüleburgaz yapılmadı."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 340,
+      "history_match_key": "smb-manufacturer|assess-ai-use-case-integration-readiness|dependency-map-gap-backlog",
+      "history_match_reason": "Possible overlap: AI readiness, but candidate focuses enterprise production scaling gates rather than SMB integration readiness.",
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "AI adoption stalls as companies struggle to scale projects despite strong returns, study shows"
+      ]
+    },
+    {
+      "candidate_id": "c010",
+      "validation_index": 10,
+      "validator_assignment": "B",
+      "canonical_key": "enterprise-system-migration-teams|map-workforce-roles-to-entitlements|reviewable-access-mapping-workspace",
+      "idea_name": "A pre-go-live access-mapping desk for large system migrations that turns workforce roles into approved entitlement packages.",
+      "core_job": "translate job roles into reviewable access packages before go-live",
+      "target_customer": "organizations migrating large workforces to new enterprise systems",
+      "buyer": "IAM lead, application owner, implementation PM",
+      "product_mechanism": "role/entitlement mapping workspace with suggested mappings, exceptions, reviewer sign-off and export",
+      "triggering_article_ids": [
+        "191000c2d708242f04efb7a6"
+      ],
+      "supporting_article_ids": [
+        "191000c2d708242f04efb7a6"
+      ],
+      "canonical_source_urls": [
+        "https://www.itnews.com.au/news/nsw-health-uses-ai-to-help-map-staff-access-to-digital-patient-record-system-629328"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "role-to-entitlement mapping is manually reconciled across job titles, teams, spreadsheets and application permission sets.",
+      "after_state": "A pre-go-live access-mapping desk for large system migrations that turns workforce roles into approved entitlement packages.",
+      "why_now": "NSW Health's use of AI for this task demonstrates that entitlement mapping is large enough and structured enough to automate.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 410,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "NSW Health uses AI to help map staff access to digital patient record system"
+      ]
+    },
+    {
+      "candidate_id": "c011",
+      "validation_index": 11,
+      "validator_assignment": "A",
+      "canonical_key": "eu-exporting-manufacturers|operate-cra-vulnerability-response|psirt-deadline-evidence-workflow",
+      "idea_name": "A CRA PSIRT Case Desk that turns vulnerability reports into deadline-driven evidence and notification workflows.",
+      "core_job": "Coordinate and prove CRA vulnerability handling across products and suppliers.",
+      "target_customer": "manufacturers selling connected or software-enabled products into the EU",
+      "buyer": "product security/PSIRT/compliance leader",
+      "product_mechanism": "CRA/PSIRT case manager with product registry, deadline rules, evidence checklist, supplier requests, notification drafts and audit trail.",
+      "triggering_article_ids": [
+        "c0a03ecdb6e54bf804b6651c"
+      ],
+      "supporting_article_ids": [
+        "c0a03ecdb6e54bf804b6651c"
+      ],
+      "canonical_source_urls": [
+        "https://monoist.itmedia.co.jp/mn/spv/2610/01/news016.html",
+        "https://prtimes.jp/main/html/rd/p/000000003.000171713.html/"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "SBOM/SCA findings, supplier responses, deadlines, notifications and remediation evidence are fragmented across security tools, email and spreadsheets.",
+      "after_state": "A CRA PSIRT Case Desk that turns vulnerability reports into deadline-driven evidence and notification workflows.",
+      "why_now": "CRA vulnerability/incident reporting obligations began applying in September 2026, increasing operational urgency for manufacturers.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Türkiye / Dünya",
+      "trakya_transferability_hypothesis": "Connected-product and machinery suppliers in the Trakya industrial corridor could face the same EU-export workflow; concrete local company evidence is not present in assigned material.",
+      "local_scope_evidence_hints": [
+        "Connected-product and machinery suppliers in the Trakya industrial corridor could face the same EU-export workflow; concrete local company evidence is not present in assigned material."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 340,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "製造業のPSIRT運用体制整備で協業、欧州CRA対応などを支援"
+      ]
+    },
+    {
+      "candidate_id": "c012",
+      "validation_index": 12,
+      "validator_assignment": "B",
+      "canonical_key": "exporting-manufacturers|manage-export-control-classification|evidence-case-approval-ledger",
+      "idea_name": "An export-control case desk that structures classification evidence and approvals instead of leaving them in email and spreadsheets.",
+      "core_job": "Turn repeated export-control classification requests into traceable, reviewable cases.",
+      "target_customer": "manufacturers and technology exporters handling controlled goods, software or technical data",
+      "buyer": "export-control/compliance manager",
+      "product_mechanism": "Case-management portal for intake, rule/evidence checklist, draft determination, human approval, reusable rationale and audit history.",
+      "triggering_article_ids": [
+        "b9f4639a01a0e3a6f7b4e50f"
+      ],
+      "supporting_article_ids": [
+        "b9f4639a01a0e3a6f7b4e50f"
+      ],
+      "canonical_source_urls": [
+        "https://www.dentsusoken.com/news/release/2026/0928.html"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Regulations change, product evidence is scattered, specialist review is slow, and rationale/approval histories are difficult to reuse.",
+      "after_state": "An export-control case desk that structures classification evidence and approvals instead of leaving them in email and spreadsheets.",
+      "why_now": "Tighter economic-security/export-control regimes increase the frequency and cost of defensible classification decisions.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 330,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "電通総研、AIエージェント搭載の安全保障貿易管理ソリューション「GREENLIGHT」"
+      ]
+    },
+    {
+      "candidate_id": "c013",
+      "validation_index": 13,
+      "validator_assignment": "A",
+      "canonical_key": "hospital-operations-team|coordinate-and-evaluate-autonomous-internal-transport-pilots|robot-human-dispatch-exception-and-roi-ledger",
+      "idea_name": "A vendor-neutral hospital robot-pilot operations ledger for dispatch eligibility, exceptions and ROI evidence.",
+      "core_job": "coordinate which internal transport jobs should go to robots versus humans and document exceptions during pilots",
+      "target_customer": "hospitals piloting or operating autonomous transport robots alongside human porters",
+      "buyer": "hospital operations or facilities/logistics manager",
+      "product_mechanism": "request queue, eligibility rules, robot/human assignment, exception log, turnaround metrics and pilot ROI dashboard; no robot-control integration in MVP",
+      "triggering_article_ids": [
+        "f316945d89b4031f403a4572"
+      ],
+      "supporting_article_ids": [
+        "f316945d89b4031f403a4572"
+      ],
+      "canonical_source_urls": [
+        "https://theaiinsider.tech/2026/09/30/neura-robotics-expands-into-healthcare-with-autonomous-hospital-transport-robot/"
+      ],
+      "article_verification_summary": "corroborated",
+      "before_state": "robot pilots add a new dispatch layer and require operational evidence before wider deployment",
+      "after_state": "A vendor-neutral hospital robot-pilot operations ledger for dispatch eligibility, exceptions and ROI evidence.",
+      "why_now": "Neura's healthcare expansion includes an autonomous robot designed for hospital transport work, making mixed human/robot operations more concrete.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 410,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "Neura Robotics steigt ins Gesundheitswesen ein"
+      ]
+    },
+    {
+      "candidate_id": "c014",
+      "validation_index": 14,
+      "validator_assignment": "B",
+      "canonical_key": "large-load-project-team|measure-grid-utilization-and-screen-flexible-capacity|interval-data-utilization-scenario-workspace",
+      "idea_name": "Grid Utilization & Flexible Capacity Desk",
+      "core_job": "calculate and explain time-based grid utilization consistently across assets/scenarios / screen sites and load-shifting scenarios before expensive interconnection or infrastructure studies",
+      "target_customer": "utilities, large-load developers and energy consultants + large-load developers, industrial energy managers, EV charging/data-center project teams and energy consultants",
+      "buyer": "grid planning, regulatory or interconnection lead / energy/project development manager",
+      "product_mechanism": "interval-data import + utilization calculation + scenario comparison + filing-ready evidence report + upload interval-load/utility data, calculate standardized utilization metrics, model flexible-load windows, compare site scenarios, and export an evidence-backed pre-feasibility report",
+      "triggering_article_ids": [
+        "819f0e76e689610acc198579"
+      ],
+      "supporting_article_ids": [
+        "819f0e76e689610acc198579"
+      ],
+      "canonical_source_urls": [
+        "https://www.utilitydive.com/news/looking-beyond-peak-how-measure-grid-utilization/831533/"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "peak-centric metrics can hide unused deliverable capacity and teams lack a simple common scenario/reporting layer. / peak demand alone can hide usable off-peak capacity, leaving early-stage teams without a simple scenario ledger for utilization and flexible-load assumptions",
+      "after_state": "A grid-utilization scenario calculator that converts interval data into standardized utilization metrics and capacity-opportunity reports. / A grid-utilization pre-feasibility workspace for large-load projects that turns interval data into flexible-capacity and site-comparison scenarios.",
+      "why_now": "Utilize Coalition published a framework as states move toward implementation and Virginia utilities prepare filings. / An industry coalition is proposing common utilization measurements as new flexibility tools make off-peak capacity operationally useful.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Türkiye / Dünya",
+      "trakya_transferability_hypothesis": "Trakya factories, warehouses and future high-load projects could use the same pre-feasibility workflow where interval consumption data is available; local existence of the exact decision workflow still requires validation.",
+      "local_scope_evidence_hints": [
+        "Trakya factories, warehouses and future high-load projects could use the same pre-feasibility workflow where interval consumption data is available; local existence of the exact decision workflow still requires validation."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 410,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "Looking beyond peak: Industry coalition floats new approach to measuring grid utilization"
+      ]
+    },
+    {
+      "candidate_id": "c015",
+      "validation_index": 15,
+      "validator_assignment": "A",
+      "canonical_key": "multi-site-industrial-firms|avoid-duplicate-procurement|stock-before-buy-workflow",
+      "idea_name": "A Stock-Before-Buy procurement desk that checks distributed inventory before a new purchase is approved.",
+      "core_job": "Avoid buying an item that already exists elsewhere in the organization's inventory.",
+      "target_customer": "multi-site manufacturers, miners, logistics operators and industrial groups with distributed stores/warehouses",
+      "buyer": "procurement or supply-chain leader",
+      "product_mechanism": "Request intake and stock-first decision workflow that searches normalized warehouse inventory and contracts, suggests reuse/transfer, and records avoided purchases.",
+      "triggering_article_ids": [
+        "9b1a36ea4b149dd3617ac6a0"
+      ],
+      "supporting_article_ids": [
+        "9b1a36ea4b149dd3617ac6a0"
+      ],
+      "canonical_source_urls": [
+        "https://www.itnews.com.au/news/fortescue-introduces-agentic-capability-to-procurement-629125"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Buyers struggle to navigate contracts and fragmented warehouse stock, causing off-contract purchases, duplicate buying and excess working capital.",
+      "after_state": "A Stock-Before-Buy procurement desk that checks distributed inventory before a new purchase is approved.",
+      "why_now": "Agentic search and enterprise data access make cross-warehouse stock discovery usable inside procurement workflows.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Türkiye / Dünya",
+      "trakya_transferability_hypothesis": "The workflow is transferable to factories, suppliers, warehouses and logistics operators in the Lüleburgaz–Çorlu–Çerkezköy industrial corridor; local presence still requires fresh validation before assigning Lüleburgaz scope.",
+      "local_scope_evidence_hints": [
+        "The workflow is transferable to factories, suppliers, warehouses and logistics operators in the Lüleburgaz–Çorlu–Çerkezköy industrial corridor; local presence still requires fresh validation before assigning Lüleburgaz scope."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 300,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "Fortescue introduces agentic 'capability' to procurement"
+      ]
+    },
+    {
+      "candidate_id": "c016",
+      "validation_index": 16,
+      "validator_assignment": "B",
+      "canonical_key": "plastic-manufacturer|prove-recycled-material-claims-by-lot|supplier-lot-evidence-passport",
+      "idea_name": "Recycled hammadde iddialarını lot bazında kanıta bağlayan lightweight Material Claim Passport.",
+      "core_job": "recycled hammadde iddiasının hangi tedarikçi/lot/sertifika kanıtına dayandığını satın almadan müşteriye kadar izlemek",
+      "target_customer": "plastik compound kullanan üreticiler, plastik parça üreticileri ve recycled-content satın alan procurement/quality ekipleri",
+      "buyer": "quality manager, procurement manager, sustainability/compliance manager",
+      "product_mechanism": "supplier/lot passport + document/evidence registry + claim-to-evidence mapping + expiry/exception queue + QR/PDF evidence pack",
+      "triggering_article_ids": [
+        "49b5fd2ee7ef7065d3f734ac"
+      ],
+      "supporting_article_ids": [
+        "49b5fd2ee7ef7065d3f734ac"
+      ],
+      "canonical_source_urls": [
+        "https://www.addiplast-group.com/category/non-classifiee/"
+      ],
+      "article_verification_summary": "corroborated",
+      "before_state": "COA, sertifika, supplier declaration ve lot belgeleri e-posta/PDF/ERP eklerinde dağınık; recycled-content iddiasının audit trail'i manuel kuruluyor.",
+      "after_state": "Recycled hammadde iddialarını lot bazında kanıta bağlayan lightweight Material Claim Passport.",
+      "why_now": "Addiplast 2026'da PCR/PIR compounds için Sourcing Passport yaklaşımını piyasaya çıkarırken sektör haberi yanlış recycled-content iddialı ithal malzeme baskısını vurguluyor.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Türkiye / Dünya",
+      "trakya_transferability_hypothesis": "Plastik, ambalaj, otomotiv yan sanayi ve tüketim ürünü üretiminde aynı incoming-material evidence workflow'u Trakya sanayi koridoruna aktarılabilir; batch içinde somut Lüleburgaz firma kanıtı yok.",
+      "local_scope_evidence_hints": [
+        "Plastik, ambalaj, otomotiv yan sanayi ve tüketim ürünü üretiminde aynı incoming-material evidence workflow'u Trakya sanayi koridoruna aktarılabilir; batch içinde somut Lüleburgaz firma kanıtı yok."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 380,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "Fakuma 2026 : Face à l’afflux de matières chinoises qui n’ont parfois de recyclé que le nom, Addiplast lance une nouvelle gamme assortie d’un passeport de traçabilité"
+      ]
+    },
+    {
+      "candidate_id": "c017",
+      "validation_index": 17,
+      "validator_assignment": "A",
+      "canonical_key": "production-ai-teams|manage-ai-behavior-incidents|ai-incident-triage-remediation-ledger",
+      "idea_name": "An AI Reliability Incident Desk for small platform teams that need structured human follow-up around model and agent failures.",
+      "core_job": "Track operational AI failures and policy-relevant behavior as actionable incidents rather than scattered logs.",
+      "target_customer": "software teams operating production AI features or agents without a mature AI observability platform",
+      "buyer": "SRE/platform engineering/AI operations lead",
+      "product_mechanism": "AI incident register that ingests lightweight events, classifies behavior/policy failures, assigns owners, tracks remediation and produces reliability reports.",
+      "triggering_article_ids": [
+        "040098b2c804461d53e274e4"
+      ],
+      "supporting_article_ids": [
+        "040098b2c804461d53e274e4"
+      ],
+      "canonical_source_urls": [
+        "https://atmarkit.itmedia.co.jp/ait/spv/2610/01/news027.html"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Traditional uptime/latency monitoring does not capture agent decisions, outcome quality or governance context; ownership and incident follow-up are fragmented.",
+      "after_state": "An AI Reliability Incident Desk for small platform teams that need structured human follow-up around model and agent failures.",
+      "why_now": "A 2026 SRE survey reported 67% of respondents consider monitoring AI behavior important as AI moves into production.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 250,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "実運用へ広がるAI活用、「SRE」にも変化――67％が“AIの監視”を重要視"
+      ]
+    },
+    {
+      "candidate_id": "c018",
+      "validation_index": 18,
+      "validator_assignment": "B",
+      "canonical_key": "reddit-dependent-teams|migrate-retiring-rss-api-workflows|dependency-inventory-and-migration-ledger",
+      "idea_name": "A Reddit dependency migration desk that inventories feeds/bots, maps owners and deadlines, and tracks replacement or approved-platform migration evidence.",
+      "core_job": "inventory Reddit-dependent workflows and migrate them before access deadlines",
+      "target_customer": "teams whose approved Reddit workflows depend on RSS/public API",
+      "buyer": "community, research or social-listening operations lead",
+      "product_mechanism": "dependency inventory + deadline tracker + migration owner/evidence checklist",
+      "triggering_article_ids": [
+        "acc383a492ef9977c1e718b1",
+        "8a401cc0264d5e89a13cadc6"
+      ],
+      "supporting_article_ids": [
+        "acc383a492ef9977c1e718b1",
+        "8a401cc0264d5e89a13cadc6"
+      ],
+      "canonical_source_urls": [
+        "https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/"
+      ],
+      "article_verification_summary": "corroborated",
+      "before_state": "organizations may not know which feeds, bots and research jobs depend on retiring interfaces or who owns each migration.",
+      "after_state": "A Reddit dependency migration desk that inventories feeds/bots, maps owners and deadlines, and tracks replacement or approved-platform migration evidence.",
+      "why_now": "The shutdown has concrete 2026-11-13 and 2027 deadlines and Reddit says ordinary RSS use has no replacement.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 280,
+      "history_match_key": "data-dependent-smb|manage-external-source-access-change|dependency-policy-migration-desk",
+      "history_match_reason": "Likely semantic overlap: external data-source access change and migration workflow.",
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "Reddit to shut down RSS feeds and public API",
+        "Reddit schaltet RSS-Feeds und öffentliche API ab"
+      ]
+    },
+    {
+      "candidate_id": "c019",
+      "validation_index": 19,
+      "validator_assignment": "A",
+      "canonical_key": "regulated-manufacturers|collect-chemical-compliance-evidence-from-suppliers|declaration-request-and-evidence-matrix",
+      "idea_name": "A zero-API supplier chemical-declaration workspace that turns email/Excel evidence chasing into a traceable compliance queue.",
+      "core_job": "collect supplier chemical declarations and assemble regulation-response evidence without chasing spreadsheets and email",
+      "target_customer": "manufacturers and suppliers handling regulated chemicals",
+      "buyer": "quality, EHS or procurement manager",
+      "product_mechanism": "supplier declaration request portal + substance/regulation matrix + evidence completeness dashboard",
+      "triggering_article_ids": [
+        "f93175121315e719d57749c6"
+      ],
+      "supporting_article_ids": [
+        "f93175121315e719d57749c6"
+      ],
+      "canonical_source_urls": [],
+      "article_verification_summary": "insufficient",
+      "before_state": "supplier declarations, substance lists and response status are fragmented across documents and email.",
+      "after_state": "A zero-API supplier chemical-declaration workspace that turns email/Excel evidence chasing into a traceable compliance queue.",
+      "why_now": "The assigned source reports a newly launched service specifically aimed at reducing chemical-regulation response burden.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Türkiye / Dünya",
+      "trakya_transferability_hypothesis": "Chemical, textile, food packaging and industrial suppliers in the Trakya corridor plausibly share supplier-declaration workflows; local evidence still required.",
+      "local_scope_evidence_hints": [
+        "Chemical, textile, food packaging and industrial suppliers in the Trakya corridor plausibly share supplier-declaration workflows; local evidence still required."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 390,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "NTTデータら、化学物質規制対応の負担を軽減する新サービス提供開始"
+      ]
+    },
+    {
+      "candidate_id": "c020",
+      "validation_index": 20,
+      "validator_assignment": "B",
+      "canonical_key": "retailer-it-team|prove-critical-systems-are-recoverable|restore-test-evidence-ledger",
+      "idea_name": "Retail ekipleri için backup satın almayan, mevcut backup'ların gerçekten restore edilebilirliğini yöneten Recovery Proof Desk.",
+      "core_job": "kritik sistemlerin gerçekten geri döndürülebilir olduğunu düzenli kanıtlamak ve recovery görevlerini sahipleriyle takip etmek",
+      "target_customer": "100+ çalışanlı perakendeci ve e-ticaret işletmeleri",
+      "buyer": "IT manager, operations manager, information security lead",
+      "product_mechanism": "critical-system register + recovery owner + restore-test calendar + RPO/RTO evidence + failed-test remediation queue + management report",
+      "triggering_article_ids": [
+        "3902c8b04a4997efbe466a1f"
+      ],
+      "supporting_article_ids": [
+        "3902c8b04a4997efbe466a1f"
+      ],
+      "canonical_source_urls": [
+        "https://www.kaspersky.co.za/about/press-releases/almost-one-fifth-of-retailers-suffer-permanent-data-loss-from-cyber-attacks-kaspersky-survey"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Backup varlığı ile restore edilebilirlik aynı şey değil; restore testleri, RPO/RTO, owner ve eksik kanıtlar ticket/Excel/backup console arasında dağınık.",
+      "after_state": "Retail ekipleri için backup satın almayan, mevcut backup'ların gerçekten restore edilebilirliğini yöneten Recovery Proof Desk.",
+      "why_now": "Kaspersky'nin 1 Ekim 2026 araştırması perakendede kalıcı veri kaybı ve operasyon kesintisinin yaygınlığını nicel olarak ortaya koydu.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 300,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "Kaspersky Araştırması: Perakendecilerin Yaklaşık Beşte Biri Siber Saldırılar Nedeniyle Kalıcı Veri Kaybına Uğruyor"
+      ]
+    },
+    {
+      "candidate_id": "c021",
+      "validation_index": 21,
+      "validator_assignment": "A",
+      "canonical_key": "robot-integrators-factories|assure-safety-critical-input-trust|input-dependency-and-test-evidence-workspace",
+      "idea_name": "A robot input-trust assurance workspace linking safety functions to sensor/data dependencies and adversarial test evidence.",
+      "core_job": "document and test whether safety-critical robot decisions depend on trustworthy inputs",
+      "target_customer": "robot integrators and factories operating connected robots",
+      "buyer": "robotics safety engineer, OT security lead, plant engineering manager",
+      "product_mechanism": "input-trust register + safety-dependency map + spoof/failure test cases + remediation evidence",
+      "triggering_article_ids": [
+        "c46d9a93bff9f625533b0bcd"
+      ],
+      "supporting_article_ids": [
+        "c46d9a93bff9f625533b0bcd"
+      ],
+      "canonical_source_urls": [
+        "https://www.therobotreport.com/your-robots-safety-functions-already-work-what-if-the-input-lies/"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "functional-safety checks focus on control behavior while input provenance, spoofing scenarios and evidence are often reviewed separately.",
+      "after_state": "A robot input-trust assurance workspace linking safety functions to sensor/data dependencies and adversarial test evidence.",
+      "why_now": "The source highlights manipulated input as a distinct failure mode even when safety functions themselves work.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Türkiye / Dünya",
+      "trakya_transferability_hypothesis": "Automotive suppliers, warehouses and factories using robots in Trakya could use the workflow; local installed-base evidence is required.",
+      "local_scope_evidence_hints": [
+        "Automotive suppliers, warehouses and factories using robots in Trakya could use the workflow; local installed-base evidence is required."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 390,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "Your Robot’s Safety Functions Already Work. What If the Input Lies?"
+      ]
+    },
+    {
+      "candidate_id": "c022",
+      "validation_index": 22,
+      "validator_assignment": "B",
+      "canonical_key": "shared-compute-programs|improve-accelerator-utilization|allocation-utilization-reclaim-ledger",
+      "idea_name": "A GPU Allocation Utilization Ledger for shared compute programs that need evidence before renewing or reclaiming capacity.",
+      "core_job": "Show whether scarce accelerator capacity is actually being used and reassign it when justified.",
+      "target_customer": "shared GPU programs, universities, accelerators, AI labs and organizations operating pooled accelerators",
+      "buyer": "AI infrastructure/program manager",
+      "product_mechanism": "Web ledger for allocation, workload milestones, utilization imports, idle exceptions, reclaim alerts and reallocation decisions.",
+      "triggering_article_ids": [
+        "477db29027b91815c694dbf2"
+      ],
+      "supporting_article_ids": [
+        "477db29027b91815c694dbf2"
+      ],
+      "canonical_source_urls": [
+        "https://v.daum.net/v/20261001103143068"
+      ],
+      "article_verification_summary": "corroborated",
+      "before_state": "Allocation and real utilization are managed separately; low-use reasons, workload stage and reclaim/reallocation decisions are hard to audit.",
+      "after_state": "A GPU Allocation Utilization Ledger for shared compute programs that need evidence before renewing or reclaiming capacity.",
+      "why_now": "In Korea, 443 of 620 allocated GPUs in 2025 and 350 of 478 in 2026 were reported below 50% utilization, while AI infrastructure budgets continue expanding.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 260,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "정부 지원 GPU 70%, 가동률 50% 미만…AI 자원 관리 공백"
+      ]
+    },
+    {
+      "candidate_id": "c023",
+      "validation_index": 23,
+      "validator_assignment": "A",
+      "canonical_key": "small-shipper-forwarder|review-gateway-routing-assumptions-from-public-port-signals|port-stat-scorecard-and-routing-review-ledger",
+      "idea_name": "A lightweight public-data gateway watch that turns port-volume shifts into routing-review tasks for smaller shippers and forwarders.",
+      "core_job": "track whether gateway traffic shifts justify a structured review of routing assumptions using public data",
+      "target_customer": "small importers/exporters and forwarders that lack enterprise network-optimization software",
+      "buyer": "logistics manager or forwarder account manager",
+      "product_mechanism": "manual/public monthly port-stat import, normalized gateway scorecard, threshold alerts, routing-review queue and decision history",
+      "triggering_article_ids": [
+        "a190006dd2dab13c897534c2"
+      ],
+      "supporting_article_ids": [
+        "a190006dd2dab13c897534c2"
+      ],
+      "canonical_source_urls": [
+        "https://www.freightwaves.com/news/port-of-oakland-august-volumes-fall-year-over-year-as-exports-edge-up-from-july",
+        "https://www.portofoakland.com/port-of-oakland-handles-173818-teus-in-august-as-exports-rise-from-july"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "smaller teams see port statistics as isolated news and do not maintain a normalized gateway-change history tied to their routing decisions",
+      "after_state": "A lightweight public-data gateway watch that turns port-volume shifts into routing-review tasks for smaller shippers and forwarders.",
+      "why_now": "Oakland reported August total TEUs down 9.6% year over year, loaded cargo down 9%, imports down 15%, and fewer vessel calls while exports were relatively steadier.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Türkiye / Dünya",
+      "trakya_transferability_hypothesis": "Türkiye exporters/forwarders could apply the same public-port-stat review workflow to regional gateways if comparable data is accessible; assigned material does not justify Lüleburgaz scope.",
+      "local_scope_evidence_hints": [
+        "Türkiye exporters/forwarders could apply the same public-port-stat review workflow to regional gateways if comparable data is accessible; assigned material does not justify Lüleburgaz scope."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 330,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "Port of Oakland August volumes fall year over year as exports edge up from July"
+      ]
+    },
+    {
+      "candidate_id": "c024",
+      "validation_index": 24,
+      "validator_assignment": "B",
+      "canonical_key": "smb-ai-operator|govern-agent-ownership-permissions-revocation|agent-authority-ledger",
+      "idea_name": "Kriptografik IAM ürünü olmadan küçük ekiplerin AI agent envanteri, owner, permission ve revoke süreçlerini yöneten Agent Authority Ledger.",
+      "core_job": "hangi AI agent'ın kime ait olduğunu ve hangi araç/veriye ne kadar süreyle erişebildiğini basit bir governance workflow'unda tutmak",
+      "target_customer": "AI agent kullanan fakat enterprise PKI/IAM ürünü kurmak istemeyen KOBİ ve orta ölçekli şirketler",
+      "buyer": "IT manager, security lead, AI platform owner",
+      "product_mechanism": "agent registry + accountable owner + permission manifest + expiry/review calendar + manual revoke runbook + audit evidence export",
+      "triggering_article_ids": [
+        "2fa4a0c84ca0001bba885f82"
+      ],
+      "supporting_article_ids": [
+        "2fa4a0c84ca0001bba885f82"
+      ],
+      "canonical_source_urls": [
+        "https://www.digicert.com/jp/news/every-ai-agent-needs-a-kill-switch-digicert-launches-ai-trust-manager",
+        "https://www.digicert.com/news/every-ai-agent-needs-a-kill-switch-digicert-launches-ai-trust-manager"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "Agent listeleri, API keys, MCP/tool izinleri ve sahiplik bilgisi farklı sistemlerde kalıyor; offboarding veya risk anında hangi erişimlerin kapatılacağı belirsizleşiyor.",
+      "after_state": "Kriptografik IAM ürünü olmadan küçük ekiplerin AI agent envanteri, owner, permission ve revoke süreçlerini yöneten Agent Authority Ledger.",
+      "why_now": "DigiCert'in Eylül 2026 genel kullanıma açtığı AI Trust Manager ve 1 Ekim Japonya duyurusu, agent identity/authority/kill-switch ihtiyacını ayrı bir enterprise control plane kategorisine dönüştürdü.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 310,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "デジサート、もしもの時はAIエージェントの権限を即時失効 DigiCert AI Trust Managerを発表"
+      ]
+    },
+    {
+      "candidate_id": "c025",
+      "validation_index": 25,
+      "validator_assignment": "A",
+      "canonical_key": "smb-manufacturers-distributors|compare-inventory-decisions-under-multiple-shocks|scenario-assumption-and-decision-ledger",
+      "idea_name": "A lightweight multi-shock inventory scenario desk for SMBs that records assumptions, compares buffer decisions and learns from forecast misses.",
+      "core_job": "compare inventory decisions under multiple simultaneous disruption assumptions without a full planning suite",
+      "target_customer": "SMB manufacturers, distributors and importers",
+      "buyer": "supply chain, procurement or inventory manager",
+      "product_mechanism": "scenario assumption ledger + SKU risk matrix + decision log + post-event variance review",
+      "triggering_article_ids": [
+        "9f411c77daed1259502dc87a"
+      ],
+      "supporting_article_ids": [
+        "9f411c77daed1259502dc87a"
+      ],
+      "canonical_source_urls": [
+        "https://www.supplychaindive.com/news/beyond-tariffs-a-storm-of-pressures-is-hampering-smb-supply-chains/831880/"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "smaller teams often keep assumptions in separate spreadsheets and cannot see which variable drove a reorder, buffer or delay decision.",
+      "after_state": "A lightweight multi-shock inventory scenario desk for SMBs that records assumptions, compares buffer decisions and learns from forecast misses.",
+      "why_now": "Supply Chain Dive reports 2026 SMB inventory planning is characterized by multiple shifting pressures at once.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Türkiye / Dünya",
+      "trakya_transferability_hypothesis": "Manufacturers and distributors in Trakya plausibly face the same multi-variable inventory planning problem; local evidence required.",
+      "local_scope_evidence_hints": [
+        "Manufacturers and distributors in Trakya plausibly face the same multi-variable inventory planning problem; local evidence required."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 420,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "Beyond tariffs, a storm of pressures is hampering SMB supply chains"
+      ]
+    },
+    {
+      "candidate_id": "c026",
+      "validation_index": 26,
+      "validator_assignment": "B",
+      "canonical_key": "smb-shippers-brokers|verify-load-identity-and-reroute-changes|out-of-band-freight-change-ledger",
+      "idea_name": "A freight change-verification desk that requires independent confirmation whenever carrier, contact, destination or cross-dock details change.",
+      "core_job": "verify high-risk load identity and destination changes before freight is released or rerouted",
+      "target_customer": "small and mid-sized shippers, brokers and 3PLs",
+      "buyer": "transportation or security operations manager",
+      "product_mechanism": "shipment fingerprint + out-of-band change verification + exception checklist + evidence ledger",
+      "triggering_article_ids": [
+        "702d2ae23bc6fd812cc699e7"
+      ],
+      "supporting_article_ids": [
+        "702d2ae23bc6fd812cc699e7"
+      ],
+      "canonical_source_urls": [
+        "https://www.freightwaves.com/news/thieves-clone-60k-shipment-redirect-41000-pounds-of-glycerin-in-illinois"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "teams often validate paperwork but lack a compact chain-of-custody challenge workflow for last-minute destination, carrier or contact changes.",
+      "after_state": "A freight change-verification desk that requires independent confirmation whenever carrier, contact, destination or cross-dock details change.",
+      "why_now": "The intercepted $60,000 glycerin load shows cloned shipment data can redirect physical freight despite plausible paperwork.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Türkiye / Dünya",
+      "trakya_transferability_hypothesis": "Trakya's manufacturing/logistics corridor plausibly faces carrier and destination-change fraud; local incident evidence is not in assigned material.",
+      "local_scope_evidence_hints": [
+        "Trakya's manufacturing/logistics corridor plausibly faces carrier and destination-change fraud; local incident evidence is not in assigned material."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 360,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "Thieves clone $60K shipment, redirect 41,000 pounds of glycerin in Illinois"
+      ]
+    },
+    {
+      "candidate_id": "c027",
+      "validation_index": 27,
+      "validator_assignment": "A",
+      "canonical_key": "sme-hardware-engineering-team|maintain-requirement-change-test-traceability-across-variants|lightweight-traceability-and-release-evidence-workspace",
+      "idea_name": "A lightweight requirements-to-test traceability desk for smaller hardware manufacturers with variant and engineering-change control.",
+      "core_job": "maintain lightweight requirement-to-test traceability across variants and engineering changes without adopting a heavyweight PLM stack",
+      "target_customer": "small and mid-size hardware manufacturers, machinery builders and industrial product teams",
+      "buyer": "engineering manager, quality manager or product-development lead",
+      "product_mechanism": "structured requirement/change register, variant matrix, test-evidence links, impact view and release-readiness checklist",
+      "triggering_article_ids": [
+        "cd085a16bedb659dc9158fca"
+      ],
+      "supporting_article_ids": [
+        "cd085a16bedb659dc9158fca"
+      ],
+      "canonical_source_urls": [
+        "https://tech.eu/2026/10/01/tracespace-launches-trinity-to-tackle-hardware-engineerings-next-bottleneck/"
+      ],
+      "article_verification_summary": "full",
+      "before_state": "requirements, change decisions and verification evidence become fragmented as hardware variants multiply",
+      "after_state": "A lightweight requirements-to-test traceability desk for smaller hardware manufacturers with variant and engineering-change control.",
+      "why_now": "Trace.Space's Trinity launch explicitly frames connected requirements/testing/variants/changes as the next hardware-engineering bottleneck.",
+      "market_gap_hypothesis": "A lightweight workflow/evidence product may serve teams that do not need a heavyweight enterprise suite; direct competition must be verified in validation.",
+      "scope_hint": "Türkiye / Dünya",
+      "trakya_transferability_hypothesis": "Machinery, automotive-supplier and industrial-product teams in the Lüleburgaz–Çorlu–Çerkezköy corridor plausibly share variant/change traceability needs; local workflow evidence should be validated before assigning Lüleburgaz scope.",
+      "local_scope_evidence_hints": [
+        "Machinery, automotive-supplier and industrial-product teams in the Lüleburgaz–Çorlu–Çerkezköy corridor plausibly share variant/change traceability needs; local workflow evidence should be validated before assigning Lüleburgaz scope."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + Supabase/free-tier or local/open-source storage + CSV/manual import + deterministic rules/checklists; no paid API required for MVP.",
+      "estimated_lovable_credits": 440,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "supporting_article_titles": [
+        "Trace.Space launches Trinity to tackle hardware engineering’s next bottleneck"
+      ]
+    }
+  ]
+}
