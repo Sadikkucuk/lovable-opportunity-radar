@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-02",
+  "worker_id": "3",
+  "source_batch_index_generated_at": "2026-10-02T00:45:09Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "status": "complete",
+  "started_at": "2026-10-02T07:05:01+03:00",
+  "completed_at": "2026-10-02T07:11:00+03:00",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 9,
+  "original_articles_verified": 7,
+  "full_article_not_verified": 2,
+  "noise_or_no_opportunity_count": 231,
+  "raw_opportunity_count": 6,
+  "raw_opportunities": [
+    {
+      "raw_id": "w3-20261002-001",
+      "supporting_article_ids": [
+        "911f99fafe72e1782b81e38a"
+      ],
+      "supporting_article_titles": [
+        "AI adoption stalls as companies struggle to scale projects despite strong returns, study shows"
+      ],
+      "supporting_sources": [
+        "Reuters Technology"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/world/china/ai-adoption-stalls-companies-struggle-scale-projects-despite-strong-returns-2026-10-01/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AI pilotlarının finansal fayda göstermesi artık ölçeklenmeyi garanti etmiyor; yalnız %13'ü plan doğrultusunda ilerlerken legacy entegrasyonu ve regülasyon pilot→production geçişinin ayrı yönetilmesi gereken bir darboğaz haline geldi.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "REGULATION_DELTA",
+        "INFRASTRUCTURE_DELTA"
+      ],
+      "affected_workflow": "AI use-case pilotu → production readiness kanıtları → legacy entegrasyon bağımlılıkları → regülasyon/owner onayı → rollout kararı",
+      "target_customer": "orta ve büyük işletmelerde AI/IT transformation ekipleri",
+      "buyer": "CIO, Head of AI, enterprise architecture veya transformation lead",
+      "job_to_be_done": "AI pilotlarını production'a geçmeden önce teknik, veri, regülasyon ve sahiplik engellerine göre standardize biçimde değerlendirmek",
+      "current_friction": "Pilot başarı metrikleri dağınık; legacy bağımlılıkları, veri erişimi, compliance ve operasyonel owner eksikleri çoğu zaman ayrı Excel/slide/checklistlerde tutuluyor.",
+      "product_mechanism": "AI use-case registry + production-readiness scorecard + blocker/evidence ledger + owner/deadline workflow + go/hold decision board",
+      "one_sentence_concept": "AI pilotlarının neden production'a geçemediğini kanıt bazlı kapılarla yöneten lightweight AI Scale Readiness Desk.",
+      "why_now": "1 Ekim 2026 Reuters/BearingPoint bulgusu, olumlu ROI'ye rağmen AI ölçeklemesinin legacy ve regülasyon engellerinde takıldığını nicel olarak gösteriyor.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 340,
+      "draft_canonical_key": "enterprise-ai-team|move-ai-pilots-to-production|readiness-gates-blocker-evidence-ledger",
+      "evidence_notes": {
+        "source_fact": "Reuters: only 13% on track; nearly 75% positive financial outcomes; fewer than one-third advanced beyond pilot.",
+        "trakya_transferability_hypothesis": "Trakya üretim şirketlerinde AI pilotlarının ERP/MES/legacy entegrasyonuna geçişi aynı readiness workflow'una uyarlanabilir; yerel varlık bu batch içinde doğrulanmadığı için scope Lüleburgaz yapılmadı."
+      }
+    },
+    {
+      "raw_id": "w3-20261002-002",
+      "supporting_article_ids": [
+        "2fa4a0c84ca0001bba885f82"
+      ],
+      "supporting_article_titles": [
+        "デジサート、もしもの時はAIエージェントの権限を即時失効 DigiCert AI Trust Managerを発表"
+      ],
+      "supporting_sources": [
+        "Impress Watch",
+        "DigiCert"
+      ],
+      "canonical_source_urls": [
+        "https://www.digicert.com/jp/news/every-ai-agent-needs-a-kill-switch-digicert-launches-ai-trust-manager",
+        "https://www.digicert.com/news/every-ai-agent-needs-a-kill-switch-digicert-launches-ai-trust-manager"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Enterprise AI agent'ları artık yalnız uygulama olarak değil; owner, identity, yetki süresi, erişim kapsamı ve gerektiğinde anlık revoke/kill-switch gerektiren yönetilen dijital aktörler olarak ele alınıyor.",
+      "delta_types": [
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA",
+        "CAPABILITY_DELTA"
+      ],
+      "affected_workflow": "agent talebi → owner atama → tool/data yetkisi → süre/purpose onayı → kullanım → risk değişikliği → revoke/incident evidence",
+      "target_customer": "AI agent kullanan fakat enterprise PKI/IAM ürünü kurmak istemeyen KOBİ ve orta ölçekli şirketler",
+      "buyer": "IT manager, security lead, AI platform owner",
+      "job_to_be_done": "hangi AI agent'ın kime ait olduğunu ve hangi araç/veriye ne kadar süreyle erişebildiğini basit bir governance workflow'unda tutmak",
+      "current_friction": "Agent listeleri, API keys, MCP/tool izinleri ve sahiplik bilgisi farklı sistemlerde kalıyor; offboarding veya risk anında hangi erişimlerin kapatılacağı belirsizleşiyor.",
+      "product_mechanism": "agent registry + accountable owner + permission manifest + expiry/review calendar + manual revoke runbook + audit evidence export",
+      "one_sentence_concept": "Kriptografik IAM ürünü olmadan küçük ekiplerin AI agent envanteri, owner, permission ve revoke süreçlerini yöneten Agent Authority Ledger.",
+      "why_now": "DigiCert'in Eylül 2026 genel kullanıma açtığı AI Trust Manager ve 1 Ekim Japonya duyurusu, agent identity/authority/kill-switch ihtiyacını ayrı bir enterprise control plane kategorisine dönüştürdü.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 310,
+      "draft_canonical_key": "smb-ai-operator|govern-agent-ownership-permissions-revocation|agent-authority-ledger",
+      "evidence_notes": {
+        "boundary": "MVP cryptographic identity veya runtime enforcement iddiası taşımaz; workflow/evidence layer'dır."
+      }
+    },
+    {
+      "raw_id": "w3-20261002-003",
+      "supporting_article_ids": [
+        "49b5fd2ee7ef7065d3f734ac"
+      ],
+      "supporting_article_titles": [
+        "Fakuma 2026 : Face à l’afflux de matières chinoises qui n’ont parfois de recyclé que le nom, Addiplast lance une nouvelle gamme assortie d’un passeport de traçabilité"
+      ],
+      "supporting_sources": [
+        "L'Usine Nouvelle",
+        "Addiplast Group"
+      ],
+      "canonical_source_urls": [
+        "https://www.addiplast-group.com/category/non-classifiee/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Recycled-content iddiası artık yalnız tedarikçi beyanı olmaktan çıkıp lot/source seviyesinde kanıtlanabilir sourcing passport ile desteklenmeye başlıyor; yanlış etiketlenmiş ithal malzeme riski traceability ihtiyacını artırıyor.",
+      "delta_types": [
+        "DATA_DELTA",
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "recycled raw material purchase → supplier/lot evidence → recycled-content claim → incoming QA → customer/audit evidence pack",
+      "target_customer": "plastik compound kullanan üreticiler, plastik parça üreticileri ve recycled-content satın alan procurement/quality ekipleri",
+      "buyer": "quality manager, procurement manager, sustainability/compliance manager",
+      "job_to_be_done": "recycled hammadde iddiasının hangi tedarikçi/lot/sertifika kanıtına dayandığını satın almadan müşteriye kadar izlemek",
+      "current_friction": "COA, sertifika, supplier declaration ve lot belgeleri e-posta/PDF/ERP eklerinde dağınık; recycled-content iddiasının audit trail'i manuel kuruluyor.",
+      "product_mechanism": "supplier/lot passport + document/evidence registry + claim-to-evidence mapping + expiry/exception queue + QR/PDF evidence pack",
+      "one_sentence_concept": "Recycled hammadde iddialarını lot bazında kanıta bağlayan lightweight Material Claim Passport.",
+      "why_now": "Addiplast 2026'da PCR/PIR compounds için Sourcing Passport yaklaşımını piyasaya çıkarırken sektör haberi yanlış recycled-content iddialı ithal malzeme baskısını vurguluyor.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 380,
+      "draft_canonical_key": "plastic-manufacturer|prove-recycled-material-claims-by-lot|supplier-lot-evidence-passport",
+      "evidence_notes": {
+        "trakya_transferability_hypothesis": "Plastik, ambalaj, otomotiv yan sanayi ve tüketim ürünü üretiminde aynı incoming-material evidence workflow'u Trakya sanayi koridoruna aktarılabilir; batch içinde somut Lüleburgaz firma kanıtı yok."
+      }
+    },
+    {
+      "raw_id": "w3-20261002-004",
+      "supporting_article_ids": [
+        "3902c8b04a4997efbe466a1f"
+      ],
+      "supporting_article_titles": [
+        "Kaspersky Araştırması: Perakendecilerin Yaklaşık Beşte Biri Siber Saldırılar Nedeniyle Kalıcı Veri Kaybına Uğruyor"
+      ],
+      "supporting_sources": [
+        "Turk-internet.com",
+        "Kaspersky"
+      ],
+      "canonical_source_urls": [
+        "https://www.kaspersky.co.za/about/press-releases/almost-one-fifth-of-retailers-suffer-permanent-data-loss-from-cyber-attacks-kaspersky-survey"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Retail cyber riskinin yalnız saldırı önleme değil iş sürekliliği/evidence problemi olduğu güçleniyor: ankette %19 irrecoverable data loss, %25 operasyon kesintisi ve %41 outsourced security bütçesi bildiriliyor.",
+      "delta_types": [
+        "RISK_DELTA",
+        "BEHAVIOR_DELTA",
+        "BUSINESS_MODEL_DELTA"
+      ],
+      "affected_workflow": "kritik retail süreç/envanteri → backup/recovery owner → restore test → incident → recovery action → kanıt/lessons learned",
+      "target_customer": "100+ çalışanlı perakendeci ve e-ticaret işletmeleri",
+      "buyer": "IT manager, operations manager, information security lead",
+      "job_to_be_done": "kritik sistemlerin gerçekten geri döndürülebilir olduğunu düzenli kanıtlamak ve recovery görevlerini sahipleriyle takip etmek",
+      "current_friction": "Backup varlığı ile restore edilebilirlik aynı şey değil; restore testleri, RPO/RTO, owner ve eksik kanıtlar ticket/Excel/backup console arasında dağınık.",
+      "product_mechanism": "critical-system register + recovery owner + restore-test calendar + RPO/RTO evidence + failed-test remediation queue + management report",
+      "one_sentence_concept": "Retail ekipleri için backup satın almayan, mevcut backup'ların gerçekten restore edilebilirliğini yöneten Recovery Proof Desk.",
+      "why_now": "Kaspersky'nin 1 Ekim 2026 araştırması perakendede kalıcı veri kaybı ve operasyon kesintisinin yaygınlığını nicel olarak ortaya koydu.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 300,
+      "draft_canonical_key": "retailer-it-team|prove-critical-systems-are-recoverable|restore-test-evidence-ledger",
+      "evidence_notes": {
+        "survey": "18 countries, 120 retail respondents; 87% experienced cyber incidents; 19% irrecoverable data loss."
+      }
+    },
+    {
+      "raw_id": "w3-20261002-005",
+      "supporting_article_ids": [
+        "cafd83620e3f7dece10d8c2c"
+      ],
+      "supporting_article_titles": [
+        "AI-Defined Vehicles Push Compute, Memory, And Validation Limits"
+      ],
+      "supporting_sources": [
+        "Semiconductor Engineering"
+      ],
+      "canonical_source_urls": [
+        "https://semiengineering.com/tag/ai-defined-vehicles/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "AI-defined vehicle mimarilerinde compute seçimi tek başına yeterli değil; sensor-data movement, memory/interface, power ve validation trade-off'ları platform kararını çok-boyutlu evidence problemine dönüştürüyor.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "INFRASTRUCTURE_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "vehicle feature/AI requirement → compute/memory/network architecture assumptions → scenario/test matrix → evidence coverage → release/architecture decision",
+      "target_customer": "otomotiv yazılım/elektronik ekipleri ve Tier-1/Tier-2 engineering suppliers",
+      "buyer": "system architect, validation lead, program manager",
+      "job_to_be_done": "AI vehicle architecture kararlarının gereksinim, test senaryosu ve validation evidence kapsamını izlenebilir biçimde bağlamak",
+      "current_friction": "Compute, memory, network, power ve validation kararları farklı engineering araçlarında; program yöneticisi hangi mimari varsayımın hangi test kanıtıyla kapandığını kolay göremiyor.",
+      "product_mechanism": "architecture assumption register + requirement-to-validation matrix + scenario coverage ledger + evidence links + release readiness dashboard",
+      "one_sentence_concept": "AI-defined vehicle programlarında mimari varsayımları validation kanıtına bağlayan Architecture Evidence Matrix.",
+      "why_now": "1 Ekim 2026 Semiconductor Engineering analizi AI-defined araçlarda compute, memory/data movement ve validation sınırlarının birlikte zorlandığını işaret ediyor.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "automotive-engineering-team|prove-ai-vehicle-architecture-validation-coverage|architecture-evidence-matrix",
+      "evidence_notes": {
+        "trakya_transferability_hypothesis": "Otomotiv yan sanayi ve elektronik tedarikçilerinde requirement/validation evidence workflow'u Trakya'ya aktarılabilir; yerel firma kanıtı bu batch'te yok.",
+        "boundary": "Simulation veya vehicle testing motoru değildir; evidence/readiness workflow'udur."
+      }
+    },
+    {
+      "raw_id": "w3-20261002-006",
+      "supporting_article_ids": [
+        "42437aa822c0c765fd0f6d3f",
+        "a2f84a0e37ddecfb2790d241"
+      ],
+      "supporting_article_titles": [
+        "NJ fines AI data center over unpermitted on-site power generators",
+        "Data centres eye on-site power for AI era resilience"
+      ],
+      "supporting_sources": [
+        "ET Datacenters"
+      ],
+      "canonical_source_urls": [
+        "https://datacenters.economictimes.indiatimes.com/"
+      ],
+      "article_verification": "insufficient",
+      "novelty_delta": "AI data-center enerji ihtiyacı on-site generation'ı hızlandırırken permit/operating-condition takibi yatırımın ayrı bir compliance workflow'una dönüşüyor; feed aynı anda resilience talebi ve izinsiz jeneratör cezası sinyali veriyor.",
+      "delta_types": [
+        "INFRASTRUCTURE_DELTA",
+        "REGULATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "on-site power option → jurisdiction/permit obligations → document/condition evidence → commissioning → operating-limit monitoring → renewal/inspection",
+      "target_customer": "data-center operatorleri ve on-site power proje/EPC ekipleri",
+      "buyer": "facility/energy manager, project development lead, compliance manager",
+      "job_to_be_done": "on-site generation projesinin permit, condition, evidence ve renewal yükümlülüklerini commissioning öncesi ve işletmede kaçırmamak",
+      "current_friction": "Permit şartları, engineering dokümanları, inspection dates ve operating limits proje klasörleri/e-posta/takvimlerde parçalı tutulabiliyor.",
+      "product_mechanism": "permit obligation register + evidence checklist + condition/limit ledger + renewal calendar + commissioning gate",
+      "one_sentence_concept": "On-site data-center power projeleri için izin ve commissioning kanıtlarını tek workflow'da tutan Power Permit Readiness Desk.",
+      "why_now": "1 Ekim 2026 feed'i AI-era resilience için on-site power talebi ile New Jersey'deki unpermitted generator cezasını aynı zaman penceresinde gösteriyor.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 320,
+      "draft_canonical_key": "data-center-power-team|keep-onsite-generation-permits-and-conditions-ready|permit-evidence-commissioning-ledger",
+      "evidence_notes": {
+        "verification_limit": "Original ET Datacenters article was not independently resolved to a primary regulator source in this discovery pass; merge/validation must not treat this as strong evidence.",
+        "trakya_transferability_hypothesis": "Industrial facilities adding behind-the-meter generation have analogous permit/evidence workflows, potentially transferable to Trakya, but local applicability requires jurisdiction-specific validation."
+      }
+    }
+  ]
+}
