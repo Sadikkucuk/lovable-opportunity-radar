@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-02",
+  "worker_id": "4",
+  "source_batch_index_generated_at": "2026-09-28T01:38:01Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "status": "complete",
+  "started_at": "2026-10-02T08:02:00+03:00",
+  "completed_at": "2026-10-02T08:10:00+03:00",
+  "feed_items_expected": 280,
+  "feed_items_triaged": 280,
+  "candidate_article_count": 7,
+  "original_articles_verified": 6,
+  "full_article_not_verified": 0,
+  "noise_or_no_opportunity_count": 273,
+  "raw_opportunity_count": 7,
+  "raw_opportunities": [
+    {
+      "raw_id": "w4-20261002-001",
+      "supporting_article_ids": [
+        "6b51d6340c5eca6897b72375"
+      ],
+      "supporting_article_titles": [
+        "Omnissaが「Elara」を発表 AIエージェントの暴走を防ぐ“実行前の権限レイヤー”とは"
+      ],
+      "supporting_sources": [
+        "ITmedia",
+        "Omnissa"
+      ],
+      "canonical_source_urls": [
+        "https://www.omnissa.com/newsroom/news/omnissa-one-amer-2026-elara-press-release/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Enterprise AI/agent actions can be evaluated against identity, device, app, policy, freeze and dependency context before execution, with approval routing and replayable evidence.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "AI-agent and automated change authorization before consequential enterprise actions",
+      "target_customer": "enterprises deploying AI agents and automation across heterogeneous IT systems",
+      "buyer": "CIO/CISO/IT operations and governance leaders",
+      "job_to_be_done": "Prevent unauthorized or contextually unsafe agent actions while preserving an auditable approval chain.",
+      "current_friction": "Permissions and change controls are fragmented by system; agents can act at machine speed across boundaries and shadow AI is difficult to govern.",
+      "product_mechanism": "Vendor-neutral web approval/control plane that registers agents, maps policies and high-impact actions, routes approvals, and records decision evidence.",
+      "one_sentence_concept": "A lightweight AI Action Approval Desk for organizations that need human/policy gates before high-impact agent actions.",
+      "why_now": "Agentic systems are moving from assistance to execution, creating a new pre-action authorization and evidence requirement.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 280,
+      "draft_canonical_key": "ai-using-smes|authorize-high-impact-agent-actions|policy-approval-audit-workflow",
+      "evidence_notes": {
+        "source_fact": "Omnissa announced Elara beta with shadow-AI discovery, guardrails, pre-action change control and audit-ready evidence.",
+        "inference": "A narrower workflow product can target organizations that do not need a full endpoint-management authority layer."
+      }
+    },
+    {
+      "raw_id": "w4-20261002-002",
+      "supporting_article_ids": [
+        "b9f4639a01a0e3a6f7b4e50f"
+      ],
+      "supporting_article_titles": [
+        "電通総研、AIエージェント搭載の安全保障貿易管理ソリューション「GREENLIGHT」"
+      ],
+      "supporting_sources": [
+        "Impress Watch",
+        "Dentsu Soken"
+      ],
+      "canonical_source_urls": [
+        "https://www.dentsusoken.com/news/release/2026/0928.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AI-assisted export-control classification can combine regulatory search, preliminary classification, evidence and approval history; a Japanese proof of concept reduced request-to-preliminary-decision time by up to 97%.",
+      "delta_types": [
+        "SPEED_DELTA",
+        "CAPABILITY_DELTA",
+        "REGULATION_DELTA"
+      ],
+      "affected_workflow": "Export-control classification request → regulation/product evidence gathering → preliminary determination → expert approval → audit record",
+      "target_customer": "manufacturers and technology exporters handling controlled goods, software or technical data",
+      "buyer": "export-control/compliance manager",
+      "job_to_be_done": "Turn repeated export-control classification requests into traceable, reviewable cases.",
+      "current_friction": "Regulations change, product evidence is scattered, specialist review is slow, and rationale/approval histories are difficult to reuse.",
+      "product_mechanism": "Case-management portal for intake, rule/evidence checklist, draft determination, human approval, reusable rationale and audit history.",
+      "one_sentence_concept": "An export-control case desk that structures classification evidence and approvals instead of leaving them in email and spreadsheets.",
+      "why_now": "Tighter economic-security/export-control regimes increase the frequency and cost of defensible classification decisions.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 330,
+      "draft_canonical_key": "exporting-manufacturers|manage-export-control-classification|evidence-case-approval-ledger",
+      "evidence_notes": {
+        "quantitative_signal": "Dentsu Soken reports up to 97% reduction in workflow time in a domestic-company PoC.",
+        "boundary": "MVP supports workflow/evidence; it must not autonomously provide legally authoritative classifications."
+      }
+    },
+    {
+      "raw_id": "w4-20261002-003",
+      "supporting_article_ids": [
+        "9b1a36ea4b149dd3617ac6a0"
+      ],
+      "supporting_article_titles": [
+        "Fortescue introduces agentic 'capability' to procurement"
+      ],
+      "supporting_sources": [
+        "iTnews"
+      ],
+      "canonical_source_urls": [
+        "https://www.itnews.com.au/news/fortescue-introduces-agentic-capability-to-procurement-629125"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Procurement assistance linked to warehouse visibility can redirect demand toward already-held inventory and reduce working-capital needs.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "DATA_DELTA",
+        "COST_DELTA"
+      ],
+      "affected_workflow": "Purchase request → contract/catalog search → warehouse stock check → reuse/transfer-or-buy decision → procurement",
+      "target_customer": "multi-site manufacturers, miners, logistics operators and industrial groups with distributed stores/warehouses",
+      "buyer": "procurement or supply-chain leader",
+      "job_to_be_done": "Avoid buying an item that already exists elsewhere in the organization's inventory.",
+      "current_friction": "Buyers struggle to navigate contracts and fragmented warehouse stock, causing off-contract purchases, duplicate buying and excess working capital.",
+      "product_mechanism": "Request intake and stock-first decision workflow that searches normalized warehouse inventory and contracts, suggests reuse/transfer, and records avoided purchases.",
+      "one_sentence_concept": "A Stock-Before-Buy procurement desk that checks distributed inventory before a new purchase is approved.",
+      "why_now": "Agentic search and enterprise data access make cross-warehouse stock discovery usable inside procurement workflows.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 300,
+      "draft_canonical_key": "multi-site-industrial-firms|avoid-duplicate-procurement|stock-before-buy-workflow",
+      "evidence_notes": {
+        "source_fact": "Fortescue says warehouse visibility shifted users toward existing inventory and reduced working capital.",
+        "trakya_transferability_hypothesis": "The workflow is transferable to factories, suppliers, warehouses and logistics operators in the Lüleburgaz–Çorlu–Çerkezköy industrial corridor; local presence still requires fresh validation before assigning Lüleburgaz scope."
+      }
+    },
+    {
+      "raw_id": "w4-20261002-004",
+      "supporting_article_ids": [
+        "477db29027b91815c694dbf2"
+      ],
+      "supporting_article_titles": [
+        "정부 지원 GPU 70%, 가동률 50% 미만…AI 자원 관리 공백"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea",
+        "SPRi"
+      ],
+      "canonical_source_urls": [
+        "https://v.daum.net/v/20261001103143068"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Publicly supported GPU allocations show large under-utilization, making allocation, utilization evidence, reclamation and re-assignment a measurable operations problem.",
+      "delta_types": [
+        "DATA_DELTA",
+        "COST_DELTA",
+        "INFRASTRUCTURE_DELTA"
+      ],
+      "affected_workflow": "GPU request → allocation → workload scheduling → utilization tracking → justification/reclaim/reallocation",
+      "target_customer": "shared GPU programs, universities, accelerators, AI labs and organizations operating pooled accelerators",
+      "buyer": "AI infrastructure/program manager",
+      "job_to_be_done": "Show whether scarce accelerator capacity is actually being used and reassign it when justified.",
+      "current_friction": "Allocation and real utilization are managed separately; low-use reasons, workload stage and reclaim/reallocation decisions are hard to audit.",
+      "product_mechanism": "Web ledger for allocation, workload milestones, utilization imports, idle exceptions, reclaim alerts and reallocation decisions.",
+      "one_sentence_concept": "A GPU Allocation Utilization Ledger for shared compute programs that need evidence before renewing or reclaiming capacity.",
+      "why_now": "In Korea, 443 of 620 allocated GPUs in 2025 and 350 of 478 in 2026 were reported below 50% utilization, while AI infrastructure budgets continue expanding.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 260,
+      "draft_canonical_key": "shared-compute-programs|improve-accelerator-utilization|allocation-utilization-reclaim-ledger",
+      "evidence_notes": {
+        "quantitative_signal": "71.5% of 2025 and 73.2% of 2026 allocated GPUs in the cited support program were below 50% utilization.",
+        "caveat": "The ministry said utilization varies by research stage and low utilization alone does not establish waste."
+      }
+    },
+    {
+      "raw_id": "w4-20261002-005",
+      "supporting_article_ids": [
+        "c0a03ecdb6e54bf804b6651c"
+      ],
+      "supporting_article_titles": [
+        "製造業のPSIRT運用体制整備で協業、欧州CRA対応などを支援"
+      ],
+      "supporting_sources": [
+        "MONOist",
+        "Hitachi Systems Engineering Services/Covalent"
+      ],
+      "canonical_source_urls": [
+        "https://monoist.itmedia.co.jp/mn/spv/2610/01/news016.html",
+        "https://prtimes.jp/main/html/rd/p/000000003.000171713.html/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "EU CRA reporting obligations turn post-market product vulnerability handling into a time-bound, cross-company evidence and notification workflow for manufacturers.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "Vulnerability intake → affected-product/SBOM assessment → severity/CRA applicability → authority/customer/supply-chain notification → remediation evidence",
+      "target_customer": "manufacturers selling connected or software-enabled products into the EU",
+      "buyer": "product security/PSIRT/compliance leader",
+      "job_to_be_done": "Coordinate and prove CRA vulnerability handling across products and suppliers.",
+      "current_friction": "SBOM/SCA findings, supplier responses, deadlines, notifications and remediation evidence are fragmented across security tools, email and spreadsheets.",
+      "product_mechanism": "CRA/PSIRT case manager with product registry, deadline rules, evidence checklist, supplier requests, notification drafts and audit trail.",
+      "one_sentence_concept": "A CRA PSIRT Case Desk that turns vulnerability reports into deadline-driven evidence and notification workflows.",
+      "why_now": "CRA vulnerability/incident reporting obligations began applying in September 2026, increasing operational urgency for manufacturers.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 340,
+      "draft_canonical_key": "eu-exporting-manufacturers|operate-cra-vulnerability-response|psirt-deadline-evidence-workflow",
+      "evidence_notes": {
+        "source_fact": "Industry support offerings explicitly target PSIRT setup/operation and CRA readiness as reporting requirements begin.",
+        "trakya_transferability_hypothesis": "Connected-product and machinery suppliers in the Trakya industrial corridor could face the same EU-export workflow; concrete local company evidence is not present in assigned material."
+      }
+    },
+    {
+      "raw_id": "w4-20261002-006",
+      "supporting_article_ids": [
+        "0ece5cde9c4d61180e69101d",
+        "11b90e353c39436d6b40ba2d"
+      ],
+      "supporting_article_titles": [
+        "美国加州《反机器人老板》法案生效，禁止完全依赖 AI 解雇或惩戒员工",
+        "加州州长纽森签署法案 禁止雇主仅靠AI解雇或惩罚员工"
+      ],
+      "supporting_sources": [
+        "ITHome",
+        "Huxiu",
+        "Associated Press"
+      ],
+      "canonical_source_urls": [
+        "https://apnews.com/article/1aa4935e3ee79519ae8b2458b2b9ebc1"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "California employers face new human-review and worker-protection requirements around consequential AI-supported employment decisions.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "AI employment signal → proposed discipline/termination → human review → notice/explanation → decision evidence",
+      "target_customer": "California employers using algorithmic or AI systems in workforce management",
+      "buyer": "HR compliance/legal/people operations",
+      "job_to_be_done": "Prove that consequential employment decisions received required human oversight and notice.",
+      "current_friction": "AI recommendations may be generated in separate HR tools without a consistent human-review record, notice packet or evidence trail.",
+      "product_mechanism": "Decision-review queue that captures AI input, assigns a human reviewer, requires rationale/checklist completion, generates notices and preserves evidence.",
+      "one_sentence_concept": "A Human Review Ledger for AI-assisted employment decisions in California.",
+      "why_now": "California enacted worker-AI protections on September 30, 2026, creating immediate compliance workflow changes.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 240,
+      "draft_canonical_key": "california-employers|document-human-review-of-ai-employment-decisions|review-notice-evidence-ledger",
+      "evidence_notes": {
+        "scope_note": "Commercially jurisdiction-specific even though the software can be delivered globally; discovery schema lacks a US/California scope tier, so Dünya is used."
+      }
+    },
+    {
+      "raw_id": "w4-20261002-007",
+      "supporting_article_ids": [
+        "040098b2c804461d53e274e4"
+      ],
+      "supporting_article_titles": [
+        "実運用へ広がるAI活用、「SRE」にも変化――67％が“AIの監視”を重要視"
+      ],
+      "supporting_sources": [
+        "ITmedia / @IT"
+      ],
+      "canonical_source_urls": [
+        "https://atmarkit.itmedia.co.jp/ait/spv/2610/01/news027.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Production AI shifts reliability work from infrastructure-only observability toward monitoring model/agent behavior, decisions and policy compliance.",
+      "delta_types": [
+        "BEHAVIOR_DELTA",
+        "DATA_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "AI production event → behavior/decision telemetry → anomaly or policy signal → owner triage → corrective action → evidence",
+      "target_customer": "software teams operating production AI features or agents without a mature AI observability platform",
+      "buyer": "SRE/platform engineering/AI operations lead",
+      "job_to_be_done": "Track operational AI failures and policy-relevant behavior as actionable incidents rather than scattered logs.",
+      "current_friction": "Traditional uptime/latency monitoring does not capture agent decisions, outcome quality or governance context; ownership and incident follow-up are fragmented.",
+      "product_mechanism": "AI incident register that ingests lightweight events, classifies behavior/policy failures, assigns owners, tracks remediation and produces reliability reports.",
+      "one_sentence_concept": "An AI Reliability Incident Desk for small platform teams that need structured human follow-up around model and agent failures.",
+      "why_now": "A 2026 SRE survey reported 67% of respondents consider monitoring AI behavior important as AI moves into production.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 250,
+      "draft_canonical_key": "production-ai-teams|manage-ai-behavior-incidents|ai-incident-triage-remediation-ledger",
+      "evidence_notes": {
+        "survey_population": "919 managers/supervisors directly involved in SRE, platform engineering or IT operations at enterprises with annual revenue above $500M; fielded Oct 2025–Jan 2026.",
+        "inference": "The raw opportunity narrows enterprise observability into a simpler incident workflow rather than recreating a telemetry platform."
+      }
+    }
+  ]
+}
