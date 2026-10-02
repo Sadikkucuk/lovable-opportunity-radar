@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-02",
+  "chunk_number": 6,
+  "candidate_ids": [
+    "c026",
+    "c027"
+  ],
+  "expected_candidate_count": 2,
+  "validated_candidate_count": 2,
+  "status": "complete",
+  "results": [
+    {
+      "candidate_id": "c026",
+      "validation_index": 26,
+      "canonical_key": "smb-shippers-brokers|verify-load-identity-and-reroute-changes|out-of-band-freight-change-ledger",
+      "development_verified": true,
+      "canonical_news_source": "FreightWaves",
+      "canonical_news_title": "Thieves clone $60K shipment, redirect 41,000 pounds of glycerin in Illinois",
+      "canonical_news_date": "2026",
+      "canonical_news_url": "https://www.freightwaves.com/news/thieves-clone-60k-shipment-redirect-41000-pounds-of-glycerin-in-illinois",
+      "source_links": [
+        "https://highway.com/",
+        "https://highway.com/blog/real-time-monitoring/",
+        "https://www.mycarrierportal.com/",
+        "https://www.truckstop.com/product/carrier-monitoring/"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "Highway",
+          "url": "https://highway.com/",
+          "reason": "Freight fraud prevention platform verifies carrier identity and equipment, monitors loads for identity/location/contact anomalies and flags deviations before or during shipment."
+        },
+        {
+          "name": "MyCarrierPortal",
+          "url": "https://www.mycarrierportal.com/",
+          "reason": "Carrier identity/risk platform with shipment-level verification, fraud detection and carrier validation for brokers/3PLs."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Truckstop RMIS Carrier Monitoring",
+          "url": "https://www.truckstop.com/product/carrier-monitoring/",
+          "reason": "Continuous carrier monitoring and identity/compliance alerts; broader carrier-risk product rather than explicit out-of-band reroute approval ledger."
+        }
+      ],
+      "competition_search_terms": [
+        "freight reroute change verification carrier identity fraud software",
+        "shipment destination change verification double brokering fraud platform",
+        "yük taşıyıcı kimlik rota değişikliği doğrulama yazılımı"
+      ],
+      "market_gap": "A simple out-of-band approval ledger is lighter, but carrier identity plus in-transit anomaly/change verification is already a core freight-fraud software category.",
+      "mvp": "Shipment fingerprint, carrier/contact/destination change request, independent verification checklist, approval/reject decision and evidence log.",
+      "working_logic": "Create trusted shipment baseline; detect/manual-enter changed carrier/contact/destination/cross-dock; require independent confirmation against trusted contact; hold release/reroute until approved; retain evidence.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "forms/rules",
+        "audit log"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 360,
+      "lovable_credit_breakdown": "UI 90; shipment baseline 80; verification workflow 110; evidence/report 80",
+      "build_time": "3-4 weeks",
+      "business_models": [
+        "broker/3PL SaaS",
+        "per-shipment/team subscription"
+      ],
+      "marketing_strategy": "SMB brokers, 3PLs and high-value shippers.",
+      "first_customer_plan": "Pilot with a broker on loads requiring manual change confirmation.",
+      "main_risk": "Established freight identity networks have proprietary carrier/device/location data a zero-API MVP cannot replicate.",
+      "validation_assumption": "Highway and MyCarrierPortal satisfy the same core job of verifying carrier/load identity and suspicious shipment changes before release.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "local_scope_verified": false,
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "Trakya logistics applicability is plausible but no concrete Lüleburgaz incident/workflow evidence was verified; local scope is not assigned.",
+      "validated_scope_hint": "Türkiye / Dünya",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Freight identity/fraud platforms already verify carrier/load identity and flag suspicious shipment changes/deviations for operational intervention."
+    },
+    {
+      "candidate_id": "c027",
+      "validation_index": 27,
+      "canonical_key": "sme-hardware-engineering-team|maintain-requirement-change-test-traceability-across-variants|lightweight-traceability-and-release-evidence-workspace",
+      "development_verified": true,
+      "canonical_news_source": "Tech.eu / Trace.Space",
+      "canonical_news_title": "Trace.Space launches Trinity to tackle hardware engineering’s next bottleneck",
+      "canonical_news_date": "2026-10-01",
+      "canonical_news_url": "https://tech.eu/2026/10/01/tracespace-launches-trinity-to-tackle-hardware-engineerings-next-bottleneck/",
+      "source_links": [
+        "https://www.trace.space/",
+        "https://www.jamasoftware.com/platform/jama-connect/",
+        "https://www.reqview.com/"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 3,
+      "global_competitors": [
+        {
+          "name": "Trace.Space Trinity",
+          "url": "https://www.trace.space/",
+          "reason": "The trigger product itself targets hardware engineering and connects requirements, variants, changes and verification/traceability in one system."
+        },
+        {
+          "name": "Jama Connect",
+          "url": "https://www.jamasoftware.com/platform/jama-connect/",
+          "reason": "Requirements management platform provides end-to-end requirements-to-test traceability, change impact analysis, baselines/reviews and verification evidence for complex hardware/system development."
+        },
+        {
+          "name": "ReqView",
+          "url": "https://www.reqview.com/",
+          "reason": "Lightweight requirements management tool supports bidirectional traceability, change/history, verification links and reusable variant-oriented requirements workflows at lower complexity than heavyweight PLM."
+        }
+      ],
+      "adjacent_competitors": [],
+      "competition_search_terms": [
+        "lightweight hardware requirements test traceability variant change management",
+        "requirements verification traceability engineering change hardware software",
+        "gereksinim test izlenebilirlik varyant değişiklik donanım yazılımı"
+      ],
+      "market_gap": "No defensible gap: both enterprise and lightweight tools already provide the exact requirements→change/variant→test evidence traceability workflow.",
+      "mvp": "Requirement/change register, variant matrix, test-evidence links, impact view and release-readiness checklist.",
+      "working_logic": "Register requirements and variants; link engineering changes; map requirements to tests/evidence; show impacted variants/tests; gate release on traceability completeness.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "relational trace links",
+        "document evidence"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 440,
+      "lovable_credit_breakdown": "UI 110; requirements/variants 100; traceability/change impact 140; release/evidence 90",
+      "build_time": "4-6 weeks",
+      "business_models": [
+        "SME engineering SaaS",
+        "per-project workspace"
+      ],
+      "marketing_strategy": "Machinery, automotive-supplier and industrial hardware engineering teams.",
+      "first_customer_plan": "Pilot with one machinery builder managing variants in spreadsheets.",
+      "main_risk": "The trigger company and mature requirements-management vendors already own the category.",
+      "validation_assumption": "Trace.Space, Jama Connect and ReqView satisfy strict same-customer + same-job + substantially-same-workflow test.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "local_scope_verified": true,
+      "local_scope_evidence": [
+        "https://cosb.org.tr/firmalar/",
+        "https://www.cerkezkoytso.org.tr/"
+      ],
+      "local_applicability_rationale": "The Çerkezköy/Trakya industrial corridor contains machinery and industrial-product manufacturers, validating regional applicability; evidence does not justify a Lüleburgaz-specific label.",
+      "validated_scope_hint": "Türkiye / Dünya",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Trace.Space Trinity itself and established requirements tools already provide requirements, variants/changes, test traceability and release evidence."
+    }
+  ],
+  "completed_at": "2026-10-02T15:06:00+03:00"
+}
