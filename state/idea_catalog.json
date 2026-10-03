@@ -2733,6 +2733,214 @@
       "status": "published",
       "first_reported_at": "2026-10-02",
       "last_updated_at": "2026-10-02"
+    },
+    {
+      "canonical_key": "factories-modernizing-automation|verify-industrial-automation-openness|vendor-interface-lockin-evidence-matrix",
+      "idea_name": "Automation Lock-in Check",
+      "scope_tier": "Türkiye",
+      "scope_reason": "Türkiye'deki üretim işletmelerine yönelik; Lüleburgaz için doğrulanmış yerel pilot kanıtı bulunmadığından yerel scope kullanılmadı.",
+      "core_idea": "Otomasyon tedarikçilerinin açıklık ve interoperability iddialarını protocol/interface kanıtı, taşınabilirlik ve lifecycle lock-in riskiyle karşılaştıran karar masası.",
+      "user_story": "Bir OT/automation yöneticisi olarak vendor'ın 'açık sistem' iddiasını somut interface ve portability kanıtlarıyla karşılaştırıp satın alma kararını kayıt altına almak istiyorum.",
+      "before_state": "Karar girdileri, kanıtlar ve onaylar farklı dosya ve sistemlerde dağınık ilerliyor.",
+      "after_state": "Girdi → kanıt → karşılaştırma/değerlendirme → sorumlu/onay → izlenebilir karar kaydı.",
+      "why_now": "Güncel üretim operasyonlarında daha hızlı değişim ve daha fazla teknik seçenek, kararların kanıtla izlenmesini önemli hale getiriyor.",
+      "target_customer": "Otomasyonunu modernize eden fabrikalar",
+      "buyer": "OT/automation yöneticisi",
+      "market": "Türkiye",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Fresh validation aynı müşteri + aynı iş + substantially-same-workflow ölçütünde izin verilen sınırın üzerinde doğrudan rakip doğrulamadı.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 350,
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Kayıt, kanıt, karşılaştırma, onay ve audit geçmişini tek web workflow'unda toplamak.",
+      "working_logic": "Kullanıcı girdiyi oluşturur, kanıtları bağlar, değerlendirme/karşılaştırma yapar, sorumlu veya onay adımını tamamlar ve karar geçmişini saklar.",
+      "build_time": "2–5 hafta",
+      "marketing_strategy": "Hedef üretim ekiplerine doğrudan design-partner pilot erişimi.",
+      "first_customer_plan": "Tek bir gerçek üretim süreci üzerinde pilot.",
+      "main_risk": "Adjacent platformların aynı workflow'u ürünlerine eklemesi.",
+      "validation_assumption": "Fresh direct-competitor araştırması gerçek müşteri görüşmeleriyle ayrıca doğrulanmalıdır.",
+      "evidence_strength": "Medium",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-03",
+      "last_updated_at": "2026-10-03"
+    },
+    {
+      "canonical_key": "food-manufacturers|evaluate-processing-equipment-purchases|requirement-vendor-evidence-comparison",
+      "idea_name": "Food Equipment Evidence Desk",
+      "scope_tier": "Türkiye",
+      "scope_reason": "Türkiye'deki üretim işletmelerine yönelik; Lüleburgaz için doğrulanmış yerel pilot kanıtı bulunmadığından yerel scope kullanılmadı.",
+      "core_idea": "Gıda işleme ekipmanı tekliflerini kapasite, hijyen, entegrasyon ve lifecycle gereksinimleriyle kanıtlı karşılaştıran satın alma öncesi workspace.",
+      "user_story": "Bir gıda fabrikası engineering/operations yöneticisi olarak ekipman tekliflerini aynı gereksinim setine göre karşılaştırıp onay kararının kanıtını saklamak istiyorum.",
+      "before_state": "Karar girdileri, kanıtlar ve onaylar farklı dosya ve sistemlerde dağınık ilerliyor.",
+      "after_state": "Girdi → kanıt → karşılaştırma/değerlendirme → sorumlu/onay → izlenebilir karar kaydı.",
+      "why_now": "Güncel üretim operasyonlarında daha hızlı değişim ve daha fazla teknik seçenek, kararların kanıtla izlenmesini önemli hale getiriyor.",
+      "target_customer": "Gıda üreticileri",
+      "buyer": "Engineering/operations yöneticisi",
+      "market": "Türkiye",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 1,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Fresh validation aynı müşteri + aynı iş + substantially-same-workflow ölçütünde izin verilen sınırın üzerinde doğrudan rakip doğrulamadı.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 330,
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Kayıt, kanıt, karşılaştırma, onay ve audit geçmişini tek web workflow'unda toplamak.",
+      "working_logic": "Kullanıcı girdiyi oluşturur, kanıtları bağlar, değerlendirme/karşılaştırma yapar, sorumlu veya onay adımını tamamlar ve karar geçmişini saklar.",
+      "build_time": "2–5 hafta",
+      "marketing_strategy": "Hedef üretim ekiplerine doğrudan design-partner pilot erişimi.",
+      "first_customer_plan": "Tek bir gerçek üretim süreci üzerinde pilot.",
+      "main_risk": "Adjacent platformların aynı workflow'u ürünlerine eklemesi.",
+      "validation_assumption": "Fresh direct-competitor araştırması gerçek müşteri görüşmeleriyle ayrıca doğrulanmalıdır.",
+      "evidence_strength": "Medium",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-03",
+      "last_updated_at": "2026-10-03"
+    },
+    {
+      "canonical_key": "manufacturing-quality-teams|transfer-inspector-judgment|inspection-case-coaching-ledger",
+      "idea_name": "Inspector Judgment Coach",
+      "scope_tier": "Türkiye",
+      "scope_reason": "Türkiye'deki üretim işletmelerine yönelik; Lüleburgaz için doğrulanmış yerel pilot kanıtı bulunmadığından yerel scope kullanılmadı.",
+      "core_idea": "Deneyimli kalite kontrol uzmanlarının gerçek inspection kararlarını ve gerekçelerini yeni kontrolörler için tekrar kullanılabilir eğitim vakalarına dönüştüren workspace.",
+      "user_story": "Bir kalite yöneticisi olarak kıdemli kontrolörlerin neden kabul/red kararı verdiğini vakalar halinde kaydedip yeni kontrolörlerin kararlarını aynı vaka üzerinde değerlendirerek yetkinlik gelişimini izlemek istiyorum.",
+      "before_state": "Karar girdileri, kanıtlar ve onaylar farklı dosya ve sistemlerde dağınık ilerliyor.",
+      "after_state": "Girdi → kanıt → karşılaştırma/değerlendirme → sorumlu/onay → izlenebilir karar kaydı.",
+      "why_now": "Güncel üretim operasyonlarında daha hızlı değişim ve daha fazla teknik seçenek, kararların kanıtla izlenmesini önemli hale getiriyor.",
+      "target_customer": "Üretim kalite ekipleri",
+      "buyer": "Kalite yöneticisi",
+      "market": "Türkiye",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 2,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Fresh validation aynı müşteri + aynı iş + substantially-same-workflow ölçütünde izin verilen sınırın üzerinde doğrudan rakip doğrulamadı.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 390,
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Kayıt, kanıt, karşılaştırma, onay ve audit geçmişini tek web workflow'unda toplamak.",
+      "working_logic": "Kullanıcı girdiyi oluşturur, kanıtları bağlar, değerlendirme/karşılaştırma yapar, sorumlu veya onay adımını tamamlar ve karar geçmişini saklar.",
+      "build_time": "2–5 hafta",
+      "marketing_strategy": "Hedef üretim ekiplerine doğrudan design-partner pilot erişimi.",
+      "first_customer_plan": "Tek bir gerçek üretim süreci üzerinde pilot.",
+      "main_risk": "Adjacent platformların aynı workflow'u ürünlerine eklemesi.",
+      "validation_assumption": "Fresh direct-competitor araştırması gerçek müşteri görüşmeleriyle ayrıca doğrulanmalıdır.",
+      "evidence_strength": "Medium",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-03",
+      "last_updated_at": "2026-10-03"
+    },
+    {
+      "canonical_key": "multi-site-manufacturers|turn-external-developments-into-owned-actions|applicability-owner-closure-ledger",
+      "idea_name": "Manufacturing Change-to-Action Desk",
+      "scope_tier": "Dünya",
+      "scope_reason": "Çok tesisli üreticilerde ülke bağımsız uygulanabilen online SaaS workflow'u.",
+      "core_idea": "Dış üretim gelişmelerini hangi tesis veya tedarikçiyi etkilediğine göre değerlendirip sahipli aksiyona ve kapanış kanıtına dönüştüren operasyon masası.",
+      "user_story": "Çok tesisli bir üretici olarak yeni bir dış gelişmenin hangi tesis ve tedarikçileri etkilediğini belirleyip her etkiyi sorumlu aksiyona dönüştürmek ve kapanışı kanıtlamak istiyorum.",
+      "before_state": "Karar girdileri, kanıtlar ve onaylar farklı dosya ve sistemlerde dağınık ilerliyor.",
+      "after_state": "Girdi → kanıt → karşılaştırma/değerlendirme → sorumlu/onay → izlenebilir karar kaydı.",
+      "why_now": "Güncel üretim operasyonlarında daha hızlı değişim ve daha fazla teknik seçenek, kararların kanıtla izlenmesini önemli hale getiriyor.",
+      "target_customer": "Çok tesisli üreticiler",
+      "buyer": "Operations/strategy yöneticisi",
+      "market": "Dünya",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 2,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Fresh validation aynı müşteri + aynı iş + substantially-same-workflow ölçütünde izin verilen sınırın üzerinde doğrudan rakip doğrulamadı.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 330,
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Kayıt, kanıt, karşılaştırma, onay ve audit geçmişini tek web workflow'unda toplamak.",
+      "working_logic": "Kullanıcı girdiyi oluşturur, kanıtları bağlar, değerlendirme/karşılaştırma yapar, sorumlu veya onay adımını tamamlar ve karar geçmişini saklar.",
+      "build_time": "2–5 hafta",
+      "marketing_strategy": "Hedef üretim ekiplerine doğrudan design-partner pilot erişimi.",
+      "first_customer_plan": "Tek bir gerçek üretim süreci üzerinde pilot.",
+      "main_risk": "Adjacent platformların aynı workflow'u ürünlerine eklemesi.",
+      "validation_assumption": "Fresh direct-competitor araştırması gerçek müşteri görüşmeleriyle ayrıca doğrulanmalıdır.",
+      "evidence_strength": "Medium",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-03",
+      "last_updated_at": "2026-10-03"
     }
   ]
 }
