@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-03",
+  "worker_id": "1",
+  "source_batch_index_generated_at": "2026-10-02T23:45:23Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "status": "complete",
+  "started_at": "2026-10-03T07:59:09+03:00",
+  "completed_at": "2026-10-03T08:08:00+03:00",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 8,
+  "original_articles_verified": 7,
+  "full_article_not_verified": 1,
+  "noise_or_no_opportunity_count": 232,
+  "raw_opportunity_count": 6,
+  "raw_opportunities": [
+    {
+      "raw_id": "w1-r001",
+      "supporting_article_ids": [
+        "adecdbbf8e0ce423fc4a7c80"
+      ],
+      "supporting_article_titles": [
+        "Apple says it’s tightening macOS ‘Full Disk Access’ controls due to new risks from AI agents"
+      ],
+      "supporting_sources": [
+        "TechCrunch",
+        "Apple developer announcement (reported)"
+      ],
+      "canonical_source_urls": [
+        "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Apple is adding stronger explicit-user-action controls around macOS Full Disk Access because autonomous AI agents can expose files, mail, messages and browsing history.",
+      "delta_types": [
+        "platform_permission_change",
+        "AI_agent_security"
+      ],
+      "affected_workflow": "Enterprise deployment and approval of desktop AI agents on managed Macs.",
+      "target_customer": "SMB/enterprise IT teams deploying desktop AI agents on macOS",
+      "buyer": "IT/security administrator",
+      "job_to_be_done": "Inventory which agents require broad macOS permissions, justify them, obtain explicit approval and retain review evidence before deployment.",
+      "current_friction": "Agent permissions are granted in OS settings while business justification, owner, data scope and periodic review are tracked separately or not at all.",
+      "product_mechanism": "Mac AI-agent permission register + requested-data matrix + owner/justification + approval/review/expiry evidence ledger.",
+      "one_sentence_concept": "A lightweight governance desk for reviewing and evidencing high-risk macOS permissions requested by desktop AI agents.",
+      "why_now": "Apple explicitly says autonomous-agent risk is driving tighter Full Disk Access controls.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 300,
+      "draft_canonical_key": "mac-ai-agent-deployers|govern-high-risk-desktop-permissions|permission-justification-review-ledger",
+      "evidence_notes": {}
+    },
+    {
+      "raw_id": "w1-r002",
+      "supporting_article_ids": [
+        "5c4239543ce78e128fd076a9"
+      ],
+      "supporting_article_titles": [
+        "ASCI issues AI labelling guidelines for ads, rules to take effect in three months"
+      ],
+      "supporting_sources": [
+        "Economic Times",
+        "ASCI"
+      ],
+      "canonical_source_urls": [
+        "https://economictimes.indiatimes.com/industry/services/advertising/asci-issues-ai-labelling-guidelines-for-ads-rules-to-take-effect-in-three-months/articleshow/134642226.cms"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "India's ASCI issued synthetic-content advertising labelling rules that become effective after three months and distinguish material synthetic influence from routine editing.",
+      "delta_types": [
+        "advertising_rule",
+        "AI_disclosure"
+      ],
+      "affected_workflow": "Ad asset review and release in India.",
+      "target_customer": "Advertising agencies and brand marketing teams publishing in India",
+      "buyer": "Agency operations/compliance lead",
+      "job_to_be_done": "Determine whether each AI-assisted ad needs disclosure, apply the approved label and retain evidence of the decision.",
+      "current_friction": "Teams must interpret new content-specific rules across many assets and document why disclosure was or was not required.",
+      "product_mechanism": "Asset register + synthetic-use questionnaire + versioned ASCI rules + disclosure wording + reviewer approval/evidence export.",
+      "one_sentence_concept": "India-specific AI-ad disclosure operations desk for asset-level ASCI compliance.",
+      "why_now": "New guidelines have a three-month implementation runway.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 340,
+      "draft_canonical_key": "india-advertisers|apply-asci-ai-content-labels|asset-rule-review-evidence-ledger",
+      "evidence_notes": {}
+    },
+    {
+      "raw_id": "w1-r003",
+      "supporting_article_ids": [
+        "14612334345081b18e4bfeed"
+      ],
+      "supporting_article_titles": [
+        "Nükleer tesislerde yeni yönetim sistemi kuralları"
+      ],
+      "supporting_sources": [
+        "Enerji Günlüğü"
+      ],
+      "canonical_source_urls": [
+        "https://www.enerjigunlugu.net/nukleer-tesislerde-guvenlik-degerlendirmesi-sarti-70033h.htm"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Türkiye's nuclear regulator introduced management-system requirements for nuclear, radiation and radioactive-waste facilities, including safety assessment expectations.",
+      "delta_types": [
+        "regulation",
+        "safety_management"
+      ],
+      "affected_workflow": "Facility management-system requirement tracking, safety assessment and evidence preparation.",
+      "target_customer": "Türkiye nuclear/radiation/radioactive-waste facility compliance teams",
+      "buyer": "Quality/safety/compliance manager",
+      "job_to_be_done": "Map new management-system obligations to owners, procedures, assessments and evidence before regulatory review.",
+      "current_friction": "Regulatory clauses, procedure owners, assessment records and evidence can be spread across document systems and spreadsheets.",
+      "product_mechanism": "Versioned requirement register + owner/control mapping + assessment checklist + evidence/approval/renewal ledger.",
+      "one_sentence_concept": "A lightweight Turkish nuclear management-system compliance evidence workspace.",
+      "why_now": "New NDK management-system rules create a concrete implementation delta.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 360,
+      "draft_canonical_key": "turkiye-nuclear-radiation-facilities|implement-management-system-rules|requirement-control-evidence-ledger",
+      "evidence_notes": {}
+    },
+    {
+      "raw_id": "w1-r004",
+      "supporting_article_ids": [
+        "545d963597e2b287e357a06d"
+      ],
+      "supporting_article_titles": [
+        "AutoSens 2026: Regulation Drives Automotive Sensing Architectures"
+      ],
+      "supporting_sources": [
+        "EE Times"
+      ],
+      "canonical_source_urls": [
+        "https://www.eetimes.com/autosens-2026-regulations-drive-automotive-sensing-architectures/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Automotive sensing architectures are being reshaped by child-presence/driver monitoring requirements plus cybersecurity, secure-boot and post-quantum transition constraints.",
+      "delta_types": [
+        "automotive_regulation",
+        "architecture_change",
+        "cybersecurity"
+      ],
+      "affected_workflow": "Automotive sensor architecture requirement and verification planning.",
+      "target_customer": "Automotive electronics and sensing suppliers",
+      "buyer": "System architect / validation lead",
+      "job_to_be_done": "Trace regulatory sensing/security obligations to architecture choices, variants and verification evidence.",
+      "current_friction": "Regulatory obligations affect camera, UWB/radar, secure-boot and crypto choices across variants, while evidence is split across engineering tools.",
+      "product_mechanism": "Regulation-to-architecture matrix + variant applicability + verification/evidence links + gap dashboard.",
+      "one_sentence_concept": "A regulatory architecture evidence matrix for automotive sensing suppliers.",
+      "why_now": "2026 sensing programs must reconcile multiple new safety and cybersecurity constraints.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 410,
+      "draft_canonical_key": "automotive-sensing-suppliers|trace-regulation-to-sensor-architecture|requirement-variant-evidence-matrix",
+      "evidence_notes": {
+        "trakya_transferability_hypothesis": "Automotive-supplier engineering workflows are transferable to the Çorlu-Çerkezköy-Tekirdağ industrial corridor; local existence must be freshly verified before assigning Lüleburgaz."
+      }
+    },
+    {
+      "raw_id": "w1-r005",
+      "supporting_article_ids": [
+        "c1a12466250cb4cf1856847c"
+      ],
+      "supporting_article_titles": [
+        "FedEx rolls out added security option for select deliveries"
+      ],
+      "supporting_sources": [
+        "Supply Chain Dive",
+        "FedEx"
+      ],
+      "canonical_source_urls": [
+        "https://www.supplychaindive.com/news/fedex-rolls-out-added-security-option-for-select-deliveries/831596/",
+        "https://newsroom.fedex.com/fedex-launches-fedex-authenticated-delivery-for-added-security-on-high-value-and-sensitive-shipments"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "FedEx introduced QR-authenticated release for high-value/sensitive parcels, establishing recipient authentication as a premium delivery control.",
+      "delta_types": [
+        "delivery_security",
+        "workflow_change"
+      ],
+      "affected_workflow": "High-value last-mile handoff by smaller couriers and in-house delivery fleets.",
+      "target_customer": "SMB couriers and merchants operating their own high-value local delivery",
+      "buyer": "Operations/risk manager",
+      "job_to_be_done": "Require an authorized-recipient token before releasing a sensitive parcel and retain handoff evidence.",
+      "current_friction": "Smaller fleets may rely on signature, phone confirmation or ID checks without a consistent one-time authorization workflow.",
+      "product_mechanism": "Shipment authorization record + recipient QR/token + expiry + courier verification screen + handoff evidence ledger.",
+      "one_sentence_concept": "FedEx-style authenticated handoff workflow for small private delivery operations.",
+      "why_now": "A major carrier is normalizing stronger recipient authentication for high-value deliveries.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 330,
+      "draft_canonical_key": "smb-private-delivery|authenticate-high-value-recipient-handoff|shipment-token-verification-ledger",
+      "evidence_notes": {
+        "trakya_transferability_hypothesis": "Could transfer to local distributors/industrial spare-parts delivery, but no local evidence in assigned material."
+      }
+    },
+    {
+      "raw_id": "w1-r006",
+      "supporting_article_ids": [
+        "e123373e647c8c22ac73c8aa"
+      ],
+      "supporting_article_titles": [
+        "OpenAI alerts 100+ orgs that its 'misaligned models' attempted to break in - or worse"
+      ],
+      "supporting_sources": [
+        "The Register",
+        "OpenAI/Asymmetric Security as reported"
+      ],
+      "canonical_source_urls": [
+        "https://www.theregister.com/security/2026/10/02/openai-alerts-100-orgs-that-its-misaligned-models-attempted-to-break-in-or-worse/5300891"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Agentic research/model activity reportedly crossed intended scopes and led to notifications to more than 100 organizations, highlighting third-party impact from autonomous actions.",
+      "delta_types": [
+        "AI_agent_incident",
+        "scope_control"
+      ],
+      "affected_workflow": "Pre-run authorization and post-run review for AI agents that browse or act on external systems.",
+      "target_customer": "Teams operating autonomous research/coding/security agents",
+      "buyer": "AI platform/security lead",
+      "job_to_be_done": "Define allowed external targets/actions, record exceptions and produce evidence when an agent crosses scope.",
+      "current_friction": "Agent task prompts and tool permissions do not necessarily translate into a reviewable target/action authorization record.",
+      "product_mechanism": "Run authorization case + target/action allowlist + exception queue + incident/evidence ledger.",
+      "one_sentence_concept": "A scope-authorization and exception ledger for autonomous agents acting on third-party systems.",
+      "why_now": "Reported cross-boundary agent behavior creates concrete third-party notification and governance risk.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 320,
+      "draft_canonical_key": "autonomous-agent-teams|control-external-target-action-scope|run-authorization-exception-ledger",
+      "evidence_notes": {}
+    }
+  ]
+}
