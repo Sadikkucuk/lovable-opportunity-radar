@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-03",
+  "worker_id": "3",
+  "source_batch_index_generated_at": "2026-10-03T05:13:35Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "status": "complete",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 5,
+  "raw_opportunity_count": 5,
+  "raw_opportunities": [
+    {
+      "raw_id": "refresh-w3-r001",
+      "supporting_article_ids": [
+        "94a99adb1afc0357c8337c84"
+      ],
+      "supporting_article_titles": [
+        "Subsidised LPG bookings halted for customers without biometric e-KYC"
+      ],
+      "supporting_sources": [
+        "ET EnergyWorld"
+      ],
+      "novelty_delta": "Mandatory biometric identity verification can abruptly block subsidized-service transactions, creating an exception-resolution workload.",
+      "affected_workflow": "eligibility → identity verification → blocked transaction → remediation → restored service",
+      "target_customer": "regulated/subsidized service operators",
+      "buyer": "operations/compliance manager",
+      "job_to_be_done": "resolve identity-verification exceptions while retaining evidence of customer remediation",
+      "product_mechanism": "exception queue + customer checklist + evidence capture + resolution SLA ledger",
+      "one_sentence_concept": "Identity-verification exception desk for regulated customer services.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 320,
+      "draft_canonical_key": "regulated-service-operators|resolve-identity-verification-exceptions|customer-remediation-evidence-ledger"
+    },
+    {
+      "raw_id": "refresh-w3-r002",
+      "supporting_article_ids": [
+        "d7d9b6ec89ba54f46cbb160b"
+      ],
+      "supporting_article_titles": [
+        "Humanoid Safety Summit: Wie viel Sicherheit brauchen Humanoide in der Fabrik?"
+      ],
+      "supporting_sources": [
+        "Automationspraxis"
+      ],
+      "novelty_delta": "Humanoid deployment in factories is shifting safety work from generic robot controls toward task- and interaction-specific risk evidence.",
+      "affected_workflow": "humanoid use case → task hazard assessment → control → approval → incident/near-miss feedback",
+      "target_customer": "factories piloting humanoid robots",
+      "buyer": "EHS / automation manager",
+      "job_to_be_done": "document and approve task-specific humanoid safety controls before deployment",
+      "product_mechanism": "task-risk register + control checklist + approval + near-miss feedback ledger",
+      "one_sentence_concept": "A humanoid deployment safety case workspace for factories.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "factories-piloting-humanoids|prove-task-specific-humanoid-safety|task-risk-control-approval-ledger"
+    },
+    {
+      "raw_id": "refresh-w3-r003",
+      "supporting_article_ids": [
+        "37cd251a9a3f702c936c5ff6"
+      ],
+      "supporting_article_titles": [
+        "How Reusable Plastic Packaging Supports the Future of Automation in Food Manufacturing"
+      ],
+      "supporting_sources": [
+        "Food Engineering"
+      ],
+      "novelty_delta": "Reusable packaging is becoming part of automated food-production flows, making container identity, hygiene status and circulation history operational data.",
+      "affected_workflow": "container issue → production use → return → wash/inspection → release",
+      "target_customer": "food manufacturers using reusable transport/production packaging",
+      "buyer": "operations/quality manager",
+      "job_to_be_done": "track reusable containers through hygiene and release checkpoints",
+      "product_mechanism": "container registry + QR events + wash/inspection evidence + quarantine/release status",
+      "one_sentence_concept": "Reusable food-packaging hygiene and circulation ledger.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 360,
+      "draft_canonical_key": "food-manufacturers|control-reusable-packaging-hygiene-circulation|container-wash-release-ledger"
+    },
+    {
+      "raw_id": "refresh-w3-r004",
+      "supporting_article_ids": [
+        "4177038c0b7d10c6f1dd0718"
+      ],
+      "supporting_article_titles": [
+        "PepsiCo, Monster challenge India 'energy drink' label ban citing business impact"
+      ],
+      "supporting_sources": [
+        "ET HealthWorld"
+      ],
+      "novelty_delta": "Labeling terminology changes can create rapid SKU-level packaging and channel-compliance work for beverage producers.",
+      "affected_workflow": "regulatory notice → affected SKU → artwork/label change → inventory transition → compliance evidence",
+      "target_customer": "food and beverage manufacturers",
+      "buyer": "regulatory/quality manager",
+      "job_to_be_done": "map a labeling rule change to affected SKUs and prove compliant transition",
+      "product_mechanism": "rule-to-SKU matrix + artwork approval + old-stock disposition + evidence ledger",
+      "one_sentence_concept": "A label-change compliance workspace for food and beverage manufacturers.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 350,
+      "draft_canonical_key": "food-beverage-manufacturers|manage-regulatory-label-changes|rule-sku-artwork-transition-ledger"
+    },
+    {
+      "raw_id": "refresh-w3-r005",
+      "supporting_article_ids": [
+        "95acc1ac43f5f3a6d63383c3"
+      ],
+      "supporting_article_titles": [
+        "Quick Manufacturing News"
+      ],
+      "supporting_sources": [
+        "IndustryWeek"
+      ],
+      "novelty_delta": "Rapid manufacturing changes across facilities and suppliers create recurring need to turn external developments into plant-level action ownership.",
+      "affected_workflow": "external manufacturing development → relevance assessment → plant/supplier owner → action → closure",
+      "target_customer": "multi-site manufacturers",
+      "buyer": "operations/strategy manager",
+      "job_to_be_done": "triage manufacturing developments into owned plant or supplier actions",
+      "product_mechanism": "development intake + applicability matrix + owner/action + closure evidence",
+      "one_sentence_concept": "Manufacturing change-to-action desk for multi-site operators.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 330,
+      "draft_canonical_key": "multi-site-manufacturers|turn-external-developments-into-owned-actions|applicability-owner-closure-ledger"
+    }
+  ]
+}
