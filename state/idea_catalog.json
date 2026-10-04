@@ -2,7 +2,7 @@
   "schema_version": 1,
   "site_name": "AIStartup",
   "description": "Canonical persistent idea catalog consumed by the AIStartup web application.",
-  "updated_at": "2026-10-02T15:20:00+03:00",
+  "updated_at": "2026-10-04",
   "ideas": [
     {
       "canonical_key": "competition-organizer|enforce-ai-use-policy-on-submissions|declaration-rule-engine-review-evidence",
@@ -2941,6 +2941,915 @@
       "status": "published",
       "first_reported_at": "2026-10-03",
       "last_updated_at": "2026-10-03"
+    },
+    {
+      "canonical_key": "ai-infrastructure-team|plan-heterogeneous-accelerator-deployment|compatibility-rack-decision-ledger",
+      "idea_name": "Üreticiden bağımsız AI accelerator deployment planning Çalışma Alanı.",
+      "scope_tier": "Dünya",
+      "scope_reason": "Ülke bağımsız uygulanabilen online SaaS workflow'u.",
+      "core_idea": "AI infrastructure teams and data-center operators için plan and document heterogeneous accelerator-host deployments işini deployment matrix + compatibility ledger + rack BOM workspace + decision log ile tek bir izlenebilir web workflow'unda yönetmek.",
+      "user_story": "infrastructure/platform engineering manager olarak plan and document heterogeneous accelerator-host deployments sürecini dağınık araçlar yerine tek yerde yönetmek ve karar/kanıt geçmişini izlemek istiyorum.",
+      "before_state": "hardware compatibility, memory, host and rollout assumptions are scattered",
+      "after_state": "deployment matrix + compatibility ledger + rack BOM workspace + decision log ile merkezi, izlenebilir çalışma akışı.",
+      "why_now": "Jalapeño ASIC production deployment with AMD EPYC Turin hosts.",
+      "target_customer": "AI infrastructure teams and data-center operators",
+      "buyer": "infrastructure/platform engineering manager",
+      "market": "Dünya",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 1,
+      "direct_competitors": [
+        {
+          "name": "ASTER RACKIT",
+          "url": "https://www.aster-rackit.com/workloads/ai-training",
+          "reason": "Same AI-infrastructure buyer; workload-to-accelerator/fabric/cooling/BOM planning workflow."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Open Compute Project AICC",
+          "url": "https://www.opencompute.org/community/aicc",
+          "reason": "Open standards/design guidance, not a deployment decision-ledger SaaS."
+        },
+        {
+          "name": "NTS",
+          "url": "https://www.rackmountnts.com/applications-ai-inference",
+          "reason": "Engineer-to-order infrastructure supplier, not vendor-neutral planning workspace."
+        }
+      ],
+      "market_gap": "A lightweight vendor-neutral compatibility/evidence ledger remains narrower than vendor procurement/configuration services.",
+      "business_models": [
+        {
+          "model": "B2B subscription",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        },
+        {
+          "model": "per-project workspace",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 390,
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Manual/catalog import, workload requirements, compatibility matrix, BOM, power/cooling checklist, decision log, export.",
+      "working_logic": "User records workload and candidate components; deterministic rules/checklists expose missing compatibility evidence and preserve decisions.",
+      "build_time": "2-3 weeks",
+      "marketing_strategy": "AI infrastructure consultants, regional integrators, data-center engineering communities.",
+      "first_customer_plan": "Pilot with one small GPU cluster integrator using an existing BOM.",
+      "main_risk": "Hardware compatibility data changes quickly and authoritative vendor data may require manual maintenance.",
+      "validation_assumption": "MVP is decision/evidence management, not automatic certification.",
+      "evidence_strength": "strong",
+      "competition_confidence": "medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-04",
+      "last_updated_at": "2026-10-04",
+      "source_urls": [
+        "https://www.tomshardware.com/pc-components/cpus/openais-jalapeno-asics-are-deployed-alongside-amd-epyc-turin-cpus-as-hosts-hardware-vp-says-nvidias-vera-standalone-is-a-little-bit-behind-on-that-maturity-level"
+      ]
+    },
+    {
+      "canonical_key": "automotive-oem-tier1|trace-sensing-requirements|requirement-architecture-evidence-workspace",
+      "idea_name": "Automotive sensing compliance and validation Çalışma Alanı.",
+      "scope_tier": "Dünya",
+      "scope_reason": "Ülke bağımsız uygulanabilen online SaaS workflow'u.",
+      "core_idea": "automotive OEM and Tier-1 engineering teams için trace changing sensing requirements to architecture and validation evidence işini requirement matrix + sensor decision ledger + validation evidence workspace ile tek bir izlenebilir web workflow'unda yönetmek.",
+      "user_story": "systems engineering or compliance manager olarak trace changing sensing requirements to architecture and validation evidence sürecini dağınık araçlar yerine tek yerde yönetmek ve karar/kanıt geçmişini izlemek istiyorum.",
+      "before_state": "requirements, sensor choices and validation evidence are spread across engineering tools",
+      "after_state": "requirement matrix + sensor decision ledger + validation evidence workspace ile merkezi, izlenebilir çalışma akışı.",
+      "why_now": "2026 assessment protocols and product-security requirements are shaping sensor and compute design.",
+      "target_customer": "automotive OEM and Tier-1 engineering teams",
+      "buyer": "systems engineering or compliance manager",
+      "market": "Dünya",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 2,
+      "direct_competitors": [
+        {
+          "name": "Jama Connect",
+          "url": "https://www.jamasoftware.com/solutions/automotive/",
+          "reason": "Automotive OEM/Tier-1 requirements-to-test traceability including ADAS."
+        },
+        {
+          "name": "Trace.Space",
+          "url": "https://www.trace.space/industries/automotive",
+          "reason": "Automotive cross-domain requirements, ADAS/SOTIF and validation-evidence traceability."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "IBM DOORS",
+          "url": "https://www.ibm.com/products/requirements-management",
+          "reason": "General requirements management; automotive use is broad rather than sensing-specific."
+        }
+      ],
+      "market_gap": "Possible niche in sensing-specific architecture/evidence templates, but established direct platforms already cover the core job.",
+      "business_models": [
+        {
+          "model": "team subscription",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        },
+        {
+          "model": "project license",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 420,
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Sensing requirement register, architecture links, validation evidence matrix, gap dashboard.",
+      "working_logic": "Map regulation/protocol requirement to sensor/ECU architecture element and validation artifact.",
+      "build_time": "3 weeks",
+      "marketing_strategy": "Tier-2/Tier-3 suppliers needing lighter tooling than enterprise ALM.",
+      "first_customer_plan": "Pilot with a small automotive engineering supplier.",
+      "main_risk": "Enterprise incumbents already satisfy much of the job and automotive assurance expectations are high.",
+      "validation_assumption": "Narrow sensing workflow can differentiate from broad ALM.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-04",
+      "last_updated_at": "2026-10-04",
+      "source_urls": [
+        "https://www.eetimes.com/autosens-2026-regulations-drive-automotive-sensing-architectures/"
+      ]
+    },
+    {
+      "canonical_key": "data-center-developer|prove-project-transparency|claim-provenance-permit-dashboard",
+      "idea_name": "Data-center transparency Çalışma Alanı.",
+      "scope_tier": "Dünya",
+      "scope_reason": "Ülke bağımsız uygulanabilen online SaaS workflow'u.",
+      "core_idea": "data-center geliştiricileri ve yerel yönetimler için proje iddialarını ve izin taahhütlerini kaynaklı biçimde yönetmek işini claim ledger + provenance + permit milestones + disclosure checklist ile tek bir izlenebilir web workflow'unda yönetmek.",
+      "user_story": "development/community affairs yöneticisi olarak proje iddialarını ve izin taahhütlerini kaynaklı biçimde yönetmek sürecini dağınık araçlar yerine tek yerde yönetmek ve karar/kanıt geçmişini izlemek istiyorum.",
+      "before_state": "enerji, su, emisyon ve fayda iddiaları farklı kaynaklarda",
+      "after_state": "claim ledger + provenance + permit milestones + disclosure checklist ile merkezi, izlenebilir çalışma akışı.",
+      "why_now": "AWS NDA kullanımını bıraktı; moratoryum ve güven baskısı artıyor.",
+      "target_customer": "data-center geliştiricileri ve yerel yönetimler",
+      "buyer": "development/community affairs yöneticisi",
+      "market": "Dünya",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 1,
+      "direct_competitors": [
+        {
+          "name": "Jambo",
+          "url": "https://www.jambo.cloud/data-center-development",
+          "reason": "Data-center developers; tracks stakeholder interactions, community commitments, consultation records and audit trail for permitting/hearings."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Prevolt",
+          "url": "https://www.prevolt.ai/",
+          "reason": "Data-center permitting/community risk intelligence rather than claim/commitment evidence ledger."
+        },
+        {
+          "name": "Architect Digital",
+          "url": "https://www.architectdigital.org/industry",
+          "reason": "Public community engagement/project information channel rather than internal provenance and permit commitment system."
+        }
+      ],
+      "market_gap": "Jambo directly covers commitment records; a narrower public-claim provenance plus permit-milestone product could still differentiate.",
+      "business_models": [
+        {
+          "model": "per-site subscription",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        },
+        {
+          "model": "developer portfolio plan",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 390,
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Claim register, source/evidence attachment, permit milestones, public disclosure checklist, immutable-ish audit history.",
+      "working_logic": "Every public claim/commitment links to evidence, owner, permit milestone, due date and disclosure status.",
+      "build_time": "2-3 weeks",
+      "marketing_strategy": "Data-center developers, permitting consultants and community-affairs teams.",
+      "first_customer_plan": "Offer one-project pilot around a public permitting process.",
+      "main_risk": "Stakeholder-management suites can expand into this niche.",
+      "validation_assumption": "Claim provenance and public disclosure is sufficiently narrower than generic SRM.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-04",
+      "last_updated_at": "2026-10-04",
+      "source_urls": [
+        "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/"
+      ]
+    },
+    {
+      "canonical_key": "general-contractor|retain-project-rules-detect-contradictions|rulebook-bid-correction-ledger",
+      "idea_name": "Construction project knowledge and contradiction-control Çalışma Alanı.",
+      "scope_tier": "Dünya",
+      "scope_reason": "Ülke bağımsız uygulanabilen online SaaS workflow'u.",
+      "core_idea": "general contractors and construction back-office teams için retain project rules and detect contradictions before bid and execution işini project rulebook + contradiction register + bid review + reusable correction ledger ile tek bir izlenebilir web workflow'unda yönetmek.",
+      "user_story": "estimating or digital-transformation manager olarak retain project rules and detect contradictions before bid and execution sürecini dağınık araçlar yerine tek yerde yönetmek ve karar/kanıt geçmişini izlemek istiyorum.",
+      "before_state": "drawings, specifications, tender documents and corrections are fragmented and lessons are repeatedly rediscovered",
+      "after_state": "project rulebook + contradiction register + bid review + reusable correction ledger ile merkezi, izlenebilir çalışma akışı.",
+      "why_now": "Kuro reports major contractors adopting an AI data layer and measurable bid-time savings.",
+      "target_customer": "general contractors and construction back-office teams",
+      "buyer": "estimating or digital-transformation manager",
+      "market": "Dünya",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 2,
+      "direct_competitors": [
+        {
+          "name": "Kuro",
+          "url": "https://www.kuro.technology",
+          "reason": "Exact target customer and workflow: general contractors, project rulebook, drawing/spec contradiction detection, bid knowledge retention."
+        },
+        {
+          "name": "Mirage Metrics",
+          "url": "https://miragemetrics.com/blog/detecting-plan-specification-inconsistencies-construction-bid/",
+          "reason": "Construction bid teams; systematic plan/spec contradiction detection before bid."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Lintel",
+          "url": "https://www.uselintel.com/",
+          "reason": "AI construction document/spec review; persistent contractor-specific correction rulebook not verified."
+        },
+        {
+          "name": "Document Crunch",
+          "url": "https://www.documentcrunch.com/",
+          "reason": "Construction contract/document risk review, broader contract layer."
+        }
+      ],
+      "market_gap": "A lightweight SMB-focused rulebook could differ from enterprise Kuro, but direct global competition clearly exists.",
+      "business_models": [
+        {
+          "model": "contractor subscription",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        },
+        {
+          "model": "per-bid workspace",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 430,
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Document metadata/manual extracted clauses, contradiction register, reusable company rulebook, bid review and correction ledger.",
+      "working_logic": "Users enter/import requirements and conflicts; confirmed corrections become reusable company rules for later bids.",
+      "build_time": "3-4 weeks",
+      "marketing_strategy": "Mid-sized general contractors and estimating consultancies.",
+      "first_customer_plan": "Pilot on completed tender documents and compare surfaced contradictions.",
+      "main_risk": "Automated PDF/DWG understanding at Kuro depth would require external AI; zero-cost MVP must stay structured/manual rather than promise equivalent AI extraction.",
+      "validation_assumption": "MVP product is structured workflow and reusable rules, not full automated drawing intelligence.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-04",
+      "last_updated_at": "2026-10-04",
+      "source_urls": [
+        "https://www.eu-startups.com/2026/10/berlin-based-kuro-raises-e10-million-to-build-the-ai-foundation-for-general-contractors/"
+      ]
+    },
+    {
+      "canonical_key": "high-risk-conversational-ai-team|manage-psychological-safety-evals|persona-scenario-evidence-retest-ledger",
+      "idea_name": "Conversational-AI psychological safety evaluation Çalışma Alanı.",
+      "scope_tier": "Dünya",
+      "scope_reason": "Ülke bağımsız uygulanabilen online SaaS workflow'u.",
+      "core_idea": "teams building high-risk conversational AI applications için organize repeatable multi-persona conversational safety evaluation before release işini persona/scenario registry + test-case workspace + transcript evidence + remediation/retest ledger ile tek bir izlenebilir web workflow'unda yönetmek.",
+      "user_story": "AI safety/product assurance lead olarak organize repeatable multi-persona conversational safety evaluation before release sürecini dağınık araçlar yerine tek yerde yönetmek ve karar/kanıt geçmişini izlemek istiyorum.",
+      "before_state": "personas, scenarios, transcripts and remediation evidence are difficult to manage consistently",
+      "after_state": "persona/scenario registry + test-case workspace + transcript evidence + remediation/retest ledger ile merkezi, izlenebilir çalışma akışı.",
+      "why_now": "Simulated-user safety testing is being commercialized for high-risk AI apps.",
+      "target_customer": "teams building high-risk conversational AI applications",
+      "buyer": "AI safety/product assurance lead",
+      "market": "Dünya",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 3,
+      "direct_competitors": [
+        {
+          "name": "Circuit Breaker Labs",
+          "url": "https://circuitbreaker.ai/",
+          "reason": "High-risk conversational AI psychological-safety evaluation with simulated users."
+        },
+        {
+          "name": "Virtue AI",
+          "url": "https://virtueai.com/",
+          "reason": "AI safety evaluation/red-teaming workflows with test evidence."
+        },
+        {
+          "name": "Giskard",
+          "url": "https://www.giskard.ai/",
+          "reason": "LLM safety testing, test suites, reports and remediation workflow."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Promptfoo",
+          "url": "https://www.promptfoo.dev/",
+          "reason": "General open-source LLM eval/red-team framework; not psychological-safety persona workflow."
+        }
+      ],
+      "market_gap": "Persona/scenario psychological-safety operations is narrower than generic LLM evals but sits at the global competitor ceiling.",
+      "business_models": [
+        {
+          "model": "team subscription",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        },
+        {
+          "model": "per-release workspace",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 430,
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Persona/scenario registry, manual transcript import, rubric scoring, findings, remediation/retest ledger.",
+      "working_logic": "Teams define personas and risk scenarios, attach transcripts, score deterministic rubrics and track remediation.",
+      "build_time": "3 weeks",
+      "marketing_strategy": "AI safety/product assurance communities and high-risk app builders.",
+      "first_customer_plan": "Pilot with a small conversational-AI team using manually supplied transcripts.",
+      "main_risk": "Automated simulated-user generation would need model inference; zero-cost MVP must accept imported/manual test conversations.",
+      "validation_assumption": "Workflow/evidence product can be useful without bundled paid inference.",
+      "evidence_strength": "strong",
+      "competition_confidence": "medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-04",
+      "last_updated_at": "2026-10-04",
+      "source_urls": [
+        "https://techcrunch.com/2026/10/02/circuit-breaker-labs-hopes-to-make-ai-safer-for-your-kids-and-you/"
+      ]
+    },
+    {
+      "canonical_key": "industrial-robotics-team|document-humanoid-safety-readiness|task-standard-evidence-workspace",
+      "idea_name": "Industrial humanoid safety-readiness Çalışma Alanı.",
+      "scope_tier": "Dünya",
+      "scope_reason": "Ülke bağımsız uygulanabilen online SaaS workflow'u.",
+      "core_idea": "industrial robotics integrators and factories evaluating humanoids için document humanoid deployment readiness against evolving safety requirements işini task-risk register + standards mapping + evidence checklist + readiness review ile tek bir izlenebilir web workflow'unda yönetmek.",
+      "user_story": "robotics automation or machine-safety manager olarak document humanoid deployment readiness against evolving safety requirements sürecini dağınık araçlar yerine tek yerde yönetmek ve karar/kanıt geçmişini izlemek istiyorum.",
+      "before_state": "task hazards, standards interpretation and validation evidence are fragmented while standards are still evolving",
+      "after_state": "task-risk register + standards mapping + evidence checklist + readiness review ile merkezi, izlenebilir çalışma akışı.",
+      "why_now": "ISO working-group activity and a November 2026 industrial Humanoid Safety Summit show active standardization around dynamically stable industrial mobile robots.",
+      "target_customer": "industrial robotics integrators and factories evaluating humanoids",
+      "buyer": "robotics automation or machine-safety manager",
+      "market": "Dünya",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 1,
+      "direct_competitors": [
+        {
+          "name": "Pilz",
+          "url": "https://www.pilz.com/en-INT/products-services/robotics/human-robot-collaboration",
+          "reason": "Industrial robot/HRC safety assessment and validation for integrators/factories; same safety-readiness job though service-heavy."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "SICK Safety Assistant",
+          "url": "https://www.sick.com/",
+          "reason": "Machine safety configuration tools, not humanoid task/standards evidence workspace."
+        }
+      ],
+      "market_gap": "Humanoid-specific standards/evidence workspace remains early while incumbent machine-safety vendors are broader.",
+      "business_models": [
+        {
+          "model": "integrator subscription",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        },
+        {
+          "model": "per-cell assessment",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 390,
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Task-risk register, standards checklist, evidence attachments, readiness review and export.",
+      "working_logic": "Map task/environment hazards to selected standards requirements and required validation evidence.",
+      "build_time": "2-3 weeks",
+      "marketing_strategy": "Robot integrators, safety consultants, industrial automation associations.",
+      "first_customer_plan": "Pilot on one non-production humanoid/robot task assessment.",
+      "main_risk": "Full copyrighted standards text cannot be bundled freely; product must store user-entered/licensed requirement references.",
+      "validation_assumption": "Metadata/checklist workflow is viable without redistributing standards.",
+      "evidence_strength": "strong",
+      "competition_confidence": "medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-04",
+      "last_updated_at": "2026-10-04",
+      "source_urls": [
+        "https://arena2036.de/en/reader/humanoid-safety-summit/"
+      ]
+    },
+    {
+      "canonical_key": "manufacturer|qualify-humanoid-production-tasks|readiness-training-acceptance-ledger",
+      "idea_name": "Üreticiden bağımsız humanoid deployment readiness Çalışma Alanı.",
+      "scope_tier": "Lüleburgaz",
+      "scope_reason": "Lüleburgaz ve doğrudan ilgili Trakya sanayi yapısında hedef müşteri/workflow doğrulandı; yerel pilot uygulanabilir.",
+      "core_idea": "manufacturers and robot integrators için qualify factory tasks for robot rollout işini task inventory + readiness score + acceptance checklist + exception ledger ile tek bir izlenebilir web workflow'unda yönetmek.",
+      "user_story": "automation/production engineering manager olarak qualify factory tasks for robot rollout sürecini dağınık araçlar yerine tek yerde yönetmek ve karar/kanıt geçmişini izlemek istiyorum.",
+      "before_state": "task readiness, acceptance and rollout evidence are fragmented",
+      "after_state": "task inventory + readiness score + acceptance checklist + exception ledger ile merkezi, izlenebilir çalışma akışı.",
+      "why_now": "Hyundai targets 25,000 Atlas units and factory task training.",
+      "target_customer": "manufacturers and robot integrators",
+      "buyer": "automation/production engineering manager",
+      "market": "Lüleburgaz",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 1,
+      "direct_competitors": [
+        {
+          "name": "Formic",
+          "url": "https://formic.co/",
+          "reason": "Manufacturing automation deployment/readiness workflow, task qualification and rollout support; broader than humanoids but materially same buyer/job."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Boston Dynamics Atlas",
+          "url": "https://www.bostondynamics.com/atlas",
+          "reason": "Humanoid platform/vendor, not vendor-neutral readiness workspace."
+        }
+      ],
+      "market_gap": "Vendor-neutral task qualification and acceptance evidence for humanoids is still sparse.",
+      "business_models": [
+        {
+          "model": "plant subscription",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        },
+        {
+          "model": "integrator project plan",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 420,
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Task inventory, readiness rubric, constraints, acceptance criteria, pilot evidence and exception log.",
+      "working_logic": "Score candidate tasks using deterministic dimensions such as environment, payload, repeatability, access and acceptance criteria.",
+      "build_time": "3 weeks",
+      "marketing_strategy": "Industrial automation integrators and manufacturing engineering teams.",
+      "first_customer_plan": "Run readiness scoring on 10 manual material-handling tasks at one plant.",
+      "main_risk": "Readiness scoring needs credible domain rubric and must not imply machine-safety certification.",
+      "validation_assumption": "Decision-support positioning avoids certification claims.",
+      "evidence_strength": "strong",
+      "competition_confidence": "medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-04",
+      "last_updated_at": "2026-10-04",
+      "source_urls": [
+        "https://en.yna.co.kr/view/AEN20260519006300320"
+      ]
+    },
+    {
+      "canonical_key": "packaging-manufacturer|prioritize-material-handling-automation|task-readiness-option-acceptance-workspace",
+      "idea_name": "Packaging automation readiness and acceptance Çalışma Alanı.",
+      "scope_tier": "Lüleburgaz",
+      "scope_reason": "Lüleburgaz ve doğrudan ilgili Trakya sanayi yapısında hedef müşteri/workflow doğrulandı; yerel pilot uygulanabilir.",
+      "core_idea": "packaging, converting and food manufacturing plants için prioritize material-handling tasks for automation and document readiness/acceptance işini task inventory + readiness score + vendor-neutral option matrix + acceptance checklist ile tek bir izlenebilir web workflow'unda yönetmek.",
+      "user_story": "automation/production engineering manager olarak prioritize material-handling tasks for automation and document readiness/acceptance sürecini dağınık araçlar yerine tek yerde yönetmek ve karar/kanıt geçmişini izlemek istiyorum.",
+      "before_state": "tasks, safety constraints, vendor options and acceptance evidence are fragmented",
+      "after_state": "task inventory + readiness score + vendor-neutral option matrix + acceptance checklist ile merkezi, izlenebilir çalışma akışı.",
+      "why_now": "PACK EXPO 2026 releases show expanding robotic palletizing and roll-handling options.",
+      "target_customer": "packaging, converting and food manufacturing plants",
+      "buyer": "automation/production engineering manager",
+      "market": "Lüleburgaz",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 2,
+      "direct_competitors": [
+        {
+          "name": "Formic",
+          "url": "https://formic.co/",
+          "reason": "Manufacturers identify automation tasks, assess suitability and deploy/measure robotic automation."
+        },
+        {
+          "name": "HowToRobot",
+          "url": "https://howtorobot.com/",
+          "reason": "Manufacturer automation assessment, requirements and vendor-neutral solution sourcing workflow."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "igus RBTX",
+          "url": "https://rbtx.com/",
+          "reason": "Automation marketplace/configuration, not plant task-readiness and acceptance ledger."
+        }
+      ],
+      "market_gap": "Packaging-specific acceptance/readiness templates can narrow a market already served by broader automation advisory platforms.",
+      "business_models": [
+        {
+          "model": "plant subscription",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        },
+        {
+          "model": "integrator project workspace",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 370,
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Task inventory, readiness rubric, vendor-option matrix, acceptance criteria and evidence.",
+      "working_logic": "Score material-handling tasks, document constraints/options, then track acceptance against predefined criteria.",
+      "build_time": "2-3 weeks",
+      "marketing_strategy": "Packaging/food plants and system integrators.",
+      "first_customer_plan": "Assess one palletizing or roll-handling workflow.",
+      "main_risk": "Generic automation assessment competitors can serve the same core job.",
+      "validation_assumption": "Packaging-specific workflow is differentiated enough while direct count stays within limit.",
+      "evidence_strength": "medium",
+      "competition_confidence": "medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-04",
+      "last_updated_at": "2026-10-04",
+      "source_urls": [
+        "https://www.packworld.com/products"
+      ]
+    },
+    {
+      "canonical_key": "recruitment-team|triage-assessment-integrity|signal-evidence-case-ledger",
+      "idea_name": "İşe Alım Bütünlüğü Vaka Masası",
+      "scope_tier": "Dünya",
+      "scope_reason": "Ülke bağımsız uygulanabilen online SaaS workflow'u.",
+      "core_idea": "employer recruitment teams için triage sessions that need extra integrity review işini integrity case ledger + signal checklist + evidence + reviewer disposition ile tek bir izlenebilir web workflow'unda yönetmek.",
+      "user_story": "TA/HR operations manager olarak triage sessions that need extra integrity review sürecini dağınık araçlar yerine tek yerde yönetmek ve karar/kanıt geçmişini izlemek istiyorum.",
+      "before_state": "risk signals span multiple tools and controls age quickly",
+      "after_state": "integrity case ledger + signal checklist + evidence + reviewer disposition ile merkezi, izlenebilir çalışma akışı.",
+      "why_now": "2026 HirePro report shows rapidly changing integrity risks.",
+      "target_customer": "employer recruitment teams",
+      "buyer": "TA/HR operations manager",
+      "market": "Dünya",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 3,
+      "direct_competitors": [
+        {
+          "name": "HirePro",
+          "url": "https://hirepro.in/",
+          "reason": "Hiring assessment integrity/fraud controls for recruitment teams."
+        },
+        {
+          "name": "Mercer Mettl",
+          "url": "https://www.mettl.com/online-proctoring/",
+          "reason": "Assessment integrity signals, evidence and review for hiring/assessment workflows."
+        },
+        {
+          "name": "Talview",
+          "url": "https://talview.com/en/proctoring",
+          "reason": "Recruitment/assessment proctoring and integrity review workflow."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "TestGorilla",
+          "url": "https://www.testgorilla.com/",
+          "reason": "Assessment platform with anti-cheating controls but case-ledger workflow is not the core product."
+        }
+      ],
+      "market_gap": "A cross-provider evidence case ledger could sit above assessment vendors, but the underlying integrity job has mature competitors.",
+      "business_models": [
+        {
+          "model": "employer subscription",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        },
+        {
+          "model": "per-reviewer plan",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 360,
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Signal import/manual entry, case checklist, evidence attachments, reviewer disposition and audit export.",
+      "working_logic": "Normalize integrity signals from different assessment tools into cases for human review and disposition.",
+      "build_time": "2-3 weeks",
+      "marketing_strategy": "TA operations teams using multiple assessment vendors.",
+      "first_customer_plan": "Pilot with exported integrity flags from one employer's existing assessment tools.",
+      "main_risk": "Assessment vendors may already provide sufficient review dashboards; cross-provider need must be proven.",
+      "validation_assumption": "Product is vendor-neutral case aggregation rather than another proctoring engine.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-04",
+      "last_updated_at": "2026-10-04",
+      "source_urls": [
+        "https://hr.economictimes.indiatimes.com/news/trends/ai-in-hr/growing-use-of-ai-to-manipulate-hiring-process-raises-concerns-report/134653637"
+      ]
+    },
+    {
+      "canonical_key": "research-lab|allocate-submission-quota|queue-calendar-preflight",
+      "idea_name": "Research submission quota/preflight Çalışma Alanı.",
+      "scope_tier": "Dünya",
+      "scope_reason": "Ülke bağımsız uygulanabilen online SaaS workflow'u.",
+      "core_idea": "research labs için allocate scarce submission quota without wasting attempts işini submission queue + quota calendar + preflight checklist + approval gate ile tek bir izlenebilir web workflow'unda yönetmek.",
+      "user_story": "PI/lab manager olarak allocate scarce submission quota without wasting attempts sürecini dağınık araçlar yerine tek yerde yönetmek ve karar/kanıt geçmişini izlemek istiyorum.",
+      "before_state": "quota, readiness and coauthor coordination are separate",
+      "after_state": "submission queue + quota calendar + preflight checklist + approval gate ile merkezi, izlenebilir çalışma akışı.",
+      "why_now": "New October quota makes submission capacity scarce.",
+      "target_customer": "research labs",
+      "buyer": "PI/lab manager",
+      "market": "Dünya",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Fresh validation doğrudan rakip sınırını aşan bir pazar doygunluğu göstermedi.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 280,
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Kayıt, checklist, kanıt, karar ve raporlama workflow'u.",
+      "working_logic": "Kullanıcı girdileri kaydeder, kuralları uygular, kanıtları bağlar ve sonucu izlenebilir biçimde kapatır.",
+      "build_time": "2–4 hafta",
+      "marketing_strategy": "Hedef müşteri ekiplerine doğrudan design-partner pilot erişimi.",
+      "first_customer_plan": "Tek gerçek müşteri workflow'u üzerinde pilot.",
+      "main_risk": "Pazar ihtiyacının müşteri görüşmeleriyle doğrulanması gerekir.",
+      "validation_assumption": "Fresh araştırma gerçek müşteri görüşmeleriyle ayrıca doğrulanmalıdır.",
+      "evidence_strength": "medium",
+      "competition_confidence": "medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-04",
+      "last_updated_at": "2026-10-04",
+      "source_urls": [
+        "https://eu.36kr.com/en/p/4009647948746628"
+      ]
+    },
+    {
+      "canonical_key": "shipper-3pl|qualify-autonomous-freight-lanes|readiness-facility-exception-ledger",
+      "idea_name": "Autonomous-freight lane readiness Çalışma Alanı.",
+      "scope_tier": "Dünya",
+      "scope_reason": "Ülke bağımsız uygulanabilen online SaaS workflow'u.",
+      "core_idea": "shippers, 3PLs and autonomous-trucking operators için assess and document freight-lane readiness for autonomous operation işini lane readiness scorecard + facility checklist + exception ledger ile tek bir izlenebilir web workflow'unda yönetmek.",
+      "user_story": "transportation innovation manager olarak assess and document freight-lane readiness for autonomous operation sürecini dağınık araçlar yerine tek yerde yönetmek ve karar/kanıt geçmişini izlemek istiyorum.",
+      "before_state": "lane constraints, facilities and operating assumptions are fragmented",
+      "after_state": "lane readiness scorecard + facility checklist + exception ledger ile merkezi, izlenebilir çalışma akışı.",
+      "why_now": "Commercial unsupervised long-haul service is targeted for end-2026.",
+      "target_customer": "shippers, 3PLs and autonomous-trucking operators",
+      "buyer": "transportation innovation manager",
+      "market": "Dünya",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 1,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Fresh validation doğrudan rakip sınırını aşan bir pazar doygunluğu göstermedi.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 380,
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Kayıt, checklist, kanıt, karar ve raporlama workflow'u.",
+      "working_logic": "Kullanıcı girdileri kaydeder, kuralları uygular, kanıtları bağlar ve sonucu izlenebilir biçimde kapatır.",
+      "build_time": "2–4 hafta",
+      "marketing_strategy": "Hedef müşteri ekiplerine doğrudan design-partner pilot erişimi.",
+      "first_customer_plan": "Tek gerçek müşteri workflow'u üzerinde pilot.",
+      "main_risk": "Pazar ihtiyacının müşteri görüşmeleriyle doğrulanması gerekir.",
+      "validation_assumption": "Fresh araştırma gerçek müşteri görüşmeleriyle ayrıca doğrulanmalıdır.",
+      "evidence_strength": "strong",
+      "competition_confidence": "medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-04",
+      "last_updated_at": "2026-10-04",
+      "source_urls": [
+        "https://www.supplychaindive.com/news/ikea-freight-to-be-hauled-by-driverless-kodiak-trucks/831764/"
+      ]
+    },
+    {
+      "canonical_key": "turkiye-industrial-enterprise|prepare-sanayi-sicil-obligations|calendar-change-ledger-evidence",
+      "idea_name": "SSBS öncesi hazırlık ve uyum Çalışma Alanı'i.",
+      "scope_tier": "Lüleburgaz",
+      "scope_reason": "Lüleburgaz ve doğrudan ilgili Trakya sanayi yapısında hedef müşteri/workflow doğrulandı; yerel pilot uygulanabilir.",
+      "core_idea": "Türkiye sanayi işletmeleri için sanayi sicili yükümlülüklerini ve veri değişikliklerini zamanında hazırlamak işini takvim + değişiklik günlüğü + checklist + evidence kasası ile tek bir izlenebilir web workflow'unda yönetmek.",
+      "user_story": "mali işler/uyum yöneticisi olarak sanayi sicili yükümlülüklerini ve veri değişikliklerini zamanında hazırlamak sürecini dağınık araçlar yerine tek yerde yönetmek ve karar/kanıt geçmişini izlemek istiyorum.",
+      "before_state": "gerekli veriler ve kanıtlar şirket içinde dağınık",
+      "after_state": "takvim + değişiklik günlüğü + checklist + evidence kasası ile merkezi, izlenebilir çalışma akışı.",
+      "why_now": "SGM 2026/4 elektronik süreç ve yıllık cetvel yükümlülüğünü netleştiriyor.",
+      "target_customer": "Türkiye sanayi işletmeleri",
+      "buyer": "mali işler/uyum yöneticisi",
+      "market": "Lüleburgaz",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Fresh validation doğrudan rakip sınırını aşan bir pazar doygunluğu göstermedi.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 310,
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Kayıt, checklist, kanıt, karar ve raporlama workflow'u.",
+      "working_logic": "Kullanıcı girdileri kaydeder, kuralları uygular, kanıtları bağlar ve sonucu izlenebilir biçimde kapatır.",
+      "build_time": "2–4 hafta",
+      "marketing_strategy": "Hedef müşteri ekiplerine doğrudan design-partner pilot erişimi.",
+      "first_customer_plan": "Tek gerçek müşteri workflow'u üzerinde pilot.",
+      "main_risk": "Pazar ihtiyacının müşteri görüşmeleriyle doğrulanması gerekir.",
+      "validation_assumption": "Fresh araştırma gerçek müşteri görüşmeleriyle ayrıca doğrulanmalıdır.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-04",
+      "last_updated_at": "2026-10-04",
+      "source_urls": [
+        "https://www.iso.org.tr/duyurular/genel-duyurular/sanayi-sicil-tebligi-sgm-20264-resm%C3%AE-gazetede-yayimlandi/"
+      ]
+    },
+    {
+      "canonical_key": "turkiye-smr-supply-chain|map-law-to-project-requirements|version-requirement-impact-register",
+      "idea_name": "Türkiye SMR regulatory-change Çalışma Alanı.",
+      "scope_tier": "Türkiye",
+      "scope_reason": "Türkiye'ye özgü mevzuat veya hedef müşteri workflow'u.",
+      "core_idea": "Türkiye SMR/nuclear supply-chain companies için map changing SMR rules to project requirements işini bill/version tracker + requirement map + action register + impact matrix ile tek bir izlenebilir web workflow'unda yönetmek.",
+      "user_story": "regulatory/business development manager olarak map changing SMR rules to project requirements sürecini dağınık araçlar yerine tek yerde yönetmek ve karar/kanıt geçmişini izlemek istiyorum.",
+      "before_state": "draft, amendments and project requirements can diverge",
+      "after_state": "bill/version tracker + requirement map + action register + impact matrix ile merkezi, izlenebilir çalışma akışı.",
+      "why_now": "Minister said draft is ready and targeted for parliament this legislative year.",
+      "target_customer": "Türkiye SMR/nuclear supply-chain companies",
+      "buyer": "regulatory/business development manager",
+      "market": "Türkiye",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 1,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Fresh validation doğrudan rakip sınırını aşan bir pazar doygunluğu göstermedi.",
+      "business_models": [
+        {
+          "model": "SaaS",
+          "estimate": "Pilot sonrası fiyat doğrulaması"
+        }
+      ],
+      "lovable_credits_total": 330,
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Web uygulaması",
+          "cost": "mevcut Lovable credits"
+        },
+        {
+          "name": "Supabase",
+          "purpose": "Veri ve workflow kayıtları",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Kayıt, checklist, kanıt, karar ve raporlama workflow'u.",
+      "working_logic": "Kullanıcı girdileri kaydeder, kuralları uygular, kanıtları bağlar ve sonucu izlenebilir biçimde kapatır.",
+      "build_time": "2–4 hafta",
+      "marketing_strategy": "Hedef müşteri ekiplerine doğrudan design-partner pilot erişimi.",
+      "first_customer_plan": "Tek gerçek müşteri workflow'u üzerinde pilot.",
+      "main_risk": "Pazar ihtiyacının müşteri görüşmeleriyle doğrulanması gerekir.",
+      "validation_assumption": "Fresh araştırma gerçek müşteri görüşmeleriyle ayrıca doğrulanmalıdır.",
+      "evidence_strength": "medium",
+      "competition_confidence": "medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-04",
+      "last_updated_at": "2026-10-04",
+      "source_urls": [
+        "https://www.enerjigunlugu.net/smr-kanunu-bu-yil-mecliste-akkuyu-birkac-ay-icinde-devrede-70044h.htm"
+      ]
     }
   ],
   "sync_requested_at": "2026-10-03T09:00:00+03:00"
