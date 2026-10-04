@@ -1,0 +1,396 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-04",
+  "chunk_id": "002",
+  "status": "complete",
+  "validation_indexes": [
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "expected_candidate_count": 5,
+  "validated_candidate_count": 5,
+  "completed_at": "2026-10-04",
+  "results": [
+    {
+      "candidate_id": "c-006",
+      "validation_index": 6,
+      "canonical_key": "high-risk-conversational-ai-team|manage-psychological-safety-evals|persona-scenario-evidence-retest-ledger",
+      "development_verified": true,
+      "canonical_news_source": "TechCrunch",
+      "canonical_news_title": "Circuit Breaker Labs hopes to make AI safer for your kids (and you)",
+      "canonical_news_date": "2026-10-02",
+      "canonical_news_url": "https://techcrunch.com/2026/10/02/circuit-breaker-labs-hopes-to-make-ai-safer-for-your-kids-and-you/",
+      "source_links": [
+        "https://techcrunch.com/2026/10/02/circuit-breaker-labs-hopes-to-make-ai-safer-for-your-kids-and-you/"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 3,
+      "global_competitors": [
+        {
+          "name": "Circuit Breaker Labs",
+          "url": "https://circuitbreaker.ai/",
+          "reason": "High-risk conversational AI psychological-safety evaluation with simulated users."
+        },
+        {
+          "name": "Virtue AI",
+          "url": "https://virtueai.com/",
+          "reason": "AI safety evaluation/red-teaming workflows with test evidence."
+        },
+        {
+          "name": "Giskard",
+          "url": "https://www.giskard.ai/",
+          "reason": "LLM safety testing, test suites, reports and remediation workflow."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Promptfoo",
+          "url": "https://www.promptfoo.dev/",
+          "reason": "General open-source LLM eval/red-team framework; not psychological-safety persona workflow."
+        }
+      ],
+      "competition_search_terms": [
+        "conversational AI psychological safety evaluation platform simulated users",
+        "Türkiye LLM güvenlik değerlendirme red team yazılımı"
+      ],
+      "market_gap": "Persona/scenario psychological-safety operations is narrower than generic LLM evals but sits at the global competitor ceiling.",
+      "mvp": "Persona/scenario registry, manual transcript import, rubric scoring, findings, remediation/retest ledger.",
+      "working_logic": "Teams define personas and risk scenarios, attach transcripts, score deterministic rubrics and track remediation.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "CSV/JSON import",
+        "rules/rubrics"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 430,
+      "lovable_credit_breakdown": {
+        "registry": 100,
+        "test_cases": 110,
+        "evidence_scoring": 120,
+        "retest_reporting": 100
+      },
+      "build_time": "3 weeks",
+      "business_models": [
+        "team subscription",
+        "per-release workspace"
+      ],
+      "marketing_strategy": "AI safety/product assurance communities and high-risk app builders.",
+      "first_customer_plan": "Pilot with a small conversational-AI team using manually supplied transcripts.",
+      "main_risk": "Automated simulated-user generation would need model inference; zero-cost MVP must accept imported/manual test conversations.",
+      "validation_assumption": "Workflow/evidence product can be useful without bundled paid inference.",
+      "evidence_strength": "strong",
+      "competition_confidence": "medium",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "No local scope claimed.",
+      "validated_scope_hint": "Dünya",
+      "qualification_status": "qualified"
+    },
+    {
+      "candidate_id": "c-007",
+      "validation_index": 7,
+      "canonical_key": "industrial-robotics-team|document-humanoid-safety-readiness|task-standard-evidence-workspace",
+      "development_verified": true,
+      "canonical_news_source": "ARENA2036",
+      "canonical_news_title": "Humanoid Safety Summit",
+      "canonical_news_date": "2026-11-24",
+      "canonical_news_url": "https://arena2036.de/en/reader/humanoid-safety-summit/",
+      "source_links": [
+        "https://arena2036.de/en/reader/humanoid-safety-summit/",
+        "https://www.pilz.com/en-INT/products-services/robotics/human-robot-collaboration"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 1,
+      "global_competitors": [
+        {
+          "name": "Pilz",
+          "url": "https://www.pilz.com/en-INT/products-services/robotics/human-robot-collaboration",
+          "reason": "Industrial robot/HRC safety assessment and validation for integrators/factories; same safety-readiness job though service-heavy."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "SICK Safety Assistant",
+          "url": "https://www.sick.com/",
+          "reason": "Machine safety configuration tools, not humanoid task/standards evidence workspace."
+        }
+      ],
+      "competition_search_terms": [
+        "humanoid robot safety risk assessment standards compliance software",
+        "Türkiye robot güvenlik risk değerlendirme yazılımı humanoid"
+      ],
+      "market_gap": "Humanoid-specific standards/evidence workspace remains early while incumbent machine-safety vendors are broader.",
+      "mvp": "Task-risk register, standards checklist, evidence attachments, readiness review and export.",
+      "working_logic": "Map task/environment hazards to selected standards requirements and required validation evidence.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "public standards metadata/manual rules"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 390,
+      "lovable_credit_breakdown": {
+        "task_risk": 110,
+        "standards_mapping": 100,
+        "evidence": 90,
+        "review_export": 90
+      },
+      "build_time": "2-3 weeks",
+      "business_models": [
+        "integrator subscription",
+        "per-cell assessment"
+      ],
+      "marketing_strategy": "Robot integrators, safety consultants, industrial automation associations.",
+      "first_customer_plan": "Pilot on one non-production humanoid/robot task assessment.",
+      "main_risk": "Full copyrighted standards text cannot be bundled freely; product must store user-entered/licensed requirement references.",
+      "validation_assumption": "Metadata/checklist workflow is viable without redistributing standards.",
+      "evidence_strength": "strong",
+      "competition_confidence": "medium",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "No explicit local hypothesis on this candidate.",
+      "validated_scope_hint": "Dünya",
+      "qualification_status": "qualified"
+    },
+    {
+      "candidate_id": "c-008",
+      "validation_index": 8,
+      "canonical_key": "manufacturer|qualify-humanoid-production-tasks|readiness-training-acceptance-ledger",
+      "development_verified": true,
+      "canonical_news_source": "Yonhap",
+      "canonical_news_title": "Hyundai Motor Group humanoid/robot deployment expansion",
+      "canonical_news_date": "2026-05-19",
+      "canonical_news_url": "https://en.yna.co.kr/view/AEN20260519006300320",
+      "source_links": [
+        "https://en.yna.co.kr/view/AEN20260519006300320",
+        "https://www.bostondynamics.com/atlas"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 1,
+      "global_competitors": [
+        {
+          "name": "Formic",
+          "url": "https://formic.co/",
+          "reason": "Manufacturing automation deployment/readiness workflow, task qualification and rollout support; broader than humanoids but materially same buyer/job."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Boston Dynamics Atlas",
+          "url": "https://www.bostondynamics.com/atlas",
+          "reason": "Humanoid platform/vendor, not vendor-neutral readiness workspace."
+        }
+      ],
+      "competition_search_terms": [
+        "factory humanoid deployment readiness task assessment software",
+        "Türkiye fabrika robot otomasyon uygunluk değerlendirme yazılımı"
+      ],
+      "market_gap": "Vendor-neutral task qualification and acceptance evidence for humanoids is still sparse.",
+      "mvp": "Task inventory, readiness rubric, constraints, acceptance criteria, pilot evidence and exception log.",
+      "working_logic": "Score candidate tasks using deterministic dimensions such as environment, payload, repeatability, access and acceptance criteria.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "rules/scoring",
+        "CSV import"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 420,
+      "lovable_credit_breakdown": {
+        "inventory": 90,
+        "scoring": 120,
+        "pilot_acceptance": 110,
+        "reporting": 100
+      },
+      "build_time": "3 weeks",
+      "business_models": [
+        "plant subscription",
+        "integrator project plan"
+      ],
+      "marketing_strategy": "Industrial automation integrators and manufacturing engineering teams.",
+      "first_customer_plan": "Run readiness scoring on 10 manual material-handling tasks at one plant.",
+      "main_risk": "Readiness scoring needs credible domain rubric and must not imply machine-safety certification.",
+      "validation_assumption": "Decision-support positioning avoids certification claims.",
+      "evidence_strength": "strong",
+      "competition_confidence": "medium",
+      "local_scope_verified": true,
+      "local_scope_evidence": [
+        {
+          "name": "Trakya industrial footprint",
+          "url": "https://www.trakyaka.org.tr/",
+          "reason": "Trakya has dense manufacturing/industrial investment footprint relevant to automation buyers."
+        }
+      ],
+      "local_applicability_rationale": "Manufacturing and logistics plants exist in the Trakya corridor, so the buyer/workflow is locally plausible; no claim that humanoids are already deployed there.",
+      "validated_scope_hint": "Lüleburgaz",
+      "qualification_status": "qualified"
+    },
+    {
+      "candidate_id": "c-009",
+      "validation_index": 9,
+      "canonical_key": "packaging-manufacturer|prioritize-material-handling-automation|task-readiness-option-acceptance-workspace",
+      "development_verified": true,
+      "canonical_news_source": "Packaging World",
+      "canonical_news_title": "PACK EXPO automation and robotic material-handling releases",
+      "canonical_news_date": "2026-10",
+      "canonical_news_url": "https://www.packworld.com/products",
+      "source_links": [
+        "https://www.packworld.com/products",
+        "https://www.igus.com/automation",
+        "https://www.trakyaka.org.tr/"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "Formic",
+          "url": "https://formic.co/",
+          "reason": "Manufacturers identify automation tasks, assess suitability and deploy/measure robotic automation."
+        },
+        {
+          "name": "HowToRobot",
+          "url": "https://howtorobot.com/",
+          "reason": "Manufacturer automation assessment, requirements and vendor-neutral solution sourcing workflow."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "igus RBTX",
+          "url": "https://rbtx.com/",
+          "reason": "Automation marketplace/configuration, not plant task-readiness and acceptance ledger."
+        }
+      ],
+      "competition_search_terms": [
+        "packaging automation readiness assessment vendor neutral software",
+        "Türkiye ambalaj otomasyon fizibilite robot uygunluk yazılımı"
+      ],
+      "market_gap": "Packaging-specific acceptance/readiness templates can narrow a market already served by broader automation advisory platforms.",
+      "mvp": "Task inventory, readiness rubric, vendor-option matrix, acceptance criteria and evidence.",
+      "working_logic": "Score material-handling tasks, document constraints/options, then track acceptance against predefined criteria.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "rules/scoring",
+        "CSV"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 370,
+      "lovable_credit_breakdown": {
+        "task_inventory": 80,
+        "readiness": 100,
+        "option_matrix": 90,
+        "acceptance_reporting": 100
+      },
+      "build_time": "2-3 weeks",
+      "business_models": [
+        "plant subscription",
+        "integrator project workspace"
+      ],
+      "marketing_strategy": "Packaging/food plants and system integrators.",
+      "first_customer_plan": "Assess one palletizing or roll-handling workflow.",
+      "main_risk": "Generic automation assessment competitors can serve the same core job.",
+      "validation_assumption": "Packaging-specific workflow is differentiated enough while direct count stays within limit.",
+      "evidence_strength": "medium",
+      "competition_confidence": "medium",
+      "local_scope_verified": true,
+      "local_scope_evidence": [
+        {
+          "name": "Trakya Development Agency",
+          "url": "https://www.trakyaka.org.tr/",
+          "reason": "Regional industrial/food/manufacturing footprint supports relevant buyer presence."
+        }
+      ],
+      "local_applicability_rationale": "Packaging/food manufacturing is a plausible Trakya workflow; local label reflects buyer footprint, not verified local unmet demand.",
+      "validated_scope_hint": "Lüleburgaz",
+      "qualification_status": "qualified"
+    },
+    {
+      "candidate_id": "c-010",
+      "validation_index": 10,
+      "canonical_key": "recruitment-team|triage-assessment-integrity|signal-evidence-case-ledger",
+      "development_verified": true,
+      "canonical_news_source": "ETHRWorld",
+      "canonical_news_title": "Growing use of AI to manipulate hiring process raises concerns",
+      "canonical_news_date": "2026-10",
+      "canonical_news_url": "https://hr.economictimes.indiatimes.com/news/trends/ai-in-hr/growing-use-of-ai-to-manipulate-hiring-process-raises-concerns-report/134653637",
+      "source_links": [
+        "https://hr.economictimes.indiatimes.com/news/trends/ai-in-hr/growing-use-of-ai-to-manipulate-hiring-process-raises-concerns-report/134653637",
+        "https://hirepro.in/",
+        "https://www.mettl.com/online-proctoring/",
+        "https://talview.com/en/proctoring"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 3,
+      "global_competitors": [
+        {
+          "name": "HirePro",
+          "url": "https://hirepro.in/",
+          "reason": "Hiring assessment integrity/fraud controls for recruitment teams."
+        },
+        {
+          "name": "Mercer Mettl",
+          "url": "https://www.mettl.com/online-proctoring/",
+          "reason": "Assessment integrity signals, evidence and review for hiring/assessment workflows."
+        },
+        {
+          "name": "Talview",
+          "url": "https://talview.com/en/proctoring",
+          "reason": "Recruitment/assessment proctoring and integrity review workflow."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "TestGorilla",
+          "url": "https://www.testgorilla.com/",
+          "reason": "Assessment platform with anti-cheating controls but case-ledger workflow is not the core product."
+        }
+      ],
+      "competition_search_terms": [
+        "recruitment assessment integrity fraud case management software",
+        "Türkiye işe alım sınav güvenliği kopya tespit yazılımı"
+      ],
+      "market_gap": "A cross-provider evidence case ledger could sit above assessment vendors, but the underlying integrity job has mature competitors.",
+      "mvp": "Signal import/manual entry, case checklist, evidence attachments, reviewer disposition and audit export.",
+      "working_logic": "Normalize integrity signals from different assessment tools into cases for human review and disposition.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "CSV import",
+        "case workflow"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 360,
+      "lovable_credit_breakdown": {
+        "case_model": 90,
+        "signals": 90,
+        "evidence_review": 100,
+        "exports_testing": 80
+      },
+      "build_time": "2-3 weeks",
+      "business_models": [
+        "employer subscription",
+        "per-reviewer plan"
+      ],
+      "marketing_strategy": "TA operations teams using multiple assessment vendors.",
+      "first_customer_plan": "Pilot with exported integrity flags from one employer's existing assessment tools.",
+      "main_risk": "Assessment vendors may already provide sufficient review dashboards; cross-provider need must be proven.",
+      "validation_assumption": "Product is vendor-neutral case aggregation rather than another proctoring engine.",
+      "evidence_strength": "strong",
+      "competition_confidence": "high",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "No local scope claimed.",
+      "validated_scope_hint": "Dünya",
+      "qualification_status": "qualified"
+    }
+  ]
+}
