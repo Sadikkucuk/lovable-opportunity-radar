@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-04",
+  "worker_id": "1",
+  "source_batch_index_generated_at": "2026-10-04T02:34:15Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "status": "complete",
+  "started_at": "2026-10-04T08:34:57+03:00",
+  "completed_at": "2026-10-04T09:02:00+03:00",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 10,
+  "original_articles_verified": 8,
+  "full_article_not_verified": 2,
+  "noise_or_no_opportunity_count": 230,
+  "raw_opportunity_count": 6,
+  "raw_opportunities": [
+    {
+      "raw_id": "w1-20261004-001",
+      "supporting_article_ids": [
+        "7ded79851ee6b877a98d683a"
+      ],
+      "supporting_article_titles": [
+        "Sanayi Sicil Tebliği (SGM 2026/4)"
+      ],
+      "supporting_sources": [
+        "Resmi Gazete",
+        "İSO"
+      ],
+      "canonical_source_urls": [
+        "https://www.iso.org.tr/duyurular/genel-duyurular/sanayi-sicil-tebligi-sgm-20264-resm%C3%AE-gazetede-yayimlandi/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Sanayi sicili süreçleri SSBS elektronik akışına ve yıllık işletme cetveliyle belge geçerliliğine bağlandı.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "şirket verisi → yükümlülük kontrolü → SSBS hazırlığı → yıllık cetvel/geçerlilik",
+      "target_customer": "Türkiye sanayi işletmeleri",
+      "buyer": "mali işler/uyum yöneticisi",
+      "job_to_be_done": "sanayi sicili yükümlülüklerini ve veri değişikliklerini zamanında hazırlamak",
+      "current_friction": "gerekli veriler ve kanıtlar şirket içinde dağınık",
+      "product_mechanism": "takvim + değişiklik günlüğü + checklist + evidence kasası",
+      "one_sentence_concept": "SSBS öncesi hazırlık ve uyum workspace'i.",
+      "why_now": "SGM 2026/4 elektronik süreç ve yıllık cetvel yükümlülüğünü netleştiriyor.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 310,
+      "draft_canonical_key": "turkiye-industrial-enterprise|prepare-sanayi-sicil-obligations|calendar-change-ledger-evidence",
+      "evidence_notes": {
+        "trakya_transferability_hypothesis": "Trakya sanayi işletmelerinde aynı ulusal workflow uygulanabilir."
+      }
+    },
+    {
+      "raw_id": "w1-20261004-002",
+      "supporting_article_ids": [
+        "f1c497b8793385cc459144c7",
+        "a0945cfb9e6698b7496730c4"
+      ],
+      "supporting_article_titles": [
+        "AWS stops government NDAs for data-center projects"
+      ],
+      "supporting_sources": [
+        "TechCrunch"
+      ],
+      "canonical_source_urls": [
+        "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Data-center izinlerinde şeffaflık ve community evidence operasyonel gereksinime dönüşüyor.",
+      "delta_types": [
+        "BEHAVIOR_DELTA",
+        "RISK_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "proje → izin → kamu açıklaması → kaynak/evidence → community review",
+      "target_customer": "data-center geliştiricileri ve yerel yönetimler",
+      "buyer": "development/community affairs yöneticisi",
+      "job_to_be_done": "proje iddialarını ve izin taahhütlerini kaynaklı biçimde yönetmek",
+      "current_friction": "enerji, su, emisyon ve fayda iddiaları farklı kaynaklarda",
+      "product_mechanism": "claim ledger + provenance + permit milestones + disclosure checklist",
+      "one_sentence_concept": "Data-center transparency workspace.",
+      "why_now": "AWS NDA kullanımını bıraktı; moratoryum ve güven baskısı artıyor.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "data-center-developer|prove-project-transparency|claim-provenance-permit-dashboard",
+      "evidence_notes": {
+        "verification": "TechCrunch 3 Oct 2026 full article."
+      }
+    },
+    {
+      "raw_id": "w1-20261004-003",
+      "supporting_article_ids": [
+        "d3c865d0649ae15dede273f5"
+      ],
+      "supporting_article_titles": [
+        "Hyundai plans 25,000 Atlas robots"
+      ],
+      "supporting_sources": [
+        "ITHome",
+        "Yonhap"
+      ],
+      "canonical_source_urls": [
+        "https://en.yna.co.kr/view/AEN20260519006300320"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Humanoid robots move from demos toward factory training and scaled deployment.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "LABOR_DELTA",
+        "INFRASTRUCTURE_DELTA"
+      ],
+      "affected_workflow": "task selection → training → acceptance → rollout → exceptions",
+      "target_customer": "manufacturers and robot integrators",
+      "buyer": "automation/production engineering manager",
+      "job_to_be_done": "qualify factory tasks for robot rollout",
+      "current_friction": "task readiness, acceptance and rollout evidence are fragmented",
+      "product_mechanism": "task inventory + readiness score + acceptance checklist + exception ledger",
+      "one_sentence_concept": "Vendor-neutral humanoid deployment readiness workspace.",
+      "why_now": "Hyundai targets 25,000 Atlas units and factory task training.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 420,
+      "draft_canonical_key": "manufacturer|qualify-humanoid-production-tasks|readiness-training-acceptance-ledger",
+      "evidence_notes": {
+        "trakya_transferability_hypothesis": "Trakya manufacturing/logistics plants could use the same readiness workflow."
+      }
+    },
+    {
+      "raw_id": "w1-20261004-004",
+      "supporting_article_ids": [
+        "4b4183331f2e066bf137dffd"
+      ],
+      "supporting_article_titles": [
+        "Growing use of AI to manipulate hiring process raises concerns"
+      ],
+      "supporting_sources": [
+        "ETHRWorld"
+      ],
+      "canonical_source_urls": [
+        "https://hr.economictimes.indiatimes.com/news/trends/ai-in-hr/growing-use-of-ai-to-manipulate-hiring-process-raises-concerns-report/134653637"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Assessment integrity concerns rose to 45%; AI/device manipulation is growing.",
+      "delta_types": [
+        "BEHAVIOR_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "assessment/interview → risk signals → evidence review → disposition",
+      "target_customer": "employer recruitment teams",
+      "buyer": "TA/HR operations manager",
+      "job_to_be_done": "triage sessions that need extra integrity review",
+      "current_friction": "risk signals span multiple tools and controls age quickly",
+      "product_mechanism": "integrity case ledger + signal checklist + evidence + reviewer disposition",
+      "one_sentence_concept": "Recruitment-integrity case manager.",
+      "why_now": "2026 HirePro report shows rapidly changing integrity risks.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 360,
+      "draft_canonical_key": "recruitment-team|triage-assessment-integrity|signal-evidence-case-ledger",
+      "evidence_notes": {
+        "verification": "ETHRWorld/PTI article read."
+      }
+    },
+    {
+      "raw_id": "w1-20261004-005",
+      "supporting_article_ids": [
+        "343d0b9673eaee1d6b15d5c1"
+      ],
+      "supporting_article_titles": [
+        "AI paper surge pushes arXiv to submission limits"
+      ],
+      "supporting_sources": [
+        "36Kr"
+      ],
+      "canonical_source_urls": [
+        "https://eu.36kr.com/en/p/4009647948746628"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "arXiv limits accounts to two submissions/month and three pending submissions.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "CAPACITY_DELTA"
+      ],
+      "affected_workflow": "paper readiness → coauthor approval → quota allocation → submission",
+      "target_customer": "research labs",
+      "buyer": "PI/lab manager",
+      "job_to_be_done": "allocate scarce submission quota without wasting attempts",
+      "current_friction": "quota, readiness and coauthor coordination are separate",
+      "product_mechanism": "submission queue + quota calendar + preflight checklist + approval gate",
+      "one_sentence_concept": "Research submission quota/preflight workspace.",
+      "why_now": "New October quota makes submission capacity scarce.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 280,
+      "draft_canonical_key": "research-lab|allocate-submission-quota|queue-calendar-preflight",
+      "evidence_notes": {
+        "verification": "36Kr article read."
+      }
+    },
+    {
+      "raw_id": "w1-20261004-006",
+      "supporting_article_ids": [
+        "5ac6935a66ba03b4f4bd19e6"
+      ],
+      "supporting_article_titles": [
+        "SMR Kanunu taslağı hazır"
+      ],
+      "supporting_sources": [
+        "Enerji Günlüğü"
+      ],
+      "canonical_source_urls": [
+        "https://www.enerjigunlugu.net/smr-kanunu-bu-yil-mecliste-akkuyu-birkac-ay-icinde-devrede-70044h.htm"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Türkiye prepared an SMR law draft covering development, financing and safety framework.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "MARKET_DELTA"
+      ],
+      "affected_workflow": "draft law → requirement mapping → project impact → action register",
+      "target_customer": "Türkiye SMR/nuclear supply-chain companies",
+      "buyer": "regulatory/business development manager",
+      "job_to_be_done": "map changing SMR rules to project requirements",
+      "current_friction": "draft, amendments and project requirements can diverge",
+      "product_mechanism": "bill/version tracker + requirement map + action register + impact matrix",
+      "one_sentence_concept": "Türkiye SMR regulatory-change workspace.",
+      "why_now": "Minister said draft is ready and targeted for parliament this legislative year.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 330,
+      "draft_canonical_key": "turkiye-smr-supply-chain|map-law-to-project-requirements|version-requirement-impact-register",
+      "evidence_notes": {
+        "trakya_transferability_hypothesis": "Potential future supplier-readiness use; local evidence not yet verified."
+      }
+    }
+  ]
+}
