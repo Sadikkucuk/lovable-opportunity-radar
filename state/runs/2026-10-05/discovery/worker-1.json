@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-05",
+  "worker_id": "1",
+  "source_batch_index_generated_at": "2026-10-05T01:57:49Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "status": "complete",
+  "started_at": "2026-10-05T08:45:35+03:00",
+  "completed_at": "2026-10-05T08:53:00+03:00",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 18,
+  "original_articles_verified": 4,
+  "full_article_not_verified": 14,
+  "noise_or_no_opportunity_count": 236,
+  "raw_opportunity_count": 4,
+  "raw_opportunities": [
+    {
+      "raw_id": "w1-20261005-001",
+      "supporting_article_ids": [
+        "17ff4863639497f87dfca64e"
+      ],
+      "supporting_article_titles": [
+        "We built an AI agent for ServiceNow. The real pain points were narrower than our roadmap assumed"
+      ],
+      "supporting_sources": [
+        "VentureBeat"
+      ],
+      "canonical_source_urls": [
+        "https://venturebeat.com/orchestration/we-built-an-ai-agent-for-servicenow-the-real-pain-points-were-narrower-than-our-roadmap-assumed"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "ITSM verisi zaten mevcutken asıl darboğaz veriyi yorumlayıp sonraki aksiyona çevirmek; dar görevli AI katmanı bu karar döngüsünü otomatikleştirebiliyor.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "SPEED_DELTA",
+        "LABOR_DELTA"
+      ],
+      "affected_workflow": "ITSM kayıtları/CMDB → durum analizi → önerilen aksiyon → operatör onayı/uygulama",
+      "target_customer": "ServiceNow kullanan orta-büyük IT operasyon ekipleri",
+      "buyer": "ITSM / Service Management yöneticisi",
+      "job_to_be_done": "Dağınık ITSM verisinden eyleme dönük öncelik ve aksiyon üretmek",
+      "current_friction": "Katalog, lisans kullanımı ve CMDB sağlığı verileri var fakat yorumlama ve aksiyon seçimi manuel uzmanlık istiyor.",
+      "product_mechanism": "ServiceNow dışa aktarımları/API verisini dar görev şablonlarıyla analiz eden, kanıt gösteren ve insan onaylı aksiyon kuyruğu oluşturan web uygulaması",
+      "one_sentence_concept": "ServiceNow ekipleri için genel amaçlı ajan yerine dar ITSM darboğazlarını teşhis edip onaylı aksiyon kuyruğuna çeviren yardımcı katman.",
+      "why_now": "Gerçek uygulama deneyimi geniş ajan yol haritasından ziyade dar ve ölçülebilir ITSM sorunlarının değer ürettiğini gösteriyor.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 30,
+      "draft_canonical_key": "servicenow-itsm-teams|turn-itsm-data-into-approved-actions|narrow-ai-diagnostic-action-queue",
+      "evidence_notes": {
+        "source_fact": "VentureBeat makalesi ITSM platformunda veri eksikliği değil, veriyi anlama ve sonraki aksiyonu belirleme zorluğunu tarif ediyor.",
+        "inference": "Bağımsız, dar kapsamlı karar/aksiyon katmanı ürünleştirilebilir."
+      }
+    },
+    {
+      "raw_id": "w1-20261005-002",
+      "supporting_article_ids": [
+        "02619aaa31934bf3be324d92"
+      ],
+      "supporting_article_titles": [
+        "L'impatto dell'IA sulla compliance 231"
+      ],
+      "supporting_sources": [
+        "Il Sole 24 Ore / NT+ Fisco"
+      ],
+      "canonical_source_urls": [
+        "https://ntplusfisco.ilsole24ore.com/art/l-impatto-ia-compliance-231-AJSSpsWB"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "İtalya'da 30 Eylül 2026'dan itibaren yüksek riskli AI kullanımındaki güvenlik ve insan gözetimi eksiklikleri D.Lgs. 231 kurumsal sorumluluk çerçevesine doğrudan girdi; şirketlerin AI envanteri, risk sınıflaması, override ve kanıt kayıtlarını güncellemesi gerekiyor.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "AI sistemi envanteri → risk/rol sınıflaması → kullanım ve override kontrolü → log/kanıt → denetim/231 raporlama",
+      "target_customer": "İtalya'da AI kullanan şirketler ve 231 compliance ekipleri",
+      "buyer": "Compliance Officer / Organismo di Vigilanza / Legal",
+      "job_to_be_done": "AI kullanımını 231 ve AI Act yükümlülükleriyle eşleyip denetlenebilir kanıt üretmek",
+      "current_friction": "AI araçları üçüncü taraf yazılımlara gömülü, shadow-AI kullanımı ve insan override kararları dağınık; politika tek başına kanıt oluşturmuyor.",
+      "product_mechanism": "AI sistem envanteri, risk/rol sınıflaması, kontrol checklist'i, override kayıtları, olay/istisna kanıtı ve audit export'u sağlayan compliance web uygulaması",
+      "one_sentence_concept": "İtalyan şirketleri için AI kullanımını D.Lgs. 231 + AI Act kontrollerine bağlayan kanıt ve gözetim kayıt sistemi.",
+      "why_now": "D.Lgs. 160/2026 ile yeni hükümler 30 Eylül 2026 itibarıyla yürürlükte.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 35,
+      "draft_canonical_key": "italian-ai-deployers|prove-231-ai-governance|ai-inventory-risk-override-evidence-ledger",
+      "evidence_notes": {
+        "source_fact": "Kaynak AI envanteri, risk sınıflaması, shadow-AI politikası, override prosedürü, log erişimi ve olay akışlarını açıkça kontrol listesi olarak veriyor.",
+        "scope_note": "İlk pazar İtalya; scope_hint şeması ülke özelinde ayrı seçenek vermediği için Dünya seçildi."
+      }
+    },
+    {
+      "raw_id": "w1-20261005-003",
+      "supporting_article_ids": [
+        "ed6ba200e237efbbdd6e09aa"
+      ],
+      "supporting_article_titles": [
+        "Small Electronics Manufacturers Save Big on ERP"
+      ],
+      "supporting_sources": [
+        "EE Times"
+      ],
+      "canonical_source_urls": [
+        "https://www.eetimes.com/small-electronics-manufacturers-save-big-on-erp/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "KOBİ üreticiler için üretim ERP'si artık yıllarca süren kurumsal projeler yerine saatler içinde self-service kurulabilir; karmaşık BOM, revizyon, MRP, izlenebilirlik ve taşeron operasyonları daha düşük idari yükle yönetilebiliyor.",
+      "delta_types": [
+        "COST_DELTA",
+        "SPEED_DELTA",
+        "ACCESS_DELTA",
+        "LABOR_DELTA"
+      ],
+      "affected_workflow": "müşteri talebi/BOM → malzeme ihtiyacı ve satınalma → üretim/taşeron planı → seri/lot izlenebilirliği → teslimat ve maliyet",
+      "target_customer": "Küçük ve orta ölçekli elektronik ve benzeri ayrık üreticiler",
+      "buyer": "Fabrika sahibi / operasyon veya üretim müdürü",
+      "job_to_be_done": "Excel ve kopuk araçlardan üretim planı, malzeme ve izlenebilirliği tek akışta yönetmeye geçmek",
+      "current_friction": "Çok seviyeli BOM, revizyon, uzun tedarik süreleri ve taşeron süreçleri küçük üreticide bile karmaşık; klasik ERP pahalı ve danışmanlık yoğun.",
+      "product_mechanism": "Tam ERP yerine mevcut Excel/CSV verisini içeri alan hafif BOM-revizyon-MRP-eksik parça-izlenebilirlik kontrol katmanı",
+      "one_sentence_concept": "ERP'ye hazır olmayan küçük üreticiler için Excel'den beslenen hafif üretim kontrol ve eksik-parça erken uyarı katmanı.",
+      "why_now": "Self-service üretim yazılımı benimsenebilirliğinin saatlere indiğine dair saha örnekleri küçük üreticide dijitalleşme eşiğini düşürüyor.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 40,
+      "draft_canonical_key": "small-discrete-manufacturers|control-bom-material-shortage-traceability|excel-first-lightweight-manufacturing-control",
+      "evidence_notes": {
+        "source_fact": "EE Times içeriğinde 1.200 bileşen, yaklaşık 1.500 SKU satırının yaklaşık üç saatte kurulması ve BOM/revizyon/izlenebilirlik kullanım örnekleri veriliyor.",
+        "trakya_transferability_hypothesis": "Elektronik dışındaki makine, otomotiv yan sanayi ve benzeri ayrık üretimde BOM, satınalma, stok ve taşeron iş akışları aynı mekanizmaya aktarılabilir; yerel sektör kanıtı bu worker materyalinde olmadığı için Lüleburgaz scope atanmadı."
+      }
+    },
+    {
+      "raw_id": "w1-20261005-004",
+      "supporting_article_ids": [
+        "8ad523ff9d9bedd662c516c0",
+        "e9a5ec52586cabdeae58b21f"
+      ],
+      "supporting_article_titles": [
+        "Odisha extends EV policy validity till December 31, 2026, to boost green mobility"
+      ],
+      "supporting_sources": [
+        "ET Auto / Economic Times"
+      ],
+      "canonical_source_urls": [
+        "https://auto.economictimes.indiatimes.com/amp/news/industry/odisha-extends-ev-policy-validity-till-december-31-2026-to-boost-green-mobility/134676849"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Odisha EV Policy 2021 teşvik dönemi 31 Aralık 2026'ya uzatıldı; alıcı ve ekosistem oyuncularının süreye bağlı uygunluk/teşvik kararları yeniden güncellendi.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "COST_DELTA"
+      ],
+      "affected_workflow": "araç/şarj yatırımı planı → politika uygunluğu → teşvik/vergi muafiyeti hesabı → son tarih → satınalma/başvuru",
+      "target_customer": "Odisha'daki EV alıcıları, filolar, bayiler ve şarj yatırımı yapan işletmeler",
+      "buyer": "Filo yöneticisi / bayi / EV yatırımcısı",
+      "job_to_be_done": "Politika uzatmaları ve uygunluk şartlarına göre EV yatırımının gerçek net maliyetini ve son tarihini takip etmek",
+      "current_friction": "Teşvik süreleri ve muafiyetler politika değişiklikleriyle güncelleniyor; yatırım kararında manuel mevzuat takibi gerekiyor.",
+      "product_mechanism": "Politika kural motoru + araç/yatırım profili + uygunluk/son tarih + net maliyet hesaplayıcı ve belge checklist'i",
+      "one_sentence_concept": "Hindistan eyalet bazlı EV teşviklerini yatırım profiline çeviren uygunluk ve net maliyet takip aracı.",
+      "why_now": "Odisha politikası 31 Aralık 2026'ya uzatılarak karar penceresini değiştirdi.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 25,
+      "draft_canonical_key": "india-ev-buyers-fleets|calculate-state-incentive-eligibility|policy-rule-engine-net-cost-deadline",
+      "evidence_notes": {
+        "source_fact": "ET Auto, Odisha EV Policy 2021 geçerliliğinin 31 Aralık 2026'ya uzatıldığını ve teşvik/muafiyet çerçevesinin sürdüğünü bildiriyor.",
+        "scope_note": "İlk pazar Hindistan; şemada Hindistan tier'ı bulunmadığı için Dünya."
+      }
+    }
+  ]
+}
