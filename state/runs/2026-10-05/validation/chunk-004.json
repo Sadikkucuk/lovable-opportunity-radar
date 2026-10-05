@@ -1,0 +1,306 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-05",
+  "chunk_number": 4,
+  "candidate_ids": [
+    "c016",
+    "c017",
+    "c018",
+    "c019"
+  ],
+  "expected_candidate_count": 4,
+  "validated_candidate_count": 4,
+  "status": "complete",
+  "completed_at": "2026-10-05T08:20:00Z",
+  "results": [
+    {
+      "candidate_id": "c016",
+      "validation_index": 16,
+      "canonical_key": "software-maintainers|validate-external-technical-submissions|evidence-gated-intake-and-review-queue",
+      "development_verified": true,
+      "canonical_news_source": "TechCrunch",
+      "canonical_news_title": "Google froze its open source bug bounty program due to a significant rise in AI submissions",
+      "canonical_news_date": "2026-10-04",
+      "canonical_news_url": "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/",
+      "source_links": [
+        "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/",
+        "https://intakesecurity.io/",
+        "https://docs.pensar.dev/console/features/bug-bounty-intake"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "Intake",
+          "url": "https://intakesecurity.io/",
+          "reason": "Same external technical-report intake, classification and deduplication workflow."
+        },
+        {
+          "name": "Pensar Bug Bounty Intake",
+          "url": "https://docs.pensar.dev/console/features/bug-bounty-intake",
+          "reason": "Same report intake to classified/reproduced reviewer queue workflow."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "TRIAGERS",
+          "url": "https://triagers.com/",
+          "reason": "Human triage service rather than evidence-gated intake software."
+        }
+      ],
+      "competition_search_terms": [
+        "AI technical submission triage platform",
+        "external report intake deduplication reproducibility",
+        "Türkiye teknik rapor triyaj yazılımı"
+      ],
+      "market_gap": "Two direct global tools; no Türkiye direct product found. Differentiation is pre-admission evidence/provenance gating.",
+      "mvp": "Structured intake, mandatory evidence fields, declaration, completeness score, duplicate fingerprint, reviewer queue, audit export.",
+      "working_logic": "Submit -> evidence gate -> duplicate check -> reviewer score -> admit/return -> audit trail.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "browser-side deterministic validation",
+        "CSV export"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 210,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 45,
+        "intake_gate": 60,
+        "dedup_queue": 45,
+        "testing": 35,
+        "polish": 25
+      },
+      "build_time": "7-10 days",
+      "business_models": [
+        "workspace subscription"
+      ],
+      "marketing_strategy": "Direct outreach to software maintainers and technical review teams.",
+      "first_customer_plan": "Pilot with 10 teams receiving high volumes of external technical reports.",
+      "main_risk": "Established intake platforms can add similar gates.",
+      "validation_assumption": "3 of 10 teams confirm material reviewer-time savings.",
+      "evidence_strength": "Strong",
+      "competition_confidence": "High",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "Global workflow.",
+      "validated_scope_hint": "Dünya",
+      "qualification_status": "qualified"
+    },
+    {
+      "candidate_id": "c017",
+      "validation_index": 17,
+      "canonical_key": "turkish-industrial-applicants|manage-teknoloji-hamlesi-readiness|application-evidence-workspace",
+      "development_verified": true,
+      "canonical_news_source": "Resmi Gazete / ISO",
+      "canonical_news_title": "Teknoloji Hamlesi Programı Uygulama Usul ve Esasları Tebliğinde Değişiklik",
+      "canonical_news_date": "2026-05-08",
+      "canonical_news_url": "https://www.resmigazete.gov.tr/eskiler/2026/05/20260508-14.htm",
+      "source_links": [
+        "https://www.iso.org.tr/duyurular/resm%C3%AE-gazete/teknoloji-hamlesi-programi-tebliginde-onemli-degisiklikler-yapildi-karar-sayisi-33247/",
+        "https://sistemglobal.com.tr/dijital-urunler/ar-ge-ve-fikri-mulkiyet/ar-ge-yonetimi/teknoloji-hamlesi-programi/"
+      ],
+      "turkiye_direct_competitor_count": 1,
+      "turkiye_competitors": [
+        {
+          "name": "Sistem Global Teknoloji Hamlesi Programı",
+          "url": "https://sistemglobal.com.tr/dijital-urunler/ar-ge-ve-fikri-mulkiyet/ar-ge-yonetimi/teknoloji-hamlesi-programi/",
+          "reason": "Same Turkish HAMLE applicant and application/support-management job."
+        }
+      ],
+      "global_direct_competitor_count": 0,
+      "global_competitors": [],
+      "adjacent_competitors": [],
+      "competition_search_terms": [
+        "Teknoloji Hamlesi başvuru yönetimi yazılımı",
+        "HAMLE Programı dijital ürün başvuru destek yönetimi"
+      ],
+      "market_gap": "One Türkiye direct offering violates zero-direct-competitor hard gate.",
+      "mvp": "Rule/evidence checklist, owners, dossier versions, decisions, deadlines, monitoring.",
+      "working_logic": "Rules -> checklist -> evidence -> dossier -> revisions -> monitoring.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "public regulatory data"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 245,
+      "lovable_credit_breakdown": {
+        "ui_model": 50,
+        "rules": 55,
+        "dossier": 65,
+        "monitoring": 45,
+        "testing": 30
+      },
+      "build_time": "8-12 days",
+      "business_models": [
+        "per-application workspace"
+      ],
+      "marketing_strategy": "Industrial applicant outbound.",
+      "first_customer_plan": "Interview 10 HAMLE applicants.",
+      "main_risk": "Direct incumbent overlap.",
+      "validation_assumption": "Rejected before demand test.",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium-High",
+      "local_scope_verified": false,
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "National workflow; competition gate already fails.",
+      "validated_scope_hint": "Türkiye",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Türkiye direct competitor count is 1; Türkiye ideas require zero direct competitors."
+    },
+    {
+      "candidate_id": "c018",
+      "validation_index": 18,
+      "canonical_key": "turkiye-unlicensed-generation-operators|audit-electricity-settlement|rule-based-meter-import-reconciliation",
+      "development_verified": true,
+      "canonical_news_source": "Anadolu Ajansı",
+      "canonical_news_title": "EPDK lisanssız elektrik üretiminde mahsuplaşma kurallarını yeniden belirledi",
+      "canonical_news_date": "2026-05-05",
+      "canonical_news_url": "https://www.aa.com.tr/tr/enerjiterminali/elektrik/epdk-lisanssiz-elektrik-uretiminde-mahsuplasma-kurallarini-yeniden-belirledi/56806",
+      "source_links": [
+        "https://www.aa.com.tr/tr/enerjiterminali/elektrik/epdk-lisanssiz-elektrik-uretiminde-mahsuplasma-kurallarini-yeniden-belirledi/56806",
+        "https://gesmetrik.com/ges-takip-yazilimi"
+      ],
+      "turkiye_direct_competitor_count": 1,
+      "turkiye_competitors": [
+        {
+          "name": "GESMETRİK",
+          "url": "https://gesmetrik.com/ges-takip-yazilimi",
+          "reason": "Same Türkiye GES customer and hourly mahsuplaşma plus supplier-invoice cross-check workflow."
+        }
+      ],
+      "global_direct_competitor_count": 0,
+      "global_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "EgeWatt",
+          "url": "https://www.egewatt.com/",
+          "reason": "GES monitoring/mahsuplaşma capability but exact expected-vs-billed audit workflow not established."
+        }
+      ],
+      "competition_search_terms": [
+        "GES mahsuplaşma fatura kontrol yazılımı",
+        "lisanssız üretim saatlik mahsuplaşma yazılımı"
+      ],
+      "market_gap": "Direct Türkiye product closely matches proposed workflow.",
+      "mvp": "Hourly CSV import, mapping, rules, expected settlement, invoice import, variance flags.",
+      "working_logic": "Import -> map -> rules -> expected -> invoice -> reconcile.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "browser calculation engine"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 225,
+      "lovable_credit_breakdown": {
+        "ui_model": 40,
+        "imports": 40,
+        "rules": 60,
+        "reconciliation": 45,
+        "testing": 40
+      },
+      "build_time": "7-10 days",
+      "business_models": [
+        "per-facility subscription"
+      ],
+      "marketing_strategy": "Energy manager and GES consultant outbound.",
+      "first_customer_plan": "Industrial self-consumption GES operators.",
+      "main_risk": "Direct incumbent and regulatory calculation liability.",
+      "validation_assumption": "Rejected due competition gate.",
+      "evidence_strength": "Strong",
+      "competition_confidence": "High",
+      "local_scope_verified": true,
+      "local_scope_evidence": [
+        "https://www.enerjigunlugu.net/sisecam-luleburgaz-tesisinde-ruzgar-ve-gunes-elektrigi-kullanacak-62738h.htm",
+        "https://cw-enerji.com/tr/ges-projelerimiz/cw-enerji-gunes-enerji-santrali-ges-kirklareli-luleburgaz-4023-kwp-138.html"
+      ],
+      "local_applicability_rationale": "Concrete Lüleburgaz industrial rooftop/self-consumption GES footprint exists, but competition gate rejects the idea.",
+      "validated_scope_hint": "Türkiye",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "GESMETRİK is a direct Türkiye competitor."
+    },
+    {
+      "candidate_id": "c019",
+      "validation_index": 19,
+      "canonical_key": "turkiye-water-wastewater-epc|prepare-osb-tender-compliance|requirement-evidence-submission-ledger",
+      "development_verified": true,
+      "canonical_news_source": "Enerji Günlüğü",
+      "canonical_news_title": "Beyşehir OSB paket atıksu arıtma tesisi",
+      "canonical_news_date": "2026-10-02",
+      "canonical_news_url": "https://www.enerjigunlugu.net/beysehir-osb-paket-atiksu-aritma-tesisi-70036h.htm",
+      "source_links": [
+        "https://www.enerjigunlugu.net/beysehir-osb-paket-atiksu-aritma-tesisi-70036h.htm",
+        "https://tenderos.org/tools/rfp-compliance-matrix-generator/",
+        "https://jeos.io/Tools/TenderComplianceChecker",
+        "https://www.bidcompliance.com/",
+        "https://www.enerjigunlugu.net/kirklarelinde-endustriyel-atiksu-aritma-tesisi-65270h.htm"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 0,
+      "global_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "TenderOS",
+          "url": "https://tenderos.org/tools/rfp-compliance-matrix-generator/",
+          "reason": "Horizontal RFP compliance matrix, not Türkiye water/wastewater EPC workflow."
+        },
+        {
+          "name": "Jeos",
+          "url": "https://jeos.io/Tools/TenderComplianceChecker",
+          "reason": "Horizontal tender-response gap checker."
+        },
+        {
+          "name": "BidCompliance",
+          "url": "https://www.bidcompliance.com/",
+          "reason": "Horizontal RFP pre-submission checker across sectors."
+        }
+      ],
+      "competition_search_terms": [
+        "Türkiye atıksu EPC ihale teklif uygunluk yazılımı",
+        "OSB arıtma ihale şartname compliance platform",
+        "water wastewater EPC bid compliance software"
+      ],
+      "market_gap": "Horizontal tools found, but no direct Türkiye water/wastewater EPC + OSB evidence/submission product.",
+      "mvp": "Requirement matrix, owner/deadline, evidence attachments, completeness gate, technical evidence register, pack index.",
+      "working_logic": "Tender clauses -> requirements -> owners -> evidence -> gate -> submission pack.",
+      "technologies": [
+        "Lovable",
+        "Supabase free tier",
+        "manual text input",
+        "deterministic checklist",
+        "CSV/PDF export"
+      ],
+      "external_cash_cost": 0,
+      "lovable_credits_total": 360,
+      "lovable_credit_breakdown": {
+        "ui_model": 60,
+        "matrix": 85,
+        "evidence": 80,
+        "gate_export": 65,
+        "testing": 70
+      },
+      "build_time": "12-16 days",
+      "business_models": [
+        "per-tender workspace",
+        "annual EPC subscription"
+      ],
+      "marketing_strategy": "Direct outreach to Turkish industrial water/wastewater EPC bidders using live OSB tenders as demos.",
+      "first_customer_plan": "Build a Beyşehir tender demo and approach 10 EPC/equipment bidders.",
+      "main_risk": "Horizontal vendors can verticalize; zero-cost MVP needs manual tender text input.",
+      "validation_assumption": "3 of 10 bid teams confirm recurring costly evidence gaps.",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium-High",
+      "local_scope_verified": true,
+      "local_scope_evidence": [
+        "https://www.enerjigunlugu.net/kirklarelinde-endustriyel-atiksu-aritma-tesisi-65270h.htm",
+        "https://www.enerjigunlugu.net/evrensekiz-osb-den-22-bin-200-metrekup-kapasiteli-atiksu-aritma-tesisi-65303h.htm"
+      ],
+      "local_applicability_rationale": "Evrensekiz OSB in Lüleburgaz tendered a 22,200 m3/day industrial wastewater treatment plant with the same evidence-heavy EPC bid workflow.",
+      "validated_scope_hint": "Lüleburgaz",
+      "qualification_status": "qualified"
+    }
+  ]
+}
