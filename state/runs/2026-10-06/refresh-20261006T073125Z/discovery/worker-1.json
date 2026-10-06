@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-06",
+  "worker_id": "1",
+  "source_batch_index_generated_at": "2026-10-06T07:31:25Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "status": "complete",
+  "started_at": "2026-10-06T11:16:00+03:00",
+  "completed_at": "2026-10-06T11:31:00+03:00",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 8,
+  "original_articles_verified": 7,
+  "full_article_not_verified": 1,
+  "noise_or_no_opportunity_count": 232,
+  "raw_opportunity_count": 5,
+  "raw_opportunities": [
+    {
+      "raw_id": "w1-r073125-01",
+      "supporting_article_ids": [
+        "833c2b1910b1b8b9dcea3a01"
+      ],
+      "supporting_article_titles": [
+        "\"같은 AI도 나라 바뀌면 다시 만들어야\"…AWS가 짚은 규제 장벽"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea"
+      ],
+      "canonical_source_urls": [
+        "https://v.daum.net/v/20261006161158314"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Ülke bazında farklı AI, veri aktarımı ve cloud kuralları aynı hizmetin yeni pazara giriş maliyetini artırıyor.",
+      "delta_types": [
+        "RISK_DELTA",
+        "REGULATION_DELTA"
+      ],
+      "affected_workflow": "Yeni ülke → yerel yükümlülükler → kontrol eşleme → ürün değişikliği → launch approval",
+      "target_customer": "Birden fazla ülkede AI ürünü sunan SaaS ve enterprise AI şirketleri",
+      "buyer": "Compliance / Product / Legal",
+      "job_to_be_done": "Yeni pazara girmeden önce ülkeye özgü kuralların ürün üzerindeki etkisini çıkarmak.",
+      "current_friction": "Regülasyon gereksinimleri hukuk notları, mimari ve backlog arasında dağınık.",
+      "product_mechanism": "Country-rule register + product/control mapping + evidence + remediation backlog + launch gate.",
+      "one_sentence_concept": "AI ürünlerinin ülke bazlı regülasyon farklarını launch öncesi ürün değişikliklerine çeviren workspace.",
+      "why_now": "AWS APAC AI policy yöneticisi 6 Ekim 2026'da ülke bazlı düzenleme farklarının maliyet oluşturduğunu açıkladı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 310,
+      "draft_canonical_key": "cross-border-ai-saas|map-country-ai-rules-to-product-changes|market-entry-compliance-workspace",
+      "evidence_notes": {
+        "source_verified": true
+      }
+    },
+    {
+      "raw_id": "w1-r073125-02",
+      "supporting_article_ids": [
+        "c4715d3bdc584a5dedb9beda"
+      ],
+      "supporting_article_titles": [
+        "Generic ERP Lessons Food Manufacturers Should Apply to AI Solutions"
+      ],
+      "supporting_sources": [
+        "Food Engineering"
+      ],
+      "canonical_source_urls": [
+        "https://www.foodengineeringmag.com/articles/103957-generic-erp-lessons-food-manufacturers-should-apply-to-ai"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Gıda üretiminde AI kullanımı batch, catch-weight, FEFO, costing ve traceability gibi deterministik kurallarla sınırlandırılmalı.",
+      "delta_types": [
+        "RISK_DELTA",
+        "REGULATION_DELTA"
+      ],
+      "affected_workflow": "AI use-case → process fit → rule definition → human exception → production approval",
+      "target_customer": "Gıda üreticilerinin operasyon, kalite ve ERP ekipleri",
+      "buyer": "COO / Plant Manager / Quality / ERP owner",
+      "job_to_be_done": "AI use-case'ini canlı operasyona almadan önce proses ve veri kurallarına uyduğunu kanıtlamak.",
+      "current_friction": "Generic ERP ve spreadsheet workaround'ları kritik üretim verisini parçalı tutuyor.",
+      "product_mechanism": "Use-case register + deterministic rule checklist + data-readiness evidence + human approval + go-live gate.",
+      "one_sentence_concept": "Gıda fabrikalarında AI use-case'lerini üretime almadan önce guardrail'lerle doğrulayan readiness workspace.",
+      "why_now": "Food Engineering 6 Ekim 2026'da generic ERP açıklarının AI deployment'ta tekrarlandığını vurguladı.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 330,
+      "draft_canonical_key": "food-manufacturers|prove-ai-process-readiness|deterministic-rule-evidence-go-live-gate",
+      "evidence_notes": {
+        "source_verified": true
+      }
+    },
+    {
+      "raw_id": "w1-r073125-03",
+      "supporting_article_ids": [
+        "ad506d844768a2834c874eb5"
+      ],
+      "supporting_article_titles": [
+        "Anthropic open to Aussie laws requiring reporting of AI agent incidents"
+      ],
+      "supporting_sources": [
+        "InnovationAus / Reuters"
+      ],
+      "canonical_source_urls": [
+        "https://www.innovationaus.com/anthropic-open-to-aussie-laws-requiring-reporting-of-ai-hacks/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AI-agent güvenlik olaylarında vendor ve müşteri sorumluluğu ile bildirim zamanlaması regülasyon konusu haline geliyor.",
+      "delta_types": [
+        "RISK_DELTA",
+        "REGULATION_DELTA"
+      ],
+      "affected_workflow": "Incident detection → evidence collection → responsibility → notification → closure",
+      "target_customer": "AI agent sağlayıcıları ve regulated enterprise AI kullanıcıları",
+      "buyer": "CISO / Legal / Incident Response / AI governance",
+      "job_to_be_done": "AI-agent kaynaklı olayın sorumluluk, zaman ve kanıt zincirini yönetmek.",
+      "current_friction": "Vendor ve müşteri görünürlüğü farklı; bildirim yükümlülüğü iç politikalara bağlı kalabiliyor.",
+      "product_mechanism": "Incident ledger + responsibility matrix + evidence timeline + notification deadline + export.",
+      "one_sentence_concept": "AI-agent güvenlik olaylarında sorumluluk ve bildirim kanıtını yöneten workspace.",
+      "why_now": "Avustralya parlamento incelemesinde 6 Ekim 2026'da zorunlu bildirim konusu tartışıldı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 260,
+      "draft_canonical_key": "ai-agent-vendors-enterprises|manage-agent-incident-disclosure|incident-responsibility-evidence-timeline",
+      "evidence_notes": {
+        "source_verified": true
+      }
+    },
+    {
+      "raw_id": "w1-r073125-04",
+      "supporting_article_ids": [
+        "7a53c29c1d41b0d3616e56ee"
+      ],
+      "supporting_article_titles": [
+        "维基媒体：OpenAI 失控 AI 智能体或引发其 5 月数据服务故障"
+      ],
+      "supporting_sources": [
+        "ITHome / Wikimedia reporting"
+      ],
+      "canonical_source_urls": [
+        "https://www.ithome.com/1/009/947.htm"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Autonomous agent'ların üçüncü taraf servislerde beklenmeyen yüksek trafik ve istenmeyen aksiyon üretmesi yeni bir operasyonel risk yüzeyi oluşturuyor.",
+      "delta_types": [
+        "RISK_DELTA",
+        "REGULATION_DELTA"
+      ],
+      "affected_workflow": "Agent deployment → external access → activity monitoring → threshold exception → owner intervention",
+      "target_customer": "Dış web servislerine erişen autonomous agent'lar işleten yazılım ekipleri",
+      "buyer": "AI platform owner / SRE / Governance",
+      "job_to_be_done": "Agent'ın üçüncü taraf sistemlerde beklenmeyen yük veya aksiyon üretmesini görünür kılmak.",
+      "current_friction": "External-domain davranışı farklı log sistemlerinde kalabiliyor.",
+      "product_mechanism": "Agent-to-domain registry + request/action counters + threshold policy + owner evidence ledger.",
+      "one_sentence_concept": "Autonomous agent'ların üçüncü taraf servislerdeki operasyonel etkisini izleyen external-impact ledger.",
+      "why_now": "Wikimedia, Mayıs 2026 kesintisini çok yüksek agent trafiğiyle ilişkilendiren bulgular açıkladı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 300,
+      "draft_canonical_key": "autonomous-agent-operators|control-external-service-impact|domain-action-threshold-evidence-ledger",
+      "evidence_notes": {
+        "source_verified": true
+      }
+    },
+    {
+      "raw_id": "w1-r073125-05",
+      "supporting_article_ids": [
+        "ed7e8b0f62c028a1c503aa72"
+      ],
+      "supporting_article_titles": [
+        "McDonald’s’a yapay zeka şoku: Milyonlarca müşteriyi kapsayabilir"
+      ],
+      "supporting_sources": [
+        "Dünya / Reuters"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/legal/government/mcdonalds-hit-with-class-action-over-menu-prices-2026-10-05/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AI destekli fiyat önerilerinin bağımsız franchise kararlarıyla ilişkisi antitrust incelemesine konu oluyor.",
+      "delta_types": [
+        "RISK_DELTA",
+        "REGULATION_DELTA"
+      ],
+      "affected_workflow": "Pricing recommendation → franchise decision → data provenance → human override → audit evidence",
+      "target_customer": "Franchise ağları ve çok lokasyonlu perakende/restoran şirketleri",
+      "buyer": "Pricing / Legal / Compliance / Franchise operations",
+      "job_to_be_done": "AI fiyat önerilerinin bağımsız işletme kararını bozmadığını ve insan kararını kanıtlamak.",
+      "current_friction": "Merkezi model ve franchise verileri karar bağımsızlığını açıklamayı zorlaştırabilir.",
+      "product_mechanism": "Pricing recommendation ledger + input provenance + acceptance/override + independence attestation + audit export.",
+      "one_sentence_concept": "Franchise ağlarında AI fiyat önerilerinin bağımsız karar kanıtını tutan pricing-governance ledger.",
+      "why_now": "McDonald's 5 Ekim 2026'da AI destekli fiyatlama sistemiyle ilgili antitrust iddialı toplu davayla karşılaştı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 280,
+      "draft_canonical_key": "franchise-networks|prove-independent-ai-pricing-decisions|recommendation-override-audit-ledger",
+      "evidence_notes": {
+        "source_verified": true
+      }
+    }
+  ]
+}
