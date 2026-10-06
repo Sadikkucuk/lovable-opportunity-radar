@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-06",
+  "worker_id": "3",
+  "source_batch_index_generated_at": "2026-10-06T00:46:48Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "status": "complete",
+  "started_at": "2026-10-06T06:56:51+03:00",
+  "completed_at": "2026-10-06T07:11:00+03:00",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 8,
+  "original_articles_verified": 6,
+  "full_article_not_verified": 2,
+  "noise_or_no_opportunity_count": 232,
+  "raw_opportunity_count": 5,
+  "raw_opportunities": [
+    {
+      "raw_id": "w3-20261006-01",
+      "supporting_article_ids": [
+        "29c2ced04a44e4e4a496725d"
+      ],
+      "supporting_article_titles": [
+        "Indian enterprises struggle with AI access enforcement despite high policy adoption"
+      ],
+      "supporting_sources": [
+        "ET Datacenters / Economic Times"
+      ],
+      "canonical_source_urls": [
+        "https://datacenters.economictimes.indiatimes.com/amp/news/operations-resilience/indian-enterprises-struggle-with-ai-access-enforcement-despite-high-policy-adoption/134687094"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Kurumsal AI erişim politikaları yaygınlaşmasına rağmen agent erişiminin görev kapsamını aşması, kimliklerin görev bitiminden sonra açık kalması ve erişim olaylarının sorumlu kişiye bağlanamaması ölçülebilir bir enforcement açığı oluşturuyor.",
+      "delta_types": [
+        "RISK_DELTA",
+        "DATA_DELTA",
+        "REGULATION_DELTA"
+      ],
+      "affected_workflow": "AI agent yetkilendirme → görev yürütme → hassas veri erişimi → görev sonu yetki iptali → denetim kanıtı",
+      "target_customer": "AI agent kullanan orta ve büyük işletmeler",
+      "buyer": "CISO / IAM / IT governance ekipleri",
+      "job_to_be_done": "Her AI agent görevi için kim yetki verdi, hangi kaynaklara erişti ve yetkisi ne zaman kapandı sorularına denetlenebilir cevap üretmek.",
+      "current_friction": "Politika belgeleri mevcut olsa da erişim olayı, insan sorumlusu ve görev süresi arasındaki kanıt zinciri dağınık.",
+      "product_mechanism": "Agent görev kaydı, izin süresi, onaylayan kişi, erişilen sistemler ve revoke durumunu tek ledger'da tutan hafif web workflow; CSV/webhook import ve exception dashboard.",
+      "one_sentence_concept": "AI agent erişimlerini görev bazında yetkilendirme ve kapanış kanıtıyla izleyen denetim ledger'ı.",
+      "why_now": "Haberde 99% politika benimsenmesine karşın 84% kapsam aşımı, yalnız 47% izlenebilir sorumlu ve 45% görev sonrası açık credential bildiriliyor.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 280,
+      "draft_canonical_key": "enterprise-ai-users|prove-and-close-agent-access|task-scoped-access-ledger",
+      "evidence_notes": {
+        "source_facts": "ET Datacenters, Delinea araştırmasını aktararak erişim enforcement ve traceability açığını nicel verilerle raporluyor.",
+        "inference": "MVP doğrudan IAM enforcement motoru olmak yerine kanıt ve kapanış workflow'u olarak sıfır harici maliyetle ürünleştirilebilir."
+      }
+    },
+    {
+      "raw_id": "w3-20261006-02",
+      "supporting_article_ids": [
+        "792a3e0800dfd4a3cc5b589e"
+      ],
+      "supporting_article_titles": [
+        "Norway to propose temporary ban on AI glasses in some public places"
+      ],
+      "supporting_sources": [
+        "Reuters"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/technology/norway-propose-temporary-ban-ai-glasses-some-public-places-2026-10-05/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Norveç, AI gözlükleri ve potansiyel olarak diğer body-worn kayıt teknolojileri için mekâna göre değişen geçici kullanım yasağı hazırlıyor; işletmeler için cihaz-türüne ve alana göre kullanım kuralı yönetme ihtiyacı doğuyor.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Mekân sınıflandırma → wearable cihaz politikası → ziyaretçi/personel bilgilendirme → istisna/onay → olay kaydı",
+      "target_customer": "Müze, okul, sağlık tesisi, spor tesisi, etkinlik alanı ve alışveriş merkezi işletmecileri",
+      "buyer": "Facility / privacy / compliance yöneticileri",
+      "job_to_be_done": "Hangi alanda hangi wearable kayıt cihazının kullanılabileceğini personele ve ziyaretçiye açık, güncel ve kanıtlanabilir biçimde yönetmek.",
+      "current_friction": "Kamera/AI gözlük kuralları fiziksel tabelalar ve genel gizlilik politikalarıyla yönetiliyor; cihaz kategorisi ve alan bazlı istisnalar hızla değişebilir.",
+      "product_mechanism": "Mekân/zone envanteri, cihaz sınıfları, kural matrisi, QR ile ziyaretçi bildirimi ve olay/istisna kaydı sunan web uygulaması.",
+      "one_sentence_concept": "AI gözlükleri ve body-worn kayıt cihazları için mekân bazlı privacy policy registry.",
+      "why_now": "Norveç hükümeti 5 Ekim 2026'da seçili kamusal alanlarda geçici yasak teklif edeceğini ve kalıcı ulusal düzenleme için uzman grubu kuracağını açıkladı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 220,
+      "draft_canonical_key": "public-venue-operators|manage-wearable-recording-rules|zone-policy-registry",
+      "evidence_notes": {
+        "source_facts": "Reuters; teklif park, müze, AVM, okul, doktor muayenehanesi ve soyunma alanı gibi yerleri kapsayabilecek.",
+        "inference": "Düzenleme Norveç'e özgü başlasa da aynı workflow farklı yargı alanlarındaki işletmelere uyarlanabilir."
+      }
+    },
+    {
+      "raw_id": "w3-20261006-03",
+      "supporting_article_ids": [
+        "080891bcef5119dc04b0d93c"
+      ],
+      "supporting_article_titles": [
+        "社会インフラ向けフィジカルAIの安全運用に向けたガードレール技術を開発"
+      ],
+      "supporting_sources": [
+        "Hitachi / ITmedia"
+      ],
+      "canonical_source_urls": [
+        "https://www.hitachi.com/ja-jp/press/articles/2026/09/0914/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Physical AI için tasarım aşamasındaki hazard analizinden runtime kontrol komutlarının izlenip düzeltilmesine kadar tek safety constraint zinciri uygulanabilir hale geliyor.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "Hazard tanımlama → safety constraint → test senaryosu → runtime ihlal kaydı → düzeltici aksiyon kanıtı",
+      "target_customer": "Robotik/otomasyon kullanan üretim ve altyapı ekipleri",
+      "buyer": "OT safety / automation engineering / plant engineering yöneticileri",
+      "job_to_be_done": "Physical AI devreye alınmadan önce safety constraint'leri, test kanıtlarını ve runtime exception'ları sürüm bazında yönetmek.",
+      "current_friction": "Safety analizi, test kayıtları ve AI kontrol kuralları farklı mühendislik dokümanlarında kalabiliyor; değişiklik sonrası hangi kuralın hangi testle doğrulandığını takip etmek zor.",
+      "product_mechanism": "Hazard register, constraint library, test evidence, approval ve exception workflow'u; gerçek zamanlı kontrol yerine safety-case/evidence yönetimi.",
+      "one_sentence_concept": "Physical AI projeleri için hazard-to-constraint-to-test izlenebilirlik workspace'i.",
+      "why_now": "Hitachi ön değerlendirmede safety constraint'leri korurken aşırı duruşları %89 azaltabildiğini ve gerçek kullanım koşullarında doğrulamaya geçeceğini açıkladı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 310,
+      "draft_canonical_key": "industrial-physical-ai-teams|prove-safety-constraints|hazard-test-evidence-workspace",
+      "evidence_notes": {
+        "source_facts": "Hitachi'nin 14 Eylül 2026 birincil açıklaması tasarım ve runtime guardrail zincirini tarif ediyor.",
+        "trakya_transferability_hypothesis": "Trakya'daki otomasyonlu fabrika ve depolarda robot/otonom ekipman güvenlik doğrulaması aynı kayıt ve onay workflow'una ihtiyaç duyabilir; yerel varlık bu batch materyalinde kanıtlanmadığı için scope_hint Dünya tutuldu."
+      }
+    },
+    {
+      "raw_id": "w3-20261006-04",
+      "supporting_article_ids": [
+        "018c65400bef3757515e3de6",
+        "d8a997370c76672d3a26b55c"
+      ],
+      "supporting_article_titles": [
+        "스마트홈 클라우드 연동 규격 HCA 국제표준화 추진"
+      ],
+      "supporting_sources": [
+        "ETNews"
+      ],
+      "canonical_source_urls": [
+        "https://m.etnews.com/20261005000040"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Üreticiye özel smart-home cloud platformlarını bağlayan HCA fiili standardının uluslararası standardizasyonla ilişkilendirilmesi ve servis alanına genişletilmesi planlanıyor.",
+      "delta_types": [
+        "STANDARDIZATION_DELTA",
+        "INFRASTRUCTURE_DELTA",
+        "ACCESS_DELTA"
+      ],
+      "affected_workflow": "Cihaz/marka envanteri → cloud capability eşleme → interoperability requirement → test sonucu → standard uyum kanıtı",
+      "target_customer": "Smart-home entegratörleri, bina teknoloji ekipleri ve cihaz üreticilerinin partner ekipleri",
+      "buyer": "Product / interoperability / solution engineering yöneticileri",
+      "job_to_be_done": "Çok markalı smart-home projelerinde hangi cihaz ve cloud capability kombinasyonlarının standarda göre birlikte çalışacağını proje bazında kanıtlamak.",
+      "current_friction": "Marka ve cloud platformu bazında entegrasyon kabiliyetleri farklı doküman ve testlerde tutuluyor; standard değiştikçe uyumluluk matrisi eskime riski taşıyor.",
+      "product_mechanism": "Cihaz, cloud capability, standard version, test case ve evidence kayıtlarını ilişkilendiren interoperability readiness matrix.",
+      "one_sentence_concept": "Çok markalı smart-home projeleri için HCA interoperability readiness ve test-evidence workspace'i.",
+      "why_now": "HCA SIG Korea, mevcut HCA spesifikasyonlarını uluslararası standart sistemiyle ilişkilendirecek roadmap ve strateji çalışmasına başladı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 260,
+      "draft_canonical_key": "smart-home-integrators|prove-cross-brand-interoperability|standards-readiness-matrix",
+      "evidence_notes": {
+        "source_facts": "ETNews; HCA farklı üreticilerin cloud platformlarını bağlayan spesifikasyon ve Samsung, LG, Hyundai Construction gibi üyelerle uluslararası standardizasyon çalışması başlatıyor.",
+        "inference": "MVP gerçek cihaz kontrolü yapmadan requirement/test evidence yönetimine odaklanabilir."
+      }
+    },
+    {
+      "raw_id": "w3-20261006-05",
+      "supporting_article_ids": [
+        "32aec11df0bffef9e2250d37"
+      ],
+      "supporting_article_titles": [
+        "製造工程でウエハーを「100％識別する」システム、Cognex：エッジAIのOCR技術など使用"
+      ],
+      "supporting_sources": [
+        "EDN Japan / ITmedia"
+      ],
+      "canonical_source_urls": [
+        "https://edn.itmedia.co.jp/edn/spv/2610/05/news051.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Edge-AI OCR ve çoklu aydınlatma ile zor/degrade wafer işaretlerinin okunabilirliği yükselerek üretim boyunca daha eksiksiz traceability hedefleniyor.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "DATA_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Wafer/panel kimlik okuma → proses adımı eşleme → okunamayan kayıt exception'ı → manuel doğrulama → traceability raporu",
+      "target_customer": "Semiconductor üretim ve ileri elektronik üretim kalite ekipleri",
+      "buyer": "Manufacturing quality / traceability / process engineering yöneticileri",
+      "job_to_be_done": "Otomatik kimlik okuma sistemlerinden gelen read/no-read kayıtlarını proses adımlarıyla eşleyip traceability boşluklarını hızlı kapatmak.",
+      "current_friction": "Okunamayan veya degrade markalar manuel doğrulama ve traceability exception takibi gerektiriyor; farklı istasyon kayıtlarını tek kanıt zincirine getirmek zor.",
+      "product_mechanism": "CSV/API ile istasyon okuma loglarını alan, no-read/duplicate/mismatch exception'larını yöneten ve kapanış kanıtı üreten web workflow.",
+      "one_sentence_concept": "Üretim kimlik okuma sistemleri için traceability exception ve evidence manager.",
+      "why_now": "Cognex Eylül 2026'da In-Sight 1750 serisini duyurdu; edge-AI OCR ve multi-lighting ile zor işaretlerde yüksek read-rate ve şirket ifadesiyle %100 traceability hedefliyor.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 245,
+      "draft_canonical_key": "high-traceability-manufacturers|close-identification-exceptions|read-log-evidence-manager",
+      "evidence_notes": {
+        "source_facts": "EDN Japan 5 Ekim 2026 haberi Cognex'in In-Sight 1750 duyurusunu ve edge-AI OCR kullanımını aktarıyor.",
+        "trakya_transferability_hypothesis": "Wafer özelinde yerel pilot zayıf olabilir; ancak lot/serial OCR exception workflow'u otomotiv, cam, ilaç ve makine üretimine genellenebilir. Batch içinde Lüleburgaz'a özgü somut kanıt olmadığından scope Dünya."
+      }
+    }
+  ]
+}
