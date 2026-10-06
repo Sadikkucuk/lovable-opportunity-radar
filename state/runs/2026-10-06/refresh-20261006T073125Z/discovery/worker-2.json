@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-06",
+  "worker_id": "2",
+  "source_batch_index_generated_at": "2026-10-06T07:31:25Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "status": "complete",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 6,
+  "original_articles_verified": 4,
+  "full_article_not_verified": 2,
+  "noise_or_no_opportunity_count": 234,
+  "raw_opportunity_count": 3,
+  "raw_opportunities": [
+    {
+      "raw_id": "w2-r073125-01",
+      "supporting_article_ids": [
+        "22143e9cb44e2a04d85d01a3"
+      ],
+      "supporting_article_titles": [
+        "Lisanssız Elektrik Üretim Tesisleri ve İlişkili Olduğu Tüketim Tesislerinin Mahsuplaşma İşlemlerine İlişkin Usul ve Esaslar"
+      ],
+      "supporting_sources": [
+        "Resmi Gazete"
+      ],
+      "article_verification": "official_title_only",
+      "novelty_delta": "Lisanssız üretim ve tüketim tesislerinin mahsuplaşma işlemlerinde resmi kural değişikliği sinyali.",
+      "affected_workflow": "tesis eşleme; dönem verisi; mahsuplaşma kontrolü; fatura kanıtı",
+      "target_customer": "Lisanssız GES sahibi işletmeler ve enerji danışmanları",
+      "buyer": "Enerji yöneticisi / CFO",
+      "job_to_be_done": "Mahsuplaşma hesabının dönem verisiyle tutarlı olduğunu kontrol etmek.",
+      "current_friction": "Üretim, tüketim ve fatura verileri farklı dosyalarda.",
+      "product_mechanism": "Tesis eşleme, dönem verisi, kural kontrolü, karşılaştırma ve kanıt paketi.",
+      "one_sentence_concept": "Lisanssız elektrik üretiminde mahsuplaşma ve fatura sapmalarını denetleyen workspace.",
+      "why_now": "Resmi Gazete feed'inde yeni mahsuplaşma usul-esas başlığı görüldü.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 350,
+      "draft_canonical_key": "unlicensed-generation-owners|audit-settlement-and-billing|settlement-evidence-workspace",
+      "evidence_notes": {
+        "full_text_required_at_validation": true
+      }
+    },
+    {
+      "raw_id": "w2-r073125-02",
+      "supporting_article_ids": [
+        "038a1513fad0b44b5f57b6c5"
+      ],
+      "supporting_article_titles": [
+        "Using AI In Large-Scale Control System Migrations"
+      ],
+      "supporting_sources": [
+        "Automation World"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AI control-system migration'da tekrarlı işi hızlandırıyor; mühendis doğrulaması gerekiyor.",
+      "affected_workflow": "legacy export; task definition; assisted script; offline execution; engineer review; evidence",
+      "target_customer": "DCS/PLC/SCADA migration yapan sistem entegratörleri ve sanayi tesisleri",
+      "buyer": "Controls Engineering Manager / Project Manager",
+      "job_to_be_done": "AI destekli migration çıktılarının kaynak veriden doğru aktarıldığını proje ölçeğinde kanıtlamak.",
+      "current_friction": "Çok sayıdaki legacy dosyada review kanıtı dağınık kalıyor.",
+      "product_mechanism": "Migration work-item register, source/output pair, AI-use declaration, review checklist ve sign-off.",
+      "one_sentence_concept": "Endüstriyel kontrol sistemi migration projelerinde AI destekli değişikliklerin mühendis doğrulamasını yöneten QA workspace.",
+      "why_now": "Automation World büyük ölçekli migration örneğinde hız kazancı ile engineering validation gereğini gösterdi.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 300,
+      "draft_canonical_key": "industrial-control-migration-teams|prove-ai-assisted-migration-quality|source-output-review-evidence-workspace",
+      "evidence_notes": {
+        "source_verified": true
+      }
+    },
+    {
+      "raw_id": "w2-r073125-03",
+      "supporting_article_ids": [
+        "795f7f4fe3e475b5973ba9bb"
+      ],
+      "supporting_article_titles": [
+        "Diğer Üretim Faaliyetlerinde Mevcut En İyi Teknikler Tebliği"
+      ],
+      "supporting_sources": [
+        "Resmi Gazete"
+      ],
+      "article_verification": "official_title_only",
+      "novelty_delta": "Üretim faaliyetleri için Mevcut En İyi Teknikler başlıklı resmi düzenleme sinyali teknik uyum kanıtı ihtiyacını artırıyor.",
+      "affected_workflow": "proses kapsamı; uygulanabilir teknik; mevcut durum; gap/aksiyon; kanıt; review",
+      "target_customer": "Kapsama giren üretim tesisleri ve çevre danışmanları",
+      "buyer": "EHS / Çevre yöneticisi / Fabrika müdürü",
+      "job_to_be_done": "Uygulanabilir teknik gereklilikleri tesis prosesleriyle eşleyip uyum kanıtını güncel tutmak.",
+      "current_friction": "Gereklilikler, proses envanteri, aksiyonlar ve kanıt belgeleri farklı yerlerde.",
+      "product_mechanism": "Requirement register, process applicability matrix, gap/action owner, evidence ve audit export.",
+      "one_sentence_concept": "Üretim tesislerinde MET/BAT gerekliliklerini proses ve kanıtlarla eşleyen çevresel uyum workspace.",
+      "why_now": "Resmi Gazete feed'inde ilgili tebliğ başlığı görüldü.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 300,
+      "draft_canonical_key": "turkish-manufacturing-sites|map-best-available-techniques-to-evidence|bat-compliance-workspace",
+      "evidence_notes": {
+        "full_text_required_at_validation": true
+      }
+    }
+  ]
+}
