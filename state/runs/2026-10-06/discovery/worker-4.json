@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-06",
+  "worker_id": "4",
+  "source_batch_index_generated_at": "2026-10-06T00:46:48Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "status": "complete",
+  "started_at": "2026-10-06T07:00:00+03:00",
+  "completed_at": "2026-10-06T07:11:00+03:00",
+  "feed_items_expected": 280,
+  "feed_items_triaged": 280,
+  "candidate_article_count": 6,
+  "original_articles_verified": 5,
+  "full_article_not_verified": 1,
+  "noise_or_no_opportunity_count": 274,
+  "raw_opportunity_count": 5,
+  "raw_opportunities": [
+    {
+      "raw_id": "w4-20261006-001",
+      "supporting_article_ids": [
+        "283c9512474df982fd686b37"
+      ],
+      "supporting_article_titles": [
+        "아카이브, 논문 제출 월 2편으로 제한…AI발 저품질 논문 급증"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea",
+        "arXiv"
+      ],
+      "canonical_source_urls": [
+        "https://blog.arxiv.org/2026/10/01/updated-rate-limit-policy/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "arXiv standardized a two-submissions-per-calendar-month cap after record submission volume and moderator load, increasing the value of pre-submission readiness and internal scheduling.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "BEHAVIOR_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Research manuscript ready → internal quality/readiness check → choose submitter and slot → arXiv submission → moderation outcome",
+      "target_customer": "research labs and university groups that regularly submit multiple preprints",
+      "buyer": "lab manager, principal investigator or research operations lead",
+      "job_to_be_done": "Coordinate scarce submission slots and reduce avoidable rejected submissions before using a monthly allowance.",
+      "current_friction": "Submission ownership, readiness checks, co-author signoff and monthly slots can be tracked informally; a rejected submission still consumes scarce capacity.",
+      "product_mechanism": "Shared submission calendar with per-submitter quota tracking, readiness checklist, co-author approvals and deadline alerts; no automated paper generation.",
+      "one_sentence_concept": "An arXiv Submission Slot Desk for research groups managing the new monthly cap.",
+      "why_now": "The cap took effect October 1, 2026 after arXiv reported 40,363 September submissions and heavy moderation/support load.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 180,
+      "draft_canonical_key": "research-labs|coordinate-arxiv-submission-capacity|quota-readiness-approval-calendar",
+      "evidence_notes": {
+        "quantitative_signal": "Two submissions per submitter per calendar month; three active submissions at a time; September 2026 volume reported at 40,363.",
+        "boundary": "The product manages workflow and readiness, not scientific validity or moderation decisions."
+      }
+    },
+    {
+      "raw_id": "w4-20261006-002",
+      "supporting_article_ids": [
+        "60967109029e945f40b00de1"
+      ],
+      "supporting_article_titles": [
+        "Google froze its open source bug bounty program due to a ‘significant rise’ in AI submissions"
+      ],
+      "supporting_sources": [
+        "TechCrunch",
+        "Google OSS VRP"
+      ],
+      "canonical_source_urls": [
+        "https://bughunters.google.com/about/rules/6521337925468160/google-open-source-software-vulnerability-reward-program-rules"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Automated/AI-generated vulnerability reports can now overwhelm human triage at enough scale to force a major program to pause product-vulnerability intake.",
+      "delta_types": [
+        "BEHAVIOR_DELTA",
+        "COST_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "External vulnerability report → evidence validation → duplicate/reproducibility check → maintainer triage → accept/reject/escalate",
+      "target_customer": "open-source maintainers and organizations operating vulnerability disclosure or bug-bounty intake",
+      "buyer": "product security or vulnerability-management lead",
+      "job_to_be_done": "Filter low-evidence automated vulnerability reports before they consume scarce maintainer/security-review time.",
+      "current_friction": "AI lowers report-generation cost faster than human validation cost; invalid reports arrive with plausible prose but weak reproduction evidence.",
+      "product_mechanism": "Vendor-neutral intake gate requiring structured reproduction evidence, deterministic checks, duplicate clustering, submitter history and reviewer queues before a report reaches maintainers.",
+      "one_sentence_concept": "A Vulnerability Intake Quality Gate that screens AI-generated security-report noise before human triage.",
+      "why_now": "Google paused new OSS VRP product-vulnerability submissions from October 1, 2026, citing a significant rise in automated submissions, the vast majority invalid.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 310,
+      "draft_canonical_key": "vulnerability-program-operators|filter-low-evidence-security-reports|structured-intake-repro-duplicate-triage-gate",
+      "evidence_notes": {
+        "source_fact": "Google's OSS VRP pause is an operational signal that automated-report volume can exceed review capacity.",
+        "boundary": "MVP validates evidence completeness and workflow signals; it does not claim to prove exploitability automatically."
+      }
+    },
+    {
+      "raw_id": "w4-20261006-003",
+      "supporting_article_ids": [
+        "5470c88403a9040b70da046f"
+      ],
+      "supporting_article_titles": [
+        "BIMデータ審査の骨格判明、29年開始でAI活用も 国交省が基本構想"
+      ],
+      "supporting_sources": [
+        "Nikkei XTECH",
+        "Japan Ministry of Land, Infrastructure, Transport and Tourism"
+      ],
+      "canonical_source_urls": [
+        "https://www.mlit.go.jp/report/press/house05_hh_001151.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Japan has defined a 2029 BIM-data building-review path in which IFC data itself becomes review input and program/AI-assisted digital checks supplement view-based review.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "DATA_DELTA",
+        "STANDARDIZATION_DELTA",
+        "CAPABILITY_DELTA"
+      ],
+      "affected_workflow": "BIM model → IFC/export validation → rule-specific evidence/checks → building-confirmation submission → review findings → correction/resubmission",
+      "target_customer": "Japanese architecture, engineering and construction firms preparing BIM-based building-confirmation submissions",
+      "buyer": "BIM manager, design QA lead or permitting/compliance manager",
+      "job_to_be_done": "Catch submission-readiness and rule-evidence gaps in BIM/IFC packages before formal review.",
+      "current_friction": "Teams must coordinate model properties, drawings, checklists and regulatory evidence; errors create review comments and rework while standards are transitioning.",
+      "product_mechanism": "Web readiness workspace that imports IFC metadata/check results, maps required review items to evidence, tracks exceptions and creates a submission checklist; heavy BIM geometry remains client-side/open-source where possible.",
+      "one_sentence_concept": "A BIM Review Readiness Desk for Japanese design teams preparing for data-based building confirmation.",
+      "why_now": "MLIT's September 18, 2026 basic concept sets a concrete 2029 spring target and explicitly anticipates program/AI-assisted digital review.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 390,
+      "draft_canonical_key": "japan-aec-design-teams|prepare-bim-data-review-submissions|ifc-readiness-evidence-exception-workflow",
+      "evidence_notes": {
+        "scope_note": "Core first market is Japan; discovery schema has no Japan tier, so Dünya is used.",
+        "trakya_transferability_hypothesis": "IFC submission-readiness and model QA are transferable to Trakya architecture/industrial construction workflows, but the Japanese regulatory checklist itself is not transferable."
+      }
+    },
+    {
+      "raw_id": "w4-20261006-004",
+      "supporting_article_ids": [
+        "14b7813671fdeac772b5f95b"
+      ],
+      "supporting_article_titles": [
+        "SB C&S、ZenityのAIエージェント向けセキュリティ製品を国内販売"
+      ],
+      "supporting_sources": [
+        "Impress Watch",
+        "SB C&S"
+      ],
+      "canonical_source_urls": [
+        "https://cas.softbank.jp/information/261002_01/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Enterprise AI agents increasingly require visibility into prompts, tools, identities, permissions, data access and runtime actions because conventional controls may not explain agent behavior end to end.",
+      "delta_types": [
+        "RISK_DELTA",
+        "CAPABILITY_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "Agent registration → tool/data permission declaration → risk review → deployment → action/event logging → exception investigation",
+      "target_customer": "SMEs and mid-market teams deploying internal AI agents but unable to justify a full enterprise agent-security platform",
+      "buyer": "IT/security lead or AI governance owner",
+      "job_to_be_done": "Maintain a simple inventory and review trail of what each AI agent can access and what consequential actions it performs.",
+      "current_friction": "Agent permissions and MCP/tool connections are spread across platforms; small teams lack one reviewable inventory of owner, purpose, privileges, data access and incidents.",
+      "product_mechanism": "Lightweight agent registry and governance ledger with owner/purpose, declared tools/data, permission-review checklist, change approvals and incident/action evidence import.",
+      "one_sentence_concept": "An AI Agent Permission Registry for smaller organizations that need governance before enterprise-grade runtime security.",
+      "why_now": "Zenity's Japan launch explicitly frames agent visibility, excessive permissions, MCP links and runtime actions as a new security-control surface.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 270,
+      "draft_canonical_key": "smes-deploying-ai-agents|govern-agent-permissions-and-ownership|agent-registry-permission-review-evidence-ledger",
+      "evidence_notes": {
+        "boundary": "This is governance/inventory workflow, not a substitute for endpoint/runtime threat prevention; that narrower scope keeps a zero-cost Lovable MVP plausible."
+      }
+    },
+    {
+      "raw_id": "w4-20261006-005",
+      "supporting_article_ids": [
+        "bd1c4838a1c4e5e93a9fcb77"
+      ],
+      "supporting_article_titles": [
+        "現場DXのアルダグラムが20億円調達 KANNAを現場AIプラットフォームへ"
+      ],
+      "supporting_sources": [
+        "ITmedia",
+        "Aldagram"
+      ],
+      "canonical_source_urls": [
+        "https://prtimes.jp/main/html/rd/p/000000128.000058603.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "A field-work platform used across construction, real estate and manufacturing is shifting toward AI on top of structured site data, highlighting that scattered paper, Excel, whiteboards and verbal updates are the prerequisite bottleneck.",
+      "delta_types": [
+        "DATA_DELTA",
+        "LABOR_DELTA",
+        "CAPABILITY_DELTA"
+      ],
+      "affected_workflow": "Field observation/request → capture structured record/photo/form → assign owner → track status → close with evidence → reuse data for automation/AI",
+      "target_customer": "small industrial contractors, maintenance teams and suppliers with field work still coordinated through paper, Excel and messaging",
+      "buyer": "operations manager, maintenance manager or small-business owner",
+      "job_to_be_done": "Turn recurring field observations and handoffs into structured records that can later support automation without replacing the firm's whole project-management stack.",
+      "current_friction": "Field facts are scattered across paper, Excel, whiteboards, chat and verbal communication; this blocks reliable handoff, history and later AI use.",
+      "product_mechanism": "Narrow mobile-friendly field handoff ledger: configurable forms, photo evidence, owner/deadline, status, CSV export and recurring exception views.",
+      "one_sentence_concept": "A lightweight Field Handoff Ledger for small industrial service teams that need structured operational data before adopting AI.",
+      "why_now": "Aldagram says field AI remains constrained because operational information is still scattered and unstructured, while labor shortages increase pressure to automate.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 230,
+      "draft_canonical_key": "small-industrial-field-teams|structure-field-handoffs-for-automation|mobile-form-photo-owner-status-ledger",
+      "evidence_notes": {
+        "source_fact": "KANNA reports 100,000 user companies across 100+ countries and explicitly identifies paper/Excel/whiteboard/verbal fragmentation as an AI-readiness problem.",
+        "trakya_transferability_hypothesis": "The same field handoff pattern plausibly applies to maintenance contractors, factory service suppliers and industrial operators in the Lüleburgaz–Çorlu–Çerkezköy corridor; no assigned source proves a specific local company workflow."
+      }
+    }
+  ]
+}
