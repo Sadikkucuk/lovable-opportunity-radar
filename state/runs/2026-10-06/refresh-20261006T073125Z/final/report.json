@@ -1,0 +1,20 @@
+{
+  "overall_status": "RADAR_INCOMPLETE",
+  "run_date": "2026-10-06",
+  "source_batch_index_generated_at": "2026-10-06T07:31:25Z",
+  "feed_records_total": 1000,
+  "feed_records_triaged": 1000,
+  "raw_opportunity_count": 17,
+  "candidate_count": 17,
+  "candidates_validated": 17,
+  "failure_stage": "FINALIZE_HARD_GATE",
+  "failures": [
+    "merge/candidates.json missing",
+    "validation/chunk-*.json complete immutable validation records missing",
+    "validation progress uses compact status records rather than complete VALIDATOR_WORKER result schema"
+  ],
+  "publication_performed": false,
+  "idea_history_modified": false,
+  "idea_catalog_modified": false,
+  "required_action": "Repair merge/candidates.json and immutable validation chunk files from already completed run evidence, then rerun FINALIZE. Do not re-run discovery or publish before gate passes."
+}
