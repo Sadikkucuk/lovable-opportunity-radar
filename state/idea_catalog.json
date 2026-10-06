@@ -2,7 +2,7 @@
   "schema_version": 1,
   "site_name": "AIStartup",
   "description": "Canonical persistent idea catalog consumed by the AIStartup web application.",
-  "updated_at": "2026-10-05T11:30:00+03:00",
+  "updated_at": "2026-10-06T12:00:00+03:00",
   "ideas": [
     {
       "canonical_key": "competition-organizer|enforce-ai-use-policy-on-submissions|declaration-rule-engine-review-evidence",
@@ -4773,7 +4773,458 @@
       "status": "published",
       "first_reported_at": "2026-10-05",
       "last_updated_at": "2026-10-05"
+    },
+    {
+      "canonical_key": "food-manufacturers|prove-ai-process-readiness|deterministic-rule-evidence-go-live-gate",
+      "idea_name": "Gıda AI Üretime Geçiş Kapısı",
+      "scope_tier": "Türkiye",
+      "scope_reason": "Türkiye'deki mevzuat veya operasyon akışına doğrudan bağlıdır.",
+      "news_source": "2026-10-06 radar kaynakları",
+      "news_title": "Gıda fabrikalarında AI use-case'lerini üretime almadan önce guardrail'lerle doğrulayan readiness workspace.",
+      "news_date": "2026-10-06",
+      "news_url": "https://www.foodengineeringmag.com/articles/103957-generic-erp-lessons-food-manufacturers-should-apply-to-ai",
+      "source_links": [
+        {
+          "label": "Kaynak",
+          "url": "https://www.foodengineeringmag.com/articles/103957-generic-erp-lessons-food-manufacturers-should-apply-to-ai"
+        }
+      ],
+      "core_idea": "AI use-case'ini canlı operasyona almadan önce proses ve veri kurallarına uyduğunu kanıtlamak.",
+      "user_story": "Bir COO / Plant Manager / Quality / ERP owner olarak aı use-case'ini canlı operasyona almadan önce proses ve veri kurallarına uyduğunu kanıtlamak. istiyorum.",
+      "before_state": "Generic ERP ve spreadsheet workaround'ları kritik üretim verisini parçalı tutuyor.",
+      "after_state": "Use-case register + deterministic rule checklist + data-readiness evidence + human approval + go-live gate.",
+      "why_now": "Food Engineering 6 Ekim 2026'da generic ERP açıklarının AI deployment'ta tekrarlandığını vurguladı.",
+      "target_customer": "Gıda üreticilerinin operasyon, kalite ve ERP ekipleri",
+      "buyer": "COO / Plant Manager / Quality / ERP owner",
+      "market": "Türkiye",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Gıda üretiminde AI kullanımı batch, catch-weight, FEFO, costing ve traceability gibi deterministik kurallarla sınırlandırılmalı.",
+      "business_models": [
+        {
+          "model": "SaaS aboneliği",
+          "estimate": "Pilot müşteri görüşmeleriyle fiyat doğrulanacak"
+        }
+      ],
+      "lovable_credits_total": 330,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 66,
+        "core_workflow": 132,
+        "testing_fixes": 83,
+        "launch_polish": 49
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Uygulama geliştirme",
+          "cost": "mevcut kredi"
+        },
+        {
+          "name": "Supabase/PostgreSQL",
+          "purpose": "Veri tabanı ve kimlik doğrulama",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Use-case register + deterministic rule checklist + data-readiness evidence + human approval + go-live gate.",
+      "working_logic": "Use-case register + deterministic rule checklist + data-readiness evidence + human approval + go-live gate.",
+      "build_time": "5-15 founder days",
+      "marketing_strategy": "Hedef müşteri ekiplerine doğrudan pilot erişimi ve problem odaklı içerik pazarlaması.",
+      "first_customer_plan": "Tek gerçek müşteri iş akışında ölçülebilir pilot.",
+      "main_risk": "Müşterinin mevcut araçlarını yeterli görmesi veya entegrasyon ihtiyacının MVP kapsamını büyütmesi.",
+      "validation_assumption": "İlk 10-20 hedef müşteri görüşmesinde problem sıklığı, ödeme isteği ve mevcut alternatifler doğrulanmalı.",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-06",
+      "last_updated_at": "2026-10-06"
+    },
+    {
+      "canonical_key": "franchise-networks|prove-independent-ai-pricing-decisions|recommendation-override-audit-ledger",
+      "idea_name": "Franchise AI Fiyat Kararı Defteri",
+      "scope_tier": "Dünya",
+      "scope_reason": "Ülke bağımsız veya uluslararası operasyonlarda kullanılabilir.",
+      "news_source": "2026-10-06 radar kaynakları",
+      "news_title": "Franchise ağlarında AI fiyat önerilerinin bağımsız karar kanıtını tutan pricing-governance ledger.",
+      "news_date": "2026-10-06",
+      "news_url": "https://www.reuters.com/legal/government/mcdonalds-hit-with-class-action-over-menu-prices-2026-10-05/",
+      "source_links": [
+        {
+          "label": "Kaynak",
+          "url": "https://www.reuters.com/legal/government/mcdonalds-hit-with-class-action-over-menu-prices-2026-10-05/"
+        }
+      ],
+      "core_idea": "AI fiyat önerilerinin bağımsız işletme kararını bozmadığını ve insan kararını kanıtlamak.",
+      "user_story": "Bir Pricing / Legal / Compliance / Franchise operations olarak aı fiyat önerilerinin bağımsız işletme kararını bozmadığını ve insan kararını kanıtlamak. istiyorum.",
+      "before_state": "Merkezi model ve franchise verileri karar bağımsızlığını açıklamayı zorlaştırabilir.",
+      "after_state": "Pricing recommendation ledger + input provenance + acceptance/override + independence attestation + audit export.",
+      "why_now": "McDonald's 5 Ekim 2026'da AI destekli fiyatlama sistemiyle ilgili antitrust iddialı toplu davayla karşılaştı.",
+      "target_customer": "Franchise ağları ve çok lokasyonlu perakende/restoran şirketleri",
+      "buyer": "Pricing / Legal / Compliance / Franchise operations",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "AI destekli fiyat önerilerinin bağımsız franchise kararlarıyla ilişkisi antitrust incelemesine konu oluyor.",
+      "business_models": [
+        {
+          "model": "SaaS aboneliği",
+          "estimate": "Pilot müşteri görüşmeleriyle fiyat doğrulanacak"
+        }
+      ],
+      "lovable_credits_total": 280,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 56,
+        "core_workflow": 112,
+        "testing_fixes": 70,
+        "launch_polish": 42
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Uygulama geliştirme",
+          "cost": "mevcut kredi"
+        },
+        {
+          "name": "Supabase/PostgreSQL",
+          "purpose": "Veri tabanı ve kimlik doğrulama",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Pricing recommendation ledger + input provenance + acceptance/override + independence attestation + audit export.",
+      "working_logic": "Pricing recommendation ledger + input provenance + acceptance/override + independence attestation + audit export.",
+      "build_time": "5-15 founder days",
+      "marketing_strategy": "Hedef müşteri ekiplerine doğrudan pilot erişimi ve problem odaklı içerik pazarlaması.",
+      "first_customer_plan": "Tek gerçek müşteri iş akışında ölçülebilir pilot.",
+      "main_risk": "Müşterinin mevcut araçlarını yeterli görmesi veya entegrasyon ihtiyacının MVP kapsamını büyütmesi.",
+      "validation_assumption": "İlk 10-20 hedef müşteri görüşmesinde problem sıklığı, ödeme isteği ve mevcut alternatifler doğrulanmalı.",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-06",
+      "last_updated_at": "2026-10-06"
+    },
+    {
+      "canonical_key": "turkish-manufacturing-sites|map-best-available-techniques-to-evidence|bat-compliance-workspace",
+      "idea_name": "MET/BAT Uyum Masası",
+      "scope_tier": "Türkiye",
+      "scope_reason": "Türkiye'deki mevzuat veya operasyon akışına doğrudan bağlıdır.",
+      "news_source": "2026-10-06 radar kaynakları",
+      "news_title": "Üretim tesislerinde MET/BAT gerekliliklerini proses ve kanıtlarla eşleyen çevresel uyum workspace.",
+      "news_date": "2026-10-06",
+      "news_url": "",
+      "source_links": [],
+      "core_idea": "Uygulanabilir teknik gereklilikleri tesis prosesleriyle eşleyip uyum kanıtını güncel tutmak.",
+      "user_story": "Bir EHS / Çevre yöneticisi / Fabrika müdürü olarak uygulanabilir teknik gereklilikleri tesis prosesleriyle eşleyip uyum kanıtını güncel tutmak. istiyorum.",
+      "before_state": "Gereklilikler, proses envanteri, aksiyonlar ve kanıt belgeleri farklı yerlerde.",
+      "after_state": "Requirement register, process applicability matrix, gap/action owner, evidence ve audit export.",
+      "why_now": "Resmi Gazete feed'inde ilgili tebliğ başlığı görüldü.",
+      "target_customer": "Kapsama giren üretim tesisleri ve çevre danışmanları",
+      "buyer": "EHS / Çevre yöneticisi / Fabrika müdürü",
+      "market": "Türkiye",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Üretim faaliyetleri için Mevcut En İyi Teknikler başlıklı resmi düzenleme sinyali teknik uyum kanıtı ihtiyacını artırıyor.",
+      "business_models": [
+        {
+          "model": "SaaS aboneliği",
+          "estimate": "Pilot müşteri görüşmeleriyle fiyat doğrulanacak"
+        }
+      ],
+      "lovable_credits_total": 300,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 60,
+        "core_workflow": 120,
+        "testing_fixes": 75,
+        "launch_polish": 45
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Uygulama geliştirme",
+          "cost": "mevcut kredi"
+        },
+        {
+          "name": "Supabase/PostgreSQL",
+          "purpose": "Veri tabanı ve kimlik doğrulama",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Requirement register, process applicability matrix, gap/action owner, evidence ve audit export.",
+      "working_logic": "Requirement register, process applicability matrix, gap/action owner, evidence ve audit export.",
+      "build_time": "5-15 founder days",
+      "marketing_strategy": "Hedef müşteri ekiplerine doğrudan pilot erişimi ve problem odaklı içerik pazarlaması.",
+      "first_customer_plan": "Tek gerçek müşteri iş akışında ölçülebilir pilot.",
+      "main_risk": "Müşterinin mevcut araçlarını yeterli görmesi veya entegrasyon ihtiyacının MVP kapsamını büyütmesi.",
+      "validation_assumption": "İlk 10-20 hedef müşteri görüşmesinde problem sıklığı, ödeme isteği ve mevcut alternatifler doğrulanmalı.",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-06",
+      "last_updated_at": "2026-10-06"
+    },
+    {
+      "canonical_key": "energy-importers|track-methane-rule-deadlines|supplier-evidence-workspace",
+      "idea_name": "Metan İthalat Uyum Masası",
+      "scope_tier": "Dünya",
+      "scope_reason": "Ülke bağımsız veya uluslararası operasyonlarda kullanılabilir.",
+      "news_source": "2026-10-06 radar kaynakları",
+      "news_title": "Enerji ithalatında metan yükümlülüklerini tedarikçi bazında takip eden compliance workspace.",
+      "news_date": "2026-10-06",
+      "news_url": "",
+      "source_links": [],
+      "core_idea": "Değişen metan uyum tarihlerini tedarikçi ve kanıtlarla takip etmek.",
+      "user_story": "Bir Compliance / Procurement / Sustainability olarak değişen metan uyum tarihlerini tedarikçi ve kanıtlarla takip etmek. istiyorum.",
+      "before_state": "Regülasyon takvimi ile tedarikçi kanıtları farklı kanallarda.",
+      "after_state": "Rule/deadline register + supplier applicability + evidence + exception + audit export.",
+      "why_now": "Yeni erteleme değerlendirmesi uygulama takvimini değiştiriyor.",
+      "target_customer": "AB'ye enerji satan/ithal eden şirketler",
+      "buyer": "Compliance / Procurement / Sustainability",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "AB enerji ithalatındaki metan kurallarının takvim değişikliği ithalatçı ve tedarikçilerde deadline/kanıt yönetimi ihtiyacı yaratıyor.",
+      "business_models": [
+        {
+          "model": "SaaS aboneliği",
+          "estimate": "Pilot müşteri görüşmeleriyle fiyat doğrulanacak"
+        }
+      ],
+      "lovable_credits_total": 280,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 56,
+        "core_workflow": 112,
+        "testing_fixes": 70,
+        "launch_polish": 42
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Uygulama geliştirme",
+          "cost": "mevcut kredi"
+        },
+        {
+          "name": "Supabase/PostgreSQL",
+          "purpose": "Veri tabanı ve kimlik doğrulama",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Rule/deadline register + supplier applicability + evidence + exception + audit export.",
+      "working_logic": "Rule/deadline register + supplier applicability + evidence + exception + audit export.",
+      "build_time": "5-15 founder days",
+      "marketing_strategy": "Hedef müşteri ekiplerine doğrudan pilot erişimi ve problem odaklı içerik pazarlaması.",
+      "first_customer_plan": "Tek gerçek müşteri iş akışında ölçülebilir pilot.",
+      "main_risk": "Müşterinin mevcut araçlarını yeterli görmesi veya entegrasyon ihtiyacının MVP kapsamını büyütmesi.",
+      "validation_assumption": "İlk 10-20 hedef müşteri görüşmesinde problem sıklığı, ödeme isteği ve mevcut alternatifler doğrulanmalı.",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-06",
+      "last_updated_at": "2026-10-06"
+    },
+    {
+      "canonical_key": "wind-project-developers|validate-technical-application|requirement-evidence-submission-workspace",
+      "idea_name": "Rüzgâr Başvuru Uygunluk Masası",
+      "scope_tier": "Türkiye",
+      "scope_reason": "Türkiye'deki mevzuat veya operasyon akışına doğrudan bağlıdır.",
+      "news_source": "2026-10-06 radar kaynakları",
+      "news_title": "Rüzgar enerji başvurularını güncel teknik kriterlere göre kontrol eden submission workspace.",
+      "news_date": "2026-10-06",
+      "news_url": "",
+      "source_links": [],
+      "core_idea": "Başvuru dosyasını güncel teknik kriterlere göre eksiksiz hazırlamak.",
+      "user_story": "Bir Project Development / Regulatory Affairs olarak başvuru dosyasını güncel teknik kriterlere göre eksiksiz hazırlamak. istiyorum.",
+      "before_state": "Kriter değişikliği proje parametreleri ve belgelerde manuel yeniden kontrol gerektiriyor.",
+      "after_state": "Requirement matrix + project parameter mapping + evidence checklist + completeness gate.",
+      "why_now": "Teknik değerlendirme kriterlerinin değiştiği bildirildi.",
+      "target_customer": "Rüzgar enerji geliştiricileri ve mühendislik danışmanları",
+      "buyer": "Project Development / Regulatory Affairs",
+      "market": "Türkiye",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Türkiye'de rüzgar enerjisi başvurularının teknik değerlendirme kriterlerindeki değişiklik proje ekiplerinde requirement/evidence yeniden eşleme ihtiyacı yaratıyor.",
+      "business_models": [
+        {
+          "model": "SaaS aboneliği",
+          "estimate": "Pilot müşteri görüşmeleriyle fiyat doğrulanacak"
+        }
+      ],
+      "lovable_credits_total": 300,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 60,
+        "core_workflow": 120,
+        "testing_fixes": 75,
+        "launch_polish": 45
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Uygulama geliştirme",
+          "cost": "mevcut kredi"
+        },
+        {
+          "name": "Supabase/PostgreSQL",
+          "purpose": "Veri tabanı ve kimlik doğrulama",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Requirement matrix + project parameter mapping + evidence checklist + completeness gate.",
+      "working_logic": "Requirement matrix + project parameter mapping + evidence checklist + completeness gate.",
+      "build_time": "5-15 founder days",
+      "marketing_strategy": "Hedef müşteri ekiplerine doğrudan pilot erişimi ve problem odaklı içerik pazarlaması.",
+      "first_customer_plan": "Tek gerçek müşteri iş akışında ölçülebilir pilot.",
+      "main_risk": "Müşterinin mevcut araçlarını yeterli görmesi veya entegrasyon ihtiyacının MVP kapsamını büyütmesi.",
+      "validation_assumption": "İlk 10-20 hedef müşteri görüşmesinde problem sıklığı, ödeme isteği ve mevcut alternatifler doğrulanmalı.",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-06",
+      "last_updated_at": "2026-10-06"
+    },
+    {
+      "canonical_key": "turkish-tech-startups|prepare-innovation-certification|eligibility-evidence-workspace",
+      "idea_name": "Teknoloji Girişimi Belgelendirme Masası",
+      "scope_tier": "Türkiye",
+      "scope_reason": "Türkiye'deki mevzuat veya operasyon akışına doğrudan bağlıdır.",
+      "news_source": "2026-10-06 radar kaynakları",
+      "news_title": "Teknoloji girişimlerinin resmi belgelendirme başvurusunu hazırlayan eligibility workspace.",
+      "news_date": "2026-10-06",
+      "news_url": "",
+      "source_links": [],
+      "core_idea": "Girişimin kriterlere uygunluğunu ve gerekli kanıtları başvuru öncesi eksiksiz hazırlamak.",
+      "user_story": "Bir Founder / CFO / teşvik danışmanı olarak girişimin kriterlere uygunluğunu ve gerekli kanıtları başvuru öncesi eksiksiz hazırlamak. istiyorum.",
+      "before_state": "Kriter, şirket verisi ve destekleyici belgeler farklı kaynaklarda tutulabiliyor.",
+      "after_state": "Eligibility matrix + evidence checklist + owner/deadline + completeness gate + application pack.",
+      "why_now": "6 Ekim generation'ında Resmi Gazete'de yeni yönetmelik başlığı yer aldı.",
+      "target_customer": "Türkiye'deki teknoloji girişimleri ve danışmanları",
+      "buyer": "Founder / CFO / teşvik danışmanı",
+      "market": "Türkiye",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Teknoloji ve yenilik odaklı girişimlerin belirlenmesi/belgelendirilmesi için yeni resmi süreç sinyali başvuru uygunluğu ve kanıt yönetimi ihtiyacı yaratıyor.",
+      "business_models": [
+        {
+          "model": "SaaS aboneliği",
+          "estimate": "Pilot müşteri görüşmeleriyle fiyat doğrulanacak"
+        }
+      ],
+      "lovable_credits_total": 260,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 52,
+        "core_workflow": 104,
+        "testing_fixes": 65,
+        "launch_polish": 39
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Uygulama geliştirme",
+          "cost": "mevcut kredi"
+        },
+        {
+          "name": "Supabase/PostgreSQL",
+          "purpose": "Veri tabanı ve kimlik doğrulama",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Eligibility matrix + evidence checklist + owner/deadline + completeness gate + application pack.",
+      "working_logic": "Eligibility matrix + evidence checklist + owner/deadline + completeness gate + application pack.",
+      "build_time": "5-15 founder days",
+      "marketing_strategy": "Hedef müşteri ekiplerine doğrudan pilot erişimi ve problem odaklı içerik pazarlaması.",
+      "first_customer_plan": "Tek gerçek müşteri iş akışında ölçülebilir pilot.",
+      "main_risk": "Müşterinin mevcut araçlarını yeterli görmesi veya entegrasyon ihtiyacının MVP kapsamını büyütmesi.",
+      "validation_assumption": "İlk 10-20 hedef müşteri görüşmesinde problem sıklığı, ödeme isteği ve mevcut alternatifler doğrulanmalı.",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-06",
+      "last_updated_at": "2026-10-06"
+    },
+    {
+      "canonical_key": "physical-ai-sites|assess-deployment-readiness|iot-network-integration-evidence-workspace",
+      "idea_name": "Physical AI Saha Hazırlık Masası",
+      "scope_tier": "Dünya",
+      "scope_reason": "Ülke bağımsız veya uluslararası operasyonlarda kullanılabilir.",
+      "news_source": "2026-10-06 radar kaynakları",
+      "news_title": "Physical AI kurulumlarında saha ve entegrasyon hazırlığını yöneten deployment-readiness workspace.",
+      "news_date": "2026-10-06",
+      "news_url": "",
+      "source_links": [],
+      "core_idea": "Physical AI pilotundan önce saha altyapısı ve entegrasyon bağımlılıklarının hazır olduğunu kanıtlamak.",
+      "user_story": "Bir Automation / OT / IT Infrastructure manager olarak physical aı pilotundan önce saha altyapısı ve entegrasyon bağımlılıklarının hazır olduğunu kanıtlamak. istiyorum.",
+      "before_state": "Robot, network, sensor ve IT/OT gereksinimleri farklı ekiplerde takip ediliyor.",
+      "after_state": "Site readiness matrix + dependency register + owner/action + evidence + pilot go-live gate.",
+      "why_now": "ITmedia/NTT Docomo Business Physical AI'nın robot tek başına değil IoT altyapı evrimi olarak ele alınması gerektiğini vurguladı.",
+      "target_customer": "Robotik otomasyon kuran fabrika, depo ve tesisler",
+      "buyer": "Automation / OT / IT Infrastructure manager",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Physical AI deployment tek robot seçimi değil; cihaz, ağ, sensör, edge/cloud ve operasyon entegrasyonunun birlikte readiness değerlendirmesini gerektiriyor.",
+      "business_models": [
+        {
+          "model": "SaaS aboneliği",
+          "estimate": "Pilot müşteri görüşmeleriyle fiyat doğrulanacak"
+        }
+      ],
+      "lovable_credits_total": 340,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 68,
+        "core_workflow": 136,
+        "testing_fixes": 85,
+        "launch_polish": 51
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "Uygulama geliştirme",
+          "cost": "mevcut kredi"
+        },
+        {
+          "name": "Supabase/PostgreSQL",
+          "purpose": "Veri tabanı ve kimlik doğrulama",
+          "cost": "free tier"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Site readiness matrix + dependency register + owner/action + evidence + pilot go-live gate.",
+      "working_logic": "Site readiness matrix + dependency register + owner/action + evidence + pilot go-live gate.",
+      "build_time": "5-15 founder days",
+      "marketing_strategy": "Hedef müşteri ekiplerine doğrudan pilot erişimi ve problem odaklı içerik pazarlaması.",
+      "first_customer_plan": "Tek gerçek müşteri iş akışında ölçülebilir pilot.",
+      "main_risk": "Müşterinin mevcut araçlarını yeterli görmesi veya entegrasyon ihtiyacının MVP kapsamını büyütmesi.",
+      "validation_assumption": "İlk 10-20 hedef müşteri görüşmesinde problem sıklığı, ödeme isteği ve mevcut alternatifler doğrulanmalı.",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-06",
+      "last_updated_at": "2026-10-06"
     }
   ],
-  "sync_requested_at": "2026-10-05T11:30:00+03:00"
+  "sync_requested_at": "2026-10-06T12:00:00+03:00"
 }
