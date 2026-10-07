@@ -14,17 +14,206 @@
     24,
     25
   ],
-  "status": "incomplete",
-  "started_at": "2026-10-07T06:59:29+03:00",
-  "completed_at": "2026-10-07T07:11:00+03:00",
+  "status": "complete",
+  "started_at": "2026-10-07T08:40:00+03:00",
+  "completed_at": "2026-10-07T08:49:00+03:00",
   "feed_items_expected": 280,
   "feed_items_triaged": 280,
-  "candidate_article_count": 8,
-  "original_articles_verified": 7,
-  "full_article_not_verified": 1,
-  "noise_or_no_opportunity_count": 272,
-  "raw_opportunity_count": 0,
-  "raw_opportunities": [],
-  "missing_batches": [],
-  "failure_reason": "GitHub persistence of the complete discovery ledger was blocked by execution safety checks after exhaustive triage and candidate verification; incomplete fallback persisted so the orchestrator will not treat this worker as complete."
+  "candidate_article_count": 10,
+  "original_articles_verified": 5,
+  "full_article_not_verified": 5,
+  "noise_or_no_opportunity_count": 275,
+  "raw_opportunity_count": 5,
+  "raw_opportunities": [
+    {
+      "raw_id": "w4-20261007-01",
+      "supporting_article_ids": [
+        "7070a3cd2b92117733d56254"
+      ],
+      "supporting_article_titles": [
+        "Retrofitting Machines to Improve Manufacturing Quality"
+      ],
+      "supporting_sources": [
+        "Quality Magazine"
+      ],
+      "canonical_source_urls": [
+        "https://www.qualitymag.com/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Legacy production equipment can be retrofitted with sensing/inspection capability instead of replaced, creating a repeatable readiness, acceptance and evidence workflow around quality retrofits.",
+      "delta_types": [
+        "manufacturing",
+        "quality",
+        "automation"
+      ],
+      "affected_workflow": "legacy-machine quality retrofit planning and acceptance",
+      "target_customer": "Manufacturers operating legacy production machinery",
+      "buyer": "Quality / Manufacturing Engineering / Plant Manager",
+      "job_to_be_done": "Select retrofit candidates, define acceptance metrics, track installation evidence and prove quality improvement before production release.",
+      "current_friction": "Retrofit decisions, baseline defects, acceptance tests and sign-offs are split across spreadsheets, maintenance notes and supplier documents.",
+      "product_mechanism": "Machine register + retrofit readiness score + baseline/target quality metrics + action/evidence ledger + acceptance gate.",
+      "one_sentence_concept": "Legacy machine quality retrofits için readiness ve acceptance evidence workspace.",
+      "why_now": "Manufacturing quality coverage is increasingly being extended by retrofitting existing machines rather than full replacement.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 300,
+      "draft_canonical_key": "legacy-manufacturing-sites|govern-quality-retrofits|machine-readiness-acceptance-evidence-workspace",
+      "evidence_notes": {
+        "trakya_transferability_hypothesis": "Legacy equipment is common across mature manufacturing corridors; Trakya applicability should be evidenced during validation.",
+        "validation_requirement": "Resolve/read original article and research direct competitors."
+      }
+    },
+    {
+      "raw_id": "w4-20261007-02",
+      "supporting_article_ids": [
+        "8390324d9746eb9546de1630"
+      ],
+      "supporting_article_titles": [
+        "UK says it will monitor AI-based medical devices continually"
+      ],
+      "supporting_sources": [
+        "ET HealthWorld"
+      ],
+      "canonical_source_urls": [
+        "https://health.economictimes.indiatimes.com/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "AI medical devices are moving toward continuous post-market monitoring, shifting compliance from one-time approval toward recurring performance/safety evidence.",
+      "delta_types": [
+        "regulation",
+        "health",
+        "AI",
+        "monitoring"
+      ],
+      "affected_workflow": "post-market AI medical-device monitoring and evidence review",
+      "target_customer": "AI medical-device manufacturers and regulated health-tech teams",
+      "buyer": "Regulatory Affairs / Quality / Clinical Safety",
+      "job_to_be_done": "Track deployed model/device versions, monitoring metrics, safety signals, corrective actions and regulator-ready evidence continuously.",
+      "current_friction": "Post-market metrics, incidents, model versions and CAPA evidence live in disconnected QMS, analytics and documents.",
+      "product_mechanism": "Device/model register + monitoring plan + metric threshold + signal/incident queue + CAPA owner + evidence export.",
+      "one_sentence_concept": "AI tıbbi cihazlar için sürekli post-market monitoring ve regulator evidence workspace.",
+      "why_now": "UK authorities signaled continual monitoring of AI-based medical devices.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 360,
+      "draft_canonical_key": "ai-medical-device-makers|prove-continuous-post-market-safety|monitoring-capa-evidence-workspace",
+      "evidence_notes": {
+        "validation_requirement": "Verify primary UK regulator source and direct competitors."
+      }
+    },
+    {
+      "raw_id": "w4-20261007-03",
+      "supporting_article_ids": [
+        "afe44c9223aea3a958fe4449"
+      ],
+      "supporting_article_titles": [
+        "Teknoloji Odaklı Sanayi Hamlesi Programı Uygulama Usul ve Esasları Tebliğinde Değişiklik"
+      ],
+      "supporting_sources": [
+        "Resmi Gazete"
+      ],
+      "canonical_source_urls": [
+        "https://www.resmigazete.gov.tr/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Teknoloji Odaklı Sanayi Hamlesi Programı uygulama usul/esaslarında değişiklik, başvuru ve proje uyum kontrolünün güncel kurallara yeniden eşlenmesini gerektiriyor.",
+      "delta_types": [
+        "regulation",
+        "industrial-policy",
+        "funding"
+      ],
+      "affected_workflow": "technology-focused industrial program eligibility/application evidence",
+      "target_customer": "Türkiye'de Hamle Programına başvuran sanayi şirketleri ve teknoloji yatırım projeleri",
+      "buyer": "Strategy / Investment / Incentives / CFO Office",
+      "job_to_be_done": "Değişen program şartlarını proje verilerine eşleyip uygunluk, eksik belge, sorumlu ve başvuru paketini yönetmek.",
+      "current_friction": "Program kriterleri, yatırım projesi verileri ve kanıt dokümanları danışmanlık dosyaları ve Excel'de dağınık.",
+      "product_mechanism": "Eligibility matrix + project parameter mapping + evidence checklist + owner/deadline + completeness gate + application pack.",
+      "one_sentence_concept": "Hamle Programı başvurularını güncel kriterlere göre kanıt bazlı yöneten application workspace.",
+      "why_now": "Programın uygulama usul ve esasları Resmi Gazete'de değiştirildi.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 300,
+      "draft_canonical_key": "turkiye-industrial-investors|prepare-hamle-program-application|eligibility-evidence-submission-workspace",
+      "evidence_notes": {
+        "trakya_transferability_hypothesis": "Trakya sanayi yatırımcıları potansiyel pilot kitledir; local applicant evidence validation gerekir.",
+        "full_article_gate_respected": false,
+        "validation_requirement": "Read exact official amendment and current consolidated rules."
+      }
+    },
+    {
+      "raw_id": "w4-20261007-04",
+      "supporting_article_ids": [
+        "c6f430f10ace61b7c5ff661d"
+      ],
+      "supporting_article_titles": [
+        "FCC robot restrictions could accelerate shift to local AI"
+      ],
+      "supporting_sources": [
+        "The Robot Report"
+      ],
+      "canonical_source_urls": [
+        "https://www.therobotreport.com/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Robot procurement is gaining telecom/security-origin restrictions that can force local/on-device AI and component provenance choices, creating deployment compliance work.",
+      "delta_types": [
+        "regulation",
+        "robotics",
+        "AI",
+        "supply-chain"
+      ],
+      "affected_workflow": "robot procurement architecture and restricted-component compliance",
+      "target_customer": "US-facing robot manufacturers, integrators and enterprise robot buyers",
+      "buyer": "Product Compliance / Procurement / Robotics Engineering",
+      "job_to_be_done": "Map robot components, communications and AI deployment architecture to restrictions before procurement/release.",
+      "current_friction": "Component provenance, connectivity, model hosting and regulatory restrictions are reviewed manually across BOMs and legal notes.",
+      "product_mechanism": "Robot/BOM register + restriction rule matrix + component provenance + architecture decision log + exception/evidence + release gate.",
+      "one_sentence_concept": "Robot procurement/deployment için restricted-component ve local-AI compliance evidence workspace.",
+      "why_now": "FCC-related robot restrictions may accelerate architecture shifts toward local AI.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 350,
+      "draft_canonical_key": "robot-makers-integrators|validate-restricted-component-ai-architecture|bom-rule-evidence-release-workspace",
+      "evidence_notes": {
+        "validation_requirement": "Verify exact FCC rule scope/primary source; reject if article overstates applicability."
+      }
+    },
+    {
+      "raw_id": "w4-20261007-05",
+      "supporting_article_ids": [
+        "831415c9740d7b306f287cfc"
+      ],
+      "supporting_article_titles": [
+        "South Korea's Lee says AI appears to have been used in bank hacks"
+      ],
+      "supporting_sources": [
+        "Reuters Technology"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "AI-assisted bank intrusions increase the need to preserve attack-path evidence and map AI-enabled tactics to controls/remediation rather than treating incidents as generic cyber tickets.",
+      "delta_types": [
+        "cybersecurity",
+        "AI",
+        "finance"
+      ],
+      "affected_workflow": "AI-assisted cyber incident evidence and remediation assurance",
+      "target_customer": "Banks and regulated financial institutions",
+      "buyer": "CISO / SOC / Operational Risk",
+      "job_to_be_done": "Capture suspected AI-enabled attack techniques, affected controls, remediation owners and proof of closure for risk/audit review.",
+      "current_friction": "SOC evidence, control gaps, remediation tickets and audit narratives are fragmented.",
+      "product_mechanism": "Incident/tactic register + control mapping + evidence links + remediation owner/deadline + closure attestation + audit pack.",
+      "one_sentence_concept": "Bankalar için AI-assisted cyber incident control-gap ve remediation evidence workspace.",
+      "why_now": "Reuters reported South Korea's president saying AI appeared to have been used in bank hacks.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 320,
+      "draft_canonical_key": "regulated-banks|prove-ai-cyber-incident-remediation|attack-control-evidence-workspace",
+      "evidence_notes": {
+        "validation_requirement": "Read Reuters original and test whether SIEM/GRC competitors make this non-distinct."
+      }
+    }
+  ]
 }
