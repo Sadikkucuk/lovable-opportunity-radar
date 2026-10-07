@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-07",
+  "worker_id": "1",
+  "source_batch_index_generated_at": "2026-10-07T00:39:59Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "status": "complete",
+  "started_at": "2026-10-07T08:16:00+03:00",
+  "completed_at": "2026-10-07T08:24:00+03:00",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 5,
+  "original_articles_verified": 3,
+  "full_article_not_verified": 2,
+  "noise_or_no_opportunity_count": 237,
+  "raw_opportunity_count": 3,
+  "raw_opportunities": [
+    {
+      "raw_id": "w1-20261007-01",
+      "supporting_article_ids": [
+        "28f83355f45e6d02866d6aa9"
+      ],
+      "supporting_article_titles": [
+        "OpenAI will watermark ChatGPT outputs by default—but only in the EU"
+      ],
+      "supporting_sources": [
+        "Ars Technica"
+      ],
+      "canonical_source_urls": [
+        "https://arstechnica.com/ai/2026/10/openai-will-watermark-chatgpt-outputs-by-default-but-only-in-the-eu/",
+        "https://openai.com/index/eu-text-provenance/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "EU AI Act kaynaklı machine-readable AI text provenance gereksinimi operasyonel olarak devreye giriyor; watermark varlığı tek başına kurumsal yayın kanıt zincirini çözmüyor.",
+      "delta_types": [
+        "regulation",
+        "capability"
+      ],
+      "affected_workflow": "AI ile üretilen metinlerin yayın öncesi provenance/disclosure kontrolü",
+      "target_customer": "AB'de AI destekli içerik yayımlayan kurumsal ekipler ve ajanslar",
+      "buyer": "Compliance / Content Operations / Legal",
+      "job_to_be_done": "Yayımlanan AI destekli metin için model, watermark seçimi, disclosure ve inceleme kanıtını kayıt altına almak.",
+      "current_friction": "Model çıktısı, API watermark ayarı, insan düzenlemesi ve yayın kararı farklı sistemlerde kalıyor.",
+      "product_mechanism": "Content provenance register + model/output declaration + watermark-policy check + human review + publication evidence export.",
+      "one_sentence_concept": "AB'de AI metin yayınlarının provenance ve disclosure kanıtını yöneten çalışma alanı.",
+      "why_now": "OpenAI EU'da ChatGPT/Codex metin watermarking rollout'unu ve API opt-in seçeneğini duyurdu.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 290,
+      "draft_canonical_key": "eu-ai-content-publishers|prove-text-provenance-compliance|watermark-disclosure-review-evidence-workspace",
+      "evidence_notes": {
+        "full_article_gate_respected": true
+      }
+    },
+    {
+      "raw_id": "w1-20261007-02",
+      "supporting_article_ids": [
+        "a0279c8b94573617bf5ba5bc"
+      ],
+      "supporting_article_titles": [
+        "Wikimedia Foundation comes forward as latest OpenAI agent assault victim"
+      ],
+      "supporting_sources": [
+        "The Register"
+      ],
+      "canonical_source_urls": [
+        "https://www.theregister.com/ai-and-ml/2026/10/06/wikimedia-foundation-comes-forward-as-latest-openai-agent-assault-victim/5301400"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "External autonomous agents can create unauthorized edits, tool misuse and high-volume API traffic without conventional account compromise.",
+      "delta_types": [
+        "behavior",
+        "security"
+      ],
+      "affected_workflow": "public web/API surfaces exposed to autonomous agents",
+      "target_customer": "Public API, knowledge base ve internet-facing collaboration tools işleten kurumlar",
+      "buyer": "Platform Engineering / Security / SRE",
+      "job_to_be_done": "External agent activity'yi surface bazında kaydedip izin, rate-limit, incident ve remediation kararlarına bağlamak.",
+      "current_friction": "Bot/agent trafiği loglarda görülse de hangi surface'in hangi agent davranışına açık olduğu ve remediation kanıtı dağınık.",
+      "product_mechanism": "Agent exposure register + surface policy + traffic/incident import + owner/remediation + closure evidence.",
+      "one_sentence_concept": "Dış AI agent'larının web/API etkisini izin ve remediation kanıtıyla yöneten exposure workspace.",
+      "why_now": "Wikimedia milyonlarca otomatik isteğin outage'a katkıda bulunmuş olabileceğini ve izinsiz agent faaliyetlerini açıkladı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 310,
+      "draft_canonical_key": "public-web-api-operators|govern-external-agent-impact|surface-policy-incident-remediation-ledger",
+      "evidence_notes": {
+        "full_article_gate_respected": true
+      }
+    },
+    {
+      "raw_id": "w1-20261007-03",
+      "supporting_article_ids": [
+        "3485f54b4f0e5b9e944f2ee3"
+      ],
+      "supporting_article_titles": [
+        "Levi’s, Marks & Spencer launch renewable energy initiative for fashion suppliers"
+      ],
+      "supporting_sources": [
+        "Supply Chain Dive"
+      ],
+      "canonical_source_urls": [
+        "https://www.supplychaindive.com/news/levis-marks-spencer-launch-renewable-energy-initiative-for-fashion-supp/832004/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Markalar tedarikçi yenilenebilir elektrik dönüşümünü ortak framework ile ölçeklemeye başlıyor; supplier-level ilerleme ve kanıt koordinasyonu yeni operasyon katmanı oluşturuyor.",
+      "delta_types": [
+        "workflow",
+        "energy"
+      ],
+      "affected_workflow": "fashion supplier renewable-electricity transition",
+      "target_customer": "Moda markaları, tekstil tedarikçileri ve sürdürülebilirlik ekipleri",
+      "buyer": "Sustainability / Procurement / Supplier Development",
+      "job_to_be_done": "Her tedarikçinin yenilenebilir elektrik geçiş planını, kilometre taşlarını ve kanıtını marka hedeflerine bağlamak.",
+      "current_friction": "Tedarikçi enerji planları, marka talepleri ve emisyon kanıtları farklı dosya ve programlarda.",
+      "product_mechanism": "Supplier transition register + baseline + action/milestone + evidence + brand requirement mapping + portfolio dashboard.",
+      "one_sentence_concept": "Tekstil tedarikçilerinin yenilenebilir elektrik dönüşümünü kanıt bazlı yöneten supplier transition workspace.",
+      "why_now": "Levi's ve Marks & Spencer, Schneider Electric ile tedarikçilerin yenilenebilir elektriğe geçişini ölçeklemek için Fashion Renewable Collaborative'i başlattı.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 300,
+      "draft_canonical_key": "fashion-supply-chains|prove-supplier-renewable-transition|baseline-milestone-evidence-workspace",
+      "evidence_notes": {
+        "trakya_transferability_hypothesis": "Trakya tekstil üretim koridorunda tedarikçi enerji dönüşümü aynı workflow ile uygulanabilir; yerel scope validation gerekir.",
+        "full_article_gate_respected": true
+      }
+    }
+  ]
+}
