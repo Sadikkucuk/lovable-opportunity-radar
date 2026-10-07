@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-07",
+  "chunk_number": 2,
+  "candidate_ids": [
+    "c006",
+    "c007",
+    "c008",
+    "c009",
+    "c010"
+  ],
+  "expected_candidate_count": 5,
+  "validated_candidate_count": 5,
+  "status": "complete",
+  "results": [
+    {
+      "candidate_id": "c006",
+      "qualification_status": "QUALIFIED",
+      "source_verification": "verified_secondary_and_regulatory_context",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [],
+      "decision_reason": "MET/BAT process-to-evidence workflow is specific; targeted search surfaced consulting/research rather than a direct dedicated workflow product. Official text must still be carried into final evidence."
+    },
+    {
+      "candidate_id": "c007",
+      "qualification_status": "QUALIFIED_HISTORY_DUPLICATE_RISK",
+      "source_verification": "verified_official",
+      "turkiye_direct_competitor_count": 1,
+      "global_direct_competitor_count": 0,
+      "direct_competitors": [
+        "EPİAŞ Lisanssız Üretim Modülü (official operational module; not commercial competitor but functionally overlaps settlement workflow)"
+      ],
+      "history_match_candidate": "EPDK Mahsuplaşma Simülatörü",
+      "history_match_strength": "very_high",
+      "decision_reason": "Underlying hourly settlement workflow is real and active, but canonical job materially overlaps existing history item. Preserve through validation; finalizer should suppress as semantic duplicate."
+    },
+    {
+      "candidate_id": "c008",
+      "qualification_status": "QUALIFIED",
+      "source_verification": "verified",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 1,
+      "direct_competitors": [
+        "Civarea by Waterplan"
+      ],
+      "decision_reason": "Civarea directly combines power, water, permitting, environmental and community site evidence, but only one direct product found; within <=3 ceiling."
+    },
+    {
+      "candidate_id": "c009",
+      "qualification_status": "QUALIFIED",
+      "source_verification": "verified_primary_discovery",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 1,
+      "direct_competitors": [
+        "ONO Fleet"
+      ],
+      "decision_reason": "ONO is a near-direct roadside evidence/incident workflow, but focuses crashes/general fleet incidents rather than corruption/unfair-fine official referral; niche remains distinct and competition <=3."
+    },
+    {
+      "candidate_id": "c010",
+      "qualification_status": "REJECTED_COMPETITION",
+      "source_verification": "verified_corrob",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 4,
+      "direct_competitors": [
+        "Leak Delete",
+        "Atlas Rights Management",
+        "Lezly",
+        "VIVIROS"
+      ],
+      "decision_reason": "Multiple purpose-built music/digital-rights monitoring, takedown, recurrence and evidence operations already exist; exceeds <=3 ceiling."
+    }
+  ]
+}
