@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-07",
+  "worker_id": "3",
+  "source_batch_index_generated_at": "2026-10-07T00:39:59Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "status": "complete",
+  "started_at": "2026-10-07T04:05:00Z",
+  "completed_at": "2026-10-07T04:12:00Z",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 8,
+  "original_articles_verified": 5,
+  "full_article_not_verified": 3,
+  "noise_or_no_opportunity_count": 232,
+  "raw_opportunity_count": 5,
+  "raw_opportunities": [
+    {
+      "raw_id": "w3-20261007-001",
+      "supporting_article_ids": [
+        "493753df2bdef936ef7e284e",
+        "13572f53bf000bbd1d601502",
+        "1b19f7ad1a763a6df18c020d"
+      ],
+      "supporting_article_titles": [
+        "OpenAI, yetkisiz erişim nedeniyle Avustralya'dan özür diledi",
+        "OpenAI’s ‘Rogue’ AI Agents Hit Wikimedia, Raise Fresh Oversight Concerns",
+        "OpenAI在其智能体擅访澳数据后采取新防范措施"
+      ],
+      "supporting_sources": [
+        "Bloomberg HT",
+        "Inc42",
+        "Xinhua"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/legal/litigation/australias-abc-rejects-ai-copyright-carveout-believes-already-been-scraped-2026-10-06/",
+        "https://ia.acs.org.au/article/2026/openai-grilled-over-rogue-agents-by-australian-inquiry.html"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "AI agentlarının yetkisiz sistem erişimleri artık yalnız teknik güvenlik olayı değil; zorunlu bildirim, doğru muhataba hızlı haber verme ve agent eylemlerinin kanıtlanabilir kaydını gerektiren ayrı bir yönetişim olayı haline geliyor.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA",
+        "CAPABILITY_DELTA"
+      ],
+      "affected_workflow": "AI agent çalıştırma → yetki sınırı ihlali/şüpheli eylem tespiti → olay sınıflandırma → etkilenen kurum ve otoriteyi belirleme → bildirim/evidence paketi → kapanış",
+      "target_customer": "AI agent kullanan veya geliştiren orta-büyük şirketler, kamuya hizmet veren teknoloji tedarikçileri",
+      "buyer": "CISO, AI Governance Lead, Risk/Compliance yöneticisi",
+      "job_to_be_done": "Agent kaynaklı olayları tek kayıt altında sınıflandırmak, bildirim süresini takip etmek ve denetlenebilir olay dosyası üretmek.",
+      "current_friction": "Agent logları, güvenlik kayıtları, hukuk değerlendirmesi ve dış bildirim adımları farklı ekiplerde; olayın ne zaman ve kime bildirileceği gecikebiliyor.",
+      "product_mechanism": "Agent incident register, severity/rule matrix, deadline timer, evidence attachment, stakeholder routing ve export edilebilir incident dossier içeren web workflow.",
+      "one_sentence_concept": "AI agentlarının yetkisiz veya riskli eylemlerini olay kaydına dönüştürüp bildirim ve kanıt sürecini yöneten bir incident-governance workspace.",
+      "why_now": "6 Ekim 2026'da OpenAI ve Anthropic Avustralya'da AI-agent veri ihlalleri için zorunlu bildirim kurallarını destekledi; OpenAI'nin önceki bildirim gecikmesi operasyonel boşluğu görünür kıldı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 260,
+      "draft_canonical_key": "ai-agent-operators|manage-agent-security-incidents-and-disclosures|incident-ledger-deadline-routing-evidence-workflow",
+      "evidence_notes": {
+        "verification": "Reuters ve ACS ile doğrulandı; henüz yürürlüğe girmiş yeni yasa değil, düzenleme yönü ve operasyonel ihtiyaç sinyali.",
+        "trakya_transferability_hypothesis": "Trakya'daki üretim şirketleri AI agentlarını ERP, bakım veya tedarik süreçlerine bağladıkça aynı olay kaydı ve yetki-ihlali kanıt ihtiyacı oluşabilir; yerel varlık bu materyalde kanıtlanmadığı için scope Dünya."
+      }
+    },
+    {
+      "raw_id": "w3-20261007-002",
+      "supporting_article_ids": [
+        "d653b8ad51e4a82377b4173d"
+      ],
+      "supporting_article_titles": [
+        "Fast-track permits turn Spain's Aragon into a $70 billion data centre magnet. At what cost?"
+      ],
+      "supporting_sources": [
+        "Reuters Technology"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/technology/fast-track-permits-turn-spains-aragon-into-70-billion-data-centre-magnet-what-2026-10-06/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Data-center yatırımlarında hızlı izin rejimi sermayeyi çekiyor fakat su, elektrik, çevresel inceleme ve kamu istişaresi aynı anda daha görünür ve tartışmalı hale geliyor; izin dosyasının kaynak ve paydaş kanıtlarıyla yönetilmesi kritikleşiyor.",
+      "delta_types": [
+        "INFRASTRUCTURE_DELTA",
+        "REGULATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "proje sahası → izin gereksinimleri → su/enerji/çevre kanıtları → kamu istişaresi → kurum cevapları → izin durumu",
+      "target_customer": "Data-center geliştiricileri, enerji/altyapı proje ekipleri ve izin danışmanları",
+      "buyer": "Development Director, Permitting Lead, ESG/Environmental Lead",
+      "job_to_be_done": "Bir data-center projesinin izin, kaynak kullanımı ve kamu istişaresi kanıtlarını tek dosyada güncel tutmak.",
+      "current_friction": "İzin takvimleri, su/enerji hesapları, kurum yazışmaları ve itirazlar farklı dosya ve danışmanlarda dağınık kalabiliyor; hızlandırılmış süreçte eksik kanıt riski büyüyor.",
+      "product_mechanism": "Jurisdiction checklist, permit dependency map, water/power evidence register, consultation issue log, deadline dashboard ve audit export.",
+      "one_sentence_concept": "Data-center projeleri için izin, su-elektrik kanıtı ve kamu istişaresini tek denetlenebilir workspace'te yöneten readiness aracı.",
+      "why_now": "Reuters 6 Ekim 2026'da Aragon'un bir yıldan kısa sürebilen hızlı izin mekanizmasının €60 milyarı aşan yatırımı çektiğini, aynı zamanda su/elektrik ve çevresel gözetim tartışmalarını büyüttüğünü bildirdi.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 230,
+      "draft_canonical_key": "data-center-developers|prove-permit-resource-and-consultation-readiness|permit-dependency-evidence-workspace",
+      "evidence_notes": {
+        "verification": "Reuters original article read.",
+        "trakya_transferability_hypothesis": "Enerji yoğun sanayi yatırımlarında izin, enerji-su kanıtı ve paydaş takibi benzer bir workflow'dur; ancak atanmış materyal Lüleburgaz'da data-center pazarı kanıtlamıyor."
+      }
+    },
+    {
+      "raw_id": "w3-20261007-003",
+      "supporting_article_ids": [
+        "4c81d0580b3c16d0f969ef94"
+      ],
+      "supporting_article_titles": [
+        "TIR SÜRÜCÜLERİMİZİN ROMANYA'DA YAŞADIĞI PROBLEMLER HAKKINDA"
+      ],
+      "supporting_sources": [
+        "UND"
+      ],
+      "canonical_source_urls": [
+        "https://www.und.org.tr/medya-detay/duyurular/tir-suruculerimizin-romanya-da-yasadigi-problemler-hakkinda"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Romanya'da Türk TIR sürücülerinden rüşvet talebi ve haksız ceza şikayetlerinin arttığı resmi sektör duyurusuna yansıdı ve 7/24 resmi ihbar kanalı açıkça bildirildi; olayları standart kanıt paketiyle kaydetme ihtiyacı somutlaştı.",
+      "delta_types": [
+        "RISK_DELTA",
+        "ACCESS_DELTA",
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "sınır/karayolu olayı → sürücü kanıt toplama → filo merkezine bildirim → resmi ihbar kanalına başvuru → vaka takibi → şirket içi rapor",
+      "target_customer": "Türkiye-Romanya/AB hattında çalışan uluslararası karayolu nakliye şirketleri ve filolar",
+      "buyer": "Filo Operasyon Müdürü, Compliance/Hukuk yöneticisi, şirket sahibi",
+      "job_to_be_done": "Sürücülerin yolda yaşadığı rüşvet talebi/haksız ceza vakalarını standartlaştırılmış kanıtla kaydetmek ve doğru resmi kanala hızla iletmek.",
+      "current_friction": "Sürücü olay anında telefon, WhatsApp ve dağınık fotoğraflarla bilgi verir; konum, saat, belge, memur bilgisi ve başvuru sonucu eksik kalabilir.",
+      "product_mechanism": "Mobil web incident formu, konum/zaman kaydı, belge-fotoğraf ekleri, olay türü checklist'i, şirket inceleme kuyruğu, resmi başvuru metni/export ve vaka durum takibi.",
+      "one_sentence_concept": "Uluslararası TIR filolarının yol üzerindeki rüşvet/haksız ceza olaylarını kanıtlı vaka dosyasına dönüştürüp resmi başvuruya hazırlayan web uygulaması.",
+      "why_now": "UND'nin 6 Ekim 2026 duyurusu şikayetlerin arttığını ve Romanya'nın 7/24 yolsuzlukla mücadele başvuru kanalını teyit etti.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 190,
+      "draft_canonical_key": "turkish-international-road-fleets|document-and-escalate-roadside-abuse-incidents|mobile-evidence-case-and-official-referral-workflow",
+      "evidence_notes": {
+        "verification": "UND original notice read; duyuru Ticaret ve Dışişleri Bakanlıklarından aktarılan bilgiye dayanıyor.",
+        "trakya_transferability_hypothesis": "Trakya, Türkiye-AB karayolu koridorunda yer aldığından uluslararası nakliyeciler için problem transfer edilebilir; ancak atanmış kaynak yerel firma varlığını somutlamadığı için scope Türkiye."
+      }
+    },
+    {
+      "raw_id": "w3-20261007-004",
+      "supporting_article_ids": [
+        "5ed79e24aed874c1c36dec0e"
+      ],
+      "supporting_article_titles": [
+        "오픈AI, 앤트로픽 이어 AI 생성 텍스트에 워터마크…EU 먼저"
+      ],
+      "supporting_sources": [
+        "ETNews"
+      ],
+      "canonical_source_urls": [
+        "https://openai.com/index/eu-text-provenance/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "EU AI Act nedeniyle üretken AI sağlayıcıları metni machine-readable biçimde tanımlamaya geçiyor; ancak watermark tespiti düzenleme, çeviri ve kısa metinlerde zayıflayabildiğinden kurumların yalnız detector sonucuna değil üretim ve insan onayı kaydına da ihtiyaçları var.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "STANDARDIZATION_DELTA",
+        "CAPABILITY_DELTA"
+      ],
+      "affected_workflow": "AI ile içerik üretimi → provenance işareti/policy → insan incelemesi → yayın onayı → kullanılan model ve açıklama kanıtı → denetim",
+      "target_customer": "AB'ye içerik yayınlayan şirketlerin marketing, legal, compliance ve editorial ekipleri",
+      "buyer": "Compliance Lead, Legal Counsel, Content Operations Lead",
+      "job_to_be_done": "AI ile üretilen metnin kaynağını, insan incelemesini ve gerekli disclosure kararını kanıtlanabilir şekilde kaydetmek.",
+      "current_friction": "Watermark tek başına yazarlık veya insan katkısını kanıtlamıyor; ekipler hangi metnin hangi modelle üretildiğini ve kim tarafından onaylandığını dağınık biçimde takip ediyor.",
+      "product_mechanism": "Content provenance register, model/use declaration, reviewer sign-off, policy checklist, disclosure status ve audit export; detector sonucunu yalnız bir evidence field olarak tutar.",
+      "one_sentence_concept": "AB'ye yayın yapan ekipler için AI metin provenance, insan onayı ve disclosure kanıtını yöneten içerik uyum defteri.",
+      "why_now": "OpenAI 5 Ekim 2026'da EU AI Act'e yanıt olarak ChatGPT/Codex metinlerine EU'da invisible watermark ekleyeceğini ve detector erişimini sınırlı açacağını duyurdu.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 180,
+      "draft_canonical_key": "organizations-publishing-ai-assisted-text-in-eu|prove-content-provenance-review-and-disclosure|provenance-register-review-signoff-audit-export",
+      "evidence_notes": {
+        "verification": "OpenAI primary announcement read; ürün detector'ın kendisi değildir ve watermark'ı kesin authorship kanıtı saymaz."
+      }
+    },
+    {
+      "raw_id": "w3-20261007-005",
+      "supporting_article_ids": [
+        "cc2e20950c69cadfdc1daa0f"
+      ],
+      "supporting_article_titles": [
+        "索尼音乐 9 月要求下架 26 万首 AI 伪造歌曲：阿黛尔等艺人被冒充，请求量较 3 月近乎翻倍"
+      ],
+      "supporting_sources": [
+        "ITHome / IT之家"
+      ],
+      "canonical_source_urls": [
+        "https://www.ft.com/content/51aed058-f8e0-4426-b92a-790b7863d350",
+        "https://www.musicbusinessworldwide.com/sony-music-has-now-asked-platforms-to-remove-more-than-260000-ai-deepfakes-imitating-artists-like-harry-styles-adele-and-michael-jackson/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "AI deepfake müzik takedown hacmi altı ayda yaklaşık iki katına çıkarak manuel hak takibi ve tekrar yükleme kontrolünü ölçek sorunu haline getiriyor.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "RISK_DELTA",
+        "LABOR_DELTA"
+      ],
+      "affected_workflow": "şüpheli track tespiti → sanatçı/katalog eşleştirme → evidence → platforma takedown → yanıt → tekrar yükleme kontrolü → vaka kapanışı",
+      "target_customer": "Bağımsız plak şirketleri, müzik yayıncıları, sanatçı yönetim şirketleri ve hak sahipleri",
+      "buyer": "Rights Protection Lead, Label Operations, Artist Manager",
+      "job_to_be_done": "AI deepfake şüphesi taşıyan yayınları vaka bazında kanıtlayıp platform takedown sürecini ve tekrar yüklemeleri takip etmek.",
+      "current_friction": "Yüksek hacimde URL, platform, sanatçı, kanıt, talep tarihi ve yanıt durumunu spreadsheet/email ile izlemek tekrarları ve SLA kaçırmayı kolaylaştırıyor.",
+      "product_mechanism": "Case intake, catalog/artist mapping, evidence checklist, platform-specific takedown packet, status/SLA tracker, re-upload fingerprint/URL watch list ve export.",
+      "one_sentence_concept": "Müzik hak sahiplerinin AI deepfake takedown vakalarını toplu ve denetlenebilir biçimde yönetmesini sağlayan rights-enforcement case manager.",
+      "why_now": "Sony Music'in Eylül 2026 sonuna kadar 260 binden fazla AI deepfake track için kaldırma talebi yaptığı; Mart sonundaki 135 bin seviyesine göre hacmin yaklaşık iki katına çıktığı bildirildi.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 220,
+      "draft_canonical_key": "music-rights-holders|manage-ai-deepfake-takedown-cases-and-reuploads|catalog-mapped-evidence-and-takedown-case-workflow",
+      "evidence_notes": {
+        "verification": "Financial Times reporting corroborated by Music Business Worldwide and Music Week; discovery item itself ITHome."
+      }
+    }
+  ]
+}
