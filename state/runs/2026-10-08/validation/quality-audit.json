@@ -7,8 +7,8 @@
   "expected_candidates": 55,
   "chunk_count": 11,
   "qualification_counts": {
-    "competition_not_verified": 19,
-    "rejected_competition": 35,
+    "competition_not_verified": 17,
+    "rejected_competition": 37,
     "rejected_evidence": 1
   },
   "primary_development_unverified_or_partial_indexes": [
@@ -87,7 +87,7 @@
   "publication_gate": {
     "allow_catalog_write": false,
     "allow_qualified_idea_publication": false,
-    "reason": "55/55 classified; 6 partially verified originals, 21 competition not verified, 55 zero-external-cash proofs not established; no catalog write."
+    "reason": "55/55 classified; six primary-source checks partial, 17 competition cases unresolved, zero-external-cash proofs unverified. No publication."
   },
   "next_steps": [
     "Recheck 6 partial original sources",
@@ -181,18 +181,37 @@
       "finding": "Siemens manages simulation models, results, traceability, formal review/signoff; COMSOL version diffs and audit trails; Ansys Minerva release management overlaps.",
       "decision": "rejected_competition",
       "nuance": "Existing products do not necessarily explicitly attribute AI agent changes, but that label alone is not a different core approval job."
+    },
+    {
+      "validation_index": 45,
+      "checked_at_date": "2026-10-08",
+      "status": "rejected_competition",
+      "verified_vendor_urls": [
+        "https://www.avala.ai/usecases/data-collection",
+        "https://dexset.ai/platform/platform-overview/"
+      ],
+      "finding": "Avala and Dexset coordinate robotics capture projects with task briefs, capture sessions and coverage tracking."
+    },
+    {
+      "validation_index": 49,
+      "checked_at_date": "2026-10-08",
+      "status": "rejected_competition",
+      "verified_vendor_urls": [
+        "https://docs.memverge.com/AI/GPU_Manager/latest/admin_guide/billing/"
+      ],
+      "finding": "MemVerge already provides departmental GPU reservations and usage chargeback; billing CSV export is described only as a future feature."
     }
   ],
-  "next_action_priority": "6 partial originals and 19 competition investigations. Zero external cash remains unverified for 55.",
+  "next_action_priority": "Resolve 6 partial originals, 17 competition cases, and prove zero external cash production feasibility for surviving products.",
   "quality_gate_reaudit": {
     "date": "2026-10-08",
     "method": "Full recomputation from 11 current chunk files after Japanese MLIT, SaaS survey and Korea robotics source corrections",
     "partial_primary_count": 6,
     "unknown_source_date_count": 0,
     "zero_cost_unverified_count": 55,
-    "competition_incomplete_row_count": 19,
+    "competition_incomplete_row_count": 17,
     "qualified_count": 0,
-    "notes": "55-row recomputation after #47 and #53 competition rechecks. Primary verification and production cash gaps unchanged."
+    "notes": "Updated after independent primary-vendor competition findings for #45 and #49; publication remains blocked."
   },
   "targeted_original_source_rechecks": [
     {
