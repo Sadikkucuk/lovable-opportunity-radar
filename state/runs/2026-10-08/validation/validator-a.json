@@ -24,8 +24,7 @@
     "note": "Assembly of preexisting individual validation decisions; no additional independent research performed.",
     "canonical_source": "validation/chunk-001..011.json",
     "chunk_reconciliation_run_date": "2026-10-08",
-    "partial_reconciliation_range": "1-30",
-    "pending_range": "31-55"
+    "reconciliation_complete": true
   },
   "results": [
     {
@@ -1571,24 +1570,43 @@
         "https://www.tohoku.ac.jp/japanese/2026/10/press20261002-03-AI.html",
         "https://www.tandfonline.com/doi/full/10.1080/27660400.2026.2735657",
         "https://www.scinote.net/product/",
-        "https://lovable.dev/pricing"
+        "https://lovable.dev/pricing",
+        "https://www.wavefrontsoftware.com/lims-for-advanced-material-manufacturing/",
+        "https://lims.eu/en/werkstoffpruefung",
+        "https://lims.science/metals-mining-lims-software/"
       ],
       "turkiye_direct_competitor_count": null,
       "turkiye_competitors": [],
-      "global_direct_competitor_count": null,
-      "global_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "Wavefront LIMS Advanced Materials",
+          "url": "https://www.wavefrontsoftware.com/lims-for-advanced-material-manufacturing/",
+          "reason": "Advanced material laboratories link heat/lot/batch IDs to metallurgical, mechanical and thermal analysis results with instrument traceability, retests and approvals; same metallurgical lab buyer and core traceability workflow."
+        },
+        {
+          "name": "LDB LIMS Materials Testing",
+          "url": "https://lims.eu/en/werkstoffpruefung",
+          "reason": "Materials laboratories track sample IDs, specimen preparation, mechanical/thermal/chemical tests, instrument raw data and approved versioned reports; same substantial laboratory workflow."
+        }
+      ],
       "adjacent_competitors": [
         {
           "name": "SciNote",
           "url": "https://www.scinote.net/product/",
           "reason": "Adjacent ELN and sample tracking; exact heat treatment XRD mechanical test pipeline not verified."
+        },
+        {
+          "name": "Lims.science Metals/Mining LIMS",
+          "url": "https://lims.science/metals-mining-lims-software/",
+          "reason": "Metallurgy labs: sample/material testing results, instrument ingestion and versioned QA records; exact heat-treatment/XRD recipe specialty not verified."
         }
       ],
       "competition_search_terms": [
         "Her numunenin ısıl işlem parametrelerini, XRD ve mekanik test sonuçlarını aynı izlenebilir deney dosyasında birleştirmek software Türkiye",
         "Her numunenin ısıl işlem parametrelerini, XRD ve mekanik test sonuçlarını aynı izlenebilir deney dosyasında birleştirmek competitors global"
       ],
-      "market_gap": "Direct competition and unique market gap unverified.",
+      "market_gap": "Core per-sample metallurgy test traceability, thermal/mechanical result linking and audit reporting already served by advanced-materials LIMS vendors; only a tightly specified XRD+heat-treatment recipe analytical workflow might differentiate, currently unproven.",
       "mvp": "CSV ölçüm içe aktarma, numune ID eşleştirme, ısıl işlem reçete-versiyon kaydı, süreç-yapı-özellik karşılaştırma ve denetim raporu; cihaz entegrasyonu MVP dışında",
       "working_logic": "Fırın kayıtları, ölçüm cihazı dosyaları ve numune etiketleri ayrı sistemlerde; karşılaştırmalı rapor hazırlama manuel -> CSV ölçüm içe aktarma, numune ID eşleştirme, ısıl işlem reçete-versiyon kaydı, süreç-yapı-özellik karşılaştırma ve denetim raporu; cihaz entegrasyonu MVP dışında",
       "technologies": [
@@ -1610,23 +1628,32 @@
       ],
       "marketing_strategy": "Validate buyer need through direct outreach before building.",
       "first_customer_plan": "Seek a documented unmet workflow from one target buyer.",
-      "main_risk": "Adjacent ELN and sample tracking; exact heat treatment XRD mechanical test pipeline not verified.",
+      "main_risk": "Two existing directly substitutable advanced-materials lab LIMS vendors; production data security and zero-external-cash unverified.",
       "validation_assumption": "Product differentiation and external zero-cost feasibility are unproven.",
-      "evidence_strength": "primary_vendor_overlap; partial_original_article",
-      "competition_confidence": "not_verified",
+      "evidence_strength": "primary original release previously verified; high vendor product-feature overlap",
+      "competition_confidence": "high for two global workflow substitutes; thermal recipe/XRD specialization not directly demonstrated",
       "local_scope_verified": false,
       "local_scope_evidence": [],
       "local_applicability_rationale": "Trakya buyer footprint not independently evidenced.",
       "validated_scope_hint": "Türkiye",
-      "qualification_status": "competition_not_verified"
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Same advanced-materials/metallurgy laboratory buyer can track heat/lot/sample provenance, mechanical and thermal analyses, instrument data and approved test reports in Wavefront LIMS and LDB LIMS. Original candidate lacks a substantiated differentiating niche despite special XRD/recipe terminology.",
+      "competitor_recheck": {
+        "checked_at": "2026-10-08",
+        "primary_vendor_evidence_urls": [
+          "https://www.wavefrontsoftware.com/lims-for-advanced-material-manufacturing/",
+          "https://lims.eu/en/werkstoffpruefung"
+        ],
+        "research_limit": "No supported claim that either vendor natively runs automated XRD plus furnace recipe integrations; broad core traceability overlap sufficient for rejecting undifferentiated MVP. No Turkish-direct count claimed."
+      }
     },
     {
       "candidate_id": "c-20261008-w4-20261008-013",
       "validation_index": 39,
       "canonical_key": "multi-model-product-teams|approve-model-changes|task-eval-regression-gate",
-      "development_verified": "partial",
+      "development_verified": true,
       "canonical_news_source": "Inc42",
-      "canonical_news_title": "Model Switch Evidence Gate.",
+      "canonical_news_title": "The Case For Evals In A Multi-Model World",
       "canonical_news_date": "2026-10-07",
       "canonical_news_url": "https://inc42.com/features/the-case-for-evals-in-a-multi-model-world/",
       "source_links": [
@@ -1680,7 +1707,13 @@
       "local_applicability_rationale": "Global application; local check not applicable.",
       "validated_scope_hint": "Dünya",
       "qualification_status": "rejected_competition",
-      "rejection_reason": "Same engineering buyer: model eval comparisons, human review and release decision."
+      "rejection_reason": "Same engineering buyer: model eval comparisons, human review and release decision.",
+      "primary_development_recheck": {
+        "verified_on": "2026-10-08",
+        "original_url": "https://inc42.com/features/the-case-for-evals-in-a-multi-model-world/",
+        "date": "2026-10-07",
+        "source_caveat": "Original Inc42 article directly inspected; CTOs report model-switch evaluations and production guardrails. This validates the triggering observation, not a differentiated product or free-tier feasibility."
+      }
     },
     {
       "candidate_id": "c-20261008-W3-20261008-017",
@@ -1689,29 +1722,32 @@
       "development_verified": true,
       "canonical_news_source": "Microsoft Support",
       "canonical_news_title": "Office 2021 End-of-Support Migration Gate: CSV inventory, migration waves, compatibility checklist and risk exceptions.",
-      "canonical_news_date": "2026-10-13",
+      "canonical_news_date": "2026-04-13",
       "canonical_news_url": "https://support.microsoft.com/en-us/office/system-requirements/end-of-support-for-office-2021",
       "source_links": [
         "https://support.microsoft.com/en-us/office/system-requirements/end-of-support-for-office-2021",
         "https://learn.microsoft.com/en-us/microsoft-365-apps/deploy/assess-microsoft-365-apps",
-        "https://lovable.dev/pricing"
+        "https://lovable.dev/pricing",
+        "https://learn.microsoft.com/en-us/intune/configmgr/sum/deploy-use/office-365-dashboard",
+        "https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/inventory",
+        "https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/cloud-update-enhancements"
       ],
       "turkiye_direct_competitor_count": null,
       "turkiye_competitors": [],
-      "global_direct_competitor_count": null,
-      "global_competitors": [],
-      "adjacent_competitors": [
+      "global_direct_competitor_count": 1,
+      "global_competitors": [
         {
-          "name": "Microsoft 365 Apps Readiness",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365-apps/deploy/assess-microsoft-365-apps",
-          "reason": "Adjacent official readiness and compatibility steps, pilot cohorts, plus Microsoft readiness dashboard; exact standalone exception signoff workflow unverified."
+          "name": "Microsoft 365 Apps Upgrade Readiness",
+          "url": "https://learn.microsoft.com/en-us/intune/configmgr/sum/deploy-use/office-365-dashboard",
+          "reason": "Same IT buyer and Office upgrade task: installed device inventory, macro/add-in compatibility flags, upgrade readiness groupings and device lists. Microsoft 365 Admin Center additionally supports CSV inventory and rollout waves."
         }
       ],
+      "adjacent_competitors": [],
       "competition_search_terms": [
         "Inventory seats, test macro/file compatibility and sign off upgrade waves. direct software competitors",
         "Inventory seats, test macro/file compatibility and sign off upgrade waves. Türkiye yazılım"
       ],
-      "market_gap": "Dedicated matching product not established; search non-exhaustive.",
+      "market_gap": "Existing Microsoft readiness dashboard covers migration device inventory and macro compatibility for the same buyer, while the admin center covers rollout waves. Distinctive value of an external checklist wrapper is unproven.",
       "mvp": "CSV inventory, migration waves, compatibility checklist and risk exceptions.",
       "working_logic": "Device inventories and compatibility exceptions are incomplete. -> CSV inventory, migration waves, compatibility checklist and risk exceptions.",
       "technologies": [
@@ -1736,26 +1772,31 @@
       "main_risk": "Adjacent official readiness and compatibility steps, pilot cohorts, plus Microsoft readiness dashboard; exact standalone exception signoff workflow unverified.",
       "validation_assumption": "Distinguishing workflow and zero-cost deployment must be demonstrated.",
       "evidence_strength": "limited_vendor_comparison",
-      "competition_confidence": "not_verified",
+      "competition_confidence": "high_for_official_global_vendor_workflow",
       "local_scope_verified": "not_applicable",
       "local_scope_evidence": [],
       "local_applicability_rationale": "No Lüleburgaz claim.",
       "validated_scope_hint": "Dünya",
-      "qualification_status": "competition_not_verified"
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Microsoft already provides directly overlapping readiness, inventory, macro compatibility assessment and phased update tooling to the same enterprise IT buyers.",
+      "original_event_date": "2026-10-13",
+      "source_date_note": "October 13, 2026 is future Office LTSC 2021 support end, not the publication date of the Microsoft Support document. Microsoft blog dated 2026-04-13 confirms event."
     },
     {
       "candidate_id": "c-20261008-w4-20261008-007",
       "validation_index": 43,
       "canonical_key": "regulated-ai-buyers|approve-ai-inference-residency|model-region-evidence-matrix",
-      "development_verified": "partial",
+      "development_verified": true,
       "canonical_news_source": "Express Computer",
-      "canonical_news_title": "AI Inference Residency Evidence Desk.",
-      "canonical_news_date": "2026-10-07",
+      "canonical_news_title": "Claude goes live in India with in-country inference through Amazon Bedrock",
+      "canonical_news_date": "2026-10-05",
       "canonical_news_url": "https://www.expresscomputer.in/news/claude-goes-live-in-india-with-in-country-inference-through-amazon-bedrock/139422/",
       "source_links": [
         "https://www.expresscomputer.in/news/claude-goes-live-in-india-with-in-country-inference-through-amazon-bedrock/139422/",
         "https://docs.aws.amazon.com/bedrock/latest/userguide/geographic-cross-region-inference.html",
-        "https://lovable.dev/pricing"
+        "https://lovable.dev/pricing",
+        "https://aws.amazon.com/about-aws/whats-new/2026/09/claude-region-expansion-in-sk/",
+        "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference/"
       ],
       "turkiye_direct_competitor_count": null,
       "turkiye_competitors": [],
@@ -1796,44 +1837,70 @@
       "first_customer_plan": "Test with one target-customer workflow and sample records.",
       "main_risk": "Adjacent region-routing documentation and IAM enforcement rather than cross-cloud signed model-region evidence ledger.",
       "validation_assumption": "Distinguishing workflow and zero-cost deployment must be demonstrated.",
-      "evidence_strength": "limited_vendor_comparison",
+      "evidence_strength": "media_article_full_and_AWS_first_party_docs; competitors_and_cash_not_verified",
       "competition_confidence": "not_verified",
       "local_scope_verified": "not_applicable",
       "local_scope_evidence": [],
       "local_applicability_rationale": "No Lüleburgaz claim.",
       "validated_scope_hint": "Dünya",
-      "qualification_status": "competition_not_verified"
+      "qualification_status": "competition_not_verified",
+      "original_source_evidence": {
+        "checked_on": "2026-10-08",
+        "url": "https://www.expresscomputer.in/news/claude-goes-live-in-india-with-in-country-inference-through-amazon-bedrock/139422/",
+        "publication_date": "2026-10-05",
+        "vendor_primary_announcement": "https://aws.amazon.com/about-aws/whats-new/2026/09/claude-region-expansion-in-sk/",
+        "vendor_primary_date": "2026-09-29",
+        "verified_claim": "India geographic cross-region inference processes Claude traffic only in Mumbai and Hyderabad AWS regions; available via Bedrock India regional profile.",
+        "important_date_note": "Media follow-up was Oct 5; AWS originally announced product region support Sep 29. The previous Oct 7 source date in the candidate validation was inaccurate.",
+        "important_product_limit": "India residency feature of AWS/Amazon Bedrock does not imply a global or cross-cloud regulator-approved compliance claim."
+      }
     },
     {
       "candidate_id": "c-20261008-W3-20261008-011",
       "validation_index": 45,
       "canonical_key": "robot-integrators-and-industrial-r-d-teams|robot-field-capture-coordination|task-taxonomy",
       "development_verified": "partial",
-      "canonical_news_source": "ALCHERA / Bizcrush",
-      "canonical_news_title": "Robot Data Collection Campaign Planner: Task taxonomy, capture queue, session calendar, coverage matrix and permission record.",
-      "canonical_news_date": "2026-10-07",
+      "canonical_news_source": "TECHWORLD reporting on CrowdWorks, syndicated by BizCrush",
+      "canonical_news_title": "CrowdWorks to Showcase Robot Training Data Build Process at AI Festa 2026",
+      "canonical_news_date": "2026-10-02",
       "canonical_news_url": "https://bizcru.sh/en/news/article/20261002-5176",
       "source_links": [
         "https://bizcru.sh/en/news/article/20261002-5176",
         "https://www.alchera.ai/en/company/media/alchera-ai-festa-26-physical-ai-data",
-        "https://lovable.dev/pricing"
+        "https://lovable.dev/pricing",
+        "https://www.epnc.co.kr/news/articleView.html?idxno=407748",
+        "https://www.avala.ai/usecases/data-collection",
+        "https://dexset.ai/platform/platform-overview/"
       ],
       "turkiye_direct_competitor_count": null,
       "turkiye_competitors": [],
-      "global_direct_competitor_count": null,
-      "global_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "Avala Physical AI Collection",
+          "url": "https://www.avala.ai/usecases/data-collection",
+          "reason": "Physical-AI robotics buyer; plans task/environment capture programs, coordinates capture sessions, tracks synchronized capture/QC and uses evaluation gaps to determine follow-up data collection. Same core capture-program coordination workflow."
+        },
+        {
+          "name": "Dexset Robotics Data Platform",
+          "url": "https://dexset.ai/platform/platform-overview/",
+          "reason": "Robot teams configure task briefs, capture operations, trained operators, task/environment metadata, coverage scoring and delivery console with progress. Same buyer and core task-to-capture coverage workflow."
+        }
+      ],
       "adjacent_competitors": [
         {
-          "name": "ALCHERA AI physical AI data",
+          "name": "ALCHERA physical-AI data collection",
           "url": "https://www.alchera.ai/en/company/media/alchera-ai-festa-26-physical-ai-data",
-          "reason": "Physical-AI training data collection provider; task taxonomy calendar and consent evidence platform directness not established."
+          "reason": "Supplier/data collection overlap, but self-service session planner capability not established."
         }
       ],
       "competition_search_terms": [
-        "Plan capture sessions, operators, environments and task coverage. direct software competitors",
-        "Plan capture sessions, operators, environments and task coverage. Türkiye yazılım"
+        "robotics physical AI dataset capture session program management platform",
+        "robot task brief operator sessions capture coverage dashboard",
+        "physical AI field collection capture campaign coordination software",
+        "Türkiye robot fiziksel yapay zeka veri toplama görev planlama platform"
       ],
-      "market_gap": "Dedicated matching product not established; search non-exhaustive.",
+      "market_gap": "Avala and Dexset already provide robot-data capture plans, session coordination, task briefs and coverage tracking for robotics customers. Calendar and permission form details may vary but are not a proven differentiated core job.",
       "mvp": "Task taxonomy, capture queue, session calendar, coverage matrix and permission record.",
       "working_logic": "Capture coverage is hard to reconcile across sites and shifts. -> Task taxonomy, capture queue, session calendar, coverage matrix and permission record.",
       "technologies": [
@@ -1855,46 +1922,70 @@
       ],
       "marketing_strategy": "Validate needs via domain-specific buyer interviews.",
       "first_customer_plan": "Test with one target-customer workflow and sample records.",
-      "main_risk": "Physical-AI training data collection provider; task taxonomy calendar and consent evidence platform directness not established.",
+      "main_risk": "Two global vendors overlap task definitions, operator capture coordination and coverage reporting. Triggering CrowdWorks article is secondary because TECHWORLD original remains inaccessible.",
       "validation_assumption": "Distinguishing workflow and zero-cost deployment must be demonstrated.",
-      "evidence_strength": "limited_vendor_comparison",
-      "competition_confidence": "not_verified",
+      "evidence_strength": "verified_primary_competitor_platform_workflows; triggering_original_partial",
+      "competition_confidence": "high_for_named_global_direct; Turkish_direct_comparison_not_exhaustive",
       "local_scope_verified": "not_applicable",
       "local_scope_evidence": [],
       "local_applicability_rationale": "No Lüleburgaz claim.",
       "validated_scope_hint": "Dünya",
-      "qualification_status": "competition_not_verified"
+      "qualification_status": "rejected_competition",
+      "source_verification_note": "The Oct 2 syndicated report identifies CrowdWorks. Separate Alchera primary release dated Sep 30 is an additional development, not the CrowdWorks original. Direct TECHWORLD link is inaccessible (403), so original remains partially verified.",
+      "rejection_reason": "Avala and Dexset offer capture-program design, session coordination, task/operator workflows and coverage dashboards for robotics teams; no special feature or buyer need establishes sufficient differentiation.",
+      "review_notes": "Product-level overlap verified on primary current vendor pages, but explicit consent/signature and discrete session calendar features differ or are not all independently confirmed. CrowdWorks TECHWORLD source remains 403 and is not conflated with Alchera's separate release."
     },
     {
       "candidate_id": "c-20261008-w4-20261008-001",
       "validation_index": 47,
       "canonical_key": "saas-builders|prepare-agent-ready-web-actions|webmcp-schema-test-registry",
-      "development_verified": "partial",
-      "canonical_news_source": "Microsoft Edge Developer Blog",
-      "canonical_news_title": "WebMCP Readiness Desk for SaaS teams.",
+      "development_verified": true,
+      "canonical_news_source": "Microsoft Edge Blog",
+      "canonical_news_title": "New in Edge for developers – Create better components and make your site agent-ready",
       "canonical_news_date": "2026-09-21",
       "canonical_news_url": "https://blogs.windows.com/msedgedev/2026/09/21/new-in-edge-for-developers-create-better-components-and-make-your-site-agent-ready/",
       "source_links": [
         "https://blogs.windows.com/msedgedev/2026/09/21/new-in-edge-for-developers-create-better-components-and-make-your-site-agent-ready/",
         "https://www.webmcpready.com/",
-        "https://lovable.dev/pricing"
+        "https://lovable.dev/pricing",
+        "https://github.com/erold90/AgentReady",
+        "https://github.com/ora/webmcp",
+        "https://github.com/chapter42/webmcp-readiness-checker"
       ],
       "turkiye_direct_competitor_count": null,
       "turkiye_competitors": [],
-      "global_direct_competitor_count": null,
-      "global_competitors": [],
-      "adjacent_competitors": [
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
         {
           "name": "WebMCPReady",
           "url": "https://www.webmcpready.com/",
-          "reason": "Website agent-readiness scan and testing overlaps, but ongoing schema/approval registry not established."
+          "reason": "Website owner/developer can scan a site URL, inspect WebMCP action readiness, receive structured scores and actionable findings; overlaps the inventory, assessment and readiness-test workflow, though persistent approval register is not documented."
+        },
+        {
+          "name": "AgentReady (erold90)",
+          "url": "https://github.com/erold90/AgentReady",
+          "reason": "Targets developers preparing websites for browser agents; WebMCP audit, action-schema/tool checks, generated fix code, agent simulator, site-wide report and readiness checklist substantially cover proposed job."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Ora WebMCP",
+          "url": "https://github.com/ora/webmcp",
+          "reason": "Open-source agent integration/audit/verify developer tooling; approval ledger and hosted multiuser workflow unconfirmed."
+        },
+        {
+          "name": "WebMCP Readiness Checker",
+          "url": "https://github.com/chapter42/webmcp-readiness-checker",
+          "reason": "Extension audits form schemas, API usage, security and discovery but ongoing release signoff not shown."
         }
       ],
       "competition_search_terms": [
-        "Prepare existing web workflows for browser agents. software global competitors",
-        "Prepare existing web workflows for browser agents. platform Türkiye"
+        "WebMCP action readiness scanner schema checklist test reports",
+        "WebMCP site audit browser agent tools schema automated fixes",
+        "AI ajan web sitesi uygunluk denetimi WebMCP araç doğrulama",
+        "agent readiness scoring website and tooling open-source"
       ],
-      "market_gap": "Exact direct competition not exhaustively established.",
+      "market_gap": "Site readiness auditing, action schema checking, reports and remediation are served by multiple tools; dedicated organization-level approval register alone does not demonstrate a viable differentiated standalone product.",
       "mvp": "WebMCP action registry, schema checklist, browser test reports and approval log.",
       "working_logic": "No consistent action-schema inventory, testing and release evidence. -> WebMCP action registry, schema checklist, browser test reports and approval log.",
       "technologies": [
@@ -1916,15 +2007,32 @@
       ],
       "marketing_strategy": "Buyer interviews required before launch.",
       "first_customer_plan": "Validate narrowly defined unmet workflow with one organization.",
-      "main_risk": "Website agent-readiness scan and testing overlaps, but ongoing schema/approval registry not established.",
+      "main_risk": "Strong free/open-source and hosted competing agent-readiness scanners, rapidly changing WebMCP draft, and no proven unique enterprise signoff demand.",
       "validation_assumption": "Commercial differentiation and no-cash deployment unverified.",
-      "evidence_strength": "partial_original_source_and_competitor",
-      "competition_confidence": "not_verified",
+      "evidence_strength": "high_primary_edge_event_and_current_competitor_product_docs",
+      "competition_confidence": "high_for_scanning_and_schema_audit; narrower release signoff not shown",
       "local_scope_verified": "not_applicable",
       "local_scope_evidence": [],
       "local_applicability_rationale": "Global buyer scope.",
       "validated_scope_hint": "Dünya",
-      "qualification_status": "competition_not_verified"
+      "qualification_status": "rejected_competition",
+      "primary_source_recheck": {
+        "checked_date": "2026-10-08",
+        "primary_url": "https://blogs.windows.com/msedgedev/2026/09/21/new-in-edge-for-developers-create-better-components-and-make-your-site-agent-ready/",
+        "verified_claims": [
+          "Article was published 2026-09-21 by Patrick Brosset",
+          "WebMCP is listed as a feature ready for testing, not generally available",
+          "Edge implementation is ready for testing with WebMCP samples and browser extension"
+        ],
+        "limitations": [
+          "WebMCP is not production GA; no claim of universal browser support",
+          "Market competition and zero external cash remain unverified"
+        ],
+        "development_verified": true
+      },
+      "rejection_reason": "WebMCPReady and AgentReady serve the same site-owner/developer customer and substantially the same core job of checking, preparing and documenting browser agent/WebMCP action readiness. Open-source Ora covers testing and verification. A generic registry plus signoff is insufficient differentiation without buyer proof.",
+      "reviewed_on": "2026-10-08",
+      "review_note": "Rejection is on substantial overlapping same-buyer workflow. Competitor pages do not demonstrate an exact persistent approval ledger; this difference is recorded instead of claiming feature parity. Zero external cash remains unverified but is not needed to reject the generic product."
     },
     {
       "candidate_id": "c-20261008-w4-20261008-021",
@@ -1938,24 +2046,41 @@
       "source_links": [
         "https://thevc.kr/dataalliance",
         "https://www.nvidia.com/en-us/ai/",
-        "https://lovable.dev/pricing"
+        "https://lovable.dev/pricing",
+        "https://docs.memverge.com/AI/GPU_Manager/latest/admin_guide/billing/",
+        "https://goaiocean.com/en/",
+        "https://openondemand.org/software/xdmod",
+        "https://open.xdmod.org/11.0/configuration.html"
       ],
       "turkiye_direct_competitor_count": null,
       "turkiye_competitors": [],
-      "global_direct_competitor_count": null,
-      "global_competitors": [],
+      "global_direct_competitor_count": 1,
+      "global_competitors": [
+        {
+          "name": "MemVerge GPU Cluster Manager",
+          "url": "https://docs.memverge.com/AI/GPU_Manager/latest/admin_guide/billing/",
+          "reason": "Same shared-GPU resource manager buyer and core reservation/quota/usage-chargeback workflow: departments reserve GPU capacity, share unused allocations, track per-project usage, and attribute costs across departments. CSV billing export explicitly documented as future release, not currently available."
+        }
+      ],
       "adjacent_competitors": [
         {
-          "name": "GPU orchestration/scheduler",
-          "url": "https://www.nvidia.com/en-us/ai/",
-          "reason": "General compute scheduling overlaps likely; GPU booking and invoice-grade chargeback direct vendor not sufficiently checked."
+          "name": "Ocean GPU Cluster Management for Research Labs",
+          "url": "https://goaiocean.com/en/",
+          "reason": "Same research-lab GPU allocation/quotas and reservation problem; published page does not demonstrate departmental billing/chargeback."
+        },
+        {
+          "name": "Open OnDemand + Open XDMoD",
+          "url": "https://openondemand.org/software/xdmod",
+          "reason": "Open-source HPC job portals and resource/GPU-hour utilization accounting can solve many adjacent needs; an integrated invoice-grade booking and chargeback workflow is not established."
         }
       ],
       "competition_search_terms": [
-        "Allocate and audit shared GPU time. software global competitors",
-        "Allocate and audit shared GPU time. platform Türkiye"
+        "GPU resource reservation departmental cost chargeback booking software",
+        "research lab GPU allocation quota reservation portal",
+        "MemVerge GPU Cluster Manager billing reservations chargeback",
+        "Türkiye GPU laboratuvar rezervasyon kota departman maliyet paylaştırma"
       ],
-      "market_gap": "Exact direct competition not exhaustively established.",
+      "market_gap": "Generic GPU reservation, sharing, quota administration and departmental usage chargeback have an existing direct platform; niche approval and CSV export may be narrower differentiators but are insufficient without buyer evidence.",
       "mvp": "Time-slot request ledger, quotas, usage CSV and chargeback exports.",
       "working_logic": "Bookings and utilization proofs are managed in spreadsheets. -> Time-slot request ledger, quotas, usage CSV and chargeback exports.",
       "technologies": [
@@ -1977,15 +2102,17 @@
       ],
       "marketing_strategy": "Buyer interviews required before launch.",
       "first_customer_plan": "Validate narrowly defined unmet workflow with one organization.",
-      "main_risk": "General compute scheduling overlaps likely; GPU booking and invoice-grade chargeback direct vendor not sufficiently checked.",
+      "main_risk": "MemVerge provides substantially overlapping reservation and departmental cost allocation features; Ocean addresses lab GPU quota/booking needs. Source evidence is an aggregator rather than a dated original product announcement.",
       "validation_assumption": "Commercial differentiation and no-cash deployment unverified.",
-      "evidence_strength": "partial_original_source_and_competitor",
-      "competition_confidence": "not_verified",
+      "evidence_strength": "direct_primary_vendor_documentation_high; original_trigger_date_partial",
+      "competition_confidence": "high_for_direct_global_competitor; Türkiye_direct_comparison_not_exhaustive",
       "local_scope_verified": "not_applicable",
       "local_scope_evidence": [],
       "local_applicability_rationale": "Global buyer scope.",
       "validated_scope_hint": "Dünya",
-      "qualification_status": "competition_not_verified"
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Official MemVerge GPU Cluster Manager documentation already provides GPU reservation, internal sharing, departmental utilization tracking and chargeback for shared resource operators. Same buyer/core job and substantial workflow overlap; no validated niche differentiation.",
+      "review_notes": "CSV/Excel export in MemVerge billing docs is expressly a future feature, not a current one; avoid false equivalence on exports. Keep original discovery partially verified because The VC is a company/news aggregation page; dated new-product original remains unverified."
     },
     {
       "candidate_id": "c-20261008-W3-20261008-015",
@@ -2064,24 +2191,39 @@
       "canonical_news_url": "https://www.comsol.com/press-release/system-level-modeling-and-agentic-ai-take-the-spotlight-in-comsol-multiphysics-version-2027-14722",
       "source_links": [
         "https://www.comsol.com/press-release/system-level-modeling-and-agentic-ai-take-the-spotlight-in-comsol-multiphysics-version-2027-14722",
-        "https://www.comsol.com/comsol-multiphysics/model-manager"
+        "https://www.comsol.com/comsol-multiphysics/model-manager",
+        "https://www.siemens.com/en-gb/products/simcenter/digital-engineering/simulation-cloud-suite/",
+        "https://ansys.synopsys.com/products/connect/ansys-minerva"
       ],
       "turkiye_direct_competitor_count": null,
       "turkiye_competitors": [],
-      "global_direct_competitor_count": null,
-      "global_competitors": [],
-      "adjacent_competitors": [
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "Siemens Simcenter Simulation Cloud Suite",
+          "url": "https://www.siemens.com/en-gb/products/simcenter/digital-engineering/simulation-cloud-suite/",
+          "reason": "Engineering simulation buyers already manage model/results versioning, centralized traceability, review and signoff processes, and report/KPI evidence with simulation process automation."
+        },
         {
           "name": "COMSOL Model Manager",
           "url": "https://www.comsol.com/comsol-multiphysics/model-manager",
-          "reason": "Related workflow exists but same-buyer direct substitutability remains unverified."
+          "reason": "Same simulation model engineering teams get version histories, model difference comparison, simulation related files, audit trails and controlled collaborative project assets. Expert signoff alone is not a demonstrated standalone gap."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Ansys Minerva",
+          "url": "https://ansys.synopsys.com/products/connect/ansys-minerva",
+          "reason": "Enterprise simulation process/data workflows include version control, release management, work requests, workflows and digital thread; very close substitute, exact target tool coverage depends on environment."
         }
       ],
       "competition_search_terms": [
-        "AI ajanının mühendislik modelinde yaptığı değişiklikleri, simülasyon sonuçlarını ve uzman onayını sürüm bazında izlemek software",
-        "AI ajanının mühendislik modelinde yaptığı değişiklikleri, simülasyon sonuçlarını ve uzman onayını sürüm bazında izlemek Türkiye"
+        "simulation process data management release approval signoff version traceability",
+        "COMSOL model manager audit trail model version compare asset workflow",
+        "Siemens Simcenter simulation cloud suite review sign off",
+        "Ansys Minerva work requests approval release management"
       ],
-      "market_gap": "Differentiation not established.",
+      "market_gap": "Simulation model version changes, experiment/result evidence and engineering review/signoff already available from specialist SPDM platforms; no distinct agent-generated-change governance requirement evidenced.",
       "mvp": "Simülasyon değişiklik talebi, model sürüm/parametre özeti, doğrulama kontrol listesi ve mühendis onay kaydı; COMSOL lisansı veya otomatik MCP entegrasyonu gerektirmeyen MVP",
       "working_logic": "AI ajanının mühendislik modelinde yaptığı değişiklikleri, simülasyon sonuçlarını ve uzman onayını sürüm bazında izlemek -> Simülasyon değişiklik talebi, model sürüm/parametre özeti, doğrulama kontrol listesi ve mühendis onay kaydı; COMSOL lisansı veya otomatik MCP entegrasyonu gerektirmeyen MVP",
       "technologies": [
@@ -2101,40 +2243,62 @@
       ],
       "marketing_strategy": "Direct industry outreach",
       "first_customer_plan": "Confirm unmet need before build",
-      "main_risk": "Unproven gap and production cost",
+      "main_risk": "Established Siemens/COMSOL/Ansys simulation process and data management incumbents with integrated CAD/CAE workflows and approvals; no distinct source-code standalone business case.",
       "validation_assumption": "A distinct affordable workflow exists",
-      "evidence_strength": "partial",
-      "competition_confidence": "not_verified",
+      "evidence_strength": "high_vendor_primary_product_pages_and_original_comsol_announcement",
+      "competition_confidence": "high_for_direct_core_workflow_overlap; AI-agent-specific labeling not separately marketed",
       "local_scope_verified": "not_applicable",
       "local_scope_evidence": [],
       "local_applicability_rationale": "Not locally verified",
       "validated_scope_hint": "Dünya",
-      "qualification_status": "competition_not_verified",
+      "qualification_status": "rejected_competition",
       "primary_source_recheck": {
         "status": "verified",
         "url": "https://www.comsol.com/press-release/system-level-modeling-and-agentic-ai-take-the-spotlight-in-comsol-multiphysics-version-2027-14722",
         "published_date": "2026-09-16",
         "checked_on": "2026-10-08",
         "note": "COMSOL September 16 release announces the forthcoming version 2027, not an October launch. Product claim supported; release availability is future."
-      }
+      },
+      "rejection_reason": "Siemens Simcenter Simulation Cloud Suite directly supports simulation model versioning, results traceability and structured review/sign-off for engineering buyers; COMSOL Model Manager supplies model diffs, version control and audit trails. Labeling changes as AI-agent-generated does not by itself create a distinct buyer job.",
+      "reviewed_on": "2026-10-08",
+      "review_note": "Original COMSOL Sep 16 future version announcement remains correctly attributed. Direct competitor classification is based on established simulation data/workflow platforms; do not assume they explicitly automate AI-agent attribution."
     },
     {
       "candidate_id": "c-20261008-w2-20261008-001",
       "validation_index": 55,
       "canonical_key": "yakıt-farkı-sözleşme-mutabakatı",
-      "development_verified": "partial",
-      "canonical_news_source": "Original source",
-      "canonical_news_title": "Yakıt Farkı Sözleşme Mutabakatı",
-      "canonical_news_date": "not_verified",
+      "development_verified": true,
+      "canonical_news_source": "Supply Chain Dive",
+      "canonical_news_title": "Diesel’s supply crunch may hit CFOs through freight contracts",
+      "canonical_news_date": "2026-10-07",
       "canonical_news_url": "https://www.supplychaindive.com/news/diesels-supply-crunch-may-hit-cfos-through-freight-contracts/831981/",
       "source_links": [
         "https://www.supplychaindive.com/news/diesels-supply-crunch-may-hit-cfos-through-freight-contracts/831981/",
-        "https://www.transportmanagement.org/setting-up-a-fuel-surcharge-clause-for-eu-carriers/"
+        "https://www.transportmanagement.org/setting-up-a-fuel-surcharge-clause-for-eu-carriers/",
+        "https://www.lido.app/automations/audit-freight-invoices",
+        "https://auditcargo.com/product",
+        "https://www.invorec.com/freight-invoice-audit/"
       ],
       "turkiye_direct_competitor_count": null,
       "turkiye_competitors": [],
-      "global_direct_competitor_count": null,
-      "global_competitors": [],
+      "global_direct_competitor_count": 3,
+      "global_competitors": [
+        {
+          "name": "Lido Freight Invoice Audit",
+          "url": "https://www.lido.app/automations/audit-freight-invoices",
+          "reason": "Freight invoice audit against carrier contracts and linehaul/fuel surcharge, EIA index, with discrepancy report; same shipper/AP buyer and matching core reconciliation job."
+        },
+        {
+          "name": "AuditCargo",
+          "url": "https://auditcargo.com/product",
+          "reason": "Freight invoice vs rate card/contract comparison including fuel surcharge percent vs contracted fuel table and evidence-based dispute pack."
+        },
+        {
+          "name": "InvoRec",
+          "url": "https://www.invorec.com/freight-invoice-audit/",
+          "reason": "Freight invoice and contract-rate card matching, including fuel surcharge caps, expected versus charged amount and approval exceptions."
+        }
+      ],
       "adjacent_competitors": [
         {
           "name": "Fuel surcharge TMS",
@@ -2143,10 +2307,11 @@
         }
       ],
       "competition_search_terms": [
-        "Yakıt endeksi, sözleşme koşulu ve fatura farkı denetimi software",
-        "Yakıt endeksi, sözleşme koşulu ve fatura farkı denetimi Türkiye"
+        "fuel surcharge freight invoice audit against contract",
+        "logistics fuel index surcharge contract reconciliation software",
+        "Türkiye yakıt fiyat farkı navlun sözleşmesi fatura denetim yazılım"
       ],
-      "market_gap": "Differentiation not established.",
+      "market_gap": "General freight fuel surcharge-to-contract reconciliation already directly offered by multiple vendors; no unique Türkiye regulatory/business workflow proved.",
       "mvp": "Yakıt endeksi, sözleşme koşulu ve fatura farkı denetimi",
       "working_logic": "Yakıt endeksi, sözleşme koşulu ve fatura farkı denetimi -> Yakıt endeksi, sözleşme koşulu ve fatura farkı denetimi",
       "technologies": [
@@ -2166,15 +2331,24 @@
       ],
       "marketing_strategy": "Direct industry outreach",
       "first_customer_plan": "Confirm unmet need before build",
-      "main_risk": "Unproven gap and production cost",
-      "validation_assumption": "A distinct affordable workflow exists",
-      "evidence_strength": "partial",
-      "competition_confidence": "not_verified",
+      "main_risk": "Existing freight audit vendors cover same core fuel surcharge discrepancy detection; zero external cash deployment unverified.",
+      "validation_assumption": "Turkey-specific distinctive workflow must be proven separately before reviving, and should not be inferred from U.S. diesel news.",
+      "evidence_strength": "original_article_full; three_current_direct_vendor_primary_pages",
+      "competition_confidence": "high_for_global_direct; Türkiye vendors not exhaustively verified",
       "local_scope_verified": "not_applicable",
       "local_scope_evidence": [],
       "local_applicability_rationale": "Not locally verified",
       "validated_scope_hint": "Türkiye",
-      "qualification_status": "competition_not_verified"
+      "qualification_status": "rejected_competition",
+      "original_source_evidence": {
+        "checked_on": "2026-10-08",
+        "url": "https://www.supplychaindive.com/news/diesels-supply-crunch-may-hit-cfos-through-freight-contracts/831981/",
+        "publication_date": "2026-10-07",
+        "verification": "Full original publisher/company source opened; core development corroborated",
+        "key_findings": "Full published 2026-10-07 article accessed. Freight contracts signed before diesel price spikes hurt carriers; diesel fuel surcharge adjusts on weekly EIA schedules, creating timing gaps in cost recovery. Separate general U.S. news from evidence of unmet Turkish-specific software market."
+      },
+      "rejection_reason": "Lido, AuditCargo and InvoRec all compare transport invoices with rate cards/contracts and fuel surcharges and flag differences for same transport-finance customer; same core job and workflow, without evidenced differentiation.",
+      "review_notes": "Reclassification from competition_not_verified to rejected_competition based on full primary original plus 3 actual product pages; Türkiye competitor count remains unknown, not zero."
     }
   ]
 }
