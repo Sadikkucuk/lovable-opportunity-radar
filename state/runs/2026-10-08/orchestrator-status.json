@@ -37,7 +37,7 @@
   "validation_allowed": true,
   "catalog_publication_allowed": false,
   "reason": "55/55 classified, 48 competition rejected, 1 evidence rejected, 6 unresolved; publication blocked.",
-  "next_action": "Validate six remaining publication candidates [1,5,6,12,21,22] for competition and free production sufficiency",
+  "next_action": "Research exhausted for six unresolved candidates; await independently verifiable direct-competition and zero-external-cash production evidence. Do not republish or loop.",
   "frozen_input_recovery_file": "state/runs/2026-10-08/discovery/frozen-input-recovery.json",
   "frozen_input_commit_ref": "11184205ec16eeaea62b269f7dde08589ec31f56",
   "frozen_input_verified_batches": 25,
@@ -113,5 +113,14 @@
     "external_zero_cash_proven": 0,
     "publication_allowed": false,
     "source": "state/runs/2026-10-08/validation/batch-recheck-20261008-unresolved-seven.json"
-  }
+  },
+  "quality_research_checkpoint_status": "quality_research_exhausted",
+  "quality_research_attempted_indexes": [
+    1,
+    5,
+    6,
+    12,
+    21,
+    22
+  ]
 }
