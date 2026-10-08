@@ -379,9 +379,9 @@
         "ITmedia / @IT (2026-10-08)"
       ],
       "canonical_source_urls": [
-        "https://atmarkit.itmedia.co.jp/ait/subtop/archive/"
+        "https://atmarkit.itmedia.co.jp/ait/articles/2610/06/news004.html"
       ],
-      "article_verification": "insufficient",
+      "article_verification": "corroborated",
       "novelty_delta": "AI ajanlarının token birim fiyatı düşse bile kontrolsüz kullanım nedeniyle toplam faturanın artması; görev bazlı bütçe, yeniden deneme ve token maliyeti görünürlüğü ihtiyacı.",
       "target_customer": "Birden çok AI ajanı veya API kullanan KOBİ yazılım ekipleri",
       "buyer": "CTO / yazılım geliştirme müdürü",
@@ -400,7 +400,11 @@
           "original_label": "publisher_index_summary_only",
           "normalized_label": "insufficient",
           "reason": "Conform to worker schema without increasing underlying evidence"
-        }
+        },
+        "source_verification": "Publisher original article opening and substantial excerpt accessible; remaining article member-gated; not full-text verified",
+        "source_date": "2026-10-06",
+        "specific_evidence": "Agent task loops and repeated context amplify token costs; source presents cost governance problem",
+        "competitor_warning": "Existing LLM observability/FinOps tools such as Langfuse; commercial differentiation unproven"
       },
       "delta_types": [
         "WORKFLOW_DELTA"
@@ -503,14 +507,15 @@
       "draft_canonical_key": "enterprise aı implementation teams and security consultancies|create reproducible red-team test plans, record results, map mitigations, and export an audit dossier|kısa-guideline-aligned manual checklist, test case evide"
     }
   ],
-  "notes": "KISA October 8 official press release listing corroborated the AI security initiative; full ZDNet testbed details not independently verified. 11 raw opportunities, W1 incomplete. Verification enum normalization completed; no change to underlying evidence or raw opportunity count. Filled four missing required fields across all 11 ideas using existing evidence; no new claims or opportunities.",
+  "notes": "KISA October 8 official press release listing corroborated the AI security initiative; full ZDNet testbed details not independently verified. 11 raw opportunities, W1 incomplete. Verification enum normalization completed; no change to underlying evidence or raw opportunity count. Filled four missing required fields across all 11 ideas using existing evidence; no new claims or opportunities. W1-009 publisher article located and read partially; upgraded insufficient to corroborated, not full.",
   "verification_audit": {
     "normalized_labels": 3,
     "remaining_full_text_gaps": [
       "w1-20261008-009",
       "w1-20261008-011"
     ],
-    "note": "Source claims were not upgraded; source-index-only marked insufficient, official related guidance marked corroborated."
+    "note": "Source claims were not upgraded; source-index-only marked insufficient, official related guidance marked corroborated.",
+    "token_waste_source": "publisher_original_partial_member_gated"
   },
   "schema_audit": {
     "required_raw_opportunity_fields_filled": true,
