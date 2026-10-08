@@ -16,10 +16,10 @@
   "status": "incomplete",
   "feed_items_expected": 240,
   "feed_items_triaged": 240,
-  "candidate_article_count": 8,
+  "candidate_article_count": 9,
   "original_articles_verified": 7,
   "full_article_not_verified": 0,
-  "raw_opportunity_count": 8,
+  "raw_opportunity_count": 9,
   "raw_opportunities": [
     {
       "raw_id": "w1-20261008-001",
@@ -312,7 +312,38 @@
         "trakya_transferability_hypothesis": "Robotik otomasyon pilotları için aktarılabilir fakat Lüleburgaz özelinde kurulum kanıtı yok.",
         "original_verified": "COMSOL press release September 16 2026; 2027 version announced, not necessarily shipped"
       }
+    },
+    {
+      "raw_id": "w1-20261008-009",
+      "supporting_article_ids": [
+        "5c74c72a02c99009b5cd92e6"
+      ],
+      "supporting_article_titles": [
+        "AIの「トークン浪費」を減らす5つの打ち手――AI請求額が“また増えた”をどう抑制？"
+      ],
+      "supporting_sources": [
+        "ITmedia / @IT (2026-10-08)"
+      ],
+      "canonical_source_urls": [
+        "https://atmarkit.itmedia.co.jp/ait/subtop/archive/"
+      ],
+      "article_verification": "publisher_index_summary_only",
+      "novelty_delta": "AI ajanlarının token birim fiyatı düşse bile kontrolsüz kullanım nedeniyle toplam faturanın artması; görev bazlı bütçe, yeniden deneme ve token maliyeti görünürlüğü ihtiyacı.",
+      "target_customer": "Birden çok AI ajanı veya API kullanan KOBİ yazılım ekipleri",
+      "buyer": "CTO / yazılım geliştirme müdürü",
+      "job_to_be_done": "Ajan/görev bazında token tüketimini, bütçe aşımını ve tekrar deneme maliyetini takip etmek",
+      "current_friction": "LLM faturası toplam tutar verir; hangi otomasyonun neden maliyet ürettiği görünmez",
+      "product_mechanism": "CSV/API kullanım verisi içe aktarma, ajan-görev maliyet kırılımı, limit ve anomali raporu; ücretsiz CSV tabanlı MVP",
+      "one_sentence_concept": "AI Ajan Token İsrafı Denetçisi",
+      "scope_hint": "Türkiye ve global",
+      "zero_cost_feasibility": "plausible for CSV-only MVP",
+      "estimated_lovable_credits": 300,
+      "evidence_notes": {
+        "source_limit": "Publisher article archive and index excerpt confirmed; full article not read. Exact article URL not confirmed.",
+        "competition_warning": "Langfuse, Helicone, LangSmith and provider dashboards are strong overlapping products; differentiation and novelty validation essential",
+        "trakya_transferability_hypothesis": "Yazılım ekiplerine yatay ürün; Trakya sanayisinde yerel alıcı kanıtı henüz yok."
+      }
     }
   ],
-  "notes": "240 titles triaged, 8 raw opportunities. All eight now linked to exact feed record IDs, matching assigned batches 4-6. Remaining article candidate verification still pending; incomplete."
+  "notes": "240 titles triaged, nine raw opportunities. New ITmedia Oct 8 token-waste item verified via publisher index excerpt, not full text. W1 remains incomplete pending original article and remaining candidate checks."
 }
