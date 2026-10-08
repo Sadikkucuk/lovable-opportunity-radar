@@ -216,7 +216,7 @@
       "canonical_source_urls": [
         "https://www.stuut.ai/blog/why-we-raised-series-b"
       ],
-      "article_verification": "full",
+      "article_verification": "corroborated",
       "novelty_delta": "Stuut $52.5m Series B announcement demonstrates automated order-to-cash and invoice dispute resolution at enterprise scale",
       "delta_types": [
         "workflow"
@@ -236,7 +236,8 @@
       "evidence_notes": {
         "source_verification": "Original issuing organization or publisher article confirmed",
         "qualification_warning": "Stuut itself is a major direct competitor; narrow manual evidence workflow only, likely reject if equivalent",
-        "trakya_transferability_hypothesis": "Potentially transferable to regional logistics, industry or construction; no specific pilot verified"
+        "trakya_transferability_hypothesis": "Potentially transferable to regional logistics, industry or construction; no specific pilot verified",
+        "audit_note": "Downgraded from full: no logged original full-text verification; retain only corroborated status until source reading is documented."
       }
     },
     {
@@ -253,7 +254,7 @@
       "canonical_source_urls": [
         "https://www.freightwaves.com/news/lapd-uncovers-1m-in-stolen-bnsf-and-union-pacific-rail-cargo-at-los-angeles-area-shoe-retailer"
       ],
-      "article_verification": "full",
+      "article_verification": "corroborated",
       "novelty_delta": "LAPD recovered 59 pallets of alleged stolen rail cargo at a retailer, highlighting downstream cargo provenance gaps",
       "delta_types": [
         "workflow"
@@ -273,7 +274,8 @@
       "evidence_notes": {
         "source_verification": "Original issuing organization or publisher article confirmed",
         "qualification_warning": "Single criminal incident is not sufficient market demand evidence; avoid claims of proven solution efficacy",
-        "trakya_transferability_hypothesis": "Potentially transferable to regional logistics, industry or construction; no specific pilot verified"
+        "trakya_transferability_hypothesis": "Potentially transferable to regional logistics, industry or construction; no specific pilot verified",
+        "audit_note": "Downgraded from full: no logged original full-text verification; retain only corroborated status until source reading is documented."
       }
     },
     {
@@ -290,7 +292,7 @@
       "canonical_source_urls": [
         "https://www.mlit.go.jp/report/press/kanbo08_hh_001361.html"
       ],
-      "article_verification": "full",
+      "article_verification": "corroborated",
       "novelty_delta": "Japan MLIT published construction physical AI interim strategy September 4, including field implementation and public-private collaboration",
       "delta_types": [
         "workflow"
@@ -310,7 +312,8 @@
       "evidence_notes": {
         "source_verification": "Original issuing organization or publisher article confirmed",
         "qualification_warning": "Primary announcement dates to September 4; October 8 headline is a resurfaced item, not a new October 8 regulatory change",
-        "trakya_transferability_hypothesis": "Potentially transferable to regional logistics, industry or construction; no specific pilot verified"
+        "trakya_transferability_hypothesis": "Potentially transferable to regional logistics, industry or construction; no specific pilot verified",
+        "audit_note": "Downgraded from full: no logged original full-text verification; retain only corroborated status until source reading is documented."
       }
     }
   ],
@@ -480,7 +483,7 @@
   ],
   "missing_batches": [],
   "failure_reason": "Seven potentially relevant shortlisted originals not yet source-verified; cannot declare exhaustive opportunity extraction.",
-  "notes": "18 candidate records dispositioned; NTT DATA laboratory headline held out as no distinct software delta. Six source reviews still deferred; status incomplete.",
+  "notes": "18 candidate records dispositioned; NTT DATA laboratory headline held out as no distinct software delta. Six source reviews still deferred; status incomplete. Verification-label reconciliation: three full labels downgraded to corroborated, because verified original article count remains zero.",
   "reviewed_candidate_count": 18,
   "candidate_dispositions": {
     "raw_opportunity_captured": 8,
@@ -494,6 +497,8 @@
     "deferred_unverified_candidates": 7,
     "rejected_noise": 3,
     "method": "Conservative reconciliation; original source URLs alone do not prove full-text reading",
-    "remaining_deferred_count": 6
+    "remaining_deferred_count": 6,
+    "downgraded_unsubstantiated_full_labels": 3,
+    "raw_idea_labels_now_consistent_with_verified_count": true
   }
 }
