@@ -1,0 +1,410 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-08",
+  "chunk_number": 5,
+  "candidate_ids": [
+    "c-20261008-w2-20261008-002",
+    "c-20261008-w1-20261008-001",
+    "c-20261008-w4-20261008-005",
+    "c-20261008-W3-20261008-012",
+    "c-20261008-W3-20261008-013"
+  ],
+  "expected_candidate_count": 5,
+  "validated_candidate_count": 5,
+  "status": "complete",
+  "results": [
+    {
+      "candidate_id": "c-20261008-w2-20261008-002",
+      "validation_index": 21,
+      "canonical_key": "elektrikli-traktör-görev-simülatörü",
+      "development_verified": true,
+      "canonical_news_source": "International Council on Clean Transportation",
+      "canonical_news_title": "Electric tractors in India: Evidence from real-world pilots and implications for policy",
+      "canonical_news_date": "2026-10-04",
+      "canonical_news_url": "https://theicct.org/publication/electric-tractors-in-india-evidence-from-real-world-pilots-and-implications-for-policy-oct26/",
+      "source_links": [
+        "https://theicct.org/publication/electric-tractors-in-india-evidence-from-real-world-pilots-and-implications-for-policy-oct26/",
+        "https://www.dac.eu/en/tco-calculator",
+        "https://calculator.januselectric.com/",
+        "https://lovable.dev/pricing"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 0,
+      "global_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "DAC diesel/electric fleet calculator",
+          "url": "https://www.dac.eu/en/tco-calculator",
+          "reason": "Off-highway diesel/electric operational-cost calculator, but not tractor-specific battery and task simulation."
+        },
+        {
+          "name": "Janus Electric fleet calculator",
+          "url": "https://calculator.januselectric.com/",
+          "reason": "Commercial-vehicle diesel/electric payback, not tractor duty cycle."
+        }
+      ],
+      "competition_search_terms": [
+        "elektrikli traktör iş süresi şarj dizel kıyaslama hesaplayıcı Türkiye",
+        "tractor battery duty cycle cost simulator electric diesel",
+        "electric tractor fleet TCO feasibility software"
+      ],
+      "market_gap": "Specific tractor implement/workload, state-of-charge and charge-window constraints not established as solved by a direct competitor; full global/Türkiye coverage not proven.",
+      "mvp": "User enters implements, hectares, work hours, battery kWh, charging rate, energy/diesel price; compare feasible shifts and expenses.",
+      "working_logic": "Define duty-cycle -> compute work energy and battery reserve -> schedule charges -> compare diesel and electric energy inputs -> export assumptions.",
+      "technologies": [
+        "Lovable responsive UI",
+        "deterministic equations",
+        "manual pilot parameters",
+        "CSV export"
+      ],
+      "external_cash_cost": "not_verified",
+      "lovable_credits_total": 300,
+      "lovable_credit_breakdown": {
+        "input": 60,
+        "energy_model": 90,
+        "cost_model": 60,
+        "report": 50,
+        "testing": 40,
+        "source": "unbenchmarked_planning_estimate",
+        "verified": false
+      },
+      "build_time": "Unverified; 10 theoretical minimum free-tier months at 30 build credits/month",
+      "business_models": [
+        "Feasibility study license",
+        "Source-code transfer"
+      ],
+      "marketing_strategy": "Agricultural machinery dealers and cooperatives; demonstration calculations using user-provided inputs",
+      "first_customer_plan": "Request one farmer cooperative's tractor tasks and validate model with field measurements.",
+      "main_risk": "Incorrect battery degradation, implement load and charging claims; Indian pilot not necessarily transferable to Turkish crops.",
+      "validation_assumption": "Supplier-agnostic tractor work-cycle simulator unmet in Turkish buyers.",
+      "evidence_strength": "high source; low competition coverage",
+      "competition_confidence": "low",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "No Lüleburgaz target asserted; Trakya hypothesis does not establish local market without primary buyer proof.",
+      "validated_scope_hint": "Türkiye",
+      "qualification_status": "competition_not_verified",
+      "verification_caveat": "Türkiye direct-competitor count records zero confirmed in this bounded search, NOT absence of competitors. Zero-cash hosting/storage and Lovable credits unproven; no qualification granted."
+    },
+    {
+      "candidate_id": "c-20261008-w1-20261008-001",
+      "validation_index": 22,
+      "canonical_key": "endüstriyel robot kullanan üretim tesisleri|robot tedarik sözleşmesinde üretim verisi, model eğitimi ve çıkış haklarını kanıtlı olarak incelemek|robot tedarikçisi sözleşme maddesi matrisi + veri hakkı envanteri + onay ve",
+      "development_verified": true,
+      "canonical_news_source": "Automation World",
+      "canonical_news_title": "Who Owns What Robots Learn? The Next Industrial Automation Contract Fight",
+      "canonical_news_date": "2026-10-07",
+      "canonical_news_url": "https://www.automationworld.com/factory/robotics/article/55410053/who-owns-what-robots-learn-the-next-industrial-automation-contract-fight",
+      "source_links": [
+        "https://www.automationworld.com/factory/robotics/article/55410053/who-owns-what-robots-learn-the-next-industrial-automation-contract-fight",
+        "https://www.khendarobotics.com/data-governance/",
+        "https://www.venable.com/insights/publications/2026/06/contracting-for-ai-model-training-key",
+        "https://lovable.dev/pricing"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 0,
+      "global_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "Khenda Robotics",
+          "url": "https://www.khendarobotics.com/data-governance/",
+          "reason": "Robotics training data licensing and manufacturing data consent, but provider-side collection/license management rather than buyer-side robot supplier contract matrix."
+        },
+        {
+          "name": "Venable AI data rights legal guidance",
+          "url": "https://www.venable.com/insights/publications/2026/06/contracting-for-ai-model-training-key",
+          "reason": "Legal advisory content, not a reusable workflow platform."
+        }
+      ],
+      "competition_search_terms": [
+        "endüstriyel robot verisi model eğitimi tedarikçi sözleşme takip yazılımı",
+        "industrial robotics contract training data rights approval matrix software",
+        "manufacturing robot data ownership vendor license ledger"
+      ],
+      "market_gap": "Buyer-side robotics training-data usage, model derivative rights, exit tests and legal signoff could be a niche, but contract lifecycle platforms and Turkish competitors need wider verification.",
+      "mvp": "Manually record OEM agreements, production datasets, training rights, derivative model claims, revocation/exit and legal approval.",
+      "working_logic": "Upload/manual clauses -> tag asset/right/party -> flag omitted clauses -> legal review -> export negotiation matrix.",
+      "technologies": [
+        "Lovable UI",
+        "manual contract clause inventory",
+        "approval ledger",
+        "CSV/PDF exports"
+      ],
+      "external_cash_cost": "not_verified",
+      "lovable_credits_total": 320,
+      "lovable_credit_breakdown": {
+        "contract_matrix": 110,
+        "right_ledger": 70,
+        "review": 65,
+        "export": 40,
+        "tests": 35,
+        "source": "unbenchmarked_planning_estimate",
+        "verified": false
+      },
+      "build_time": "Unverified; 11 theoretical minimum free-tier months at 30 build credits/month",
+      "business_models": [
+        "B2B per-factory license",
+        "Negotiation pack source-code sale"
+      ],
+      "marketing_strategy": "Industrial OEM procurement and plant legal counsel, avoiding automated legal judgments.",
+      "first_customer_plan": "Conduct interviews with robotics procurement lead and manufacturing counsel; identify specific contract gaps.",
+      "main_risk": "Trade secret/IP and contract confidentiality; legal advice limits; incumbent CLM overlap.",
+      "validation_assumption": "Robotics-specific OEM agreement/data licensing rights workflow differs from generic contract lifecycle tooling.",
+      "evidence_strength": "high source; low direct-competitor coverage",
+      "competition_confidence": "low",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "No Lüleburgaz target asserted; Trakya hypothesis does not establish local market without primary buyer proof.",
+      "validated_scope_hint": "Dünya",
+      "qualification_status": "competition_not_verified",
+      "verification_caveat": "Türkiye direct-competitor count records zero confirmed in this bounded search, NOT absence of competitors. Zero-cash hosting/storage and Lovable credits unproven; no qualification granted."
+    },
+    {
+      "candidate_id": "c-20261008-w4-20261008-005",
+      "validation_index": 23,
+      "canonical_key": "enterprise-agent-teams|assign-agent-ownership|registry-runbook-escalation-desk",
+      "development_verified": "partial",
+      "canonical_news_source": "Impress Watch Cloud",
+      "canonical_news_title": "HPE briefing on enterprise agentic AI operating model",
+      "canonical_news_date": "2026-10-06",
+      "canonical_news_url": "https://cloud.watch.impress.co.jp/docs/news/2146302.html",
+      "source_links": [
+        "https://cloud.watch.impress.co.jp/docs/news/2146302.html",
+        "https://www.credo.ai/product",
+        "https://www.onetrust.com/solutions/ai-governance/ai-discovery-and-registry/",
+        "https://zenity.io/platform/ai-observability",
+        "https://lovable.dev/pricing"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "Credo AI Agent Registry",
+          "url": "https://www.credo.ai/product",
+          "reason": "Explicit agent registry, dependency graphs, governance workflows and human-in-loop escalation for same enterprise operations buyer."
+        },
+        {
+          "name": "OneTrust AI Discovery and Registry",
+          "url": "https://www.onetrust.com/solutions/ai-governance/ai-discovery-and-registry/",
+          "reason": "Agent inventory, accountable owners, lifecycle, ownership records and routing gaps into reviews, overlapping ownership desk."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Zenity AI Observability",
+          "url": "https://zenity.io/platform/ai-observability",
+          "reason": "Agent inventory and owners but focuses on security posture, not general runbooks/escalation operations."
+        }
+      ],
+      "competition_search_terms": [
+        "AI agent accountable owner inventory dependency graph escalation workflow platform",
+        "yapay zeka ajan envanter sahiplik bağımlılık yönetimi platformu",
+        "enterprise agent ownership registry runbook incident escalation"
+      ],
+      "market_gap": "Credo AI already provides agent registry and dependency mapping; OneTrust provides ownership/lifecycle tracking. Generic agent ownership desk lacks a unique job.",
+      "mvp": "Agent records with owners, dependencies, runbooks and escalation tasks, CSV import/export.",
+      "working_logic": "Register agent -> map dependency -> name owner -> attach runbook -> route escalation.",
+      "technologies": [
+        "Lovable UI",
+        "relational tables",
+        "owner roles",
+        "CSV export"
+      ],
+      "external_cash_cost": "not_verified",
+      "lovable_credits_total": 230,
+      "lovable_credit_breakdown": {
+        "registry": 60,
+        "graph": 60,
+        "runbook": 45,
+        "escalations": 35,
+        "testing": 30,
+        "source": "unbenchmarked_planning_estimate",
+        "verified": false
+      },
+      "build_time": "Unverified; 8 theoretical minimum free-tier months at 30 build credits/month",
+      "business_models": [
+        "Enterprise SaaS",
+        "Source-code sale"
+      ],
+      "marketing_strategy": "No pursuit without a narrowly differentiated vertical workflow.",
+      "first_customer_plan": "Identify an operational requirement Credo/OneTrust cannot provide; no evidence found.",
+      "main_risk": "Direct global incumbents and integrations; operational ownership overlaps governance tools.",
+      "validation_assumption": "Simple ownership matrix cannot meaningfully differentiate against Credo/OneTrust.",
+      "evidence_strength": "high vendor functionality; partial Japanese source",
+      "competition_confidence": "high for global",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "No Lüleburgaz target asserted; Trakya hypothesis does not establish local market without primary buyer proof.",
+      "validated_scope_hint": "Dünya",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Confirmed same buyer/core job and substantially same workflow via listed platforms; narrow differentiation not demonstrated.",
+      "verification_caveat": "Türkiye direct-competitor count records zero confirmed in this bounded search, NOT absence of competitors. Zero-cash hosting/storage and Lovable credits unproven; no qualification granted."
+    },
+    {
+      "candidate_id": "c-20261008-W3-20261008-012",
+      "validation_index": 24,
+      "canonical_key": "enterprise-ai-operations-teams|ai-agent-action-audit|webhook-manual-event-import",
+      "development_verified": true,
+      "canonical_news_source": "IBM",
+      "canonical_news_title": "From governance policies to governance proof with Enforcement Tracking for watsonx Orchestrate",
+      "canonical_news_date": "2026-08-11",
+      "canonical_news_url": "https://www.ibm.com/new/announcements/from-governance-policies-to-governance-proof-with-enforcement-tracking-for-watsonx-orchestrate",
+      "source_links": [
+        "https://www.ibm.com/new/announcements/from-governance-policies-to-governance-proof-with-enforcement-tracking-for-watsonx-orchestrate",
+        "https://www.credo.ai/product",
+        "https://zenity.io/platform",
+        "https://lovable.dev/pricing"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "IBM watsonx.governance Enforcement Tracking",
+          "url": "https://www.ibm.com/new/announcements/from-governance-policies-to-governance-proof-with-enforcement-tracking-for-watsonx-orchestrate",
+          "reason": "Automatic agent evaluation evidence collected into governance control records; substantial same-team authorization/control proof workflow."
+        },
+        {
+          "name": "Credo AI Agent Governor / Registry",
+          "url": "https://www.credo.ai/product",
+          "reason": "Agent policy enforcement, trace ingestion, approvals, exception escalation and audit trail for governance buyers."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Zenity",
+          "url": "https://zenity.io/platform",
+          "reason": "Security posture and runtime policy enforcement, adjacent action-audit coverage."
+        }
+      ],
+      "competition_search_terms": [
+        "AI agent tool call approval audit receipt log platform",
+        "watsonx orchestrate enforcement evidence audit trail",
+        "Türkiye ai agent aksiyon denetim kayıt izni yazılımı"
+      ],
+      "market_gap": "Independent lightweight receipts may be simpler, but IBM and Credo already have agent action governance and evidence workflows; no specific differentiator verified.",
+      "mvp": "Manual/webhook action event registry with actor and approver, permission, timestamp, exception and review export.",
+      "working_logic": "Ingest event -> identify agent and authorized principal -> match rule -> queue reviewer -> preserve receipt.",
+      "technologies": [
+        "Lovable UI",
+        "webhook import",
+        "signed event reference",
+        "CSV export"
+      ],
+      "external_cash_cost": "not_verified",
+      "lovable_credits_total": 135,
+      "lovable_credit_breakdown": {
+        "ingest": 40,
+        "logs": 35,
+        "authorization": 30,
+        "review": 20,
+        "tests": 10,
+        "source": "unbenchmarked_planning_estimate",
+        "verified": false
+      },
+      "build_time": "Unverified; 5 theoretical minimum free-tier months at 30 build credits/month",
+      "business_models": [
+        "Governance-seat license",
+        "On-prem code transfer"
+      ],
+      "marketing_strategy": "Do not sell broad action receipts against established vendor suites; narrow by platform only after demand tests.",
+      "first_customer_plan": "Find one integration-specific audit weakness with customer validation.",
+      "main_risk": "Integrity/provenance guarantees, security requirements and existing broad governance vendors.",
+      "validation_assumption": "Generic approval receipt platform has unserved buyer needs; not demonstrated.",
+      "evidence_strength": "high IBM source; high global overlap",
+      "competition_confidence": "high",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "No Lüleburgaz target asserted; Trakya hypothesis does not establish local market without primary buyer proof.",
+      "validated_scope_hint": "Dünya",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Confirmed same buyer/core job and substantially same workflow via listed platforms; narrow differentiation not demonstrated.",
+      "verification_caveat": "Türkiye direct-competitor count records zero confirmed in this bounded search, NOT absence of competitors. Zero-cash hosting/storage and Lovable credits unproven; no qualification granted."
+    },
+    {
+      "candidate_id": "c-20261008-W3-20261008-013",
+      "validation_index": 25,
+      "canonical_key": "enterprise-ai-programme-buyers|agent-vendor-procurement-and-handover|deliverable-inventory",
+      "development_verified": true,
+      "canonical_news_source": "Gartner",
+      "canonical_news_title": "Gartner Predicts 70% of Enterprises Will Abandon Agentic AI Built by Vendor Forward-Deployed Engineering by 2028",
+      "canonical_news_date": "2026-09-29",
+      "canonical_news_url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-29-gartner-predicts-70-percent-of-enterprises-will-abandon-agentic-ai-built-by-vendor-forward-deployed-engineering-by-2028",
+      "source_links": [
+        "https://www.gartner.com/en/newsroom/press-releases/2026-09-29-gartner-predicts-70-percent-of-enterprises-will-abandon-agentic-ai-built-by-vendor-forward-deployed-engineering-by-2028",
+        "https://www.kumohq.co/blog/ai-vendor-exit-handover-checklist-2026",
+        "https://handover.sh/tools/ai-agent-governance-checklist",
+        "https://aicloudstrategist.com/resources/global-enterprise-ai-agent-vendor-exit-portability-evidence-checklist/",
+        "https://lovable.dev/pricing"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 0,
+      "global_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "KUMO vendor exit checklist",
+          "url": "https://www.kumohq.co/blog/ai-vendor-exit-handover-checklist-2026",
+          "reason": "AI production handover acceptance tests; guidance rather than confirmed software workflow."
+        },
+        {
+          "name": "Handover AI governance checklist",
+          "url": "https://handover.sh/tools/ai-agent-governance-checklist",
+          "reason": "Interactive agent controls and named owner checklist; adjacent governance checklist, not full commercial vendor exit acceptance workflow."
+        },
+        {
+          "name": "AICloudStrategist vendor exit checklist",
+          "url": "https://aicloudstrategist.com/resources/global-enterprise-ai-agent-vendor-exit-portability-evidence-checklist/",
+          "reason": "Buyer checklist covering source, prompts, ownership, fallback and acceptance evidence, not verified as full workflow product."
+        }
+      ],
+      "competition_search_terms": [
+        "AI vendor exit handover acceptance evidence platform software",
+        "agent source code ownership knowledge transfer procurement gates SaaS",
+        "Türkiye AI proje kaynak kod teslim kabul tedarikçi çıkış kontrol yazılımı"
+      ],
+      "market_gap": "Structured multi-vendor handover acceptance matrix and buyer signoff may have a segment, but specialized software market not exhaustively verified; checklists exist.",
+      "mvp": "Deliverable inventory, source/access transfer tests, reproducible redeploy checklist, IP rights and reviewer acceptance report.",
+      "working_logic": "Procurement defines obligations -> vendor submits links/artifacts -> internal team tests redeploy/key rotation/rollback -> records gaps -> signoff.",
+      "technologies": [
+        "Lovable UI",
+        "document reference/links",
+        "manual acceptance tests",
+        "CSV/PDF handover report"
+      ],
+      "external_cash_cost": "not_verified",
+      "lovable_credits_total": 115,
+      "lovable_credit_breakdown": {
+        "checklists": 30,
+        "inventory": 35,
+        "acceptance": 25,
+        "export": 15,
+        "tests": 10,
+        "source": "unbenchmarked_planning_estimate",
+        "verified": false
+      },
+      "build_time": "Unverified; 4 theoretical minimum free-tier months at 30 build credits/month",
+      "business_models": [
+        "Per-project handover workspace",
+        "Source-code sale to procurement consultancy"
+      ],
+      "marketing_strategy": "CIO and enterprise IT procurement with vendor lock-in problems.",
+      "first_customer_plan": "Pilot with one AI implementation procurement and technical acceptance owner.",
+      "main_risk": "Highly regulated contracts, confidentiality and substitution by ServiceNow/Jira/CLM; Gartner claim is a prediction not observed outcome.",
+      "validation_assumption": "Vendor-specific handover acceptance is not covered by current CLM/GRC solutions.",
+      "evidence_strength": "high Gartner original; incomplete direct-software search",
+      "competition_confidence": "low",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "No Lüleburgaz target asserted; Trakya hypothesis does not establish local market without primary buyer proof.",
+      "validated_scope_hint": "Dünya",
+      "qualification_status": "competition_not_verified",
+      "verification_caveat": "Türkiye direct-competitor count records zero confirmed in this bounded search, NOT absence of competitors. Zero-cash hosting/storage and Lovable credits unproven; no qualification granted."
+    }
+  ],
+  "completed_at": "2026-10-08",
+  "research_scope_note": "Competition classification provisional where direct vendor workflow not established, so competition_not_verified rather than qualified; cost feasibility remains unproven."
+}
