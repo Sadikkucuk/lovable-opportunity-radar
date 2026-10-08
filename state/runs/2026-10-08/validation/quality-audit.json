@@ -38,18 +38,14 @@
     48,
     49,
     50,
-    51,
-    52,
-    53,
-    54,
     55
   ],
   "source_date_unverified_indexes": [
     29,
-    51,
-    52,
-    53,
-    54,
+    31,
+    33,
+    34,
+    35,
     55
   ],
   "zero_external_cash_unverified_indexes": [
@@ -119,7 +115,7 @@
   "publication_gate": {
     "allow_catalog_write": false,
     "allow_qualified_idea_publication": false,
-    "reason": "All 55 records are classified, but 31 source confirmations partial/unverified and all 55 external zero-cash feasibility fields unverified; zero qualified items. Do not mislabel completed research and do not publish tentative competition_not_verified candidates as validated production-ready ideas."
+    "reason": "All 55 records classified, 27 primary source rechecks incomplete, 6 dates unknown, 55 zero-cash feasibility unverified."
   },
   "next_steps": [
     "Prioritize 24 competition_not_verified candidates for direct-competitor research",
@@ -169,5 +165,14 @@
       "decision": "retain_competition_not_verified_and_block_catalog_publication"
     }
   ],
-  "next_action_priority": "Complete original-primary-source verification and zero-cost evidence for the remaining 24 competition-not-verified candidates before any qualified/catalog publication. Keep 55 classified versus 0 qualified clearly separate."
+  "next_action_priority": "Complete original-primary-source verification and zero-cost evidence for the remaining 24 competition-not-verified candidates before any qualified/catalog publication. Keep 55 classified versus 0 qualified clearly separate.",
+  "quality_gate_reaudit": {
+    "date": "2026-10-08",
+    "method": "Recomputed from all 11 current validation chunks, not cached previous count",
+    "partial_primary_count": 27,
+    "unknown_source_date_count": 6,
+    "zero_cost_unverified_count": 55,
+    "competition_incomplete_row_count": 31,
+    "notes": "Status complete means classified, not qualified; publication remains blocked."
+  }
 }
