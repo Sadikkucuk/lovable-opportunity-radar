@@ -253,24 +253,41 @@
       "source_links": [
         "https://thevc.kr/dataalliance",
         "https://www.nvidia.com/en-us/ai/",
-        "https://lovable.dev/pricing"
+        "https://lovable.dev/pricing",
+        "https://docs.memverge.com/AI/GPU_Manager/latest/admin_guide/billing/",
+        "https://goaiocean.com/en/",
+        "https://openondemand.org/software/xdmod",
+        "https://open.xdmod.org/11.0/configuration.html"
       ],
       "turkiye_direct_competitor_count": null,
       "turkiye_competitors": [],
-      "global_direct_competitor_count": null,
-      "global_competitors": [],
+      "global_direct_competitor_count": 1,
+      "global_competitors": [
+        {
+          "name": "MemVerge GPU Cluster Manager",
+          "url": "https://docs.memverge.com/AI/GPU_Manager/latest/admin_guide/billing/",
+          "reason": "Same shared-GPU resource manager buyer and core reservation/quota/usage-chargeback workflow: departments reserve GPU capacity, share unused allocations, track per-project usage, and attribute costs across departments. CSV billing export explicitly documented as future release, not currently available."
+        }
+      ],
       "adjacent_competitors": [
         {
-          "name": "GPU orchestration/scheduler",
-          "url": "https://www.nvidia.com/en-us/ai/",
-          "reason": "General compute scheduling overlaps likely; GPU booking and invoice-grade chargeback direct vendor not sufficiently checked."
+          "name": "Ocean GPU Cluster Management for Research Labs",
+          "url": "https://goaiocean.com/en/",
+          "reason": "Same research-lab GPU allocation/quotas and reservation problem; published page does not demonstrate departmental billing/chargeback."
+        },
+        {
+          "name": "Open OnDemand + Open XDMoD",
+          "url": "https://openondemand.org/software/xdmod",
+          "reason": "Open-source HPC job portals and resource/GPU-hour utilization accounting can solve many adjacent needs; an integrated invoice-grade booking and chargeback workflow is not established."
         }
       ],
       "competition_search_terms": [
-        "Allocate and audit shared GPU time. software global competitors",
-        "Allocate and audit shared GPU time. platform Türkiye"
+        "GPU resource reservation departmental cost chargeback booking software",
+        "research lab GPU allocation quota reservation portal",
+        "MemVerge GPU Cluster Manager billing reservations chargeback",
+        "Türkiye GPU laboratuvar rezervasyon kota departman maliyet paylaştırma"
       ],
-      "market_gap": "Exact direct competition not exhaustively established.",
+      "market_gap": "Generic GPU reservation, sharing, quota administration and departmental usage chargeback have an existing direct platform; niche approval and CSV export may be narrower differentiators but are insufficient without buyer evidence.",
       "mvp": "Time-slot request ledger, quotas, usage CSV and chargeback exports.",
       "working_logic": "Bookings and utilization proofs are managed in spreadsheets. -> Time-slot request ledger, quotas, usage CSV and chargeback exports.",
       "technologies": [
@@ -292,15 +309,17 @@
       ],
       "marketing_strategy": "Buyer interviews required before launch.",
       "first_customer_plan": "Validate narrowly defined unmet workflow with one organization.",
-      "main_risk": "General compute scheduling overlaps likely; GPU booking and invoice-grade chargeback direct vendor not sufficiently checked.",
+      "main_risk": "MemVerge provides substantially overlapping reservation and departmental cost allocation features; Ocean addresses lab GPU quota/booking needs. Source evidence is an aggregator rather than a dated original product announcement.",
       "validation_assumption": "Commercial differentiation and no-cash deployment unverified.",
-      "evidence_strength": "partial_original_source_and_competitor",
-      "competition_confidence": "not_verified",
+      "evidence_strength": "direct_primary_vendor_documentation_high; original_trigger_date_partial",
+      "competition_confidence": "high_for_direct_global_competitor; Türkiye_direct_comparison_not_exhaustive",
       "local_scope_verified": "not_applicable",
       "local_scope_evidence": [],
       "local_applicability_rationale": "Global buyer scope.",
       "validated_scope_hint": "Dünya",
-      "qualification_status": "competition_not_verified"
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Official MemVerge GPU Cluster Manager documentation already provides GPU reservation, internal sharing, departmental utilization tracking and chargeback for shared resource operators. Same buyer/core job and substantial workflow overlap; no validated niche differentiation.",
+      "review_notes": "CSV/Excel export in MemVerge billing docs is expressly a future feature, not a current one; avoid false equivalence on exports. Keep original discovery partially verified because The VC is a company/news aggregation page; dated new-product original remains unverified."
     },
     {
       "candidate_id": "c-20261008-W3-20261008-007",
