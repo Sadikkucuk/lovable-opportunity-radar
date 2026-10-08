@@ -21,7 +21,11 @@
       "state/runs/2026-10-08/validation/chunk-010.json",
       "state/runs/2026-10-08/validation/chunk-011.json"
     ],
-    "note": "Assembly of preexisting individual validation decisions; no additional independent research performed."
+    "note": "Assembly of preexisting individual validation decisions; no additional independent research performed.",
+    "canonical_source": "validation/chunk-001..011.json",
+    "chunk_reconciliation_run_date": "2026-10-08",
+    "partial_reconciliation_range": "1-30",
+    "pending_range": "31-55"
   },
   "results": [
     {
@@ -967,10 +971,10 @@
       "candidate_id": "c-20261008-w4-20261008-005",
       "validation_index": 23,
       "canonical_key": "enterprise-agent-teams|assign-agent-ownership|registry-runbook-escalation-desk",
-      "development_verified": "partial",
+      "development_verified": true,
       "canonical_news_source": "Impress Watch Cloud",
-      "canonical_news_title": "HPE briefing on enterprise agentic AI operating model",
-      "canonical_news_date": "2026-10-06",
+      "canonical_news_title": "エージェンティックAI時代の運用課題とその解決策とは――HPEが提案",
+      "canonical_news_date": "2026-10-07",
       "canonical_news_url": "https://cloud.watch.impress.co.jp/docs/news/2146302.html",
       "source_links": [
         "https://cloud.watch.impress.co.jp/docs/news/2146302.html",
@@ -1035,7 +1039,7 @@
       "first_customer_plan": "Identify an operational requirement Credo/OneTrust cannot provide; no evidence found.",
       "main_risk": "Direct global incumbents and integrations; operational ownership overlaps governance tools.",
       "validation_assumption": "Simple ownership matrix cannot meaningfully differentiate against Credo/OneTrust.",
-      "evidence_strength": "high vendor functionality; partial Japanese source",
+      "evidence_strength": "high original article and vendor functionality",
       "competition_confidence": "high for global",
       "local_scope_verified": "not_applicable",
       "local_scope_evidence": [],
@@ -1043,7 +1047,20 @@
       "validated_scope_hint": "Dünya",
       "qualification_status": "rejected_competition",
       "rejection_reason": "Confirmed same buyer/core job and substantially same workflow via listed platforms; narrow differentiation not demonstrated.",
-      "verification_caveat": "Türkiye direct-competitor count records zero confirmed in this bounded search, NOT absence of competitors. Zero-cash hosting/storage and Lovable credits unproven; no qualification granted."
+      "verification_caveat": "Türkiye direct-competitor count records zero confirmed in this bounded search, NOT absence of competitors. Zero-cash hosting/storage and Lovable credits unproven; no qualification granted.",
+      "primary_source_recheck": {
+        "status": "verified_full_article",
+        "checked_on": "2026-10-08",
+        "url": "https://cloud.watch.impress.co.jp/docs/news/2146302.html",
+        "publication_date": "2026-10-07 12:15 Japan time",
+        "event_date": "2026-10-06",
+        "findings": [
+          "Japan HPE presented agentic enterprise operations on October 6; article published October 7.",
+          "HPE OpsRamp provides AI model/agent observability, token/cost visibility and operational management.",
+          "Original news proves operations pain but does not claim HPE sells a standalone owner/runbook/escalation desk."
+        ],
+        "qualification_unchanged": "rejected_competition"
+      }
     },
     {
       "candidate_id": "c-20261008-W3-20261008-013",
@@ -1233,10 +1250,10 @@
         "https://www.huxiu.com/article/4895286.html",
         "https://lovable.dev/pricing"
       ],
-      "development_verified": "partial",
+      "development_verified": true,
       "canonical_news_source": "Huxiu",
-      "canonical_news_title": "EV battery market article",
-      "canonical_news_date": "not_verified",
+      "canonical_news_title": "过了个国庆，新能源成“传家宝”了？",
+      "canonical_news_date": "2026-10-07",
       "canonical_news_url": "https://www.huxiu.com/article/4895286.html",
       "turkiye_direct_competitor_count": 1,
       "turkiye_competitors": [
@@ -1279,12 +1296,20 @@
       ],
       "marketing_strategy": "Dealer validation first.",
       "first_customer_plan": "Interview used-EV dealers about unsolved repair-history workflows.",
-      "main_risk": "Unverified Huxiu source and proprietary diagnostic inputs; EU passport differs from current used-car certificate.",
+      "main_risk": "Original article verified but regulatory claims need primary-source checks; proprietary SOH diagnostics and direct certificate/passport competitors limit differentiation.",
       "validation_assumption": "Independent dealers need repair lifecycle histories beyond existing certificate providers.",
       "evidence_strength": "strong_competition_partial_trigger",
       "competition_confidence": "incomplete_combined_workflow",
       "qualification_status": "competition_not_verified",
-      "review_notes": "EU passport applies to specified batteries entering EU market from February 2027; does not imply all pre-existing used EVs require retroactive certificates."
+      "review_notes": "EU passport applies to specified batteries entering EU market from February 2027; does not imply all pre-existing used EVs require retroactive certificates.",
+      "source_verification": {
+        "verified_at": "2026-10-08",
+        "method": "Full publisher article content and date checked",
+        "original_article_url": "https://www.huxiu.com/article/4895286.html",
+        "author": "邢书博",
+        "finding": "October 7 Huxiu auto-industry analysis discusses EV battery 15,000-cycle energy-storage target, vehicle-specific endurance standards, repair economics and battery asset records. The 15,000-cycle claim is not a passenger-car 20-year durability requirement.",
+        "important_limit": "Cited Chinese policy/standards and statistics are the article's claims; policy primary sources were NOT separately verified."
+      }
     },
     {
       "candidate_id": "c-20261008-w2-20261008-004",
