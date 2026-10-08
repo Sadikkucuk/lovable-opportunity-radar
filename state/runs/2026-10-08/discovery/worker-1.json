@@ -330,7 +330,7 @@
       "canonical_source_urls": [
         "https://atmarkit.itmedia.co.jp/ait/subtop/archive/"
       ],
-      "article_verification": "publisher_index_summary_only",
+      "article_verification": "insufficient",
       "novelty_delta": "AI ajanlarının token birim fiyatı düşse bile kontrolsüz kullanım nedeniyle toplam faturanın artması; görev bazlı bütçe, yeniden deneme ve token maliyeti görünürlüğü ihtiyacı.",
       "target_customer": "Birden çok AI ajanı veya API kullanan KOBİ yazılım ekipleri",
       "buyer": "CTO / yazılım geliştirme müdürü",
@@ -344,7 +344,12 @@
       "evidence_notes": {
         "source_limit": "Publisher article archive and index excerpt confirmed; full article not read. Exact article URL not confirmed.",
         "competition_warning": "Langfuse, Helicone, LangSmith and provider dashboards are strong overlapping products; differentiation and novelty validation essential",
-        "trakya_transferability_hypothesis": "Yazılım ekiplerine yatay ürün; Trakya sanayisinde yerel alıcı kanıtı henüz yok."
+        "trakya_transferability_hypothesis": "Yazılım ekiplerine yatay ürün; Trakya sanayisinde yerel alıcı kanıtı henüz yok.",
+        "verification_label_normalization": {
+          "original_label": "publisher_index_summary_only",
+          "normalized_label": "insufficient",
+          "reason": "Conform to worker schema without increasing underlying evidence"
+        }
       }
     },
     {
@@ -364,7 +369,7 @@
         "https://www.tohoku.ac.jp/japanese/2026/10/press20261002-03-AI.html",
         "https://www.tandfonline.com/doi/full/10.1080/27660400.2026.2735657"
       ],
-      "article_verification": "primary_source_and_research_paper_verified",
+      "article_verification": "full",
       "novelty_delta": "Robotik laboratuvar ısıl işlem, XRD ve mekanik testi birleştirerek 10 kattan hızlı süreç sağlıyor; çoklu test çıktılarının numune/parametre bazında izlenebilirliği gerekiyor.",
       "target_customer": "Metalurji Ar-Ge laboratuvarları, ısıl işlem tesisleri ve kalite laboratuvarları",
       "buyer": "Ar-Ge müdürü / metalurji kalite müdürü",
@@ -379,7 +384,12 @@
         "verified_fact": "Tohoku research press release October 2 2026: >10x speed vs manual process, comparable evaluation accuracy; not a claim about this proposed software",
         "competition_warning": "LIMS/ELN and materials informatics platforms may cover this workflow; must test whether any unmet segment exists",
         "trakya_transferability_hypothesis": "Çorlu-Çerkezköy-Ergene metal işleme ve ısıl işlem işletmelerine potansiyel, yerel alıcı kanıtı henüz yok",
-        "publication": "Paper online 2026-09-18 DOI 10.1080/27660400.2026.2735657"
+        "publication": "Paper online 2026-09-18 DOI 10.1080/27660400.2026.2735657",
+        "verification_label_normalization": {
+          "original_label": "primary_source_and_research_paper_verified",
+          "normalized_label": "full",
+          "reason": "Conform to worker schema without increasing underlying evidence"
+        }
       }
     },
     {
@@ -398,7 +408,7 @@
         "https://www.kisa.or.kr/401/form?page=1&postSeq=3713",
         "https://www.kisa.or.kr/402"
       ],
-      "article_verification": "official_related_guidance_verified_headline_not_full_article",
+      "article_verification": "corroborated",
       "novelty_delta": "AI red-team evaluations extend beyond model output into agent tools and surrounding platform; structured test plans and evidence packaging are needed.",
       "target_customer": "Enterprise AI implementation teams and security consultancies",
       "buyer": "AI security lead / CISO",
@@ -415,9 +425,22 @@
         "commercial_hypothesis": "Audit evidence pack for regulated AI deployment teams, not an automated red-team tool",
         "october_8_primary_confirmation": "KISA official press release listing on 2026-10-08: 인공지능(AI)으로 맞서고 인공지능(AI)을 지키는 도전이 시작된다",
         "verified_scope": "KISA announced AI security challenge on Oct 8; this is not sufficient to assert exact ZDNet testbed technical features",
-        "press_release_listing_url": "https://www.kisa.or.kr/402"
+        "press_release_listing_url": "https://www.kisa.or.kr/402",
+        "verification_label_normalization": {
+          "original_label": "official_related_guidance_verified_headline_not_full_article",
+          "normalized_label": "corroborated",
+          "reason": "Conform to worker schema without increasing underlying evidence"
+        }
       }
     }
   ],
-  "notes": "KISA October 8 official press release listing corroborated the AI security initiative; full ZDNet testbed details not independently verified. 11 raw opportunities, W1 incomplete."
+  "notes": "KISA October 8 official press release listing corroborated the AI security initiative; full ZDNet testbed details not independently verified. 11 raw opportunities, W1 incomplete. Verification enum normalization completed; no change to underlying evidence or raw opportunity count.",
+  "verification_audit": {
+    "normalized_labels": 3,
+    "remaining_full_text_gaps": [
+      "w1-20261008-009",
+      "w1-20261008-011"
+    ],
+    "note": "Source claims were not upgraded; source-index-only marked insufficient, official related guidance marked corroborated."
+  }
 }
