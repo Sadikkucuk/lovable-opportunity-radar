@@ -7,8 +7,8 @@
   "expected_candidates": 55,
   "chunk_count": 11,
   "qualification_counts": {
-    "competition_not_verified": 21,
-    "rejected_competition": 33,
+    "competition_not_verified": 20,
+    "rejected_competition": 34,
     "rejected_evidence": 1
   },
   "primary_development_unverified_or_partial_indexes": [
@@ -82,7 +82,7 @@
   "index_to_candidate_integrity": true,
   "direct_competitor_null_counts": {
     "turkiye": 31,
-    "global": 9
+    "global": 8
   },
   "publication_gate": {
     "allow_catalog_write": false,
@@ -90,10 +90,10 @@
     "reason": "55/55 classified; 6 partially verified originals, 21 competition not verified, 55 zero-external-cash proofs not established; no catalog write."
   },
   "next_steps": [
-    "Recheck 9 remaining partial original sources",
-    "Resolve 21 remaining direct competitor investigations",
-    "Prove zero-external-cash production feasibility for any not-rejected idea before publishing",
-    "Re-run full finalizer strict quality and language gates before catalog/history write"
+    "Recheck six remaining partial original sources",
+    "Resolve 20 remaining direct competitor investigations",
+    "Prove zero-external-cash production feasibility for any not-rejected candidate before publishing",
+    "Re-run strict finalizer quality and Turkish language gates before catalog/history write"
   ],
   "catalog_action": "none",
   "history_action": "none",
@@ -155,18 +155,31 @@
         "https://tremau.com/resources/uk-online-safety-act-illegal-content-risk-assessment-operational-checklist/"
       ],
       "finding": "Tremau Ary targets OSA compliance risk assessment, structured records, feature-change checks, evidence and governance approvals for online platforms."
+    },
+    {
+      "validation_index": 47,
+      "checked_at_date": "2026-10-08",
+      "status": "rejected_competition",
+      "verified_vendor_urls": [
+        "https://www.webmcpready.com/",
+        "https://github.com/erold90/AgentReady",
+        "https://github.com/ora/webmcp",
+        "https://github.com/chapter42/webmcp-readiness-checker"
+      ],
+      "finding": "WebMCPReady and AgentReady serve site owners/developers with WebMCP readiness action/schema auditing, actionable reports and validation. Ora offers an open-source implementation/verification alternative. Persistent enterprise signoff remains an unverified differentiator.",
+      "decision": "rejected_competition"
     }
   ],
-  "next_action_priority": "6 primary article checks, 21 direct competitor investigations; prove zero-external-cash feasibility for any positive candidate before publication.",
+  "next_action_priority": "6 primary source gaps, 20 competition cases; zero-external-cash unverified for all 55.",
   "quality_gate_reaudit": {
     "date": "2026-10-08",
     "method": "Full recomputation from 11 current chunk files after Japanese MLIT, SaaS survey and Korea robotics source corrections",
     "partial_primary_count": 6,
     "unknown_source_date_count": 0,
     "zero_cost_unverified_count": 55,
-    "competition_incomplete_row_count": 21,
+    "competition_incomplete_row_count": 20,
     "qualified_count": 0,
-    "notes": "#44 Japan MLIT source dated Sep 4, verified. #48 @IT article Oct 7 verified. #34 article exact Oct 7. #45/46 CrowdWorks October 2 separated from Alchera Sep 30; original TECHWORLD blocked 403, retain partial."
+    "notes": "Recomputed from 11 complete chunks after #47 direct competitor reclassification; other original/cost gaps unchanged."
   },
   "targeted_original_source_rechecks": [
     {
