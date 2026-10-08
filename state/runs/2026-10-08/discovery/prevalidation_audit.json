@@ -141,7 +141,8 @@
   "blockers": [
     "W1 discovery incomplete: publisher paywall and KISA original article evidence gaps",
     "W2 discovery incomplete: eight provisional ideas need original-source verification and competitive assessment",
-    "All 59 raw opportunities require semantic deduplication and product qualification before release"
+    "All 59 raw opportunities require semantic deduplication and product qualification before release",
+    "Orchestrator generation gate: live feed index differs from frozen worker generation"
   ],
   "release_gate": {
     "catalog_merge_allowed": false,
@@ -161,5 +162,12 @@
     "w2_deferred_candidate_reviews_remaining": 0,
     "w2_original_articles_newly_verified": 5,
     "w1_token_article_publisher_excerpt_reviewed": true
+  },
+  "generation_integrity": {
+    "frozen_worker_generation": "2026-10-08T01:54:22Z",
+    "live_index_generation": "2026-10-08T08:54:32Z",
+    "generation_match": false,
+    "orchestrator_status": "RADAR_INPUT_MISMATCH",
+    "recovery": "Preserve frozen worker inputs; no merge against refreshed live batch index"
   }
 }
