@@ -15,7 +15,7 @@
     "rejected_evidence": 1
   },
   "quality_blockers": {
-    "partially_verified_originals_indexes": [
+    "partially_verified_originals_indexes_all": [
       13,
       38,
       40,
@@ -23,13 +23,33 @@
       46,
       49
     ],
-    "original_source_date_to_recheck_indexes": [],
+    "partially_verified_originals_indexes_blocking_publication": [],
     "competition_not_verified_count": 16,
-    "external_zero_cash_proofs_missing": 55
+    "external_zero_cash_proofs_missing_total": 55,
+    "external_zero_cash_proofs_relevant_to_potential_publication": 16,
+    "publication_blocking_candidate_indexes": [
+      1,
+      5,
+      6,
+      7,
+      11,
+      12,
+      18,
+      21,
+      22,
+      25,
+      28,
+      29,
+      33,
+      36,
+      43,
+      44
+    ]
   },
   "quality_evidence_files": [
     "state/runs/2026-10-08/validation/quality-audit.json",
-    "state/runs/2026-10-08/validation/source-date-recheck.json"
+    "state/runs/2026-10-08/validation/source-date-recheck.json",
+    "state/runs/2026-10-08/validation/publication-gate-eligibility.json"
   ],
   "corrected_primary_date_example": {
     "candidate_index": 44,
@@ -39,8 +59,8 @@
   "catalog_action": "none",
   "history_action": "none",
   "catalog_preservation": "75 original records remain unchanged",
-  "reason": "All 55 candidates classified; publication blocked due to six partially verified original developments, 16 unresolved direct competition cases and 55 missing zero-external-cash verifications.",
-  "recommended_next_stage": "Verify remaining 16 direct competitor cases and six partial primary developments; only publish if zero-external-cash production viability is demonstrated.",
+  "reason": "55 classified; 16 potential publication candidates still lack direct competition clearance and zero-external-cash production feasibility. Six partial primary sources are for rejected ideas and are informational source-quality caveats, not separate publication blockers.",
+  "recommended_next_stage": "Verify remaining 16 candidates' direct competition and zero-external-cash deployment; publish none until gates pass.",
   "report_created_at": "2026-10-08",
   "primary_source_corrections": {
     "verification_completed_indexes": [
@@ -83,5 +103,29 @@
         "MemVerge GPU Cluster Manager"
       ]
     }
-  ]
+  ],
+  "publication_eligibility_audit": "state/runs/2026-10-08/validation/publication-gate-eligibility.json",
+  "publication_blocking_candidate_indexes": [
+    1,
+    5,
+    6,
+    7,
+    11,
+    12,
+    18,
+    21,
+    22,
+    25,
+    28,
+    29,
+    33,
+    36,
+    43,
+    44
+  ],
+  "publication_blocking_candidate_count": 16,
+  "rejected_candidates_cost_proof_not_required": 39,
+  "rejected_candidates_with_partial_original_source_count": 6,
+  "publication_blocking_partial_original_source_count": 0,
+  "reconciliation_note": "Classification of all 55 is complete; 39 rejected ideas do not require zero-cost proof or full primary article verification to remain rejected. Only 16 potentially publishable records need direct-competition verification and zero-external-cash feasibility. No catalog writes until resolved."
 }
