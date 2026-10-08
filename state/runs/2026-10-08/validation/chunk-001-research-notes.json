@@ -12,21 +12,34 @@
     {
       "index": 1,
       "name": "Outbound AI Investment Notification Desk",
-      "finding": "Direct legal/compliance software market research incomplete; cannot assert zero competitors.",
-      "next": "Verify original US penalty and Treasury rule; search specialized outbound-investment compliance vendors."
+      "finding": "US Treasury Oct 7 2026 confirms first OISP $200,000 penalty against Amidi. Kharon explicitly markets OISP compliance screening: direct overlap in same investment buyer and OISP controls, though notification case-file workflow not fully established. Zero-direct-competitor claim invalid.",
+      "next": "Verify original US penalty and Treasury rule; search specialized outbound-investment compliance vendors.",
+      "sources": [
+        "https://home.treasury.gov/news/press-releases/sb0652/",
+        "https://go.kharon.com/outboundinvestment",
+        "https://www.kharon.com/solutions/industries/asset-management"
+      ]
     },
     {
       "index": 2,
       "name": "AI Materials Recipe-to-Lab Handoff",
-      "finding": "Existing ELN/LIMS category requires direct-workflow assessment; do not treat all notebooks as direct.",
-      "next": "Check Labguru, SciNote, MaterialsZone and Turkey lab software vendors."
+      "finding": "SciNote ELN already provides experiment/protocol versioning, task assignment, linked results, electronic signatures and audit trail; substantial same-customer same-job workflow overlap. This is a credible direct global competitor, not merely adjacent.",
+      "next": "Check Labguru, SciNote, MaterialsZone and Turkey lab software vendors.",
+      "sources": [
+        "https://www.scinote.net/",
+        "https://www.scinote.net/product/"
+      ]
     },
     {
       "index": 3,
       "name": "Agent Sandbox Readiness Desk",
-      "finding": "Many runtime sandbox vendors exist (E2B, Daytona, Modal); these are adjacent to evidence/readiness workflow, not automatically direct.",
+      "finding": "E2B and Daytona are confirmed sandbox runtime providers and adjacent infrastructure; neither cited source establishes a standalone sandbox assessment evidence desk. Further direct search required.",
       "source": "https://rywalker.com/research/ai-agent-sandboxes",
-      "next": "Search sandbox assessment checklist/evidence platforms specifically."
+      "next": "Search sandbox assessment checklist/evidence platforms specifically.",
+      "sources": [
+        "https://e2b.dev/security",
+        "https://www.daytona.io/docs/"
+      ]
     },
     {
       "index": 4,
@@ -38,10 +51,16 @@
     {
       "index": 5,
       "name": "Text Watermark Rollout QA Matrix",
-      "finding": "OpenAI original Oct 5 announcement confirms text watermark rollout; provenance detection is distinct from QA release approval workflow.",
+      "finding": "OpenAI original confirms Oct 5 EU phased rollout and global API opt-in. Text detector restricted to approved researchers; proposed MVP must not promise automatic watermark verification or require restricted detector API.",
       "source": "https://openai.com/index/eu-text-provenance/",
-      "next": "Research watermark rollout test management direct competitors."
+      "next": "Research watermark rollout test management direct competitors.",
+      "sources": [
+        "https://openai.com/index/eu-text-provenance/",
+        "https://help.openai.com/en/articles/8912793-provenance-signals-in-openai-generated-content"
+      ],
+      "mvp_constraint": "Manual model-region configuration, test evidence uploads, human release signoff; no detector API dependency."
     }
   ],
-  "gate": "No chunk-001 complete and no progress increment until all five candidates meet validator schema and competitor checks."
+  "gate": "No chunk-001 complete and no progress increment until all five candidates meet validator schema and competitor checks.",
+  "last_research_update": "2026-10-08"
 }
