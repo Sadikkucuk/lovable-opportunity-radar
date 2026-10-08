@@ -10,8 +10,8 @@
   "validation_chunks_complete": 11,
   "candidates_classified": 55,
   "classification_counts": {
-    "competition_not_verified": 16,
-    "rejected_competition": 38,
+    "competition_not_verified": 14,
+    "rejected_competition": 40,
     "rejected_evidence": 1
   },
   "quality_blockers": {
@@ -24,17 +24,15 @@
       49
     ],
     "partially_verified_originals_indexes_blocking_publication": [],
-    "competition_not_verified_count": 16,
+    "competition_not_verified_count": 14,
     "external_zero_cash_proofs_missing_total": 55,
-    "external_zero_cash_proofs_relevant_to_potential_publication": 16,
+    "external_zero_cash_proofs_relevant_to_potential_publication": 14,
     "publication_blocking_candidate_indexes": [
       1,
       5,
       6,
       7,
-      11,
       12,
-      18,
       21,
       22,
       25,
@@ -59,8 +57,8 @@
   "catalog_action": "none",
   "history_action": "none",
   "catalog_preservation": "75 original records remain unchanged",
-  "reason": "55 classified; 16 potential publication candidates still lack direct competition clearance and zero-external-cash production feasibility. Six partial primary sources are for rejected ideas and are informational source-quality caveats, not separate publication blockers.",
-  "recommended_next_stage": "Verify remaining 16 candidates' direct competition and zero-external-cash deployment; publish none until gates pass.",
+  "reason": "55 classified: 40 rejected_competition, 1 rejected_evidence, 14 competition_not_verified; only those 14 need remaining direct competition checks and zero-external-cash viability proof. Publication blocked.",
+  "recommended_next_stage": "Recheck 14 remaining candidates for direct competitors and genuinely zero-cash Lovable deployment; publish none yet.",
   "report_created_at": "2026-10-08",
   "primary_source_corrections": {
     "verification_completed_indexes": [
@@ -102,6 +100,18 @@
       "vendors": [
         "MemVerge GPU Cluster Manager"
       ]
+    },
+    {
+      "validation_index": 11,
+      "vendors": [
+        "Microsoft Azure retirement + modernization workflow"
+      ]
+    },
+    {
+      "validation_index": 18,
+      "vendors": [
+        "Google Docs/Drive Approvals + Claude per-edit review"
+      ]
     }
   ],
   "publication_eligibility_audit": "state/runs/2026-10-08/validation/publication-gate-eligibility.json",
@@ -110,9 +120,7 @@
     5,
     6,
     7,
-    11,
     12,
-    18,
     21,
     22,
     25,
@@ -123,9 +131,9 @@
     43,
     44
   ],
-  "publication_blocking_candidate_count": 16,
-  "rejected_candidates_cost_proof_not_required": 39,
+  "publication_blocking_candidate_count": 14,
+  "rejected_candidates_cost_proof_not_required": 41,
   "rejected_candidates_with_partial_original_source_count": 6,
   "publication_blocking_partial_original_source_count": 0,
-  "reconciliation_note": "Classification of all 55 is complete; 39 rejected ideas do not require zero-cost proof or full primary article verification to remain rejected. Only 16 potentially publishable records need direct-competition verification and zero-external-cash feasibility. No catalog writes until resolved."
+  "reconciliation_note": "55 complete classifications, 41 rejected. Only 14 unresolved competition candidates need proven zero-external-cash MVP; all six source-partial records are already rejected."
 }
