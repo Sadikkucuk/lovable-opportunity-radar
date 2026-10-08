@@ -287,7 +287,10 @@
         "https://aviloo.com/en-us/aviloo-certified",
         "https://battgrade.com/",
         "https://batterypassport.software/",
-        "https://play.google.com/store/apps/details?id=com.batterypassportsoftware"
+        "https://play.google.com/store/apps/details?id=com.batterypassportsoftware",
+        "https://www.evnovas.com/Solutions/BSMS",
+        "https://oxmaint.ai/industries/fleet-management/ev-fleet-maintenance-management-battery-charging-and-service-records",
+        "https://www.twaice.com/industries/e-mobility/fleet-operator"
       ],
       "development_verified": true,
       "canonical_news_source": "Huxiu",
@@ -296,8 +299,19 @@
       "canonical_news_url": "https://www.huxiu.com/article/4895286.html",
       "turkiye_direct_competitor_count": 0,
       "turkiye_competitors": [],
-      "global_direct_competitor_count": 0,
-      "global_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "EvNova BSMS",
+          "url": "https://www.evnovas.com/Solutions/BSMS",
+          "reason": "Direct: explicitly serves fleet operators 50+ vehicles with battery pack service/repair records, warranty approvals, serial-linked diagnostics, part replacements, and complete pack history; same buyer, job and workflow."
+        },
+        {
+          "name": "Oxmaint EV Fleet Maintenance",
+          "url": "https://oxmaint.ai/industries/fleet-management/ev-fleet-maintenance-management-battery-charging-and-service-records",
+          "reason": "Direct: fleet asset manager workflow combines battery SoH records, defects, service history, warranty decisions and replacement evidence within EV fleet maintenance operations."
+        }
+      ],
       "adjacent_competitors": [
         {
           "name": "AVILOO Türkiye Premium Test",
@@ -323,13 +337,18 @@
           "name": "Sibros",
           "url": "https://sibros.tech/products/security-compliance/battery-passport",
           "reason": "OEM battery-passport workflows with different primary buyer."
+        },
+        {
+          "name": "TWAICE Fleet Operator Analytics",
+          "url": "https://www.twaice.com/industries/e-mobility/fleet-operator",
+          "reason": "Same fleet buyer for SoH and warranty management but explicit repair event passport not established."
         }
       ],
       "competition_search_terms": [
         "ikinci el araç batarya sağlık raporu tamir geçmişi",
         "EV lifecycle passport dealer repair history"
       ],
-      "market_gap": "Repair-history and warranty decision evidence for passenger-EV dealers/fleet operators remains an unverified gap. SoH certificates are adjacent, while light-EV battery repair-passport workflow already exists.",
+      "market_gap": "Generic passenger EV fleet battery health, repair-service and warranty passport is served by EvNova BSMS and Oxmaint. A narrower niche would require separate proof.",
       "mvp": "Battery report upload, pack identifier, repair events, warranty checklist, export.",
       "working_logic": "Import technician report -> attach repairs -> assess warranty policy -> export.",
       "business_models": [
@@ -341,9 +360,9 @@
       "main_risk": "Adjacent workshop product can expand into cars; specialized SoH vendors could add repair history; no willingness-to-pay proof.",
       "validation_assumption": "Passenger EV dealer/fleet buyers need a repair-event and warranty decision desk distinct from existing SoH certificates; not proven.",
       "evidence_strength": "strong_competition_partial_trigger",
-      "competition_confidence": "medium; primary sources confirmed segment differences, broader market not exhausted",
-      "qualification_status": "competition_not_verified",
-      "review_notes": "EU passport applies to specified batteries entering EU market from February 2027; does not imply all pre-existing used EVs require retroactive certificates. Previously counted direct SoH providers reclassified as adjacent since they do not demonstrate the full repair-event/warranty-decision workflow.",
+      "competition_confidence": "high: current vendor primary pages verify same fleet buyer and materially same battery lifecycle+repair+warranty workflow.",
+      "qualification_status": "rejected_competition",
+      "review_notes": "EU passport applies to specified batteries entering EU market from February 2027; does not imply all pre-existing used EVs require retroactive certificates. Previously counted direct SoH providers reclassified as adjacent since they do not demonstrate the full repair-event/warranty-decision workflow. Follow-up on 2026-10-08: a buyer-specific EV fleet repair/warranty platform was verified, resolving earlier mistaken assumption that only adjacent health certificates existed.",
       "source_verification": {
         "verified_at": "2026-10-08",
         "method": "Full publisher article content and date checked",
@@ -354,25 +373,22 @@
       },
       "competitor_recheck": {
         "checked_on": "2026-10-08",
-        "rule": "same buyer + same core job + same substantial workflow",
-        "candidate_primary_buyer": "used passenger EV dealer or car fleet asset manager",
-        "findings": [
-          {
-            "name": "AVILOO",
-            "reason": "Same buyer, narrower SoH certificate"
-          },
-          {
-            "name": "BattGrade",
-            "reason": "Same buyer, narrower health certificate, early access"
-          },
-          {
-            "name": "Battery Passport Software",
-            "reason": "Same repair ledger job, different buyer: e-bike/light-EV repair workshop, published Android app 2026-09-22"
-          }
+        "rule": "same buyer + same core job + substantially same workflow",
+        "global_direct": [
+          "EvNova BSMS",
+          "Oxmaint EV Fleet Maintenance"
         ],
-        "decision": "retain_competition_not_verified",
-        "zero_external_cash_proven": false
-      }
+        "turkiye_direct_verified": 0,
+        "previous_adjacent_recheck_retained": true,
+        "decision": "rejected_competition",
+        "source_urls": [
+          "https://www.evnovas.com/Solutions/BSMS",
+          "https://oxmaint.ai/industries/fleet-management/ev-fleet-maintenance-management-battery-charging-and-service-records"
+        ],
+        "zero_external_cash_proven": false,
+        "notes": "Both competitors serve fleet battery records and warranty decisions; no zero-cash proof needed for a rejected candidate."
+      },
+      "rejection_reason": "EvNova BSMS explicitly sells battery serial-level repair, warranty approval and service history to electric fleet operators; Oxmaint EV fleet maintenance covers health/service/warranty records for same fleet manager buyer. Core proposed workflow is already available; no differentiated unmet need evidenced."
     },
     {
       "candidate_id": "c-20261008-w4-20261008-020",
