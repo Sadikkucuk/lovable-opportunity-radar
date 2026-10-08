@@ -17,8 +17,8 @@
   "feed_items_expected": 240,
   "feed_items_triaged": 240,
   "candidate_article_count": 18,
-  "original_articles_verified": 0,
-  "full_article_not_verified": 15,
+  "original_articles_verified": 4,
+  "full_article_not_verified": 11,
   "noise_or_no_opportunity_count": 225,
   "raw_opportunity_count": 8,
   "raw_opportunities": [
@@ -359,9 +359,10 @@
       "title": "USTR initiates next stage of USMCA review - Supply Chain Dive",
       "feed_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNOV9qUkw2S2N5UE1HS1hFV0JjX3FsWmZ2aGVkclBDYjEwSjluRVNVOVVUa3EzeTgzblAtUGN0U1ZsYkhCWkROMmotd1BHODZMeXFqN0p5SFdHYlNOTlhLa3VZTURMQTRtUXA5dzJyN21VQUZXQnh2NWc4alpGRVJWdDJtMnptemhyTmxpQTZoWQ?oc=5",
       "batch": 8,
-      "verification": "feed_metadata_only",
-      "review_status": "deferred_source_not_verified",
-      "review_reason": "USMCA review policy timing and actual regulatory delta not verified"
+      "verification": "full",
+      "review_status": "verified_no_lovable_delta",
+      "review_reason": "Original article confirms USMCA public comment window, not a newly enacted rule. US/Canada/Mexico trade consultation service is not independently a zero-cost web-app opportunity.",
+      "canonical_url": "https://www.supplychaindive.com/news/ustr-initiates-next-stage-of-usmca-review/832285/"
     },
     {
       "id": "f8b7ca703e710490d700c62a",
@@ -377,9 +378,10 @@
       "title": "Tractor Supply opens Idaho distribution center with automation, dedicated AI team - Supply Chain Dive",
       "feed_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWm84SkR0eHMtTjJRU01sMWVYbzR2Z0I1d1Q2T09YMTZnN1lPaGw3M0RNWEZRWVFUU3ZSbDF1VG9MOHF5cDBfT09pQjVFS09DUUNNanZxU2dESGw2blBGMmZLMHptdS10WE56bXFhZXpHOWplZGN4dDBheEJqWlhRdVRyczZSMkhFSEpHaVE0cXI4dGw1SENraDhJaXktTmVGaDZfb3ZUdUg1X3JKVU41NnRyeGs1TDRGRHBV?oc=5",
       "batch": 9,
-      "verification": "feed_metadata_only",
-      "review_status": "deferred_source_not_verified",
-      "review_reason": "Distribution center automation is deployment news; distinct software workflow not yet established"
+      "verification": "full",
+      "review_status": "verified_no_distinct_web_product",
+      "review_reason": "Original article confirms automated storage/retrieval and dedicated AI team at Nampa distribution center; enterprise deployment does not itself establish a separate underserved software workflow.",
+      "canonical_url": "https://www.supplychaindive.com/news/tractor-supply-opens-idaho-distribution-center-with-automation-dedicated-a/831883/"
     },
     {
       "id": "56830420c74d4dbc9c486704",
@@ -440,9 +442,10 @@
       "title": "AI智能体的数据授权谁说了算 - 第一财经",
       "feed_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE41LVRqRjJOSkZCSWMwMzlWbDNVRldRRmhFdGN0bHFtZ083WDlzZlRkcGo1bU4zd3VEOGgwYUdxRDdvTEhlazhveFNSLU9WRzVKanY0?oc=5",
       "batch": 11,
-      "verification": "feed_metadata_only",
-      "review_status": "deferred_source_not_verified",
-      "review_reason": "AI agent data authorization article needs source verification and deduplication against W1 robot data rights"
+      "verification": "full",
+      "review_status": "verified_opinion_no_new_regulation",
+      "review_reason": "Full original is a legal commentary advocating user-centric AI agent authorization, not enacted law. Potential consent-log workflow overlaps W1 robot data rights and W3 agent action receipts; defer new idea.",
+      "canonical_url": "https://www.yicai.com/news/103385125.html"
     },
     {
       "id": "f2bcd5604ba767b5022441b9",
@@ -476,20 +479,22 @@
       "title": "​Siemens, TSMC Apply Agentic AI to Semiconductor Design - THE ELEC, Korea Electronics Industry Media",
       "feed_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4wSElXUjJGeFhPQnpJSDJoVG0tdlJQWGYxZEQ4cksyem82UVU0VnZacnlueHFKajl2QWZsUnpsSzRQQVZBM2QzdVNIVDE3blJ6eEhFNlZsVDFPSzhDeFNicmhWMEhkcjQ?oc=5",
       "batch": 12,
-      "verification": "feed_metadata_only",
-      "review_status": "deferred_source_not_verified",
-      "review_reason": "Siemens-TSMC design agent story requires original announcement and concrete buyer workflow"
+      "verification": "full",
+      "review_status": "verified_primary_older_release",
+      "review_reason": "Official Siemens September 23 announcement confirms AI-powered DRC fixing; October feed resurfaced prior announcement. Proprietary EDA integration and strong incumbent products make standalone Lovable MVP speculative.",
+      "canonical_url": "https://news.siemens.com/it-it/siemens-tsmc-oip-ecosystem-forum-2026/"
     }
   ],
   "missing_batches": [],
-  "failure_reason": "Seven potentially relevant shortlisted originals not yet source-verified; cannot declare exhaustive opportunity extraction.",
-  "notes": "18 candidate records dispositioned; NTT DATA laboratory headline held out as no distinct software delta. Six source reviews still deferred; status incomplete. Verification-label reconciliation: three full labels downgraded to corroborated, because verified original article count remains zero.",
+  "failure_reason": "Two deferred articles require original-source review (PoeLLM malware, IBM quantum foundry); eight existing raw ideas remain provisional",
+  "notes": "Four original sources read: USMCA comment, Tractor Supply DC, Yicai opinion, Siemens original September release. No invented product added. Two deferred originals remain.",
   "reviewed_candidate_count": 18,
   "candidate_dispositions": {
     "raw_opportunity_captured": 8,
     "rejected_noise": 3,
     "no_distinct_product_delta": 1,
-    "deferred_source_not_verified": 6
+    "verified_no_new_idea": 4,
+    "deferred_source_not_verified": 2
   },
   "source_audit": {
     "original_full_text_verified_in_this_run": 0,
@@ -497,8 +502,10 @@
     "deferred_unverified_candidates": 7,
     "rejected_noise": 3,
     "method": "Conservative reconciliation; original source URLs alone do not prove full-text reading",
-    "remaining_deferred_count": 6,
+    "remaining_deferred_count": 2,
     "downgraded_unsubstantiated_full_labels": 3,
-    "raw_idea_labels_now_consistent_with_verified_count": true
+    "raw_idea_labels_now_consistent_with_verified_count": true,
+    "verified_originals_from_live_source_review": 4,
+    "source_verification_scope": "Four newly opened original/official sources; eight previously captured raw ideas remain corroborated only"
   }
 }
