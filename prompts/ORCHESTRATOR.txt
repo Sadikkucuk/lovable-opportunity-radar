@@ -328,6 +328,15 @@ Never mark candidates validated if the research was not actually completed.
 
 Stop after this one chunk, even if more candidates remain.
 
+RUN-CAPACITY RULE: One hourly orchestrator invocation can finish at most ONE
+five-candidate validation chunk. Therefore N candidates require ceil(N/5)
+validation invocations PLUS discovery/merge/finalization and any Stage 3A
+quality-research invocations. If the configured daily schedule has fewer
+remaining slots, report the exact number of extra invocations/days required
+rather than repeatedly claiming imminent same-day completion. Continue at the
+next valid scheduled invocation without manual user "devam" prompts.
+
+
 
 ==================================================
 3A. QUALITY EVIDENCE REMEDIATION — DO NOT STALL AT AN UNVERIFIED COUNT
@@ -339,9 +348,22 @@ radar and is NOT a reason to repeat the same status endlessly. After ensuring
 merge candidate IDs match the complete 11 chunk records, run this stage instead
 of immediately attempting finalization again. This is a RESEARCH stage only;
 it does NOT waive frozen worker recovery, original-article checks, zero cash,
-or any FINALIZER gates. Never publish while W1/W2 remain incomplete.
+or any FINALIZER gates. Never publish unless all FOUR real persisted discovery workers pass the same frozen-generation coverage check.
 
-Choose the next up to THREE candidates from the quality-audit backlog.
+FIRST reconcile the quality-repair-progress checkpoint against the
+ACTUAL statuses in ALL completed validation chunks on EVERY remediation
+invocation. A stale pending list MUST NOT cause revisiting already rejected
+candidates or skipping newly unresolved ones. Use the strict equality:
+pending_candidate_indexes = sorted(validation_index of rows with
+qualification_status="competition_not_verified" OR other still-publishable
+quality blockers), excluding only definitively rejected rows. Recompute
+unverified_competition_count, potentially_viable_zero_cash_unverified_indexes,
+and reset cursor to the first pending index with no attempt in the current pass.
+Preserve research attempt history for still-pending rows. If no pending rows
+remain, recompute quality audit and attempt finalization; do not hallucinate
+an unfinished list.
+
+Choose the next up to THREE candidates from that reconciled backlog.
 Prioritize:
 1. competition_not_verified candidates lacking an independent same-buyer,
    same-job, same-workflow vendor search;
