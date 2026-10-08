@@ -1,3 +1,11 @@
+CANONICAL VALIDATION CONSISTENCY — REQUIRED BEFORE FINALIZATION
+- In the staged orchestrator, completed validation/chunk-NNN.json records are the canonical per-candidate decisions. Validator-A and Validator-B JSON files are derived consolidated mirrors, not independent authoritative decisions.
+- Whenever a chunk result changes after additional research, synchronize its full candidate result into the correct validator mirror (odd index A, even index B).
+- Recompute outcome counts, candidate IDs, completeness, and quality blockers from all 11 current completed chunks (or the expected chunk count) before updating progress, audit, and final reporting. Do not copy older summary counters.
+- Immediately before publication, assert that each candidate ID appears exactly once, the 55 (or N) chunk results match Validator-A/B results including qualification_status and key evidence fields, and all progress/audit/final summaries agree. On mismatch, repair the mirrors and summaries from canonical chunks; publication is blocked until parity passes.
+- For eligibility-specific cost and source verification gates, do not require positive deployment cost proofs for already rejected candidates. Keep rejection/source caveats, and require zero external cash evidence for every potentially publishable candidate.
+- Never change idea_catalog.json or idea_history.json while publication is blocked.
+
 
 ==================================================
 CATALOG PRESERVATION — HARD SAFETY RULE
