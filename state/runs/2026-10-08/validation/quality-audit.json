@@ -7,8 +7,8 @@
   "expected_candidates": 55,
   "chunk_count": 11,
   "qualification_counts": {
-    "competition_not_verified": 10,
-    "rejected_competition": 44,
+    "competition_not_verified": 9,
+    "rejected_competition": 45,
     "rejected_evidence": 1
   },
   "primary_development_unverified_or_partial_indexes": [
@@ -87,12 +87,12 @@
   "publication_gate": {
     "allow_catalog_write": false,
     "allow_qualified_idea_publication": false,
-    "reason": "10 unresolved direct-competition and zero-cash evidence cases remain; publishing blocked."
+    "reason": "9 unresolved candidates: direct competition and zero-external-cash evidence missing; 55/55 classified."
   },
   "next_steps": [
-    "Resolve 11 direct-competition and zero-cash proofs for not-rejected candidates",
-    "Keep partial original-source warnings for rejected candidates",
-    "Run deduplication and publication eligibility only after evidence gates pass"
+    "Verify the 9 remaining direct-competition scopes and zero-cash proof",
+    "Do not publish until evidence gates and validator mirrors agree",
+    "Preserve existing 75 catalog records"
   ],
   "catalog_action": "none",
   "history_action": "none",
@@ -277,13 +277,13 @@
     "partial_primary_count": 6,
     "partial_primary_potential_publication": 0,
     "zero_cost_unverified_count": 55,
-    "publication_relevant_zero_cash_unverified_count": 10,
-    "competition_incomplete_row_count": 10,
+    "publication_relevant_zero_cash_unverified_count": 9,
+    "competition_incomplete_row_count": 9,
     "qualified_count": 0,
     "classified_count": 55,
     "qualification_counts": {
-      "competition_not_verified": 10,
-      "rejected_competition": 44,
+      "competition_not_verified": 9,
+      "rejected_competition": 45,
       "rejected_evidence": 1
     },
     "checked_on": "2026-10-08"
@@ -448,14 +448,13 @@
     21,
     22,
     25,
-    28,
     44
   ],
-  "publication_blocking_candidate_count": 10,
-  "rejected_candidates_cost_proof_not_required": 45,
+  "publication_blocking_candidate_count": 9,
+  "rejected_candidates_cost_proof_not_required": 46,
   "rejected_candidates_with_partial_original_source_count": 6,
   "publication_blocking_partial_original_source_count": 0,
-  "reconciliation_note": "All 11 chunks reconciled; candidate 29 rejected based on EvNova and Oxmaint direct EV fleet competitors.",
+  "reconciliation_note": "Latest top-level counters and latest_source_of_truth_reconciliation are authoritative; older targeted_competition_rechecks and quality_gate_reaudit evidence text may reflect previous checkpoints.",
   "publication_relevant_zero_cash_unverified_indexes": [
     1,
     5,
@@ -465,15 +464,14 @@
     21,
     22,
     25,
-    28,
     44
   ],
   "publication_relevant_primary_partial_indexes": [],
   "latest_source_of_truth_reconciliation": {
     "date": "2026-10-08",
     "counts": {
-      "competition_not_verified": 10,
-      "rejected_competition": 44,
+      "competition_not_verified": 9,
+      "rejected_competition": 45,
       "rejected_evidence": 1
     },
     "unresolved": [
@@ -485,8 +483,8 @@
       21,
       22,
       25,
-      28,
       44
-    ]
+    ],
+    "source": "state/runs/2026-10-08/validation/canonical-reconciliation.json"
   }
 }
