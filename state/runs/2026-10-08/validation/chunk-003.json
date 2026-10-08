@@ -1,0 +1,465 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-08",
+  "chunk_number": 3,
+  "status": "complete",
+  "expected_candidate_count": 5,
+  "validated_candidate_count": 5,
+  "candidate_ids": [
+    "c-20261008-w4-20261008-009",
+    "c-20261008-W3-20261008-001",
+    "c-20261008-w1-20261008-009",
+    "c-20261008-w2-20261008-003",
+    "c-20261008-w2-20261008-007"
+  ],
+  "results": [
+    {
+      "candidate_id": "c-20261008-w4-20261008-009",
+      "validation_index": 11,
+      "canonical_key": "azure-customers|plan-vm-size-retirements|sku-lifecycle-migration-ledger",
+      "development_verified": true,
+      "canonical_news_source": "Microsoft Learn",
+      "canonical_news_title": "VM lifecycle overview",
+      "canonical_news_date": "2026-09-25",
+      "canonical_news_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/lifecycle/lifecycle-overview",
+      "source_links": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/lifecycle/lifecycle-overview",
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/lifecycle/retirements-and-capacity-restrictions",
+        "https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-use-service-upgrade-retirement-recommendations",
+        "https://learn.microsoft.com/en-us/azure/migrate/how-to-plan-create-waves?view=migrate",
+        "https://lovable.dev/pricing"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 0,
+      "global_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "Azure Advisor Retirement Recommendations",
+          "url": "https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-use-service-upgrade-retirement-recommendations",
+          "reason": "Official Azure retirement/affected resources visibility; no verified full SKU retirement wave ledger in this product."
+        },
+        {
+          "name": "Azure Migrate Wave Planning",
+          "url": "https://learn.microsoft.com/en-us/azure/migrate/how-to-plan-create-waves?view=migrate",
+          "reason": "Supports migration grouping, prioritization, dependencies and approvals, primarily from other estates into Azure; not proven identical to in-place Azure VM SKU retirement planning."
+        }
+      ],
+      "competition_search_terms": [
+        "Azure VM SKU retirement inventory planner wave dashboard software",
+        "Azure Advisor retirement impacted resource list",
+        "Azure virtual machine sizes upgrade migration wave planner",
+        "Türkiye Azure VM emeklilik göç planlama yazılımı"
+      ],
+      "market_gap": "Potential single-purpose CSV crosswalk between SKU retirement dates and internal change windows; overlapping Microsoft native tooling exists and direct commercial substitutes are not comprehensively verified.",
+      "mvp": "Import Azure VM inventory CSV, map retired/end-of-life SKUs, schedule remediation waves, assign approvers, export risk and cutover report.",
+      "working_logic": "CSV -> current VM series lifecycle lookup -> identify retirements and deadlines -> group migration waves -> checklist approval -> export.",
+      "technologies": [
+        "Lovable UI",
+        "CSV parser",
+        "manual Microsoft SKU lifecycle reference",
+        "approval ledger",
+        "export"
+      ],
+      "external_cash_cost": "not_verified",
+      "lovable_credits_total": 240,
+      "lovable_credit_breakdown": {
+        "source": "discovery_estimate_illustrative_allocation_not_benchmarked",
+        "estimated_total": 240,
+        "steps": {
+          "inventory": 60,
+          "lifecycle_reference": 50,
+          "waves": 60,
+          "signoffs": 40,
+          "testing": 30
+        },
+        "verified": false,
+        "free_tier_feasibility": "not verified; 30 free development credits/month, hosted production and data protection unverified"
+      },
+      "build_time": "not_verified (internal credit estimate only)",
+      "business_models": [
+        "MSP project license",
+        "internal cloud governance subscription",
+        "tailor-made code delivery"
+      ],
+      "marketing_strategy": "Azure managed service providers and cloud infra teams; validate gaps versus native tools.",
+      "first_customer_plan": "Interview 3 Azure MSP leads managing existing Azure VMs about in-place SKU retirement changes.",
+      "main_risk": "Microsoft changes SKU catalog and natively integrates migration/lifecycle tools.",
+      "validation_assumption": "Customers need a separate retirement-specific change wave board rather than existing Azure tools.",
+      "evidence_strength": "high_primary_Microsoft_lifecycle;medium_market",
+      "competition_confidence": "low_scoped_competitor_search",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "Global Azure customer applicability; no local footprint claim.",
+      "validated_scope_hint": "Dünya",
+      "qualification_status": "competition_not_verified",
+      "review_notes": "Microsoft lifecycle update dated 2026-09-25; Oct 7 was discussion, not validated as a new Oct 7 feature. Azure Migrate waves can overlap but target/source boundary prevents automatically calling it a direct competitor."
+    },
+    {
+      "candidate_id": "c-20261008-W3-20261008-001",
+      "validation_index": 12,
+      "canonical_key": "biotech-clinical-development-teams|trial-go-no-go-review|prediction-register",
+      "development_verified": true,
+      "canonical_news_source": "Reuters",
+      "canonical_news_title": "AI companies run virtual drug trials, aim to improve success of human studies",
+      "canonical_news_date": "2026-10-07",
+      "canonical_news_url": "https://www.reuters.com/legal/litigation/ai-companies-run-virtual-drug-trials-aim-improve-success-human-studies-2026-10-07/",
+      "source_links": [
+        "https://www.reuters.com/legal/litigation/ai-companies-run-virtual-drug-trials-aim-improve-success-human-studies-2026-10-07/",
+        "https://quanthealth.ai/product",
+        "https://quanthealth.ai/evidence",
+        "https://www.certara.com/software/trial-simulator/",
+        "https://github.com/eshkanala/OpenTrials",
+        "https://lovable.dev/pricing"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 0,
+      "global_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "QuantHealth",
+          "url": "https://quanthealth.ai/product",
+          "reason": "Trial outcome prediction and clinical-development decision support, but no dedicated documented forecast-to-actual signoff and reconciliation ledger verified."
+        },
+        {
+          "name": "Certara Trial Simulator",
+          "url": "https://www.certara.com/software/trial-simulator/",
+          "reason": "Clinical trial simulation and study scenario analysis; not demonstrated as independent prediction-decision audit record."
+        },
+        {
+          "name": "OpenTrials",
+          "url": "https://github.com/eshkanala/OpenTrials",
+          "reason": "Open-source mechanistic trial simulation with evidence/provenance and validation artifacts; overlaps technical evidence but not an external cross-vendor go/no-go approval ledger."
+        }
+      ],
+      "competition_search_terms": [
+        "clinical trial simulation decision log model prediction forecast actual audit evidence platform",
+        "clinical trial AI validation assumptions sign-off dossier competitors",
+        "Türkiye sanal klinik araştırma model tahmin denetim yazılımı"
+      ],
+      "market_gap": "Forecast-to-actual decision accountability across prediction vendors may be narrower than trial simulation itself; actual unmet buyer demand and direct software competition not verified.",
+      "mvp": "Manual prediction register, methodology and caveat fields, dated executive decision signoff, readout outcome reconciliation and CSV/PDF audit export; never performs clinical prediction.",
+      "working_logic": "Import prediction -> record cohort/endpoints/uncertainty -> approve decision -> later link actual readout -> compare and archive.",
+      "technologies": [
+        "Lovable UI",
+        "manual CSV data entry",
+        "versioned records",
+        "human signoff",
+        "export"
+      ],
+      "external_cash_cost": "not_verified",
+      "lovable_credits_total": 105,
+      "lovable_credit_breakdown": {
+        "source": "discovery_estimate_illustrative_allocation_not_benchmarked",
+        "estimated_total": 105,
+        "steps": {
+          "prediction_register": 30,
+          "assumptions": 25,
+          "review": 20,
+          "reconciliation": 15,
+          "testing": 15
+        },
+        "verified": false,
+        "free_tier_feasibility": "not verified; 30 free development credits/month, hosted production and data protection unverified"
+      },
+      "build_time": "not_verified (internal credit estimate only)",
+      "business_models": [
+        "B2B biotech team license",
+        "consultancy source-code delivery"
+      ],
+      "marketing_strategy": "Contact VP Clinical Development and study governance managers; distinguish from model providers.",
+      "first_customer_plan": "Seek buyer who currently tracks external clinical model predictions in spreadsheets; do not request patient-level data for MVP.",
+      "main_risk": "Highly sensitive clinical decisions, validation liability, lack of demonstration of purchase appetite.",
+      "validation_assumption": "Biotech teams need a separate independent model decision audit trail not bundled with simulator tools.",
+      "evidence_strength": "high_Reuters_event;medium_adjacent_vendor_offerings",
+      "competition_confidence": "not_verified_for_exact_cross_vendor_evidence_workflow",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "Global multi-country biotech customer segment.",
+      "validated_scope_hint": "Dünya",
+      "qualification_status": "competition_not_verified",
+      "review_notes": "Sources show QuantHealth forecast-vs-outcome evidence and Certara trial simulation; not classified direct merely because they simulate trials. No clinical advice or patient-level data assumed."
+    },
+    {
+      "candidate_id": "c-20261008-w1-20261008-009",
+      "validation_index": 13,
+      "canonical_key": "birden çok aı ajanı veya apı kullanan kobi yazılım ekipleri|ajan/görev bazında token tüketimini, bütçe aşımını ve tekrar deneme maliyetini takip etmek|csv/apı kullanım verisi içe aktarma, ajan-görev maliyet kırılımı, lim",
+      "development_verified": "partial",
+      "canonical_news_source": "＠IT / atmarkIT",
+      "canonical_news_title": "AI agent token usage cost concern (headline only; article body not accessible)",
+      "canonical_news_date": "2026-10-06",
+      "canonical_news_url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/06/news004.html",
+      "source_links": [
+        "https://atmarkit.itmedia.co.jp/ait/articles/2610/06/news004.html",
+        "https://langfuse.com/docs/observability/features/token-and-cost-tracking",
+        "https://langfuse.com/docs/metrics/overview",
+        "https://langfuse.com/docs/observability/features/sessions",
+        "https://nar.com.tr/tr",
+        "https://www.neurokitai.com/tr/products/tracellm",
+        "https://lovable.dev/pricing"
+      ],
+      "turkiye_direct_competitor_count": 2,
+      "turkiye_competitors": [
+        {
+          "name": "NAR Sistem ORIN LLM Gateway",
+          "url": "https://nar.com.tr/tr",
+          "reason": "Türkiye vendor describes per-model, application and user token/cost monitoring, tool call audit and agent access controls for engineering and enterprise buyers."
+        },
+        {
+          "name": "NeurokitAI TraceLLM",
+          "url": "https://www.neurokitai.com/tr/products/tracellm",
+          "reason": "Turkish-localized vendor product explicitly targets AI agent developers with session/span/token/cost monitoring and dashboards; Turkish incorporation not independently verified, counted as Turkish-market offering."
+        }
+      ],
+      "global_direct_competitor_count": 1,
+      "global_competitors": [
+        {
+          "name": "Langfuse",
+          "url": "https://langfuse.com/docs/observability/features/token-and-cost-tracking",
+          "reason": "Tracks cost/tokens per LLM generation, trace, session, user, model and tags with dashboards, budgets/alerts; same engineering buyer and core spend-attribution workflow."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Nexsol AI Agent Automation Services",
+          "url": "https://nexsol.com.tr/hizmetlerimiz/ai-ajan-gelistirme",
+          "reason": "Consulting/service offering includes token spend dashboard but is not a standalone direct SaaS competitor."
+        }
+      ],
+      "competition_search_terms": [
+        "AI agent token cost tracing retries attribution dashboard",
+        "Langfuse LLM usage per session feature token cost alerts",
+        "Türkiye token maliyet izleme ajan API platform ORIN TraceLLM"
+      ],
+      "market_gap": "Agent task-level retry waste insight is already addressable through Langfuse trace and session labels and Turkish vendors' token cost dashboards.",
+      "mvp": "CSV import of agent/task/model attempts; per-attempt token prices, retry waste drilldown, budget thresholds and weekly export.",
+      "working_logic": "Import CSV -> normalize provider/model price and agent/task IDs -> aggregate token usage and retry loops -> flag overruns -> report.",
+      "technologies": [
+        "Lovable UI",
+        "CSV upload",
+        "client-side usage normalization",
+        "pricing lookup table",
+        "charts"
+      ],
+      "external_cash_cost": "not_verified",
+      "lovable_credits_total": 300,
+      "lovable_credit_breakdown": {
+        "source": "discovery_estimate_illustrative_allocation_not_benchmarked",
+        "estimated_total": 300,
+        "steps": {
+          "csv": 75,
+          "cost_logic": 70,
+          "agent_retry": 75,
+          "alerts": 40,
+          "testing": 40
+        },
+        "verified": false,
+        "free_tier_feasibility": "not verified; 30 free development credits/month, hosted production and data protection unverified"
+      },
+      "build_time": "not_verified (internal credit estimate only)",
+      "business_models": [
+        "SaaS seat subscription",
+        "source-code sale"
+      ],
+      "marketing_strategy": "Not recommended absent provider-specific differentiated cost optimization algorithm.",
+      "first_customer_plan": "Identify a customer unable to segment agent retries in Langfuse or ORIN and validate measurable savings first.",
+      "main_risk": "Open-source Langfuse, established observability tools and Turkish products already track almost all of the same indicators.",
+      "validation_assumption": "The CSV-only wrapper creates material value beyond Langfuse's richer native tracing.",
+      "evidence_strength": "high_primary_vendor_competitor;partial_original_article_unavailable",
+      "competition_confidence": "high_direct_global_and_Turkiye_market_offerings",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "Cross-border software team problem; no local-specific claim verified.",
+      "validated_scope_hint": "Dünya",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Langfuse already tracks LLM costs by trace/session/use-case, supports spending dashboards and alerts; NAR ORIN and TraceLLM offer token/cost observability in Turkish market. No defensible exclusive retry-waste workflow demonstrated.",
+      "review_notes": "Japanese source article inaccessible at check, so development_verified partial; competitor pages independently substantiate rejection. Türkiye-market presence distinguished from confirmed Turkish legal incorporation."
+    },
+    {
+      "candidate_id": "c-20261008-w2-20261008-003",
+      "validation_index": 14,
+      "canonical_key": "buluttan-çıkış-bağımlılık-envanteri",
+      "development_verified": true,
+      "canonical_news_source": "The Next Web",
+      "canonical_news_title": "Dutch tax office drops Microsoft 365 cloud for own servers and open source",
+      "canonical_news_date": "2026-10-07",
+      "canonical_news_url": "https://thenextweb.com/news/dutch-tax-office-microsoft-365-on-premises-open-source",
+      "source_links": [
+        "https://thenextweb.com/news/dutch-tax-office-microsoft-365-on-premises-open-source",
+        "https://tprm.mlab.sh/features",
+        "https://vendorica.com/templates/dora/exit-strategy/",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2022.333.01.0001.01.ENG",
+        "https://www.pwc.com.tr/tr/hizmetlerimiz/suistimal-uyum-ve-kriz-yonetimi-danismanligi/etik-uyum-hizmetleri/uyum-platformu.html",
+        "https://lovable.dev/pricing"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 1,
+      "global_competitors": [
+        {
+          "name": "tprm.mlab.sh DORA TPRM",
+          "url": "https://tprm.mlab.sh/features",
+          "reason": "Platform explicitly documents critical ICT provider exit strategies, test status, versioning and next test due dates for regulated buyers; same buyer and exit-control core job."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Vendorica DORA Exit Toolkit",
+          "url": "https://vendorica.com/templates/dora/exit-strategy/",
+          "reason": "Free downloadable/interactive exit plan templates with migration and handback controls; near-substitute, but not verified shared SaaS ledger."
+        },
+        {
+          "name": "PwC Türkiye Dijital Uyum",
+          "url": "https://www.pwc.com.tr/tr/hizmetlerimiz/suistimal-uyum-ve-kriz-yonetimi-danismanligi/etik-uyum-hizmetleri/uyum-platformu.html",
+          "reason": "Broad governance/third-party risk system; dedicated SaaS/cloud exit portability plan not independently established."
+        }
+      ],
+      "competition_search_terms": [
+        "DORA exit strategy ICT provider plan software version tested next test",
+        "SaaS vendor lock-in exit portability checklist platform",
+        "Türkiye bulut çıkış veri taşınabilirliği uyum platformu",
+        "Dutch tax office Microsoft 365 2026 exit strategy"
+      ],
+      "market_gap": "ICT supplier exit strategy/test tracking is already offered; portability-specific detailed inventory may differ but needs measured product differentiation.",
+      "mvp": "Supplier/contract inventory, data-export dependency checklist, exit plan tasks, rehearsal evidence, test dates and audit export.",
+      "working_logic": "Register supplier criticality -> document dependencies/portability -> plan exit tasks and testing -> approve and export.",
+      "technologies": [
+        "Lovable UI",
+        "contract/supplier register",
+        "checklists",
+        "CSV/PDF export",
+        "role-based reviews"
+      ],
+      "external_cash_cost": "not_verified",
+      "lovable_credits_total": 300,
+      "lovable_credit_breakdown": {
+        "source": "discovery_estimate_illustrative_allocation_not_benchmarked",
+        "estimated_total": 300,
+        "steps": {
+          "vendors": 70,
+          "portability": 70,
+          "plans": 70,
+          "test_evidence": 50,
+          "testing": 40
+        },
+        "verified": false,
+        "free_tier_feasibility": "not verified; 30 free development credits/month, hosted production and data protection unverified"
+      },
+      "build_time": "not_verified (internal credit estimate only)",
+      "business_models": [
+        "Regulated-organization license",
+        "tailored source-code solution"
+      ],
+      "marketing_strategy": "No generic TPRM product launch; assess jurisdiction and niche buyer appetite first.",
+      "first_customer_plan": "Interview EU DORA ICT risk officer on uncovered executable data portability evidence gaps.",
+      "main_risk": "Incumbent DORA exit-management tooling and unclear Türkiye-specific statutory trigger; sensitive contracts.",
+      "validation_assumption": "Simple cloud-exit inventory adds enough value to existing TPRM exit-strategy modules.",
+      "evidence_strength": "high_source_article;high_direct_feature_overlap",
+      "competition_confidence": "high_global_direct;local_no_verified_direct",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "Candidate targets Türkiye regulated buyers but EU DORA is not automatically Turkish law; local buyers may have third-party risk requirements, specific local legal trigger unverified.",
+      "validated_scope_hint": "Türkiye",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "DORA TPRM product already manages ICT vendor exit strategies, plan status/version and test dates for the same regulated third-party risk buyer. No demonstrated distinct portability workflow beyond a checklist.",
+      "review_notes": "Article reports Dutch authority reversing Microsoft's cloud rollout; it does NOT establish a new Türkiye regulation."
+    },
+    {
+      "candidate_id": "c-20261008-w2-20261008-007",
+      "validation_index": 15,
+      "canonical_key": "cargo-provenance-exception",
+      "development_verified": true,
+      "canonical_news_source": "FreightWaves",
+      "canonical_news_title": "LAPD uncovers $1M in stolen BNSF and Union Pacific rail cargo at Los Angeles–area shoe retailer",
+      "canonical_news_date": "2026-10-07",
+      "canonical_news_url": "https://www.freightwaves.com/news/lapd-uncovers-1m-in-stolen-bnsf-and-union-pacific-rail-cargo-at-los-angeles-area-shoe-retailer",
+      "source_links": [
+        "https://www.freightwaves.com/news/lapd-uncovers-1m-in-stolen-bnsf-and-union-pacific-rail-cargo-at-los-angeles-area-shoe-retailer",
+        "https://www.originsnext.com/capabilities",
+        "https://www.origovero.com/logistics",
+        "https://www.freight-411.org/",
+        "https://www.cargoidsecure.com/",
+        "https://lovable.dev/pricing"
+      ],
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 3,
+      "global_competitors": [
+        {
+          "name": "OriginsNext",
+          "url": "https://www.originsnext.com/capabilities",
+          "reason": "For storage/processing/export supply chains registers participant identities, serialized/batch items, custody transfers, permits/evidence and audit-ready origin records; substantially same customer job and workflow."
+        },
+        {
+          "name": "OrigoVero 3PL",
+          "url": "https://www.origovero.com/logistics",
+          "reason": "Explicit 3PL logistics portal with pallet SSCC tracking, timestamped signed custody events and audit export; same warehouse and logistics buyer."
+        },
+        {
+          "name": "Freight 411",
+          "url": "https://www.freight-411.org/",
+          "reason": "Freight broker/shipper chain-of-custody verification, driver and load identity, GPS handoffs, incident evidence and theft flags; closely matches cargo anti-fraud case records."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "CargoID Secure",
+          "url": "https://www.cargoidsecure.com/",
+          "reason": "Verifies driver identity and pickup authorization and preserves digitally signed custody; narrower handoff anti-theft focus rather than pallet-level origin history."
+        }
+      ],
+      "competition_search_terms": [
+        "pallet lot provenance transfer ledger stolen cargo warehouse SaaS",
+        "3PL SSCC pallet chain of custody proof of origin platform",
+        "freight fraud chain custody identity anomalous cargo",
+        "Türkiye 3PL WMS palet seri lot izlenebilirlik yazılımı"
+      ],
+      "market_gap": "Pallet/serial/lot chain of custody and freight anti-theft proof are existing categories, including directly matching 3PL and shipment-security products.",
+      "mvp": "CSV pallet/lot inventory, supplier credential register, transfer and buyer acceptance evidence, exceptions log, audit export; does not purport to confirm stolen status automatically.",
+      "working_logic": "Register lot/pallet -> attach seller and shipping docs -> log handoffs -> flag document/identity mismatch -> reviewer resolves -> export case file.",
+      "technologies": [
+        "Lovable UI",
+        "lot/pallet IDs",
+        "CSV upload",
+        "evidence attachment index",
+        "custody event ledger"
+      ],
+      "external_cash_cost": "not_verified",
+      "lovable_credits_total": 290,
+      "lovable_credit_breakdown": {
+        "source": "discovery_estimate_illustrative_allocation_not_benchmarked",
+        "estimated_total": 290,
+        "steps": {
+          "asset_ids": 60,
+          "chain_events": 85,
+          "docs": 60,
+          "exceptions": 55,
+          "testing": 30
+        },
+        "verified": false,
+        "free_tier_feasibility": "not verified; 30 free development credits/month, hosted production and data protection unverified"
+      },
+      "build_time": "not_verified (internal credit estimate only)",
+      "business_models": [
+        "Warehouse/3PL license",
+        "source-code transfer"
+      ],
+      "marketing_strategy": "Not recommended as broad anti-theft provenance platform without an overlooked local transaction niche.",
+      "first_customer_plan": "Validate specific Türkiye wholesaler stolen-cargo intake controls missing from global platforms and domestic WMS vendors.",
+      "main_risk": "Established traceability and custody applications; meaningful fraud prevention needs trusted external identity and independent evidence feeds, not free form entries.",
+      "validation_assumption": "A generic chain-of-custody ledger can be marketed as new without external verification networks.",
+      "evidence_strength": "high_news_and_multiple_primary_vendor_pages",
+      "competition_confidence": "high_global_direct;Turkish_vendor_scope_unverified",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "Türkiye 3PL/warehouse target is plausible, but market-specific direct supplier verification is incomplete.",
+      "validated_scope_hint": "Türkiye",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "OriginsNext, OrigoVero and Freight 411 already cover shipment provenance, proof/evidence records, pallet-level custody or anti-theft documentation for 3PL, storage, shippers and freight buyers.",
+      "review_notes": "LAPD discovery was September 30, FreightWaves news October 7; distinguishes event date from article date. Zero direct Turkish competitors confirmed is not proof of Turkish market vacancy."
+    }
+  ],
+  "completed_at": "2026-10-08",
+  "validation_notes": "Competition counts represent verified named direct overlap in scoped research, not exhaustive market censuses. Rejected competition does not imply cash feasibility verified; unqualified uncertainty preserved."
+}
