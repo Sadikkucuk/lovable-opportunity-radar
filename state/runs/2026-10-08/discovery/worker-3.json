@@ -1,0 +1,2267 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-08",
+  "worker_id": "3",
+  "source_batch_index_generated_at": "2026-10-08T01:54:22Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "status": "complete",
+  "started_at": "2026-10-08T07:00:58+03:00",
+  "completed_at": "2026-10-08T04:04:07.822Z",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 19,
+  "original_articles_verified": 17,
+  "full_article_not_verified": 2,
+  "noise_or_no_opportunity_count": 221,
+  "raw_opportunity_count": 19,
+  "raw_opportunities": [
+    {
+      "raw_id": "W3-20261008-001",
+      "supporting_article_ids": [
+        "f8bfc73d97951147bf7ffd27"
+      ],
+      "supporting_article_titles": [
+        "AI companies run virtual drug trials, aim to improve success of human studies - Reuters"
+      ],
+      "supporting_sources": [
+        "Reuters Technology"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/legal/litigation/ai-companies-run-virtual-drug-trials-aim-improve-success-human-studies-2026-10-07/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Before: trial decisions depended on conventional evidence. After: simulated virtual-patient predictions create an additional uncertain signal requiring accountable review.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "Trial go/no-go review",
+      "target_customer": "Biotech clinical development teams",
+      "buyer": "VP Clinical Development",
+      "job_to_be_done": "Compare virtual trial claims with assumptions, reviewer decisions and subsequent actual results.",
+      "current_friction": "Simulation evidence and caveats are buried in decks and email.",
+      "product_mechanism": "Prediction register, assumption log, signoff, outcome reconciliation and audit export.",
+      "one_sentence_concept": "Clinical Trial Simulation Decision Dossier: Prediction register, assumption log, signoff, outcome reconciliation and audit export.",
+      "why_now": "Reuters 2026-10-07 reports simulated trials and warns predictions are not definitive.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 105,
+      "draft_canonical_key": "biotech-clinical-development-teams|trial-go-no-go-review|prediction-register",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://www.reuters.com/legal/litigation/ai-companies-run-virtual-drug-trials-aim-improve-success-human-studies-2026-10-07/"
+        ],
+        "hypothesis_and_limitations": "Aggregate-only, not patient data or clinical advice.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    },
+    {
+      "raw_id": "W3-20261008-002",
+      "supporting_article_ids": [
+        "a20b5329b985d7ae076c721e"
+      ],
+      "supporting_article_titles": [
+        "OpenAI lance son filigrane textGrain en Europe - ZDNET"
+      ],
+      "supporting_sources": [
+        "ZDNet France"
+      ],
+      "canonical_source_urls": [
+        "https://openai.com/index/eu-text-provenance/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Before: inconsistent provenance of AI-written text. After: EU text watermark rollout and disclosure requirements heighten documentation need.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "CAPABILITY_DELTA"
+      ],
+      "affected_workflow": "Content publication approval",
+      "target_customer": "EU publishers and agencies",
+      "buyer": "Content compliance director",
+      "job_to_be_done": "Record model usage, editing, human approval and disclosure evidence per publication.",
+      "current_friction": "Mixed authorship and detector limitations undermine auditability.",
+      "product_mechanism": "Declaration form, provenance history, review signoff and disclosure export.",
+      "one_sentence_concept": "EU AI Text Disclosure Register: Declaration form, provenance history, review signoff and disclosure export.",
+      "why_now": "OpenAI 2026-10-05 phased EU textGrain announcement.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 95,
+      "draft_canonical_key": "eu-publishers-and-agencies|content-publication-approval|declaration-form",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://openai.com/index/eu-text-provenance/"
+        ],
+        "hypothesis_and_limitations": "No AI authorship detector; watermark absence proves nothing.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    },
+    {
+      "raw_id": "W3-20261008-003",
+      "supporting_article_ids": [
+        "a20b5329b985d7ae076c721e"
+      ],
+      "supporting_article_titles": [
+        "OpenAI lance son filigrane textGrain en Europe - ZDNET"
+      ],
+      "supporting_sources": [
+        "ZDNet France"
+      ],
+      "canonical_source_urls": [
+        "https://openai.com/index/eu-text-provenance/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Before: no select-model API watermark opt-in. After: API opt-in and EU-specific rollout introduce cross-region configuration decisions.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "REGULATION_DELTA"
+      ],
+      "affected_workflow": "AI model release validation",
+      "target_customer": "AI application engineering teams",
+      "buyer": "AI engineering lead",
+      "job_to_be_done": "Track watermark configuration, eligible models, regions, test evidence and release approvals.",
+      "current_friction": "Provider rollout settings and detector limitations are difficult to track.",
+      "product_mechanism": "Model/region feature inventory, manual test matrix, exception signoff.",
+      "one_sentence_concept": "Text Watermark Rollout QA Matrix: Model/region feature inventory, manual test matrix, exception signoff.",
+      "why_now": "OpenAI 2026-10-05 API opt-in and regional launch.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 80,
+      "draft_canonical_key": "ai-application-engineering-teams|ai-model-release-validation|model-region-feature-inventory",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://openai.com/index/eu-text-provenance/"
+        ],
+        "hypothesis_and_limitations": "No restricted detector access assumed.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    },
+    {
+      "raw_id": "W3-20261008-004",
+      "supporting_article_ids": [
+        "dddb10c49f59798a8f37427d"
+      ],
+      "supporting_article_titles": [
+        "Australia's AirTrunk to triple Japan data center investment to up to $30bn - Nikkei Asia"
+      ],
+      "supporting_sources": [
+        "Nikkei Asia"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/world/asia-pacific/blackstone-backed-airtrunk-invest-1-billion-japan-data-centre-campus-2026-10-07/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Before: legacy cloud data-centre cooling not necessarily AI-ready. After: AirTrunk funds liquid-cooling conversion for high-density workloads.",
+      "delta_types": [
+        "INFRASTRUCTURE_DELTA",
+        "CAPABILITY_DELTA"
+      ],
+      "affected_workflow": "Data-centre cooling retrofit commissioning",
+      "target_customer": "Data-centre operators and MEP contractors",
+      "buyer": "Facilities programme director",
+      "job_to_be_done": "Collect FAT/SAT, installation, punch-list and handover proof for retrofit.",
+      "current_friction": "Acceptance evidence and exceptions span multiple contractors.",
+      "product_mechanism": "Asset register, commissioning milestones, test attachments and approval PDF.",
+      "one_sentence_concept": "Liquid Cooling Retrofit Evidence Gate: Asset register, commissioning milestones, test attachments and approval PDF.",
+      "why_now": "Reuters 2026-10-07 AirTrunk USD1bn cooling investment.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 130,
+      "draft_canonical_key": "data-centre-operators-and-mep-contractors|data-centre-cooling-retrofit-commissioning|asset-register",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://www.reuters.com/world/asia-pacific/blackstone-backed-airtrunk-invest-1-billion-japan-data-centre-campus-2026-10-07/"
+        ],
+        "hypothesis_and_limitations": "Not a live cooling controller or engineering certification.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    },
+    {
+      "raw_id": "W3-20261008-005",
+      "supporting_article_ids": [
+        "e6f1660072612ecc6a753fb4"
+      ],
+      "supporting_article_titles": [
+        "AI could help invent new materials. First, firms must figure out how to make them - The Logic"
+      ],
+      "supporting_sources": [
+        "The Logic"
+      ],
+      "canonical_source_urls": [
+        "https://news.mit.edu/2026/how-generative-ai-can-help-scientists-synthesize-complex-materials-0202"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Before: AI-proposed materials lacked synthesis routes. After: recipe-suggestion models enable more candidate experiments but demand traceable handoff.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "Materials synthesis experiment planning",
+      "target_customer": "Advanced materials laboratories",
+      "buyer": "R&D lab manager",
+      "job_to_be_done": "Version candidate recipes, record deviations, reviews and experimental results.",
+      "current_friction": "Lab notebooks and spreadsheet histories are disconnected.",
+      "product_mechanism": "Recipe version ledger, batch cards, safety signoff and result comparison.",
+      "one_sentence_concept": "AI Materials Recipe-to-Lab Handoff: Recipe version ledger, batch cards, safety signoff and result comparison.",
+      "why_now": "MIT DiffSyn research corroborates the 2026-10-07 materials synthesis feed.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 115,
+      "draft_canonical_key": "advanced-materials-laboratories|materials-synthesis-experiment-planning|recipe-version-ledger",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://news.mit.edu/2026/how-generative-ai-can-help-scientists-synthesize-complex-materials-0202"
+        ],
+        "hypothesis_and_limitations": "Trakya transferability hypothesis: glass, ceramics and chemicals labs could pilot; not verified local demand.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    },
+    {
+      "raw_id": "W3-20261008-006",
+      "supporting_article_ids": [
+        "54625928a9910c0d0cb4614d",
+        "eba61fcc2c1a23d4034aacbb"
+      ],
+      "supporting_article_titles": [
+        "Wer hat Schutzmaßnahmen?: Firmen zumeist nicht speziell für KI-Angriffe gewappnet - Handelsblatt",
+        "BSI: Nur jede zehnte Firma in Deutschland für KI-Angriffe gewappnet - Handelsblatt"
+      ],
+      "supporting_sources": [
+        "Handelsblatt",
+        "Handelsblatt"
+      ],
+      "canonical_source_urls": [
+        "https://www.tuev-verband.de/studien/ki-sicherheitsstudie-2026"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Before: ordinary IT incident procedures often omitted AI-specific vectors. After: TÜV/BSI quantifies missing dedicated AI response processes.",
+      "delta_types": [
+        "RISK_DELTA",
+        "BEHAVIOR_DELTA"
+      ],
+      "affected_workflow": "AI-related security incident handling",
+      "target_customer": "Mid-market AI-using businesses",
+      "buyer": "CISO",
+      "job_to_be_done": "Intake, classify, assign and close AI-related incidents with evidence.",
+      "current_friction": "Generic tickets omit model context, data exposure and impersonation details.",
+      "product_mechanism": "Incident templates, case assignment, severity, evidence and postmortem.",
+      "one_sentence_concept": "AI-Specific Incident Response Desk: Incident templates, case assignment, severity, evidence and postmortem.",
+      "why_now": "TÜV/BSI 2026-10-07: 11% of AI-using/planning companies have special incident processes.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 120,
+      "draft_canonical_key": "mid-market-ai-using-businesses|ai-related-security-incident-handling|incident-templates",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://www.tuev-verband.de/studien/ki-sicherheitsstudie-2026"
+        ],
+        "hypothesis_and_limitations": "Trakya transferability hypothesis: factories using AI assistants face same workflow; no attack detection.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    },
+    {
+      "raw_id": "W3-20261008-007",
+      "supporting_article_ids": [
+        "54625928a9910c0d0cb4614d",
+        "eba61fcc2c1a23d4034aacbb"
+      ],
+      "supporting_article_titles": [
+        "Wer hat Schutzmaßnahmen?: Firmen zumeist nicht speziell für KI-Angriffe gewappnet - Handelsblatt",
+        "BSI: Nur jede zehnte Firma in Deutschland für KI-Angriffe gewappnet - Handelsblatt"
+      ],
+      "supporting_sources": [
+        "Handelsblatt",
+        "Handelsblatt"
+      ],
+      "canonical_source_urls": [
+        "https://www.tuev-verband.de/studien/ki-sicherheitsstudie-2026"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Before: AI tool security assessment was uneven. After: new study finds only 52% of AI users test applications before use.",
+      "delta_types": [
+        "RISK_DELTA",
+        "BEHAVIOR_DELTA"
+      ],
+      "affected_workflow": "AI application onboarding",
+      "target_customer": "SME and mid-market IT departments",
+      "buyer": "IT governance lead",
+      "job_to_be_done": "Track AI app owners, data permissions, risk reviews and renewals.",
+      "current_friction": "Approvals, risk exceptions and review deadlines are scattered.",
+      "product_mechanism": "App inventory, risk questionnaire, approvals and expiry reminders.",
+      "one_sentence_concept": "AI Application Preflight Security Register: App inventory, risk questionnaire, approvals and expiry reminders.",
+      "why_now": "TÜV/BSI 2026-10-07 also reports only 40% monitor AI use.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 105,
+      "draft_canonical_key": "sme-and-mid-market-it-departments|ai-application-onboarding|app-inventory",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://www.tuev-verband.de/studien/ki-sicherheitsstudie-2026"
+        ],
+        "hypothesis_and_limitations": "Trakya transferability hypothesis: manufacturing AI tool adoption needs similar preflight checks.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    },
+    {
+      "raw_id": "W3-20261008-008",
+      "supporting_article_ids": [
+        "54625928a9910c0d0cb4614d",
+        "eba61fcc2c1a23d4034aacbb"
+      ],
+      "supporting_article_titles": [
+        "Wer hat Schutzmaßnahmen?: Firmen zumeist nicht speziell für KI-Angriffe gewappnet - Handelsblatt",
+        "BSI: Nur jede zehnte Firma in Deutschland für KI-Angriffe gewappnet - Handelsblatt"
+      ],
+      "supporting_sources": [
+        "Handelsblatt",
+        "Handelsblatt"
+      ],
+      "canonical_source_urls": [
+        "https://www.tuev-verband.de/studien/ki-sicherheitsstudie-2026"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Before: sensitive payment changes used ordinary email approvals. After: AI-powered phishing and deepfake risk increases verification friction.",
+      "delta_types": [
+        "RISK_DELTA",
+        "BEHAVIOR_DELTA"
+      ],
+      "affected_workflow": "Finance payment-change verification",
+      "target_customer": "Corporate finance and shared service teams",
+      "buyer": "Treasury manager",
+      "job_to_be_done": "Document out-of-band identity checks and dual authorization.",
+      "current_friction": "Spoofed communications and informal call-backs leave weak evidence.",
+      "product_mechanism": "Payment exception casebook, callback checklist, approvals and audit trail.",
+      "one_sentence_concept": "AI-Enabled Fraud Escalation Ledger: Payment exception casebook, callback checklist, approvals and audit trail.",
+      "why_now": "TÜV/BSI 2026-10-07: phishing dominant in AI-related incident reports.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 100,
+      "draft_canonical_key": "corporate-finance-and-shared-service-teams|finance-payment-change-verification|payment-exception-casebook",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://www.tuev-verband.de/studien/ki-sicherheitsstudie-2026"
+        ],
+        "hypothesis_and_limitations": "Trakya transferability hypothesis: industrial supplier bank-detail changes face same fraud surface; no payment integration.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    },
+    {
+      "raw_id": "W3-20261008-009",
+      "supporting_article_ids": [
+        "a4cd5085faff5374094de538"
+      ],
+      "supporting_article_titles": [
+        "\"테스트 케이스도 AI가 뚝딱\"…팝콘사, SDV 개발·지원 - 지디넷코리아"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea"
+      ],
+      "canonical_source_urls": [
+        "https://autosar.io/en"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Before: automotive requirements-to-test mapping largely manual. After: PopcornSAR TC Gen drafts tests grounded in requirement text.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "SPEED_DELTA"
+      ],
+      "affected_workflow": "Automotive software test traceability",
+      "target_customer": "OEM and Tier-1 automotive QA teams",
+      "buyer": "QA manager",
+      "job_to_be_done": "Review requirement-to-test links and highlight missing expected values.",
+      "current_friction": "Test cases can drift from source requirements or invent unspecified details.",
+      "product_mechanism": "CSV/text requirement import, gap flags, traceability links and human signoff.",
+      "one_sentence_concept": "SDV Requirement-to-Test Review Matrix: CSV/text requirement import, gap flags, traceability links and human signoff.",
+      "why_now": "PopcornSAR official TC Gen page corroborates 2026-10-07 demonstration.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 135,
+      "draft_canonical_key": "oem-and-tier-1-automotive-qa-teams|automotive-software-test-traceability|csv-text-requirement-import",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://autosar.io/en"
+        ],
+        "hypothesis_and_limitations": "Trakya transferability hypothesis: automotive suppliers can use review matrix; MVP has no paid AI API.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    },
+    {
+      "raw_id": "W3-20261008-010",
+      "supporting_article_ids": [
+        "5e226add029e8754f805535b",
+        "15c36964c531710bce30a6aa"
+      ],
+      "supporting_article_titles": [
+        "\"3억 건 데이터셋 축적\"...크라우드웍스, 피지컬 AI 데이터 시장 정조준 - 지디넷코리아",
+        "알체라, 피지컬 AI '데이터 플랫폼' 공개…오프라인 데이터 부족 해결 - 지디넷코리아"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea",
+        "ZDNet Korea"
+      ],
+      "canonical_source_urls": [
+        "https://bizcru.sh/en/news/article/20261002-5176",
+        "https://www.alchera.ai/en/company/media/alchera-ai-festa-26-physical-ai-data"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Before: robot training datasets lacked uniform acceptance metadata. After: physical-AI data suppliers emphasize capture provenance and QA.",
+      "delta_types": [
+        "DATA_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "Robotics dataset acceptance",
+      "target_customer": "Robot R&D labs and data teams",
+      "buyer": "Dataset operations manager",
+      "job_to_be_done": "Review capture conditions, rights, task labels and QA before dataset acceptance.",
+      "current_friction": "Dataset manifest, rights and label QA records are fragmented.",
+      "product_mechanism": "Manifest import, sampling checklist, provenance, signoff and acceptance report.",
+      "one_sentence_concept": "Physical AI Dataset Quality Ledger: Manifest import, sampling checklist, provenance, signoff and acceptance report.",
+      "why_now": "2026 AI Festa physical-AI data presentations; Alchera primary source.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 145,
+      "draft_canonical_key": "robot-r-d-labs-and-data-teams|robotics-dataset-acceptance|manifest-import",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://bizcru.sh/en/news/article/20261002-5176",
+          "https://www.alchera.ai/en/company/media/alchera-ai-festa-26-physical-ai-data"
+        ],
+        "hypothesis_and_limitations": "Trakya transferability hypothesis: factories piloting robots may need data QA; metadata only, no large video hosting.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    },
+    {
+      "raw_id": "W3-20261008-011",
+      "supporting_article_ids": [
+        "5e226add029e8754f805535b",
+        "15c36964c531710bce30a6aa"
+      ],
+      "supporting_article_titles": [
+        "\"3억 건 데이터셋 축적\"...크라우드웍스, 피지컬 AI 데이터 시장 정조준 - 지디넷코리아",
+        "알체라, 피지컬 AI '데이터 플랫폼' 공개…오프라인 데이터 부족 해결 - 지디넷코리아"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea",
+        "ZDNet Korea"
+      ],
+      "canonical_source_urls": [
+        "https://bizcru.sh/en/news/article/20261002-5176",
+        "https://www.alchera.ai/en/company/media/alchera-ai-festa-26-physical-ai-data"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Before: physical robot data collection was ad hoc. After: real-world action-data collection becomes a repeatable deliverable.",
+      "delta_types": [
+        "DATA_DELTA",
+        "LABOR_DELTA"
+      ],
+      "affected_workflow": "Robot field capture coordination",
+      "target_customer": "Robot integrators and industrial R&D teams",
+      "buyer": "Robotics programme lead",
+      "job_to_be_done": "Plan capture sessions, operators, environments and task coverage.",
+      "current_friction": "Capture coverage is hard to reconcile across sites and shifts.",
+      "product_mechanism": "Task taxonomy, capture queue, session calendar, coverage matrix and permission record.",
+      "one_sentence_concept": "Robot Data Collection Campaign Planner: Task taxonomy, capture queue, session calendar, coverage matrix and permission record.",
+      "why_now": "CrowdWorks/Alchera robot action-data workflow reported around AI Festa 2026.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 125,
+      "draft_canonical_key": "robot-integrators-and-industrial-r-d-teams|robot-field-capture-coordination|task-taxonomy",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://bizcru.sh/en/news/article/20261002-5176",
+          "https://www.alchera.ai/en/company/media/alchera-ai-festa-26-physical-ai-data"
+        ],
+        "hypothesis_and_limitations": "Trakya transferability hypothesis: warehouse automation pilots could coordinate sessions; no hardware control.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    },
+    {
+      "raw_id": "W3-20261008-012",
+      "supporting_article_ids": [
+        "fc6a7d7a03ec750901d1909a",
+        "a8766076fb35a07375a9e74c"
+      ],
+      "supporting_article_titles": [
+        "옥타코, AI 에이전트 보안 해법 제시...\"신뢰체계 구축해야\" - 지디넷코리아",
+        "\"AI가 한 행동, 책임은 누가?\"…IBM, \"에이전트 행동 기록 체계 구축해야\" - 지디넷코리아"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea",
+        "ZDNet Korea"
+      ],
+      "canonical_source_urls": [
+        "https://www.ibm.com/new/announcements/from-governance-policies-to-governance-proof-with-enforcement-tracking-for-watsonx-orchestrate"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Before: agent actions and human authorizations scattered across systems. After: IBM agent governance tracks enforcement evidence.",
+      "delta_types": [
+        "RISK_DELTA",
+        "CAPABILITY_DELTA"
+      ],
+      "affected_workflow": "AI agent action audit",
+      "target_customer": "Enterprise AI operations teams",
+      "buyer": "AI governance owner",
+      "job_to_be_done": "Record who authorized each agent action and what occurred.",
+      "current_friction": "Tool-call traces and approvals are difficult to reconstruct.",
+      "product_mechanism": "Webhook/manual event import, action receipts, permissions and review.",
+      "one_sentence_concept": "Agent Action Accountability Receipt Log: Webhook/manual event import, action receipts, permissions and review.",
+      "why_now": "IBM 2026 enforcement tracking and agent governance releases.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 135,
+      "draft_canonical_key": "enterprise-ai-operations-teams|ai-agent-action-audit|webhook-manual-event-import",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://www.ibm.com/new/announcements/from-governance-policies-to-governance-proof-with-enforcement-tracking-for-watsonx-orchestrate"
+        ],
+        "hypothesis_and_limitations": "Not an active enforcement gateway; customer supplies event logs.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    },
+    {
+      "raw_id": "W3-20261008-013",
+      "supporting_article_ids": [
+        "9e2fd5693a9f7fb2beb2f475"
+      ],
+      "supporting_article_titles": [
+        "「FDEが開発したAIエージェントの7割は使われず、単なるコンサルティングが販売される」 ガートナー予測 - ITmedia"
+      ],
+      "supporting_sources": [
+        "ITmedia"
+      ],
+      "canonical_source_urls": [
+        "https://www.gartner.com/en/newsroom/press-releases/2026-09-29-gartner-predicts-70-percent-of-enterprises-will-abandon-agentic-ai-built-by-vendor-forward-deployed-engineering-by-2028"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Before: bespoke vendor agents had vague ownership and transition. After: Gartner forecasts abandonment driven by cost and weak handover.",
+      "delta_types": [
+        "BUSINESS_MODEL_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Agent vendor procurement and handover",
+      "target_customer": "Enterprise AI programme buyers",
+      "buyer": "CIO",
+      "job_to_be_done": "Check IP, source, knowledge transfer, runbooks and internal ownership before vendor exit.",
+      "current_friction": "Vendor exit terms and maintainability evidence are unclear.",
+      "product_mechanism": "Deliverable inventory, contract checklist, handover tests and acceptance.",
+      "one_sentence_concept": "Vendor-Built Agent Exit & Handover Gate: Deliverable inventory, contract checklist, handover tests and acceptance.",
+      "why_now": "Gartner 2026-09-29 forecasts 70% abandonment by 2028; prediction not observed current rate.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 115,
+      "draft_canonical_key": "enterprise-ai-programme-buyers|agent-vendor-procurement-and-handover|deliverable-inventory",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://www.gartner.com/en/newsroom/press-releases/2026-09-29-gartner-predicts-70-percent-of-enterprises-will-abandon-agentic-ai-built-by-vendor-forward-deployed-engineering-by-2028"
+        ],
+        "hypothesis_and_limitations": "Not legal advice or migration service.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    },
+    {
+      "raw_id": "W3-20261008-014",
+      "supporting_article_ids": [
+        "db4e21680b1cd3f4bd48c44c"
+      ],
+      "supporting_article_titles": [
+        "映像と音声で現場巡回を自動記録、AIエージェントのPoC開始 セーフィーとBONX：AI - ITmedia"
+      ],
+      "supporting_sources": [
+        "ITmedia"
+      ],
+      "canonical_source_urls": [
+        "https://prtimes.jp/main/html/rd/p/000000375.000017641.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Before: site patrol observations were manually transcribed. After: Safie/BONX PoC links speech with visual evidence.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "SPEED_DELTA"
+      ],
+      "affected_workflow": "Factory/facility patrol corrective actions",
+      "target_customer": "Industrial sites and construction operators",
+      "buyer": "Operations manager",
+      "job_to_be_done": "Assign observations to remediation owners, deadlines and closeout proof.",
+      "current_friction": "Recorded observations do not themselves close work orders.",
+      "product_mechanism": "Photo/manual intake, location tagging, corrective action board and signoff.",
+      "one_sentence_concept": "Field Patrol Observation-to-Action Register: Photo/manual intake, location tagging, corrective action board and signoff.",
+      "why_now": "Safie/BONX 2026-09-29 primary announcement, reported 2026-10-07.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 100,
+      "draft_canonical_key": "industrial-sites-and-construction-operators|factory-facility-patrol-corrective-actions|photo-manual-intake",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://prtimes.jp/main/html/rd/p/000000375.000017641.html"
+        ],
+        "hypothesis_and_limitations": "Trakya transferability hypothesis: EHS/maintenance patrols in factories; no paid transcription or video hosting.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    },
+    {
+      "raw_id": "W3-20261008-015",
+      "supporting_article_ids": [
+        "c5b752dd87151c39b631bf9c"
+      ],
+      "supporting_article_titles": [
+        "Emballages : Alpla pousse les feux en Turquie et aux États-Unis - L'Usine Nouvelle"
+      ],
+      "supporting_sources": [
+        "L'Usine Nouvelle"
+      ],
+      "canonical_source_urls": [
+        "https://blog.alpla.com/de/pressemitteilung/newsroom/alpla-staerkt-praesenz-der-tuerkei-mit-neuen-werken-izmir-und-adana"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Before: packaging supply options were geographically narrower. After: ALPLA added two Turkish plants, increasing local production capacity.",
+      "delta_types": [
+        "INFRASTRUCTURE_DELTA",
+        "DISTRIBUTION_DELTA"
+      ],
+      "affected_workflow": "Packaging procurement qualification",
+      "target_customer": "Turkish FMCG, food and beverage manufacturers",
+      "buyer": "Procurement manager",
+      "job_to_be_done": "Track plant capability, sample approval, lead time and delivery exceptions.",
+      "current_friction": "Supplier data, qualification documents and delivery deviations span email and spreadsheets.",
+      "product_mechanism": "Plant capability cards, sample signoff, supplier scorecard and delivery case log.",
+      "one_sentence_concept": "Packaging Supplier Onboarding & Delivery Evidence: Plant capability cards, sample signoff, supplier scorecard and delivery case log.",
+      "why_now": "ALPLA 2026-09-16 confirms Izmir/Adana plants and ~EUR30m investment.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 125,
+      "draft_canonical_key": "turkish-fmcg-food-and-beverage-manufacturers|packaging-procurement-qualification|plant-capability-cards",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://blog.alpla.com/de/pressemitteilung/newsroom/alpla-staerkt-praesenz-der-tuerkei-mit-neuen-werken-izmir-und-adana"
+        ],
+        "hypothesis_and_limitations": "Trakya transferability hypothesis: Thrace food/personal care plants may source PET/HDPE/PP; local buyers not proven.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    },
+    {
+      "raw_id": "W3-20261008-016",
+      "supporting_article_ids": [
+        "400f8715a7a31efc8c8b044d"
+      ],
+      "supporting_article_titles": [
+        "[ET단상] AI 데이터를 위한 문서중앙화의 조건 - 전자신문"
+      ],
+      "supporting_sources": [
+        "ETNews"
+      ],
+      "canonical_source_urls": [
+        "https://www.fasoo.ai/ai-data-platform-overview"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Before: document repositories optimized for storage/control. After: AI knowledge use requires lineage, version and owner metadata.",
+      "delta_types": [
+        "DATA_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Document preparation for enterprise AI",
+      "target_customer": "Mid-market enterprises deploying internal AI",
+      "buyer": "Knowledge management lead",
+      "job_to_be_done": "Review document versions, access classes, owners and freshness.",
+      "current_friction": "Local files, duplicates and obsolete SOPs undermine retrieval trust.",
+      "product_mechanism": "CSV file manifest, metadata score, owner review tasks and export.",
+      "one_sentence_concept": "Enterprise AI Document Readiness Audit: CSV file manifest, metadata score, owner review tasks and export.",
+      "why_now": "Fasoo 2026-10-07 article and primary platform description.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 120,
+      "draft_canonical_key": "mid-market-enterprises-deploying-internal-ai|document-preparation-for-enterprise-ai|csv-file-manifest",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://www.fasoo.ai/ai-data-platform-overview"
+        ],
+        "hypothesis_and_limitations": "Trakya transferability hypothesis: industrial SOP and QA docs need version checks; no document ingestion required.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    },
+    {
+      "raw_id": "W3-20261008-017",
+      "supporting_article_ids": [
+        "9cf615fae76ab9131f76daea"
+      ],
+      "supporting_article_titles": [
+        "Le support d'Office 2021 prend fin ce mois-ci : cinq options s'offrent à vous - ZDNET"
+      ],
+      "supporting_sources": [
+        "ZDNet France"
+      ],
+      "canonical_source_urls": [
+        "https://support.microsoft.com/en-us/office/system-requirements/end-of-support-for-office-2021"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Before: Office 2021 received security updates. After: 2026-10-13 support ends without extended fixes.",
+      "delta_types": [
+        "RISK_DELTA",
+        "REGULATION_DELTA"
+      ],
+      "affected_workflow": "Enterprise desktop software migration",
+      "target_customer": "Organizations with Office 2021/LTSC 2021",
+      "buyer": "IT operations manager",
+      "job_to_be_done": "Inventory seats, test macro/file compatibility and sign off upgrade waves.",
+      "current_friction": "Device inventories and compatibility exceptions are incomplete.",
+      "product_mechanism": "CSV inventory, migration waves, compatibility checklist and risk exceptions.",
+      "one_sentence_concept": "Office 2021 End-of-Support Migration Gate: CSV inventory, migration waves, compatibility checklist and risk exceptions.",
+      "why_now": "Microsoft support and lifecycle confirm 2026-10-13 deadline.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 90,
+      "draft_canonical_key": "organizations-with-office-2021-ltsc-2021|enterprise-desktop-software-migration|csv-inventory",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://support.microsoft.com/en-us/office/system-requirements/end-of-support-for-office-2021"
+        ],
+        "hypothesis_and_limitations": "No device scan; customer-provided inventory.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    },
+    {
+      "raw_id": "W3-20261008-018",
+      "supporting_article_ids": [
+        "c41a3771fa96ad6a26748483",
+        "15c36964c531710bce30a6aa"
+      ],
+      "supporting_article_titles": [
+        "현대차 \"로봇, 실험실에선 완성 못 한다\"…양산 조건은 '현장 검증' - 지디넷코리아",
+        "알체라, 피지컬 AI '데이터 플랫폼' 공개…오프라인 데이터 부족 해결 - 지디넷코리아"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea",
+        "ZDNet Korea"
+      ],
+      "canonical_source_urls": [
+        "https://www.hyundaimotorgroup.com/en/news/hyundai-motor-group-announces-ai-robotics-strategy--to-lead-human-centered-robotics-era-at-ces-2026",
+        "https://www.alchera.ai/en/company/media/alchera-ai-festa-26-physical-ai-data"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Before: lab robot demos insufficient for production. After: Hyundai deployment strategy requires staged field verification and real-world feedback.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "DATA_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Industrial robot pilot acceptance",
+      "target_customer": "Manufacturers and robot integrators",
+      "buyer": "Manufacturing engineering manager",
+      "job_to_be_done": "Capture task-level acceptance tests, cycle time, safety signoff and field exceptions.",
+      "current_friction": "Line/shift observations and rollout criteria are inconsistent.",
+      "product_mechanism": "Pilot test matrix, threshold log, operator feedback and release gate.",
+      "one_sentence_concept": "Industrial Robot Field Acceptance Matrix: Pilot test matrix, threshold log, operator feedback and release gate.",
+      "why_now": "Hyundai official CES 2026 strategy corroborates 2026-10-07 field-validation feed.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 140,
+      "draft_canonical_key": "manufacturers-and-robot-integrators|industrial-robot-pilot-acceptance|pilot-test-matrix",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://www.hyundaimotorgroup.com/en/news/hyundai-motor-group-announces-ai-robotics-strategy--to-lead-human-centered-robotics-era-at-ces-2026",
+          "https://www.alchera.ai/en/company/media/alchera-ai-festa-26-physical-ai-data"
+        ],
+        "hypothesis_and_limitations": "Trakya transferability hypothesis: automotive, food and logistics plants could pilot; no robot control or safety certification.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    },
+    {
+      "raw_id": "W3-20261008-019",
+      "supporting_article_ids": [
+        "54625928a9910c0d0cb4614d",
+        "eba61fcc2c1a23d4034aacbb",
+        "a8766076fb35a07375a9e74c"
+      ],
+      "supporting_article_titles": [
+        "Wer hat Schutzmaßnahmen?: Firmen zumeist nicht speziell für KI-Angriffe gewappnet - Handelsblatt",
+        "BSI: Nur jede zehnte Firma in Deutschland für KI-Angriffe gewappnet - Handelsblatt",
+        "\"AI가 한 행동, 책임은 누가?\"…IBM, \"에이전트 행동 기록 체계 구축해야\" - 지디넷코리아"
+      ],
+      "supporting_sources": [
+        "Handelsblatt",
+        "Handelsblatt",
+        "ZDNet Korea"
+      ],
+      "canonical_source_urls": [
+        "https://www.tuev-verband.de/studien/ki-sicherheitsstudie-2026",
+        "https://www.ibm.com/new/announcements/from-governance-policies-to-governance-proof-with-enforcement-tracking-for-watsonx-orchestrate"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Before: AI policies were static checklists. After: BSI/TÜV gaps and IBM enforcement evidence highlight need to prove operation.",
+      "delta_types": [
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "AI control audit evidence",
+      "target_customer": "Enterprises with AI governance obligations",
+      "buyer": "Internal audit lead",
+      "job_to_be_done": "Collect owner attestations, control test evidence and exception closures.",
+      "current_friction": "Policies alone cannot prove tests, monitoring or enforcement.",
+      "product_mechanism": "Control library, evidence requests, review calendar and audit export.",
+      "one_sentence_concept": "AI Security Control Evidence Pack: Control library, evidence requests, review calendar and audit export.",
+      "why_now": "TÜV/BSI 2026 study and IBM 2026 agent enforcement tracking.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 125,
+      "draft_canonical_key": "enterprises-with-ai-governance-obligations|ai-control-audit-evidence|control-library",
+      "evidence_notes": {
+        "verified_evidence_urls": [
+          "https://www.tuev-verband.de/studien/ki-sicherheitsstudie-2026",
+          "https://www.ibm.com/new/announcements/from-governance-policies-to-governance-proof-with-enforcement-tracking-for-watsonx-orchestrate"
+        ],
+        "hypothesis_and_limitations": "No automatic enforcement, security certification or legal advice.",
+        "distinction": "Reported facts are sourced; proposed workflow and paying demand are unvalidated discovery hypotheses."
+      }
+    }
+  ],
+  "triage_records": [
+    {
+      "batch_number": 13,
+      "position": 1,
+      "article_id": "176a16a6c7d85dcba2f5c9e1",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 2,
+      "article_id": "416a3c6a1e43e4527864078a",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 3,
+      "article_id": "3229cc698403ab78dad3278a",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 4,
+      "article_id": "1246adcfd30654edbb3fb385",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 5,
+      "article_id": "1a4f53b33dae7a0d461f89e7",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 6,
+      "article_id": "e3f4ce6894d2b24f5fd3e913",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 7,
+      "article_id": "a16b4b2bd8d1aef1b99b81db",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 8,
+      "article_id": "be2d8358beaff3a2424be42e",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 9,
+      "article_id": "64bf9a56c26dde40d69d1b1b",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 10,
+      "article_id": "fb1f9e0a14fd33fd4ac9814d",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 11,
+      "article_id": "854c13f567ad83b5763ced96",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 12,
+      "article_id": "2849531a9cf06309de350270",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 13,
+      "article_id": "942fe815542481a78212f4a9",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 14,
+      "article_id": "15594f80679f3e7ac9130d10",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 15,
+      "article_id": "a76424f150db53787839c54d",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 16,
+      "article_id": "b7a86050641795447a030b2c",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 17,
+      "article_id": "f8bfc73d97951147bf7ffd27",
+      "disposition": "candidate_verified"
+    },
+    {
+      "batch_number": 13,
+      "position": 18,
+      "article_id": "25e696b9e52251c77d54d8f6",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 19,
+      "article_id": "fdbc2d7ed04bb948434e4147",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 20,
+      "article_id": "d7146c728b8d2ab1204869d8",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 21,
+      "article_id": "a29aed1f4c75d3cab4e80cb9",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 22,
+      "article_id": "7790164d2183b73aced0eabe",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 23,
+      "article_id": "ff7be71bb76b3e55e7ef5e77",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 24,
+      "article_id": "99293b72999fc758e5bb7ceb",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 25,
+      "article_id": "e53ff4f09bc2613a1a970bd2",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 26,
+      "article_id": "a2bb5714d4c66b6ec2724e83",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 27,
+      "article_id": "cc2f2395136125877e364b96",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 28,
+      "article_id": "f5971610ee58acf16b2d832d",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 29,
+      "article_id": "5bab125417728c642ffff9ae",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 30,
+      "article_id": "2fa70f161c1e3d21ec99fca0",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 31,
+      "article_id": "754359d7906e75c880178c39",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 32,
+      "article_id": "ebcfb4f6e6342af6cd053fb8",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 33,
+      "article_id": "12c23c539b97e710e602a197",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 34,
+      "article_id": "6575293928a6f39c8afdd1af",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 35,
+      "article_id": "c1ccbf219218698fa3b80a9f",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 36,
+      "article_id": "8691f12a93b1964d8ec7986e",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 37,
+      "article_id": "2f7196c9d8d1f6e417ba0485",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 38,
+      "article_id": "df4cda69ff1bc3446073d6c7",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 39,
+      "article_id": "2bf9c0a5ec2755e2f5a170d4",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 13,
+      "position": 40,
+      "article_id": "a20b5329b985d7ae076c721e",
+      "disposition": "candidate_verified"
+    },
+    {
+      "batch_number": 14,
+      "position": 1,
+      "article_id": "dddb10c49f59798a8f37427d",
+      "disposition": "candidate_verified"
+    },
+    {
+      "batch_number": 14,
+      "position": 2,
+      "article_id": "aa248ccb89849ca78428cf51",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 3,
+      "article_id": "65b21909102db7d8c189d105",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 4,
+      "article_id": "d60a337703fe31ba18475d08",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 5,
+      "article_id": "5c2c38ffd1686b6760b034dd",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 6,
+      "article_id": "e6f1660072612ecc6a753fb4",
+      "disposition": "candidate_verified"
+    },
+    {
+      "batch_number": 14,
+      "position": 7,
+      "article_id": "c39481a9aff1a5f80f37670c",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 8,
+      "article_id": "338f28fc6492e2780b8d8aaf",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 9,
+      "article_id": "ee17cc962210cfe0b426c03e",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 10,
+      "article_id": "635851d7dbdc137f2d66d514",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 11,
+      "article_id": "1de731a304d49ae25beae504",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 12,
+      "article_id": "69d44f5f0069163ff2e8d159",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 13,
+      "article_id": "12d47c3e3b7438be8c3d97f8",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 14,
+      "article_id": "bd1a76443eb028fb79dcca6d",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 15,
+      "article_id": "319d48502926789b7159196c",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 16,
+      "article_id": "4dcc51013f42d4889b28cffc",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 17,
+      "article_id": "e3288c2baa70a22ace61a968",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 18,
+      "article_id": "e0a4262ea3614e15dd91c586",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 19,
+      "article_id": "86624000185401d8cf7082a3",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 20,
+      "article_id": "213a6f9239dc9986c15cb8d7",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 21,
+      "article_id": "db2b12b6fee7ebbdc9a22327",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 22,
+      "article_id": "54625928a9910c0d0cb4614d",
+      "disposition": "candidate_verified"
+    },
+    {
+      "batch_number": 14,
+      "position": 23,
+      "article_id": "c184abb5e40eea7e63e9396e",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 24,
+      "article_id": "45eb43d3860120397a6c2977",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 25,
+      "article_id": "bcea9a82bccc85c1b633a007",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 26,
+      "article_id": "acff19a0dc612dacfe6cd635",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 27,
+      "article_id": "f77ada30e5839cb6b25f1b42",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 28,
+      "article_id": "644d1bfbbff6a0b5a5b2c681",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 29,
+      "article_id": "2f6d46d0bece05f562b86ced",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 30,
+      "article_id": "99b16ed56ff5c83fb5315a1e",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 31,
+      "article_id": "b8a937003e600780ef1025f1",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 32,
+      "article_id": "5f3f7b8230b797e7393f83ea",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 33,
+      "article_id": "c15495143f998fb07caea40e",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 34,
+      "article_id": "064ca380716be8f87879ced3",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 35,
+      "article_id": "9478e31333ad647ecf45da2b",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 36,
+      "article_id": "830aa641afd40f4506453fe0",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 37,
+      "article_id": "ed0ceb8b7309fbf953f450df",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 38,
+      "article_id": "1429c489d8601dec20feed4b",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 39,
+      "article_id": "9567f170a7715558375f9369",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 14,
+      "position": 40,
+      "article_id": "c01348486b4b7cea06c0f2e8",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 1,
+      "article_id": "a4cd5085faff5374094de538",
+      "disposition": "candidate_verified"
+    },
+    {
+      "batch_number": 15,
+      "position": 2,
+      "article_id": "811fa4c72cb2fc7ea12da48c",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 3,
+      "article_id": "21490e794d82d5959563f213",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 4,
+      "article_id": "faad97bbe846a583f348c086",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 5,
+      "article_id": "acea8424b086573221c18279",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 6,
+      "article_id": "f3675c21558b989802afdbc5",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 7,
+      "article_id": "9e4cb3a1e349c1b9b7415d0a",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 8,
+      "article_id": "6776aec22e296b79c35f3e86",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 9,
+      "article_id": "ce4e9915f0da16181f7377a2",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 10,
+      "article_id": "8851333e003cd4bf68579db1",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 11,
+      "article_id": "f668afbc2b57da9fe7b45451",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 12,
+      "article_id": "b6b6959b1174dbcf2adc71b5",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 13,
+      "article_id": "9eb0be295a6d227f21218fb6",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 14,
+      "article_id": "db522894b6eeb7a63e0c31fb",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 15,
+      "article_id": "3fdbea81cdeeca8b92ab0da4",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 16,
+      "article_id": "91a05326c02c5e4aa21cb7fd",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 17,
+      "article_id": "ce3651bea46fe58a2bb07ce0",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 18,
+      "article_id": "5604d2c228e46f8bec451a97",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 19,
+      "article_id": "7ee9ecd5648d52a7ac42a985",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 20,
+      "article_id": "238837c13c0e664d9bf60f31",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 21,
+      "article_id": "94959a5d8dccc5f6ea708223",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 22,
+      "article_id": "63a7cda49819672dab6472c1",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 23,
+      "article_id": "eba61fcc2c1a23d4034aacbb",
+      "disposition": "candidate_verified"
+    },
+    {
+      "batch_number": 15,
+      "position": 24,
+      "article_id": "7dbf4ec2382a0d26bb018b82",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 25,
+      "article_id": "7fe7befa2853ca16569d79bc",
+      "disposition": "candidate_unverified"
+    },
+    {
+      "batch_number": 15,
+      "position": 26,
+      "article_id": "e6067f24f4088d15000c4bd7",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 27,
+      "article_id": "5e226add029e8754f805535b",
+      "disposition": "candidate_verified"
+    },
+    {
+      "batch_number": 15,
+      "position": 28,
+      "article_id": "dff72d41ac184a81ff6c7406",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 29,
+      "article_id": "47805ed1d55d30d468204e97",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 30,
+      "article_id": "4c965195c99075e928a68772",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 31,
+      "article_id": "5696c6c5ccd58c29e43e4876",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 32,
+      "article_id": "4e1e9395acbb5b630ccac746",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 33,
+      "article_id": "5a4565610c5446f1ca7af99d",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 34,
+      "article_id": "42a740fea3ee7f0581cae622",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 35,
+      "article_id": "fc6a7d7a03ec750901d1909a",
+      "disposition": "candidate_verified"
+    },
+    {
+      "batch_number": 15,
+      "position": 36,
+      "article_id": "7d3dcaeb224ca66c3c3769ed",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 37,
+      "article_id": "9e2fd5693a9f7fb2beb2f475",
+      "disposition": "candidate_verified"
+    },
+    {
+      "batch_number": 15,
+      "position": 38,
+      "article_id": "dbebbbc31ae29fa56946a06b",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 39,
+      "article_id": "945f97ffc1e548aba93bd446",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 15,
+      "position": 40,
+      "article_id": "ae738f990f55e85cb1f96ea7",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 1,
+      "article_id": "cb2a5205409a483042b44ebe",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 2,
+      "article_id": "3d678a614a51995ddc8a7f9e",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 3,
+      "article_id": "53801c61b3797174cf4cd4cf",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 4,
+      "article_id": "fd69048b8c206aed68769ee9",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 5,
+      "article_id": "076774e49ed1fe32004b4860",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 6,
+      "article_id": "569446d0cc2c3ca757ed651c",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 7,
+      "article_id": "004b4c04b650e5b645502d90",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 8,
+      "article_id": "1f90b48e4ad90788ceb954eb",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 9,
+      "article_id": "d39a7a97bb18f627019d9194",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 10,
+      "article_id": "8cb82988ffab7758b705d604",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 11,
+      "article_id": "34c2f33544e1c5d1014341aa",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 12,
+      "article_id": "c84855698a4cbd583891c485",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 13,
+      "article_id": "21de0ea67435a14634943425",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 14,
+      "article_id": "c8e66fd8b09b474385550c59",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 15,
+      "article_id": "70688ddb7df5ffbdbea01b3f",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 16,
+      "article_id": "430966261d3552162ca0a3c3",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 17,
+      "article_id": "fa4e00a3805debd1652f6757",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 18,
+      "article_id": "4f17172d3bc738fc33d558b1",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 19,
+      "article_id": "581346da5a0771bf8c660655",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 20,
+      "article_id": "eb6719dcfd4dd2545399abe1",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 21,
+      "article_id": "beee4c8b1a953c55575c72cc",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 22,
+      "article_id": "31eb12c2ff7d0602bdeb427e",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 23,
+      "article_id": "3c371631e1aeca87f0e2fe10",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 24,
+      "article_id": "db4e21680b1cd3f4bd48c44c",
+      "disposition": "candidate_verified"
+    },
+    {
+      "batch_number": 16,
+      "position": 25,
+      "article_id": "9a6201dcfcf91136714da1f9",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 26,
+      "article_id": "b46723bc3e19f39693a31f4c",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 27,
+      "article_id": "261d873b3cdf5d374b7dc864",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 28,
+      "article_id": "2c171190f653f8688780608d",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 29,
+      "article_id": "6233280b2b739a1f6c6b4833",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 30,
+      "article_id": "70b942e1bde55e8f9c84703a",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 31,
+      "article_id": "53e8b5c5b39f0cf1766e8b75",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 32,
+      "article_id": "95518158e9ff19bc85b65409",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 33,
+      "article_id": "4fc0cfc2049b55a21c6cb0ff",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 34,
+      "article_id": "07fdbc1482146605d29504ef",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 35,
+      "article_id": "34ddc57ecc7dda31fa7c8ed8",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 36,
+      "article_id": "37b3aedabad022bc3bae5dae",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 37,
+      "article_id": "c2bb0d5223732d4b719abb76",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 38,
+      "article_id": "f2fbbbd7588b962dadf1d69c",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 16,
+      "position": 39,
+      "article_id": "15c36964c531710bce30a6aa",
+      "disposition": "candidate_verified"
+    },
+    {
+      "batch_number": 16,
+      "position": 40,
+      "article_id": "cfe8a2988cb419eda768783f",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 1,
+      "article_id": "727d3c964df2aa82c5845f04",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 2,
+      "article_id": "5fa91ec109e4a97012d94662",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 3,
+      "article_id": "d6fac91239e9de1db67b23fb",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 4,
+      "article_id": "797aab41ee3237b29c763b6b",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 5,
+      "article_id": "961aa3fd6b17608ebb821f40",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 6,
+      "article_id": "31c910a71aff73526161d270",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 7,
+      "article_id": "1eed5fd835987df45fc61f20",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 8,
+      "article_id": "81eb21beb05ab36d24664772",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 9,
+      "article_id": "c5b752dd87151c39b631bf9c",
+      "disposition": "candidate_verified"
+    },
+    {
+      "batch_number": 17,
+      "position": 10,
+      "article_id": "a9c8bf9244d90c1a49cb31bb",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 11,
+      "article_id": "df314b9e9d86d8c855826e7a",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 12,
+      "article_id": "b038f50ea535320a60b9572b",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 13,
+      "article_id": "6453d8cd07fe32e4a9390ccd",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 14,
+      "article_id": "89d8e67318817faf2f356728",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 15,
+      "article_id": "90a5f9eba2db16fcccdd3395",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 16,
+      "article_id": "aeb99ad7a45140c7c627d138",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 17,
+      "article_id": "c89decd591ed1d5dd500ce98",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 18,
+      "article_id": "74d80b2157a3b3f2aa65f2dc",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 19,
+      "article_id": "2de8c8b820bc7e54063b0ba6",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 20,
+      "article_id": "659f598fbab8b5a29c407dc2",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 21,
+      "article_id": "41b2e8572c9e0f406678291b",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 22,
+      "article_id": "a8766076fb35a07375a9e74c",
+      "disposition": "candidate_verified"
+    },
+    {
+      "batch_number": 17,
+      "position": 23,
+      "article_id": "75a84759867a28e37b99654f",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 24,
+      "article_id": "8bde560929cd9fbb496c12eb",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 25,
+      "article_id": "6f76628d71b866f0198af30d",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 26,
+      "article_id": "a9cfb98f63799156327cd4e6",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 27,
+      "article_id": "f7626ebeaa959426894b4966",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 28,
+      "article_id": "eaa54f75cb85985b372f32a9",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 29,
+      "article_id": "eaa54f75cb85985b372f32a9",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 30,
+      "article_id": "9e900f6bef5b204559e0f11f",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 31,
+      "article_id": "28f27a9b2007132fd9bbd18c",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 32,
+      "article_id": "edf6767a8ec7b41c76299710",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 33,
+      "article_id": "58ccf814b36fdbbfbba43d45",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 34,
+      "article_id": "553bc112bea699e03a48874a",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 35,
+      "article_id": "5229d6b1d8a2744868878dce",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 36,
+      "article_id": "c0a00668c7b261a3fef13fcb",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 37,
+      "article_id": "e254976d553b7b11dd4bd7cc",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 38,
+      "article_id": "e254976d553b7b11dd4bd7cc",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 39,
+      "article_id": "83bac2a14c1663dd50b607b6",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 17,
+      "position": 40,
+      "article_id": "ab95a7aa807da92432cc9f4f",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 1,
+      "article_id": "ff65f38376590699b45d6ca5",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 2,
+      "article_id": "400f8715a7a31efc8c8b044d",
+      "disposition": "candidate_verified"
+    },
+    {
+      "batch_number": 18,
+      "position": 3,
+      "article_id": "e2ea51034ccd9d5d321a9195",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 4,
+      "article_id": "56b15c933717068c5abec4ff",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 5,
+      "article_id": "9dd0d86b285dda356033bc35",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 6,
+      "article_id": "0501b5f0cf856247470d7f63",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 7,
+      "article_id": "beac31aea1ae3dd4a6cde466",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 8,
+      "article_id": "a76f8039515fabd9572e9de5",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 9,
+      "article_id": "7549a9c7c781a938b68c6e74",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 10,
+      "article_id": "f0615d89e31ac2aab26ce9a6",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 11,
+      "article_id": "9657a9720d7f7be48d5c5557",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 12,
+      "article_id": "8fb74d1db972a3556340c719",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 13,
+      "article_id": "2ec86dbe7d6cdb0afb5674a3",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 14,
+      "article_id": "2b0d188364d108695023257c",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 15,
+      "article_id": "bd8501eb8501f68f07837646",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 16,
+      "article_id": "f2f802c944e57e2eecd6827a",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 17,
+      "article_id": "9cf615fae76ab9131f76daea",
+      "disposition": "candidate_verified"
+    },
+    {
+      "batch_number": 18,
+      "position": 18,
+      "article_id": "ef34ca2a8778afb428576559",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 19,
+      "article_id": "54fc5596d6b7fb1abee4d9c7",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 20,
+      "article_id": "d83be3dd94be85041d08a53c",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 21,
+      "article_id": "b4fa3eee661d58fed27dcb8d",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 22,
+      "article_id": "ff02fb803e0bbb28db821d01",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 23,
+      "article_id": "ba4dee564318c2e28cf72c26",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 24,
+      "article_id": "c41a3771fa96ad6a26748483",
+      "disposition": "candidate_verified"
+    },
+    {
+      "batch_number": 18,
+      "position": 25,
+      "article_id": "95c29d8f21fd140be48a8a61",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 26,
+      "article_id": "fe795b1a8c692f2e06589cf4",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 27,
+      "article_id": "3e6e2733a41a0d65efeb2a7b",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 28,
+      "article_id": "45125c275752cfc53ab3cb89",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 29,
+      "article_id": "2e0243ff531effea1c2422cb",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 30,
+      "article_id": "96a3675f3e02d7266b79d4f8",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 31,
+      "article_id": "45eee3455e28ab0bd5d7e432",
+      "disposition": "candidate_unverified"
+    },
+    {
+      "batch_number": 18,
+      "position": 32,
+      "article_id": "ef26bee996616d0e6ca52b42",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 33,
+      "article_id": "f4691ee5f30403e53dee9446",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 34,
+      "article_id": "9752a34781f819333f553690",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 35,
+      "article_id": "98cd988552652cf3e209d63d",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 36,
+      "article_id": "cef685e95d07180c82d4532a",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 37,
+      "article_id": "e74b6390a49f7d70fa6b800c",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 38,
+      "article_id": "5eb38645093218e430d0a0bf",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 39,
+      "article_id": "ba73efc0347cf04b3b668052",
+      "disposition": "noise_or_no_opportunity"
+    },
+    {
+      "batch_number": 18,
+      "position": 40,
+      "article_id": "7bdefa4f84529043be23a7a5",
+      "disposition": "noise_or_no_opportunity"
+    }
+  ],
+  "triage_method": "Each of 240 feed records counted once by (batch_number,position), even where article IDs repeat. Only meaningful candidate articles verified; source index frozen at start."
+}
