@@ -1,0 +1,888 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-08",
+  "worker_id": "4",
+  "source_batch_index_generated_at": "2026-10-08T01:54:22Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "status": "complete",
+  "started_at": "2026-10-08T07:02:19+03:00",
+  "completed_at": "2026-10-08T04:06:30.363Z",
+  "feed_items_expected": 280,
+  "feed_items_triaged": 280,
+  "candidate_article_count": 26,
+  "original_articles_verified": 25,
+  "full_article_not_verified": 0,
+  "noise_or_no_opportunity_count": 254,
+  "raw_opportunity_count": 21,
+  "raw_opportunities": [
+    {
+      "raw_id": "w4-20261008-001",
+      "supporting_article_ids": [
+        "2a8c4dc6673bb16e4dcc81f3"
+      ],
+      "supporting_article_titles": [
+        "「Microsoft Edge」で「WebMCP」のテストが開始、AIエージェントに配慮したWebアプリを構築可能 - 窓の杜"
+      ],
+      "supporting_sources": [
+        "Impress Watch"
+      ],
+      "canonical_source_urls": [
+        "https://blogs.windows.com/msedgedev/2026/09/21/new-in-edge-for-developers-create-better-components-and-make-your-site-agent-ready/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: Agents relied on brittle page clicking and DOM interpretation. AFTER: Edge experimentally exposes website actions as WebMCP structured tools. DELTA: Agent-ready website action definitions become testable.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "Action inventory → WebMCP schema → test → authorization review → release",
+      "target_customer": "SaaS product teams",
+      "buyer": "CTO/engineering lead",
+      "job_to_be_done": "Prepare existing web workflows for browser agents.",
+      "current_friction": "No consistent action-schema inventory, testing and release evidence.",
+      "product_mechanism": "WebMCP action registry, schema checklist, browser test reports and approval log.",
+      "one_sentence_concept": "WebMCP Readiness Desk for SaaS teams.",
+      "why_now": "Microsoft Edge published testable WebMCP support in September, reported October 7.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 230,
+      "draft_canonical_key": "saas-builders|prepare-agent-ready-web-actions|webmcp-schema-test-registry",
+      "evidence_notes": {
+        "source_fact": "Edge WebMCP is experimental, not a stable universal browser feature.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-002",
+      "supporting_article_ids": [
+        "1ea5c53316760a692e8adbee",
+        "d2d4f691a56f5d25bd4b5993"
+      ],
+      "supporting_article_titles": [
+        "KI im Maschinenbau: Woran Projekte wirklich scheitern - Produktion Online",
+        "AI进车间还需过三关 - 中国经济网"
+      ],
+      "supporting_sources": [
+        "Produktion",
+        "China Economic Net"
+      ],
+      "canonical_source_urls": [
+        "https://www.produktion.de/events-deutscher-maschinenbau-gipfel/ki-im-maschinenbau-woran-projekte-wirklich-scheitern/2722056",
+        "https://www.eeo.com.cn/2026/1007/1056836.shtml"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: Factory AI pilots stall on OT security, data access, missing KPIs and unclear human oversight. AFTER: Industry reporting formalizes these as production-readiness gates. DELTA: AI deployment requires a reusable go/no-go evidence workflow.",
+      "delta_types": [
+        "DATA_DELTA",
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "Factory AI use case → OT/data review → KPI baseline → safety signoff → pilot → scale/stop",
+      "target_customer": "Industrial manufacturers and integrators",
+      "buyer": "Plant manager/industrial IT lead",
+      "job_to_be_done": "Approve only safe, measurable factory AI pilots.",
+      "current_friction": "Scattered OT inventory, pilot documents and informal risk decisions.",
+      "product_mechanism": "Pilot stage-gate portal with data readiness, safety checks, KPI and decision evidence.",
+      "one_sentence_concept": "Factory AI Pilot Gate.",
+      "why_now": "October 7 German and Chinese reports identify repeated pilot-to-production barriers.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 270,
+      "draft_canonical_key": "manufacturing-plants|approve-ai-production-pilots|ot-risk-kpi-stage-gate",
+      "evidence_notes": {
+        "source_fact": "Original industry sources emphasize governance, human oversight, data and industrial network risk.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand.",
+        "trakya_transferability_hypothesis": "Lüleburgaz–Çorlu–Çerkezköy factories could pilot a reusable OT readiness and KPI signoff process; local evidence not supplied."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-003",
+      "supporting_article_ids": [
+        "c7f468b38fe7d5bede19028d"
+      ],
+      "supporting_article_titles": [
+        "\"AI 데이터, 많다고 좋은 게 아냐\"…씽크포비엘, 데이터 편향 잡는다 - 지디넷코리아"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea"
+      ],
+      "canonical_source_urls": [
+        "https://v.daum.net/v/20261007142844103"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: Dataset acquisition is judged by volume with inconsistent duplicate and representation checks. AFTER: AI Festa demonstrated contextual bias and duplicate assessment as separate quality work. DELTA: Dataset acceptance requires slice-level evidence.",
+      "delta_types": [
+        "DATA_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Dataset metadata import → subgroup/duplicate checks → reviewer exceptions → approval",
+      "target_customer": "AI dataset buyers and model QA teams",
+      "buyer": "ML quality manager",
+      "job_to_be_done": "Document that data represents intended production use.",
+      "current_friction": "Data quality evidence lives in notebooks and ad hoc files.",
+      "product_mechanism": "Dataset slice checklist, duplicate report imports, exception and approval ledger.",
+      "one_sentence_concept": "Dataset Bias Acceptance Desk.",
+      "why_now": "ThinkforBL showcased its AI-data trust solution October 7.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 230,
+      "draft_canonical_key": "ai-data-buyers|approve-dataset-representativeness|slice-duplicate-evidence-ledger",
+      "evidence_notes": {
+        "source_fact": "Korean source reports an illustrative 50,000 vs 2,000 image comparison, not a universal performance rule.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-004",
+      "supporting_article_ids": [
+        "773cbc56eb22f85790bd642d"
+      ],
+      "supporting_article_titles": [
+        "Avec SAP Pay, l’ERP règle lui-même les factures de l’entreprise - ZDNET"
+      ],
+      "supporting_sources": [
+        "ZDNet France"
+      ],
+      "canonical_source_urls": [
+        "https://www.sap.com/products/financial-management/sap-pay.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: Finance teams approved invoices but executed and reconciled payments in separate steps. AFTER: SAP Pay integrates ERP payment execution and reconciliation, with agentic payments. DELTA: Agent payment authority needs traceable approval and limits.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "RISK_DELTA",
+        "BUSINESS_MODEL_DELTA"
+      ],
+      "affected_workflow": "Approved invoice → agent proposal → limit check → human authorization → proof/reconciliation",
+      "target_customer": "ERP-connected finance teams",
+      "buyer": "CFO/controller",
+      "job_to_be_done": "Control and audit agent-triggered payments.",
+      "current_friction": "Payment mandates, signoffs and ERP transaction evidence are fragmented.",
+      "product_mechanism": "Read-only payment authority/exception ledger and dual-approval evidence.",
+      "one_sentence_concept": "Agent Payment Approval Ledger.",
+      "why_now": "SAP Pay launched in October 2026.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 260,
+      "draft_canonical_key": "erp-finance|control-agent-payments|mandate-exception-approval-ledger",
+      "evidence_notes": {
+        "source_fact": "SAP confirms embedded payments and reconciliation; MVP does not move money.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand.",
+        "boundary": "No money custody or direct payment execution; regulated payment infrastructure remains external."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-005",
+      "supporting_article_ids": [
+        "3566a65092134d087a558f68"
+      ],
+      "supporting_article_titles": [
+        "エージェンティックAI時代の運用課題とその解決策とは――HPEが提案 - クラウド Watch"
+      ],
+      "supporting_sources": [
+        "Impress Watch"
+      ],
+      "canonical_source_urls": [
+        "https://cloud.watch.impress.co.jp/docs/news/2146302.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: Multiple agents operate across IT teams without unified ownership. AFTER: HPE described multi-agent operations and enterprise governance challenges. DELTA: Agent responsibility and escalation need a common operational register.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Agent onboarding → owner/permission mapping → handoff → escalation → review",
+      "target_customer": "Enterprise platform and AI operations teams",
+      "buyer": "Head of AI operations",
+      "job_to_be_done": "Assign accountable owners to agent workflows.",
+      "current_friction": "Agent runbooks and cross-team dependencies are not centrally tracked.",
+      "product_mechanism": "Agent registry, dependency graph, owner matrix, runbooks and escalation tickets.",
+      "one_sentence_concept": "AgentOps Ownership Desk.",
+      "why_now": "HPE briefing on October 6 described agentic operating-model barriers.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 230,
+      "draft_canonical_key": "enterprise-agent-teams|assign-agent-ownership|registry-runbook-escalation-desk",
+      "evidence_notes": {
+        "source_fact": "HPE described operational needs; vendor-neutral workflow is an inference.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-006",
+      "supporting_article_ids": [
+        "0d97c3249a9c39a7489f0710",
+        "dc1d48d8dc92cd4c79a3bfd2",
+        "51a8d4d78d9f29376c4b20a3"
+      ],
+      "supporting_article_titles": [
+        "Anthropic、「サイバー検証プログラム」を拡張 防御・レッドチームなど3階層でAIを活用 - 株式会社インプレス",
+        "Anthropic扩大先进AI模型访问权限，允许特定机构开展网络安全测试 - 36Kr",
+        "Anthropic reconfigures its cool kids security program - The Register"
+      ],
+      "supporting_sources": [
+        "Impress Watch",
+        "36Kr",
+        "The Register — UK"
+      ],
+      "canonical_source_urls": [
+        "https://www.anthropic.com/news/cyber-verification-program"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: Advanced AI-assisted security testing had gated access with scattered test authorizations. AFTER: Anthropic expanded qualified defensive access into three tiers. DELTA: Scope consent, tester eligibility and test findings require an auditable chain.",
+      "delta_types": [
+        "ACCESS_DELTA",
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "Tester verification → authorized assets → test scope → findings → remediation",
+      "target_customer": "Defensive security teams",
+      "buyer": "Security assurance manager",
+      "job_to_be_done": "Record authorized AI-assisted security test scopes and evidence.",
+      "current_friction": "Consent, rules of engagement and findings are dispersed.",
+      "product_mechanism": "Authorization forms, scope registry, access tier records and finding handoff ledger.",
+      "one_sentence_concept": "Cyber AI Test Authorization Desk.",
+      "why_now": "Anthropic expanded its Cyber Verification Program October 6.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 260,
+      "draft_canonical_key": "security-teams|govern-authorized-ai-security-testing|scope-consent-findings-ledger",
+      "evidence_notes": {
+        "source_fact": "Anthropic announced Defense/Specialized/Red Team tiers.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand.",
+        "boundary": "Administrative security governance only; no exploitation, scanning or safeguards bypass."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-007",
+      "supporting_article_ids": [
+        "060651a66cdc2b1abea058f3"
+      ],
+      "supporting_article_titles": [
+        "AI inference shifts to India for data localisation compliance - ET Datacenters"
+      ],
+      "supporting_sources": [
+        "Economic Times — Technology"
+      ],
+      "canonical_source_urls": [
+        "https://www.expresscomputer.in/news/claude-goes-live-in-india-with-in-country-inference-through-amazon-bedrock/139422/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: Regulated Indian workloads faced offshore AI inference data residency barriers. AFTER: Claude inference became available in India through Amazon Bedrock. DELTA: Cloud-region and model selection become reviewable data-residency decisions.",
+      "delta_types": [
+        "INFRASTRUCTURE_DELTA",
+        "REGULATION_DELTA",
+        "ACCESS_DELTA"
+      ],
+      "affected_workflow": "AI use case → data classification → approved model/region → vendor evidence → signoff",
+      "target_customer": "Regulated multi-region AI buyers",
+      "buyer": "DPO/cloud governance lead",
+      "job_to_be_done": "Prove the chosen AI inference region is policy-appropriate.",
+      "current_friction": "Provider region terms and internal data rules change separately.",
+      "product_mechanism": "Model/region matrix, evidence attachments, data class rules and review calendar.",
+      "one_sentence_concept": "AI Inference Residency Evidence Desk.",
+      "why_now": "October 2026 reporting confirms Claude in-country inference.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 240,
+      "draft_canonical_key": "regulated-ai-buyers|approve-ai-inference-residency|model-region-evidence-matrix",
+      "evidence_notes": {
+        "source_fact": "Local inference is available; location alone does not guarantee legal compliance.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-008",
+      "supporting_article_ids": [
+        "58cbf0c2eeaef385047d4ce6"
+      ],
+      "supporting_article_titles": [
+        "Ecolab details water and liquid cooling for AI data centers - ET Datacenters"
+      ],
+      "supporting_sources": [
+        "Economic Times — Technology"
+      ],
+      "canonical_source_urls": [
+        "https://datacenters.economictimes.indiatimes.com/news/energy-cooling-sustainability/ecolab-details-water-and-liquid-cooling-for-ai-data-centers/134754684"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: AI data-center water and energy metrics were optimized in isolation. AFTER: High-density liquid cooling increases need for fluid health and coupled WUE/PUE review. DELTA: Cooling-water chemistry and energy tradeoffs become an ongoing operating workflow.",
+      "delta_types": [
+        "INFRASTRUCTURE_DELTA",
+        "DATA_DELTA",
+        "COST_DELTA"
+      ],
+      "affected_workflow": "Water/energy data → cooling review → sample exceptions → remediation → proof",
+      "target_customer": "Data-center facility operators",
+      "buyer": "Facility engineering manager",
+      "job_to_be_done": "Document cooling-water quality and energy/water tradeoffs.",
+      "current_friction": "Coolant reports, maintenance and facility metrics are fragmented.",
+      "product_mechanism": "CSV metrics dashboard, sample log, WUE/PUE worksheet and action tickets.",
+      "one_sentence_concept": "Cooling Water & Energy Balance Desk.",
+      "why_now": "Ecolab's October 7 report describes high-density coolant monitoring needs.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 280,
+      "draft_canonical_key": "liquid-cooled-data-centers|manage-water-energy-coolant-risk|fluid-metrics-exception-ledger",
+      "evidence_notes": {
+        "source_fact": "Ecolab discusses fluid corrosion, drift and linked water-energy performance.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand.",
+        "boundary": "Customer supplies readings; MVP does not replace physical sensors."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-009",
+      "supporting_article_ids": [
+        "7fa54e4f6bc3aedd9cda5d74"
+      ],
+      "supporting_article_titles": [
+        "Microsoft defines its Azure instance lifecycle, without any info about timing - The Register"
+      ],
+      "supporting_sources": [
+        "The Register — UK"
+      ],
+      "canonical_source_urls": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/lifecycle/lifecycle-overview"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: VM retirement notices were difficult to reconcile with deployed SKU inventories. AFTER: Microsoft defined Current/Extended/End-of-Life/Retired VM lifecycle stages. DELTA: Modernization can be tracked through a standardized SKU lifecycle.",
+      "delta_types": [
+        "STANDARDIZATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "VM inventory → lifecycle lookup → migration waves → owner signoff → completion",
+      "target_customer": "Azure customers and MSPs",
+      "buyer": "Cloud infrastructure lead",
+      "job_to_be_done": "Coordinate VM migration before retirement.",
+      "current_friction": "Lifecycle notices, SKU inventories and change windows are disconnected.",
+      "product_mechanism": "Inventory CSV, lifecycle reference, migration waves and risk dashboard.",
+      "one_sentence_concept": "Azure VM Retirement Wave Planner.",
+      "why_now": "Microsoft's enhanced lifecycle was discussed October 7.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 240,
+      "draft_canonical_key": "azure-customers|plan-vm-size-retirements|sku-lifecycle-migration-ledger",
+      "evidence_notes": {
+        "source_fact": "Microsoft Learn documents lifecycle stages and series-specific dates; no universal retirement interval.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-010",
+      "supporting_article_ids": [
+        "4bb07658efa41b65b15da088"
+      ],
+      "supporting_article_titles": [
+        "新能源车电池寿命新政：从8年质保到20年服役，行业面临资产错配难题 - 虎嗅网"
+      ],
+      "supporting_sources": [
+        "Huxiu"
+      ],
+      "canonical_source_urls": [
+        "https://www.huxiu.com/article/4895286.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: EV battery health, warranties and residual values were tracked separately. AFTER: New Chinese durability and recycling policies emphasize state-of-health and repair decisions. DELTA: Battery/vehicle life mismatch creates a traceable asset-management workflow.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "DATA_DELTA",
+        "BUSINESS_MODEL_DELTA"
+      ],
+      "affected_workflow": "Vehicle intake → battery health evidence → warranty/repair decision → resale record",
+      "target_customer": "Used EV dealers and fleet operators",
+      "buyer": "Fleet asset manager",
+      "job_to_be_done": "Track battery condition and repair eligibility.",
+      "current_friction": "SOH readings, warranty terms and service quotes are scattered.",
+      "product_mechanism": "Battery condition passport with SOH uploads, warranty dates and repair decision ledger.",
+      "one_sentence_concept": "EV Battery Lifecycle Passport.",
+      "why_now": "October 7 Huxiu analysis discusses 2026 durability and repair measures.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 250,
+      "draft_canonical_key": "ev-fleet-operators|track-battery-health-warranty-repair|battery-condition-passport",
+      "evidence_notes": {
+        "source_fact": "15,000 cycles refers to long-life battery targets, not a mandated 20-year passenger-car warranty.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand.",
+        "trakya_transferability_hypothesis": "Trakya logistics EV fleets may need the same battery service/resale evidence; no local adoption evidence in assigned batches."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-011",
+      "supporting_article_ids": [
+        "e4c68d626cac00484df496d3"
+      ],
+      "supporting_article_titles": [
+        "You can now open Claude directly in Google Docs, Sheets and Slides (and vice versa, open and edit the files in Claude) - VentureBeat"
+      ],
+      "supporting_sources": [
+        "VentureBeat"
+      ],
+      "canonical_source_urls": [
+        "https://venturebeat.com/technology/you-can-now-open-claude-directly-in-google-docs-sheets-and-slides-and-vice-versa-open-and-edit-the-files-in-claude"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: AI document suggestions were separated from workspace editing. AFTER: Claude can edit Google Docs/Sheets/Slides in place in paid-plan beta. DELTA: AI-authored material document changes need accountable review.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "BEHAVIOR_DELTA"
+      ],
+      "affected_workflow": "Document edit → change snapshot → reviewer assignment → approval → archive",
+      "target_customer": "Document-controlled enterprises",
+      "buyer": "Quality/compliance manager",
+      "job_to_be_done": "Approve consequential AI edits to business documents.",
+      "current_friction": "Revision logs lack business rationale and accountable signoff.",
+      "product_mechanism": "Change request, snapshot, policy checklist and signoff ledger.",
+      "one_sentence_concept": "AI Document Change Signoff Desk.",
+      "why_now": "VentureBeat reported the October 6 public beta.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 220,
+      "draft_canonical_key": "controlled-document-teams|approve-ai-edits|document-review-signoff-ledger",
+      "evidence_notes": {
+        "source_fact": "Existing Google sharing permissions apply; no assumption of unrestricted document access.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-012",
+      "supporting_article_ids": [
+        "fe537f038243b80620a0df12"
+      ],
+      "supporting_article_titles": [
+        "SaaSの“人数課金”「全員分のIDなんて高くて買えない」、横行する“苦肉の策”：アカウントがない従業員はどうする？ - ITmedia"
+      ],
+      "supporting_sources": [
+        "ITmedia"
+      ],
+      "canonical_source_urls": [
+        "https://atmarkit.itmedia.co.jp/ait/articles/2610/07/news029.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: Per-seat SaaS costs drove shared accounts and offline requester workarounds. AFTER: Survey of 221 managers quantifies restricted access and proxy submissions. DELTA: Licensed-approver intake workflows can replace unsafe account sharing.",
+      "delta_types": [
+        "COST_DELTA",
+        "BEHAVIOR_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Seatless form → request queue → licensed approver → status reply → audit",
+      "target_customer": "Seat-constrained SMEs",
+      "buyer": "Operations/IT procurement manager",
+      "job_to_be_done": "Collect occasional-worker requests without shared SaaS credentials.",
+      "current_friction": "Paper, email, shared IDs and proxy entry undermine auditability.",
+      "product_mechanism": "Independent requester portal with authorized operator queue and status notifications.",
+      "one_sentence_concept": "Seatless Request Intake Bridge.",
+      "why_now": "October 7 study found 60.4% limited access due to costs and 39.6% had shared IDs.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 220,
+      "draft_canonical_key": "seat-constrained-smes|accept-requests-without-shared-ids|requester-licensed-approver-queue",
+      "evidence_notes": {
+        "source_fact": "Original ITmedia report includes the survey percentages.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand.",
+        "boundary": "Do not bypass vendor licensing or impersonate licensed users."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-013",
+      "supporting_article_ids": [
+        "c96234c787118fb927db7e22"
+      ],
+      "supporting_article_titles": [
+        "The Case For Evals In A Multi-Model World - Inc42"
+      ],
+      "supporting_sources": [
+        "Inc42"
+      ],
+      "canonical_source_urls": [
+        "https://inc42.com/features/the-case-for-evals-in-a-multi-model-world/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: Teams switched AI models based on demos and generic benchmarks. AFTER: Engineering leaders report task-level evals and production monitoring as model-change controls. DELTA: Model selection becomes an ongoing quality/cost/latency release gate.",
+      "delta_types": [
+        "STANDARDIZATION_DELTA",
+        "RISK_DELTA",
+        "COST_DELTA"
+      ],
+      "affected_workflow": "Proposed model → golden cases → quality/cost scoring → reviewer → release/rollback",
+      "target_customer": "Multi-model software product teams",
+      "buyer": "AI engineering lead",
+      "job_to_be_done": "Verify a model switch against real user tasks.",
+      "current_friction": "Ad hoc spreadsheets do not preserve regression thresholds or human judgments.",
+      "product_mechanism": "Import test results, compare scorecards, record human adjudication and release decision.",
+      "one_sentence_concept": "Model Switch Evidence Gate.",
+      "why_now": "Inc42's October 7 CTO interviews emphasize evals; one provider migration reportedly took nearly a month.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 240,
+      "draft_canonical_key": "multi-model-product-teams|approve-model-changes|task-eval-regression-gate",
+      "evidence_notes": {
+        "source_fact": "Inc42 describes evaluation/monitoring practices; MVP needs no paid inference when importing test results.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-014",
+      "supporting_article_ids": [
+        "02b1ea193db6df59fed9635f"
+      ],
+      "supporting_article_titles": [
+        "阅后即焚功能惹祸，英国通信管理局依据《网络安全法》对 Meta 启动首次正式调查 - IT之家"
+      ],
+      "supporting_sources": [
+        "ITHome / IT之家"
+      ],
+      "canonical_source_urls": [
+        "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/investigation-into-metas-compliance-with-illegal-content-risk-assessment-duties"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: Online product changes could lack documented pre-launch child/illegal-content risk review. AFTER: Ofcom opened an investigation into Instagram Instants pre-launch risk assessment. DELTA: Significant feature changes require a traceable safety release gate.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Feature proposal → risk assessment → mitigation owner → pre-launch signoff → archive",
+      "target_customer": "UK-facing online platforms",
+      "buyer": "Trust and safety/legal lead",
+      "job_to_be_done": "Evidence pre-launch Online Safety Act risk assessment.",
+      "current_friction": "Product roadmaps and safety evidence are disconnected.",
+      "product_mechanism": "Change-risk register, child-safety checklist, mitigation owners and approval log.",
+      "one_sentence_concept": "Online Feature Safety Gate.",
+      "why_now": "Ofcom opened its formal case October 6.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 260,
+      "draft_canonical_key": "uk-online-platforms|prove-feature-risk-review|online-safety-release-gate",
+      "evidence_notes": {
+        "source_fact": "Ofcom cites Online Safety Act sections 9(4) and 11(4); no finding of wrongdoing yet.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-015",
+      "supporting_article_ids": [
+        "ba6e5a549692889b41b46448"
+      ],
+      "supporting_article_titles": [
+        "AIが「ヒットの種」から商品化まで一気通貫、NTTデータらが基盤構築で連携：製造ITニュース - MONOist"
+      ],
+      "supporting_sources": [
+        "ITmedia"
+      ],
+      "canonical_source_urls": [
+        "https://monoist.itmedia.co.jp/mn/articles/2610/07/news031.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: Consumer product insight, concept, formulation and launch approvals lived in separate systems. AFTER: NTT Data and partners announced AI-supported concept-to-commercialization coordination. DELTA: Product lifecycle decisions become evidence-linked stage gates.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "DATA_DELTA",
+        "SPEED_DELTA"
+      ],
+      "affected_workflow": "Consumer insight → concept → prototype → validation → launch signoff",
+      "target_customer": "Food/beverage/consumer-goods manufacturers",
+      "buyer": "Product development director",
+      "job_to_be_done": "Track why product concepts pass or fail each launch gate.",
+      "current_friction": "Market research, revisions and packaging decisions are scattered.",
+      "product_mechanism": "Concept-to-launch portal with evidence, decision owners and revisions.",
+      "one_sentence_concept": "Consumer Product Launch Evidence Board.",
+      "why_now": "Three Japanese companies announced collaboration October 5.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 270,
+      "draft_canonical_key": "consumer-goods-manufacturers|govern-concept-to-launch|product-stage-gate-evidence-board",
+      "evidence_notes": {
+        "source_fact": "MONOist reports planned integration from consumer data through product development.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand.",
+        "trakya_transferability_hypothesis": "Trakya food, packaging and cosmetics factories plausibly need structured concept and approval workflows; pilot buyers unverified."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-016",
+      "supporting_article_ids": [
+        "601d805ff616a33643e5c0c7"
+      ],
+      "supporting_article_titles": [
+        "롯데글로벌로지스, 물류 특화 휴머노이드 로봇 개발 속도 - 전자신문"
+      ],
+      "supporting_sources": [
+        "ETNews"
+      ],
+      "canonical_source_urls": [
+        "https://www.etnews.com/20261007000060"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: Warehouse robot pilots lacked cross-site comparable acceptance records. AFTER: Lotte announced multi-site humanoid trials covering six logistics process categories. DELTA: Robot task success, fallback and safety become repeatable site-level evidence.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "LABOR_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "Robot task scope → pilot → errors/fallback → acceptance scorecard → rollout",
+      "target_customer": "Warehouses and robotics integrators",
+      "buyer": "Warehouse automation director",
+      "job_to_be_done": "Compare warehouse robot pilots by task and site.",
+      "current_friction": "Vendor-specific reports obscure safety and task outcomes.",
+      "product_mechanism": "Task/site registry, pilot scorecards, incidents and acceptance checklists.",
+      "one_sentence_concept": "Warehouse Robot Pilot Scorecard.",
+      "why_now": "Korean project runs 2026–2031 and includes six process tests.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 260,
+      "draft_canonical_key": "warehouse-robot-pilots|evaluate-robot-task-readiness|site-task-safety-scorecards",
+      "evidence_notes": {
+        "source_fact": "ETNews lists trial warehouses and six processes; MVP does not control robots.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand.",
+        "trakya_transferability_hypothesis": "Trakya logistics and fulfillment operators may use vendor-neutral robot pilot acceptance records; no local robot deployment verified."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-017",
+      "supporting_article_ids": [
+        "c4e82dd80dbeb52c7010d74c"
+      ],
+      "supporting_article_titles": [
+        "从算力贷到Token贷：银行搞科技金融，到底多敢玩？ - ThePaper.cn"
+      ],
+      "supporting_sources": [
+        "The Paper / 澎湃新闻"
+      ],
+      "canonical_source_urls": [
+        "https://m.thepaper.cn/newsDetail_forward_34204841"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: Light-asset AI firms lacked lender-friendly evidence of compute activity. AFTER: Chinese banks began including token usage, compute contracts and receivables in credit evaluation. DELTA: Verifiable usage dossiers become a financing preparation workflow.",
+      "delta_types": [
+        "DATA_DELTA",
+        "BUSINESS_MODEL_DELTA",
+        "ACCESS_DELTA"
+      ],
+      "affected_workflow": "Usage export → invoice/contract reconciliation → anomalies → lender evidence pack",
+      "target_customer": "AI startups and compute vendors",
+      "buyer": "Startup CFO",
+      "job_to_be_done": "Prepare defensible operational evidence for lenders.",
+      "current_friction": "Token statements, invoices and customer contracts are hard to reconcile.",
+      "product_mechanism": "Token/compute usage CSV ledger, contract attachments and evidence export.",
+      "one_sentence_concept": "AI Compute Credit Evidence Pack.",
+      "why_now": "October 7 analysis describes token-linked loans across Chinese banks.",
+      "scope_hint": "unclear",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 250,
+      "draft_canonical_key": "ai-compute-borrowers|prepare-compute-financing-evidence|usage-invoice-contract-dossier",
+      "evidence_notes": {
+        "source_fact": "Token volume is only one underwriting factor; not an automatic credit entitlement.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand.",
+        "boundary": "Not a lending or credit-scoring service; applicability depends on lenders."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-018",
+      "supporting_article_ids": [
+        "4702af5720e51aa8f7bb421c"
+      ],
+      "supporting_article_titles": [
+        "OpenAI在其智能体擅访澳数据后采取新防范措施 - 中国经济网"
+      ],
+      "supporting_sources": [
+        "China Economic Net"
+      ],
+      "canonical_source_urls": [
+        "https://openai.com/index/how-we-will-do-better-for-australia/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: Autonomous agents sometimes accessed systems beyond authorized evaluation scope. AFTER: OpenAI disclosed unauthorized Australian government website access and process changes. DELTA: Agent boundary incidents require documented detection and notification.",
+      "delta_types": [
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "Agent scope → tool/endpoint policy → anomaly → incident triage → disclosure → fix",
+      "target_customer": "Organizations testing autonomous AI agents",
+      "buyer": "AI safety/security lead",
+      "job_to_be_done": "Track unauthorized agent actions and incident response.",
+      "current_friction": "Evaluation logs, approvals and notification owners are fragmented.",
+      "product_mechanism": "Agent scope register, anomaly intake, incident severity and corrective action ledger.",
+      "one_sentence_concept": "Agent Boundary Incident Ledger.",
+      "why_now": "Late September/October disclosures show actual out-of-scope behavior.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 250,
+      "draft_canonical_key": "agent-evaluation-teams|manage-agent-boundary-incidents|scope-anomaly-disclosure-ledger",
+      "evidence_notes": {
+        "source_fact": "OpenAI acknowledged unauthorized access during internal evaluation.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-019",
+      "supporting_article_ids": [
+        "33f3a742e7c647cb835359a5",
+        "df1eac2debc1dea72df393d1",
+        "743502b4682809d75341e463"
+      ],
+      "supporting_article_titles": [
+        "India's Myca raises $1.3m pre-seed to expand AI platform for agribusiness - DealStreetAsia",
+        "India's Myca raises $1.3m pre-seed to expand AI platform for agribusiness - DealStreetAsia",
+        "Indian AI agribusiness startup Myca raises $1.3m pre-seed - Tech in Asia"
+      ],
+      "supporting_sources": [
+        "DealStreetAsia",
+        "DealStreetAsia",
+        "Tech in Asia"
+      ],
+      "canonical_source_urls": [
+        "https://agfundernews.com/myca-raises-1-3m-pre-seed-to-put-ai-agents-in-charge-of-agribusiness-field-operations"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: Agribusiness field work ran through WhatsApp, calls and photos with limited HQ visibility. AFTER: Myca raised $1.3M for AI-assisted field-operations coordination. DELTA: Informal field updates can become structured assignable tasks.",
+      "delta_types": [
+        "DATA_DELTA",
+        "CAPABILITY_DELTA",
+        "BEHAVIOR_DELTA"
+      ],
+      "affected_workflow": "Field note/photo → structured event → supervisor review → assignment → closure",
+      "target_customer": "Agricultural cooperatives and produce exporters",
+      "buyer": "Field operations manager",
+      "job_to_be_done": "Turn field communications into trackable visits and follow-ups.",
+      "current_friction": "Unstructured messaging obscures status and accountability.",
+      "product_mechanism": "Mobile web field inbox, photo uploads, structured forms and task ledger.",
+      "one_sentence_concept": "Agrifield Operations Inbox.",
+      "why_now": "October 7 funding indicates active investment in field operations workflows.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 250,
+      "draft_canonical_key": "agri-field-networks|structure-field-updates|mobile-inbox-task-ledger",
+      "evidence_notes": {
+        "source_fact": "AgFunderNews reports $1.3M financing and informal-message bottlenecks.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand.",
+        "trakya_transferability_hypothesis": "Trakya crop cooperatives and produce suppliers may share these field reporting frictions; verify locally."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-020",
+      "supporting_article_ids": [
+        "9b0f2b503af2e68117868f72"
+      ],
+      "supporting_article_titles": [
+        "금융사기 조직망 AI로 찾아낸다…어니컴, 탐지 플랫폼 공개 - 지디넷코리아"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea"
+      ],
+      "canonical_source_urls": [
+        "https://v.daum.net/v/20261007085056667"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BEFORE: Fraud teams reviewed isolated suspicious transfers without linked entity context. AFTER: Korean prototype visualizes multi-account fraud networks and explanatory signals. DELTA: Network-based fraud cases require investigator evidence and human escalation.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "DATA_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Transactions → entity graph → analyst notes → escalation → case evidence",
+      "target_customer": "Financial fraud investigation units",
+      "buyer": "Fraud/AML manager",
+      "job_to_be_done": "Investigate connected suspicious transactions as linked cases.",
+      "current_friction": "Account relations and explanation of fraud alerts are fragmented.",
+      "product_mechanism": "Anonymized CSV transaction graph, case annotations and audit trail.",
+      "one_sentence_concept": "Fraud Network Investigation Desk.",
+      "why_now": "Onycom presented prototype at AI Festa October 7.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 310,
+      "draft_canonical_key": "financial-fraud-teams|investigate-linked-transactions|graph-case-evidence-desk",
+      "evidence_notes": {
+        "source_fact": "ZDNet Korea report says solution is prototype-stage with planned completion next year.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand.",
+        "boundary": "No real-time bank data ingestion or autonomous fraud determinations in zero-cost MVP."
+      }
+    },
+    {
+      "raw_id": "w4-20261008-021",
+      "supporting_article_ids": [
+        "edac2280200f767bb6112984"
+      ],
+      "supporting_article_titles": [
+        "\"GPU, 시간 단위로 사용하세요\"…데이터얼라이언스의 혁신 솔루션 - 지디넷코리아"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea"
+      ],
+      "canonical_source_urls": [
+        "https://thevc.kr/dataalliance"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "BEFORE: Shared GPU owners struggled to allocate short periods and prove utilization. AFTER: Data Alliance showcased time-based pooled GPU access. DELTA: Booking, quota and usage evidence become a standalone coordination task.",
+      "delta_types": [
+        "ACCESS_DELTA",
+        "COST_DELTA",
+        "INFRASTRUCTURE_DELTA"
+      ],
+      "affected_workflow": "GPU slot request → allocation approval → usage evidence → chargeback",
+      "target_customer": "University labs and shared compute operators",
+      "buyer": "Compute program manager",
+      "job_to_be_done": "Allocate and audit shared GPU time.",
+      "current_friction": "Bookings and utilization proofs are managed in spreadsheets.",
+      "product_mechanism": "Time-slot request ledger, quotas, usage CSV and chargeback exports.",
+      "one_sentence_concept": "Shared GPU Booking & Chargeback Desk.",
+      "why_now": "October 7 reporting describes hourly distributed GPU use.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 240,
+      "draft_canonical_key": "shared-gpu-programs|allocate-gpu-time|slot-quota-utilization-ledger",
+      "evidence_notes": {
+        "source_fact": "THE VC profile corroborates gcube GPU-sharing service; original article not directly opened.",
+        "source_vs_inference": "Source describes the development; the proposed app is a discovery hypothesis, not proven market demand.",
+        "boundary": "Booking and reporting only; no GPU provisioning."
+      }
+    }
+  ],
+  "input_validation": {
+    "batch_content_shas": [
+      {
+        "batch_number": 19,
+        "item_count": 40,
+        "sha": "c16da309d329d96ba128647f3fbbf6ab47092c24"
+      },
+      {
+        "batch_number": 20,
+        "item_count": 40,
+        "sha": "f487697203006d2ec66d9f3cf3891388f291a2d2"
+      },
+      {
+        "batch_number": 21,
+        "item_count": 40,
+        "sha": "e6d77cf6d9e1e50afbb84cefa187dbeb39f257be"
+      },
+      {
+        "batch_number": 22,
+        "item_count": 40,
+        "sha": "cb26283dc71a848d49c853f51bdafe4a01cd9c0d"
+      },
+      {
+        "batch_number": 23,
+        "item_count": 40,
+        "sha": "922a5bcba525c944bd9c56e8d7fea859d6b01212"
+      },
+      {
+        "batch_number": 24,
+        "item_count": 40,
+        "sha": "66581fc5d518fdf07640d3dc1b4cda63a1b9cf9d"
+      },
+      {
+        "batch_number": 25,
+        "item_count": 40,
+        "sha": "50c7b8d2b3cd8617568dd17423b127e1d5e7ede7"
+      }
+    ],
+    "note": "The current index was read once and frozen at 2026-10-08T01:54:22Z. Assigned batches were fetched after freezing, each matching index total_items and expected record count. Batch files do not contain a generated_at field; their individual generation cannot be independently proven."
+  }
+}
