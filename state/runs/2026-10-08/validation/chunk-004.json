@@ -166,12 +166,21 @@
       "source_links": [
         "https://venturebeat.com/technology/you-can-now-open-claude-directly-in-google-docs-sheets-and-slides-and-vice-versa-open-and-edit-the-files-in-claude",
         "https://www.mastercontrol.com/quality/document-control-software/fda/",
-        "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides"
+        "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+        "https://support.claude.com/en/articles/16951679-use-claude-in-google-docs-sheets-and-slides",
+        "https://developers.google.com/workspace/drive/api/guides/approvals",
+        "https://knowledge.workspace.google.com/admin/drive/manage-approvals"
       ],
       "turkiye_direct_competitor_count": null,
       "turkiye_competitors": [],
-      "global_direct_competitor_count": null,
-      "global_competitors": [],
+      "global_direct_competitor_count": 1,
+      "global_competitors": [
+        {
+          "name": "Google Workspace Docs/Drive Approvals (with Claude edits)",
+          "url": "https://developers.google.com/workspace/drive/api/guides/approvals",
+          "reason": "Same Google Docs quality/compliance buyer can obtain per-edit AI review in Claude's 'Ask before edits' mode and formal version-controlled document approval in native Drive/Docs. Approval statuses, reviewers, editing resets and locked approved versions already satisfy change review and signoff. The proposed MVP's manual AI edit label is not a distinct automated provenance mechanism."
+        }
+      ],
       "adjacent_competitors": [
         {
           "name": "MasterControl",
@@ -183,7 +192,7 @@
         "AI Document Change Signoff Desk. software competitor",
         "Approve consequential AI edits to business documents. yazılım Türkiye"
       ],
-      "market_gap": "Not substantiated beyond incumbent workflow",
+      "market_gap": "A separate undifferentiated manual ledger is not justified versus the directly matching incumbent workflow; no validated unmet niche.",
       "mvp": "Change request, snapshot, policy checklist and signoff ledger.",
       "working_logic": "Revision logs lack business rationale and accountable signoff. -> Change request, snapshot, policy checklist and signoff ledger.",
       "technologies": [
@@ -207,12 +216,12 @@
       "main_risk": "Document changes and signoff overlap; AI-origin-specific requirements remain unverified.",
       "validation_assumption": "Distinct niche not established",
       "evidence_strength": "partial",
-      "competition_confidence": "scoped positive overlap; not exhaustive",
+      "competition_confidence": "high for Google Workspace document approval and Claude AI edit confirmation; provenance tagging remains an unverified differentiator",
       "local_scope_verified": "not_applicable",
       "local_scope_evidence": [],
       "local_applicability_rationale": "No local geographic claim independently verified",
       "validated_scope_hint": "Dünya",
-      "qualification_status": "competition_not_verified",
+      "qualification_status": "rejected_competition",
       "primary_source_recheck": {
         "date": "2026-10-08",
         "primary_url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
@@ -220,6 +229,19 @@
         "evidence": "Anthropic announces public beta for Claude sidebar in Google Docs, Sheets and Slides on all paid plans; direct in-place editing and connectors; access and approval settings.",
         "market_implication": "The development is directly confirmed, but the niche opportunity's direct-competitor differentiation and zero-cash production MVP are still unverified.",
         "qualification_unchanged": true
+      },
+      "rejection_reason": "Native Claude AI edit confirmation combined with Google Workspace document approvals already covers consequential AI edit review, versioned approval, rejection and signoff for the same document team. No differentiating AI provenance automation is specified by the proposed manual ledger.",
+      "competition_recheck": {
+        "date": "2026-10-08",
+        "method": "Primary platform documentation: same buyer + same core job + substantially same workflow",
+        "sources": [
+          "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+          "https://support.claude.com/en/articles/16951679-use-claude-in-google-docs-sheets-and-slides",
+          "https://developers.google.com/workspace/drive/api/guides/approvals",
+          "https://knowledge.workspace.google.com/admin/drive/manage-approvals"
+        ],
+        "qualification_change": "competition_not_verified -> rejected_competition",
+        "important_nuance": "Google Workspace does not automatically establish which edits AI authored; the proposed MVP likewise offers only manual attribution."
       }
     },
     {
