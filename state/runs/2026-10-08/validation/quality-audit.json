@@ -7,8 +7,8 @@
   "expected_candidates": 55,
   "chunk_count": 11,
   "qualification_counts": {
-    "competition_not_verified": 13,
-    "rejected_competition": 41,
+    "competition_not_verified": 12,
+    "rejected_competition": 42,
     "rejected_evidence": 1
   },
   "primary_development_unverified_or_partial_indexes": [
@@ -87,12 +87,12 @@
   "publication_gate": {
     "allow_catalog_write": false,
     "allow_qualified_idea_publication": false,
-    "reason": "13 unresolved direct competition and 13 zero-cash proofs; 6 source-partial candidates already rejected. Publication prohibited."
+    "reason": "12 unresolved direct competition and 12 zero-cash proofs; 6 partial-source candidates already rejected. Publication prohibited."
   },
   "next_steps": [
-    "Resolve 16 potential-publication competition checks and verify zero-external-cash MVPs",
-    "Maintain source-quality warnings for 6 already-rejected records without blocking unrelated candidates",
-    "Re-run publication language, deduplication, catalog-preservation gates"
+    "Resolve 12 competition and zero-cash proofs for non-rejected candidates",
+    "Preserve 6 partial-original warnings for already-rejected candidates",
+    "Run language and semantic duplicate gates only after publication becomes eligible"
   ],
   "catalog_action": "none",
   "history_action": "none",
@@ -240,18 +240,39 @@
         "https://www.brabazon.com/toolbox/calculators/nitrogen-savings"
       ],
       "finding": "NOVAIR public on-site nitrogen ROI calculator has cash investment, generator power/flow/utilization, electricity rate, delivered price, payback and 10-year savings; substantial buyer/job/workflow overlap."
+    },
+    {
+      "validation_index": 43,
+      "vendors": [
+        "OneTrust AI Governance",
+        "Credo AI"
+      ],
+      "source_urls": [
+        "https://www.onetrust.com/solutions/ai-governance/ai-policy-management/",
+        "https://www.credo.ai/product"
+      ],
+      "finding": "Same DPO/cloud governance buyer and geography-sensitive model/deployment policy suitability: inventory, data sensitivity, jurisdiction policies, approval, exception control, audit evidence and revalidation. Region-runtime attestation not claimed.",
+      "decision": "rejected_competition",
+      "checked_on": "2026-10-08"
     }
   ],
-  "next_action_priority": "13 direct competition and cash feasibility checks, no work on rejected ideas unless reopened",
+  "next_action_priority": "12 unresolved candidates; do not expend zero-cash proof work on rejected candidates",
   "quality_gate_reaudit": {
     "date": "2026-10-08",
     "method": "Reconciled 11 chunks, first-party Azure and Google plus NOVAIR interactive ROI competitor",
     "partial_primary_count": 6,
     "partial_primary_potential_publication": 0,
     "zero_cost_unverified_count": 55,
-    "publication_relevant_zero_cash_unverified_count": 13,
-    "competition_incomplete_row_count": 13,
-    "qualified_count": 0
+    "publication_relevant_zero_cash_unverified_count": 12,
+    "competition_incomplete_row_count": 12,
+    "qualified_count": 0,
+    "classified_count": 55,
+    "qualification_counts": {
+      "competition_not_verified": 12,
+      "rejected_competition": 42,
+      "rejected_evidence": 1
+    },
+    "checked_on": "2026-10-08"
   },
   "targeted_original_source_rechecks": [
     {
