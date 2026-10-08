@@ -7,25 +7,25 @@
   "frozen_source_total_items": 1000,
   "workers": [
     {
-      "worker_id": 1,
-      "status": "incomplete",
-      "triaged": 240,
-      "expected": 240
-    },
-    {
-      "worker_id": 2,
-      "status": "incomplete",
-      "triaged": 240,
-      "expected": 240
-    },
-    {
-      "worker_id": 3,
+      "worker_id": "1",
       "status": "complete",
       "triaged": 240,
       "expected": 240
     },
     {
-      "worker_id": 4,
+      "worker_id": "2",
+      "status": "complete",
+      "triaged": 240,
+      "expected": 240
+    },
+    {
+      "worker_id": "3",
+      "status": "complete",
+      "triaged": 240,
+      "expected": 240
+    },
+    {
+      "worker_id": "4",
       "status": "complete",
       "triaged": 280,
       "expected": 280
@@ -36,8 +36,8 @@
   "merge_allowed": true,
   "validation_allowed": true,
   "catalog_publication_allowed": false,
-  "reason": "55 classified; 12 original-source and 55 zero-cash proofs outstanding; competition-not-verified now 22 after #37 #52 vendor evidence.",
-  "next_action": "Continue 22 competitor investigations, verify 12 originals, resolve free-tier economics on potentially viable ideas; keep publication blocked.",
+  "reason": "55/55 classified; 9 original sources partial, 55 zero-external-cash proofs outstanding, 21 direct-competition checks unresolved. Frozen discovery workers now show complete, but strict publication quality gate still blocks.",
+  "next_action": "Verify 9 original sources; resolve 21 unresolved competition assessments; prove no-extra-cash deployment before publishing.",
   "frozen_input_recovery_file": "state/runs/2026-10-08/discovery/frozen-input-recovery.json",
   "frozen_input_commit_ref": "11184205ec16eeaea62b269f7dde08589ec31f56",
   "frozen_input_verified_batches": 25,
@@ -47,16 +47,16 @@
   "validation_chunks_complete": 11,
   "validation_expected_candidates": 55,
   "qualified_candidates": 0,
-  "rejected_competition": 32,
+  "rejected_competition": 33,
   "rejected_evidence": 1,
-  "competition_not_verified": 22,
+  "competition_not_verified": 21,
   "final_report_published": false,
   "quality_audit_path": "state/runs/2026-10-08/validation/quality-audit.json",
   "validation_quality_reaudit": {
-    "original_source_partial_or_unverified": 12,
+    "original_source_partial_or_unverified": 9,
     "external_zero_cash_unverified": 55,
     "records_classified": 55,
     "records_qualified": 0
   },
-  "last_quality_audit_commit": "fc245216d05a7cf0c0db9e30501e8c387663077c"
+  "last_quality_audit_commit": "2c0e1b6f4ece1f1b8188cba6cb500182f8ca2121"
 }
