@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-08",
+  "status": "FROZEN_INPUT_RECOVERED",
+  "github_commit_ref": "11184205ec16eeaea62b269f7dde08589ec31f56",
+  "source_batch_index_generated_at": "2026-10-08T01:54:22Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "batches_read": 25,
+  "records_read": 1000,
+  "verified_batch_ranges": [
+    "1-12 read from frozen commit in prior turn",
+    "13-22 read from frozen commit in current turn",
+    "23-25 read from frozen commit in current turn"
+  ],
+  "verification": "All 25 batch files read from historical Git commit; 40 records each. Cross-batch unique article count not calculated.",
+  "remaining": "W1/W2 source verification and opportunity saturation; do not mark worker complete solely from input recovery.",
+  "catalog_merge_allowed": false
+}
