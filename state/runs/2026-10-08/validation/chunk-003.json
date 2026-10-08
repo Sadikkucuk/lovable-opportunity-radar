@@ -27,31 +27,28 @@
         "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/lifecycle/retirements-and-capacity-restrictions",
         "https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-use-service-upgrade-retirement-recommendations",
         "https://learn.microsoft.com/en-us/azure/migrate/how-to-plan-create-waves?view=migrate",
-        "https://lovable.dev/pricing"
+        "https://lovable.dev/pricing",
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/lifecycle/sizes-v6-v7-modernization-plan",
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/lifecycle/sizes-v6-v7-modernization-modernize"
       ],
       "turkiye_direct_competitor_count": 0,
       "turkiye_competitors": [],
-      "global_direct_competitor_count": 0,
-      "global_competitors": [],
-      "adjacent_competitors": [
+      "global_direct_competitor_count": 1,
+      "global_competitors": [
         {
-          "name": "Azure Advisor Retirement Recommendations",
-          "url": "https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-use-service-upgrade-retirement-recommendations",
-          "reason": "Official Azure retirement/affected resources visibility; no verified full SKU retirement wave ledger in this product."
-        },
-        {
-          "name": "Azure Migrate Wave Planning",
-          "url": "https://learn.microsoft.com/en-us/azure/migrate/how-to-plan-create-waves?view=migrate",
-          "reason": "Supports migration grouping, prioritization, dependencies and approvals, primarily from other estates into Azure; not proven identical to in-place Azure VM SKU retirement planning."
+          "name": "Microsoft Azure native retirement modernization workflow (Advisor + VM modernization guide + Azure Migrate)",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/lifecycle/sizes-v6-v7-modernization-modernize",
+          "reason": "Same Azure infrastructure buyer and retirement-to-migration-wave job. Microsoft maps impacted SKUs/retirement deadlines; its v6/v7 modernization plan identifies in-place or redeployment options, transition waves, maintenance windows, rollback checks and workload-owner approvals. Azure Migrate adds inventory, wave sequencing, CSV exports and reviews. A separate CSV wave board replicates much of this end-to-end native workflow."
         }
       ],
+      "adjacent_competitors": [],
       "competition_search_terms": [
         "Azure VM SKU retirement inventory planner wave dashboard software",
         "Azure Advisor retirement impacted resource list",
         "Azure virtual machine sizes upgrade migration wave planner",
         "Türkiye Azure VM emeklilik göç planlama yazılımı"
       ],
-      "market_gap": "Potential single-purpose CSV crosswalk between SKU retirement dates and internal change windows; overlapping Microsoft native tooling exists and direct commercial substitutes are not comprehensively verified.",
+      "market_gap": "A separate undifferentiated manual ledger is not justified versus the directly matching incumbent workflow; no validated unmet niche.",
       "mvp": "Import Azure VM inventory CSV, map retired/end-of-life SKUs, schedule remediation waves, assign approvers, export risk and cutover report.",
       "working_logic": "CSV -> current VM series lifecycle lookup -> identify retirements and deadlines -> group migration waves -> checklist approval -> export.",
       "technologies": [
@@ -87,13 +84,26 @@
       "main_risk": "Microsoft changes SKU catalog and natively integrates migration/lifecycle tools.",
       "validation_assumption": "Customers need a separate retirement-specific change wave board rather than existing Azure tools.",
       "evidence_strength": "high_primary_Microsoft_lifecycle;medium_market",
-      "competition_confidence": "low_scoped_competitor_search",
+      "competition_confidence": "high for native combined workflow and direct functional substitution; first-party functions span products rather than a single packaged app",
       "local_scope_verified": "not_applicable",
       "local_scope_evidence": [],
       "local_applicability_rationale": "Global Azure customer applicability; no local footprint claim.",
       "validated_scope_hint": "Dünya",
-      "qualification_status": "competition_not_verified",
-      "review_notes": "Microsoft lifecycle update dated 2026-09-25; Oct 7 was discussion, not validated as a new Oct 7 feature. Azure Migrate waves can overlap but target/source boundary prevents automatically calling it a direct competitor."
+      "qualification_status": "rejected_competition",
+      "review_notes": "Microsoft lifecycle update dated 2026-09-25; Oct 7 was discussion, not validated as a new Oct 7 feature. Azure Migrate waves can overlap but target/source boundary prevents automatically calling it a direct competitor.",
+      "rejection_reason": "Microsoft's native Azure retirement visibility, VM modernization wave runbook and migration planning/approval tooling already cover the same customer, retirement-specific migration job and substantially equivalent CSV/inventory/wave/approval workflow. A clearly new buyer need is not evidenced.",
+      "competition_recheck": {
+        "date": "2026-10-08",
+        "method": "Primary platform documentation: same buyer + same core job + substantially same workflow",
+        "sources": [
+          "https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-use-service-upgrade-retirement-recommendations",
+          "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/lifecycle/sizes-v6-v7-modernization-plan",
+          "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/lifecycle/sizes-v6-v7-modernization-modernize",
+          "https://learn.microsoft.com/en-us/azure/migrate/how-to-plan-create-waves?view=migrate"
+        ],
+        "qualification_change": "competition_not_verified -> rejected_competition",
+        "important_nuance": "Microsoft's functionality spans multiple native products/runbooks, not one single-purpose commercial app; native substitution still defeats generic CSV workflow."
+      }
     },
     {
       "candidate_id": "c-20261008-W3-20261008-001",
