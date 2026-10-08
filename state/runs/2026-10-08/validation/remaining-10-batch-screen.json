@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-08",
+  "screen_type": "single_pass_ten_remaining_candidates",
+  "status": "research_screen_only_no_canonical_decision_change",
+  "candidate_indexes": [
+    1,
+    5,
+    6,
+    7,
+    12,
+    21,
+    22,
+    25,
+    28,
+    44
+  ],
+  "candidate_count": 10,
+  "original_candidate_classification": "competition_not_verified",
+  "results": [
+    {
+      "index": 1,
+      "decision": "hold_competition_unverified",
+      "risk": "Kharon OISP covers same investment compliance buyer; official Treasury ONS handles submission, exact third-party evidence desk unproven",
+      "evidence": [
+        "https://go.kharon.com/outboundinvestment"
+      ],
+      "next_gate": "Verify whether specialized investment compliance platforms already offer case approval and official notification prep"
+    },
+    {
+      "index": 5,
+      "decision": "hold_competition_unverified",
+      "risk": "OpenAI text verifier restricted; do not offer automatic detection, only manual release readiness",
+      "evidence": [
+        "https://openai.com/index/eu-text-provenance/",
+        "https://developers.openai.com/api/docs/guides/content-provenance"
+      ],
+      "next_gate": "Find direct release/watermark QA vendors, not generic AI detectors"
+    },
+    {
+      "index": 6,
+      "decision": "hold_competition_unverified",
+      "risk": "Compute-credit financing evidence is related to FinOps but lender dossier exact fit unverified",
+      "evidence": [
+        "https://www.finops.org/"
+      ],
+      "next_gate": "Verify loan/credit financing documentation competitors and zero-cost workflows"
+    },
+    {
+      "index": 7,
+      "decision": "hold_competition_unverified",
+      "risk": "Cleanlab overlap on dataset issues/corrections; buyer-specific acceptance and slice signoff unverified",
+      "evidence": [
+        "https://help.cleanlab.ai/studio/quickstart/web/"
+      ],
+      "next_gate": "Recheck Cleanlab signoff and slice acceptance features"
+    },
+    {
+      "index": 12,
+      "decision": "high_overlap_recheck",
+      "risk": "Unlearn trial-planning suite consolidates simulation scenarios, documented assumptions, evidence, results and review rationale; stronger same-buyer competitor overlap than prior classification indicated",
+      "evidence": [
+        "https://www.unlearn.ai/trialplanningandsimulations",
+        "https://www.unlearn.ai/solutions/clinical-trial-design"
+      ],
+      "next_gate": "Verify trial-outcome post-hoc reconciliation and explicit approval signoff before deciding direct vs adjacent"
+    },
+    {
+      "index": 21,
+      "decision": "hold_competition_unverified",
+      "risk": "Electric vehicle fleet TCO calculators exist; electric tractor mission simulator differentiation unverified",
+      "evidence": [
+        "https://www.dac.eu/en/tco-calculator"
+      ],
+      "next_gate": "Confirm tractor-specific duty-cycle calculator and realistic free-tier inputs"
+    },
+    {
+      "index": 22,
+      "decision": "hold_competition_unverified",
+      "risk": "Mimetik provides robotics training-data ownership and agreed usage controls from provider/infrastructure side, not confirmed buyer contract signoff desk",
+      "evidence": [
+        "https://www.mimetik.com/data-commercialization/",
+        "https://www.automationworld.com/factory/robotics/article/55410053/who-owns-what-robots-learn-the-next-industrial-automation-contract-fight"
+      ],
+      "next_gate": "Test strict same-buyer contract-rights platform competition"
+    },
+    {
+      "index": 25,
+      "decision": "high_substitute_checklist",
+      "risk": "AI vendor exit handover acceptance checklist with production tests exists; article/checklist rather than demonstrated SaaS platform",
+      "evidence": [
+        "https://www.kumohq.co/blog/ai-vendor-exit-handover-checklist-2026"
+      ],
+      "next_gate": "Find direct multi-party software for acceptance/evidence"
+    },
+    {
+      "index": 28,
+      "decision": "hold_competition_unverified",
+      "risk": "EU AI Act Article 50 creates disclosure obligations but government guidance is not a direct software competitor; overlap with candidate 5 should be checked for semantic duplication",
+      "evidence": [
+        "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+        "https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations"
+      ],
+      "next_gate": "Verify EU disclosure workflow direct vendors, legal scope and source date"
+    },
+    {
+      "index": 44,
+      "decision": "hold_competition_unverified",
+      "risk": "Original Japanese MLIT announcement dated September 4, not October 8; direct robot pilot acceptance platform unverified",
+      "evidence": [
+        "https://www.mlit.go.jp/report/press/kanbo08_hh_001361.html"
+      ],
+      "next_gate": "Search construction field robot pilot UAT tools specifically"
+    }
+  ],
+  "cross_cutting_gate": {
+    "pricing_source": "https://lovable.dev/pricing",
+    "free_build_credits_monthly_cap": 30,
+    "free_cloud_credits_monthly_grant": 20,
+    "external_cash_zero_proven_for_survivors": 0,
+    "publication_allowed": false,
+    "reason": "Build credit estimates and free grants are insufficient proof that production hosting, storage and authentication have zero marginal external cost."
+  },
+  "next_step": "Source-backed direct competitor recheck on highest-overlap candidates 12,7,25; then re-run immutable validation chunk and mirror/quality/final reconciliation without silent dismissal or catalog write.",
+  "catalog_action": "none",
+  "history_action": "none"
+}
