@@ -4,30 +4,20 @@
   "status": "active_quality_research",
   "candidate_total": 55,
   "classified_count": 55,
-  "unverified_competition_count": 22,
+  "unverified_competition_count": 12,
   "pending_candidate_indexes": [
     1,
     5,
     6,
     7,
-    11,
     12,
-    18,
     21,
     22,
     25,
     28,
     29,
-    33,
     36,
-    41,
-    43,
-    44,
-    45,
-    47,
-    49,
-    53,
-    55
+    44
   ],
   "partial_original_indexes": [
     13,
@@ -48,41 +38,38 @@
     5,
     6,
     7,
-    11,
     12,
-    18,
     21,
     22,
     25,
     28,
     29,
-    33,
     36,
+    44
+  ],
+  "attempts_by_index": {
+    "5": 1
+  },
+  "last_examined_indexes": [],
+  "resolved_candidate_indexes": [
+    11,
+    18,
+    33,
+    37,
     41,
     43,
-    44,
     45,
     47,
     49,
+    52,
     53,
     55
-  ],
-  "attempts_by_index": {
-    "5": 1,
-    "37": 1,
-    "52": 1
-  },
-  "last_examined_indexes": [
-    37,
-    52
-  ],
-  "resolved_candidate_indexes": [
-    37,
-    52
   ],
   "cursor_next_index": 1,
   "next_batch_size": 3,
   "updated_at": "2026-10-08",
   "publication_allowed": false,
-  "notes": "An explicit checkpoint prevents future runs from repeatedly reporting the same 24 without targeted research. Each remediation invocation processes up to three not-yet-rechecked candidates; no free-tier cost or source verification is presumed. Keep source workers W1/W2 incomplete until actually repaired."
+  "notes": "Stale checkpoint contained previously rejected indexes; reconciled pending list to exactly 12 competition_not_verified candidates. Preserve attempts for pending candidates only. No publication until external cash cost and competitor checks proven.",
+  "checkpoint_source": "Recomputed from 11 GitHub validation/chunk-NNN.json complete files, 55 distinct candidate IDs, 2026-10-08",
+  "previous_stale_pending_count": 22
 }
