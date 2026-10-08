@@ -29,19 +29,28 @@
     {
       "index": 2,
       "name": "AI Materials Recipe-to-Lab Handoff",
-      "finding": "SciNote ELN already provides experiment/protocol versioning, task assignment, linked results, electronic signatures and audit trail; substantial same-customer same-job workflow overlap. This is a credible direct global competitor, not merely adjacent. Labguru also provides templated experiment procedures and result records; second serious direct overlap.",
+      "finding": "SciNote ELN already provides experiment/protocol versioning, task assignment, linked results, electronic signatures and audit trail; substantial same-customer same-job workflow overlap. This is a credible direct global competitor, not merely adjacent. Labguru also provides templated experiment procedures and result records; second serious direct overlap. IDBS Polar officially advertises experiment versioning and ELN/LES/LIMS; Turkish language availability is not proof of Turkish vendor origin. Lims.science Turkish localization has broad laboratory workflows but exact materials synthesis fit unverified.",
       "next": "Check Labguru, SciNote, MaterialsZone and Turkey lab software vendors.",
       "sources": [
         "https://www.scinote.net/",
         "https://www.scinote.net/product/",
-        "https://help.labguru.com/en/articles/8863742-how-to-create-an-experiment"
+        "https://help.labguru.com/en/articles/8863742-how-to-create-an-experiment",
+        "https://www.idbs.com/tr/polar/",
+        "https://lims.science/tr/"
       ],
       "competition_assessment": {
         "global_direct": [
           "SciNote",
           "Labguru"
         ],
-        "direct_not_exhaustive": true
+        "direct_not_exhaustive": true,
+        "additional_global_overlap": [
+          "IDBS Polar"
+        ],
+        "turkiye_language_options_not_local_vendors": [
+          "IDBS Polar",
+          "Lims.science"
+        ]
       }
     },
     {
@@ -101,14 +110,24 @@
     {
       "index": 5,
       "name": "Text Watermark Rollout QA Matrix",
-      "finding": "OpenAI original confirms Oct 5 EU phased rollout and global API opt-in. Text detector restricted to approved researchers; proposed MVP must not promise automatic watermark verification or require restricted detector API.",
+      "finding": "OpenAI original confirms Oct 5 EU phased rollout and global API opt-in. Text detector restricted to approved researchers; proposed MVP must not promise automatic watermark verification or require restricted detector API. Official OpenAI API docs confirm text provenance verification restricted to approved organizations. Hawzu and Prooflane provide release-readiness/evidence workflows but not confirmed text-watermark-specific workflow; classify as adjacent pending direct research.",
       "source": "https://openai.com/index/eu-text-provenance/",
       "next": "Research watermark rollout test management direct competitors.",
       "sources": [
         "https://openai.com/index/eu-text-provenance/",
-        "https://help.openai.com/en/articles/8912793-provenance-signals-in-openai-generated-content"
+        "https://help.openai.com/en/articles/8912793-provenance-signals-in-openai-generated-content",
+        "https://developers.openai.com/api/docs/guides/content-provenance",
+        "https://www.hawzu.com/",
+        "https://prooflane.ai/solutions/qa-evaluation/"
       ],
-      "mvp_constraint": "Manual model-region configuration, test evidence uploads, human release signoff; no detector API dependency."
+      "mvp_constraint": "Manual model/region watermark feature inventory, test evidence and release signoff only; no automatic text watermark detection, no restricted detector API, no paid integration.",
+      "competition_assessment": {
+        "global_adjacent": [
+          "Hawzu",
+          "Prooflane"
+        ],
+        "direct_watermark_rollout_workflow_unverified": true
+      }
     }
   ],
   "gate": "No chunk-001 complete and no progress increment until all five candidates meet validator schema and competitor checks.",
