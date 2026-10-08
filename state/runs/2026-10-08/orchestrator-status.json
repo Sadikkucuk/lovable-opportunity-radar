@@ -36,8 +36,8 @@
   "merge_allowed": true,
   "validation_allowed": true,
   "catalog_publication_allowed": false,
-  "reason": "Validated classifications from 11 complete chunks: 43 competition rejected, 1 evidence rejected, 11 unresolved competition and zero-external-cash gates.",
-  "next_action": "Verify remaining 11 direct competition and zero-external-cost evidence cases; hold catalog/history.",
+  "reason": "All 55 candidates classified; 44 rejected for competition and 1 evidence rejection; ten remain blocked by competition and zero-external-cost proof.",
+  "next_action": "Investigate 10 remaining direct competition and zero-cash feasibility cases; no catalog/history writes.",
   "frozen_input_recovery_file": "state/runs/2026-10-08/discovery/frozen-input-recovery.json",
   "frozen_input_commit_ref": "11184205ec16eeaea62b269f7dde08589ec31f56",
   "frozen_input_verified_batches": 25,
@@ -47,9 +47,9 @@
   "validation_chunks_complete": 11,
   "validation_expected_candidates": 55,
   "qualified_candidates": 0,
-  "rejected_competition": 43,
+  "rejected_competition": 44,
   "rejected_evidence": 1,
-  "competition_not_verified": 11,
+  "competition_not_verified": 10,
   "final_report_published": false,
   "quality_audit_path": "state/runs/2026-10-08/validation/quality-audit.json",
   "validation_quality_reaudit": {
@@ -58,9 +58,9 @@
     "records_classified": 55,
     "records_qualified": 0,
     "original_source_unknown_date": 0,
-    "competition_unverified": 11,
+    "competition_unverified": 10,
     "publication_blocking_original_partial": 0,
-    "publication_relevant_zero_cash_unverified": 11
+    "publication_relevant_zero_cash_unverified": 10
   },
   "last_quality_audit_commit": "b35ac1f9817b1b0c17825ad1b5c346cf47f5c4a9",
   "final_report_status": "RADAR_INCOMPLETE",
@@ -76,19 +76,18 @@
     22,
     25,
     28,
-    29,
     44
   ],
-  "publication_blocking_candidate_count": 11,
-  "rejected_candidates_cost_proof_not_required": 44,
+  "publication_blocking_candidate_count": 10,
+  "rejected_candidates_cost_proof_not_required": 45,
   "rejected_candidates_with_partial_original_source_count": 6,
   "publication_blocking_partial_original_source_count": 0,
   "reconciliation_note": "Recomputed from chunk-001..011; #36 already rejected in chunk-008; publication remains blocked.",
   "latest_source_of_truth_reconciliation": {
     "date": "2026-10-08",
     "counts": {
-      "competition_not_verified": 11,
-      "rejected_competition": 43,
+      "competition_not_verified": 10,
+      "rejected_competition": 44,
       "rejected_evidence": 1
     },
     "unresolved": [
@@ -101,7 +100,6 @@
       22,
       25,
       28,
-      29,
       44
     ]
   }
