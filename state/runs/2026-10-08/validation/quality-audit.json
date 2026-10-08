@@ -7,14 +7,13 @@
   "expected_candidates": 55,
   "chunk_count": 11,
   "qualification_counts": {
-    "competition_not_verified": 24,
-    "rejected_competition": 30,
+    "competition_not_verified": 22,
+    "rejected_competition": 32,
     "rejected_evidence": 1
   },
   "primary_development_unverified_or_partial_indexes": [
     13,
     38,
-    39,
     40,
     42,
     43,
@@ -89,18 +88,18 @@
   "index_to_candidate_integrity": true,
   "direct_competitor_null_counts": {
     "turkiye": 31,
-    "global": 12
+    "global": 10
   },
   "publication_gate": {
     "allow_catalog_write": false,
     "allow_qualified_idea_publication": false,
-    "reason": "55 classified; 13 original-source checks and 55 zero-cash proofs outstanding."
+    "reason": "55 classified; 12 original sources partial, 55 zero-cash proofs outstanding, 22 direct-competition checks unresolved; W1/W2 frozen source-worker statuses remain incomplete."
   },
   "next_steps": [
-    "Prioritize 24 competition_not_verified candidates for direct-competitor research",
-    "Recheck 13 remaining partial/unverified original developments, including member-only candidate 13.",
-    "Verify actual zero-external-cash MVP feasibility separately from <=500 estimated Lovable credits",
-    "Re-audit and finalize only after promotion gates pass"
+    "Research 22 remaining candidates against primary vendor pages",
+    "Recheck 12 partial original articles",
+    "Prove zero-external-cash production feasibility for viable, not already rejected, ideas",
+    "Repair W1/W2 frozen source verification statuses; do not mistake 1000/1000 item count for article verification"
   ],
   "catalog_action": "none",
   "history_action": "none",
@@ -142,17 +141,37 @@
       "interpretation": "Zero newly verified direct products is not evidence that no substitutes exist; AI release assurance and disclosure compliance tools remain adjacent overlaps.",
       "external_cash_zero_proven": false,
       "decision": "retain_competition_not_verified_and_block_catalog_publication"
+    },
+    {
+      "validation_index": 37,
+      "checked_at_date": "2026-10-08",
+      "status": "rejected_competition",
+      "verified_vendor_urls": [
+        "https://www.wavefrontsoftware.com/lims-for-advanced-material-manufacturing/",
+        "https://lims.eu/en/werkstoffpruefung"
+      ],
+      "finding": "Advanced-materials LIMS vendors already serve materials and metallurgy labs with sample provenance, thermal/mechanical testing, instrument data, signoff and reporting; XRD niche coverage is not claimed."
+    },
+    {
+      "validation_index": 52,
+      "checked_at_date": "2026-10-08",
+      "status": "rejected_competition",
+      "verified_vendor_urls": [
+        "https://tremau.com/advisory/",
+        "https://tremau.com/resources/uk-online-safety-act-illegal-content-risk-assessment-operational-checklist/"
+      ],
+      "finding": "Tremau Ary targets OSA compliance risk assessment, structured records, feature-change checks, evidence and governance approvals for online platforms."
     }
   ],
-  "next_action_priority": "Complete original-primary-source verification and zero-cost evidence for the remaining 24 competition-not-verified candidates before any qualified/catalog publication. Keep 55 classified versus 0 qualified clearly separate.",
+  "next_action_priority": "22 competition-incomplete candidates remain after direct vendor research on #37 and #52. 13 original-source checks and 55 zero-cash proofs still outstanding. Do not publish.",
   "quality_gate_reaudit": {
     "date": "2026-10-08",
-    "method": "Recomputed actual development_verified and external_cash_cost across all 11 chunk files after primary Huxiu full article check",
-    "partial_primary_count": 13,
-    "unknown_source_date_count": 0,
+    "method": "Freshly recomputed from all 11 persisted complete validation chunks after #37 and #52 evidence edits",
+    "partial_primary_count": 12,
+    "unknown_source_date_count": 1,
     "zero_cost_unverified_count": 55,
-    "competition_incomplete_row_count": 24,
-    "notes": "2026-10-08 Microsoft Edge primary source rechecked: WebMCP test implementation (not GA) confirmed; candidate 47 full original source verification achieved; 13 remain."
+    "competition_incomplete_row_count": 22,
+    "notes": "Reclassified #37 and #52 with vendor primary feature evidence. This is an assessment count, not qualified/publication count."
   },
   "targeted_original_source_rechecks": [
     {
