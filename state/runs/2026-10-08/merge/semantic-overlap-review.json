@@ -51,5 +51,61 @@
       "rationale": "Payment identity fraud check differs from agent payment authorization."
     }
   ],
-  "warning": "Discovery W1/W2 incomplete. Do not mark merge complete or update catalog."
+  "warning": "All 59 IDs exist. Three clusters propose reducing seven raw ideas to three products (net -4). 55 is a provisional arithmetic upper estimate of unique ideas after these merges, NOT final merge or validation. W1/W2 incomplete.",
+  "schema_version": 2,
+  "raw_opportunities_checked": 59,
+  "unique_raw_ids": 59,
+  "provisional_clusters": [
+    {
+      "cluster": "robot-field-acceptance",
+      "raw_ids": [
+        "w2-20261008-008",
+        "W3-20261008-018",
+        "w4-20261008-016"
+      ],
+      "decision": "propose_merge",
+      "product": "Robot Pilot Acceptance Desk",
+      "templates": [
+        "industrial",
+        "warehouse",
+        "construction"
+      ],
+      "reason": "Task/site tests, safety exceptions and acceptance signoff form one core workflow; retain distinct sector evidence."
+    },
+    {
+      "cluster": "ai-security-test-evidence",
+      "raw_ids": [
+        "w1-20261008-011",
+        "w4-20261008-006"
+      ],
+      "decision": "propose_merge",
+      "product": "Authorized AI Security Test Desk",
+      "reason": "Authorization, scoped test execution evidence and remediation are a single lifecycle."
+    },
+    {
+      "cluster": "ai-incident-response",
+      "raw_ids": [
+        "W3-20261008-006",
+        "w4-20261008-018"
+      ],
+      "decision": "propose_merge",
+      "product": "AI Incident Response Desk",
+      "templates": [
+        "general AI incident",
+        "agent boundary incident"
+      ],
+      "reason": "Same incident triage, owner, severity, remediation and closeout lifecycle."
+    },
+    {
+      "cluster": "dataset-acceptance",
+      "raw_ids": [
+        "W3-20261008-010",
+        "w4-20261008-003"
+      ],
+      "decision": "keep_separate_pending_buyer_validation",
+      "reason": "Robot capture provenance and generic dataset representativeness have different specialist buyer and acceptance criteria."
+    }
+  ],
+  "provisional_semantic_unique_if_only_three_merges": 55,
+  "provisional_not_final": true
 }
