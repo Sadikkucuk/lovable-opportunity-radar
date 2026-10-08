@@ -38,8 +38,8 @@
     }
   ],
   "raw_total": 59,
-  "full_label_count": 39,
-  "corroborated_label_count": 20,
+  "full_label_count": 46,
+  "corroborated_label_count": 13,
   "insufficient_label_count": 0,
   "shared_article_pairs": [
     {
@@ -161,13 +161,25 @@
     "original_text_verification_still_pending": true,
     "w2_deferred_candidate_reviews_remaining": 0,
     "w2_original_articles_newly_verified": 5,
-    "w1_token_article_publisher_excerpt_reviewed": true
+    "w1_token_article_publisher_excerpt_reviewed": true,
+    "required_field_records_complete": 59,
+    "required_field_records_incomplete": 0,
+    "required_fields_checked": 21
   },
   "generation_integrity": {
     "frozen_worker_generation": "2026-10-08T01:54:22Z",
     "live_index_generation": "2026-10-08T08:54:32Z",
     "generation_match": false,
     "orchestrator_status": "RADAR_INPUT_MISMATCH",
-    "recovery": "Preserve frozen worker inputs; no merge against refreshed live batch index"
+    "recovery": "Preserve frozen worker inputs; no merge against refreshed live batch index",
+    "frozen_input_recovered": true,
+    "frozen_input_recovery_path": "state/runs/2026-10-08/discovery/frozen-input-recovery.json"
+  },
+  "premerge_review": {
+    "path": "state/runs/2026-10-08/merge/semantic-overlap-review.json",
+    "proposed_merge_clusters": 3,
+    "raw_ids_in_proposed_clusters": 7,
+    "provisional_unique_count_if_only_these_merges": 55,
+    "not_final": true
   }
 }
