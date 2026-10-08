@@ -300,19 +300,38 @@
       "candidate_id": "c-20261008-w2-20261008-001",
       "validation_index": 55,
       "canonical_key": "yakıt-farkı-sözleşme-mutabakatı",
-      "development_verified": "partial",
-      "canonical_news_source": "Original source",
-      "canonical_news_title": "Yakıt Farkı Sözleşme Mutabakatı",
-      "canonical_news_date": "not_verified",
+      "development_verified": true,
+      "canonical_news_source": "Supply Chain Dive",
+      "canonical_news_title": "Diesel’s supply crunch may hit CFOs through freight contracts",
+      "canonical_news_date": "2026-10-07",
       "canonical_news_url": "https://www.supplychaindive.com/news/diesels-supply-crunch-may-hit-cfos-through-freight-contracts/831981/",
       "source_links": [
         "https://www.supplychaindive.com/news/diesels-supply-crunch-may-hit-cfos-through-freight-contracts/831981/",
-        "https://www.transportmanagement.org/setting-up-a-fuel-surcharge-clause-for-eu-carriers/"
+        "https://www.transportmanagement.org/setting-up-a-fuel-surcharge-clause-for-eu-carriers/",
+        "https://www.lido.app/automations/audit-freight-invoices",
+        "https://auditcargo.com/product",
+        "https://www.invorec.com/freight-invoice-audit/"
       ],
       "turkiye_direct_competitor_count": null,
       "turkiye_competitors": [],
-      "global_direct_competitor_count": null,
-      "global_competitors": [],
+      "global_direct_competitor_count": 3,
+      "global_competitors": [
+        {
+          "name": "Lido Freight Invoice Audit",
+          "url": "https://www.lido.app/automations/audit-freight-invoices",
+          "reason": "Freight invoice audit against carrier contracts and linehaul/fuel surcharge, EIA index, with discrepancy report; same shipper/AP buyer and matching core reconciliation job."
+        },
+        {
+          "name": "AuditCargo",
+          "url": "https://auditcargo.com/product",
+          "reason": "Freight invoice vs rate card/contract comparison including fuel surcharge percent vs contracted fuel table and evidence-based dispute pack."
+        },
+        {
+          "name": "InvoRec",
+          "url": "https://www.invorec.com/freight-invoice-audit/",
+          "reason": "Freight invoice and contract-rate card matching, including fuel surcharge caps, expected versus charged amount and approval exceptions."
+        }
+      ],
       "adjacent_competitors": [
         {
           "name": "Fuel surcharge TMS",
@@ -321,10 +340,11 @@
         }
       ],
       "competition_search_terms": [
-        "Yakıt endeksi, sözleşme koşulu ve fatura farkı denetimi software",
-        "Yakıt endeksi, sözleşme koşulu ve fatura farkı denetimi Türkiye"
+        "fuel surcharge freight invoice audit against contract",
+        "logistics fuel index surcharge contract reconciliation software",
+        "Türkiye yakıt fiyat farkı navlun sözleşmesi fatura denetim yazılım"
       ],
-      "market_gap": "Differentiation not established.",
+      "market_gap": "General freight fuel surcharge-to-contract reconciliation already directly offered by multiple vendors; no unique Türkiye regulatory/business workflow proved.",
       "mvp": "Yakıt endeksi, sözleşme koşulu ve fatura farkı denetimi",
       "working_logic": "Yakıt endeksi, sözleşme koşulu ve fatura farkı denetimi -> Yakıt endeksi, sözleşme koşulu ve fatura farkı denetimi",
       "technologies": [
@@ -344,15 +364,24 @@
       ],
       "marketing_strategy": "Direct industry outreach",
       "first_customer_plan": "Confirm unmet need before build",
-      "main_risk": "Unproven gap and production cost",
-      "validation_assumption": "A distinct affordable workflow exists",
-      "evidence_strength": "partial",
-      "competition_confidence": "not_verified",
+      "main_risk": "Existing freight audit vendors cover same core fuel surcharge discrepancy detection; zero external cash deployment unverified.",
+      "validation_assumption": "Turkey-specific distinctive workflow must be proven separately before reviving, and should not be inferred from U.S. diesel news.",
+      "evidence_strength": "original_article_full; three_current_direct_vendor_primary_pages",
+      "competition_confidence": "high_for_global_direct; Türkiye vendors not exhaustively verified",
       "local_scope_verified": "not_applicable",
       "local_scope_evidence": [],
       "local_applicability_rationale": "Not locally verified",
       "validated_scope_hint": "Türkiye",
-      "qualification_status": "competition_not_verified"
+      "qualification_status": "rejected_competition",
+      "original_source_evidence": {
+        "checked_on": "2026-10-08",
+        "url": "https://www.supplychaindive.com/news/diesels-supply-crunch-may-hit-cfos-through-freight-contracts/831981/",
+        "publication_date": "2026-10-07",
+        "verification": "Full original publisher/company source opened; core development corroborated",
+        "key_findings": "Full published 2026-10-07 article accessed. Freight contracts signed before diesel price spikes hurt carriers; diesel fuel surcharge adjusts on weekly EIA schedules, creating timing gaps in cost recovery. Separate general U.S. news from evidence of unmet Turkish-specific software market."
+      },
+      "rejection_reason": "Lido, AuditCargo and InvoRec all compare transport invoices with rate cards/contracts and fuel surcharges and flag differences for same transport-finance customer; same core job and workflow, without evidenced differentiation.",
+      "review_notes": "Reclassification from competition_not_verified to rejected_competition based on full primary original plus 3 actual product pages; Türkiye competitor count remains unknown, not zero."
     }
   ]
 }
