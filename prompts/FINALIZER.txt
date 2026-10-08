@@ -1,3 +1,10 @@
+CANONICAL VALIDATION CONSISTENCY — REQUIRED BEFORE FINALIZATION
+- Completed validation/chunk-NNN.json records are authoritative candidate decisions. Validator-A/B files are derived mirrors and must match all full records before publication.
+- After any chunk candidate recheck, regenerate corresponding A (odd indexes) / B (even indexes) mirror and recompute progress, quality audit and final counts from all canonical chunks.
+- Assert exact candidate ID coverage, qualification_status, source/evidence parity, and identical classification counts across chunks, validator mirrors, progress, audit and final report. On mismatch, do not publish; reconcile before proceeding.
+- Only potentially publishable candidates require affirmative zero-external-cash proof. Already-rejected candidates retain original-source caveats but do not independently block publication for surviving candidates.
+- Do not write idea_history.json or idea_catalog.json when any required publication gate fails.
+
 
 ==================================================
 CATALOG PRESERVATION — HARD SAFETY RULE
