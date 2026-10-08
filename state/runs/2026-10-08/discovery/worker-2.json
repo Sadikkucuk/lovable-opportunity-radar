@@ -17,9 +17,9 @@
   "feed_items_expected": 240,
   "feed_items_triaged": 240,
   "candidate_article_count": 18,
-  "original_articles_verified": 3,
+  "original_articles_verified": 0,
   "full_article_not_verified": 15,
-  "noise_or_no_opportunity_count": 222,
+  "noise_or_no_opportunity_count": 225,
   "raw_opportunity_count": 8,
   "raw_opportunities": [
     {
@@ -480,11 +480,18 @@
   ],
   "missing_batches": [],
   "failure_reason": "Seven potentially relevant shortlisted originals not yet source-verified; cannot declare exhaustive opportunity extraction.",
-  "notes": "All 18 shortlisted W2 feed records have explicit dispositions: 8 raw opportunities, 3 event/job listing rejections, 7 deferred pending original-source verification. No unsupported promotion. W2 remains incomplete.",
+  "notes": "Audit corrected unsubstantiated full-verification labels on 3 raw ideas. All 18 shortlisted candidates dispositioned; 8 ideas retained provisionally, 7 deferred, 3 rejected. W2 incomplete.",
   "reviewed_candidate_count": 18,
   "candidate_dispositions": {
     "raw_opportunity_captured": 8,
     "rejected": 3,
     "deferred_source_not_verified": 7
+  },
+  "source_audit": {
+    "original_full_text_verified_in_this_run": 0,
+    "corroborated_candidate_opportunities": 8,
+    "deferred_unverified_candidates": 7,
+    "rejected_noise": 3,
+    "method": "Conservative reconciliation; original source URLs alone do not prove full-text reading"
   }
 }
