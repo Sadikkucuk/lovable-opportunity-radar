@@ -38,8 +38,8 @@
     }
   ],
   "raw_total": 59,
-  "full_label_count": 42,
-  "corroborated_label_count": 16,
+  "full_label_count": 39,
+  "corroborated_label_count": 19,
   "insufficient_label_count": 1,
   "shared_article_pairs": [
     {
@@ -139,10 +139,10 @@
     }
   ],
   "blockers": [
-    "W1 incomplete; two identified source gaps remain",
-    "W2 incomplete; six shortlisted candidates lack original-source review",
-    "W2 eight captured ideas are provisional, no full-original verification established",
-    "No validation of buyer demand, competitors, duplicate products or catalogue eligibility"
+    "W1 incomplete: original source gaps and exhaustive opportunity review pending",
+    "W2 incomplete: six deferred candidates need original source verification",
+    "W2 eight raw ideas only corroborated, not fully verified",
+    "Competitor and buyer validation not complete; do not merge catalog"
   ],
   "release_gate": {
     "catalog_merge_allowed": false,
@@ -153,5 +153,11 @@
     "state/runs/2026-10-08/discovery/worker-2.json",
     "state/runs/2026-10-08/discovery/worker-3.json",
     "state/runs/2026-10-08/discovery/worker-4.json"
-  ]
+  ],
+  "schema_audit": {
+    "all_59_raw_opportunities_have_required_fields": true,
+    "w1_missing_fields_backfilled_from_existing_data": 11,
+    "w2_unsupported_full_labels_downgraded": 3,
+    "original_text_verification_still_pending": true
+  }
 }
