@@ -166,24 +166,40 @@
         "https://docs.aws.amazon.com/bedrock/latest/userguide/geographic-cross-region-inference.html",
         "https://lovable.dev/pricing",
         "https://aws.amazon.com/about-aws/whats-new/2026/09/claude-region-expansion-in-sk/",
-        "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference/"
+        "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference/",
+        "https://www.onetrust.com/solutions/ai-governance/ai-policy-management/",
+        "https://www.onetrust.com/solutions/ai-governance/",
+        "https://www.credo.ai/product"
       ],
       "turkiye_direct_competitor_count": null,
       "turkiye_competitors": [],
-      "global_direct_competitor_count": null,
-      "global_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "OneTrust AI Governance / AI Policy Management",
+          "url": "https://www.onetrust.com/solutions/ai-governance/ai-policy-management/",
+          "reason": "Targets DPO/cloud governance buyers; inventories AI systems and models, ties allowed model use and data-handling policy to geography, data sensitivity and deployment type; enforces evidentiary review, exception approvals and revalidation when deployment changes. Same customer, inference-region policy clearance job and core review/evidence workflow."
+        },
+        {
+          "name": "Credo AI Governance",
+          "url": "https://www.credo.ai/product",
+          "reason": "Same enterprise AI governance buyer; model registry and system configurations mapped to country/sector policy contexts with review approval gates and auditable supporting evidence."
+        }
+      ],
       "adjacent_competitors": [
         {
-          "name": "AWS Bedrock inference policies",
+          "name": "AWS Bedrock inference routing policies",
           "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/geographic-cross-region-inference.html",
-          "reason": "Adjacent region-routing documentation and IAM enforcement rather than cross-cloud signed model-region evidence ledger."
+          "reason": "First-party regional inference infrastructure and controls; not a cross-cloud governance/evidence manager."
         }
       ],
       "competition_search_terms": [
         "Prove the chosen AI inference region is policy-appropriate. direct software competitors",
-        "Prove the chosen AI inference region is policy-appropriate. Türkiye yazılım"
+        "Prove the chosen AI inference region is policy-appropriate. Türkiye yazılım",
+        "AI governance geography deployment type data residency approval evidence OneTrust",
+        "model jurisdiction and data sensitivity policy governance Credo AI"
       ],
-      "market_gap": "Dedicated matching product not established; search non-exhaustive.",
+      "market_gap": "No separate verified workflow gap versus AI governance platforms that already connect model inventories, geography-sensitive policies, data classes, review/exception approvals and audit evidence.",
       "mvp": "Model/region matrix, evidence attachments, data class rules and review calendar.",
       "working_logic": "Provider region terms and internal data rules change separately. -> Model/region matrix, evidence attachments, data class rules and review calendar.",
       "technologies": [
@@ -192,7 +208,7 @@
         "CSV/manual import",
         "report export"
       ],
-      "external_cash_cost": "not_verified",
+      "external_cash_cost": "not_verified_rejection_makes_cost_proof_unnecessary",
       "lovable_credits_total": 240,
       "lovable_credit_breakdown": {
         "source": "discovery_estimate",
@@ -205,15 +221,15 @@
       ],
       "marketing_strategy": "Validate needs via domain-specific buyer interviews.",
       "first_customer_plan": "Test with one target-customer workflow and sample records.",
-      "main_risk": "Adjacent region-routing documentation and IAM enforcement rather than cross-cloud signed model-region evidence ledger.",
-      "validation_assumption": "Distinguishing workflow and zero-cost deployment must be demonstrated.",
-      "evidence_strength": "media_article_full_and_AWS_first_party_docs; competitors_and_cash_not_verified",
-      "competition_confidence": "not_verified",
+      "main_risk": "Direct enterprise AI governance substitutes already offer geography/deployment scoped policy, approval and evidence management.",
+      "validation_assumption": "A specialized manual inference residency register has a materially different job from existing geography-sensitive AI governance policy/evidence workflows; first-party competitors do not support that assertion.",
+      "evidence_strength": "high_first_party_oneTrust_credo_product_docs; trigger previously verified",
+      "competition_confidence": "high_for_global_workflow_overlap; no exhaustive Turkish vendor count",
       "local_scope_verified": "not_applicable",
       "local_scope_evidence": [],
       "local_applicability_rationale": "No Lüleburgaz claim.",
       "validated_scope_hint": "Dünya",
-      "qualification_status": "competition_not_verified",
+      "qualification_status": "rejected_competition",
       "original_source_evidence": {
         "checked_on": "2026-10-08",
         "url": "https://www.expresscomputer.in/news/claude-goes-live-in-india-with-in-country-inference-through-amazon-bedrock/139422/",
@@ -223,6 +239,25 @@
         "verified_claim": "India geographic cross-region inference processes Claude traffic only in Mumbai and Hyderabad AWS regions; available via Bedrock India regional profile.",
         "important_date_note": "Media follow-up was Oct 5; AWS originally announced product region support Sep 29. The previous Oct 7 source date in the candidate validation was inaccurate.",
         "important_product_limit": "India residency feature of AWS/Amazon Bedrock does not imply a global or cross-cloud regulator-approved compliance claim."
+      },
+      "rejection_reason": "OneTrust AI Policy Management and Credo AI already offer system/model inventory, geography-and-deployment-conditioned policy decisions, formal approvals and audit trails to the same regulated AI governance buyer. A provider-region-specific difference alone does not establish a new core job.",
+      "competitor_recheck": {
+        "checked_on": "2026-10-08",
+        "sources": [
+          "https://www.onetrust.com/solutions/ai-governance/ai-policy-management/",
+          "https://www.onetrust.com/solutions/ai-governance/",
+          "https://www.credo.ai/product"
+        ],
+        "confirmed_workflow": [
+          "model/system inventory",
+          "geography-sensitive policies",
+          "data sensitivity and deployment conditions",
+          "evidence controls",
+          "approval and exception review",
+          "revalidation after deployment change"
+        ],
+        "limits": "Vendor pages do not guarantee automatic verification of physical inference-region runtime; candidate is a manual policy-evidence ledger, and the underlying evidence/approval job overlaps.",
+        "decision": "rejected_competition"
       }
     },
     {
