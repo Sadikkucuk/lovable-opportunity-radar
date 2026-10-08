@@ -29,15 +29,17 @@
     {
       "index": 2,
       "name": "AI Materials Recipe-to-Lab Handoff",
-      "finding": "SciNote ELN already provides experiment/protocol versioning, task assignment, linked results, electronic signatures and audit trail; substantial same-customer same-job workflow overlap. This is a credible direct global competitor, not merely adjacent.",
+      "finding": "SciNote ELN already provides experiment/protocol versioning, task assignment, linked results, electronic signatures and audit trail; substantial same-customer same-job workflow overlap. This is a credible direct global competitor, not merely adjacent. Labguru also provides templated experiment procedures and result records; second serious direct overlap.",
       "next": "Check Labguru, SciNote, MaterialsZone and Turkey lab software vendors.",
       "sources": [
         "https://www.scinote.net/",
-        "https://www.scinote.net/product/"
+        "https://www.scinote.net/product/",
+        "https://help.labguru.com/en/articles/8863742-how-to-create-an-experiment"
       ],
       "competition_assessment": {
         "global_direct": [
-          "SciNote"
+          "SciNote",
+          "Labguru"
         ],
         "direct_not_exhaustive": true
       }
@@ -45,19 +47,25 @@
     {
       "index": 3,
       "name": "Agent Sandbox Readiness Desk",
-      "finding": "E2B and Daytona are confirmed sandbox runtime providers and adjacent infrastructure; neither cited source establishes a standalone sandbox assessment evidence desk. Further direct search required.",
+      "finding": "E2B and Daytona are confirmed sandbox runtime providers and adjacent infrastructure; neither cited source establishes a standalone sandbox assessment evidence desk. Further direct search required. Northflank publishes a detailed security evaluation evidence matrix and Gamut provides an AI agent assurance checklist; checklist-only differentiation is weak.",
       "source": "https://rywalker.com/research/ai-agent-sandboxes",
       "next": "Search sandbox assessment checklist/evidence platforms specifically.",
       "sources": [
         "https://e2b.dev/security",
-        "https://www.daytona.io/docs/"
+        "https://www.daytona.io/docs/",
+        "https://www.northflank.ai/blog/ai-agent-sandbox-security-checklist",
+        "https://gamut.titai.org/ai-agent-assurance-checklist"
       ],
       "competition_assessment": {
         "global_adjacent": [
           "E2B",
           "Daytona"
         ],
-        "direct_not_yet_verified": true
+        "direct_not_yet_verified": true,
+        "adjacent_checklists": [
+          "Northflank",
+          "Gamut"
+        ]
       }
     },
     {
