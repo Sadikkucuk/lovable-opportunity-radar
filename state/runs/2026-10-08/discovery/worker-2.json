@@ -17,8 +17,8 @@
   "feed_items_expected": 240,
   "feed_items_triaged": 240,
   "candidate_article_count": 18,
-  "original_articles_verified": 4,
-  "full_article_not_verified": 11,
+  "original_articles_verified": 5,
+  "full_article_not_verified": 10,
   "noise_or_no_opportunity_count": 225,
   "raw_opportunity_count": 8,
   "raw_opportunities": [
@@ -341,9 +341,10 @@
       "title": "Poetry is the new AI security threat as PoeLLM malware infects 3K+ servers - The Register",
       "feed_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPU3RIT052X0Y3UGgwR2xHbkxSVXlHZTVhWmN6WnNkQUJiYWxhUlVYZU9Da05IYXpWY1FsOWJRa0dUdmlHaHhYcTBRZ0U3Y2NaOWd1SzF6aXdxeWluTjZoOEtsVXVfa3JLdzdRX0ZnZEoxbjgwTHZMUXVrLXRYUF80VjV2YlpoeFJzbjJkVFQ5ZkFJUU5EXzBlMmo2ejNmd0FuTnFHZVpncXkyX25mR1lYbXJMQUJVRFBHNmpuMW9YbFJtV0RjdFdacQ?oc=5",
       "batch": 7,
-      "verification": "feed_metadata_only",
-      "review_status": "deferred_source_not_verified",
-      "review_reason": "Security incident headline alone cannot establish specific attack vector or independent product delta"
+      "verification": "full",
+      "review_status": "verified_security_incident_no_distinct_product",
+      "review_reason": "Lumen original research: compromised exposed/unpatched LiteLLM, Ollama and other services, C2 address obfuscated in poem by ordinary malware code; NOT evidence of AI prompt injection/jailbreak. Existing exposure and patch inventory products compete strongly.",
+      "canonical_url": "https://www.lumen.com/blog/en-us/canto-incognito-tracking-the-poellm-malware"
     },
     {
       "id": "cc9d9a41f8a029b58342f688",
@@ -406,9 +407,10 @@
       "title": "IBM’s Quantum Fab Anderon Aims to Be the TSMC Of Qubits - IEEE Spectrum",
       "feed_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ieUM3TThONTVOb1hSNWxLaGdRNy1UYXdUTXJfWng0M004aTg1TDFWNE54X2YwM19rcVZqTGd0YVJwWC12U255MEt0WDdsZmZuRVFMa3RvVGI?oc=5",
       "batch": 10,
-      "verification": "feed_metadata_only",
-      "review_status": "deferred_source_not_verified",
-      "review_reason": "Quantum foundry news requires technical evidence and plausible low-cost web-app product"
+      "verification": "corroborated",
+      "review_status": "corroborated_no_low_cost_web_product",
+      "review_reason": "IEEE report of Anderon quantum fab and CHIPS funding relates to specialized wafer manufacturing, not a proven low-cost standalone web-app workflow; publisher source available through indexed excerpt, full article not independently verified.",
+      "canonical_url": "https://spectrum.ieee.org/anderon-quantum-fab"
     },
     {
       "id": "a19eab39d8911afe446686f6",
@@ -486,15 +488,16 @@
     }
   ],
   "missing_batches": [],
-  "failure_reason": "Two deferred articles require original-source review (PoeLLM malware, IBM quantum foundry); eight existing raw ideas remain provisional",
-  "notes": "Four original sources read: USMCA comment, Tractor Supply DC, Yicai opinion, Siemens original September release. No invented product added. Two deferred originals remain.",
+  "failure_reason": "All 18 shortlisted candidates dispositioned; eight raw opportunities remain corroborated only and additional candidate discovery across 240 feed records has not been independently exhausted.",
+  "notes": "Completed six deferred candidate reviews: five original-source verified, one quantum report corroborated. No speculative security or quantum product promoted. Eight provisional raw ideas still require original verification and competitive assessment.",
   "reviewed_candidate_count": 18,
   "candidate_dispositions": {
     "raw_opportunity_captured": 8,
     "rejected_noise": 3,
     "no_distinct_product_delta": 1,
-    "verified_no_new_idea": 4,
-    "deferred_source_not_verified": 2
+    "verified_no_new_idea": 5,
+    "corroborated_no_new_idea": 1,
+    "deferred_source_not_verified": 0
   },
   "source_audit": {
     "original_full_text_verified_in_this_run": 0,
@@ -502,10 +505,13 @@
     "deferred_unverified_candidates": 7,
     "rejected_noise": 3,
     "method": "Conservative reconciliation; original source URLs alone do not prove full-text reading",
-    "remaining_deferred_count": 2,
+    "remaining_deferred_count": 0,
     "downgraded_unsubstantiated_full_labels": 3,
     "raw_idea_labels_now_consistent_with_verified_count": true,
-    "verified_originals_from_live_source_review": 4,
-    "source_verification_scope": "Four newly opened original/official sources; eight previously captured raw ideas remain corroborated only"
+    "verified_originals_from_live_source_review": 5,
+    "source_verification_scope": "Four newly opened original/official sources; eight previously captured raw ideas remain corroborated only",
+    "quantum_source_verification": "corroborated",
+    "poellm_primary_source": "Lumen Black Lotus Labs",
+    "poellm_misinterpretation_guard": "Poem is decoded by malware, not an LLM jailbreak"
   }
 }
