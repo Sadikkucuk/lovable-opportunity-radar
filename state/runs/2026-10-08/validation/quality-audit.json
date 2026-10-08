@@ -7,8 +7,8 @@
   "expected_candidates": 55,
   "chunk_count": 11,
   "qualification_counts": {
-    "competition_not_verified": 16,
-    "rejected_competition": 38,
+    "competition_not_verified": 14,
+    "rejected_competition": 40,
     "rejected_evidence": 1
   },
   "primary_development_unverified_or_partial_indexes": [
@@ -87,7 +87,7 @@
   "publication_gate": {
     "allow_catalog_write": false,
     "allow_qualified_idea_publication": false,
-    "reason": "16 potential publication candidates have unresolved direct competition AND lack proven zero-external-cash feasibility; six partial originals belong exclusively to rejected candidates."
+    "reason": "14 potential candidates have unresolved direct competition and unproven zero-cash deployment; 6 source-partial candidates already rejected."
   },
   "next_steps": [
     "Resolve 16 potential-publication competition checks and verify zero-external-cash MVPs",
@@ -210,18 +210,38 @@
         "https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/cloud-update-enhancements"
       ],
       "finding": "Microsoft tooling directly addresses Office inventory, add-in/macro readiness and rollout; 2026-10-13 is support end rather than source publication date."
+    },
+    {
+      "validation_index": 11,
+      "status": "rejected_competition",
+      "checked_at_date": "2026-10-08",
+      "verified_vendor_urls": [
+        "https://learn.microsoft.com/en-us/azure/advisor/advisor-how-to-use-service-upgrade-retirement-recommendations",
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/lifecycle/sizes-v6-v7-modernization-modernize"
+      ],
+      "finding": "First-party Microsoft retirement dates/impacted inventory plus modernization waves, cutover and owner approval substitute for a generic CSV retirement wave desk."
+    },
+    {
+      "validation_index": 18,
+      "status": "rejected_competition",
+      "checked_at_date": "2026-10-08",
+      "verified_vendor_urls": [
+        "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+        "https://developers.google.com/workspace/drive/api/guides/approvals"
+      ],
+      "finding": "Claude per-edit confirmation plus Google Docs formal revision approval replicate manual AI-edit approval workflow; no automatic AI provenance differentiator proposed."
     }
   ],
-  "next_action_priority": "16 candidate-level competition + 16 zero-external-cash proofs, not 55 cash proofs",
+  "next_action_priority": "14 direct competitor checks plus 14 zero-cash proofs for survivors",
   "quality_gate_reaudit": {
     "date": "2026-10-08",
-    "method": "Full recomputation from 11 current chunk files after Japanese MLIT, SaaS survey and Korea robotics source corrections",
+    "method": "Recomputed from 11 full 5-record chunks after first-party Microsoft and Google competition rechecks",
     "partial_primary_count": 6,
-    "unknown_source_date_count": 0,
+    "partial_primary_potential_publication": 0,
     "zero_cost_unverified_count": 55,
-    "competition_incomplete_row_count": 16,
-    "qualified_count": 0,
-    "notes": "Three new direct-competition findings: #41 Microsoft, #45 Avala/Dexset, #49 MemVerge; original-source and zero-cost gates remain."
+    "publication_relevant_zero_cash_unverified_count": 14,
+    "competition_incomplete_row_count": 14,
+    "qualified_count": 0
   },
   "targeted_original_source_rechecks": [
     {
@@ -379,9 +399,7 @@
     5,
     6,
     7,
-    11,
     12,
-    18,
     21,
     22,
     25,
@@ -392,8 +410,8 @@
     43,
     44
   ],
-  "publication_blocking_candidate_count": 16,
-  "rejected_candidates_cost_proof_not_required": 39,
+  "publication_blocking_candidate_count": 14,
+  "rejected_candidates_cost_proof_not_required": 41,
   "rejected_candidates_with_partial_original_source_count": 6,
   "publication_blocking_partial_original_source_count": 0,
   "reconciliation_note": "Classification of all 55 is complete; 39 rejected ideas do not require zero-cost proof or full primary article verification to remain rejected. Only 16 potentially publishable records need direct-competition verification and zero-external-cash feasibility. No catalog writes until resolved.",
@@ -402,9 +420,7 @@
     5,
     6,
     7,
-    11,
     12,
-    18,
     21,
     22,
     25,
