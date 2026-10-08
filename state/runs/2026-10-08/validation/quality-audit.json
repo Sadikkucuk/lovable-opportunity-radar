@@ -7,25 +7,24 @@
   "expected_candidates": 55,
   "chunk_count": 11,
   "qualification_counts": {
-    "competition_not_verified": 22,
-    "rejected_competition": 32,
+    "competition_not_verified": 21,
+    "rejected_competition": 33,
     "rejected_evidence": 1
   },
   "primary_development_unverified_or_partial_indexes": [
     13,
     38,
     40,
-    42,
     43,
     44,
     45,
     46,
     48,
-    49,
-    50,
-    55
+    49
   ],
-  "source_date_unverified_indexes": [],
+  "source_date_unverified_indexes": [
+    34
+  ],
   "zero_external_cash_unverified_indexes": [
     1,
     2,
@@ -88,18 +87,18 @@
   "index_to_candidate_integrity": true,
   "direct_competitor_null_counts": {
     "turkiye": 31,
-    "global": 10
+    "global": 9
   },
   "publication_gate": {
     "allow_catalog_write": false,
     "allow_qualified_idea_publication": false,
-    "reason": "55 classified; 12 original sources partial, 55 zero-cash proofs outstanding, 22 direct-competition checks unresolved; W1/W2 frozen source-worker statuses remain incomplete."
+    "reason": "55/55 classified; 9 original sources partial, 55 zero-external-cash proofs outstanding, 21 direct-competition checks unresolved. Frozen discovery workers now show complete, but strict publication quality gate still blocks."
   },
   "next_steps": [
-    "Research 22 remaining candidates against primary vendor pages",
-    "Recheck 12 partial original articles",
-    "Prove zero-external-cash production feasibility for viable, not already rejected, ideas",
-    "Repair W1/W2 frozen source verification statuses; do not mistake 1000/1000 item count for article verification"
+    "Recheck 9 remaining partial original sources",
+    "Resolve 21 remaining direct competitor investigations",
+    "Prove zero-external-cash production feasibility for any not-rejected idea before publishing",
+    "Re-run full finalizer strict quality and language gates before catalog/history write"
   ],
   "catalog_action": "none",
   "history_action": "none",
@@ -163,15 +162,15 @@
       "finding": "Tremau Ary targets OSA compliance risk assessment, structured records, feature-change checks, evidence and governance approvals for online platforms."
     }
   ],
-  "next_action_priority": "22 competition-incomplete candidates remain after direct vendor research on #37 and #52. 13 original-source checks and 55 zero-cash proofs still outstanding. Do not publish.",
+  "next_action_priority": "21 competition-unverified candidates, 9 original-source gaps and 55 external zero-cost proofs remain. No catalog publication.",
   "quality_gate_reaudit": {
     "date": "2026-10-08",
-    "method": "Freshly recomputed from all 11 persisted complete validation chunks after #37 and #52 evidence edits",
-    "partial_primary_count": 12,
+    "method": "Recomputed directly from current GitHub chunk-001..011 after new source checks and candidate 55 global direct competitors",
+    "partial_primary_count": 9,
     "unknown_source_date_count": 1,
     "zero_cost_unverified_count": 55,
-    "competition_incomplete_row_count": 22,
-    "notes": "Reclassified #37 and #52 with vendor primary feature evidence. This is an assessment count, not qualified/publication count."
+    "competition_incomplete_row_count": 21,
+    "notes": "Indices 42,50,55 primary sources verified; #55 changed competition_not_verified -> rejected_competition after Lido/AuditCargo/InvoRec original product checks."
   },
   "targeted_original_source_rechecks": [
     {
@@ -283,6 +282,35 @@
       "publication_date": "2026-09-21",
       "development_verified": true,
       "key_finding": "Microsoft says WebMCP Edge implementation is ready for testing; not generally available; market and cash feasibility remain unresolved."
+    },
+    {
+      "validation_index": 42,
+      "date_verified": "2026-10-08",
+      "publication_date": "2026-10-07",
+      "primary_url": "https://investors.danaher.com/2026-10-07-Danaher-Accelerates-Life-Sciences-Research-with-New-AI-powered-Autonomous-Lab",
+      "development_verified": true,
+      "important_limit": "Announced plan, expected scale in early 2027, not an existing scaled production system."
+    },
+    {
+      "validation_index": 50,
+      "date_verified": "2026-10-08",
+      "publication_date": "2026-10-07",
+      "primary_url": "https://www.tuev-verband.de/studien/ki-sicherheitsstudie-2026",
+      "development_verified": true,
+      "important_limit": "Survey findings, not a new regulatory obligation."
+    },
+    {
+      "validation_index": 55,
+      "date_verified": "2026-10-08",
+      "publication_date": "2026-10-07",
+      "primary_url": "https://www.supplychaindive.com/news/diesels-supply-crunch-may-hit-cfos-through-freight-contracts/831981/",
+      "development_verified": true,
+      "direct_global_vendor_pages": [
+        "https://www.lido.app/automations/audit-freight-invoices",
+        "https://auditcargo.com/product",
+        "https://www.invorec.com/freight-invoice-audit/"
+      ],
+      "qualification_status": "rejected_competition"
     }
   ]
 }
