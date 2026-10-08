@@ -108,6 +108,17 @@ STAGE SELECTION — ONE STAGE PER INVOCATION
 
 At the start, inspect today's run state and choose the FIRST applicable stage:
 
+SPECIAL PRIORITY FOR AN ALREADY-CLASSIFIED FROZEN RUN: if today's
+validation/progress.json says validated_candidate_count == candidate_count and
+validation/quality-audit.json blocks publication, choose Stage 3A BEFORE the
+normal discovery/merge/finalize gates, provided all existing chunk candidate
+IDs match merge/candidates.json and the frozen-input generation is recorded.
+This priority allows EVIDENCE RESEARCH ONLY and MUST NOT override, repair by
+assertion, or bypass incomplete worker status or source-generation checks at
+publication. Once the quality backlog is resolved, the normal discovery and
+finalizer hard gates still apply. Do NOT report FULL_RADAR_COMPLETE merely
+because 55 results have classification labels.
+
 0. If final/report.json exists with overall_status="FULL_RADAR_COMPLETE":
    do nothing further. Return only: "Bugünkü radar zaten tamamlandı."
 
