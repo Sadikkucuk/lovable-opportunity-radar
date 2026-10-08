@@ -12,8 +12,6 @@
     "rejected_evidence": 1
   },
   "primary_development_unverified_or_partial_indexes": [
-    2,
-    4,
     13,
     16,
     17,
@@ -104,11 +102,11 @@
   "publication_gate": {
     "allow_catalog_write": false,
     "allow_qualified_idea_publication": false,
-    "reason": "55 classified, 23 original-source checks still incomplete, 0 source dates unknown, all 55 zero-external-cash proofs unverified."
+    "reason": "55 classified, 21 original-source checks incomplete; 55 zero-cash verifications outstanding"
   },
   "next_steps": [
     "Prioritize 24 competition_not_verified candidates for direct-competitor research",
-    "Recheck 23 remaining partial/unverified original developments; all 3 formerly undated sources now dated from primary publisher pages.",
+    "Recheck 21 remaining partial/unverified original developments.",
     "Verify actual zero-external-cash MVP feasibility separately from <=500 estimated Lovable credits",
     "Re-audit and finalize only after promotion gates pass"
   ],
@@ -157,12 +155,12 @@
   "next_action_priority": "Complete original-primary-source verification and zero-cost evidence for the remaining 24 competition-not-verified candidates before any qualified/catalog publication. Keep 55 classified versus 0 qualified clearly separate.",
   "quality_gate_reaudit": {
     "date": "2026-10-08",
-    "method": "Recomputed directly from 11 current chunks after verifying Anthropic primary announcement for candidate 018",
-    "partial_primary_count": 23,
+    "method": "Recomputed original-source boolean statuses across all 11 chunks after independently reading MIT News and AgFunderNews primary articles",
+    "partial_primary_count": 21,
     "unknown_source_date_count": 0,
     "zero_cost_unverified_count": 55,
     "competition_incomplete_row_count": 24,
-    "notes": "Classification complete (55) but no fully qualified opportunity; all 55 zero external cash cost proofs missing."
+    "notes": "Original source indexes 2 and 4 now verified; publication remains blocked by outstanding quality checks."
   },
   "targeted_original_source_rechecks": [
     {
@@ -191,6 +189,18 @@
       "validation_index": 35,
       "date_verified": "2026-09-16",
       "primary_url": "https://press.siemens.com/global/en/pressrelease/siemens-and-procter-gamble-roll-out-ai-based-quality-inspection-worldwide",
+      "development_verified": true
+    },
+    {
+      "validation_index": 2,
+      "date_verified": "2026-10-08",
+      "primary_url": "https://news.mit.edu/2026/how-generative-ai-can-help-scientists-synthesize-complex-materials-0202",
+      "development_verified": true
+    },
+    {
+      "validation_index": 4,
+      "date_verified": "2026-10-08",
+      "primary_url": "https://agfundernews.com/myca-raises-1-3m-pre-seed-to-put-ai-agents-in-charge-of-agribusiness-field-operations",
       "development_verified": true
     }
   ]
