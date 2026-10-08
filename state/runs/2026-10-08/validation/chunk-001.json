@@ -4,7 +4,7 @@
   "chunk_number": 1,
   "status": "incomplete",
   "expected_candidate_count": 5,
-  "validated_candidate_count": 0,
+  "validated_candidate_count": 1,
   "candidate_ids": [
     "c-20261008-w1-20261008-002",
     "c-20261008-W3-20261008-005",
@@ -14,13 +14,85 @@
   ],
   "research_notes_path": "state/runs/2026-10-08/validation/chunk-001-research-notes.json",
   "blocking_checks": [
-    "Full original-source recheck for every candidate",
     "Türkiye direct competitor search for every candidate",
     "Global direct competitor search for every candidate",
     "MVP cost and 500-credit feasibility",
     "Local scope evidence where applicable"
   ],
-  "results": [],
+  "results": [
+    {
+      "candidate_id": "c-20261008-W3-20261008-005",
+      "validation_index": 2,
+      "canonical_key": "advanced-materials-laboratories|materials-synthesis-experiment-planning|recipe-version-ledger",
+      "development_verified": "partial",
+      "canonical_news_source": "MIT News",
+      "canonical_news_title": "How generative AI can help scientists synthesize complex materials",
+      "canonical_news_date": "2026-02-02",
+      "canonical_news_url": "https://news.mit.edu/2026/how-generative-ai-can-help-scientists-synthesize-complex-materials-0202",
+      "source_links": [
+        "https://news.mit.edu/2026/how-generative-ai-can-help-scientists-synthesize-complex-materials-0202",
+        "https://www.scinote.net/product/protocol-sop-management/",
+        "https://www.scinote.net/product/scinote-templates/",
+        "https://www.scinote.net/product/",
+        "https://lovable.dev/pricing"
+      ],
+      "turkiye_direct_competitor_count": null,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 1,
+      "global_competitors": [
+        {
+          "name": "SciNote",
+          "url": "https://www.scinote.net/product/protocol-sop-management/",
+          "reason": "Laboratory teams can version experimental protocols, execute stepwise recipes, record deviations/results, use structured batch forms and maintain audit trails; substantial same-buyer same-job same-workflow overlap."
+        }
+      ],
+      "adjacent_competitors": [
+        {
+          "name": "Labguru",
+          "url": "https://help.labguru.com/en/articles/8863742-how-to-create-an-experiment",
+          "reason": "Additional lab experiment workflow overlap; exact direct status not independently rechecked in this pass."
+        }
+      ],
+      "competition_search_terms": [
+        "laboratory recipe version control protocol handoff ELN",
+        "scientific experiment protocol batch record audit trail SciNote",
+        "Türkiye laboratuvar deney protokolü yönetimi ELN"
+      ],
+      "market_gap": "No defensible standalone gap demonstrated against SciNote's protocol, batch, and result workflow.",
+      "mvp": "Versioned recipe register, experiment batch cards, deviation log, reviewer signoff, CSV export.",
+      "working_logic": "Import or enter recipe -> freeze version -> execute batch checklist -> record deviations/results -> review and export.",
+      "technologies": [
+        "Lovable web UI",
+        "relational data tables",
+        "CSV export",
+        "role-based access"
+      ],
+      "external_cash_cost": "not_verified",
+      "lovable_credits_total": 115,
+      "lovable_credit_breakdown": {
+        "source": "discovery_estimate_only",
+        "verified": false
+      },
+      "build_time": "not_verified",
+      "business_models": [
+        "B2B lab team license",
+        "source-code sale"
+      ],
+      "marketing_strategy": "Direct outreach to R&D laboratory managers; not recommended absent niche differentiation.",
+      "first_customer_plan": "Identify one materials lab workflow that SciNote demonstrably cannot cover; not yet found.",
+      "main_risk": "Established direct competitor already solves substantially the same core job.",
+      "validation_assumption": "No unique narrow materials synthesis handoff requirement has been evidenced.",
+      "evidence_strength": "high_for_competitor_overlap_partial_for_trigger",
+      "competition_confidence": "high_for_global_direct_unverified_for_turkiye",
+      "local_scope_verified": "not_applicable",
+      "local_scope_evidence": [],
+      "local_applicability_rationale": "Global scope candidate; no Lüleburgaz claim.",
+      "validated_scope_hint": "Dünya",
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "SciNote provides versioned executable protocols, batch/forms records and traceability for the same laboratory buyer; standalone differentiated market gap unproven. The MIT triggering article is from February, not October 2026.",
+      "review_notes": "Rejection is based on a sufficient confirmed global direct competitor and absence of demonstrated differentiation; unverified cost and Turkish competition do not need invented values."
+    }
+  ],
   "research_coverage": {
     "candidate_count_with_notes": 5,
     "source_links_by_candidate": [
@@ -122,5 +194,8 @@
       ],
       "catalog_action": "none"
     }
+  ],
+  "completed_candidate_indexes": [
+    2
   ]
 }
