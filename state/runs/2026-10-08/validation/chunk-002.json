@@ -88,16 +88,24 @@
         "https://www.thinkforbl.com/trustworthy_ai.php",
         "https://help.cleanlab.ai/studio/quickstart/web/",
         "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/raidp02-bp01.html",
-        "https://innobi.com.tr/"
+        "https://innobi.com.tr/",
+        "https://www.dataiku.com/product/govern-ai-everywhere",
+        "https://www.dataiku.com/product/data-governance",
+        "https://doc.dataiku.com/dss/latest/release_notes/12.html"
       ],
       "turkiye_direct_competitor_count": 0,
       "turkiye_competitors": [],
-      "global_direct_competitor_count": 1,
+      "global_direct_competitor_count": 2,
       "global_competitors": [
         {
           "name": "Cleanlab Studio",
           "url": "https://help.cleanlab.ai/studio/quickstart/web/",
           "reason": "Same ML dataset QA buyers review detected issues, accept/reject corrections and export cleansed data; slice signoff ledger and purchasing acceptance not fully shown."
+        },
+        {
+          "name": "Dataiku Govern + Data Quality",
+          "url": "https://www.dataiku.com/product/govern-ai-everywhere",
+          "reason": "Same AI model QA/data governance buyer: centralized dataset ownership, data quality checks, bias monitoring, documented approval workflows and final sign-offs; together replicate the proposed dataset issue-review, exception and acceptance evidence workflow."
         }
       ],
       "adjacent_competitors": [
@@ -127,7 +135,7 @@
       "first_customer_plan": "Interview two target buyers and obtain anonymized evidence requirements.",
       "validation_assumption": "Dataset purchasing teams demand a separate evidence acceptance desk beyond data diagnostics platforms.",
       "evidence_strength": "medium_for_trigger;competition_evidence_scoped",
-      "competition_confidence": "medium_global_direct_overlap;limited_turkey_search",
+      "competition_confidence": "high_on_Dataiku_buyer_job_workflow_overlap;Turkey_search_limited",
       "working_logic": "Import dataset metadata and quality report -> compare expected use-case slices -> review duplicate/bias findings -> disposition exceptions -> sign and export.",
       "technologies": [
         "Lovable web UI",
@@ -138,8 +146,8 @@
         "B2B team license",
         "Tailored source-code transfer"
       ],
-      "qualification_status": "competition_not_verified",
-      "review_notes": "Cleanlab is a credible same-buyer dataset-review platform, but not confirmed fully same procurement acceptance workflow; more overlap testing needed.",
+      "qualification_status": "rejected_competition",
+      "review_notes": "Same-customer/job/workflow overlap established by three first-party Dataiku product/docs pages. Dataiku is broader than a dedicated dataset procurement acceptance desk, but its configurable governance signoff serves the same core approval job; this is an overlap-based rejection, not an exhaustive competitor inventory.",
       "canonical_news_source": "ZDNet Korea via Daum",
       "canonical_news_title": "AI 데이터, 많다고 좋은 게 아냐…씽크포비엘, 데이터 편향 잡는다",
       "canonical_news_date": "2026-10-07",
@@ -149,9 +157,10 @@
         "veri seti önyargı kabul kanıt kontrol yazılım Türkiye",
         "데이터 편향 중복성 검증 리인"
       ],
-      "market_gap": "Slice-specific buyer acceptance and exception signoff may differ from analytic dataset cleaning tools; no exclusive niche confirmed.",
+      "market_gap": "No demonstrated material gap against Dataiku's existing integrated data quality, AI risk/bias oversight and governed approval workflow.",
       "mvp": "CSV dataset slice inventory, imported duplicate reports, representativeness checklists, exceptions, named approvals, exportable decision record.",
-      "main_risk": "Cleanlab provides direct dataset-quality review and vendor ThinkforBL supplies diagnostic bias/duplicate evidence; weak differentiation."
+      "main_risk": "Cleanlab provides direct dataset-quality review and vendor ThinkforBL supplies diagnostic bias/duplicate evidence; weak differentiation.",
+      "rejection_reason": "Dataiku combines dataset registry and quality/bias review with governance approvals and sign-offs for the same ML-quality buyer. Proposed CSV checklist and approval ledger lacks proven material differentiation. Existing Cleanlab overlaps dataset inspection."
     },
     {
       "candidate_id": "c-20261008-W3-20261008-006",
