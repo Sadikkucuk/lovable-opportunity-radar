@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-08",
+  "status": "RADAR_INPUT_MISMATCH",
+  "frozen_worker_generation": "2026-10-08T01:54:22Z",
+  "current_batch_index_generation": "2026-10-08T08:54:32Z",
+  "frozen_source_total_items": 1000,
+  "workers": [
+    {
+      "worker_id": 1,
+      "status": "incomplete",
+      "triaged": 240,
+      "expected": 240
+    },
+    {
+      "worker_id": 2,
+      "status": "incomplete",
+      "triaged": 240,
+      "expected": 240
+    },
+    {
+      "worker_id": 3,
+      "status": "complete",
+      "triaged": 240,
+      "expected": 240
+    },
+    {
+      "worker_id": 4,
+      "status": "complete",
+      "triaged": 280,
+      "expected": 280
+    }
+  ],
+  "total_triaged": 1000,
+  "raw_opportunity_count": 59,
+  "merge_allowed": false,
+  "validation_allowed": false,
+  "catalog_publication_allowed": false,
+  "reason": "Orchestrator discovery repair requires matching frozen input index; current hourly index has a later generated_at. Preserve frozen worker ledgers; do not mix generations or falsely mark completion.",
+  "next_action": "Check whether newer index reflects meaningful source/config change. If not, recover the frozen source batch snapshots and complete W1/W2 without mixing the live index; otherwise start separate refresh namespace."
+}
