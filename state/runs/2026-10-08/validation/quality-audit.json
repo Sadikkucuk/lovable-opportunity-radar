@@ -87,13 +87,12 @@
   "publication_gate": {
     "allow_catalog_write": false,
     "allow_qualified_idea_publication": false,
-    "reason": "55 classified; six primary originals partial, 16 direct competition cases unresolved, 55 zero-external-cash proofs unverified. No publication."
+    "reason": "16 potential publication candidates have unresolved direct competition AND lack proven zero-external-cash feasibility; six partial originals belong exclusively to rejected candidates."
   },
   "next_steps": [
-    "Recheck 6 partial original sources",
-    "Resolve 19 remaining direct-competition investigations",
-    "Prove zero-external-cash production feasibility for surviving candidates",
-    "Re-run publication language/scope/dedupe gates"
+    "Resolve 16 potential-publication competition checks and verify zero-external-cash MVPs",
+    "Maintain source-quality warnings for 6 already-rejected records without blocking unrelated candidates",
+    "Re-run publication language, deduplication, catalog-preservation gates"
   ],
   "catalog_action": "none",
   "history_action": "none",
@@ -213,7 +212,7 @@
       "finding": "Microsoft tooling directly addresses Office inventory, add-in/macro readiness and rollout; 2026-10-13 is support end rather than source publication date."
     }
   ],
-  "next_action_priority": "16 unresolved direct-competition cases; 6 partial primary sources; zero-external-cash proof for any surviving candidate.",
+  "next_action_priority": "16 candidate-level competition + 16 zero-external-cash proofs, not 55 cash proofs",
   "quality_gate_reaudit": {
     "date": "2026-10-08",
     "method": "Full recomputation from 11 current chunk files after Japanese MLIT, SaaS survey and Korea robotics source corrections",
@@ -373,5 +372,48 @@
       "primary_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/claude-region-expansion-in-sk/",
       "development_verified": true
     }
-  ]
+  ],
+  "publication_eligibility_audit": "state/runs/2026-10-08/validation/publication-gate-eligibility.json",
+  "publication_blocking_candidate_indexes": [
+    1,
+    5,
+    6,
+    7,
+    11,
+    12,
+    18,
+    21,
+    22,
+    25,
+    28,
+    29,
+    33,
+    36,
+    43,
+    44
+  ],
+  "publication_blocking_candidate_count": 16,
+  "rejected_candidates_cost_proof_not_required": 39,
+  "rejected_candidates_with_partial_original_source_count": 6,
+  "publication_blocking_partial_original_source_count": 0,
+  "reconciliation_note": "Classification of all 55 is complete; 39 rejected ideas do not require zero-cost proof or full primary article verification to remain rejected. Only 16 potentially publishable records need direct-competition verification and zero-external-cash feasibility. No catalog writes until resolved.",
+  "publication_relevant_zero_cash_unverified_indexes": [
+    1,
+    5,
+    6,
+    7,
+    11,
+    12,
+    18,
+    21,
+    22,
+    25,
+    28,
+    29,
+    33,
+    36,
+    43,
+    44
+  ],
+  "publication_relevant_primary_partial_indexes": []
 }
