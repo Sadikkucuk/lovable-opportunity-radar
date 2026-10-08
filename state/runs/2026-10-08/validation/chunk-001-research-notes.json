@@ -32,7 +32,17 @@
         "external_cash_cost_zero_verified": false,
         "lovable_credit_budget_verified": false,
         "reason": "Lovable credits are estimates, and free hosting/storage, authentication, data protection and production operations have not been verified.",
-        "additional_risk": "Regulated investment data and legal sign-off demand security and legal validation."
+        "additional_risk": "Regulated investment data and legal sign-off demand security and legal validation.",
+        "pricing_primary_source": "https://lovable.dev/pricing"
+      },
+      "primary_regulatory_evidence": {
+        "penalty_url": "https://home.treasury.gov/news/press-releases/sb0652/",
+        "ons_url": "https://home.treasury.gov/policy-issues/international/outbound-investment-program/outbound-notification-system-submission-instructions",
+        "kharon_url": "https://www.kharon.com/data/outbound-investment-oisp",
+        "penalty_amount_usd": 200000,
+        "press_release_date": "2026-10-07",
+        "notification_filing_channel": "Treasury ONS only",
+        "implication": "Third-party MVP must prepare evidence and defer actual filing to official ONS."
       }
     },
     {
@@ -65,7 +75,8 @@
         "stack": "Lovable UI, manual/CSV intake, structured records, exports; optional open-source self-hosting subject to deployment costs",
         "external_cash_cost_zero_verified": false,
         "lovable_credit_budget_verified": false,
-        "reason": "Lovable credits are estimates, and free hosting/storage, authentication, data protection and production operations have not been verified."
+        "reason": "Lovable credits are estimates, and free hosting/storage, authentication, data protection and production operations have not been verified.",
+        "pricing_primary_source": "https://lovable.dev/pricing"
       }
     },
     {
@@ -120,7 +131,8 @@
         "stack": "Lovable UI, manual/CSV intake, structured records, exports; optional open-source self-hosting subject to deployment costs",
         "external_cash_cost_zero_verified": false,
         "lovable_credit_budget_verified": false,
-        "reason": "Lovable credits are estimates, and free hosting/storage, authentication, data protection and production operations have not been verified."
+        "reason": "Lovable credits are estimates, and free hosting/storage, authentication, data protection and production operations have not been verified.",
+        "pricing_primary_source": "https://lovable.dev/pricing"
       }
     },
     {
@@ -157,7 +169,8 @@
         "external_cash_cost_zero_verified": false,
         "lovable_credit_budget_verified": false,
         "reason": "Lovable credits are estimates, and free hosting/storage, authentication, data protection and production operations have not been verified.",
-        "additional_risk": "Field mobile uploads and offline sync can exceed free storage and require dedicated implementation."
+        "additional_risk": "Field mobile uploads and offline sync can exceed free storage and require dedicated implementation.",
+        "pricing_primary_source": "https://lovable.dev/pricing"
       }
     },
     {
@@ -193,10 +206,18 @@
         "external_cash_cost_zero_verified": false,
         "lovable_credit_budget_verified": false,
         "reason": "Lovable credits are estimates, and free hosting/storage, authentication, data protection and production operations have not been verified.",
-        "additional_risk": "Restricted provenance detector must not be assumed available."
+        "additional_risk": "Restricted provenance detector must not be assumed available.",
+        "pricing_primary_source": "https://lovable.dev/pricing"
       }
     }
   ],
   "gate": "No chunk-001 complete and no progress increment until all five candidates meet validator schema and competitor checks.",
-  "last_research_update": "2026-10-08"
+  "last_research_update": "2026-10-08",
+  "pricing_primary_source": {
+    "url": "https://lovable.dev/pricing",
+    "checked_on": "2026-10-08",
+    "free_build_credits_monthly_cap": 30,
+    "free_cloud_credits_monthly": 20,
+    "conclusion": "An estimated 80-330 credit MVP cannot be assumed buildable on the free tier within one month. 500-credit upper bound is not proof of zero external cash cost."
+  }
 }
