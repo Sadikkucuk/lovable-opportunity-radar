@@ -7,8 +7,8 @@
   "expected_candidates": 55,
   "chunk_count": 11,
   "qualification_counts": {
-    "competition_not_verified": 17,
-    "rejected_competition": 37,
+    "competition_not_verified": 16,
+    "rejected_competition": 38,
     "rejected_evidence": 1
   },
   "primary_development_unverified_or_partial_indexes": [
@@ -87,7 +87,7 @@
   "publication_gate": {
     "allow_catalog_write": false,
     "allow_qualified_idea_publication": false,
-    "reason": "55/55 classified; six primary-source checks partial, 17 competition cases unresolved, zero-external-cash proofs unverified. No publication."
+    "reason": "55 classified; six primary originals partial, 16 direct competition cases unresolved, 55 zero-external-cash proofs unverified. No publication."
   },
   "next_steps": [
     "Recheck 6 partial original sources",
@@ -200,18 +200,29 @@
         "https://docs.memverge.com/AI/GPU_Manager/latest/admin_guide/billing/"
       ],
       "finding": "MemVerge already provides departmental GPU reservations and usage chargeback; billing CSV export is described only as a future feature."
+    },
+    {
+      "validation_index": 41,
+      "checked_at_date": "2026-10-08",
+      "status": "rejected_competition",
+      "verified_vendor_urls": [
+        "https://learn.microsoft.com/en-us/intune/configmgr/sum/deploy-use/office-365-dashboard",
+        "https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/inventory",
+        "https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/cloud-update-enhancements"
+      ],
+      "finding": "Microsoft tooling directly addresses Office inventory, add-in/macro readiness and rollout; 2026-10-13 is support end rather than source publication date."
     }
   ],
-  "next_action_priority": "Resolve 6 partial originals, 17 competition cases, and prove zero external cash production feasibility for surviving products.",
+  "next_action_priority": "16 unresolved direct-competition cases; 6 partial primary sources; zero-external-cash proof for any surviving candidate.",
   "quality_gate_reaudit": {
     "date": "2026-10-08",
     "method": "Full recomputation from 11 current chunk files after Japanese MLIT, SaaS survey and Korea robotics source corrections",
     "partial_primary_count": 6,
     "unknown_source_date_count": 0,
     "zero_cost_unverified_count": 55,
-    "competition_incomplete_row_count": 17,
+    "competition_incomplete_row_count": 16,
     "qualified_count": 0,
-    "notes": "Updated after independent primary-vendor competition findings for #45 and #49; publication remains blocked."
+    "notes": "Three new direct-competition findings: #41 Microsoft, #45 Avala/Dexset, #49 MemVerge; original-source and zero-cost gates remain."
   },
   "targeted_original_source_rechecks": [
     {
