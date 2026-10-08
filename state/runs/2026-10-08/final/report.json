@@ -10,8 +10,8 @@
   "validation_chunks_complete": 11,
   "candidates_classified": 55,
   "classification_counts": {
-    "competition_not_verified": 12,
-    "rejected_competition": 42,
+    "competition_not_verified": 11,
+    "rejected_competition": 43,
     "rejected_evidence": 1
   },
   "quality_blockers": {
@@ -24,9 +24,9 @@
       49
     ],
     "partially_verified_originals_indexes_blocking_publication": [],
-    "competition_not_verified_count": 12,
+    "competition_not_verified_count": 11,
     "external_zero_cash_proofs_missing_total": 55,
-    "external_zero_cash_proofs_relevant_to_potential_publication": 12,
+    "external_zero_cash_proofs_relevant_to_potential_publication": 11,
     "publication_blocking_candidate_indexes": [
       1,
       5,
@@ -38,7 +38,6 @@
       25,
       28,
       29,
-      36,
       44
     ]
   },
@@ -55,8 +54,8 @@
   "catalog_action": "none",
   "history_action": "none",
   "catalog_preservation": "75 original records remain unchanged",
-  "reason": "55 classified; 42 rejected for competition, 1 for evidence and 12 unresolved. Remaining 12 need direct competitor checks and real no-external-cost MVP proof before publication.",
-  "recommended_next_stage": "Research remaining 12 competition and viable no-cash production cases",
+  "reason": "11 complete validation chunks classify 55: 43 competition rejected, 1 evidence rejected, 11 competition not verified. These 11 still lack direct-competitor and zero-external-cost proof; publication blocked.",
+  "recommended_next_stage": "Research remaining 11 competition and zero-external-cost feasibility cases",
   "report_created_at": "2026-10-08",
   "primary_source_corrections": {
     "verification_completed_indexes": [
@@ -137,12 +136,32 @@
     25,
     28,
     29,
-    36,
     44
   ],
-  "publication_blocking_candidate_count": 12,
-  "rejected_candidates_cost_proof_not_required": 43,
+  "publication_blocking_candidate_count": 11,
+  "rejected_candidates_cost_proof_not_required": 44,
   "rejected_candidates_with_partial_original_source_count": 6,
   "publication_blocking_partial_original_source_count": 0,
-  "reconciliation_note": "55 classified; 43 rejected, 12 unresolved. 0 qualified and 0 published. Six partial-originals already rejected."
+  "reconciliation_note": "Recounted from chunk-001..011; candidate #36 was rejected in chunk-008 and removed from stale 12-item blocker list. 0 qualified or published.",
+  "latest_source_of_truth_reconciliation": {
+    "date": "2026-10-08",
+    "counts": {
+      "competition_not_verified": 11,
+      "rejected_competition": 43,
+      "rejected_evidence": 1
+    },
+    "unresolved": [
+      1,
+      5,
+      6,
+      7,
+      12,
+      21,
+      22,
+      25,
+      28,
+      29,
+      44
+    ]
+  }
 }
