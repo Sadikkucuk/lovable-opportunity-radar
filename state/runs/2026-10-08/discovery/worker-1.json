@@ -16,10 +16,10 @@
   "status": "incomplete",
   "feed_items_expected": 240,
   "feed_items_triaged": 240,
-  "candidate_article_count": 9,
-  "original_articles_verified": 7,
+  "candidate_article_count": 10,
+  "original_articles_verified": 8,
   "full_article_not_verified": 0,
-  "raw_opportunity_count": 9,
+  "raw_opportunity_count": 10,
   "raw_opportunities": [
     {
       "raw_id": "w1-20261008-001",
@@ -343,7 +343,42 @@
         "competition_warning": "Langfuse, Helicone, LangSmith and provider dashboards are strong overlapping products; differentiation and novelty validation essential",
         "trakya_transferability_hypothesis": "Yazılım ekiplerine yatay ürün; Trakya sanayisinde yerel alıcı kanıtı henüz yok."
       }
+    },
+    {
+      "raw_id": "w1-20261008-010",
+      "supporting_article_ids": [
+        "710d0176d7ea1e7f5f4bba18"
+      ],
+      "supporting_article_titles": [
+        "東北大学、金属材料の熱処理から特性評価まで全自動化 人の10倍速で実験 - 日経クロステック（xTECH）"
+      ],
+      "supporting_sources": [
+        "日経クロステック",
+        "Tohoku University (primary research announcement)",
+        "Science and Technology of Advanced Materials: Methods"
+      ],
+      "canonical_source_urls": [
+        "https://www.tohoku.ac.jp/japanese/2026/10/press20261002-03-AI.html",
+        "https://www.tandfonline.com/doi/full/10.1080/27660400.2026.2735657"
+      ],
+      "article_verification": "primary_source_and_research_paper_verified",
+      "novelty_delta": "Robotik laboratuvar ısıl işlem, XRD ve mekanik testi birleştirerek 10 kattan hızlı süreç sağlıyor; çoklu test çıktılarının numune/parametre bazında izlenebilirliği gerekiyor.",
+      "target_customer": "Metalurji Ar-Ge laboratuvarları, ısıl işlem tesisleri ve kalite laboratuvarları",
+      "buyer": "Ar-Ge müdürü / metalurji kalite müdürü",
+      "job_to_be_done": "Her numunenin ısıl işlem parametrelerini, XRD ve mekanik test sonuçlarını aynı izlenebilir deney dosyasında birleştirmek",
+      "current_friction": "Fırın kayıtları, ölçüm cihazı dosyaları ve numune etiketleri ayrı sistemlerde; karşılaştırmalı rapor hazırlama manuel",
+      "product_mechanism": "CSV ölçüm içe aktarma, numune ID eşleştirme, ısıl işlem reçete-versiyon kaydı, süreç-yapı-özellik karşılaştırma ve denetim raporu; cihaz entegrasyonu MVP dışında",
+      "one_sentence_concept": "Metalurji Deney İzlenebilirlik Masası",
+      "scope_hint": "Trakya / Türkiye / global",
+      "zero_cost_feasibility": "plausible for manual and CSV MVP",
+      "estimated_lovable_credits": 350,
+      "evidence_notes": {
+        "verified_fact": "Tohoku research press release October 2 2026: >10x speed vs manual process, comparable evaluation accuracy; not a claim about this proposed software",
+        "competition_warning": "LIMS/ELN and materials informatics platforms may cover this workflow; must test whether any unmet segment exists",
+        "trakya_transferability_hypothesis": "Çorlu-Çerkezköy-Ergene metal işleme ve ısıl işlem işletmelerine potansiyel, yerel alıcı kanıtı henüz yok",
+        "publication": "Paper online 2026-09-18 DOI 10.1080/27660400.2026.2735657"
+      }
     }
   ],
-  "notes": "240 titles triaged, nine raw opportunities. New ITmedia Oct 8 token-waste item verified via publisher index excerpt, not full text. W1 remains incomplete pending original article and remaining candidate checks."
+  "notes": "240 titles triaged; added Tohoku materials lab source-backed raw opportunity with primary university press release and published research paper. Remaining candidates not yet exhausted; incomplete."
 }
