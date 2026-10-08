@@ -1,0 +1,157 @@
+{
+  "run_date": "2026-10-08",
+  "schema_version": "1.0",
+  "status": "prevalidation_blocked",
+  "source_index_items": 1000,
+  "workers": [
+    {
+      "worker": 1,
+      "status": "incomplete",
+      "triaged": 240,
+      "expected": 240,
+      "raw": 11,
+      "reported_original_articles_verified": 8
+    },
+    {
+      "worker": 2,
+      "status": "incomplete",
+      "triaged": 240,
+      "expected": 240,
+      "raw": 8,
+      "reported_original_articles_verified": 0
+    },
+    {
+      "worker": 3,
+      "status": "complete",
+      "triaged": 240,
+      "expected": 240,
+      "raw": 19,
+      "reported_original_articles_verified": 17
+    },
+    {
+      "worker": 4,
+      "status": "complete",
+      "triaged": 280,
+      "expected": 280,
+      "raw": 21,
+      "reported_original_articles_verified": 25
+    }
+  ],
+  "raw_total": 59,
+  "full_label_count": 42,
+  "corroborated_label_count": 16,
+  "insufficient_label_count": 1,
+  "shared_article_pairs": [
+    {
+      "a": "W3-20261008-002",
+      "b": "W3-20261008-003",
+      "shared_article_ids": [
+        "a20b5329b985d7ae076c721e"
+      ],
+      "review": "Shared evidence is not proof of product duplication; compare buyers, jobs and mechanisms in validation"
+    },
+    {
+      "a": "W3-20261008-006",
+      "b": "W3-20261008-007",
+      "shared_article_ids": [
+        "54625928a9910c0d0cb4614d",
+        "eba61fcc2c1a23d4034aacbb"
+      ],
+      "review": "Shared evidence is not proof of product duplication; compare buyers, jobs and mechanisms in validation"
+    },
+    {
+      "a": "W3-20261008-006",
+      "b": "W3-20261008-008",
+      "shared_article_ids": [
+        "54625928a9910c0d0cb4614d",
+        "eba61fcc2c1a23d4034aacbb"
+      ],
+      "review": "Shared evidence is not proof of product duplication; compare buyers, jobs and mechanisms in validation"
+    },
+    {
+      "a": "W3-20261008-006",
+      "b": "W3-20261008-019",
+      "shared_article_ids": [
+        "54625928a9910c0d0cb4614d",
+        "eba61fcc2c1a23d4034aacbb"
+      ],
+      "review": "Shared evidence is not proof of product duplication; compare buyers, jobs and mechanisms in validation"
+    },
+    {
+      "a": "W3-20261008-007",
+      "b": "W3-20261008-008",
+      "shared_article_ids": [
+        "54625928a9910c0d0cb4614d",
+        "eba61fcc2c1a23d4034aacbb"
+      ],
+      "review": "Shared evidence is not proof of product duplication; compare buyers, jobs and mechanisms in validation"
+    },
+    {
+      "a": "W3-20261008-007",
+      "b": "W3-20261008-019",
+      "shared_article_ids": [
+        "54625928a9910c0d0cb4614d",
+        "eba61fcc2c1a23d4034aacbb"
+      ],
+      "review": "Shared evidence is not proof of product duplication; compare buyers, jobs and mechanisms in validation"
+    },
+    {
+      "a": "W3-20261008-008",
+      "b": "W3-20261008-019",
+      "shared_article_ids": [
+        "54625928a9910c0d0cb4614d",
+        "eba61fcc2c1a23d4034aacbb"
+      ],
+      "review": "Shared evidence is not proof of product duplication; compare buyers, jobs and mechanisms in validation"
+    },
+    {
+      "a": "W3-20261008-010",
+      "b": "W3-20261008-011",
+      "shared_article_ids": [
+        "5e226add029e8754f805535b",
+        "15c36964c531710bce30a6aa"
+      ],
+      "review": "Shared evidence is not proof of product duplication; compare buyers, jobs and mechanisms in validation"
+    },
+    {
+      "a": "W3-20261008-010",
+      "b": "W3-20261008-018",
+      "shared_article_ids": [
+        "15c36964c531710bce30a6aa"
+      ],
+      "review": "Shared evidence is not proof of product duplication; compare buyers, jobs and mechanisms in validation"
+    },
+    {
+      "a": "W3-20261008-011",
+      "b": "W3-20261008-018",
+      "shared_article_ids": [
+        "15c36964c531710bce30a6aa"
+      ],
+      "review": "Shared evidence is not proof of product duplication; compare buyers, jobs and mechanisms in validation"
+    },
+    {
+      "a": "W3-20261008-012",
+      "b": "W3-20261008-019",
+      "shared_article_ids": [
+        "a8766076fb35a07375a9e74c"
+      ],
+      "review": "Shared evidence is not proof of product duplication; compare buyers, jobs and mechanisms in validation"
+    }
+  ],
+  "blockers": [
+    "W1 incomplete; two identified source gaps remain",
+    "W2 incomplete; six shortlisted candidates lack original-source review",
+    "W2 eight captured ideas are provisional, no full-original verification established",
+    "No validation of buyer demand, competitors, duplicate products or catalogue eligibility"
+  ],
+  "release_gate": {
+    "catalog_merge_allowed": false,
+    "reason": "All discovery workers must complete and validation must pass"
+  },
+  "source_files": [
+    "state/runs/2026-10-08/discovery/worker-1.json",
+    "state/runs/2026-10-08/discovery/worker-2.json",
+    "state/runs/2026-10-08/discovery/worker-3.json",
+    "state/runs/2026-10-08/discovery/worker-4.json"
+  ]
+}
