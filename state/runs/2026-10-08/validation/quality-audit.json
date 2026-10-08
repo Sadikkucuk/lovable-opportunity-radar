@@ -17,7 +17,6 @@
     13,
     16,
     17,
-    18,
     19,
     23,
     29,
@@ -41,12 +40,9 @@
     55
   ],
   "source_date_unverified_indexes": [
-    29,
     31,
     33,
-    34,
-    35,
-    55
+    35
   ],
   "zero_external_cash_unverified_indexes": [
     1,
@@ -168,11 +164,23 @@
   "next_action_priority": "Complete original-primary-source verification and zero-cost evidence for the remaining 24 competition-not-verified candidates before any qualified/catalog publication. Keep 55 classified versus 0 qualified clearly separate.",
   "quality_gate_reaudit": {
     "date": "2026-10-08",
-    "method": "Recomputed from all 11 current validation chunks, not cached previous count",
-    "partial_primary_count": 27,
-    "unknown_source_date_count": 6,
+    "method": "Recomputed directly from 11 current chunks after verifying Anthropic primary announcement for candidate 018",
+    "partial_primary_count": 26,
+    "unknown_source_date_count": 3,
     "zero_cost_unverified_count": 55,
-    "competition_incomplete_row_count": 31,
-    "notes": "Status complete means classified, not qualified; publication remains blocked."
-  }
+    "competition_incomplete_row_count": 24,
+    "notes": "Classification complete (55) but no fully qualified opportunity; all 55 zero external cash cost proofs missing."
+  },
+  "targeted_original_source_rechecks": [
+    {
+      "validation_index": 18,
+      "primary_url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+      "date_verified": "2026-10-06",
+      "development_verified": true,
+      "remaining": [
+        "competition",
+        "zero_external_cash"
+      ]
+    }
+  ]
 }
