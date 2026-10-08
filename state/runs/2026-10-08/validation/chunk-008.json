@@ -90,24 +90,43 @@
         "https://www.tohoku.ac.jp/japanese/2026/10/press20261002-03-AI.html",
         "https://www.tandfonline.com/doi/full/10.1080/27660400.2026.2735657",
         "https://www.scinote.net/product/",
-        "https://lovable.dev/pricing"
+        "https://lovable.dev/pricing",
+        "https://www.wavefrontsoftware.com/lims-for-advanced-material-manufacturing/",
+        "https://lims.eu/en/werkstoffpruefung",
+        "https://lims.science/metals-mining-lims-software/"
       ],
       "turkiye_direct_competitor_count": null,
       "turkiye_competitors": [],
-      "global_direct_competitor_count": null,
-      "global_competitors": [],
+      "global_direct_competitor_count": 2,
+      "global_competitors": [
+        {
+          "name": "Wavefront LIMS Advanced Materials",
+          "url": "https://www.wavefrontsoftware.com/lims-for-advanced-material-manufacturing/",
+          "reason": "Advanced material laboratories link heat/lot/batch IDs to metallurgical, mechanical and thermal analysis results with instrument traceability, retests and approvals; same metallurgical lab buyer and core traceability workflow."
+        },
+        {
+          "name": "LDB LIMS Materials Testing",
+          "url": "https://lims.eu/en/werkstoffpruefung",
+          "reason": "Materials laboratories track sample IDs, specimen preparation, mechanical/thermal/chemical tests, instrument raw data and approved versioned reports; same substantial laboratory workflow."
+        }
+      ],
       "adjacent_competitors": [
         {
           "name": "SciNote",
           "url": "https://www.scinote.net/product/",
           "reason": "Adjacent ELN and sample tracking; exact heat treatment XRD mechanical test pipeline not verified."
+        },
+        {
+          "name": "Lims.science Metals/Mining LIMS",
+          "url": "https://lims.science/metals-mining-lims-software/",
+          "reason": "Metallurgy labs: sample/material testing results, instrument ingestion and versioned QA records; exact heat-treatment/XRD recipe specialty not verified."
         }
       ],
       "competition_search_terms": [
         "Her numunenin ısıl işlem parametrelerini, XRD ve mekanik test sonuçlarını aynı izlenebilir deney dosyasında birleştirmek software Türkiye",
         "Her numunenin ısıl işlem parametrelerini, XRD ve mekanik test sonuçlarını aynı izlenebilir deney dosyasında birleştirmek competitors global"
       ],
-      "market_gap": "Direct competition and unique market gap unverified.",
+      "market_gap": "Core per-sample metallurgy test traceability, thermal/mechanical result linking and audit reporting already served by advanced-materials LIMS vendors; only a tightly specified XRD+heat-treatment recipe analytical workflow might differentiate, currently unproven.",
       "mvp": "CSV ölçüm içe aktarma, numune ID eşleştirme, ısıl işlem reçete-versiyon kaydı, süreç-yapı-özellik karşılaştırma ve denetim raporu; cihaz entegrasyonu MVP dışında",
       "working_logic": "Fırın kayıtları, ölçüm cihazı dosyaları ve numune etiketleri ayrı sistemlerde; karşılaştırmalı rapor hazırlama manuel -> CSV ölçüm içe aktarma, numune ID eşleştirme, ısıl işlem reçete-versiyon kaydı, süreç-yapı-özellik karşılaştırma ve denetim raporu; cihaz entegrasyonu MVP dışında",
       "technologies": [
@@ -129,15 +148,24 @@
       ],
       "marketing_strategy": "Validate buyer need through direct outreach before building.",
       "first_customer_plan": "Seek a documented unmet workflow from one target buyer.",
-      "main_risk": "Adjacent ELN and sample tracking; exact heat treatment XRD mechanical test pipeline not verified.",
+      "main_risk": "Two existing directly substitutable advanced-materials lab LIMS vendors; production data security and zero-external-cash unverified.",
       "validation_assumption": "Product differentiation and external zero-cost feasibility are unproven.",
-      "evidence_strength": "primary_vendor_overlap; partial_original_article",
-      "competition_confidence": "not_verified",
+      "evidence_strength": "primary original release previously verified; high vendor product-feature overlap",
+      "competition_confidence": "high for two global workflow substitutes; thermal recipe/XRD specialization not directly demonstrated",
       "local_scope_verified": false,
       "local_scope_evidence": [],
       "local_applicability_rationale": "Trakya buyer footprint not independently evidenced.",
       "validated_scope_hint": "Türkiye",
-      "qualification_status": "competition_not_verified"
+      "qualification_status": "rejected_competition",
+      "rejection_reason": "Same advanced-materials/metallurgy laboratory buyer can track heat/lot/sample provenance, mechanical and thermal analyses, instrument data and approved test reports in Wavefront LIMS and LDB LIMS. Original candidate lacks a substantiated differentiating niche despite special XRD/recipe terminology.",
+      "competitor_recheck": {
+        "checked_at": "2026-10-08",
+        "primary_vendor_evidence_urls": [
+          "https://www.wavefrontsoftware.com/lims-for-advanced-material-manufacturing/",
+          "https://lims.eu/en/werkstoffpruefung"
+        ],
+        "research_limit": "No supported claim that either vendor natively runs automated XRD plus furnace recipe integrations; broad core traceability overlap sufficient for rejecting undifferentiated MVP. No Turkish-direct count claimed."
+      }
     },
     {
       "candidate_id": "c-20261008-W3-20261008-016",
