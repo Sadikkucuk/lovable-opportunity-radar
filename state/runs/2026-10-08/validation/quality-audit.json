@@ -7,8 +7,8 @@
   "expected_candidates": 55,
   "chunk_count": 11,
   "qualification_counts": {
-    "competition_not_verified": 12,
-    "rejected_competition": 42,
+    "competition_not_verified": 11,
+    "rejected_competition": 43,
     "rejected_evidence": 1
   },
   "primary_development_unverified_or_partial_indexes": [
@@ -87,12 +87,12 @@
   "publication_gate": {
     "allow_catalog_write": false,
     "allow_qualified_idea_publication": false,
-    "reason": "12 unresolved direct competition and 12 zero-cash proofs; 6 partial-source candidates already rejected. Publication prohibited."
+    "reason": "11 remaining competition and 11 zero-cash proof gaps; six partial-original cases are already rejected. Publication remains prohibited."
   },
   "next_steps": [
-    "Resolve 12 competition and zero-cash proofs for non-rejected candidates",
-    "Preserve 6 partial-original warnings for already-rejected candidates",
-    "Run language and semantic duplicate gates only after publication becomes eligible"
+    "Resolve 11 direct-competition and zero-cash proofs for not-rejected candidates",
+    "Keep partial original-source warnings for rejected candidates",
+    "Run deduplication and publication eligibility only after evidence gates pass"
   ],
   "catalog_action": "none",
   "history_action": "none",
@@ -277,13 +277,13 @@
     "partial_primary_count": 6,
     "partial_primary_potential_publication": 0,
     "zero_cost_unverified_count": 55,
-    "publication_relevant_zero_cash_unverified_count": 12,
-    "competition_incomplete_row_count": 12,
+    "publication_relevant_zero_cash_unverified_count": 11,
+    "competition_incomplete_row_count": 11,
     "qualified_count": 0,
     "classified_count": 55,
     "qualification_counts": {
-      "competition_not_verified": 12,
-      "rejected_competition": 42,
+      "competition_not_verified": 11,
+      "rejected_competition": 43,
       "rejected_evidence": 1
     },
     "checked_on": "2026-10-08"
@@ -472,5 +472,29 @@
     36,
     44
   ],
-  "publication_relevant_primary_partial_indexes": []
+  "publication_relevant_primary_partial_indexes": [],
+  "latest_source_of_truth_reconciliation": {
+    "date": "2026-10-08",
+    "chunk_count": 11,
+    "classified": 55,
+    "counts": {
+      "competition_not_verified": 11,
+      "rejected_competition": 43,
+      "rejected_evidence": 1
+    },
+    "remaining_indexes": [
+      1,
+      5,
+      6,
+      7,
+      12,
+      21,
+      22,
+      25,
+      28,
+      29,
+      44
+    ],
+    "corrected_stale_blocker_index": 36
+  }
 }
