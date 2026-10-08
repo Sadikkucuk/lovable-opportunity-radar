@@ -129,5 +129,45 @@
   ],
   "catalog_action": "none",
   "history_action": "none",
-  "computed_from": "GitHub merge/candidates.json and validation/chunk-001..011.json"
+  "computed_from": "GitHub merge/candidates.json and validation/chunk-001..011.json",
+  "targeted_competition_rechecks": [
+    {
+      "validation_index": 5,
+      "candidate_id": "c-20261008-W3-20261008-003",
+      "checked_at_date": "2026-10-08",
+      "status": "original_source_confirmed_direct_competition_still_unverified",
+      "primary_source": "https://openai.com/index/eu-text-provenance/",
+      "primary_source_findings": [
+        "API opt-in text watermarking on eligible models started October 5, 2026",
+        "Eligible EU ChatGPT/Codex text phased rollout",
+        "Detector restricted to approved researchers and expert organizations; no public detector access"
+      ],
+      "competitor_scope_checked": [
+        "text watermark rollout QA testing signoff model region configuration",
+        "Türkiye yapay zeka filigran test matrisi sürüm uyumluluk denetim yazılımı"
+      ],
+      "newly_screened_adjacent": [
+        {
+          "name": "IsWatermarked?",
+          "url": "https://iswatermarked.com/",
+          "reason": "Browser watermark signal checks and education, not release-configuration review/signoff platform."
+        },
+        {
+          "name": "Voluntas Tech",
+          "url": "https://voluntastech.com/",
+          "reason": "Multimedia watermark generation/detection product with text preview, not the same provider-model release QA ledger."
+        },
+        {
+          "name": "ai-watermark-detector",
+          "url": "https://github.com/cpeoples/ai-watermark-detector",
+          "reason": "Open-source watermark detector requiring key for text scoring; no general OpenAI detector key or release approval workflow."
+        }
+      ],
+      "direct_competitors_newly_verified": 0,
+      "interpretation": "Zero newly verified direct products is not evidence that no substitutes exist; AI release assurance and disclosure compliance tools remain adjacent overlaps.",
+      "external_cash_zero_proven": false,
+      "decision": "retain_competition_not_verified_and_block_catalog_publication"
+    }
+  ],
+  "next_action_priority": "Complete original-primary-source verification and zero-cost evidence for the remaining 24 competition-not-verified candidates before any qualified/catalog publication. Keep 55 classified versus 0 qualified clearly separate."
 }
