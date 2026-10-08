@@ -282,46 +282,54 @@
       ],
       "source_links": [
         "https://www.huxiu.com/article/4895286.html",
-        "https://lovable.dev/pricing"
+        "https://lovable.dev/pricing",
+        "https://aviloo.com.tr/premium-test",
+        "https://aviloo.com/en-us/aviloo-certified",
+        "https://battgrade.com/",
+        "https://batterypassport.software/",
+        "https://play.google.com/store/apps/details?id=com.batterypassportsoftware"
       ],
       "development_verified": true,
       "canonical_news_source": "Huxiu",
       "canonical_news_title": "过了个国庆，新能源成“传家宝”了？",
       "canonical_news_date": "2026-10-07",
       "canonical_news_url": "https://www.huxiu.com/article/4895286.html",
-      "turkiye_direct_competitor_count": 1,
-      "turkiye_competitors": [
+      "turkiye_direct_competitor_count": 0,
+      "turkiye_competitors": [],
+      "global_direct_competitor_count": 0,
+      "global_competitors": [],
+      "adjacent_competitors": [
         {
-          "name": "AVILOO Türkiye",
+          "name": "AVILOO Türkiye Premium Test",
           "url": "https://aviloo.com.tr/premium-test",
-          "reason": "Used-car battery health measurement and verifiable diagnosis for same used-EV dealer buyer; repair-history module not confirmed."
-        }
-      ],
-      "global_direct_competitor_count": 2,
-      "global_competitors": [
+          "reason": "Same used-car buyer, but battery SoH/range testing and certificate rather than integrated repair events and warranty decisions."
+        },
         {
           "name": "AVILOO Certified",
           "url": "https://aviloo.com/en-us/aviloo-certified",
-          "reason": "Used-EV battery health certification and records."
+          "reason": "Used-EV dealer SoH verification and resale certificate; repair timeline not evidenced."
         },
         {
           "name": "BattGrade",
           "url": "https://battgrade.com/",
-          "reason": "Used-EV certificate and state-of-health record; upcoming app."
-        }
-      ],
-      "adjacent_competitors": [
+          "reason": "Same used-EV dealer/fleet buyers, but early-access battery-health certificates; repair/warranty case management not evidenced."
+        },
+        {
+          "name": "Battery Passport Software",
+          "url": "https://batterypassport.software/",
+          "reason": "Repair and warranty history workflow overlaps, but its primary buyers work on e-bikes and other light electric vehicle batteries, not used passenger-EV dealers and car fleets."
+        },
         {
           "name": "Sibros",
           "url": "https://sibros.tech/products/security-compliance/battery-passport",
-          "reason": "Lifecycle battery passport is principally for battery makers/OEMs."
+          "reason": "OEM battery-passport workflows with different primary buyer."
         }
       ],
       "competition_search_terms": [
         "ikinci el araç batarya sağlık raporu tamir geçmişi",
         "EV lifecycle passport dealer repair history"
       ],
-      "market_gap": "Dealer repair-history record beyond existing test certificates and OEM passports not proven or disproven.",
+      "market_gap": "Repair-history and warranty decision evidence for passenger-EV dealers/fleet operators remains an unverified gap. SoH certificates are adjacent, while light-EV battery repair-passport workflow already exists.",
       "mvp": "Battery report upload, pack identifier, repair events, warranty checklist, export.",
       "working_logic": "Import technician report -> attach repairs -> assess warranty policy -> export.",
       "business_models": [
@@ -330,12 +338,12 @@
       ],
       "marketing_strategy": "Dealer validation first.",
       "first_customer_plan": "Interview used-EV dealers about unsolved repair-history workflows.",
-      "main_risk": "Original article verified but regulatory claims need primary-source checks; proprietary SOH diagnostics and direct certificate/passport competitors limit differentiation.",
-      "validation_assumption": "Independent dealers need repair lifecycle histories beyond existing certificate providers.",
+      "main_risk": "Adjacent workshop product can expand into cars; specialized SoH vendors could add repair history; no willingness-to-pay proof.",
+      "validation_assumption": "Passenger EV dealer/fleet buyers need a repair-event and warranty decision desk distinct from existing SoH certificates; not proven.",
       "evidence_strength": "strong_competition_partial_trigger",
-      "competition_confidence": "incomplete_combined_workflow",
+      "competition_confidence": "medium; primary sources confirmed segment differences, broader market not exhausted",
       "qualification_status": "competition_not_verified",
-      "review_notes": "EU passport applies to specified batteries entering EU market from February 2027; does not imply all pre-existing used EVs require retroactive certificates.",
+      "review_notes": "EU passport applies to specified batteries entering EU market from February 2027; does not imply all pre-existing used EVs require retroactive certificates. Previously counted direct SoH providers reclassified as adjacent since they do not demonstrate the full repair-event/warranty-decision workflow.",
       "source_verification": {
         "verified_at": "2026-10-08",
         "method": "Full publisher article content and date checked",
@@ -343,6 +351,27 @@
         "author": "邢书博",
         "finding": "October 7 Huxiu auto-industry analysis discusses EV battery 15,000-cycle energy-storage target, vehicle-specific endurance standards, repair economics and battery asset records. The 15,000-cycle claim is not a passenger-car 20-year durability requirement.",
         "important_limit": "Cited Chinese policy/standards and statistics are the article's claims; policy primary sources were NOT separately verified."
+      },
+      "competitor_recheck": {
+        "checked_on": "2026-10-08",
+        "rule": "same buyer + same core job + same substantial workflow",
+        "candidate_primary_buyer": "used passenger EV dealer or car fleet asset manager",
+        "findings": [
+          {
+            "name": "AVILOO",
+            "reason": "Same buyer, narrower SoH certificate"
+          },
+          {
+            "name": "BattGrade",
+            "reason": "Same buyer, narrower health certificate, early access"
+          },
+          {
+            "name": "Battery Passport Software",
+            "reason": "Same repair ledger job, different buyer: e-bike/light-EV repair workshop, published Android app 2026-09-22"
+          }
+        ],
+        "decision": "retain_competition_not_verified",
+        "zero_external_cash_proven": false
       }
     },
     {
