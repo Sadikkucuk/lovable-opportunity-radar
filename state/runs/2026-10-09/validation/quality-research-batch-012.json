@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-09",
+  "stage": "QUALITY_EVIDENCE_REMEDIATION",
+  "batch_number": 12,
+  "status": "completed_partial_resolution",
+  "reviewed_count": 5,
+  "quality_evidence_resolved_count": 2,
+  "review_pending_count": 3,
+  "strict_definition": "direct=same target buyer plus same core job plus substantially same workflow; verified known vendors are lower bounds not exhaustive counts",
+  "external_cash": "none of these rejected candidates is being positively qualified, so no production cost=0 proof inferred",
+  "records": [
+    {
+      "validation_index": 6,
+      "candidate_id": "radar-20261009-006",
+      "source_url": "https://betakit.com/canadas-initial-real-time-rail-rollout-likely-wont-include-big-banks-sources-say/",
+      "primary_sources": [
+        "https://www.payments.ca/systems-services/payment-systems/real-time-rail-payment-system/testing-and-launch",
+        "https://www.payments.ca/systems-services/payment-systems/real-time-rail-payment-system/frequently-asked-questions",
+        "https://www.payments.ca/connect/membership/payment-service-provider-participation"
+      ],
+      "source_verified": true,
+      "source_fact": "RTR phased launch Q4 2026; membership is NOT sufficient to show counterparty's actual rail availability. PSP onboarding is sequential with certification and final approval.",
+      "turkiye_competitors": [],
+      "global_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "Payments Canada RTR participation readiness guide",
+          "url": "https://www.payments.ca/connect/membership/payment-service-provider-participation",
+          "classification": "adjacent",
+          "reason": "Official application/readiness guide is neither current counterparty-availability matrix nor fallback-routing evidence ledger."
+        }
+      ],
+      "qualification_status": "rejected_evidence",
+      "quality_evidence_resolved": false,
+      "reason": "Verified primary-source phased rollout but no public bank-by-bank RTR availability proof; buyer data rights, independent same-buyer product demand and direct competitors remain unverified. Do not treat absence as zero."
+    },
+    {
+      "validation_index": 24,
+      "candidate_id": "radar-20261009-024",
+      "source_url": "https://www.reuters.com/business/ai-pricing-lawsuit-against-mcdonalds-raises-new-antitrust-questions-2026-10-08/",
+      "primary_sources": [
+        "https://www.reuters.com/business/ai-pricing-lawsuit-against-mcdonalds-raises-new-antitrust-questions-2026-10-08/",
+        "https://franchise-association.org/turkey/en/franchise-your-business/how-to-set-a-sales-pricing-policy-before-franchising-your-business"
+      ],
+      "source_verified": true,
+      "source_fact": "Oct 8 Reuters report alleges AI pricing coordination at franchised restaurants, disputed by McDonald's. Turkish QFA material explicitly treats franchisee pricing freedom and independent operator changes.",
+      "turkiye_competitors": [],
+      "global_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "Pricefx Price Management",
+          "url": "https://www.pricefx.com/platform/price-management/",
+          "classification": "adjacent",
+          "reason": "AI explainable price recommendations, approvals and audit; not proved independent franchisee approval plus recommendation boundary workflow."
+        },
+        {
+          "name": "Menuology for Franchisors",
+          "url": "https://www.menuology.com/franchisors/",
+          "classification": "adjacent",
+          "reason": "Franchisee-selected prices, local approvals and change log; AI recommendation provenance/legal independence proof not established."
+        }
+      ],
+      "qualification_status": "rejected_evidence",
+      "quality_evidence_resolved": false,
+      "reason": "Franchise price autonomy problem is real, but neither vendor proves complete source-of-recommendation + independent-franchisee acceptance record; country-specific direct competitors and buyer adoption still unresolved."
+    },
+    {
+      "validation_index": 40,
+      "candidate_id": "radar-20261009-040",
+      "source_url": "https://wastemanagement.economictimes.indiatimes.com/news/technology-innovation/how-ai-is-turning-wastewater-into-a-circular-economy-asset/134791356",
+      "primary_sources": [
+        "https://www.envoraglobal.com/muhendislik-araclari/su-geri-kazanim-tasarruf/",
+        "https://www.envoraglobal.com/iletisim/",
+        "https://iwaponline.com/jwrd/article/10/4/419/77806/Economic-evaluation-of-different-treatment-options",
+        "https://zenodo.org/records/3755380"
+      ],
+      "source_verified": "secondary_url_inaccessible; independently_confirmed_product_function",
+      "source_fact": "Envora's Turkish-language tool takes wastewater flow, recovery rate, annual operating days, water tariff, discharge, OPEX and CAPEX; calculates annual volume, net savings and payback. Vendor lists Istanbul office. Independent academic models WaReIp and Poseidon already compare reuse alternatives and costs.",
+      "turkiye_competitors": [
+        {
+          "name": "Envora Global — Su Geri Kazanım ve Tasarruf",
+          "url": "https://www.envoraglobal.com/muhendislik-araclari/su-geri-kazanim-tasarruf/",
+          "classification": "direct",
+          "reason": "Türkiye-based industrial water-reuse engineering buyer, same manual scenario input/assumptions and recoverable volume/cost-savings/payback decision job. Caveat: no persistent multi-project ledger on public calculator."
+        }
+      ],
+      "global_competitors": [
+        {
+          "name": "WaReIp model (industrial park water reuse)",
+          "url": "https://iwaponline.com/jwrd/article/10/4/419/77806/Economic-evaluation-of-different-treatment-options",
+          "classification": "direct",
+          "reason": "Industrial park plant utilities buyer; manually parameterized alternatives and operating/installation costs side-by-side."
+        },
+        {
+          "name": "Poseidon 2.0 wastewater reuse decision support",
+          "url": "https://zenodo.org/records/3755380",
+          "classification": "direct",
+          "reason": "Wastewater reuse engineering decision maker, manual treatment scenarios, technology trade-offs and cost evaluations."
+        }
+      ],
+      "adjacent_competitors": [],
+      "qualification_status": "rejected_competition",
+      "quality_evidence_resolved": true,
+      "reason": "Named verified Turkish direct alternative already performs core water-recovery flow/value/OPEX/CAPEX assumptions in same industrial reuse workflow. Standalone persistent audit ledger difference alone insufficient to establish paid market gap; no novelty claim."
+    },
+    {
+      "validation_index": 45,
+      "candidate_id": "radar-20261009-045",
+      "source_url": "https://www.reuters.com/legal/legalindustry/law-firms-give-lawyers-time-off-billing-grind-test-drive-ai-2026-10-08/",
+      "primary_sources": [
+        "https://www.reuters.com/legal/legalindustry/law-firms-give-lawyers-time-off-billing-grind-test-drive-ai-2026-10-08/",
+        "https://www.holtzmanvogel.com/news-insights/holtzman-vogel-allocates-100-billable-hours-per-associate-annually-for-ai-training"
+      ],
+      "source_verified": true,
+      "source_fact": "Reuters documents Ropes & Gray's annual 100 AI credit hours and Akerman's internal portal assigning/reviewing AI projects; separate US law firm policy allocates 100 hours.",
+      "turkiye_competitors": [],
+      "global_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "Law firm in-house AI credit/assignment portal (Akerman)",
+          "url": "https://www.reuters.com/legal/legalindustry/law-firms-give-lawyers-time-off-billing-grind-test-drive-ai-2026-10-08/",
+          "classification": "adjacent_internal_system",
+          "reason": "Internal organization-specific workflow handles innovation assignments and time credit but not a separately marketed direct software competitor."
+        }
+      ],
+      "qualification_status": "rejected_evidence",
+      "quality_evidence_resolved": false,
+      "reason": "Primary use case proven but separate commercial software buyer and direct Türkiye/global vendor census still unavailable; do not promote or suppress as a qualified product."
+    },
+    {
+      "validation_index": 54,
+      "candidate_id": "radar-20261009-054",
+      "source_url": "https://pandaily.com/kargobot-ordos-qipanjing-ai-freight-network-cabless-transport-robots",
+      "primary_sources": [
+        "https://www.fernride.com/our-platform",
+        "https://www.fernride.com/our-platform"
+      ],
+      "source_verified": "original_source_from_frozen_run; direct_workflow_verified_in_current_primary_vendor",
+      "source_fact": "FERNRIDE Operations Control Station explicitly offers exception handling and seamless human handover, multi-vehicle monitoring; Management Suite handles tasks, traffic and fleet, with route orchestration and control hub.",
+      "turkiye_competitors": [],
+      "global_competitors": [
+        {
+          "name": "FERNRIDE Human-Assisted Autonomous Platform",
+          "url": "https://www.fernride.com/our-platform",
+          "classification": "direct",
+          "reason": "Same industrial fleet operations buyer, dispatch/traffic/vehicle exceptions and explicit human handover protocols. Caveat: no separately offered audit-only case ledger verified."
+        }
+      ],
+      "adjacent_competitors": [],
+      "qualification_status": "rejected_competition",
+      "quality_evidence_resolved": true,
+      "reason": "Verified direct overlap in operational route/task/vehicle handover and exception workflow; standalone manual logging alone is not substantiated differentiation for large autonomous freight buyer."
+    }
+  ]
+}
