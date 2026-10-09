@@ -1,6 +1,6 @@
 {
   "run_date": "2026-10-09",
-  "status": "publication_blocked",
+  "status": "canonical_user_exclusions_applied_mirror_recheck_pending",
   "frozen_generation": "2026-10-09T02:06:51Z",
   "feed_items_triaged": 1000,
   "candidate_count": 84,
@@ -8,24 +8,16 @@
   "unique_ids": 84,
   "classification_counts": {
     "rejected_competition": 73,
-    "rejected_evidence": 9,
+    "rejected_evidence": 4,
     "rejected_cost": 1,
-    "competition_not_verified": 1
+    "rejected_user_decision": 6
   },
-  "quality_research_needed_indexes": [
-    24,
-    45,
-    60,
-    65,
-    69,
-    84
-  ],
-  "quality_research_needed_count": 6,
-  "mirror_parity_verified": true,
+  "quality_research_needed_indexes": [],
+  "quality_research_needed_count": 0,
+  "mirror_parity_verified": false,
   "allow_catalog_write": false,
   "blockers": [
-    "5 unresolved rejected_evidence cases: #24, #45, #60, #65, #69; complete direct Turkey/global competition or proven disqualifier missing.",
-    "#84 remains competition_not_verified: independent support for Türkiye 0/global <=3 direct same-workflow competitors and real zero-external-cash development/production beyond limited grants is incomplete."
+    "Six candidates (#24,#45,#60,#65,#69,#84) explicitly excluded by user; validator A/B mirrors must be regenerated and verified before gate passes."
   ],
   "catalog_preserved": true,
   "last_check": {
@@ -34,11 +26,11 @@
     "unique_ids": 84,
     "validator_a_records": 42,
     "validator_b_records": 42,
-    "mirror_mismatch_count": 0,
+    "mirror_mismatch_count": null,
     "quality_research_batch": "013",
     "batch_013_reviewed": 9,
     "batch_013_resolved": 3,
-    "remaining_evidence_or_competition": 6,
+    "remaining_evidence_or_competition": 0,
     "qualified_count": 0,
     "frozen_generation": "2026-10-09T02:06:51Z",
     "discovery_triaged_count": 1000
