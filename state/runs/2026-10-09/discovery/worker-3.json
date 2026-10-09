@@ -22,7 +22,7 @@
   "original_articles_verified": 12,
   "full_article_not_verified": 0,
   "noise_or_no_opportunity_count": 228,
-  "raw_opportunity_count": 15,
+  "raw_opportunity_count": 18,
   "raw_opportunities": [
     {
       "raw_id": "w3-20261009-001",
@@ -578,6 +578,114 @@
         "source_fact": "Inc42 reported FEMA changes affecting freelancers and SaaS exporters.",
         "source_inference_boundary": "Exact legal requirements require verification against RBI primary text; this is not Turkish law."
       }
+    },
+    {
+      "raw_id": "w3-20261009-016",
+      "supporting_article_ids": [
+        "33776e90a274e92591f6462a"
+      ],
+      "supporting_article_titles": [
+        "Canada’s initial real-time rail rollout likely won’t include big banks, sources say - BetaKit"
+      ],
+      "supporting_sources": [
+        "BetaKit"
+      ],
+      "canonical_source_urls": [
+        "https://betakit.com/canadas-initial-real-time-rail-rollout-likely-wont-include-big-banks-sources-say/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Initial real-time payment rollout may exclude major banks, requiring fallback rail selection.",
+      "delta_types": [
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "Payment routing readiness for fintech integrations",
+      "target_customer": "Canadian fintech payment operations",
+      "buyer": "Head of payments",
+      "job_to_be_done": "Track which counterparties can use the new payment rail and which need fallback",
+      "current_friction": "Fragmented rollout creates uncertain reachability",
+      "product_mechanism": "Institution participation matrix, route selection checklist and fallback evidence",
+      "one_sentence_concept": "Canadian instant-payment rail coverage and fallback matrix",
+      "why_now": "Initial real-time payment rollout may exclude major banks, requiring fallback rail selection.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 130,
+      "draft_canonical_key": "canada-rtr|participation-fallback|readiness-matrix",
+      "evidence_notes": {
+        "source_fact": "BetaKit cites industry sources; actual bank participation remains unconfirmed.",
+        "source_inference_boundary": "Product and customer willingness to pay are hypotheses."
+      }
+    },
+    {
+      "raw_id": "w3-20261009-017",
+      "supporting_article_ids": [
+        "8b7f8b782e4d62b54d784161"
+      ],
+      "supporting_article_titles": [
+        "Building a safer path to autonomous industrial AI - MIT Technology Review"
+      ],
+      "supporting_sources": [
+        "MIT Technology Review Insights"
+      ],
+      "canonical_source_urls": [
+        "https://www.technologyreview.es/article/construir-un-camino-mas-seguro-hacia-la-ia-industrial-autonoma"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Autonomous AI moves from digital advice into physical industrial control, creating safety review and human-oversight requirements.",
+      "delta_types": [
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "Industrial AI change approval",
+      "target_customer": "Industrial plant automation teams",
+      "buyer": "Plant engineering director",
+      "job_to_be_done": "Document pre-deployment safety gates and human escalation controls",
+      "current_friction": "AI model change evidence is disconnected from industrial operating procedures",
+      "product_mechanism": "Hazard checklist, approval gates, override records and evidence log",
+      "one_sentence_concept": "Industrial AI deployment safety-gate register",
+      "why_now": "Autonomous AI moves from digital advice into physical industrial control, creating safety review and human-oversight requirements.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 130,
+      "draft_canonical_key": "industrial-ai|safety-change-approval|gate-register",
+      "evidence_notes": {
+        "source_fact": "Sponsored MIT Technology Review Insights article with AVEVA interview; no binding regulatory mandate.",
+        "source_inference_boundary": "Product and customer willingness to pay are hypotheses."
+      }
+    },
+    {
+      "raw_id": "w3-20261009-018",
+      "supporting_article_ids": [
+        "ece87e548febffcf32252964"
+      ],
+      "supporting_article_titles": [
+        "KargoBot Starts a Mixed Freight Network in Ordos With Cabless Transport Robots - Pandaily"
+      ],
+      "supporting_sources": [
+        "Pandaily"
+      ],
+      "canonical_source_urls": [
+        "https://pandaily.com/kargobot-ordos-qipanjing-ai-freight-network-cabless-transport-robots"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "One freight network combines human-driven, autonomous-cab and cabless vehicles across routes.",
+      "delta_types": [
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "Mixed-mode freight dispatch and handoff",
+      "target_customer": "Large industrial freight operators",
+      "buyer": "Fleet operations manager",
+      "job_to_be_done": "Record route eligibility, driver handoffs and vehicle exceptions",
+      "current_friction": "Multiple automation modes create coordination and exception-handling overhead",
+      "product_mechanism": "Route-mode register, handoff checklists and incident exception queue",
+      "one_sentence_concept": "Mixed-fleet autonomous freight exception and handoff desk",
+      "why_now": "One freight network combines human-driven, autonomous-cab and cabless vehicles across routes.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 130,
+      "draft_canonical_key": "mixed-fleet-freight|handoff-exceptions|dispatch-desk",
+      "evidence_notes": {
+        "source_fact": "Vendor-reported fleet and savings metrics are not independently audited; Trakya transferability is a hypothesis for industrial corridors.",
+        "source_inference_boundary": "Product and customer willingness to pay are hypotheses."
+      }
     }
   ],
   "triage_audit": {
@@ -892,8 +1000,8 @@
         "position": 36,
         "feed_id": "33776e90a274e92591f6462a",
         "title": "Canada’s initial real-time rail rollout likely won’t include big banks, sources say - BetaKit",
-        "decision": "requires_original_article_review",
-        "reason": "Potential operational, regulatory or infrastructure delta; original article and JTBD not yet checked"
+        "decision": "opportunity_recorded",
+        "reason": "Original publication reviewed and distinct workflow extracted"
       },
       {
         "batch": 13,
@@ -1932,8 +2040,8 @@
         "position": 6,
         "feed_id": "8b7f8b782e4d62b54d784161",
         "title": "Building a safer path to autonomous industrial AI - MIT Technology Review",
-        "decision": "requires_original_article_review",
-        "reason": "Potential operational, regulatory or infrastructure delta; original article and JTBD not yet checked"
+        "decision": "opportunity_recorded",
+        "reason": "Original publication reviewed and distinct workflow extracted"
       },
       {
         "batch": 17,
@@ -2260,8 +2368,8 @@
         "position": 7,
         "feed_id": "ece87e548febffcf32252964",
         "title": "KargoBot Starts a Mixed Freight Network in Ordos With Cabless Transport Robots - Pandaily",
-        "decision": "requires_original_article_review",
-        "reason": "Potential operational, regulatory or infrastructure delta; original article and JTBD not yet checked"
+        "decision": "opportunity_recorded",
+        "reason": "Original publication reviewed and distinct workflow extracted"
       },
       {
         "batch": 18,
@@ -2548,12 +2656,6 @@
         "title": "Man gets 2 years for $3.5M Amazon fraud using 23 trucking accounts - FreightWaves"
       },
       {
-        "batch": 13,
-        "position": 36,
-        "feed_id": "33776e90a274e92591f6462a",
-        "title": "Canada’s initial real-time rail rollout likely won’t include big banks, sources say - BetaKit"
-      },
-      {
         "batch": 14,
         "position": 30,
         "feed_id": "bfc7237289d854138fa74e6b",
@@ -2603,21 +2705,9 @@
       },
       {
         "batch": 17,
-        "position": 6,
-        "feed_id": "8b7f8b782e4d62b54d784161",
-        "title": "Building a safer path to autonomous industrial AI - MIT Technology Review"
-      },
-      {
-        "batch": 17,
         "position": 8,
         "feed_id": "09f28dfe69c03b74d16d4517",
         "title": "Cheapskates wouldn't pay for security help, got hit by ransomware, and went bust months later - The Register"
-      },
-      {
-        "batch": 18,
-        "position": 7,
-        "feed_id": "ece87e548febffcf32252964",
-        "title": "KargoBot Starts a Mixed Freight Network in Ordos With Cabless Transport Robots - Pandaily"
       },
       {
         "batch": 18,
@@ -2675,6 +2765,6 @@
     }
   },
   "missing_batches": [],
-  "failure_reason": "16 potentially meaningful source signals require original-article verification; remaining source-supported opportunities not yet exhausted.",
-  "verification_note": "Bulk screened queued records by headline/summary. No new original-article verification claimed. Previously recorded 15 opportunities unchanged."
+  "failure_reason": "13 remaining signals require verification before exhaustive extraction is complete.",
+  "verification_note": "Three original publications verified in bulk; 13 remaining queued signals require original-source review."
 }
