@@ -108,7 +108,7 @@
       "canonical_key": "canada-rtr|participation-fallback|readiness-matrix",
       "canonical_news_url": "https://betakit.com/canadas-initial-real-time-rail-rollout-likely-wont-include-big-banks-sources-say/",
       "qualification_status": "rejected_evidence",
-      "research_status": "evidence_researched_incomplete",
+      "research_status": "complete_rejected_with_evidence",
       "development_verified": "true",
       "turkiye_direct_competitor_count": null,
       "global_direct_competitor_count": null,
@@ -118,20 +118,21 @@
         "https://betakit.com/canadas-initial-real-time-rail-rollout-likely-wont-include-big-banks-sources-say/",
         "https://www.payments.ca/systems-services/payment-systems/real-time-rail-payment-system/testing-and-launch",
         "https://www.payments.ca/connect/membership/payment-service-provider-participation",
-        "https://www.payments.ca/systems-services/payment-systems/real-time-rail-payment-system/frequently-asked-questions"
+        "https://www.payments.ca/systems-services/payment-systems/real-time-rail-payment-system/frequently-asked-questions",
+        "https://www.payments.ca/canadas-real-time-rail-quarterly-update-jude-pinto-2026-q2"
       ],
       "evidence_notes": "Official Payments Canada Q4 2026 phased onboarding; not proof of an uncovered buyer need.",
-      "canonical_news_source": "Original cited source; see URL",
+      "canonical_news_source": "original_trigger_verified_with_correlated_sources",
       "canonical_news_title": "Initial real-time payment rollout may exclude major banks, requiring fallback rail selection.",
       "canonical_news_date": null,
       "turkiye_competitors": [],
       "global_competitors": [],
       "adjacent_competitors": [
         {
-          "name": "Payments Canada RTR participation readiness guide",
+          "name": "Payments Canada RTR Participation Guide",
           "url": "https://www.payments.ca/connect/membership/payment-service-provider-participation",
           "classification": "adjacent",
-          "reason": "Official application/readiness guide is neither current counterparty-availability matrix nor fallback-routing evidence ledger."
+          "reason": "PSP readiness and connectivity decision guide, not live institution reachability data."
         }
       ],
       "competition_search_terms": [
@@ -155,17 +156,18 @@
       "main_risk": "Official phased RTR onboarding verified, but the proposed institution-by-institution coverage matrix and fallback rules are not supported by verified accessible public data; cannot substantiate the product's current factual accuracy.",
       "validation_assumption": "No verified unique buyer workflow or evidence for qualification",
       "evidence_strength": "unresolved_participation_truth",
-      "competition_confidence": "partial; not exhaustive",
+      "competition_confidence": "verified_explicit_disqualifier",
       "local_scope_verified": "not_applicable",
       "local_scope_evidence": [],
       "local_applicability_rationale": "Local industrial scope not established",
       "validated_scope_hint": "Dünya",
-      "rejection_reason": "Verified primary-source phased rollout but no public bank-by-bank RTR availability proof; buyer data rights, independent same-buyer product demand and direct competitors remain unverified. Do not treat absence as zero.",
-      "source_verification_note": "RTR phased launch Q4 2026; membership is NOT sufficient to show counterparty's actual rail availability. PSP onboarding is sequential with certification and final approval.",
-      "evidence_remediation_batch": "quality-research-batch-012.json",
-      "quality_evidence_resolved": false,
-      "source_evidence_status": true,
-      "competition_count_scope": "Verified named direct examples only, not exhaustive national/global market counts; null means insufficient proof, not zero."
+      "rejection_reason": "SOURCE_TO_PRODUCT_DATA_MISMATCH: original source discusses FUTURE rail readiness, not operational counterparty availability; candidate specifically promises track which counterparties can USE the new rail. No official live participation data today; product would need to invent every live routing claim. Reassess if actual participant go-live directory later becomes accessible.",
+      "source_verification_note": "Q4 2026 RTR not live as of October 9; Q1 2027 migration staged; Payments Canada membership does not establish live participation. Accordingly all real-time counterparty reachability fields would be fabricated at publication date.",
+      "evidence_remediation_batch": "quality-research-batch-013.json",
+      "quality_evidence_resolved": true,
+      "source_evidence_status": "original_and_correlated_researched",
+      "competition_count_scope": "Known named direct examples only; null means unverified, NOT zero. No exhaustive universe claimed.",
+      "quality_resolution": "verified_source_to_core_job_unavailability"
     },
     {
       "candidate_id": "radar-20261009-008",
@@ -626,33 +628,35 @@
         "https://www.reuters.com/business/ai-pricing-lawsuit-against-mcdonalds-raises-new-antitrust-questions-2026-10-08/",
         "https://franchise-association.org/turkey/en/franchise-your-business/how-to-set-a-sales-pricing-policy-before-franchising-your-business",
         "https://www.pricefx.com/platform/price-management/",
-        "https://www.menuology.com/franchisors/"
+        "https://www.menuology.com/franchisors/",
+        "https://corporate.mcdonalds.com/corpmcd/our-stories/article/how-mcdonalds-sets-prices.html",
+        "https://www.menuology.com/platform/"
       ],
       "development_verified": "partial",
       "turkiye_direct_competitor_count": null,
       "global_direct_competitor_count": null,
       "qualification_status": "rejected_evidence",
-      "research_status": "evidence_researched_incomplete",
+      "research_status": "researched_unresolved",
       "external_cash_cost": "not_required_for_rejected_candidate",
-      "competition_confidence": "partial",
+      "competition_confidence": "partial_no_defensible_zero",
       "publication_eligible": false,
-      "canonical_news_source": "Cited original or reporting source",
+      "canonical_news_source": "original_trigger_verified_with_correlated_sources",
       "canonical_news_title": "AI pricing litigation increases demand for explainable human decision boundaries.",
       "canonical_news_date": null,
       "turkiye_competitors": [],
       "global_competitors": [],
       "adjacent_competitors": [
         {
-          "name": "Pricefx Price Management",
-          "url": "https://www.pricefx.com/platform/price-management/",
-          "classification": "adjacent",
-          "reason": "AI explainable price recommendations, approvals and audit; not proved independent franchisee approval plus recommendation boundary workflow."
-        },
-        {
           "name": "Menuology for Franchisors",
           "url": "https://www.menuology.com/franchisors/",
           "classification": "adjacent",
-          "reason": "Franchisee-selected prices, local approvals and change log; AI recommendation provenance/legal independence proof not established."
+          "reason": "Same franchise price independence and logs, but separate AI recommendation/source evidence and anti-collusion review absent in public docs."
+        },
+        {
+          "name": "Pricefx Price Management",
+          "url": "https://www.pricefx.com/platform/price-management/",
+          "classification": "adjacent",
+          "reason": "Pricing recommendation/approval/audit platform, but restaurant franchisee autonomy and independence declaration workflow not verified."
         }
       ],
       "competition_search_terms": [
@@ -679,12 +683,13 @@
       "local_scope_evidence": [],
       "local_applicability_rationale": "not independently checked",
       "validated_scope_hint": "Dünya",
-      "rejection_reason": "Franchise price autonomy problem is real, but neither vendor proves complete source-of-recommendation + independent-franchisee acceptance record; country-specific direct competitors and buyer adoption still unresolved.",
-      "source_verification_note": "Oct 8 Reuters report alleges AI pricing coordination at franchised restaurants, disputed by McDonald's. Turkish QFA material explicitly treats franchisee pricing freedom and independent operator changes.",
-      "evidence_remediation_batch": "quality-research-batch-012.json",
+      "rejection_reason": "No matched direct same-buyer same-AI-recommendation-provenance product established; do not count separate adjacent components as one direct rival.",
+      "source_verification_note": "Reuters describes contested allegation; McDonald's explicitly disputes algorithmic price-setting. Franchisee autonomy and menu price change logs exist but provenance of AI recommendations plus independent exception sign-off in one product not independently shown.",
+      "evidence_remediation_batch": "quality-research-batch-013.json",
       "quality_evidence_resolved": false,
-      "source_evidence_status": true,
-      "competition_count_scope": "Verified named direct examples only, not exhaustive national/global market counts; null means insufficient proof, not zero."
+      "source_evidence_status": "original_and_correlated_researched",
+      "competition_count_scope": "Known named direct examples only; null means unverified, NOT zero. No exhaustive universe claimed.",
+      "quality_resolution": "unresolved_original_criteria"
     },
     {
       "candidate_id": "radar-20261009-026",
@@ -1169,32 +1174,33 @@
       "validation_index": 56,
       "canonical_key": "optical-semiconductor-test-teams|track-co-packaged-optics-test-revision-and-signoff|test-plan-revision-and-acceptance-evidence-register",
       "canonical_news_url": "https://semiengineering.com/cpo-testing-faces-a-moving-target-problem/",
-      "qualification_status": "rejected_evidence",
+      "qualification_status": "rejected_competition",
       "development_verified": true,
       "turkiye_direct_competitor_count": null,
-      "global_direct_competitor_count": null,
+      "global_direct_competitor_count": 1,
       "external_cash_cost": "not_required_for_rejected_candidate",
-      "research_status": "evidence_researched_incomplete",
+      "research_status": "complete_rejected_with_evidence",
       "publication_eligible": false,
-      "rejection_reason": "CPO test challenge and revision frequency are documented, but a separate CPO-specific test plan acceptance SaaS buyer and same semiconductor-optics revision-signoff software competitors not established.",
+      "rejection_reason": "VERIFIED DIRECT WORKFLOW: same semiconductor test engineering buyer and revision-controlled test verification/approval workflow; optional CPO-specific categorization alone not established as standalone new paid job.",
       "source_links": [
         "https://semiengineering.com/cpo-testing-faces-a-moving-target-problem/",
         "https://www.ni.com/en/shop/electronic-test-instrumentation/add-ons-for-electronic-test-and-instrumentation/what-is-teststand.html",
         "https://www.keysight.com/content/keysight/zz/en/products/photonic-and-optical-test.html",
-        "https://docs.tricentis.com/qtest-saas/content/manager/version_and_approve_test_cases.htm"
+        "https://docs.tricentis.com/qtest-saas/content/manager/version_and_approve_test_cases.htm",
+        "https://deviniti.com/solutions/semiconductor-requirements-management-tool/"
       ],
-      "global_competitors": [],
-      "canonical_news_source": "original_industry_interviews",
-      "source_verification_note": "CPO test challenge and revision frequency are documented, but a separate CPO-specific test plan acceptance SaaS buyer and same semiconductor-optics revision-signoff software competitors not established.",
-      "source_evidence_status": "original_industry_interviews",
-      "adjacent_competitors": [
+      "global_competitors": [
         {
-          "name": "NI TestStand",
-          "url": "https://www.ni.com/en/shop/electronic-test-instrumentation/add-ons-for-electronic-test-and-instrumentation/what-is-teststand.html",
-          "classification": "adjacent",
-          "reason": "Automates and documents electronic test sequence validation, not demonstrated CPO optical signoff register."
+          "name": "Deviniti Semiconductor Requirements & Traceability Management",
+          "url": "https://deviniti.com/solutions/semiconductor-requirements-management-tool/",
+          "classification": "direct",
+          "reason": "Semiconductor design/verification and test engineer buyer; test artifact revision/change impact, approved baselines, post-silicon verification evidence and audit signoff; overlaps core test-plan revision acceptance. Does not claim CPO-specific optical measurements."
         }
       ],
+      "canonical_news_source": "original_trigger_verified_with_correlated_sources",
+      "source_verification_note": "October 8 experts document moving CPO optical test stages/design and acceptance requirements. Deviniti's semiconductor-specific platform links tests and validation evidence, stores baselines across revisions/variants and approved documentation signoff including post-silicon characterization.",
+      "source_evidence_status": "original_and_correlated_researched",
+      "adjacent_competitors": [],
       "turkiye_competitors": [],
       "turkiye_competition_research": "Turkish-language targeted web searches conducted; exhaustive Turkish vendor census unverified, not interpreted as zero.",
       "competition_search_terms": [
@@ -1202,9 +1208,11 @@
         "NI TestStand"
       ],
       "evidence_strength": "unresolved_specialized_test_buyer",
-      "competition_confidence": "not_sufficient_for_exact_direct_count",
-      "evidence_remediation_batch": "quality-research-batch-009.json",
-      "quality_evidence_resolved": false
+      "competition_confidence": "verified_explicit_disqualifier",
+      "evidence_remediation_batch": "quality-research-batch-013.json",
+      "quality_evidence_resolved": true,
+      "quality_resolution": "verified_direct_competitor",
+      "competition_count_scope": "Known named direct examples only; null means unverified, NOT zero. No exhaustive universe claimed."
     },
     {
       "candidate_id": "radar-20261009-058",
@@ -1255,23 +1263,31 @@
       "turkiye_direct_competitor_count": null,
       "global_direct_competitor_count": null,
       "external_cash_cost": "not_required_for_rejected_candidate",
-      "research_status": "evidence_researched_incomplete",
+      "research_status": "researched_unresolved",
       "publication_eligible": false,
-      "rejection_reason": "October IMMIX corridor/FX friction confirmed. Browser-side manual quote+spread calculation feasible, but reliable quotes, payment-firm buyer and direct-route comparison competition are not independently substantiated.",
+      "rejection_reason": "Provider quote provenance/entitlements and paid buyer for manual settlement-route scenario CSV remain unverified; no complete same-workflow direct product verified.",
       "source_links": [
         "https://www.eu-startups.com/2026/10/londons-immix-secures-e3-12-million-to-build-fx-infrastructure-for-stablecoin-payments-beyond-the-us-dollar/",
-        "https://www.theblock.co/news/markets/2026-07-13-stablecoin-fx-priced-below-interbank-rates-in-q2-with-routing-now-the-biggest-cost-lever-borderless-408006"
+        "https://www.theblock.co/news/markets/2026-07-13-stablecoin-fx-priced-below-interbank-rates-in-q2-with-routing-now-the-biggest-cost-lever-borderless-408006",
+        "https://www.spark.money/research/stablecoin-api-payout-provider-comparison",
+        "https://eco.com/support/en/articles/14895614-stablecoin-payment-processor-fees-compared-2026"
       ],
       "global_competitors": [],
-      "canonical_news_source": "original_coverage_of_immix_funding",
-      "source_verification_note": "October IMMIX corridor/FX friction confirmed. Browser-side manual quote+spread calculation feasible, but reliable quotes, payment-firm buyer and direct-route comparison competition are not independently substantiated.",
-      "source_evidence_status": "original_coverage_of_immix_funding",
+      "canonical_news_source": "original_trigger_verified_with_correlated_sources",
+      "source_verification_note": "Original IMMIX FX friction independently confirmed, third-party published fee/route comparisons exist; neither provides a verified treasury-side multi-route manual vendor-quote CSV and fee-reconciliation ledger.",
+      "source_evidence_status": "original_and_correlated_researched",
       "adjacent_competitors": [
         {
-          "name": "Borderless stablecoin FX benchmark",
-          "url": "https://www.theblock.co/news/markets/2026-07-13-stablecoin-fx-priced-below-interbank-rates-in-q2-with-routing-now-the-biggest-cost-lever-borderless-408006",
+          "name": "Spark stablecoin payout provider comparison",
+          "url": "https://www.spark.money/research/stablecoin-api-payout-provider-comparison",
           "classification": "adjacent",
-          "reason": "Benchmark for routing costs, not demonstrated same manual CSV quote reconciliation workflow."
+          "reason": "Static research article comparing providers, not operational route quote CSV + reconciliation SaaS."
+        },
+        {
+          "name": "Eco stablecoin fee comparison",
+          "url": "https://eco.com/support/en/articles/14895614-stablecoin-payment-processor-fees-compared-2026",
+          "classification": "adjacent",
+          "reason": "Static merchant processors comparison, not payments treasury route ledger."
         }
       ],
       "turkiye_competitors": [],
@@ -1281,9 +1297,11 @@
         "Borderless stablecoin FX benchmark"
       ],
       "evidence_strength": "unresolved_differentiation_and_quote_input",
-      "competition_confidence": "not_sufficient_for_exact_direct_count",
-      "evidence_remediation_batch": "quality-research-batch-009.json",
-      "quality_evidence_resolved": false
+      "competition_confidence": "partial_no_defensible_zero",
+      "evidence_remediation_batch": "quality-research-batch-013.json",
+      "quality_evidence_resolved": false,
+      "quality_resolution": "unresolved_original_criteria",
+      "competition_count_scope": "Known named direct examples only; null means unverified, NOT zero. No exhaustive universe claimed."
     },
     {
       "candidate_id": "radar-20261009-062",
@@ -1765,16 +1783,21 @@
       "development_verified": true,
       "turkiye_direct_competitor_count": null,
       "global_direct_competitor_count": null,
-      "external_cash_cost": 0,
-      "research_status": "competition_not_verified",
+      "external_cash_cost": "conditional_zero_external_cash_browser_only_low_traffic; not_proven_at_expected_190_build_credits_and_operational_scale",
+      "research_status": "researched_unresolved",
       "publication_eligible": false,
-      "rejection_reason": null,
+      "rejection_reason": "Türkiye 0 and global <=3 direct SAME-WORKFLOW vendor census not conclusively proven; free static hosting documented but 190-credit build plan and continued 0-cash production capacity not empirically validated. Do not publish.",
       "source_links": [
         "https://letsencrypt.org/2026/10/07/64-day-certs.html",
-        "https://lovable.dev/pricing"
+        "https://lovable.dev/pricing",
+        "https://letsencrypt.org/2026/10/07/64-day-certs",
+        "https://lovable.dev/blog/simplifying-billing",
+        "https://github.com/acmesh-official/acme.sh",
+        "https://www.cloudflare.com/tr-tr/application-services/solutions/certificate-lifecycle-management/",
+        "https://docs.digicert.com/en/certcentral/automate-certificate-lifecycle.html"
       ],
-      "source_verification_note": "Let's Encrypt October7 confirms default 64-day TLS from Feb10 2027 and warns about hardcoded renew schedules. Browser-only user-provided CSV (renewal cadence values) parse and linter with risk rules and owner CSV export, no live host scan/API. Türkiye zero and global <=3 direct competitor constraints not verified; preserve under competition_not_verified pending research.",
-      "evidence_remediation_batch": "quality-research-batch-009.json",
+      "source_verification_note": "Let's Encrypt primary source confirms 64-day default from 2027-02-10, staging 2026-10-14, recommends search renewal scripts for hardcoded 83, 80, 60. Proposed MVP only audits sanitized user CSV by deterministic browser rules; does NOT scan live configurations. Lovable free includes 5 lovable.app domains, 5 daily build credits capped 30/mo, 20 cloud credits/mo; production beyond grant may cost. Existing initial 190 credits cannot be claimed buildable within one free month; no measured deployment consumption.",
+      "evidence_remediation_batch": "quality-research-batch-013.json",
       "quality_evidence_resolved": false,
       "evidence_strength": "tech_and_primary_confirmed_competition_unresolved",
       "global_competitors": [],
@@ -1798,7 +1821,7 @@
           "credits": 45
         }
       ],
-      "mvp": "Lovable React SPA deployed on free lovable.app domain with no backend, auth, DB or paid API. Local browser File API CSV ingestion, regex/rules, downloaded remediation CSV; no server data uploads or persistently stored customer secrets.",
+      "mvp": "Actual hostname/server configuration discovery NOT provided; users must self-inventory and sanitize CSV. Free-plan capacity verified as grants, not guaranteed universal free production.",
       "working_logic": "Parse user-imported CSV in browser; check explicit renewal-days and policy thresholds; flag risky schedules, assign suggested owner and export deterministic audit CSV. No scanner/network access, no server persistence.",
       "technologies": [
         {
@@ -1825,17 +1848,43 @@
       "first_customer_plan": "Pilot with a managed-hosting agency using a synthetic or voluntarily shared CSV of renewal job schedules, no secrets.",
       "main_risk": "Missing authoritative direct competitor counts and potentially sensitive config; parser cannot read live systems.",
       "validation_assumption": "Buyer voluntarily supplies accurate sanitized schedule CSV; no live discovery implied.",
-      "competition_confidence": "not_verified",
+      "competition_confidence": "partial_no_defensible_zero",
       "competition_search_terms": [
         "Türkiye TLS 64 gün yenileme cron yapılandırma tarama aracı",
         "certificate renewal cadence config lint scanner tool",
         "90 day renewal hardcoded schedule audit"
       ],
-      "market_gap": "Niche configuration-rule audit need from new 64-day certificate policy; novelty and exact TR/global direct competition unverified."
+      "market_gap": "Niche configuration-rule audit need from new 64-day certificate policy; novelty and exact TR/global direct competition unverified.",
+      "quality_resolution": "unresolved_original_criteria",
+      "source_evidence_status": "original_and_correlated_researched",
+      "canonical_news_source": "original_trigger_verified_with_correlated_sources",
+      "adjacent_competitors": [
+        {
+          "name": "acme.sh",
+          "url": "https://github.com/acmesh-official/acme.sh",
+          "classification": "adjacent",
+          "reason": "ACME client automatically renews certs based on ARI or 30-day fallback; does not audit arbitrary customer-owned hardcoded cron schedules by CSV."
+        },
+        {
+          "name": "Cloudflare Certificate Lifecycle Management",
+          "url": "https://www.cloudflare.com/tr-tr/application-services/solutions/certificate-lifecycle-management/",
+          "classification": "adjacent",
+          "reason": "Managed certificate renewal, not static CSV linter of external renewal scripts."
+        },
+        {
+          "name": "DigiCert Trust Lifecycle Manager",
+          "url": "https://docs.digicert.com/en/certcentral/automate-certificate-lifecycle.html",
+          "classification": "adjacent",
+          "reason": "Certificate automation/renewal control, not verified CSV lint for legacy 90-day cron scripts."
+        }
+      ],
+      "competition_count_scope": "Known named direct examples only; null means unverified, NOT zero. No exhaustive universe claimed.",
+      "cash_proof_status": "conditional_zero_external_cash_browser_only_low_traffic; not_proven_at_expected_190_build_credits_and_operational_scale",
+      "lovable_credit_verification": "estimated_190_credits_not_in_free_30_per_month"
     }
   ],
   "source": "canonical_chunks_001_to_017",
   "note": "Derived mirror only; classification and evidence fields copied unchanged from canonical chunks. Does not resolve 49 evidence research blockers.",
   "mirror_source": "canonical validation/chunk-NNN.json",
-  "last_remediation_batch": "quality-research-batch-012.json"
+  "last_remediation_batch": "quality-research-batch-013.json"
 }
