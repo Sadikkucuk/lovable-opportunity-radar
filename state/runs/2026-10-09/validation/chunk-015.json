@@ -148,21 +148,22 @@
       "validation_index": 74,
       "canonical_key": "sme-it-teams-deploying-desktop-or-coding-agents|define-least-privilege-resource-scopes-for-each-agent-before-deploymen|agent-registry-with-resource-permission-matrix-json-policy-drafts-vers",
       "canonical_news_url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
-      "qualification_status": "rejected_evidence",
+      "qualification_status": "rejected_competition",
       "development_verified": true,
       "turkiye_direct_competitor_count": null,
-      "global_direct_competitor_count": null,
+      "global_direct_competitor_count": 1,
       "external_cash_cost": "not_required_for_rejected_candidate",
-      "research_status": "researched_but_gap_remains",
+      "research_status": "complete_rejected_competition",
       "publication_eligible": false,
-      "rejection_reason": "Separate presandbox permission policy JSON approval and version-signoff product vs execution/approval tools not verified",
+      "rejection_reason": "Agent platform/security lead can author pre-run least privilege access policy in editor/GitOps, review changes, attach approval workflows and audit versions, even before agent execution.",
       "canonical_news_source": "verified_primary_vendor_release",
       "source_evidence_status": "verified_primary_vendor_release",
-      "source_verification_note": "Windows MXC authoring JSON sandbox resource policies + Permit runtime approvals confirmed",
+      "source_verification_note": "Permit's official docs combine agent resource policy editor, approval elements, GitOps and immutable decision log; Microsoft MXC is adjacent policy enforcement.",
       "source_links": [
         "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
         "https://www.lovable.dev/pricing",
-        "https://docs.permit.io/ai-security/access-request-mcp/overview/"
+        "https://docs.permit.io/ai-security/access-request-mcp/overview/",
+        "https://www.permit.io/"
       ],
       "turkiye_competitors": [],
       "adjacent_competitors": [
@@ -173,14 +174,21 @@
           "reason": "MXC generates/uses JSON containment policy and admin policy, but separate predeployment approval/version history not documented."
         }
       ],
-      "global_competitors": [],
+      "global_competitors": [
+        {
+          "name": "Permit.io Policy Editor GitOps agent access control",
+          "url": "https://www.permit.io/",
+          "classification": "direct",
+          "reason": "Agent platform/security lead can author pre-run least privilege access policy in editor/GitOps, review changes, attach approval workflows and audit versions, even before agent execution."
+        }
+      ],
       "turkiye_competition_research": "Targeted Turkish terms screened; counts are verified named direct vendors only, NOT market totals. Unknown is not zero.",
       "competition_search_terms": [
         "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
         "Microsoft Execution Containers"
       ],
       "evidence_strength": "verified_primary_vendor_release",
-      "competition_confidence": "insufficient_full_workflow_evidence",
+      "competition_confidence": "verified_same_buyer_job_workflow",
       "evidence_remediation_batch": "quality-research-batch-007.json"
     },
     {
