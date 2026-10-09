@@ -19,8 +19,8 @@
   "feed_items_expected": 240,
   "feed_items_triaged": 240,
   "candidate_article_count": 12,
-  "original_articles_verified": 7,
-  "full_article_not_verified": 5,
+  "original_articles_verified": 9,
+  "full_article_not_verified": 3,
   "noise_or_no_opportunity_count": 228,
   "raw_opportunity_count": 12,
   "raw_opportunities": [
@@ -148,9 +148,9 @@
         "InnovationAus"
       ],
       "canonical_source_urls": [
-        "https://www.abc.net.au/news/2026-10-08/federal-politics-ai-regulation-andrew-charlton-speech/107241674"
+        "https://www.minister.industry.gov.au/charlton/media/speech-the-sydney-trust-and-safety-festival"
       ],
-      "article_verification": "insufficient",
+      "article_verification": "full",
       "novelty_delta": "Headline-level signal of changed workflow; original source and actual delta not independently verified.",
       "delta_types": [
         "WORKFLOW_DELTA"
@@ -168,8 +168,8 @@
       "estimated_lovable_credits": 190,
       "draft_canonical_key": "ai-product-vendors|track-evolving-ai-safety-obligations-and-evidence-owners|manual-obligation-to-evidence-matrix",
       "evidence_notes": {
-        "source_fact": "The linked source was not independently confirmed to support this specific feed event; verification pending.",
-        "source_inference_boundary": "Article verifies underlying development, not customer willingness to pay.",
+        "source_fact": "Original ministerial speech October 8 confirms proposed risk-based frontier AI safety standards, not enacted legal obligations.",
+        "source_inference_boundary": "Underlying development confirmed; product opportunity and demand remain hypotheses.",
         "external_cash_proof": "not verified"
       }
     },
@@ -261,7 +261,7 @@
       "canonical_source_urls": [
         "https://www.ntu.ac.uk/about-us/news/news-articles/2026/10/elderly-could-live-independently-for-longer-thanks-to-new-home-sensor-system"
       ],
-      "article_verification": "insufficient",
+      "article_verification": "full",
       "novelty_delta": "Headline-level signal of changed workflow; original source and actual delta not independently verified.",
       "delta_types": [
         "WORKFLOW_DELTA"
@@ -279,8 +279,8 @@
       "estimated_lovable_credits": 190,
       "draft_canonical_key": "home-care-monitoring-operators|track-human-review-and-escalation-of-home-monitoring-ai-alerts|alert-triage-escalation-and-decision-record",
       "evidence_notes": {
-        "source_fact": "The linked source was not independently confirmed to support this specific feed event; verification pending.",
-        "source_inference_boundary": "Article verifies underlying development, not customer willingness to pay.",
+        "source_fact": "Original NTU October 8 research announcement confirms radar, thermal and smart plug sensor prototype and carer alert concept, not commercial deployment.",
+        "source_inference_boundary": "Underlying development confirmed; product opportunity and demand remain hypotheses.",
         "external_cash_proof": "not verified"
       }
     },
@@ -483,15 +483,15 @@
     "method": "Headline-level first-pass triage across all 240 records; 12 opportunity hypotheses recorded for source verification.",
     "unverified_candidate_indexes": [
       1,
-      4,
       5,
-      7,
       9
     ],
     "verified_primary_source_titles": [
       "OEPSAŞ’tan elektrik aboneliklerine dijital çözüm - PetroTurk",
       "Google, SynthID Detector'ı herkesin kullanımına açtı - Webrazzi",
+      "AI firms to carry safety burden under new laws, Charlton says - InnovationAus.com",
       "Kuka integriert KI-Vision direkt in die Robotersteuerung - Automationspraxis",
+      "NTU develops AI system to monitor older people at home - The Engineer",
       "Swiss pension fund hit by data leak after cyber attack on software provider - Reuters",
       "SAP arayüzüne stablecoin butonu geliyor: Kurumsal ödemelerde yeni dönem - FinTech İstanbul",
       "Shift Left Complicates Fab Data Management - Semiconductor Engineering",
@@ -500,5 +500,5 @@
   },
   "missing_batches": [],
   "failure_reason": "Source-to-event mismatches and incomplete per-record triage evidence require verification; do not treat this worker as fully validated.",
-  "verification_note": "Seven of twelve candidate articles have matching original/primary source confirmation; five pending. Per-record triage audit still pending."
+  "verification_note": "Nine matching original/primary source signals confirmed; three remain pending (EU parcels, medical-component reuse, EKB specialist regulation). Per-record triage audit not reconstructed."
 }
