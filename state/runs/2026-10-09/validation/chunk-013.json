@@ -173,26 +173,34 @@
       "turkiye_direct_competitor_count": null,
       "global_direct_competitor_count": null,
       "external_cash_cost": "not_required_for_rejected_candidate",
-      "research_status": "evidence_researched_incomplete",
+      "research_status": "researched_unresolved",
       "publication_eligible": false,
-      "rejection_reason": "Cross-tactile sensor schema and calibration need confirmed by open academic data/Contour, but separately sold metadata registry with lab acceptance signoff and buyer purchasing intent unproven.",
+      "rejection_reason": "Cross-sensor technical problem is verified but product differentiation/actual purchasing customer and complete competitor check remain open.",
       "global_competitors": [],
       "source_links": [
         "https://www.huxiu.com/article/4895924.html",
         "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adrr.70169",
         "https://lannwei.github.io/Tactile_Database/",
         "https://www.contouringtouch.com/",
-        "https://rohankotanu.github.io/3DCal/"
+        "https://rohankotanu.github.io/3DCal/",
+        "https://arxiv.org/abs/2606.25877",
+        "https://open-x-tactile.github.io/"
       ],
-      "canonical_news_source": "original_Chinese_report_with_academic_corroboration",
-      "source_verification_note": "Cross-tactile sensor schema and calibration need confirmed by open academic data/Contour, but separately sold metadata registry with lab acceptance signoff and buyer purchasing intent unproven.",
-      "source_evidence_status": "original_Chinese_report_with_academic_corroboration",
+      "canonical_news_source": "original_trigger_verified_with_correlated_sources",
+      "source_verification_note": "TacVerse (7 tactile sensors and 106,800 images) confirms sensor shift across three tasks. Open-X-Tactile has dataset metadata search by sensor/data type. Neither source independently establishes lab-managed calibration acceptance signoff and experimental dataset version governance.",
+      "source_evidence_status": "original_and_correlated_researched",
       "adjacent_competitors": [
         {
-          "name": "TacVerse",
+          "name": "TacVerse multi-sensor benchmark",
           "url": "https://lannwei.github.io/Tactile_Database/",
           "classification": "adjacent",
-          "reason": "Public benchmark and reproducibility dataset rather than paid calibration-signoff registry for sensor companies."
+          "reason": "Existing cross-sensor evaluation data, not demonstrated lab-owned registry with calibrated sensor-specific approval outcomes."
+        },
+        {
+          "name": "Open-X-Tactile index",
+          "url": "https://open-x-tactile.github.io/",
+          "classification": "adjacent",
+          "reason": "Sensor and dataset catalog/preview, not confirmed experimental lab signoff, calibration history or compatibility acceptance workflow."
         }
       ],
       "turkiye_competitors": [],
@@ -202,11 +210,13 @@
         "TacVerse"
       ],
       "evidence_strength": "unresolved_buyer_and_competition",
-      "competition_confidence": "not_sufficient_for_exact_direct_count",
-      "evidence_remediation_batch": "quality-research-batch-009.json",
-      "quality_evidence_resolved": false
+      "competition_confidence": "partial_no_defensible_zero",
+      "evidence_remediation_batch": "quality-research-batch-013.json",
+      "quality_evidence_resolved": false,
+      "quality_resolution": "unresolved_original_criteria",
+      "competition_count_scope": "Known named direct examples only; null means unverified, NOT zero. No exhaustive universe claimed."
     }
   ],
-  "notes": "Evidence-gate decisions; global competitor counts are identified examples, not exhaustive; Türkiye unknown. | 2026-10-09 Quality remediation batch004: 4 records source/research and evidenced competitor decisions synchronized from research notes. | 2026-10-09 verified evidence batch009, reviewed 65; no automatic publication",
+  "notes": "Evidence-gate decisions; global competitor counts are identified examples, not exhaustive; Türkiye unknown. | 2026-10-09 Quality remediation batch004: 4 records source/research and evidenced competitor decisions synchronized from research notes. | 2026-10-09 verified evidence batch009, reviewed 65; no automatic publication | batch013 reviewed 1 candidate(s); source/competitor/cash caveats authoritative; unresolved candidates preserved.",
   "completed_at": "2026-10-09"
 }
