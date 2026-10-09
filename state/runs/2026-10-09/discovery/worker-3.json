@@ -22,7 +22,7 @@
   "original_articles_verified": 12,
   "full_article_not_verified": 0,
   "noise_or_no_opportunity_count": 228,
-  "raw_opportunity_count": 13,
+  "raw_opportunity_count": 14,
   "raw_opportunities": [
     {
       "raw_id": "w3-20261009-001",
@@ -504,6 +504,42 @@
       "evidence_notes": {
         "source_fact": "Semiconductor Engineering discusses visibility gaps in complex chip manufacturing.",
         "source_inference_boundary": "Workflow product and demand are hypotheses."
+      }
+    },
+    {
+      "raw_id": "w3-20261009-014",
+      "supporting_article_ids": [
+        "77d3ea765007474988281b3e"
+      ],
+      "supporting_article_titles": [
+        "Finding Critical Defects Before They Become Costly Failures: Process Control For Hybrid Bonding And Advanced Packaging - Semiconductor Engineering"
+      ],
+      "supporting_sources": [
+        "Semiconductor Engineering"
+      ],
+      "canonical_source_urls": [
+        "https://semiengineering.com/finding-critical-defects-before-they-become-costly-failures-process-control-for-hybrid-bonding-and-advanced-packaging/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Advanced packaging inspection complexity increases defect disposition and process-control evidence burden.",
+      "delta_types": [
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "Advanced packaging defect disposition",
+      "target_customer": "Advanced packaging process engineers",
+      "buyer": "Yield engineering manager",
+      "job_to_be_done": "Track inspection evidence and approve lot-level defect dispositions",
+      "current_friction": "Inspection evidence and defect decisions are fragmented",
+      "product_mechanism": "Defect review queue with evidence and disposition approvals",
+      "one_sentence_concept": "Hybrid bonding defect disposition ledger",
+      "why_now": "Hybrid bonding and advanced packaging process complexity",
+      "scope_hint": "unclear",
+      "zero_cost_feasibility": "doubtful",
+      "estimated_lovable_credits": 190,
+      "draft_canonical_key": "advanced-packaging|defect-disposition|evidence-ledger",
+      "evidence_notes": {
+        "source_fact": "Original Semiconductor Engineering process-control article discusses critical defects in hybrid bonding and advanced packaging.",
+        "source_inference_boundary": "Proposed software workflow is a hypothesis."
       }
     }
   ],
@@ -2051,8 +2087,8 @@
         "position": 30,
         "feed_id": "77d3ea765007474988281b3e",
         "title": "Finding Critical Defects Before They Become Costly Failures: Process Control For Hybrid Bonding And Advanced Packaging - Semiconductor Engineering",
-        "decision": "verified_candidate_pending_extraction",
-        "reason": "Original article reviewed; actionable semiconductor process evidence found; distinct raw opportunity pending recording"
+        "decision": "opportunity_recorded",
+        "reason": "Original source reviewed and distinct process-control workflow extracted"
       },
       {
         "batch": 17,
@@ -2710,12 +2746,6 @@
       },
       {
         "batch": 17,
-        "position": 30,
-        "feed_id": "77d3ea765007474988281b3e",
-        "title": "Finding Critical Defects Before They Become Costly Failures: Process Control For Hybrid Bonding And Advanced Packaging - Semiconductor Engineering"
-      },
-      {
-        "batch": 17,
         "position": 31,
         "feed_id": "ff6e1a530b7d9b0b5c837517",
         "title": "迁移技术机理层｜负迁移发生的底层诱因 - 雷峰网"
@@ -2795,6 +2825,6 @@
     ]
   },
   "missing_batches": [],
-  "failure_reason": "56 further queued signals require review",
+  "failure_reason": "55 additional signals await review",
   "verification_note": "Corrected audit position: verified Semiconductor Engineering Closing The Visibility Gap is batch 18 position 37; batch 17 position 37 remains unverified."
 }
