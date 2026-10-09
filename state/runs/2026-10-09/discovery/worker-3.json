@@ -22,7 +22,7 @@
   "original_articles_verified": 12,
   "full_article_not_verified": 0,
   "noise_or_no_opportunity_count": 228,
-  "raw_opportunity_count": 18,
+  "raw_opportunity_count": 22,
   "raw_opportunities": [
     {
       "raw_id": "w3-20261009-001",
@@ -686,6 +686,150 @@
         "source_fact": "Vendor-reported fleet and savings metrics are not independently audited; Trakya transferability is a hypothesis for industrial corridors.",
         "source_inference_boundary": "Product and customer willingness to pay are hypotheses."
       }
+    },
+    {
+      "raw_id": "w3-20261009-019",
+      "supporting_article_ids": [
+        "25677f2e70e7aadfcf88b425"
+      ],
+      "supporting_article_titles": [
+        "Man gets 2 years for $3.5M Amazon fraud using 23 trucking accounts - FreightWaves"
+      ],
+      "supporting_sources": [
+        "FreightWaves"
+      ],
+      "canonical_source_urls": [
+        "https://www.freightwaves.com/news/man-gets-2-years-for-3-5m-amazon-fraud-using-23-trucking-accounts"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "A prosecuted fraud case involved false carrier identities and fictitious trailer movements exploiting manual overrides; incident dated 2019–2021, sentenced 2026.",
+      "delta_types": [
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "Freight carrier onboarding and movement exception review",
+      "target_customer": "Freight marketplaces and large shippers",
+      "buyer": "Freight risk operations lead",
+      "job_to_be_done": "Audit carrier identity evidence and manual movement overrides",
+      "current_friction": "Identity documents, exception approvals and trailer movement proofs are scattered",
+      "product_mechanism": "Carrier evidence register, manual override review queue and approval log",
+      "one_sentence_concept": "Freight carrier identity and manual-override audit desk",
+      "why_now": "A prosecuted fraud case involved false carrier identities and fictitious trailer movements exploiting manual overrides; incident dated 2019–2021, sentenced 2026.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 130,
+      "draft_canonical_key": "freight-platform|carrier-identity-override|audit-desk",
+      "evidence_notes": {
+        "source_fact": "Source confirms historical fraud; it does not show the same exploit remains possible today.",
+        "source_inference_boundary": "Product demand, exact control effectiveness and commercial value not verified."
+      }
+    },
+    {
+      "raw_id": "w3-20261009-020",
+      "supporting_article_ids": [
+        "09f28dfe69c03b74d16d4517"
+      ],
+      "supporting_article_titles": [
+        "Cheapskates wouldn't pay for security help, got hit by ransomware, and went bust months later - The Register"
+      ],
+      "supporting_sources": [
+        "The Register"
+      ],
+      "canonical_source_urls": [
+        "https://www.theregister.com/security/2026/10/08/cheapskates-wouldnt-pay-for-security-help-got-hit-by-ransomware-and-went-bust-months-later/5301757"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Reported small-business ransomware incident illustrates business continuity failures and need for independently recoverable backups.",
+      "delta_types": [
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "SMB backup and disaster recovery readiness",
+      "target_customer": "Small industrial firms and construction contractors",
+      "buyer": "Operations manager or managed IT provider",
+      "job_to_be_done": "Prove backup restore tests and assign recovery ownership",
+      "current_friction": "Backup presence is mistaken for proven recoverability",
+      "product_mechanism": "Restore-test schedule, evidence uploads, asset mapping and escalation reminders",
+      "one_sentence_concept": "SMB recovery drill evidence tracker",
+      "why_now": "Reported small-business ransomware incident illustrates business continuity failures and need for independently recoverable backups.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 130,
+      "draft_canonical_key": "smb|recovery-restore-tests|evidence-tracker",
+      "evidence_notes": {
+        "source_fact": "Anecdotal case; no claim of prevalence. Trakya transferability is a hypothesis for local industrial SMEs.",
+        "source_inference_boundary": "Product demand, exact control effectiveness and commercial value not verified."
+      }
+    },
+    {
+      "raw_id": "w3-20261009-021",
+      "supporting_article_ids": [
+        "ae615a4a235fbd3653efddc8"
+      ],
+      "supporting_article_titles": [
+        "AI 해킹, 악성 IP 차단만으론 역부족…공격 행위 탐지 중요 - 전자신문"
+      ],
+      "supporting_sources": [
+        "ETNews"
+      ],
+      "canonical_source_urls": [
+        "https://www.etnews.com/20261008000316"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Investigators reported rotating IP addresses and anomalous high-volume customer-record lookups, reducing value of IP-reputation-only defenses.",
+      "delta_types": [
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "Third-party and customer portal access review",
+      "target_customer": "Financial service providers and outsourced portal operators",
+      "buyer": "Application security manager",
+      "job_to_be_done": "Document abnormal lookup patterns, escalation and authorization checks",
+      "current_friction": "IP blocklists miss account-level data enumeration and weak object authorization",
+      "product_mechanism": "Upload access-log summaries, investigate query-pattern alerts and record corrective actions",
+      "one_sentence_concept": "External portal abnormal data-access review ledger",
+      "why_now": "Investigators reported rotating IP addresses and anomalous high-volume customer-record lookups, reducing value of IP-reputation-only defenses.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 130,
+      "draft_canonical_key": "customer-portals|abnormal-record-access|investigation-ledger",
+      "evidence_notes": {
+        "source_fact": "ETNews reports S2W research; S2W did not directly investigate the affected financial firms, and actual AI exfiltration use is unconfirmed.",
+        "source_inference_boundary": "Product demand, exact control effectiveness and commercial value not verified."
+      }
+    },
+    {
+      "raw_id": "w3-20261009-022",
+      "supporting_article_ids": [
+        "bfc7237289d854138fa74e6b"
+      ],
+      "supporting_article_titles": [
+        "さくらインターネット、ユーザー専用のクローズド環境で生成AIモデルを利用可能 「さくらのAI Engine プライベートエディション」 - 株式会社インプレス"
+      ],
+      "supporting_sources": [
+        "AI Watch"
+      ],
+      "canonical_source_urls": [
+        "https://ai.watch.impress.co.jp/docs/news/2146857.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Dedicated GPU-hosted inference offering makes tenancy, data residency, model access and non-training assurances explicit procurement choices.",
+      "delta_types": [
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "Enterprise private AI service procurement and onboarding",
+      "target_customer": "Enterprises evaluating dedicated AI inference",
+      "buyer": "IT security and procurement manager",
+      "job_to_be_done": "Record contractual data-use promises, residency, access and isolation acceptance",
+      "current_friction": "Vendor security assurances are scattered across sales material and contracts",
+      "product_mechanism": "Provider control matrix, document evidence and acceptance signoffs",
+      "one_sentence_concept": "Private model hosting security and data residency acceptance register",
+      "why_now": "Dedicated GPU-hosted inference offering makes tenancy, data residency, model access and non-training assurances explicit procurement choices.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 130,
+      "draft_canonical_key": "private-ai-inference|security-assurance|acceptance-register",
+      "evidence_notes": {
+        "source_fact": "Original Impress report links Sakura's official October 8 announcement; product need and buying behavior are inferred.",
+        "source_inference_boundary": "Product demand, exact control effectiveness and commercial value not verified."
+      }
     }
   ],
   "triage_audit": {
@@ -904,8 +1048,8 @@
         "position": 24,
         "feed_id": "25677f2e70e7aadfcf88b425",
         "title": "Man gets 2 years for $3.5M Amazon fraud using 23 trucking accounts - FreightWaves",
-        "decision": "requires_original_article_review",
-        "reason": "Potential operational, regulatory or infrastructure delta; original article and JTBD not yet checked"
+        "decision": "opportunity_recorded",
+        "reason": "Original matching publication checked; separate workflow hypothesis documented."
       },
       {
         "batch": 13,
@@ -1272,8 +1416,8 @@
         "position": 30,
         "feed_id": "bfc7237289d854138fa74e6b",
         "title": "さくらインターネット、ユーザー専用のクローズド環境で生成AIモデルを利用可能 「さくらのAI Engine プライベートエディション」 - 株式会社インプレス",
-        "decision": "requires_original_article_review",
-        "reason": "Potential operational, regulatory or infrastructure delta; original article and JTBD not yet checked"
+        "decision": "opportunity_recorded",
+        "reason": "Original matching publication checked; separate workflow hypothesis documented."
       },
       {
         "batch": 14,
@@ -2056,8 +2200,8 @@
         "position": 8,
         "feed_id": "09f28dfe69c03b74d16d4517",
         "title": "Cheapskates wouldn't pay for security help, got hit by ransomware, and went bust months later - The Register",
-        "decision": "requires_original_article_review",
-        "reason": "Potential operational, regulatory or infrastructure delta; original article and JTBD not yet checked"
+        "decision": "opportunity_recorded",
+        "reason": "Original matching publication checked; separate workflow hypothesis documented."
       },
       {
         "batch": 17,
@@ -2536,8 +2680,8 @@
         "position": 28,
         "feed_id": "ae615a4a235fbd3653efddc8",
         "title": "AI 해킹, 악성 IP 차단만으론 역부족…공격 행위 탐지 중요 - 전자신문",
-        "decision": "requires_original_article_review",
-        "reason": "Potential operational, regulatory or infrastructure delta; original article and JTBD not yet checked"
+        "decision": "opportunity_recorded",
+        "reason": "Original matching publication checked; separate workflow hypothesis documented."
       },
       {
         "batch": 18,
@@ -2650,18 +2794,6 @@
         "title": "机器人触觉传感器商业化路径分叉：硬件先行，数据与模型商业化尚需验证 - 虎嗅网"
       },
       {
-        "batch": 13,
-        "position": 24,
-        "feed_id": "25677f2e70e7aadfcf88b425",
-        "title": "Man gets 2 years for $3.5M Amazon fraud using 23 trucking accounts - FreightWaves"
-      },
-      {
-        "batch": 14,
-        "position": 30,
-        "feed_id": "bfc7237289d854138fa74e6b",
-        "title": "さくらインターネット、ユーザー専用のクローズド環境で生成AIモデルを利用可能 「さくらのAI Engine プライベートエディション」 - 株式会社インプレス"
-      },
-      {
         "batch": 14,
         "position": 35,
         "feed_id": "14dd9ffcf2c25ae369614427",
@@ -2702,18 +2834,6 @@
         "position": 4,
         "feed_id": "78bb039162cf7e052c75c297",
         "title": "相次ぐ情報漏えい、攻撃側のAI活用「間違いない」 防御側はどう使うか 傾向と対策を大手ベンダー各社に聞く - ITmedia"
-      },
-      {
-        "batch": 17,
-        "position": 8,
-        "feed_id": "09f28dfe69c03b74d16d4517",
-        "title": "Cheapskates wouldn't pay for security help, got hit by ransomware, and went bust months later - The Register"
-      },
-      {
-        "batch": 18,
-        "position": 28,
-        "feed_id": "ae615a4a235fbd3653efddc8",
-        "title": "AI 해킹, 악성 IP 차단만으론 역부족…공격 행위 탐지 중요 - 전자신문"
       }
     ],
     "bulk_screening": {
@@ -2765,6 +2885,6 @@
     }
   },
   "missing_batches": [],
-  "failure_reason": "13 remaining signals require verification before exhaustive extraction is complete.",
-  "verification_note": "Three original publications verified in bulk; 13 remaining queued signals require original-source review."
+  "failure_reason": "9 remaining candidate records require original-article checks and decisions.",
+  "verification_note": "Four original source-supported raw opportunities added in one bulk update; nine remain pending."
 }
