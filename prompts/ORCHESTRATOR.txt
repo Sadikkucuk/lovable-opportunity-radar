@@ -442,3 +442,9 @@ AUTOMATION RESILIENCE — HARD RULE
 - Never synthesize or backfill a worker from feed counts alone.
 - If a frozen generation is no longer available in docs/batches/index.json, do not repair
   against a newer generation. Mark RADAR_INPUT_MISMATCH and wait for an explicit clean rerun.
+
+
+==================================================
+USER-EXCLUDED CANDIDATES — NONPUBLICATION DISPOSITION
+==================================================
+When the user explicitly excludes a candidate, retain its allowed validator qualification_status and set user_excluded=true, publication_eligible=false. Such a record is outside the publishable set, even if its independent competitor/evidence research remains unresolved. Do not represent exclusion as evidence verification or market disqualification. For the publication gate, compute pending mandatory evidence only for candidates not user_excluded. Report excluded unresolved evidence separately as informational debt, not as proof of eligibility. The catalog must never include excluded candidates. Preserve original evidence notes and validator parity; all other required gate checks remain mandatory. A zero-new-idea final report is permitted only if all non-excluded candidates pass the complete gate and catalog preservation checks.
