@@ -1,0 +1,104 @@
+{
+  "run_date": "2026-10-09",
+  "stage": "QUALITY_EVIDENCE_REMEDIATION",
+  "original_workflow_stages": [
+    "Discovery",
+    "Merge",
+    "Validation",
+    "Quality Gate",
+    "Finalizer"
+  ],
+  "frozen_generation": "2026-10-09T02:06:51Z",
+  "discovery": {
+    "workers_complete": 4,
+    "feed_records_triaged": 1000,
+    "original_articles_verified_worker_reported": 74,
+    "original_article_validation_scope_note": "Worker counts are articles verified, not the 1000 feed records."
+  },
+  "merge": {
+    "raw_opportunities": 86,
+    "candidate_count": 84
+  },
+  "validation": {
+    "canonical_chunks": 17,
+    "classification_count": 84,
+    "validator_a": 42,
+    "validator_b": 42,
+    "mirror_mismatch": 0,
+    "qualification_counts": {
+      "rejected_competition": 61,
+      "rejected_evidence": 22,
+      "rejected_cost": 1,
+      "qualified": 0
+    }
+  },
+  "batch007": {
+    "researched_prior_evidence_candidates": 33,
+    "competitor_evidence_resolved": 15,
+    "prior_evidence_still_unresolved": 18,
+    "closed_indexes": [
+      13,
+      21,
+      30,
+      31,
+      35,
+      36,
+      39,
+      42,
+      46,
+      52,
+      53,
+      55,
+      57,
+      74,
+      76
+    ],
+    "unresolved_prior_indexes": [
+      4,
+      6,
+      12,
+      24,
+      40,
+      43,
+      44,
+      45,
+      47,
+      48,
+      50,
+      51,
+      54,
+      56,
+      60,
+      65,
+      69,
+      71
+    ],
+    "unresolved_other_indexes": [
+      81,
+      82,
+      83,
+      84
+    ],
+    "remaining_total": 22
+  },
+  "quality_gate": {
+    "status": "publication_blocked",
+    "can_publish": false,
+    "next_stage": "QUALITY_EVIDENCE_REMEDIATION",
+    "catalog_history_untouched": true,
+    "finalizer_run": false
+  },
+  "next_steps": [
+    "Examine the 18 remaining older evidence cases using authentic source, same-buyer/need/flow direct rival comparisons; retain unknown not zero.",
+    "Reconcile evidence in four remaining indices 81-84 from existing research; update canonical chunks/mirrors only on valid proof.",
+    "For any positively viable candidate verify genuinely zero external cash hosting, auth, storage and <=500 Lovable credits, then clear Quality Gate.",
+    "If and only if every hard gate passes run Finalizer with history semantic dedupe and append/update-only catalog publication."
+  ],
+  "evidence_files": [
+    "validation/quality-research-batch-007.json",
+    "validation/quality-audit.json",
+    "validation/quality-repair-progress.json",
+    "validation/publication-gate-eligibility.json"
+  ],
+  "scope_note": "15 blocked candidates were rejected after verified competing workflow, not qualified; 18 old + 4 other remain. No forced zero-publish decision."
+}
