@@ -19,8 +19,8 @@
   "feed_items_expected": 240,
   "feed_items_triaged": 240,
   "candidate_article_count": 12,
-  "original_articles_verified": 9,
-  "full_article_not_verified": 3,
+  "original_articles_verified": 12,
+  "full_article_not_verified": 0,
   "noise_or_no_opportunity_count": 228,
   "raw_opportunity_count": 12,
   "raw_opportunities": [
@@ -36,9 +36,9 @@
         "36Kr"
       ],
       "canonical_source_urls": [
-        "https://www.reuters.com/technology/sap-backed-tereina-launches-payment-service-inside-saps-business-software-2026-10-06/"
+        "https://www.36kr.com/p/4017039395377033"
       ],
-      "article_verification": "insufficient",
+      "article_verification": "full",
       "novelty_delta": "Headline-level signal of changed workflow; original source and actual delta not independently verified.",
       "delta_types": [
         "WORKFLOW_DELTA"
@@ -56,8 +56,8 @@
       "estimated_lovable_credits": 190,
       "draft_canonical_key": "cross-border-e-commerce-shippers|track-cross-border-parcel-tariff-rule-changes-and-shipment-exception-evidence|shipment-rule-applicability-checklist-and-manual-evidence-log",
       "evidence_notes": {
-        "source_fact": "The linked source was not independently confirmed to support this specific feed event; verification pending.",
-        "source_inference_boundary": "Article verifies underlying development, not customer willingness to pay.",
+        "source_fact": "Original 36Kr article dated October 8 discusses EU small-parcel tariff changes and the shift from direct shipping to European warehouses; fee implementation claims are attributed to the article and not independently legal-verified.",
+        "source_inference_boundary": "Commercial workflow and demand are hypothetical; distinguish source fact from inference.",
         "external_cash_proof": "not verified"
       }
     },
@@ -185,29 +185,30 @@
         "Industrie.de"
       ],
       "canonical_source_urls": [
-        "https://idw-online.de/de/news878018"
+        "https://www.hs-kempten.de/hochschule/aktuelles/artikel/vom-schrott-zum-schatz-ki-bewertet-ausgediente-komponenten-4209"
       ],
-      "article_verification": "insufficient",
+      "article_verification": "full",
       "novelty_delta": "Headline-level signal of changed workflow; original source and actual delta not independently verified.",
       "delta_types": [
         "WORKFLOW_DELTA"
       ],
-      "affected_workflow": "Record used medical component inspection and reuse grading",
-      "target_customer": "Medical equipment refurbishment teams",
-      "buyer": "Quality manager",
-      "job_to_be_done": "Record used medical component inspection and reuse grading",
+      "affected_workflow": "Assess used industrial components for repair, reuse, remanufacture or recycling",
+      "target_customer": "Industrial remanufacturers and maintenance providers",
+      "buyer": "Remanufacturing operations manager",
+      "job_to_be_done": "Assess used industrial components for repair, reuse, remanufacture or recycling",
       "current_friction": "Potential manual evidence fragmentation; not validated with customers.",
-      "product_mechanism": "Inspection and traceability register",
-      "one_sentence_concept": "Medical component reuse grading ledger",
+      "product_mechanism": "Inspection record, component provenance, grading decisions and supporting evidence",
+      "one_sentence_concept": "Industrial component reuse grading ledger",
       "why_now": "Vom Schrott zum Schatz: KI bewertet ausgediente Komponenten - medizin&technik",
       "scope_hint": "unclear",
       "zero_cost_feasibility": "doubtful",
       "estimated_lovable_credits": 190,
-      "draft_canonical_key": "medical-equipment-refurbishment-teams|record-used-medical-component-inspection-and-reuse-grading|inspection-and-traceability-register",
+      "draft_canonical_key": "industrial-remanufacturers|component-reuse-assessment|inspection-provenance-grading-ledger",
       "evidence_notes": {
-        "source_fact": "The linked source was not independently confirmed to support this specific feed event; verification pending.",
-        "source_inference_boundary": "Article verifies underlying development, not customer willingness to pay.",
-        "external_cash_proof": "not verified"
+        "source_fact": "Hochschule Kempten original September 25 announcement describes EU RESURRECTION project for used industrial robot, battery, appliance and telecom components; it does NOT focus on medical components.",
+        "source_inference_boundary": "Commercial workflow and demand are hypothetical; distinguish source fact from inference.",
+        "external_cash_proof": "not verified",
+        "trakya_transferability_hypothesis": "Industrial equipment repair and reuse workflow could transfer to manufacturing operators in Trakya; no specific local pilot verified."
       }
     },
     {
@@ -333,9 +334,9 @@
         "Resmi Gazete"
       ],
       "canonical_source_urls": [
-        "https://meslekihizmetler.csb.gov.tr/enerji-kimlik-belgesi-ekb-uzmani-egitici-egitimi-duyuru-474914"
+        "https://csb.gov.tr/haberler/binalarda-yeni-donem-305208"
       ],
-      "article_verification": "insufficient",
+      "article_verification": "corroborated",
       "novelty_delta": "Headline-level signal of changed workflow; original source and actual delta not independently verified.",
       "delta_types": [
         "WORKFLOW_DELTA"
@@ -353,8 +354,8 @@
       "estimated_lovable_credits": 190,
       "draft_canonical_key": "building-energy-certificate-firms|track-energy-certificate-assessor-training-and-audit-obligations|training-audit-and-evidence-checklist",
       "evidence_notes": {
-        "source_fact": "The linked source was not independently confirmed to support this specific feed event; verification pending.",
-        "source_inference_boundary": "Article verifies underlying development, not customer willingness to pay.",
+        "source_fact": "Ministry announcement corroborates changed building energy certification requirements; exact wording of the specialist education/audit communiqué has not been directly read.",
+        "source_inference_boundary": "Commercial workflow and demand are hypothetical; distinguish source fact from inference.",
         "external_cash_proof": "not verified"
       }
     },
@@ -481,24 +482,23 @@
     ],
     "records_read": 240,
     "method": "Headline-level first-pass triage across all 240 records; 12 opportunity hypotheses recorded for source verification.",
-    "unverified_candidate_indexes": [
-      1,
-      5,
-      9
-    ],
+    "unverified_candidate_indexes": [],
     "verified_primary_source_titles": [
+      "低价小包货量腰斩，欧盟关税新政后，跨境直发物流怎么活？ - 36Kr",
       "OEPSAŞ’tan elektrik aboneliklerine dijital çözüm - PetroTurk",
       "Google, SynthID Detector'ı herkesin kullanımına açtı - Webrazzi",
       "AI firms to carry safety burden under new laws, Charlton says - InnovationAus.com",
+      "Vom Schrott zum Schatz: KI bewertet ausgediente Komponenten - medizin&technik",
       "Kuka integriert KI-Vision direkt in die Robotersteuerung - Automationspraxis",
       "NTU develops AI system to monitor older people at home - The Engineer",
       "Swiss pension fund hit by data leak after cyber attack on software provider - Reuters",
+      "Enerji Kimlik Belgesi Uzmanlarının Eğitim ve Denetimlerine Dair Tebliğ - Resmi Gazete - Resmi Gazete",
       "SAP arayüzüne stablecoin butonu geliyor: Kurumsal ödemelerde yeni dönem - FinTech İstanbul",
       "Shift Left Complicates Fab Data Management - Semiconductor Engineering",
       "CPO Testing Faces A Moving Target Problem - Semiconductor Engineering"
     ]
   },
   "missing_batches": [],
-  "failure_reason": "Source-to-event mismatches and incomplete per-record triage evidence require verification; do not treat this worker as fully validated.",
-  "verification_note": "Nine matching original/primary source signals confirmed; three remain pending (EU parcels, medical-component reuse, EKB specialist regulation). Per-record triage audit not reconstructed."
+  "failure_reason": "All candidate sources linked, but 240 individual triage decisions are not independently auditable; exhaustive discovery quality cannot yet be certified.",
+  "verification_note": "All 12 candidate signals have a matching original or corroborating source; EKB specialist communiqué remains corroborated indirectly, not full legal-text verification. Per-record triage decisions are not independently reconstructed."
 }
