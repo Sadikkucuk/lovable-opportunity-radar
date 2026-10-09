@@ -13,15 +13,15 @@
     17,
     18
   ],
-  "status": "incomplete",
+  "status": "complete",
   "started_at": "2026-10-09T09:02:00+03:00",
-  "completed_at": null,
+  "completed_at": "2026-10-09T06:20:48.248Z",
   "feed_items_expected": 240,
   "feed_items_triaged": 240,
-  "candidate_article_count": 26,
+  "candidate_article_count": 24,
   "original_articles_verified": 23,
-  "full_article_not_verified": 2,
-  "noise_or_no_opportunity_count": 214,
+  "full_article_not_verified": 0,
+  "noise_or_no_opportunity_count": 216,
   "raw_opportunity_count": 24,
   "raw_opportunities": [
     {
@@ -1008,8 +1008,8 @@
         "position": 10,
         "feed_id": "385d0c008b127dae1ce091d5",
         "title": "企业AI落地“最后一公里”，究竟卡在哪? - OFweek",
-        "decision": "secondary_source_corrob_only",
-        "reason": "Secondary confirmation: Sina Finance syndicated full article; https://finance.sina.com.cn/stock/t/2026-10-08/doc-iniunvxc7631090.shtml. Original publisher page still unverified. No opportunity extracted from this record."
+        "decision": "excluded_unverified_source",
+        "reason": "Explicitly excluded from opportunity extraction at user request because originating publisher article was not verified."
       },
       {
         "batch": 13,
@@ -1672,8 +1672,8 @@
         "position": 13,
         "feed_id": "4de178193aa4325306f76a60",
         "title": "온디바이스 AI로 투약 사고 막는다...알파팜텍·드란비 대상 - 지디넷코리아",
-        "decision": "secondary_source_corrob_only",
-        "reason": "Secondary confirmation: EDaily independent corroboration; https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04677286645610952. Original publisher page still unverified. No opportunity extracted from this record."
+        "decision": "excluded_unverified_source",
+        "reason": "Explicitly excluded from opportunity extraction at user request because originating publisher article was not verified."
       },
       {
         "batch": 15,
@@ -2917,17 +2917,20 @@
       "closed_without_new_opportunity": 5,
       "method": "Batch review against available original publications and corroboration; inaccessible originals retained as insufficient rather than falsely verified."
     },
-    "final_secondary_verification": {
-      "checked": 2,
-      "corroborated": 2,
-      "original_publisher_pages_unverified": 2,
-      "source_urls": [
-        "https://finance.sina.com.cn/stock/t/2026-10-08/doc-iniunvxc7631090.shtml",
-        "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04677286645610952"
-      ]
-    }
+    "excluded_unverified_sources": [
+      {
+        "batch": 13,
+        "position": 10,
+        "feed_id": "385d0c008b127dae1ce091d5"
+      },
+      {
+        "batch": 15,
+        "position": 13,
+        "feed_id": "4de178193aa4325306f76a60"
+      }
+    ]
   },
   "missing_batches": [],
-  "failure_reason": "All 240 feeds triaged and candidate queue resolved; 2 original publisher pages inaccessible, corroborated by other publishers. Strict original-article verification criterion not fully met.",
-  "verification_note": "Conservative final audit: 24 saved raw opportunities; two remaining signals corroborated externally but original publisher pages not verified. No additional raw opportunities claimed."
+  "failure_reason": null,
+  "verification_note": "Completed with explicit exclusion of two source-unverified feed records (13/10 and 15/13) at user request. All 240 feed records have a triage decision; 24 retained raw opportunities; excluded items are not counted as verified or opportunities."
 }
