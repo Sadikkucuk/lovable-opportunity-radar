@@ -1,6 +1,6 @@
 {
   "run_date": "2026-10-09",
-  "status": "RADAR_INCOMPLETE",
+  "status": "CLOSED_FOR_DAY_INCOMPLETE",
   "frozen_generation": "2026-10-09T02:06:51Z",
   "workers_complete": 4,
   "feed_items_triaged": 1000,
@@ -20,8 +20,15 @@
   "quality_research_pending_count": 6,
   "final_gate_status_path": "state/runs/2026-10-09/final/gate-status.json",
   "final_report_write_status": "blocked",
-  "next_stage": "QUALITY_EVIDENCE_REMEDIATION",
+  "next_stage": "NONE_USER_STOPPED_TODAY",
   "catalog_preserved": true,
   "validator_mirror_parity_verified": true,
-  "quality_batch_last_completed": "quality-research-batch-013.json"
+  "quality_batch_last_completed": "quality-research-batch-018.json",
+  "daily_run_closed_by_user": true,
+  "skipped_today_candidate_indexes": [
+    24,
+    45,
+    60
+  ],
+  "close_note": "User requested to skip three unresolved candidates and stop work for today. No evidence resolution claimed; final quality gate remains blocked and catalog unchanged."
 }
