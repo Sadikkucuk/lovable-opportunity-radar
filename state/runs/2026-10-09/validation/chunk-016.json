@@ -18,24 +18,33 @@
       "validation_index": 76,
       "canonical_key": "smes-and-saas-providers-relying-on-third-party-cloud-infrastructure|identify-downstream-services-and-customers-affected-by-an-upstream-out|vendor-to-service-dependency-map-incident-communications-and-customer-",
       "canonical_news_url": "https://www.watch.impress.co.jp/docs/news/2146693.html",
-      "qualification_status": "rejected_evidence",
+      "qualification_status": "rejected_competition",
       "development_verified": true,
       "turkiye_direct_competitor_count": null,
-      "global_direct_competitor_count": null,
+      "global_direct_competitor_count": 1,
       "external_cash_cost": "not_required_for_rejected_candidate",
-      "research_status": "evidence_reviewed_but_not_qualified",
+      "research_status": "complete_rejected_competition",
       "publication_eligible": false,
-      "rejection_reason": "Two adjacent vendor capabilities cover impact graph and communications, but full same-product vendor-to-service-to-customer evidence not independently verified.",
-      "global_competitors": [],
+      "rejection_reason": "SaaS operations owner; downstream service dependency mapping, impacted user-facing services, team notification and incident communications.",
+      "global_competitors": [
+        {
+          "name": "Rootly Automated Service Catalog and Incident Management",
+          "url": "https://rootly.com/blog/automated-service-catalog-incident-management",
+          "classification": "direct",
+          "reason": "SaaS operations owner; downstream service dependency mapping, impacted user-facing services, team notification and incident communications."
+        }
+      ],
       "canonical_news_source": "verified_original_report_plus_primary_vendor",
       "source_evidence_status": "verified_original_report_plus_primary_vendor",
-      "source_verification_note": "IDCF ransomware disrupted cloud infrastructure, affecting 495 customers; need to know dependent customer components and notify customers.",
+      "source_verification_note": "Upstream IDCF outage blast radius + Rootly matches vendor/service/incident response.",
       "source_links": [
         "https://www.watch.impress.co.jp/docs/news/2146693.html",
         "https://www.idcf.jp/news/topics/20261008001",
         "https://www.atlassian.com/software/compass/features",
         "https://support.atlassian.com/statuspage/docs/show-service-status-with-components/",
-        "https://www.lovable.dev/pricing"
+        "https://www.lovable.dev/pricing",
+        "https://www.watch.impress.co.jp/docs/news/2146931.html",
+        "https://rootly.com/blog/automated-service-catalog-incident-management"
       ],
       "turkiye_competitors": [],
       "adjacent_competitors": [
@@ -60,7 +69,7 @@
       ],
       "evidence_strength": "verified_original_report_plus_primary_vendor",
       "competition_confidence": "insufficient_full_workflow_evidence",
-      "evidence_remediation_batch": "quality-research-batch-005.json"
+      "evidence_remediation_batch": "quality-research-batch-007.json"
     },
     {
       "candidate_id": "radar-20261009-077",
