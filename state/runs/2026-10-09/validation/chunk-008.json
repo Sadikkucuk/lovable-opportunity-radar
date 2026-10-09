@@ -143,27 +143,53 @@
       "source_links": [
         "https://wastemanagement.economictimes.indiatimes.com/news/technology-innovation/how-ai-is-turning-wastewater-into-a-circular-economy-asset/134791356",
         "https://zenodo.org/records/3755380",
-        "https://www.sei.org/tools/revamp/"
+        "https://www.sei.org/tools/revamp/",
+        "https://www.envoraglobal.com/muhendislik-araclari/su-geri-kazanim-tasarruf/",
+        "https://www.envoraglobal.com/iletisim/",
+        "https://iwaponline.com/jwrd/article/10/4/419/77806/Economic-evaluation-of-different-treatment-options"
       ],
       "development_verified": "partial",
-      "turkiye_direct_competitor_count": null,
-      "global_direct_competitor_count": null,
-      "qualification_status": "rejected_evidence",
-      "research_status": "evidence_researched_incomplete",
+      "turkiye_direct_competitor_count": 1,
+      "global_direct_competitor_count": 2,
+      "qualification_status": "rejected_competition",
+      "research_status": "complete_rejected_competition",
       "external_cash_cost": "not_required_for_rejected_candidate",
       "competition_confidence": "limited_not_exhaustive",
       "publication_eligible": false,
-      "turkiye_competitors": [],
-      "global_competitors": [],
-      "rejection_reason": "Wastewater reuse and economics covered in Oct8 reporting. Open REVAMP/POSEIDON calculators are adjacent; verified industrial plant commercial buyer and Turkey/global software competitors not established.",
+      "turkiye_competitors": [
+        {
+          "name": "Envora Global — Su Geri Kazanım ve Tasarruf",
+          "url": "https://www.envoraglobal.com/muhendislik-araclari/su-geri-kazanim-tasarruf/",
+          "classification": "direct",
+          "reason": "Türkiye-based industrial water-reuse engineering buyer, same manual scenario input/assumptions and recoverable volume/cost-savings/payback decision job. Caveat: no persistent multi-project ledger on public calculator."
+        }
+      ],
+      "global_competitors": [
+        {
+          "name": "WaReIp model (industrial park water reuse)",
+          "url": "https://iwaponline.com/jwrd/article/10/4/419/77806/Economic-evaluation-of-different-treatment-options",
+          "classification": "direct",
+          "reason": "Industrial park plant utilities buyer; manually parameterized alternatives and operating/installation costs side-by-side."
+        },
+        {
+          "name": "Poseidon 2.0 wastewater reuse decision support",
+          "url": "https://zenodo.org/records/3755380",
+          "classification": "direct",
+          "reason": "Wastewater reuse engineering decision maker, manual treatment scenarios, technology trade-offs and cost evaluations."
+        }
+      ],
+      "rejection_reason": "Named verified Turkish direct alternative already performs core water-recovery flow/value/OPEX/CAPEX assumptions in same industrial reuse workflow. Standalone persistent audit ledger difference alone insufficient to establish paid market gap; no novelty claim.",
       "lovable_credits_total": 180,
       "market_gap": "Not established",
-      "source_verification_note": "Wastewater reuse and economics covered in Oct8 reporting. Open REVAMP/POSEIDON calculators are adjacent; verified industrial plant commercial buyer and Turkey/global software competitors not established.",
-      "evidence_remediation_batch": "quality-research-batch-009.json",
-      "quality_evidence_resolved": false,
-      "evidence_strength": "unresolved_direct_competition_and_paid_buyer"
+      "source_verification_note": "Envora's Turkish-language tool takes wastewater flow, recovery rate, annual operating days, water tariff, discharge, OPEX and CAPEX; calculates annual volume, net savings and payback. Vendor lists Istanbul office. Independent academic models WaReIp and Poseidon already compare reuse alternatives and costs.",
+      "evidence_remediation_batch": "quality-research-batch-012.json",
+      "quality_evidence_resolved": true,
+      "evidence_strength": "unresolved_direct_competition_and_paid_buyer",
+      "source_evidence_status": "secondary_url_inaccessible; independently_confirmed_product_function",
+      "adjacent_competitors": [],
+      "competition_count_scope": "Verified named direct examples only, not exhaustive national/global market counts; null means insufficient proof, not zero."
     }
   ],
-  "notes": "Conservative rejection decisions, not proof of exhaustive competitor research; Türkiye counts unknown, no qualified ideas. | 2026-10-09 verified evidence batch009, reviewed 40; don't infer publication eligibility",
+  "notes": "Conservative rejection decisions, not proof of exhaustive competitor research; Türkiye counts unknown, no qualified ideas. | 2026-10-09 verified evidence batch009, reviewed 40; don't infer publication eligibility | Batch012 new source+strict competitor evidence; 1 records updated.",
   "completed_at": "2026-10-09"
 }
