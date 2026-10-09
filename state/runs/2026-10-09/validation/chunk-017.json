@@ -149,15 +149,78 @@
       "validation_index": 84,
       "canonical_key": "website-operators-managing-many-domains|identify-certificate-renewal-jobs-hardcoded-for-90-day-lifetimes|csv-renewal-configuration-audit-with-risk-rules-and-owner-export",
       "canonical_news_url": "https://letsencrypt.org/2026/10/07/64-day-certs.html",
-      "qualification_status": "rejected_evidence",
-      "development_verified": "partial",
+      "qualification_status": "competition_not_verified",
+      "development_verified": true,
       "turkiye_direct_competitor_count": null,
       "global_direct_competitor_count": null,
-      "external_cash_cost": "not_verified",
-      "research_status": "decision_recorded",
+      "external_cash_cost": 0,
+      "research_status": "competition_not_verified",
       "publication_eligible": false,
-      "rejection_reason": "Independent buyer demand and differentiated product scope remain unverified."
+      "rejection_reason": null,
+      "source_links": [
+        "https://letsencrypt.org/2026/10/07/64-day-certs.html",
+        "https://lovable.dev/pricing"
+      ],
+      "source_verification_note": "Let's Encrypt October7 confirms default 64-day TLS from Feb10 2027 and warns about hardcoded renew schedules. Browser-only user-provided CSV (renewal cadence values) parse and linter with risk rules and owner CSV export, no live host scan/API. Türkiye zero and global <=3 direct competitor constraints not verified; preserve under competition_not_verified pending research.",
+      "evidence_remediation_batch": "quality-research-batch-009.json",
+      "quality_evidence_resolved": false,
+      "evidence_strength": "tech_and_primary_confirmed_competition_unresolved",
+      "global_competitors": [],
+      "turkiye_competitors": [],
+      "lovable_credits_total": 190,
+      "lovable_credit_breakdown": [
+        {
+          "phase": "CSV interface",
+          "credits": 45
+        },
+        {
+          "phase": "rule analysis",
+          "credits": 55
+        },
+        {
+          "phase": "risk report and CSV export",
+          "credits": 45
+        },
+        {
+          "phase": "tests and publish",
+          "credits": 45
+        }
+      ],
+      "mvp": "Lovable React SPA deployed on free lovable.app domain with no backend, auth, DB or paid API. Local browser File API CSV ingestion, regex/rules, downloaded remediation CSV; no server data uploads or persistently stored customer secrets.",
+      "working_logic": "Parse user-imported CSV in browser; check explicit renewal-days and policy thresholds; flag risky schedules, assign suggested owner and export deterministic audit CSV. No scanner/network access, no server persistence.",
+      "technologies": [
+        {
+          "name": "React / browser File API",
+          "cost": 0,
+          "purpose": "Parse CSV client side"
+        },
+        {
+          "name": "Lovable free subdomain static SPA",
+          "cost": 0,
+          "purpose": "Serve client-side audit UI"
+        },
+        {
+          "name": "CSV/JSON download",
+          "cost": 0,
+          "purpose": "Export audit without storage"
+        }
+      ],
+      "business_models": [
+        "One-time local CSV audit report",
+        "Free scanner with paid implementation advice delivered outside MVP"
+      ],
+      "marketing_strategy": "Target web agencies and MSPs needing a hardcoded 90-day rule audit before Feb 2027; no claim of competitive uniqueness.",
+      "first_customer_plan": "Pilot with a managed-hosting agency using a synthetic or voluntarily shared CSV of renewal job schedules, no secrets.",
+      "main_risk": "Missing authoritative direct competitor counts and potentially sensitive config; parser cannot read live systems.",
+      "validation_assumption": "Buyer voluntarily supplies accurate sanitized schedule CSV; no live discovery implied.",
+      "competition_confidence": "not_verified",
+      "competition_search_terms": [
+        "Türkiye TLS 64 gün yenileme cron yapılandırma tarama aracı",
+        "certificate renewal cadence config lint scanner tool",
+        "90 day renewal hardcoded schedule audit"
+      ],
+      "market_gap": "Niche configuration-rule audit need from new 64-day certificate policy; novelty and exact TR/global direct competition unverified."
     }
   ],
-  "notes": "Staged only, no claim of verified competitor counts. | Canonical evidence update from primary KVKK and direct privacy management workflows for 81-83."
+  "notes": "Staged only, no claim of verified competitor counts. | Canonical evidence update from primary KVKK and direct privacy management workflows for 81-83. | 2026-10-09 verified evidence batch009, reviewed 84; no automatic publication"
 }
