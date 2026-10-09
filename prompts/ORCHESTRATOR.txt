@@ -1,11 +1,3 @@
-CANONICAL VALIDATION CONSISTENCY — REQUIRED BEFORE FINALIZATION
-- In the staged orchestrator, completed validation/chunk-NNN.json records are the canonical per-candidate decisions. Validator-A and Validator-B JSON files are derived consolidated mirrors, not independent authoritative decisions.
-- Whenever a chunk result changes after additional research, synchronize its full candidate result into the correct validator mirror (odd index A, even index B).
-- Recompute outcome counts, candidate IDs, completeness, and quality blockers from all 11 current completed chunks (or the expected chunk count) before updating progress, audit, and final reporting. Do not copy older summary counters.
-- Immediately before publication, assert that each candidate ID appears exactly once, the 55 (or N) chunk results match Validator-A/B results including qualification_status and key evidence fields, and all progress/audit/final summaries agree. On mismatch, repair the mirrors and summaries from canonical chunks; publication is blocked until parity passes.
-- For eligibility-specific cost and source verification gates, do not require positive deployment cost proofs for already rejected candidates. Keep rejection/source caveats, and require zero external cash evidence for every potentially publishable candidate.
-- Never change idea_catalog.json or idea_history.json while publication is blocked.
-
 
 ==================================================
 CATALOG PRESERVATION — HARD SAFETY RULE
@@ -116,24 +108,12 @@ STAGE SELECTION — ONE STAGE PER INVOCATION
 
 At the start, inspect today's run state and choose the FIRST applicable stage:
 
-SPECIAL PRIORITY FOR AN ALREADY-CLASSIFIED FROZEN RUN: if today's
-validation/progress.json says validated_candidate_count == candidate_count and
-validation/quality-audit.json blocks publication, choose Stage 3A BEFORE the
-normal discovery/merge/finalize gates, provided all existing chunk candidate
-IDs match merge/candidates.json and the frozen-input generation is recorded.
-This priority allows EVIDENCE RESEARCH ONLY and MUST NOT override, repair by
-assertion, or bypass incomplete worker status or source-generation checks at
-publication. Once the quality backlog is resolved, the normal discovery and
-finalizer hard gates still apply. Do NOT report FULL_RADAR_COMPLETE merely
-because 55 results have classification labels.
-
 0. If final/report.json exists with overall_status="FULL_RADAR_COMPLETE":
    do nothing further. Return only: "Bugünkü radar zaten tamamlandı."
 
 1. DISCOVERY GATE / REPAIR
 2. MERGE
 3. VALIDATE NEXT CHUNK
-3A. QUALITY EVIDENCE REMEDIATION (when all validation chunks are classified but quality audit blocks publication)
 4. FINALIZE
 
 Run exactly one of these stages per invocation.
@@ -328,86 +308,6 @@ Never mark candidates validated if the research was not actually completed.
 
 Stop after this one chunk, even if more candidates remain.
 
-RUN-CAPACITY RULE: One hourly orchestrator invocation can finish at most ONE
-five-candidate validation chunk. Therefore N candidates require ceil(N/5)
-validation invocations PLUS discovery/merge/finalization and any Stage 3A
-quality-research invocations. If the configured daily schedule has fewer
-remaining slots, report the exact number of extra invocations/days required
-rather than repeatedly claiming imminent same-day completion. Continue at the
-next valid scheduled invocation without manual user "devam" prompts.
-
-
-
-==================================================
-3A. QUALITY EVIDENCE REMEDIATION — DO NOT STALL AT AN UNVERIFIED COUNT
-==================================================
-
-If validation/progress.json has classified all candidates but
-validation/quality-audit.json still blocks publication, this is NOT a completed
-radar and is NOT a reason to repeat the same status endlessly. After ensuring
-merge candidate IDs match the complete 11 chunk records, run this stage instead
-of immediately attempting finalization again. This is a RESEARCH stage only;
-it does NOT waive frozen worker recovery, original-article checks, zero cash,
-or any FINALIZER gates. Never publish unless all FOUR real persisted discovery workers pass the same frozen-generation coverage check.
-
-FIRST reconcile the quality-repair-progress checkpoint against the
-ACTUAL statuses in ALL completed validation chunks on EVERY remediation
-invocation. A stale pending list MUST NOT cause revisiting already rejected
-candidates or skipping newly unresolved ones. Use the strict equality:
-pending_candidate_indexes = sorted(validation_index of rows with
-qualification_status="competition_not_verified" OR other still-publishable
-quality blockers), excluding only definitively rejected rows. Recompute
-unverified_competition_count, potentially_viable_zero_cash_unverified_indexes,
-and reset cursor to the first pending index with no attempt in the current pass.
-Preserve research attempt history for still-pending rows. If no pending rows
-remain, recompute quality audit and attempt finalization; do not hallucinate
-an unfinished list.
-
-Choose the next up to THREE candidates from that reconciled backlog.
-Prioritize:
-1. competition_not_verified candidates lacking an independent same-buyer,
-   same-job, same-workflow vendor search;
-2. partially verified original developments for otherwise viable candidates;
-3. free tier and external zero-cash proofs for otherwise viable candidates.
-
-Keep a cursor/checkpoint in validation/quality-repair-progress.json containing:
-- run_date, pending_candidate_indexes, attempts_by_index, last_examined_indexes,
-  resolved_candidate_indexes, status, updated_at.
-Initialize from actual current chunk files if missing. Choose lowest remaining
-index not already attempted in this pass, do not continually retry the same 1-5
-records. Read targeted validation/chunk-NNN.json and original candidate sources.
-Perform fresh, independent web research (official originals and product pages).
-
-For each chosen candidate, either:
-A. make an evidence-backed decision (e.g., rejected_competition) and update its
-   exact existing chunk row with direct competitor URL, a strict job/workflow
-   comparison and a dated recheck; OR
-B. keep competition_not_verified, preserve uncertainty and record what was
-   investigated and the exact remaining evidentiary gap.
-Never invent a Turkish competitor count or free-tier capacity. Unverified is
-not zero. 500 estimated Lovable credits does NOT imply zero paid services.
-If an idea is already definitively rejected, no development cost proof is
-needed to reject it; cost proof is REQUIRED before QUALIFYING/publishing it.
-
-After any chunk update, re-read ALL validation/chunk-*.json and recompute
-qualification counts and original-source/zero-cost backlogs. Persist and verify:
-- validation/quality-audit.json with the recomputed actual counts,
-- validation/progress.json decision/qualification summary (do not change
-  validated_candidate_count: this is a classification count),
-- orchestrator-status.json with separate 55/55 classified vs qualified count.
-No change in counts is acceptable only with a documented substantive new source
-check. If all backlog records have been attempted in the current pass with no
-new verifiable decision, set checkpoint status=quality_research_exhausted and
-record exact blockers; do not loop indefinitely or publish '0 ideas'.
-
-If a live batch index has refreshed since the frozen generation of a run that
-already has all 55 candidates classified, preserve the frozen candidate/run
-namespace and continue QUALITY RESEARCH ONLY; NEVER rebind that run to a newer
-feed generation. This exception NEVER marks an incomplete discovery worker
-complete or authorizes final/catalog publication. Today's new feed belongs to
-its own generation-safe namespace.
-
-==================================================
 ==================================================
 4. FINALIZE
 ==================================================
