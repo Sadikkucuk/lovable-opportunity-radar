@@ -1053,22 +1053,32 @@
       "validation_index": 51,
       "canonical_key": "media-studios-ad-agencies-and-creator-platforms|prove-consent-for-synthetic-likeness-and-voice-use-before-publishing|consent-forms-use-rights-matrix-asset-ids-expiry-and-withdrawal-workfl",
       "canonical_news_url": "https://www.reuters.com/world/denmark-plans-ban-sharing-ai-deepfakes-without-consent-2026-10-08/",
-      "qualification_status": "rejected_evidence",
-      "development_verified": "partial",
+      "qualification_status": "rejected_competition",
+      "development_verified": true,
       "turkiye_direct_competitor_count": null,
-      "global_direct_competitor_count": null,
+      "global_direct_competitor_count": 1,
       "external_cash_cost": "not_required_for_rejected_candidate",
-      "research_status": "researched_but_gap_remains",
+      "research_status": "complete_rejected_competition",
       "publication_eligible": false,
-      "rejection_reason": "Media production per-asset consent, withdrawal and expiration workflow product not strictly verified",
-      "global_competitors": [],
+      "rejection_reason": "Mirai already offers documented per-asset synthetic likeness and voice consent, withdrawal, license scope and auditable rights-event records to media/talent producers.",
+      "global_competitors": [
+        {
+          "name": "Mirai",
+          "url": "https://mirai.inc/trust/mirai-standard",
+          "classification": "direct",
+          "reason": "Same media producer synthetic likeness consent job: asset-scoped rights approval, versioned signed consent, licence duration, withdrawal and immutable audit events."
+        }
+      ],
       "turkiye_competitors": [],
       "source_verification_note": "Synthetic likeness/voice consent rights issue verified; Human Consent Registry tracks individual rights",
-      "evidence_remediation_batch": "quality-research-batch-007.json",
+      "evidence_remediation_batch": "quality-research-batch-008.json",
       "source_links": [
         "https://www.reuters.com/world/denmark-plans-ban-sharing-ai-deepfakes-without-consent-2026-10-08/",
-        "https://id.humanconsent.org/"
-      ]
+        "https://id.humanconsent.org/",
+        "https://mirai.inc/trust/mirai-standard",
+        "https://miraitalent.ai/legal/model-release"
+      ],
+      "competition_confidence": "verified_direct_vendor_workflow"
     },
     {
       "candidate_id": "radar-20261009-053",
@@ -1600,5 +1610,5 @@
   "source": "canonical_chunks_001_to_017",
   "note": "Derived mirror only; classification and evidence fields copied unchanged from canonical chunks. Does not resolve 49 evidence research blockers.",
   "mirror_source": "canonical validation/chunk-NNN.json",
-  "last_remediation_batch": "quality-research-batch-007.json"
+  "last_remediation_batch": "quality-research-batch-008.json"
 }
