@@ -38,6 +38,8 @@ Read:
 - state/idea_history.json
 - state/idea_catalog.json
 - CHATGPT_RADAR_PROMPT.txt for final Turkish idea format and catalog schema.
+- all validation/chunk-NNN.json canonical results and validation/progress.json
+- validation/quality-audit.json and validation/publication-gate-eligibility.json
 
 HARD COMPLETION GATE — NO EXCEPTIONS
 
@@ -51,6 +53,33 @@ FULL_RADAR_COMPLETE requires ALL:
 7. union of both validator result candidate_ids equals the candidate set exactly,
    with no missing and no duplicate validation;
 8. every candidate has a qualification_status.
+9. validation/quality-audit.json EXISTS, status="passed", mirror_parity_verified=true,
+   quality_research_needed_count=0, blockers empty, allow_catalog_write=true;
+10. validation/publication-gate-eligibility.json EXISTS, status="eligible",
+    quality_review_pending_count=0, validator_mirror_parity_verified=true,
+    allow_catalog_write=true;
+11. all canonical validation/chunk-NNN.json records exactly match Validator-A/B
+    mirrors, each candidate ID once, and status counts and IDs match the progress,
+    quality audit and publication eligibility summaries;
+12. all potentially publishable candidates have verified primary development and
+    eligible, documented direct-competitor and real external-cash=0 proofs;
+    unresolved rejected_evidence or competition_not_verified research blockers
+    may NOT be silently treated as qualifying or as a completed publication gate.
+
+STRICT QUALITY EVIDENCE LOCK — USER REQUIRED
+- This is a required safety check WITHIN existing Quality Gate / Finalizer;
+  it introduces no new commercial or sales stages.
+- The absence of either quality JSON file OR any missing/mismatched field is a FAIL,
+  NEVER implicit permission. No old status or bare "84/84 classified" can override.
+- If quality gate fails, preserve idea_history.json and idea_catalog.json unchanged;
+  write/update final/gate-status.json overall_status="RADAR_INCOMPLETE" with
+  exact reasons. Do not write a FULL_RADAR_COMPLETE final/report.json and do not
+  publish even an apparent zero-idea result.
+- Rejecting a candidate for verified stale primary source or genuinely disproven
+  buyer/product fit may close that rejection's research. Do NOT fabricate direct
+  competitor counts, fake zero costs, or drop promising unverified candidates.
+- Gate status "passed"/"eligible" may only be issued after independent recheck
+  of all canonical chunk evidence, mirrors and source/competition/cash hard gates.
 
 If ANY condition fails:
 - write state/runs/YYYY-MM-DD/final/report.json with:
