@@ -114,6 +114,7 @@ At the start, inspect today's run state and choose the FIRST applicable stage:
 1. DISCOVERY GATE / REPAIR
 2. MERGE
 3. VALIDATE NEXT CHUNK
+3A. QUALITY GATE / EVIDENCE REMEDIATION
 4. FINALIZE
 
 Run exactly one of these stages per invocation.
@@ -309,6 +310,45 @@ Never mark candidates validated if the research was not actually completed.
 Stop after this one chunk, even if more candidates remain.
 
 ==================================================
+3A. QUALITY GATE / EVIDENCE REMEDIATION
+==================================================
+
+This is the user's original QUALITY GATE, not a new business/sales stage.
+Run after all canonical candidates are classified but BEFORE FINALIZE whenever
+quality-audit.json or publication-gate-eligibility.json is absent, blocked,
+out of sync, or has ANY unresolved source/competitor/cash/evidence cases.
+
+- Read master CHATGPT_RADAR_PROMPT.txt, all canonical chunk-NNN.json, Validator-A/B
+  derived mirrors, validation/progress.json and latest quality-research batches.
+- Recompute canonical unique IDs, exact mirror parity and classification counts;
+  never copy older summary counters as proof.
+- In one invocation, investigate up to FIVE next unresolved candidate IDs,
+  rotating the pending index cursor in quality-audit.json across invocations.
+  Preserve genuine original-source date, buyer/country/workflow matching,
+  Türkiye and global direct competitor evidence (distinct from adjacent),
+  and Lovable <=500 with actual zero external cash for potentially qualifying
+  candidates. Do not invent counts from failed searches.
+- Persist the source URLs and reasoned decisions in a quality research batch.
+  If a canonical chunk decision/evidence changes, update that chunk first, then
+  copy each changed result exactly into the odd-A/even-B mirror.
+- Mark an evidence rejection researched/resolved only for a demonstrated
+  disqualifier (e.g. original source outside frozen window, no relevant source-
+  to-customer relationship, or direct same-buyer/job/workflow competition).
+  Do NOT auto-reject or silently discard unresolved but promising ideas.
+- Update validation/progress, quality-audit and publication-gate-eligibility from
+  ALL canonical chunks and the actual resolved/open evidence list. Every
+  remaining competition_not_verified record with missing country-level
+  research remains a blocker for publication, as explicitly required by user.
+- ONLY if all conditions in prompts/FINALIZER.txt pass, zero source/competitor/
+  cash evidence blockers remain, all mirrors/summaries agree, and every
+  potentially qualifying candidate has genuinely sufficient positive proofs,
+  set quality-audit.status="passed" / allow_catalog_write=true and
+  publication-gate-eligibility.status="eligible" / allow_catalog_write=true.
+  Otherwise status="publication_blocked" and status="blocked", with both
+  allow_catalog_write=false. Preserve catalog/history.
+- STOP after this one stage. Do not invoke Finalizer in the same invocation.
+
+==================================================
 4. FINALIZE
 ==================================================
 
@@ -324,6 +364,12 @@ Hard gate:
 - union of complete validation chunks contains every candidate exactly once
 - no candidate is missing or duplicated
 - every candidate has qualification_status
+- validation/quality-audit.json exists with status="passed", pending=0,
+  blockers empty, mirror_parity_verified=true, allow_catalog_write=true
+- validation/publication-gate-eligibility.json exists with status="eligible",
+  pending=0, mirror parity true, allow_catalog_write=true
+- all canonical chunk results exactly match Validator-A/B and all summary counts;
+  any missing/mismatching status is BLOCKED, never implicit approval
 
 If any gate fails:
 write final/report.json with overall_status="RADAR_INCOMPLETE".
