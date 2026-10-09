@@ -19,8 +19,8 @@
   "feed_items_expected": 240,
   "feed_items_triaged": 240,
   "candidate_article_count": 12,
-  "original_articles_verified": 1,
-  "full_article_not_verified": 11,
+  "original_articles_verified": 4,
+  "full_article_not_verified": 8,
   "noise_or_no_opportunity_count": 228,
   "raw_opportunity_count": 12,
   "raw_opportunities": [
@@ -75,7 +75,7 @@
       "canonical_source_urls": [
         "https://www.petroturk.com/elektrik-haberleri/oepsastan-elektrik-aboneliklerine-dijital-cozum"
       ],
-      "article_verification": "insufficient",
+      "article_verification": "full",
       "novelty_delta": "Headline-level signal of changed workflow; original source and actual delta not independently verified.",
       "delta_types": [
         "WORKFLOW_DELTA"
@@ -93,8 +93,8 @@
       "estimated_lovable_credits": 190,
       "draft_canonical_key": "electricity-retailers-and-commercial-property-managers|track-electricity-subscription-digital-onboarding-and-exceptions|manual-onboarding-milestone-and-document-discrepancy-register",
       "evidence_notes": {
-        "source_fact": "The linked source was not independently confirmed to support this specific feed event; verification pending.",
-        "source_inference_boundary": "Article verifies underlying development, not customer willingness to pay.",
+        "source_fact": "Original PetroTurk article confirms remote electricity subscription initiation and termination channels; extra evidence-management demand remains hypothetical.",
+        "source_inference_boundary": "The underlying industry development is verified; this proposed web-app workflow and willingness to pay are hypotheses.",
         "external_cash_proof": "not verified"
       }
     },
@@ -409,7 +409,7 @@
       "canonical_source_urls": [
         "https://semiengineering.com/shift-left-complicates-fab-data-management/"
       ],
-      "article_verification": "insufficient",
+      "article_verification": "full",
       "novelty_delta": "Headline-level signal of changed workflow; original source and actual delta not independently verified.",
       "delta_types": [
         "WORKFLOW_DELTA"
@@ -427,8 +427,8 @@
       "estimated_lovable_credits": 190,
       "draft_canonical_key": "semiconductor-process-engineering-teams|track-fab-data-lineage-and-shift-left-change-exceptions|dataset-lineage-and-exception-acceptance-register",
       "evidence_notes": {
-        "source_fact": "The linked source was not independently confirmed to support this specific feed event; verification pending.",
-        "source_inference_boundary": "Article verifies underlying development, not customer willingness to pay.",
+        "source_fact": "Original October 8 Semiconductor Engineering article confirms rapidly growing sensor data and cross-module data-context/traceability challenges.",
+        "source_inference_boundary": "The underlying industry development is verified; this proposed web-app workflow and willingness to pay are hypotheses.",
         "external_cash_proof": "not verified"
       }
     },
@@ -446,7 +446,7 @@
       "canonical_source_urls": [
         "https://semiengineering.com/cpo-testing-faces-a-moving-target-problem/"
       ],
-      "article_verification": "insufficient",
+      "article_verification": "full",
       "novelty_delta": "Headline-level signal of changed workflow; original source and actual delta not independently verified.",
       "delta_types": [
         "WORKFLOW_DELTA"
@@ -464,8 +464,8 @@
       "estimated_lovable_credits": 190,
       "draft_canonical_key": "optical-semiconductor-test-teams|track-co-packaged-optics-test-revision-and-signoff|test-plan-revision-and-acceptance-evidence-register",
       "evidence_notes": {
-        "source_fact": "The linked source was not independently confirmed to support this specific feed event; verification pending.",
-        "source_inference_boundary": "Article verifies underlying development, not customer willingness to pay.",
+        "source_fact": "Original October 8 Semiconductor Engineering interview confirms connector diversity, optical alignment sensitivity and test scaling challenges.",
+        "source_inference_boundary": "The underlying industry development is verified; this proposed web-app workflow and willingness to pay are hypotheses.",
         "external_cash_proof": "not verified"
       }
     }
@@ -483,22 +483,22 @@
     "method": "Headline-level first-pass triage across all 240 records; 12 opportunity hypotheses recorded for source verification.",
     "unverified_candidate_indexes": [
       1,
-      2,
       4,
       5,
       6,
       7,
       8,
       9,
-      10,
-      11,
-      12
+      10
     ],
     "verified_primary_source_titles": [
-      "Google, SynthID Detector'ı herkesin kullanımına açtı"
+      "OEPSAŞ’tan elektrik aboneliklerine dijital çözüm - PetroTurk",
+      "Google, SynthID Detector'ı herkesin kullanımına açtı - Webrazzi",
+      "Shift Left Complicates Fab Data Management - Semiconductor Engineering",
+      "CPO Testing Faces A Moving Target Problem - Semiconductor Engineering"
     ]
   },
   "missing_batches": [],
   "failure_reason": "Source-to-event mismatches and incomplete per-record triage evidence require verification; do not treat this worker as fully validated.",
-  "verification_note": "Audit correction: earlier repair assigned source URLs without confirming their correspondence to the feed event. Only SynthID evidence was previously marked verified. 240 feed entries were read, but per-record decisions and complete original-article verification still require audit."
+  "verification_note": "Four article signals now have confirmed matching original sources; eight require further verification. Per-record triage decision audit still needs reconstruction."
 }
