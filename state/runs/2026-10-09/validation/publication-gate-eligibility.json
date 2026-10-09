@@ -1,17 +1,17 @@
 {
   "run_date": "2026-10-09",
-  "status": "blocked",
+  "status": "blocked_mirror_sync_pending",
   "classified_count": 84,
   "qualified_count": 0,
-  "quality_review_pending_count": 6,
-  "validator_mirror_parity_verified": true,
+  "quality_review_pending_count": 0,
+  "validator_mirror_parity_verified": false,
   "allow_catalog_write": false,
-  "gate_note": "Batch013: 17 canonical chunks, 84 unique candidates, 42+42 mirrors match with zero differences. Six blockers remain: #24 #45 #60 #65 #69 #84. Positive zero-cash and country direct-competition proof for #84 not sufficient. No catalog write.",
-  "competition_not_verified_count": 1,
+  "gate_note": "Six user exclusions written to canonical chunks; validator mirrors not yet synchronized. Catalog publication blocked.",
+  "competition_not_verified_count": 0,
   "classification_counts": {
     "rejected_competition": 73,
-    "rejected_evidence": 9,
+    "rejected_evidence": 4,
     "rejected_cost": 1,
-    "competition_not_verified": 1
+    "rejected_user_decision": 6
   }
 }
