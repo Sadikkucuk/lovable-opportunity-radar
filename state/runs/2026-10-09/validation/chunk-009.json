@@ -144,31 +144,41 @@
       "turkiye_direct_competitor_count": null,
       "global_direct_competitor_count": null,
       "external_cash_cost": "not_required_for_rejected_candidate",
-      "research_status": "evidence_researched_incomplete",
+      "research_status": "researched_unresolved",
       "publication_eligible": false,
-      "rejection_reason": "Primary use case proven but separate commercial software buyer and direct Türkiye/global vendor census still unavailable; do not promote or suppress as a qualified product.",
+      "rejection_reason": "Independent purchased SaaS buyer and matching third-party vendor not demonstrated; absence of direct competitor cannot be converted to zero.",
       "global_competitors": [],
       "turkiye_competitors": [],
-      "source_verification_note": "Reuters documents Ropes & Gray's annual 100 AI credit hours and Akerman's internal portal assigning/reviewing AI projects; separate US law firm policy allocates 100 hours.",
-      "evidence_remediation_batch": "quality-research-batch-012.json",
+      "source_verification_note": "Ropes & Gray credit-hours program and Akerman's internal project portal confirmed. Intapp Time records AI-related work hours but no documented firm-wide experiment hour allocation plus project milestone approvals.",
+      "evidence_remediation_batch": "quality-research-batch-013.json",
       "source_links": [
         "https://www.reuters.com/legal/legalindustry/law-firms-give-lawyers-time-off-billing-grind-test-drive-ai-2026-10-08/",
-        "https://www.holtzmanvogel.com/news-insights/holtzman-vogel-allocates-100-billable-hours-per-associate-annually-for-ai-training"
+        "https://www.holtzmanvogel.com/news-insights/holtzman-vogel-allocates-100-billable-hours-per-associate-annually-for-ai-training",
+        "https://www.intapp.com/blog/ai-in-intapp-time-proof-not-promises/"
       ],
       "quality_evidence_resolved": false,
       "evidence_strength": "unresolved_direct_competition",
-      "source_evidence_status": true,
+      "source_evidence_status": "original_and_correlated_researched",
       "adjacent_competitors": [
         {
-          "name": "Law firm in-house AI credit/assignment portal (Akerman)",
+          "name": "Intapp Time",
+          "url": "https://www.intapp.com/blog/ai-in-intapp-time-proof-not-promises/",
+          "classification": "adjacent",
+          "reason": "Law firm timekeeping with AI capture, not proved innovation time-credit budget and outputs approval."
+        },
+        {
+          "name": "Akerman internal AI experiment portal",
           "url": "https://www.reuters.com/legal/legalindustry/law-firms-give-lawyers-time-off-billing-grind-test-drive-ai-2026-10-08/",
-          "classification": "adjacent_internal_system",
-          "reason": "Internal organization-specific workflow handles innovation assignments and time credit but not a separately marketed direct software competitor."
+          "classification": "adjacent",
+          "reason": "Documented internally built portal, not a separately sold external direct rival."
         }
       ],
-      "competition_count_scope": "Verified named direct examples only, not exhaustive national/global market counts; null means insufficient proof, not zero."
+      "competition_count_scope": "Known named direct examples only; null means unverified, NOT zero. No exhaustive universe claimed.",
+      "quality_resolution": "unresolved_original_criteria",
+      "canonical_news_source": "original_trigger_verified_with_correlated_sources",
+      "competition_confidence": "partial_no_defensible_zero"
     }
   ],
-  "notes": "Conservative rejection decisions, not proof of exhaustive competitor research; Türkiye counts unknown, no qualified ideas. | 2026-10-09 verified evidence batch009, reviewed 43,44,45; don't infer publication eligibility | Batch012 new source+strict competitor evidence; 1 records updated.",
+  "notes": "Conservative rejection decisions, not proof of exhaustive competitor research; Türkiye counts unknown, no qualified ideas. | 2026-10-09 verified evidence batch009, reviewed 43,44,45; don't infer publication eligibility | Batch012 new source+strict competitor evidence; 1 records updated. | batch013 reviewed 1 candidate(s); source/competitor/cash caveats authoritative; unresolved candidates preserved.",
   "completed_at": null
 }
