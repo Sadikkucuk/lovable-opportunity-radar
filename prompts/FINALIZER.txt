@@ -179,3 +179,9 @@ Her yeni veya güncellenen idea_catalog kaydı GitHub'a yazılmadan ÖNCE aşağ
 
 PUBLICATION LANGUAGE GATE:
 Catalog write öncesinde kullanıcıya görünen yukarıdaki alanların tamamını tara. Teknik terimler ve özel isimler dışındaki belirgin İngilizce cümle/parçalar varsa yayınlama; önce Türkçeleştir. Bu gate başarısızsa run tamamlandı/published sayılmaz.
+
+
+==================================================
+USER-EXCLUDED CANDIDATES — NONPUBLICATION DISPOSITION
+==================================================
+When the user explicitly excludes a candidate, retain its allowed validator qualification_status and set user_excluded=true, publication_eligible=false. Such a record is outside the publishable set, even if its independent competitor/evidence research remains unresolved. Do not represent exclusion as evidence verification or market disqualification. For the publication gate, compute pending mandatory evidence only for candidates not user_excluded. Report excluded unresolved evidence separately as informational debt, not as proof of eligibility. The catalog must never include excluded candidates. Preserve original evidence notes and validator parity; all other required gate checks remain mandatory. A zero-new-idea final report is permitted only if all non-excluded candidates pass the complete gate and catalog preservation checks.
