@@ -1,0 +1,1687 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-09",
+  "worker_id": "4",
+  "source_batch_index_generated_at": "2026-10-09T02:06:51Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "status": "complete",
+  "started_at": "2026-10-09T07:04:02+03:00",
+  "completed_at": "2026-10-09T04:06:56.971+00:00",
+  "feed_items_expected": 280,
+  "feed_items_triaged": 280,
+  "candidate_article_count": 30,
+  "original_articles_verified": 26,
+  "full_article_not_verified": 4,
+  "noise_or_no_opportunity_count": 249,
+  "raw_opportunity_count": 33,
+  "raw_opportunities": [
+    {
+      "raw_id": "w4-20261009-001",
+      "supporting_article_ids": [
+        "3b0fd70f7c397f77545de46c"
+      ],
+      "supporting_article_titles": [
+        "「Microsoft Execution Containers」が一般提供、AIエージェントを安全に動かす基盤 - 窓の杜"
+      ],
+      "supporting_sources": [
+        "Impress Watch"
+      ],
+      "canonical_source_urls": [
+        "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "MXC general availability moves AI-agent resource restrictions from unenforced instructions to OS-enforced policy boundaries.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "Agent request → allowed files/networks policy → sandbox execution → violation evidence",
+      "target_customer": "SME IT teams deploying desktop or coding agents",
+      "buyer": "IT manager / security lead",
+      "job_to_be_done": "Define least-privilege resource scopes for each agent before deployment",
+      "current_friction": "Agent access rules are scattered across prompt files and device settings, and reviewers lack a consistent inventory",
+      "product_mechanism": "Agent registry with resource-permission matrix, JSON policy drafts, versioning and approval history",
+      "one_sentence_concept": "Agent Sandbox Policy Desk: create and approve agent resource policies without running the agents",
+      "why_now": "MXC became generally available on 7 October 2026",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 270,
+      "draft_canonical_key": "sme-it-teams-deploying-desktop-or-coding-agents|define-least-privilege-resource-scopes-for-each-agent-before-deploymen|agent-registry-with-resource-permission-matrix-json-policy-drafts-vers",
+      "evidence_notes": {
+        "source_fact": "Microsoft confirms MXC GA, JSON configuration and cross-platform backends; central identity/Intune controls are still coming.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-002",
+      "supporting_article_ids": [
+        "3b0fd70f7c397f77545de46c"
+      ],
+      "supporting_article_titles": [
+        "「Microsoft Execution Containers」が一般提供、AIエージェントを安全に動かす基盤 - 窓の杜"
+      ],
+      "supporting_sources": [
+        "Impress Watch"
+      ],
+      "canonical_source_urls": [
+        "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "The new agent containment layer creates a separate review job for blocked actions and exception requests.",
+      "delta_types": [
+        "RISK_DELTA",
+        "CAPABILITY_DELTA"
+      ],
+      "affected_workflow": "Blocked agent action → request expanded access → risk review → time-bound exception → expiry",
+      "target_customer": "Teams operating sandboxed autonomous agents",
+      "buyer": "Security operations / platform lead",
+      "job_to_be_done": "Approve temporary agent access exceptions with an audit trail",
+      "current_friction": "Manual exception discussions leave no scope, owner or expiry record",
+      "product_mechanism": "Request queue with policy diffs, reviewers, expiration and exported evidence",
+      "one_sentence_concept": "Agent Permission Exception Queue for high-impact file and network access",
+      "why_now": "Agent execution is increasingly autonomous and MXC policies can reject unauthorized actions",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 220,
+      "draft_canonical_key": "teams-operating-sandboxed-autonomous-agents|approve-temporary-agent-access-exceptions-with-an-audit-trail|request-queue-with-policy-diffs-reviewers-expiration-and-exported-evid",
+      "evidence_notes": {
+        "source_fact": "MXC explicitly separates agent workload from resource policy; exception workflow is a proposed adjunct.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-003",
+      "supporting_article_ids": [
+        "274ba0ddce49e2db216853b9"
+      ],
+      "supporting_article_titles": [
+        "London’s IMMIX secures €3.12 million to build FX infrastructure for stablecoin payments beyond the US dollar - EU-Startups"
+      ],
+      "supporting_sources": [
+        "EU-Startups"
+      ],
+      "canonical_source_urls": [
+        "https://www.eu-startups.com/2026/10/londons-immix-secures-e3-12-million-to-build-fx-infrastructure-for-stablecoin-payments-beyond-the-us-dollar/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Non-USD stablecoin currency conversions can involve multiple FX legs with stacked fees and prefunding costs.",
+      "delta_types": [
+        "COST_DELTA",
+        "BUSINESS_MODEL_DELTA"
+      ],
+      "affected_workflow": "Cross-border payment quote → enumerate conversion legs → compare total fees/spreads → approve route",
+      "target_customer": "Payment companies handling cross-currency stablecoin settlements",
+      "buyer": "Treasury / payments operations manager",
+      "job_to_be_done": "Compare the all-in cost and complexity of settlement routes before execution",
+      "current_friction": "FX spreads and intermediary legs are difficult to reconcile or explain to merchants",
+      "product_mechanism": "Manual quote/CSV import, route cost calculator and fee reconciliation export",
+      "one_sentence_concept": "Stablecoin FX Route Cost Comparator without custody or trade execution",
+      "why_now": "IMMIX funding highlights the operational cost of fragmented non-USD stablecoin FX",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 290,
+      "draft_canonical_key": "payment-companies-handling-cross-currency-stablecoin-settlements|compare-the-all-in-cost-and-complexity-of-settlement-routes-before-exe|manual-quote-csv-import-route-cost-calculator-and-fee-reconciliation-e",
+      "evidence_notes": {
+        "source_fact": "IMMIX describes three to four legs per conversion and direct-pricing infrastructure; MVP only models user-supplied quotes.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-004",
+      "supporting_article_ids": [
+        "5fb2a01886bcf386e9abf312",
+        "d59b36959a0dbb59598accb6"
+      ],
+      "supporting_article_titles": [
+        "KVKK’dan Yıldız Teknik Üniversitesi için Veri İhlal Bildirimi - ShiftDelete.Net",
+        "KVKK’dan Nesine için Veri İhlal Bildirimi - ShiftDelete.Net"
+      ],
+      "supporting_sources": [
+        "ShiftDelete.Net"
+      ],
+      "canonical_source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/9033/kamuoyu-duyurusu-veri-ihlali-bildirimi-yildiz-teknik-universitesi",
+        "https://shiftdelete.net/kvkkdan-nesine-icin-veri-ihlal-bildirimi?amp=1"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Recent Turkish breach notices expose repetitive incident notification and impact-evidence work, including outsourced systems.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Breach discovery → scope affected people/data → legal notice checklist → regulator/data-subject communication → evidence archive",
+      "target_customer": "Turkish organizations processing personal data",
+      "buyer": "KVKK compliance / legal / IT security lead",
+      "job_to_be_done": "Coordinate a defensible data-breach notification file and stakeholder actions",
+      "current_friction": "Impact categories and affected-person counts may be unknown while notification decisions are time-sensitive",
+      "product_mechanism": "KVKK incident case ledger with responsibilities, notice templates, evidence, decision timestamps and recipient tracking",
+      "one_sentence_concept": "KVKK Breach Response Case Desk",
+      "why_now": "October 2026 public notices document ransomware and third-party exposure",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 310,
+      "draft_canonical_key": "turkish-organizations-processing-personal-data|coordinate-a-defensible-data-breach-notification-file-and-stakeholder-|kvkk-incident-case-ledger-with-responsibilities-notice-templates-evide",
+      "evidence_notes": {
+        "source_fact": "KVKK Yıldız Teknik Üniversitesi notice lists approximately 140,000 students and 4,500 staff potentially affected; Nesine breach involved a call-center vendor.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-005",
+      "supporting_article_ids": [
+        "d59b36959a0dbb59598accb6"
+      ],
+      "supporting_article_titles": [
+        "KVKK’dan Nesine için Veri İhlal Bildirimi - ShiftDelete.Net"
+      ],
+      "supporting_sources": [
+        "ShiftDelete.Net"
+      ],
+      "canonical_source_urls": [
+        "https://shiftdelete.net/kvkkdan-nesine-icin-veri-ihlal-bildirimi?amp=1"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Outsourced call-center infrastructure can become the direct source of a controller's customer-data incident.",
+      "delta_types": [
+        "RISK_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "Vendor onboarding → access/data inventory → incident notification → supplier action tracking",
+      "target_customer": "Turkish customer-service outsourcers and their clients",
+      "buyer": "Vendor risk / procurement / DPO lead",
+      "job_to_be_done": "Map supplier-held personal data and coordinate incident escalation across companies",
+      "current_friction": "Contracts and data access maps rarely link to actionable incident contacts and notification evidence",
+      "product_mechanism": "Third-party processing register, incident contact tree and supplier remediation checklist",
+      "one_sentence_concept": "Vendor Data Exposure Register for outsourced customer support",
+      "why_now": "The Nesine breach notice describes an attack affecting its outsourced call-center infrastructure",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 240,
+      "draft_canonical_key": "turkish-customer-service-outsourcers-and-their-clients|map-supplier-held-personal-data-and-coordinate-incident-escalation-acr|third-party-processing-register-incident-contact-tree-and-supplier-rem",
+      "evidence_notes": {
+        "source_fact": "The cited report identifies a vendor-related call-center incident; this does not establish any legal conclusion about fault.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-006",
+      "supporting_article_ids": [
+        "ad8605754bc6f7c376691574",
+        "3d18a3948e5fa81e11abca80"
+      ],
+      "supporting_article_titles": [
+        "NT government restores network access - iTnews",
+        "NT government recovers from lengthy network outage - iTnews"
+      ],
+      "supporting_sources": [
+        "iTnews"
+      ],
+      "canonical_source_urls": [
+        "https://www.itnews.com.au/news/nt-government-recovers-from-lengthy-network-outage-629518"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "A 12-hour territory-wide outage left agencies without normal phone, email and connected-system access.",
+      "delta_types": [
+        "RISK_DELTA",
+        "INFRASTRUCTURE_DELTA"
+      ],
+      "affected_workflow": "Core network outage → invoke offline contact plan → alternate-channel communication → restoration check",
+      "target_customer": "Public agencies and multi-site enterprises",
+      "buyer": "Business continuity / IT operations lead",
+      "job_to_be_done": "Maintain accessible offline communication and fallback operating procedures",
+      "current_friction": "Contact trees and alternate workflows are often stored on the same unavailable network",
+      "product_mechanism": "Printable offline incident playbooks, contact directory exports and restoration checklists",
+      "one_sentence_concept": "Offline Continuity Playbook Builder for network outages",
+      "why_now": "October 8 NT government outage affected police, health and education services",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 200,
+      "draft_canonical_key": "public-agencies-and-multi-site-enterprises|maintain-accessible-offline-communication-and-fallback-operating-proce|printable-offline-incident-playbooks-contact-directory-exports-and-res",
+      "evidence_notes": {
+        "source_fact": "iTnews reports about 12 hours of telecommunications and digital access disruption.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-007",
+      "supporting_article_ids": [
+        "093fcdbc29990ba56d2e5631"
+      ],
+      "supporting_article_titles": [
+        "Edge AI Transforms Manufacturing PLC Programming - Design News"
+      ],
+      "supporting_sources": [
+        "Design News"
+      ],
+      "canonical_source_urls": [
+        "https://www.designnews.com/artificial-intelligence/edge-ai-transforms-manufacturing-with-real-time-plc-programming-and-software-defined-automation"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Edge AI assistance can accelerate PLC program creation but raises the need for human validation of industrial control changes.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "RISK_DELTA",
+        "LABOR_DELTA"
+      ],
+      "affected_workflow": "PLC change proposal → safety rule checklist → engineer signoff → test evidence → deployment approval",
+      "target_customer": "Manufacturers and industrial automation integrators",
+      "buyer": "Automation engineering manager",
+      "job_to_be_done": "Prevent unsafe or undocumented AI-assisted PLC changes from reaching production",
+      "current_friction": "PLC change history, interlock tests and engineer approvals may be fragmented",
+      "product_mechanism": "PLC change request, interlock checklist, offline test attachments and release signoff",
+      "one_sentence_concept": "PLC AI-Change Safety Gate for manufacturing teams",
+      "why_now": "CODESYS and Intel publicly discussed edge-AI-assisted PLC programming in October 2026",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 310,
+      "draft_canonical_key": "manufacturers-and-industrial-automation-integrators|prevent-unsafe-or-undocumented-ai-assisted-plc-changes-from-reaching-p|plc-change-request-interlock-checklist-offline-test-attachments-and-re",
+      "evidence_notes": {
+        "source_fact": "Design News states PLC code assistance needs human-in-the-loop review; no automatic live PLC deployment in MVP.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required.",
+        "trakya_transferability_hypothesis": "The same PLC change-approval and safety-evidence problem plausibly occurs in Trakya food, textile, machinery and automotive-supplier plants."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-008",
+      "supporting_article_ids": [
+        "5505a3a6044e92e115900dfa"
+      ],
+      "supporting_article_titles": [
+        "GPU 활용률 '90%' 이상 가능…아크릴, AI 인프라 비용 줄인다 - 지디넷코리아"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea"
+      ],
+      "canonical_source_urls": [
+        "https://www.seoulexchange.kr/stocks/%EC%95%84%ED%81%AC%EB%A6%B4-3539/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "A Korean GPU orchestration vendor reports utilization above 90%, making idle-capacity governance a visible cost lever.",
+      "delta_types": [
+        "COST_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "GPU allocation → import utilization → identify idle reservations → reclaim/renew decision",
+      "target_customer": "Shared AI compute operators and university labs",
+      "buyer": "AI infrastructure / finance operations lead",
+      "job_to_be_done": "Account for GPU reservations, actual use and renewal decisions",
+      "current_friction": "Allocated GPU resources and workload progress are tracked in disconnected systems",
+      "product_mechanism": "GPU allocation ledger, utilization CSV imports, idle thresholds and exception approvals",
+      "one_sentence_concept": "GPU Utilization and Reclaim Ledger",
+      "why_now": "Reported high utilization raises expectations for measurable shared-compute efficiency",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 260,
+      "draft_canonical_key": "shared-ai-compute-operators-and-university-labs|account-for-gpu-reservations-actual-use-and-renewal-decisions|gpu-allocation-ledger-utilization-csv-imports-idle-thresholds-and-exce",
+      "evidence_notes": {
+        "source_fact": "Secondary listing cites an October 8 Acrylic report of 90%+ utilization; technical mechanism not independently verified.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-009",
+      "supporting_article_ids": [
+        "708e47d43b5ec155e62fd87f"
+      ],
+      "supporting_article_titles": [
+        "Denmark plans ban on sharing AI deepfakes without consent - Reuters"
+      ],
+      "supporting_sources": [
+        "Reuters Technology"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/world/denmark-plans-ban-sharing-ai-deepfakes-without-consent-2026-10-08/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Denmark proposes to restrict realistic unauthorized AI replicas of a person's image or voice.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Likeness/voice request → record consent scope → approved uses → expiry and withdrawal",
+      "target_customer": "Media studios, ad agencies and creator platforms",
+      "buyer": "Legal / production compliance manager",
+      "job_to_be_done": "Prove consent for synthetic likeness and voice use before publishing",
+      "current_friction": "Rights are handled by email and informal agreements with ambiguous permitted uses",
+      "product_mechanism": "Consent forms, use-rights matrix, asset IDs, expiry and withdrawal workflow",
+      "one_sentence_concept": "Synthetic Likeness Consent Registry",
+      "why_now": "Denmark's October 8 proposed law raises urgency for auditable digital-replica permissions",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 260,
+      "draft_canonical_key": "media-studios-ad-agencies-and-creator-platforms|prove-consent-for-synthetic-likeness-and-voice-use-before-publishing|consent-forms-use-rights-matrix-asset-ids-expiry-and-withdrawal-workfl",
+      "evidence_notes": {
+        "source_fact": "Reuters reports a proposed law, not an enacted ban; jurisdiction-specific requirements require later legal validation.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-010",
+      "supporting_article_ids": [
+        "708e47d43b5ec155e62fd87f"
+      ],
+      "supporting_article_titles": [
+        "Denmark plans ban on sharing AI deepfakes without consent - Reuters"
+      ],
+      "supporting_sources": [
+        "Reuters Technology"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/world/denmark-plans-ban-sharing-ai-deepfakes-without-consent-2026-10-08/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "The proposed consent-based protection creates an operational need to collect and track disputed synthetic media.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Reported deepfake → collect URLs/screenshots → prove identity/consent status → submit platform notice → track outcome",
+      "target_customer": "Individuals, creators and talent representatives",
+      "buyer": "Talent agency / rights manager",
+      "job_to_be_done": "Coordinate evidence and takedown requests for unauthorized synthetic media",
+      "current_friction": "Incidents and platform responses are scattered across inboxes and screenshots",
+      "product_mechanism": "Incident evidence vault, platform request templates, deadlines and status tracking",
+      "one_sentence_concept": "Deepfake Rights Enforcement Case Desk",
+      "why_now": "AI voice and image replication increases consent and rights enforcement cases",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 230,
+      "draft_canonical_key": "individuals-creators-and-talent-representatives|coordinate-evidence-and-takedown-requests-for-unauthorized-synthetic-m|incident-evidence-vault-platform-request-templates-deadlines-and-statu",
+      "evidence_notes": {
+        "source_fact": "Proposed Danish law is a signal; MVP does not claim automatic detection or legal enforcement.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-011",
+      "supporting_article_ids": [
+        "d609a34c6f938b01a75734e7"
+      ],
+      "supporting_article_titles": [
+        "[기고] AI가 대신 결제한 거래, '내 승인' 어떻게 증명하나 - 지디넷코리아"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea"
+      ],
+      "canonical_source_urls": [
+        "https://parametacorp.com/blog/agentic-payment-explainer"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Agent-initiated purchases require a traceable user mandate, scope, amount limits and proof of approval across payment rails.",
+      "delta_types": [
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA",
+        "BUSINESS_MODEL_DELTA"
+      ],
+      "affected_workflow": "Agent purchase request → check mandate/limit → human approval → payment reference → audit receipt",
+      "target_customer": "Merchants and platforms piloting agentic commerce",
+      "buyer": "Payments product / compliance lead",
+      "job_to_be_done": "Demonstrate who authorized an AI-initiated transaction and within what bounds",
+      "current_friction": "Payment logs show a transaction but may not preserve a portable approval intent and policy history",
+      "product_mechanism": "Mandate templates, spending caps, signed-off purchase intents and reconciliation reference ledger",
+      "one_sentence_concept": "Agentic Purchase Authorization Ledger",
+      "why_now": "AP2 and x402 discussions make user-consent evidence more salient as agents begin to pay",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 300,
+      "draft_canonical_key": "merchants-and-platforms-piloting-agentic-commerce|demonstrate-who-authorized-an-ai-initiated-transaction-and-within-what|mandate-templates-spending-caps-signed-off-purchase-intents-and-reconc",
+      "evidence_notes": {
+        "source_fact": "PARAMETA discusses Google AP2, Visa Intelligent Commerce and x402; no payment execution or custody is required.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-012",
+      "supporting_article_ids": [
+        "cedb70e3be6eda496dddcfed"
+      ],
+      "supporting_article_titles": [
+        "Copenhagen’s TODAY raises €2.8 million to bring compliant AI agents to financial and insurance advisors - EU-Startups"
+      ],
+      "supporting_sources": [
+        "EU-Startups"
+      ],
+      "canonical_source_urls": [
+        "https://www.eu-startups.com/2026/10/copenhagens-today-raises-e2-8-million-to-bring-compliant-ai-agents-to-financial-and-insurance-advisors/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Regulated financial advisers increasingly turn client conversations into structured, compliant documentation.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "LABOR_DELTA",
+        "REGULATION_DELTA"
+      ],
+      "affected_workflow": "Client meeting → capture approved notes → suitability/disclosure checklist → client signoff → audit file",
+      "target_customer": "Independent insurance and financial advisory practices",
+      "buyer": "Practice principal / compliance officer",
+      "job_to_be_done": "Produce complete client meeting documentation with required review",
+      "current_friction": "Advisers duplicate notes across CRM, disclosure forms and follow-up emails",
+      "product_mechanism": "Structured meeting intake, configurable disclosure templates, missing-field validation and signoff",
+      "one_sentence_concept": "Advisor Meeting Compliance Pack Builder",
+      "why_now": "TODAY reports adoption by over 3,500 advisers and funding to expand compliant workflows",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 300,
+      "draft_canonical_key": "independent-insurance-and-financial-advisory-practices|produce-complete-client-meeting-documentation-with-required-review|structured-meeting-intake-configurable-disclosure-templates-missing-fi",
+      "evidence_notes": {
+        "source_fact": "TODAY reports anonymized real-time transcription and IDD-compliant documentation; MVP starts with manual notes, not paid transcription.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-013",
+      "supporting_article_ids": [
+        "cedb70e3be6eda496dddcfed"
+      ],
+      "supporting_article_titles": [
+        "Copenhagen’s TODAY raises €2.8 million to bring compliant AI agents to financial and insurance advisors - EU-Startups"
+      ],
+      "supporting_sources": [
+        "EU-Startups"
+      ],
+      "canonical_source_urls": [
+        "https://www.eu-startups.com/2026/10/copenhagens-today-raises-e2-8-million-to-bring-compliant-ai-agents-to-financial-and-insurance-advisors/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Adviser simulation and continuing education can be operationalized with reusable roleplay scenarios and measurable rubrics.",
+      "delta_types": [
+        "LABOR_DELTA",
+        "CAPABILITY_DELTA"
+      ],
+      "affected_workflow": "Training scenario → roleplay session → checklist/rubric assessment → coaching actions → progress record",
+      "target_customer": "Insurance broker training teams",
+      "buyer": "Sales enablement / compliance training manager",
+      "job_to_be_done": "Track adviser competency against repeatable customer and compliance scenarios",
+      "current_friction": "Live coaching is inconsistent and training evidence is difficult to aggregate",
+      "product_mechanism": "Branching text roleplay scripts, scenario library, scoring rubric and progress reports",
+      "one_sentence_concept": "Insurance Advisor Roleplay Scorecard",
+      "why_now": "TODAY combines live advisory support with simulated client training",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 220,
+      "draft_canonical_key": "insurance-broker-training-teams|track-adviser-competency-against-repeatable-customer-and-compliance-sc|branching-text-roleplay-scripts-scenario-library-scoring-rubric-and-pr",
+      "evidence_notes": {
+        "source_fact": "TODAY's AI voice simulations are a source capability; zero-cost MVP uses deterministic text-based scenarios.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-014",
+      "supporting_article_ids": [
+        "4e43a332f0a609cefb228fed",
+        "3b0fd70f7c397f77545de46c"
+      ],
+      "supporting_article_titles": [
+        "AI 에이전트 도입 늘어도 실제 운영은 11%…문제는 '통제' - 지디넷코리아",
+        "「Microsoft Execution Containers」が一般提供、AIエージェントを安全に動かす基盤 - 窓の杜"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea",
+        "Impress Watch"
+      ],
+      "canonical_source_urls": [
+        "https://www.thevc.kr/itcenglobal",
+        "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "The gap between agent pilots and operational control increases demand for ownership, permissions and deployment readiness records.",
+      "delta_types": [
+        "BEHAVIOR_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Proposed AI agent → assign owner/permissions → approve use case → pilot test → production go/no-go",
+      "target_customer": "SMEs adopting multiple business AI agents",
+      "buyer": "IT governance / operations manager",
+      "job_to_be_done": "Decide which agents are allowed into production and who owns them",
+      "current_friction": "AI agents spread through departments without consistent approval, risk or incident records",
+      "product_mechanism": "Agent inventory, approval gates, owner attestations and lifecycle dashboard",
+      "one_sentence_concept": "AI Agent Production Readiness Register",
+      "why_now": "Korean report cites 11% operational adoption while Microsoft introduces execution controls",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 290,
+      "draft_canonical_key": "smes-adopting-multiple-business-ai-agents|decide-which-agents-are-allowed-into-production-and-who-owns-them|agent-inventory-approval-gates-owner-attestations-and-lifecycle-dashbo",
+      "evidence_notes": {
+        "source_fact": "11% figure is visible in corroborating publisher snippets; source survey details not independently verified.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-015",
+      "supporting_article_ids": [
+        "4983f7b48b8add04335db5c2"
+      ],
+      "supporting_article_titles": [
+        "Bavaria’s female-founded startup Finches raises €2 million to bring AI early warnings to agricultural procurement - EU-Startups"
+      ],
+      "supporting_sources": [
+        "EU-Startups"
+      ],
+      "canonical_source_urls": [
+        "https://www.eu-startups.com/2026/10/bavarias-female-founded-startup-finches-raises-e2-million-to-bring-ai-early-warnings-to-agricultural-procurement/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Field-level weather and crop signals can be connected to supplier contracts before shortage reaches the factory.",
+      "delta_types": [
+        "DATA_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Supplier crop plan → field/weather alerts → volume-at-risk estimate → buyer action",
+      "target_customer": "Food processors, cosmetics and pharma companies sourcing agricultural inputs",
+      "buyer": "Raw-material procurement director",
+      "job_to_be_done": "Spot potential supply volume and quality disruptions early",
+      "current_friction": "Supplier reports and weather risks are fragmented and usually escalated too late",
+      "product_mechanism": "Supplier crop calendar, contract exposure, manual field alerts and risk register",
+      "one_sentence_concept": "Agricultural Raw-Material Early Warning Desk",
+      "why_now": "Finches launched its intelligence platform in September 2026 and raised €2m",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 330,
+      "draft_canonical_key": "food-processors-cosmetics-and-pharma-companies-sourcing-agricultural-i|spot-potential-supply-volume-and-quality-disruptions-early|supplier-crop-calendar-contract-exposure-manual-field-alerts-and-risk-",
+      "evidence_notes": {
+        "source_fact": "Finches describes field, sourcing, weather and market data combined for early warnings.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required.",
+        "trakya_transferability_hypothesis": "The Trakya food-processing and agricultural supply chain could pilot crop/ingredient sourcing risk workflows without requiring the original supplier's geographic footprint."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-016",
+      "supporting_article_ids": [
+        "4983f7b48b8add04335db5c2"
+      ],
+      "supporting_article_titles": [
+        "Bavaria’s female-founded startup Finches raises €2 million to bring AI early warnings to agricultural procurement - EU-Startups"
+      ],
+      "supporting_sources": [
+        "EU-Startups"
+      ],
+      "canonical_source_urls": [
+        "https://www.eu-startups.com/2026/10/bavarias-female-founded-startup-finches-raises-e2-million-to-bring-ai-early-warnings-to-agricultural-procurement/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Earlier visibility of agricultural shortages creates a separate supplier-switching and production-replanning decision.",
+      "delta_types": [
+        "DATA_DELTA",
+        "COST_DELTA"
+      ],
+      "affected_workflow": "At-risk ingredient → alternative suppliers → compare lead time/quality → reserve replacement → revise production",
+      "target_customer": "Ingredient buyers and food manufacturers",
+      "buyer": "Procurement and production-planning managers",
+      "job_to_be_done": "Plan substitute supply before crop disruption affects production",
+      "current_friction": "Backup suppliers, substitution specifications and production deadlines are managed in separate spreadsheets",
+      "product_mechanism": "Approved-alternative supplier matrix, lead-time planner, scenario calculator and action log",
+      "one_sentence_concept": "Ingredient Supply Contingency Planner",
+      "why_now": "Finches says warnings can enable backup sourcing, earlier purchases or production rescheduling",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 300,
+      "draft_canonical_key": "ingredient-buyers-and-food-manufacturers|plan-substitute-supply-before-crop-disruption-affects-production|approved-alternative-supplier-matrix-lead-time-planner-scenario-calcul",
+      "evidence_notes": {
+        "source_fact": "The source explicitly names alternative suppliers, early purchases and production replanning as responses.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required.",
+        "trakya_transferability_hypothesis": "Transferable to Trakya food, beverage and agricultural-ingredient processors; local customer identity requires fresh validation."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-017",
+      "supporting_article_ids": [
+        "4730b5e0db6a38a3476cfe6c"
+      ],
+      "supporting_article_titles": [
+        "ICANN reveals bids for new top-level domains - The Register"
+      ],
+      "supporting_sources": [
+        "The Register — UK"
+      ],
+      "canonical_source_urls": [
+        "https://www.icann.org/resources/press-material/release-2026-10-07-en",
+        "https://newgtldprogram-aps.icann.org/applications"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "ICANN's 2026 gTLD application list makes brand-relevant proposed suffixes and applicants publicly searchable.",
+      "delta_types": [
+        "DATA_DELTA",
+        "REGULATION_DELTA"
+      ],
+      "affected_workflow": "Brand portfolio → match proposed gTLD strings → flag exposure → record action decision",
+      "target_customer": "Brand owners and IP law firms",
+      "buyer": "Brand protection / trademark counsel",
+      "job_to_be_done": "Track which new top-level domains could require brand-protection action",
+      "current_friction": "Proposed gTLDs and contested strings are hard to review across many client brands",
+      "product_mechanism": "Public ICANN list/CSV import, brand keyword matching and action queue",
+      "one_sentence_concept": "gTLD Brand Exposure Watch",
+      "why_now": "ICANN Reveal Day published 2026 applications on 7 October",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 220,
+      "draft_canonical_key": "brand-owners-and-ip-law-firms|track-which-new-top-level-domains-could-require-brand-protection-actio|public-icann-list-csv-import-brand-keyword-matching-and-action-queue",
+      "evidence_notes": {
+        "source_fact": "ICANN published applications and contention sets; matching is deterministic, not legal advice.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-018",
+      "supporting_article_ids": [
+        "4730b5e0db6a38a3476cfe6c"
+      ],
+      "supporting_article_titles": [
+        "ICANN reveals bids for new top-level domains - The Register"
+      ],
+      "supporting_sources": [
+        "The Register — UK"
+      ],
+      "canonical_source_urls": [
+        "https://www.icann.org/en/announcements/details/icann-announces-date-for-reveal-day-and-other-2026-round-milestones-29-09-2026-en",
+        "https://newgtldprogram-aps.icann.org/applications"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "The 2026 gTLD round creates deadline-driven replacement, objection and decision milestones.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "Application list → deadline/contested-string calendar → stakeholder evidence → submit/review",
+      "target_customer": "gTLD applicants and specialist IP firms",
+      "buyer": "Domain program / legal operations lead",
+      "job_to_be_done": "Coordinate filing, objections and deadline evidence for contested strings",
+      "current_friction": "Milestones and documents are dispersed among portal notices, counsel and applicants",
+      "product_mechanism": "Application portfolio, deadline calendar, document checklist and decision history",
+      "one_sentence_concept": "gTLD Application Milestone Desk",
+      "why_now": "ICANN set Reveal Day and subsequent 2026 replacement/string-confirmation milestones",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 260,
+      "draft_canonical_key": "gtld-applicants-and-specialist-ip-firms|coordinate-filing-objections-and-deadline-evidence-for-contested-strin|application-portfolio-deadline-calendar-document-checklist-and-decisio",
+      "evidence_notes": {
+        "source_fact": "ICANN's September 29 milestone notice provides official timing; this tool does not file objections automatically.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-019",
+      "supporting_article_ids": [
+        "aa344d72e5f6e0b2573322f3"
+      ],
+      "supporting_article_titles": [
+        "CrowdStrike says China-based suspect used AI tools in South Korean bank hacks - iTnews"
+      ],
+      "supporting_sources": [
+        "iTnews"
+      ],
+      "canonical_source_urls": [
+        "https://www.itnews.com.au/news/crowdstrike-says-china-based-suspect-used-ai-tools-in-south-korean-bank-hacks-629513"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AI-assisted intrusion campaigns require a coordinated incident-evidence trail linking observed artifacts and remediation decisions.",
+      "delta_types": [
+        "RISK_DELTA",
+        "BEHAVIOR_DELTA"
+      ],
+      "affected_workflow": "Suspicious campaign report → evidence/IOC intake → asset owner triage → response tasks → postmortem",
+      "target_customer": "Financial institutions and security incident teams",
+      "buyer": "SOC / incident response manager",
+      "job_to_be_done": "Track externally reported AI-assisted attack indicators and response actions",
+      "current_friction": "Threat reports and internal remediation tickets are scattered across tools and spreadsheets",
+      "product_mechanism": "Manual IOC intake, incident timeline, asset ownership and evidence checklist",
+      "one_sentence_concept": "AI-Assisted Attack Incident Ledger",
+      "why_now": "CrowdStrike linked coding-tool sessions and infrastructure to a Korean financial-sector attack campaign",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 250,
+      "draft_canonical_key": "financial-institutions-and-security-incident-teams|track-externally-reported-ai-assisted-attack-indicators-and-response-a|manual-ioc-intake-incident-timeline-asset-ownership-and-evidence-check",
+      "evidence_notes": {
+        "source_fact": "iTnews reports CrowdStrike's assessment; attribution remains probabilistic, not a verified identity.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-020",
+      "supporting_article_ids": [
+        "c824fa7773abe13df467ae07"
+      ],
+      "supporting_article_titles": [
+        "Attackers hijack ccTLDs to fake certs for Google - iTnews"
+      ],
+      "supporting_sources": [
+        "iTnews"
+      ],
+      "canonical_source_urls": [
+        "https://www.itnews.com.au/news/attackers-hijack-cctlds-to-fake-certs-for-google-629504"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Compromised ccTLD registries enabled unauthorized certificates for major web brands.",
+      "delta_types": [
+        "RISK_DELTA",
+        "INFRASTRUCTURE_DELTA"
+      ],
+      "affected_workflow": "Domain inventory → import certificate-transparency data → flag unfamiliar issuance → investigate/revoke",
+      "target_customer": "Organizations with multiple domains and brands",
+      "buyer": "Security operations / domain portfolio manager",
+      "job_to_be_done": "Detect suspicious certificates issued for company-controlled domains",
+      "current_friction": "Domain and certificate issuance monitoring is inconsistent across portfolios",
+      "product_mechanism": "User-supplied CT export/domain list comparison, issuer exception queue and remediation record",
+      "one_sentence_concept": "Certificate Issuance Anomaly Review Desk",
+      "why_now": "Google reported unauthorized certificates after registry hijacks in September 2026",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 290,
+      "draft_canonical_key": "organizations-with-multiple-domains-and-brands|detect-suspicious-certificates-issued-for-company-controlled-domains|user-supplied-ct-export-domain-list-comparison-issuer-exception-queue-",
+      "evidence_notes": {
+        "source_fact": "iTnews reports 32 certificates and revocation; MVP does not require live paid CT API.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-021",
+      "supporting_article_ids": [
+        "77e0544842a40b5feab43b9f"
+      ],
+      "supporting_article_titles": [
+        "リコージャパン、生成AIアプリ開発基盤「Dify」の中小規模向け導入サービスを提供 - クラウド Watch"
+      ],
+      "supporting_sources": [
+        "Impress Watch"
+      ],
+      "canonical_source_urls": [
+        "https://www.ricoh.co.jp/news"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Ricoh Japan's Dify rollout offering highlights SMB need for structured AI-app deployment preparation.",
+      "delta_types": [
+        "ACCESS_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "SMB use-case intake → data/access checklist → pilot tests → owner approval → handover",
+      "target_customer": "Small businesses deploying internal no-code AI applications",
+      "buyer": "SMB IT manager / process owner",
+      "job_to_be_done": "Make a repeatable readiness and acceptance pack for each AI workflow",
+      "current_friction": "Unclear data owners, privacy decisions and success criteria delay internal AI rollouts",
+      "product_mechanism": "Dify-neutral deployment checklist, pilot test cases, acceptance evidence and ownership register",
+      "one_sentence_concept": "No-Code AI Deployment Readiness Kit",
+      "why_now": "Ricoh announced an October 8 Dify Essential/Standard implementation service",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 210,
+      "draft_canonical_key": "small-businesses-deploying-internal-no-code-ai-applications|make-a-repeatable-readiness-and-acceptance-pack-for-each-ai-workflow|dify-neutral-deployment-checklist-pilot-test-cases-acceptance-evidence",
+      "evidence_notes": {
+        "source_fact": "Ricoh's official news index confirms service launch; proposed product is independent of paid Dify licenses.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-022",
+      "supporting_article_ids": [
+        "48c99689ad35468bd7399940"
+      ],
+      "supporting_article_titles": [
+        "ソニービズネットワークス、社内チャットボット「Assist AI Chat Bot」にSharePoint連携機能を追加 UIも全面刷新 - クラウド Watch"
+      ],
+      "supporting_sources": [
+        "Impress Watch"
+      ],
+      "canonical_source_urls": [
+        "https://sonybn.co.jp/news/2026/1008/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "SharePoint-connected enterprise Q&A expands use of existing documents but introduces freshness and access review needs.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Knowledge source inventory → owner/permissions review → freshness check → approve Q&A inclusion",
+      "target_customer": "Organizations with document-based internal helpdesks",
+      "buyer": "Knowledge management / IT governance lead",
+      "job_to_be_done": "Keep internal knowledge sources approved, current and appropriately permissioned",
+      "current_friction": "Outdated policies and unmanaged document access can contaminate internal Q&A workflows",
+      "product_mechanism": "Knowledge source catalog, review calendar, permission attestation and retired-document tracking",
+      "one_sentence_concept": "AI Knowledge Source Governance Desk",
+      "why_now": "Sony Biz Networks added SharePoint integration to its internal Q&A chatbot on 8 October",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 260,
+      "draft_canonical_key": "organizations-with-document-based-internal-helpdesks|keep-internal-knowledge-sources-approved-current-and-appropriately-per|knowledge-source-catalog-review-calendar-permission-attestation-and-re",
+      "evidence_notes": {
+        "source_fact": "Official company release confirms integration; MVP catalogs metadata and does not bypass SharePoint access controls.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-023",
+      "supporting_article_ids": [
+        "714db7a98d38adab115c759a",
+        "c33c696b0a5998f70f90024d"
+      ],
+      "supporting_article_titles": [
+        "IDCフロンティアへのランサム攻撃、495の企業・自治体に影響 - 日経クロステック（xTECH）",
+        "IDCFクラウドの障害は「ランサムウェア攻撃」が原因 495の企業・自治体に影響 - Impress Watch"
+      ],
+      "supporting_sources": [
+        "Nikkei XTECH",
+        "Impress Watch"
+      ],
+      "canonical_source_urls": [
+        "https://www.watch.impress.co.jp/docs/news/2146693.html",
+        "https://www.watch.impress.co.jp/docs/news/2146931.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "A ransomware incident at a cloud region affected 495 customers and threatened restoration of stored data.",
+      "delta_types": [
+        "RISK_DELTA",
+        "INFRASTRUCTURE_DELTA"
+      ],
+      "affected_workflow": "Cloud provider incident → map affected business services → notify owners/customers → record workaround",
+      "target_customer": "SMEs and SaaS providers relying on third-party cloud infrastructure",
+      "buyer": "Business continuity / customer operations lead",
+      "job_to_be_done": "Identify downstream services and customers affected by an upstream outage",
+      "current_friction": "Cloud dependencies are undocumented and impact messages are assembled manually",
+      "product_mechanism": "Vendor-to-service dependency map, incident communications and customer impact ledger",
+      "one_sentence_concept": "Third-Party Cloud Outage Impact Desk",
+      "why_now": "October 7–8 IDCF ransomware disruption affected 495 organizations",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 290,
+      "draft_canonical_key": "smes-and-saas-providers-relying-on-third-party-cloud-infrastructure|identify-downstream-services-and-customers-affected-by-an-upstream-out|vendor-to-service-dependency-map-incident-communications-and-customer-",
+      "evidence_notes": {
+        "source_fact": "Impress reports ransomware, network isolation and later warning of difficult data recovery.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required.",
+        "trakya_transferability_hypothesis": "Factories, logistics operators and industrial service firms in Trakya also rely on external cloud services for inventory, dispatch and ERP operations."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-024",
+      "supporting_article_ids": [
+        "714db7a98d38adab115c759a",
+        "c33c696b0a5998f70f90024d"
+      ],
+      "supporting_article_titles": [
+        "IDCフロンティアへのランサム攻撃、495の企業・自治体に影響 - 日経クロステック（xTECH）",
+        "IDCFクラウドの障害は「ランサムウェア攻撃」が原因 495の企業・自治体に影響 - Impress Watch"
+      ],
+      "supporting_sources": [
+        "Nikkei XTECH",
+        "Impress Watch"
+      ],
+      "canonical_source_urls": [
+        "https://www.watch.impress.co.jp/docs/news/2146931.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Possible nonrecoverability of cloud-hosted data turns restore evidence into a critical supplier-risk control.",
+      "delta_types": [
+        "RISK_DELTA",
+        "COST_DELTA"
+      ],
+      "affected_workflow": "Critical data register → backup copy evidence → scheduled restore test → exception and remediation",
+      "target_customer": "SMEs and managed service providers",
+      "buyer": "IT infrastructure / compliance manager",
+      "job_to_be_done": "Prove that backups can be restored independently of a compromised provider",
+      "current_friction": "Backup jobs may be marked successful without an auditable restore test or off-provider copy",
+      "product_mechanism": "Backup inventory, restore-drill schedule, recovery objectives and signed test evidence",
+      "one_sentence_concept": "Independent Backup Restore Drill Ledger",
+      "why_now": "IDCF warned some customer data may be difficult to retrieve or restore",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 250,
+      "draft_canonical_key": "smes-and-managed-service-providers|prove-that-backups-can-be-restored-independently-of-a-compromised-prov|backup-inventory-restore-drill-schedule-recovery-objectives-and-signed",
+      "evidence_notes": {
+        "source_fact": "Impress reports IDCF's October 8 third update; MVP records tests rather than performing backups.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-025",
+      "supporting_article_ids": [
+        "6143dd7588dad06a47625648"
+      ],
+      "supporting_article_titles": [
+        "市场监管总局加严灯具、镇流器等产品CCC认证要求 - 36Kr"
+      ],
+      "supporting_sources": [
+        "36Kr"
+      ],
+      "canonical_source_urls": [
+        "https://www.cnca.gov.cn/zwxx/gg/2026/art/2026/art_7cad62062c9043f0802d7701900140f3.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "China's revised CCC rules for luminaires and ballasts become the basis for new certification activity from January 2027.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "SKU inventory → map CCC rule/version → document/test checklist → certificate transition → audit file",
+      "target_customer": "Lighting manufacturers and exporters supplying China",
+      "buyer": "Regulatory affairs / quality certification lead",
+      "job_to_be_done": "Track product-by-product CCC transition readiness and certification evidence",
+      "current_friction": "Product families, certificate dates, lab documents and revised rules are tracked manually",
+      "product_mechanism": "SKU-rule matrix, expiry reminders, document requirements and approval checklist",
+      "one_sentence_concept": "China CCC Lighting Transition Desk",
+      "why_now": "CNCA announced the 2026 rules and January 1, 2027 transition date",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 270,
+      "draft_canonical_key": "lighting-manufacturers-and-exporters-supplying-china|track-product-by-product-ccc-transition-readiness-and-certification-ev|sku-rule-matrix-expiry-reminders-document-requirements-and-approval-ch",
+      "evidence_notes": {
+        "source_fact": "CNCA primary announcement states existing valid certificates remain valid and transition can occur on changes/renewal.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required.",
+        "trakya_transferability_hypothesis": "Transferable to Trakya electrical-component and lighting manufacturers exporting to China, if such customers are validated."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-026",
+      "supporting_article_ids": [
+        "14a1fe9b8d445805d0487422"
+      ],
+      "supporting_article_titles": [
+        "Physical AI Can Act. It Still Can’t Check Its Own Work. - Quality Magazine"
+      ],
+      "supporting_sources": [
+        "Quality Magazine"
+      ],
+      "canonical_source_urls": [
+        "https://www.qualitymag.com/articles/99978-physical-ai-can-act-it-still-cant-check-its-own-work"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Robotic task completion does not prove manufactured-part conformance to CAD and dimensional tolerances.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Robot work order → inspection requirement → measured result import → pass/fail evidence → containment",
+      "target_customer": "Manufacturers adopting robotic assembly or automated inspection",
+      "buyer": "Manufacturing quality / process engineering lead",
+      "job_to_be_done": "Show independent inspection evidence for each robotic production task",
+      "current_friction": "Robot success logs and quality measurements are not linked by part, batch and operation",
+      "product_mechanism": "Part/batch inspection register, CAD tolerance checklist, measurement CSV import and signoff",
+      "one_sentence_concept": "Robotic Work Quality Evidence Ledger",
+      "why_now": "Quality Magazine documents physical AI deployments and the separate metrology verification need",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 330,
+      "draft_canonical_key": "manufacturers-adopting-robotic-assembly-or-automated-inspection|show-independent-inspection-evidence-for-each-robotic-production-task|part-batch-inspection-register-cad-tolerance-checklist-measurement-csv",
+      "evidence_notes": {
+        "source_fact": "Article distinguishes robot placement success from finished-part tolerances; MVP is evidence workflow, not computer vision metrology.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required.",
+        "trakya_transferability_hypothesis": "Trakya automotive suppliers, metalworking and machinery manufacturers could pilot robot-to-inspection traceability without buying new metrology hardware."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-027",
+      "supporting_article_ids": [
+        "14a1fe9b8d445805d0487422"
+      ],
+      "supporting_article_titles": [
+        "Physical AI Can Act. It Still Can’t Check Its Own Work. - Quality Magazine"
+      ],
+      "supporting_sources": [
+        "Quality Magazine"
+      ],
+      "canonical_source_urls": [
+        "https://www.qualitymag.com/articles/99978-physical-ai-can-act-it-still-cant-check-its-own-work"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Continuous dimensional measurement makes process drift visible before a batch fails final inspection.",
+      "delta_types": [
+        "DATA_DELTA",
+        "COST_DELTA"
+      ],
+      "affected_workflow": "Inspection CSV → control limit trend → drift alert → corrective action → verification",
+      "target_customer": "Small industrial plants with repeated dimensional checks",
+      "buyer": "Quality control / production manager",
+      "job_to_be_done": "Detect quality drift and document corrective action before scrap grows",
+      "current_friction": "Measurements are sampled and analyzed too late or isolated from corrective-action records",
+      "product_mechanism": "Browser-side SPC charting, rule thresholds, corrective action owner and closure evidence",
+      "one_sentence_concept": "Dimensional Drift Action Tracker",
+      "why_now": "Quality Magazine describes continuous inspection and feedback loops as production-quality opportunity",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 290,
+      "draft_canonical_key": "small-industrial-plants-with-repeated-dimensional-checks|detect-quality-drift-and-document-corrective-action-before-scrap-grows|browser-side-spc-charting-rule-thresholds-corrective-action-owner-and-",
+      "evidence_notes": {
+        "source_fact": "Statistical process control is deterministic with uploaded measurements; article does not imply free sensor integration.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required.",
+        "trakya_transferability_hypothesis": "Applicable to Trakya precision metalworking, casting, plastic injection and automotive-supplier quality workflows."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-028",
+      "supporting_article_ids": [
+        "0451358cf99b944c5cbbdea2"
+      ],
+      "supporting_article_titles": [
+        "AIで複雑なバス仕業割当てを効率化するシステム「BASHUB」 京王自動車バスサービスとgolloccoが共同開発 - 株式会社インプレス"
+      ],
+      "supporting_sources": [
+        "Impress Watch"
+      ],
+      "canonical_source_urls": [
+        "https://ai.watch.impress.co.jp/docs/news/2146697.html",
+        "https://www.keiotaxi.co.jp/topics/20261008_1"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "A bus operator replaced expert-maintained Excel driver duty assignments with constraint-aware roster software.",
+      "delta_types": [
+        "SPEED_DELTA",
+        "LABOR_DELTA"
+      ],
+      "affected_workflow": "Route and driver availability → rest-hour constraints → shift assignment → manager approval",
+      "target_customer": "Bus and employee shuttle fleet operators",
+      "buyer": "Fleet operations / transport planning manager",
+      "job_to_be_done": "Build compliant driver duty rosters without expert-only spreadsheets",
+      "current_friction": "Leave, route qualifications, vehicle restrictions and rest periods create difficult scheduling constraints",
+      "product_mechanism": "Driver/route import, deterministic constraint checker, editable roster and PDF/CSV export",
+      "one_sentence_concept": "Bus Driver Duty Constraint Planner",
+      "why_now": "BASHUB began broader sales on 8 October after internal use",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 340,
+      "draft_canonical_key": "bus-and-employee-shuttle-fleet-operators|build-compliant-driver-duty-rosters-without-expert-only-spreadsheets|driver-route-import-deterministic-constraint-checker-editable-roster-a",
+      "evidence_notes": {
+        "source_fact": "Original Japanese article describes Excel-based assignment, statutory rest checks and shift editing.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required.",
+        "trakya_transferability_hypothesis": "Transferable to Trakya factory shuttle and regional bus fleets, where shift/driver assignment complexity is plausible."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-029",
+      "supporting_article_ids": [
+        "0451358cf99b944c5cbbdea2"
+      ],
+      "supporting_article_titles": [
+        "AIで複雑なバス仕業割当てを効率化するシステム「BASHUB」 京王自動車バスサービスとgolloccoが共同開発 - 株式会社インプレス"
+      ],
+      "supporting_sources": [
+        "Impress Watch"
+      ],
+      "canonical_source_urls": [
+        "https://ai.watch.impress.co.jp/docs/news/2146697.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Digital duty planning exposes a separate workflow for driver leave requests and last-minute schedule corrections.",
+      "delta_types": [
+        "LABOR_DELTA",
+        "BEHAVIOR_DELTA"
+      ],
+      "affected_workflow": "Driver leave/swap request → eligibility and rest checks → dispatch approval → roster revision",
+      "target_customer": "Fleet operators and subcontracted employee-shuttle providers",
+      "buyer": "Dispatch supervisor",
+      "job_to_be_done": "Handle driver absence and replacement without losing compliance history",
+      "current_friction": "Schedule swaps are coordinated by phone and messaging without traceable approvals",
+      "product_mechanism": "Driver self-service leave/swap portal, rule checks and revision log",
+      "one_sentence_concept": "Driver Shift Swap and Exception Desk",
+      "why_now": "BASHUB supports leave requests and revisions to planned duties",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 240,
+      "draft_canonical_key": "fleet-operators-and-subcontracted-employee-shuttle-providers|handle-driver-absence-and-replacement-without-losing-compliance-histor|driver-self-service-leave-swap-portal-rule-checks-and-revision-log",
+      "evidence_notes": {
+        "source_fact": "BASHUB feature list includes leave and roster modifications; proposed product is a narrower workflow.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required.",
+        "trakya_transferability_hypothesis": "Relevant to Trakya factory shuttle operators and logistics fleets with variable shift coverage."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-030",
+      "supporting_article_ids": [
+        "1daf8a21e4fc46e16d805a95"
+      ],
+      "supporting_article_titles": [
+        "電気設備設計の暗黙知をAIで自動化、関電工×Arentの自動設計システム - ITmedia"
+      ],
+      "supporting_sources": [
+        "ITmedia"
+      ],
+      "canonical_source_urls": [
+        "https://prtimes.jp/main/html/rd/p/000000156.000063436.html",
+        "https://it.kensetsu-plaza.com/cad/news/post/30646"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Codified expert rules connected to BIM enable electrical-route and design-document automation.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "SPEED_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "Electrical project inputs → engineer rule checklist → route/design decisions → review record",
+      "target_customer": "Electrical contractors and building services engineering offices",
+      "buyer": "Electrical design manager",
+      "job_to_be_done": "Standardize expert electrical design decisions and document rationale",
+      "current_friction": "Cable routing and equipment design depend on undocumented expert heuristics",
+      "product_mechanism": "Design decision rule library, checklist templates, project assumptions and approval history",
+      "one_sentence_concept": "Electrical Design Know-How Rulebook",
+      "why_now": "Kandenko and Arent report VOLDAR operational deployment; October 8 article revisited it",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 320,
+      "draft_canonical_key": "electrical-contractors-and-building-services-engineering-offices|standardize-expert-electrical-design-decisions-and-document-rationale|design-decision-rule-library-checklist-templates-project-assumptions-a",
+      "evidence_notes": {
+        "source_fact": "Original Arent announcement is dated August 25, 2026; do not misstate it as newly launched October 8.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required.",
+        "trakya_transferability_hypothesis": "Trakya factory electrical contractors and engineering service firms could pilot repeatable electrical design review rules."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-031",
+      "supporting_article_ids": [
+        "1daf8a21e4fc46e16d805a95"
+      ],
+      "supporting_article_titles": [
+        "電気設備設計の暗黙知をAIで自動化、関電工×Arentの自動設計システム - ITmedia"
+      ],
+      "supporting_sources": [
+        "ITmedia"
+      ],
+      "canonical_source_urls": [
+        "https://prtimes.jp/main/html/rd/p/000000156.000063436.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "BIM-derived quantities and design calculations can be turned into explainable estimate evidence rather than opaque spreadsheets.",
+      "delta_types": [
+        "SPEED_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "BIM/exported quantities → unit-rate assumptions → electrical estimate → variance review → client pack",
+      "target_customer": "MEP estimating teams and electrical subcontractors",
+      "buyer": "Estimating manager / project commercial lead",
+      "job_to_be_done": "Produce traceable electrical estimates and explain changed assumptions",
+      "current_friction": "Estimate sheets and technical calculation basis are hard to compare across revisions",
+      "product_mechanism": "Quantity CSV import, rule-based estimate, revision comparison and evidence export",
+      "one_sentence_concept": "Electrical Estimate Revision Evidence Desk",
+      "why_now": "VOLDAR automates drawings and estimates from BIM-linked logic",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 310,
+      "draft_canonical_key": "mep-estimating-teams-and-electrical-subcontractors|produce-traceable-electrical-estimates-and-explain-changed-assumptions|quantity-csv-import-rule-based-estimate-revision-comparison-and-eviden",
+      "evidence_notes": {
+        "source_fact": "Arent release describes automated approximate estimates and technical calculation sheets; MVP relies on exported quantities.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required.",
+        "trakya_transferability_hypothesis": "Industrial electrical retrofit and new-factory projects in Trakya have analogous estimate and revision-control needs."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-032",
+      "supporting_article_ids": [
+        "00f928024e2e4921bb1e18d4"
+      ],
+      "supporting_article_titles": [
+        "UPI MDR Rollout May Be Deferred To January 2027 Amid Pushback By Retailers - Inc42"
+      ],
+      "supporting_sources": [
+        "Inc42"
+      ],
+      "canonical_source_urls": [
+        "https://flashfinance.news/article/2836-npci-considers-deferring-upi-merchant-discount-rate-rollout",
+        "https://www.livemint.com/money/personal-finance/upi-mdr-explained-flat-5-0-40-or-0-02-know-what-applies-to-merchants-key-sectors-and-capital-markets/amp-11789651455797.html"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "India's proposed UPI merchant discount rate and possible deferral introduce uncertain fee scenarios for merchants.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "COST_DELTA"
+      ],
+      "affected_workflow": "Merchant sales mix → transaction thresholds/category → alternative effective dates → fee impact forecast",
+      "target_customer": "Indian merchants and payment service providers",
+      "buyer": "Finance / merchant operations lead",
+      "job_to_be_done": "Estimate payment processing cost under changing UPI MDR scenarios",
+      "current_friction": "Fee tiers, exemptions and proposed effective dates are difficult to model in spreadsheets",
+      "product_mechanism": "Editable fee-rule table, transaction CSV calculator, scenario and margin report",
+      "one_sentence_concept": "UPI MDR Scenario Calculator",
+      "why_now": "October 8 reports discuss a possible delay to January 2027; no confirmed postponement assumed",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 230,
+      "draft_canonical_key": "indian-merchants-and-payment-service-providers|estimate-payment-processing-cost-under-changing-upi-mdr-scenarios|editable-fee-rule-table-transaction-csv-calculator-scenario-and-margin",
+      "evidence_notes": {
+        "source_fact": "Secondary reporting only; treat October 15 versus January 2027 as scenarios pending official decision.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required."
+      }
+    },
+    {
+      "raw_id": "w4-20261009-033",
+      "supporting_article_ids": [
+        "da5278ab75c01f685f0c1071"
+      ],
+      "supporting_article_titles": [
+        "'LG전자 사내벤처로 육성' 세카, 부품 최적화 AI 솔루션 전시 - 지디넷코리아"
+      ],
+      "supporting_sources": [
+        "ZDNet Korea"
+      ],
+      "canonical_source_urls": [
+        "https://bluepoint.ac/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Hardware design artifact consistency checks are emerging as a distinct engineering AI use case.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "BOM/schematic/PCB revision → upload artifact indexes → compare versions → discrepancy ticket",
+      "target_customer": "Electronics design and contract manufacturing teams",
+      "buyer": "Hardware engineering / quality lead",
+      "job_to_be_done": "Catch mismatched revision IDs and component references before manufacturing release",
+      "current_friction": "Schematic, BOM and layout releases may diverge across teams and suppliers",
+      "product_mechanism": "Revision manifest import, deterministic component comparison and discrepancy resolution",
+      "one_sentence_concept": "Hardware Design Artifact Consistency Desk",
+      "why_now": "A Korean hardware design startup was highlighted for AI optimization and cross-artifact conflict detection",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 330,
+      "draft_canonical_key": "electronics-design-and-contract-manufacturing-teams|catch-mismatched-revision-ids-and-component-references-before-manufact|revision-manifest-import-deterministic-component-comparison-and-discre",
+      "evidence_notes": {
+        "source_fact": "Bluepoint portfolio describes Seca as automating conflict detection across hardware design deliverables; exact exhibition details not independently verified.",
+        "source_inference_boundary": "Product mechanism is a discovery hypothesis, not a capability asserted by the cited article.",
+        "mvp_zero_cost_substitution": "User-uploaded CSV/forms, deterministic rules, browser-side processing and free-tier web storage; no paid API or model required.",
+        "trakya_transferability_hypothesis": "Industrial electronics and automation-equipment suppliers in Trakya may share BOM/layout revision problems."
+      }
+    }
+  ],
+  "triage_audit": {
+    "record_identity": "batch ordinal (not article ID); repeated feed records are counted independently",
+    "source_batch_blob_shas": {
+      "19": "b90576cf82de9b2708ccd7ebc5e2ab0433e38f56",
+      "20": "e5ca595e6d38a881a4a2debbdaccdb2a937921c1",
+      "21": "e535896a8917368dd5eb6473c55d8ad45d6074a3",
+      "22": "78785c1c4ec03278318e8b9c2a883e5a9f68a19c",
+      "23": "5dca7a5f31c83c76750b067fa45b3fd0bffb7eb2",
+      "24": "bbd9cd5ec22f0df17402ea34e05d2b995e97b0a4",
+      "25": "bc999c7b7dd295114abb1540dbb5c42815845013"
+    },
+    "assigned_batch_item_counts": {
+      "19": 40,
+      "20": 40,
+      "21": 40,
+      "22": 40,
+      "23": 40,
+      "24": 40,
+      "25": 40
+    },
+    "feed_record_ids_by_batch": {
+      "19": [
+        "53290e5c3717df1f54138640",
+        "571e23c71ba09c1dbcedd474",
+        "f8004ca261a2a1149a447a39",
+        "ad1a448fa462b98c8b8a89c6",
+        "f2c40b503df0abd1c3964a75",
+        "76e8cdedc7d055bf2f0a0b12",
+        "c669a49055d74d6606ceafc2",
+        "6d786c0da1204ff26a6c5d2b",
+        "a8c8cba4dc8d330520ef267e",
+        "9ed065594305b6c905f06fb7",
+        "38dbec9280588f0d86d47b2f",
+        "86dd55a6a95695d7c807ee58",
+        "3b0fd70f7c397f77545de46c",
+        "6c7c7fad4c410eec1494d65a",
+        "a77cb3a590f8e4a7a4203fb3",
+        "218effd922f046051b2db2cd",
+        "92ffbbc38fcfba4d62ab6a67",
+        "2470134d6063aa8b63995d64",
+        "3d1210628786d036a342c77d",
+        "4a8cf6a66c2a4821b663902f",
+        "8eba0d8e828150040b5380c9",
+        "c8814f4ab2cad205c50c95f0",
+        "0e8fa471fc4dada04ce53c0a",
+        "8bac0527bb1a630275229c8f",
+        "274ba0ddce49e2db216853b9",
+        "46d6f673db9f2bb504e4047c",
+        "df4fb1f72121090bc6af7a30",
+        "90115137276fbfd24183d3df",
+        "3115fa389412a82671501593",
+        "45484dc1a31fcf1f2ea05dc5",
+        "170e9643ca7a947d32591022",
+        "da0195a1866253abe7a41ef2",
+        "5ca6bb261b06db10b9ea7dec",
+        "dda2783add2630b81bedb59f",
+        "8df2fa67bd0fe95f0a07e303",
+        "87b667671480cbe936d2972c",
+        "cbbdb0a8abf3527cff526107",
+        "f6feee228a282873a7767a99",
+        "e9459e7e545ba752f03004ed",
+        "bb0d460cac70c7a25547c67f"
+      ],
+      "20": [
+        "d052515f2fd30d0f70a3f946",
+        "9a1e7b8363c7f08ea24bf255",
+        "d8d40ee5a5a1ac1b9e1f5c99",
+        "3c30f97e993ce26b35e45e7f",
+        "95f553baa9b07eb212b4c6ba",
+        "5fb2a01886bcf386e9abf312",
+        "6938e4a0e63e5b8747251c51",
+        "e9392cfca6b3b4bb135ebac8",
+        "5a394bc64edfc68d46669ee0",
+        "d59b36959a0dbb59598accb6",
+        "0a75caf9009c7a334e8f7a3c",
+        "f075039bfbee6905f7167750",
+        "f075039bfbee6905f7167750",
+        "aa1cd9c144d398a87a56ef8f",
+        "ed5577635a4aef39893adbba",
+        "ae17ad3fe2787fc310ec2756",
+        "55beddc80d71e62da09b0795",
+        "005d32bc3e9aa143389782fa",
+        "f8400d32e8c49cd4be057446",
+        "3828bdf0c718bf0dbf929c65",
+        "58f40152347bffbfd7400729",
+        "7afc281b52689aa3d2c0e148",
+        "7afc281b52689aa3d2c0e148",
+        "3d461b86a0feeb964cdca33e",
+        "b683b947acceb10f707333f0",
+        "645344d49cc2f02f69ef18a5",
+        "a0cee8dbf8d3c64d5eb8747d",
+        "ad8605754bc6f7c376691574",
+        "3d18a3948e5fa81e11abca80",
+        "093fcdbc29990ba56d2e5631",
+        "81cf517d99cb7c7850a5bd19",
+        "5505a3a6044e92e115900dfa",
+        "c3d4dae8ff98e42622f377f1",
+        "daec9df2cd6ed04191e294e9",
+        "ac64c205c1a91d9c0ddc60d7",
+        "e41daa01d1cec41b5c99777a",
+        "ead81cf1cdb0c5ac3b3ffcf5",
+        "65bde8a839681d2d248d539b",
+        "f0d95d091b28aec780f70a2b",
+        "17ce71550431c82f21099a4d"
+      ],
+      "21": [
+        "171113b3484ac2e13ba577af",
+        "7710713c86c834798d7aea28",
+        "6f128f1b9e7ceba5d8899fca",
+        "14c706c69838307fc9a98939",
+        "0e0dc5e0a779b9b05238d341",
+        "708e47d43b5ec155e62fd87f",
+        "676378d7c5f4c7f3b02930de",
+        "5a7da4dd58a1689642abc603",
+        "5ba9f4372ea4fefa8d77ba4a",
+        "4527bc180aa93424e0d75dba",
+        "7fbfa772bd738e9f34eab15a",
+        "fc89c0f1c6c8fab9d2ab0f38",
+        "f4691e59132bec8cf84a44f0",
+        "f2e7ab0a1c30c9e43113df7e",
+        "cf2591e334a40199b7e194f2",
+        "9c4eb5e1c3352d1f5e71ec1f",
+        "ae52ad39a9911bef733ae125",
+        "b3a13bd15c3dfae202e3b244",
+        "87c0e914520ecf4c6a11dece",
+        "4ede5d19c926800c8ae7a0ca",
+        "36e33011a2ad9e4b45481a73",
+        "2377447eda156cf160a6d2ae",
+        "1bc31621add8f7735b485bf9",
+        "4680e36354d4e30901eadf93",
+        "d609a34c6f938b01a75734e7",
+        "eb8209adae3dcf34d289c1e4",
+        "cedb70e3be6eda496dddcfed",
+        "4e43a332f0a609cefb228fed",
+        "a0949692b7831504fce41a81",
+        "d5fd5b59d2ef9ea46d8f55a4",
+        "623c128f5c676a2601cd3ff6",
+        "deec634a9bca27c62213368d",
+        "89b000d600e22d975f573924",
+        "1b76a5f1a32135a9d30461b8",
+        "09eff8d8937db706fa6c693b",
+        "2093765478115d57ed52660c",
+        "1ac57e1e22274810f5d5d30d",
+        "3d91cba76435da613234c4e6",
+        "b76a6d92bac322f48ea9b99c",
+        "15574e1580b7d0c843617e2c"
+      ],
+      "22": [
+        "dae6b187d9039b1a6291a2d5",
+        "86bd9be4f3f3186463616139",
+        "6a89f27a2b6ffc53bb854a7f",
+        "a4ff1bc5e70d3aedffaf11d4",
+        "af7d8a59e14f1fde87335bbe",
+        "0e4053e295e7539b64cc9ffe",
+        "0dd39515333de3e697ac1f0b",
+        "e95a5bd8ce6245a4325eaa2a",
+        "35f98b20fe16ffa62a13a5da",
+        "4983f7b48b8add04335db5c2",
+        "4983f7b48b8add04335db5c2",
+        "b854d0d557accce3f0711c8c",
+        "4730b5e0db6a38a3476cfe6c",
+        "4b2cb0db9aa5430cb23dd06f",
+        "e077da5335180aaa13c1ac9c",
+        "52a5fa3ea9e49c13af89e063",
+        "2b88f4aa881edf075d3af033",
+        "1e31ec66295f04157b7201e3",
+        "59045e79f530ee4bd3ef7485",
+        "8c4597053e1d3b1b37890393",
+        "2959fc709722597f69007a3a",
+        "8a4e5edbc72564f836780b29",
+        "b84b756543f75f3116dea6fe",
+        "ba649ce2af2654d8cc31dee3",
+        "3e11fad2b842764f03ed41f4",
+        "2e8b178dbe2897708c43c66a",
+        "03a6489168f504620ac28156",
+        "9faec5b70765deecb20963fe",
+        "4d98031611c34d749b0f71b2",
+        "d81f30f6ac21690c9007bcf7",
+        "d68e001e87fbd9937cdb2665",
+        "72c0b85c93fe2c9bad51b341",
+        "302ef6c6f8c50426c45e5b8e",
+        "8297d4c9aeaf6e381458b195",
+        "8401aa9db03e031d3a850e0a",
+        "12ecbcb20c537b91b82f7cf2",
+        "2f47c1a76f491652b48accab",
+        "77e0544842a40b5feab43b9f",
+        "00f928024e2e4921bb1e18d4",
+        "14dce12a2a451e2f10f43829"
+      ],
+      "23": [
+        "b833761a004120a2a31db595",
+        "61fd5627a1bbc6a8345d7d7b",
+        "f266eee7d3b076ab0eb5839f",
+        "78275cd5518167ee35d67ea7",
+        "6cc7fb7f3cd303e73ad192c2",
+        "c675c6f6e7e4ac007c3f60e1",
+        "19ef1b755ca8c07f9556a0e6",
+        "adacfd8843ebd1cd909e5620",
+        "2ae8a0d778b0e0362540abd5",
+        "28a9cfa25ba45449a95f8207",
+        "6d723735133041a0ec91a44f",
+        "85da2029d4ec6a039a7211e4",
+        "b3b31bf0b45f0d0b820f20a4",
+        "b24492d7374adc61ea28bafd",
+        "98f297db963a413923eb49bc",
+        "0205239627852f30afb361d8",
+        "3a6ac2f8a0aaedc8eacabed6",
+        "859b0a7f32666e8e251b6b7e",
+        "0099c6654b052ac6171d8c75",
+        "3656abd9d3feb4fe66b737f9",
+        "800b4fc8d843a6cb41904e77",
+        "27805cc2ac61404361cd2688",
+        "bc357d9feedb4440b6a0886a",
+        "770063c0324231ccac1c982b",
+        "da5278ab75c01f685f0c1071",
+        "dc95fb313fea4d0a7cf9ee7c",
+        "2336f064469558e7d6fcf693",
+        "69ed3c17969f3defff9e3226",
+        "6bfff29d2971711c6bbf7ade",
+        "41fff0128fd4ae64cc5a0e6c",
+        "b4e395da46d6ca90aee7534a",
+        "464fe99e873c641ad02b5a15",
+        "a3e94a609c9ac3206333f188",
+        "6d498449b620e8aeb690bcd8",
+        "2bf9cd4941dc93f867b9b0b9",
+        "fcd6843fd22b957ea75fd392",
+        "c9dfdd6e241b3dfd70f2a1db",
+        "aa344d72e5f6e0b2573322f3",
+        "61e68be6ca0c7795d9fbc519",
+        "c824fa7773abe13df467ae07"
+      ],
+      "24": [
+        "6f5888d10fed195d6b070212",
+        "a901b6eb24e38d1425e44348",
+        "28f9f04f2c1f5b7fe33e583a",
+        "6eabaa49c41544459fc84014",
+        "5097485c7a5f1c3ad9778858",
+        "98b97377e319e21a63e5552f",
+        "a1dc56f56ad4802d74f12b53",
+        "57c118b652f8605589916e46",
+        "87547cf798a97e5696cbae57",
+        "5f2031f84760ffdb71bbf21f",
+        "035ab9393f781fd46409773d",
+        "c26e952e2907984f3370390b",
+        "a37996c7f827e9381e334328",
+        "514c806022ad65f04caae9f8",
+        "74b5f35a84bdafc1884ca05c",
+        "48c99689ad35468bd7399940",
+        "1db81110a587c4db35fa3377",
+        "0bcd67c054cf4d95eaf2f3eb",
+        "91cc17a6592eb0343db66ae4",
+        "c829a587e0ea196b15e1e716",
+        "4e96b21833ffb4673c8a033c",
+        "974f07a809fc5ea9b22f0c55",
+        "714db7a98d38adab115c759a",
+        "158f69296d5cb369d271aacd",
+        "ffa9d595d988ec077d948b9e",
+        "37f42cbcf2179f5045f98551",
+        "46c22912b4ea6897b28ee2d5",
+        "e7c390afd1700ca58bf01009",
+        "8d3f0d0cac755ff3af92c9d7",
+        "73109b0c1a59b39b82d74b28",
+        "3630683684486bbd3744f7b0",
+        "3c91139e53cce9956adbb7a2",
+        "4ed4e356751aaf03ce75d791",
+        "83309a0b3cb8e15d43bd3973",
+        "2281db11028e52161e483126",
+        "f4dd6b32b85ee431a602d35a",
+        "6143dd7588dad06a47625648",
+        "d2c6e4443efb98aba1120a20",
+        "f0bc7fc6b41019e3a5dffe92",
+        "a2a73e665243ec8b598305b1"
+      ],
+      "25": [
+        "14a1fe9b8d445805d0487422",
+        "546b88facc5810e29e6c40c6",
+        "10b6c9c998d90114e723411d",
+        "7700b56db17a7d053da7cf74",
+        "0451358cf99b944c5cbbdea2",
+        "2c52ef9067a80ef4523523df",
+        "49db0e9a7b7ebd04c02d4630",
+        "49792deee2ada4186a3c3a98",
+        "531b380dcdb78684e2aaf502",
+        "80ac50a820852f7fda69b1ff",
+        "fa72303bb43b943104e3feb6",
+        "f94e5bd9417018f4866cbc63",
+        "fc6d7ab9cffad553236ba273",
+        "0f5c36ea703e98225358fb26",
+        "20ebf1deddd433dbc5db487a",
+        "32d31f90eb3091c8eb6ba3f2",
+        "c33c696b0a5998f70f90024d",
+        "f0769690e7f2894965b084fb",
+        "7ff4ee79335de4e508ce24ba",
+        "d6b04ba2cd47a7f38e45a42c",
+        "a1ffaf1315decd07b558b5f0",
+        "cbaa1f723d3d77ed8694312c",
+        "e788587f3000b7dafaa488ba",
+        "5a50d198860db1f21b20aedb",
+        "b2b4e83e4c4961aeac4c6ed4",
+        "ab9edddbfcb4307e3cc77c7a",
+        "3411768feda715dddd52e668",
+        "cd57b170e05045db363041be",
+        "1daf8a21e4fc46e16d805a95",
+        "cc1bacfd8f66f2cd1380ff55",
+        "08265e795ff782c3b9a6ee80",
+        "4dab1946b4de35c1a6016834",
+        "4dab1946b4de35c1a6016834",
+        "ad4fc6255e5a89fc720a5128",
+        "7789af677cde18f0f0e3f535",
+        "dda5612ef1e2e8210ed79bcc",
+        "c22f4a7ba186cf6bb15ffea7",
+        "0023cc47a05f7ca65d8da255",
+        "e6efaaeea3c277296b4c6409",
+        "c19916a2467c5225cef872f2"
+      ]
+    },
+    "candidate_flags_by_batch": {
+      "19": "0000000000001000000000001000000000000000",
+      "20": "0000010001000000001000000001110100000000",
+      "21": "0000010000000000000000001011000000000000",
+      "22": "0000000001101000000000000000100000000110",
+      "23": "0000000000000000000000001000000000000101",
+      "24": "0000000000000001000010100000000000001000",
+      "25": "1100100000000000100000000000100000000000"
+    },
+    "candidate_article_ids": [
+      "3b0fd70f7c397f77545de46c",
+      "274ba0ddce49e2db216853b9",
+      "5fb2a01886bcf386e9abf312",
+      "d59b36959a0dbb59598accb6",
+      "ad8605754bc6f7c376691574",
+      "3d18a3948e5fa81e11abca80",
+      "093fcdbc29990ba56d2e5631",
+      "5505a3a6044e92e115900dfa",
+      "708e47d43b5ec155e62fd87f",
+      "d609a34c6f938b01a75734e7",
+      "cedb70e3be6eda496dddcfed",
+      "4e43a332f0a609cefb228fed",
+      "4983f7b48b8add04335db5c2",
+      "4730b5e0db6a38a3476cfe6c",
+      "aa344d72e5f6e0b2573322f3",
+      "c824fa7773abe13df467ae07",
+      "77e0544842a40b5feab43b9f",
+      "48c99689ad35468bd7399940",
+      "714db7a98d38adab115c759a",
+      "c33c696b0a5998f70f90024d",
+      "6143dd7588dad06a47625648",
+      "14a1fe9b8d445805d0487422",
+      "0451358cf99b944c5cbbdea2",
+      "1daf8a21e4fc46e16d805a95",
+      "00f928024e2e4921bb1e18d4",
+      "da5278ab75c01f685f0c1071",
+      "546b88facc5810e29e6c40c6",
+      "4d98031611c34d749b0f71b2",
+      "4e96b21833ffb4673c8a033c",
+      "f8400d32e8c49cd4be057446"
+    ],
+    "unverified_candidate_article_ids": [
+      "546b88facc5810e29e6c40c6",
+      "4d98031611c34d749b0f71b2",
+      "4e96b21833ffb4673c8a033c",
+      "f8400d32e8c49cd4be057446"
+    ],
+    "candidate_feed_record_count": 31
+  },
+  "verification_note": "Batch JSON files have no independent generated_at field. Frozen index metadata, expected counts, batch numbers and current GitHub blob SHA were checked; same-generation identity cannot be independently proven from the batch file schema."
+}
