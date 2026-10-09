@@ -18,11 +18,11 @@
   "completed_at": null,
   "feed_items_expected": 240,
   "feed_items_triaged": 240,
-  "candidate_article_count": 12,
-  "original_articles_verified": 12,
-  "full_article_not_verified": 0,
-  "noise_or_no_opportunity_count": 228,
-  "raw_opportunity_count": 22,
+  "candidate_article_count": 26,
+  "original_articles_verified": 23,
+  "full_article_not_verified": 2,
+  "noise_or_no_opportunity_count": 214,
+  "raw_opportunity_count": 24,
   "raw_opportunities": [
     {
       "raw_id": "w3-20261009-001",
@@ -830,6 +830,78 @@
         "source_fact": "Original Impress report links Sakura's official October 8 announcement; product need and buying behavior are inferred.",
         "source_inference_boundary": "Product demand, exact control effectiveness and commercial value not verified."
       }
+    },
+    {
+      "raw_id": "w3-20261009-023",
+      "supporting_article_ids": [
+        "7ffd4374d8c1987f52ec9c08"
+      ],
+      "supporting_article_titles": [
+        "机器人触觉传感器商业化路径分叉：硬件先行，数据与模型商业化尚需验证 - 虎嗅网"
+      ],
+      "supporting_sources": [
+        "Huxiu"
+      ],
+      "canonical_source_urls": [
+        "https://www.huxiu.com/article/4895924.html"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Reported cross-sensor model accuracy degradation creates calibration and dataset portability friction.",
+      "delta_types": [
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "Robotic tactile dataset evaluation and sensor migration",
+      "target_customer": "Robotics R&D labs and tactile sensor suppliers",
+      "buyer": "Robotics data engineering lead",
+      "job_to_be_done": "Document sensor-specific calibration, data format and cross-sensor validation outcomes",
+      "current_friction": "Tactile datasets are difficult to reuse across sensor designs",
+      "product_mechanism": "Sensor metadata registry, dataset compatibility matrix and evaluation evidence",
+      "one_sentence_concept": "Robotics tactile sensor dataset compatibility register",
+      "why_now": "Reported cross-sensor model accuracy degradation creates calibration and dataset portability friction.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 135,
+      "draft_canonical_key": "robotics-tactile|sensor-dataset-compatibility|validation-register",
+      "evidence_notes": {
+        "source_fact": "Huxiu cites TacVerse cross-sensor benchmark; research and vendor performance claims are not independently replicated.",
+        "source_inference_boundary": "Buyer demand and product value remain unverified hypotheses."
+      }
+    },
+    {
+      "raw_id": "w3-20261009-024",
+      "supporting_article_ids": [
+        "78bb039162cf7e052c75c297"
+      ],
+      "supporting_article_titles": [
+        "相次ぐ情報漏えい、攻撃側のAI活用「間違いない」 防御側はどう使うか 傾向と対策を大手ベンダー各社に聞く - ITmedia"
+      ],
+      "supporting_sources": [
+        "ITmedia"
+      ],
+      "canonical_source_urls": [
+        "https://www.itmedia.co.jp/aiplus/article/2610/08/2000002136/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Security vendors report increased pressure to inventory externally exposed systems and formalize incident response, though disagree on measured attack increases.",
+      "delta_types": [
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "Cyber asset inventory and incident readiness reviews",
+      "target_customer": "Industrial SMEs and outsourced IT teams",
+      "buyer": "IT operations lead",
+      "job_to_be_done": "Track critical exposed assets, owners, patch actions and recovery exercise evidence",
+      "current_friction": "Cyber exposure and incident ownership records are fragmented",
+      "product_mechanism": "Asset checklist, action register, tabletop exercise evidence and review dates",
+      "one_sentence_concept": "SMB cyber asset and response-readiness review desk",
+      "why_now": "Security vendors report increased pressure to inventory externally exposed systems and formalize incident response, though disagree on measured attack increases.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 135,
+      "draft_canonical_key": "smb-cyber|exposure-response-readiness|review-desk",
+      "evidence_notes": {
+        "source_fact": "ITmedia interviews four vendors; vendor opinions conflict on whether attacks measurably increased. Trakya transferability remains hypothesis.",
+        "source_inference_boundary": "Buyer demand and product value remain unverified hypotheses."
+      }
     }
   ],
   "triage_audit": {
@@ -936,16 +1008,16 @@
         "position": 10,
         "feed_id": "385d0c008b127dae1ce091d5",
         "title": "企业AI落地“最后一公里”，究竟卡在哪? - OFweek",
-        "decision": "requires_original_article_review",
-        "reason": "Potential operational, regulatory or infrastructure delta; original article and JTBD not yet checked"
+        "decision": "insufficient_article_verification",
+        "reason": "Original OFweek article not reliably retrieved; no verified independent delta"
       },
       {
         "batch": 13,
         "position": 11,
         "feed_id": "7ffd4374d8c1987f52ec9c08",
         "title": "机器人触觉传感器商业化路径分叉：硬件先行，数据与模型商业化尚需验证 - 虎嗅网",
-        "decision": "requires_original_article_review",
-        "reason": "Potential operational, regulatory or infrastructure delta; original article and JTBD not yet checked"
+        "decision": "opportunity_recorded",
+        "reason": "Matching original article read; distinct workflow hypothesis recorded"
       },
       {
         "batch": 13,
@@ -1456,8 +1528,8 @@
         "position": 35,
         "feed_id": "14dd9ffcf2c25ae369614427",
         "title": "9秒删库，700个AI失控，豪掷513亿买不来安全？ - OFweek",
-        "decision": "requires_original_article_review",
-        "reason": "Potential operational, regulatory or infrastructure delta; original article and JTBD not yet checked"
+        "decision": "no_distinct_opportunity_after_article_review",
+        "reason": "Original OFweek security commentary is broad AI governance discussion without a specific independently evidenced workflow change"
       },
       {
         "batch": 14,
@@ -1560,8 +1632,8 @@
         "position": 8,
         "feed_id": "f7b05b2493082cb798e8a015",
         "title": "Dutch firm uses AI to help drone systems 'talk' on Ukraine's battlefield - Reuters",
-        "decision": "requires_original_article_review",
-        "reason": "Potential operational, regulatory or infrastructure delta; original article and JTBD not yet checked"
+        "decision": "no_distinct_opportunity_after_article_review",
+        "reason": "Reuters defense battlefield interoperability report; specialized weapons workflow is not appropriate for this low-cost civilian Lovable SaaS radar"
       },
       {
         "batch": 15,
@@ -1600,8 +1672,8 @@
         "position": 13,
         "feed_id": "4de178193aa4325306f76a60",
         "title": "온디바이스 AI로 투약 사고 막는다...알파팜텍·드란비 대상 - 지디넷코리아",
-        "decision": "requires_original_article_review",
-        "reason": "Potential operational, regulatory or infrastructure delta; original article and JTBD not yet checked"
+        "decision": "insufficient_article_verification",
+        "reason": "Original ZDNet Korea medicine-safety article not retrieved; cannot assert details"
       },
       {
         "batch": 15,
@@ -2064,24 +2136,24 @@
         "position": 31,
         "feed_id": "ca8e47d37c26a939ffd7a279",
         "title": "„Armee von Angreifern“ befürchtet – SPD fordert KI-Lagezentrum - Handelsblatt",
-        "decision": "requires_original_article_review",
-        "reason": "Potential operational, regulatory or infrastructure delta; original article and JTBD not yet checked"
+        "decision": "no_distinct_opportunity_after_article_review",
+        "reason": "Handelsblatt reports SPD policy proposal, not enacted obligations; overlaps existing AI safety obligations register"
       },
       {
         "batch": 16,
         "position": 32,
         "feed_id": "1a3dd8b9f70905144b8c873b",
         "title": "Cyberabwehr: Mehr Austausch gegen hybride Angriffe - www.produktion.de",
-        "decision": "requires_original_article_review",
-        "reason": "Potential operational, regulatory or infrastructure delta; original article and JTBD not yet checked"
+        "decision": "no_distinct_opportunity_after_article_review",
+        "reason": "Original Produktion article reports bilateral national cyber cooperation, not a new buyer workflow"
       },
       {
         "batch": 16,
         "position": 33,
         "feed_id": "1a3dd8b9f70905144b8c873b",
         "title": "Cyberabwehr: Mehr Austausch gegen hybride Angriffe - Produktion Online",
-        "decision": "requires_original_article_review",
-        "reason": "Potential operational, regulatory or infrastructure delta; original article and JTBD not yet checked"
+        "decision": "duplicate_feed_record",
+        "reason": "Same feed ID and article as batch 16 position 32; separately triaged"
       },
       {
         "batch": 16,
@@ -2168,8 +2240,8 @@
         "position": 4,
         "feed_id": "78bb039162cf7e052c75c297",
         "title": "相次ぐ情報漏えい、攻撃側のAI活用「間違いない」 防御側はどう使うか 傾向と対策を大手ベンダー各社に聞く - ITmedia",
-        "decision": "requires_original_article_review",
-        "reason": "Potential operational, regulatory or infrastructure delta; original article and JTBD not yet checked"
+        "decision": "opportunity_recorded",
+        "reason": "Matching original article read; distinct workflow hypothesis recorded"
       },
       {
         "batch": 17,
@@ -2780,62 +2852,7 @@
         "reason": "No sufficiently specific new reusable web workflow established from title/summary alone"
       }
     ],
-    "additional_article_review_queue": [
-      {
-        "batch": 13,
-        "position": 10,
-        "feed_id": "385d0c008b127dae1ce091d5",
-        "title": "企业AI落地“最后一公里”，究竟卡在哪? - OFweek"
-      },
-      {
-        "batch": 13,
-        "position": 11,
-        "feed_id": "7ffd4374d8c1987f52ec9c08",
-        "title": "机器人触觉传感器商业化路径分叉：硬件先行，数据与模型商业化尚需验证 - 虎嗅网"
-      },
-      {
-        "batch": 14,
-        "position": 35,
-        "feed_id": "14dd9ffcf2c25ae369614427",
-        "title": "9秒删库，700个AI失控，豪掷513亿买不来安全？ - OFweek"
-      },
-      {
-        "batch": 15,
-        "position": 8,
-        "feed_id": "f7b05b2493082cb798e8a015",
-        "title": "Dutch firm uses AI to help drone systems 'talk' on Ukraine's battlefield - Reuters"
-      },
-      {
-        "batch": 15,
-        "position": 13,
-        "feed_id": "4de178193aa4325306f76a60",
-        "title": "온디바이스 AI로 투약 사고 막는다...알파팜텍·드란비 대상 - 지디넷코리아"
-      },
-      {
-        "batch": 16,
-        "position": 31,
-        "feed_id": "ca8e47d37c26a939ffd7a279",
-        "title": "„Armee von Angreifern“ befürchtet – SPD fordert KI-Lagezentrum - Handelsblatt"
-      },
-      {
-        "batch": 16,
-        "position": 32,
-        "feed_id": "1a3dd8b9f70905144b8c873b",
-        "title": "Cyberabwehr: Mehr Austausch gegen hybride Angriffe - www.produktion.de"
-      },
-      {
-        "batch": 16,
-        "position": 33,
-        "feed_id": "1a3dd8b9f70905144b8c873b",
-        "title": "Cyberabwehr: Mehr Austausch gegen hybride Angriffe - Produktion Online"
-      },
-      {
-        "batch": 17,
-        "position": 4,
-        "feed_id": "78bb039162cf7e052c75c297",
-        "title": "相次ぐ情報漏えい、攻撃側のAI活用「間違いない」 防御側はどう使うか 傾向と対策を大手ベンダー各社に聞く - ITmedia"
-      }
-    ],
+    "additional_article_review_queue": [],
     "bulk_screening": {
       "screened_at": "2026-10-09",
       "method": "Conservative batch editorial screening of all 54 queued headlines/summaries; no assertion that originals of rejected items were opened.",
@@ -2882,9 +2899,26 @@
         "18/22",
         "18/27"
       ]
+    },
+    "final_queue_review": {
+      "reviewed_positions": [
+        "13/10",
+        "13/11",
+        "14/35",
+        "15/8",
+        "15/13",
+        "16/31",
+        "16/32",
+        "16/33",
+        "17/4"
+      ],
+      "new_opportunities": 2,
+      "insufficient_verification": 2,
+      "closed_without_new_opportunity": 5,
+      "method": "Batch review against available original publications and corroboration; inaccessible originals retained as insufficient rather than falsely verified."
     }
   },
   "missing_batches": [],
-  "failure_reason": "9 remaining candidate records require original-article checks and decisions.",
-  "verification_note": "Four original source-supported raw opportunities added in one bulk update; nine remain pending."
+  "failure_reason": "Two potentially relevant original articles (13/10, 15/13) remain inaccessible/unverified; full article coverage not established.",
+  "verification_note": "All 13 remaining queue entries adjudicated in a single batch: 2 new opportunities, 2 insufficient originals, 5 no-new/duplicate, 4 previously added. Counters conservatively indicate two unresolved original articles."
 }
