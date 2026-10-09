@@ -1,1 +1,220 @@
-{"schema_version":1,"run_date":"2026-10-09","chunk_number":16,"candidate_ids":["radar-20261009-076","radar-20261009-077","radar-20261009-078","radar-20261009-079","radar-20261009-080"],"expected_candidate_count":5,"validated_candidate_count":5,"status":"complete","results":[{"candidate_id":"radar-20261009-076","validation_index":76,"canonical_key":"smes-and-saas-providers-relying-on-third-party-cloud-infrastructure|identify-downstream-services-and-customers-affected-by-an-upstream-out|vendor-to-service-dependency-map-incident-communications-and-customer-","canonical_news_url":"https://www.watch.impress.co.jp/docs/news/2146693.html","qualification_status":"rejected_evidence","development_verified":"partial","turkiye_direct_competitor_count":null,"global_direct_competitor_count":null,"external_cash_cost":"not_proven_for_positive_qualification","research_status":"conservative_evidence_gate_decision","publication_eligible":false,"rejection_reason":"Outage downstream mapping demand is plausible, but verified direct competitors and required integrations not established.","global_competitors":[]},{"candidate_id":"radar-20261009-077","validation_index":77,"canonical_key":"software-engineering-governance-teams|decide-which-repositories-and-paths-can-count-ai-review-as-formal-approval|repository-ai-approval-policy-matrix-and-review-exception-log","canonical_news_url":"https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/","qualification_status":"rejected_competition","development_verified":"partial","turkiye_direct_competitor_count":null,"global_direct_competitor_count":1,"external_cash_cost":"not_proven_for_positive_qualification","research_status":"conservative_evidence_gate_decision","publication_eligible":false,"rejection_reason":"GitHub Copilot already offers repository/path-scoped approval policies; same approval governance workflow.","global_competitors":[{"name":"GitHub Copilot","url":"https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/","classification":"overlapping_workflow"}]},{"candidate_id":"radar-20261009-078","validation_index":78,"canonical_key":"sre-platform-engineering-teams|track-remediation-proof-from-failure-detection-to-successful-retest|fault-scenario-patch-and-retest-evidence-acceptance-ledger","canonical_news_url":"https://www.prnewswire.com/news-releases/gremlin-launches-foresight-ai-to-proactively-fix-reliability-risks-302898275.html","qualification_status":"rejected_evidence","development_verified":"partial","turkiye_direct_competitor_count":null,"global_direct_competitor_count":null,"external_cash_cost":"not_proven_for_positive_qualification","research_status":"conservative_evidence_gate_decision","publication_eligible":false,"rejection_reason":"Gremlin Foresight AI has reliability remediation capabilities; separate retest evidence market gap not demonstrated.","global_competitors":[]},{"candidate_id":"radar-20261009-079","validation_index":79,"canonical_key":"teams-operating-sandboxed-autonomous-agents|approve-temporary-agent-access-exceptions-with-an-audit-trail|request-queue-with-policy-diffs-reviewers-expiration-and-exported-evid","canonical_news_url":"https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/","qualification_status":"rejected_evidence","development_verified":"partial","turkiye_direct_competitor_count":null,"global_direct_competitor_count":null,"external_cash_cost":"not_proven_for_positive_qualification","research_status":"conservative_evidence_gate_decision","publication_eligible":false,"rejection_reason":"Microsoft agent sandbox policies exist; an external temporary-exception queue market gap not established.","global_competitors":[]},{"candidate_id":"radar-20261009-080","validation_index":80,"canonical_key":"textile-recycling-plants|track-automated-textile-sorting-quality-and-rejection-evidence|batch-acceptance-and-sorting-exception-evidence-log","canonical_news_url":"https://recyclocal-textiles.fr/","qualification_status":"rejected_evidence","development_verified":"partial","turkiye_direct_competitor_count":null,"global_direct_competitor_count":null,"external_cash_cost":"not_proven_for_positive_qualification","research_status":"conservative_evidence_gate_decision","publication_eligible":false,"rejection_reason":"Textile sorting QA evidence demand and reliable grading inputs not independently established.","global_competitors":[]}],"notes":"Conservative evidence-gate decisions; no claim of exhaustive competitor research or zero-cash proof.","completed_at":"2026-10-09"}
+{
+  "schema_version": 1,
+  "run_date": "2026-10-09",
+  "chunk_number": 16,
+  "candidate_ids": [
+    "radar-20261009-076",
+    "radar-20261009-077",
+    "radar-20261009-078",
+    "radar-20261009-079",
+    "radar-20261009-080"
+  ],
+  "expected_candidate_count": 5,
+  "validated_candidate_count": 5,
+  "status": "complete",
+  "results": [
+    {
+      "candidate_id": "radar-20261009-076",
+      "validation_index": 76,
+      "canonical_key": "smes-and-saas-providers-relying-on-third-party-cloud-infrastructure|identify-downstream-services-and-customers-affected-by-an-upstream-out|vendor-to-service-dependency-map-incident-communications-and-customer-",
+      "canonical_news_url": "https://www.watch.impress.co.jp/docs/news/2146693.html",
+      "qualification_status": "rejected_evidence",
+      "development_verified": true,
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": null,
+      "external_cash_cost": "not_required_for_rejected_candidate",
+      "research_status": "evidence_reviewed_but_not_qualified",
+      "publication_eligible": false,
+      "rejection_reason": "Two adjacent vendor capabilities cover impact graph and communications, but full same-product vendor-to-service-to-customer evidence not independently verified.",
+      "global_competitors": [],
+      "canonical_news_source": "verified_original_report_plus_primary_vendor",
+      "source_evidence_status": "verified_original_report_plus_primary_vendor",
+      "source_verification_note": "IDCF ransomware disrupted cloud infrastructure, affecting 495 customers; need to know dependent customer components and notify customers.",
+      "source_links": [
+        "https://www.watch.impress.co.jp/docs/news/2146693.html",
+        "https://www.idcf.jp/news/topics/20261008001",
+        "https://www.atlassian.com/software/compass/features",
+        "https://support.atlassian.com/statuspage/docs/show-service-status-with-components/",
+        "https://www.lovable.dev/pricing"
+      ],
+      "turkiye_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "Atlassian Compass service dependencies",
+          "url": "https://www.atlassian.com/software/compass/features",
+          "classification": "adjacent",
+          "reason": "Shows upstream/downstream service dependencies and incidents, but not same product's customer messaging ledger."
+        },
+        {
+          "name": "Atlassian Statuspage",
+          "url": "https://support.atlassian.com/statuspage/docs/show-service-status-with-components/",
+          "classification": "adjacent",
+          "reason": "Third-party provider statuses, customer component subscriptions and incident communication, but full internal vendor-to-customer impact ledger is not shown."
+        }
+      ],
+      "turkiye_competition_research": "Targeted Turkish terms screened; counts are verified named direct vendors only, NOT market totals. Unknown is not zero.",
+      "competition_search_terms": [
+        "https://www.watch.impress.co.jp/docs/news/2146693.html",
+        "Atlassian Compass service dependencies",
+        "Atlassian Statuspage"
+      ],
+      "evidence_strength": "verified_original_report_plus_primary_vendor",
+      "competition_confidence": "insufficient_full_workflow_evidence",
+      "evidence_remediation_batch": "quality-research-batch-005.json"
+    },
+    {
+      "candidate_id": "radar-20261009-077",
+      "validation_index": 77,
+      "canonical_key": "software-engineering-governance-teams|decide-which-repositories-and-paths-can-count-ai-review-as-formal-approval|repository-ai-approval-policy-matrix-and-review-exception-log",
+      "canonical_news_url": "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/",
+      "qualification_status": "rejected_competition",
+      "development_verified": "partial",
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": 1,
+      "external_cash_cost": "not_proven_for_positive_qualification",
+      "research_status": "conservative_evidence_gate_decision",
+      "publication_eligible": false,
+      "rejection_reason": "GitHub Copilot already offers repository/path-scoped approval policies; same approval governance workflow.",
+      "global_competitors": [
+        {
+          "name": "GitHub Copilot",
+          "url": "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/",
+          "classification": "overlapping_workflow"
+        }
+      ]
+    },
+    {
+      "candidate_id": "radar-20261009-078",
+      "validation_index": 78,
+      "canonical_key": "sre-platform-engineering-teams|track-remediation-proof-from-failure-detection-to-successful-retest|fault-scenario-patch-and-retest-evidence-acceptance-ledger",
+      "canonical_news_url": "https://www.prnewswire.com/news-releases/gremlin-launches-foresight-ai-to-proactively-fix-reliability-risks-302898275.html",
+      "qualification_status": "rejected_competition",
+      "development_verified": true,
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": 1,
+      "external_cash_cost": "not_required_for_rejected_candidate",
+      "research_status": "complete_rejected_competition",
+      "publication_eligible": false,
+      "rejection_reason": "Original triggering vendor already performs the proposed core job and closed-loop retest. No novel standalone evidence ledger demonstrated.",
+      "global_competitors": [
+        {
+          "name": "Gremlin Foresight AI",
+          "url": "https://www.gremlin.com/",
+          "classification": "direct",
+          "reason": "Same SRE/platform buyer and complete failure scenario, remediation, retest and proof of closure workflow."
+        }
+      ],
+      "canonical_news_source": "verified_vendor_press_release",
+      "source_evidence_status": "verified_vendor_press_release",
+      "source_verification_note": "Gremlin Oct 7 launched Foresight AI; system identifies a failure, offers patch, reruns original test, shows closure evidence.",
+      "source_links": [
+        "https://www.prnewswire.com/news-releases/gremlin-launches-foresight-ai-to-proactively-fix-reliability-risks-302898275.html",
+        "https://www.gremlin.com/",
+        "https://www.lovable.dev/pricing"
+      ],
+      "turkiye_competitors": [],
+      "adjacent_competitors": [],
+      "turkiye_competition_research": "Targeted Turkish terms screened; counts are verified named direct vendors only, NOT market totals. Unknown is not zero.",
+      "competition_search_terms": [
+        "https://www.prnewswire.com/news-releases/gremlin-launches-foresight-ai-to-proactively-fix-reliability-risks-302898275.html",
+        "Gremlin Foresight AI"
+      ],
+      "evidence_strength": "verified_vendor_press_release",
+      "competition_confidence": "verified_direct_vendor_overlap",
+      "evidence_remediation_batch": "quality-research-batch-005.json"
+    },
+    {
+      "candidate_id": "radar-20261009-079",
+      "validation_index": 79,
+      "canonical_key": "teams-operating-sandboxed-autonomous-agents|approve-temporary-agent-access-exceptions-with-an-audit-trail|request-queue-with-policy-diffs-reviewers-expiration-and-exported-evid",
+      "canonical_news_url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+      "qualification_status": "rejected_competition",
+      "development_verified": true,
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": 1,
+      "external_cash_cost": "not_required_for_rejected_candidate",
+      "research_status": "complete_rejected_competition",
+      "publication_eligible": false,
+      "rejection_reason": "Same buyer/resource access approval and audit queue with time-limited permissions; permission diff alone does not establish new product.",
+      "global_competitors": [
+        {
+          "name": "Permit.io Access Request MCP",
+          "url": "https://docs.permit.io/ai-security/access-request-mcp/overview/",
+          "classification": "direct",
+          "reason": "Same agent platform security buyer; requests one-time sensitive resource permission, human approval and audited changes."
+        }
+      ],
+      "canonical_news_source": "verified_primary_vendor_release",
+      "source_evidence_status": "verified_primary_vendor_release",
+      "source_verification_note": "MXC enforces file/network boundaries and has approve-escalation implications; Permit provides formal agent tool permission queue, reviewer and receipt/consent expiry.",
+      "source_links": [
+        "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+        "https://docs.permit.io/ai-security/access-request-mcp/overview/",
+        "https://docs.permit.io/permit-mcp-gateway/advanced-features/",
+        "https://www.lovable.dev/pricing"
+      ],
+      "turkiye_competitors": [],
+      "adjacent_competitors": [],
+      "turkiye_competition_research": "Targeted Turkish terms screened; counts are verified named direct vendors only, NOT market totals. Unknown is not zero.",
+      "competition_search_terms": [
+        "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+        "Permit.io Access Request MCP"
+      ],
+      "evidence_strength": "verified_primary_vendor_release",
+      "competition_confidence": "verified_direct_vendor_overlap",
+      "evidence_remediation_batch": "quality-research-batch-005.json"
+    },
+    {
+      "candidate_id": "radar-20261009-080",
+      "validation_index": 80,
+      "canonical_key": "textile-recycling-plants|track-automated-textile-sorting-quality-and-rejection-evidence|batch-acceptance-and-sorting-exception-evidence-log",
+      "canonical_news_url": "https://recyclocal-textiles.fr/",
+      "qualification_status": "rejected_competition",
+      "development_verified": true,
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": 1,
+      "external_cash_cost": "not_required_for_rejected_candidate",
+      "research_status": "complete_rejected_competition",
+      "publication_eligible": false,
+      "rejection_reason": "TexFile already supplies auditable sorting decisions, exceptions, human correction and fraction provenance for the same recycler workflow.",
+      "global_competitors": [
+        {
+          "name": "TexFile textile sorting software",
+          "url": "https://texfile.tech/product/sorting",
+          "classification": "direct",
+          "reason": "Same textile recycling plant buyer; per-item automated sorting decision records, threshold exceptions and human correction logs, exportable batch/fraction audit evidence."
+        }
+      ],
+      "canonical_news_source": "verified_eu_program_primary",
+      "source_evidence_status": "verified_eu_program_primary",
+      "source_verification_note": "EU Interreg reports Occitanie textile recovery facility with two automated sorting lines, per-batch traceability, 70% material recovery objective.",
+      "source_links": [
+        "https://recyclocal-textiles.fr/",
+        "https://interreg-sudoe.eu/en/noticia-proyecto/fashion-forward-fashion-forward-launches-a-textile-recycling-facility-in-occitanie/",
+        "https://texfile.tech/product/sorting",
+        "https://www.valvan.com/en/solutions/textile-sorting-recycling",
+        "https://www.lovable.dev/pricing"
+      ],
+      "turkiye_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "Valvan Fibersort",
+          "url": "https://www.valvan.com/en/solutions/textile-sorting-recycling",
+          "classification": "adjacent",
+          "reason": "Automated textile sorting hardware and AI sensor platform, not verified to expose independent rejection QA approval ledger."
+        }
+      ],
+      "turkiye_competition_research": "Targeted Turkish terms screened; counts are verified named direct vendors only, NOT market totals. Unknown is not zero.",
+      "competition_search_terms": [
+        "https://interreg-sudoe.eu/en/noticia-proyecto/fashion-forward-fashion-forward-launches-a-textile-recycling-facility-in-occitanie/",
+        "TexFile textile sorting software",
+        "Valvan Fibersort"
+      ],
+      "evidence_strength": "verified_eu_program_primary",
+      "competition_confidence": "verified_direct_vendor_overlap",
+      "evidence_remediation_batch": "quality-research-batch-005.json"
+    }
+  ],
+  "notes": "Conservative evidence-gate decisions; no claim of exhaustive competitor research or zero-cash proof. | 2026-10-09 Quality Evidence Remediation batch005: 4 research records, decisions updated only for proven same-buyer same-job competitors.",
+  "completed_at": "2026-10-09"
+}
