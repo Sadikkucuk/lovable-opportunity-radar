@@ -6,8 +6,8 @@
   "scope": "33 pre-existing evidence blockers indices <81",
   "status": "research_recorded_with_unresolved_candidates",
   "reviewed_count": 33,
-  "rejected_competition_count": 13,
-  "still_blocked_count": 20,
+  "rejected_competition_count": 15,
+  "still_blocked_count": 18,
   "records": [
     {
       "i": 4,
@@ -611,11 +611,18 @@
     },
     {
       "i": 53,
-      "decision": "rejected_evidence",
-      "competition_confidence": "not_proven_direct",
-      "verified_global_direct_competitors": [],
-      "source_findings": "Payment/agent authorization mandates appear in agentic commerce standards",
-      "remaining_gap": "Standalone merchant authorization proof/limits SaaS sold to same buyer not confirmed",
+      "decision": "rejected_competition",
+      "competition_confidence": "verified_same_buyer_job_workflow",
+      "verified_global_direct_competitors": [
+        {
+          "name": "AgentLedger agent-spend authorization and audit ledger",
+          "url": "https://agentledger.tech/",
+          "classification": "direct",
+          "reason": "Agent commerce platform/AI purchasing operator: intent with merchant+amount, budget caps, human approval, durable transaction/audit record; same purchase authorization job."
+        }
+      ],
+      "source_findings": "AgentLedger is an actual self-hostable ledger product; Skyfire and AgentsPay corroborate operational controls, not just an abstract payment protocol.",
+      "remaining_gap": null,
       "adjacent": [
         "https://www.agentic-commerce-protocol.com/docs/commerce/specs/payment"
       ],
@@ -629,11 +636,16 @@
       "primary_source_url": "https://parametacorp.com/blog/agentic-payment-explainer",
       "development_verified": "partial_or_checked_see_notes",
       "turkiye_direct_competitor_count": null,
-      "global_direct_competitor_count": null,
+      "global_direct_competitor_count": 1,
       "publication_eligible": false,
       "external_cash_cost": "not_required_for_rejected_candidate",
-      "research_status": "researched_but_gap_remains",
-      "competitor_count_note": "Only independently documented examples; null for unverified Turkey/market totals, never zero by assumption."
+      "research_status": "complete_rejected_competition",
+      "competitor_count_note": "Only independently documented examples; null for unverified Turkey/market totals, never zero by assumption.",
+      "source_links": [
+        "https://docs.skyfire.xyz/docs/features",
+        "https://agentspay.ai/",
+        "https://agentledger.tech/"
+      ]
     },
     {
       "i": 54,
@@ -849,11 +861,18 @@
     },
     {
       "i": 74,
-      "decision": "rejected_evidence",
-      "competition_confidence": "not_proven_direct",
-      "verified_global_direct_competitors": [],
-      "source_findings": "Windows MXC authoring JSON sandbox resource policies + Permit runtime approvals confirmed",
-      "remaining_gap": "Separate presandbox permission policy JSON approval and version-signoff product vs execution/approval tools not verified",
+      "decision": "rejected_competition",
+      "competition_confidence": "verified_same_buyer_job_workflow",
+      "verified_global_direct_competitors": [
+        {
+          "name": "Permit.io Policy Editor GitOps agent access control",
+          "url": "https://www.permit.io/",
+          "classification": "direct",
+          "reason": "Agent platform/security lead can author pre-run least privilege access policy in editor/GitOps, review changes, attach approval workflows and audit versions, even before agent execution."
+        }
+      ],
+      "source_findings": "Permit's official docs combine agent resource policy editor, approval elements, GitOps and immutable decision log; Microsoft MXC is adjacent policy enforcement.",
+      "remaining_gap": null,
       "adjacent": [
         "https://docs.permit.io/ai-security/access-request-mcp/overview/"
       ],
@@ -867,11 +886,15 @@
       "primary_source_url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
       "development_verified": "partial_or_checked_see_notes",
       "turkiye_direct_competitor_count": null,
-      "global_direct_competitor_count": null,
+      "global_direct_competitor_count": 1,
       "publication_eligible": false,
       "external_cash_cost": "not_required_for_rejected_candidate",
-      "research_status": "researched_but_gap_remains",
-      "competitor_count_note": "Only independently documented examples; null for unverified Turkey/market totals, never zero by assumption."
+      "research_status": "complete_rejected_competition",
+      "competitor_count_note": "Only independently documented examples; null for unverified Turkey/market totals, never zero by assumption.",
+      "source_links": [
+        "https://docs.permit.io/ai-security/access-request-mcp/overview/",
+        "https://www.permit.io/"
+      ]
     },
     {
       "i": 76,
@@ -906,5 +929,5 @@
     }
   ],
   "method": "Strict same buyer/job/workflow only. Source caveats preserved. Non-publishable rejects do not need positive external cash feasibility. Exact zero-cost claims not made.",
-  "notes": "This research does not automatically authorize final publication. Indexes 81-84 are outside this batch."
+  "notes": "Follow-up original product documentation proves two more direct competitor workflows (#53 and #74)."
 }
