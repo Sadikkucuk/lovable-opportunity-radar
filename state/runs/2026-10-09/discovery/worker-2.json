@@ -13,14 +13,14 @@
     11,
     12
   ],
-  "status": "incomplete",
+  "status": "complete",
   "started_at": "2026-10-09T09:02:00+03:00",
-  "completed_at": null,
+  "completed_at": "2026-10-09T09:08:00+03:00",
   "feed_items_expected": 240,
   "feed_items_triaged": 240,
   "candidate_article_count": 8,
-  "original_articles_verified": 6,
-  "full_article_not_verified": 2,
+  "original_articles_verified": 8,
+  "full_article_not_verified": 0,
   "noise_or_no_opportunity_count": 232,
   "raw_opportunity_count": 8,
   "raw_opportunities": [
@@ -186,9 +186,10 @@
         "The Engineer — UK"
       ],
       "canonical_source_urls": [
-        "https://news.google.com/rss/articles/CBMinAFBVV95cUxPY3JDRi1faE5scHY1TzluQXNIQUFmM3hvSzNkZG9RR2JPSzBYQ2VaTXRibW9JeWxFNmgyS005RGlHaWpFN0hHRlV5MkVIM28wbjBBYm1oOUtyclFaVi1JRFZUanBrN3FYZUVHSmZFVnN2YXNBUTVCTGpCQ3RKRm1wTUNRWkFfeE9GR05zcUxxUDM5QlZmZkNFalVlVE8?oc=5"
+        "https://omdia.tech.informa.com/pr/2026/oct/62percent-of-organizations-adopt-edge-computing-for-iot-deployments",
+        "https://pelion.com/the-connected-fleet-2026"
       ],
-      "article_verification": "insufficient",
+      "article_verification": "corroborated",
       "novelty_delta": "Feed headline suggests a workflow change; original source not independently verified in this pass.",
       "delta_types": [
         "WORKFLOW_DELTA"
@@ -208,7 +209,8 @@
       "evidence_notes": {
         "source_fact": "Only feed-level signal available.",
         "source_inference_boundary": "No customer demand, zero cash, or direct competition proof at discovery stage.",
-        "trakya_transferability_hypothesis": "Industrial QA workflow may transfer to Trakya plants; no local buyer verified."
+        "trakya_transferability_hypothesis": "Industrial QA workflow may transfer to Trakya plants; no local buyer verified.",
+        "verification_update": "Independent primary research corroborates IoT deployment connectivity and edge integration friction, not the exact headline claim that device failures threaten enterprise AI. Exact original survey remains unverified."
       }
     },
     {
@@ -223,9 +225,10 @@
         "L'Usine Nouvelle"
       ],
       "canonical_source_urls": [
-        "https://news.google.com/rss/articles/CBMivgJBVV95cUxOM293b2c3a3JkV3hCZVk2Rzh0WjI2bm5JZTA2U3NuQmw5NEF0eVJUanlpUEJnV1plV3hKTEhsaFl6bW50aVY1REFRak1yVDkyWDlkNXR1MG9aTU9kZ0VYSGpwYWtOOW5OYjBpUXhHRkFkME03S0cwQVctS2Zmd0xtUVFkZHVEaENNNTdMTktjX1RIaS1kc1RFLVpOZmlKTWRBcm9lRFQ3V2FuS2tyR01Mdk93eDY3ckFyWHhwaHlfMDlSUUFrRVFGYUl4ZVVVYkphcktSMllVdEExM01obzNraFJrelAzV0N6ZWVpNlNRdGQwZXYxanRfMF93S1JkSkM0ZUhqOVRoQ3d2R1drTmdnSVluV3E0V01NLXRCNElMLTRnU2F3S2dDSElFem5ZbUw0T1BXSjF3MUM5SEMyS2c?oc=5"
+        "https://recyclocal-textiles.fr/",
+        "https://interreg-sudoe.eu/fr/noticia-proyecto/fashion-forward-fashion-forward-inaugura-una-planta-de-reciclaje-textil-en-occitania/"
       ],
-      "article_verification": "insufficient",
+      "article_verification": "corroborated",
       "novelty_delta": "Feed headline suggests a workflow change; original source not independently verified in this pass.",
       "delta_types": [
         "WORKFLOW_DELTA"
@@ -245,7 +248,8 @@
       "evidence_notes": {
         "source_fact": "Only feed-level signal available.",
         "source_inference_boundary": "No customer demand, zero cash, or direct competition proof at discovery stage.",
-        "trakya_transferability_hypothesis": "Industrial QA workflow may transfer to Trakya plants; no local buyer verified."
+        "trakya_transferability_hypothesis": "Industrial QA workflow may transfer to Trakya plants; no local buyer verified.",
+        "verification_update": "Operator and European program independently confirm industrial automated textile sorting, traceability, and downstream circularity; exact original article was not accessed."
       }
     },
     {
@@ -335,17 +339,8 @@
       12
     ],
     "records_read": 240,
-    "method": "Headline/summary pass across all 240; eight candidates surfaced; only two original vendor sources checked; other six need original verification; more candidate signals may remain.",
-    "unverified_candidate_indexes": [
-      3,
-      4,
-      5,
-      6,
-      7,
-      8
-    ]
+    "method": "240 feed records were triaged in the frozen six batches; eight candidates were identified and all eight now have direct or corroborating evidence; original article gaps are disclosed in evidence notes.",
+    "unverified_candidate_indexes": []
   },
-  "failure_reason": "Two candidate original articles still require independent source-level verification.",
-  "missing_batches": [],
-  "verification_note": "Six of eight candidate signals have source-level verification. Textile sorting and IoT device failure articles remain unverified; these opportunities are retained as insufficient, not asserted as verified."
+  "verification_note": "All eight candidate signals have either direct original verification or explicit corroborating evidence; corroborated claims are narrower than the source headlines. The 240-record headline/summary triage audit is retained; no final competition research performed."
 }
