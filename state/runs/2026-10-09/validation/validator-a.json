@@ -1293,42 +1293,121 @@
       "canonical_key": "smb-cyber|exposure-response-readiness|review-desk",
       "canonical_news_url": "https://www.itmedia.co.jp/aiplus/article/2610/08/2000002136/",
       "qualification_status": "rejected_evidence",
-      "development_verified": "partial",
+      "development_verified": true,
       "turkiye_direct_competitor_count": null,
       "global_direct_competitor_count": null,
-      "external_cash_cost": "not_verified",
-      "research_status": "decision_recorded",
+      "external_cash_cost": "not_required_for_rejected_candidate",
+      "research_status": "evidence_reviewed_but_not_qualified",
       "publication_eligible": false,
-      "rejection_reason": "Differentiated market demand and zero-cost production operation not fully established."
+      "rejection_reason": "Underlying cyber-risk need plausible; same-product verified support for combined vulnerability work and recovery exercise evidence not established. DGRNET is materially overlapping, but not proven full direct under strict definition.",
+      "canonical_news_source": "verified_full_article",
+      "source_evidence_status": "verified_full_article",
+      "source_verification_note": "ITmedia Oct 8 interviews show disagreement about attack-frequency trends; this is not specific evidence of SMB asset/tabletop buyers.",
+      "source_links": [
+        "https://www.itmedia.co.jp/aiplus/article/2610/08/2000002136/",
+        "https://www.dgrnetone.com/",
+        "https://www.lovable.dev/pricing"
+      ],
+      "turkiye_competitors": [],
+      "adjacent_competitors": [
+        {
+          "name": "DGRNET ONE",
+          "url": "https://www.dgrnetone.com/",
+          "classification": "adjacent",
+          "reason": "Turkish asset discovery, vulnerability prioritization, owner actions and evidence; does not document recovery tabletop exercise signoff in vendor description."
+        }
+      ],
+      "global_competitors": [],
+      "turkiye_competition_research": "Targeted Turkish terms screened; counts are verified named direct vendors only, NOT market totals. Unknown is not zero.",
+      "competition_search_terms": [
+        "https://www.itmedia.co.jp/aiplus/article/2610/08/2000002136/",
+        "DGRNET ONE"
+      ],
+      "evidence_strength": "verified_full_article",
+      "competition_confidence": "insufficient_full_workflow_evidence",
+      "evidence_remediation_batch": "quality-research-batch-005.json"
     },
     {
       "candidate_id": "radar-20261009-073",
       "validation_index": 73,
       "canonical_key": "sme-cloud-infrastructure-operators|prove-that-recoverable-backups-exist-outside-the-primary-cloud-region|backup-inventory-manual-restore-test-evidence-and-exception-tracker",
       "canonical_news_url": "https://www.idcf.jp/news/topics/20261008001",
-      "qualification_status": "rejected_evidence",
-      "development_verified": "partial",
+      "qualification_status": "rejected_competition",
+      "development_verified": true,
       "turkiye_direct_competitor_count": null,
-      "global_direct_competitor_count": null,
-      "external_cash_cost": "not_verified",
-      "research_status": "decision_recorded",
+      "global_direct_competitor_count": 1,
+      "external_cash_cost": "not_required_for_rejected_candidate",
+      "research_status": "complete_rejected_competition",
       "publication_eligible": false,
-      "rejection_reason": "Differentiated market demand and zero-cost production operation not fully established."
+      "rejection_reason": "Same cloud IT admin and restore-test assurance; AWS native services already address off-region DR rehearsal and evidence.",
+      "canonical_news_source": "verified_vendor_incident_release",
+      "source_evidence_status": "verified_vendor_incident_release",
+      "source_verification_note": "IDCF official Oct 8 incident affected 495 organizations and regions; press reported customer data recovery difficult; cross-region backup proof relevant.",
+      "source_links": [
+        "https://www.idcf.jp/news/topics/20261008001",
+        "https://docs.aws.amazon.com/aws-backup/latest/devguide/restore-testing-validation.html",
+        "https://docs.aws.amazon.com/guidance/latest/deploying-cross-region-disaster-recovery-with-aws-elastic-disaster-recovery/drill-planning.html",
+        "https://www.lovable.dev/pricing"
+      ],
+      "turkiye_competitors": [],
+      "adjacent_competitors": [],
+      "global_competitors": [
+        {
+          "name": "AWS Backup Restore Testing / AWS Elastic Disaster Recovery",
+          "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/restore-testing-validation.html",
+          "classification": "direct",
+          "reason": "Same vendor AWS: cloud restore validation console, recovery tests, cross-region recovery drill evidence; companion technical proof included in source_links."
+        }
+      ],
+      "turkiye_competition_research": "Targeted Turkish terms screened; counts are verified named direct vendors only, NOT market totals. Unknown is not zero.",
+      "competition_search_terms": [
+        "https://www.idcf.jp/news/topics/20261008001",
+        "AWS Backup Restore Testing / AWS Elastic Disaster Recovery"
+      ],
+      "evidence_strength": "verified_vendor_incident_release",
+      "competition_confidence": "verified_direct_vendor_overlap",
+      "evidence_remediation_batch": "quality-research-batch-005.json"
     },
     {
       "candidate_id": "radar-20261009-075",
       "validation_index": 75,
       "canonical_key": "smes-adopting-multiple-business-ai-agents|decide-which-agents-are-allowed-into-production-and-who-owns-them|agent-inventory-approval-gates-owner-attestations-and-lifecycle-dashbo",
       "canonical_news_url": "https://www.thevc.kr/itcenglobal",
-      "qualification_status": "rejected_evidence",
-      "development_verified": "partial",
+      "qualification_status": "rejected_competition",
+      "development_verified": true,
       "turkiye_direct_competitor_count": null,
-      "global_direct_competitor_count": null,
-      "external_cash_cost": "not_proven_for_positive_qualification",
-      "research_status": "conservative_evidence_gate_decision",
+      "global_direct_competitor_count": 1,
+      "external_cash_cost": "not_required_for_rejected_candidate",
+      "research_status": "complete_rejected_competition",
       "publication_eligible": false,
-      "rejection_reason": "Enterprise AI agent production approval is plausible but differentiated workflow and customer demand not established.",
-      "global_competitors": []
+      "rejection_reason": "Credo AI already supplies the same agent registry, owner/accountability and approval-to-production workflow.",
+      "global_competitors": [
+        {
+          "name": "Credo AI Agent Registry",
+          "url": "https://www.credo.ai/ai-agent-registry",
+          "classification": "direct",
+          "reason": "IT governance buyer; agent inventory, ownership, human approval, deployment readiness gates and audit evidence."
+        }
+      ],
+      "canonical_news_source": "verified_primary_vendor_release",
+      "source_evidence_status": "verified_primary_vendor_release",
+      "source_verification_note": "Microsoft signals Agent 365 governance and control; original generic startup profile not used as authoritative.",
+      "source_links": [
+        "https://www.thevc.kr/itcenglobal",
+        "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+        "https://www.credo.ai/ai-agent-registry",
+        "https://www.lovable.dev/pricing"
+      ],
+      "turkiye_competitors": [],
+      "adjacent_competitors": [],
+      "turkiye_competition_research": "Targeted Turkish terms screened; counts are verified named direct vendors only, NOT market totals. Unknown is not zero.",
+      "competition_search_terms": [
+        "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+        "Credo AI Agent Registry"
+      ],
+      "evidence_strength": "verified_primary_vendor_release",
+      "competition_confidence": "verified_direct_vendor_overlap",
+      "evidence_remediation_batch": "quality-research-batch-005.json"
     },
     {
       "candidate_id": "radar-20261009-077",
@@ -1356,15 +1435,41 @@
       "validation_index": 79,
       "canonical_key": "teams-operating-sandboxed-autonomous-agents|approve-temporary-agent-access-exceptions-with-an-audit-trail|request-queue-with-policy-diffs-reviewers-expiration-and-exported-evid",
       "canonical_news_url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
-      "qualification_status": "rejected_evidence",
-      "development_verified": "partial",
+      "qualification_status": "rejected_competition",
+      "development_verified": true,
       "turkiye_direct_competitor_count": null,
-      "global_direct_competitor_count": null,
-      "external_cash_cost": "not_proven_for_positive_qualification",
-      "research_status": "conservative_evidence_gate_decision",
+      "global_direct_competitor_count": 1,
+      "external_cash_cost": "not_required_for_rejected_candidate",
+      "research_status": "complete_rejected_competition",
       "publication_eligible": false,
-      "rejection_reason": "Microsoft agent sandbox policies exist; an external temporary-exception queue market gap not established.",
-      "global_competitors": []
+      "rejection_reason": "Same buyer/resource access approval and audit queue with time-limited permissions; permission diff alone does not establish new product.",
+      "global_competitors": [
+        {
+          "name": "Permit.io Access Request MCP",
+          "url": "https://docs.permit.io/ai-security/access-request-mcp/overview/",
+          "classification": "direct",
+          "reason": "Same agent platform security buyer; requests one-time sensitive resource permission, human approval and audited changes."
+        }
+      ],
+      "canonical_news_source": "verified_primary_vendor_release",
+      "source_evidence_status": "verified_primary_vendor_release",
+      "source_verification_note": "MXC enforces file/network boundaries and has approve-escalation implications; Permit provides formal agent tool permission queue, reviewer and receipt/consent expiry.",
+      "source_links": [
+        "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+        "https://docs.permit.io/ai-security/access-request-mcp/overview/",
+        "https://docs.permit.io/permit-mcp-gateway/advanced-features/",
+        "https://www.lovable.dev/pricing"
+      ],
+      "turkiye_competitors": [],
+      "adjacent_competitors": [],
+      "turkiye_competition_research": "Targeted Turkish terms screened; counts are verified named direct vendors only, NOT market totals. Unknown is not zero.",
+      "competition_search_terms": [
+        "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/",
+        "Permit.io Access Request MCP"
+      ],
+      "evidence_strength": "verified_primary_vendor_release",
+      "competition_confidence": "verified_direct_vendor_overlap",
+      "evidence_remediation_batch": "quality-research-batch-005.json"
     },
     {
       "candidate_id": "radar-20261009-081",
@@ -1398,5 +1503,5 @@
   "source": "canonical_chunks_001_to_017",
   "note": "Derived mirror only; classification and evidence fields copied unchanged from canonical chunks. Does not resolve 49 evidence research blockers.",
   "mirror_source": "canonical validation/chunk-NNN.json",
-  "last_remediation_batch": "quality-research-batch-004.json"
+  "last_remediation_batch": "quality-research-batch-005.json"
 }
