@@ -1,0 +1,154 @@
+{
+  "date": "2026-10-09",
+  "interview_gate": "waived_at_user_request",
+  "scope": "Fast public web screening; discovered counts are minimum examples, NOT exhaustive competitor counts.",
+  "cost_model": {
+    "currency": "TRY",
+    "assumptions": "existing computer and internet, static local/offline MVP, no domain, no paid APIs, no paid hosting, no SaaS operation, no value assigned to own labor",
+    "incremental_cash_prototype_per_candidate": 0,
+    "commercial_saas_monthly_cash": "not determinable as zero; depends on usage and platform",
+    "free_hosting_examples": [
+      "Cloudflare Workers Free: 100k requests/day and 10ms CPU/request; usage bound",
+      "Cloudflare for SaaS Free: included 100 hostnames, limits and add-on costs"
+    ]
+  },
+  "results": [
+    {
+      "index": 74,
+      "decision": "reject",
+      "known_competitor_examples": "Microsoft 365 agent requests",
+      "observed_example_count": 1,
+      "observed_market": "global",
+      "local_prototype_mode": "local_static",
+      "local_prototype_incremental_cash_tl": 0,
+      "zero_cost_commercial_saas_verified": false,
+      "turkiye_competitor_count_exact": null,
+      "global_competitor_count_exact": null
+    },
+    {
+      "index": 75,
+      "decision": "reject",
+      "known_competitor_examples": "Microsoft agent governance registry",
+      "observed_example_count": 1,
+      "observed_market": "global",
+      "local_prototype_mode": "local_static",
+      "local_prototype_incremental_cash_tl": 0,
+      "zero_cost_commercial_saas_verified": false,
+      "turkiye_competitor_count_exact": null,
+      "global_competitor_count_exact": null
+    },
+    {
+      "index": 76,
+      "decision": "hold",
+      "known_competitor_examples": "Atlassian Statuspage; Uptime Kuma; Cachet",
+      "observed_example_count": 3,
+      "observed_market": "global",
+      "local_prototype_mode": "local_static",
+      "local_prototype_incremental_cash_tl": 0,
+      "zero_cost_commercial_saas_verified": false,
+      "turkiye_competitor_count_exact": null,
+      "global_competitor_count_exact": null
+    },
+    {
+      "index": 78,
+      "decision": "reject",
+      "known_competitor_examples": "Gremlin remediation and retesting",
+      "observed_example_count": 1,
+      "observed_market": "global",
+      "local_prototype_mode": "local_static",
+      "local_prototype_incremental_cash_tl": 0,
+      "zero_cost_commercial_saas_verified": false,
+      "turkiye_competitor_count_exact": null,
+      "global_competitor_count_exact": null
+    },
+    {
+      "index": 79,
+      "decision": "hold",
+      "known_competitor_examples": "Microsoft agent exceptions; AgentGate",
+      "observed_example_count": 2,
+      "observed_market": "global",
+      "local_prototype_mode": "local_static",
+      "local_prototype_incremental_cash_tl": 0,
+      "zero_cost_commercial_saas_verified": false,
+      "turkiye_competitor_count_exact": null,
+      "global_competitor_count_exact": null
+    },
+    {
+      "index": 80,
+      "decision": "reject",
+      "known_competitor_examples": "TexFile textile traceability",
+      "observed_example_count": 1,
+      "observed_market": "global",
+      "local_prototype_mode": "local_static",
+      "local_prototype_incremental_cash_tl": 0,
+      "zero_cost_commercial_saas_verified": false,
+      "turkiye_competitor_count_exact": null,
+      "global_competitor_count_exact": null
+    },
+    {
+      "index": 81,
+      "decision": "hold",
+      "known_competitor_examples": "ServiceNow TPRM",
+      "observed_example_count": 1,
+      "observed_market": "global",
+      "local_prototype_mode": "local_static",
+      "local_prototype_incremental_cash_tl": 0,
+      "zero_cost_commercial_saas_verified": false,
+      "turkiye_competitor_count_exact": null,
+      "global_competitor_count_exact": null
+    },
+    {
+      "index": 82,
+      "decision": "reject",
+      "known_competitor_examples": "Türkiye KVKSİS breach workflow",
+      "observed_example_count": 1,
+      "observed_market": "turkiye",
+      "local_prototype_mode": "local_static",
+      "local_prototype_incremental_cash_tl": 0,
+      "zero_cost_commercial_saas_verified": false,
+      "turkiye_competitor_count_exact": null,
+      "global_competitor_count_exact": null
+    },
+    {
+      "index": 83,
+      "decision": "merge",
+      "known_competitor_examples": "Candidate 82 duplicate; KVKSİS",
+      "observed_example_count": 1,
+      "observed_market": "turkiye",
+      "local_prototype_mode": "local_static",
+      "local_prototype_incremental_cash_tl": 0,
+      "zero_cost_commercial_saas_verified": false,
+      "turkiye_competitor_count_exact": null,
+      "global_competitor_count_exact": null
+    },
+    {
+      "index": 84,
+      "decision": "prototype",
+      "known_competitor_examples": "Certbot; Let's Encrypt",
+      "observed_example_count": 2,
+      "observed_market": "global",
+      "local_prototype_mode": "local_static",
+      "local_prototype_incremental_cash_tl": 0,
+      "zero_cost_commercial_saas_verified": false,
+      "turkiye_competitor_count_exact": null,
+      "global_competitor_count_exact": null
+    }
+  ],
+  "sources": [
+    "https://learn.microsoft.com/microsoft-365/admin/manage/agent-requests",
+    "https://learn.microsoft.com/microsoft-365/admin/manage/agent-actions",
+    "https://texfile.tech/",
+    "https://www.cloudflare.com/plans/",
+    "https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/plans/",
+    "https://github.com/certbot/certbot/blob/main/certbot/docs/using.rst"
+  ],
+  "summary": {
+    "evaluated": 10,
+    "reject": 5,
+    "hold": 3,
+    "merge": 1,
+    "prototype": 1,
+    "commercial_saas_zero_cost_verified": 0
+  },
+  "caveat": "Zero local prototype cash assumes existing equipment and excludes time, energy, opportunity cost. Exhaustive absence of competitors cannot be proven with short web search."
+}
