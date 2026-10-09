@@ -22,7 +22,7 @@
   "original_articles_verified": 12,
   "full_article_not_verified": 0,
   "noise_or_no_opportunity_count": 228,
-  "raw_opportunity_count": 14,
+  "raw_opportunity_count": 15,
   "raw_opportunities": [
     {
       "raw_id": "w3-20261009-001",
@@ -540,6 +540,43 @@
       "evidence_notes": {
         "source_fact": "Original Semiconductor Engineering process-control article discusses critical defects in hybrid bonding and advanced packaging.",
         "source_inference_boundary": "Proposed software workflow is a hypothesis."
+      }
+    },
+    {
+      "raw_id": "w3-20261009-015",
+      "supporting_article_ids": [
+        "8934a661b19ccffaf5d56d28"
+      ],
+      "supporting_article_titles": [
+        "New FEMA Rules Explained: What Freelancers, Creators, And SaaS Startups Need To Know - Inc42"
+      ],
+      "supporting_sources": [
+        "Inc42"
+      ],
+      "canonical_source_urls": [
+        "https://inc42.com/buzz/new-fema-rules-explained-what-freelancers-creators-and-saas-startups-need-to-know/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Cross-border service exporters face evolving documentation and remittance reconciliation requirements.",
+      "delta_types": [
+        "REGULATORY_DELTA",
+        "WORKFLOW_DELTA"
+      ],
+      "affected_workflow": "India-based SaaS export invoice and remittance reconciliation",
+      "target_customer": "India-based SaaS exporters and service agencies",
+      "buyer": "Finance manager or accountant",
+      "job_to_be_done": "Reconcile export invoices, payment deductions and remittance evidence",
+      "current_friction": "Invoices, processor fees and bank receipts are recorded in separate systems",
+      "product_mechanism": "Invoice-to-remittance matching ledger and evidence export",
+      "one_sentence_concept": "SaaS export remittance reconciliation desk",
+      "why_now": "Reported October 2026 FEMA changes create compliance uncertainty",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 140,
+      "draft_canonical_key": "india-saas-exporters|invoice-remittance-reconciliation|evidence-desk",
+      "evidence_notes": {
+        "source_fact": "Inc42 reported FEMA changes affecting freelancers and SaaS exporters.",
+        "source_inference_boundary": "Exact legal requirements require verification against RBI primary text; this is not Turkish law."
       }
     }
   ],
@@ -2191,8 +2228,8 @@
         "position": 3,
         "feed_id": "8934a661b19ccffaf5d56d28",
         "title": "New FEMA Rules Explained: What Freelancers, Creators, And SaaS Startups Need To Know - Inc42",
-        "decision": "requires_original_article_review",
-        "reason": "Potential operational, regulatory or infrastructure delta; original article and JTBD not yet checked"
+        "decision": "opportunity_recorded",
+        "reason": "Original article reviewed; invoice/remittance reconciliation workflow extracted"
       },
       {
         "batch": 18,
@@ -2776,12 +2813,6 @@
       },
       {
         "batch": 18,
-        "position": 3,
-        "feed_id": "8934a661b19ccffaf5d56d28",
-        "title": "New FEMA Rules Explained: What Freelancers, Creators, And SaaS Startups Need To Know - Inc42"
-      },
-      {
-        "batch": 18,
         "position": 4,
         "feed_id": "d8f4be183a7cfd727e004ba1",
         "title": "国家能源局：国庆假期高速公路新能源汽车日均充电量同比增长51.42% 充电服务保障水平进一步提升 - 新华网"
@@ -2825,6 +2856,6 @@
     ]
   },
   "missing_batches": [],
-  "failure_reason": "55 additional signals await review",
+  "failure_reason": "54 additional signals await original article review",
   "verification_note": "Corrected audit position: verified Semiconductor Engineering Closing The Visibility Gap is batch 18 position 37; batch 17 position 37 remains unverified."
 }
