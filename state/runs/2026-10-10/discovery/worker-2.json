@@ -883,7 +883,7 @@
       }
     }
   ],
-  "failure_reason": "Historical 28-candidate membership irrecoverable; replacement cohort is fully mapped to frozen feed, with 14 candidate content assessments, but 3 provisional source articles remain corroborated rather than fully read. Original 26/2 counts unauditable.",
+  "failure_reason": "Original 28 candidate IDs not recorded historically; reconstructed cohort fully matched to frozen batches. Three remaining topics independently corroborated but their original full articles were not read. Legacy 26/2 aggregate remains unauditable.",
   "missing_batches": [],
   "verification_note": "2026-10-10 follow-up: six additional sources identified for manual evidence review; previous verification counts retained pending complete audit.",
   "verification_audit": {
@@ -1245,8 +1245,13 @@
           "novel_workflow_delta_established": false,
           "raw_opportunity_created": false,
           "reason": "Insufficient evidence of a distinct actionable new workflow or commercial delta; retain as triaged candidate only.",
-          "source_membership": "reselected_from_frozen_batch_not_historical_proof"
-        }
+          "source_membership": "reselected_from_frozen_batch_not_historical_proof",
+          "verified_event_finding": "Japanese government NCO asked businesses to periodically review data handling with contractors and minimize data shared; Nikkei headline also independently indexed. Original Nikkei article full text not accessible.",
+          "full_original_article_accessed": false,
+          "verification_disposition": "reliable_corroboration_not_original_full_text"
+        },
+        "final_evidence_grade": "independent_full_event_report",
+        "final_evidence_url": "https://news.tv-asahi.co.jp/news_economy/articles/900201246.html"
       },
       {
         "position": 17,
@@ -1380,8 +1385,13 @@
           "novel_workflow_delta_established": false,
           "raw_opportunity_created": false,
           "reason": "Insufficient evidence of a distinct actionable new workflow or commercial delta; retain as triaged candidate only.",
-          "source_membership": "reselected_from_frozen_batch_not_historical_proof"
-        }
+          "source_membership": "reselected_from_frozen_batch_not_historical_proof",
+          "verified_event_finding": "Dassault Systèmes directly describes AI-powered part classification to reduce duplicate components and improve reuse; original Engineer webinar announcement content sufficiently corroborated by primary vendor.",
+          "full_original_article_accessed": false,
+          "verification_disposition": "reliable_corroboration_not_original_full_text"
+        },
+        "final_evidence_grade": "vendor_primary_content",
+        "final_evidence_url": "https://3dswym.3dexperience.3ds.com/post/3dexperience-platform-user-s-community/3dexperience-newsletter-new-to-3dexperience-or-want-to-go-further-this-post-has-everything-you-need_e3H-qlq-QVu9vpADYpkIvw"
       },
       {
         "position": 24,
@@ -1479,8 +1489,13 @@
           "novel_workflow_delta_established": false,
           "raw_opportunity_created": false,
           "reason": "Insufficient evidence of a distinct actionable new workflow or commercial delta; retain as triaged candidate only.",
-          "source_membership": "reselected_from_frozen_batch_not_historical_proof"
-        }
+          "source_membership": "reselected_from_frozen_batch_not_historical_proof",
+          "verified_event_finding": "Heise headline indexed; summary describes OSERA Risk Navigator for identifying, prioritizing and closing open-source vulnerabilities in financial institutions. No full original article accessed.",
+          "full_original_article_accessed": false,
+          "verification_disposition": "reliable_corroboration_not_original_full_text"
+        },
+        "final_evidence_grade": "exact_headline_and_product_claim_secondary",
+        "final_evidence_url": "https://infosec-startpage.de/"
       }
     ],
     "reconstructed_ledger_not_original": true,
@@ -1523,6 +1538,17 @@
       16,
       23,
       28
-    ]
+    ],
+    "final_three_corroboration": {
+      "reviewed_positions": [
+        16,
+        23,
+        28
+      ],
+      "corroborated": 3,
+      "full_original_articles_read": 0,
+      "method": "independent detailed event reporting, primary vendor statements, exact headline and summary indexes",
+      "claim": "Event/topic corroborated, not equivalent to complete original-article text review"
+    }
   }
 }
