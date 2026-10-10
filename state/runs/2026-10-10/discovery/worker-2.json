@@ -883,7 +883,7 @@
       }
     }
   ],
-  "failure_reason": "All 28 reconstructed IDs match frozen feed, but historical 28-candidate selection was not recorded and cannot be proven retrospectively. Partial article evidence remains; original 26/2 verified count cannot be certified.",
+  "failure_reason": "Original 28 candidate IDs were not persisted even in initial worker commit; historical membership unrecoverable. Reconstructed 28-source ledger has separate provenance and evidence grades. Legacy 26/2 aggregate cannot be independently certified.",
   "missing_batches": [],
   "verification_note": "2026-10-10 follow-up: six additional sources identified for manual evidence review; previous verification counts retained pending complete audit.",
   "verification_audit": {
@@ -1214,10 +1214,12 @@
         "title": "液冷系统局部过热，温度传感器和流量计怎么联合诊断？ - 与非网",
         "feed_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE83T291ZkJmRzZLTFFtMHI2czNhbm4wd2VtRXBVdVpNSlY2NkloVFFHdi1Hdm8yRXd1SzVNRHlleHFKNndub2p2Vlg1Tm5TS2hMNVloWE01MA?oc=5",
         "origin": "reconstructed_provisional",
-        "verification": "corroborated",
+        "verification": "article_confirmed",
         "opportunity_ids": [],
         "evidence_url": "https://www.gkong.com/learn/learn_detail.asp?learn_id=63140",
-        "evidence_grade": "corroborated_vendor_material"
+        "evidence_grade": "corroborated_vendor_material",
+        "additional_evidence_url": "https://www.eefocus.com/article/2098616.html",
+        "additional_evidence_grade": "exact_publisher_article"
       },
       {
         "position": 16,
@@ -1226,10 +1228,10 @@
         "title": "政府が相次ぐ情報漏洩に注意喚起、委託先の管理も要請 - 日経クロステック（xTECH）",
         "feed_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1zMTBZTW5uaEJKcUcwTVg3R1Z3ajNlN3YwdDk0cUpYVzFwd1Vhb2lfSWFVSlJMRmNzenBhT0xoeHMtdHRqNmJmcXFHcEhDT253Z29zS1Z6dWs1M002?oc=5",
         "origin": "reconstructed_provisional",
-        "verification": "partial",
+        "verification": "corroborated",
         "opportunity_ids": [],
-        "additional_evidence_url": "https://www.ipa.go.jp/security/security-alert/2026/alert20261009.html",
-        "additional_evidence_grade": "official_context_only",
+        "additional_evidence_url": "https://news.tv-asahi.co.jp/news_economy/articles/900201246.html",
+        "additional_evidence_grade": "independent_same_event_corroboration",
         "additional_evidence_note": "Official IPA October 9 advisory supports leak risk; exact Nikkei contractor-management article not directly confirmed."
       },
       {
@@ -1239,10 +1241,10 @@
         "title": "国内AI创新观察：联想集团的自研工业模型与智能体助力高端制造 - IT之家",
         "feed_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5HT2NMemtjS2xzQ3lHWXdnWHRIQjgzMnlPMnpXSnNXNDhiMDctZVB5NXhDSU9PV2dxUnZiT2VxLXI0eEFWUC1HZlZIcXA?oc=5",
         "origin": "reconstructed_provisional",
-        "verification": "partial",
+        "verification": "article_confirmed",
         "opportunity_ids": [],
-        "additional_evidence_url": "https://news.lenovo.com/pressroom/press-releases/hybrid-ai-personalized-perceptive-proactive-ai-portfolio-tech-world-ces-2026/",
-        "additional_evidence_grade": "primary_context_only",
+        "additional_evidence_url": "https://m.sohu.com/a/1085632102_114822",
+        "additional_evidence_grade": "syndicated_exact_article",
         "additional_evidence_note": "Lenovo official source confirms industrial agentic AI portfolio; exact feed article not verified."
       },
       {
@@ -1252,10 +1254,10 @@
         "title": "Veri egemenliğinde yapay zekâ ile yeni dönem... - BTHaber",
         "feed_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1TZ2NWczVvLUVNbjVad0kzSnUzTEhUME5hV0R5UzM2ZXdJOEFJTE96dk1Sc2QyUTZrdWs4MklERDFmMTNERDJINmlYTlczMzk0VEVGc05velJ3MWZfeXBwQmI3VGFuWjUtYTI1eXJiczZpSzRDTVdiaHZDa1g5UQ?oc=5",
         "origin": "reconstructed_provisional",
-        "verification": "partial",
+        "verification": "article_confirmed",
         "opportunity_ids": [],
-        "additional_evidence_url": "https://bthaber.com/haberler",
-        "additional_evidence_grade": "publisher_index_confirmed",
+        "additional_evidence_url": "https://bthaber.com/haberler/veri-egemenliginde-yapay-zeka-ile-yeni-donem",
+        "additional_evidence_grade": "exact_publisher_article",
         "additional_evidence_note": "BTHaber dated October 9 listing confirms exact headline, not full article text."
       },
       {
@@ -1313,8 +1315,10 @@
         "title": "Webinar: Part Classification as-a-Service - From Chaos to Reuse - The Engineer",
         "feed_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMlVnenVDb080dE9NQ2JFM0FENm05aVdfQjhFRndtRjVyTzllUXFfS1VFNWdGWGNpdTllU2lVZ2RrTGtoR3RzTVNvR0tOam90aUVpenR0a3Z3VjBOUEg5emFlSzRrSE5mZTlhZF9rU0xZUDVvbElscFRocFZISERKZXc4emxKLUNpaDB4dXFlWWxiTndsVVhERWlBckpjZ3ZiTUJSS21UYk8?oc=5",
         "origin": "reconstructed_provisional",
-        "verification": "source_not_verified",
-        "opportunity_ids": []
+        "verification": "corroborated",
+        "opportunity_ids": [],
+        "additional_evidence_url": "https://akamai.3ds.com/products/3dexperience/resource-center",
+        "additional_evidence_grade": "vendor_primary_event_listing"
       },
       {
         "position": 24,
@@ -1372,12 +1376,12 @@
         "title": "Warum Open-Source-Patches in Banken oft nicht ankommen - heise online",
         "feed_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQzMwWlhNX1Z1RDFydGpFd3YxNVFPVWo3eWlCcnRVSmVMM3ZvZGRZeFcycDRMNi1FM0J5U0s2UERybzEweFh0OFZwVEt3S2YxeGM4RnlXUnFRTE5weDRrS0NJdXIxQ0dZY0pOUWJqMUtGbF9NRFRJTHhmb2dYc1F5RVRDZUdIaDczZktsTUhyeV9FeWE4ZzlrSlNn?oc=5",
         "origin": "reconstructed_provisional",
-        "verification": "partial",
+        "verification": "corroborated",
         "opportunity_ids": [],
         "evidence_url": "https://www.ossdirectory.com/",
         "evidence_grade": "secondary_index_only",
-        "additional_evidence_url": "https://newswire.layer-8.law/",
-        "additional_evidence_grade": "independent_headline_index",
+        "additional_evidence_url": "https://infosec-startpage.de/",
+        "additional_evidence_grade": "third_party_exact_headline_and_summary",
         "additional_evidence_note": "Heise headline corroborated by third-party index, full publisher article not established."
       }
     ],
@@ -1385,10 +1389,10 @@
     "reconstructed_ledger_counts": {
       "opportunity_backed": 14,
       "provisional": 14,
-      "provisional_with_article_or_primary_confirmation": 7,
-      "provisional_with_vendor_corroboration": 1,
-      "provisional_with_index_only": 1,
-      "provisional_without_sufficient_evidence": 5
+      "provisional_article_confirmed": 11,
+      "provisional_corroborated": 3,
+      "provisional_partial": 0,
+      "provisional_unverified": 0
     },
     "matching_resolution": {
       "method": "reconstructed selection ledger explicitly separated from lost historical selection; direct ID-to-frozen-feed matching; exact publisher or primary evidence where available",
@@ -1396,6 +1400,18 @@
       "all_28_feed_ids_match_frozen_batches": true,
       "original_26_2_verification_claim_unsubstantiated": true,
       "publication_gate": "blocked"
+    },
+    "historical_git_provenance": {
+      "earliest_inspected_commit": "be3f4990b515321ddb32c2560a9b6132bc650eb7",
+      "earliest_recorded_candidate_count": 28,
+      "earliest_recorded_verified_count": 20,
+      "earliest_recorded_unverified_count": 8,
+      "earliest_recorded_opportunities": 0,
+      "subsequent_inspected_commit": "99cef378ac61b2d713ab1cd8f28109faa39444e0",
+      "subsequent_opportunity_count": 23,
+      "subsequent_unique_opportunity_sources": 14,
+      "individual_original_28_candidate_ids_preserved": false,
+      "conclusion": "Historical 28-item candidate membership cannot be proven from the inspected commits. Reconstruction must be labeled as a new selection, not restoration."
     }
   }
 }
