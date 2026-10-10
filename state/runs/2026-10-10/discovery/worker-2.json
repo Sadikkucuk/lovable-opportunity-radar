@@ -883,9 +883,9 @@
       }
     }
   ],
-  "failure_reason": "Original 28 candidate IDs not recorded historically; reconstructed cohort fully matched to frozen batches. Three remaining topics independently corroborated but their original full articles were not read. Legacy 26/2 aggregate remains unauditable.",
+  "failure_reason": "Historical candidate identity ledger was never persisted; cannot prove original 28 members or legacy 26/2 totals. Three corroborated sources lack original full article text. Reconstructed cohort cannot be represented as original selection.",
   "missing_batches": [],
-  "verification_note": "2026-10-10 follow-up: six additional sources identified for manual evidence review; previous verification counts retained pending complete audit.",
+  "verification_note": "Final audit: all 28 reconstructed candidate IDs match frozen batch ID, title and batch; 14 provisional content assessments recorded. Original 28 membership absent from first commit, legacy 26/2 counts not auditable. Corroboration is not original full-text access.",
   "verification_audit": {
     "audited_at": "2026-10-10",
     "unique_source_ids_supporting_recorded_opportunities": 14,
@@ -1549,6 +1549,24 @@
       "full_original_articles_read": 0,
       "method": "independent detailed event reporting, primary vendor statements, exact headline and summary indexes",
       "claim": "Event/topic corroborated, not equivalent to complete original-article text review"
+    },
+    "closure_review": {
+      "frozen_input_records": 240,
+      "unique_frozen_ids": 234,
+      "ledger_rows": 28,
+      "all_rows_match_id_batch_title": true,
+      "ledger_status_tally": {
+        "article_confirmed": 11,
+        "full": 10,
+        "corroborated": 7,
+        "other": 0
+      },
+      "provisional_content_reviews": 14,
+      "historical_candidate_identity_proven": false,
+      "legacy_26_2_counts_reconciled": false,
+      "original_full_text_of_three_corroborated_articles_read": false,
+      "publication_allowed": false,
+      "decision": "Evidence audit complete as far as extant artifacts permit; original selection membership and legacy counters must not be certified. New cohort is separate."
     }
   }
 }
