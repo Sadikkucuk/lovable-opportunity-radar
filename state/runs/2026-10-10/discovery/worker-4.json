@@ -19,10 +19,10 @@
   "completed_at": null,
   "feed_items_expected": 280,
   "feed_items_triaged": 280,
-  "candidate_article_count": 29,
+  "candidate_article_count": 87,
   "original_articles_verified": 28,
   "full_article_not_verified": 0,
-  "noise_or_no_opportunity_count": 251,
+  "noise_or_no_opportunity_count": 180,
   "raw_opportunity_count": 29,
   "raw_opportunities": [
     {
@@ -1201,7 +1201,7 @@
     }
   ],
   "missing_batches": [],
-  "failure_reason": "Final gate FAILED: 251 feed-item rejections and 29 original candidate decisions lack recoverable per-article audit ledger. Source checks and 29 opportunity schema checks passed; original Nikkei article unavailable for one opportunity (primary data corroborated).",
+  "failure_reason": "280/280 feed-item decisions persisted. 57 potentially relevant articles still require source-level validation; do not claim exhaustive discovery until resolved.",
   "source_batch_checks": [
     {
       "batch": 19,
@@ -1251,15 +1251,17 @@
       "unique_raw_ids_29_of_29": "PASS",
       "primary_or_corrob_source_29_of_29": "PASS",
       "original_publisher_access_29_of_29": "FAIL: Anthropic primary dataset substituted for Nikkei article on record 023",
-      "candidate_ledger_reconstructable": "FAIL: original 29-candidate ledger absent",
-      "all_280_article_dispositions_auditable": "FAIL: 251 rejection decisions have no per-item evidence",
+      "candidate_ledger_reconstructable": "PARTIAL: 30 feed rows mapped to 29 verified opportunities; 57 additional plausible sources need original-article review",
+      "all_280_article_dispositions_auditable": "PASS: 280 records in companion ledger",
       "zero_external_cost_verified": "NOT TESTED: 25-credit estimates are assumptions",
       "semantic_dedup_against_history": "DEFERRED TO MERGE",
-      "competitor_checks": "DEFERRED TO VALIDATOR"
+      "competitor_checks": "DEFERRED TO VALIDATOR",
+      "duplicate_handling": "PASS: 13 duplicate headline rows identified"
     },
     "blocking_findings": [
-      "Prior candidate count 29 and noise count 251 inherited from lost ledger; cannot certify exhaustive per-item triage",
-      "Source-level primary evidence exists but original publisher article is inaccessible for AI vulnerability case"
+      "57 additional potentially relevant feed items require original-source review before exhaustive discovery can be certified",
+      "180 feed records rejected at title/summary stage, with reasons preserved",
+      "Original publisher article unavailable for one vulnerability source; underlying primary dataset available"
     ],
     "reviewed_records": 29,
     "reviewed_batches": [
@@ -1271,6 +1273,13 @@
       24,
       25
     ],
-    "recommended_next_action": "Re-triage all 280 records and persist a per-article disposition ledger; then recalculate candidate/noise counts and rerun this gate. Do not publish."
+    "recommended_next_action": "Verify 57 flagged feed articles and either add distinct raw opportunities or document supported rejection; then recalculate gate."
+  },
+  "article_decision_ledger_path": "state/runs/2026-10-10/discovery/worker-4-article-decisions.json",
+  "article_decision_counts": {
+    "candidate_requires_source_review": 57,
+    "rejected": 180,
+    "candidate_verified": 30,
+    "duplicate": 13
   }
 }
