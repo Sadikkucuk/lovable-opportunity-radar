@@ -16,7 +16,7 @@
   ],
   "status": "incomplete",
   "started_at": "2026-10-10T06:59:10+03:00",
-  "completed_at": "2026-10-10T04:03:53.779Z",
+  "completed_at": null,
   "feed_items_expected": 280,
   "feed_items_triaged": 280,
   "candidate_article_count": 29,
@@ -26,7 +26,7 @@
   "raw_opportunity_count": 0,
   "raw_opportunities": [],
   "missing_batches": [],
-  "failure_reason": "All assigned batches were read and triaged, but GitHub execution safety checks blocked persistence of the full raw-opportunity ledger. This incomplete marker prevents downstream stages from treating the discovery as complete. No catalog or history changes were made.",
+  "failure_reason": "Full raw opportunity ledger not reconstructed; prior 29 opportunities are not available in persisted file. Source batches verified, but candidate evidence and complete opportunity records still require reconstruction.",
   "source_batch_checks": [
     {
       "batch": 19,
