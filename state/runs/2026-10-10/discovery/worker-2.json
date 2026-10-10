@@ -883,7 +883,33 @@
       }
     }
   ],
-  "failure_reason": "Two of the original 28 candidate article signals remain unverified; exhaustive candidate-to-opportunity extraction audit not completed.",
+  "failure_reason": "Source verification count not independently auditable: 28 candidate IDs absent; two remaining signals cannot be identified from existing worker output. Exhaustive extraction audit pending.",
   "missing_batches": [],
-  "verification_note": "2026-10-10 follow-up: six additional sources identified for manual evidence review; previous verification counts retained pending complete audit."
+  "verification_note": "2026-10-10 follow-up: six additional sources identified for manual evidence review; previous verification counts retained pending complete audit.",
+  "verification_audit": {
+    "audited_at": "2026-10-10",
+    "unique_source_ids_supporting_recorded_opportunities": 14,
+    "unique_source_ids": [
+      "9dc8394dfe28a0cc6a480e6b",
+      "d3ab203115d528f576d697e2",
+      "95cf494209f5337d76f33a7d",
+      "04c25d182cad548223bd9c80",
+      "498db12c35619aba757371eb",
+      "0166aff8beaf9dec31b00d43",
+      "280d4098a5290834d90af704",
+      "a06112167cc7479acd7e0f44",
+      "1487018eb6e39f0f5c2a4260",
+      "d41e5d00336461a4df24aaa3",
+      "135703d3698e7d63860677ba",
+      "3a943e18f4c70d83a7097d08",
+      "4b2d991487e84a2775f34842",
+      "1988921e13a4fb567dd60290"
+    ],
+    "reported_candidate_article_count": 28,
+    "reported_verified_count": 26,
+    "reported_unverified_count": 2,
+    "remaining_two_identifiable": false,
+    "reason": "No 28-row candidate article ledger exists in worker file; cannot establish identities of the two outstanding signals or validate aggregate verified count.",
+    "action_required": "Reconstruct 28 candidate IDs and dispositions from frozen batch 007-012 input before changing counts or marking complete."
+  }
 }
