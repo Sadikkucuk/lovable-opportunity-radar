@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "run_date": "2026-10-10",
-  "status": "MERGE_COMPLETE",
+  "status": "VALIDATION_PERSIST_BLOCKED",
   "source_batch_index_generated_at": "2026-10-10T00:47:20Z",
   "feed_records_total": 1000,
   "feed_records_triaged": 1000,
@@ -16,5 +16,9 @@
   "validator_a_expected": 48,
   "validator_b_expected": 47,
   "history_prematches": 11,
-  "zero_cost_feasibility_pending": 9
+  "zero_cost_feasibility_pending": 9,
+  "blockers": [
+    "Validation chunk-001 GitHub create-file action blocked by safety checks; no candidate marked validated."
+  ],
+  "validated_candidate_count": 0
 }
