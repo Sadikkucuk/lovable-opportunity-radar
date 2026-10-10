@@ -883,7 +883,7 @@
       }
     }
   ],
-  "failure_reason": "Source verification count not independently auditable: 28 candidate IDs absent; two remaining signals cannot be identified from existing worker output. Exhaustive extraction audit pending.",
+  "failure_reason": "All 240 batch records are present and 14 opportunity-linked source IDs resolve; 28-candidate source ledger and its two purported outstanding IDs are not recoverable from stored worker provenance. Verification aggregate cannot be certified.",
   "missing_batches": [],
   "verification_note": "2026-10-10 follow-up: six additional sources identified for manual evidence review; previous verification counts retained pending complete audit.",
   "verification_audit": {
@@ -910,7 +910,7 @@
     "reported_unverified_count": 2,
     "remaining_two_identifiable": false,
     "reason": "No 28-row candidate article ledger exists in worker file; cannot establish identities of the two outstanding signals or validate aggregate verified count.",
-    "action_required": "Reconstruct 28 candidate IDs and dispositions from frozen batch 007-012 input before changing counts or marking complete.",
+    "action_required": "Identify all 28 originally selected candidates from source triage provenance; verify original articles and map all 28 to final dispositions. Do not infer candidate membership from provisional lists.",
     "first_ten_source_ids": [
       "9dc8394dfe28a0cc6a480e6b",
       "d3ab203115d528f576d697e2",
@@ -1009,6 +1009,25 @@
         "status": "provisional_unverified"
       }
     ],
-    "third_eight_scope": "Eight additional distinct batch records for review, not confirmed positions 21-28 in missing original candidate ledger."
+    "third_eight_scope": "Eight additional distinct batch records for review, not confirmed positions 21-28 in missing original candidate ledger.",
+    "input_integrity": {
+      "assigned_batch_count": 6,
+      "records_read": 240,
+      "unique_feed_ids": 234,
+      "recorded_opportunity_source_ids": 14,
+      "opportunity_source_ids_all_present_in_input": true,
+      "reconstructed_candidate_ledger_complete": false,
+      "reported_28_candidates_not_reconciled": true
+    },
+    "provisional_ids_not_part_of_authoritative_candidate_ledger": [
+      "08271a4b4493d684b5cdace9",
+      "e9402d33eaee07ecec8cfabe",
+      "a97cda0ab72070137e8ea900",
+      "9850e42056eed9790beb2e93",
+      "38e5d186a29b4ed99ecec133",
+      "99dc8bcec9fff5bbf1c86e3d",
+      "e96b1094c2f4d205ad11bfbb",
+      "0d77db2009c132a9225981a9"
+    ]
   }
 }
