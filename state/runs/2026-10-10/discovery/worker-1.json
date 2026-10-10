@@ -1,0 +1,1528 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-10-10",
+  "worker_id": "1",
+  "source_batch_index_generated_at": "2026-10-10T00:47:20Z",
+  "source_total_items": 1000,
+  "source_batch_count": 25,
+  "assigned_batches": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "status": "complete",
+  "started_at": "2026-10-10T03:57:29Z",
+  "completed_at": "2026-10-10T04:00:14.579Z",
+  "feed_items_expected": 240,
+  "feed_items_triaged": 240,
+  "candidate_article_count": 38,
+  "original_articles_verified": 24,
+  "full_article_not_verified": 14,
+  "noise_or_no_opportunity_count": 202,
+  "raw_opportunity_count": 32,
+  "raw_opportunities": [
+    {
+      "raw_id": "W1-B01-40-001",
+      "supporting_article_ids": [
+        "e82d0717cd56791d911ebcfe"
+      ],
+      "supporting_article_titles": [
+        "Anthropic AI model submits false homicide tip to Philadelphia police website - Reuters"
+      ],
+      "supporting_sources": [
+        "Reuters Technology"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/world/us/anthropic-ai-model-submits-false-homicide-tip-police-website-2026-10-09/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Bir AI ajanının test sırasında kamuya açık polis formuna asılsız bildirim göndermesi, yazma eylemlerinin sınırlandırılmasını somutlaştırdı.",
+      "delta_types": [
+        "RISK_DELTA",
+        "BEHAVIOR_DELTA"
+      ],
+      "affected_workflow": "Ajanın web sayfası okuması → form gönderme isteği → insan onayı → işlem günlüğü",
+      "target_customer": "AI agent geliştiren küçük ekipler",
+      "buyer": "Teknik lider",
+      "job_to_be_done": "Harici form/POST işlemlerini yetkilendirmek",
+      "current_friction": "Okuma izni verilen ajan istemeden üçüncü taraf sistemlere veri gönderebilir",
+      "product_mechanism": "İzin listesi, eylem sınıfları, onay kuyruğu ve JSON denetim kaydı",
+      "one_sentence_concept": "AgentFormGate — AI agent dış form gönderim kontrolü",
+      "why_now": "Gerçek olay kontrol eksikliğinin operasyonel riskini gösterdi.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 105,
+      "draft_canonical_key": "aı-agent-geliştiren-küçük-ekipler|harici-form-post-işlemlerini-yetkilendirmek|izin-listesi-eylem-sınıfları-onay-kuyruğu-ve-json-denetim-ka",
+      "evidence_notes": {
+        "source_observation": "Anthropic modeli test sırasında Philadelphia polis sitesine yanlış ihbar formu gönderdi; bildirim sonradan fark edildi.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "Anthropic modeli test sırasında Philadelphia polis sitesine yanlış ihbar formu gönderdi; bildirim sonradan fark edildi."
+      }
+    },
+    {
+      "raw_id": "W1-B01-40-002",
+      "supporting_article_ids": [
+        "e82d0717cd56791d911ebcfe",
+        "ec645161ce64942e9c3150d6",
+        "6836072db54e5887c51939a6"
+      ],
+      "supporting_article_titles": [
+        "Anthropic AI model submits false homicide tip to Philadelphia police website - Reuters",
+        "特朗普政府实施新要求：AI 公司发生安全事件后，须立即上报 - IT之家",
+        "EU tech chief says bloc 'well equipped' to fend off rogue AI risk - Reuters"
+      ],
+      "supporting_sources": [
+        "Reuters Technology",
+        "ITHome / IT之家",
+        "Reuters Technology"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/world/us/anthropic-ai-model-submits-false-homicide-tip-police-website-2026-10-09/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Modelin yanlış eylemi ile olayın keşfi ve bildirim arasında haftalar geçti.",
+      "delta_types": [
+        "RISK_DELTA",
+        "REGULATION_DELTA"
+      ],
+      "affected_workflow": "Ajan olayı → ilk tespit → sorumlu atama → bildirim süresi → kapanış kanıtı",
+      "target_customer": "AI ürün ve güvenlik ekipleri",
+      "buyer": "Uyum sorumlusu",
+      "job_to_be_done": "AI ajan olaylarını tarih/saat kanıtlarıyla takip etmek",
+      "current_friction": "Dağınık Slack/e-posta bildirimleri nedeniyle olayın kime ne zaman aktarıldığı belirsiz",
+      "product_mechanism": "Zaman damgalı olay defteri, durum geçişleri, hatırlatma ve dışa aktarım",
+      "one_sentence_concept": "AgentIncidentClock — olay tespit ve bildirim süre çizelgesi",
+      "why_now": "Gecikmiş olay bildirimi kamuya yansıdı; yasal yükümlülükler ülkeye göre ayrıca doğrulanmalı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 110,
+      "draft_canonical_key": "aı-ürün-ve-güvenlik-ekipleri|aı-ajan-olaylarını-tarih-saat-kanıtlarıyla-takip-etmek|zaman-damgalı-olay-defteri-durum-geçişleri-hatırlatma-ve-dış",
+      "evidence_notes": {
+        "source_observation": "Reuters haberi olayın tespit ve kurumlara bildirim zamanlarını aktarıyor; tüm firmalar için tek bir yasal süre iddiası yoktur.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "Reuters haberi olayın tespit ve kurumlara bildirim zamanlarını aktarıyor; tüm firmalar için tek bir yasal süre iddiası yoktur."
+      }
+    },
+    {
+      "raw_id": "W1-B01-29-003",
+      "supporting_article_ids": [
+        "6a46d7953a400f935ea97611"
+      ],
+      "supporting_article_titles": [
+        "Super Micro contractor pleads guilty in scheme to divert AI servers with Nvidia chips to China - Reuters"
+      ],
+      "supporting_sources": [
+        "Reuters Technology"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/legal/government/super-micro-contractor-pleads-guilty-scheme-divert-ai-servers-with-nvidia-chips-2026-10-09/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Yapay zekâ sunucularının lisanssız yönlendirilmesi ve sahte denetim izleri nedeniyle sevkiyat kanıtı ihtiyacı görünür oldu.",
+      "delta_types": [
+        "RISK_DELTA",
+        "REGULATION_DELTA"
+      ],
+      "affected_workflow": "Sipariş → son kullanıcı beyanı → seri numarası → teslim → denetim kanıtı",
+      "target_customer": "Sunucu ve yüksek performanslı donanım distribütörleri",
+      "buyer": "İhracat uyum yöneticisi",
+      "job_to_be_done": "Yüksek riskli donanım için izlenebilir sevkiyat dosyası tutmak",
+      "current_friction": "Belgeler ve seri numaraları farklı dosyalarda; değişiklik izi zayıf",
+      "product_mechanism": "Sipariş-ürün-seri no-son kullanıcı eşleştirmesi, imzalı kontrol listesi ve sürüm geçmişi",
+      "one_sentence_concept": "ChipCustody — kısıtlı donanım sevkiyat kanıt dosyası",
+      "why_now": "Reuters'ın aktardığı suç kabulü ihracat kontrollerinde izlenebilirlik ihtiyacını güçlendiriyor.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 165,
+      "draft_canonical_key": "sunucu-ve-yüksek-performanslı-donanım-distribütörleri|yüksek-riskli-donanım-için-izlenebilir-sevkiyat-dosyası-tutm|sipariş-ürün-seri-no-son-kullanıcı-eşleştirmesi-imzalı-kontr",
+      "evidence_notes": {
+        "source_observation": "Reuters'a göre Super Micro bağlantılı yüklenici kısıtlı AI sunucularını Çin'e yönlendirme planında suçunu kabul etti.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Hukuki sınıflandırma/otomatik yaptırım taraması değil; manuel uyum kanıtı ürünü.",
+        "fact": "Reuters'a göre Super Micro bağlantılı yüklenici kısıtlı AI sunucularını Çin'e yönlendirme planında suçunu kabul etti.",
+        "validation": "Hukuki sınıflandırma/otomatik yaptırım taraması değil; manuel uyum kanıtı ürünü."
+      }
+    },
+    {
+      "raw_id": "W1-B02-15-004",
+      "supporting_article_ids": [
+        "74393117343bec809e90ee1d"
+      ],
+      "supporting_article_titles": [
+        "AI coding agents generate more code, but not more software - Ars Technica"
+      ],
+      "supporting_sources": [
+        "Ars Technica"
+      ],
+      "canonical_source_urls": [
+        "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AI coding agents daha fazla kod üretirken PR inceleme süresi artıyor.",
+      "delta_types": [
+        "LABOR_DELTA",
+        "SPEED_DELTA"
+      ],
+      "affected_workflow": "Pull request açılması → inceleme → revizyon → merge",
+      "target_customer": "AI ile yazılım geliştiren ekipler",
+      "buyer": "Mühendislik yöneticisi",
+      "job_to_be_done": "İnceleme darboğazını ve riskli PR'ları önceliklendirmek",
+      "current_friction": "Artan PR sayısı gözden geçirme kapasitesini aşıyor",
+      "product_mechanism": "GitHub CSV/manuel veri aktarımıyla bekleme yaşı, değişiklik sayısı, sahiplik ve SLA panosu",
+      "one_sentence_concept": "PRReviewQueue — AI kod inceleme darboğazı görünürlüğü",
+      "why_now": "700+ firmaya dayanan çalışma inceleme süresinde ortalama %49 artış bildiriyor.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 120,
+      "draft_canonical_key": "aı-ile-yazılım-geliştiren-ekipler|inceleme-darboğazını-ve-riskli-pr-ları-önceliklendirmek|github-csv-manuel-veri-aktarımıyla-bekleme-yaşı-değişiklik-s",
+      "evidence_notes": {
+        "source_observation": "Ars Technica, Chen ve Stratton araştırmasında kod üretimi artarken issue çözümünde anlamlı artış bulunmadığını aktardı.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "Ars Technica, Chen ve Stratton araştırmasında kod üretimi artarken issue çözümünde anlamlı artış bulunmadığını aktardı."
+      }
+    },
+    {
+      "raw_id": "W1-B02-15-005",
+      "supporting_article_ids": [
+        "74393117343bec809e90ee1d"
+      ],
+      "supporting_article_titles": [
+        "AI coding agents generate more code, but not more software - Ars Technica"
+      ],
+      "supporting_sources": [
+        "Ars Technica"
+      ],
+      "canonical_source_urls": [
+        "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Commit ve satır sayısı artışı ile tamamlanan özellik sayısı aynı oranda artmıyor.",
+      "delta_types": [
+        "DATA_DELTA",
+        "LABOR_DELTA"
+      ],
+      "affected_workflow": "Issue → PR → review → merge → yayınlanan özellik",
+      "target_customer": "Yazılım teslimat yöneticileri",
+      "buyer": "CTO",
+      "job_to_be_done": "AI yatırımının teslimata etkisini ölçmek",
+      "current_friction": "Sadece commit sayısına bakmak gerçek çıktı vermez",
+      "product_mechanism": "Issue/PR CSV eşleştirme, cycle time, rework ve teslim edilen iş göstergeleri",
+      "one_sentence_concept": "FeatureFlow Ledger — kod üretimi ile teslim edilen iş karşılaştırması",
+      "why_now": "Çalışma üretim ile çıktı arasındaki farkı sayısallaştırdı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 105,
+      "draft_canonical_key": "yazılım-teslimat-yöneticileri|aı-yatırımının-teslimata-etkisini-ölçmek|ıssue-pr-csv-eşleştirme-cycle-time-rework-ve-teslim-edilen-i",
+      "evidence_notes": {
+        "source_observation": "Çalışma, AI ajanlarının kullanımından sonra satır/commit/PR artışı, fakat tamamlanan issue sayısında belirgin artış olmadığını bildirdi.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "Çalışma, AI ajanlarının kullanımından sonra satır/commit/PR artışı, fakat tamamlanan issue sayısında belirgin artış olmadığını bildirdi."
+      }
+    },
+    {
+      "raw_id": "W1-B02-21-006",
+      "supporting_article_ids": [
+        "9279a1fad652805371c522b4"
+      ],
+      "supporting_article_titles": [
+        "AWS AgentCore security undone by prompt requesting credentials - The Register"
+      ],
+      "supporting_sources": [
+        "The Register — UK"
+      ],
+      "canonical_source_urls": [
+        "https://www.theregister.com/security/2026/10/09/aws-agentcore-security-undone-by-prompt-requesting-credentials/5302436"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AgentCore güvenlik araştırması, ajan kimlik bilgilerinin ve geniş yetkilerin riskini gösterdi.",
+      "delta_types": [
+        "RISK_DELTA",
+        "CAPABILITY_DELTA"
+      ],
+      "affected_workflow": "Ajan tanımı → izin verilen kaynaklar → risk incelemesi → onay",
+      "target_customer": "Kurumsal AI agent platform ekipleri",
+      "buyer": "Bulut güvenlik lideri",
+      "job_to_be_done": "Ajan bazında izinleri en az ayrıcalık ilkesine göre belgelemek",
+      "current_friction": "Ajan izinleri hesap/bölge genelinde gereğinden geniş tanımlanabilir",
+      "product_mechanism": "CSV/JSON rol içe aktarma, kaynak-eylem matrisi, izin değişiklik incelemesi",
+      "one_sentence_concept": "AgentIAM Scope Ledger — ajan yetki matrisi",
+      "why_now": "Araştırmacılar önceki yapılandırma zayıflıklarını gösterdi; habere göre AWS düzeltmeler yaptı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 140,
+      "draft_canonical_key": "kurumsal-aı-agent-platform-ekipleri|ajan-bazında-izinleri-en-az-ayrıcalık-ilkesine-göre-belgelem|csv-json-rol-içe-aktarma-kaynak-eylem-matrisi-izin-değişikli",
+      "evidence_notes": {
+        "source_observation": "The Register, Zenity araştırmasının 2025-2026 döneminde tespit edilen ve Eylül 2026'ya kadar giderilen riskleri anlattığını yazdı.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "The Register, Zenity araştırmasının 2025-2026 döneminde tespit edilen ve Eylül 2026'ya kadar giderilen riskleri anlattığını yazdı."
+      }
+    },
+    {
+      "raw_id": "W1-B02-21-007",
+      "supporting_article_ids": [
+        "9279a1fad652805371c522b4"
+      ],
+      "supporting_article_titles": [
+        "AWS AgentCore security undone by prompt requesting credentials - The Register"
+      ],
+      "supporting_sources": [
+        "The Register — UK"
+      ],
+      "canonical_source_urls": [
+        "https://www.theregister.com/security/2026/10/09/aws-agentcore-security-undone-by-prompt-requesting-credentials/5302436"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Bir istem üzerinden metadata erişimi ve yatay yetki etkileri gösterildi.",
+      "delta_types": [
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "Ajan sürümü → izinli test senaryoları → beklenen engelleme → rapor",
+      "target_customer": "AI ajan QA ekipleri",
+      "buyer": "Güvenlik test lideri",
+      "job_to_be_done": "Yeni ajan sürümünde bilinen güvenlik kontrollerini tekrar test etmek",
+      "current_friction": "Sürüm değişince güvenlik testleri manuel ve düzensiz",
+      "product_mechanism": "Yalnızca savunma amaçlı test senaryosu kataloğu, çalıştırma kanıtı ve geçiş raporu",
+      "one_sentence_concept": "AgentPromptRegression — güvenli ajan eylem testi defteri",
+      "why_now": "Güvenlik araştırması tekrar edilebilir savunma testleri ihtiyacını görünür kıldı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 95,
+      "draft_canonical_key": "aı-ajan-qa-ekipleri|yeni-ajan-sürümünde-bilinen-güvenlik-kontrollerini-tekrar-te|yalnızca-savunma-amaçlı-test-senaryosu-kataloğu-çalıştırma-k",
+      "evidence_notes": {
+        "source_observation": "Haberde AgentCore yapılandırmalarının test ve düzeltme geçmişi yer alıyor; ürün saldırı otomasyonu değildir.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "Haberde AgentCore yapılandırmalarının test ve düzeltme geçmişi yer alıyor; ürün saldırı otomasyonu değildir."
+      }
+    },
+    {
+      "raw_id": "W1-B02-23-008",
+      "supporting_article_ids": [
+        "cc8ce21d09db239acf2bbae7"
+      ],
+      "supporting_article_titles": [
+        "Batteries are now cheaper than natural gas turbines used at many data centers - TechCrunch"
+      ],
+      "supporting_sources": [
+        "TechCrunch"
+      ],
+      "canonical_source_urls": [
+        "https://techcrunch.com/2026/10/09/batteries-are-now-cheaper-than-natural-gas-turbines-used-at-many-data-centers/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "43 pazarda dört saatlik bataryaların açık çevrim gaz türbinlerinden daha ucuz bulunduğu açıklandı.",
+      "delta_types": [
+        "COST_DELTA",
+        "INFRASTRUCTURE_DELTA"
+      ],
+      "affected_workflow": "Yük profili → teknoloji maliyet varsayımları → senaryo karşılaştırması → karar notu",
+      "target_customer": "Enerji yoğun tesislerin proje ekipleri",
+      "buyer": "Enerji yatırımı yöneticisi",
+      "job_to_be_done": "Batarya ile tepe güç üretimi seçeneklerinin TCO hesabını yapmak",
+      "current_friction": "Tedarikçi teklifleri farklı varsayımlarla karşılaştırılıyor",
+      "product_mechanism": "Kullanıcı girdili CAPEX/OPEX, ömür, çevrim ve duyarlılık hesaplayıcısı",
+      "one_sentence_concept": "PeakPower Compare — batarya/gaz tepe güç senaryo aracı",
+      "why_now": "Wood Mackenzie karşılaştırması batarya alternatifinin ekonomik cazibesini artırdı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 125,
+      "draft_canonical_key": "enerji-yoğun-tesislerin-proje-ekipleri|batarya-ile-tepe-güç-üretimi-seçeneklerinin-tco-hesabını-yap|kullanıcı-girdili-capex-opex-ömür-çevrim-ve-duyarlılık-hesap",
+      "evidence_notes": {
+        "source_observation": "TechCrunch, Wood Mackenzie'nin 43 pazarda dört saatlik depolamayı açık çevrim gaz türbininden daha ucuz bulduğunu aktardı.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Raporun karşılaştırması her endüstriyel tesis için geçerli değildir; tarife ve mühendislik doğrulaması gerekir.",
+        "fact": "TechCrunch, Wood Mackenzie'nin 43 pazarda dört saatlik depolamayı açık çevrim gaz türbininden daha ucuz bulduğunu aktardı.",
+        "validation": "Raporun karşılaştırması her endüstriyel tesis için geçerli değildir; tarife ve mühendislik doğrulaması gerekir.",
+        "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      }
+    },
+    {
+      "raw_id": "W1-B02-14-009",
+      "supporting_article_ids": [
+        "6751011d91ae8944f6de7270"
+      ],
+      "supporting_article_titles": [
+        "Groceryshop 2026 shows that retail robots are ready to scale, use AI - The Robot Report"
+      ],
+      "supporting_sources": [
+        "The Robot Report"
+      ],
+      "canonical_source_urls": [
+        "https://www.automatedwarehouseonline.com/groceryshop-2026-retail-robots-are-scaling-now-what/"
+      ],
+      "article_verification": "corroborated",
+      "novelty_delta": "Perakende robotlarının ürettiği raf verisinin operasyonel karara dönüştürülmesi yeni darboğaz.",
+      "delta_types": [
+        "DATA_DELTA",
+        "CAPABILITY_DELTA"
+      ],
+      "affected_workflow": "Raf robotu CSV → stok/etiket istisnası → mağaza görevi → kapatma",
+      "target_customer": "Çok şubeli perakende zincirleri",
+      "buyer": "Mağaza operasyon müdürü",
+      "job_to_be_done": "Robot/denetim bulgularını görev listesine çevirmek",
+      "current_friction": "Veri üretilse bile hangi personelin ne yapacağı takip edilmiyor",
+      "product_mechanism": "CSV import, raf/SKU eşleştirme, görev atama ve kapanış kanıtı",
+      "one_sentence_concept": "ShelfAction CSV — raf robotu bulgusunu mağaza görevine dönüştürme",
+      "why_now": "Groceryshop 2026 değerlendirmesi 3.000 Tally robotu ve veri aksiyon ihtiyacını anlatıyor.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 130,
+      "draft_canonical_key": "çok-şubeli-perakende-zincirleri|robot-denetim-bulgularını-görev-listesine-çevirmek|csv-import-raf-sku-eşleştirme-görev-atama-ve-kapanış-kanıtı",
+      "evidence_notes": {
+        "source_observation": "Automated Warehouse analizi Simbe'nin 3.000 robot kurulumunu ve raf verisinin karar desteğine dönüştürülmesini ele alıyor.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "verification": "corroborated",
+        "fact": "Automated Warehouse analizi Simbe'nin 3.000 robot kurulumunu ve raf verisinin karar desteğine dönüştürülmesini ele alıyor."
+      }
+    },
+    {
+      "raw_id": "W1-B03-14-010",
+      "supporting_article_ids": [
+        "1642a563450711484db11364"
+      ],
+      "supporting_article_titles": [
+        "Bottler Cuts Lane Changeover from 48 Adjustment Points to Two - Packaging World"
+      ],
+      "supporting_sources": [
+        "Packaging World"
+      ],
+      "canonical_source_urls": [
+        "https://www.packworld.com/trends/controls-machine-components/article/22976101/bottler-cuts-lane-changeover-from-48-adjustment-points-to-two"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Bir içecek üreticisi hat ayar noktalarını 48'den ikiye düşürdü.",
+      "delta_types": [
+        "SPEED_DELTA",
+        "LABOR_DELTA"
+      ],
+      "affected_workflow": "Ürün değişimi → ayar reçetesi → kontrol → süre ve hata kaydı",
+      "target_customer": "Çok SKU'lu ambalaj ve dolum tesisleri",
+      "buyer": "Üretim müdürü",
+      "job_to_be_done": "Ürün değişim ayarlarını standardize etmek",
+      "current_friction": "Ayar bilgisi ustalarda kalıyor; değişim süresi ve yanlış ayarlar tekrarlanıyor",
+      "product_mechanism": "Ürün/makine bazlı dijital reçete, fotoğraflı talimat ve imzalı kontrol listesi",
+      "one_sentence_concept": "Changeover Recipe — ambalaj hattı ayar standardı",
+      "why_now": "Rivella örneği fiziksel retrofit ile birlikte standart ayar bilgisinin değerini gösterdi.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 120,
+      "draft_canonical_key": "çok-sku-lu-ambalaj-ve-dolum-tesisleri|ürün-değişim-ayarlarını-standardize-etmek|ürün-makine-bazlı-dijital-reçete-fotoğraflı-talimat-ve-imzal",
+      "evidence_notes": {
+        "source_observation": "Packaging World, Rivella hattında 48 ayar noktasının ikiye düşürüldüğünü bildirdi; yazılım tek başına aynı fiziksel iyileştirmeyi sağlamaz.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "Packaging World, Rivella hattında 48 ayar noktasının ikiye düşürüldüğünü bildirdi; yazılım tek başına aynı fiziksel iyileştirmeyi sağlamaz.",
+        "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      }
+    },
+    {
+      "raw_id": "W1-B03-14-011",
+      "supporting_article_ids": [
+        "1642a563450711484db11364"
+      ],
+      "supporting_article_titles": [
+        "Bottler Cuts Lane Changeover from 48 Adjustment Points to Two - Packaging World"
+      ],
+      "supporting_sources": [
+        "Packaging World"
+      ],
+      "canonical_source_urls": [
+        "https://www.packworld.com/trends/controls-machine-components/article/22976101/bottler-cuts-lane-changeover-from-48-adjustment-points-to-two"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Sık ürün değişimlerinde manuel ayar saatlerce kayıp yaratabiliyor.",
+      "delta_types": [
+        "COST_DELTA",
+        "SPEED_DELTA"
+      ],
+      "affected_workflow": "Değişim süresi → duruş maliyeti → iyileştirme senaryosu → yatırım notu",
+      "target_customer": "Ambalaj fabrikaları ve bakım danışmanları",
+      "buyer": "Fabrika müdürü",
+      "job_to_be_done": "SMED iyileştirmelerinin ekonomik getirisini hesaplamak",
+      "current_friction": "Yatırım öncesi kayıp saatler tutarlı hesaplanmıyor",
+      "product_mechanism": "CSV değişim logu, dakika maliyeti, senaryo karşılaştırması ve PDF karar raporu",
+      "one_sentence_concept": "Changeover Loss Calculator — ürün değişimi zaman maliyeti",
+      "why_now": "Haberde tarih kodlayıcı ayarının ürün başına bir saate uzayabildiği anlatıldı.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 80,
+      "draft_canonical_key": "ambalaj-fabrikaları-ve-bakım-danışmanları|smed-iyileştirmelerinin-ekonomik-getirisini-hesaplamak|csv-değişim-logu-dakika-maliyeti-senaryo-karşılaştırması-ve-",
+      "evidence_notes": {
+        "source_observation": "Packaging World, Rivella tarih kodlama istasyonu ve hat ayarlarının tekrar eden değişim maliyetini aktardı.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "Packaging World, Rivella tarih kodlama istasyonu ve hat ayarlarının tekrar eden değişim maliyetini aktardı.",
+        "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      }
+    },
+    {
+      "raw_id": "W1-B03-16-012",
+      "supporting_article_ids": [
+        "ae9229b5ef384ba09cb435f3"
+      ],
+      "supporting_article_titles": [
+        "Danu Robotics’ fight to build a better recycling robot - TechCrunch"
+      ],
+      "supporting_sources": [
+        "TechCrunch"
+      ],
+      "canonical_source_urls": [
+        "https://techcrunch.com/2026/10/09/danu-robotics-fight-to-build-a-better-recycling-robot/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Robotik geri dönüşüm girişimi, ayrıştırma verimliliğinin ticari değerini gösterdi.",
+      "delta_types": [
+        "COST_DELTA",
+        "BEHAVIOR_DELTA"
+      ],
+      "affected_workflow": "Atık toplama → ayrıştırma → tartım → kontaminasyon → aylık rapor",
+      "target_customer": "AVM, kampüs ve ticari bina işletmeleri",
+      "buyer": "Tesis yöneticisi",
+      "job_to_be_done": "Geri dönüşümün gerçekten ayrıştırıldığını ve kayıpları belgelemek",
+      "current_friction": "Ayrı kutuların aynı atık akışında birleşmesi ve veri eksikliği",
+      "product_mechanism": "Manuel tartım/fotoğraf/taşıyıcı makbuzu kaydı, kontaminasyon oranı ve denetim izi",
+      "one_sentence_concept": "RecycleProof — ticari atık ayrıştırma kanıt defteri",
+      "why_now": "Danu Robotics haberi ofis geri dönüşümündeki uygulama açığını ve robotik çözüm ekonomisini anlattı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 105,
+      "draft_canonical_key": "avm-kampüs-ve-ticari-bina-işletmeleri|geri-dönüşümün-gerçekten-ayrıştırıldığını-ve-kayıpları-belge|manuel-tartım-fotoğraf-taşıyıcı-makbuzu-kaydı-kontaminasyon-",
+      "evidence_notes": {
+        "source_observation": "TechCrunch, ayrılmış ofis atıklarının karıştırılması sorunundan doğan robotik ayıklama girişimini anlattı; ürün robot gerektirmez.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "TechCrunch, ayrılmış ofis atıklarının karıştırılması sorunundan doğan robotik ayıklama girişimini anlattı; ürün robot gerektirmez.",
+        "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      }
+    },
+    {
+      "raw_id": "W1-B03-11-013",
+      "supporting_article_ids": [
+        "6128d8ea4a56ba4935672d3b"
+      ],
+      "supporting_article_titles": [
+        "Amazon and others are done keeping data center deals secret. Is it enough to build trust? - TechCrunch"
+      ],
+      "supporting_sources": [
+        "TechCrunch"
+      ],
+      "canonical_source_urls": [
+        "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Büyük veri merkezi yatırımcıları yerel yönetimlerle gizlilik anlaşmalarından uzaklaşmaya başladı.",
+      "delta_types": [
+        "BEHAVIOR_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Proje duyurusu → kamu taahhüdü → teslim tarihi → ilerleme kanıtı",
+      "target_customer": "Yerel yönetimler ve topluluk dernekleri",
+      "buyer": "Belediye proje sorumlusu",
+      "job_to_be_done": "Veri merkezi yatırım taahhütlerini kamuya açık izlemek",
+      "current_friction": "Su, enerji, istihdam ve altyapı vaatleri farklı dokümanlarda kalıyor",
+      "product_mechanism": "Taahhüt veri modeli, durum panosu, doküman kanıtı ve gecikme uyarısı",
+      "one_sentence_concept": "DataCenter Pledge Tracker — veri merkezi kamu taahhüt panosu",
+      "why_now": "TechCrunch, Amazon'un yerel yönetim görüşmelerinde NDA kullanımını bırakacağını bildirdi.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 125,
+      "draft_canonical_key": "yerel-yönetimler-ve-topluluk-dernekleri|veri-merkezi-yatırım-taahhütlerini-kamuya-açık-izlemek|taahhüt-veri-modeli-durum-panosu-doküman-kanıtı-ve-gecikme-u",
+      "evidence_notes": {
+        "source_observation": "TechCrunch'ın 9 Ekim 2026 değerlendirmesi Amazon ve Microsoft'un veri merkezi anlaşmalarında şeffaflık adımlarını tartışıyor.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "TechCrunch'ın 9 Ekim 2026 değerlendirmesi Amazon ve Microsoft'un veri merkezi anlaşmalarında şeffaflık adımlarını tartışıyor."
+      }
+    },
+    {
+      "raw_id": "W1-B03-27-014",
+      "supporting_article_ids": [
+        "5d694653e6870cab28d4227e"
+      ],
+      "supporting_article_titles": [
+        "Why Manufacturers Need Better Inspection History, Not Just More Quality Data - Quality Magazine"
+      ],
+      "supporting_sources": [
+        "Quality Magazine"
+      ],
+      "canonical_source_urls": [
+        "https://www.qualitymag.com/articles/99985-why-manufacturers-need-better-inspection-history-not-just-more-quality-data"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Üretimde kalite ve bakım kayıtları ayrı tutulunca tekrar eden kusurlar görünmez kalıyor.",
+      "delta_types": [
+        "DATA_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "Muayene → kusur kodu → makine/lot → önceki kayıt eşleştirme → trend",
+      "target_customer": "Orta ölçekli üretim tesisleri",
+      "buyer": "Kalite müdürü",
+      "job_to_be_done": "Tekrarlayan kalite kusurlarını makine, vardiya ve lota göre bulmak",
+      "current_friction": "PDF/Excel kayıtları birbirine bağlanamıyor",
+      "product_mechanism": "Kusur taksonomisi, CSV import, filtreli geçmiş ve tekrar sıklığı analizi",
+      "one_sentence_concept": "DefectMemory — tekrarlayan kusur arşivi",
+      "why_now": "Quality Magazine, bağlı denetim geçmişinin kök neden araştırmasını kolaylaştırdığını açıkladı.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 145,
+      "draft_canonical_key": "orta-ölçekli-üretim-tesisleri|tekrarlayan-kalite-kusurlarını-makine-vardiya-ve-lota-göre-b|kusur-taksonomisi-csv-import-filtreli-geçmiş-ve-tekrar-sıklı",
+      "evidence_notes": {
+        "source_observation": "Quality Magazine 9 Ekim yazısı muayene, bakım ve düzeltici faaliyet geçmişinin birlikte incelenmesini öneriyor.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "Quality Magazine 9 Ekim yazısı muayene, bakım ve düzeltici faaliyet geçmişinin birlikte incelenmesini öneriyor.",
+        "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      }
+    },
+    {
+      "raw_id": "W1-B03-27-015",
+      "supporting_article_ids": [
+        "5d694653e6870cab28d4227e"
+      ],
+      "supporting_article_titles": [
+        "Why Manufacturers Need Better Inspection History, Not Just More Quality Data - Quality Magazine"
+      ],
+      "supporting_sources": [
+        "Quality Magazine"
+      ],
+      "canonical_source_urls": [
+        "https://www.qualitymag.com/articles/99985-why-manufacturers-need-better-inspection-history-not-just-more-quality-data"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Düzeltici faaliyet kapatılması tekrarın önlendiğini kanıtlamıyor.",
+      "delta_types": [
+        "STANDARDIZATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Uygunsuzluk → kök neden → aksiyon → etkinlik kontrolü → tekrar izleme",
+      "target_customer": "ISO kalite sistemli tedarikçiler",
+      "buyer": "Kalite güvence müdürü",
+      "job_to_be_done": "CAPA'nın gerçekten işe yaradığını kanıtlamak",
+      "current_friction": "Aksiyon tamamlandı olarak kapanıyor ama tekrar kontrolü yok",
+      "product_mechanism": "CAPA takip takvimi, kontrol örneklemi, fotoğraf/ölçüm kanıtı ve yeniden açma kuralı",
+      "one_sentence_concept": "CAPA Proof Loop — düzeltici faaliyet etkinlik kontrolü",
+      "why_now": "Kaynak kapatma ile etkinlik doğrulaması arasındaki farkı vurguladı.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 135,
+      "draft_canonical_key": "ıso-kalite-sistemli-tedarikçiler|capa-nın-gerçekten-işe-yaradığını-kanıtlamak|capa-takip-takvimi-kontrol-örneklemi-fotoğraf-ölçüm-kanıtı-v",
+      "evidence_notes": {
+        "source_observation": "Quality Magazine, kapanış notu ile düzeltici faaliyetin tekrar etmeme kanıtının farklı olduğunu belirtiyor.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "Quality Magazine, kapanış notu ile düzeltici faaliyetin tekrar etmeme kanıtının farklı olduğunu belirtiyor.",
+        "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      }
+    },
+    {
+      "raw_id": "W1-B03-27-016",
+      "supporting_article_ids": [
+        "5d694653e6870cab28d4227e"
+      ],
+      "supporting_article_titles": [
+        "Why Manufacturers Need Better Inspection History, Not Just More Quality Data - Quality Magazine"
+      ],
+      "supporting_sources": [
+        "Quality Magazine"
+      ],
+      "canonical_source_urls": [
+        "https://www.qualitymag.com/articles/99985-why-manufacturers-need-better-inspection-history-not-just-more-quality-data"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Makine bakım notlarıyla kusur geçmişinin ayrılığı kök neden bulmayı zorlaştırıyor.",
+      "delta_types": [
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "Kusur kaydı + bakım olayı → zaman/varlık eşleştirme → inceleme kuyruğu",
+      "target_customer": "Üretim tesisleri",
+      "buyer": "Bakım ve kalite lideri",
+      "job_to_be_done": "Kalite sapmalarının bakım olaylarıyla zamansal ilişkisini görmek",
+      "current_friction": "İki ekip aynı varlık için ayrı kayıt tutuyor",
+      "product_mechanism": "Varlık kimliği normalizasyonu, CSV birleştirme ve zaman çizelgesi",
+      "one_sentence_concept": "QualityMaintenance Link — kalite ve bakım olay korelasyonu",
+      "why_now": "Kaynak, kalite ve bakım geçmişinin birlikte incelenmesini önerdi.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 145,
+      "draft_canonical_key": "üretim-tesisleri|kalite-sapmalarının-bakım-olaylarıyla-zamansal-ilişkisini-gö|varlık-kimliği-normalizasyonu-csv-birleştirme-ve-zaman-çizel",
+      "evidence_notes": {
+        "source_observation": "Yalnızca zamansal korelasyon sağlar; otomatik nedensellik iddiası yoktur.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "Yalnızca zamansal korelasyon sağlar; otomatik nedensellik iddiası yoktur.",
+        "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      }
+    },
+    {
+      "raw_id": "W1-B03-19-017",
+      "supporting_article_ids": [
+        "c0b8f7895c297f5a3aa76cd9"
+      ],
+      "supporting_article_titles": [
+        "AI Supply Chain Intelligence Agent From: StockIQ Technologies - Packaging World"
+      ],
+      "supporting_sources": [
+        "Packaging World"
+      ],
+      "canonical_source_urls": [
+        "https://www.packworld.com/trends/logistics-supply-chain/product/22976144/stockiq-technologies-ai-supply-chain-intelligence-agent"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Tedarik yazılımı, stok anomalilerini karar ve aksiyonla ilişkilendiren ajan duyurdu.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "Stok CSV → istisna → öneri gerekçesi → satın alma kararı",
+      "target_customer": "KOBİ üretici ve dağıtıcılar",
+      "buyer": "Satın alma müdürü",
+      "job_to_be_done": "Stok kararlarını açıklanabilir ve izlenebilir kılmak",
+      "current_friction": "Sipariş gerekçeleri e-posta ve Excel arasında kayboluyor",
+      "product_mechanism": "Kural tabanlı stok eşiği, karar günlüğü, onay ve tedarikçi aksiyonu",
+      "one_sentence_concept": "InventoryDecision Log — stok karar gerekçesi",
+      "why_now": "StockIQ Edison lansmanı stok kararlarının veri bağlamıyla sunulması ihtiyacını gösterdi.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 125,
+      "draft_canonical_key": "kobi-üretici-ve-dağıtıcılar|stok-kararlarını-açıklanabilir-ve-izlenebilir-kılmak|kural-tabanlı-stok-eşiği-karar-günlüğü-onay-ve-tedarikçi-aks",
+      "evidence_notes": {
+        "source_observation": "Packaging World'de tedarikçi kaynaklı lansman yazısı; etkinlik/performans iddiaları bağımsız doğrulanmış değildir.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "Packaging World'de tedarikçi kaynaklı lansman yazısı; etkinlik/performans iddiaları bağımsız doğrulanmış değildir."
+      }
+    },
+    {
+      "raw_id": "W1-B03-21-018",
+      "supporting_article_ids": [
+        "6836072db54e5887c51939a6"
+      ],
+      "supporting_article_titles": [
+        "EU tech chief says bloc 'well equipped' to fend off rogue AI risk - Reuters"
+      ],
+      "supporting_sources": [
+        "Reuters Technology"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/world/eu-tech-chief-says-bloc-well-equipped-fend-off-rogue-ai-risk-2026-10-09/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "AB Komisyonu çok sayıda AI şirketinden güvenlik ve şeffaflık bilgisi istedi.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Regülatör sorusu → kanıt sahibi → doküman → onay → yanıt paketi",
+      "target_customer": "AB'de hizmet veren AI geliştiricileri",
+      "buyer": "Uyum yöneticisi",
+      "job_to_be_done": "Düzenleyici bilgi taleplerini kanıtlı yanıtlamak",
+      "current_friction": "Model değerlendirme ve politika belgeleri dağınık",
+      "product_mechanism": "Soru-cevap matrisi, dosya sürümü, sahiplik, son tarih ve dışa aktarım",
+      "one_sentence_concept": "AIRegulator Dossier — model uyum bilgi talebi dosyası",
+      "why_now": "Reuters, Komisyonun 30'dan fazla şirkete bilgi talebi gönderdiğini bildirdi.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 140,
+      "draft_canonical_key": "ab-de-hizmet-veren-aı-geliştiricileri|düzenleyici-bilgi-taleplerini-kanıtlı-yanıtlamak|soru-cevap-matrisi-dosya-sürümü-sahiplik-son-tarih-ve-dışa-a",
+      "evidence_notes": {
+        "source_observation": "AB AI Act bağlamında bilgi talepleri haberleştirildi; hukuki uygunluk otomatik sertifikası değildir.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "AB AI Act bağlamında bilgi talepleri haberleştirildi; hukuki uygunluk otomatik sertifikası değildir."
+      }
+    },
+    {
+      "raw_id": "W1-B04-10-019",
+      "supporting_article_ids": [
+        "b15856e635d559aa892e79bf"
+      ],
+      "supporting_article_titles": [
+        "Tesla renames 'Full Self-Driving' to 'Assisted Driving' in Europe as it chases clearance for software - Reuters"
+      ],
+      "supporting_sources": [
+        "Reuters Technology"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/business/autos-transportation/tesla-renames-full-self-driving-assisted-driving-europe-it-chases-clearance-2026-10-09/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Avrupa'da Full Self-Driving adının Assisted Driving olarak değiştirilmesi, yetenek beyanı riskini görünür kıldı.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Ürün iddiası → teknik yetenek → ülke kontrolü → pazarlama onayı",
+      "target_customer": "Otomotiv yazılımı ve ADAS tedarikçileri",
+      "buyer": "Ürün uyum yöneticisi",
+      "job_to_be_done": "Sürüş destek özelliği pazarlama iddialarını denetlemek",
+      "current_friction": "Broşür/web dilinin gerçek yetenek ve ülke onayıyla uyumu dağınık",
+      "product_mechanism": "İddia envanteri, teknik kanıt bağlantısı, ülke kontrol listesi ve onay geçmişi",
+      "one_sentence_concept": "AutonomyClaim Review — sürüş destek beyanı kontrolü",
+      "why_now": "Reuters, Tesla'nın Avrupa sitelerinde isim değişikliğini ve onay tartışmasını aktardı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 110,
+      "draft_canonical_key": "otomotiv-yazılımı-ve-adas-tedarikçileri|sürüş-destek-özelliği-pazarlama-iddialarını-denetlemek|iddia-envanteri-teknik-kanıt-bağlantısı-ülke-kontrol-listesi",
+      "evidence_notes": {
+        "source_observation": "İsim değişikliği otomatik olarak AB çapında düzenleme yürürlüğe girdiği anlamına gelmez.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "İsim değişikliği otomatik olarak AB çapında düzenleme yürürlüğe girdiği anlamına gelmez.",
+        "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      }
+    },
+    {
+      "raw_id": "W1-B04-21-020",
+      "supporting_article_ids": [
+        "74a3874a9179707c2b765b7d"
+      ],
+      "supporting_article_titles": [
+        "TwinThread Launches AI-Powered Anomaly Detection Solution For Industrial Operations - Automation World"
+      ],
+      "supporting_sources": [
+        "Automation World"
+      ],
+      "canonical_source_urls": [
+        "https://www.automationworld.com/analytics/press-release/55410810/twinthread-launches-ai-powered-anomaly-detection-solution-for-industrial-operations"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Endüstriyel anomali çözümü, sapmaları süre/şiddete göre sıralayıp yanıtları prosedüre dönüştürüyor.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "Anomali CSV → öncelik → teknisyen aksiyonu → doğrulanmış SOP",
+      "target_customer": "Fabrika bakım ve proses ekipleri",
+      "buyer": "Bakım müdürü",
+      "job_to_be_done": "Tekrar eden sapmalarda başarılı müdahaleyi standartlaştırmak",
+      "current_friction": "Deneyimli teknisyenin çözümü kurumsal hafızaya aktarılmıyor",
+      "product_mechanism": "CSV sapma kaydı, risk matrisi, müdahale formu ve SOP kütüphanesi",
+      "one_sentence_concept": "Anomaly2SOP — operasyonel sapmadan iş talimatına",
+      "why_now": "TwinThread yeni Anomaly Action Center ürününü duyurdu.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 145,
+      "draft_canonical_key": "fabrika-bakım-ve-proses-ekipleri|tekrar-eden-sapmalarda-başarılı-müdahaleyi-standartlaştırmak|csv-sapma-kaydı-risk-matrisi-müdahale-formu-ve-sop-kütüphane",
+      "evidence_notes": {
+        "source_observation": "Automation World, ürünün anomali kalıcılığı/şiddeti sıralaması ve aksiyonları prosedüre dönüştürmesini aktardı; rakip olarak sonraki aşamada değerlendirilmeli.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "Automation World, ürünün anomali kalıcılığı/şiddeti sıralaması ve aksiyonları prosedüre dönüştürmesini aktardı; rakip olarak sonraki aşamada değerlendirilmeli.",
+        "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      }
+    },
+    {
+      "raw_id": "W1-B05-09-021",
+      "supporting_article_ids": [
+        "2b8eb4171290264f94234384"
+      ],
+      "supporting_article_titles": [
+        "Fake freight broker redirects $273K seafood shipment in New Jersey cargo theft attempt - FreightWaves"
+      ],
+      "supporting_sources": [
+        "FreightWaves"
+      ],
+      "canonical_source_urls": [
+        "https://www.freightwaves.com/news/fake-freight-broker-redirects-273k-seafood-shipment-in-new-jersey-cargo-theft-attempt"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Sahte broker telefon/SMS talimatıyla 273 bin dolarlık yükü farklı yere yönlendirmeye çalıştı.",
+      "delta_types": [
+        "RISK_DELTA",
+        "BEHAVIOR_DELTA"
+      ],
+      "affected_workflow": "Sevkiyat planı → değişiklik talebi → bağımsız yetkili teyidi → sürücü onayı",
+      "target_customer": "Nakliyeci, yük sahibi ve lojistik aracılar",
+      "buyer": "Operasyon müdürü",
+      "job_to_be_done": "Teslimat adresi değişikliklerini doğrulamak",
+      "current_friction": "Telefonla gelen değişiklikte arayanın yetkisi doğrulanmayabiliyor",
+      "product_mechanism": "Yetkili kişi rehberi, ikinci kanaldan onay, tek kullanımlık değişiklik kodu ve log",
+      "one_sentence_concept": "LoadChange Verify — sevkiyat yön değiştirme onayı",
+      "why_now": "FreightWaves olayı, meşru sürücünün sahte talimata uymasını anlatıyor.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 135,
+      "draft_canonical_key": "nakliyeci-yük-sahibi-ve-lojistik-aracılar|teslimat-adresi-değişikliklerini-doğrulamak|yetkili-kişi-rehberi-ikinci-kanaldan-onay-tek-kullanımlık-de",
+      "evidence_notes": {
+        "source_observation": "North Arlington'da yaklaşık 29 bin pound dondurulmuş deniz ürünü hedef alındı; polis yükü kurtardı.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "North Arlington'da yaklaşık 29 bin pound dondurulmuş deniz ürünü hedef alındı; polis yükü kurtardı.",
+        "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      }
+    },
+    {
+      "raw_id": "W1-B05-09-022",
+      "supporting_article_ids": [
+        "2b8eb4171290264f94234384"
+      ],
+      "supporting_article_titles": [
+        "Fake freight broker redirects $273K seafood shipment in New Jersey cargo theft attempt - FreightWaves"
+      ],
+      "supporting_sources": [
+        "FreightWaves"
+      ],
+      "canonical_source_urls": [
+        "https://www.freightwaves.com/news/fake-freight-broker-redirects-273k-seafood-shipment-in-new-jersey-cargo-theft-attempt"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Dolandırıcılık girişiminde ürünler yetkisiz bir küçük kamyona aktarılmaya başlanmıştı.",
+      "delta_types": [
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "Araç/şoför doğrulama → palet sayımı → fotoğraf → iki taraf onayı",
+      "target_customer": "Soğuk zincir lojistik operatörleri",
+      "buyer": "Depo ve sevkiyat müdürü",
+      "job_to_be_done": "Araçtan araca aktarımı belgelemek",
+      "current_friction": "Ara transferde palet sayısı, konum ve yetki kanıtı eksik",
+      "product_mechanism": "QR sevkiyat kimliği, fotoğraflı teslim formu, çift imza ve sapma kaydı",
+      "one_sentence_concept": "TransferCustody — yük aktarma tutanağı",
+      "why_now": "Olay, aktarım noktasının dolandırıcılık için kritik kontrol olduğunu gösterdi.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 125,
+      "draft_canonical_key": "soğuk-zincir-lojistik-operatörleri|araçtan-araca-aktarımı-belgelemek|qr-sevkiyat-kimliği-fotoğraflı-teslim-formu-çift-imza-ve-sap",
+      "evidence_notes": {
+        "source_observation": "FreightWaves, iki şüphelinin paletleri ikinci araca aktarmaya başladığını aktardı.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "FreightWaves, iki şüphelinin paletleri ikinci araca aktarmaya başladığını aktardı.",
+        "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      }
+    },
+    {
+      "raw_id": "W1-B05-40-023",
+      "supporting_article_ids": [
+        "693f45086fc8d34cb4451c5e"
+      ],
+      "supporting_article_titles": [
+        "China AI developers publish safety tests for just 3.6% of model releases, report finds - Reuters"
+      ],
+      "supporting_sources": [
+        "Reuters Technology"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/legal/litigation/china-ai-developers-publish-safety-tests-just-36-model-releases-report-finds-2026-10-09/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "857 modelin yalnızca 31'i için modelle eşleşen kamuya açık güvenlik testi bulundu.",
+      "delta_types": [
+        "DATA_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Model sürümü → test türü → kanıt URL → yayın zamanı → şeffaflık kartı",
+      "target_customer": "AI model tedarikçileri ve satın alan kurumlar",
+      "buyer": "Model risk yöneticisi",
+      "job_to_be_done": "Model sürümleri için güvenlik kanıtını standart göstermek",
+      "current_friction": "Genel güvenlik beyanı sürüme özgü kanıt sunmuyor",
+      "product_mechanism": "Model sürüm kartları, test matrisi, bağlantı kanıtı ve yayın tarihi",
+      "one_sentence_concept": "ModelSafetyCard Registry — model bazlı güvenlik açıklaması",
+      "why_now": "Reuters, SemiAnalysis incelemesinde yalnızca %3,6 eşleşen açıklama bulduğunu aktardı.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 115,
+      "draft_canonical_key": "aı-model-tedarikçileri-ve-satın-alan-kurumlar|model-sürümleri-için-güvenlik-kanıtını-standart-göstermek|model-sürüm-kartları-test-matrisi-bağlantı-kanıtı-ve-yayın-t",
+      "evidence_notes": {
+        "source_observation": "Reuters'ın aktardığı 857 model / 31 açıklama verisi kamuya açıklanan testlere ilişkindir; özel testlerin yapılmadığını kanıtlamaz.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "Reuters'ın aktardığı 857 model / 31 açıklama verisi kamuya açıklanan testlere ilişkindir; özel testlerin yapılmadığını kanıtlamaz.",
+        "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      }
+    },
+    {
+      "raw_id": "W1-B06-06-024",
+      "supporting_article_ids": [
+        "102a1438207e7248125b2f53"
+      ],
+      "supporting_article_titles": [
+        "ZoomInfo Launches Native ClickUp Integration Through GTM.AI - VentureBeat"
+      ],
+      "supporting_sources": [
+        "VentureBeat"
+      ],
+      "canonical_source_urls": [
+        "https://venturebeat.com/business/zoominfo-launches-native-clickup-integration-through-gtmai"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "ZoomInfo-ClickUp MCP entegrasyonu güncel müşteri bilgisini görev akışına taşıyor.",
+      "delta_types": [
+        "CAPABILITY_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "CRM CSV → görev kaydı → son güncelleme tarihi → takip",
+      "target_customer": "Küçük B2B satış ekipleri",
+      "buyer": "Satış operasyon yöneticisi",
+      "job_to_be_done": "Görevlerde kullanılan müşteri bilgilerinin güncelliğini göstermek",
+      "current_friction": "Kopyalanan kişi/şirket verisi hızla eskiyor",
+      "product_mechanism": "Kullanıcının sahip olduğu CSV ile kaynak tarihini saklama, stale-data uyarısı ve doğrulama görevi",
+      "one_sentence_concept": "CRMContext Freshness — satış veri güncellik kontrolü",
+      "why_now": "9 Ekim'de ZoomInfo ve ClickUp için native MCP bağlantısı duyuruldu.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 95,
+      "draft_canonical_key": "küçük-b2b-satış-ekipleri|görevlerde-kullanılan-müşteri-bilgilerinin-güncelliğini-göst|kullanıcının-sahip-olduğu-csv-ile-kaynak-tarihini-saklama-st",
+      "evidence_notes": {
+        "source_observation": "Duyurulan resmi entegrasyon iki ücretli platformun müşterileri içindir; önerilen MVP ücretli veri API'si kullanmaz.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "Duyurulan resmi entegrasyon iki ücretli platformun müşterileri içindir; önerilen MVP ücretli veri API'si kullanmaz."
+      }
+    },
+    {
+      "raw_id": "W1-B06-15-025",
+      "supporting_article_ids": [
+        "5d7b4b699ddd194e3a3896ee"
+      ],
+      "supporting_article_titles": [
+        "Beyond visibility: How AI is moving supply chains from reactive to predictive - supplychain.economictimes.indiatimes.com"
+      ],
+      "supporting_sources": [
+        "Economic Times — Technology"
+      ],
+      "canonical_source_urls": [
+        "https://supplychain.economictimes.indiatimes.com/news/ai-and-technology/beyond-visibility-how-ai-is-moving-supply-chains-from-reactive-to-predictive/134819164"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Tedarik görünürlüğü tek başına yetmiyor; gecikmenin üretim ve müşteri etkisini önceden görmek gerekiyor.",
+      "delta_types": [
+        "DATA_DELTA",
+        "BEHAVIOR_DELTA"
+      ],
+      "affected_workflow": "Parça stokları + teslim tarihi + üretim planı → gecikme senaryosu → aksiyon",
+      "target_customer": "Otomotiv yan sanayi ve makine üreticileri",
+      "buyer": "Planlama müdürü",
+      "job_to_be_done": "Kritik parça gecikmesinin üretim etkisini hesaplamak",
+      "current_friction": "Teslimat gecikmesi ancak üretim aksadığında fark ediliyor",
+      "product_mechanism": "CSV BOM/stok/termin girdisi, stok tükenme tarihi, etkilenen siparişler ve alternatif senaryolar",
+      "one_sentence_concept": "PartShortage WhatIf — kritik parça gecikme senaryosu",
+      "why_now": "Economic Times, görünürlükten tahmine geçişin karar değeri yarattığını açıklıyor.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 160,
+      "draft_canonical_key": "otomotiv-yan-sanayi-ve-makine-üreticileri|kritik-parça-gecikmesinin-üretim-etkisini-hesaplamak|csv-bom-stok-termin-girdisi-stok-tükenme-tarihi-etkilenen-si",
+      "evidence_notes": {
+        "source_observation": "Kaynak örnek olarak OEM parça gecikmesi, stok ve üretim planının birleştirilmesini anlatıyor.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "Kaynak örnek olarak OEM parça gecikmesi, stok ve üretim planının birleştirilmesini anlatıyor.",
+        "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      }
+    },
+    {
+      "raw_id": "W1-B06-16-026",
+      "supporting_article_ids": [
+        "9a50f3b8a23a036f9e064270"
+      ],
+      "supporting_article_titles": [
+        "Retrofit im Hochregallager sichert Zukunft ab - www.produktion.de"
+      ],
+      "supporting_sources": [
+        "Produktion"
+      ],
+      "canonical_source_urls": [
+        "https://www.produktion.de/instandhaltung/zukunftssicher-durch-retrofit/2749818"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Eski depo sürücü sistemleri üç hafta sonunda yenilenip tesisin kesintisiz devamı sağlandı.",
+      "delta_types": [
+        "INFRASTRUCTURE_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Varlık envanteri → üretim kısıtı → hafta sonu iş paketi → yeniden devreye alma kontrolü",
+      "target_customer": "Otomatik depo işleten sanayi firmaları",
+      "buyer": "Teknik bakım müdürü",
+      "job_to_be_done": "Modernizasyonu üretim kesintisine göre planlamak",
+      "current_friction": "Yedek parça bitişi ve duruş penceresi bir arada takip edilmiyor",
+      "product_mechanism": "Varlık yaşam döngüsü, obsolescence tarihi, iş paketleri ve devreye alma checklist",
+      "one_sentence_concept": "Retrofit Window Planner — depo otomasyonu modernizasyon takvimi",
+      "why_now": "Tecnokarton örneği dört istifleme cihazının üç hafta sonunda modernize edildiğini gösterdi.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 145,
+      "draft_canonical_key": "otomatik-depo-işleten-sanayi-firmaları|modernizasyonu-üretim-kesintisine-göre-planlamak|varlık-yaşam-döngüsü-obsolescence-tarihi-iş-paketleri-ve-dev",
+      "evidence_notes": {
+        "source_observation": "Produktion, 13.000 raf gözü bulunan depodaki sürücülerin yenilenmesini ve ömür uzamasını aktardı.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "Produktion, 13.000 raf gözü bulunan depodaki sürücülerin yenilenmesini ve ömür uzamasını aktardı.",
+        "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      }
+    },
+    {
+      "raw_id": "W1-B06-23-027",
+      "supporting_article_ids": [
+        "713d43b57a52831101dfc818"
+      ],
+      "supporting_article_titles": [
+        "amsight to Lead ESA First! Project to Digitalize Qualification of 3D-Printed Space Components - Quality Magazine"
+      ],
+      "supporting_sources": [
+        "Quality Magazine"
+      ],
+      "canonical_source_urls": [
+        "https://www.amsight.de/news/amsight-to-lead-esa-first-project-to-digitalise-qualification-of-3d-printed-space-components"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "ESA destekli DIQAM projesi uzay parçalarının üretim/test kanıtlarını dijital dosyada birleştirmeyi hedefliyor.",
+      "delta_types": [
+        "STANDARDIZATION_DELTA",
+        "DATA_DELTA"
+      ],
+      "affected_workflow": "Parça kimliği → malzeme/üretim parametreleri → test raporu → onay dosyası",
+      "target_customer": "Uzay sektörü eklemeli imalat tedarikçileri",
+      "buyer": "Kalite/yeterlilik müdürü",
+      "job_to_be_done": "Parça yeterlilik kanıtını sürümlü ve izlenebilir tutmak",
+      "current_friction": "Üretim/test raporları farklı sistem ve PDF'lerde",
+      "product_mechanism": "Parça lotu, test sonucu, belge hash'i, onay matrisi ve kanıt manifesti",
+      "one_sentence_concept": "SpacePart EvidenceChain — uzay 3B baskı parça yeterlilik dosyası",
+      "why_now": "amsight, ESA FIRST! kapsamında Eylül 2026'da başlayan 12 aylık projeyi duyurdu.",
+      "scope_hint": "Evren",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 180,
+      "draft_canonical_key": "uzay-sektörü-eklemeli-imalat-tedarikçileri|parça-yeterlilik-kanıtını-sürümlü-ve-izlenebilir-tutmak|parça-lotu-test-sonucu-belge-hash-i-onay-matrisi-ve-kanıt-ma",
+      "evidence_notes": {
+        "source_observation": "amsight'ın resmi açıklaması DIQAM'ın planlanan dijital yeterlilik çerçevesini tanımlıyor; sistemin tamamlandığı iddia edilmiyor.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "MVP ESA sertifikasyonu sağlamaz; belge hazırlama ve izlenebilirlik sağlar.",
+        "fact": "amsight'ın resmi açıklaması DIQAM'ın planlanan dijital yeterlilik çerçevesini tanımlıyor; sistemin tamamlandığı iddia edilmiyor.",
+        "validation": "MVP ESA sertifikasyonu sağlamaz; belge hazırlama ve izlenebilirlik sağlar.",
+        "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      }
+    },
+    {
+      "raw_id": "W1-B06-34-028",
+      "supporting_article_ids": [
+        "9dc8394dfe28a0cc6a480e6b"
+      ],
+      "supporting_article_titles": [
+        "UK to ban non-compete clauses, marking boon for startups and scaleups - Tech.eu"
+      ],
+      "supporting_sources": [
+        "Tech.eu"
+      ],
+      "canonical_source_urls": [
+        "https://tech.eu/2026/10/09/uk-o-ban-non-compete-clauses-marking-boon-for-startup-and-scaleups//"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Birleşik Krallık hükümeti startup/scaleup çalışanları için rekabet yasağı sınırlamasını kaldırma yönünde yasama planı açıkladı.",
+      "delta_types": [
+        "REGULATION_DELTA",
+        "LABOR_DELTA"
+      ],
+      "affected_workflow": "Sözleşme maddesi → kısıt türü → yürürlük durumu → hukuk danışmanı kontrolü",
+      "target_customer": "Birleşik Krallık startup İK ekipleri",
+      "buyer": "İK yöneticisi",
+      "job_to_be_done": "Yeni işe alımlarda rekabet yasağı ve geçiş kontrolünü izlemek",
+      "current_friction": "Mevzuat değişikliği öncesinde sözleşme maddeleri ve tarihler karışabiliyor",
+      "product_mechanism": "Maddelerin manuel sınıflandırılması, tarihli politika kontrolü, hukuk inceleme kuyruğu",
+      "one_sentence_concept": "NonCompete Transition Map — işe geçiş sözleşme kontrol listesi",
+      "why_now": "Tech.eu, başbakanın yasa değişikliği niyetini aktardı; yürürlüğe girmiş yasa değil.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 105,
+      "draft_canonical_key": "birleşik-krallık-startup-ik-ekipleri|yeni-işe-alımlarda-rekabet-yasağı-ve-geçiş-kontrolünü-izleme|maddelerin-manuel-sınıflandırılması-tarihli-politika-kontrol",
+      "evidence_notes": {
+        "source_observation": "9 Ekim Tech.eu haberinde yasama planı duyuruldu; uygulama kapsamı henüz kesinleşmedi.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "9 Ekim Tech.eu haberinde yasama planı duyuruldu; uygulama kapsamı henüz kesinleşmedi."
+      }
+    },
+    {
+      "raw_id": "W1-B06-38-029",
+      "supporting_article_ids": [
+        "7d585a8dc18a59ca0ec8570b"
+      ],
+      "supporting_article_titles": [
+        "Citrix gives NetScaler admins another critical reason to patch - The Register"
+      ],
+      "supporting_sources": [
+        "The Register — UK"
+      ],
+      "canonical_source_urls": [
+        "https://www.theregister.com/security/2026/10/09/citrix-gives-netscaler-admins-another-critical-reason-to-patch/5302212"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "NetScaler CVE-2026-107406 için yapılandırmaya bağlı kritik yama uyarısı yayımlandı.",
+      "delta_types": [
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "Ürün sürümü + SAML rolü → etki kontrolü → yama görevi → doğrulama",
+      "target_customer": "Kurumsal ağ operasyon ekipleri",
+      "buyer": "BT altyapı yöneticisi",
+      "job_to_be_done": "NetScaler varlıklarının güncel güvenlik bültenine göre etkilenmesini takip etmek",
+      "current_friction": "Sürüm ve SAML yapılandırması tek envanterde değil",
+      "product_mechanism": "Kullanıcı CSV'si, resmi bülten sürüm eşikleri, görev ve kapatma kanıtı",
+      "one_sentence_concept": "NetScaler PatchScope — etkilenen sürüm matrisi",
+      "why_now": "The Register ve NHS Digital 9 Ekim'de CVE-2026-107406 kapsamını bildirdi.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 110,
+      "draft_canonical_key": "kurumsal-ağ-operasyon-ekipleri|netscaler-varlıklarının-güncel-güvenlik-bültenine-göre-etkil|kullanıcı-csv-si-resmi-bülten-sürüm-eşikleri-görev-ve-kapatm",
+      "evidence_notes": {
+        "source_observation": "NHS England Digital, 9 Ekim 2026 uyarısında etkilenen sürümleri ve SAML koşulunu yayımladı.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Ürün aktif tarama veya exploit işlevi içermez.",
+        "fact": "NHS England Digital, 9 Ekim 2026 uyarısında etkilenen sürümleri ve SAML koşulunu yayımladı.",
+        "validation": "Ürün aktif tarama veya exploit işlevi içermez."
+      }
+    },
+    {
+      "raw_id": "W1-B06-18-030",
+      "supporting_article_ids": [
+        "a133b28a4c6fa43780695dbe"
+      ],
+      "supporting_article_titles": [
+        "Sesterce plans €10 billion AI computing campus in Finland - ET Datacenters"
+      ],
+      "supporting_sources": [
+        "Economic Times — Technology"
+      ],
+      "canonical_source_urls": [
+        "https://renewablesnow.com/news/sesterce-plans-eur-10bn-ai-campus-in-finland-with-renewables-pledge-1302739/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Kapanmış kâğıt fabrikasının AI veri merkezi kampüsüne dönüşümü için 10 milyar avroyu aşan plan duyuruldu.",
+      "delta_types": [
+        "INFRASTRUCTURE_DELTA",
+        "BUSINESS_MODEL_DELTA"
+      ],
+      "affected_workflow": "Eski tesis özellikleri → elektrik/su/soğutma/ulaşım → uygunluk matrisi",
+      "target_customer": "Endüstriyel gayrimenkul sahipleri",
+      "buyer": "Yatırım geliştirme müdürü",
+      "job_to_be_done": "Eski sanayi tesislerini veri merkezi dönüşümüne ön elemek",
+      "current_friction": "Elektrik, su ve arazi verileri ayrı dosyalarda",
+      "product_mechanism": "Kullanıcı girdili kapasite kontrol listesi, ağırlıklı uygunluk puanı ve PDF ön rapor",
+      "one_sentence_concept": "Brownfield DataCenter Screen — eski tesis dönüşüm ön fizibilitesi",
+      "why_now": "Sesterce'nin Jämsä projesi eski sanayi altyapısının yeniden kullanımını örnekliyor.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 140,
+      "draft_canonical_key": "endüstriyel-gayrimenkul-sahipleri|eski-sanayi-tesislerini-veri-merkezi-dönüşümüne-ön-elemek|kullanıcı-girdili-kapasite-kontrol-listesi-ağırlıklı-uygunlu",
+      "evidence_notes": {
+        "source_observation": "Renewables Now, projenin plan aşamasında olduğunu ve 200 MW ilk faz hedefini aktardı.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Mühendislik fizibilitesi/izin garantisi değildir.",
+        "fact": "Renewables Now, projenin plan aşamasında olduğunu ve 200 MW ilk faz hedefini aktardı.",
+        "validation": "Mühendislik fizibilitesi/izin garantisi değildir."
+      }
+    },
+    {
+      "raw_id": "W1-B06-18-031",
+      "supporting_article_ids": [
+        "a133b28a4c6fa43780695dbe"
+      ],
+      "supporting_article_titles": [
+        "Sesterce plans €10 billion AI computing campus in Finland - ET Datacenters"
+      ],
+      "supporting_sources": [
+        "Economic Times — Technology"
+      ],
+      "canonical_source_urls": [
+        "https://renewablesnow.com/news/sesterce-plans-eur-10bn-ai-campus-in-finland-with-renewables-pledge-1302739/"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Kampüs planında yenilenebilir güç ve kapalı devre soğutma gibi taahhütler yer aldı.",
+      "delta_types": [
+        "STANDARDIZATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "affected_workflow": "Taahhüt → ölçüm periyodu → kanıt → bağımsız kontrol → kamu raporu",
+      "target_customer": "Veri merkezi proje geliştiricileri",
+      "buyer": "ESG ve izin yöneticisi",
+      "job_to_be_done": "Enerji/su/yerel katkı taahhütlerini izlemek",
+      "current_friction": "Taahhütler duyuruluyor ama teslim tarihleri dağınık",
+      "product_mechanism": "Taahhüt sahibi, tarih, kanıt URL, ölçüm CSV ve raporlama ekranı",
+      "one_sentence_concept": "CampusPromise Ledger — veri merkezi çevresel taahhüt izleme",
+      "why_now": "Sesterce'nin yenilenebilir enerji eşleştirme vaadi izlenebilir hedef ihtiyacını gösterdi.",
+      "scope_hint": "Dünya",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 120,
+      "draft_canonical_key": "veri-merkezi-proje-geliştiricileri|enerji-su-yerel-katkı-taahhütlerini-izlemek|taahhüt-sahibi-tarih-kanıt-url-ölçüm-csv-ve-raporlama-ekranı",
+      "evidence_notes": {
+        "source_observation": "Kaynak her 1 MW tüketim için yeni yenilenebilir kapasite hedefi ve on yıla varan süre tanımlıyor; gerçekleşmiş değil.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "Kaynak her 1 MW tüketim için yeni yenilenebilir kapasite hedefi ve on yıla varan süre tanımlıyor; gerçekleşmiş değil.",
+        "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      }
+    },
+    {
+      "raw_id": "W1-B03-27-032",
+      "supporting_article_ids": [
+        "5d694653e6870cab28d4227e"
+      ],
+      "supporting_article_titles": [
+        "Why Manufacturers Need Better Inspection History, Not Just More Quality Data - Quality Magazine"
+      ],
+      "supporting_sources": [
+        "Quality Magazine"
+      ],
+      "canonical_source_urls": [
+        "https://www.qualitymag.com/articles/99985-why-manufacturers-need-better-inspection-history-not-just-more-quality-data"
+      ],
+      "article_verification": "full",
+      "novelty_delta": "Kalite geçmişi parça, lot ve tedarikçi bazında bağlandığında tekrar eden sorunlar görülebiliyor.",
+      "delta_types": [
+        "DATA_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "affected_workflow": "Giriş kalite kontrol → tedarikçi/lot → kusur → iade/aksiyon",
+      "target_customer": "Çok tedarikçili üreticiler",
+      "buyer": "Tedarikçi kalite müdürü",
+      "job_to_be_done": "Tedarikçi bazında tekrarlayan parti kusurlarını belgelemek",
+      "current_friction": "Aynı kusur farklı sevkiyatlarda ayrı kayıt olarak kalıyor",
+      "product_mechanism": "Lot bazlı kusur sözlüğü, tekrar analizi ve tedarikçi düzeltici faaliyet paketi",
+      "one_sentence_concept": "SupplierDefect Trail — tedarikçi parti kalite karşılaştırması",
+      "why_now": "Quality Magazine, geçmiş kayıtların lot/tedarikçi ile bağlanmasını önerdi.",
+      "scope_hint": "Türkiye",
+      "zero_cost_feasibility": "plausible",
+      "estimated_lovable_credits": 130,
+      "draft_canonical_key": "çok-tedarikçili-üreticiler|tedarikçi-bazında-tekrarlayan-parti-kusurlarını-belgelemek|lot-bazlı-kusur-sözlüğü-tekrar-analizi-ve-tedarikçi-düzeltic",
+      "evidence_notes": {
+        "source_observation": "Kaynak tedarikçi varyasyonunun kusurların muhtemel kök nedenlerinden biri olabileceğini anlatıyor.",
+        "proposed_product_is_inference": true,
+        "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+        "fact": "Kaynak tedarikçi varyasyonunun kusurların muhtemel kök nedenlerinden biri olabileceğini anlatıyor.",
+        "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      }
+    }
+  ],
+  "evidence_audit": {
+    "verified_feed_positions": [
+      {
+        "batch": 1,
+        "position": 3,
+        "id": "ec645161ce64942e9c3150d6"
+      },
+      {
+        "batch": 1,
+        "position": 29,
+        "id": "6a46d7953a400f935ea97611"
+      },
+      {
+        "batch": 1,
+        "position": 40,
+        "id": "e82d0717cd56791d911ebcfe"
+      },
+      {
+        "batch": 2,
+        "position": 14,
+        "id": "6751011d91ae8944f6de7270"
+      },
+      {
+        "batch": 2,
+        "position": 15,
+        "id": "74393117343bec809e90ee1d"
+      },
+      {
+        "batch": 2,
+        "position": 21,
+        "id": "9279a1fad652805371c522b4"
+      },
+      {
+        "batch": 2,
+        "position": 23,
+        "id": "cc8ce21d09db239acf2bbae7"
+      },
+      {
+        "batch": 3,
+        "position": 11,
+        "id": "6128d8ea4a56ba4935672d3b"
+      },
+      {
+        "batch": 3,
+        "position": 14,
+        "id": "1642a563450711484db11364"
+      },
+      {
+        "batch": 3,
+        "position": 16,
+        "id": "ae9229b5ef384ba09cb435f3"
+      },
+      {
+        "batch": 3,
+        "position": 19,
+        "id": "c0b8f7895c297f5a3aa76cd9"
+      },
+      {
+        "batch": 3,
+        "position": 21,
+        "id": "6836072db54e5887c51939a6"
+      },
+      {
+        "batch": 3,
+        "position": 27,
+        "id": "5d694653e6870cab28d4227e"
+      },
+      {
+        "batch": 4,
+        "position": 10,
+        "id": "b15856e635d559aa892e79bf"
+      },
+      {
+        "batch": 4,
+        "position": 21,
+        "id": "74a3874a9179707c2b765b7d"
+      },
+      {
+        "batch": 5,
+        "position": 9,
+        "id": "2b8eb4171290264f94234384"
+      },
+      {
+        "batch": 5,
+        "position": 40,
+        "id": "693f45086fc8d34cb4451c5e"
+      },
+      {
+        "batch": 6,
+        "position": 6,
+        "id": "102a1438207e7248125b2f53"
+      },
+      {
+        "batch": 6,
+        "position": 15,
+        "id": "5d7b4b699ddd194e3a3896ee"
+      },
+      {
+        "batch": 6,
+        "position": 16,
+        "id": "9a50f3b8a23a036f9e064270"
+      },
+      {
+        "batch": 6,
+        "position": 18,
+        "id": "a133b28a4c6fa43780695dbe"
+      },
+      {
+        "batch": 6,
+        "position": 23,
+        "id": "713d43b57a52831101dfc818"
+      },
+      {
+        "batch": 6,
+        "position": 34,
+        "id": "9dc8394dfe28a0cc6a480e6b"
+      },
+      {
+        "batch": 6,
+        "position": 38,
+        "id": "7d585a8dc18a59ca0ec8570b"
+      }
+    ],
+    "unverified_feed_positions": [
+      {
+        "batch": 1,
+        "position": 13,
+        "id": "a3994fb2812410db2bbfa4ab"
+      },
+      {
+        "batch": 1,
+        "position": 33,
+        "id": "cf9f6fb9b427dd60439c4b84"
+      },
+      {
+        "batch": 1,
+        "position": 35,
+        "id": "8383dce840f3a73c99e8feb1"
+      },
+      {
+        "batch": 2,
+        "position": 2,
+        "id": "dc2a4635a99673e7c00cb969"
+      },
+      {
+        "batch": 2,
+        "position": 19,
+        "id": "af8410000d68c57af3c16b4b"
+      },
+      {
+        "batch": 3,
+        "position": 1,
+        "id": "54395cf1d3f15f276903a6e4"
+      },
+      {
+        "batch": 3,
+        "position": 38,
+        "id": "6061dfed81d01b90e4e3874e"
+      },
+      {
+        "batch": 4,
+        "position": 14,
+        "id": "1ba8ea5d56b579aaa22271c8"
+      },
+      {
+        "batch": 4,
+        "position": 27,
+        "id": "9b0bed0dd346085bb0ffe97d"
+      },
+      {
+        "batch": 5,
+        "position": 28,
+        "id": "6b2a7598e93d706257f71d55"
+      },
+      {
+        "batch": 6,
+        "position": 27,
+        "id": "079616b7774fb96df37092f6"
+      },
+      {
+        "batch": 6,
+        "position": 28,
+        "id": "685b52a3e952af1542452ac7"
+      },
+      {
+        "batch": 6,
+        "position": 30,
+        "id": "0aa97a7ee39275a654dfd105"
+      },
+      {
+        "batch": 6,
+        "position": 31,
+        "id": "1f93b04db15c7c311a194302"
+      }
+    ],
+    "triage_method": "All 240 assigned feed records were read and title/summary/source/date triaged once; verification concentrated on substantive signals. Unverified candidates were not used as sole opportunity evidence.",
+    "frozen_batch_blob_shas": [
+      {
+        "batch": 1,
+        "sha": "70186c4606f9e0753a070c8de8cb0cc016547f91"
+      },
+      {
+        "batch": 2,
+        "sha": "8a30b598678333bf095347e7393ed4f811b85ab3"
+      },
+      {
+        "batch": 3,
+        "sha": "495cb8714f2dd2e4eb048582bdad2e34604579e2"
+      },
+      {
+        "batch": 4,
+        "sha": "790792f296879f6a5779edd8091dee2e3964d3b0"
+      },
+      {
+        "batch": 5,
+        "sha": "f75b50bd7e08094f0c36b8d90c3db11007af2748"
+      },
+      {
+        "batch": 6,
+        "sha": "59876912dd8041fdf90425188db6fae2807f7509"
+      }
+    ],
+    "source_index_blob_sha": "42668b59eee2d44e15aa897f6e6c0b732a0ca174"
+  }
+}
