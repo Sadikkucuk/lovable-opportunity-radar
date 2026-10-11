@@ -321,7 +321,7 @@ class Engine:
                     raise ValueError("reuse candidate mismatch")
                 self.validate_result(job, receipt["result"], as_of=dt(job["reuse"]["checked_at"]))
                 return {"state": "done", "receipt_path": job["reuse"]["receipt_path"], "receipt": receipt, "reused": True}
-            except (ValueError, KeyError, TypeError):
+            except (ValueError, KeyError, TypeError, AttributeError):
                 pass
         # Numbered claim paths are first-writer-wins. Overlapping invocations cannot own the same attempt.
         for attempt in range(1, MAX_ATTEMPTS + 1):
@@ -352,7 +352,7 @@ class Engine:
                 else:
                     retry_at = expires + timedelta(minutes=RETRY_MINUTES[attempt-1])
                 reason = receipt.get("reason") if receipt else "worker lease expired without a receipt"
-            except (ValueError, KeyError, TypeError) as exc:
+            except (ValueError, KeyError, TypeError, AttributeError) as exc:
                 reason = "invalid attempt: " + str(exc)
                 # Bad records remain available for audit; they never poison the whole controller.
                 self.errors.append(f"{job['job_id']} attempt {attempt}: {reason}")
@@ -520,11 +520,17 @@ class Engine:
             closed = all(s["state"] in TERMINAL for s in subset.values())
             gaps = counts["failed"] + counts["unverified"] + decisions["unverified"]
             discovery_seen = manifest.get("reused_articles", 0)
+            article_decisions = Counter()
+            for cached in self.read(f"state/v2/runs/{run_id}/reused.json", []):
+                article_decisions[cached["decision"]["decision"]] += 1
             for k, s in subset.items():
                 if jobs[k]["kind"] == "discovery" and s["state"] == "done":
                     discovery_seen += len(s["receipt"]["result"]["articles"])
+                    article_decisions.update(a["decision"] for a in s["receipt"]["result"]["articles"])
+            gaps += article_decisions["unverified"]
             report = {"run_id": run_id, "processing_status": ("complete_with_gaps" if gaps else "complete") if closed else "in_progress",
                       "job_counts": dict(counts), "validation_decisions": dict(decisions),
+                      "article_decisions": dict(article_decisions),
                       "articles_processed": discovery_seen if manifest["kind"] == "daily" else None,
                       "articles_expected": manifest.get("unique_count"),
                       "publication_status": "github_release_available", "site_delivery": "not_observed_by_controller"}
