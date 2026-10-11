@@ -1,0 +1,287 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-28e1620977577167",
+  "input_hash": "28e16209775771673237272999629a12e9f862bd55429769e280157705f35aa2",
+  "token": "65017d14-6e7f-43aa-a54b-4e9aad31013e",
+  "finished_at": "2026-10-11T10:20:04.119Z",
+  "outcome": "done",
+  "reason": "Tetikleyici makale ve ürün sayfaları okundu. Türkiye’de aynı müşteri-iş-akışı birleşiminde batarya ile gaz tepe gücü TCO’sunu doğrudan karşılaştıran ürün bulunmadı; ENOPTIMAL ile Enerji Portföy yalnız BESS fizibilitesi sunduğu için komşu sayıldı. Globalde üç doğrudan çözüm saptandı. Kullanıcı girdili, tesis-özel ve denetlenebilir senaryo kaydı harici API, veritabanı veya AI olmadan tarayıcı içinde uygulanabilir; mevcut 89 fikirle anlamsal olarak yeni.",
+  "result": {
+    "decision": "qualified",
+    "reason": "Türkiye’de doğrudan rakip sayısı 0, globalde 3’tür. StoreFAST ve CogenS daha geniş mühendislik modelleri, Peaker vs Battery Comparator ise basit tarama aracıdır; tesis ekibinin kendi CAPEX/OPEX, ömür, çevrim ve hassasiyet varsayımlarını kaynak ve onay iziyle karşılaştırdığı hafif karar dosyası boşluğu korunuyor.",
+    "duplicate_of": null,
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://techcrunch.com/2026/10/09/batteries-are-now-cheaper-than-natural-gas-turbines-used-at-many-data-centers/",
+        "accessed_at": "2026-10-11T10:20:04.119Z",
+        "claim": "Dört saatlik bataryaların açık çevrim gaz türbinlerine göre maliyet üstünlüğü çok sayıda pazarda güncel yatırım karşılaştırması ihtiyacı doğuruyor.",
+        "observation": "9 Ekim 2026 tarihli TechCrunch haberi, Wood Mackenzie’nin 43 pazarın tamamında dört saatlik bataryaları açık çevrim gaz türbinlerinden daha ucuz bulduğunu; türbin tedarik sürelerinin iki-dört yıla çıktığını aktarıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://enoptimal.com/tr/battery-feasibility",
+        "accessed_at": "2026-10-11T10:20:04.119Z",
+        "claim": "Türkiye’de batarya fizibilite hesaplayıcısı var ancak gaz tepe gücü alternatifiyle TCO karşılaştırması yapmıyor.",
+        "observation": "ENOPTIMAL; santral/tüketim, batarya kapasitesi, C-rate, yatırım, şarj stratejisi ve konum girdileriyle batarya analizi sunuyor. Gaz türbini/jeneratör alternatifi ve iki teknoloji TCO senaryosu görünmüyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://enerjiportfoy.com/",
+        "accessed_at": "2026-10-11T10:20:04.119Z",
+        "claim": "Türkiye’de ayrıntılı BESS gelir ve fizibilite ürünü var ancak batarya-gaz tepe gücü yatırım karşılaştırması değil.",
+        "observation": "Enerji Portföy; batarya modelleri, finansal varsayımlar, arbitraj/yan hizmet gelirleri, nakit akışı, NPV, IRR, geri ödeme ve raporlar sunuyor; doğrudan gaz peaker alternatifiyle TCO seçimi sunmuyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.nlr.gov/storage/storefast",
+        "accessed_at": "2026-10-11T10:20:04.119Z",
+        "claim": "Depolama ile esnek gaz üretimini finansal ölçütlerle kıyaslayan doğrudan global araç var.",
+        "observation": "StoreFAST, enerji depolamayı doğal gaz kombine çevrim ve yanma türbinleri gibi esnek üretimle benchmark ediyor; paralel teknoloji senaryoları, geri ödeme, NPV ve başabaş elektrik fiyatı üretiyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://howtostoreelectricity.com/peaking-power-plant/",
+        "accessed_at": "2026-10-11T10:20:04.119Z",
+        "claim": "Gaz peaker ile dört saatlik BESS uygunluğunu karşılaştıran doğrudan ücretsiz tarama aracı var.",
+        "observation": "Peaker vs Battery Comparator; süre, yıllık çalışma saati, değer sürücüsü, başlatma hızı, emisyon/saha kısıtı ve yenilenebilir penetrasyonu girdilerinden BESS, gaz peaker veya hibrit öneriyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://jisenergy.com/",
+        "accessed_at": "2026-10-11T10:20:04.119Z",
+        "claim": "Tesis yatırım ekipleri için batarya ve gaz jeneratörünü yaşam döngüsü maliyetiyle modelleyen doğrudan yazılım var.",
+        "observation": "CogenS; batarya ve gaz genset birlikte çalışmasını, peak shaving ve dayanıklılığı modelliyor; NPV, IRR, payback ve TCO ile profesyonel karşılaştırma raporları üretiyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/File_API",
+        "accessed_at": "2026-10-11T10:20:04.119Z",
+        "claim": "Tesis yükü ve teklif verileri harici API olmadan tarayıcıda okunabilir.",
+        "observation": "MDN File API, kullanıcının seçtiği yerel CSV/JSON dosyalarının web uygulamasında FileReader ile işlenmesini destekliyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "accessed_at": "2026-10-11T10:20:04.119Z",
+        "claim": "Senaryo ve varsayım kayıtları harici veritabanı olmadan saklanabilir.",
+        "observation": "MDN localStorage verisinin aynı origin için tarayıcı oturumları arasında kalıcı olduğunu belgeliyor.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 0,
+        "queries": [
+          "Türkiye batarya gaz türbini tepe güç TCO karşılaştırma aracı",
+          "Türkiye BESS gaz jeneratörü fizibilite karşılaştırma yazılımı",
+          "batarya mı gaz jeneratörü mü yatırım hesaplayıcı Türkiye"
+        ],
+        "scope": "11 Ekim 2026; Türkiye’de enerji yoğun tesis proje ekipleri ve enerji yatırımı yöneticileri; batarya ile gaz tepe gücü CAPEX/OPEX, ömür, çevrim ve hassasiyet karşılaştırması.",
+        "search_complete": true,
+        "direct_competitors": [],
+        "adjacent_products": [
+          {
+            "name": "ENOPTIMAL Batarya Fizibilite Analizi",
+            "url": "https://enoptimal.com/tr/battery-feasibility",
+            "same_customer_job_workflow_reason": "Batarya yatırım ve geri ödeme fizibilitesi yapıyor; gaz tepe gücü alternatifiyle yan yana TCO seçimi yapmıyor."
+          },
+          {
+            "name": "Enerji Portföy BESS Fizibilitesi",
+            "url": "https://enerjiportfoy.com/",
+            "same_customer_job_workflow_reason": "BESS gelir, NPV/IRR ve raporlama sunuyor; enerji yoğun tesis için batarya-gaz peaker TCO karşılaştırması değil."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 3,
+        "queries": [
+          "battery versus gas peaker TCO calculator",
+          "BESS gas generator techno economic comparison software",
+          "battery vs gas turbine project financial model tool",
+          "industrial facility battery gas genset lifecycle cost comparison"
+        ],
+        "scope": "11 Ekim 2026; global enerji yatırımı ve tesis proje ekipleri; batarya/depolama ile esnek gaz üretiminin teknik-ekonomik senaryo karşılaştırması.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "StoreFAST",
+            "url": "https://www.nlr.gov/storage/storefast",
+            "same_customer_job_workflow_reason": "Depolama ile yanma türbini dahil esnek üretim teknolojilerini paralel finansal senaryolarla kıyaslıyor."
+          },
+          {
+            "name": "Peaker vs Battery Comparator",
+            "url": "https://howtostoreelectricity.com/peaking-power-plant/",
+            "same_customer_job_workflow_reason": "Gaz peaker, dört saatlik BESS veya hibrit seçimini kullanıcı girdileriyle doğrudan tarıyor."
+          },
+          {
+            "name": "CogenS",
+            "url": "https://jisenergy.com/",
+            "same_customer_job_workflow_reason": "Tesis sahipleri ve proje geliştiricileri için batarya ile gaz genset senaryolarını yaşam döngüsü ve finansal metriklerle karşılaştırıyor."
+          }
+        ],
+        "adjacent_products": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Kullanıcı yük profili ile tedarikçi CAPEX/OPEX verisini form veya CSV’den girer; istemci tarafı JavaScript batarya ve gaz senaryolarının yıllık nakit akışı, NPV, LCOE/TCO, çevrim ve hassasiyet sonuçlarını deterministik hesaplar; varsayımlar localStorage/IndexedDB’de tutulur ve JSON/CSV/PDF karar paketi indirilir.",
+      "dependency_inventory": [
+        "Lovable tarafından üretilen HTML/CSS/JavaScript",
+        "Browser File API",
+        "localStorage veya IndexedDB",
+        "İstemci tarafı deterministik finansal ve enerji formülleri",
+        "İstemci tarafı JSON/CSV/PDF dışa aktarma",
+        "Kullanıcı tarafından sağlanan yük, tarife, CAPEX/OPEX, yakıt ve performans verileri"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "Mevcut 89 fikirde EPDK mahsuplaşma, EV şarj yatırımı ve BESS fizibilitesiyle ilişkili kayıtlar var; enerji yoğun tesisin batarya ile gaz tepe üretimini kullanıcı girdili TCO ve hassasiyet dosyasında karşılaştırdığı aynı müşteri-iş-mekanizma kaydı saptanmadı."
+    },
+    "catalog_record": {
+      "canonical_key": "enerji-yogun-tesis-proje-ekipleri|batarya-ile-gaz-tepe-gucu-tco-senaryolarini-karsilastir|kullanici-girdili-capex-opex-omur-cevrim-hassasiyet-ve-karar-kaniti",
+      "idea_name": "PeakPower Compare — Batarya/Gaz TCO Karar Dosyası",
+      "scope_tier": "Dünya",
+      "scope_reason": "Batarya ve gaz tepe üretimi yatırım karşılaştırması küresel enerji yoğun tesislerin ortak problemidir; tarife, yakıt, finansman ve teknik varsayımlar kullanıcı tarafından ülke/tesis bazında girilir.",
+      "news_source": "TechCrunch",
+      "news_title": "Batteries are now cheaper than natural gas turbines used at many data centers",
+      "news_date": "2026-10-09",
+      "news_url": "https://techcrunch.com/2026/10/09/batteries-are-now-cheaper-than-natural-gas-turbines-used-at-many-data-centers/",
+      "source_links": [
+        {
+          "label": "TechCrunch — Batteries vs gas turbines",
+          "url": "https://techcrunch.com/2026/10/09/batteries-are-now-cheaper-than-natural-gas-turbines-used-at-many-data-centers/"
+        },
+        {
+          "label": "StoreFAST",
+          "url": "https://www.nlr.gov/storage/storefast"
+        },
+        {
+          "label": "Peaker vs Battery Comparator",
+          "url": "https://howtostoreelectricity.com/peaking-power-plant/"
+        },
+        {
+          "label": "CogenS",
+          "url": "https://jisenergy.com/"
+        },
+        {
+          "label": "ENOPTIMAL Batarya Fizibilite",
+          "url": "https://enoptimal.com/tr/battery-feasibility"
+        }
+      ],
+      "core_idea": "Enerji yoğun tesis ekiplerinin batarya ve gaz tepe gücü seçeneklerini aynı kullanıcı girdileriyle CAPEX, OPEX, yakıt/şarj maliyeti, ömür, çevrim, emisyon ve hassasiyet üzerinden karşılaştırdığı; varsayım kaynağı ve insan onayını saklayan tarayıcı içi karar dosyası.",
+      "user_story": "Bir enerji yatırımı yöneticisi olarak batarya ve gaz tepe gücü seçeneklerini tesisimin gerçek yükü ve tekliflerimle karşılaştırmak, kritik varsayımların sonucu nasıl değiştirdiğini görmek ve yatırım kuruluna denetlenebilir bir karar dosyası sunmak istiyorum.",
+      "before_state": "Batarya ve gaz teklifleri farklı mühendislik tablolarında, farklı ömür/yakıt/tarife varsayımlarıyla hesaplanıyor; sonuçların hangi girdi sürümüne dayandığı belirsiz.",
+      "after_state": "Yük ve teklif girdileri → ortak varsayım defteri → deterministik batarya/gaz TCO modeli → hassasiyet ve başabaş analizi → istisna notları → insan onayı → indirilebilir karar paketi.",
+      "why_now": "9 Ekim 2026 tarihli haber, Wood Mackenzie’nin 43 pazarın tamamında dört saatlik bataryaları açık çevrim gaz türbinlerinden daha ucuz bulduğunu ve türbin tedarik sürelerinin uzadığını aktarıyor.",
+      "target_customer": "Enerji yoğun tesislerin proje ve enerji yönetimi ekipleri",
+      "buyer": "Enerji yatırımı yöneticisi, tesis direktörü veya CFO",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 3,
+      "direct_competitors": [
+        {
+          "name": "StoreFAST",
+          "url": "https://www.nlr.gov/storage/storefast",
+          "same_customer_job_workflow_reason": "Depolama ile gaz türbini dahil esnek üretimi finansal senaryolarla kıyaslar."
+        },
+        {
+          "name": "Peaker vs Battery Comparator",
+          "url": "https://howtostoreelectricity.com/peaking-power-plant/",
+          "same_customer_job_workflow_reason": "Gaz peaker ve dört saatlik BESS uygunluğunu girdilerle karşılaştırır."
+        },
+        {
+          "name": "CogenS",
+          "url": "https://jisenergy.com/",
+          "same_customer_job_workflow_reason": "Batarya ve gaz genset’i tesis yatırımı için yaşam döngüsü maliyetiyle modeller."
+        }
+      ],
+      "adjacent_competitors": [
+        "ENOPTIMAL Batarya Fizibilite Analizi",
+        "Enerji Portföy BESS Fizibilitesi"
+      ],
+      "market_gap": "Mevcut doğrudan araçlar ya karmaşık mühendislik modeli ya da basit uygunluk taramasıdır. Boşluk; tesisin kendi teklif/yük verisiyle çalışan, varsayım kaynağı ve sürümünü saklayan, hassasiyet/başabaş sonucunu yönetim onayıyla tek karar paketine dönüştüren hafif istemci uygulamasıdır.",
+      "business_models": [
+        {
+          "model": "tek seferlik tesis lisansı",
+          "estimate": "€249–749"
+        },
+        {
+          "model": "kurumsal şablon özelleştirme",
+          "estimate": "€1.500–6.000/proje"
+        },
+        {
+          "model": "kaynak kod lisansı",
+          "estimate": "€3.000–9.000"
+        }
+      ],
+      "lovable_credits_total": 125,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 25,
+        "core_workflows": 45,
+        "integrations_rule_engine": 20,
+        "testing_fixes": 20,
+        "launch_polish": 15
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "istemci uygulaması ve arayüz",
+          "cost": "mevcut Lovable kredileri"
+        },
+        {
+          "name": "Browser File API",
+          "purpose": "yük profili ve teklif CSV/JSON içe aktarma",
+          "cost": "tarayıcı yerleşik"
+        },
+        {
+          "name": "localStorage/IndexedDB",
+          "purpose": "yerel senaryo ve varsayım saklama",
+          "cost": "tarayıcı yerleşik"
+        },
+        {
+          "name": "İstemci tarafı JavaScript",
+          "purpose": "TCO, NPV, çevrim ve hassasiyet hesapları",
+          "cost": "ücretsiz"
+        },
+        {
+          "name": "İstemci tarafı JSON/CSV/PDF export",
+          "purpose": "karar kanıt paketi",
+          "cost": "açık kaynak veya tarayıcı yerleşik"
+        }
+      ],
+      "external_cash_cost": null,
+      "mvp": "Manuel/CSV yük profili ve teklif girişi, batarya ve gaz senaryosu, 15–25 yapılandırılabilir teknik-finansal varsayım, NPV/TCO/LCOE ve başabaş analizi, tek/çift değişken hassasiyet tablosu, kaynak notlu varsayım defteri, manuel onay ve JSON/CSV/PDF karar paketi.",
+      "working_logic": "Kullanıcı tesis yükü, batarya/gaz teklifleri, yakıt-tarife ve finansman varsayımlarını girer → sistem iki seçeneğin yıllık nakit akışı ve TCO’sunu deterministik hesaplar → kritik değişkenlerde hassasiyet/başabaş sınırını gösterir → kullanıcı mühendislik ve mevzuat belirsizliklerini not eder → karar sahibi gerekçe ve onayı kaydeder → sürümlü kanıt paketi indirilir.",
+      "build_time": "5–8 founder days",
+      "marketing_strategy": "Ücretsiz batarya-vs-gaz başabaş şablonu ve örnek veri merkezi/üretim tesisi vakası; enerji yöneticileri ve EPC danışmanlarına LinkedIn/e-posta; OSB enerji birimleri ve enerji verimliliği danışmanlarıyla pilot ortaklığı.",
+      "first_customer_plan": "Trakya ve Marmara’da puant güç, yedek güç veya kapasite artışı değerlendiren 15 enerji yoğun tesise ulaşmak; üç gerçek teklif setini ücretsiz yeniden modellemek; en az iki tesiste karar hazırlama süresi ve varsayım izlenebilirliği kazanımına karşı ücretli pilot kapatmak.",
+      "main_risk": "Kullanıcıların teknik veri ve fiyat varsayımları eksik olabilir; basit hesaplayıcı mühendislik fizibilitesi sanılabilir. Ürün sonucu gösterge olarak etiketlemeli ve yetkili mühendis/mevzuat doğrulamasını zorunlu karar kapısı yapmalıdır.",
+      "validation_assumption": "En az 15 enerji yatırımı yöneticisinden 5’inin batarya ve gaz tekliflerini ortak varsayım tabanında kıyaslamakta zorlandığını, 3’ünün gerçek veriyle pilot yapacağını ve 2’sinin €249+ tesis lisansı ödeyeceğini doğrulamak.",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-09",
+      "last_updated_at": "2026-10-11"
+    }
+  }
+}
