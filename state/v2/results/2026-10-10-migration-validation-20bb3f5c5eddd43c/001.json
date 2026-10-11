@@ -1,0 +1,162 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-20bb3f5c5eddd43c",
+  "input_hash": "20bb3f5c5eddd43cb172705e7e3d7e66415e96729103584afb23ac16b6ecaf98",
+  "token": "3db4246a-0382-4348-af69-9a44d0e141ae",
+  "finished_at": "2026-10-11T15:18:34.158Z",
+  "outcome": "done",
+  "reason": "Jämsä’daki eski kâğıt fabrikasının 200 MW ilk fazla AI kampüsüne dönüştürülmesi birincil kaynakta doğrulandı. Ancak kullanıcı girdili elektrik/su/soğutma/izin kontrolü, ağırlıklı saha puanı ve ön rapor iş akışı Rackflow, GridCensus, DC Byte, DCFR ve Wattmap tarafından doğrudan sunuluyor; global doğrudan rakip sayısı en az beştir. Aday reddedildi.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Endüstriyel gayrimenkul ve veri merkezi yatırım ekiplerinin bir tesisi güç, su/soğutma, fiber, izin ve saha riskleriyle ön eleme işi global pazarda en az beş doğrudan araçta ürünleşmiştir; izin verilen en fazla üç global doğrudan rakip eşiği aşılmıştır.",
+    "duplicate_of": null,
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.sesterce.com/newsroom/sesterce-plans-ai-campus-kaipola-jamsa-finland",
+        "accessed_at": "2026-10-11T15:18:34.158Z",
+        "claim": "Eski sanayi tesislerinin veri merkezi dönüşümü güncel ve somut bir yatırım deseni.",
+        "observation": "Sesterce'nin 8 Ekim 2026 duyurusu, eski Kaipola kâğıt fabrikasında mevcut elektrik şebekesi, su sistemleri, binalar ve lojistiği kullanacak 200 MW ilk fazlı, 600 MW'a büyüyen AI kampüsü planını belgeliyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://www.defen.com.tr/data-center-software-landscape-2026-veri-merkezi-projelerinde-dijital-omurga/",
+        "accessed_at": "2026-10-11T15:18:34.158Z",
+        "claim": "Türkiye'de ön fizibilite ihtiyacı Excel/Power BI/özel şablonlar ve mühendislik hizmetleriyle karşılanıyor; aynı bağımsız ürün doğrulanmadı.",
+        "observation": "DEFEN konsept aşamasında kapasite/fizibilite için Excel, Power BI ve özel şablonları; güç, soğutma, PUE, CAPEX/OPEX ve alan varsayımlarını sayıyor. Aynı müşteri ve ağırlıklı tesis tarama ürünü sunumu doğrulanmadı.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.rackflow.ai/",
+        "accessed_at": "2026-10-11T15:18:34.158Z",
+        "claim": "Rackflow parseli güç, su ve izin riskleriyle puanlayıp veri salonu boyutu ve ön maliyet üretir.",
+        "observation": "Ürün sayfası saha taraması, skor, güç-su-izin riski, kat planı, kapasite ve bütçe tahminini formal çalışma öncesi sunduğunu açıklıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://gridcensus.com/",
+        "accessed_at": "2026-10-11T15:18:34.158Z",
+        "claim": "GridCensus brownfield dahil aday veri merkezi sahalarını ağırlıklı uygunluk puanıyla ön eler.",
+        "observation": "GridCensus güç, bağlantı süresi, fiber, su, tehlike ve buildability dahil 14 faktörle 0–100 DC Readiness puanı veriyor ve brownfield/industrial saha türlerini kapsıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.dcbyte.com/us/site-selector/",
+        "accessed_at": "2026-10-11T15:18:34.158Z",
+        "claim": "DC Byte Site Selector yatırımcı ve gayrimenkul geliştiricileri için tesis karşılaştırması, özelleştirilebilir puan ve saha kaydı sunar.",
+        "observation": "Sayfa power/flood/fiber/hazard katmanları, 1–10 özelleştirilebilir site viability skorları, property pages ve audit trail özelliklerini belgeliyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://dcfr.design/",
+        "accessed_at": "2026-10-11T15:18:34.158Z",
+        "claim": "DCFR aday sahalar için planlama seviyesinde veri merkezi fizibilite raporu üretir.",
+        "observation": "DCFR adres ve kullanıcı girdilerinden saha uyumu, güç/altyapı, imar, su/soğutma, maliyet, takvim ve teyit bekleyen noktaları içeren ön rapor ile 20 sahaya kadar karşılaştırma sunuyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://getwattmap.com/",
+        "accessed_at": "2026-10-11T15:18:34.158Z",
+        "claim": "Wattmap kullanıcı girdili saha verilerini ağırlıklı veri merkezi uygunluk puanına dönüştürür.",
+        "observation": "Wattmap güç fiyatı, şebeke bağlantısı, soğutma iklimi, su, fiber, teşvik ve izin girdilerini ayarlanabilir ağırlıklarla 0–100 bileşik skora dönüştürüyor; Konya/Türkiye örneğiyle kullanıcı sahası eklenebiliyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "accessed_at": "2026-10-11T15:18:34.158Z",
+        "claim": "Manuel girdili kontrol listesi ve puanlama harici servis olmadan tarayıcıda çalışabilir.",
+        "observation": "Kullanıcı girdileri localStorage/IndexedDB'de tutulabilir; ağırlıklı skor ve kapasite kontrolleri deterministik istemci koduyla hesaplanıp CSV/JSON ve istemci PDF'i olarak dışa aktarılabilir.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 0,
+        "queries": [
+          "Türkiye veri merkezi yer seçimi fizibilite yazılımı elektrik soğutma su kapasite",
+          "Türkiye eski sanayi tesisi veri merkezi dönüşüm ön fizibilite aracı"
+        ],
+        "scope": "11 Ekim 2026; Türkiye'deki endüstriyel gayrimenkul sahipleri ve yatırım geliştirme ekipleri; mevcut tesisin güç, su/soğutma, fiber, izin ve yapı koşullarını kullanıcı girdisiyle puanlayıp ön raporlayan bağımsız ürün.",
+        "search_complete": true,
+        "direct_competitors": [],
+        "adjacent_products": [
+          {
+            "name": "DEFEN veri merkezi ön fizibilite yaklaşımı",
+            "url": "https://www.defen.com.tr/data-center-software-landscape-2026-veri-merkezi-projelerinde-dijital-omurga/",
+            "same_customer_job_workflow_reason": "Aynı karar alanında Excel, Power BI, özel şablon ve mühendislik girdilerini anlatıyor; bağımsız, aynı iş akışına sahip ürün doğrulanmadı."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 5,
+        "queries": [
+          "data center site selection software power water cooling suitability scoring tool industrial property conversion",
+          "brownfield data center feasibility assessment tool industrial building conversion software",
+          "data center site feasibility weighted score preliminary report"
+        ],
+        "scope": "11 Ekim 2026; endüstriyel gayrimenkul sahipleri, veri merkezi yatırımcıları ve geliştirme ekipleri; tesis/sahayı güç, su-soğutma, fiber, izin ve riskle puanlayıp ön fizibilite raporu üretme.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "Rackflow",
+            "url": "https://www.rackflow.ai/",
+            "same_customer_job_workflow_reason": "Parseli güç, su ve izin riskiyle tarayıp skor, kapasite, taslak plan ve bütçe çıktısı veriyor."
+          },
+          {
+            "name": "GridCensus",
+            "url": "https://gridcensus.com/",
+            "same_customer_job_workflow_reason": "Brownfield/industrial dahil aday sahaları güç, hız, fiber, su, tehlike ve buildability ile ağırlıklı DC Readiness skoruna çeviriyor."
+          },
+          {
+            "name": "DC Byte Site Selector",
+            "url": "https://www.dcbyte.com/us/site-selector/",
+            "same_customer_job_workflow_reason": "Gayrimenkul geliştiricileri ve yatırımcılar için saha verisi, altyapı katmanları, özelleştirilebilir viability puanı ve property record sunuyor."
+          },
+          {
+            "name": "DCFR",
+            "url": "https://dcfr.design/",
+            "same_customer_job_workflow_reason": "Aday adresi güç, altyapı, imar, soğutma/su, maliyet ve takvimle değerlendirip planlama seviyesinde rapor ve karşılaştırma üretiyor."
+          },
+          {
+            "name": "Wattmap",
+            "url": "https://getwattmap.com/",
+            "same_customer_job_workflow_reason": "Kullanıcının saha girdilerini ayarlanabilir ağırlıklarla güç, şebeke, soğutma, su, fiber ve izin puanına dönüştürüyor."
+          }
+        ],
+        "adjacent_products": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Lovable istemci arayüzünde manuel tesis formu, zorunlu alan/tutarlılık kontrolleri ve şeffaf ağırlıklı puanlama çalışır. Senaryolar localStorage/IndexedDB'de saklanır; HTML/CSS tabanlı yazdırma görünümüyle PDF ve CSV/JSON dışa aktarılır. Resmî mühendislik veya izin garantisi verilmez, doğrulanmamış kapasite alanları bilinmiyor olarak kalır.",
+      "dependency_inventory": [
+        "Lovable istemci arayüzü",
+        "Tarayıcı localStorage veya IndexedDB",
+        "Deterministik ağırlıklı puanlama",
+        "İstemci tarafı PDF/yazdırma",
+        "CSV/JSON dışa aktarma"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "Katalog ve geçmiş aramasında aynı endüstriyel gayrimenkul müşterisi, eski tesisin veri merkezi dönüşümünü güç-su-soğutma-izin kontrol listesiyle puanlama işi ve PDF ön rapor mekanizmasını birleştiren kayıt bulunmadı. Ret nedeni geçmiş tekrar değil, güncel global doğrudan rekabettir."
+    }
+  }
+}
