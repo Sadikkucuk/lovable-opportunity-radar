@@ -1,0 +1,262 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-10812a61929529a7",
+  "input_hash": "10812a61929529a722a30b776c1c7c9443ce6581c5084b1cffd5488834960904",
+  "token": "b596c70d-7e17-4cef-8055-1a20224476db",
+  "finished_at": "2026-10-11T10:15:34.979Z",
+  "outcome": "done",
+  "reason": "Tetikleyici makale okundu; Türkiye ve global rekabet kapsamı araştırıldı. Türkiye'de aynı müşteri-iş-akışı birleşiminde doğrudan ürün bulunmadı; globalde iki doğrudan ücretsiz araç saptandı. Aday, yalnız TCO hesaplamak yerine varsayım kaynağı, senaryo sürümü ve insan onayı kanıtını aynı dosyada tutarak ayrışıyor. Harici API, veritabanı veya AI olmadan tarayıcı içi uygulanabilir ve mevcut 89 fikirle anlamsal olarak yeni.",
+  "result": {
+    "decision": "qualified",
+    "reason": "Üreticilerin yerli/offshore tedarik kararını birim fiyat yerine TCO ile vermesi güncel ve ölçülebilir bir ihtiyaç. İki doğrudan global hesaplayıcı mevcut olsa da varsayım provenance'ı, sürümlü senaryo karşılaştırması ve onay kaydı boşluğu korunuyor; Türkiye'de aynı kapsamda doğrudan ürün bulunmadı.",
+    "duplicate_of": null,
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.industryweek.com/the-economy/competitiveness/article/55409400/the-9-step-roadmap-to-reshoring-success",
+        "accessed_at": "2026-10-11T10:15:34.979Z",
+        "claim": "Üreticiler offshoring/reshoring kararında eksik maliyet modelleri kullanıyor ve TCO karşılaştırmasına ihtiyaç duyuyor.",
+        "observation": "8 Ekim 2026 tarihli IndustryWeek makalesi; lojistik, stok, risk, kalite, IP ve teslim süresi gibi gizli maliyetlerin karara katılması gerektiğini, 190 vakada TCO kullanıldığında ABD kazanma oranının %8'den %32'ye çıktığını bildiriyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://negotiations.ai/tr/blog/total-cost-of-ownership-negotiation-checklist-for-procurement-teams",
+        "accessed_at": "2026-10-11T10:15:34.979Z",
+        "claim": "Türkiye'deki satın alma ekipleri için TCO içeriği bulunuyor ancak reshoring senaryo/kanıt ürünü değil.",
+        "observation": "Türkçe sayfa tedarikçi tekliflerini fiyat, navlun, kalite, stok, hizmet, geçiş ve risk kalemleriyle karşılaştıran bir kontrol listesi sunuyor; yerli-offshore üretim senaryosu, varsayım provenance'ı ve karar signoff yazılımı sunmuyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://reshorenow.org/?pageLink=tco-estimator",
+        "accessed_at": "2026-10-11T10:15:34.979Z",
+        "claim": "Global pazarda üreticiler için offshore ve yerli kaynakların TCO'sunu karşılaştıran doğrudan ücretsiz araç var.",
+        "observation": "Reshoring Initiative TCO Estimator, 30 maliyet/risk faktörüyle kaynakları karşılaştırıyor, 5 yıllık tahmin ve maliyet kategorisi grafikleri üretiyor; ücretsiz ve üretim kaynaklandırma kararına yönelik.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.xdage.com/business-simulations/tco-calculator/",
+        "accessed_at": "2026-10-11T10:15:34.979Z",
+        "claim": "Global ve yerli tedarikçileri TCO üzerinden karşılaştıran ikinci doğrudan ücretsiz araç var.",
+        "observation": "xdage TCO Lab; offshore/global ile domestic/nearshore tedarikçileri talep, navlun, tarife, teslim süresi, stok taşıma ve kusur maliyetleriyle yan yana hesaplıyor ve CSV denetim çıktısı veriyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/File_API",
+        "accessed_at": "2026-10-11T10:15:34.979Z",
+        "claim": "CSV/JSON tedarikçi verileri harici API olmadan tarayıcıda okunup işlenebilir.",
+        "observation": "MDN File API, kullanıcının seçtiği dosyaların File/FileReader ile istemci tarafında okunmasını destekliyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "accessed_at": "2026-10-11T10:15:34.979Z",
+        "claim": "Senaryo ve varsayım kayıtları harici veritabanı olmadan tarayıcı oturumları arasında saklanabilir.",
+        "observation": "MDN localStorage verisinin aynı origin için tarayıcı oturumları arasında kalıcı olduğunu belgeliyor.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 0,
+        "queries": [
+          "Türkiye yerlileştirme toplam sahip olma maliyeti tedarikçi karşılaştırma yazılımı",
+          "Türkiye reshoring TCO hesaplayıcı tedarikçi senaryo onay yazılımı",
+          "yerli offshore tedarikçi toplam sahip olma maliyeti karar aracı"
+        ],
+        "scope": "11 Ekim 2026; Türkiye pazarı, üretici satın alma/operasyon ekipleri, yerli-offshore tedarik TCO senaryosu + varsayım kaynağı + onay iş akışı.",
+        "search_complete": true,
+        "direct_competitors": [],
+        "adjacent_products": [
+          {
+            "name": "Negotiations.AI TCO Müzakere Kontrol Listesi",
+            "url": "https://negotiations.ai/tr/blog/total-cost-of-ownership-negotiation-checklist-for-procurement-teams",
+            "same_customer_job_workflow_reason": "Aynı satın alma kitlesine TCO kalemleri ve müzakere kontrol listesi sunuyor; reshoring senaryo kaydı ve onay yazılımı değil."
+          },
+          {
+            "name": "WMSTurkiye TCO Calculator",
+            "url": "https://www.wmsturkiye.com/tools/tco-calculator",
+            "same_customer_job_workflow_reason": "TCO senaryolarını karşılaştırıyor ancak yalnız WMS yatırımı odağında; üretim tedarikçisinin yerli-offshore kaynak kararı değil."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 2,
+        "queries": [
+          "reshoring total cost of ownership calculator supplier scenario software",
+          "manufacturing reshoring TCO supplier decision platform",
+          "domestic versus offshore supplier TCO calculator",
+          "supplier relocation total ownership cost assumption signoff tool"
+        ],
+        "scope": "11 Ekim 2026; global web, üreticiler ve procurement/operations alıcıları, domestic/offshore tedarik toplam ekonomik maliyet karşılaştırması; yalnız should-cost veya genel ERP/WMS TCO araçları kapsam dışı.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "Reshoring Initiative TCO Estimator",
+            "url": "https://reshorenow.org/?pageLink=tco-estimator",
+            "same_customer_job_workflow_reason": "Üretim kaynaklandırmasında offshore ile yerli alternatifi çok faktörlü TCO üzerinden doğrudan karşılaştırıyor."
+          },
+          {
+            "name": "xdage TCO Lab",
+            "url": "https://www.xdage.com/business-simulations/tco-calculator/",
+            "same_customer_job_workflow_reason": "Global/offshore ve domestic/nearshore tedarikçileri navlun, tarife, stok, teslim süresi ve kusur maliyetiyle karşılaştırıyor."
+          }
+        ],
+        "adjacent_products": [
+          {
+            "name": "3D Spark",
+            "url": "https://www.3dspark.de/",
+            "same_customer_job_workflow_reason": "Üretim parçası should-cost, make-or-buy ve bölge karşılaştırması yapıyor; geniş reshoring TCO varsayım/onay defteri değil."
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Lovable ile tarayıcıda çalışan deterministik TCO çalışma alanı. Kullanıcı CSV/JSON veya form ile tedarikçi verisini girer; formüller istemci tarafında çalışır; varsayımlar kaynak notu, tarih ve sorumlu ile sürümlenir; senaryolar localStorage/IndexedDB'de tutulur; onay durumu manuel imza adı/tarihiyle kaydedilir ve JSON/CSV/PDF kanıt paketi indirilir.",
+      "dependency_inventory": [
+        "Lovable tarafından üretilen HTML/CSS/JavaScript",
+        "Browser File API",
+        "localStorage veya IndexedDB",
+        "İstemci tarafı deterministik TCO formülleri",
+        "İstemci tarafı CSV/JSON/PDF dışa aktarma",
+        "Kullanıcı tarafından sağlanan maliyet, tedarikçi ve risk verileri"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "Mevcut 89 fikirde eTruck TCO, NOx filo senaryosu, retrofit kararı ve AI yenileme değeri gibi TCO/karar araçları var; ancak üreticinin domestic-offshore tedarikçi TCO'sunu varsayım provenance'ı ve signoff ile karşılaştırdığı aynı müşteri-iş-mekanizma kaydı yok."
+    },
+    "catalog_record": {
+      "canonical_key": "manufacturers-assessing-supplier-relocation|compare-domestic-versus-offshore-total-ownership-cost-with-documented-assumptions|tco-worksheet-supplier-scenario-comparisons-assumption-provenance-and-signoff",
+      "idea_name": "Reshoring TCO Karar Defteri",
+      "scope_tier": "Dünya",
+      "scope_reason": "Yerli, nearshore ve offshore tedarik kararları küresel üreticilerin ortak problemidir; kurallar ve maliyet kalemleri ülke/şirket bazında kullanıcı tarafından girilir.",
+      "news_source": "IndustryWeek",
+      "news_title": "The 9-Step Roadmap to Reshoring Success",
+      "news_date": "2026-10-08",
+      "news_url": "https://www.industryweek.com/the-economy/competitiveness/article/55409400/the-9-step-roadmap-to-reshoring-success",
+      "source_links": [
+        {
+          "label": "IndustryWeek — 9-Step Roadmap",
+          "url": "https://www.industryweek.com/the-economy/competitiveness/article/55409400/the-9-step-roadmap-to-reshoring-success"
+        },
+        {
+          "label": "Reshoring Initiative TCO Estimator",
+          "url": "https://reshorenow.org/?pageLink=tco-estimator"
+        },
+        {
+          "label": "xdage TCO Lab",
+          "url": "https://www.xdage.com/business-simulations/tco-calculator/"
+        },
+        {
+          "label": "Negotiations.AI Türkçe TCO kontrol listesi",
+          "url": "https://negotiations.ai/tr/blog/total-cost-of-ownership-negotiation-checklist-for-procurement-teams"
+        }
+      ],
+      "core_idea": "Üreticilerin yerli/nearshore/offshore tedarik seçeneklerini birim fiyatla değil navlun, tarife, teslim süresi, stok sermayesi, kalite, yeniden işleme, risk ve geçiş maliyetiyle karşılaştırdığı; her varsayımın kaynağını ve karar onayını saklayan tarayıcı içi karar defteri.",
+      "user_story": "Bir satın alma ve operasyon yöneticisi olarak yerli ve offshore tedarik senaryolarını aynı TCO modeliyle karşılaştırmak, her varsayımın nereden geldiğini görmek ve yönetim kararını denetlenebilir bir dosya halinde onaylamak istiyorum.",
+      "before_state": "Birim fiyat, navlun, stok, kalite ve risk varsayımları farklı e-tablo ve e-postalarda tutuluyor; kararın hangi varsayım sürümüne dayandığı ve kimin onayladığı belirsiz.",
+      "after_state": "Tedarikçi verisi → kaynaklı varsayımlar → deterministik TCO → senaryo/fark analizi → istisna ve hassasiyet kontrolü → insan onayı → indirilebilir karar kanıt paketi.",
+      "why_now": "8 Ekim 2026 tarihli IndustryWeek çalışması, eksik maliyet modellerinin offshoring kararlarını bozduğunu ve 190 vakada TCO kullanımıyla yerli üretimin kazanma oranının %8'den %32'ye çıktığını bildiriyor.",
+      "target_customer": "Yerli, nearshore veya offshore tedarikçi konumunu yeniden değerlendiren üreticiler",
+      "buyer": "Satın alma direktörü, operasyon direktörü veya CFO",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 2,
+      "direct_competitors": [
+        {
+          "name": "Reshoring Initiative TCO Estimator",
+          "url": "https://reshorenow.org/?pageLink=tco-estimator",
+          "same_customer_job_workflow_reason": "Üretim kaynaklandırmasında offshore ve yerli alternatifi çok faktörlü TCO ile karşılaştırır."
+        },
+        {
+          "name": "xdage TCO Lab",
+          "url": "https://www.xdage.com/business-simulations/tco-calculator/",
+          "same_customer_job_workflow_reason": "Global ve domestic tedarikçi TCO'sunu operasyonel maliyetlerle yan yana hesaplar."
+        }
+      ],
+      "adjacent_competitors": [
+        "Negotiations.AI TCO procurement checklist",
+        "WMSTurkiye WMS TCO calculator",
+        "3D Spark should-cost and make-or-buy platform"
+      ],
+      "market_gap": "Mevcut doğrudan araçlar TCO hesabını yapıyor; ürünün ayrışması her varsayım için kaynak/tarih/sorumlu provenance'ı, sürümlü senaryo karşılaştırması, istisna gerekçesi ve yönetim signoff kanıtını tek indirilebilir karar dosyasında birleştirmesidir.",
+      "business_models": [
+        {
+          "model": "tek seferlik ekip lisansı",
+          "estimate": "€199–499"
+        },
+        {
+          "model": "kurumsal özelleştirme ve kurulum",
+          "estimate": "€1,000–5,000/proje"
+        },
+        {
+          "model": "kaynak kod lisansı",
+          "estimate": "€2,500–7,500"
+        }
+      ],
+      "lovable_credits_total": 140,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 30,
+        "core_workflows": 50,
+        "integrations_rule_engine": 20,
+        "testing_fixes": 25,
+        "launch_polish": 15
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "istemci uygulaması ve arayüz",
+          "cost": "mevcut Lovable kredileri"
+        },
+        {
+          "name": "Browser File API",
+          "purpose": "CSV/JSON içe aktarma",
+          "cost": "tarayıcı yerleşik"
+        },
+        {
+          "name": "localStorage/IndexedDB",
+          "purpose": "yerel senaryo ve sürüm saklama",
+          "cost": "tarayıcı yerleşik"
+        },
+        {
+          "name": "İstemci tarafı JavaScript",
+          "purpose": "deterministik TCO ve hassasiyet hesapları",
+          "cost": "ücretsiz"
+        },
+        {
+          "name": "İstemci tarafı CSV/JSON/PDF export",
+          "purpose": "karar kanıt paketi",
+          "cost": "açık kaynak veya tarayıcı yerleşik"
+        }
+      ],
+      "external_cash_cost": null,
+      "mvp": "Tedarikçi A/B/C formu ve CSV içe aktarma, 12–20 yapılandırılabilir maliyet/risk kalemi, TCO ve hassasiyet karşılaştırması, varsayım kaynak defteri, manuel onay akışı ve JSON/CSV/PDF karar paketi.",
+      "working_logic": "Kullanıcı tedarikçi/ülke senaryolarını ve veri kaynaklarını girer → sistem deterministik formüllerle TCO ve farkı hesaplar → eksik/belirsiz varsayımları işaretler → kullanıcı hassasiyet senaryolarını karşılaştırır → karar sahibi gerekçe ve onayı kaydeder → sürümlü kanıt paketi indirilir.",
+      "build_time": "5–8 founder days",
+      "marketing_strategy": "Ücretsiz 'offshore fiyatı mı gerçek TCO mu?' şablonu ve örnek vaka; üretim satın alma yöneticilerine LinkedIn/e-posta; ihracatçı birlikleri, OSB'ler ve üretim danışmanlarıyla demo ortaklığı.",
+      "first_customer_plan": "Türkiye'de Çin/Avrupa/Türkiye tedarik seçeneklerini e-tabloyla karşılaştıran 10–50 milyon € ciro aralığındaki üreticilerde üç ücretli pilot; mevcut bir sourcing kararını sisteme tekrar kurarak karar izi ve zaman tasarrufu ölçmek.",
+      "main_risk": "Ücretsiz TCO hesaplayıcıları temel matematiği zaten karşılıyor; müşteriler provenance ve signoff katmanına ödeme yapmayabilir.",
+      "validation_assumption": "En az 15 üretim satın alma yöneticisinden 5'inin mevcut e-tablo kararlarında varsayım kaynağı/sürüm/onay sorunu yaşadığını ve en az 2'sinin ekip lisansı için €199+ ödemeye istekli olduğunu doğrulamak.",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-08",
+      "last_updated_at": "2026-10-11"
+    }
+  }
+}
