@@ -1,0 +1,129 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-051cd82287368d6e",
+  "input_hash": "051cd82287368d6e65fdea8a95a07b59a7189874303fb9f8924908e12b952964",
+  "token": "649484a8-303a-48f3-8eab-7271ad7d5e76",
+  "finished_at": "2026-10-11T10:13:52.454Z",
+  "outcome": "done",
+  "reason": "Tetikleyici gelişme doğrulandı; ancak TRAE'nin resmi dokümanı geçişin sohbet geçmişi, hesap, profil, kredi, oturum ve yerel veriler için otomatik yapıldığını ve manuel işlem gerektirmediğini belirtiyor. Bu nedenle adayın tanımladığı TRAE-özel manuel envanter ve kanıt günlüğü temel sorunu çözmüyor. Ücretsiz AI araç geçiş kontrol listeleri ve araçlar arası rehberler de genel ihtiyacın büyük kısmını karşılıyor. Ticari çekirdek değer zayıf olduğu için aday reddedildi.",
+  "result": {
+    "decision": "rejected",
+    "reason": "TRAE-özel geçiş otomatik olduğundan manuel migration checklist/evidence log ürününün çekirdek işi ortadan kalkıyor; kalan genel geçiş ihtiyacı ücretsiz ayrıntılı kontrol listeleri ve rehberlerle karşılanabiliyor.",
+    "duplicate_of": null,
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://docs.trae.cn/ide_traework-to-traecode-data-migration",
+        "accessed_at": "2026-10-11T10:13:52.454Z",
+        "claim": "TraeWork ve TraeCode birleşti; eski kullanıcı verileri yeni TRAE'ye otomatik taşınıyor.",
+        "observation": "TRAE resmi sayfası, yükseltme sırasında sohbet geçmişi, hesap verisi, profil, ticari kredi, oturum ve yerel verilerin otomatik taşındığını ve manuel işlem gerekmediğini açıklıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://cybergiz.com/checklists/ai-tool-migration-checklist/",
+        "accessed_at": "2026-10-11T10:13:52.454Z",
+        "claim": "AI araç geçişi için ücretsiz, ayrıntılı kontrol listesi alternatifi bulunuyor.",
+        "observation": "Cybergiz; kapsam, kullanıcılar, veri sınıfları, bağlayıcılar, pilot, rollback, eski araç temizliği ve 7 günlük doğrulamayı kapsayan uygulanabilir ücretsiz bir kontrol listesi yayımlıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://developertoolkit.ai/en/comparison/migration-guide/",
+        "accessed_at": "2026-10-11T10:13:52.454Z",
+        "claim": "AI kodlama araçları arasında geçişe yönelik ücretsiz rehber alternatifi bulunuyor.",
+        "observation": "AI Developer Toolkit, Cursor, Claude Code ve Codex arasında assess-pilot-migrate-optimize aşamalarını ve ekip yayılım takvimini içeren bir geçiş rehberi sunuyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.cloudfuze.com/microsoft-365-copilot-to-google-gemini-migration/",
+        "accessed_at": "2026-10-11T10:13:52.454Z",
+        "claim": "Bazı AI araç geçişlerinde doğrudan veri taşıma ve rapor doğrulaması yapan ürünler bulunuyor.",
+        "observation": "CloudFuze, Microsoft 365 Copilot konuşmalarını Google Gemini kullanımına taşıyan ve migration raporlarıyla doğrulama sağlayan ürünleşmiş bir akış sunuyor; TRAE akışıyla birebir aynı değil, komşu çözümdür.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/File_API",
+        "accessed_at": "2026-10-11T10:13:52.454Z",
+        "claim": "Kullanıcı tarafından seçilen dosyalar tarayıcı içinde, harici API olmadan okunup işlenebilir.",
+        "observation": "MDN File API, web uygulamalarının kullanıcının seçtiği dosyaları File/FileReader ile yerel olarak okuyabildiğini belgeliyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "accessed_at": "2026-10-11T10:13:52.454Z",
+        "claim": "Basit kontrol listesi durumu tarayıcı oturumları arasında yerel olarak saklanabilir.",
+        "observation": "MDN, localStorage verisinin aynı origin için tarayıcı oturumları arasında kalıcı olduğunu belgeliyor.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 0,
+        "queries": [
+          "Türkiye yazılım geliştirme aracı geçiş kontrol listesi migrasyon envanter aracı",
+          "TRAE geçiş kontrol listesi yazılım"
+        ],
+        "scope": "11 Ekim 2026 tarihinde Türkçe web sonuçlarında geliştirme ekipleri için TRAE/AI coding workspace envanter, geçiş ve kanıt günlüğünü aynı iş akışında sunan doğrudan ürün arandı.",
+        "search_complete": true,
+        "direct_competitors": [],
+        "adjacent_products": []
+      },
+      "global": {
+        "direct_count": 0,
+        "queries": [
+          "TRAE migration checklist tool engineering team workflow migration evidence",
+          "AI tool migration checklist software",
+          "developer tool migration inventory checklist SaaS configuration migration platform",
+          "TRAE migration checklist"
+        ],
+        "scope": "11 Ekim 2026 tarihinde aynı müşteri + aynı temel iş + aynı manuel kanıt günlüğü iş akışı arandı; içerik rehberleri ve otomatik veri taşıma ürünleri komşu çözüm sayıldı.",
+        "search_complete": true,
+        "direct_competitors": [],
+        "adjacent_products": [
+          {
+            "name": "Cybergiz AI Tool Migration Checklist",
+            "url": "https://cybergiz.com/checklists/ai-tool-migration-checklist/",
+            "reason": "Aynı hazırlık ve kanıt başlıklarını ücretsiz statik kontrol listesi olarak kapsıyor; ekip durum takibi yapan özel bir SaaS değil."
+          },
+          {
+            "name": "AI Developer Toolkit Migration Guide",
+            "url": "https://developertoolkit.ai/en/comparison/migration-guide/",
+            "reason": "AI coding aracı geçiş planı ve kontrol listesi sunuyor; kanıt günlüğü iş akışı değil."
+          },
+          {
+            "name": "CloudFuze Copilot-to-Gemini Migration",
+            "url": "https://www.cloudfuze.com/microsoft-365-copilot-to-google-gemini-migration/",
+            "reason": "AI araçları arasında otomatik veri taşıma ve raporlama yapıyor; TRAE'nin otomatik birleşme yükseltmesinden ve manuel checklist akışından farklı."
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Lovable ile statik istemci uygulaması; checklist şablonu, manuel sorumlu/tarih/durum alanları, kullanıcı seçimiyle CSV/JSON içe aktarma, tarayıcı içi kural kontrolleri, localStorage/IndexedDB ve indirilebilir JSON/CSV/PDF kanıt paketi.",
+      "dependency_inventory": [
+        "Lovable tarafından üretilen HTML/CSS/JavaScript",
+        "Browser File API",
+        "localStorage veya IndexedDB",
+        "İstemci tarafı CSV/JSON ayrıştırma ve dışa aktarma",
+        "Kullanıcı tarafından manuel girilen ekip/geçiş verileri"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "Mevcut 89 kayıt içinde genel veri kaynağı değişim masası, erişim migration mapping ve Aurora/S3 migration assessor fikirleri var; ancak TRAE/AI coding workspace kapanışı için manuel envanter ve kanıt günlüğüyle aynı müşteri-iş-mekanizma birleşimi bulunmadı."
+    }
+  }
+}
