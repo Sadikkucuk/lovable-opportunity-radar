@@ -1,0 +1,149 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-5555eb331f6a31f2",
+  "input_hash": "5555eb331f6a31f291ac9e91bb7368b2f567b7a621773751eb19226318ac4fe5",
+  "token": "27b67a88-ef50-4486-a455-2cf9156cd793",
+  "finished_at": "2026-10-11T20:32:24.255Z",
+  "outcome": "done",
+  "reason": "EasyPark’in uygulama kullanım verilerinden kurumsal hesap adayı belirleyip satış akışına sokma planı Salesforce’un birincil müşteri hikâyesinde doğrulandı. Ancak Salesforce Data Cloud/Agentforce, Common Room, Pocus ve HG Insights aynı product-usage → scoring → sales prioritization/handoff işini doğrudan sunuyor. Global doğrudan rakip sayısı en az dörttür; aday reddedildi.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Aynı müşteri sınıfının mevcut ürün kullanım sinyallerinden B2B/PQL adayı çıkarma, puanlama ve satışa aktarma işi globalde en az dört doğrudan platformda ürünleşmiştir; en fazla üç global doğrudan rakip koşulu aşılmıştır.",
+    "duplicate_of": null,
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.salesforce.com/au/customer-stories/easypark/",
+        "accessed_at": "2026-10-11T20:32:24.255Z",
+        "claim": "B2C uygulama kullanım verileri B2B hesap adaylarını belirlemek ve satışa aktarmak için kullanılmaya başlanıyor.",
+        "observation": "Salesforce müşteri hikâyesi, EasyPark’in app usage, case ve knowledge verilerini Data Cloud’da merkezileştirip iş hesabından yararlanabilecek tüketicileri tanımlayan, lead nurture veya satış temsilcisine yönlendiren Agentforce SDR ajanı planını açıklıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://www.cockpit.com.tr/crm-yazilimi/",
+        "accessed_at": "2026-10-11T20:32:24.255Z",
+        "claim": "Türkiye’de lead scoring ve satış hattı ürünleri var; B2C kullanım verisinden B2B upsell yapan aynı özel iş akışı doğrulanmadı.",
+        "observation": "Cockpit CRM AI lead scoring, pipeline görünürlüğü, müşteri etkileşimleri ve hatırlatmalar sunuyor; tüketici ürün kullanım verisinden kurumsal alıcı tespit etme ve qualification feedback döngüsü sayfada doğrulanmıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.salesforce.com/au/customer-stories/easypark/",
+        "accessed_at": "2026-10-11T20:32:24.255Z",
+        "claim": "Salesforce Data Cloud ve Agentforce aynı kullanım verisiyle lead belirleme, qualification ve handoff akışını sağlar.",
+        "observation": "EasyPark örneğinde Salesforce, app usage dahil veriyi birleştirerek potansiyel B2B müşterileri belirliyor; ajan ihtiyaç değerlendirmesi yapıp dijital kayıt akışına veya satış temsilcisine yönlendiriyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.commonroom.io/product/ai-scoring/",
+        "accessed_at": "2026-10-11T20:32:24.255Z",
+        "claim": "Common Room ürün kullanımı dahil birinci taraf sinyallerini kişi/hesap skoruna dönüştürüp satış oyunlarına yönlendiriyor.",
+        "observation": "Common Room ürün usage, web ve diğer sinyalleri açıklanabilir kişi/hesap skorlarına topluyor; ağırlıkları yapılandırıyor ve en yüksek skorlu adayları reps için alert/play akışına aktarıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.pocus.com/product/signals",
+        "accessed_at": "2026-10-11T20:32:24.255Z",
+        "claim": "Pocus ürün kullanım sinyallerini lead/account önceliği ve satış aksiyonuna dönüştürüyor.",
+        "observation": "Pocus CRM, call ve product usage verilerini birleştirip intent sinyali ve açıklanabilir score üretir; List Builder, Scoring ve Plays üzerinden temsilci aksiyonlarına yönlendirir.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://help.madkudu.com/v1/docs/how-madkudu-helps-you-run-your-product-led-sales-motion",
+        "accessed_at": "2026-10-11T20:32:24.255Z",
+        "claim": "HG Insights/MadKudu ürün kullanıcılarını PQL/PQA skoruyla nitelendirip satış outreach akışına aktarır.",
+        "observation": "Dokümantasyon ürün signup ve usage sinyallerini analiz ederek enterprise plan alma olasılığına göre PQL/PQA puanı, satış önceliği, otomatik outreach görevi ve Salesforce görünümü sağladığını açıklıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/File_API",
+        "accessed_at": "2026-10-11T20:32:24.255Z",
+        "claim": "Kurala dayalı ve onaylı kullanım verisi işleme harici API, veritabanı veya AI olmadan uygulanabilir.",
+        "observation": "Yetkili kullanıcı, açık rıza/işleme amacı alanları içeren CSV’yi tarayıcı File API ile içe aktarabilir; izin filtresi, olay ağırlığı, eşik, lead skoru ve satış handoff dosyası deterministik olarak yerelde üretilebilir.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 0,
+        "queries": [
+          "Türkiye ürün kullanım verisi B2B lead scoring satışa aktarım yazılımı",
+          "Türkiye product-led sales PQL kullanım sinyali platformu"
+        ],
+        "scope": "11 Ekim 2026; Türkiye’de B2C ürünü olup B2B upsell yapan platformlar; rızalı mevcut kullanım verisinden iş alıcısı tespit etme, kurala dayalı skor, satış handoff ve qualification feedback.",
+        "search_complete": true,
+        "direct_competitors": [],
+        "adjacent_products": [
+          {
+            "name": "Cockpit CRM",
+            "url": "https://www.cockpit.com.tr/crm-yazilimi/",
+            "same_customer_job_workflow_reason": "Lead scoring ve pipeline yönetimi sunuyor; B2C ürün kullanım sinyalinden B2B upsell/PQL çıkaran aynı özel iş akışı doğrulanmadı."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 4,
+        "queries": [
+          "product usage signals lead scoring sales handoff qualification feedback software",
+          "product-led sales platform usage data identify business buyers lead scoring CRM",
+          "B2C app usage data B2B upsell lead qualification"
+        ],
+        "scope": "11 Ekim 2026; global B2C/PLG platformları ve B2B satış ekipleri; rızalı first-party usage sinyallerini lead/account skoruna, temsilci önceliğine ve satış handoff’una dönüştürme.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "Salesforce Data Cloud + Agentforce",
+            "url": "https://www.salesforce.com/au/customer-stories/easypark/",
+            "same_customer_job_workflow_reason": "App usage verisini potansiyel business-account adayına dönüştürüp agent qualification ve sales/digital signup handoff yapıyor."
+          },
+          {
+            "name": "Common Room",
+            "url": "https://www.commonroom.io/product/ai-scoring/",
+            "same_customer_job_workflow_reason": "First-party product usage dahil alım sinyallerini kişi/hesap skoruna çevirip reps ve plays için önceliklendiriyor."
+          },
+          {
+            "name": "Pocus",
+            "url": "https://www.pocus.com/product/signals",
+            "same_customer_job_workflow_reason": "Product usage/CRM sinyallerini birleştirerek lead/account skoru ve doğrudan satış aksiyonları üretiyor."
+          },
+          {
+            "name": "HG Insights / MadKudu PLS",
+            "url": "https://help.madkudu.com/v1/docs/how-madkudu-helps-you-run-your-product-led-sales-motion",
+            "same_customer_job_workflow_reason": "Ürün kullanıcılarını PQL/PQA olarak skorlayıp enterprise upsell ve otomatik satış outreach akışına yönlendiriyor."
+          }
+        ],
+        "adjacent_products": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Yetkili kullanıcı consent/purpose alanlarıyla birlikte pseudonymized usage-event ve account CSV dosyalarını tarayıcıda içe aktarır. Rıza/amaç filtresi, insan tanımlı olay ağırlıkları, eşikler ve qualification feedback ile deterministik skor hesaplanır. Sonuçlar yerel IndexedDB’de tutulur; sales handoff CSV/JSON ve audit PDF’i dışa aktarılır. Canlı ürün/CRM entegrasyonu, otomatik outreach ve AI model kapsam dışıdır.",
+      "dependency_inventory": [
+        "Lovable istemci arayüzü",
+        "Kullanıcı sağladığı rızalı/pseudonymized CSV",
+        "Tarayıcı File API",
+        "IndexedDB",
+        "Deterministik kural ve puanlama motoru",
+        "CSV/JSON/PDF dışa aktarma"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "Mevcut katalog/geçmiş aramasında B2C ürün kullanım verisinden rıza filtresiyle B2B alıcı belirleme, kural skoru, handoff ve qualification feedback döngüsünü aynı mekanizmayla birleştiren kayıt bulunmadı. Ret nedeni tekrar değil, global doğrudan rekabet eşiğidir."
+    }
+  }
+}
