@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-d2b571e27e73cb76",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "d2b571e27e73cb766adbf11b1ada8715674853ed70d40122dafdde4673f2d6e6",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-077",
+      "validation_index": 77,
+      "validator_assignment": "A",
+      "canonical_key": "turkish-industrial-facilities|map-best-available-techniques-to-plant-evidence|industrial-bat-compliance-matrix",
+      "idea_name": "Industrial BAT Compliance Matrix",
+      "core_job": "Map best available techniques to plant evidence",
+      "target_customer": "Turkish industrial facilities",
+      "buyer": "environmental compliance manager",
+      "product_mechanism": "Industrial BAT Compliance Matrix web workflow: technique → plant applicability → evidence → action",
+      "triggering_article_ids": [
+        "795f7f4fe3e475b5973ba9bb"
+      ],
+      "supporting_article_ids": [
+        "795f7f4fe3e475b5973ba9bb"
+      ],
+      "canonical_source_urls": [
+        "https://www.alomaliye.com/2025/11/30/diger-uretim-faaliyetlerinde-mevcut-en-iyi-teknikler-tebligi/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w4-20261010-reconstructed-023",
+          "verification": "full",
+          "article_titles": [
+            "Diğer Üretim Faaliyetlerinde Mevcut En İyi Teknikler Tebliği - Resmi Gazete - Resmi Gazete"
+          ],
+          "evidence_notes": {
+            "verification_gap": null,
+            "source_batch": 25,
+            "source_item_index": 29,
+            "trakya_transferability_hypothesis": "Potential transferable factory workflow in Trakya; local applicability unverified",
+            "verified_development": "Original regulation reproduced from 30 November 2025 official gazette; effective 1 December 2025.",
+            "verified_source_url": "https://www.alomaliye.com/2025/11/30/diger-uretim-faaliyetlerinde-mevcut-en-iyi-teknikler-tebligi/",
+            "temporal_warning": "Regulation dates to November 2025, not October 2026."
+          }
+        }
+      ],
+      "before_state": "BAT obligations require technical evidence and gap remediation",
+      "after_state": "Industrial BAT Compliance Matrix web workflow: technique → plant applicability → evidence → action",
+      "why_now": "Original regulation reproduced from 30 November 2025 official gazette; effective 1 December 2025.",
+      "market_gap_hypothesis": "Source headline indicates a potential regulation delta affecting technique → plant applicability → evidence → action; precise underlying development not independently confirmed. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Türkiye",
+      "trakya_transferability_hypothesis": "Potential transferable factory workflow in Trakya; local applicability unverified",
+      "local_scope_evidence_hints": [
+        "Potential transferable factory workflow in Trakya; local applicability unverified"
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 25,
+      "history_match_key": "turkish-manufacturing-sites|map-best-available-techniques-to-evidence|bat-compliance-workspace",
+      "history_match_reason": "Potential semantic match to history: MET/BAT Uyum Masası; requires strict customer+job+workflow check during validation.",
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w4-20261010-reconstructed-023"
+      ],
+      "source_worker_ids": [
+        4
+      ],
+      "source_article_titles": [
+        "Diğer Üretim Faaliyetlerinde Mevcut En İyi Teknikler Tebliği - Resmi Gazete - Resmi Gazete"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "REGULATION_DELTA"
+      ],
+      "source_affected_workflow": "technique → plant applicability → evidence → action",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

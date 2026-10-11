@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-5c9a6a7d28235c4a",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "5c9a6a7d28235c4ab3c65e181a97360db995bb1231a6a49ebe9037a1d7b1d214",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-037",
+      "validation_index": 37,
+      "validator_assignment": "A",
+      "canonical_key": "industrial-plants|manage-energy-efficiency-actions-and-evidence|factory-decarbonization-action-register",
+      "idea_name": "Factory Decarbonization Action Register",
+      "core_job": "Manage energy efficiency actions and evidence",
+      "target_customer": "industrial plants",
+      "buyer": "energy manager",
+      "product_mechanism": "Factory Decarbonization Action Register web workflow: baseline → action → savings estimate → verification",
+      "triggering_article_ids": [
+        "2e48a8f92b79323e602e7e6c"
+      ],
+      "supporting_article_ids": [
+        "2e48a8f92b79323e602e7e6c"
+      ],
+      "canonical_source_urls": [
+        "https://www.stcn.com/article/detail/4209039.html"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w4-20261010-reconstructed-012",
+          "verification": "full",
+          "article_titles": [
+            "绿色工厂进阶： AI成零碳转型钥匙 - 证券时报网"
+          ],
+          "evidence_notes": {
+            "verification_gap": null,
+            "source_batch": 22,
+            "source_item_index": 1,
+            "trakya_transferability_hypothesis": "Potential transferable factory workflow in Trakya; local applicability unverified",
+            "verified_source_url": "https://www.stcn.com/article/detail/4209039.html",
+            "verified_development": "Original Securities Times article reports green-to-zero-carbon factory efforts and AI carbon accounting; Chinese policy not Turkish law.",
+            "verification_scope": "Article event only; product-market fit, implementation costs and jurisdiction transfer not verified."
+          }
+        }
+      ],
+      "before_state": "Factory decarbonization projects involve fragmented owners and metrics",
+      "after_state": "Factory Decarbonization Action Register web workflow: baseline → action → savings estimate → verification",
+      "why_now": "Original Securities Times article reports green-to-zero-carbon factory efforts and AI carbon accounting; Chinese policy not Turkish law.",
+      "market_gap_hypothesis": "Original Securities Times article reports green-to-zero-carbon factory efforts and AI carbon accounting; Chinese policy not Turkish law. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": "Potential transferable factory workflow in Trakya; local applicability unverified",
+      "local_scope_evidence_hints": [
+        "Potential transferable factory workflow in Trakya; local applicability unverified"
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 25,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w4-20261010-reconstructed-012"
+      ],
+      "source_worker_ids": [
+        4
+      ],
+      "source_article_titles": [
+        "绿色工厂进阶： AI成零碳转型钥匙 - 证券时报网"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "COST_DELTA"
+      ],
+      "source_affected_workflow": "baseline → action → savings estimate → verification",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-28e1620977577167",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "28e16209775771673237272999629a12e9f862bd55429769e280157705f35aa2",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-023",
+      "validation_index": 23,
+      "validator_assignment": "A",
+      "canonical_key": "enerji-yoğun-tesislerin-proje-ekipleri|batarya-ile-tepe-güç-üretimi-seçeneklerinin-tco-hesabını-yap|kullanıcı-girdili-capex-opex-ömür-çevrim-ve-duyarlılık-hesap",
+      "idea_name": "PeakPower Compare — batarya/gaz tepe güç senaryo aracı",
+      "core_job": "Batarya ile tepe güç üretimi seçeneklerinin TCO hesabını yapmak",
+      "target_customer": "Enerji yoğun tesislerin proje ekipleri",
+      "buyer": "Enerji yatırımı yöneticisi",
+      "product_mechanism": "Kullanıcı girdili CAPEX/OPEX, ömür, çevrim ve duyarlılık hesaplayıcısı",
+      "triggering_article_ids": [
+        "cc8ce21d09db239acf2bbae7"
+      ],
+      "supporting_article_ids": [
+        "cc8ce21d09db239acf2bbae7"
+      ],
+      "canonical_source_urls": [
+        "https://techcrunch.com/2026/10/09/batteries-are-now-cheaper-than-natural-gas-turbines-used-at-many-data-centers/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B02-23-008",
+          "verification": "full",
+          "article_titles": [
+            "Batteries are now cheaper than natural gas turbines used at many data centers - TechCrunch"
+          ],
+          "evidence_notes": {
+            "source_observation": "TechCrunch, Wood Mackenzie'nin 43 pazarda dört saatlik depolamayı açık çevrim gaz türbininden daha ucuz bulduğunu aktardı.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Raporun karşılaştırması her endüstriyel tesis için geçerli değildir; tarife ve mühendislik doğrulaması gerekir.",
+            "fact": "TechCrunch, Wood Mackenzie'nin 43 pazarda dört saatlik depolamayı açık çevrim gaz türbininden daha ucuz bulduğunu aktardı.",
+            "validation": "Raporun karşılaştırması her endüstriyel tesis için geçerli değildir; tarife ve mühendislik doğrulaması gerekir.",
+            "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+          }
+        }
+      ],
+      "before_state": "Tedarikçi teklifleri farklı varsayımlarla karşılaştırılıyor",
+      "after_state": "Kullanıcı girdili CAPEX/OPEX, ömür, çevrim ve duyarlılık hesaplayıcısı",
+      "why_now": "Wood Mackenzie karşılaştırması batarya alternatifinin ekonomik cazibesini artırdı.",
+      "market_gap_hypothesis": "43 pazarda dört saatlik bataryaların açık çevrim gaz türbinlerinden daha ucuz bulunduğu açıklandı. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı.",
+      "local_scope_evidence_hints": [
+        "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 125,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B02-23-008"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "Batteries are now cheaper than natural gas turbines used at many data centers - TechCrunch"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "COST_DELTA",
+        "INFRASTRUCTURE_DELTA"
+      ],
+      "source_affected_workflow": "Yük profili → teknoloji maliyet varsayımları → senaryo karşılaştırması → karar notu",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

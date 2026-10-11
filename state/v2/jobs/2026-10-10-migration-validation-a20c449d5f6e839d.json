@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-a20c449d5f6e839d",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "a20c449d5f6e839d48636f958e3c14a845e9c662d7f7903e12897770082ff5e2",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-095",
+      "validation_index": 95,
+      "validator_assignment": "A",
+      "canonical_key": "ıso-kalite-sistemli-tedarikçiler|capa-nın-gerçekten-işe-yaradığını-kanıtlamak|capa-takip-takvimi-kontrol-örneklemi-fotoğraf-ölçüm-kanıtı-v",
+      "idea_name": "CAPA Proof Loop — düzeltici faaliyet etkinlik kontrolü",
+      "core_job": "CAPA'nın gerçekten işe yaradığını kanıtlamak",
+      "target_customer": "ISO kalite sistemli tedarikçiler",
+      "buyer": "Kalite güvence müdürü",
+      "product_mechanism": "CAPA takip takvimi, kontrol örneklemi, fotoğraf/ölçüm kanıtı ve yeniden açma kuralı",
+      "triggering_article_ids": [
+        "5d694653e6870cab28d4227e"
+      ],
+      "supporting_article_ids": [
+        "5d694653e6870cab28d4227e"
+      ],
+      "canonical_source_urls": [
+        "https://www.qualitymag.com/articles/99985-why-manufacturers-need-better-inspection-history-not-just-more-quality-data"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B03-27-015",
+          "verification": "full",
+          "article_titles": [
+            "Why Manufacturers Need Better Inspection History, Not Just More Quality Data - Quality Magazine"
+          ],
+          "evidence_notes": {
+            "source_observation": "Quality Magazine, kapanış notu ile düzeltici faaliyetin tekrar etmeme kanıtının farklı olduğunu belirtiyor.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "Quality Magazine, kapanış notu ile düzeltici faaliyetin tekrar etmeme kanıtının farklı olduğunu belirtiyor.",
+            "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+          }
+        }
+      ],
+      "before_state": "Aksiyon tamamlandı olarak kapanıyor ama tekrar kontrolü yok",
+      "after_state": "CAPA takip takvimi, kontrol örneklemi, fotoğraf/ölçüm kanıtı ve yeniden açma kuralı",
+      "why_now": "Kaynak kapatma ile etkinlik doğrulaması arasındaki farkı vurguladı.",
+      "market_gap_hypothesis": "Düzeltici faaliyet kapatılması tekrarın önlendiğini kanıtlamıyor. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Türkiye",
+      "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı.",
+      "local_scope_evidence_hints": [
+        "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 135,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B03-27-015"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "Why Manufacturers Need Better Inspection History, Not Just More Quality Data - Quality Magazine"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "STANDARDIZATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "source_affected_workflow": "Uygunsuzluk → kök neden → aksiyon → etkinlik kontrolü → tekrar izleme",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

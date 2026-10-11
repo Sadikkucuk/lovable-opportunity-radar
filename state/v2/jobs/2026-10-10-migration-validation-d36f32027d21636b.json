@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-d36f32027d21636b",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "d36f32027d21636beb56b543f8b1f709708316aa75100e3f3f7c2c6bcc6bcd24",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-059",
+      "validation_index": 59,
+      "validator_assignment": "A",
+      "canonical_key": "privacy-sensitive teams|track decisions from offline transcripts|uploaded transcript and action owner board",
+      "idea_name": "Private meeting decision register",
+      "core_job": "Track decisions from offline transcripts",
+      "target_customer": "Privacy-sensitive teams",
+      "buyer": "Operations lead",
+      "product_mechanism": "Uploaded transcript and action owner board",
+      "triggering_article_ids": [
+        "498db12c35619aba757371eb"
+      ],
+      "supporting_article_ids": [
+        "498db12c35619aba757371eb"
+      ],
+      "canonical_source_urls": [
+        "https://techcrunch.com/2026/10/08/google-releases-a-new-local-first-granola-competitor/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w2-20261010-011",
+          "verification": "corroborated",
+          "article_titles": [
+            "Google’s new AI note taker works without the internet - YourStory.com"
+          ],
+          "evidence_notes": {
+            "source_fact": "Google launched offline-first AI meeting note capture",
+            "product_is_hypothesis": true,
+            "trakya_transferability_hypothesis": null,
+            "audit_2026_10_10": "TechCrunch and YourStory corroborate offline Google AI Edge Foresight; decision ledger is an inferred downstream workflow."
+          }
+        }
+      ],
+      "before_state": "Meeting actions remain in personal notes",
+      "after_state": "Uploaded transcript and action owner board",
+      "why_now": "Google launched offline-first AI meeting note capture",
+      "market_gap_hypothesis": "Before: Meeting actions remain in personal notes. After: Google launched offline-first AI meeting note capture. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 85,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w2-20261010-011"
+      ],
+      "source_worker_ids": [
+        2
+      ],
+      "source_article_titles": [
+        "Google’s new AI note taker works without the internet - YourStory.com"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "CAPABILITY_DELTA"
+      ],
+      "source_affected_workflow": "Track decisions from offline transcripts",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

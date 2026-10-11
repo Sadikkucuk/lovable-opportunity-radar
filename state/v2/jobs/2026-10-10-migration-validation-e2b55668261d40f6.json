@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-e2b55668261d40f6",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "e2b55668261d40f636818d67e3bc678436cb57da9391ce7304ea28d3454dedf7",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-045",
+      "validation_index": 45,
+      "validator_assignment": "A",
+      "canonical_key": "manufacturers-and-tier-suppliers|track-custody-and-storage-obligations-for-customer-owned-molds|supplier-tooling-custody-ledger",
+      "idea_name": "Supplier Tooling Custody Ledger",
+      "core_job": "Track custody and storage obligations for customer-owned molds",
+      "target_customer": "manufacturers and tier suppliers",
+      "buyer": "procurement manager",
+      "product_mechanism": "Supplier Tooling Custody Ledger web workflow: mold registry → owner → storage terms → return request",
+      "triggering_article_ids": [
+        "91bfe00e01e293af4dced3b2"
+      ],
+      "supporting_article_ids": [
+        "91bfe00e01e293af4dced3b2"
+      ],
+      "canonical_source_urls": [
+        "https://monoist.itmedia.co.jp/mn/articles/2610/09/news037.html"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w4-20261010-reconstructed-018",
+          "verification": "full",
+          "article_titles": [
+            "製造業の51.3％で「委託先による金型無償保管」が発生 約2割が公取委指導を経験：製造マネジメントニュース（1/2 ページ） - MONOist"
+          ],
+          "evidence_notes": {
+            "verification_gap": null,
+            "source_batch": 23,
+            "source_item_index": 24,
+            "trakya_transferability_hypothesis": "Potential transferable factory workflow in Trakya; local applicability unverified",
+            "verified_source_url": "https://monoist.itmedia.co.jp/mn/articles/2610/09/news037.html",
+            "verified_development": "Original MONOist article reports 51.3% unpaid mold storage among surveyed manufacturers and related regulator scrutiny; Japan-specific.",
+            "verification_scope": "Article event only; product-market fit, implementation costs and jurisdiction transfer not verified."
+          }
+        }
+      ],
+      "before_state": "Unpaid long-term storage creates disputed liabilities",
+      "after_state": "Supplier Tooling Custody Ledger web workflow: mold registry → owner → storage terms → return request",
+      "why_now": "Original MONOist article reports 51.3% unpaid mold storage among surveyed manufacturers and related regulator scrutiny; Japan-specific.",
+      "market_gap_hypothesis": "Original MONOist article reports 51.3% unpaid mold storage among surveyed manufacturers and related regulator scrutiny; Japan-specific. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": "Potential transferable factory workflow in Trakya; local applicability unverified",
+      "local_scope_evidence_hints": [
+        "Potential transferable factory workflow in Trakya; local applicability unverified"
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 25,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w4-20261010-reconstructed-018"
+      ],
+      "source_worker_ids": [
+        4
+      ],
+      "source_article_titles": [
+        "製造業の51.3％で「委託先による金型無償保管」が発生 約2割が公取委指導を経験：製造マネジメントニュース（1/2 ページ） - MONOist"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "RISK_DELTA"
+      ],
+      "source_affected_workflow": "mold registry → owner → storage terms → return request",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

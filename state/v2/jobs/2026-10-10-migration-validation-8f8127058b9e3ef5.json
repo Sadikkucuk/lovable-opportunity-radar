@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-8f8127058b9e3ef5",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "8f8127058b9e3ef5237f66eb96ae5320a138b961d5e2ccaab6d6bd8b7ec220ca",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-053",
+      "validation_index": 53,
+      "validator_assignment": "A",
+      "canonical_key": "open-source maintainers|triage machine-generated vulnerability findings|finding ownership false-positive and fix queue",
+      "idea_name": "OSS scanner finding disposition",
+      "core_job": "Triage machine-generated vulnerability findings",
+      "target_customer": "Open-source maintainers",
+      "buyer": "Security lead",
+      "product_mechanism": "Finding ownership false-positive and fix queue",
+      "triggering_article_ids": [
+        "04c25d182cad548223bd9c80"
+      ],
+      "supporting_article_ids": [
+        "04c25d182cad548223bd9c80"
+      ],
+      "canonical_source_urls": [
+        "https://www.anthropic.com/news/anthropic-cyber-mission"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w2-20261010-009",
+          "verification": "full",
+          "article_titles": [
+            "重要インフラとOSSを保護する「Anthropic Cyber Mission」 - 株式会社インプレス"
+          ],
+          "evidence_notes": {
+            "source_fact": "Anthropic launched critical infrastructure defense and OSS scanner",
+            "product_is_hypothesis": true,
+            "trakya_transferability_hypothesis": "Applicable industrial maintenance or energy workflows may be transferable to Trakya; no local pilot confirmed."
+          }
+        }
+      ],
+      "before_state": "Scanner findings can outpace manual review",
+      "after_state": "Finding ownership false-positive and fix queue",
+      "why_now": "Anthropic launched critical infrastructure defense and OSS scanner",
+      "market_gap_hypothesis": "Before: Scanner findings can outpace manual review. After: Anthropic launched critical infrastructure defense and OSS scanner. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": "Applicable industrial maintenance or energy workflows may be transferable to Trakya; no local pilot confirmed.",
+      "local_scope_evidence_hints": [
+        "Applicable industrial maintenance or energy workflows may be transferable to Trakya; no local pilot confirmed."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 95,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w2-20261010-009"
+      ],
+      "source_worker_ids": [
+        2
+      ],
+      "source_article_titles": [
+        "重要インフラとOSSを保護する「Anthropic Cyber Mission」 - 株式会社インプレス"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "CAPABILITY_DELTA"
+      ],
+      "source_affected_workflow": "Triage machine-generated vulnerability findings",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

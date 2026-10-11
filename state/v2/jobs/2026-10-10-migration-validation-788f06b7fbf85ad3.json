@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-788f06b7fbf85ad3",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "788f06b7fbf85ad3838d06d6895c3c4eceb147684714fd0523c7fe2a5079e908",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-058",
+      "validation_index": 58,
+      "validator_assignment": "B",
+      "canonical_key": "otomotiv-yazılımı-ve-adas-tedarikçileri|sürüş-destek-özelliği-pazarlama-iddialarını-denetlemek|iddia-envanteri-teknik-kanıt-bağlantısı-ülke-kontrol-listesi",
+      "idea_name": "AutonomyClaim Review — sürüş destek beyanı kontrolü",
+      "core_job": "Sürüş destek özelliği pazarlama iddialarını denetlemek",
+      "target_customer": "Otomotiv yazılımı ve ADAS tedarikçileri",
+      "buyer": "Ürün uyum yöneticisi",
+      "product_mechanism": "İddia envanteri, teknik kanıt bağlantısı, ülke kontrol listesi ve onay geçmişi",
+      "triggering_article_ids": [
+        "b15856e635d559aa892e79bf"
+      ],
+      "supporting_article_ids": [
+        "b15856e635d559aa892e79bf"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/business/autos-transportation/tesla-renames-full-self-driving-assisted-driving-europe-it-chases-clearance-2026-10-09/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B04-10-019",
+          "verification": "full",
+          "article_titles": [
+            "Tesla renames 'Full Self-Driving' to 'Assisted Driving' in Europe as it chases clearance for software - Reuters"
+          ],
+          "evidence_notes": {
+            "source_observation": "İsim değişikliği otomatik olarak AB çapında düzenleme yürürlüğe girdiği anlamına gelmez.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "İsim değişikliği otomatik olarak AB çapında düzenleme yürürlüğe girdiği anlamına gelmez.",
+            "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+          }
+        }
+      ],
+      "before_state": "Broşür/web dilinin gerçek yetenek ve ülke onayıyla uyumu dağınık",
+      "after_state": "İddia envanteri, teknik kanıt bağlantısı, ülke kontrol listesi ve onay geçmişi",
+      "why_now": "Reuters, Tesla'nın Avrupa sitelerinde isim değişikliğini ve onay tartışmasını aktardı.",
+      "market_gap_hypothesis": "Avrupa'da Full Self-Driving adının Assisted Driving olarak değiştirilmesi, yetenek beyanı riskini görünür kıldı. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı.",
+      "local_scope_evidence_hints": [
+        "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 110,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B04-10-019"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "Tesla renames 'Full Self-Driving' to 'Assisted Driving' in Europe as it chases clearance for software - Reuters"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "source_affected_workflow": "Ürün iddiası → teknik yetenek → ülke kontrolü → pazarlama onayı",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-303921cff0b5d0cb",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "303921cff0b5d0cbf5b17e8567dd3d405bc6be94eb26af96972d32f3739d474a",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-042",
+      "validation_index": 42,
+      "validator_assignment": "B",
+      "canonical_key": "kurumsal-aı-agent-platform-ekipleri|ajan-bazında-izinleri-en-az-ayrıcalık-ilkesine-göre-belgelem|csv-json-rol-içe-aktarma-kaynak-eylem-matrisi-izin-değişikli",
+      "idea_name": "AgentIAM Scope Ledger — ajan yetki matrisi",
+      "core_job": "Ajan bazında izinleri en az ayrıcalık ilkesine göre belgelemek",
+      "target_customer": "Kurumsal AI agent platform ekipleri",
+      "buyer": "Bulut güvenlik lideri",
+      "product_mechanism": "CSV/JSON rol içe aktarma, kaynak-eylem matrisi, izin değişiklik incelemesi",
+      "triggering_article_ids": [
+        "9279a1fad652805371c522b4"
+      ],
+      "supporting_article_ids": [
+        "9279a1fad652805371c522b4"
+      ],
+      "canonical_source_urls": [
+        "https://www.theregister.com/security/2026/10/09/aws-agentcore-security-undone-by-prompt-requesting-credentials/5302436"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B02-21-006",
+          "verification": "full",
+          "article_titles": [
+            "AWS AgentCore security undone by prompt requesting credentials - The Register"
+          ],
+          "evidence_notes": {
+            "source_observation": "The Register, Zenity araştırmasının 2025-2026 döneminde tespit edilen ve Eylül 2026'ya kadar giderilen riskleri anlattığını yazdı.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "The Register, Zenity araştırmasının 2025-2026 döneminde tespit edilen ve Eylül 2026'ya kadar giderilen riskleri anlattığını yazdı."
+          }
+        }
+      ],
+      "before_state": "Ajan izinleri hesap/bölge genelinde gereğinden geniş tanımlanabilir",
+      "after_state": "CSV/JSON rol içe aktarma, kaynak-eylem matrisi, izin değişiklik incelemesi",
+      "why_now": "Araştırmacılar önceki yapılandırma zayıflıklarını gösterdi; habere göre AWS düzeltmeler yaptı.",
+      "market_gap_hypothesis": "AgentCore güvenlik araştırması, ajan kimlik bilgilerinin ve geniş yetkilerin riskini gösterdi. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 140,
+      "history_match_key": "sme-it-teams-deploying-desktop-or-coding-agents|define-least-privilege-resource-scopes-for-each-agent-before-deploymen|agent-registry-with-resource-permission-matrix-json-policy-drafts-vers",
+      "history_match_reason": "Potential semantic match to history: Agent Sandbox Policy Desk: create and approve agent resource policies without running the agents; requires strict customer+job+workflow check during validation.",
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B02-21-006"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "AWS AgentCore security undone by prompt requesting credentials - The Register"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "RISK_DELTA",
+        "CAPABILITY_DELTA"
+      ],
+      "source_affected_workflow": "Ajan tanımı → izin verilen kaynaklar → risk incelemesi → onay",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-56f100a64ff40d5f",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "56f100a64ff40d5f95aa4aacd4ac9231d515901d40794ba886726ed73de38b7e",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-088",
+      "validation_index": 88,
+      "validator_assignment": "B",
+      "canonical_key": "wind-farm maintenance operators|track drone-delivered maintenance kits|kit dispatch receipt and return ledger",
+      "idea_name": "Offshore kit chain-of-custody",
+      "core_job": "Track drone-delivered maintenance kits",
+      "target_customer": "Wind-farm maintenance operators",
+      "buyer": "Logistics lead",
+      "product_mechanism": "Kit dispatch receipt and return ledger",
+      "triggering_article_ids": [
+        "0166aff8beaf9dec31b00d43"
+      ],
+      "supporting_article_ids": [
+        "0166aff8beaf9dec31b00d43"
+      ],
+      "canonical_source_urls": [
+        "https://orsted.co.uk/media/newsroom/news/2026/10/big-cargo-drones-deliver-toolkits-to-wind-turbines-in-the-north-sea"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w2-20261010-012",
+          "verification": "full",
+          "article_titles": [
+            "Ørsted completes heavy lift drone trial at Hornsea 2 - The Engineer"
+          ],
+          "evidence_notes": {
+            "source_fact": "Orsted tested automated offshore maintenance kit delivery",
+            "product_is_hypothesis": true,
+            "trakya_transferability_hypothesis": "Applicable industrial maintenance or energy workflows may be transferable to Trakya; no local pilot confirmed.",
+            "audit_2026_10_10": "Ørsted official Oct 7 release verifies 55-65 kg maintenance kits, vessel-to-turbine deliveries and returns."
+          }
+        }
+      ],
+      "before_state": "Kits move across vessel and turbine handoffs",
+      "after_state": "Kit dispatch receipt and return ledger",
+      "why_now": "Orsted tested automated offshore maintenance kit delivery",
+      "market_gap_hypothesis": "Before: Kits move across vessel and turbine handoffs. After: Orsted tested automated offshore maintenance kit delivery. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": "Applicable industrial maintenance or energy workflows may be transferable to Trakya; no local pilot confirmed.",
+      "local_scope_evidence_hints": [
+        "Applicable industrial maintenance or energy workflows may be transferable to Trakya; no local pilot confirmed."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 95,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w2-20261010-012"
+      ],
+      "source_worker_ids": [
+        2
+      ],
+      "source_article_titles": [
+        "Ørsted completes heavy lift drone trial at Hornsea 2 - The Engineer"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "WORKFLOW_DELTA"
+      ],
+      "source_affected_workflow": "Track drone-delivered maintenance kits",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

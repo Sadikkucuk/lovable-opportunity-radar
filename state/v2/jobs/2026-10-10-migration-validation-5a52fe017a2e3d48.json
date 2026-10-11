@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-5a52fe017a2e3d48",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "5a52fe017a2e3d4852b95113127ee0994ab0f6339664362fdbbebf2e77694e66",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-090",
+      "validation_index": 90,
+      "validator_assignment": "B",
+      "canonical_key": "yerel-yönetimler-ve-topluluk-dernekleri|veri-merkezi-yatırım-taahhütlerini-kamuya-açık-izlemek|taahhüt-veri-modeli-durum-panosu-doküman-kanıtı-ve-gecikme-u",
+      "idea_name": "DataCenter Pledge Tracker — veri merkezi kamu taahhüt panosu",
+      "core_job": "Veri merkezi yatırım taahhütlerini kamuya açık izlemek",
+      "target_customer": "Yerel yönetimler ve topluluk dernekleri",
+      "buyer": "Belediye proje sorumlusu",
+      "product_mechanism": "Taahhüt veri modeli, durum panosu, doküman kanıtı ve gecikme uyarısı",
+      "triggering_article_ids": [
+        "6128d8ea4a56ba4935672d3b"
+      ],
+      "supporting_article_ids": [
+        "6128d8ea4a56ba4935672d3b"
+      ],
+      "canonical_source_urls": [
+        "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B03-11-013",
+          "verification": "full",
+          "article_titles": [
+            "Amazon and others are done keeping data center deals secret. Is it enough to build trust? - TechCrunch"
+          ],
+          "evidence_notes": {
+            "source_observation": "TechCrunch'ın 9 Ekim 2026 değerlendirmesi Amazon ve Microsoft'un veri merkezi anlaşmalarında şeffaflık adımlarını tartışıyor.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "TechCrunch'ın 9 Ekim 2026 değerlendirmesi Amazon ve Microsoft'un veri merkezi anlaşmalarında şeffaflık adımlarını tartışıyor."
+          }
+        }
+      ],
+      "before_state": "Su, enerji, istihdam ve altyapı vaatleri farklı dokümanlarda kalıyor",
+      "after_state": "Taahhüt veri modeli, durum panosu, doküman kanıtı ve gecikme uyarısı",
+      "why_now": "TechCrunch, Amazon'un yerel yönetim görüşmelerinde NDA kullanımını bırakacağını bildirdi.",
+      "market_gap_hypothesis": "Büyük veri merkezi yatırımcıları yerel yönetimlerle gizlilik anlaşmalarından uzaklaşmaya başladı. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 125,
+      "history_match_key": "data-center-developer|prove-project-transparency|claim-provenance-permit-dashboard",
+      "history_match_reason": "Potential semantic match to history: Data-center transparency Çalışma Alanı.; requires strict customer+job+workflow check during validation.",
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B03-11-013"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "Amazon and others are done keeping data center deals secret. Is it enough to build trust? - TechCrunch"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "BEHAVIOR_DELTA",
+        "RISK_DELTA"
+      ],
+      "source_affected_workflow": "Proje duyurusu → kamu taahhüdü → teslim tarihi → ilerleme kanıtı",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

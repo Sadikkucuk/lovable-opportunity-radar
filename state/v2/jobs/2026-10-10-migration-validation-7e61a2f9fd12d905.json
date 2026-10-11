@@ -1,0 +1,78 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-7e61a2f9fd12d905",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "7e61a2f9fd12d905e61ccd62355a4e931afd1661ac536b490d954bcea4ede74c",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-020",
+      "validation_index": 20,
+      "validator_assignment": "B",
+      "canonical_key": "district heat utilities|track new heat-network customer service|meter onboarding and outage register",
+      "idea_name": "District heating service handover",
+      "core_job": "Track new heat-network customer service",
+      "target_customer": "District heat utilities",
+      "buyer": "Operations lead",
+      "product_mechanism": "Meter onboarding and outage register",
+      "triggering_article_ids": [
+        "280d4098a5290834d90af704"
+      ],
+      "supporting_article_ids": [
+        "280d4098a5290834d90af704"
+      ],
+      "canonical_source_urls": [
+        "https://www.gov.uk/government/news/flicking-the-switch-to-heat-seaham-homes-with-mine-water-energy"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w2-20261010-014",
+          "verification": "full",
+          "article_titles": [
+            "Durham Mine Water Heat Network Goes Live For 750 Homes - The Engineer"
+          ],
+          "evidence_notes": {
+            "source_fact": "Mine-water district heat network commissioned",
+            "product_is_hypothesis": true,
+            "trakya_transferability_hypothesis": "Applicable industrial maintenance or energy workflows may be transferable to Trakya; no local pilot confirmed.",
+            "audit_2026_10_10": "UK Mining Remediation Authority Oct 6 release confirms operational Seaham network serving 750 homes."
+          }
+        }
+      ],
+      "before_state": "New heat utility needs customer workflows",
+      "after_state": "Meter onboarding and outage register",
+      "why_now": "Mine-water district heat network commissioned",
+      "market_gap_hypothesis": "Before: New heat utility needs customer workflows. After: Mine-water district heat network commissioned. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": "Applicable industrial maintenance or energy workflows may be transferable to Trakya; no local pilot confirmed.",
+      "local_scope_evidence_hints": [
+        "Applicable industrial maintenance or energy workflows may be transferable to Trakya; no local pilot confirmed."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 95,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w2-20261010-014"
+      ],
+      "source_worker_ids": [
+        2
+      ],
+      "source_article_titles": [
+        "Durham Mine Water Heat Network Goes Live For 750 Homes - The Engineer"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "INFRASTRUCTURE_DELTA"
+      ],
+      "source_affected_workflow": "Track new heat-network customer service",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

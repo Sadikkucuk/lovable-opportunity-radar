@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-c4af3c88f095d929",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "c4af3c88f095d929f4f47a098ac6a8cb5f4110499c6003ec2e8fbd1fe6fe3375",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-027",
+      "validation_index": 27,
+      "validator_assignment": "A",
+      "canonical_key": "enterprise-hr-teams|trace-inferred-skills-to-supporting-work-evidence|hr-skills-evidence-map",
+      "idea_name": "HR Skills Evidence Map",
+      "core_job": "Trace inferred skills to supporting work evidence",
+      "target_customer": "enterprise HR teams",
+      "buyer": "HR analytics manager",
+      "product_mechanism": "HR Skills Evidence Map web workflow: skill claim → evidence → employee review → approval",
+      "triggering_article_ids": [
+        "4f766255882ebcb2cc601e1b"
+      ],
+      "supporting_article_ids": [
+        "4f766255882ebcb2cc601e1b"
+      ],
+      "canonical_source_urls": [
+        "https://www.itmedia.co.jp/enterprise/articles/2610/09/news019.html"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w4-20261010-reconstructed-010",
+          "verification": "full",
+          "article_titles": [
+            "人事AIに足りないのは「根拠」 SAPがTechWolf買収で手に入れるもの - ITmedia"
+          ],
+          "evidence_notes": {
+            "verification_gap": null,
+            "source_batch": 21,
+            "source_item_index": 18,
+            "trakya_transferability_hypothesis": null,
+            "original_article_checked": true,
+            "verified_source_url": "https://www.itmedia.co.jp/enterprise/articles/2610/09/news019.html",
+            "verified_development": "ITmedia reports SAP's acquisition of TechWolf and evidence requirements for AI-inferred employee skills.",
+            "verification_scope": "Article development verified; proposed SaaS workflow remains an inference requiring customer validation."
+          }
+        }
+      ],
+      "before_state": "Automated skill profiles can be difficult to justify",
+      "after_state": "HR Skills Evidence Map web workflow: skill claim → evidence → employee review → approval",
+      "why_now": "ITmedia reports SAP's acquisition of TechWolf and evidence requirements for AI-inferred employee skills.",
+      "market_gap_hypothesis": "ITmedia reports SAP's acquisition of TechWolf and evidence requirements for AI-inferred employee skills. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 25,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w4-20261010-reconstructed-010"
+      ],
+      "source_worker_ids": [
+        4
+      ],
+      "source_article_titles": [
+        "人事AIに足りないのは「根拠」 SAPがTechWolf買収で手に入れるもの - ITmedia"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "DATA_DELTA"
+      ],
+      "source_affected_workflow": "skill claim → evidence → employee review → approval",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

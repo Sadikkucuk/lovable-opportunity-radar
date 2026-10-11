@@ -1,0 +1,78 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-8daf2ea3e50aea80",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "8daf2ea3e50aea80ea8ba63cf3d092c907147dca0a3a88023538e65edd8db5d4",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-041",
+      "validation_index": 41,
+      "validator_assignment": "A",
+      "canonical_key": "kurumsal-ağ-operasyon-ekipleri|netscaler-varlıklarının-güncel-güvenlik-bültenine-göre-etkil|kullanıcı-csv-si-resmi-bülten-sürüm-eşikleri-görev-ve-kapatm",
+      "idea_name": "NetScaler PatchScope — etkilenen sürüm matrisi",
+      "core_job": "NetScaler varlıklarının güncel güvenlik bültenine göre etkilenmesini takip etmek",
+      "target_customer": "Kurumsal ağ operasyon ekipleri",
+      "buyer": "BT altyapı yöneticisi",
+      "product_mechanism": "Kullanıcı CSV'si, resmi bülten sürüm eşikleri, görev ve kapatma kanıtı",
+      "triggering_article_ids": [
+        "7d585a8dc18a59ca0ec8570b"
+      ],
+      "supporting_article_ids": [
+        "7d585a8dc18a59ca0ec8570b"
+      ],
+      "canonical_source_urls": [
+        "https://www.theregister.com/security/2026/10/09/citrix-gives-netscaler-admins-another-critical-reason-to-patch/5302212"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B06-38-029",
+          "verification": "full",
+          "article_titles": [
+            "Citrix gives NetScaler admins another critical reason to patch - The Register"
+          ],
+          "evidence_notes": {
+            "source_observation": "NHS England Digital, 9 Ekim 2026 uyarısında etkilenen sürümleri ve SAML koşulunu yayımladı.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Ürün aktif tarama veya exploit işlevi içermez.",
+            "fact": "NHS England Digital, 9 Ekim 2026 uyarısında etkilenen sürümleri ve SAML koşulunu yayımladı.",
+            "validation": "Ürün aktif tarama veya exploit işlevi içermez."
+          }
+        }
+      ],
+      "before_state": "Sürüm ve SAML yapılandırması tek envanterde değil",
+      "after_state": "Kullanıcı CSV'si, resmi bülten sürüm eşikleri, görev ve kapatma kanıtı",
+      "why_now": "The Register ve NHS Digital 9 Ekim'de CVE-2026-107406 kapsamını bildirdi.",
+      "market_gap_hypothesis": "NetScaler CVE-2026-107406 için yapılandırmaya bağlı kritik yama uyarısı yayımlandı. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 110,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B06-38-029"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "Citrix gives NetScaler admins another critical reason to patch - The Register"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "source_affected_workflow": "Ürün sürümü + SAML rolü → etki kontrolü → yama görevi → doğrulama",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

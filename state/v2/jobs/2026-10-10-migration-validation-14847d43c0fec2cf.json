@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-14847d43c0fec2cf",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "14847d43c0fec2cf375200027ce355a5bd143f62ce939f24f642ce04f758cb3f",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-003",
+      "validation_index": 3,
+      "validator_assignment": "A",
+      "canonical_key": "ambalaj-fabrikaları-ve-bakım-danışmanları|smed-iyileştirmelerinin-ekonomik-getirisini-hesaplamak|csv-değişim-logu-dakika-maliyeti-senaryo-karşılaştırması-ve-",
+      "idea_name": "Changeover Loss Calculator — ürün değişimi zaman maliyeti",
+      "core_job": "SMED iyileştirmelerinin ekonomik getirisini hesaplamak",
+      "target_customer": "Ambalaj fabrikaları ve bakım danışmanları",
+      "buyer": "Fabrika müdürü",
+      "product_mechanism": "CSV değişim logu, dakika maliyeti, senaryo karşılaştırması ve PDF karar raporu",
+      "triggering_article_ids": [
+        "1642a563450711484db11364"
+      ],
+      "supporting_article_ids": [
+        "1642a563450711484db11364"
+      ],
+      "canonical_source_urls": [
+        "https://www.packworld.com/trends/controls-machine-components/article/22976101/bottler-cuts-lane-changeover-from-48-adjustment-points-to-two"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B03-14-011",
+          "verification": "full",
+          "article_titles": [
+            "Bottler Cuts Lane Changeover from 48 Adjustment Points to Two - Packaging World"
+          ],
+          "evidence_notes": {
+            "source_observation": "Packaging World, Rivella tarih kodlama istasyonu ve hat ayarlarının tekrar eden değişim maliyetini aktardı.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "Packaging World, Rivella tarih kodlama istasyonu ve hat ayarlarının tekrar eden değişim maliyetini aktardı.",
+            "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+          }
+        }
+      ],
+      "before_state": "Yatırım öncesi kayıp saatler tutarlı hesaplanmıyor",
+      "after_state": "CSV değişim logu, dakika maliyeti, senaryo karşılaştırması ve PDF karar raporu",
+      "why_now": "Haberde tarih kodlayıcı ayarının ürün başına bir saate uzayabildiği anlatıldı.",
+      "market_gap_hypothesis": "Sık ürün değişimlerinde manuel ayar saatlerce kayıp yaratabiliyor. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Türkiye",
+      "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı.",
+      "local_scope_evidence_hints": [
+        "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 80,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B03-14-011"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "Bottler Cuts Lane Changeover from 48 Adjustment Points to Two - Packaging World"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "COST_DELTA",
+        "SPEED_DELTA"
+      ],
+      "source_affected_workflow": "Değişim süresi → duruş maliyeti → iyileştirme senaryosu → yatırım notu",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

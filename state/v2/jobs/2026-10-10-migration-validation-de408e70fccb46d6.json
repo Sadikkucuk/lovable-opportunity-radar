@@ -1,0 +1,78 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-de408e70fccb46d6",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "de408e70fccb46d6f5893efaee7aa839bf7fe16fa32ea82b9ae74eef4767b558",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-073",
+      "validation_index": 73,
+      "validator_assignment": "A",
+      "canonical_key": "sunucu-ve-yüksek-performanslı-donanım-distribütörleri|yüksek-riskli-donanım-için-izlenebilir-sevkiyat-dosyası-tutm|sipariş-ürün-seri-no-son-kullanıcı-eşleştirmesi-imzalı-kontr",
+      "idea_name": "ChipCustody — kısıtlı donanım sevkiyat kanıt dosyası",
+      "core_job": "Yüksek riskli donanım için izlenebilir sevkiyat dosyası tutmak",
+      "target_customer": "Sunucu ve yüksek performanslı donanım distribütörleri",
+      "buyer": "İhracat uyum yöneticisi",
+      "product_mechanism": "Sipariş-ürün-seri no-son kullanıcı eşleştirmesi, imzalı kontrol listesi ve sürüm geçmişi",
+      "triggering_article_ids": [
+        "6a46d7953a400f935ea97611"
+      ],
+      "supporting_article_ids": [
+        "6a46d7953a400f935ea97611"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/legal/government/super-micro-contractor-pleads-guilty-scheme-divert-ai-servers-with-nvidia-chips-2026-10-09/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B01-29-003",
+          "verification": "full",
+          "article_titles": [
+            "Super Micro contractor pleads guilty in scheme to divert AI servers with Nvidia chips to China - Reuters"
+          ],
+          "evidence_notes": {
+            "source_observation": "Reuters'a göre Super Micro bağlantılı yüklenici kısıtlı AI sunucularını Çin'e yönlendirme planında suçunu kabul etti.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Hukuki sınıflandırma/otomatik yaptırım taraması değil; manuel uyum kanıtı ürünü.",
+            "fact": "Reuters'a göre Super Micro bağlantılı yüklenici kısıtlı AI sunucularını Çin'e yönlendirme planında suçunu kabul etti.",
+            "validation": "Hukuki sınıflandırma/otomatik yaptırım taraması değil; manuel uyum kanıtı ürünü."
+          }
+        }
+      ],
+      "before_state": "Belgeler ve seri numaraları farklı dosyalarda; değişiklik izi zayıf",
+      "after_state": "Sipariş-ürün-seri no-son kullanıcı eşleştirmesi, imzalı kontrol listesi ve sürüm geçmişi",
+      "why_now": "Reuters'ın aktardığı suç kabulü ihracat kontrollerinde izlenebilirlik ihtiyacını güçlendiriyor.",
+      "market_gap_hypothesis": "Yapay zekâ sunucularının lisanssız yönlendirilmesi ve sahte denetim izleri nedeniyle sevkiyat kanıtı ihtiyacı görünür oldu. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 165,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B01-29-003"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "Super Micro contractor pleads guilty in scheme to divert AI servers with Nvidia chips to China - Reuters"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "RISK_DELTA",
+        "REGULATION_DELTA"
+      ],
+      "source_affected_workflow": "Sipariş → son kullanıcı beyanı → seri numarası → teslim → denetim kanıtı",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

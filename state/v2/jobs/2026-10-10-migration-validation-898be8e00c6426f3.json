@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-898be8e00c6426f3",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "898be8e00c6426f3d88855b3e4abfe02c04185aecf8002bc9bd7e950fdaacab3",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-026",
+      "validation_index": 26,
+      "validator_assignment": "B",
+      "canonical_key": "enterprise-automation-teams|document-handoffs-between-ai-agents-and-deterministic-rpa|agent-rpa-handoff-ledger",
+      "idea_name": "Agent RPA Handoff Ledger",
+      "core_job": "Document handoffs between AI agents and deterministic RPA",
+      "target_customer": "enterprise automation teams",
+      "buyer": "automation architect",
+      "product_mechanism": "Agent RPA Handoff Ledger web workflow: task classification → agent/RPA routing → exception → audit",
+      "triggering_article_ids": [
+        "c4fab643b514a660478a4188"
+      ],
+      "supporting_article_ids": [
+        "c4fab643b514a660478a4188"
+      ],
+      "canonical_source_urls": [
+        "https://www.itmedia.co.jp/enterprise/articles/2610/09/news030.html"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w4-20261010-reconstructed-009",
+          "verification": "full",
+          "article_titles": [
+            "AIエージェントだけで業務は回らない？ Blue Prismが始めた「AIとRPAの分業」 - ITmedia"
+          ],
+          "evidence_notes": {
+            "verification_gap": null,
+            "source_batch": 21,
+            "source_item_index": 17,
+            "trakya_transferability_hypothesis": null,
+            "original_article_checked": true,
+            "verified_source_url": "https://www.itmedia.co.jp/enterprise/articles/2610/09/news030.html",
+            "verified_development": "ITmedia discusses Blue Prism's agent/RPA division of labor for business workflows.",
+            "verification_scope": "Article development verified; proposed SaaS workflow remains an inference requiring customer validation."
+          }
+        }
+      ],
+      "before_state": "Hybrid workflows fail at ambiguous ownership boundaries",
+      "after_state": "Agent RPA Handoff Ledger web workflow: task classification → agent/RPA routing → exception → audit",
+      "why_now": "ITmedia discusses Blue Prism's agent/RPA division of labor for business workflows.",
+      "market_gap_hypothesis": "ITmedia discusses Blue Prism's agent/RPA division of labor for business workflows. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 25,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w4-20261010-reconstructed-009"
+      ],
+      "source_worker_ids": [
+        4
+      ],
+      "source_article_titles": [
+        "AIエージェントだけで業務は回らない？ Blue Prismが始めた「AIとRPAの分業」 - ITmedia"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "CAPABILITY_DELTA"
+      ],
+      "source_affected_workflow": "task classification → agent/RPA routing → exception → audit",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

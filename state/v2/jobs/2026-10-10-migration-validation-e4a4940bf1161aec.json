@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-e4a4940bf1161aec",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "e4a4940bf1161aec932ad9320a75073156c3715820689427094e6d22d9043ea1",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-007",
+      "validation_index": 7,
+      "validator_assignment": "A",
+      "canonical_key": "aı-ajan-qa-ekipleri|yeni-ajan-sürümünde-bilinen-güvenlik-kontrollerini-tekrar-te|yalnızca-savunma-amaçlı-test-senaryosu-kataloğu-çalıştırma-k",
+      "idea_name": "AgentPromptRegression — güvenli ajan eylem testi defteri",
+      "core_job": "Yeni ajan sürümünde bilinen güvenlik kontrollerini tekrar test etmek",
+      "target_customer": "AI ajan QA ekipleri",
+      "buyer": "Güvenlik test lideri",
+      "product_mechanism": "Yalnızca savunma amaçlı test senaryosu kataloğu, çalıştırma kanıtı ve geçiş raporu",
+      "triggering_article_ids": [
+        "9279a1fad652805371c522b4"
+      ],
+      "supporting_article_ids": [
+        "9279a1fad652805371c522b4"
+      ],
+      "canonical_source_urls": [
+        "https://www.theregister.com/security/2026/10/09/aws-agentcore-security-undone-by-prompt-requesting-credentials/5302436"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B02-21-007",
+          "verification": "full",
+          "article_titles": [
+            "AWS AgentCore security undone by prompt requesting credentials - The Register"
+          ],
+          "evidence_notes": {
+            "source_observation": "Haberde AgentCore yapılandırmalarının test ve düzeltme geçmişi yer alıyor; ürün saldırı otomasyonu değildir.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "Haberde AgentCore yapılandırmalarının test ve düzeltme geçmişi yer alıyor; ürün saldırı otomasyonu değildir."
+          }
+        }
+      ],
+      "before_state": "Sürüm değişince güvenlik testleri manuel ve düzensiz",
+      "after_state": "Yalnızca savunma amaçlı test senaryosu kataloğu, çalıştırma kanıtı ve geçiş raporu",
+      "why_now": "Güvenlik araştırması tekrar edilebilir savunma testleri ihtiyacını görünür kıldı.",
+      "market_gap_hypothesis": "Bir istem üzerinden metadata erişimi ve yatay yetki etkileri gösterildi. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 95,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B02-21-007"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "AWS AgentCore security undone by prompt requesting credentials - The Register"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "source_affected_workflow": "Ajan sürümü → izinli test senaryoları → beklenen engelleme → rapor",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

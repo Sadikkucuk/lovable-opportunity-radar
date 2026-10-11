@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-d484bc37f081a08a",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "d484bc37f081a08ae48eb32efda14301ea9e12c6242e267fefb19df0a37509d8",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-091",
+      "validation_index": 91,
+      "validator_assignment": "A",
+      "canonical_key": "çok-sku-lu-ambalaj-ve-dolum-tesisleri|ürün-değişim-ayarlarını-standardize-etmek|ürün-makine-bazlı-dijital-reçete-fotoğraflı-talimat-ve-imzal",
+      "idea_name": "Changeover Recipe — ambalaj hattı ayar standardı",
+      "core_job": "Ürün değişim ayarlarını standardize etmek",
+      "target_customer": "Çok SKU'lu ambalaj ve dolum tesisleri",
+      "buyer": "Üretim müdürü",
+      "product_mechanism": "Ürün/makine bazlı dijital reçete, fotoğraflı talimat ve imzalı kontrol listesi",
+      "triggering_article_ids": [
+        "1642a563450711484db11364"
+      ],
+      "supporting_article_ids": [
+        "1642a563450711484db11364"
+      ],
+      "canonical_source_urls": [
+        "https://www.packworld.com/trends/controls-machine-components/article/22976101/bottler-cuts-lane-changeover-from-48-adjustment-points-to-two"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B03-14-010",
+          "verification": "full",
+          "article_titles": [
+            "Bottler Cuts Lane Changeover from 48 Adjustment Points to Two - Packaging World"
+          ],
+          "evidence_notes": {
+            "source_observation": "Packaging World, Rivella hattında 48 ayar noktasının ikiye düşürüldüğünü bildirdi; yazılım tek başına aynı fiziksel iyileştirmeyi sağlamaz.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "Packaging World, Rivella hattında 48 ayar noktasının ikiye düşürüldüğünü bildirdi; yazılım tek başına aynı fiziksel iyileştirmeyi sağlamaz.",
+            "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+          }
+        }
+      ],
+      "before_state": "Ayar bilgisi ustalarda kalıyor; değişim süresi ve yanlış ayarlar tekrarlanıyor",
+      "after_state": "Ürün/makine bazlı dijital reçete, fotoğraflı talimat ve imzalı kontrol listesi",
+      "why_now": "Rivella örneği fiziksel retrofit ile birlikte standart ayar bilgisinin değerini gösterdi.",
+      "market_gap_hypothesis": "Bir içecek üreticisi hat ayar noktalarını 48'den ikiye düşürdü. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Türkiye",
+      "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı.",
+      "local_scope_evidence_hints": [
+        "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 120,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B03-14-010"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "Bottler Cuts Lane Changeover from 48 Adjustment Points to Two - Packaging World"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "SPEED_DELTA",
+        "LABOR_DELTA"
+      ],
+      "source_affected_workflow": "Ürün değişimi → ayar reçetesi → kontrol → süre ve hata kaydı",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

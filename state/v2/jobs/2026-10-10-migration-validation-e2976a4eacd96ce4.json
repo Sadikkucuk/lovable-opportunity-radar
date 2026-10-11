@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-e2976a4eacd96ce4",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "e2976a4eacd96ce4cdf6436110bbff9f1ad48ecd757ae764623e0c6537cb1195",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-030",
+      "validation_index": 30,
+      "validator_assignment": "B",
+      "canonical_key": "finance-teams|preserve-explanations-for-flagged-expenses|expense-ai-explainability-register",
+      "idea_name": "Expense AI Explainability Register",
+      "core_job": "Preserve explanations for flagged expenses",
+      "target_customer": "finance teams",
+      "buyer": "finance controller",
+      "product_mechanism": "Expense AI Explainability Register web workflow: expense flag → evidence → explanation → disposition",
+      "triggering_article_ids": [
+        "4fea9e49af51fff1bf6ba571"
+      ],
+      "supporting_article_ids": [
+        "4fea9e49af51fff1bf6ba571"
+      ],
+      "canonical_source_urls": [
+        "https://cloud.watch.impress.co.jp/docs/news/2146702.html"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w4-20261010-reconstructed-006",
+          "verification": "full",
+          "article_titles": [
+            "ChillStack、不正経費自動検知クラウド「Stena Expense」にAIのリスク判定の理由を透明化する「根拠可視化機能」を追加 - クラウド Watch"
+          ],
+          "evidence_notes": {
+            "verification_gap": null,
+            "source_batch": 20,
+            "source_item_index": 16,
+            "trakya_transferability_hypothesis": null,
+            "original_article_checked": true,
+            "verified_source_url": "https://cloud.watch.impress.co.jp/docs/news/2146702.html",
+            "verified_development": "ChillStack added explainable risk-reason display to Stena Expense's expense fraud risk ranking.",
+            "verification_scope": "Article development verified; proposed SaaS workflow remains an inference requiring customer validation."
+          }
+        }
+      ],
+      "before_state": "Opaque fraud scores make exception reviews difficult",
+      "after_state": "Expense AI Explainability Register web workflow: expense flag → evidence → explanation → disposition",
+      "why_now": "ChillStack added explainable risk-reason display to Stena Expense's expense fraud risk ranking.",
+      "market_gap_hypothesis": "ChillStack added explainable risk-reason display to Stena Expense's expense fraud risk ranking. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 25,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w4-20261010-reconstructed-006"
+      ],
+      "source_worker_ids": [
+        4
+      ],
+      "source_article_titles": [
+        "ChillStack、不正経費自動検知クラウド「Stena Expense」にAIのリスク判定の理由を透明化する「根拠可視化機能」を追加 - クラウド Watch"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "RISK_DELTA"
+      ],
+      "source_affected_workflow": "expense flag → evidence → explanation → disposition",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

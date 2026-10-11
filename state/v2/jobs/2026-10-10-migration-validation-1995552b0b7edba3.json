@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-1995552b0b7edba3",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "1995552b0b7edba3bd988e17a1a60a431a23d085329df4cbc3f0053f4e46f1bb",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-089",
+      "validation_index": 89,
+      "validator_assignment": "A",
+      "canonical_key": "yazılım-teslimat-yöneticileri|aı-yatırımının-teslimata-etkisini-ölçmek|ıssue-pr-csv-eşleştirme-cycle-time-rework-ve-teslim-edilen-i",
+      "idea_name": "FeatureFlow Ledger — kod üretimi ile teslim edilen iş karşılaştırması",
+      "core_job": "AI yatırımının teslimata etkisini ölçmek",
+      "target_customer": "Yazılım teslimat yöneticileri",
+      "buyer": "CTO",
+      "product_mechanism": "Issue/PR CSV eşleştirme, cycle time, rework ve teslim edilen iş göstergeleri",
+      "triggering_article_ids": [
+        "74393117343bec809e90ee1d"
+      ],
+      "supporting_article_ids": [
+        "74393117343bec809e90ee1d"
+      ],
+      "canonical_source_urls": [
+        "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B02-15-005",
+          "verification": "full",
+          "article_titles": [
+            "AI coding agents generate more code, but not more software - Ars Technica"
+          ],
+          "evidence_notes": {
+            "source_observation": "Çalışma, AI ajanlarının kullanımından sonra satır/commit/PR artışı, fakat tamamlanan issue sayısında belirgin artış olmadığını bildirdi.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "Çalışma, AI ajanlarının kullanımından sonra satır/commit/PR artışı, fakat tamamlanan issue sayısında belirgin artış olmadığını bildirdi."
+          }
+        }
+      ],
+      "before_state": "Sadece commit sayısına bakmak gerçek çıktı vermez",
+      "after_state": "Issue/PR CSV eşleştirme, cycle time, rework ve teslim edilen iş göstergeleri",
+      "why_now": "Çalışma üretim ile çıktı arasındaki farkı sayısallaştırdı.",
+      "market_gap_hypothesis": "Commit ve satır sayısı artışı ile tamamlanan özellik sayısı aynı oranda artmıyor. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 105,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B02-15-005"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "AI coding agents generate more code, but not more software - Ars Technica"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "DATA_DELTA",
+        "LABOR_DELTA"
+      ],
+      "source_affected_workflow": "Issue → PR → review → merge → yayınlanan özellik",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

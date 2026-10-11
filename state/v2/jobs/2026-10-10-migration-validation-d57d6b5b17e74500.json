@@ -1,0 +1,78 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-d57d6b5b17e74500",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "d57d6b5b17e74500e0d5cb5714c07eb55ae0302443ebc50666d88ef2fe172279",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-033",
+      "validation_index": 33,
+      "validator_assignment": "A",
+      "canonical_key": "high-mix-manufacturers|production-rescheduling|exception-approval-desk",
+      "idea_name": "Factory schedule exception approval desk",
+      "core_job": "Review capacity conflicts and approve rescheduling decisions",
+      "target_customer": "High-mix industrial suppliers",
+      "buyer": "Production planning manager",
+      "product_mechanism": "Production constraint intake, schedule exception queue and decision audit trail",
+      "triggering_article_ids": [
+        "8dc06047faf9ad37d7b933ec"
+      ],
+      "supporting_article_ids": [
+        "8dc06047faf9ad37d7b933ec"
+      ],
+      "canonical_source_urls": [
+        "https://technode.com/2026/10/09/eight-years-two-tech-booms-one-factory-problem-inside-black-lakes-bet-on-industrial-ai/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w3-20261010-003",
+          "verification": "full",
+          "article_titles": [
+            "Eight Years, Two Tech Booms, One Factory Problem: Inside Black Lake’s Bet on Industrial AI - TechNode"
+          ],
+          "evidence_notes": {
+            "source_fact": "TechNode article identifies Black Lake scheduling agents and factory coordination challenges.",
+            "source_inference_boundary": "No independent validation of vendor accuracy or demand.",
+            "trakya_transferability_hypothesis": "Relevant to Trakya factories with short-run production and changing orders; no local buyer verified."
+          }
+        }
+      ],
+      "before_state": "Capacity, order deadlines and machine availability are reconciled manually",
+      "after_state": "Production constraint intake, schedule exception queue and decision audit trail",
+      "why_now": "October 9 TechNode report on Black Lake production scheduling agents",
+      "market_gap_hypothesis": "Black Lake reports factory scheduling agents that convert operational constraints into production decisions, distinct from RFQ quotation. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": "Relevant to Trakya factories with short-run production and changing orders; no local buyer verified.",
+      "local_scope_evidence_hints": [
+        "Relevant to Trakya factories with short-run production and changing orders; no local buyer verified."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 120,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w3-20261010-003"
+      ],
+      "source_worker_ids": [
+        3
+      ],
+      "source_article_titles": [
+        "Eight Years, Two Tech Booms, One Factory Problem: Inside Black Lake’s Bet on Industrial AI - TechNode"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "CAPABILITY_DELTA",
+        "WORKFLOW_DELTA"
+      ],
+      "source_affected_workflow": "Production schedule exception approval",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

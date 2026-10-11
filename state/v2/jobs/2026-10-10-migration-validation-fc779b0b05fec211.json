@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-fc779b0b05fec211",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "fc779b0b05fec211d71c503c151711209795ad965c5b3f1ec2181eeea749ef5d",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-057",
+      "validation_index": 57,
+      "validator_assignment": "A",
+      "canonical_key": "otomotiv-yan-sanayi-ve-makine-üreticileri|kritik-parça-gecikmesinin-üretim-etkisini-hesaplamak|csv-bom-stok-termin-girdisi-stok-tükenme-tarihi-etkilenen-si",
+      "idea_name": "PartShortage WhatIf — kritik parça gecikme senaryosu",
+      "core_job": "Kritik parça gecikmesinin üretim etkisini hesaplamak",
+      "target_customer": "Otomotiv yan sanayi ve makine üreticileri",
+      "buyer": "Planlama müdürü",
+      "product_mechanism": "CSV BOM/stok/termin girdisi, stok tükenme tarihi, etkilenen siparişler ve alternatif senaryolar",
+      "triggering_article_ids": [
+        "5d7b4b699ddd194e3a3896ee"
+      ],
+      "supporting_article_ids": [
+        "5d7b4b699ddd194e3a3896ee"
+      ],
+      "canonical_source_urls": [
+        "https://supplychain.economictimes.indiatimes.com/news/ai-and-technology/beyond-visibility-how-ai-is-moving-supply-chains-from-reactive-to-predictive/134819164"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B06-15-025",
+          "verification": "full",
+          "article_titles": [
+            "Beyond visibility: How AI is moving supply chains from reactive to predictive - supplychain.economictimes.indiatimes.com"
+          ],
+          "evidence_notes": {
+            "source_observation": "Kaynak örnek olarak OEM parça gecikmesi, stok ve üretim planının birleştirilmesini anlatıyor.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "Kaynak örnek olarak OEM parça gecikmesi, stok ve üretim planının birleştirilmesini anlatıyor.",
+            "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+          }
+        }
+      ],
+      "before_state": "Teslimat gecikmesi ancak üretim aksadığında fark ediliyor",
+      "after_state": "CSV BOM/stok/termin girdisi, stok tükenme tarihi, etkilenen siparişler ve alternatif senaryolar",
+      "why_now": "Economic Times, görünürlükten tahmine geçişin karar değeri yarattığını açıklıyor.",
+      "market_gap_hypothesis": "Tedarik görünürlüğü tek başına yetmiyor; gecikmenin üretim ve müşteri etkisini önceden görmek gerekiyor. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Türkiye",
+      "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı.",
+      "local_scope_evidence_hints": [
+        "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 160,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B06-15-025"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "Beyond visibility: How AI is moving supply chains from reactive to predictive - supplychain.economictimes.indiatimes.com"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "DATA_DELTA",
+        "BEHAVIOR_DELTA"
+      ],
+      "source_affected_workflow": "Parça stokları + teslim tarihi + üretim planı → gecikme senaryosu → aksiyon",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

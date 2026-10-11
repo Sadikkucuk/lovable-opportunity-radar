@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-ff017281b65b5a1f",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "ff017281b65b5a1feed77235e3cd1a1a9d3d7a3481947dfbbb7915094e9e715b",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-044",
+      "validation_index": 44,
+      "validator_assignment": "B",
+      "canonical_key": "machine-shops|rfq-quote-review|approval-desk",
+      "idea_name": "Machine shop RFQ approval desk",
+      "core_job": "Review RFQ feasibility and costing",
+      "target_customer": "Machine shops",
+      "buyer": "Sales engineering manager",
+      "product_mechanism": "Drawing intake and quote approval forms",
+      "triggering_article_ids": [
+        "8dc06047faf9ad37d7b933ec"
+      ],
+      "supporting_article_ids": [
+        "8dc06047faf9ad37d7b933ec"
+      ],
+      "canonical_source_urls": [
+        "https://technode.com/2026/10/09/eight-years-two-tech-booms-one-factory-problem-inside-black-lakes-bet-on-industrial-ai/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w3-20261010-002",
+          "verification": "full",
+          "article_titles": [
+            "Eight Years, Two Tech Booms, One Factory Problem: Inside Black Lake’s Bet on Industrial AI - TechNode"
+          ],
+          "evidence_notes": {
+            "source_fact": "Company claims of agent performance not independently tested",
+            "trakya_transferability_hypothesis": "Applicable to Trakya machine shops; no local buyer evidenced."
+          }
+        }
+      ],
+      "before_state": "Quoting depends on undocumented engineer knowledge",
+      "after_state": "Drawing intake and quote approval forms",
+      "why_now": "October 9 industrial AI deployment report",
+      "market_gap_hypothesis": "Black Lake introduced CAD-to-process and quotation agents for factory operations. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": "Applicable to Trakya machine shops; no local buyer evidenced.",
+      "local_scope_evidence_hints": [
+        "Applicable to Trakya machine shops; no local buyer evidenced."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 140,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w3-20261010-002"
+      ],
+      "source_worker_ids": [
+        3
+      ],
+      "source_article_titles": [
+        "Eight Years, Two Tech Booms, One Factory Problem: Inside Black Lake’s Bet on Industrial AI - TechNode"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "CAPABILITY_DELTA"
+      ],
+      "source_affected_workflow": "Industrial drawing-to-quotation",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

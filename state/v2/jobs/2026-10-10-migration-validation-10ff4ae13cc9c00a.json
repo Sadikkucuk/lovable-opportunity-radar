@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-10ff4ae13cc9c00a",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "10ff4ae13cc9c00af73097e2b48b49da1c19414c36f8304557d6b4d8f1ba18a5",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-031",
+      "validation_index": 31,
+      "validator_assignment": "A",
+      "canonical_key": "food-producers|log-water-activity-tests-and-corrective-actions|food-water-activity-qc-register",
+      "idea_name": "Food Water Activity QC Register",
+      "core_job": "Log water activity tests and corrective actions",
+      "target_customer": "food producers",
+      "buyer": "quality assurance manager",
+      "product_mechanism": "Food Water Activity QC Register web workflow: sample → reading → threshold → batch release",
+      "triggering_article_ids": [
+        "8ee508ab1a9cc6f5696d5a1c"
+      ],
+      "supporting_article_ids": [
+        "8ee508ab1a9cc6f5696d5a1c"
+      ],
+      "canonical_source_urls": [
+        "https://www.foodengineeringmag.com/articles/103965-addium-debuts-aqualab-5te"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w4-20261010-reconstructed-020",
+          "verification": "full",
+          "article_titles": [
+            "Addium Debuts AQUALAB 5TE - Food Engineering Magazine"
+          ],
+          "evidence_notes": {
+            "verification_gap": null,
+            "source_batch": 24,
+            "source_item_index": 7,
+            "trakya_transferability_hypothesis": "Potential transferable factory workflow in Trakya; local applicability unverified",
+            "verified_source_url": "https://www.foodengineeringmag.com/articles/103965-addium-debuts-aqualab-5te",
+            "verified_development": "Original Food Engineering article confirms Addium AQUALAB 5TE launch with water activity/moisture measurements and lot-level cloud audit features. Product already provides part of proposed workflow.",
+            "verification_scope": "Article event only; product-market fit, implementation costs and jurisdiction transfer not verified."
+          }
+        }
+      ],
+      "before_state": "Instrument measurements need lot-level traceability",
+      "after_state": "Food Water Activity QC Register web workflow: sample → reading → threshold → batch release",
+      "why_now": "Original Food Engineering article confirms Addium AQUALAB 5TE launch with water activity/moisture measurements and lot-level cloud audit features. Product already provides part of proposed workflow.",
+      "market_gap_hypothesis": "Original Food Engineering article confirms Addium AQUALAB 5TE launch with water activity/moisture measurements and lot-level cloud audit features. Product already provides part of proposed workflow. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": "Potential transferable factory workflow in Trakya; local applicability unverified",
+      "local_scope_evidence_hints": [
+        "Potential transferable factory workflow in Trakya; local applicability unverified"
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 25,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w4-20261010-reconstructed-020"
+      ],
+      "source_worker_ids": [
+        4
+      ],
+      "source_article_titles": [
+        "Addium Debuts AQUALAB 5TE - Food Engineering Magazine"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "DATA_DELTA"
+      ],
+      "source_affected_workflow": "sample → reading → threshold → batch release",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

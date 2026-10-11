@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-fc28432c902437a2",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "fc28432c902437a2ac73a02fcbbbaf0566121b3b05791bda625007452aed3e69",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-087",
+      "validation_index": 87,
+      "validator_assignment": "A",
+      "canonical_key": "veri-merkezi-proje-geliştiricileri|enerji-su-yerel-katkı-taahhütlerini-izlemek|taahhüt-sahibi-tarih-kanıt-url-ölçüm-csv-ve-raporlama-ekranı",
+      "idea_name": "CampusPromise Ledger — veri merkezi çevresel taahhüt izleme",
+      "core_job": "Enerji/su/yerel katkı taahhütlerini izlemek",
+      "target_customer": "Veri merkezi proje geliştiricileri",
+      "buyer": "ESG ve izin yöneticisi",
+      "product_mechanism": "Taahhüt sahibi, tarih, kanıt URL, ölçüm CSV ve raporlama ekranı",
+      "triggering_article_ids": [
+        "a133b28a4c6fa43780695dbe"
+      ],
+      "supporting_article_ids": [
+        "a133b28a4c6fa43780695dbe"
+      ],
+      "canonical_source_urls": [
+        "https://renewablesnow.com/news/sesterce-plans-eur-10bn-ai-campus-in-finland-with-renewables-pledge-1302739/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B06-18-031",
+          "verification": "full",
+          "article_titles": [
+            "Sesterce plans €10 billion AI computing campus in Finland - ET Datacenters"
+          ],
+          "evidence_notes": {
+            "source_observation": "Kaynak her 1 MW tüketim için yeni yenilenebilir kapasite hedefi ve on yıla varan süre tanımlıyor; gerçekleşmiş değil.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "Kaynak her 1 MW tüketim için yeni yenilenebilir kapasite hedefi ve on yıla varan süre tanımlıyor; gerçekleşmiş değil.",
+            "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+          }
+        }
+      ],
+      "before_state": "Taahhütler duyuruluyor ama teslim tarihleri dağınık",
+      "after_state": "Taahhüt sahibi, tarih, kanıt URL, ölçüm CSV ve raporlama ekranı",
+      "why_now": "Sesterce'nin yenilenebilir enerji eşleştirme vaadi izlenebilir hedef ihtiyacını gösterdi.",
+      "market_gap_hypothesis": "Kampüs planında yenilenebilir güç ve kapalı devre soğutma gibi taahhütler yer aldı. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı.",
+      "local_scope_evidence_hints": [
+        "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 120,
+      "history_match_key": "data-center-developer|prove-project-transparency|claim-provenance-permit-dashboard",
+      "history_match_reason": "Potential semantic match to history: Data-center transparency Çalışma Alanı.; requires strict customer+job+workflow check during validation.",
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B06-18-031"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "Sesterce plans €10 billion AI computing campus in Finland - ET Datacenters"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "STANDARDIZATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "source_affected_workflow": "Taahhüt → ölçüm periyodu → kanıt → bağımsız kontrol → kamu raporu",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

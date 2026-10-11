@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-36d4b46aad6bcd38",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "36d4b46aad6bcd38edc4e77191299f2e02fbf25a833e30bad7483cacd8abbd23",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-009",
+      "validation_index": 9,
+      "validator_assignment": "A",
+      "canonical_key": "aı-model-tedarikçileri-ve-satın-alan-kurumlar|model-sürümleri-için-güvenlik-kanıtını-standart-göstermek|model-sürüm-kartları-test-matrisi-bağlantı-kanıtı-ve-yayın-t",
+      "idea_name": "ModelSafetyCard Registry — model bazlı güvenlik açıklaması",
+      "core_job": "Model sürümleri için güvenlik kanıtını standart göstermek",
+      "target_customer": "AI model tedarikçileri ve satın alan kurumlar",
+      "buyer": "Model risk yöneticisi",
+      "product_mechanism": "Model sürüm kartları, test matrisi, bağlantı kanıtı ve yayın tarihi",
+      "triggering_article_ids": [
+        "693f45086fc8d34cb4451c5e"
+      ],
+      "supporting_article_ids": [
+        "693f45086fc8d34cb4451c5e"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/legal/litigation/china-ai-developers-publish-safety-tests-just-36-model-releases-report-finds-2026-10-09/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B05-40-023",
+          "verification": "full",
+          "article_titles": [
+            "China AI developers publish safety tests for just 3.6% of model releases, report finds - Reuters"
+          ],
+          "evidence_notes": {
+            "source_observation": "Reuters'ın aktardığı 857 model / 31 açıklama verisi kamuya açıklanan testlere ilişkindir; özel testlerin yapılmadığını kanıtlamaz.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "Reuters'ın aktardığı 857 model / 31 açıklama verisi kamuya açıklanan testlere ilişkindir; özel testlerin yapılmadığını kanıtlamaz.",
+            "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+          }
+        }
+      ],
+      "before_state": "Genel güvenlik beyanı sürüme özgü kanıt sunmuyor",
+      "after_state": "Model sürüm kartları, test matrisi, bağlantı kanıtı ve yayın tarihi",
+      "why_now": "Reuters, SemiAnalysis incelemesinde yalnızca %3,6 eşleşen açıklama bulduğunu aktardı.",
+      "market_gap_hypothesis": "857 modelin yalnızca 31'i için modelle eşleşen kamuya açık güvenlik testi bulundu. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı.",
+      "local_scope_evidence_hints": [
+        "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 115,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B05-40-023"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "China AI developers publish safety tests for just 3.6% of model releases, report finds - Reuters"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "DATA_DELTA",
+        "RISK_DELTA"
+      ],
+      "source_affected_workflow": "Model sürümü → test türü → kanıt URL → yayın zamanı → şeffaflık kartı",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

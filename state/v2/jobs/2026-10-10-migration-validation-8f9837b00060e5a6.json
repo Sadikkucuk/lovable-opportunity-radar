@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-8f9837b00060e5a6",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "8f9837b00060e5a646c90315385722e07fb5b3a2329db63854edf50bd698a1c8",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-008",
+      "validation_index": 8,
+      "validator_assignment": "B",
+      "canonical_key": "aı-ile-yazılım-geliştiren-ekipler|inceleme-darboğazını-ve-riskli-pr-ları-önceliklendirmek|github-csv-manuel-veri-aktarımıyla-bekleme-yaşı-değişiklik-s",
+      "idea_name": "PRReviewQueue — AI kod inceleme darboğazı görünürlüğü",
+      "core_job": "İnceleme darboğazını ve riskli PR'ları önceliklendirmek",
+      "target_customer": "AI ile yazılım geliştiren ekipler",
+      "buyer": "Mühendislik yöneticisi",
+      "product_mechanism": "GitHub CSV/manuel veri aktarımıyla bekleme yaşı, değişiklik sayısı, sahiplik ve SLA panosu",
+      "triggering_article_ids": [
+        "74393117343bec809e90ee1d"
+      ],
+      "supporting_article_ids": [
+        "74393117343bec809e90ee1d"
+      ],
+      "canonical_source_urls": [
+        "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B02-15-004",
+          "verification": "full",
+          "article_titles": [
+            "AI coding agents generate more code, but not more software - Ars Technica"
+          ],
+          "evidence_notes": {
+            "source_observation": "Ars Technica, Chen ve Stratton araştırmasında kod üretimi artarken issue çözümünde anlamlı artış bulunmadığını aktardı.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "Ars Technica, Chen ve Stratton araştırmasında kod üretimi artarken issue çözümünde anlamlı artış bulunmadığını aktardı."
+          }
+        }
+      ],
+      "before_state": "Artan PR sayısı gözden geçirme kapasitesini aşıyor",
+      "after_state": "GitHub CSV/manuel veri aktarımıyla bekleme yaşı, değişiklik sayısı, sahiplik ve SLA panosu",
+      "why_now": "700+ firmaya dayanan çalışma inceleme süresinde ortalama %49 artış bildiriyor.",
+      "market_gap_hypothesis": "AI coding agents daha fazla kod üretirken PR inceleme süresi artıyor. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 120,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B02-15-004"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "AI coding agents generate more code, but not more software - Ars Technica"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "LABOR_DELTA",
+        "SPEED_DELTA"
+      ],
+      "source_affected_workflow": "Pull request açılması → inceleme → revizyon → merge",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

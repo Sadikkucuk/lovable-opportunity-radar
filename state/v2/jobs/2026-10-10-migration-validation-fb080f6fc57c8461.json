@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-fb080f6fc57c8461",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "fb080f6fc57c846138aaed608c64dac212b203e24234fa966a97cf5604a2d49b",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-050",
+      "validation_index": 50,
+      "validator_assignment": "B",
+      "canonical_key": "municipal-procurement-teams|evaluate-ai-surveillance-vendor-privacy-and-procurement-risk|surveillance-vendor-risk-tracker",
+      "idea_name": "Surveillance Vendor Risk Tracker",
+      "core_job": "Evaluate AI surveillance vendor privacy and procurement risk",
+      "target_customer": "municipal procurement teams",
+      "buyer": "privacy officer",
+      "product_mechanism": "Surveillance Vendor Risk Tracker web workflow: vendor intake → privacy checklist → remediation → approval",
+      "triggering_article_ids": [
+        "347d9a6baef631425acf5dcf"
+      ],
+      "supporting_article_ids": [
+        "347d9a6baef631425acf5dcf"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/business/ai-surveillance-startup-flock-safety-cut-several-hundred-jobs-amid-backlash-2026-10-09/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w4-20261010-reconstructed-008",
+          "verification": "full",
+          "article_titles": [
+            "EXCLUSIVE: AI surveillance startup Flock Safety to cut several hundred jobs amid backlash, sources say - Reuters"
+          ],
+          "evidence_notes": {
+            "verification_gap": null,
+            "source_batch": 21,
+            "source_item_index": 11,
+            "trakya_transferability_hypothesis": null,
+            "original_article_checked": true,
+            "verified_source_url": "https://www.reuters.com/business/ai-surveillance-startup-flock-safety-cut-several-hundred-jobs-amid-backlash-2026-10-09/",
+            "verified_development": "Reuters reported plans for workforce cuts at Flock Safety amid public backlash over surveillance; report is not itself a procurement regulation.",
+            "verification_scope": "Article development verified; proposed SaaS workflow remains an inference requiring customer validation."
+          }
+        }
+      ],
+      "before_state": "Public backlash increases need for documented oversight",
+      "after_state": "Surveillance Vendor Risk Tracker web workflow: vendor intake → privacy checklist → remediation → approval",
+      "why_now": "Reuters reported plans for workforce cuts at Flock Safety amid public backlash over surveillance; report is not itself a procurement regulation.",
+      "market_gap_hypothesis": "Reuters reported plans for workforce cuts at Flock Safety amid public backlash over surveillance; report is not itself a procurement regulation. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 25,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w4-20261010-reconstructed-008"
+      ],
+      "source_worker_ids": [
+        4
+      ],
+      "source_article_titles": [
+        "EXCLUSIVE: AI surveillance startup Flock Safety to cut several hundred jobs amid backlash, sources say - Reuters"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "RISK_DELTA"
+      ],
+      "source_affected_workflow": "vendor intake → privacy checklist → remediation → approval",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

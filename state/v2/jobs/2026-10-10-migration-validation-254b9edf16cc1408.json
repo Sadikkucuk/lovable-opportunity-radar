@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-254b9edf16cc1408",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "254b9edf16cc1408f1ec7028d285db6decba0ef4b29dac4d025152d56b3eeb69",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-001",
+      "validation_index": 1,
+      "validator_assignment": "A",
+      "canonical_key": "ab-de-hizmet-veren-aı-geliştiricileri|düzenleyici-bilgi-taleplerini-kanıtlı-yanıtlamak|soru-cevap-matrisi-dosya-sürümü-sahiplik-son-tarih-ve-dışa-a",
+      "idea_name": "AIRegulator Dossier — model uyum bilgi talebi dosyası",
+      "core_job": "Düzenleyici bilgi taleplerini kanıtlı yanıtlamak",
+      "target_customer": "AB'de hizmet veren AI geliştiricileri",
+      "buyer": "Uyum yöneticisi",
+      "product_mechanism": "Soru-cevap matrisi, dosya sürümü, sahiplik, son tarih ve dışa aktarım",
+      "triggering_article_ids": [
+        "6836072db54e5887c51939a6"
+      ],
+      "supporting_article_ids": [
+        "6836072db54e5887c51939a6"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/world/eu-tech-chief-says-bloc-well-equipped-fend-off-rogue-ai-risk-2026-10-09/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B03-21-018",
+          "verification": "full",
+          "article_titles": [
+            "EU tech chief says bloc 'well equipped' to fend off rogue AI risk - Reuters"
+          ],
+          "evidence_notes": {
+            "source_observation": "AB AI Act bağlamında bilgi talepleri haberleştirildi; hukuki uygunluk otomatik sertifikası değildir.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "AB AI Act bağlamında bilgi talepleri haberleştirildi; hukuki uygunluk otomatik sertifikası değildir."
+          }
+        }
+      ],
+      "before_state": "Model değerlendirme ve politika belgeleri dağınık",
+      "after_state": "Soru-cevap matrisi, dosya sürümü, sahiplik, son tarih ve dışa aktarım",
+      "why_now": "Reuters, Komisyonun 30'dan fazla şirkete bilgi talebi gönderdiğini bildirdi.",
+      "market_gap_hypothesis": "AB Komisyonu çok sayıda AI şirketinden güvenlik ve şeffaflık bilgisi istedi. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 140,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B03-21-018"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "EU tech chief says bloc 'well equipped' to fend off rogue AI risk - Reuters"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "REGULATION_DELTA",
+        "RISK_DELTA"
+      ],
+      "source_affected_workflow": "Regülatör sorusu → kanıt sahibi → doküman → onay → yanıt paketi",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-12d88933edd0f91b",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "12d88933edd0f91b920dcf365800a35e7032b52a9597853beaf4991f03573288",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-010",
+      "validation_index": 10,
+      "validator_assignment": "B",
+      "canonical_key": "aı-ürün-ve-güvenlik-ekipleri|aı-ajan-olaylarını-tarih-saat-kanıtlarıyla-takip-etmek|zaman-damgalı-olay-defteri-durum-geçişleri-hatırlatma-ve-dış",
+      "idea_name": "AgentIncidentClock — olay tespit ve bildirim süre çizelgesi",
+      "core_job": "AI ajan olaylarını tarih/saat kanıtlarıyla takip etmek",
+      "target_customer": "AI ürün ve güvenlik ekipleri",
+      "buyer": "Uyum sorumlusu",
+      "product_mechanism": "Zaman damgalı olay defteri, durum geçişleri, hatırlatma ve dışa aktarım",
+      "triggering_article_ids": [
+        "e82d0717cd56791d911ebcfe"
+      ],
+      "supporting_article_ids": [
+        "e82d0717cd56791d911ebcfe",
+        "ec645161ce64942e9c3150d6",
+        "6836072db54e5887c51939a6"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/world/us/anthropic-ai-model-submits-false-homicide-tip-police-website-2026-10-09/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B01-40-002",
+          "verification": "full",
+          "article_titles": [
+            "Anthropic AI model submits false homicide tip to Philadelphia police website - Reuters",
+            "特朗普政府实施新要求：AI 公司发生安全事件后，须立即上报 - IT之家",
+            "EU tech chief says bloc 'well equipped' to fend off rogue AI risk - Reuters"
+          ],
+          "evidence_notes": {
+            "source_observation": "Reuters haberi olayın tespit ve kurumlara bildirim zamanlarını aktarıyor; tüm firmalar için tek bir yasal süre iddiası yoktur.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "Reuters haberi olayın tespit ve kurumlara bildirim zamanlarını aktarıyor; tüm firmalar için tek bir yasal süre iddiası yoktur."
+          }
+        }
+      ],
+      "before_state": "Dağınık Slack/e-posta bildirimleri nedeniyle olayın kime ne zaman aktarıldığı belirsiz",
+      "after_state": "Zaman damgalı olay defteri, durum geçişleri, hatırlatma ve dışa aktarım",
+      "why_now": "Gecikmiş olay bildirimi kamuya yansıdı; yasal yükümlülükler ülkeye göre ayrıca doğrulanmalı.",
+      "market_gap_hypothesis": "Modelin yanlış eylemi ile olayın keşfi ve bildirim arasında haftalar geçti. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 110,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B01-40-002"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "Anthropic AI model submits false homicide tip to Philadelphia police website - Reuters",
+        "特朗普政府实施新要求：AI 公司发生安全事件后，须立即上报 - IT之家",
+        "EU tech chief says bloc 'well equipped' to fend off rogue AI risk - Reuters"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "RISK_DELTA",
+        "REGULATION_DELTA"
+      ],
+      "source_affected_workflow": "Ajan olayı → ilk tespit → sorumlu atama → bildirim süresi → kapanış kanıtı",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

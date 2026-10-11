@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-a27671e2cbcce85b",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "a27671e2cbcce85bff25b8fc9839ef808c14f40192a9e830a2013132b1b4978f",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-086",
+      "validation_index": 86,
+      "validator_assignment": "B",
+      "canonical_key": "uzay-sektörü-eklemeli-imalat-tedarikçileri|parça-yeterlilik-kanıtını-sürümlü-ve-izlenebilir-tutmak|parça-lotu-test-sonucu-belge-hash-i-onay-matrisi-ve-kanıt-ma",
+      "idea_name": "SpacePart EvidenceChain — uzay 3B baskı parça yeterlilik dosyası",
+      "core_job": "Parça yeterlilik kanıtını sürümlü ve izlenebilir tutmak",
+      "target_customer": "Uzay sektörü eklemeli imalat tedarikçileri",
+      "buyer": "Kalite/yeterlilik müdürü",
+      "product_mechanism": "Parça lotu, test sonucu, belge hash'i, onay matrisi ve kanıt manifesti",
+      "triggering_article_ids": [
+        "713d43b57a52831101dfc818"
+      ],
+      "supporting_article_ids": [
+        "713d43b57a52831101dfc818"
+      ],
+      "canonical_source_urls": [
+        "https://www.amsight.de/news/amsight-to-lead-esa-first-project-to-digitalise-qualification-of-3d-printed-space-components"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B06-23-027",
+          "verification": "full",
+          "article_titles": [
+            "amsight to Lead ESA First! Project to Digitalize Qualification of 3D-Printed Space Components - Quality Magazine"
+          ],
+          "evidence_notes": {
+            "source_observation": "amsight'ın resmi açıklaması DIQAM'ın planlanan dijital yeterlilik çerçevesini tanımlıyor; sistemin tamamlandığı iddia edilmiyor.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "MVP ESA sertifikasyonu sağlamaz; belge hazırlama ve izlenebilirlik sağlar.",
+            "fact": "amsight'ın resmi açıklaması DIQAM'ın planlanan dijital yeterlilik çerçevesini tanımlıyor; sistemin tamamlandığı iddia edilmiyor.",
+            "validation": "MVP ESA sertifikasyonu sağlamaz; belge hazırlama ve izlenebilirlik sağlar.",
+            "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+          }
+        }
+      ],
+      "before_state": "Üretim/test raporları farklı sistem ve PDF'lerde",
+      "after_state": "Parça lotu, test sonucu, belge hash'i, onay matrisi ve kanıt manifesti",
+      "why_now": "amsight, ESA FIRST! kapsamında Eylül 2026'da başlayan 12 aylık projeyi duyurdu.",
+      "market_gap_hypothesis": "ESA destekli DIQAM projesi uzay parçalarının üretim/test kanıtlarını dijital dosyada birleştirmeyi hedefliyor. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Evren",
+      "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı.",
+      "local_scope_evidence_hints": [
+        "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 180,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B06-23-027"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "amsight to Lead ESA First! Project to Digitalize Qualification of 3D-Printed Space Components - Quality Magazine"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "STANDARDIZATION_DELTA",
+        "DATA_DELTA"
+      ],
+      "source_affected_workflow": "Parça kimliği → malzeme/üretim parametreleri → test raporu → onay dosyası",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

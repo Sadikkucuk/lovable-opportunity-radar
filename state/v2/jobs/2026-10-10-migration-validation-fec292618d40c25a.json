@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-fec292618d40c25a",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "fec292618d40c25a2782b6eb2f1a06311442cb14c4495ec1bcd575016261e33b",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-084",
+      "validation_index": 84,
+      "validator_assignment": "B",
+      "canonical_key": "us-mvnos-and-telecom-resellers|track-fcc-authorizations-robocall-filings-and-security-attestations|fcc-obligation-matrix-filing-calendar-partner-attestation-and-evidence-vault",
+      "idea_name": "MVNO FCC Filing Readiness Ledger",
+      "core_job": "Track FCC authorizations, robocall filings and security attestations",
+      "target_customer": "US MVNOs and telecom resellers",
+      "buyer": "Telecom regulatory compliance officer",
+      "product_mechanism": "FCC obligation matrix, filing calendar, partner attestation and evidence vault",
+      "triggering_article_ids": [
+        "492c3461e9ad9a92b75a7ebc"
+      ],
+      "supporting_article_ids": [
+        "492c3461e9ad9a92b75a7ebc"
+      ],
+      "canonical_source_urls": [
+        "https://arstechnica.com/tech-policy/2026/10/trump-mobile-doesnt-seem-to-have-fcc-authorization-for-phone-service-senator-says/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w4-20261010-verified-addition-005",
+          "verification": "full",
+          "article_titles": [
+            "Trump Mobile hack and apparent lack of FCC authorization raise security alarms - Ars Technica"
+          ],
+          "evidence_notes": {
+            "source_verification": "Original publisher article or full regulation text located; not a full competitor/market feasibility check.",
+            "source_publication_date": "2026-10-08/09",
+            "zero_external_cost_gap": "Data access, integrations, and legal review are not established as free.",
+            "jurisdiction_warning": "US-specific rules; scope_hint denotes online distribution only"
+          }
+        }
+      ],
+      "before_state": "Multiple filings, third-party providers and KYC evidence are fragmented",
+      "after_state": "FCC obligation matrix, filing calendar, partner attestation and evidence vault",
+      "why_now": "Source development creates a timely trigger; date and jurisdiction must be verified before commercialization.",
+      "market_gap_hypothesis": "Verified 2026 source describes concrete regulation change; proposed SaaS workflow is an inference, not a launched product. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Manual/CSV data entry, browser-native processing and free-tier storage are potential substitutes; free-tier production sufficiency and external cash=0 remain UNVERIFIED; no paid dependencies may be assumed.",
+      "estimated_lovable_credits": 25,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w4-20261010-verified-addition-005"
+      ],
+      "source_worker_ids": [
+        4
+      ],
+      "source_article_titles": [
+        "Trump Mobile hack and apparent lack of FCC authorization raise security alarms - Ars Technica"
+      ],
+      "source_zero_cost_feasibility": "doubtful",
+      "source_delta_types": [
+        "REGULATION_DELTA"
+      ],
+      "source_affected_workflow": "Input evidence → track fcc authorizations, robocall filings and security attestations → exception decision → documented output",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

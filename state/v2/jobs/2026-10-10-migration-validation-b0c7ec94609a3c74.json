@@ -1,0 +1,93 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-b0c7ec94609a3c74",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "b0c7ec94609a3c743696536c10177055a847077bf515fceb4c766c9097c5c501",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-012",
+      "validation_index": 12,
+      "validator_assignment": "B",
+      "canonical_key": "birleşik-krallık-startup-ik-ekipleri|yeni-işe-alımlarda-rekabet-yasağı-ve-geçiş-kontrolünü-izleme|maddelerin-manuel-sınıflandırılması-tarihli-politika-kontrol",
+      "idea_name": "NonCompete Transition Map — işe geçiş sözleşme kontrol listesi",
+      "core_job": "Yeni işe alımlarda rekabet yasağı ve geçiş kontrolünü izlemek",
+      "target_customer": "Birleşik Krallık startup İK ekipleri",
+      "buyer": "İK yöneticisi",
+      "product_mechanism": "Maddelerin manuel sınıflandırılması, tarihli politika kontrolü, hukuk inceleme kuyruğu",
+      "triggering_article_ids": [
+        "9dc8394dfe28a0cc6a480e6b"
+      ],
+      "supporting_article_ids": [
+        "9dc8394dfe28a0cc6a480e6b"
+      ],
+      "canonical_source_urls": [
+        "https://tech.eu/2026/10/09/uk-o-ban-non-compete-clauses-marking-boon-for-startup-and-scaleups//",
+        "https://tech.eu/2026/10/09/uk-o-ban-non-compete-clauses-marking-boon-for-startup-and-scaleups/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B06-34-028",
+          "verification": "full",
+          "article_titles": [
+            "UK to ban non-compete clauses, marking boon for startups and scaleups - Tech.eu"
+          ],
+          "evidence_notes": {
+            "source_observation": "9 Ekim Tech.eu haberinde yasama planı duyuruldu; uygulama kapsamı henüz kesinleşmedi.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "9 Ekim Tech.eu haberinde yasama planı duyuruldu; uygulama kapsamı henüz kesinleşmedi."
+          }
+        },
+        {
+          "raw_id": "w2-20261010-001",
+          "verification": "full",
+          "article_titles": [
+            "UK to ban non-compete clauses, marking boon for startup and scaleups - Tech.eu"
+          ],
+          "evidence_notes": {
+            "source_evidence": "Tech.eu Oct 9 report plus UK government 2025 working paper: proposed reform, not enacted.",
+            "product_is_hypothesis": true,
+            "trakya_transferability_hypothesis": null
+          }
+        }
+      ],
+      "before_state": "Mevzuat değişikliği öncesinde sözleşme maddeleri ve tarihler karışabiliyor",
+      "after_state": "Maddelerin manuel sınıflandırılması, tarihli politika kontrolü, hukuk inceleme kuyruğu",
+      "why_now": "Tech.eu, başbakanın yasa değişikliği niyetini aktardı; yürürlüğe girmiş yasa değil.",
+      "market_gap_hypothesis": "Birleşik Krallık hükümeti startup/scaleup çalışanları için rekabet yasağı sınırlamasını kaldırma yönünde yasama planı açıkladı. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 105,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B06-34-028",
+        "w2-20261010-001"
+      ],
+      "source_worker_ids": [
+        1,
+        2
+      ],
+      "source_article_titles": [
+        "UK to ban non-compete clauses, marking boon for startups and scaleups - Tech.eu",
+        "UK to ban non-compete clauses, marking boon for startup and scaleups - Tech.eu"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "REGULATION_DELTA",
+        "LABOR_DELTA"
+      ],
+      "source_affected_workflow": "Sözleşme maddesi → kısıt türü → yürürlük durumu → hukuk danışmanı kontrolü",
+      "merge_note": "Merged W1 and W2 UK non-compete HR transition concepts as same customer, job and workflow."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

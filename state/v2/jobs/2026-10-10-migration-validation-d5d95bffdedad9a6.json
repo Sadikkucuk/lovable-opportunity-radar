@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-d5d95bffdedad9a6",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "d5d95bffdedad9a6d39c2f9e85fd3bdfa7a4c03672fb1886ea4d15af780849e0",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-004",
+      "validation_index": 4,
+      "validator_assignment": "B",
+      "canonical_key": "application-security-teams|prioritize-and-track-ai-discovered-vulnerabilities-through-remediation|ai-vulnerability-remediation-queue",
+      "idea_name": "AI Vulnerability Remediation Queue",
+      "core_job": "Prioritize and track AI-discovered vulnerabilities through remediation",
+      "target_customer": "application security teams",
+      "buyer": "AppSec lead",
+      "product_mechanism": "AI Vulnerability Remediation Queue web workflow: finding import → dedupe → priority → owner → closure",
+      "triggering_article_ids": [
+        "230301eb5d39c280d2a0c7e0"
+      ],
+      "supporting_article_ids": [
+        "230301eb5d39c280d2a0c7e0"
+      ],
+      "canonical_source_urls": [
+        "https://red.anthropic.com/2026/cvd/snapshots/2026-08-26-1155/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w4-20261010-reconstructed-017",
+          "verification": "corroborated",
+          "article_titles": [
+            "AIが発見した脆弱性は2.6万件 修正済みはわずか421件 - 日経クロステック（xTECH）"
+          ],
+          "evidence_notes": {
+            "verification_gap": "Original Nikkei article not accessed; underlying Anthropic primary disclosure dataset accessed. This satisfies primary-event corroboration, not original publisher full-text review.",
+            "source_batch": 23,
+            "source_item_index": 3,
+            "trakya_transferability_hypothesis": null,
+            "verified_source_url": "https://red.anthropic.com/2026/cvd/snapshots/2026-08-26-1155/",
+            "verified_development": "Anthropic original disclosure dashboard as of 26 August 2026 records 26,153 discovered candidate findings, 2,300 disclosed, and 421 patched upstream. Candidates are not all verified vulnerabilities. Bottleneck is human triage and patching.",
+            "verification_scope": "Original primary data from vulnerability disclosure operator; Nikkei's headline itself is not directly accessible.",
+            "source_primary_document_verified": true
+          }
+        }
+      ],
+      "before_state": "Finding volume can outpace patch capacity",
+      "after_state": "AI Vulnerability Remediation Queue web workflow: finding import → dedupe → priority → owner → closure",
+      "why_now": "Existing source development surfaced in October 2026 feed; do not misrepresent publication date.",
+      "market_gap_hypothesis": "Anthropic original disclosure dashboard as of 26 August 2026 records 26,153 discovered candidate findings, 2,300 disclosed, and 421 patched upstream. Candidates are not all verified vulnerabilities. Bottleneck is human triage and patching. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 25,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w4-20261010-reconstructed-017"
+      ],
+      "source_worker_ids": [
+        4
+      ],
+      "source_article_titles": [
+        "AIが発見した脆弱性は2.6万件 修正済みはわずか421件 - 日経クロステック（xTECH）"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "RISK_DELTA"
+      ],
+      "source_affected_workflow": "finding import → dedupe → priority → owner → closure",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

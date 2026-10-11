@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-b23488f208a3feb1",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "b23488f208a3feb155827d1cb07bb465eb7bf2443011bdcc8fd4e61db8cbf8e0",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-055",
+      "validation_index": 55,
+      "validator_assignment": "A",
+      "canonical_key": "orta-ölçekli-üretim-tesisleri|tekrarlayan-kalite-kusurlarını-makine-vardiya-ve-lota-göre-b|kusur-taksonomisi-csv-import-filtreli-geçmiş-ve-tekrar-sıklı",
+      "idea_name": "DefectMemory — tekrarlayan kusur arşivi",
+      "core_job": "Tekrarlayan kalite kusurlarını makine, vardiya ve lota göre bulmak",
+      "target_customer": "Orta ölçekli üretim tesisleri",
+      "buyer": "Kalite müdürü",
+      "product_mechanism": "Kusur taksonomisi, CSV import, filtreli geçmiş ve tekrar sıklığı analizi",
+      "triggering_article_ids": [
+        "5d694653e6870cab28d4227e"
+      ],
+      "supporting_article_ids": [
+        "5d694653e6870cab28d4227e"
+      ],
+      "canonical_source_urls": [
+        "https://www.qualitymag.com/articles/99985-why-manufacturers-need-better-inspection-history-not-just-more-quality-data"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B03-27-014",
+          "verification": "full",
+          "article_titles": [
+            "Why Manufacturers Need Better Inspection History, Not Just More Quality Data - Quality Magazine"
+          ],
+          "evidence_notes": {
+            "source_observation": "Quality Magazine 9 Ekim yazısı muayene, bakım ve düzeltici faaliyet geçmişinin birlikte incelenmesini öneriyor.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "Quality Magazine 9 Ekim yazısı muayene, bakım ve düzeltici faaliyet geçmişinin birlikte incelenmesini öneriyor.",
+            "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+          }
+        }
+      ],
+      "before_state": "PDF/Excel kayıtları birbirine bağlanamıyor",
+      "after_state": "Kusur taksonomisi, CSV import, filtreli geçmiş ve tekrar sıklığı analizi",
+      "why_now": "Quality Magazine, bağlı denetim geçmişinin kök neden araştırmasını kolaylaştırdığını açıkladı.",
+      "market_gap_hypothesis": "Üretimde kalite ve bakım kayıtları ayrı tutulunca tekrar eden kusurlar görünmez kalıyor. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Türkiye",
+      "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı.",
+      "local_scope_evidence_hints": [
+        "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 145,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B03-27-014"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "Why Manufacturers Need Better Inspection History, Not Just More Quality Data - Quality Magazine"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "DATA_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "source_affected_workflow": "Muayene → kusur kodu → makine/lot → önceki kayıt eşleştirme → trend",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-80b09b7af4f741dc",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "80b09b7af4f741dc47faca0d7891053c577f3d0d31699ab1343d653d96963bd8",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-085",
+      "validation_index": 85,
+      "validator_assignment": "A",
+      "canonical_key": "us-trucking-carriers-in-pilot|plan-pilot-rest-schedules-without-breaching-applicable-limits|pilot-eligibility-configurable-rest-schedule-calculator-and-audit-log",
+      "idea_name": "Sleeper Pilot Compliance Planner",
+      "core_job": "Plan pilot rest schedules without breaching applicable limits",
+      "target_customer": "US trucking carriers in pilot",
+      "buyer": "fleet compliance manager",
+      "product_mechanism": "Pilot eligibility, configurable rest schedule calculator and audit log",
+      "triggering_article_ids": [
+        "c372cba19f13496fc28ffab4"
+      ],
+      "supporting_article_ids": [
+        "c372cba19f13496fc28ffab4"
+      ],
+      "canonical_source_urls": [
+        "https://www.fmcsa.dot.gov/newsroom/fmcsa-advances-hours-service-pilot-programs-americas-truck-drivers"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w4-20261010-recovered-003",
+          "verification": "full",
+          "article_titles": [
+            "FMCSA split sleeper berth pilot program moves closer to launch - FreightWaves"
+          ],
+          "evidence_notes": {
+            "recovery_note": "Reconstructed and corroborated from public source; does not claim original 29-item ledger recovered",
+            "trakya_transferability_hypothesis": null,
+            "scope_correction": "US federal pilot only; Dünya is cross-border distribution potential, not global applicability of the rule."
+          }
+        }
+      ],
+      "before_state": "Pilot alternatives complicate manual duty-time planning",
+      "after_state": "Pilot eligibility, configurable rest schedule calculator and audit log",
+      "why_now": "FMCSA is testing more flexible sleeper berth configurations for participating drivers",
+      "market_gap_hypothesis": "FMCSA is testing more flexible sleeper berth configurations for participating drivers Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 25,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w4-20261010-recovered-003"
+      ],
+      "source_worker_ids": [
+        4
+      ],
+      "source_article_titles": [
+        "FMCSA split sleeper berth pilot program moves closer to launch - FreightWaves"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "REGULATION_DELTA"
+      ],
+      "source_affected_workflow": "driver rest schedule → pilot eligibility → split time calculation → evidence export",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

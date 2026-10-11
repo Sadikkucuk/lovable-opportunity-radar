@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-c4aba21549e2a6e5",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "c4aba21549e2a6e56181b7ea28e6a74fb4111f7e43320fb0870c582578d1847c",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-040",
+      "validation_index": 40,
+      "validator_assignment": "B",
+      "canonical_key": "kobi-üretici-ve-dağıtıcılar|stok-kararlarını-açıklanabilir-ve-izlenebilir-kılmak|kural-tabanlı-stok-eşiği-karar-günlüğü-onay-ve-tedarikçi-aks",
+      "idea_name": "InventoryDecision Log — stok karar gerekçesi",
+      "core_job": "Stok kararlarını açıklanabilir ve izlenebilir kılmak",
+      "target_customer": "KOBİ üretici ve dağıtıcılar",
+      "buyer": "Satın alma müdürü",
+      "product_mechanism": "Kural tabanlı stok eşiği, karar günlüğü, onay ve tedarikçi aksiyonu",
+      "triggering_article_ids": [
+        "c0b8f7895c297f5a3aa76cd9"
+      ],
+      "supporting_article_ids": [
+        "c0b8f7895c297f5a3aa76cd9"
+      ],
+      "canonical_source_urls": [
+        "https://www.packworld.com/trends/logistics-supply-chain/product/22976144/stockiq-technologies-ai-supply-chain-intelligence-agent"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B03-19-017",
+          "verification": "full",
+          "article_titles": [
+            "AI Supply Chain Intelligence Agent From: StockIQ Technologies - Packaging World"
+          ],
+          "evidence_notes": {
+            "source_observation": "Packaging World'de tedarikçi kaynaklı lansman yazısı; etkinlik/performans iddiaları bağımsız doğrulanmış değildir.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "Packaging World'de tedarikçi kaynaklı lansman yazısı; etkinlik/performans iddiaları bağımsız doğrulanmış değildir."
+          }
+        }
+      ],
+      "before_state": "Sipariş gerekçeleri e-posta ve Excel arasında kayboluyor",
+      "after_state": "Kural tabanlı stok eşiği, karar günlüğü, onay ve tedarikçi aksiyonu",
+      "why_now": "StockIQ Edison lansmanı stok kararlarının veri bağlamıyla sunulması ihtiyacını gösterdi.",
+      "market_gap_hypothesis": "Tedarik yazılımı, stok anomalilerini karar ve aksiyonla ilişkilendiren ajan duyurdu. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Türkiye",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 125,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B03-19-017"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "AI Supply Chain Intelligence Agent From: StockIQ Technologies - Packaging World"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "CAPABILITY_DELTA",
+        "DATA_DELTA"
+      ],
+      "source_affected_workflow": "Stok CSV → istisna → öneri gerekçesi → satın alma kararı",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

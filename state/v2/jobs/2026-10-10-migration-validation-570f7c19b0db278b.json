@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-570f7c19b0db278b",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "570f7c19b0db278b33c57b858cedf2a216675c64004d696faebd070d98596e83",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-072",
+      "validation_index": 72,
+      "validator_assignment": "B",
+      "canonical_key": "soğuk-zincir-lojistik-operatörleri|araçtan-araca-aktarımı-belgelemek|qr-sevkiyat-kimliği-fotoğraflı-teslim-formu-çift-imza-ve-sap",
+      "idea_name": "TransferCustody — yük aktarma tutanağı",
+      "core_job": "Araçtan araca aktarımı belgelemek",
+      "target_customer": "Soğuk zincir lojistik operatörleri",
+      "buyer": "Depo ve sevkiyat müdürü",
+      "product_mechanism": "QR sevkiyat kimliği, fotoğraflı teslim formu, çift imza ve sapma kaydı",
+      "triggering_article_ids": [
+        "2b8eb4171290264f94234384"
+      ],
+      "supporting_article_ids": [
+        "2b8eb4171290264f94234384"
+      ],
+      "canonical_source_urls": [
+        "https://www.freightwaves.com/news/fake-freight-broker-redirects-273k-seafood-shipment-in-new-jersey-cargo-theft-attempt"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B05-09-022",
+          "verification": "full",
+          "article_titles": [
+            "Fake freight broker redirects $273K seafood shipment in New Jersey cargo theft attempt - FreightWaves"
+          ],
+          "evidence_notes": {
+            "source_observation": "FreightWaves, iki şüphelinin paletleri ikinci araca aktarmaya başladığını aktardı.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "FreightWaves, iki şüphelinin paletleri ikinci araca aktarmaya başladığını aktardı.",
+            "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+          }
+        }
+      ],
+      "before_state": "Ara transferde palet sayısı, konum ve yetki kanıtı eksik",
+      "after_state": "QR sevkiyat kimliği, fotoğraflı teslim formu, çift imza ve sapma kaydı",
+      "why_now": "Olay, aktarım noktasının dolandırıcılık için kritik kontrol olduğunu gösterdi.",
+      "market_gap_hypothesis": "Dolandırıcılık girişiminde ürünler yetkisiz bir küçük kamyona aktarılmaya başlanmıştı. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Türkiye",
+      "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı.",
+      "local_scope_evidence_hints": [
+        "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 125,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B05-09-022"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "Fake freight broker redirects $273K seafood shipment in New Jersey cargo theft attempt - FreightWaves"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "RISK_DELTA",
+        "STANDARDIZATION_DELTA"
+      ],
+      "source_affected_workflow": "Araç/şoför doğrulama → palet sayımı → fotoğraf → iki taraf onayı",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

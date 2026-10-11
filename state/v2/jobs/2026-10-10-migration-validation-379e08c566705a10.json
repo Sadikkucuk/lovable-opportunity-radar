@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-379e08c566705a10",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "379e08c566705a108882ad6823b9729fb53cb7fdd539296e60ed15eb0a4286d0",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-083",
+      "validation_index": 83,
+      "validator_assignment": "A",
+      "canonical_key": "us-local-government-surveillance-oversight-teams|audit-plate-reader-access-stop-justification-and-retention|access-purpose-attestations-retention-checklist-stop-evidence-review-and-audit-export",
+      "idea_name": "ALPR Access Accountability Ledger",
+      "core_job": "Audit plate-reader access, stop justification and retention",
+      "target_customer": "US local government surveillance oversight teams",
+      "buyer": "Civil liberties compliance officer",
+      "product_mechanism": "Access-purpose attestations, retention checklist, stop-evidence review and audit export",
+      "triggering_article_ids": [
+        "68cf2e708e2210021a648c19"
+      ],
+      "supporting_article_ids": [
+        "68cf2e708e2210021a648c19"
+      ],
+      "canonical_source_urls": [
+        "https://arstechnica.com/tech-policy/2026/10/driver-wins-76-after-alpr-led-to-bogus-traffic-stop-drug-searches/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w4-20261010-verified-addition-007",
+          "verification": "full",
+          "article_titles": [
+            "Driver wins $76 after ALPR led to bogus traffic stop, drug searches - Ars Technica"
+          ],
+          "evidence_notes": {
+            "source_verification": "Original publisher article or full regulation text located; not a full competitor/market feasibility check.",
+            "source_publication_date": "2026-10-08/09",
+            "zero_external_cost_gap": "Data access, integrations, and legal review are not established as free.",
+            "jurisdiction_warning": "US-specific rules; scope_hint denotes online distribution only"
+          }
+        }
+      ],
+      "before_state": "ALPR-derived tips can lack documented lawful purpose and review",
+      "after_state": "Access-purpose attestations, retention checklist, stop-evidence review and audit export",
+      "why_now": "Source development creates a timely trigger; date and jurisdiction must be verified before commercialization.",
+      "market_gap_hypothesis": "Verified 2026 source describes concrete risk change; proposed SaaS workflow is an inference, not a launched product. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Manual/CSV data entry, browser-native processing and free-tier storage are potential substitutes; free-tier production sufficiency and external cash=0 remain UNVERIFIED; no paid dependencies may be assumed.",
+      "estimated_lovable_credits": 25,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w4-20261010-verified-addition-007"
+      ],
+      "source_worker_ids": [
+        4
+      ],
+      "source_article_titles": [
+        "Driver wins $76 after ALPR led to bogus traffic stop, drug searches - Ars Technica"
+      ],
+      "source_zero_cost_feasibility": "doubtful",
+      "source_delta_types": [
+        "RISK_DELTA"
+      ],
+      "source_affected_workflow": "Input evidence → audit plate-reader access, stop justification and retention → exception decision → documented output",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

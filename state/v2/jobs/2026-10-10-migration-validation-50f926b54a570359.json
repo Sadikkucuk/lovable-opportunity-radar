@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-50f926b54a570359",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "50f926b54a570359940f51ff810c20f0c2dcb77b8a3f116845d10f6b5e22d6c9",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-067",
+      "validation_index": 67,
+      "validator_assignment": "A",
+      "canonical_key": "satellite-operators|track-conjunction-notices-and-operator-coordination|orbital-conjunction-coordination-log",
+      "idea_name": "Orbital Conjunction Coordination Log",
+      "core_job": "Track conjunction notices and operator coordination",
+      "target_customer": "satellite operators",
+      "buyer": "mission operations manager",
+      "product_mechanism": "Orbital Conjunction Coordination Log web workflow: notice → counterpart → maneuver decision → evidence",
+      "triggering_article_ids": [
+        "f875ad2bbf325d6b4e44cbfa"
+      ],
+      "supporting_article_ids": [
+        "f875ad2bbf325d6b4e44cbfa"
+      ],
+      "canonical_source_urls": [
+        "https://arstechnica.com/space/2026/10/spacex-calls-for-better-coordination-in-orbit-after-near-misses-with-starlink/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w4-20261010-reconstructed-019",
+          "verification": "full",
+          "article_titles": [
+            "SpaceX calls for better coordination in orbit after near-misses with Starlink - Ars Technica"
+          ],
+          "evidence_notes": {
+            "verification_gap": null,
+            "source_batch": 23,
+            "source_item_index": 22,
+            "trakya_transferability_hypothesis": null,
+            "verified_source_url": "https://arstechnica.com/space/2026/10/spacex-calls-for-better-coordination-in-orbit-after-near-misses-with-starlink/",
+            "verified_development": "Original Ars Technica report confirms SpaceX concerns about satellite ephemeris sharing and near misses.",
+            "verification_scope": "Article event only; product-market fit, implementation costs and jurisdiction transfer not verified."
+          }
+        }
+      ],
+      "before_state": "Large constellations increase coordination workload",
+      "after_state": "Orbital Conjunction Coordination Log web workflow: notice → counterpart → maneuver decision → evidence",
+      "why_now": "Original Ars Technica report confirms SpaceX concerns about satellite ephemeris sharing and near misses.",
+      "market_gap_hypothesis": "Original Ars Technica report confirms SpaceX concerns about satellite ephemeris sharing and near misses. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 25,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w4-20261010-reconstructed-019"
+      ],
+      "source_worker_ids": [
+        4
+      ],
+      "source_article_titles": [
+        "SpaceX calls for better coordination in orbit after near-misses with Starlink - Ars Technica"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "INFRASTRUCTURE_DELTA"
+      ],
+      "source_affected_workflow": "notice → counterpart → maneuver decision → evidence",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

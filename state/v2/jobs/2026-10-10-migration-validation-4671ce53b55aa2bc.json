@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-4671ce53b55aa2bc",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "4671ce53b55aa2bc51253db690fb78c7c24d919ec9baf842765d06d043df9d5b",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-048",
+      "validation_index": 48,
+      "validator_assignment": "B",
+      "canonical_key": "materials-rnd|experiment-evidence|hypothesis-register",
+      "idea_name": "Materials experiment hypothesis register",
+      "core_job": "Track hypotheses and supporting test evidence",
+      "target_customer": "Materials R&D teams",
+      "buyer": "R&D director",
+      "product_mechanism": "Hypothesis cards and test approval records",
+      "triggering_article_ids": [
+        "1fe0ffbed5c7494f824db793"
+      ],
+      "supporting_article_ids": [
+        "1fe0ffbed5c7494f824db793"
+      ],
+      "canonical_source_urls": [
+        "https://monoist.itmedia.co.jp/mn/articles/2610/09/news017.html"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w3-20261010-001",
+          "verification": "full",
+          "article_titles": [
+            "横浜ゴムとdotData、技術者の仮説形成や解釈を支援するAIエージェントを共同開発：製造IT導入事例 - MONOist"
+          ],
+          "evidence_notes": {
+            "source_fact": "Joint development reported; not production deployment",
+            "source_inference_boundary": "Product need is a hypothesis"
+          }
+        }
+      ],
+      "before_state": "Experiment decisions are dispersed across documents",
+      "after_state": "Hypothesis cards and test approval records",
+      "why_now": "October 9 reporting on joint development",
+      "market_gap_hypothesis": "Yokohama Rubber and dotData are testing engineering hypothesis support with a human-in-the-loop agent. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 120,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w3-20261010-001"
+      ],
+      "source_worker_ids": [
+        3
+      ],
+      "source_article_titles": [
+        "横浜ゴムとdotData、技術者の仮説形成や解釈を支援するAIエージェントを共同開発：製造IT導入事例 - MONOist"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "CAPABILITY_DELTA"
+      ],
+      "source_affected_workflow": "Industrial R&D experiment planning",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

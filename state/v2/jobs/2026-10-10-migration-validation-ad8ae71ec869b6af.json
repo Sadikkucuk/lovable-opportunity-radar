@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-ad8ae71ec869b6af",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "ad8ae71ec869b6af71ffa33723c6b5006acbc0e923f4c3988bfdd4d995e931f1",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-094",
+      "validation_index": 94,
+      "validator_assignment": "B",
+      "canonical_key": "üretim-tesisleri|kalite-sapmalarının-bakım-olaylarıyla-zamansal-ilişkisini-gö|varlık-kimliği-normalizasyonu-csv-birleştirme-ve-zaman-çizel",
+      "idea_name": "QualityMaintenance Link — kalite ve bakım olay korelasyonu",
+      "core_job": "Kalite sapmalarının bakım olaylarıyla zamansal ilişkisini görmek",
+      "target_customer": "Üretim tesisleri",
+      "buyer": "Bakım ve kalite lideri",
+      "product_mechanism": "Varlık kimliği normalizasyonu, CSV birleştirme ve zaman çizelgesi",
+      "triggering_article_ids": [
+        "5d694653e6870cab28d4227e"
+      ],
+      "supporting_article_ids": [
+        "5d694653e6870cab28d4227e"
+      ],
+      "canonical_source_urls": [
+        "https://www.qualitymag.com/articles/99985-why-manufacturers-need-better-inspection-history-not-just-more-quality-data"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B03-27-016",
+          "verification": "full",
+          "article_titles": [
+            "Why Manufacturers Need Better Inspection History, Not Just More Quality Data - Quality Magazine"
+          ],
+          "evidence_notes": {
+            "source_observation": "Yalnızca zamansal korelasyon sağlar; otomatik nedensellik iddiası yoktur.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "Yalnızca zamansal korelasyon sağlar; otomatik nedensellik iddiası yoktur.",
+            "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+          }
+        }
+      ],
+      "before_state": "İki ekip aynı varlık için ayrı kayıt tutuyor",
+      "after_state": "Varlık kimliği normalizasyonu, CSV birleştirme ve zaman çizelgesi",
+      "why_now": "Kaynak, kalite ve bakım geçmişinin birlikte incelenmesini önerdi.",
+      "market_gap_hypothesis": "Makine bakım notlarıyla kusur geçmişinin ayrılığı kök neden bulmayı zorlaştırıyor. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Türkiye",
+      "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı.",
+      "local_scope_evidence_hints": [
+        "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 145,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B03-27-016"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "Why Manufacturers Need Better Inspection History, Not Just More Quality Data - Quality Magazine"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "DATA_DELTA"
+      ],
+      "source_affected_workflow": "Kusur kaydı + bakım olayı → zaman/varlık eşleştirme → inceleme kuyruğu",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

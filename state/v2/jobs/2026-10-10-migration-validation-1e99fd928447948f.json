@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-1e99fd928447948f",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "1e99fd928447948f23ca4a5a8e91484301fbf8f3b7f402728c0ac96b2506488a",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-080",
+      "validation_index": 80,
+      "validator_assignment": "B",
+      "canonical_key": "turkish-unlicensed-generators|reconcile-generation-and-consumption-facility-offsets|self-consumption-energy-reconciliation",
+      "idea_name": "Self-Consumption Energy Reconciliation",
+      "core_job": "Reconcile generation and consumption facility offsets",
+      "target_customer": "Turkish unlicensed generators",
+      "buyer": "energy finance manager",
+      "product_mechanism": "Self-Consumption Energy Reconciliation web workflow: meter data → offset mapping → exception → statement",
+      "triggering_article_ids": [
+        "22143e9cb44e2a04d85d01a3"
+      ],
+      "supporting_article_ids": [
+        "22143e9cb44e2a04d85d01a3"
+      ],
+      "canonical_source_urls": [
+        "https://www.lexpera.com.tr/resmi-gazete/metin/enerji-piyasasi-duzenleme-kurulunun-30-04-2026-tarihli-ve-14531-sayili-karari-33244"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w4-20261010-reconstructed-014",
+          "verification": "full",
+          "article_titles": [
+            "Lisanssız Elektrik Üretim Tesisleri ve İlişkili Olduğu Tüketim Tesislerinin Mahsuplaşma İşlemlerine İlişkin Usul ve Esaslar - Resmi Gazete"
+          ],
+          "evidence_notes": {
+            "verification_gap": null,
+            "source_batch": 22,
+            "source_item_index": 26,
+            "trakya_transferability_hypothesis": null,
+            "verified_source_url": "https://www.lexpera.com.tr/resmi-gazete/metin/enerji-piyasasi-duzenleme-kurulunun-30-04-2026-tarihli-ve-14531-sayili-karari-33244",
+            "verified_development": "EPDK decision 14531, Official Gazette 05.05.2026 no. 33244. Article 26-related offsetting includes scope exclusions, grouping and tax-ID restrictions. This is May 2026 legislation, not newly enacted October 2026.",
+            "verification_scope": "Official Gazette decision full text reproduced by legal database; original text verified.",
+            "source_primary_document_verified": true
+          }
+        }
+      ],
+      "before_state": "Settlement rules create data and exception handling needs",
+      "after_state": "Self-Consumption Energy Reconciliation web workflow: meter data → offset mapping → exception → statement",
+      "why_now": "Existing source development surfaced in October 2026 feed; do not misrepresent publication date.",
+      "market_gap_hypothesis": "EPDK decision 14531, Official Gazette 05.05.2026 no. 33244. Article 26-related offsetting includes scope exclusions, grouping and tax-ID restrictions. This is May 2026 legislation, not newly enacted October 2026. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Türkiye",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 25,
+      "history_match_key": "turkiye-unlicensed-generation-owner|simulate-hourly-netting-and-explain-settlement|csv-hourly-rule-engine",
+      "history_match_reason": "Potential semantic match to history: EPDK Mahsuplaşma Simülatörü; requires strict customer+job+workflow check during validation.",
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w4-20261010-reconstructed-014"
+      ],
+      "source_worker_ids": [
+        4
+      ],
+      "source_article_titles": [
+        "Lisanssız Elektrik Üretim Tesisleri ve İlişkili Olduğu Tüketim Tesislerinin Mahsuplaşma İşlemlerine İlişkin Usul ve Esaslar - Resmi Gazete"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "REGULATION_DELTA"
+      ],
+      "source_affected_workflow": "meter data → offset mapping → exception → statement",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

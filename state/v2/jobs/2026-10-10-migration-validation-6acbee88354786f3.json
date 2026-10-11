@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-6acbee88354786f3",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "6acbee88354786f3bbe843286c930fc06779674f6a2631fb3368a87233191975",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-043",
+      "validation_index": 43,
+      "validator_assignment": "A",
+      "canonical_key": "küçük-b2b-satış-ekipleri|görevlerde-kullanılan-müşteri-bilgilerinin-güncelliğini-göst|kullanıcının-sahip-olduğu-csv-ile-kaynak-tarihini-saklama-st",
+      "idea_name": "CRMContext Freshness — satış veri güncellik kontrolü",
+      "core_job": "Görevlerde kullanılan müşteri bilgilerinin güncelliğini göstermek",
+      "target_customer": "Küçük B2B satış ekipleri",
+      "buyer": "Satış operasyon yöneticisi",
+      "product_mechanism": "Kullanıcının sahip olduğu CSV ile kaynak tarihini saklama, stale-data uyarısı ve doğrulama görevi",
+      "triggering_article_ids": [
+        "102a1438207e7248125b2f53"
+      ],
+      "supporting_article_ids": [
+        "102a1438207e7248125b2f53"
+      ],
+      "canonical_source_urls": [
+        "https://venturebeat.com/business/zoominfo-launches-native-clickup-integration-through-gtmai"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B06-06-024",
+          "verification": "full",
+          "article_titles": [
+            "ZoomInfo Launches Native ClickUp Integration Through GTM.AI - VentureBeat"
+          ],
+          "evidence_notes": {
+            "source_observation": "Duyurulan resmi entegrasyon iki ücretli platformun müşterileri içindir; önerilen MVP ücretli veri API'si kullanmaz.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "Duyurulan resmi entegrasyon iki ücretli platformun müşterileri içindir; önerilen MVP ücretli veri API'si kullanmaz."
+          }
+        }
+      ],
+      "before_state": "Kopyalanan kişi/şirket verisi hızla eskiyor",
+      "after_state": "Kullanıcının sahip olduğu CSV ile kaynak tarihini saklama, stale-data uyarısı ve doğrulama görevi",
+      "why_now": "9 Ekim'de ZoomInfo ve ClickUp için native MCP bağlantısı duyuruldu.",
+      "market_gap_hypothesis": "ZoomInfo-ClickUp MCP entegrasyonu güncel müşteri bilgisini görev akışına taşıyor. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 95,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B06-06-024"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "ZoomInfo Launches Native ClickUp Integration Through GTM.AI - VentureBeat"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "CAPABILITY_DELTA",
+        "DATA_DELTA"
+      ],
+      "source_affected_workflow": "CRM CSV → görev kaydı → son güncelleme tarihi → takip",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

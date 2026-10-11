@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-acb7296875d1b0ff",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "acb7296875d1b0ffe7d480df0457a9de3311cadf1b51608132f579b649fec689",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-066",
+      "validation_index": 66,
+      "validator_assignment": "B",
+      "canonical_key": "robotics-dataset-providers|audit-quality-of-human-collected-robot-demonstrations|robot-teleoperation-data-qa",
+      "idea_name": "Robot Teleoperation Data QA",
+      "core_job": "Audit quality of human-collected robot demonstrations",
+      "target_customer": "robotics dataset providers",
+      "buyer": "data operations manager",
+      "product_mechanism": "Robot Teleoperation Data QA web workflow: capture → annotation QA → rejection → retraining queue",
+      "triggering_article_ids": [
+        "d223dbfdeefd70d105b77831"
+      ],
+      "supporting_article_ids": [
+        "d223dbfdeefd70d105b77831"
+      ],
+      "canonical_source_urls": [
+        "https://www.huxiu.com/article/4896039.html"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "w4-20261010-reconstructed-002",
+          "verification": "full",
+          "article_titles": [
+            "机器人数据采集员：有人觉得酷，有人一个月就走 - 虎嗅网"
+          ],
+          "evidence_notes": {
+            "verification_gap": null,
+            "source_batch": 19,
+            "source_item_index": 12,
+            "trakya_transferability_hypothesis": null,
+            "original_article_checked": true,
+            "verified_source_url": "https://www.huxiu.com/article/4896039.html",
+            "verified_development": "First-hand interviews describe teleoperation, UMI and egocentric robot training-data capture, QA filtering and rework.",
+            "verification_scope": "Article development verified; proposed SaaS workflow remains an inference requiring customer validation."
+          }
+        }
+      ],
+      "before_state": "Operator recordings and annotations vary in quality",
+      "after_state": "Robot Teleoperation Data QA web workflow: capture → annotation QA → rejection → retraining queue",
+      "why_now": "First-hand interviews describe teleoperation, UMI and egocentric robot training-data capture, QA filtering and rework.",
+      "market_gap_hypothesis": "First-hand interviews describe teleoperation, UMI and egocentric robot training-data capture, QA filtering and rework. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 25,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "w4-20261010-reconstructed-002"
+      ],
+      "source_worker_ids": [
+        4
+      ],
+      "source_article_titles": [
+        "机器人数据采集员：有人觉得酷，有人一个月就走 - 虎嗅网"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "LABOR_DELTA"
+      ],
+      "source_affected_workflow": "capture → annotation QA → rejection → retraining queue",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}

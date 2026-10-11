@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-5134c6c7e7d0e46a",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "5134c6c7e7d0e46abb44b756b9943712cfecac4b3f6401d8ab53b97bbe46bada",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-056",
+      "validation_index": 56,
+      "validator_assignment": "B",
+      "canonical_key": "otomatik-depo-işleten-sanayi-firmaları|modernizasyonu-üretim-kesintisine-göre-planlamak|varlık-yaşam-döngüsü-obsolescence-tarihi-iş-paketleri-ve-dev",
+      "idea_name": "Retrofit Window Planner — depo otomasyonu modernizasyon takvimi",
+      "core_job": "Modernizasyonu üretim kesintisine göre planlamak",
+      "target_customer": "Otomatik depo işleten sanayi firmaları",
+      "buyer": "Teknik bakım müdürü",
+      "product_mechanism": "Varlık yaşam döngüsü, obsolescence tarihi, iş paketleri ve devreye alma checklist",
+      "triggering_article_ids": [
+        "9a50f3b8a23a036f9e064270"
+      ],
+      "supporting_article_ids": [
+        "9a50f3b8a23a036f9e064270"
+      ],
+      "canonical_source_urls": [
+        "https://www.produktion.de/instandhaltung/zukunftssicher-durch-retrofit/2749818"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B06-16-026",
+          "verification": "full",
+          "article_titles": [
+            "Retrofit im Hochregallager sichert Zukunft ab - www.produktion.de"
+          ],
+          "evidence_notes": {
+            "source_observation": "Produktion, 13.000 raf gözü bulunan depodaki sürücülerin yenilenmesini ve ömür uzamasını aktardı.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "fact": "Produktion, 13.000 raf gözü bulunan depodaki sürücülerin yenilenmesini ve ömür uzamasını aktardı.",
+            "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+          }
+        }
+      ],
+      "before_state": "Yedek parça bitişi ve duruş penceresi bir arada takip edilmiyor",
+      "after_state": "Varlık yaşam döngüsü, obsolescence tarihi, iş paketleri ve devreye alma checklist",
+      "why_now": "Tecnokarton örneği dört istifleme cihazının üç hafta sonunda modernize edildiğini gösterdi.",
+      "market_gap_hypothesis": "Eski depo sürücü sistemleri üç hafta sonunda yenilenip tesisin kesintisiz devamı sağlandı. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Türkiye",
+      "trakya_transferability_hypothesis": "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı.",
+      "local_scope_evidence_hints": [
+        "Trakya sanayi koridorundaki üretim, tedarik ve depo işletmelerinde aynı kayıt/karar akışının bulunabileceği hipotezi; yerel müşteri kanıtı henüz doğrulanmadı."
+      ],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 145,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B06-16-026"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "Retrofit im Hochregallager sichert Zukunft ab - www.produktion.de"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "INFRASTRUCTURE_DELTA",
+        "RISK_DELTA"
+      ],
+      "source_affected_workflow": "Varlık envanteri → üretim kısıtı → hafta sonu iş paketi → yeniden devreye alma kontrolü",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true
+  }
+}
