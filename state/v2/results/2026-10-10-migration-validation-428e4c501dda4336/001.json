@@ -1,0 +1,56 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-428e4c501dda4336",
+  "input_hash": "428e4c501dda43365939e75657ec0d1bb6e14b6e40e7cb9c7920f0892ea4e9c6",
+  "token": "c598bcec-709b-414c-a1c1-8d294bb4240e",
+  "finished_at": "2026-10-11T10:24:05.446Z",
+  "outcome": "done",
+  "reason": "DSİ’nin 10 Aralık 2025 tarihli düzenlemesi ve başvuru/kiralama/teknik-idari akış doğrulandı. Ancak aday, mevcut korunan 'Yüzer GES Başvuru Uyum Masası' kaydıyla aynı Türkiye yüzer GES geliştiricisi, aynı su yüzeyi kullanım-kiralama başvurusu ve aynı gereklilik/kanıt/checklist/deadline/başvuru paketi iş akışına sahiptir. Yeniden adlandırılmış tekrar olarak duplicate kararı verildi; mevcut kayıt değiştirilmedi.",
+  "result": {
+    "decision": "duplicate",
+    "reason": "'Floating Solar Permit and Lease Tracker' adı, mevcut fikrin DSİ su yüzeyi kiralama ve başvuru uyum mekanizmasını değiştirmiyor; müşteri, çekirdek iş ve iş akışı anlamsal olarak aynı.",
+    "duplicate_of": "turkiye-floating-solar-developers|prepare-water-surface-use-leasing-compliance|requirement-evidence-submission-workspace",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.dsi.gov.tr/Haber/Detay/16819",
+        "accessed_at": "2026-10-11T10:24:05.446Z",
+        "claim": "Yüzer GES projelerinde DSİ başvuru, kiralama ve teknik-idari değerlendirme akışı yürürlüktedir.",
+        "observation": "DSİ, 10 Aralık 2025 tarih ve 33103 sayılı Resmi Gazete’de yayımlanan yönetmeliğin yüzer GES başvuru süreçleri, kiralama prosedürleri ve teknik-idari değerlendirme adımlarını bütüncül çerçeveye bağladığını bildiriyor.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "queries": [],
+        "scope": "Anlamsal geçmiş tekrar kapısında erken duplicate kararı; yeni pazar/reka­bet araştırması yapılmadı.",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_products": []
+      },
+      "global": {
+        "direct_count": null,
+        "queries": [],
+        "scope": "Anlamsal geçmiş tekrar kapısında erken duplicate kararı; yeni pazar/reka­bet araştırması yapılmadı.",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_products": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": null,
+      "runtime_external_database": null,
+      "runtime_ai_agent_or_model": null,
+      "architecture": "Yeni ürün değerlendirmesi yapılmadı; aday mevcut korunan fikirle aynı olduğu için duplicate kapısında durduruldu.",
+      "dependency_inventory": [
+        "Mevcut korunan Yüzer GES Başvuru Uyum Masası kaydı"
+      ]
+    },
+    "history_review": {
+      "decision": "duplicate",
+      "reason": "state/idea_history.json ve state/idea_catalog.json içindeki canonical_key 'turkiye-floating-solar-developers|prepare-water-surface-use-leasing-compliance|requirement-evidence-submission-workspace'; Türkiye yüzer GES geliştiricileri için su yüzeyi kullanım/kiralama şartları, requirement matrix, kanıt checklist’i, sorumlu/son tarih, completeness gate ve submission pack sunuyor. Yeni adayın müşteri, iş ve mekanizması bununla aynıdır."
+    }
+  }
+}
