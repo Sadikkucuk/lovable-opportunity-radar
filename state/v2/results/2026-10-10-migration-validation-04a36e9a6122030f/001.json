@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-04a36e9a6122030f",
+  "input_hash": "04a36e9a6122030fa72b5c7d22b87fb99afbe15de8c18c3cd2645a40bc827c08",
+  "token": "71af4bb4-8ea2-4f7a-a184-b293290a8f25",
+  "finished_at": "2026-10-11T20:33:51Z",
+  "outcome": "done",
+  "reason": "Aday, mevcut nitelikli “Sanayi Sicil Uyum Masası” kaydıyla aynı müşteri, aynı temel iş ve özünde aynı tesis bazlı takvim/değişiklik/evrak/kanıt iş akışını yeniden adlandırıyor. Tetikleyici tebliğ doğrulandı; semantik kimlik yeni olmadığı için duplicate olarak tamamlandı.",
+  "result": {
+    "decision": "duplicate",
+    "reason": "“Sanayi Sicil Takip”, mevcut nitelikli “Sanayi Sicil Uyum Masası” fikrinin takvim, değişiklik günlüğü, evrak/kanıt kontrol listesi, sorumlu ve son tarih akışını aynı Türkiye sanayi işletmeleri için tekrarlar.",
+    "duplicate_of": "turkiye-industrial-enterprises|manage-industrial-registry-obligations|facility-requirement-evidence-deadline-workspace",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.iso.org.tr/duyurular/genel-duyurular/sanayi-sicil-tebligi-sgm-20264-resm%C3%AE-gazetede-yayimlandi/",
+        "accessed_at": "2026-10-11T20:33:51Z",
+        "claim": "SGM 2026/4 sanayi sicili kayıt, değişiklik, geçerlilik, iptal ve yıllık işletme cetveli süreçlerini değiştirdi.",
+        "observation": "İstanbul Sanayi Odası duyurusu, 1 Nisan 2026 tarihli tebliğin 15 Nisan 2026'da yürürlüğe girdiğini; işlemlerin SSBS üzerinden yürütüldüğünü, çok tesisli işletmeler için ayrı başvuru gerektiğini ve belge geçerliliğinin yıllık işletme cetveline bağlandığını açıklıyor.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "queries": [
+          "Türkiye sanayi sicil takip yazılımı yıllık işletme cetveli son tarih evrak kontrol listesi",
+          "\"Sanayi Sicil Uyum\" yazılım sanayi sicil takip"
+        ],
+        "scope": "Aday geçmişteki nitelikli kayıtla semantik olarak birebir örtüştüğü için rekabet araştırması karar için genişletilmedi.",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_products": []
+      },
+      "global": {
+        "direct_count": null,
+        "queries": [],
+        "scope": "Türkiye'ye özgü sanayi sicili iş akışı ve kesin duplicate kararı nedeniyle global rekabet kapsamı çalışılmadı.",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_products": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": null,
+      "runtime_external_database": null,
+      "runtime_ai_agent_or_model": null,
+      "architecture": "Duplicate kararı nedeniyle yeni ürün mimarisi doğrulanmadı.",
+      "dependency_inventory": [
+        "Doğrulanmadı; duplicate kararı nedeniyle uygulanabilirlik araştırması genişletilmedi."
+      ]
+    },
+    "history_review": {
+      "decision": "duplicate",
+      "reason": "idea_history.json içindeki 2026-10-07 tarihli nitelikli “Sanayi Sicil Uyum Masası” kaydı aynı Türkiye sanayi işletmelerini hedefliyor; tesis sicili, gereksinim matrisi, değişiklik tetikleyicisi, evrak/kanıt kontrolü, son tarih/sorumlu ve dosyalama paketini kapsıyor. Adayın belge kontrol listesi, değişiklik günlüğü, sorumluluk ve takvim mekanizması bunun alt kümesi."
+    }
+  }
+}
