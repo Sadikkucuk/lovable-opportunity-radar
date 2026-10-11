@@ -1,0 +1,155 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-379e08c566705a10",
+  "input_hash": "379e08c566705a108882ad6823b9729fb53cb7fdd539296e60ed15eb0a4286d0",
+  "token": "d3266878-c0e0-43b0-b79c-84f1b54c8642",
+  "finished_at": "2026-10-11T10:22:51.866Z",
+  "outcome": "done",
+  "reason": "Tetikleyici dava ve güncel ALPR denetim uygulamaları doğrulandı. Ancak erişim amacı beyanı, kullanıcı/sorgu günlüğü, retention kontrolü, yönetici incelemesi ve rapor dışa aktarma işlevleri başlıca ALPR platformlarında zaten yerleşik. Flock Safety, Axon Fusus, Rekor Scout, Motorola Vigilant PlateSearch ve Genetec aynı temel denetim işini sunuyor; global doğrudan rakip sayısı en az beş olduğu için aday reddedildi.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Bağımsız gözetim ekibi için CSV tabanlı ikinci kontrol katmanı anlamlı olsa da önerilen çekirdek mekanizma vendor platformlarının native audit/justification/retention/export özelliklerinden yeterince ayrışmıyor; global doğrudan rekabet üst sınırı aşılıyor.",
+    "duplicate_of": null,
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://arstechnica.com/tech-policy/2026/10/driver-wins-76-after-alpr-led-to-bogus-traffic-stop-drug-searches/",
+        "accessed_at": "2026-10-11T10:22:51.866Z",
+        "claim": "ALPR-derived bir ipucunun belgelenmemiş ve sahte gerekçeli trafik durdurmasına dönüşmesi gerçek bir gözetim ve denetim riski yarattı.",
+        "observation": "8 Ekim 2026 tarihli Ars Technica haberi, federal jürinin Bexar County aleyhine karar verdiğini; plaka verisine dayalı isimsiz WhatsApp ipucunun ardından şerit ihlali gerekçesinin uydurulduğunu ve sonuçsuz 76 dakikalık arama yapıldığını bildiriyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.flocksafety.com/trust/law-enforcement-access",
+        "accessed_at": "2026-10-11T10:22:51.866Z",
+        "claim": "Flock Safety aynı erişim-amacı-kayıt-inceleme iş akışını native sunuyor.",
+        "observation": "Flock her sorguyu kullanıcı ve zaman damgasına bağlayarak otomatik kaydediyor, soruşturma amacı istiyor, supervisor incelemesi ve paylaşım kontrolü sağlıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.axon.com/help/fusus/software/fusus/alpr/alpr-search-interface.htm",
+        "accessed_at": "2026-10-11T10:22:51.866Z",
+        "claim": "Axon Fusus ALPR aramasında gerekçe/kategori alanlarını zorunlu tutup denetim ve dışa aktarma sağlıyor.",
+        "observation": "Axon Fusus arama ekranı offense category ve reason alanlarını audit compliance için zorunlu tutuyor; case number bağlayabiliyor ve CSV/PDF sonuç dışa aktarıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://docs.rekor.ai/scout/scout-dashboard/search-audit",
+        "accessed_at": "2026-10-11T10:22:51.866Z",
+        "claim": "Rekor Scout yöneticilere kullanıcı ALPR sorgularını gerekçesiyle denetleme ekranı sunuyor.",
+        "observation": "Search Audit sayfası e-posta, plaka, olay türü ve zamana göre geçmiş aramaları filtreliyor; kullanıcı, plaka, arama zamanı ve justification sonucunu gösteriyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://learnfl.vigilantsolutions.com/learn/Vigilant_PlateSearch_User_Guide.pdf",
+        "accessed_at": "2026-10-11T10:22:51.866Z",
+        "claim": "Motorola Vigilant PlateSearch yönetici denetimi ve çok formatlı audit raporu sunuyor.",
+        "observation": "Kılavuzdaki Auditing bölümü yöneticiye sorgu ve hesap/izin değişikliği kayıtlarını inceleme; RPT, PDF, Word, Excel ve RTF dışa aktarma imkanı veriyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://techdocs.genetec.com/r/en-US/Security-Center-Administrator-Guide-5.12/ALPR-task-General-settings-view",
+        "accessed_at": "2026-10-11T10:22:51.866Z",
+        "claim": "Genetec ALPR raporlarında gerekçeyi zorunlu tutup activity-trail audit loguna yazıyor.",
+        "observation": "Genetec ayarı ALPR verisi içeren raporlarda reason zorunluluğu getiriyor ve bu gerekçeyi denetim günlüğüne/evidence raporuna ekliyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/File_API",
+        "accessed_at": "2026-10-11T10:22:51.866Z",
+        "claim": "Vendor CSV audit dışa aktarımları harici API olmadan tarayıcıda okunabilir.",
+        "observation": "MDN File API, kullanıcı seçimiyle yerel dosyaların web uygulamasında istemci tarafında okunmasını destekliyor.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 0,
+        "queries": [
+          "Türkiye ALPR plaka tanıma erişim denetim yazılımı",
+          "Türkiye plaka okuma sorgu logu uyum denetimi",
+          "KVKK plaka tanıma audit log yazılımı"
+        ],
+        "scope": "11 Ekim 2026; Türkiye pazarı, kamu gözetim/uyum ekipleri; ALPR erişim amacı, retention, durdurma kanıtı ve audit export.",
+        "search_complete": true,
+        "direct_competitors": [],
+        "adjacent_products": []
+      },
+      "global": {
+        "direct_count": 5,
+        "queries": [
+          "ALPR audit log access purpose retention compliance software law enforcement",
+          "license plate reader search justification audit export software",
+          "ALPR policy compliance audit platform",
+          "plate reader access log supervisor review retention"
+        ],
+        "scope": "11 Ekim 2026; ABD ve global ALPR kullanan yerel kamu/law-enforcement ekipleri; erişim amacı, sorgu günlüğü, retention, supervisor review ve denetim dışa aktarma.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "Flock Safety Platform",
+            "url": "https://www.flocksafety.com/trust/law-enforcement-access",
+            "same_customer_job_workflow_reason": "Yetkili kullanıcı, zorunlu soruşturma amacı, otomatik sorgu kaydı, supervisor review ve paylaşım kontrolünü aynı ALPR iş akışında sunuyor."
+          },
+          {
+            "name": "Axon Fusus ALPR",
+            "url": "https://www.axon.com/help/fusus/software/fusus/alpr/alpr-search-interface.htm",
+            "same_customer_job_workflow_reason": "Arama kategorisi/gerekçesini audit compliance için zorunlu tutuyor, case bağlama ve CSV/PDF export sağlıyor."
+          },
+          {
+            "name": "Rekor Scout Search Audit",
+            "url": "https://docs.rekor.ai/scout/scout-dashboard/search-audit",
+            "same_customer_job_workflow_reason": "Yöneticiye kullanıcı sorgularını, zamanı, plakayı ve gerekçeyi filtreleyip denetleme imkanı veriyor."
+          },
+          {
+            "name": "Motorola Vigilant PlateSearch",
+            "url": "https://learnfl.vigilantsolutions.com/learn/Vigilant_PlateSearch_User_Guide.pdf",
+            "same_customer_job_workflow_reason": "ALPR sorgu/erişim audit kayıtları, hesap/izin değişikliği denetimi ve çok formatlı rapor dışa aktarma sunuyor."
+          },
+          {
+            "name": "Genetec Security Center ALPR",
+            "url": "https://techdocs.genetec.com/r/en-US/Security-Center-Administrator-Guide-5.12/ALPR-task-General-settings-view",
+            "same_customer_job_workflow_reason": "ALPR rapor gerekçesini zorunlu kılıyor ve activity-trail audit log ile evidence raporuna kaydediyor."
+          }
+        ],
+        "adjacent_products": [
+          {
+            "name": "Have I Been Flocked",
+            "url": "https://haveibeenflocked.com/about/audit-logs",
+            "same_customer_job_workflow_reason": "Kamu/aktivist gözetimi için Flock audit loglarını isteme ve yorumlama rehberi sunuyor; tam uyum iş akışı yazılımı değil."
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Kullanıcı vendor audit CSV’lerini ve politika kontrol listesini yükler; tarayıcı içi JavaScript sorgu amacı, case numarası, retention ve durdurma kanıtı alanlarını deterministik kurallarla kontrol eder; bulgular localStorage/IndexedDB’de tutulup JSON/CSV/PDF olarak dışa aktarılır.",
+      "dependency_inventory": [
+        "Lovable HTML/CSS/JavaScript",
+        "Browser File API",
+        "localStorage veya IndexedDB",
+        "İstemci tarafı deterministik kontrol kuralları",
+        "İstemci tarafı JSON/CSV/PDF dışa aktarma"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "Mevcut 89 fikir arasında genel uyum, denetim ve kamu kayıt araçları bulunuyor; ancak ABD yerel yönetim ALPR erişim amacı, durdurma kanıtı ve retention denetimiyle birebir aynı kayıt saptanmadı. Reddin nedeni geçmiş tekrar değil, doğrudan global rekabet yoğunluğudur."
+    }
+  }
+}
