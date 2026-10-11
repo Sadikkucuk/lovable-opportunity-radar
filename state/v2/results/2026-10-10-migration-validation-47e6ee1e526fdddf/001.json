@@ -1,0 +1,148 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-47e6ee1e526fdddf",
+  "input_hash": "47e6ee1e526fdddf084a637039d15b8b721cdc5901458a40c245d30ff4f268ce",
+  "token": "32a374cc-0648-4c2e-a8a7-ab136d685c54",
+  "finished_at": "2026-10-11T20:30:06.887Z",
+  "outcome": "done",
+  "reason": "Let’s Encrypt’in 10 Şubat 2027’de varsayılan sertifika ömrünü 64 güne indireceği birincil kaynaktan doğrulandı. Ancak Türkiye’de LSG Trust Flow ve Durkon; globalde CompliWise, Segura ve MachineCert aynı IT ekiplerine sertifika keşfi/envanteri, yenileme takvimi, süre uyarıları ve yaşam döngüsü yönetimi sunuyor. Türkiye doğrudan rakip sayısı sıfır değildir ve global doğrudan rakip sayısı da en az üçtür; aday reddedildi.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Aynı müşteri, temel iş ve büyük ölçüde aynı iş akışı Türkiye’de en az iki, globalde en az üç doğrudan ürün/hizmette mevcut. Türkiye için zorunlu sıfır doğrudan rakip koşulu açıkça sağlanmıyor.",
+    "duplicate_of": null,
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://letsencrypt.org/2026/10/07/64-day-certs",
+        "accessed_at": "2026-10-11T20:30:06.887Z",
+        "claim": "Let’s Encrypt sertifika sürelerini 2027’de kısaltarak yenileme otomasyonu ve hata uyarısı ihtiyacını artırıyor.",
+        "observation": "Let’s Encrypt, 10 Şubat 2027’den itibaren varsayılan 64 günlük sertifika vereceğini, 14 Ekim 2026’da staging testine geçeceğini; sabit günlü yenilemelerin güncellenmesini, ARI desteği ile yenileme hatası uyarılarının eklenmesini öneriyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://trlsg.com/ssl-yonetimi/sertifika-otomasyonu",
+        "accessed_at": "2026-10-11T20:30:06.887Z",
+        "claim": "LSG Trust Flow aynı sertifika envanteri, yenileme takvimi ve uyarı işini Türkiye’de sunuyor.",
+        "observation": "LSG sayfası public/iç sertifikaların keşfi ve envanteri, sorumlu/sağlayıcı/yenileme takvimi politikası, yaklaşan bitiş ve eksik doğrulama uyarıları ile yenileme/kurulum akışını belgeliyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://www.durkon.com/ssl-sertifika-yonetimi.html",
+        "accessed_at": "2026-10-11T20:30:06.887Z",
+        "claim": "Durkon aynı müşteri için sertifika envanteri, otomatik yenileme ve süre/arıza uyarısı sağlıyor.",
+        "observation": "Durkon web, posta, VPN ve güvenlik duvarı sertifikalarını envantere alıp otomatik yenileme, takvimli takip ve dış izleme ile bitiş, zincir bozulması ve yenileme başarısızlığı uyarıları sunduğunu açıklıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.compliwise.io/solutions/certificate-management",
+        "accessed_at": "2026-10-11T20:30:06.887Z",
+        "claim": "CompliWise sertifika keşfi, merkezi envanter, uyarı takvimi ve otomatik yenilemeyi tek üründe sunuyor.",
+        "observation": "Ürün sayfası otomatik discovery, merkezi dashboard, 90/60/30 günlük uyarılar, gerçek zamanlı sağlık takibi, auto-renewal ve audit log özelliklerini açıkça listeliyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://segura.security/products/certificate-manager/",
+        "accessed_at": "2026-10-11T20:30:06.887Z",
+        "claim": "Segura Certificate Manager aynı IT/security iş akışını yaşam döngüsü ürünü olarak sunuyor.",
+        "observation": "Segura; sunucu, domain ve uygulamalarda sertifika keşfi, merkezi envanter, expiration timeline, gerçek zamanlı uyarı, otomatik renewal/publishing ve audit raporu sunuyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.machinecert.com/",
+        "accessed_at": "2026-10-11T20:30:06.887Z",
+        "claim": "MachineCert sertifika envanterini yenileme otomasyonu, doğrulama, sahiplik yönlendirme ve readiness takibiyle birleştiriyor.",
+        "observation": "Ürün sayfası gizli/sahipsiz sertifika discovery’si, inventory, renewal automation, deployment validation, alerting, ownership routing ve policy/readiness tracking sunduğunu belirtiyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "accessed_at": "2026-10-11T20:30:06.887Z",
+        "claim": "Manuel envanter ve uygulama içi yenileme takvimi harici API/veritabanı/AI olmadan uygulanabilir.",
+        "observation": "Sertifika metadata’sı ve checklist kullanıcı tarafından CSV veya form ile girilip tarayıcı depolamasında tutulabilir; kalan gün ve istisna kuralları deterministik hesaplanıp uygulama açıldığında uyarı gösterilebilir. Gerçek ağ taraması ve otomatik yenileme kapsam dışı bırakılır.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 2,
+        "queries": [
+          "Türkiye SSL sertifika yönetimi envanter yenileme uyarı yazılımı",
+          "Türkiye TLS sertifika yaşam döngüsü ACME yenileme takvimi"
+        ],
+        "scope": "11 Ekim 2026; Türkiye’de web siteleri işleten IT operasyon ekipleri; sertifika envanteri, yenileme hazırlık kontrolü, takvim ve istisna/bitiş uyarıları.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "LSG Trust Flow",
+            "url": "https://trlsg.com/ssl-yonetimi/sertifika-otomasyonu",
+            "same_customer_job_workflow_reason": "IT ekipleri için sertifika keşfi/envanteri, politika ve yenileme takvimi, süre/istisna uyarısı ve kurulum akışı sağlıyor."
+          },
+          {
+            "name": "Durkon SSL Sertifika Yönetimi",
+            "url": "https://www.durkon.com/ssl-sertifika-yonetimi.html",
+            "same_customer_job_workflow_reason": "Web ve altyapı sertifikalarını envantere alıp otomatik/takvimli yenileme ve süre/başarısızlık uyarıları sunuyor."
+          }
+        ],
+        "adjacent_products": []
+      },
+      "global": {
+        "direct_count": 3,
+        "queries": [
+          "TLS certificate inventory renewal calendar expiration alerts ACME readiness software",
+          "SSL certificate lifecycle management inventory renewal alerts software",
+          "certificate readiness tracking renewal exception alerts IT operations"
+        ],
+        "scope": "11 Ekim 2026; global web/IT operasyon ekipleri; yönetilen domain sertifikalarının envanter, yenileme hazırlığı, takvim ve hata/bitiş uyarılarıyla izlenmesi.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "CompliWise Certificate Management",
+            "url": "https://www.compliwise.io/solutions/certificate-management",
+            "same_customer_job_workflow_reason": "Discovery, inventory/dashboard, expiration alerts, renewal automation ve audit trail aynı iş akışını karşılıyor."
+          },
+          {
+            "name": "Segura Certificate Manager",
+            "url": "https://segura.security/products/certificate-manager/",
+            "same_customer_job_workflow_reason": "IT/security ekiplerine discovery, merkezi envanter, expiration timeline/alerts ve renewal workflow sunuyor."
+          },
+          {
+            "name": "MachineCert",
+            "url": "https://www.machinecert.com/",
+            "same_customer_job_workflow_reason": "Certificate inventory, renewal automation, alerting, ownership routing ve readiness tracking sağlıyor."
+          }
+        ],
+        "adjacent_products": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Lovable istemci uygulamasında kullanıcı tarafından CSV/form ile girilen domain ve sertifika metadata’sı localStorage/IndexedDB’de tutulur. Kalan gün, 64/45 günlük uyumluluk kontrolü, checklist ve exception kuralları deterministik hesaplanır; uygulama açıldığında dashboard uyarıları ve takvim/CSV çıktısı verilir. Ağ taraması, CA entegrasyonu, otomatik yenileme ve arka plan bildirimi MVP dışında kalır.",
+      "dependency_inventory": [
+        "Lovable istemci arayüzü",
+        "Kullanıcı girdili CSV/form",
+        "Tarayıcı localStorage veya IndexedDB",
+        "Deterministik tarih ve kural hesapları",
+        "CSV/ICS/PDF dışa aktarma"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "Mevcut katalog/geçmişte TLS sertifikası yenileme hazırlığına yönelik aynı müşteri-iş-mekanizma kaydı bulunmadı. Ret nedeni semantic tekrar değil, doğrulanmış Türkiye rekabetidir."
+    }
+  }
+}
