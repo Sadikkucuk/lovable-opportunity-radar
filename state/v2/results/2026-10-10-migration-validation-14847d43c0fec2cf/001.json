@@ -1,0 +1,151 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-14847d43c0fec2cf",
+  "input_hash": "14847d43c0fec2cf375200027ce355a5bd143f62ce939f24f642ce04f758cb3f",
+  "token": "77cd8d38-0d20-4354-ae88-8ab04f724740",
+  "finished_at": "2026-10-11T10:17:22.890Z",
+  "outcome": "done",
+  "reason": "Tetikleyici vaka doğrulandı; ancak SMED/changeover ekonomik getiri hesabı hem Türkiye'de hem globalde ürünleşmiş durumda. Türkiye'de Teknomer'in doğrudan hesaplayıcısı ve Solviera'nın SMED yazılımı; globalde IgeraIndustria, MFG Calcs, OEE Lab, Changeover.com ve LeanSuite aynı temel hesap/karar işini sunuyor. Türkiye'de 0 ve globalde en fazla 3 doğrudan rakip şartları sağlanmadığı için aday reddedildi.",
+  "result": {
+    "decision": "rejected",
+    "reason": "CSV logu ve PDF raporu eklemek mevcut SMED/changeover ROI hesaplayıcılarından yeterince ayrışmıyor; Türkiye'de doğrudan çözüm var ve global doğrudan rakip sayısı en az beş.",
+    "duplicate_of": null,
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.packworld.com/trends/controls-machine-components/article/22976101/bottler-cuts-lane-changeover-from-48-adjustment-points-to-two",
+        "accessed_at": "2026-10-11T10:17:22.890Z",
+        "claim": "Rivella'da ürün değişimi ayarları yüksek üretim kaybı yaratırken mekanik retrofit değişim süresini saatten dakikaya indirdi.",
+        "observation": "9 Ekim 2026 tarihli Packaging World vakasında tarih kodlayıcı ayarı ürün başına bir saate kadar sürerken otomasyonla bir dakikanın altına; 48 manuel ayar noktası ise iki noktaya ve birkaç dakikaya indirildi.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://solviera.com.tr/icerik/kestel-plastik-enjeksiyon-kalip-degistirme-setup-suresi-iyilestirme-smed",
+        "accessed_at": "2026-10-11T10:17:22.890Z",
+        "claim": "Türkiye'de üreticilere SMED analizi ve süreç kontrolü sunan doğrudan yazılım/çözüm var.",
+        "observation": "Solviera, Türkiye'deki plastik enjeksiyon tesisleri için SMED analizi, iç/dış operasyon ayrımı, standartlaştırma, izleme ve performans metriklerini kapsayan sektörel yazılım çözümünü açıklıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://igerasolutions.com/igeraindustria/smed-roi-calculator-en",
+        "accessed_at": "2026-10-11T10:17:22.890Z",
+        "claim": "SMED yatırımının günlük/yıllık tasarruf ve geri ödeme süresini hesaplayan doğrudan ücretsiz araç var.",
+        "observation": "IgeraIndustria değişim süresi, günlük değişim sayısı, duruş maliyeti, hedef azaltım ve yatırım maliyetinden günlük/yıllık tasarruf ile payback hesaplıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.mfgcalcs.com/calculators/oee-factory-performance-smart-manufacturing/changeover-loss-oee",
+        "accessed_at": "2026-10-11T10:17:22.890Z",
+        "claim": "Changeover kaybını OEE ve saat cinsinden hesaplayan doğrudan araç var.",
+        "observation": "MFG Calcs değişim sayısı, ortalama süre ve planlı üretim zamanından toplam kayıp saat ve OEE availability kaybı üretiyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://oeelab.com/changeover-cost-calculator",
+        "accessed_at": "2026-10-11T10:17:22.890Z",
+        "claim": "SMED değişim azaltımının saat, adet ve para değerini hesaplayan doğrudan araç var.",
+        "observation": "OEE Lab mevcut/hedef değişim süresi, frekans, üretim hızı ve birim marjından yıllık geri kazanılan saat, adet ve ekonomik değer hesaplıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/File_API",
+        "accessed_at": "2026-10-11T10:17:22.890Z",
+        "claim": "CSV değişim logu harici API olmadan tarayıcıda okunabilir.",
+        "observation": "MDN File API kullanıcı seçimiyle yerel dosyaların web uygulamasında okunmasını destekliyor.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 2,
+        "queries": [
+          "Türkiye SMED değişim süresi maliyet hesaplama yazılımı",
+          "SMED kalıp değişim kazancı hesaplayıcı Türkiye",
+          "Türkiye setup süresi iyileştirme SMED yazılımı"
+        ],
+        "scope": "11 Ekim 2026; Türkiye'de fabrika/bakım ekipleri için değişim süresi kaybı, ekonomik getiri ve SMED iyileştirme kararı.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "Teknomer SMED Kazancı Hesaplama",
+            "url": "https://teknomer.com.tr/formuller/otomotiv/smed-kazanci",
+            "same_customer_job_workflow_reason": "Eski/yeni setup süresi, değişim sayısı ve dakika maliyetinden aylık/yıllık SMED tasarrufu hesaplıyor."
+          },
+          {
+            "name": "Solviera SMED Çözümü",
+            "url": "https://solviera.com.tr/icerik/kestel-plastik-enjeksiyon-kalip-degistirme-setup-suresi-iyilestirme-smed",
+            "same_customer_job_workflow_reason": "Türkiye'deki üreticilerde SMED analizi, standardizasyon, izleme ve performans metrikleriyle aynı iyileştirme kararını destekliyor."
+          }
+        ],
+        "adjacent_products": []
+      },
+      "global": {
+        "direct_count": 5,
+        "queries": [
+          "SMED changeover loss calculator software ROI",
+          "manufacturing changeover time cost calculator PDF report",
+          "quick changeover savings calculator",
+          "SMED ROI calculator scenario comparison"
+        ],
+        "scope": "11 Ekim 2026; global üretim ekipleri, değişim/setup kaybının saat/OEE/para etkisini ve SMED yatırım geri dönüşünü hesaplayan araçlar.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "IgeraIndustria SMED ROI Calculator",
+            "url": "https://igerasolutions.com/igeraindustria/smed-roi-calculator-en",
+            "same_customer_job_workflow_reason": "Değişim süresi azaltımının yıllık tasarruf ve payback değerini hesaplıyor."
+          },
+          {
+            "name": "MFG Calcs Changeover Loss for OEE",
+            "url": "https://www.mfgcalcs.com/calculators/oee-factory-performance-smart-manufacturing/changeover-loss-oee",
+            "same_customer_job_workflow_reason": "Changeover kaybını saat ve OEE availability yüzdesi olarak hesaplıyor."
+          },
+          {
+            "name": "OEE Lab Changeover/SMED Savings Calculator",
+            "url": "https://oeelab.com/changeover-cost-calculator",
+            "same_customer_job_workflow_reason": "Mevcut-hedef setup farkından yıllık saat, üretim adedi ve parasal değer hesaplıyor."
+          },
+          {
+            "name": "Changeover.com Downtime Loss Calculator",
+            "url": "https://changeover.com/changelosscalc.html",
+            "same_customer_job_workflow_reason": "Değişim sıklığı, süre, üretim hızı ve değer üzerinden yıllık kayıp ve geri kazanılabilir değer hesaplıyor."
+          },
+          {
+            "name": "LeanSuite SMED Changeover Calculator",
+            "url": "https://www.theleansuite.com/tools",
+            "same_customer_job_workflow_reason": "SMED ile zaman kazanımı, kapasite ve daha küçük parti etkisini hesaplayan ücretsiz araç sunuyor."
+          }
+        ],
+        "adjacent_products": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "CSV logu kullanıcı tarafından yüklenir; JavaScript süreleri ve dakika maliyetini deterministik hesaplar; senaryolar localStorage/IndexedDB'de tutulur ve istemci tarafında PDF/CSV raporu üretilir.",
+      "dependency_inventory": [
+        "Lovable HTML/CSS/JavaScript",
+        "Browser File API",
+        "localStorage veya IndexedDB",
+        "İstemci tarafı deterministik SMED/ROI formülleri",
+        "İstemci tarafı PDF/CSV dışa aktarma"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "Mevcut 89 fikirde üretim otomasyonu/readiness ve TCO karar araçları bulunuyor; ambalaj hattı changeover kaybı ve SMED getiri hesabıyla birebir aynı kayıt saptanmadı. Reddin nedeni geçmiş tekrar değil, doğrudan rekabet yoğunluğudur."
+    }
+  }
+}
