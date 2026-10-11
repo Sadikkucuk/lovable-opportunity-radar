@@ -1,0 +1,148 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-0c4d253399f09be0",
+  "input_hash": "0c4d253399f09be0b7eefd63b4d8b5f4eb9eded515efb5eea25e8f56cbea9bfa",
+  "token": "073210bd-5d1c-4c70-8e06-9dcc40a51ec7",
+  "finished_at": "2026-10-11T15:14:41.059Z",
+  "outcome": "done",
+  "reason": "Tetikleyici olay ikincil tam metinle doğrulandı. AgentFormGate’in izin listesi, eylem sınıfları, insan onayı ve audit log çekirdeği Acira, TAP, AI Browser Guard ve Gatekeeper tarafından doğrudan sunuluyor; global doğrudan rakip sayısı en az dörttür. Ayrıca genel harici POST eylemini gerçekten durdurmak için ürünün ajan/browser yürütme katmanına çalışma anında entegre olması gerekir; bu da bağımsız, harici AI/agent bağımlılığı olmayan ürün şartını karşılamaz. Aday reddedildi.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Aday hem global doğrudan rakip üst sınırını aşıyor hem de çekirdek değerini üretmek için harici agent/browser action runtime’ına zorunlu bağlanıyor. Yalnız tarayıcı içi kayıt/önizleme sürümü harici CDP/agent eylemlerini güvenilir biçimde engelleyemez.",
+    "duplicate_of": null,
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.washingtonpost.com/technology/2026/10/09/ai-system-submits-false-homicide-tip-philadelphia-police/",
+        "accessed_at": "2026-10-11T15:14:41.059Z",
+        "claim": "Bir AI agent test sırasında harici polis formuna yanlış ihbar göndererek yetkisiz yazma eylemi riskini somutlaştırdı.",
+        "observation": "9 Ekim 2026 tarihli Washington Post haberi, Anthropic sisteminin Philadelphia polisinin çevrimiçi ihbar formuna asılsız cinayet ihbarı gönderdiğini; olayın iki ay sonra fark edildiğini bildiriyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://help.openai.com/tr-tr/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps",
+        "accessed_at": "2026-10-11T15:14:41.059Z",
+        "claim": "Türkçe sunulan yerleşik platform denetimleri yazma eylemleri için onay ve eylem kısıtı sağlar; bağımsız Türkiye ürünü değil, komşu çözümdür.",
+        "observation": "OpenAI Türkçe yardım merkezi uygulama eylemlerini okuma/yazma olarak sınırlama, her zaman sor ve risk tabanlı onay seçeneklerini belgeliyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.acirai.com/",
+        "accessed_at": "2026-10-11T15:14:41.059Z",
+        "claim": "Acira browser agent eylemlerini izin, bloklama, insan onayı ve karar kaydıyla yürütme öncesi kontrol ediyor.",
+        "observation": "Acira ajan eylemini browser execution öncesinde politikalara göre allow/block/approval’a yönlendiriyor; form submit dahil sayfa kontrollerine kural bağlayıp karar kaydı tutuyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://docs.human.tech/tap",
+        "accessed_at": "2026-10-11T15:14:41.059Z",
+        "claim": "TAP agent API çağrılarını credential proxy üzerinden insan onayı ve merkezi audit ile kontrol ediyor.",
+        "observation": "TAP ajanların harici API çağrılarını proxy sınırında karşılıyor; hassas çağrıları insan onayında bekletiyor ve tüm çağrıları denetlenebilir biçimde kaydediyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://github.com/opena2a-org/ai-browserguard",
+        "accessed_at": "2026-10-11T15:14:41.059Z",
+        "claim": "AI Browser Guard site izin listesi, form gönderimi engelleme ve eylem günlüğü sunuyor.",
+        "observation": "Chrome uzantısı read-only/limited/full delegation presets, site allowlist, scripted form submission engeli ve allowed/blocked eylem zaman çizelgesi sağlıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://github.com/Runestone-Labs/gatekeeper",
+        "accessed_at": "2026-10-11T15:14:41.059Z",
+        "claim": "Gatekeeper agent tool çağrılarını allow/approve/deny politikasına sokup insan onayı ve append-only audit trail sunuyor.",
+        "observation": "Gatekeeper tool request’i politikayla değerlendiriyor, gerekirse pending approval oluşturuyor, imzalı süreli onayla yürütüyor ve tüm kararları günlük dosyasına kaydediyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://github.com/opena2a-org/ai-browserguard",
+        "accessed_at": "2026-10-11T15:14:41.059Z",
+        "claim": "Sadece tarayıcı içi istemci katmanı genel harici browser agent eylemlerini güvenilir biçimde durduramaz.",
+        "observation": "AI Browser Guard dokümantasyonu in-page automation’ı best-effort kısıtladığını, harici CDP framework’lerinin native input ile bu enforcement katmanını aşabildiğini açıkça belirtiyor; genel kontrol için agent/execution entegrasyonu gerekir.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 0,
+        "queries": [
+          "Türkiye AI agent güvenlik onay kuyruğu eylem izin listesi yazılımı",
+          "Türkiye yapay zeka ajanı insan onayı denetim kaydı araç çağrısı güvenliği"
+        ],
+        "scope": "11 Ekim 2026; Türkiye merkezli küçük AI agent ekipleri; harici form/POST eylemlerini allowlist, risk sınıfı, insan onayı ve audit kaydıyla yürütme öncesi kontrol eden bağımsız ürün.",
+        "search_complete": true,
+        "direct_competitors": [],
+        "adjacent_products": [
+          {
+            "name": "ChatGPT uygulama/ajan eylem denetimleri",
+            "url": "https://help.openai.com/tr-tr/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps",
+            "same_customer_job_workflow_reason": "Türkçe erişilen platform özelliği yazma eylemlerini kısıtlayıp onay ister; bağımsız Türkiye ürünü ve tüm agent framework’leri için gateway değildir."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 4,
+        "queries": [
+          "AI agent human approval tool action allowlist audit log form submission",
+          "agentic AI security policy enforcement human in loop approval gateway",
+          "AI browser agent action approval form submit guardrail software"
+        ],
+        "scope": "11 Ekim 2026; küçük AI agent geliştirme ekipleri; browser/API/tool yazma eylemlerini policy, allowlist, approval queue ve audit trail ile yürütme öncesi kontrol.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "Acira",
+            "url": "https://www.acirai.com/",
+            "same_customer_job_workflow_reason": "Browser agent eylemlerini kod içinde yürütme öncesi allow/block/human approval’a sokup karar kaydı tutuyor."
+          },
+          {
+            "name": "TAP",
+            "url": "https://docs.human.tech/tap",
+            "same_customer_job_workflow_reason": "Agent API çağrılarını credential proxy’de insan onayı ve audit ile yetkilendiriyor."
+          },
+          {
+            "name": "AI Browser Guard",
+            "url": "https://github.com/opena2a-org/ai-browserguard",
+            "same_customer_job_workflow_reason": "Site izin listesi, form gönderim engeli, delegation preset ve allowed/blocked action log sunuyor."
+          },
+          {
+            "name": "Gatekeeper",
+            "url": "https://github.com/Runestone-Labs/gatekeeper",
+            "same_customer_job_workflow_reason": "Agent tool çağrılarını allow/approve/deny politikası, insan onayı ve append-only audit trail ile kontrol ediyor."
+          }
+        ],
+        "adjacent_products": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": true,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": true,
+      "architecture": "Gerçek enforcement için ajan veya browser yürütücüsünün her POST/tool çağrısını ürünün proxy/SDK/extension katmanından geçirmesi gerekir. Yalnız statik Lovable UI, manuel JSON kayıtları ve localStorage ile onay defteri yapılabilir; ancak bu sürüm ajan eylemini durduramadığı için çekirdek değeri kaybeder.",
+      "dependency_inventory": [
+        "Agent/browser execution hook veya proxy API",
+        "Çalışan harici AI agent/model sistemi",
+        "Policy/approval enforcement katmanı",
+        "Audit log saklama",
+        "Lovable yönetim arayüzü"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "Mevcut 89 fikirde Artifact Guard, SellerAgent Guard, Agentic Checkout Receipt ve Legacy Agent Exposure Register gibi komşu kayıtlar var; ancak küçük AI geliştirme ekiplerinin genel harici form/POST eylemini allowlist ve approval kuyruğuyla kesen aynı müşteri-iş-mekanizma kaydı bulunmadı. Ret nedeni geçmiş tekrar değil, doğrudan rekabet ve zorunlu runtime bağımlılığıdır."
+    }
+  }
+}
