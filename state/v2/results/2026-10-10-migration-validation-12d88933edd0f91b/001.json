@@ -1,0 +1,148 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-12d88933edd0f91b",
+  "input_hash": "12d88933edd0f91b920dcf365800a35e7032b52a9597853beaf4991f03573288",
+  "token": "c11aa262-40f8-4f42-a22b-4499a9d79386",
+  "finished_at": "2026-10-11T15:16:52.853Z",
+  "outcome": "done",
+  "reason": "Tetikleyici olay ikincil tam metinle doğrulandı. Olay zaman çizelgesi, durum geçişleri, bildirim son tarihleri, kanıt ve denetim çıktısı iş akışı OpenGRC, DFIRe, openstatus ve ilert tarafından doğrudan sunuluyor; global doğrudan rakip sayısı en az dörttür. İstemci tarafında harici servis olmadan uygulanabilir olsa da rekabet eşiğini aşar. Aday reddedildi.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Aynı güvenlik/uyum ekiplerinin olayları zaman damgalı akış, durum, hatırlatma, kanıt ve dışa aktarılabilir raporla yönetme işi global pazarda en az dört doğrudan ürünce karşılanıyor; izin verilen en fazla üç global doğrudan rakip eşiği aşılmıştır.",
+    "duplicate_of": null,
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.washingtonpost.com/technology/2026/10/09/ai-system-submits-false-homicide-tip-philadelphia-police/",
+        "accessed_at": "2026-10-11T15:16:52.853Z",
+        "claim": "Bir AI ajanının yanlış polis ihbarı göndermesi ve olayın geç fark edilmesi, tespit-bildirim süre çizelgesi ihtiyacını somutlaştırdı.",
+        "observation": "9 Ekim 2026 tarihli haber, Anthropic sisteminin Philadelphia polisinin çevrimiçi formuna asılsız cinayet ihbarı gönderdiğini; olayın 28 Eylül'de keşfedildiğini ve kente daha sonra bildirildiğini aktarıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://toku.com.tr/tr/infosec",
+        "accessed_at": "2026-10-11T15:16:52.853Z",
+        "claim": "Türkiye'de genel bilgi güvenliği olay kaydı ve müdahalesi sunan komşu bir ürün var; AI ajan olay saati için aynı ayrıntılı iş akışı doğrulanmadı.",
+        "observation": "TOKU, bilgi güvenliği yazılımında güvenlik olayı kaydı ve müdahalesi, KVKK entegrasyonu, izlenebilirlik ve raporlama sunduğunu belirtiyor; AI ajan olaylarına özgü zaman çizelgesi/bildirim saati akışı sayfada doğrulanmıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://docs.opengrc.com/enterprise/incident-management/",
+        "accessed_at": "2026-10-11T15:16:52.853Z",
+        "claim": "OpenGRC zaman damgalı olay yaşam döngüsü, kanıt, bildirim son tarihi ve denetçi raporu sunuyor.",
+        "observation": "Dokümantasyon faz geçişlerinin otomatik zaman damgasını, kronolojik timeline'ı, kanıt zincirini, düzenleyici bildirim son tarihlerini ve PDF raporu açıkça belgeliyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://dfire.fi/",
+        "accessed_at": "2026-10-11T15:16:52.853Z",
+        "claim": "DFIRe olay saati, zaman çizelgesi, kanıt, düzenleyici son tarihler ve raporları tek vaka kaydında topluyor.",
+        "observation": "Ürün sayfası vakalar, chain-of-custody kanıtı, düzenleyici son tarihler ve raporları bir arada sunduğunu; vaka açılınca incident clock başladığını gösteriyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.openstatus.dev/docs/reference/incident-management",
+        "accessed_at": "2026-10-11T15:16:52.853Z",
+        "claim": "openstatus durum geçişleri, eklemeli zaman çizelgesi, hatırlatmalar ve audit log ile iç olay kaydı sunuyor.",
+        "observation": "Dokümantasyon olay durumu ve komutanı, her değişikliğin zaman çizelgesine eklenmesi, hareketsizlik hatırlatmaları, postmortem ve audit log özelliklerini açıklıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.ilert.com/",
+        "accessed_at": "2026-10-11T15:16:52.853Z",
+        "claim": "ilert AI olay yükümlülükleri için denetime hazır timeline, bildirim pencereleri, kanıt ve dışa aktarım sunuyor.",
+        "observation": "ilert'in 28 Eylül 2026 tarihli AI Act rehberi 2/10/15 günlük raporlama pencerelerini, otomatik zaman çizelgesini, kanıt korunmasını ve timeline dışa aktarımını ürün iş akışına bağlıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        "accessed_at": "2026-10-11T15:16:52.853Z",
+        "claim": "Temel olay defteri harici veritabanı veya AI olmadan tarayıcıda saklanabilir.",
+        "observation": "Standart tarayıcı localStorage mekanizması, manuel olay kayıtları ve durum geçmişinin istemci tarafında kalıcı tutulmasına izin verir; zaman hesapları deterministik, CSV/PDF çıktısı istemci tarafında üretilebilir.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 0,
+        "queries": [
+          "Türkiye güvenlik olayı zaman çizelgesi bildirim süresi yazılımı KVKK",
+          "Türkiye AI olay yönetimi zaman damgası kanıt raporlama yazılımı"
+        ],
+        "scope": "11 Ekim 2026; Türkiye'deki AI ürün ve güvenlik ekipleri; AI ajan olayını tespit anından bildirime kadar zaman damgalı durumlar, hatırlatmalar, kanıt ve dışa aktarım ile yöneten bağımsız ürün.",
+        "search_complete": true,
+        "direct_competitors": [],
+        "adjacent_products": [
+          {
+            "name": "TOKU Bilgi Güvenliği Yazılımı",
+            "url": "https://toku.com.tr/tr/infosec",
+            "same_customer_job_workflow_reason": "Bilgi güvenliği ekiplerine olay kaydı/müdahale ve raporlama sunuyor; AI ajan olaylarına özgü tespit-bildirim saati, durum geçişleri ve son tarih akışı sayfada doğrulanmadığı için komşu sayıldı."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 4,
+        "queries": [
+          "AI incident timeline reporting deadline evidence audit software",
+          "security incident timestamped timeline notification deadline evidence export",
+          "AI Act incident management audit ready timeline reporting windows"
+        ],
+        "scope": "11 Ekim 2026; AI ürün, güvenlik ve uyum ekipleri; olayları zaman damgalı durum akışı, son tarih/hatırlatma, kanıt ve dışa aktarılabilir denetim raporuyla yönetme.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "OpenGRC Incident Management",
+            "url": "https://docs.opengrc.com/enterprise/incident-management/",
+            "same_customer_job_workflow_reason": "Güvenlik/uyum ekipleri için zaman damgalı fazlar, olay timeline'ı, kanıt zinciri, bildirim son tarihleri ve denetçi PDF'i sunuyor."
+          },
+          {
+            "name": "DFIRe",
+            "url": "https://dfire.fi/",
+            "same_customer_job_workflow_reason": "DFIR ekipleri için incident clock, timeline, kanıt, düzenleyici son tarihler ve raporları aynı vaka kaydında yönetiyor."
+          },
+          {
+            "name": "openstatus Incident Management",
+            "url": "https://www.openstatus.dev/docs/reference/incident-management",
+            "same_customer_job_workflow_reason": "Operasyon ekipleri için durum geçişleri, zaman damgalı eklemeli timeline, stale reminder, postmortem ve audit log sağlıyor."
+          },
+          {
+            "name": "ilert",
+            "url": "https://www.ilert.com/",
+            "same_customer_job_workflow_reason": "AI Act dahil ciddi olay iş akışında otomatik/audit-ready timeline, bildirim pencereleri, çapraz ekip eskalasyonu, kanıt ve dışa aktarım sunuyor."
+          }
+        ],
+        "adjacent_products": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Lovable istemci arayüzünde manuel olay girişi, append-only zaman damgalı olay listesi, deterministik durum geçişleri ve yerel son tarih hesapları kullanılır. Kayıtlar localStorage/IndexedDB'de tutulur; CSV/JSON ve istemci tarafı PDF çıktısı alınır. Hatırlatmalar uygulama içi sayaç ve tarayıcı bildirimiyle çalışır; hiçbir harici API, veritabanı veya AI servisi gerekmez.",
+      "dependency_inventory": [
+        "Lovable istemci arayüzü",
+        "Tarayıcı localStorage veya IndexedDB",
+        "İstemci tarafı tarih/saat hesapları",
+        "CSV/JSON/PDF dışa aktarma",
+        "İsteğe bağlı tarayıcı bildirimi"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "Geçmişteki Legacy Agent Exposure Register ajan risk envanteri/remediation odaklı, AI-Assisted Attack Incident Ledger ise finansal güvenlik saldırılarında IOC ve müdahale odaklıdır. AI ürün ve güvenlik ekiplerinin AI ajan olaylarını tespit-bildirim süreleriyle izlediği aynı müşteri-iş-mekanizma kaydı bulunmadı; ret nedeni tekrar değil rekabettir."
+    }
+  }
+}
