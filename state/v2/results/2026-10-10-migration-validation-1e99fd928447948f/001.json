@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-1e99fd928447948f",
+  "input_hash": "1e99fd928447948f23ca4a5a8e91484301fbf8f3b7f402728c0ac96b2506488a",
+  "token": "9f6ed412-72bc-4d9a-a252-6fb9696096f7",
+  "finished_at": "2026-10-11T20:34:50Z",
+  "outcome": "done",
+  "reason": "Aday, geçmişteki EPDK Mahsuplaşma Simülatörü ile aynı lisanssız üretici müşterisini, aynı üretim-tüketim mahsuplaşma işini ve aynı sayaç verisi/kural motoru/hesap açıklaması akışını yeniden adlandırıyor. Tetikleyici karar doğrulandı; ayrıca Türkiye'de birebir işlevleri sunan doğrudan ürün görüldü. Semantik kimlik yeni olmadığı için duplicate.",
+  "result": {
+    "decision": "duplicate",
+    "reason": "Self-Consumption Energy Reconciliation; EPDK Mahsuplaşma Simülatörü'nün CSV/sayaç verisi, versiyonlu mahsuplaşma kuralları ve sonuç açıklaması mekanizmasını aynı Türkiye lisanssız üreticileri için tekrarlar.",
+    "duplicate_of": "turkiye-unlicensed-generation-owner|simulate-hourly-netting-and-explain-settlement|csv-hourly-rule-engine",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.lexpera.com.tr/resmi-gazete/metin/enerji-piyasasi-duzenleme-kurulunun-30-04-2026-tarihli-ve-14531-sayili-karari-33244",
+        "accessed_at": "2026-10-11T20:34:50Z",
+        "claim": "EPDK 14531 sayılı karar üretim ve tüketim tesislerinin mahsuplaşma kurallarını belirliyor.",
+        "observation": "Tam metin; aynı VKN altında gruplama, saatlik üretim-tüketim miktarları, bedelli üretim limiti, sayaç verileri ve mahsuplaşma hesabını tesis/grup bazında düzenliyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://gesmetrik.com/ges-takip-yazilimi",
+        "accessed_at": "2026-10-11T20:34:50Z",
+        "claim": "Türkiye'de aynı müşteri için saatlik üretim-tüketim eşleştirme, mahsuplaşma ve fatura doğrulama ürünü bulunuyor.",
+        "observation": "GESMETRİK; saatlik üretim ve tüketim eşleştirme, mevzuata göre mahsuplaşma, fatura çapraz kontrolü, eksik veri uyarısı ve çok tesisli portföy görünümü sunuyor.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 1,
+        "queries": [
+          "Türkiye lisanssız üretim mahsuplaşma yazılımı sayaç verisi uzlaştırma",
+          "saatlik mahsuplaşma GES takip yazılımı üretim tüketim eşleştirme"
+        ],
+        "scope": "11 Ekim 2026 tarihinde Türkiye'deki lisanssız üreticiler için saatlik üretim-tüketim eşleştirme, mahsuplaşma, istisna/veri sağlığı ve hesap özeti sunan ürünler arandı.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "GESMETRİK",
+            "url": "https://gesmetrik.com/ges-takip-yazilimi",
+            "same_customer_job_workflow_reason": "Türkiye'deki GES/lisanssız üretim sahipleri için saatlik üretim-tüketim eşleştirme, mevzuata göre mahsuplaşma, veri istisnası ve fatura doğrulama akışını sunuyor."
+          }
+        ],
+        "adjacent_products": []
+      },
+      "global": {
+        "direct_count": null,
+        "queries": [],
+        "scope": "Kesin semantik duplicate kararı nedeniyle global araştırma genişletilmedi.",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_products": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": null,
+      "runtime_external_database": null,
+      "runtime_ai_agent_or_model": null,
+      "architecture": "Duplicate kararı nedeniyle yeni ürün mimarisi doğrulanmadı.",
+      "dependency_inventory": [
+        "Doğrulanmadı; duplicate kararı nedeniyle uygulanabilirlik araştırması genişletilmedi."
+      ]
+    },
+    "history_review": {
+      "decision": "duplicate",
+      "reason": "idea_history.json içindeki EPDK Mahsuplaşma Simülatörü aynı Türkiye lisanssız üretim sahiplerini hedefliyor; saatlik mahsuplaşmayı CSV içe aktarma, versiyonlu kural motoru ve uzlaştırma açıklamasıyla simüle ediyor. Adayın meter data → offset mapping → exception → statement akışı bunun semantik eşidir."
+    }
+  }
+}
