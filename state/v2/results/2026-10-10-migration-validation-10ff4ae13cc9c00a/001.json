@@ -1,0 +1,142 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-10ff4ae13cc9c00a",
+  "input_hash": "10ff4ae13cc9c00af73097e2b48b49da1c19414c36f8304557d6b4d8f1ba18a5",
+  "token": "117ee574-502b-41e3-9879-967a6fbb3132",
+  "finished_at": "2026-10-11T10:16:28.210Z",
+  "outcome": "done",
+  "reason": "Tetikleyici gelişme doğrulandı; ancak haberin konusu olan AQUALAB 5TE/AQUALAB Cloud önerilen sample → reading → threshold → batch release akışını zaten ürün, batch ve operatör bazında otomatik senkronizasyon, pass/fail, audit trail ve elektronik imzayla sunuyor. Türkiye'de HACCP Suite; globalde Khemia ve LabWare da aynı QA/LIMS, CAPA ve lot-release işini kapsıyor. Türkiye'de doğrudan rakip sıfır şartı sağlanmadığı ve ürün boşluğu kalmadığı için aday reddedildi.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Önerilen iş akışı tetikleyici ürünün kendi bulut yazılımında ve mevcut gıda LIMS/HACCP platformlarında doğrudan bulunuyor. Türkiye'de en az bir doğrudan rakip tespit edildi; özgün ve savunulabilir boşluk yok.",
+    "duplicate_of": null,
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.foodengineeringmag.com/articles/103965-addium-debuts-aqualab-5te",
+        "accessed_at": "2026-10-11T10:16:28.210Z",
+        "claim": "AQUALAB 5TE su aktivitesi/nem sonuçlarını ürün, parti ve operatörle ilişkilendirip QA release akışına bağlayan ortak sistem sunuyor.",
+        "observation": "Food Engineering, ölçümlerin R&D'den üretim ve QA release'e tek sistemde taşındığını; 21 CFR Part 11 kayıt/imza, audit trail, AQUALAB Cloud senkronizasyonu ve ürün eşiğine göre anlık pass/fail olduğunu bildiriyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://haccp.com.tr/en/",
+        "accessed_at": "2026-10-11T10:16:28.210Z",
+        "claim": "Türkiye'de gıda üreticileri için numune, spesifikasyon, onay, CAPA ve lot release iş akışını sunan doğrudan platform var.",
+        "observation": "HACCP Suite İstanbul merkezli ürün olarak sample registration, test method bank, spec comparison, iki aşamalı onay, kalite kontrol disposition, uygunsuzluk/CAPA, audit trail ve lot release süreçlerini birlikte sunuyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://aqualab.com/products/aqualab-5te",
+        "accessed_at": "2026-10-11T10:16:28.210Z",
+        "claim": "AQUALAB Cloud önerilen su aktivitesi QC register iş akışını doğrudan ürünleştiriyor.",
+        "observation": "Üretici sayfası her ölçümün ürün ve batch'e bağlandığını, eşiklere göre anlık pass/fail, searchable audit trail, elektronik imza, çok tesis görünürlüğü ve PDF/CSV export sunduğunu açıklıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://khemia.com/food-testing-lims/",
+        "accessed_at": "2026-10-11T10:16:28.210Z",
+        "claim": "Gıda laboratuvarları için water activity testleri, pass/fail, lot traceability ve corrective action sunan LIMS var.",
+        "observation": "Khemia Omega LIMS water activity testing, otomatik specification checking, pass/fail, dijital imza, lot/batch traceability, out-of-spec workflow ve corrective action süreçlerini listeliyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.labware.com/industries/food-beverage",
+        "accessed_at": "2026-10-11T10:16:28.210Z",
+        "claim": "Gıda QA ekipleri için sample-to-release, CAPA ve batch traceability sunan geniş LIMS/QMS platformu var.",
+        "observation": "LabWare ASSURE; sample tracking, result review, automated hold/release, immutable audit trail, electronic sign-off, CAPA ve batch traceability iş akışlarını tek platformda sunuyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/File_API",
+        "accessed_at": "2026-10-11T10:16:28.210Z",
+        "claim": "Manuel/CSV tabanlı hafif kayıt aracı harici API olmadan tarayıcıda uygulanabilir.",
+        "observation": "MDN File API, kullanıcının seçtiği dosyaların istemci tarafında okunup işlenebildiğini belgeliyor.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 1,
+        "queries": [
+          "Türkiye su aktivitesi kalite kontrol yazılımı gıda parti serbest bırakma",
+          "Türkiye gıda LIMS sample spec comparison CAPA lot release",
+          "gıda kalite kontrol yazılımı laboratuvar parti onay HACCP"
+        ],
+        "scope": "11 Ekim 2026; Türkiye'deki gıda üreticileri, QA/laboratuvar yöneticileri, numune-sonuç-eşik-onay-CAPA-lot release akışı.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "HACCP Suite",
+            "url": "https://haccp.com.tr/en/",
+            "same_customer_job_workflow_reason": "Gıda üreticilerinde numune kaydı, spesifikasyon karşılaştırması, iki aşamalı onay, uygunsuzluk/CAPA, audit trail ve lot release akışını sunuyor."
+          }
+        ],
+        "adjacent_products": [
+          {
+            "name": "Ubitech Gıda ERP",
+            "url": "https://ubitech.net.tr/sektor/gida",
+            "same_customer_job_workflow_reason": "Parti kalite ölçümü, karantina, serbest bırakma ve NCR takibi yapıyor; water activity özel ürünü değil."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 3,
+        "queries": [
+          "water activity quality control software lot audit food production",
+          "food water activity LIMS corrective action batch release software",
+          "water activity test batch pass fail audit trail software",
+          "food LIMS sample threshold corrective action lot release"
+        ],
+        "scope": "11 Ekim 2026; global gıda üreticileri ve QA/lab ekipleri, water activity veya genel gıda test sonucunu batch/threshold/release/CAPA/audit akışında yöneten ürünler.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "AQUALAB 5TE + AQUALAB Cloud",
+            "url": "https://aqualab.com/products/aqualab-5te",
+            "same_customer_job_workflow_reason": "Su aktivitesi ve nem ölçümünü ürün/batch/operatörle bağlayıp pass/fail, audit trail, elektronik imza ve export sunuyor."
+          },
+          {
+            "name": "Khemia Omega LIMS",
+            "url": "https://khemia.com/food-testing-lims/",
+            "same_customer_job_workflow_reason": "Water activity testini sample, specification, pass/fail, lot traceability ve corrective action iş akışına bağlıyor."
+          },
+          {
+            "name": "LabWare ASSURE",
+            "url": "https://www.labware.com/industries/food-beverage",
+            "same_customer_job_workflow_reason": "Gıda laboratuvarında sample/result review, hold-release, CAPA, elektronik onay ve batch traceability sunuyor."
+          }
+        ],
+        "adjacent_products": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Yalnız manuel giriş veya kullanıcının yüklediği CSV ile çalışan tarayıcı içi kayıt aracı teknik olarak yapılabilir; eşik karşılaştırmaları istemci tarafında, kayıtlar localStorage/IndexedDB'de, çıktı JSON/CSV/PDF olarak tutulur. Enstrüman otomatik senkronizasyonu kapsam dışıdır.",
+      "dependency_inventory": [
+        "Lovable HTML/CSS/JavaScript",
+        "Browser File API",
+        "localStorage veya IndexedDB",
+        "İstemci tarafı eşik/pass-fail kural motoru",
+        "Kullanıcı tarafından girilen veya yüklenen ölçüm verileri"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "Mevcut 89 fikirde üretim izlenebilirliği, gıda AI go-live kapısı ve kalite kanıtı iş akışları var; su aktivitesi testi → eşik → düzeltici faaliyet → batch release birleşimiyle birebir aynı kayıt bulunmadı. Reddin nedeni geçmiş tekrar değil, doğrulanmış doğrudan rekabet ve tetikleyici ürünün boşluğu zaten kapatmasıdır."
+    }
+  }
+}
