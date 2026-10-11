@@ -6,6 +6,7 @@ on:
     # Every hour at minute 10 (UTC). GitHub schedules can be delayed.
     - cron: "10 * * * *"
   push:
+    branches: [main]
     paths:
       - "aggregate.py"
       - "sources.opml"

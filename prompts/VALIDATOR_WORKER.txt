@@ -1,112 +1,41 @@
-MULTI-WORKER RADAR — COMPETITION / EVIDENCE VALIDATION
+V2 ONE-CANDIDATE VALIDATION
+Read master and WORK_PROTOCOL. Validate the claimed candidate, save it, then
+continue to the next job. One candidate is a persistence unit, not a run cap.
+Read triggering original/primary sources; at most three reasonable alternatives
+for inaccessible evidence. Record failures. Use multi-query dated Turkish/global
+competition research for the same customer/job/workflow. Insufficient search
+means unknown. Prove feasibility without external API/DB/AI runtime services.
+Use current history for semantic dedupe; renamed existing ideas are duplicates.
+Historical research is evidence to assess, not automatically v2 approval.
 
-Repository: Sadikkucuk/lovable-opportunity-radar
-Use Europe/Istanbul date for state/runs/YYYY-MM-DD.
+Receipt outcome=done. result fields:
+decision: qualified|rejected|unverified|duplicate.
+reason: Turkish conclusion. duplicate_of: required for duplicate.
+evidence: array of {role: trigger|competition_tr|competition_global|feasibility,
+url: canonical HTTP(S), accessed_at: UTC ISO, claim: assertion being checked,
+observation: concise supported paraphrase, page_read: true, support: supported}.
+Qualified needs at least one of every role. Search snippets aren't read pages.
+Competition evidence may document closely related products and exclusions;
+zero direct competitors is scoped search conclusion, not universal absence.
+competition: {tr:{direct_count:integer or null, queries:[...], scope:text,
+search_complete:boolean,direct_competitors:[...]},global:same structure}.
+Competitors need name,url,same_customer_job_workflow_reason. Preserve adjacent
+products and reasons separately.
+feasibility:{runtime_external_api:false|true|null,
+runtime_external_database:false|true|null,runtime_ai_agent_or_model:false|true|null,
+architecture:concrete explanation,dependency_inventory:nonempty list}.
+history_review:{decision:new|duplicate|uncertain,reason:explanation}.
+catalog_record: only qualified; all product details in Turkish using existing
+catalog fields: canonical_key must match candidate; idea_name, scope_tier/reason,
+news_source/title/date/url/source_links, core_idea, user_story, before/after,
+why_now, target_customer/buyer, business_models, mvp, working_logic, technologies,
+marketing_strategy, risks/assumptions, competitor counts matching research,
+verification_status=qualified,status=published. Credit estimate may exceed 500
+or be null; external_cash_cost may be null. Never turn unknown into zero.
 
-The automation will tell you VALIDATOR_ID = A or B.
-
-Read:
-- state/runs/YYYY-MM-DD/merge/status.json
-- state/runs/YYYY-MM-DD/merge/candidates.json
-- CHATGPT_RADAR_PROMPT.txt for direct-competitor definitions, full-article
-  verification requirements, zero-cost rules and output evidence standards.
-
-If merge status is not exactly "complete", write your validator file with
-status="blocked_merge_incomplete" and stop.
-
-Assignment:
-- Validator A validates candidates with validator_assignment="A" / odd validation_index.
-- Validator B validates candidates with validator_assignment="B" / even validation_index.
-
-For EVERY assigned candidate, perform fresh web research:
-1. Re-check the triggering development against the original article/primary source.
-2. Search Türkiye for DIRECT competitors using Turkish terminology and relevant
-   industry/local-language terms.
-3. Search globally for DIRECT competitors using English and other useful local terms.
-4. Apply the strict direct definition:
-   same target customer + same core job + substantially same workflow.
-   Keep generic ERP/CRM/project/AI/consulting/horizontal tools as adjacent unless
-   they actually solve the same job.
-5. Capture competitor name + canonical URL + short reason for direct/adjacent classification.
-6. Verify the MVP can be built primarily with Lovable within <=500 internal credits
-   and external cash cost = 0 using genuinely sufficient free tiers/open-source/public data.
-7. Verify source URLs and classify evidence strength.
-8. Do not rank candidates.
-9. Do not update idea_history.json or idea_catalog.json.
-
-
-LOCAL SCOPE VALIDATION — LÜLEBURGAZ / TRAKYA
-For any candidate carrying a Lüleburgaz scope_hint or trakya_transferability_hypothesis,
-perform fresh web research before assigning local scope:
-- verify that the target sector/workflow has a real Lüleburgaz or immediately relevant
-  Trakya industrial footprint;
-- seek concrete company/facility, sector-cluster, OSB/industry-association or credible
-  industrial evidence rather than generic city news;
-- verify that the candidate's buyer/customer type can realistically exist in that footprint;
-- record local evidence URLs and a short local applicability rationale;
-- if local evidence is insufficient, do NOT reject an otherwise good idea: downgrade its
-  local scope to Türkiye/unclear as appropriate.
-
-Local evidence does not replace direct-competitor research. A Lüleburgaz label must never
-be assigned solely because the idea concerns manufacturing or because Lüleburgaz is in Trakya.
-
-For each assigned candidate produce:
-- candidate_id
-- validation_index
-- canonical_key
-- development_verified: true|false|partial
-- canonical_news_source
-- canonical_news_title
-- canonical_news_date
-- canonical_news_url
-- source_links
-- turkiye_direct_competitor_count
-- turkiye_competitors
-- global_direct_competitor_count
-- global_competitors
-- adjacent_competitors
-- competition_search_terms
-- market_gap
-- mvp
-- working_logic
-- technologies
-- external_cash_cost
-- lovable_credits_total
-- lovable_credit_breakdown
-- build_time
-- business_models
-- marketing_strategy
-- first_customer_plan
-- main_risk
-- validation_assumption
-- evidence_strength
-- competition_confidence
-- local_scope_verified: true|false|not_applicable
-- local_scope_evidence
-- local_applicability_rationale
-- validated_scope_hint
-- qualification_status:
-    qualified |
-    competition_not_verified |
-    rejected_competition |
-    rejected_cost |
-    rejected_evidence
-- rejection_reason if applicable
-
-Write:
-state/runs/YYYY-MM-DD/validation/validator-VALIDATOR_ID_LOWERCASE.json
-
-Top-level fields:
-- schema_version
-- run_date
-- validator_id
-- status: complete|incomplete|blocked_merge_incomplete
-- expected_candidate_count
-- validated_candidate_count
-- completed_at
-- results
-
-status="complete" ONLY if every assigned candidate has one validation result and
-validated_candidate_count == expected_candidate_count.
-
-Never infer complete validation from a partial sample.
+Qualified: supported trigger, TR count 0/global <=3, three runtime flags exactly
+false, new semantic identity and all evidence read within seven days.
+Cache only under controller's same-input/policy/TTL rule. Reread changed/stale
+claims. Missing proof gives unverified, preserving nulls and research attempts.
+Transient tool failure gives outcome=retry. Neither blocks other candidates.
+Never bypass platform approvals or disguise unverified claims as supported.

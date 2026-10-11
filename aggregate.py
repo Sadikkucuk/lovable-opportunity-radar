@@ -547,8 +547,8 @@ def fetch_one(meta: dict[str, str]) -> dict[str, Any]:
     return result
 
 def dedupe_key(item: dict[str, Any]) -> str:
-    raw = (item.get("url") or "") + "\n" + (item.get("title") or "").lower()
-    return hashlib.sha256(raw.encode("utf-8")).hexdigest()
+    from radar.engine import article_key
+    return article_key(item)
 
 def load_existing() -> list[dict[str, Any]]:
     if not LOAD_EXISTING:
@@ -633,7 +633,8 @@ def merge_items(results: list[dict[str, Any]]) -> list[dict[str, Any]]:
         current = unique.get(key)
         if not current:
             unique[key] = item
-        elif not current.get("published_at") and item.get("published_at"):
+        elif (normalize_date(item.get("seen_at")) or datetime.min.replace(tzinfo=timezone.utc)) >= (normalize_date(current.get("seen_at")) or datetime.min.replace(tzinfo=timezone.utc)):
+            # Preserve stable identity, but retain corrected title/content for change detection.
             unique[key] = item
 
     items = list(unique.values())

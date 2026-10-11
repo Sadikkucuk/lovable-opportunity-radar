@@ -1,3 +1,5 @@
+LEGACY REFERENCE ONLY — superseded by docs/RADAR_V2.md and integration/RADAR_V2_READER.md. Do not execute the old protocol.
+
 # AIStartup site integration
 
 Canonical website feed:

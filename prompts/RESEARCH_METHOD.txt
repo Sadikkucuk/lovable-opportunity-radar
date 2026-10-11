@@ -1,0 +1,534 @@
+RESEARCH METHOD — preserve broad discovery, subject to CHATGPT_RADAR_PROMPT.txt v2 policy.
+
+PRIMARY OBJECTIVE
+Do not produce a news summary.
+
+Use the news and developments as signals to discover commercially viable web applications, SaaS products, online services, marketplaces, workflow tools, niche B2B products, B2C utilities, compliance tools, operational software, data products, or other internet-delivered services that can be built primarily with Lovable.
+
+The opportunity may target:
+- Türkiye,
+- another specific country,
+- multiple countries,
+- or the global online market.
+
+A product does NOT need to be Türkiye-focused. Global online service sales are explicitly in scope.
+
+
+==================================================
+ARTICLE VERIFICATION AND ORIGINAL URL RESOLUTION
+==================================================
+
+The feed/JSON is a DISCOVERY INDEX, not sufficient evidence by itself.
+
+For every article that materially contributes to a final opportunity:
+
+1. Do not rely only on the RSS title or summary.
+2. Open/read the original article whenever publicly accessible.
+3. If the feed URL is a Google News URL, resolve the original article by:
+   - using the exact headline,
+   - publisher/source name,
+   - publisher domain,
+   - and publication date when useful.
+4. Prefer the canonical publisher URL in the final output.
+5. Do NOT use a news.google.com redirect as the final source URL when the
+   original publisher article can be identified.
+6. If the original article is inaccessible/paywalled:
+   - search for the same development in a primary source such as company
+     announcement, regulator, government page, research paper, product release,
+     standards body or official documentation;
+   - or use multiple reliable corroborating reports.
+7. If neither the original article nor reliable corroboration can be read,
+   mark:
+   FULL ARTICLE NOT VERIFIED
+   and do not assign Strong evidence strength based solely on the headline.
+8. Distinguish what the source explicitly states from inference.
+9. Never invent article details that are absent from accessible evidence.
+
+For output field "Haber / Tetikleyici Gelişme → URL":
+use the original/canonical article URL whenever found.
+
+==================================================
+ARTICLE-TO-OPPORTUNITY ENGINE
+==================================================
+
+Do NOT jump directly from an article headline to a product idea.
+
+Process EVERY article through the following structured pipeline.
+
+For each article, first create an internal ARTICLE RECORD.
+
+--------------------------------------------------
+STAGE 1 — ARTICLE DECOMPOSITION
+--------------------------------------------------
+
+Extract only facts supported by the article/source.
+
+ARTICLE RECORD:
+
+A. EVENT
+- What exactly happened?
+- Who did it?
+- Where?
+- When?
+- Is it already deployed, announced, tested, regulated, funded, launched,
+  discovered, proposed, or merely predicted?
+
+B. ACTORS
+Identify all relevant actors:
+- companies
+- customers
+- employees
+- governments/regulators
+- suppliers
+- distributors
+- developers
+- consumers
+- intermediaries
+- professional groups
+
+C. OBJECT
+What changed?
+
+Examples:
+- technology
+- product
+- API
+- regulation
+- business model
+- price
+- process
+- infrastructure
+- standard
+- customer behavior
+- data availability
+- distribution channel
+- market structure
+- cost structure
+- labor availability
+- compliance burden
+- transaction model
+- access model
+
+D. QUANTITATIVE SIGNALS
+Extract numbers whenever available:
+- cost reduction
+- time reduction
+- adoption
+- growth
+- market size
+- transaction volume
+- failure rate
+- labor hours
+- regulatory deadline
+- performance improvement
+- price
+- capacity
+- throughput
+- conversion
+- utilization
+- compliance penalty
+- market penetration
+
+E. WORKFLOW AFFECTED
+Identify the real-world workflow affected by the development.
+
+Represent it as:
+
+INPUT
+→ CURRENT PROCESS
+→ DECISION / ACTION
+→ OUTPUT
+
+Do not remain at the abstract industry level.
+
+--------------------------------------------------
+STAGE 2 — NOVELTY EXTRACTION
+--------------------------------------------------
+
+Determine the actual DELTA created by the article.
+
+Express it explicitly as:
+
+BEFORE:
+What was previously impossible, expensive, slow, manual, illegal,
+inaccessible, fragmented, inaccurate, risky or uncommon?
+
+AFTER:
+What has become possible, cheaper, faster, mandatory, available,
+automatable, measurable, scalable or commercially viable?
+
+DELTA:
+AFTER minus BEFORE.
+
+The DELTA is the primary innovation signal.
+
+Classify every meaningful delta into one or more:
+
+CAPABILITY_DELTA
+COST_DELTA
+SPEED_DELTA
+ACCESS_DELTA
+DATA_DELTA
+REGULATION_DELTA
+BEHAVIOR_DELTA
+INFRASTRUCTURE_DELTA
+BUSINESS_MODEL_DELTA
+DISTRIBUTION_DELTA
+RISK_DELTA
+LABOR_DELTA
+STANDARDIZATION_DELTA
+
+Do not call something a novelty merely because it is news.
+
+--------------------------------------------------
+STAGE 3 — CAUSAL IMPACT MAP
+--------------------------------------------------
+
+For every DELTA ask:
+
+WHAT DOES THIS CHANGE MAKE POSSIBLE?
+
+WHAT DOES THIS CHANGE MAKE NECESSARY?
+
+WHAT DOES THIS CHANGE MAKE OBSOLETE?
+
+WHAT DOES THIS CHANGE MAKE CHEAPER?
+
+WHAT DOES THIS CHANGE MAKE FASTER?
+
+WHAT DOES THIS CHANGE MAKE MORE COMPLEX?
+
+WHAT NEW DATA DOES THIS CREATE?
+
+WHAT NEW DECISION MUST SOMEONE NOW MAKE?
+
+WHAT NEW COORDINATION PROBLEM DOES IT CREATE?
+
+WHAT NEW COMPLIANCE / PROOF / RECORD-KEEPING NEED DOES IT CREATE?
+
+WHAT EXISTING WORKFLOW BECOMES INEFFICIENT BECAUSE OF THE CHANGE?
+
+WHAT NEW USER SEGMENT CAN NOW PARTICIPATE?
+
+WHAT NEW SUPPLIER / INTERMEDIARY / OPERATOR ROLE APPEARS?
+
+Generate first-order AND second-order consequences.
+
+Example logic:
+
+new capability
+→ adoption
+→ new workflow
+→ coordination problem
+→ software opportunity
+
+new regulation
+→ new obligation
+→ evidence requirement
+→ repetitive administrative work
+→ compliance workflow software
+
+cost reduction
+→ new users enter market
+→ transaction count increases
+→ manual process no longer scales
+→ operations SaaS opportunity
+
+new data source
+→ previously invisible event becomes measurable
+→ decision can now be automated
+→ monitoring / alert / optimization opportunity
+
+new infrastructure
+→ more participants enter the system
+→ fragmented operations emerge
+→ orchestration / reconciliation / scheduling opportunity
+
+--------------------------------------------------
+STAGE 4 — PROBLEM SURFACE DISCOVERY
+--------------------------------------------------
+
+For every consequence identify every affected stakeholder.
+
+For each stakeholder determine:
+
+JOB TO BE DONE
+What are they trying to accomplish?
+
+CURRENT METHOD
+How do they solve it today?
+
+FRICTION
+What is:
+- manual?
+- repetitive?
+- slow?
+- error-prone?
+- fragmented?
+- expensive?
+- difficult to verify?
+- difficult to coordinate?
+- difficult to compare?
+- difficult to track?
+- legally risky?
+- dependent on spreadsheets/email/WhatsApp?
+- dependent on expert knowledge?
+- dependent on phone calls?
+- dependent on copying data between systems?
+- difficult to audit?
+- difficult to prove?
+- difficult to monetize?
+- difficult to scale?
+
+TRIGGER
+Why does the news/development make this problem newly important,
+larger, more frequent or newly solvable?
+
+VALUE
+What measurable outcome would software improve?
+
+Examples:
+- save labor hours
+- prevent loss
+- increase revenue
+- reduce error
+- reduce compliance risk
+- increase utilization
+- shorten sales cycle
+- improve matching
+- improve visibility
+- automate documentation
+- reduce transaction friction
+- reduce coordination overhead
+- increase conversion
+- improve evidence quality
+- improve resource allocation
+
+Do not create a software idea until a concrete JOB + FRICTION exists.
+
+--------------------------------------------------
+STAGE 5 — OPPORTUNITY EXPANSION
+--------------------------------------------------
+
+For EVERY valid problem/capability combination, systematically test
+the following PRODUCT TRANSFORMATION OPERATORS.
+
+Do not stop after finding the first plausible application.
+
+Can it become a:
+
+TRACKER
+MONITOR
+ALERTING TOOL
+WORKFLOW MANAGER
+AUTOMATION TOOL
+CALCULATOR
+ESTIMATOR
+SIMULATOR
+OPTIMIZER
+COMPARISON ENGINE
+MATCHING ENGINE
+MARKETPLACE
+DIRECTORY WITH TRANSACTIONAL VALUE
+COMPLIANCE MANAGER
+AUDIT / EVIDENCE MANAGER
+DOCUMENT GENERATOR
+VALIDATION TOOL
+VERIFICATION TOOL
+RECONCILIATION TOOL
+SCHEDULER
+RESOURCE ALLOCATION TOOL
+CONFIGURATOR
+SELF-SERVICE PORTAL
+ASSESSMENT TOOL
+BENCHMARKING TOOL
+DATA NORMALIZATION TOOL
+DATA AGGREGATOR
+REPORTING TOOL
+DECISION SUPPORT TOOL
+PROCUREMENT TOOL
+LEAD GENERATION TOOL
+TRANSACTION LAYER
+COLLABORATION TOOL
+CUSTOMER PORTAL
+MICRO-SaaS
+NICHE PROFESSIONAL TOOL
+DIGITAL MARKETPLACE
+API / DATA PRODUCT
+BROWSER-BASED UTILITY
+ONBOARDING TOOL
+ELIGIBILITY CHECKER
+APPLICATION / SUBMISSION MANAGER
+QUOTE / PRICING TOOL
+CAPACITY PLANNER
+QUEUE / REQUEST MANAGER
+MAINTENANCE / SERVICE LOG
+INVENTORY / ASSET LEDGER
+FORM / INTAKE BUILDER
+RULE ENGINE
+EXCEPTION MANAGEMENT TOOL
+
+For every operator that creates genuine customer value,
+generate a RAW OPPORTUNITY.
+
+There is no maximum number of RAW OPPORTUNITIES.
+
+--------------------------------------------------
+STAGE 6 — COMBINATION DISCOVERY
+--------------------------------------------------
+
+Do not analyze news articles only in isolation.
+
+After processing all articles, identify combinations where:
+
+ARTICLE A supplies a new capability
++
+ARTICLE B reveals a customer problem
++
+ARTICLE C supplies downloadable data or a compatible technology
+=
+NEW PRODUCT OPPORTUNITY
+
+Also search for:
+
+REGULATION + AUTOMATION
+NEW CAPABILITY + OLD MANUAL PROCESS
+CHEAPER TECHNOLOGY + UNDERSERVED CUSTOMER
+OPEN DATA + DECISION PROBLEM
+NEW STANDARD + COMPLIANCE WORKFLOW
+NEW MARKET + COORDINATION PROBLEM
+AI CAPABILITY + STRUCTURED PROFESSIONAL WORKFLOW
+LABOR SHORTAGE + SELF-SERVICE SOFTWARE
+NEW HARDWARE + SOFTWARE MANAGEMENT LAYER
+NEW INFRASTRUCTURE + OPERATIONS SOFTWARE
+NEW DATA + VERIFICATION PROBLEM
+NEW DISTRIBUTION CHANNEL + NICHE SELLER
+NEW BUSINESS MODEL + BACK-OFFICE FRICTION
+NEW CUSTOMER BEHAVIOR + NEW TRANSACTION WORKFLOW
+NEW REGULATION + REPORTING / EVIDENCE BURDEN
+
+These cross-article combinations are mandatory.
+
+--------------------------------------------------
+STAGE 7 — PRODUCTIZATION TEST
+--------------------------------------------------
+
+Convert a RAW OPPORTUNITY into a product concept only if you can define:
+
+USER
+Who uses it?
+
+BUYER
+Who pays?
+
+TRIGGER
+What event causes them to need it?
+
+INPUT
+What data does the product receive?
+
+PROCESS
+What transformation does the software perform?
+
+OUTPUT
+What useful result does the customer receive?
+
+REPEATABILITY
+Why will this be used more than once?
+
+VALUE
+Why is the result worth paying for?
+
+DELIVERY
+Can the value be delivered primarily through a web application?
+
+SELF-SERVICE
+Can the customer receive the core value without a large manual-service operation?
+
+If these cannot be specified concretely,
+keep the opportunity as an unresolved hypothesis rather than inventing a product.
+
+
+
+STAGE 9 — COMPETITION DISCOVERY
+--------------------------------------------------
+
+Competition research happens AFTER the opportunity has been clearly defined.
+
+For every opportunity create a one-sentence CORE JOB:
+
+"For [customer], software that [specific job] when [trigger]."
+
+Search competitors using the CORE JOB rather than only the product name.
+
+Perform separate searches for:
+
+TÜRKİYE
+- Turkish problem terminology
+- Turkish industry terminology
+- Turkish customer language
+- English product terminology + Türkiye
+- Turkish SaaS/product directories where relevant
+
+GLOBAL
+- product category
+- job-to-be-done
+- workflow description
+- industry terminology
+- alternative terminology
+- startup terminology
+- SaaS directories / marketplaces where relevant
+
+If the opportunity originates in a non-English market, also use local-language search terms where useful.
+
+Use multiple search formulations.
+
+DIRECT COMPETITOR TEST:
+
+A company is direct ONLY IF:
+
+SAME TARGET CUSTOMER
++
+SAME CORE JOB
++
+SUBSTANTIALLY SAME WORKFLOW
+
+If one is missing, classify it as ADJACENT rather than DIRECT.
+
+Qualified requirement:
+
+Türkiye direct competitors = 0
+
+Global direct competitors <= 3
+
+Do not fabricate absence of competition.
+
+--------------------------------------------------
+STAGE 10 — OPPORTUNITY EXPANSION CHECK
+--------------------------------------------------
+
+Before finishing an article, ask:
+
+"Have I extracted every distinct commercial consequence from this article?"
+
+Specifically verify that you considered:
+
+1. software created because something NEWLY EXISTS
+2. software created because something became CHEAPER
+3. software created because something became MANDATORY
+4. software created because something became MEASURABLE
+5. software created because something became AUTOMATABLE
+6. software created because something became MORE COMPLEX
+7. software created because adoption creates a NEW SECONDARY PROBLEM
+8. software replacing a manual workaround
+9. software serving suppliers around the new market
+10. software serving customers around the new market
+11. software serving regulators/auditors/operators around the new market
+12. software that connects two newly relevant actors
+13. software that packages newly available data
+14. software that verifies or proves a newly required condition
+15. software that helps a new participant enter a newly opened market
+16. software that manages exceptions created by the new workflow
+17. software that monetizes a previously non-transactional interaction
+
+Only then move to the next article.

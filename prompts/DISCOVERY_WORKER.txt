@@ -1,150 +1,19 @@
-MULTI-WORKER RADAR — DISCOVERY STAGE
-
-Repository: Sadikkucuk/lovable-opportunity-radar
-Timezone/date for run paths: Europe/Istanbul.
-
-The automation calling this prompt will tell you WORKER_ID and ASSIGNED_BATCHES.
-Those values are authoritative.
-
-Read:
-- CHATGPT_RADAR_PROMPT.txt for opportunity-discovery definitions and constraints.
-- docs/batches/index.json ONCE at the start of the run.
-- every assigned docs/batches/batch-XXX.json from that same index.
-
-Capture these immutable input identifiers from the index:
-- source_batch_index_generated_at
-- source_total_items
-- source_batch_count
-
-All four 07:00 workers must normally see the same source_batch_index_generated_at.
-Do not re-read a newer index later in the same worker run.
-
-IMPORTANT OVERRIDE:
-You are NOT the final radar. Do NOT process batches outside your assignment.
-Do NOT perform final competitor research. Do NOT update idea_history.json or
-idea_catalog.json. Your job is exhaustive discovery over your assigned feed records.
-
-For EVERY feed record in the assigned batches:
-1. Count it as triaged exactly once.
-2. Use title, summary, source and date for a LIGHT relevance/development pass.
-3. Reject obvious noise (sports, celebrity, generic politics, entertainment,
-   product-review noise, duplicate category/index pages) without opening the article.
-4. If it may contain a capability/regulation/data/infrastructure/cost/behavior/
-   workflow delta that could create a commercial web-app opportunity, resolve and
-   read the original/canonical article or a reliable primary/corroborating source.
-5. From verified candidate articles perform:
-   EVENT → BEFORE → AFTER → DELTA → affected workflow → concrete friction/JTBD
-   → target customer/buyer → product mechanism → raw opportunity.
-6. Generate ALL distinct raw opportunities supported by the assigned material.
-   Do not rank and do not stop at a target count.
-7. A candidate article may produce multiple distinct raw opportunities.
-8. Cross-article combinations are allowed only among articles in your assigned batches;
-   the merge stage will later perform dataset-wide combinations.
-
-
-==================================================
-TRAKYA / LÜLEBURGAZ INDUSTRIAL OPPORTUNITY LENS
-==================================================
-
-For industrial, manufacturing, automation, supply-chain, energy-efficiency, food,
-pharma, glass/ceramics, textile, machinery, automotive-supplier and logistics
-developments, perform an additional LOCAL TRANSFERABILITY PASS.
-
-Do NOT require the source article to mention Lüleburgaz. Treat the industrial corridor
-Lüleburgaz -> Kırklareli -> Çorlu -> Çerkezköy -> Kapaklı -> Ergene -> Tekirdağ as a
-shared problem-discovery cluster when the underlying manufacturing workflow is transferable.
-
-For each relevant raw opportunity ask:
-- Could the same operational problem plausibly occur in a factory, supplier, warehouse,
-  logistics operator or industrial service company in Lüleburgaz/Trakya?
-- Is the product mechanism a reusable web workflow rather than bespoke consulting,
-  hardware-only deployment or plant-specific integration?
-- Could a Lüleburgaz/Trakya business serve as an initial pilot customer while the
-  product later scales to Türkiye/global markets?
-
-If yes, add to evidence_notes:
-"trakya_transferability_hypothesis": with sector/workflow reasoning.
-
-Set scope_hint="Lüleburgaz" ONLY when there is concrete evidence already available
-in the assigned material that the relevant sector/workflow exists locally. Otherwise
-use Türkiye/unclear and preserve the hypothesis for fresh validation.
-
-Never manufacture a Lüleburgaz idea to satisfy a quota. Zero local ideas is acceptable
-when evidence is absent. Locality changes discovery attention, not qualification standards.
-
-Write exactly one file:
-- normal daily run: state/runs/YYYY-MM-DD/discovery/worker-WORKER_ID.json
-- generation refresh when the orchestrator supplies REFRESH_GENKEY:
-  state/runs/YYYY-MM-DD/refresh-REFRESH_GENKEY/discovery/worker-WORKER_ID.json
-
-When REFRESH_GENKEY is supplied it is authoritative. Do not read, repair or overwrite
-the normal daily worker file. The worker's source_batch_index_generated_at MUST equal
-the refresh generation represented by REFRESH_GENKEY.
-
-The JSON must contain:
-{
-  "schema_version": 1,
-  "run_date": "YYYY-MM-DD",
-  "worker_id": "1|2|3|4",
-  "source_batch_index_generated_at": "...",
-  "source_total_items": N,
-  "source_batch_count": N,
-  "assigned_batches": [..],
-  "status": "complete|incomplete",
-  "started_at": "...",
-  "completed_at": "...",
-  "feed_items_expected": N,
-  "feed_items_triaged": N,
-  "candidate_article_count": N,
-  "original_articles_verified": N,
-  "full_article_not_verified": N,
-  "noise_or_no_opportunity_count": N,
-  "raw_opportunity_count": N,
-  "raw_opportunities": [...]
-}
-
-Every raw opportunity must include:
-- raw_id
-- supporting_article_ids
-- supporting_article_titles
-- supporting_sources
-- canonical_source_urls
-- article_verification: full / corroborated / insufficient
-- novelty_delta
-- delta_types
-- affected_workflow
-- target_customer
-- buyer
-- job_to_be_done
-- current_friction
-- product_mechanism
-- one_sentence_concept
-- why_now
-- scope_hint: Lüleburgaz / Türkiye / Dünya / Evren / unclear
-- zero_cost_feasibility: plausible / doubtful
-- estimated_lovable_credits
-- draft_canonical_key
-- evidence_notes
-
-Mark status="complete" ONLY if:
-- every assigned batch was successfully read, AND
-- feed_items_triaged == the sum of item_count for those assigned batches, AND
-- source_batch_index_generated_at is recorded.
-
-Do not compare against a later/current index after starting. The merge/orchestrator
-will compare the four workers' captured source_batch_index_generated_at values.
-
-If anything prevents exhaustive assigned coverage, write status="incomplete" with:
-- missing_batches
-- failure_reason
-- exact feed_items_triaged
-
-Never claim complete coverage from the number of feed records fetched alone.
-
-
-PERSISTENCE HARD GATE
-- The worker is successful only after worker-WORKER_ID.json is actually persisted in GitHub.
-- If the target file already exists for the same frozen generation, update it only when
-  repairing an incomplete worker; never overwrite a complete worker from another generation.
-- If GitHub persistence fails, report the write failure; do not claim the worker completed.
-- Never disable this worker automation because of a persistence failure.
+RADAR V2 — WORKER LANES 1–4
+Read master, WORK_PROTOCOL and RESEARCH_METHOD. Read your lane inbox and process
+ready jobs oldest run first. Lanes handle discovery AND validation, not old batch
+assignments. Follow VALIDATOR_WORKER for validation jobs.
+Discovery payload has up to 10 frozen feed records. Triage every one using
+decomposition, novelty, actor/JTBD and product transformation checks. Read
+original/primary sources before claiming article verification. Preserve facts
+vs product inference. Save all plausible distinct opportunities; competitor
+research comes later.
+Receipt outcome=done when every article has a decision. result:
+{"articles":[{"article_key":"COPY","decision":"opportunity|no_opportunity|unverified",
+"reason":"Turkish reason","opportunities":[]}]}
+Each opportunity needs raw_id (job_id + article_key + sequence), canonical_key
+(stable customer|job|mechanism), idea_name, core_job, target_customer, buyer,
+product_mechanism, why_now, before_state, after_state, canonical_source_urls,
+supporting_article_ids, source observations, scope_hint and local evidence.
+Unknown feasibility is not approval. Discovery never directly enters catalog.
+If sources fail, record unverified per article. Save each complete ten-record
+unit promptly, then continue. A cut-off only requires that uncommitted unit again.

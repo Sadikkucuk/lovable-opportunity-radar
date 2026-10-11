@@ -1,0 +1,52 @@
+name: Radar v2 controller
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '2,17,32,47 * * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'radar/**'
+      - 'tests/**'
+      - 'state/v2/results/**'
+      - 'state/v2/config.json'
+      - '.github/workflows/radar-v2.yml'
+permissions:
+  contents: write
+concurrency:
+  group: radar-v2-publisher
+  cancel-in-progress: false
+jobs:
+  reconcile:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Acceptance tests
+        run: python -m unittest discover -s tests -v
+      - name: Reconcile and commit with optimistic concurrency
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            # This is a disposable Actions checkout. Recompute from the new head
+            # instead of rebasing stale state over concurrent worker receipts.
+            git checkout -B radar-state origin/main
+            python -m radar.engine tick
+            python -m radar.engine check
+            git add state/v2 state/idea_catalog.json state/idea_history.json docs/radar
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m 'Radar v2: reconcile persistent jobs and publication'
+            if git push origin HEAD:main; then exit 0; fi
+          done
+          echo 'Concurrent writes prevented publication; next controller run will retry.'
+          exit 1
