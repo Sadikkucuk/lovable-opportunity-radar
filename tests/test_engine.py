@@ -1,4 +1,5 @@
 import copy
+import hashlib
 import json
 import tempfile
 import unittest
@@ -210,6 +211,13 @@ class EngineTests(unittest.TestCase):
         self.e.write(f"state/v2/results/{j['job_id']}/001.json", ["invalid-type"])
         self.e.tick("a"*40, create=False)
         self.assertEqual(self.e.evaluate(j)["attempt"], 2)
+
+    def test_release_byte_hash_handles_integral_floats_across_languages(self):
+        j = self.validation(); result = self.qualified(j)
+        result["catalog_record"]["external_cash_cost"] = 1.0
+        self.receipt(j, result); self.e.tick("a"*40, create=False)
+        ptr = self.e.read("docs/radar/current.json")
+        self.assertEqual(ptr["content_sha256"], hashlib.sha256((self.root/ptr["path"]).read_bytes()).hexdigest())
 
 
 if __name__ == "__main__":

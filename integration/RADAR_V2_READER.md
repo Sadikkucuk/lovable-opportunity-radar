@@ -5,7 +5,11 @@ Bu değişiklik yalnız fikir okuma/senkron yolunu değiştirir. Tasarım, hesap
 proje talepleri, ödeme veya diğer uygulama verileri kapsam dışıdır.
 
 - GitHub `docs/radar/current.json` → content-addressed `path` release dosyası.
+- `content_sha256` alanı release dosyasının UTF-8 ham baytlarının SHA-256 özetidir.
+  Sayıların Python/JavaScript JSON yazım farkından etkilenmemesi için önce dosyanın
+  ham metnini bu özetle karşılaştır, ardından JSON parse et. release_id dosya adıdır.
 - Beklenen schema_version=2; idea_count ile dizi boyutu ve unique UUID/key kontrolü.
+- legacy_count=89 olmalı; bütün eski canonical_key'ler gelen tam pakette bulunmalı.
 - Başarılı tam paket atomik değiştirilir; kısmi/bozuk/erişilemeyen pakette son sağlam
   kopya kullanılır. İlk ziyaret için 89 eski satırın birebir gömülü kopyası bulunur.
 - Eski UUID, her alan, sıralama, açıklama ve detay URL'leri korunur. Veri tablosuna

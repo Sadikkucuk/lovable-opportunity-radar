@@ -479,7 +479,8 @@ class Engine:
         release_path = f"docs/radar/releases/{sha}.json"
         self.write(release_path, payload, immutable=True)
         self.write("docs/radar/current.json", {"schema_version": 2, "release_id": sha,
-                   "path": release_path, "idea_count": len(rows), "legacy_count": self.check_protected()})
+                   "path": release_path, "idea_count": len(rows), "legacy_count": self.check_protected(),
+                   "content_sha256": hashlib.sha256((self.root / release_path).read_bytes()).hexdigest()})
         return appended
 
     def tick(self, commit, create=True):
