@@ -2,7 +2,7 @@
   "schema_version": 1,
   "site_name": "AIStartup",
   "description": "Canonical persistent idea catalog consumed by the AIStartup web application.",
-  "updated_at": "2026-10-11T10:15:44Z",
+  "updated_at": "2026-10-11T10:21:54Z",
   "ideas": [
     {
       "canonical_key": "competition-organizer|enforce-ai-use-policy-on-submissions|declaration-rule-engine-review-evidence",
@@ -6534,6 +6534,138 @@
       "radar_v2_provenance": {
         "job_id": "2026-10-10-migration-validation-10812a61929529a7",
         "receipt_path": "state/v2/results/2026-10-10-migration-validation-10812a61929529a7/001.json",
+        "policy_version": "radar-v2-no-runtime-services-20261010"
+      }
+    },
+    {
+      "canonical_key": "enerji-yoğun-tesislerin-proje-ekipleri|batarya-ile-tepe-güç-üretimi-seçeneklerinin-tco-hesabını-yap|kullanıcı-girdili-capex-opex-ömür-çevrim-ve-duyarlılık-hesap",
+      "idea_name": "PeakPower Compare — batarya/gaz tepe güç senaryo aracı",
+      "scope_tier": "Dünya",
+      "scope_reason": "Batarya ve gaz tepe üretimi yatırım karşılaştırması küresel enerji yoğun tesislerin ortak problemidir; tarife, yakıt, finansman ve teknik varsayımlar kullanıcı tarafından ülke/tesis bazında girilir.",
+      "news_source": "TechCrunch",
+      "news_title": "Batteries are now cheaper than natural gas turbines used at many data centers",
+      "news_date": "2026-10-09",
+      "news_url": "https://techcrunch.com/2026/10/09/batteries-are-now-cheaper-than-natural-gas-turbines-used-at-many-data-centers/",
+      "source_links": [
+        {
+          "label": "TechCrunch — Batteries vs gas turbines",
+          "url": "https://techcrunch.com/2026/10/09/batteries-are-now-cheaper-than-natural-gas-turbines-used-at-many-data-centers/"
+        },
+        {
+          "label": "StoreFAST",
+          "url": "https://www.nlr.gov/storage/storefast"
+        },
+        {
+          "label": "Peaker vs Battery Comparator",
+          "url": "https://howtostoreelectricity.com/peaking-power-plant/"
+        },
+        {
+          "label": "CogenS",
+          "url": "https://jisenergy.com/"
+        },
+        {
+          "label": "ENOPTIMAL Batarya Fizibilite",
+          "url": "https://enoptimal.com/tr/battery-feasibility"
+        }
+      ],
+      "core_idea": "Enerji yoğun tesis ekiplerinin batarya ve gaz tepe gücü seçeneklerini aynı kullanıcı girdileriyle CAPEX, OPEX, yakıt/şarj maliyeti, ömür, çevrim, emisyon ve hassasiyet üzerinden karşılaştırdığı; varsayım kaynağı ve insan onayını saklayan tarayıcı içi karar dosyası.",
+      "user_story": "Bir enerji yatırımı yöneticisi olarak batarya ve gaz tepe gücü seçeneklerini tesisimin gerçek yükü ve tekliflerimle karşılaştırmak, kritik varsayımların sonucu nasıl değiştirdiğini görmek ve yatırım kuruluna denetlenebilir bir karar dosyası sunmak istiyorum.",
+      "before_state": "Batarya ve gaz teklifleri farklı mühendislik tablolarında, farklı ömür/yakıt/tarife varsayımlarıyla hesaplanıyor; sonuçların hangi girdi sürümüne dayandığı belirsiz.",
+      "after_state": "Yük ve teklif girdileri → ortak varsayım defteri → deterministik batarya/gaz TCO modeli → hassasiyet ve başabaş analizi → istisna notları → insan onayı → indirilebilir karar paketi.",
+      "why_now": "9 Ekim 2026 tarihli haber, Wood Mackenzie’nin 43 pazarın tamamında dört saatlik bataryaları açık çevrim gaz türbinlerinden daha ucuz bulduğunu ve türbin tedarik sürelerinin uzadığını aktarıyor.",
+      "target_customer": "Enerji yoğun tesislerin proje ekipleri",
+      "buyer": "Enerji yatırımı yöneticisi",
+      "market": "Global",
+      "turkiye_direct_competitor_count": 0,
+      "global_direct_competitor_count": 3,
+      "direct_competitors": [
+        {
+          "name": "StoreFAST",
+          "url": "https://www.nlr.gov/storage/storefast",
+          "same_customer_job_workflow_reason": "Depolama ile gaz türbini dahil esnek üretimi finansal senaryolarla kıyaslar."
+        },
+        {
+          "name": "Peaker vs Battery Comparator",
+          "url": "https://howtostoreelectricity.com/peaking-power-plant/",
+          "same_customer_job_workflow_reason": "Gaz peaker ve dört saatlik BESS uygunluğunu girdilerle karşılaştırır."
+        },
+        {
+          "name": "CogenS",
+          "url": "https://jisenergy.com/",
+          "same_customer_job_workflow_reason": "Batarya ve gaz genset’i tesis yatırımı için yaşam döngüsü maliyetiyle modeller."
+        }
+      ],
+      "adjacent_competitors": [
+        "ENOPTIMAL Batarya Fizibilite Analizi",
+        "Enerji Portföy BESS Fizibilitesi"
+      ],
+      "market_gap": "Mevcut doğrudan araçlar ya karmaşık mühendislik modeli ya da basit uygunluk taramasıdır. Boşluk; tesisin kendi teklif/yük verisiyle çalışan, varsayım kaynağı ve sürümünü saklayan, hassasiyet/başabaş sonucunu yönetim onayıyla tek karar paketine dönüştüren hafif istemci uygulamasıdır.",
+      "business_models": [
+        {
+          "model": "tek seferlik tesis lisansı",
+          "estimate": "€249–749"
+        },
+        {
+          "model": "kurumsal şablon özelleştirme",
+          "estimate": "€1.500–6.000/proje"
+        },
+        {
+          "model": "kaynak kod lisansı",
+          "estimate": "€3.000–9.000"
+        }
+      ],
+      "lovable_credits_total": 125,
+      "lovable_credit_breakdown": {
+        "ui_data_model": 25,
+        "core_workflows": 45,
+        "integrations_rule_engine": 20,
+        "testing_fixes": 20,
+        "launch_polish": 15
+      },
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "istemci uygulaması ve arayüz",
+          "cost": "mevcut Lovable kredileri"
+        },
+        {
+          "name": "Browser File API",
+          "purpose": "yük profili ve teklif CSV/JSON içe aktarma",
+          "cost": "tarayıcı yerleşik"
+        },
+        {
+          "name": "localStorage/IndexedDB",
+          "purpose": "yerel senaryo ve varsayım saklama",
+          "cost": "tarayıcı yerleşik"
+        },
+        {
+          "name": "İstemci tarafı JavaScript",
+          "purpose": "TCO, NPV, çevrim ve hassasiyet hesapları",
+          "cost": "ücretsiz"
+        },
+        {
+          "name": "İstemci tarafı JSON/CSV/PDF export",
+          "purpose": "karar kanıt paketi",
+          "cost": "açık kaynak veya tarayıcı yerleşik"
+        }
+      ],
+      "external_cash_cost": null,
+      "mvp": "Manuel/CSV yük profili ve teklif girişi, batarya ve gaz senaryosu, 15–25 yapılandırılabilir teknik-finansal varsayım, NPV/TCO/LCOE ve başabaş analizi, tek/çift değişken hassasiyet tablosu, kaynak notlu varsayım defteri, manuel onay ve JSON/CSV/PDF karar paketi.",
+      "working_logic": "Kullanıcı tesis yükü, batarya/gaz teklifleri, yakıt-tarife ve finansman varsayımlarını girer → sistem iki seçeneğin yıllık nakit akışı ve TCO’sunu deterministik hesaplar → kritik değişkenlerde hassasiyet/başabaş sınırını gösterir → kullanıcı mühendislik ve mevzuat belirsizliklerini not eder → karar sahibi gerekçe ve onayı kaydeder → sürümlü kanıt paketi indirilir.",
+      "build_time": "5–8 founder days",
+      "marketing_strategy": "Ücretsiz batarya-vs-gaz başabaş şablonu ve örnek veri merkezi/üretim tesisi vakası; enerji yöneticileri ve EPC danışmanlarına LinkedIn/e-posta; OSB enerji birimleri ve enerji verimliliği danışmanlarıyla pilot ortaklığı.",
+      "first_customer_plan": "Trakya ve Marmara’da puant güç, yedek güç veya kapasite artışı değerlendiren 15 enerji yoğun tesise ulaşmak; üç gerçek teklif setini ücretsiz yeniden modellemek; en az iki tesiste karar hazırlama süresi ve varsayım izlenebilirliği kazanımına karşı ücretli pilot kapatmak.",
+      "main_risk": "Kullanıcıların teknik veri ve fiyat varsayımları eksik olabilir; basit hesaplayıcı mühendislik fizibilitesi sanılabilir. Ürün sonucu gösterge olarak etiketlemeli ve yetkili mühendis/mevzuat doğrulamasını zorunlu karar kapısı yapmalıdır.",
+      "validation_assumption": "En az 15 enerji yatırımı yöneticisinden 5’inin batarya ve gaz tekliflerini ortak varsayım tabanında kıyaslamakta zorlandığını, 3’ünün gerçek veriyle pilot yapacağını ve 2’sinin €249+ tesis lisansı ödeyeceğini doğrulamak.",
+      "evidence_strength": "Strong",
+      "competition_confidence": "Medium",
+      "verification_status": "qualified",
+      "status": "published",
+      "first_reported_at": "2026-10-09",
+      "last_updated_at": "2026-10-11",
+      "radar_v2_provenance": {
+        "job_id": "2026-10-10-migration-validation-28e1620977577167",
+        "receipt_path": "state/v2/results/2026-10-10-migration-validation-28e1620977577167/002.json",
         "policy_version": "radar-v2-no-runtime-services-20261010"
       }
     }
