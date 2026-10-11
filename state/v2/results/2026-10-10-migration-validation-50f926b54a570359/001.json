@@ -1,0 +1,149 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-50f926b54a570359",
+  "input_hash": "50f926b54a570359940f51ff810c20f0c2dcb77b8a3f116845d10f6b5e22d6c9",
+  "token": "2355850c-592b-4e31-ae33-384fd5e8458d",
+  "finished_at": "2026-10-11T20:31:11.863Z",
+  "outcome": "done",
+  "reason": "SpaceX/Starlink’in 6 Ekim 2026 tarihli güncellemesi, planlı manevra ve ephemeris paylaşımı eksikliğinin yakın geçiş riskini artırdığını doğruluyor. Ancak Satcat, OKAPI:Orbits, Neuraspace ve Starlink Space Safety aynı uydu operatörleri için conjunction olayı, karşı taraf koordinasyonu, manevra kararı ve kayıt/kanıt akışını doğrudan ürünleştiriyor. Global doğrudan rakip sayısı en az dörttür; aday reddedildi.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Aynı müşteri ve aynı notice → counterpart → maneuver decision → coordination/evidence iş akışı en az dört global platformda doğrudan mevcut; izin verilen en fazla üç global doğrudan rakip eşiği aşılmıştır.",
+    "duplicate_of": null,
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://starlink.com/updates",
+        "accessed_at": "2026-10-11T20:31:11.863Z",
+        "claim": "Uydu operatörleri arasında planlı manevra ve ephemeris paylaşımı eksikliği somut conjunction riskleri yaratıyor.",
+        "observation": "Starlink’in 6 Ekim 2026 güncellemesi, 2026’da yaklaşık 650 manevra kabiliyetli üçüncü taraf uyduyla conjunction yaşandığını, yalnız yarısının ephemeris paylaştığını ve paylaşılmayan manevraların önlenebilir çarpışma riski yarattığını bildiriyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://uzay.tubitak.gov.tr/uydu-yer-istasyonu-ve-operasyonlari/gorev-kontrol-yazilimlari/",
+        "accessed_at": "2026-10-11T20:31:11.863Z",
+        "claim": "Türkiye’de conjunction değerlendirme ve manevra hazırlığına yönelik kurumsal yetenek bulunuyor; operatörler arası ortak ticari koordinasyon ürünü doğrulanmadı.",
+        "observation": "TÜBİTAK UZAY görev kontrol yazılımları CDM verisini işleyerek çarpışma uyarılarını değerlendirme, hedef yörünge/zaman hesaplama, manevra doğrulama ve prosedür çıktısı hazırlama yeteneklerini belgeliyor; çok şirketli counterpart iletişim günlüğü açıklanmıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://docs.satcat.com/",
+        "accessed_at": "2026-10-11T20:31:11.863Z",
+        "claim": "Satcat conjunction olaylarını değerlendirip operatörler arasında manevra koordinasyonu ve planlama sunuyor.",
+        "observation": "Satcat dokümantasyonu uydu operatörleri için conjunction assessment, catalog screening, maneuver planning ve Space Traffic Coordination hizmetlerini; operator-submitted ephemeris ve standart dosya/API akışlarını belgeliyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.okapiorbits.space/en/solutions-operators",
+        "accessed_at": "2026-10-11T20:31:11.863Z",
+        "claim": "OKAPI:Orbits aynı counterpart ve manevra anlaşması iş akışını ortak platformda yönetiyor.",
+        "observation": "OKAPI, artan conjunction alertleri için olay triyajı, manevra optimizasyonu, ephemeris exchange, kim hareket edecek anlaşması ve event-driven in-platform chat ile kritik olay koordinasyonu sunuyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.neuraspace.com/stm-ops",
+        "accessed_at": "2026-10-11T20:31:11.863Z",
+        "claim": "Neuraspace conjunction notice, operatör iletişimi, manevra kararı ve paylaşılan olay görünümünü aynı platformda sunuyor.",
+        "observation": "Neuraspace CDM/OEM/OPM işleme, conjunction sınıflandırma ve uyarı, operatörler arası chat, konum paylaşımı, otomatik manevra önerileri ve tarihsel görünüm sunuyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://docs.space-safety.starlink.com/docs/",
+        "accessed_at": "2026-10-11T20:31:11.863Z",
+        "claim": "Starlink Space Safety ephemeris paylaşımı, düşük gecikmeli conjunction screening ve operatör koordinasyonunu sunuyor.",
+        "observation": "Starlink dokümantasyonu ücretsiz operatör platformunun ephemeris paylaşımı, kullanıcı verisi/Stargaze verisiyle screening, CDM/event üretimi ve 7/24 conjunction coordination iletişim yolunu sağladığını açıklıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/File_API",
+        "accessed_at": "2026-10-11T20:31:11.863Z",
+        "claim": "Manuel conjunction koordinasyon günlüğü harici API, veritabanı veya AI olmadan çalışabilir.",
+        "observation": "Operatörler CDM/OEM dosyalarını veya notice bilgilerini tarayıcı File API/form ile içe aktarabilir; counterpart, karar, manevra ve kanıt kayıtları IndexedDB’de tutulup deterministik durum akışıyla CSV/JSON/PDF dışa aktarılabilir. Yörünge tahmini ve canlı screening kapsam dışı bırakılır.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 0,
+        "queries": [
+          "Türkiye uydu çarpışma riski koordinasyon yazılımı kavuşum uyarısı manevra",
+          "Türkiye uydu operatörü CDM manevra koordinasyon platformu"
+        ],
+        "scope": "11 Ekim 2026; Türkiye’de uydu operatörleri; conjunction notice’dan counterpart iletişimi ve manevra kararına, kanıt kaydına uzanan ortak web iş akışı.",
+        "search_complete": true,
+        "direct_competitors": [],
+        "adjacent_products": [
+          {
+            "name": "TÜBİTAK UZAY Görev Kontrol Yazılımları",
+            "url": "https://uzay.tubitak.gov.tr/uydu-yer-istasyonu-ve-operasyonlari/gorev-kontrol-yazilimlari/",
+            "same_customer_job_workflow_reason": "CDM değerlendirme, manevra planlama/doğrulama ve prosedür çıktısı sunuyor; operatörler arası ticari counterpart koordinasyon platformu olarak doğrulanmadı."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 4,
+        "queries": [
+          "satellite conjunction coordination platform operator maneuver decision evidence workflow",
+          "space traffic coordination software conjunction alerts operator communication maneuver planning",
+          "satellite operator conjunction management coordination platform"
+        ],
+        "scope": "11 Ekim 2026; global uydu ve constellation operatörleri; conjunction notice, karşı operatör iletişimi, manevra sorumluluğu/kararı ve olay kaydını tek akışta yönetme.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "Satcat Operations",
+            "url": "https://docs.satcat.com/",
+            "same_customer_job_workflow_reason": "Uydu operatörlerine conjunction değerlendirme, manevra planlama ve operator space-traffic coordination hizmetlerini aynı platformda sunuyor."
+          },
+          {
+            "name": "OKAPI:Orbits",
+            "url": "https://www.okapiorbits.space/en/solutions-operators",
+            "same_customer_job_workflow_reason": "Conjunction triyajı, ephemeris exchange, manevra anlaşması ve in-platform operator chat ile aynı koordinasyon akışını yürütüyor."
+          },
+          {
+            "name": "Neuraspace STM & Ops",
+            "url": "https://www.neuraspace.com/stm-ops",
+            "same_customer_job_workflow_reason": "CDM notice, operatörler arası chat/konum paylaşımı, manevra önerisi ve event management akışını sağlıyor."
+          },
+          {
+            "name": "Starlink Space Safety",
+            "url": "https://docs.space-safety.starlink.com/docs/",
+            "same_customer_job_workflow_reason": "Operatör ephemeris paylaşımı, conjunction screening/CDM olayları ve 7/24 coordination iletişim yolunu sunuyor."
+          }
+        ],
+        "adjacent_products": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Lovable tarayıcı uygulamasında CDM/OEM veya manuel notice girdisi File API ile alınır. Counterpart iletişim adımları, durum geçişleri, karar gerekçesi, manevra özeti ve ek kanıtlar IndexedDB’de saklanır; deterministik görev/timeline ve CSV/JSON/PDF çıktısı üretilir. Canlı orbital screening, hassas yörünge hesabı, sensör verisi ve otomatik manevra önerisi sunulmaz.",
+      "dependency_inventory": [
+        "Lovable istemci arayüzü",
+        "Kullanıcı sağladığı CDM/OEM/CSV dosyaları",
+        "Tarayıcı File API",
+        "IndexedDB",
+        "Deterministik durum/timeline motoru",
+        "CSV/JSON/PDF dışa aktarma"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "Mevcut katalog/geçmiş aramasında uydu operatörlerinin conjunction notice–counterpart–manevra kararı–kanıt zincirini aynı mekanizmayla yöneten kayıt bulunmadı. Ret nedeni geçmiş tekrar değil, global doğrudan rekabet eşiğidir."
+    }
+  }
+}
