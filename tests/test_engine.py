@@ -1,4 +1,5 @@
 import copy
+import hashlib
 import json
 import tempfile
 import unittest
@@ -174,6 +175,49 @@ class EngineTests(unittest.TestCase):
         self.e.write("state/v2/config.json", {"mode": "maintenance"})
         self.e.tick("b"*40)
         self.assertEqual(before, (self.root/"docs/radar/current.json").read_bytes())
+
+    def test_end_to_end_discovery_merge_validation_publication(self):
+        self.e.write("docs/latest.json", {"items": [{"url": "https://example.org/article", "title": "trigger"}]})
+        self.e.tick("a"*40)
+        discovery = next(j for j in self.e.jobs().values() if j["kind"] == "discovery")
+        article = discovery["payload"]["articles"][0]
+        raw = {k: k for k in ("raw_id", "canonical_key", "idea_name", "core_job", "target_customer", "product_mechanism", "why_now", "before_state", "after_state")}
+        raw["canonical_source_urls"] = ["https://example.org/article"]
+        self.receipt(discovery, {"articles": [{"article_key": article["article_key"], "decision": "opportunity", "reason": "reason", "opportunities": [raw]}]})
+        self.e.tick("b"*40)
+        merge = next(j for j in self.e.jobs().values() if j["kind"] == "merge")
+        candidate = {**raw, "source_raw_ids": [raw["raw_id"]]}
+        self.receipt(merge, {"cross_article_review_completed": True, "candidates": [candidate], "suppressed": []})
+        self.e.tick("c"*40)
+        validation = next(j for j in self.e.jobs().values() if j["kind"] == "validation")
+        self.receipt(validation, self.qualified(validation))
+        self.e.tick("d"*40)
+        self.assertEqual(len(self.e.read("state/idea_catalog.json")["ideas"]), 2)
+        self.assertEqual(self.e.read("state/v2/status.json")["runs"][0]["processing_status"], "complete")
+
+    def test_unverified_articles_are_visible_as_research_gaps(self):
+        self.e.write("docs/latest.json", {"items": [{"url": "https://example.org/article", "title": "trigger"}]})
+        self.e.tick("a"*40)
+        discovery = next(iter(self.e.jobs().values()))
+        article = discovery["payload"]["articles"][0]
+        self.receipt(discovery, {"articles": [{"article_key": article["article_key"], "decision": "unverified", "reason": "not accessible", "opportunities": []}]})
+        self.e.tick("b"*40)
+        report = self.e.read("state/v2/status.json")["runs"][0]
+        self.assertEqual(report["processing_status"], "complete_with_gaps")
+        self.assertEqual(report["article_decisions"]["unverified"], 1)
+
+    def test_wrong_json_type_does_not_crash_controller(self):
+        j = self.validation(); self.claim(j)
+        self.e.write(f"state/v2/results/{j['job_id']}/001.json", ["invalid-type"])
+        self.e.tick("a"*40, create=False)
+        self.assertEqual(self.e.evaluate(j)["attempt"], 2)
+
+    def test_release_byte_hash_handles_integral_floats_across_languages(self):
+        j = self.validation(); result = self.qualified(j)
+        result["catalog_record"]["external_cash_cost"] = 1.0
+        self.receipt(j, result); self.e.tick("a"*40, create=False)
+        ptr = self.e.read("docs/radar/current.json")
+        self.assertEqual(ptr["content_sha256"], hashlib.sha256((self.root/ptr["path"]).read_bytes()).hexdigest())
 
 
 if __name__ == "__main__":
