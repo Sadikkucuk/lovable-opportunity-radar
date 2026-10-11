@@ -1,0 +1,160 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-0aeb30cffa6b0f01",
+  "input_hash": "0aeb30cffa6b0f0144936233f3e53f40d07e2a2c1ce155bd9b00af853ca74582",
+  "token": "e9a3988b-4e4b-450f-b921-18404cfe00b6",
+  "finished_at": "2026-10-11T15:13:16.151Z",
+  "outcome": "done",
+  "reason": "Tetikleyici FreightWaves vakası ve FMCSA yükümlülükleri doğrulandı. Ancak ABD CDL okullarına öğrenci dosyası, eğitim saatleri, TPR gönderimi, istisna/uyum takibi ve denetime hazır paket sunan en az beş doğrudan ürün bulundu: CDL PowerSuite, Truckiro, BoltCDL, CDL Compliant ve DriverTrack. Global doğrudan rakip üst sınırı aşıldığı için aday reddedildi.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Roster/tarih/kanıt uzlaştırması güncel bir sorun olsa da önerilen trainee record, exception queue ve audit packet mekanizması mevcut CDL-native uyum platformlarının çekirdek iş akışıyla büyük ölçüde örtüşüyor.",
+    "duplicate_of": null,
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.freightwaves.com/news/new-jersey-cdl-school-lawsuit-questions-evidence-behind-fmcsa-shutdown",
+        "accessed_at": "2026-10-11T15:13:16.151Z",
+        "claim": "CDL okulunun savunulabilirliğini bozan roster, tarih ve denetim eki uyuşmazlıkları güncel ve somut bir risk oluşturuyor.",
+        "observation": "8 Ekim 2026 tarihli FreightWaves incelemesi; altı sürücülük liste, on farklı roadside raporu, farklı okul adları ve eğitim/denetim tarihleri arasında çözümlenmemiş uyuşmazlıklar bulunduğunu bildiriyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://www.akinsoft.com.tr/programlar/detay/surucu-kursu-programi--wsr6?p=kaydet",
+        "accessed_at": "2026-10-11T15:13:16.151Z",
+        "claim": "Türkiye’de sürücü kursu yönetim araçları bulunuyor ancak ABD FMCSA/ELDT denetim akışının doğrudan rakibi değiller.",
+        "observation": "AKINSOFT NetSürücü Plus kursiyer evrakı, ders programı, raporlama ve MEBBİS entegrasyonu sunuyor; ABD TPR kaydı ve FMCSA soruşturma kanıtı uzlaştırması sunmuyor.",
+        "page_read": false,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.cdlpowersuite.com/schools",
+        "accessed_at": "2026-10-11T15:13:16.151Z",
+        "claim": "CDL PowerSuite aynı okullara öğrenci kaydı, eğitim logu, FMCSA uyumu ve TPR gönderimi sunuyor.",
+        "observation": "Ürün; student files/certifications, compliance reports, behind-the-wheel documentation ve FMCSA’ya otomatik veri gönderimini tek okul yönetim platformunda sağlıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://cdlcompliant.com/help",
+        "accessed_at": "2026-10-11T15:13:16.151Z",
+        "claim": "CDL Compliant aynı denetim paketi ve roster/TPR kanıt işini doğrudan sunuyor.",
+        "observation": "Platform her sınav, saat ve imzayı izliyor; Audit Center tek tıkla training records, TPR history, roster ve curriculum içeren yazdırılabilir/CSV uyum paketi üretiyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://drivertrack.ai/",
+        "accessed_at": "2026-10-11T15:13:16.151Z",
+        "claim": "DriverTrack CDL okullarına FMCSA denetiminde savunulabilir tek öğrenci kaydı sunuyor.",
+        "observation": "DriverTrack inquiry’den transcript ve TPR’ye uzanan tek öğrenci kaydı, zaman damgalı eğitim/attendance kanıtı, TPR raporlama ve audit-ready kayıt sağlıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.boltcdl.com/",
+        "accessed_at": "2026-10-11T15:13:16.151Z",
+        "claim": "BoltCDL öğrenci yaşam döngüsü, eğitim belgeleri ve audit export sunan doğrudan okul yazılımıdır.",
+        "observation": "BoltCDL öğrenci dosyaları, class rosters, attendance, eğitim imzaları, belge yükleme ve denetim için dosya dışa aktarmayı aynı web tabanlı CDL okul sisteminde topluyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/File_API",
+        "accessed_at": "2026-10-11T15:13:16.151Z",
+        "claim": "Okul roster ve denetim ekleri harici API olmadan tarayıcıda işlenebilir.",
+        "observation": "MDN File API, kullanıcının seçtiği yerel CSV/JSON/PDF dosyalarının web uygulamasında istemci tarafında okunmasını destekliyor.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 0,
+        "queries": [
+          "Türkiye CDL sürücü eğitim okulu uyum yazılımı FMCSA",
+          "Türkiye ticari sürücü eğitim kurumu öğrenci kayıt denetim yazılımı",
+          "sürücü kursu denetim evrak takip yazılımı Türkiye"
+        ],
+        "scope": "11 Ekim 2026; Türkiye webi; ABD FMCSA/ELDT’ye tabi commercial driver training schools için roster, training evidence, inspection notice ve audit packet akışı. Türkiye MTSK/MEBBİS ürünleri farklı mevzuat ve müşteri bağlamı nedeniyle komşu sayıldı.",
+        "search_complete": true,
+        "direct_competitors": [],
+        "adjacent_products": [
+          {
+            "name": "AKINSOFT NetSürücü Plus",
+            "url": "https://www.akinsoft.com.tr/programlar/detay/surucu-kursu-programi--wsr6?p=kaydet",
+            "same_customer_job_workflow_reason": "Sürücü kursu kursiyer/evrak/rapor takibi sunuyor; ABD CDL okulu, TPR ve FMCSA denetim paketi işini karşılamıyor."
+          },
+          {
+            "name": "SmartKurs",
+            "url": "https://smartkurs.com.tr/tr",
+            "same_customer_job_workflow_reason": "Türkiye MTSK operasyonlarını yönetiyor; FMCSA/ELDT soruşturma kanıtı uzlaştırması değil."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 5,
+        "queries": [
+          "CDL training school compliance software student records ELDT audit FMCSA",
+          "commercial driving school management software regulatory compliance student documents audit",
+          "FMCSA training provider registry software roster upload student evidence compliance",
+          "CDL school management software audit reports student records FMCSA"
+        ],
+        "scope": "11 Ekim 2026; ABD commercial driver training schools; trainee roster, ELDT/TPR evidence, training timeline, compliance exceptions ve audit packet/export.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "CDL PowerSuite",
+            "url": "https://www.cdlpowersuite.com/schools",
+            "same_customer_job_workflow_reason": "CDL okulları için student files, certifications, training logs, compliance reports ve FMCSA submission sunuyor."
+          },
+          {
+            "name": "Truckiro",
+            "url": "https://truckiro.com/",
+            "same_customer_job_workflow_reason": "CDL okullarına tam öğrenci kaydı, TPR upload, BTW kanıtı, document expiry ve öğrenci başına audit trail sağlıyor."
+          },
+          {
+            "name": "BoltCDL",
+            "url": "https://www.boltcdl.com/",
+            "same_customer_job_workflow_reason": "CDL okul öğrenci yaşam döngüsü, roster/attendance, eğitim imzaları, dosya yönetimi ve audit export sunuyor."
+          },
+          {
+            "name": "CDL Compliant",
+            "url": "https://cdlcompliant.com/help",
+            "same_customer_job_workflow_reason": "Training records, TPR history, roster ve curriculum’dan tek tık uyum paketi üretiyor."
+          },
+          {
+            "name": "DriverTrack",
+            "url": "https://drivertrack.ai/",
+            "same_customer_job_workflow_reason": "FMCSA audit için zaman damgalı eğitim kanıtı, tek öğrenci kaydı ve TPR raporlama sağlıyor."
+          }
+        ],
+        "adjacent_products": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Kullanıcı roster, training log, notice ve inspection exhibit dosyalarını CSV/JSON/PDF olarak yükler; istemci tarafı JavaScript kimlik, provider ID ve tarih eşleştirmesi yapar; istisnalar localStorage/IndexedDB’de tutulur ve JSON/CSV/PDF denetim paketi üretilir.",
+      "dependency_inventory": [
+        "Lovable HTML/CSS/JavaScript",
+        "Browser File API",
+        "localStorage veya IndexedDB",
+        "İstemci tarafı deterministik kimlik/tarih uzlaştırma kuralları",
+        "İstemci tarafı JSON/CSV/PDF dışa aktarma"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "Mevcut 89 korunan fikirde ABD CDL training school roster/TPR/inspection evidence uzlaştırmasıyla aynı müşteri-iş-mekanizma kaydı bulunmadı. Ret nedeni geçmiş tekrar değil, en az beş doğrudan global rakiptir."
+    }
+  }
+}
