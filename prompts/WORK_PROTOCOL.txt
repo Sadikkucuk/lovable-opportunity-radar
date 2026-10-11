@@ -1,0 +1,31 @@
+V2 IMMUTABLE JOB / CLAIM / RECEIPT PROTOCOL
+1. Read active config, lane inbox and first ready job. Inbox is advisory: inspect
+claim/result paths too. Older dates remain valid. Never change job payload/hash.
+2. BEFORE research create the claim at inbox claim_path on main with GitHub
+create_file; do not overwrite an existing claim. Fields:
+{"schema_version":2,"job_id":"copy","input_hash":"copy","worker":1,
+"token":"new random UUID","started_at":"actual UTC ISO timestamp",
+"expires_at":"started_at plus 90 minutes, UTC ISO timestamp"}
+Use your actual lane number. An existing path belongs to another invocation:
+skip it, never replace it. Expired claims are retried by the controller.
+3. Read back your claim and verify its token, then research.
+4. Create an immutable receipt at inbox result_path:
+{"schema_version":2,"job_id":"copy","input_hash":"copy","token":"your token",
+"finished_at":"actual UTC ISO time within lease","outcome":"done|unverified|rejected|retry",
+"reason":"Turkish explanation","result":{...kind-specific result...}}
+done means structurally completed work, not automatically approved publication.
+Validation uses done + result.decision=qualified/rejected/unverified/duplicate.
+Retry is for transient access/network/platform errors. Bounded research without
+proof is unverified. Preserve queries, failed sources, reasons and null unknowns.
+5. Read back receipt and verify content. On timeout check exact path before
+retrying. Never update an existing result or use a fake completion timestamp.
+6. Continue through other ready jobs in the SAME invocation. No five-candidate
+cap or one-stage-stop rule. Skip completed/leased jobs. Fetch refreshed inbox if
+exhausted; if the controller has not advanced it, report saved progress. The next
+scheduled invocation resumes automatically. No user continuation request.
+GitHub first-writer-wins create prevents overlapping claims. Never force a ref.
+Only claim holder writes a result; newer claims fence late earlier results.
+After three failed attempts the job is failed (never verified); others advance.
+Do not manufacture alternative attempts yourself. Use the controller's path.
+Auth/approval failures are not evidence decisions; never bypass controls. An
+account reconnection can require the user. Do not expose credentials.

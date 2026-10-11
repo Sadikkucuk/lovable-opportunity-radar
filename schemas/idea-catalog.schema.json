@@ -115,11 +115,17 @@
             "type": "string"
           },
           "turkiye_direct_competitor_count": {
-            "type": "integer",
+            "type": [
+              "integer",
+              "null"
+            ],
             "minimum": 0
           },
           "global_direct_competitor_count": {
-            "type": "integer",
+            "type": [
+              "integer",
+              "null"
+            ],
             "minimum": 0
           },
           "direct_competitors": {
@@ -135,9 +141,11 @@
             "type": "array"
           },
           "lovable_credits_total": {
-            "type": "integer",
-            "minimum": 0,
-            "maximum": 500
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
           },
           "lovable_credit_breakdown": {
             "type": "object"
@@ -146,8 +154,11 @@
             "type": "array"
           },
           "external_cash_cost": {
-            "type": "number",
-            "const": 0
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
           },
           "mvp": {
             "type": "string"
@@ -180,7 +191,10 @@
             "type": "string",
             "enum": [
               "qualified",
-              "competition_not_verified"
+              "competition_not_verified",
+              "user_selected_pending_validation",
+              "unverified",
+              "rejected"
             ]
           },
           "status": {
@@ -199,5 +213,6 @@
         }
       }
     }
-  }
+  },
+  "description": "Compatibility schema for historical catalog; existing 89 records are hash-protected, never normalized. New records must also pass radar.engine.validate_qualification."
 }

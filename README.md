@@ -1,3 +1,10 @@
+# Production entrypoint: Radar v2
+
+The active execution contract is [CHATGPT_RADAR_PROMPT.txt](CHATGPT_RADAR_PROMPT.txt).
+See [operation and rollback](docs/RADAR_V2.md), [current state](state/v2/status.json)
+and [static catalog release](docs/radar/current.json). The historical integration
+instructions below are not the v2 execution protocol. No Supabase sync is used.
+
 # Lovable Opportunity Radar — Combined RSS
 
 This repository turns the **155-source OPML** into one combined feed that ChatGPT can read.

@@ -1,3 +1,5 @@
+LEGACY REFERENCE ONLY — superseded by docs/RADAR_V2.md and integration/RADAR_V2_READER.md. Do not execute the old protocol.
+
 # Multi-worker daily radar protocol
 
 This repository uses a staged ChatGPT pipeline so "0 ideas" is only possible after complete end-to-end coverage.
