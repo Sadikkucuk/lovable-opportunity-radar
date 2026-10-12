@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-12T01:17:51Z",
+  "controller_observed_at": "2026-10-12T01:18:11Z",
   "stale_after_minutes": 40,
   "state": "observing",
   "expected_start_at": null,
@@ -35,9 +35,11 @@
         "schema_version": 1,
         "worker": 4,
         "invocation_id": "6cb03e7b-da1c-4a1f-964a-895a172aec39",
-        "event": "started",
-        "at": "2026-10-12T01:16:17Z",
-        "path": "state/v2/worker-events/4/6cb03e7b-da1c-4a1f-964a-895a172aec39/000-started.json"
+        "event": "progress",
+        "at": "2026-10-12T01:17:53Z",
+        "job_id": "2026-10-12-4bb3b46a63-discovery-10d1886605ec50c5",
+        "stage": "claim_saved",
+        "path": "state/v2/worker-events/4/6cb03e7b-da1c-4a1f-964a-895a172aec39/001-progress.json"
       },
       "receipts_this_invocation": 0,
       "write_and_receipt_verified": false,
@@ -53,7 +55,7 @@
   },
   "all_five_receipt_verified": false,
   "capacity": {
-    "window_minutes": 5.1,
+    "window_minutes": 5.4,
     "stages": {
       "discovery": {
         "completed_in_window": 0,
