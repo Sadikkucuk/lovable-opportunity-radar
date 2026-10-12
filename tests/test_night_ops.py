@@ -52,7 +52,7 @@ class NightOperationsTests(unittest.TestCase):
         event, incident, reasons = evaluate(self.root, self.when(0, 36))
         self.assertEqual(event, "opened")
         self.assertEqual(incident["state"], "open")
-        self.assertEqual(reasons[0]["code"], "no_verified_result_30m")
+        self.assertEqual(reasons[0]["code"], "no_verified_activity_30m")
         self.assertEqual(evaluate(self.root, self.when(0, 37))[0], "unchanged")
         self.write("state/v2/health.json", {"unfinished_jobs": 20, "ready_jobs": 20,
             "controller_observed_at": self.when(0, 39).isoformat(),
