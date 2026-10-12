@@ -68,6 +68,17 @@ class OperationsTests(unittest.TestCase):
         self.e.tick("a" * 40, create=False)
         return self.e.read("state/v2/health.json")
 
+    def inbox_jobs(self, worker):
+        page = self.e.read(f"state/v2/inbox/worker-{worker}.json")
+        revision = page["queue_revision"]
+        result = []
+        while page:
+            self.assertEqual(page["queue_revision"], revision)
+            self.assertLessEqual(len(page["jobs"]), 20)
+            result.extend(page["jobs"])
+            page = self.e.read(page["next_page"]) if page["next_page"] else None
+        return result
+
     def test_all_five_workers_can_take_other_lanes_without_rewriting_jobs(self):
         originals = {}
         for worker in range(1, 6):
@@ -112,9 +123,10 @@ class OperationsTests(unittest.TestCase):
                     ids.add(self.job(n, run, kind, lane=1)["job_id"])
         self.tick()
         for worker in range(1, 6):
-            inbox = self.e.read(f"state/v2/inbox/worker-{worker}.json")
-            self.assertEqual({r["job_id"] for r in inbox["jobs"]}, ids)
-            first = inbox["jobs"][:9]
+            pending = self.inbox_jobs(worker)
+            self.assertEqual({r["job_id"] for r in pending}, ids)
+            self.assertEqual(len(pending), len(ids))
+            first = pending[:9]
             self.assertEqual([r["queue_group"] for r in first], ["current", "current", "backlog"] * 3)
             self.assertEqual({r["kind"] for r in first}, {"merge", "validation", "discovery"})
 
@@ -219,6 +231,21 @@ class OperationsTests(unittest.TestCase):
         with redirect_stdout(io.StringIO()) as output:
             self.assertEqual(check_health(self.root, self.now + timedelta(minutes=41)), 1)
         self.assertIn("controller_stale", output.getvalue())
+
+    def test_queue_pages_change_revision_and_remove_only_stale_derived_pages(self):
+        for n in range(21):
+            self.job(n)
+        self.tick()
+        revision = self.e.read("state/v2/inbox/worker-1.json")["queue_revision"]
+        self.assertTrue(self.e.paths("state/v2/inbox/worker-1-page-*.json"))
+        job = next(iter(self.e.jobs().values()))
+        claim = self.claim(job)
+        self.receipt(job, claim)
+        self.tick()
+        self.assertNotEqual(revision, self.e.read("state/v2/inbox/worker-1.json")["queue_revision"])
+        self.assertFalse(self.e.paths("state/v2/inbox/worker-1-page-*.json"))
+        self.assertEqual(len(self.inbox_jobs(1)), 20)
+        self.assertTrue(self.e.read(f"state/v2/results/{job['job_id']}/001.json"))
 
     def test_extended_checkpoint_protects_post_baseline_ideas(self):
         rows = self.e.read("state/idea_catalog.json")

@@ -11,7 +11,7 @@ from pathlib import Path
 import re
 from zoneinfo import ZoneInfo
 
-from radar.engine import TERMINAL, POOL_LEASE_MINUTES, dt, iso
+from radar.engine import TERMINAL, POOL_LEASE_MINUTES, dt, iso, digest
 
 
 def interleave(buckets, cycle):
@@ -58,13 +58,29 @@ def write_inboxes(e, jobs, states, config):
         ready = [r for r in eligible if r["state"] == "ready"]
         waiting = sorted((r for r in eligible if r["state"] != "ready"), key=lambda r: r["job_id"])
         ordered = fair_order(ready, worker) + waiting if shared else sorted(eligible, key=lambda r: (r["run_id"], r["job_id"]))
-        inbox = {"schema_version": 3 if shared else 2, "lane": worker,
-                 "queue_mode": "shared" if shared else "legacy",
-                 "current_run": current, "lease_minutes": POOL_LEASE_MINUTES if shared else 90,
-                 "ready_count": len(ready), "jobs": ordered}
-        e.write(f"state/v2/inbox/worker-{worker}.json", inbox)
-        if worker == 1 and shared:
-            e.write("state/v2/queue.json", {k: v for k, v in inbox.items() if k != "lane"})
+        # The live 275-job inbox was 178 KB. Workers read small pages without
+        # imposing a job cap. A revision detects movement between page reads.
+        page_size = 20 if shared else max(1, len(ordered))
+        pages = [ordered[n:n + page_size] for n in range(0, len(ordered), page_size)] or [[]]
+        revision = digest(ordered)
+        active_pages = set()
+        for index, page in enumerate(pages, 1):
+            path = f"state/v2/inbox/worker-{worker}.json" if index == 1 else f"state/v2/inbox/worker-{worker}-page-{index:03}.json"
+            active_pages.add(path)
+            inbox = {"schema_version": 3 if shared else 2, "lane": worker,
+                     "queue_mode": "shared" if shared else "legacy",
+                     "current_run": current, "lease_minutes": POOL_LEASE_MINUTES if shared else 90,
+                     "ready_count": len(ready), "job_count": len(ordered),
+                     "queue_revision": revision, "page": index, "page_count": len(pages),
+                     "next_page": f"state/v2/inbox/worker-{worker}-page-{index+1:03}.json" if index < len(pages) else None,
+                     "jobs": page}
+            e.write(path, inbox)
+            if worker == 1 and index == 1 and shared:
+                e.write("state/v2/queue.json", {k: v for k, v in inbox.items() if k != "lane"})
+        # Only derived, mutable pages are removed; no job/claim/result is touched.
+        for path in e.paths(f"state/v2/inbox/worker-{worker}-page-*.json"):
+            if path not in active_pages:
+                (e.root / path).unlink()
 
 
 def read_events(e, enabled_at):

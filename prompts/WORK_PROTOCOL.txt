@@ -53,7 +53,11 @@ SAVE AND CONTINUE
 8. Continue consecutive small jobs in THIS invocation while tools and budget
    permit. Ten articles/one candidate is a persistence unit, not a run cap. No
    Top-N, one-stage stop, five-candidate limit, recursive or ad hoc new tasks.
-   If the inbox is exhausted, refresh once; if the controller has not advanced,
+   Inboxes are paginated (20 entries per page, NOT an invocation cap). Follow
+   next_page until all pages are exhausted. Read pages from one commit when
+   possible; if queue_revision changes between pages, refresh the first page
+   while preserving your fair-order cursor and skipping occupied claim paths.
+   If all pages are exhausted, refresh once; if the controller has not advanced,
    preserve progress and finish. The existing next schedule resumes automatically.
 9. End with 999-finished.json (event=finished) or 999-blocked.json (event=blocked),
    same identity/time fields. For blocked add reason_code:
