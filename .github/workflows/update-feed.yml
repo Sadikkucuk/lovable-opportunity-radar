@@ -3,8 +3,8 @@ name: Update combined RSS
 on:
   workflow_dispatch:
   schedule:
-    # Every hour at minute 10 (UTC). GitHub schedules can be delayed.
-    - cron: "10 * * * *"
+    # 23:37 Istanbul / 20:37 UTC: freeze nightly news before worker startup.
+    - cron: "37 20 * * *"
   push:
     branches: [main]
     paths:
@@ -40,8 +40,8 @@ jobs:
       - name: Merge feeds
         env:
           RETENTION_HOURS: "72"
-          MAX_ITEMS: "1000"
-          MAX_PER_SOURCE: "40"
+          MAX_ITEMS: "0"
+          MAX_PER_SOURCE: "0"
           BATCH_SIZE: "40"
           FETCH_WORKERS: "20"
           FETCH_TIMEOUT: "20"

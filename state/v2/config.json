@@ -16,34 +16,37 @@
     "enabled_at": "2026-10-12T01:12:45Z",
     "timezone": "Europe/Istanbul",
     "hours": [
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
-      21,
-      22,
-      23
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
     ],
-    "minute": 5,
+    "minute": 1,
+    "worker_minutes": {
+      "1": 1,
+      "2": 4,
+      "3": 7,
+      "4": 10,
+      "5": 15
+    },
+    "start_local": "00:01",
+    "end_local": "07:00",
+    "morning_report_local": "07:15",
     "startup_grace_minutes": 15,
     "heartbeat_grace_minutes": 20,
-    "progress_grace_minutes": 45,
+    "progress_grace_minutes": 30,
     "report_after_minutes": 120,
-    "startup_probe": {
-      "requested_at": "2026-10-12T01:15:07Z",
-      "purpose": "Verify actual start and accepted receipt from all five existing tasks"
-    }
+    "minimum_completed_receipt_interval_minutes": 30
   },
-  "maintenance_reason": "Approved night-operations migration; no production research until acceptance tests and deliberate activation",
-  "maintenance_started_at": "2026-10-12T08:15:40Z"
+  "maintenance_reason": "Night-operations migration; first production run deliberately withheld until review",
+  "research_workers": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "orchestrator_worker": 5
 }

@@ -1,0 +1,51 @@
+name: Radar night stall watchdog
+on:
+  workflow_dispatch:
+  schedule:
+    # Every five minutes during the Istanbul night and immediate reporting edge.
+    - cron: '*/5 21-23,0-4 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: radar-night-alert
+  cancel-in-progress: false
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Detect incident transition
+        id: observe
+        shell: bash
+        run: |
+          set +e
+          python -m radar.alert_watch
+          code=$?
+          echo "incident_result=$code" >> "$GITHUB_OUTPUT"
+          exit 0
+      - name: Persist incident transition before signaling
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if git diff --quiet -- state/v2/alerts; then exit 0; fi
+          git add state/v2/alerts
+          git commit -m 'Radar night watchdog: incident state transition'
+          # Retry concurrent writes without losing the committed incident.
+          for n in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            git pull --rebase origin main || exit 1
+          done
+          exit 1
+      - name: Fail once for a new stall incident
+        if: steps.observe.outputs.incident_result == '1'
+        run: |
+          echo '30 minutes without verified output during active night work. See persisted incident and health records.'
+          exit 1
