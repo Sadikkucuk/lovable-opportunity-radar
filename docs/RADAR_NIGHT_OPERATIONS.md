@@ -37,7 +37,7 @@
   olayı, opened/recovered zamanları.
 - docs/radar/reports/YYYY-MM-DD.md: her sabah 07:05 itibarıyla üretimden
   bağımsız gerçek durum görüntüsü. 07:15 Orchestrator bu dosyayı özetler.
-- GitHub Actions alarmı, heartbeat kaydı olsa bile 30 dakika boyunca doğrulanmış sonuç yoksa olay açar; yeni bir olayda bir kez failure verir.
+- GitHub Actions alarmı, ne doğrulanmış sonuç ne de heartbeat ilerlemesi 30 dakika görülürse olay açar; yeni bir olayda bir kez failure verir.
   E-posta için kullanıcı GitHub hesabında Actions e-posta bildirimini
   etkinleştirmelidir; gerçek e-posta teslimi ayrıca sınanmalıdır.
 - ChatGPT sabah e-postası için Settings > Notifications > Email; görevin
