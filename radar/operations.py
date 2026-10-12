@@ -12,6 +12,7 @@ import re
 from zoneinfo import ZoneInfo
 
 from radar.engine import TERMINAL, POOL_LEASE_MINUTES, dt, iso, digest
+from radar.night_ops import last_expected_slot, within_night_window
 
 
 def interleave(buckets, cycle):
@@ -106,26 +107,16 @@ def read_events(e, enabled_at):
     return sorted(events, key=lambda event: (event["at"], event["path"])), invalid
 
 
-def due_start(now, enabled_at, settings):
-    """Last scheduled slot whose startup grace has elapsed, or the live probe.
-
-    No expectation is invented before deployment. Local time comes from the
-    same explicit schedule saved into the five existing ChatGPT tasks.
-    """
-    grace = timedelta(minutes=settings.get("startup_grace_minutes", 15))
-    zone = ZoneInfo(settings.get("timezone", "Europe/Istanbul"))
-    local = now.astimezone(zone)
-    slots = []
-    for day_offset in (1, 0):
-        day = local.date() - timedelta(days=day_offset)
-        for hour in settings.get("hours", list(range(7, 24))):
-            slot = datetime(day.year, day.month, day.day, hour, settings.get("minute", 5), tzinfo=zone).astimezone(timezone.utc)
-            if enabled_at <= slot <= now - grace:
-                slots.append(slot)
+def due_start(now, enabled_at, settings, worker=None):
+    """Start slot expected for a particular worker, with legacy probe support."""
+    slot = last_expected_slot(now, enabled_at, settings, worker=worker)
     probe = settings.get("startup_probe")
-    if probe and enabled_at <= dt(probe["requested_at"]) <= now - grace:
-        slots.append(dt(probe["requested_at"]))
-    return max(slots, default=None)
+    grace = timedelta(minutes=settings.get("startup_grace_minutes", 15))
+    if probe and not settings.get("worker_minutes"):
+        requested = dt(probe["requested_at"])
+        if enabled_at <= requested <= now - grace:
+            return max((slot, requested)) if slot else requested
+    return slot
 
 
 def observed_receipts(e, jobs, states):
@@ -207,12 +198,12 @@ def reconcile_health(e, jobs, states, config, status):
     enabled_at = dt(settings["enabled_at"])
     events, invalid = read_events(e, enabled_at)
     receipts = observed_receipts(e, jobs, states)
-    expected = due_start(e.now, enabled_at, settings)
+    expected = due_start(e.now, enabled_at, settings, worker=1)
     unfinished = sum(s["state"] not in TERMINAL for s in states.values())
     ready = sum(s["state"] == "ready" for s in states.values())
     zone = ZoneInfo(settings.get("timezone", "Europe/Istanbul"))
     scheduled_hours = settings.get("hours", list(range(7, 24)))
-    active = e.now.astimezone(zone).hour in scheduled_hours
+    active = within_night_window(e.now, settings)
     probe = settings.get("startup_probe")
     if probe:
         probe_start = dt(probe["requested_at"])
@@ -236,7 +227,8 @@ def reconcile_health(e, jobs, states, config, status):
                                 "write_and_receipt_verified": bool(verified),
                                 "last_receipt_at": max((r["finished_at"] for r in verified), default=None)}
         alive = last and last["event"] == "progress" and e.now - dt(last["at"]) <= timedelta(minutes=settings.get("heartbeat_grace_minutes", 20))
-        if unfinished and expected and not alive and (not start or dt(start["at"]) < expected - timedelta(minutes=5)):
+        worker_expected = due_start(e.now, enabled_at, settings, worker=worker)
+        if unfinished and active and worker_expected and not alive and (not start or dt(start["at"]) < worker_expected - timedelta(minutes=5)):
             alert("worker_not_started", worker)
         if last and last["event"] == "blocked" and unfinished:
             alert("worker_blocked", worker)
@@ -254,7 +246,7 @@ def reconcile_health(e, jobs, states, config, status):
         active_start = max(active_start, dt(probe["requested_at"]))
     last_progress = max(recent + [active_start])
     if active and unfinished and e.now - last_progress > timedelta(minutes=settings.get("progress_grace_minutes", 45)):
-        alert("queue_no_progress", action="Diğer çalışanlar kuyruğu devralır; görev geçmişinde erişim/kota hatası varsa belirtilen işlemi tamamlayın.")
+        alert("queue_no_progress", action="30 dakikadır doğrulanmış sonuç yok. Son kaydı ve Worker görev geçmişini inceleyin; erişim/kota nedenini varsaymayın.")
     if invalid:
         alert("invalid_worker_event", action="Geçersiz başlangıç/ilerleme kaydı onarılmalı; araştırma kayıtları korunuyor.")
     if status["errors"]:
