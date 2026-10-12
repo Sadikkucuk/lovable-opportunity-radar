@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-12T01:18:11Z",
+  "controller_observed_at": "2026-10-12T01:20:51Z",
   "stale_after_minutes": 40,
   "state": "observing",
   "expected_start_at": null,
   "ready_jobs": 274,
-  "unfinished_jobs": 275,
-  "last_verified_progress_at": null,
+  "unfinished_jobs": 274,
+  "last_verified_progress_at": "2026-10-12T01:19:05Z",
   "workers": {
     "1": {
       "last_started_at": null,
@@ -41,9 +41,9 @@
         "stage": "claim_saved",
         "path": "state/v2/worker-events/4/6cb03e7b-da1c-4a1f-964a-895a172aec39/001-progress.json"
       },
-      "receipts_this_invocation": 0,
-      "write_and_receipt_verified": false,
-      "last_receipt_at": null
+      "receipts_this_invocation": 1,
+      "write_and_receipt_verified": true,
+      "last_receipt_at": "2026-10-12T01:19:05Z"
     },
     "5": {
       "last_started_at": null,
@@ -55,11 +55,11 @@
   },
   "all_five_receipt_verified": false,
   "capacity": {
-    "window_minutes": 5.4,
+    "window_minutes": 8.1,
     "stages": {
       "discovery": {
-        "completed_in_window": 0,
-        "known_remaining": 197,
+        "completed_in_window": 1,
+        "known_remaining": 196,
         "observed_jobs_per_hour": null,
         "estimated_minutes_for_stage": null
       },

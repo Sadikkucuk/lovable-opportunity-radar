@@ -1,0 +1,54 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "355d98f826f809bf398732403f04032b39fa5d787a1416a54447a0e577c8e576",
+  "decision": {
+    "article_key": "98e86ccebc4db016eb5b501a",
+    "decision": "opportunity",
+    "reason": "Bir macOS AI istemcisindeki değiştirilebilir debug uç noktası, geniş TCC yetkilerini saldırı zincirine dönüştüren somut bir yerel yapılandırma ve yetki-görünürlüğü açığı gösteriyor.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-12-4bb3b46a63-discovery-10d1886605ec50c5:98e86ccebc4db016eb5b501a:1",
+        "canonical_key": "macos-security-teams|audit-ai-agent-permission-chains|local-baseline-diff",
+        "idea_name": "AI Ajan Yetki Zinciri Denetçisi",
+        "core_job": "Mac filosunda AI ajanlarının geniş yetkileri ile değiştirilebilir ayarlarının oluşturduğu birleşik saldırı yollarını görünür kılmak",
+        "target_customer": "Kurumsal macOS filosu yöneten küçük ve orta ölçekli güvenlik/BT ekipleri",
+        "buyer": "Güvenlik lideri veya uç nokta yönetimi sorumlusu",
+        "product_mechanism": "Mac üzerinde çalışan yerel tarayıcı; TCC izinlerini, uygulama imzasını ve güvenlik açısından kritik preference/endpoint değişimlerini baseline ile karşılaştırır, risk zinciri ve düzeltme dosyası üretir",
+        "why_now": "Eylül 2026'da açıklanan Muse vakası, ayrı ayrı meşru görünen yerel kod çalıştırma, değiştirilebilir dictation endpoint'i ve geniş ajan izinlerinin birleşerek ses/token sızıntısı ve yetki kötüye kullanımına yol açabildiğini gösterdi.",
+        "before_state": "EDR ve MDM kontrolleri ajan izinlerini ve uygulamaya özel değiştirilebilir ayarları tek saldırı yolu olarak göstermiyor.",
+        "after_state": "Ekip, yerel kanıtlarla hangi ayar+izin kombinasyonunun riskli olduğunu görüp baseline sapmasını ve düzeltmeyi izliyor.",
+        "canonical_source_urls": [
+          "https://www.infoq.com/news/2026/09/meta-muse-zeroday/",
+          "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent"
+        ],
+        "supporting_article_ids": [
+          "63bde4ebedaf055e707eb28e"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.infoq.com/news/2026/09/meta-muse-zeroday/",
+            "observation": "Değiştirilebilir endo_voyager_dictation_endpoint ayarı, yerel kodun dictation trafiğini ve tokenı başka uç noktaya yönlendirmesine imkân verdi; Meta daha sonra hotfix yayımladı."
+          },
+          {
+            "url": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
+            "observation": "Saldırı uzaktan ilk erişim değildi; önceden yerel kod çalıştırma gerektiriyordu, ancak ajanın mevcut izinlerini kötüye kullanabiliyordu."
+          }
+        ],
+        "scope_hint": "Tamamen cihaz üzerinde tarama ve imzalı kural paketi içe aktarma; bulut, harici AI veya harici runtime API yok.",
+        "local_evidence": {
+          "attack_chain": [
+            "yerel kullanıcı bağlamında kod",
+            "değiştirilebilir dictation endpoint",
+            "ajanın önceden verilmiş geniş izinleri"
+          ],
+          "unknowns": [
+            "Etkilenen Muse sürüm aralığı ve Meta'nın resmi CVE kaydı doğrulanmadı",
+            "Genel macOS ajanlarında aynı preference kalıbının yaygınlığı bilinmiyor"
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-10d1886605ec50c5/001.json",
+  "valid_until": "2026-11-11T01:19:05Z"
+}
