@@ -1,8 +1,8 @@
 RADAR SHARED QUEUE — PROTOCOL 3 (existing v2 jobs/data stay immutable)
 
 START AND ACCESS PROBE — DO THIS BEFORE LENGTHY RESEARCH
-1. Read current main state/v2/config.json; work only if mode=active. Your worker
-   identity is 1..5, supplied by the saved task. It is NOT a fixed job lane.
+1. Read current main state/v2/config.json; work only if mode=active. Your research worker
+   identity is 1..4, supplied by the saved task. It is NOT a fixed job lane.
 2. Make a fresh random UUID invocation_id. Persist and read back:
    state/v2/worker-events/{worker}/{invocation_id}/000-started.json
    {"schema_version":1,"worker":1,"invocation_id":"your UUID",
@@ -12,8 +12,8 @@ START AND ACCESS PROBE — DO THIS BEFORE LENGTHY RESEARCH
 3. Check health.json controller_observed_at against actual time (40 minutes
    maximum age). Report a stale/missing controller explicitly. Read current
    inbox/worker-N.json and the master + research method + kind-specific prompt.
-   All FIVE workers handle discovery, semantic merge AND validation. Worker 5
-   also reports health; it researches when a merge is not ready.
+   The FOUR research workers handle discovery, semantic merge AND validation.
+   Worker 5 is the independent Orchestrator and must not claim research jobs.
 
 FAIR SHARED WORK
 4. Inbox is advisory, not a lock. Follow its interleaved order: two current-run
@@ -69,7 +69,12 @@ SAVE AND CONTINUE
    inspect exact paths after timeouts before retrying. Never bypass approvals.
 
 USER SIGNAL AND TWO-HOUR WINDOW
-10. Start the task reply with "MÜDAHALE GEREKLİ" only for a confirmed access/onay
+10. Check the Europe/Istanbul overnight window BEFORE every new claim. Work only
+    from 00:01 inclusive to 07:00 exclusive; an hourly trigger is a restart,
+    NOT a one-job cap. Persist completed results and finish safely at the
+    boundary. The user may explicitly request a one-job manual intervention,
+    which must be separately logged and does not weaken research rules.
+    Start the task reply with "MÜDAHALE GEREKLİ" only for a confirmed access/onay
     block, missing start/progress alarm, or stale controller; state worker, last
     persisted result, observed reason and the specific next action. Otherwise
     report actual persisted progress briefly. Never count last_run_time as proof.

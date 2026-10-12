@@ -44,8 +44,8 @@ SOURCE_FOLDER_PREFIX = os.getenv("SOURCE_FOLDER_PREFIX", "").strip()
 LOAD_EXISTING = os.getenv("LOAD_EXISTING", "1").strip().lower() not in {"0", "false", "no"}
 
 RETENTION_HOURS = int(os.getenv("RETENTION_HOURS", "72"))
-MAX_ITEMS = int(os.getenv("MAX_ITEMS", "1000"))
-MAX_PER_SOURCE = int(os.getenv("MAX_PER_SOURCE", "40"))
+MAX_ITEMS = int(os.getenv("MAX_ITEMS", "0"))  # zero means no aggregate truncation
+MAX_PER_SOURCE = int(os.getenv("MAX_PER_SOURCE", "0"))  # zero means no relevant-entry truncation
 BATCH_SIZE = int(os.getenv("BATCH_SIZE", "40"))
 FETCH_WORKERS = int(os.getenv("FETCH_WORKERS", "20"))
 TIMEOUT = int(os.getenv("FETCH_TIMEOUT", "20"))
@@ -532,7 +532,7 @@ def fetch_one(meta: dict[str, str]) -> dict[str, Any]:
             # MAX_PER_SOURCE now means maximum RELEVANT items kept, not merely
             # "look at the first N results". This avoids losing relevant items
             # ranked below noisy/filtered results.
-            if len(entries) >= MAX_PER_SOURCE:
+            if MAX_PER_SOURCE > 0 and len(entries) >= MAX_PER_SOURCE:
                 break
 
         result["items"] = entries
@@ -647,7 +647,7 @@ def merge_items(results: list[dict[str, Any]]) -> list[dict[str, Any]]:
         )
 
     items.sort(key=sort_key, reverse=True)
-    return items[:MAX_ITEMS]
+    return items if MAX_ITEMS <= 0 else items[:MAX_ITEMS]
 
 def write_json(items: list[dict[str, Any]], results: list[dict[str, Any]]) -> None:
     now = utcnow()
@@ -658,6 +658,10 @@ def write_json(items: list[dict[str, Any]], results: list[dict[str, Any]]) -> No
         "successful_sources": sum(1 for r in results if r["ok"]),
         "failed_sources": sum(1 for r in results if not r["ok"]),
         "item_count": len(items),
+        "aggregate_limit": MAX_ITEMS,
+        "source_limit": MAX_PER_SOURCE,
+        "source_limit_enabled": MAX_PER_SOURCE > 0,
+        "aggregate_limit_enabled": MAX_ITEMS > 0,
         "filter_version": "sector-focused-v4-tr",
         "items": items,
     }
@@ -686,6 +690,7 @@ def write_json(items: list[dict[str, Any]], results: list[dict[str, Any]]) -> No
                 "http_status": r["status"],
                 "raw_items_received": r["raw_items"],
                 "items_kept": len(r["items"]),
+                "source_limit_reached": MAX_PER_SOURCE > 0 and len(r["items"]) >= MAX_PER_SOURCE,
                 "elapsed_ms": r["elapsed_ms"],
                 "error": r["error"],
             }
