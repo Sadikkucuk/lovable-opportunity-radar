@@ -28,16 +28,33 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Check whether production feed collection is enabled
+        id: mode
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          with open("state/v2/config.json", encoding="utf-8") as f:
+              enabled = json.load(f).get("mode") == "active"
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+              f.write("enabled=" + str(enabled).lower() + "\n")
+          print("Feed collection enabled:", enabled)
+          PY
+
       - name: Set up Python
+        if: steps.mode.outputs.enabled == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: "pip"
 
       - name: Install dependencies
+        if: steps.mode.outputs.enabled == 'true'
         run: pip install -r requirements.txt
 
       - name: Merge feeds
+        if: steps.mode.outputs.enabled == 'true'
         env:
           RETENTION_HOURS: "72"
           MAX_ITEMS: "0"
@@ -48,6 +65,7 @@ jobs:
         run: python aggregate.py
 
       - name: Commit updated feed
+        if: steps.mode.outputs.enabled == 'true'
         run: |
           if git diff --quiet -- docs/feed.xml docs/latest.json docs/status.json docs/batches; then
             echo "No changes."
