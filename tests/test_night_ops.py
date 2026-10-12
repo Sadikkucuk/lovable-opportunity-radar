@@ -59,6 +59,25 @@ class NightOperationsTests(unittest.TestCase):
             "last_verified_progress_at": self.when(0, 39).isoformat(), "stale_after_minutes": 40})
         self.assertEqual(evaluate(self.root, self.when(0, 40))[0], "recovered")
 
+    def test_heartbeats_cannot_hide_a_30_minute_result_stall(self):
+        self.write("state/v2/config.json", {"mode": "active", "operations": self.ops})
+        # A worker keeps sending progress signals, but no accepted result exists
+        # after 00:01. At 00:35 this MUST still be a stalled-output incident.
+        self.write("state/v2/health.json", {
+            "unfinished_jobs": 20, "ready_jobs": 20,
+            "controller_observed_at": self.when(0, 34).isoformat(),
+            "last_verified_progress_at": self.when(0, 1).isoformat(),
+            "stale_after_minutes": 40,
+            "workers": {"1": {"last_event": {
+                "event": "progress", "at": self.when(0, 34).isoformat()
+            }}}
+        })
+        event, incident, reasons = evaluate(self.root, self.when(0, 35))
+        self.assertEqual(event, "opened")
+        self.assertEqual(reasons[0]["code"], "no_verified_activity_30m")
+        self.assertEqual(reasons[0]["elapsed_minutes"], 34)
+        self.assertEqual(reasons[0]["last_heartbeat_at"], self.when(0, 34).isoformat())
+
     def test_maintenance_never_opens_a_new_incident(self):
         self.write("state/v2/config.json", {"mode": "maintenance", "operations": self.ops})
         self.assertEqual(evaluate(self.root, self.when(0, 50))[0], "unchanged")
