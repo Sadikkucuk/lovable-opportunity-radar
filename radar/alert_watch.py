@@ -34,9 +34,11 @@ def evaluate(root, now):
         start = datetime(local.year, local.month, local.day, start_hour, start_minute, tzinfo=zone).astimezone(timezone.utc)
         latest = health.get("last_verified_progress_at")
         last = dt(latest) if latest else start
-        reference = max(last, start)
+        heartbeat_times = [dt(w["last_event"]["at"]) for w in health.get("workers", {}).values()
+                           if isinstance(w.get("last_event"), dict) and w["last_event"].get("at")]
+        reference = max([last, start, *heartbeat_times])
         if now - reference >= timedelta(minutes=settings.get("minimum_completed_receipt_interval_minutes", 30)):
-            reasons.append({"code": "no_verified_result_30m", "since": iso(reference),
+            reasons.append({"code": "no_verified_activity_30m", "since": iso(reference),
                             "elapsed_minutes": int((now-reference).total_seconds()//60)})
         seen = health.get("controller_observed_at")
         if not seen or now - dt(seen) > timedelta(minutes=health.get("stale_after_minutes", 40)):
