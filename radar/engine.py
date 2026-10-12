@@ -519,7 +519,12 @@ class Engine:
         if seed:
             self.import_legacy(seed["commit"], seed["date"])
         if create:
-            self.create_run(commit)
+            # A delayed GitHub trigger outside the agreed local research window
+            # must not create a new production research run.
+            from radar.night_ops import within_night_window
+            ops = config.get("operations", {})
+            if not ops.get("start_local") or within_night_window(self.now, ops):
+                self.create_run(commit)
         # Two passes discover downstream jobs without waiting for another scheduled invocation.
         for _ in range(2):
             jobs = self.jobs()
@@ -568,6 +573,12 @@ class Engine:
                   "runs": run_reports, "errors": sorted(set(self.errors))}
         self.write("state/v2/status.json", status)
         reconcile_health(self, jobs, states, config, status)
+        health = self.read("state/v2/health.json", {})
+        status["health"] = {"state": health.get("state", "unknown"),
+                            "alerts": health.get("alerts", []),
+                            "last_verified_progress_at": health.get("last_verified_progress_at"),
+                            "controller_observed_at": health.get("controller_observed_at")}
+        self.write("state/v2/status.json", status)
         return {"jobs": len(jobs), "appended": len(appended), **status}
 
 
