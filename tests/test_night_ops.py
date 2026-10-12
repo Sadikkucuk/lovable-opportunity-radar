@@ -31,6 +31,22 @@ class NightOperationsTests(unittest.TestCase):
         # UTC + 3 equals local Istanbul clock on this date.
         return datetime(2026, 10, 12, hh, mm, tzinfo=timezone.utc) - timedelta(hours=3)
 
+    def test_watchdog_persists_new_untracked_incident_files(self):
+        workflow = (Path(__file__).resolve().parents[1] /
+                    ".github/workflows/radar-night-watch.yml").read_text(encoding="utf-8")
+        # Staging MUST happen before checking the index; otherwise the very
+        # first incident is never committed and emails repeat each check.
+        staged = workflow.index("git add -A -- state/v2/alerts")
+        verified = workflow.index("git diff --cached --quiet")
+        self.assertLess(staged, verified)
+        self.assertIn("if [ ! -d state/v2/alerts ]; then exit 0; fi", workflow)
+
+    def test_maintenance_without_report_directory_is_not_a_false_ci_failure(self):
+        workflow = (Path(__file__).resolve().parents[1] /
+                    ".github/workflows/radar-morning-report.yml").read_text(encoding="utf-8")
+        self.assertIn("if [ ! -d docs/radar/reports ]; then", workflow)
+        self.assertIn("git add -A -- docs/radar/reports", workflow)
+
     def test_research_window_has_exact_half_open_boundaries(self):
         self.assertFalse(within_night_window(self.when(0, 0), self.ops))
         self.assertTrue(within_night_window(self.when(0, 1), self.ops))

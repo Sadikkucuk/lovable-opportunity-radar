@@ -35,8 +35,10 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          if git diff --quiet -- state/v2/alerts; then exit 0; fi
-          git add state/v2/alerts
+          # New incident files are untracked: `git diff` alone misses them.
+          if [ ! -d state/v2/alerts ]; then exit 0; fi
+          git add -A -- state/v2/alerts
+          if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Radar night watchdog: incident state transition'
           # Retry concurrent writes without losing the committed incident.
           for n in 1 2 3; do
