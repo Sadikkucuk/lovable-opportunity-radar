@@ -54,7 +54,7 @@ def write_inboxes(e, jobs, states, config):
                         "preferred_worker": int(job["input_hash"][:8], 16) % 5 + 1,
                         **states[key]})
     shared = config.get("shared_queue", False)
-    for worker in range(1, 6):
+    for worker in config.get("research_workers", list(range(1, 6))):
         eligible = records if shared else [r for r in records if r["legacy_lane"] == worker]
         ready = [r for r in eligible if r["state"] == "ready"]
         waiting = sorted((r for r in eligible if r["state"] != "ready"), key=lambda r: r["job_id"])
@@ -209,6 +209,7 @@ def reconcile_health(e, jobs, states, config, status):
         probe_start = dt(probe["requested_at"])
         active |= probe_start <= e.now <= probe_start + timedelta(minutes=settings.get("report_after_minutes", 120))
     alerts, workers = [], {}
+    research_workers = set(config.get("research_workers", list(range(1, 6))))
 
     def alert(code, worker=None, action="Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."):
         alerts.append({"code": code, "worker": worker, "severity": "critical", "user_action": action})
@@ -235,7 +236,7 @@ def reconcile_health(e, jobs, states, config, status):
         if active and unfinished and last and last["event"] not in {"finished", "blocked"}:
             if e.now - dt(last["at"]) > timedelta(minutes=settings.get("heartbeat_grace_minutes", 20)):
                 alert("worker_heartbeat_missing", worker)
-        if active and ready and last and last["event"] == "finished" and not saved:
+        if worker in research_workers and active and ready and last and last["event"] == "finished" and not saved:
             alert("worker_finished_without_receipt", worker)
     recent = [dt(r["finished_at"]) for r in receipts if dt(r["finished_at"]) >= enabled_at]
     # Avoid an immediate false alarm on a new work day after an overnight pause.
@@ -259,6 +260,8 @@ def reconcile_health(e, jobs, states, config, status):
               "ready_jobs": ready, "unfinished_jobs": unfinished,
               "last_verified_progress_at": iso(max(recent)) if recent else None,
               "workers": workers, "all_five_receipt_verified": all(w["write_and_receipt_verified"] for w in workers.values()),
+        "all_research_workers_receipt_verified": all(workers[str(i)]["write_and_receipt_verified"] for i in research_workers),
+        "research_worker_count": len(research_workers), "orchestrator_worker": config.get("orchestrator_worker", 5),
               "capacity": capacity(e, jobs, states, receipts, enabled_at),
               "report_windows": windows, "alerts": alerts, "invalid_events": invalid}
     e.write("state/v2/health.json", health)
@@ -279,7 +282,7 @@ def check_health(root=".", now=None):
     alerts = list(health["alerts"])
     if now - dt(health["controller_observed_at"]) > timedelta(minutes=health["stale_after_minutes"]):
         alerts.append({"code": "controller_stale", "worker": None, "user_action": "GitHub Actions controller çalışmasını kontrol edin."})
-    summary = ["## Radar çalışma durumu", f"Kalıcı sonucu doğrulanan çalışan: {sum(w['write_and_receipt_verified'] for w in health['workers'].values())}/5",
+    summary = ["## Radar çalışma durumu", f"Kalıcı sonucu doğrulanan araştırmacı: {sum(health['workers'][str(i)]['write_and_receipt_verified'] for i in config.get('research_workers', range(1, 6)))}/{len(config.get('research_workers', range(1, 6)))}",
                f"Bekleyen iş: {health['unfinished_jobs']}", f"Son kontrol: {health['controller_observed_at']}"]
     for alert in alerts:
         label = f"{alert['code']} (worker={alert.get('worker')})"
