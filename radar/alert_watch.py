@@ -50,8 +50,15 @@ def evaluate(root, now):
                "manual_next_step": "Inspect the exact worker task execution history and GitHub health/logs. Do not invent a quota/auth cause."}
         event = "opened"
     elif not reasons and existing.get("state") == "open":
-        new = {**existing, "state": "recovered", "recovered_at": iso(now)}
-        event = "recovered"
+        if active:
+            new = {**existing, "state": "recovered", "recovered_at": iso(now)}
+            event = "recovered"
+        else:
+            # The night ended (or maintenance began); lack of activity after
+            # cutoff is not evidence the research service actually recovered.
+            new = {**existing, "state": "closed_unresolved", "closed_at": iso(now),
+                   "closure_reason": "night_window_ended_or_maintenance"}
+            event = "window_closed"
     else:
         return "unchanged", existing, reasons
     existing_path.parent.mkdir(parents=True, exist_ok=True)
@@ -65,7 +72,9 @@ def main():
     if event == "opened":
         print("::error title=Radar 30-minute stalled queue::" + json.dumps(reasons, ensure_ascii=False))
     elif event == "recovered":
-        print("::notice title=Radar recovered::Verified work resumed or the night window closed.")
+        print("::notice title=Radar recovered::Verified work resumed.")
+    elif event == "window_closed":
+        print("::warning title=Radar unresolved::Night ended or maintenance began; incident was not verified as recovered.")
     else:
         print("Radar watchdog: no incident transition")
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
