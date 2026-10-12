@@ -1,0 +1,484 @@
+[
+  {
+    "policy_version": "radar-v2-no-runtime-services-20261010",
+    "content_hash": "d350c587e1cc22898fd0a76ff3b2e6b3492017b648838bcd25069e71f2ce2aa6",
+    "decision": {
+      "article_key": "22945a116c8d8ab2b722f6b1",
+      "decision": "no_opportunity",
+      "reason": "3,5 km'lik güneş enerjili tren, turizm ve kullanılmayan hattı canlandırmaya dönük tekil bir gösterim projesi; tekrarlanabilir müşteri işi ve yazılım mekanizması için yeterli kanıt yok.",
+      "opportunities": []
+    },
+    "receipt_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-138ab50a425cb99c/001.json",
+    "valid_until": "2026-11-11T01:22:09Z"
+  },
+  {
+    "policy_version": "radar-v2-no-runtime-services-20261010",
+    "content_hash": "9da826c2f514d0bf15dd32510d9bb7701fb244a088d5383d77d37d2b6115e942",
+    "decision": {
+      "article_key": "2574328f3f4cb18beeb01c17",
+      "decision": "opportunity",
+      "reason": "AI veri merkezleri daha hızlı kurulurken deneyimli operasyon kadrosunun yetişmesi daha uzun sürüyor; sıvı soğutma, yoğun elektrik yükleri ve kurumsal bilgi kaybı tasarım aşamasında yetkinlik hazırlığı gerektiriyor.",
+      "opportunities": [
+        {
+          "raw_id": "2026-10-12-4bb3b46a63-discovery-138ab50a425cb99c:2574328f3f4cb18beeb01c17:1",
+          "canonical_key": "ai-data-center-operators|plan-commissioning-workforce-readiness|offline-competency-coverage-map",
+          "idea_name": "AI Veri Merkezi Yetkinlik Hazırlık Haritası",
+          "core_job": "Yeni bir AI veri merkezi devreye alınmadan önce vardiya, rol, yetkinlik, prosedür ve eğitim açıklarını tasarım aşamasında görmek",
+          "target_customer": "Yeni yüksek yoğunluklu AI veri merkezi kuran veya dönüştüren operatörler",
+          "buyer": "Veri merkezi operasyon direktörü, commissioning lideri veya iş gücü planlama sorumlusu",
+          "product_mechanism": "Tasarım parametreleri ve rol matrislerini dosyadan alan; sıvı soğutma, yoğun elektrik yükü, kontrol/izleme ve acil durum görevleri için vardiya kapsamı, eğitim sırası ve kanıt paketi oluşturan yerel planlayıcı",
+          "why_now": "Ekim 2026 kaynakları operatörlerin yarıdan fazlasının nitelikli aday bulmakta zorlandığını, yeni AI tesislerinin sıvı soğutma ve yüksek yoğunluklu güç için uzmanlık istediğini ve kadro planının çoğu kez geç başladığını bildiriyor.",
+          "before_state": "Güç, arazi ve ekipman yıllar önceden planlanırken personel ve prosedür hazırlığı handover'a yakın ele alınıyor.",
+          "after_state": "Her tasarım özelliği gerekli görev/yetkinlik ve vardiya kapsamına bağlanıyor; işe alım-eğitim boşluğu devreye alma öncesi görünür oluyor.",
+          "canonical_source_urls": [
+            "https://datacenters.economictimes.indiatimes.com/news/operations-resilience/ai-infrastructure-growth-outpaces-operational-staffing/134852980",
+            "https://www.datacenterdynamics.com/en/news/dcd-intelligence-data-center-expansion-is-outpacing-talent/"
+          ],
+          "supporting_article_ids": [
+            "ffc4481c25a48d6b09204a98"
+          ],
+          "source_observations": [
+            {
+              "url": "https://datacenters.economictimes.indiatimes.com/news/operations-resilience/ai-infrastructure-growth-outpaces-operational-staffing/134852980",
+              "observation": "Operasyon mühendisi yetiştirme süresi tesis yapımından uzun; sıvı soğutma ve yoğun elektrik yükleri yeni beceri gerektiriyor, iş gücü planı tasarımda başlamalı."
+            },
+            {
+              "url": "https://www.datacenterdynamics.com/en/news/dcd-intelligence-data-center-expansion-is-outpacing-talent/",
+              "observation": "DCD anketinde katılımcıların üçte ikiden fazlası operasyon ihtiyacının altında kadro bildirdi; açıklar fiziksel altyapı, güç/soğutma ve BT operasyonunda yoğunlaştı."
+            }
+          ],
+          "scope_hint": "Yerel dosya içe aktarma, kural tabanlı kapsam ve eğitim planı; BMS/DCIM, iş ilanı servisi, harici AI/API/DB bağlantısı yok.",
+          "local_evidence": {
+            "signals": [
+              "operatörlerin yarıdan fazlasında nitelikli aday bulma zorluğu",
+              "AI eğitim raflarında 30 kW üzeri yoğunluk ve sıvı soğutma uzmanlığı",
+              "kurumsal bilginin emeklilik ve hareketlilikle kaybı"
+            ],
+            "unknowns": [
+              "Kaynakta tesis başına açık pozisyon sayısı yok",
+              "Yetkinlik standartlarının ülkeye göre ayrıntıları doğrulanmadı"
+            ]
+          }
+        }
+      ]
+    },
+    "receipt_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-138ab50a425cb99c/001.json",
+    "valid_until": "2026-11-11T01:22:09Z"
+  },
+  {
+    "policy_version": "radar-v2-no-runtime-services-20261010",
+    "content_hash": "ec252a68c29a3bf56365fad70160d3d0a58bf0b0824c85d4957282051e8db6f7",
+    "decision": {
+      "article_key": "259a479c8c4bd56033311df1",
+      "decision": "opportunity",
+      "reason": "Güçlü ajanların ihlal edilmiş varsayılması ve yetkili kişinin işi durdurabilmesi gerektiği yönündeki açık kontrol ihtiyacı, entegrasyon yapmayan masaüstü güvence/test ürünü için somut JTBD oluşturuyor.",
+      "opportunities": [
+        {
+          "raw_id": "2026-10-12-4bb3b46a63-discovery-138ab50a425cb99c:259a479c8c4bd56033311df1:1",
+          "canonical_key": "enterprise-ai-agent-owners|prove-emergency-stop-controls|offline-fail-safe-test-dossier",
+          "idea_name": "AI Ajan Acil Durdurma Tatbikatı",
+          "core_job": "Üretime alınan her ajan için kimin, hangi koşulda, ne kadar sürede ve hangi kanıtla görevi durdurabildiğini test etmek",
+          "target_customer": "Kurumsal AI ajanı devreye alan güvenlik, risk ve platform ekipleri",
+          "buyer": "CISO, AI yönetişim lideri veya platform mühendisliği yöneticisi",
+          "product_mechanism": "Ajan envanteri, yetki sınırı ve durdurma prosedürünü yerel şablonlarda tutan; masa başı tatbikatı, zaman ölçümü, başarısız kontrol ve imzalı düzeltme dosyası üreten güvence aracı",
+          "why_now": "10 Ekim 2026'da Microsoft CEO'su gelişmiş modeller için 'ihlal edilmiş varsay' yaklaşımı ve yetkili insanın yürütmeyi durdurabileceği acil fren kontrolünü savundu.",
+          "before_state": "Kill switch varlığı dokümanda işaretleniyor fakat yetkili kişi, bağımlılık ve durdurma süresi düzenli test edilmiyor.",
+          "after_state": "Her ajan için tekrarlanabilir tatbikat sonucu, başarısız kontrol, sahip ve düzeltme tarihi kanıtlanıyor.",
+          "canonical_source_urls": [
+            "https://www.ithome.com/1/011/545.htm",
+            "https://www.36kr.com/p/4022129475948680"
+          ],
+          "supporting_article_ids": [
+            "9b2aca996dc3f71b7e99cb19"
+          ],
+          "source_observations": [
+            {
+              "url": "https://www.ithome.com/1/011/545.htm",
+              "observation": "Nadella, modellerin ihlal edilmiş varsayılması, baştan sınırlandırılması ve yetkili insanların yürütme sırasında görevi durdurabilmesi gerektiğini belirtti."
+            }
+          ],
+          "scope_hint": "Masaüstü/tabletop güvence ve kanıt yönetimi; ajanı çalıştırmaz veya durdurmaz, canlı ajan/model API'sine ve harici AI'ya bağlanmaz.",
+          "local_evidence": {
+            "control_need": [
+              "compromise varsayımı",
+              "önceden tanımlı sınırlar",
+              "yetkili insanın pause/stop yeteneği"
+            ],
+            "unknowns": [
+              "Nadella paylaşımındaki teknik referans mimari ayrıntıları doğrulanmadı",
+              "Sektör bazlı zorunlu test sıklığı bilinmiyor"
+            ]
+          }
+        }
+      ]
+    },
+    "receipt_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-138ab50a425cb99c/001.json",
+    "valid_until": "2026-11-11T01:22:09Z"
+  },
+  {
+    "policy_version": "radar-v2-no-runtime-services-20261010",
+    "content_hash": "7d20870cf8e43c5d353f5e99b80bcf357f10994aa5cb79d8097d34428d01c999",
+    "decision": {
+      "article_key": "25b1e28b38c34bab8a246802",
+      "decision": "no_opportunity",
+      "reason": "Genel piyasa sabah özeti, fiyat hareketlerini ve şirket haberlerini derliyor; ürünleştirilebilir müşteri problemi için yeterli yerel kanıt yok.",
+      "opportunities": []
+    },
+    "receipt_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-138ab50a425cb99c/001.json",
+    "valid_until": "2026-11-11T01:22:09Z"
+  },
+  {
+    "policy_version": "radar-v2-no-runtime-services-20261010",
+    "content_hash": "5653b2fc4f4c5e2e837e20f84162c13b9198711862c69dd146cdcbd4dc1bb7ee",
+    "decision": {
+      "article_key": "25c54f154374bd86333dccee",
+      "decision": "no_opportunity",
+      "reason": "Tek bir otomobil üreticisinin aylık satış düşüşü şirket performans sinyalidir; neden, alıcı ve tekrarlanabilir operasyonel iş doğrulanmadığı için fırsata dönüştürülmedi.",
+      "opportunities": []
+    },
+    "receipt_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-138ab50a425cb99c/001.json",
+    "valid_until": "2026-11-11T01:22:09Z"
+  },
+  {
+    "policy_version": "radar-v2-no-runtime-services-20261010",
+    "content_hash": "a6503ef8056b2f65766607d501ff585cc23fa0963bdf4a52fdabcf96acae8d22",
+    "decision": {
+      "article_key": "25f6184bc390960e565df75f",
+      "decision": "opportunity",
+      "reason": "İki yılda 106 merkezi veri toplama/training tesisi kurulmasına karşın veri yeniden kullanımının zayıf, satın alma talebinin sınırlı ve iş modelinin kapanmamış olması; tesis yatırımı öncesi uyumluluk ve kapasite ekonomisi kararına işaret ediyor.",
+      "opportunities": [
+        {
+          "raw_id": "2026-10-12-4bb3b46a63-discovery-138ab50a425cb99c:25f6184bc390960e565df75f:1",
+          "canonical_key": "embodied-ai-training-centers|test-dataset-demand-and-robot-compatibility|offline-capacity-economics-planner",
+          "idea_name": "Robot Eğitim Tesisi Talep ve Uyum Planlayıcısı",
+          "core_job": "Yeni robot veri toplama kapasitesi kurmadan önce hangi robot/görev/veri standardında gerçek talep ve yeniden kullanım olduğunu kanıtlamak",
+          "target_customer": "İnsansı robot veri toplama merkezi kuran yerel yönetim ortaklıkları ve özel operatörler",
+          "buyer": "Program yöneticisi, yatırım komitesi veya tesis operasyon lideri",
+          "product_mechanism": "Potansiyel alıcı niyetleri, robot gövdesi/görev uyumluluğu, saatlik veri maliyeti, kalite/red oranı ve mevcut kapasiteyi dosyadan alıp doluluk ve başa baş senaryosu çıkaran yerel planlayıcı",
+          "why_now": "2026 Ağustosuna kadar 106 merkezi tesisin 84'ü çalışır hale gelmiş olsa da kaynaklar gövdeler arası veri yeniden kullanımının zor, satın alan sayısının az ve ticari döngünün kapanmamış olduğunu bildiriyor.",
+          "before_state": "Başarı, robot veya tesis sayısıyla ölçülüyor; veri alıcısı, uyumluluk ve gerçek doluluk yatırım kararından sonra sınanıyor.",
+          "after_state": "Her kapasite artışı doğrulanmış talep, veri standardı uyumu, beklenen red ve başa baş dolulukla belgeleniyor.",
+          "canonical_source_urls": [
+            "https://news.marsbit.co/20260920061017988411.html"
+          ],
+          "supporting_article_ids": [
+            "194c34dce3f4ed2a143ae7f2"
+          ],
+          "source_observations": [
+            {
+              "url": "https://news.marsbit.co/20260920061017988411.html",
+              "observation": "Kamuya açıklanan 106 merkezi veri toplama projesinin 84'ü işletmede; kaynak veri gövdeler arası yeniden kullanım, sınırlı alıcı ve kapanmamış ticari model sorunlarını aktarıyor."
+            }
+          ],
+          "scope_hint": "CSV/XLSX tabanlı yatırım öncesi planlama; robot kontrolü, veri pazaryeri, canlı sensör veya harici AI/API/DB bağımlılığı yok.",
+          "local_evidence": {
+            "metrics": {
+              "public_projects": "106",
+              "operating_projects": "84",
+              "sample_cutoff": "2026-08"
+            },
+            "unknowns": [
+              "Tesislerin doğrulanmış doluluk ve gelir dağılımı yayımlanmadı",
+              "OFweek kaynağının tüm nicel metodolojisi erişilebilir değildi"
+            ]
+          }
+        }
+      ]
+    },
+    "receipt_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-138ab50a425cb99c/001.json",
+    "valid_until": "2026-11-11T01:22:09Z"
+  },
+  {
+    "policy_version": "radar-v2-no-runtime-services-20261010",
+    "content_hash": "20a596808be28746c7141ef832f3d31c67b3ce0820ee7880f52aede033ab080d",
+    "decision": {
+      "article_key": "6bffbeae7ca1826231ee8ec7",
+      "decision": "opportunity",
+      "reason": "Ifremer–CNRS çalışması 411 yayını ve proje yaşam döngüsündeki 10 baskıyı merkezileştiriyor; proje geliştiricileri için kaynak–baskı–aşama–azaltım kanıtını izleyen somut karar ve kayıt işi oluşuyor.",
+      "opportunities": [
+        {
+          "raw_id": "2026-10-12-4bb3b46a63-discovery-03a72db3b015f9a9:6bffbeae7ca1826231ee8ec7:1",
+          "canonical_key": "offshore-wind-developers|map-biodiversity-evidence-to-project-phases|offline-pressure-evidence-register",
+          "idea_name": "Açık Deniz Rüzgârı Biyoçeşitlilik Kanıt Haritası",
+          "core_job": "Bir rüzgâr projesinin inşaat, işletme ve söküm aşamalarındaki her baskıyı güncel bilimsel kanıt ve azaltım kararıyla eşlemek",
+          "target_customer": "Fransa/AB açık deniz rüzgârı proje geliştiricileri ve çevresel değerlendirme danışmanları",
+          "buyer": "Çevre izinleri lideri veya EIA proje yöneticisi",
+          "product_mechanism": "Kullanıcının yüklediği raporları 10 baskı ve yaşam döngüsü aşamasına bağlayan; kanıt gücü, belirsizlik, saha varsayımı, karar ve azaltım izini tutup inceleme paketi çıkaran yerel kayıt aracı",
+          "why_now": "Ifremer ve CNRS'nin 2024–2026 uzmanlığı 4.500'den fazla yayından 411'ini ayrıntılı analiz ederek 10 ekolojik baskı ve kalan bilgi boşluklarını tek çerçevede topladı.",
+          "before_state": "Bilimsel kaynaklar, EIA bölümleri ve azaltım kararları farklı dosyalarda; bir kararın dayanağı ve belirsizliği zor izleniyor.",
+          "after_state": "Her proje etkisi, kaynak, saha varsayımı, belirsizlik ve azaltım kararıyla izlenebilir hale geliyor.",
+          "canonical_source_urls": [
+            "https://www.notre-environnement.gouv.fr/donnees-et-ressources/ressources/publications/article/eoliennes-en-mer-biodiversite-resultats-de-l-expertise-scientifique-ifremer",
+            "https://www.ipsl.fr/article/une-expertise-scientifique-collective-sur-limpact-des-eoliennes-en-mer-sur-la-biodiversite/"
+          ],
+          "supporting_article_ids": [
+            "93275bc77ede1b71f487001c"
+          ],
+          "source_observations": [
+            {
+              "url": "https://www.notre-environnement.gouv.fr/donnees-et-ressources/ressources/publications/article/eoliennes-en-mer-biodiversite-resultats-de-l-expertise-scientifique-ifremer",
+              "observation": "Uzmanlık, 10 baskıyı proje yaşam döngüsü boyunca inceliyor; belgelenmiş etkileri, belirsizlikleri ve literatürdeki azaltım önlemlerini merkezileştiriyor."
+            }
+          ],
+          "scope_hint": "Kullanıcı yüklemeli belge/CSV ve yerel indeks; canlı bilimsel veri tabanı, harici API/AI/DB yok.",
+          "local_evidence": {
+            "facts": {
+              "publications_screened": ">4500",
+              "articles_analyzed": 411,
+              "pressures": 10,
+              "study_period": "2024-2026"
+            },
+            "unknowns": [
+              "Proje bazlı zorunlu kanıt formatı ülkeler arasında değişiyor",
+              "Bilimsel rapor tek başına düzenleyici öneri sıralaması sunmuyor"
+            ]
+          }
+        }
+      ]
+    },
+    "receipt_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-03a72db3b015f9a9/001.json",
+    "valid_until": "2026-11-11T07:08:49Z"
+  },
+  {
+    "policy_version": "radar-v2-no-runtime-services-20261010",
+    "content_hash": "fe8bbbed1908f6bcdb158e2296d520975f60908c626d2abc5c5460a9079b140d",
+    "decision": {
+      "article_key": "6c0e934785f63fbd91322d02",
+      "decision": "no_opportunity",
+      "reason": "Meta'nın Anthropic'e kapasite kiralama planını ertelemesi şirketler arası stratejik kaynak tahsisi sinyali; tekrarlanabilir üçüncü taraf iş akışı veya politika uyumlu bağımsız ürün mekanizması göstermiyor.",
+      "opportunities": []
+    },
+    "receipt_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-03a72db3b015f9a9/001.json",
+    "valid_until": "2026-11-11T07:08:49Z"
+  },
+  {
+    "policy_version": "radar-v2-no-runtime-services-20261010",
+    "content_hash": "2c4c4e43a971c1ff920ee0c44f7b1e177570ad3f61263d8b34159eea3d14e16c",
+    "decision": {
+      "article_key": "6c2e90842dc71fadbbf80ff8",
+      "decision": "no_opportunity",
+      "reason": "Tek şirketin aylık araç satışındaki %50,25 düşüş yalnızca performans olayıdır; neden ve kullanıcı iş akışı doğrulanmadığı için fırsat çıkarılmadı.",
+      "opportunities": []
+    },
+    "receipt_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-03a72db3b015f9a9/001.json",
+    "valid_until": "2026-11-11T07:08:49Z"
+  },
+  {
+    "policy_version": "radar-v2-no-runtime-services-20261010",
+    "content_hash": "4f0cdfa672cd89fc9423c335aea29df0d4aaa4b9ef8134a356a217b4f0c70420",
+    "decision": {
+      "article_key": "6c840c14258e39264abf6308",
+      "decision": "opportunity",
+      "reason": "Linux ve gerçek zamanlı çekirdeğin AMP mimarisinde birlikte çalışması; görev bölümü, IPC, buffer, hata kurtarma ve uzun süreli yük testleri için tekrarlanabilir doğrulama kanıtı ihtiyacı yaratıyor.",
+      "opportunities": [
+        {
+          "raw_id": "2026-10-12-4bb3b46a63-discovery-03a72db3b015f9a9:6c840c14258e39264abf6308:1",
+          "canonical_key": "industrial-embedded-teams|verify-linux-rtos-boundaries|offline-amp-test-dossier",
+          "idea_name": "Linux–RTOS Sınır Doğrulama Dosyası",
+          "core_job": "Heterojen çok çekirdekli endüstriyel cihazda görev bölümü ve çekirdekler arası veri yolunun zamanlama sınırlarını sürüm bazında kanıtlamak",
+          "target_customer": "Linux + RTOS/bare-metal AMP kullanan küçük endüstriyel gömülü sistem ekipleri",
+          "buyer": "Gömülü yazılım teknik lideri veya doğrulama yöneticisi",
+          "product_mechanism": "Görev/çekirdek sahipliği, IPC sözleşmesi, buffer ve hata senaryolarını tanımlayan; cihazdan dışa aktarılan test loglarını gecikme, kayıp ve toparlanma eşikleriyle karşılaştırıp imzalı doğrulama paketi üreten yerel araç",
+          "why_now": "T153 örneği Linux tarafındaki ağ/dosya işlerini gerçek zamanlı RISC‑V görevlerinden ayırıyor; kaynaklar örnek koddan ürüne geçişte örnekleme hızı, paket boyutu, izin verilen gecikme, uzun çalışma, bağlantı hatası ve depolama tıkanmasının ayrıca test edilmesi gerektiğini belirtiyor.",
+          "before_state": "Mimari şeması ve test logları ayrı tutuluyor; görev sınırı değişince hangi zamanlama kanıtının geçersiz olduğu kolay görülmüyor.",
+          "after_state": "Her gereksinim çekirdek sahipliği, test senaryosu, log ve eşikle bağlanıyor; sürüm farkında yeniden test kapsamı çıkıyor.",
+          "canonical_source_urls": [
+            "https://www.myir.cn/product/som/t153/myc-yt153mx.html",
+            "https://www.cnblogs.com/cbd7788/articles/23227779"
+          ],
+          "supporting_article_ids": [
+            "2c3dd717fa1885e6b03b8b17"
+          ],
+          "source_observations": [
+            {
+              "url": "https://www.cnblogs.com/cbd7788/articles/23227779",
+              "observation": "Kaynak A çekirdeklerinde Linux, RISC‑V çekirdeğinde gerçek zamanlı görev ayrımını; buffer, veri biçimi, hata kurtarma ve çekirdekler arası iletişim testlerini vurguluyor."
+            }
+          ],
+          "scope_hint": "İçe aktarılan loglar üzerinde deterministik yerel analiz; cihaz kontrolü, telemetri servisi, bulut, harici AI/API/DB yok.",
+          "local_evidence": {
+            "test_dimensions": [
+              "sampling rate",
+              "packet size",
+              "latency limit",
+              "long-run stability",
+              "link failure",
+              "storage congestion"
+            ],
+            "unknowns": [
+              "Hedef donanım başına kesin kabul eşikleri kullanıcı tarafından sağlanmalı",
+              "Kaynak makale bir üretici çözümüne odaklı; genellenebilirlik doğrulanmadı"
+            ]
+          }
+        }
+      ]
+    },
+    "receipt_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-03a72db3b015f9a9/001.json",
+    "valid_until": "2026-11-11T07:08:49Z"
+  },
+  {
+    "policy_version": "radar-v2-no-runtime-services-20261010",
+    "content_hash": "2fb0a127ecabb0dbc7a1403a1537ef55898f987ae3c16fd2f861e9482ee90982",
+    "decision": {
+      "article_key": "6d03d8ee3a6a41ca4617719f",
+      "decision": "no_opportunity",
+      "reason": "AI ofis pazarındaki ürün birleşmeleri ve yönetici ayrılığı yoğun rekabet/fonlama sinyali; yeni girişimin ürünü henüz açıklanmamış ve çekirdek çözüm harici AI modeli gerektireceğinden mevcut politika altında fırsat kaydedilmedi.",
+      "opportunities": []
+    },
+    "receipt_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-03a72db3b015f9a9/001.json",
+    "valid_until": "2026-11-11T07:08:49Z"
+  },
+  {
+    "policy_version": "radar-v2-no-runtime-services-20261010",
+    "content_hash": "892f53e6425e790e94b30f00dd539cfca894456f8aaa6ed0f0f8e162f43ac72e",
+    "decision": {
+      "article_key": "98425b05ee026289078083ff",
+      "decision": "opportunity",
+      "reason": "UP Startup Procurement Scheme-2026, uygun girişimlerin kamuya satışında özel bir pazar yeri ve alım kolaylıkları öngörüyor; belge hazırlığı ve uygunluk takibi için dış servise bağımlı olmayan dar bir iş akışı ürünü çıkarılabilir.",
+      "opportunities": [
+        {
+          "raw_id": "2026-10-12-4bb3b46a63-discovery-10d1886605ec50c5:98425b05ee026289078083ff:1",
+          "canonical_key": "uttar-pradesh-startups|prepare-government-procurement-evidence|offline-bid-readiness-workspace",
+          "idea_name": "UP Kamu Alımı Hazırlık Masası",
+          "core_job": "Girişimin ürününü kamu alım koşullarına eşleyip eksiksiz başvuru ve kanıt paketi hazırlamak",
+          "target_customer": "Uttar Pradesh'te kamuya satış yapmak isteyen DPIIT/StartInUP tanımlı erken aşama girişimler",
+          "buyer": "Kurucu, satış operasyonu veya kamu işleri sorumlusu",
+          "product_mechanism": "Kullanıcının yüklediği şartname ve şirket belgelerini yerel olarak yöneten; uygunluk kontrol listesi, kanıt kasası, eksik belge uyarısı ve dışa aktarılabilir teklif paketi üreten çalışma alanı",
+          "why_now": "9 Ekim 2026'da onaylanan program, özel bir Startup E‑Marketplace üzerinden devlet birimlerine pazar erişimini genişletiyor.",
+          "before_state": "Koşullar, muafiyetler ve kanıtlar farklı dosyalarda elle izleniyor; başvuru eksikleri geç fark ediliyor.",
+          "after_state": "Her koşul kanıta bağlanıyor, eksikler görünür oluyor ve denetlenebilir başvuru paketi tek yerden dışa aktarılıyor.",
+          "canonical_source_urls": [
+            "https://www.ptinews.com/story/business/up-cabinet-approves-startup-procurement-scheme-2026/4149098",
+            "https://startupmission.up.gov.in/en/pages/public-procurement"
+          ],
+          "supporting_article_ids": [
+            "2d8956286ad7c8f433e423c4"
+          ],
+          "source_observations": [
+            {
+              "url": "https://www.ptinews.com/story/business/up-cabinet-approves-startup-procurement-scheme-2026/4149098",
+              "observation": "Program, uygun girişim ürün ve hizmetlerini listeleyecek özel bir e-pazar yeri ve kamu birimlerince alım hedefliyor."
+            },
+            {
+              "url": "https://startupmission.up.gov.in/en/pages/public-procurement",
+              "observation": "Mevcut resmi çerçeve; önceki ciro, önceki deneyim ve EMD için girişimlere muafiyetler açıklıyor."
+            }
+          ],
+          "scope_hint": "Tek kullanıcılı/ekip içi, dosya içe aktarmalı, yerel veya statik barındırmalı; kamu portalına API bağlantısı yok.",
+          "local_evidence": {
+            "market_signal": "Yeni kamu alım kanalı ve resmi muafiyetler",
+            "unknowns": [
+              "2026 programının ayrıntılı uygunluk kuralları ve form şemaları henüz doğrulanmadı",
+              "Satın alma hacmi bilinmiyor"
+            ]
+          }
+        }
+      ]
+    },
+    "receipt_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-10d1886605ec50c5/001.json",
+    "valid_until": "2026-11-11T01:19:05Z"
+  },
+  {
+    "policy_version": "radar-v2-no-runtime-services-20261010",
+    "content_hash": "355d98f826f809bf398732403f04032b39fa5d787a1416a54447a0e577c8e576",
+    "decision": {
+      "article_key": "98e86ccebc4db016eb5b501a",
+      "decision": "opportunity",
+      "reason": "Bir macOS AI istemcisindeki değiştirilebilir debug uç noktası, geniş TCC yetkilerini saldırı zincirine dönüştüren somut bir yerel yapılandırma ve yetki-görünürlüğü açığı gösteriyor.",
+      "opportunities": [
+        {
+          "raw_id": "2026-10-12-4bb3b46a63-discovery-10d1886605ec50c5:98e86ccebc4db016eb5b501a:1",
+          "canonical_key": "macos-security-teams|audit-ai-agent-permission-chains|local-baseline-diff",
+          "idea_name": "AI Ajan Yetki Zinciri Denetçisi",
+          "core_job": "Mac filosunda AI ajanlarının geniş yetkileri ile değiştirilebilir ayarlarının oluşturduğu birleşik saldırı yollarını görünür kılmak",
+          "target_customer": "Kurumsal macOS filosu yöneten küçük ve orta ölçekli güvenlik/BT ekipleri",
+          "buyer": "Güvenlik lideri veya uç nokta yönetimi sorumlusu",
+          "product_mechanism": "Mac üzerinde çalışan yerel tarayıcı; TCC izinlerini, uygulama imzasını ve güvenlik açısından kritik preference/endpoint değişimlerini baseline ile karşılaştırır, risk zinciri ve düzeltme dosyası üretir",
+          "why_now": "Eylül 2026'da açıklanan Muse vakası, ayrı ayrı meşru görünen yerel kod çalıştırma, değiştirilebilir dictation endpoint'i ve geniş ajan izinlerinin birleşerek ses/token sızıntısı ve yetki kötüye kullanımına yol açabildiğini gösterdi.",
+          "before_state": "EDR ve MDM kontrolleri ajan izinlerini ve uygulamaya özel değiştirilebilir ayarları tek saldırı yolu olarak göstermiyor.",
+          "after_state": "Ekip, yerel kanıtlarla hangi ayar+izin kombinasyonunun riskli olduğunu görüp baseline sapmasını ve düzeltmeyi izliyor.",
+          "canonical_source_urls": [
+            "https://www.infoq.com/news/2026/09/meta-muse-zeroday/",
+            "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent"
+          ],
+          "supporting_article_ids": [
+            "63bde4ebedaf055e707eb28e"
+          ],
+          "source_observations": [
+            {
+              "url": "https://www.infoq.com/news/2026/09/meta-muse-zeroday/",
+              "observation": "Değiştirilebilir endo_voyager_dictation_endpoint ayarı, yerel kodun dictation trafiğini ve tokenı başka uç noktaya yönlendirmesine imkân verdi; Meta daha sonra hotfix yayımladı."
+            },
+            {
+              "url": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
+              "observation": "Saldırı uzaktan ilk erişim değildi; önceden yerel kod çalıştırma gerektiriyordu, ancak ajanın mevcut izinlerini kötüye kullanabiliyordu."
+            }
+          ],
+          "scope_hint": "Tamamen cihaz üzerinde tarama ve imzalı kural paketi içe aktarma; bulut, harici AI veya harici runtime API yok.",
+          "local_evidence": {
+            "attack_chain": [
+              "yerel kullanıcı bağlamında kod",
+              "değiştirilebilir dictation endpoint",
+              "ajanın önceden verilmiş geniş izinleri"
+            ],
+            "unknowns": [
+              "Etkilenen Muse sürüm aralığı ve Meta'nın resmi CVE kaydı doğrulanmadı",
+              "Genel macOS ajanlarında aynı preference kalıbının yaygınlığı bilinmiyor"
+            ]
+          }
+        }
+      ]
+    },
+    "receipt_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-10d1886605ec50c5/001.json",
+    "valid_until": "2026-11-11T01:19:05Z"
+  },
+  {
+    "policy_version": "radar-v2-no-runtime-services-20261010",
+    "content_hash": "d843a3d231a31295fcf25762d5f7a68783934a57edb8d725bcdb34a933d8913a",
+    "decision": {
+      "article_key": "9a4674e2b847c771ffe69647",
+      "decision": "opportunity",
+      "reason": "Çinli büyük teknoloji şirketlerinin AI yeteneğini lise düzeyine kadar erken bağlaması, uzun yetiştirme döngüsü ile yüksek hareketlilik arasında program portföyü ve aday özerkliği riski yaratıyor.",
+      "opportunities": [
+        {
+          "raw_id": "2026-10-12-4bb3b46a63-discovery-10d1886605ec50c5:9a4674e2b847c771ffe69647:1",
+          "canonical_key": "ai-talent-program-leaders|govern-early-talent-portfolios|cohort-optionality-simulator",
+          "idea_name": "Erken AI Yetenek Programı Portföy Planlayıcısı",
+          "core_job": "Uzun vadeli genç yetenek yatırımlarını elde tutma, hareketlilik, eğitim kapasitesi ve aday özerkliği senaryolarıyla yönetmek",
+          "target_customer": "Büyük teknoloji ve sanayi şirketlerinde lise/üniversite düzeyi AI yetiştirme programları yöneten ekipler",
+          "buyer": "Yetenek stratejisi lideri veya AI araştırma organizasyonu operasyon yöneticisi",
+          "product_mechanism": "Kohort maliyeti, program kilometre taşı, ayrılma senaryosu, mentorluk kapasitesi ve aday seçeneklerini yerel hesaplayan; tek firmaya bağımlılık ve portföy yoğunlaşmasını gösteren planlama aracı",
+          "why_now": "Ekim 2026 haberleri, 13 yaşa kadar ürün kampları, yüksek günlük staj ücretleri ve lise mezunlarına yüksek başlangıç teklifleriyle rekabetin erkene çekildiğini; buna karşın ekipler arası yüksek hareketliliğin sürdüğünü bildiriyor.",
+          "before_state": "Programlar tekil işe alım başarılarıyla değerlendiriliyor; beş yıllık yetiştirme riski, mentor kapasitesi ve adayın alternatifleri birlikte modellenmiyor.",
+          "after_state": "Kohort yatırımı ve hareketlilik senaryoları görünür oluyor; program tasarımı kapasite ve etik hareketlilik sınırlarıyla belgeleniyor.",
+          "canonical_source_urls": [
+            "https://www.thepaper.cn/newsDetail_forward_34223916"
+          ],
+          "supporting_article_ids": [
+            "253e833b0301beb259a79c9d"
+          ],
+          "source_observations": [
+            {
+              "url": "https://www.thepaper.cn/newsDetail_forward_34223916",
+              "observation": "Haberde Tencent'in 13 yaşa kadar program açması, ByteDance Top Seed için yüksek günlük ücretler ve şirketler arası AI altyapı yeteneği hareketliliği birlikte tartışılıyor."
+            }
+          ],
+          "scope_hint": "Yerel senaryo planlama; aday taraması, kişilik puanlama, harici veri zenginleştirme veya AI karar verme yok.",
+          "local_evidence": {
+            "signals": [
+              "erken yaşta yetenek programları",
+              "yüksek ücretle önceden bağlama",
+              "şirketler arası ekip hareketliliği"
+            ],
+            "unknowns": [
+              "Aktarılan çalışan hareketliliği sayıları bağımsız doğrulanmadı",
+              "Programların uzun dönem elde tutma sonuçları bilinmiyor"
+            ]
+          }
+        }
+      ]
+    },
+    "receipt_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-10d1886605ec50c5/001.json",
+    "valid_until": "2026-11-11T01:19:05Z"
+  }
+]
