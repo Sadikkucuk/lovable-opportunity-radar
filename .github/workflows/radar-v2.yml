@@ -2,7 +2,10 @@ name: Radar v2 controller
 on:
   workflow_dispatch:
   schedule:
-    - cron: '2,17,32,47 * * * *'
+    # Run controller each 15 minutes overnight (Istanbul 00:00-07:00).
+    - cron: '2,17,32,47 21-23,0-3 * * *'
+    # Final post-window reconcile for late receipts and morning reporting.
+    - cron: '2 4 * * *'
   push:
     branches: [main]
     paths:
@@ -52,6 +55,6 @@ jobs:
           done
           echo 'Concurrent writes prevented publication; next controller run will retry.'
           exit 1
-      - name: Report missing starts, stalled workers and research progress
+      - name: Summarize health without failing the successful controller job
         if: always()
-        run: python -m radar.operations
+        run: python -m radar.operations --nonfatal
