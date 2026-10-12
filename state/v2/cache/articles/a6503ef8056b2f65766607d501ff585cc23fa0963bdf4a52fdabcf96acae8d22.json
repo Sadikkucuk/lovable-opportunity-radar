@@ -1,0 +1,49 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "a6503ef8056b2f65766607d501ff585cc23fa0963bdf4a52fdabcf96acae8d22",
+  "decision": {
+    "article_key": "25f6184bc390960e565df75f",
+    "decision": "opportunity",
+    "reason": "İki yılda 106 merkezi veri toplama/training tesisi kurulmasına karşın veri yeniden kullanımının zayıf, satın alma talebinin sınırlı ve iş modelinin kapanmamış olması; tesis yatırımı öncesi uyumluluk ve kapasite ekonomisi kararına işaret ediyor.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-12-4bb3b46a63-discovery-138ab50a425cb99c:25f6184bc390960e565df75f:1",
+        "canonical_key": "embodied-ai-training-centers|test-dataset-demand-and-robot-compatibility|offline-capacity-economics-planner",
+        "idea_name": "Robot Eğitim Tesisi Talep ve Uyum Planlayıcısı",
+        "core_job": "Yeni robot veri toplama kapasitesi kurmadan önce hangi robot/görev/veri standardında gerçek talep ve yeniden kullanım olduğunu kanıtlamak",
+        "target_customer": "İnsansı robot veri toplama merkezi kuran yerel yönetim ortaklıkları ve özel operatörler",
+        "buyer": "Program yöneticisi, yatırım komitesi veya tesis operasyon lideri",
+        "product_mechanism": "Potansiyel alıcı niyetleri, robot gövdesi/görev uyumluluğu, saatlik veri maliyeti, kalite/red oranı ve mevcut kapasiteyi dosyadan alıp doluluk ve başa baş senaryosu çıkaran yerel planlayıcı",
+        "why_now": "2026 Ağustosuna kadar 106 merkezi tesisin 84'ü çalışır hale gelmiş olsa da kaynaklar gövdeler arası veri yeniden kullanımının zor, satın alan sayısının az ve ticari döngünün kapanmamış olduğunu bildiriyor.",
+        "before_state": "Başarı, robot veya tesis sayısıyla ölçülüyor; veri alıcısı, uyumluluk ve gerçek doluluk yatırım kararından sonra sınanıyor.",
+        "after_state": "Her kapasite artışı doğrulanmış talep, veri standardı uyumu, beklenen red ve başa baş dolulukla belgeleniyor.",
+        "canonical_source_urls": [
+          "https://news.marsbit.co/20260920061017988411.html"
+        ],
+        "supporting_article_ids": [
+          "194c34dce3f4ed2a143ae7f2"
+        ],
+        "source_observations": [
+          {
+            "url": "https://news.marsbit.co/20260920061017988411.html",
+            "observation": "Kamuya açıklanan 106 merkezi veri toplama projesinin 84'ü işletmede; kaynak veri gövdeler arası yeniden kullanım, sınırlı alıcı ve kapanmamış ticari model sorunlarını aktarıyor."
+          }
+        ],
+        "scope_hint": "CSV/XLSX tabanlı yatırım öncesi planlama; robot kontrolü, veri pazaryeri, canlı sensör veya harici AI/API/DB bağımlılığı yok.",
+        "local_evidence": {
+          "metrics": {
+            "public_projects": "106",
+            "operating_projects": "84",
+            "sample_cutoff": "2026-08"
+          },
+          "unknowns": [
+            "Tesislerin doğrulanmış doluluk ve gelir dağılımı yayımlanmadı",
+            "OFweek kaynağının tüm nicel metodolojisi erişilebilir değildi"
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-138ab50a425cb99c/001.json",
+  "valid_until": "2026-11-11T01:22:09Z"
+}

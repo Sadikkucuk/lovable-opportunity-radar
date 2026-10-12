@@ -1,0 +1,50 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "ec252a68c29a3bf56365fad70160d3d0a58bf0b0824c85d4957282051e8db6f7",
+  "decision": {
+    "article_key": "259a479c8c4bd56033311df1",
+    "decision": "opportunity",
+    "reason": "Güçlü ajanların ihlal edilmiş varsayılması ve yetkili kişinin işi durdurabilmesi gerektiği yönündeki açık kontrol ihtiyacı, entegrasyon yapmayan masaüstü güvence/test ürünü için somut JTBD oluşturuyor.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-12-4bb3b46a63-discovery-138ab50a425cb99c:259a479c8c4bd56033311df1:1",
+        "canonical_key": "enterprise-ai-agent-owners|prove-emergency-stop-controls|offline-fail-safe-test-dossier",
+        "idea_name": "AI Ajan Acil Durdurma Tatbikatı",
+        "core_job": "Üretime alınan her ajan için kimin, hangi koşulda, ne kadar sürede ve hangi kanıtla görevi durdurabildiğini test etmek",
+        "target_customer": "Kurumsal AI ajanı devreye alan güvenlik, risk ve platform ekipleri",
+        "buyer": "CISO, AI yönetişim lideri veya platform mühendisliği yöneticisi",
+        "product_mechanism": "Ajan envanteri, yetki sınırı ve durdurma prosedürünü yerel şablonlarda tutan; masa başı tatbikatı, zaman ölçümü, başarısız kontrol ve imzalı düzeltme dosyası üreten güvence aracı",
+        "why_now": "10 Ekim 2026'da Microsoft CEO'su gelişmiş modeller için 'ihlal edilmiş varsay' yaklaşımı ve yetkili insanın yürütmeyi durdurabileceği acil fren kontrolünü savundu.",
+        "before_state": "Kill switch varlığı dokümanda işaretleniyor fakat yetkili kişi, bağımlılık ve durdurma süresi düzenli test edilmiyor.",
+        "after_state": "Her ajan için tekrarlanabilir tatbikat sonucu, başarısız kontrol, sahip ve düzeltme tarihi kanıtlanıyor.",
+        "canonical_source_urls": [
+          "https://www.ithome.com/1/011/545.htm",
+          "https://www.36kr.com/p/4022129475948680"
+        ],
+        "supporting_article_ids": [
+          "9b2aca996dc3f71b7e99cb19"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.ithome.com/1/011/545.htm",
+            "observation": "Nadella, modellerin ihlal edilmiş varsayılması, baştan sınırlandırılması ve yetkili insanların yürütme sırasında görevi durdurabilmesi gerektiğini belirtti."
+          }
+        ],
+        "scope_hint": "Masaüstü/tabletop güvence ve kanıt yönetimi; ajanı çalıştırmaz veya durdurmaz, canlı ajan/model API'sine ve harici AI'ya bağlanmaz.",
+        "local_evidence": {
+          "control_need": [
+            "compromise varsayımı",
+            "önceden tanımlı sınırlar",
+            "yetkili insanın pause/stop yeteneği"
+          ],
+          "unknowns": [
+            "Nadella paylaşımındaki teknik referans mimari ayrıntıları doğrulanmadı",
+            "Sektör bazlı zorunlu test sıklığı bilinmiyor"
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-138ab50a425cb99c/001.json",
+  "valid_until": "2026-11-11T01:22:09Z"
+}
