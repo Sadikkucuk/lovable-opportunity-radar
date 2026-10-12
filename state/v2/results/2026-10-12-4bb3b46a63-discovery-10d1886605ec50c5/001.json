@@ -1,0 +1,298 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-12-4bb3b46a63-discovery-10d1886605ec50c5",
+  "input_hash": "10d1886605ec50c558c83c12cb9f5dfcf1a67e7149567b1b4c6163d91e30bb7c",
+  "token": "a8261dd2-44f3-45ee-aed3-738c4750ffdd",
+  "finished_at": "2026-10-12T01:19:05Z",
+  "outcome": "done",
+  "reason": "On donmuş kayıt ayrı ayrı incelendi; beşinde ayrışmış, dış runtime servisine bağımlı olmayan ürün fırsatı korundu, beşinde ise somut problem/ürün dönüşümü veya politika uyumu bulunmadı.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "98425b05ee026289078083ff",
+        "decision": "opportunity",
+        "reason": "UP Startup Procurement Scheme-2026, uygun girişimlerin kamuya satışında özel bir pazar yeri ve alım kolaylıkları öngörüyor; belge hazırlığı ve uygunluk takibi için dış servise bağımlı olmayan dar bir iş akışı ürünü çıkarılabilir.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-12-4bb3b46a63-discovery-10d1886605ec50c5:98425b05ee026289078083ff:1",
+            "canonical_key": "uttar-pradesh-startups|prepare-government-procurement-evidence|offline-bid-readiness-workspace",
+            "idea_name": "UP Kamu Alımı Hazırlık Masası",
+            "core_job": "Girişimin ürününü kamu alım koşullarına eşleyip eksiksiz başvuru ve kanıt paketi hazırlamak",
+            "target_customer": "Uttar Pradesh'te kamuya satış yapmak isteyen DPIIT/StartInUP tanımlı erken aşama girişimler",
+            "buyer": "Kurucu, satış operasyonu veya kamu işleri sorumlusu",
+            "product_mechanism": "Kullanıcının yüklediği şartname ve şirket belgelerini yerel olarak yöneten; uygunluk kontrol listesi, kanıt kasası, eksik belge uyarısı ve dışa aktarılabilir teklif paketi üreten çalışma alanı",
+            "why_now": "9 Ekim 2026'da onaylanan program, özel bir Startup E‑Marketplace üzerinden devlet birimlerine pazar erişimini genişletiyor.",
+            "before_state": "Koşullar, muafiyetler ve kanıtlar farklı dosyalarda elle izleniyor; başvuru eksikleri geç fark ediliyor.",
+            "after_state": "Her koşul kanıta bağlanıyor, eksikler görünür oluyor ve denetlenebilir başvuru paketi tek yerden dışa aktarılıyor.",
+            "canonical_source_urls": [
+              "https://www.ptinews.com/story/business/up-cabinet-approves-startup-procurement-scheme-2026/4149098",
+              "https://startupmission.up.gov.in/en/pages/public-procurement"
+            ],
+            "supporting_article_ids": [
+              "2d8956286ad7c8f433e423c4"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.ptinews.com/story/business/up-cabinet-approves-startup-procurement-scheme-2026/4149098",
+                "observation": "Program, uygun girişim ürün ve hizmetlerini listeleyecek özel bir e-pazar yeri ve kamu birimlerince alım hedefliyor."
+              },
+              {
+                "url": "https://startupmission.up.gov.in/en/pages/public-procurement",
+                "observation": "Mevcut resmi çerçeve; önceki ciro, önceki deneyim ve EMD için girişimlere muafiyetler açıklıyor."
+              }
+            ],
+            "scope_hint": "Tek kullanıcılı/ekip içi, dosya içe aktarmalı, yerel veya statik barındırmalı; kamu portalına API bağlantısı yok.",
+            "local_evidence": {
+              "market_signal": "Yeni kamu alım kanalı ve resmi muafiyetler",
+              "unknowns": [
+                "2026 programının ayrıntılı uygunluk kuralları ve form şemaları henüz doğrulanmadı",
+                "Satın alma hacmi bilinmiyor"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "9842b27a6cb1441b2df99f81",
+        "decision": "no_opportunity",
+        "reason": "Kaynak, bir şirketin ağ kafe altyapısını edge hesaplama düğümlerine dönüştürmesi ve iddialı bulut gelir hedefini anlatıyor; doğrulanmış, ayrışmış bir müşteri işi veya yazılım ürünü açığı göstermiyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "98a336db0c2f6162e5e829cd",
+        "decision": "no_opportunity",
+        "reason": "Haftalık finansman turu özeti yalnızca sermaye olaylarını derliyor; aktör/JTBD ve ürün dönüşümü için somut problem kanıtı vermiyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "98e86ccebc4db016eb5b501a",
+        "decision": "opportunity",
+        "reason": "Bir macOS AI istemcisindeki değiştirilebilir debug uç noktası, geniş TCC yetkilerini saldırı zincirine dönüştüren somut bir yerel yapılandırma ve yetki-görünürlüğü açığı gösteriyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-12-4bb3b46a63-discovery-10d1886605ec50c5:98e86ccebc4db016eb5b501a:1",
+            "canonical_key": "macos-security-teams|audit-ai-agent-permission-chains|local-baseline-diff",
+            "idea_name": "AI Ajan Yetki Zinciri Denetçisi",
+            "core_job": "Mac filosunda AI ajanlarının geniş yetkileri ile değiştirilebilir ayarlarının oluşturduğu birleşik saldırı yollarını görünür kılmak",
+            "target_customer": "Kurumsal macOS filosu yöneten küçük ve orta ölçekli güvenlik/BT ekipleri",
+            "buyer": "Güvenlik lideri veya uç nokta yönetimi sorumlusu",
+            "product_mechanism": "Mac üzerinde çalışan yerel tarayıcı; TCC izinlerini, uygulama imzasını ve güvenlik açısından kritik preference/endpoint değişimlerini baseline ile karşılaştırır, risk zinciri ve düzeltme dosyası üretir",
+            "why_now": "Eylül 2026'da açıklanan Muse vakası, ayrı ayrı meşru görünen yerel kod çalıştırma, değiştirilebilir dictation endpoint'i ve geniş ajan izinlerinin birleşerek ses/token sızıntısı ve yetki kötüye kullanımına yol açabildiğini gösterdi.",
+            "before_state": "EDR ve MDM kontrolleri ajan izinlerini ve uygulamaya özel değiştirilebilir ayarları tek saldırı yolu olarak göstermiyor.",
+            "after_state": "Ekip, yerel kanıtlarla hangi ayar+izin kombinasyonunun riskli olduğunu görüp baseline sapmasını ve düzeltmeyi izliyor.",
+            "canonical_source_urls": [
+              "https://www.infoq.com/news/2026/09/meta-muse-zeroday/",
+              "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent"
+            ],
+            "supporting_article_ids": [
+              "63bde4ebedaf055e707eb28e"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.infoq.com/news/2026/09/meta-muse-zeroday/",
+                "observation": "Değiştirilebilir endo_voyager_dictation_endpoint ayarı, yerel kodun dictation trafiğini ve tokenı başka uç noktaya yönlendirmesine imkân verdi; Meta daha sonra hotfix yayımladı."
+              },
+              {
+                "url": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
+                "observation": "Saldırı uzaktan ilk erişim değildi; önceden yerel kod çalıştırma gerektiriyordu, ancak ajanın mevcut izinlerini kötüye kullanabiliyordu."
+              }
+            ],
+            "scope_hint": "Tamamen cihaz üzerinde tarama ve imzalı kural paketi içe aktarma; bulut, harici AI veya harici runtime API yok.",
+            "local_evidence": {
+              "attack_chain": [
+                "yerel kullanıcı bağlamında kod",
+                "değiştirilebilir dictation endpoint",
+                "ajanın önceden verilmiş geniş izinleri"
+              ],
+              "unknowns": [
+                "Etkilenen Muse sürüm aralığı ve Meta'nın resmi CVE kaydı doğrulanmadı",
+                "Genel macOS ajanlarında aynı preference kalıbının yaygınlığı bilinmiyor"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "996fd34bac40e7c09ede80a8",
+        "decision": "no_opportunity",
+        "reason": "Jev'in makinece tüketilen karar API'si gerçek bir kullanım kalıbı gösterse de önerilecek ürünün çekirdeği ücretli harici AI/API runtime bağımlılığına dayanır; mevcut Radar ürün kısıtını karşılamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "9986909984775cfb8bcbc3c5",
+        "decision": "opportunity",
+        "reason": "AI depolama sağlayıcısında cihaz brüt marjının %18,9'a gerilemesi, distribütörlerin çoğunun dönem içinde gelir üretmemesi ve nakit akışı baskısı; teklif bazında marj ve kanal riski görünürlüğü için somut bir iş gösteriyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-12-4bb3b46a63-discovery-10d1886605ec50c5:9986909984775cfb8bcbc3c5:1",
+            "canonical_key": "independent-ai-infrastructure-vendors|protect-appliance-deal-margin|offline-bom-channel-simulator",
+            "idea_name": "AI Altyapı Teklif Marj Koruyucusu",
+            "core_job": "Donanım ağırlıklı AI altyapı teklifini vermeden önce gerçek marjı, nakit bağlanmasını ve distribütör riskini görmek",
+            "target_customer": "Bağımsız AI depolama ve altyapı çözümü sağlayıcıları",
+            "buyer": "Finans direktörü, ticari operasyon veya kanal satış lideri",
+            "product_mechanism": "BOM, tedarikçi teklifi, iskonto, ödeme vadesi ve distribütör geçmişini dosyadan alan; teklif marjı, nakit dönüş süresi ve stres senaryoları üreten yerel karar çalışma kitabı",
+            "why_now": "2026'nın ilk yarısında örnek şirketin cihaz çözümü marjı %18,9'a düşerken 421 distribütörün 256'sı gelir üretmedi; donanım maliyeti ve kanal kalitesi baskısı aynı anda görünür oldu.",
+            "before_state": "Liste fiyatı ve kaba brüt marjla karar veriliyor; vade, donanım fiyat şoku ve kanal hareketsizliği teklif sonrasında ortaya çıkıyor.",
+            "after_state": "Teklif öncesi taban marj, nakit ihtiyacı ve kanal riski senaryolarla görülüyor; onay eşiği belgeleniyor.",
+            "canonical_source_urls": [
+              "https://www.thepaper.cn/newsDetail_forward_34223218"
+            ],
+            "supporting_article_ids": [
+              "a3b56de5fd2abe02c1a0da9a"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.thepaper.cn/newsDetail_forward_34223218",
+                "observation": "2023–2026 H1 döneminde cihaz marjı %25,5'ten %18,9'a inerken, yazılım çözümü marjı %99,7 olarak bildirildi; 421 distribütörün 256'sı dönemde gelir üretmedi."
+              }
+            ],
+            "scope_hint": "CSV/XLSX içe aktarma, yerel hesaplama ve PDF/CSV dışa aktarma; ERP, tedarikçi veya AI servisine canlı bağlantı yok.",
+            "local_evidence": {
+              "metrics": {
+                "appliance_gross_margin_2026_h1": "18.9%",
+                "inactive_distributors_2026_h1": "256/421",
+                "cash_and_equivalents_2026_h1": "CNY 26.335m"
+              },
+              "unknowns": [
+                "Müşteri bazlı iskonto ve BOM verisi yayımlanmadı",
+                "Bu sorunların diğer bağımsız sağlayıcılardaki yaygınlığı bilinmiyor"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "99994f66366a555e3fc4f369",
+        "decision": "opportunity",
+        "reason": "Afrika–Çin ticaretinde doğrudan RMB mutabakat talebi artarken bankaların yeni ödeme altyapısına yatırım yapması, CIPS katılımı öncesi kontrol ve kanıt hazırlığı için dar bir operasyon işi gösteriyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-12-4bb3b46a63-discovery-10d1886605ec50c5:99994f66366a555e3fc4f369:1",
+            "canonical_key": "african-banks|prepare-cips-onboarding-controls|offline-evidence-room",
+            "idea_name": "CIPS Katılım Kanıt Odası",
+            "core_job": "CIPS/RMB ödeme kanalına katılım için süreç, kontrol, sahiplik ve test kanıtlarını denetime hazır tutmak",
+            "target_customer": "Çin ile ticaret müşterileri olan Afrika bankalarının ödeme operasyonu ve uyum ekipleri",
+            "buyer": "Ödemeler operasyon direktörü, dönüşüm programı lideri veya uyum yöneticisi",
+            "product_mechanism": "Kontrol kataloğu, RACI, test senaryosu, bulgu ve kanıt dosyalarını yerel olarak bağlayan; kurul/onay paketi üreten proje çalışma alanı",
+            "why_now": "Ecobank'ın 9 Ekim 2026'da CIPS'e katılma anlaşmasını duyurması ve doğrudan yerel para–RMB mutabakat talebinin arttığını belirtmesi, yeni katılımcı bankalarda hazırlık işini büyütüyor.",
+            "before_state": "Teknik, operasyonel ve uyum kanıtları e-posta ve paylaşımlı klasörlerde dağınık; test boşlukları geç görülüyor.",
+            "after_state": "Her kontrolün sahibi, kanıtı ve test sonucu tek paket içinde izleniyor; eksikler kurul/onay öncesi görülüyor.",
+            "canonical_source_urls": [
+              "https://ca.marketscreener.com/news/ecobank-to-join-china-s-cips-payments-platform-for-yuan-settlement-ce785ddcd988f524"
+            ],
+            "supporting_article_ids": [
+              "1714f2cc9f71ab9d73bbb998"
+            ],
+            "source_observations": [
+              {
+                "url": "https://ca.marketscreener.com/news/ecobank-to-join-china-s-cips-payments-platform-for-yuan-settlement-ce785ddcd988f524",
+                "observation": "Reuters haberi Ecobank'ın CIPS katılım anlaşması imzalayacağını, Afrika'da doğrudan RMB mutabakat talebinin arttığını ve bankaların gerekli ödeme altyapısına yatırım yaptığını bildiriyor."
+              }
+            ],
+            "scope_hint": "Dosya tabanlı proje/kanıt yönetimi; CIPS, çekirdek bankacılık veya harici uyum veritabanına canlı bağlantı yok.",
+            "local_evidence": {
+              "market_signal": "CIPS'in 100'den fazla ülke/bölgede 5.000'den fazla bankayı bağladığı ve Ecobank'ın yeni katılım hazırlığında olduğu bildirildi.",
+              "unknowns": [
+                "CIPS'in güncel resmi katılım kontrol listesi doğrulanmadı",
+                "Benzer Afrika bankalarının kaçının yakın vadede katılacağı bilinmiyor"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "99b026d09494061eff884b9b",
+        "decision": "opportunity",
+        "reason": "NBFC liderleri AI pilotlarının ancak tam maliyet, kredi kalitesi, tahsilat ve insan gözetimi birlikte ölçülürse ölçeklenmesi gerektiğini; farklı operasyonlarda somut ama parçalı kazanımlar bulunduğunu söylüyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-12-4bb3b46a63-discovery-10d1886605ec50c5:99b026d09494061eff884b9b:1",
+            "canonical_key": "indian-nbfcs|prove-ai-pilot-economics-and-controls|offline-benefit-ledger",
+            "idea_name": "NBFC AI Fayda ve Kontrol Defteri",
+            "core_job": "Bir AI pilotunun otomasyon sayısı yerine net ekonomik faydasını, riskini ve insan gözetimini kanıtlamak",
+            "target_customer": "Birden çok AI kredi/tahsilat pilotu yürüten küçük ve orta ölçekli Hindistan NBFC'leri",
+            "buyer": "COO, CIO, risk lideri veya dönüşüm programı sahibi",
+            "product_mechanism": "Önce/sonra CSV'lerini, model ve entegrasyon maliyetlerini, hata/override, kredi kalitesi ve tahsilat sonuçlarını yerel hesaplayan; ölçekle/durdur kararı için imzalanabilir kanıt paketi üreten araç",
+            "why_now": "9 Ekim 2026 tarihli sektör panelinde 15–30 dakikalık ilk kredi kararları, bazı işlerde %40 verim ve yaklaşık %30 barındırma maliyeti düşüşü bildirilirken tam maliyet, güvenilir veri ve insan sorumluluğu ölçekleme koşulu olarak vurgulandı.",
+            "before_state": "Pilot başarıları otomasyon veya hız metriğiyle raporlanıyor; veri hazırlama, siber güvenlik, izleme, hata ve insan inceleme maliyetleri dağınık kalıyor.",
+            "after_state": "Her kullanım vakası net fayda, risk sonucu ve insan kontrolüyle aynı çerçevede karşılaştırılıyor; ölçekleme kararı iz bırakıyor.",
+            "canonical_source_urls": [
+              "https://bfsi.economictimes.indiatimes.com/articles/ai-led-lending-must-deliver-returns-not-just-automation-say-nbfc-leaders/134835532"
+            ],
+            "supporting_article_ids": [
+              "dcdff16376c3aacead5e814d"
+            ],
+            "source_observations": [
+              {
+                "url": "https://bfsi.economictimes.indiatimes.com/articles/ai-led-lending-must-deliver-returns-not-just-automation-say-nbfc-leaders/134835532",
+                "observation": "Panel; productivity, credit quality ve profitability ölçümünü, tam maliyet hesabını ve insan sorumluluğunu ölçekleme şartı olarak tanımlıyor; katılımcılar çeşitli somut operasyon kazanımları bildiriyor."
+              }
+            ],
+            "scope_hint": "Yalnızca kullanıcı tarafından dışa aktarılan CSV/XLSX verileri; kredi kararı vermez, modele bağlanmaz, harici API/AI/DB kullanmaz.",
+            "local_evidence": {
+              "reported_examples": [
+                "bazı batch işlerinde yaklaşık %90 performans iyileşmesi",
+                "yaklaşık %30 hosting maliyeti düşüşü",
+                "bir satış pilotunda %40 operasyonel verim artışı",
+                "belirli ürünlerde 15–30 dakikada ilk kredi kararı"
+              ],
+              "unknowns": [
+                "Kazançların bağımsız denetimi ve örneklem büyüklükleri açıklanmadı",
+                "Düzenleyici raporlama şeması doğrulanmadı"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "99b7bddd566bec9a12a6fe28",
+        "decision": "no_opportunity",
+        "reason": "Bu kayıt bir bakım yöneticisi iş ilanı; güvenlik, önleyici bakım, yüklenici ve KPI sorumluluklarını sıralıyor ancak yeni veya ayrışmış bir problem mekanizması göstermiyor ve mevcut CMMS/HSE kategorisinin ötesinde ürün dönüşümü kanıtlamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "9a4674e2b847c771ffe69647",
+        "decision": "opportunity",
+        "reason": "Çinli büyük teknoloji şirketlerinin AI yeteneğini lise düzeyine kadar erken bağlaması, uzun yetiştirme döngüsü ile yüksek hareketlilik arasında program portföyü ve aday özerkliği riski yaratıyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-12-4bb3b46a63-discovery-10d1886605ec50c5:9a4674e2b847c771ffe69647:1",
+            "canonical_key": "ai-talent-program-leaders|govern-early-talent-portfolios|cohort-optionality-simulator",
+            "idea_name": "Erken AI Yetenek Programı Portföy Planlayıcısı",
+            "core_job": "Uzun vadeli genç yetenek yatırımlarını elde tutma, hareketlilik, eğitim kapasitesi ve aday özerkliği senaryolarıyla yönetmek",
+            "target_customer": "Büyük teknoloji ve sanayi şirketlerinde lise/üniversite düzeyi AI yetiştirme programları yöneten ekipler",
+            "buyer": "Yetenek stratejisi lideri veya AI araştırma organizasyonu operasyon yöneticisi",
+            "product_mechanism": "Kohort maliyeti, program kilometre taşı, ayrılma senaryosu, mentorluk kapasitesi ve aday seçeneklerini yerel hesaplayan; tek firmaya bağımlılık ve portföy yoğunlaşmasını gösteren planlama aracı",
+            "why_now": "Ekim 2026 haberleri, 13 yaşa kadar ürün kampları, yüksek günlük staj ücretleri ve lise mezunlarına yüksek başlangıç teklifleriyle rekabetin erkene çekildiğini; buna karşın ekipler arası yüksek hareketliliğin sürdüğünü bildiriyor.",
+            "before_state": "Programlar tekil işe alım başarılarıyla değerlendiriliyor; beş yıllık yetiştirme riski, mentor kapasitesi ve adayın alternatifleri birlikte modellenmiyor.",
+            "after_state": "Kohort yatırımı ve hareketlilik senaryoları görünür oluyor; program tasarımı kapasite ve etik hareketlilik sınırlarıyla belgeleniyor.",
+            "canonical_source_urls": [
+              "https://www.thepaper.cn/newsDetail_forward_34223916"
+            ],
+            "supporting_article_ids": [
+              "253e833b0301beb259a79c9d"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.thepaper.cn/newsDetail_forward_34223916",
+                "observation": "Haberde Tencent'in 13 yaşa kadar program açması, ByteDance Top Seed için yüksek günlük ücretler ve şirketler arası AI altyapı yeteneği hareketliliği birlikte tartışılıyor."
+              }
+            ],
+            "scope_hint": "Yerel senaryo planlama; aday taraması, kişilik puanlama, harici veri zenginleştirme veya AI karar verme yok.",
+            "local_evidence": {
+              "signals": [
+                "erken yaşta yetenek programları",
+                "yüksek ücretle önceden bağlama",
+                "şirketler arası ekip hareketliliği"
+              ],
+              "unknowns": [
+                "Aktarılan çalışan hareketliliği sayıları bağımsız doğrulanmadı",
+                "Programların uzun dönem elde tutma sonuçları bilinmiyor"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
