@@ -294,4 +294,8 @@ def check_health(root=".", now=None):
 
 
 if __name__ == "__main__":
-    raise SystemExit(check_health())
+    import sys
+    result = check_health()
+    # Night stall alarms are delivered by a separate, incident-deduplicating
+    # workflow. The controller must not be marked failed after a good reconcile.
+    raise SystemExit(0 if "--nonfatal" in sys.argv else result)
