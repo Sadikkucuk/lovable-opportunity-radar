@@ -21,6 +21,7 @@ POLICY = "radar-v2-no-runtime-services-20261010"
 TERMINAL = {"done", "unverified", "rejected", "failed"}
 MAX_ATTEMPTS = 3
 LEASE_MINUTES = 90
+POOL_LEASE_MINUTES = 30
 RETRY_MINUTES = [5, 30, 120]
 REPO = "Sadikkucuk/lovable-opportunity-radar"
 
@@ -92,7 +93,13 @@ class Engine:
         baseline = self.read("state/v2/protection/baseline.json")
         if not baseline:
             raise ValueError("protection baseline missing")
-        for path, expected in baseline["files"].items():
+        checkpoints = [baseline] + [self.read(p) for p in self.paths("state/v2/protection/checkpoints/*.json")]
+        for checkpoint in checkpoints:
+            self.check_records(checkpoint)
+        return baseline["protected_count"]
+
+    def check_records(self, checkpoint):
+        for path, expected in checkpoint["files"].items():
             rows = self.read(path)["ideas"]
             keys = [r["canonical_key"] for r in rows]
             if len(keys) != len(set(keys)):
@@ -101,7 +108,29 @@ class Engine:
             for key, sha in expected["records"].items():
                 if current.get(key) != sha:
                     raise ValueError(f"protected record changed or missing: {path}: {key}")
-        return baseline["protected_count"]
+
+    def validate_claim(self, job, claim):
+        if claim.get("job_id") != job["job_id"] or claim.get("input_hash") != job["input_hash"]:
+            raise ValueError("invalid claim identity")
+        if not isinstance(claim.get("token"), str) or len(claim["token"]) < 16:
+            raise ValueError("missing unique lease token")
+        started, expires = dt(claim["started_at"]), dt(claim["expires_at"])
+        limit = LEASE_MINUTES
+        if claim.get("schema_version") == 3:
+            if not self.read("state/v2/config.json", {}).get("shared_queue"):
+                raise ValueError("shared queue is disabled")
+            worker, invocation = claim.get("worker"), claim.get("invocation_id", "")
+            if type(worker) is not int or worker not in range(1, 6) or not re.fullmatch(r"[a-zA-Z0-9_-]{16,80}", invocation):
+                raise ValueError("invalid pool worker or invocation")
+            event = self.read(f"state/v2/worker-events/{worker}/{invocation}/000-started.json", {})
+            if (event.get("worker") != worker or event.get("invocation_id") != invocation
+                    or event.get("event") != "started" or not dt(event["at"]) <= started):
+                raise ValueError("persist worker start before claiming work")
+            limit = POOL_LEASE_MINUTES
+        elif claim.get("schema_version") != 2 or claim.get("worker") != job["lane"]:
+            raise ValueError("legacy claim worker mismatch")
+        if started > self.now + timedelta(minutes=5) or expires <= started or expires - started > timedelta(minutes=limit):
+            raise ValueError("invalid claim time")
 
     def add_job(self, run_id, kind, payload, lane):
         input_hash = digest({"policy_version": POLICY, "kind": kind, "payload": payload})
@@ -182,8 +211,9 @@ class Engine:
         for k in ("job_id", "input_hash"):
             if receipt.get(k) != job[k] or claim.get(k) != job[k]:
                 raise ValueError(f"{k} mismatch")
-        if claim.get("worker") != job["lane"] or receipt.get("token") != claim.get("token"):
-            raise ValueError("worker or lease token mismatch")
+        self.validate_claim(job, claim)
+        if receipt.get("token") != claim.get("token"):
+            raise ValueError("lease token mismatch")
         started, expires, finished = dt(claim["started_at"]), dt(claim["expires_at"]), dt(receipt["finished_at"])
         if not isinstance(claim.get("token"), str) or len(claim["token"]) < 16:
             raise ValueError("missing unique lease token")
@@ -332,11 +362,8 @@ class Engine:
                 claim = self.read(claim_path)
                 if not claim:
                     return {"state": "ready", "attempt": attempt, "claim_path": claim_path, "result_path": result_path}
-                if claim.get("job_id") != job["job_id"] or claim.get("input_hash") != job["input_hash"] or claim.get("worker") != job["lane"]:
-                    raise ValueError("invalid claim identity")
+                self.validate_claim(job, claim)
                 started, expires = dt(claim["started_at"]), dt(claim["expires_at"])
-                if started > self.now + timedelta(minutes=5) or expires - started > timedelta(minutes=LEASE_MINUTES) or expires <= started:
-                    raise ValueError("invalid claim time")
                 receipt = self.read(result_path)
                 if self.read(f"state/v2/claims/{job['job_id']}/{attempt + 1:03}.json"):
                     # A newer owner fences late writes from an expired attempt.
@@ -503,13 +530,8 @@ class Engine:
         jobs = self.jobs()
         states = {k: self.evaluate(j) for k, j in jobs.items()}
         appended = self.publish(jobs, states)
-        for lane in range(1, 6):
-            pending = []
-            for k, job in sorted(jobs.items(), key=lambda kv: (kv[1]["run_id"], {"validation": 0, "merge": 1, "discovery": 2}[kv[1]["kind"]], kv[0])):
-                if job["lane"] == lane and states[k]["state"] not in TERMINAL:
-                    pending.append({"job_id": k, "path": f"state/v2/jobs/{k}.json", "kind": job["kind"],
-                                    "input_hash": job["input_hash"], **states[k]})
-            self.write(f"state/v2/inbox/worker-{lane}.json", {"schema_version": 2, "lane": lane, "jobs": pending})
+        from radar.operations import write_inboxes, reconcile_health
+        write_inboxes(self, jobs, states, config)
         run_reports = []
         for path in self.paths("state/v2/runs/*/manifest.json"):
             manifest = self.read(path)
@@ -545,6 +567,7 @@ class Engine:
                   "counts": dict(Counter(s["state"] for s in states.values())),
                   "runs": run_reports, "errors": sorted(set(self.errors))}
         self.write("state/v2/status.json", status)
+        reconcile_health(self, jobs, states, config, status)
         return {"jobs": len(jobs), "appended": len(appended), **status}
 
 

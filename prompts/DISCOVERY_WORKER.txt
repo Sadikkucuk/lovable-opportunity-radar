@@ -1,7 +1,7 @@
-RADAR V2 — WORKER LANES 1–4
-Read master, WORK_PROTOCOL and RESEARCH_METHOD. Read your lane inbox and process
-ready jobs oldest run first. Lanes handle discovery AND validation, not old batch
-assignments. Follow VALIDATOR_WORKER for validation jobs.
+RADAR V2 — DISCOVERY KIND, ALL FIVE SHARED WORKERS
+Follow WORK_PROTOCOL start record first, then master and RESEARCH_METHOD.
+Read your worker inbox and follow its current/backlog fair order. All workers
+can handle all kinds; follow VALIDATOR_WORKER or MERGE_WORKER for those jobs.
 Discovery payload has up to 10 frozen feed records. Triage every one using
 decomposition, novelty, actor/JTBD and product transformation checks. Read
 original/primary sources before claiming article verification. Preserve facts

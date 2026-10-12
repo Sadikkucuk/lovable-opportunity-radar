@@ -1,31 +1,80 @@
-V2 IMMUTABLE JOB / CLAIM / RECEIPT PROTOCOL
-1. Read active config, lane inbox and first ready job. Inbox is advisory: inspect
-claim/result paths too. Older dates remain valid. Never change job payload/hash.
-2. BEFORE research create the claim at inbox claim_path on main with GitHub
-create_file; do not overwrite an existing claim. Fields:
-{"schema_version":2,"job_id":"copy","input_hash":"copy","worker":1,
-"token":"new random UUID","started_at":"actual UTC ISO timestamp",
-"expires_at":"started_at plus 90 minutes, UTC ISO timestamp"}
-Use your actual lane number. An existing path belongs to another invocation:
-skip it, never replace it. Expired claims are retried by the controller.
-3. Read back your claim and verify its token, then research.
-4. Create an immutable receipt at inbox result_path:
-{"schema_version":2,"job_id":"copy","input_hash":"copy","token":"your token",
-"finished_at":"actual UTC ISO time within lease","outcome":"done|unverified|rejected|retry",
-"reason":"Turkish explanation","result":{...kind-specific result...}}
-done means structurally completed work, not automatically approved publication.
-Validation uses done + result.decision=qualified/rejected/unverified/duplicate.
-Retry is for transient access/network/platform errors. Bounded research without
-proof is unverified. Preserve queries, failed sources, reasons and null unknowns.
-5. Read back receipt and verify content. On timeout check exact path before
-retrying. Never update an existing result or use a fake completion timestamp.
-6. Continue through other ready jobs in the SAME invocation. No five-candidate
-cap or one-stage-stop rule. Skip completed/leased jobs. Fetch refreshed inbox if
-exhausted; if the controller has not advanced it, report saved progress. The next
-scheduled invocation resumes automatically. No user continuation request.
-GitHub first-writer-wins create prevents overlapping claims. Never force a ref.
-Only claim holder writes a result; newer claims fence late earlier results.
-After three failed attempts the job is failed (never verified); others advance.
-Do not manufacture alternative attempts yourself. Use the controller's path.
-Auth/approval failures are not evidence decisions; never bypass controls. An
-account reconnection can require the user. Do not expose credentials.
+RADAR SHARED QUEUE — PROTOCOL 3 (existing v2 jobs/data stay immutable)
+
+START AND ACCESS PROBE — DO THIS BEFORE LENGTHY RESEARCH
+1. Read current main state/v2/config.json; work only if mode=active. Your worker
+   identity is 1..5, supplied by the saved task. It is NOT a fixed job lane.
+2. Make a fresh random UUID invocation_id. Persist and read back:
+   state/v2/worker-events/{worker}/{invocation_id}/000-started.json
+   {"schema_version":1,"worker":1,"invocation_id":"your UUID",
+    "event":"started","at":"actual UTC ISO time"}
+   This proves GitHub read/write access; it does NOT prove successful research.
+   Do not read the long research method until this small start record is saved.
+3. Check health.json controller_observed_at against actual time (40 minutes
+   maximum age). Report a stale/missing controller explicitly. Read current
+   inbox/worker-N.json and the master + research method + kind-specific prompt.
+   All FIVE workers handle discovery, semantic merge AND validation. Worker 5
+   also reports health; it researches when a merge is not ready.
+
+FAIR SHARED WORK
+4. Inbox is advisory, not a lock. Follow its interleaved order: two current-run
+   jobs, then one backlog job, repeating while both exist. Within each group,
+   alternate available merge/validation/discovery jobs. Keep this cursor through
+   inbox refreshes within the invocation; do not restart at current job #1 after
+   every saved receipt. Empty groups do not waste capacity. Preferred-worker
+   hints reduce collisions; every worker may take any ready job, including work
+   whose original lane differs. Never use strict oldest-run-first anymore.
+5. Inspect the exact claim/result paths before claiming. Skip already claimed,
+   completed or delayed entries and move to the next ready job. Use first-writer
+   GitHub create_file on main at the controller-supplied claim_path. NEVER update
+   or overwrite it, force refs, invent a retry attempt, or steal an active lease.
+   {"schema_version":3,"job_id":"copy","input_hash":"copy","worker":1,
+    "invocation_id":"same UUID","token":"new random UUID for this claim",
+    "started_at":"actual UTC ISO time","expires_at":"start plus 30 minutes"}
+   Read it back and verify token BEFORE research. An existing path belongs to
+   its recorded owner. A conflict means choose another job, not stop the task.
+   Frozen payload/source_commit stays authoritative; do not change any old job.
+
+SAVE AND CONTINUE
+6. Create result_path with schema_version=2 (the receipt schema is unchanged):
+   {"schema_version":2,"job_id":"copy","input_hash":"copy","token":"claim token",
+    "finished_at":"actual UTC ISO time within lease","outcome":"done|unverified|rejected|retry",
+    "reason":"Turkish explanation","result":{...kind-specific result...}}
+   Read back and verify it. done means structurally finished work, not automatic
+   qualification. Validation uses done + qualified/rejected/unverified/duplicate.
+   Technical/permission/quota/time-budget failures are retry, not an invented
+   negative research decision. Preserve partial observations and failed sources.
+   Never manufacture timestamps or overwrite receipts after an expired lease.
+7. After each claim and saved receipt, and at least every 15 minutes during
+   lengthy research, create a new immutable event in the same invocation folder:
+   001-progress.json, 002-progress.json, ... (new increasing numbers).
+   Same identity fields, event=progress, at=actual UTC time, plus job_id and
+   stage=claim_saved|receipt_saved|research_in_progress. For receipt_saved include
+   the exact receipt_path. Events are observability, never evidence of completion.
+8. Continue consecutive small jobs in THIS invocation while tools and budget
+   permit. Ten articles/one candidate is a persistence unit, not a run cap. No
+   Top-N, one-stage stop, five-candidate limit, recursive or ad hoc new tasks.
+   If the inbox is exhausted, refresh once; if the controller has not advanced,
+   preserve progress and finish. The existing next schedule resumes automatically.
+9. End with 999-finished.json (event=finished) or 999-blocked.json (event=blocked),
+   same identity/time fields. For blocked add reason_code:
+   github_auth|permission_denied|rate_limited|web_unavailable|tool_unavailable|
+   persistence_failed|provider_limit|unknown, and a short factual Turkish reason.
+   Do NOT claim auth failure unless a tool actually returned one. Never expose
+   credentials. If GitHub cannot save even the blocked event, report the exact
+   failure in this task's Turkish reply. Try transient writes at most 3 times;
+   inspect exact paths after timeouts before retrying. Never bypass approvals.
+
+USER SIGNAL AND TWO-HOUR WINDOW
+10. Start the task reply with "MÜDAHALE GEREKLİ" only for a confirmed access/onay
+    block, missing start/progress alarm, or stale controller; state worker, last
+    persisted result, observed reason and the specific next action. Otherwise
+    report actual persisted progress briefly. Never count last_run_time as proof.
+    Read state/v2/health.json and any due state/v2/windows/*.json report. Two
+    hours is a publication/status target, NOT permission to discard candidates,
+    weaken research or mark unfinished work complete. Report completed, remaining,
+    publication and capacity/unknown ETA separately. Delivery follows this task's
+    existing notification settings; do not send anyone email/messages.
+Old schema-2 claims remain valid for their original lane and 90-minute lease.
+New schema-3 claims require a saved start event, use the shared pool and a
+30-minute lease. Newer numbered claims fence late results; only the controller
+assigns retries (maximum 3). Only Actions writes jobs/counters/catalog/history.
