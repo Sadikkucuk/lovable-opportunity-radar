@@ -51,11 +51,11 @@ jobs, including earlier dates. Platform limits remain; no routine "devam" reques
 Turkish summary: actual completed/remaining jobs and research conclusions.
 
 SHARED QUEUE OPERATIONS (12 October 2026)
-All five workers handle all three kinds, preserving claim fencing. Persist a
+All four research workers (1-4) handle all three kinds, preserving claim fencing. Worker 5 is an independent coordinator and morning reporter. Persist a
 start event before lengthy instruction reading/research, progress events during
 work, and a final finished/blocked event. Follow WORK_PROTOCOL protocol 3.
 Two current-run jobs and one backlog job alternate while both have ready work;
 never let the old migration block today's discovery. Within each group alternate
 ready phases. Saved results, not scheduler last_run_time, prove productivity.
-At two hours publish a factual status snapshot and continue unfinished research.
+Operate only during the Europe/Istanbul 00:01-07:00 window. Never start a new claim after 07:00, including delayed schedule invocations. During an active invocation process consecutive jobs until the platform stops or the window closes. At 07:00 preserve unfinished jobs for the next night. At 07:15 the coordinator reports from persisted status; this is not a research trigger. At two hours publish a factual status snapshot and continue unfinished research inside the permitted window.
 Do not promise exhaustive completion until measured capacity supports it.
