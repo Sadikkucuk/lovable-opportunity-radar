@@ -4,7 +4,7 @@
 - İlk 91 fikir ve tarihsel araştırma korunur. Değişiklik öncesi dal:
   backup/pre-night-operations-20261012.
 - Main bakım modunda kaldıkça ChatGPT görevleri durdurulmuş olmalıdır.
-- Draft PR #5 kabul testleri geçip incelenmeden ve ayrı üretim etkinleştirmesi
+- PR #6 kabul testleri geçip incelenmeden ve ayrı üretim etkinleştirmesi
   yapılmadan ilk araştırma çalışması başlatılmaz.
 - Gece saati Europe/Istanbul 00:01 dahil, 07:00 hariç. Kapasite sınırsız
   varsayımı çalışma bütçesi planlaması içindir; sağlayıcı erişim, kota,
@@ -37,7 +37,7 @@
   olayı, opened/recovered zamanları.
 - docs/radar/reports/YYYY-MM-DD.md: her sabah 07:05 itibarıyla üretimden
   bağımsız gerçek durum görüntüsü. 07:15 Orchestrator bu dosyayı özetler.
-- GitHub Actions alarmı yeni bir olay açıldığında bir kez failure verir.
+- GitHub Actions alarmı, doğrulanmış yeni sonuç olmadan geçen 30 dakikayı heartbeat ile sıfırlamadan izler; yeni bir olay açıldığında bir kez failure verir.
   E-posta için kullanıcı GitHub hesabında Actions e-posta bildirimini
   etkinleştirmelidir; gerçek e-posta teslimi ayrıca sınanmalıdır.
 - ChatGPT sabah e-postası için Settings > Notifications > Email; görevin
