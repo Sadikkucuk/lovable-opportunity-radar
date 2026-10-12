@@ -1,0 +1,229 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-12-4bb3b46a63-discovery-03a72db3b015f9a9",
+  "input_hash": "03a72db3b015f9a9938c40bedffdab425e30623dfdaede97f53bc86e1266ee21",
+  "token": "9b1dcef5-60ed-458a-85c3-f114d589aad8",
+  "finished_at": "2026-10-12T07:08:49Z",
+  "outcome": "done",
+  "reason": "On donmuş kayıt incelendi; dört farklı ve dış runtime servisine bağımlı olmayan fırsat korundu, altı kayıtta somut JTBD/ürün dönüşümü veya politika uyumu yeterli değildi.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "6b636262b0e311edac295b73",
+        "decision": "no_opportunity",
+        "reason": "Kaynak AI-native ağlar, egemen altyapı ve kurumsal yenileme eğilimini anlatıyor; ancak belirli bir kullanıcı işi ve mevcut çözümlerden ayrışan, dış AI/runtime servisi gerektirmeyen ürün akışı kanıtlamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "6b6b59a8918d76e1d1abc9af",
+        "decision": "no_opportunity",
+        "reason": "SiPearl–Quobly mutabakatı CPU/QPU bütünleşmesinin teknik fizibilitesini araştırıyor; somut müşteri iş akışı henüz oluşmamış ve çekirdek değer harici HPC/kuantum çalışma ortamına bağlı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "6b86e392703a96f666e88cc5",
+        "decision": "opportunity",
+        "reason": "Yeni drone eğitim/test/sertifikasyon tesisi, öğrenci uçuş kayıtları, araç uygunluğu, saha slotları ve sertifikasyon kanıtlarını birlikte yönetme ihtiyacı yaratıyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-12-4bb3b46a63-discovery-03a72db3b015f9a9:6b86e392703a96f666e88cc5:1",
+            "canonical_key": "drone-training-facilities|coordinate-training-testing-certification-evidence|offline-readiness-workspace",
+            "idea_name": "Drone Eğitim ve Sertifikasyon Kanıt Masası",
+            "core_job": "Bir öğrencinin ve hava aracının eğitim, test ve sertifikasyon gerekliliklerini eksiksiz kanıtlayıp saha kullanımını planlamak",
+            "target_customer": "RPAS ve otonom hava aracı eğitimi/testi veren teknik kolejler ve özel tesisler",
+            "buyer": "Program yöneticisi, uçuş emniyeti sorumlusu veya sertifikasyon koordinatörü",
+            "product_mechanism": "Kullanıcının içe aktardığı müfredat, uçuş kayıtları, araç belgeleri ve saha kurallarını kontrol listelerine bağlayan; uygunluk açığı, slot planı ve denetim paketi üreten yerel çalışma alanı",
+            "why_now": "SAIT, 9 Ekim 2026'da uzaktan pilotlu ve otonom hava araçlarının eğitim, test ve sertifikasyonuna ayrılmış 30 milyon Kanada dolarlık yeni tesis açıkladı; Kanada drone pazarının 2030'da 10 milyar Kanada dolarına ulaşması bekleniyor.",
+            "before_state": "Eğitim ilerlemesi, araç belgeleri, emniyet kontrolleri ve saha rezervasyonları farklı dosyalarda izleniyor.",
+            "after_state": "Her uçuş slotu öğrenci/araç uygunluğu ve kanıtlarla eşleşiyor; eksikler uçuş öncesi görünür oluyor.",
+            "canonical_source_urls": [
+              "https://betakit.com/calgary-philanthropist-donates-30-million-to-fund-drone-facility-at-sait/"
+            ],
+            "supporting_article_ids": [
+              "1f391dd7854b5a267faf002d"
+            ],
+            "source_observations": [
+              {
+                "url": "https://betakit.com/calgary-philanthropist-donates-30-million-to-fund-drone-facility-at-sait/",
+                "observation": "Bissett Autonomous Aviation Park, RPAS ve otonom hava aracı eğitim, test ve sertifikasyonuna ayrılacak; bağış tutarı 30 milyon CAD."
+              }
+            ],
+            "scope_hint": "Dosya içe aktarmalı ve yerel hesaplamalı; canlı hava sahası, harita, telemetri, düzenleyici API veya harici AI/DB bağlantısı yok.",
+            "local_evidence": {
+              "facts": {
+                "donation": "CAD 30m",
+                "canada_drone_market_2030": "CAD 10bn (source estimate)"
+              },
+              "unknowns": [
+                "Tesisin açılış tarihi ve yıllık öğrenci kapasitesi açıklanmadı",
+                "Kanada düzenleyici formlarının tam şeması doğrulanmadı"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "6b987f4d54dbd8c89f065d28",
+        "decision": "no_opportunity",
+        "reason": "Panel AgTech'in geniş fırsat alanlarını ve erken benimsemeyi vurguluyor; fakat belirli bir aktör, tekrarlanan sürtünme veya ölçülebilir iş akışı açığı sağlamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "6be138e556899a20cff0d553",
+        "decision": "opportunity",
+        "reason": "Çocuklara yönelik AI animasyonda içerik güvenliği ve yaşa uygunluk için üretim öncesi/sonrası insan denetimi, kanıt ve sürüm takibi gereksinimi resmi eğitim ilkeleriyle destekleniyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-12-4bb3b46a63-discovery-03a72db3b015f9a9:6be138e556899a20cff0d553:1",
+            "canonical_key": "childrens-animation-studios|prove-age-appropriate-ai-content-review|offline-human-review-dossier",
+            "idea_name": "Çocuk AI Animasyonu Yayın Öncesi İnceleme Dosyası",
+            "core_job": "AI destekli çocuk animasyonunun yaş uygunluğu, değer yönelimi, mahremiyet ve insan onayı kontrollerini yayın öncesi kanıtlamak",
+            "target_customer": "Çin'de çocuklara yönelik kısa animasyon ve eğitim içeriği üreten küçük stüdyolar",
+            "buyer": "İçerik güvenliği editörü, yapımcı veya platform uyum sorumlusu",
+            "product_mechanism": "Senaryo, sahne dökümü ve görselleri kullanıcı yüklemesiyle alan; yaş grubu kontrol listesi, risk işaretleme, insan inceleme imzası, sürüm farkı ve dışa aktarılabilir yayın dosyası sunan yerel araç",
+            "why_now": "2026 tarihli tartışma AI animasyon üretimini düzenleme ihtiyacını öne çıkarırken, 2025 resmi öğrenci AI kullanım rehberi veri güvenliği, etik inceleme, içerik gözetimi ve yaş kademeli kullanım talep ediyor.",
+            "before_state": "İncelemeler sohbet ve dosya notlarında kalıyor; hangi sürümün kim tarafından hangi yaş ölçütüne göre onaylandığı izlenemiyor.",
+            "after_state": "Her sahne kural ve insan kararına bağlanıyor; değişiklik sonrası yeniden inceleme ve yayın kanıtı tek pakette tutuluyor.",
+            "canonical_source_urls": [
+              "https://www.cernet.edu.cn/edu/202505/t20250513_2667992.shtml",
+              "https://jyj.pingliang.gov.cn/zfxxgk/fdzdgknr/jyxx/xqjy/art/2025/art_75a20c8256c9403888b24465f7249d74.html"
+            ],
+            "supporting_article_ids": [
+              "8bb199f6238a953b63189eae"
+            ],
+            "source_observations": [
+              {
+                "url": "https://jyj.pingliang.gov.cn/zfxxgk/fdzdgknr/jyxx/xqjy/art/2025/art_75a20c8256c9403888b24465f7249d74.html",
+                "observation": "Resmi rehber, veri güvenliği, etik inceleme, içerik denetimi ve risk önlemeyi kapsayan tam zincir güvence ile yaşa göre farklı kullanım sınırları belirtiyor."
+              }
+            ],
+            "scope_hint": "Kural ve insan incelemesi odaklı yerel web uygulaması; içerik üretmez, sınıflandırma için harici AI/model/API/DB kullanmaz.",
+            "local_evidence": {
+              "requirements": [
+                "değer yönelimi",
+                "veri güvenliği",
+                "etik inceleme",
+                "içerik denetimi",
+                "yaş kademeli kullanım"
+              ],
+              "unknowns": [
+                "AI çocuk animasyonuna özel bağlayıcı 2026 standardının tam metni bulunamadı",
+                "Platform bazlı zorunlu teslim formatları bilinmiyor"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "6bffbeae7ca1826231ee8ec7",
+        "decision": "opportunity",
+        "reason": "Ifremer–CNRS çalışması 411 yayını ve proje yaşam döngüsündeki 10 baskıyı merkezileştiriyor; proje geliştiricileri için kaynak–baskı–aşama–azaltım kanıtını izleyen somut karar ve kayıt işi oluşuyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-12-4bb3b46a63-discovery-03a72db3b015f9a9:6bffbeae7ca1826231ee8ec7:1",
+            "canonical_key": "offshore-wind-developers|map-biodiversity-evidence-to-project-phases|offline-pressure-evidence-register",
+            "idea_name": "Açık Deniz Rüzgârı Biyoçeşitlilik Kanıt Haritası",
+            "core_job": "Bir rüzgâr projesinin inşaat, işletme ve söküm aşamalarındaki her baskıyı güncel bilimsel kanıt ve azaltım kararıyla eşlemek",
+            "target_customer": "Fransa/AB açık deniz rüzgârı proje geliştiricileri ve çevresel değerlendirme danışmanları",
+            "buyer": "Çevre izinleri lideri veya EIA proje yöneticisi",
+            "product_mechanism": "Kullanıcının yüklediği raporları 10 baskı ve yaşam döngüsü aşamasına bağlayan; kanıt gücü, belirsizlik, saha varsayımı, karar ve azaltım izini tutup inceleme paketi çıkaran yerel kayıt aracı",
+            "why_now": "Ifremer ve CNRS'nin 2024–2026 uzmanlığı 4.500'den fazla yayından 411'ini ayrıntılı analiz ederek 10 ekolojik baskı ve kalan bilgi boşluklarını tek çerçevede topladı.",
+            "before_state": "Bilimsel kaynaklar, EIA bölümleri ve azaltım kararları farklı dosyalarda; bir kararın dayanağı ve belirsizliği zor izleniyor.",
+            "after_state": "Her proje etkisi, kaynak, saha varsayımı, belirsizlik ve azaltım kararıyla izlenebilir hale geliyor.",
+            "canonical_source_urls": [
+              "https://www.notre-environnement.gouv.fr/donnees-et-ressources/ressources/publications/article/eoliennes-en-mer-biodiversite-resultats-de-l-expertise-scientifique-ifremer",
+              "https://www.ipsl.fr/article/une-expertise-scientifique-collective-sur-limpact-des-eoliennes-en-mer-sur-la-biodiversite/"
+            ],
+            "supporting_article_ids": [
+              "93275bc77ede1b71f487001c"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.notre-environnement.gouv.fr/donnees-et-ressources/ressources/publications/article/eoliennes-en-mer-biodiversite-resultats-de-l-expertise-scientifique-ifremer",
+                "observation": "Uzmanlık, 10 baskıyı proje yaşam döngüsü boyunca inceliyor; belgelenmiş etkileri, belirsizlikleri ve literatürdeki azaltım önlemlerini merkezileştiriyor."
+              }
+            ],
+            "scope_hint": "Kullanıcı yüklemeli belge/CSV ve yerel indeks; canlı bilimsel veri tabanı, harici API/AI/DB yok.",
+            "local_evidence": {
+              "facts": {
+                "publications_screened": ">4500",
+                "articles_analyzed": 411,
+                "pressures": 10,
+                "study_period": "2024-2026"
+              },
+              "unknowns": [
+                "Proje bazlı zorunlu kanıt formatı ülkeler arasında değişiyor",
+                "Bilimsel rapor tek başına düzenleyici öneri sıralaması sunmuyor"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "6c0e934785f63fbd91322d02",
+        "decision": "no_opportunity",
+        "reason": "Meta'nın Anthropic'e kapasite kiralama planını ertelemesi şirketler arası stratejik kaynak tahsisi sinyali; tekrarlanabilir üçüncü taraf iş akışı veya politika uyumlu bağımsız ürün mekanizması göstermiyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "6c2e90842dc71fadbbf80ff8",
+        "decision": "no_opportunity",
+        "reason": "Tek şirketin aylık araç satışındaki %50,25 düşüş yalnızca performans olayıdır; neden ve kullanıcı iş akışı doğrulanmadığı için fırsat çıkarılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "6c840c14258e39264abf6308",
+        "decision": "opportunity",
+        "reason": "Linux ve gerçek zamanlı çekirdeğin AMP mimarisinde birlikte çalışması; görev bölümü, IPC, buffer, hata kurtarma ve uzun süreli yük testleri için tekrarlanabilir doğrulama kanıtı ihtiyacı yaratıyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-12-4bb3b46a63-discovery-03a72db3b015f9a9:6c840c14258e39264abf6308:1",
+            "canonical_key": "industrial-embedded-teams|verify-linux-rtos-boundaries|offline-amp-test-dossier",
+            "idea_name": "Linux–RTOS Sınır Doğrulama Dosyası",
+            "core_job": "Heterojen çok çekirdekli endüstriyel cihazda görev bölümü ve çekirdekler arası veri yolunun zamanlama sınırlarını sürüm bazında kanıtlamak",
+            "target_customer": "Linux + RTOS/bare-metal AMP kullanan küçük endüstriyel gömülü sistem ekipleri",
+            "buyer": "Gömülü yazılım teknik lideri veya doğrulama yöneticisi",
+            "product_mechanism": "Görev/çekirdek sahipliği, IPC sözleşmesi, buffer ve hata senaryolarını tanımlayan; cihazdan dışa aktarılan test loglarını gecikme, kayıp ve toparlanma eşikleriyle karşılaştırıp imzalı doğrulama paketi üreten yerel araç",
+            "why_now": "T153 örneği Linux tarafındaki ağ/dosya işlerini gerçek zamanlı RISC‑V görevlerinden ayırıyor; kaynaklar örnek koddan ürüne geçişte örnekleme hızı, paket boyutu, izin verilen gecikme, uzun çalışma, bağlantı hatası ve depolama tıkanmasının ayrıca test edilmesi gerektiğini belirtiyor.",
+            "before_state": "Mimari şeması ve test logları ayrı tutuluyor; görev sınırı değişince hangi zamanlama kanıtının geçersiz olduğu kolay görülmüyor.",
+            "after_state": "Her gereksinim çekirdek sahipliği, test senaryosu, log ve eşikle bağlanıyor; sürüm farkında yeniden test kapsamı çıkıyor.",
+            "canonical_source_urls": [
+              "https://www.myir.cn/product/som/t153/myc-yt153mx.html",
+              "https://www.cnblogs.com/cbd7788/articles/23227779"
+            ],
+            "supporting_article_ids": [
+              "2c3dd717fa1885e6b03b8b17"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.cnblogs.com/cbd7788/articles/23227779",
+                "observation": "Kaynak A çekirdeklerinde Linux, RISC‑V çekirdeğinde gerçek zamanlı görev ayrımını; buffer, veri biçimi, hata kurtarma ve çekirdekler arası iletişim testlerini vurguluyor."
+              }
+            ],
+            "scope_hint": "İçe aktarılan loglar üzerinde deterministik yerel analiz; cihaz kontrolü, telemetri servisi, bulut, harici AI/API/DB yok.",
+            "local_evidence": {
+              "test_dimensions": [
+                "sampling rate",
+                "packet size",
+                "latency limit",
+                "long-run stability",
+                "link failure",
+                "storage congestion"
+              ],
+              "unknowns": [
+                "Hedef donanım başına kesin kabul eşikleri kullanıcı tarafından sağlanmalı",
+                "Kaynak makale bir üretici çözümüne odaklı; genellenebilirlik doğrulanmadı"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "6d03d8ee3a6a41ca4617719f",
+        "decision": "no_opportunity",
+        "reason": "AI ofis pazarındaki ürün birleşmeleri ve yönetici ayrılığı yoğun rekabet/fonlama sinyali; yeni girişimin ürünü henüz açıklanmamış ve çekirdek çözüm harici AI modeli gerektireceğinden mevcut politika altında fırsat kaydedilmedi.",
+        "opportunities": []
+      }
+    ]
+  }
+}
