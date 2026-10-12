@@ -59,6 +59,26 @@ class NightOperationsTests(unittest.TestCase):
             "last_verified_progress_at": self.when(0, 39).isoformat(), "stale_after_minutes": 40})
         self.assertEqual(evaluate(self.root, self.when(0, 40))[0], "recovered")
 
+    def test_active_worker_heartbeat_prevents_false_stall_email(self):
+        self.write("state/v2/config.json", {"mode": "active", "operations": self.ops})
+        self.write("state/v2/health.json", {"unfinished_jobs": 5,
+            "controller_observed_at": self.when(0, 35).isoformat(),
+            "last_verified_progress_at": self.when(0, 1).isoformat(),
+            "workers": {"1": {"last_event": {"at": self.when(0, 35).isoformat()}}},
+            "stale_after_minutes": 40})
+        self.assertEqual(evaluate(self.root, self.when(0, 36))[0], "unchanged")
+
+    def test_night_end_does_not_fake_recovery(self):
+        self.write("state/v2/config.json", {"mode": "active", "operations": self.ops})
+        self.write("state/v2/health.json", {"unfinished_jobs": 5,
+            "controller_observed_at": self.when(6, 30).isoformat(),
+            "last_verified_progress_at": self.when(6, 1).isoformat(),
+            "stale_after_minutes": 40})
+        self.assertEqual(evaluate(self.root, self.when(6, 45))[0], "opened")
+        event, state, _ = evaluate(self.root, self.when(7, 0))
+        self.assertEqual(event, "window_closed")
+        self.assertEqual(state["state"], "closed_unresolved")
+
     def test_maintenance_never_opens_a_new_incident(self):
         self.write("state/v2/config.json", {"mode": "maintenance", "operations": self.ops})
         self.assertEqual(evaluate(self.root, self.when(0, 50))[0], "unchanged")
