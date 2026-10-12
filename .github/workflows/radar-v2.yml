@@ -9,6 +9,8 @@ on:
       - 'radar/**'
       - 'tests/**'
       - 'state/v2/results/**'
+      - 'state/v2/claims/**'
+      - 'state/v2/worker-events/**'
       - 'state/v2/config.json'
       - '.github/workflows/radar-v2.yml'
 permissions:
@@ -50,3 +52,6 @@ jobs:
           done
           echo 'Concurrent writes prevented publication; next controller run will retry.'
           exit 1
+      - name: Report missing starts, stalled workers and research progress
+        if: always()
+        run: python -m radar.operations

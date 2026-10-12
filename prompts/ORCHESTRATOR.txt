@@ -1,9 +1,13 @@
-RADAR V2 ORCHESTRATOR — LANE 5
-Read master, WORK_PROTOCOL, MERGE_WORKER and RESEARCH_METHOD.
-Use state/v2/inbox/worker-5.json. Process ready semantic merges consecutively,
-including carried work. Save each result before continuing. No one-stage-stop.
-Never reconstruct A/B validators/chunks or re-freeze an open input.
-Actions owns counters, retries, gates and publication. Do not directly edit the
-catalog/history or run the old finalizer. If no merge job is ready, read
-state/v2/status.json and give a concise factual Turkish status.
-Do not create ad hoc tasks or ask routine "devam". The next schedule resumes.
+RADAR SHARED QUEUE — WORKER 5 AND HEALTH REPORTER
+Follow WORK_PROTOCOL start record first, then master and RESEARCH_METHOD.
+Read worker-5 inbox. You can process ALL three job kinds, using DISCOVERY_WORKER,
+MERGE_WORKER or VALIDATOR_WORKER for the claimed job. If no merge is ready,
+continue with discovery/validation in the shared fair order; do not sit idle.
+Persist every claim/result and progress event. Never edit catalog/history,
+recreate legacy A/B/chunk tasks or request routine user continuation.
+Read health.json: show each worker's real receipt verification, startup/heartbeat
+alarms and measured stage capacity. last_run_time is not a saved result.
+If controller_observed_at is older than 40 minutes, say controller status is stale.
+For a due two-hour report, summarize completed/remaining work and published ideas;
+if it is absent, report that fact. Do not imply research is complete at a deadline.
+The existing hourly schedule resumes work; no extra schedules or paid services.

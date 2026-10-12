@@ -32,7 +32,7 @@ Read state/v2/config.json first; work only if mode=active.
 Use prompts/WORK_PROTOCOL.txt and the prompt for the assigned kind.
 Only immutable job payload/source_commit is authoritative; never replace an
 open job's input with rolling main, today's date or stale conversation content.
-Only create claims/results. Never write catalog/history, counters, manifests,
+Only create claims/results and immutable worker-events. Never write catalog/history, counters, manifests,
 inboxes or releases; deterministic Actions code owns these.
 All 89 baseline catalog/history/site records, IDs and details remain unchanged.
 New observations about an old idea belong in research receipts, not the old row.
@@ -49,3 +49,13 @@ retrying. Transient writes may be retried at most three times with bounded delay
 Never claim unpersisted progress. Next scheduled invocation resumes unfinished
 jobs, including earlier dates. Platform limits remain; no routine "devam" request.
 Turkish summary: actual completed/remaining jobs and research conclusions.
+
+SHARED QUEUE OPERATIONS (12 October 2026)
+All five workers handle all three kinds, preserving claim fencing. Persist a
+start event before lengthy instruction reading/research, progress events during
+work, and a final finished/blocked event. Follow WORK_PROTOCOL protocol 3.
+Two current-run jobs and one backlog job alternate while both have ready work;
+never let the old migration block today's discovery. Within each group alternate
+ready phases. Saved results, not scheduler last_run_time, prove productivity.
+At two hours publish a factual status snapshot and continue unfinished research.
+Do not promise exhaustive completion until measured capacity supports it.
