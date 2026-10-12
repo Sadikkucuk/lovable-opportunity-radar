@@ -1,0 +1,190 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-12-4bb3b46a63-discovery-138ab50a425cb99c",
+  "input_hash": "138ab50a425cb99c1b24a02c8d43f9a66e050242adcb8c16c76acae9d606d45a",
+  "token": "849655c3-351c-4efc-8714-0692e67e03ea",
+  "finished_at": "2026-10-12T01:22:09Z",
+  "outcome": "done",
+  "reason": "On donmuş kayıt incelendi; üçünde ayrışmış ve ürün runtime'ında dış API/AI/DB gerektirmeyen fırsat korundu, yedisinde yeterli aktör/JTBD/ürün dönüşümü kanıtı bulunmadı.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "22945a116c8d8ab2b722f6b1",
+        "decision": "no_opportunity",
+        "reason": "3,5 km'lik güneş enerjili tren, turizm ve kullanılmayan hattı canlandırmaya dönük tekil bir gösterim projesi; tekrarlanabilir müşteri işi ve yazılım mekanizması için yeterli kanıt yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "2408218a94310ca94bfa38d4",
+        "decision": "no_opportunity",
+        "reason": "Kayıt bir etkinlik bileti ve fiyat artışı promosyonudur; çözülecek doğrulanmış operasyonel problem sunmuyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "2509c62163693f06b5c78873",
+        "decision": "no_opportunity",
+        "reason": "Haber, ABD–Meksika enerji ticareti ve siyasi müzakere ihtimalini bildiriyor; belirli bir alıcı/JTBD veya bağımsız ürün mekanizması kanıtlamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "2574328f3f4cb18beeb01c17",
+        "decision": "opportunity",
+        "reason": "AI veri merkezleri daha hızlı kurulurken deneyimli operasyon kadrosunun yetişmesi daha uzun sürüyor; sıvı soğutma, yoğun elektrik yükleri ve kurumsal bilgi kaybı tasarım aşamasında yetkinlik hazırlığı gerektiriyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-12-4bb3b46a63-discovery-138ab50a425cb99c:2574328f3f4cb18beeb01c17:1",
+            "canonical_key": "ai-data-center-operators|plan-commissioning-workforce-readiness|offline-competency-coverage-map",
+            "idea_name": "AI Veri Merkezi Yetkinlik Hazırlık Haritası",
+            "core_job": "Yeni bir AI veri merkezi devreye alınmadan önce vardiya, rol, yetkinlik, prosedür ve eğitim açıklarını tasarım aşamasında görmek",
+            "target_customer": "Yeni yüksek yoğunluklu AI veri merkezi kuran veya dönüştüren operatörler",
+            "buyer": "Veri merkezi operasyon direktörü, commissioning lideri veya iş gücü planlama sorumlusu",
+            "product_mechanism": "Tasarım parametreleri ve rol matrislerini dosyadan alan; sıvı soğutma, yoğun elektrik yükü, kontrol/izleme ve acil durum görevleri için vardiya kapsamı, eğitim sırası ve kanıt paketi oluşturan yerel planlayıcı",
+            "why_now": "Ekim 2026 kaynakları operatörlerin yarıdan fazlasının nitelikli aday bulmakta zorlandığını, yeni AI tesislerinin sıvı soğutma ve yüksek yoğunluklu güç için uzmanlık istediğini ve kadro planının çoğu kez geç başladığını bildiriyor.",
+            "before_state": "Güç, arazi ve ekipman yıllar önceden planlanırken personel ve prosedür hazırlığı handover'a yakın ele alınıyor.",
+            "after_state": "Her tasarım özelliği gerekli görev/yetkinlik ve vardiya kapsamına bağlanıyor; işe alım-eğitim boşluğu devreye alma öncesi görünür oluyor.",
+            "canonical_source_urls": [
+              "https://datacenters.economictimes.indiatimes.com/news/operations-resilience/ai-infrastructure-growth-outpaces-operational-staffing/134852980",
+              "https://www.datacenterdynamics.com/en/news/dcd-intelligence-data-center-expansion-is-outpacing-talent/"
+            ],
+            "supporting_article_ids": [
+              "ffc4481c25a48d6b09204a98"
+            ],
+            "source_observations": [
+              {
+                "url": "https://datacenters.economictimes.indiatimes.com/news/operations-resilience/ai-infrastructure-growth-outpaces-operational-staffing/134852980",
+                "observation": "Operasyon mühendisi yetiştirme süresi tesis yapımından uzun; sıvı soğutma ve yoğun elektrik yükleri yeni beceri gerektiriyor, iş gücü planı tasarımda başlamalı."
+              },
+              {
+                "url": "https://www.datacenterdynamics.com/en/news/dcd-intelligence-data-center-expansion-is-outpacing-talent/",
+                "observation": "DCD anketinde katılımcıların üçte ikiden fazlası operasyon ihtiyacının altında kadro bildirdi; açıklar fiziksel altyapı, güç/soğutma ve BT operasyonunda yoğunlaştı."
+              }
+            ],
+            "scope_hint": "Yerel dosya içe aktarma, kural tabanlı kapsam ve eğitim planı; BMS/DCIM, iş ilanı servisi, harici AI/API/DB bağlantısı yok.",
+            "local_evidence": {
+              "signals": [
+                "operatörlerin yarıdan fazlasında nitelikli aday bulma zorluğu",
+                "AI eğitim raflarında 30 kW üzeri yoğunluk ve sıvı soğutma uzmanlığı",
+                "kurumsal bilginin emeklilik ve hareketlilikle kaybı"
+              ],
+              "unknowns": [
+                "Kaynakta tesis başına açık pozisyon sayısı yok",
+                "Yetkinlik standartlarının ülkeye göre ayrıntıları doğrulanmadı"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "259371b43a80994af070d122",
+        "decision": "no_opportunity",
+        "reason": "Rekor sipariş birikimi ve kapasite artırma, makine takımı üreticilerinde güçlü talep sinyali; ancak kaynak belirli bir iş akışı açığını veya ayrışmış ürün mekanizmasını göstermiyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "259a479c8c4bd56033311df1",
+        "decision": "opportunity",
+        "reason": "Güçlü ajanların ihlal edilmiş varsayılması ve yetkili kişinin işi durdurabilmesi gerektiği yönündeki açık kontrol ihtiyacı, entegrasyon yapmayan masaüstü güvence/test ürünü için somut JTBD oluşturuyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-12-4bb3b46a63-discovery-138ab50a425cb99c:259a479c8c4bd56033311df1:1",
+            "canonical_key": "enterprise-ai-agent-owners|prove-emergency-stop-controls|offline-fail-safe-test-dossier",
+            "idea_name": "AI Ajan Acil Durdurma Tatbikatı",
+            "core_job": "Üretime alınan her ajan için kimin, hangi koşulda, ne kadar sürede ve hangi kanıtla görevi durdurabildiğini test etmek",
+            "target_customer": "Kurumsal AI ajanı devreye alan güvenlik, risk ve platform ekipleri",
+            "buyer": "CISO, AI yönetişim lideri veya platform mühendisliği yöneticisi",
+            "product_mechanism": "Ajan envanteri, yetki sınırı ve durdurma prosedürünü yerel şablonlarda tutan; masa başı tatbikatı, zaman ölçümü, başarısız kontrol ve imzalı düzeltme dosyası üreten güvence aracı",
+            "why_now": "10 Ekim 2026'da Microsoft CEO'su gelişmiş modeller için 'ihlal edilmiş varsay' yaklaşımı ve yetkili insanın yürütmeyi durdurabileceği acil fren kontrolünü savundu.",
+            "before_state": "Kill switch varlığı dokümanda işaretleniyor fakat yetkili kişi, bağımlılık ve durdurma süresi düzenli test edilmiyor.",
+            "after_state": "Her ajan için tekrarlanabilir tatbikat sonucu, başarısız kontrol, sahip ve düzeltme tarihi kanıtlanıyor.",
+            "canonical_source_urls": [
+              "https://www.ithome.com/1/011/545.htm",
+              "https://www.36kr.com/p/4022129475948680"
+            ],
+            "supporting_article_ids": [
+              "9b2aca996dc3f71b7e99cb19"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.ithome.com/1/011/545.htm",
+                "observation": "Nadella, modellerin ihlal edilmiş varsayılması, baştan sınırlandırılması ve yetkili insanların yürütme sırasında görevi durdurabilmesi gerektiğini belirtti."
+              }
+            ],
+            "scope_hint": "Masaüstü/tabletop güvence ve kanıt yönetimi; ajanı çalıştırmaz veya durdurmaz, canlı ajan/model API'sine ve harici AI'ya bağlanmaz.",
+            "local_evidence": {
+              "control_need": [
+                "compromise varsayımı",
+                "önceden tanımlı sınırlar",
+                "yetkili insanın pause/stop yeteneği"
+              ],
+              "unknowns": [
+                "Nadella paylaşımındaki teknik referans mimari ayrıntıları doğrulanmadı",
+                "Sektör bazlı zorunlu test sıklığı bilinmiyor"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "25b1e28b38c34bab8a246802",
+        "decision": "no_opportunity",
+        "reason": "Genel piyasa sabah özeti, fiyat hareketlerini ve şirket haberlerini derliyor; ürünleştirilebilir müşteri problemi için yeterli yerel kanıt yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "25c54f154374bd86333dccee",
+        "decision": "no_opportunity",
+        "reason": "Tek bir otomobil üreticisinin aylık satış düşüşü şirket performans sinyalidir; neden, alıcı ve tekrarlanabilir operasyonel iş doğrulanmadığı için fırsata dönüştürülmedi.",
+        "opportunities": []
+      },
+      {
+        "article_key": "25f6184bc390960e565df75f",
+        "decision": "opportunity",
+        "reason": "İki yılda 106 merkezi veri toplama/training tesisi kurulmasına karşın veri yeniden kullanımının zayıf, satın alma talebinin sınırlı ve iş modelinin kapanmamış olması; tesis yatırımı öncesi uyumluluk ve kapasite ekonomisi kararına işaret ediyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-12-4bb3b46a63-discovery-138ab50a425cb99c:25f6184bc390960e565df75f:1",
+            "canonical_key": "embodied-ai-training-centers|test-dataset-demand-and-robot-compatibility|offline-capacity-economics-planner",
+            "idea_name": "Robot Eğitim Tesisi Talep ve Uyum Planlayıcısı",
+            "core_job": "Yeni robot veri toplama kapasitesi kurmadan önce hangi robot/görev/veri standardında gerçek talep ve yeniden kullanım olduğunu kanıtlamak",
+            "target_customer": "İnsansı robot veri toplama merkezi kuran yerel yönetim ortaklıkları ve özel operatörler",
+            "buyer": "Program yöneticisi, yatırım komitesi veya tesis operasyon lideri",
+            "product_mechanism": "Potansiyel alıcı niyetleri, robot gövdesi/görev uyumluluğu, saatlik veri maliyeti, kalite/red oranı ve mevcut kapasiteyi dosyadan alıp doluluk ve başa baş senaryosu çıkaran yerel planlayıcı",
+            "why_now": "2026 Ağustosuna kadar 106 merkezi tesisin 84'ü çalışır hale gelmiş olsa da kaynaklar gövdeler arası veri yeniden kullanımının zor, satın alan sayısının az ve ticari döngünün kapanmamış olduğunu bildiriyor.",
+            "before_state": "Başarı, robot veya tesis sayısıyla ölçülüyor; veri alıcısı, uyumluluk ve gerçek doluluk yatırım kararından sonra sınanıyor.",
+            "after_state": "Her kapasite artışı doğrulanmış talep, veri standardı uyumu, beklenen red ve başa baş dolulukla belgeleniyor.",
+            "canonical_source_urls": [
+              "https://news.marsbit.co/20260920061017988411.html"
+            ],
+            "supporting_article_ids": [
+              "194c34dce3f4ed2a143ae7f2"
+            ],
+            "source_observations": [
+              {
+                "url": "https://news.marsbit.co/20260920061017988411.html",
+                "observation": "Kamuya açıklanan 106 merkezi veri toplama projesinin 84'ü işletmede; kaynak veri gövdeler arası yeniden kullanım, sınırlı alıcı ve kapanmamış ticari model sorunlarını aktarıyor."
+              }
+            ],
+            "scope_hint": "CSV/XLSX tabanlı yatırım öncesi planlama; robot kontrolü, veri pazaryeri, canlı sensör veya harici AI/API/DB bağımlılığı yok.",
+            "local_evidence": {
+              "metrics": {
+                "public_projects": "106",
+                "operating_projects": "84",
+                "sample_cutoff": "2026-08"
+              },
+              "unknowns": [
+                "Tesislerin doğrulanmış doluluk ve gelir dağılımı yayımlanmadı",
+                "OFweek kaynağının tüm nicel metodolojisi erişilebilir değildi"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "261364dc8d7c4461ce879aab",
+        "decision": "no_opportunity",
+        "reason": "GlobalFoundries'in €1,1 milyarlık Dresden kapasite artışı ve FDX Fusion platformu doğrulanmış bir yatırım/tedarik sinyali; fakat üçüncü taraf için ayrışmış bir JTBD ve ürün açığı sunmuyor.",
+        "opportunities": []
+      }
+    ]
+  }
+}
