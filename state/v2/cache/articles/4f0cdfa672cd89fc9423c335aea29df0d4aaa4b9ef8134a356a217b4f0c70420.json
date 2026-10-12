@@ -1,0 +1,53 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "4f0cdfa672cd89fc9423c335aea29df0d4aaa4b9ef8134a356a217b4f0c70420",
+  "decision": {
+    "article_key": "6c840c14258e39264abf6308",
+    "decision": "opportunity",
+    "reason": "Linux ve gerçek zamanlı çekirdeğin AMP mimarisinde birlikte çalışması; görev bölümü, IPC, buffer, hata kurtarma ve uzun süreli yük testleri için tekrarlanabilir doğrulama kanıtı ihtiyacı yaratıyor.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-12-4bb3b46a63-discovery-03a72db3b015f9a9:6c840c14258e39264abf6308:1",
+        "canonical_key": "industrial-embedded-teams|verify-linux-rtos-boundaries|offline-amp-test-dossier",
+        "idea_name": "Linux–RTOS Sınır Doğrulama Dosyası",
+        "core_job": "Heterojen çok çekirdekli endüstriyel cihazda görev bölümü ve çekirdekler arası veri yolunun zamanlama sınırlarını sürüm bazında kanıtlamak",
+        "target_customer": "Linux + RTOS/bare-metal AMP kullanan küçük endüstriyel gömülü sistem ekipleri",
+        "buyer": "Gömülü yazılım teknik lideri veya doğrulama yöneticisi",
+        "product_mechanism": "Görev/çekirdek sahipliği, IPC sözleşmesi, buffer ve hata senaryolarını tanımlayan; cihazdan dışa aktarılan test loglarını gecikme, kayıp ve toparlanma eşikleriyle karşılaştırıp imzalı doğrulama paketi üreten yerel araç",
+        "why_now": "T153 örneği Linux tarafındaki ağ/dosya işlerini gerçek zamanlı RISC‑V görevlerinden ayırıyor; kaynaklar örnek koddan ürüne geçişte örnekleme hızı, paket boyutu, izin verilen gecikme, uzun çalışma, bağlantı hatası ve depolama tıkanmasının ayrıca test edilmesi gerektiğini belirtiyor.",
+        "before_state": "Mimari şeması ve test logları ayrı tutuluyor; görev sınırı değişince hangi zamanlama kanıtının geçersiz olduğu kolay görülmüyor.",
+        "after_state": "Her gereksinim çekirdek sahipliği, test senaryosu, log ve eşikle bağlanıyor; sürüm farkında yeniden test kapsamı çıkıyor.",
+        "canonical_source_urls": [
+          "https://www.myir.cn/product/som/t153/myc-yt153mx.html",
+          "https://www.cnblogs.com/cbd7788/articles/23227779"
+        ],
+        "supporting_article_ids": [
+          "2c3dd717fa1885e6b03b8b17"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.cnblogs.com/cbd7788/articles/23227779",
+            "observation": "Kaynak A çekirdeklerinde Linux, RISC‑V çekirdeğinde gerçek zamanlı görev ayrımını; buffer, veri biçimi, hata kurtarma ve çekirdekler arası iletişim testlerini vurguluyor."
+          }
+        ],
+        "scope_hint": "İçe aktarılan loglar üzerinde deterministik yerel analiz; cihaz kontrolü, telemetri servisi, bulut, harici AI/API/DB yok.",
+        "local_evidence": {
+          "test_dimensions": [
+            "sampling rate",
+            "packet size",
+            "latency limit",
+            "long-run stability",
+            "link failure",
+            "storage congestion"
+          ],
+          "unknowns": [
+            "Hedef donanım başına kesin kabul eşikleri kullanıcı tarafından sağlanmalı",
+            "Kaynak makale bir üretici çözümüne odaklı; genellenebilirlik doğrulanmadı"
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-03a72db3b015f9a9/001.json",
+  "valid_until": "2026-11-11T07:08:49Z"
+}

@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-12T07:07:56Z",
+  "controller_observed_at": "2026-10-12T07:10:22Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-12T06:05:00Z",
   "ready_jobs": 272,
-  "unfinished_jobs": 273,
-  "last_verified_progress_at": "2026-10-12T01:22:09Z",
+  "unfinished_jobs": 272,
+  "last_verified_progress_at": "2026-10-12T07:08:49Z",
   "workers": {
     "1": {
       "last_started_at": null,
@@ -57,9 +57,9 @@
         "stage": "claim_saved",
         "path": "state/v2/worker-events/5/a93ca94c-b5a1-4474-9655-749dfcedef2f/001-progress.json"
       },
-      "receipts_this_invocation": 0,
-      "write_and_receipt_verified": false,
-      "last_receipt_at": null
+      "receipts_this_invocation": 1,
+      "write_and_receipt_verified": true,
+      "last_receipt_at": "2026-10-12T07:08:49Z"
     }
   },
   "all_five_receipt_verified": false,
@@ -67,8 +67,8 @@
     "window_minutes": 120.0,
     "stages": {
       "discovery": {
-        "completed_in_window": 0,
-        "known_remaining": 195,
+        "completed_in_window": 1,
+        "known_remaining": 194,
         "observed_jobs_per_hour": null,
         "estimated_minutes_for_stage": null
       },
@@ -132,12 +132,6 @@
       "worker": 4,
       "severity": "critical",
       "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
-    },
-    {
-      "code": "queue_no_progress",
-      "worker": null,
-      "severity": "critical",
-      "user_action": "Diğer çalışanlar kuyruğu devralır; görev geçmişinde erişim/kota hatası varsa belirtilen işlemi tamamlayın."
     }
   ],
   "invalid_events": []
