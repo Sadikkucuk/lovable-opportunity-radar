@@ -213,6 +213,87 @@ class Engine:
             "reused_articles": len(reused), "initial_jobs": jobs, "policy_version": POLICY,
         }, immutable=True)
 
+
+    def create_catchup_run(self, commit):
+        """Append *new* articles from a later same-day feed without altering a frozen run.
+
+        A delayed GitHub Actions feed can arrive AFTER the midnight daily run.
+        The original immutable snapshot remains authoritative for its own jobs.
+        This separate content-addressed run admits only unseen article URLs;
+        repeated controller ticks and re-syndicated URLs cannot create new jobs.
+        """
+        zone = ZoneInfo("Europe/Istanbul")
+        day = self.now.astimezone(zone).date().isoformat()
+        manifests = [self.read(p) for p in self.paths("state/v2/runs/*/manifest.json")]
+        original = [m for m in manifests if m.get("kind") == "daily"
+                    and m.get("run_date") == day]
+        if not original:
+            return
+        latest = self.read("docs/latest.json", {})
+        if not latest.get("items") or not latest.get("generated_at"):
+            return
+        try:
+            feed_at = dt(latest["generated_at"])
+        except (ValueError, TypeError, AttributeError):
+            self.errors.append("catchup feed generation timestamp invalid")
+            return
+        if (feed_at.astimezone(zone).date().isoformat() != day
+                or feed_at > self.now + timedelta(minutes=5)
+                or feed_at <= max(dt(m["created_at"]) for m in original)):
+            return
+
+        known = set()
+        for m in manifests:
+            if m.get("run_date") != day or m.get("kind") not in ("daily", "catchup"):
+                continue
+            snapshot = self.read(f"state/v2/runs/{m['run_id']}/snapshot.json", {})
+            known.update(a["article_key"] for a in snapshot.get("articles", []))
+        latest_unique = {article_key(a): a for a in latest["items"]}
+        unseen = [(key, item) for key, item in sorted(latest_unique.items())
+                  if key not in known]
+        if not unseen:
+            return
+        run_id = day + "-catchup-" + digest({
+            "source_generation": latest["generated_at"],
+            "new_article_keys": [key for key, _ in unseen],
+        })[:12]
+        if self.read(f"state/v2/runs/{run_id}/manifest.json"):
+            return
+        articles = [{"article_key": key, "content_hash": article_signature(a),
+                     "record": a} for key, a in unseen]
+        snapshot = {
+            "source_commit": commit, "source_generated_at": latest["generated_at"],
+            "raw_count": len(latest["items"]), "unique_count": len(articles),
+            "previously_snapshotted_count": len(known),
+            "overlap_count": len(latest_unique) - len(articles),
+            "articles": articles,
+        }
+        self.write(f"state/v2/runs/{run_id}/snapshot.json", snapshot, immutable=True)
+        pending, reused = [], []
+        for article in articles:
+            cached = self.read(f"state/v2/cache/articles/{article['content_hash']}.json")
+            if cached and cached["policy_version"] == POLICY and dt(cached["valid_until"]) > self.now:
+                reused.append(cached)
+            else:
+                pending.append(article)
+        self.write(f"state/v2/runs/{run_id}/reused.json", reused, immutable=True)
+        jobs = []
+        for start in range(0, len(pending), 10):
+            jobs.append(self.add_job(run_id, "discovery", {
+                "source_commit": commit, "articles": pending[start:start + 10],
+            }, (start // 10) % 4 + 1))
+        self.write(f"state/v2/runs/{run_id}/manifest.json", {
+            "schema_version": 2, "run_id": run_id, "run_date": day,
+            "kind": "catchup", "created_at": iso(self.now),
+            "source_commit": commit, "source_generation": latest["generated_at"],
+            "snapshot_hash": digest(snapshot), "raw_count": len(latest["items"]),
+            "unique_count": len(articles), "overlap_count": snapshot["overlap_count"],
+            "previously_snapshotted_count": len(known),
+            "reused_articles": len(reused), "initial_jobs": jobs,
+            "policy_version": POLICY,
+            "catchup_note": "Immutable supplement for delayed same-day RSS ingestion.",
+        }, immutable=True)
+
     def validate_receipt(self, job, claim, receipt):
         for k in ("job_id", "input_hash"):
             if receipt.get(k) != job[k] or claim.get(k) != job[k]:
@@ -424,7 +505,7 @@ class Engine:
     def advance(self, jobs, states):
         for path in self.paths("state/v2/runs/*/manifest.json"):
             manifest = self.read(path)
-            if manifest["kind"] != "daily":
+            if manifest["kind"] not in ("daily", "catchup"):
                 continue
             run_id = manifest["run_id"]
             initial = manifest["initial_jobs"]
@@ -588,6 +669,9 @@ class Engine:
             ops = config.get("operations", {})
             if not ops.get("start_local") or within_night_window(self.now, ops):
                 self.create_run(commit)
+            # Catch up with a later feed even after 07:00; do not create a new
+            # daytime daily run, and never rewrite a frozen day snapshot.
+            self.create_catchup_run(commit)
         # Two passes discover downstream jobs without waiting for another scheduled invocation.
         for _ in range(2):
             jobs = self.jobs()
@@ -623,7 +707,7 @@ class Engine:
             report = {"run_id": run_id, "processing_status": ("complete_with_gaps" if gaps else "complete") if closed else "in_progress",
                       "job_counts": dict(counts), "validation_decisions": dict(decisions),
                       "article_decisions": dict(article_decisions),
-                      "articles_processed": discovery_seen if manifest["kind"] == "daily" else None,
+                      "articles_processed": discovery_seen if manifest["kind"] in ("daily", "catchup") else None,
                       "articles_expected": manifest.get("unique_count"),
                       "publication_status": "github_release_available", "site_delivery": "not_observed_by_controller"}
             # Timestamp changes only when substantive state changes.
