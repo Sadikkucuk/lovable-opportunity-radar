@@ -1,0 +1,101 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-7f26f95201145676",
+  "input_hash": "7f26f952011456763d04827facc4354ef3936fd2f65ef1e3bf1c2521b11bbe72",
+  "token": "7eb4b8b0-6c1a-4834-99cd-44ac0dee1a8e",
+  "finished_at": "2026-10-13T10:18:44.256Z",
+  "outcome": "done",
+  "reason": "10 haber tek tek incelendi: DPVR/Unitree çift kol demonstrasyon veri kalitesi dosyasına 1 ham fikir, diğer 9 no_opportunity. Boston Dynamics Atlas robot el haberi önceki 1 Ekim ürün duyurusu, Çin EV KDV haberleri ise daha önce işlenen aynı olay.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "e81605b7c7913aeecc94824f",
+        "decision": "no_opportunity",
+        "reason": "Çin A-hisseleri ve yarı iletken fiyat düşüşü borsa endeksi mikrohaberidir; yeni müşteri işi/API veya mevzuat sağlanmadı.",
+        "canonical_source_url": "https://www.yicai.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "e84c7be2e9e90b9f68a5bf04",
+        "decision": "no_opportunity",
+        "reason": "Daron Acemoglu'nun AI'nın çoğu mesleği çok hızlı ortadan kaldırmayacağı ve çalışan merkezli benimseme yaklaşımının uygun olduğu görüşü toplumsal/ekonomik tartışmadır. Mevcut AI Integration Ready ve AI Value Renewal işlerine yakın, doğrudan yeni iş kuralı yaratmaz.",
+        "canonical_source_url": "https://www.huxiu.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "e84f32255535c8dd48993f1d",
+        "decision": "no_opportunity",
+        "reason": "Weirong Technology MLCC ve ileri komponent üretim kapasitesini artırdığı ürün/şirket profili; doğrulanmış yeni tedarik standardı, teknik arayüz veya lisans hakkı bildirilmedi.",
+        "canonical_source_url": "https://www.ce.cn/",
+        "opportunities": []
+      },
+      {
+        "article_key": "e8f49c1648d3ab307803a2ac",
+        "decision": "no_opportunity",
+        "reason": "Japon veri merkezi network mimarisinin shogi benzeri gelecek stratejisine dair köşe yazısı; ayırt edici yeni arayüz, kanun veya müşteri iş akışı yok. Mevcut rack/güç senaryo ham fikirlerine yakın.",
+        "canonical_source_url": "https://xtech.nikkei.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "e92977c9e303cdd59e6b7414",
+        "decision": "no_opportunity",
+        "reason": "IEEE Spectrum Boston Dynamics Atlas dört parmaklı, 13 serbestlik dereceli robot elini inceleyip doğrudan aktüatör/yüksek ölçekli üretim maliyeti vurguluyor. Üretici açıklaması 1 Ekim haftasına dayanıyor, bugünün yeni genel standardı değil. Robot saha kabul/industrial humanoid safety-readiness mevcut fikirleri aynı mekanik kanıt işini kısmen kapsıyor.",
+        "canonical_source_url": "https://spectrum.ieee.org/robust-robot-hand",
+        "opportunities": []
+      },
+      {
+        "article_key": "e95a34f048ad6d84ebd86aa3",
+        "decision": "no_opportunity",
+        "reason": "Panasonic küçük tıraş makinesi ürün başarısını ergonomi/pazarlama açısından açıklayan tasarım yazısı; bağımsız B2B iş akışı veya yeni API yok.",
+        "canonical_source_url": "https://monoist.itmedia.co.jp/",
+        "opportunities": []
+      },
+      {
+        "article_key": "e95e7138049153d006841c3b",
+        "decision": "no_opportunity",
+        "reason": "CCC 2025 sürdürülebilirlik raporunu yayımlamış; içerdiği somut yeni düzenleyici zorunluluk/denetlenen açıklama standardı ve yeni iş alıcısı RSS başlığından kanıtlanamadı. Başka doğrulanmış olay yok.",
+        "canonical_source_url": "https://www.gidaturk.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "e9efece2bae71bdbab09728d",
+        "decision": "opportunity",
+        "reason": "12 Ekim Çin haberi DPVR RoboPilot'un Unitree çift kol robotuyla teleoperasyon ve 6DoF el/kol hareket kaydı uyarlamasını raporluyor. Gerçek saha verisi toplama için sol/sağ kol senkronizasyonu, farklı demonstrasyon görevleri, örnek kabul koşulu ve tekrar örneği izlenebilir olmalıdır; robot kontrolü, eğitim veya ROS entegrasyonu yapmayan saf CSV/JSON kalite onay defteri ayrı müşteri işi olabilir. Tedarikçi beyanından doğruluk/latency sonucu varsayılmadı.",
+        "canonical_source_url": "https://4g.stockstar.com/detail/IG2026101200014287",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-7f26f95201145676:e9efece2bae71bdbab09728d:01",
+            "idea_name": "Dual-arm Robot Demonstration Data Acceptance Desk",
+            "canonical_key": "robotics-teleoperation-dataset-teams|verify-dual-arm-demonstration-provenance-and-label-quality|episode-6dof-synchronization-version-and-acceptance-ledger",
+            "target_customer": "Çift kollu robot teleoperasyon ve veri kümesi üreten robot entegratörleri/AR-GE ekipleri",
+            "core_job": "Operatör demonstrasyonundan çıkan sol/sağ 6DoF trajektori örneklerinin saha görevi, platform sürümü ve kalite kabulünü yayın veya AI eğitimi öncesi kayıtlamak",
+            "product_mechanism": "Kullanıcıdan yalnız JSON/CSV dataset metadata, robot/teleoperasyon yazılım sürümü, senkron timestamp, trajektori boşluk oranı, görev açıklama, gizlilik/izin durumu ve insan onayı; robotu kontrol etmez, canlı veri almaz, AI eğitimi veya puanlama modelini çalıştırmaz",
+            "why_now": "12 Ekim Çin haberi DPVR RoboPilot'un Unitree çift kol robotuyla teleoperasyon ve 6DoF el/kol hareket kaydı uyarlamasını raporluyor. Gerçek saha verisi toplama için sol/sağ kol senkronizasyonu, farklı demonstrasyon görevleri, örnek kabul koşulu ve tekrar örneği izlenebilir olmalıdır; robot kontrolü, eğitim veya ROS entegrasyonu yapmayan saf CSV/JSON kalite onay defteri ayrı müşteri işi olabilir. Tedarikçi beyanından doğruluk/latency sonucu varsayılmadı.",
+            "before_state": "Demonstrasyon video, hareket dizisi, kalite/tekrar notları farklı operatör istasyonlarında; görev ve robot sürümüyle bağları kopabiliyor",
+            "after_state": "Episode bazlı kaynak, veri bütünlüğü, insan görev etiketi ve yeniden kayıt gereği raporu; gerçek robot emniyeti testini üstlenmez",
+            "canonical_source_urls": [
+              "https://4g.stockstar.com/detail/IG2026101200014287",
+              "https://github.com/unitreerobotics/xr_teleoperate"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "eac76b3a677d7a4beefc62e6",
+        "decision": "no_opportunity",
+        "reason": "Çin NEV ihracat vergi iadesinin %9'a düşüşü (1 Nisan 2027) önceki haberle tekrarlandı; yeni ürün üretimi yapılmadı.",
+        "canonical_source_url": "https://www.mof.gov.cn/",
+        "opportunities": []
+      },
+      {
+        "article_key": "eae17ddedf36a4b3677c627f",
+        "decision": "no_opportunity",
+        "reason": "İstanbul saç ekim kliniği listeleme/advertorial içeriği; tıbbi uygunluk, servis kalitesi veya hasta verisi toplamak için güvenilir kaynak değil. Bağımsız teknoloji inovasyonu veya yeni yükümlülük yok.",
+        "canonical_source_url": "https://shiftdelete.net/",
+        "opportunities": []
+      }
+    ]
+  }
+}
