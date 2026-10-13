@@ -1,0 +1,30 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "5c23cbc936929b1b75c19a72901e9ab2b980771b2694ea5c6a4ae0828bef1060",
+  "decision": {
+    "article_key": "da04cd152224975818d47ccf",
+    "decision": "opportunity",
+    "reason": "Computerwoche'nin 12 Ekim uzman makalesinde tedarikçinin sertifikalı olması veya SBOM'da CVE bulunması etkilenen belirli OT ağ geçidinin gerçekten sömürülebilir olduğu ve bakım penceresinin mevcut olduğu anlamına gelmiyor. Ürün sürümü, gerçek kurulu konfigürasyon, ağ erişimi, geçici önlem ve bakım kısıtını ayrı kanıtlarla değerlendirmek tekrarlanan güvenlik alıcısı işi.",
+    "canonical_source_url": "https://www.computerwoche.de/article/4232490/die-sbom-kennt-kein-wartungsfenster.html",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-43d3b526fc-discovery-25292bc4f89b1e75:da04cd152224975818d47ccf:01",
+        "canonical_key": "industrial-ot-product-security-teams|triage-sbom-component-cve-by-field-deployment-and-maintenance-window|sbom-component-reachability-asset-and-compensating-control-ledger",
+        "idea_name": "SBOM OT Zafiyet Gerçek Etki ve Bakım Penceresi Masası",
+        "target_customer": "Endüstriyel tesis OT siber güvenlik ekipleri ve ekipman/uzaktan bağlantı gateway üreticileri",
+        "core_job": "Tedarikçi SBOM bileşenindeki CVE'nin kurulu sürüm/erişim şartı nedeniyle gerçekten etkileyip etkilemediğini ve üretimi durdurmadan telafi planını kanıtlarla onaylamak",
+        "product_mechanism": "Müşterinin yüklediği CycloneDX/SPDX/CSV, CVE/advisory bilgileri (manuel), cihaz-envanter/konfigürasyon, network segmenti, telafi/patch penceresi, operatör imzası ve gerekçe ilişkisi; harici CVE API ya da saldırı aracı çalıştırmaz",
+        "before_state": "SBOM CVE listesi cihazın gerçek reachability ve OT bakım penceresinden kopuk, alarm ve belirsizlik birikir",
+        "after_state": "Her komponent-zafiyet için etki şartı, vendor kanıtı, uygulanabilir geçici önlem, bakıma onaylı risk kaydı",
+        "why_now": "Computerwoche'nin 12 Ekim uzman makalesinde tedarikçinin sertifikalı olması veya SBOM'da CVE bulunması etkilenen belirli OT ağ geçidinin gerçekten sömürülebilir olduğu ve bakım penceresinin mevcut olduğu anlamına gelmiyor. Ürün sürümü, gerçek kurulu konfigürasyon, ağ erişimi, geçici önlem ve bakım kısıtını ayrı kanıtlarla değerlendirmek tekrarlanan güvenlik alıcısı işi.",
+        "canonical_source_urls": [
+          "https://www.computerwoche.de/article/4232490/die-sbom-kennt-kein-wartungsfenster.html"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-25292bc4f89b1e75/001.json",
+  "valid_until": "2026-11-12T17:49:12Z"
+}
