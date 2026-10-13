@@ -1,0 +1,68 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "d3cabeb8e8fb6291a8112fc6f5307a6dc5abd7ee5e19be406ba33faf1bc8b609",
+  "decision": {
+    "article_key": "3dc7015cfee26fb3be7b52c3",
+    "decision": "opportunity",
+    "reason": "The Register'ın 11 Ekim özgün yazısı Booz Allen Hamilton OT laboratuvarının 8 özerk AI saldırı senaryosu testinden söz ediyor; kritik sistem kullanıcı yetkileri ve insan müdahale süreleri kayıt ihtiyacı doğurabilir. Gerçek saldırı gerçekleştiği iddia edilmiyor; kaynak model laboratuvar testi.",
+    "canonical_source_url": "https://www.theregister.com/security/2026/10/11/ai-systems-are-fully-capable-of-carrying-out-nightmare-attacks-against-infrastructure-and-nobodys-ready/5302450",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-43d3b526fc-discovery-201fa7cf7e718287:3dc7015cfee26fb3be7b52c3:01",
+        "idea_name": "OT Ajan Yetki Sınırı Risk Envanteri",
+        "canonical_key": "industrial-ot-security-teams|audit-automation-agent-access-to-ot-assets|asset-access-boundary-control-evidence-matrix",
+        "target_customer": "Endüstriyel OT varlık sahipleri ve siber güvenlik ekipleri",
+        "buyer": "OT güvenliği sorumlusu",
+        "core_job": "Kritik makine varlıklarına özerk ajan erişim yetki sınırlarını denetlemek",
+        "product_mechanism": "Kullanıcıların girdiği OT varlık, yetki/kimlik, komut sınıfı ve onay politikası kontrol matrisi",
+        "why_now": "Özerk AI ile OT saldırı zinciri laboratuvar testlerinin açıklanması",
+        "before_state": "Robot/PLC erişimi, ayrıcalıklı kullanıcı ve onaylar dağınık belgelerde",
+        "after_state": "Riskli komut yetkilerinin eksik kontrol listesi ve görevli onayı",
+        "canonical_source_urls": [
+          "https://www.theregister.com/security/2026/10/11/ai-systems-are-fully-capable-of-carrying-out-nightmare-attacks-against-infrastructure-and-nobodys-ready/5302450"
+        ],
+        "supporting_article_ids": [
+          "de285ab0cebaaf683e4cabd0"
+        ],
+        "scope_hint": "Dünya",
+        "source_observations": [
+          {
+            "url": "https://www.theregister.com/security/2026/10/11/ai-systems-are-fully-capable-of-carrying-out-nightmare-attacks-against-infrastructure-and-nobodys-ready/5302450",
+            "accessed_at": "2026-10-13T04:37:44.726Z",
+            "observation": "The Register'ın 11 Ekim özgün yazısı Booz Allen Hamilton OT laboratuvarının 8 özerk AI saldırı senaryosu testinden söz ediyor; kritik sistem kullanıcı yetkileri ve insan müdahale süreleri kayıt ihtiyacı doğurabilir. Gerçek saldırı gerçekleştiği iddia edilmiyor; kaynak model laboratuvar testi.",
+            "strength": "original_or_primary"
+          }
+        ]
+      },
+      {
+        "raw_id": "2026-10-13-43d3b526fc-discovery-201fa7cf7e718287:3dc7015cfee26fb3be7b52c3:02",
+        "idea_name": "OT Müdahale Tatbikat Kanıt Dosyası",
+        "canonical_key": "ot-incident-response-teams|evaluate-human-takeover-during-fast-ai-enabled-attack|tabletop-scenario-timeline-and-evidence-ledger",
+        "target_customer": "Kritik altyapı OT olay müdahale ekipleri",
+        "buyer": "Siber olay müdahale yöneticisi",
+        "core_job": "Kısa süreli siber-fiziksel senaryolarda tespit, durdurma ve devir prosedürünü test etmek",
+        "product_mechanism": "Manuel tabletop senaryoları, müdahale adımı/süresi, sorumlu ve kanıt kayıtları",
+        "why_now": "Booz Allen'ın AI-OT saldırı senaryo testlerinde dakikalarla ölçülen müdahale penceresi",
+        "before_state": "Tatbikat aşamaları ve müdahale kararları dağınık dokümanlarda",
+        "after_state": "Tatbikat senaryo-zaman çizelgesi, kontrol boşluğu, sonraki tekrar planı",
+        "canonical_source_urls": [
+          "https://www.theregister.com/security/2026/10/11/ai-systems-are-fully-capable-of-carrying-out-nightmare-attacks-against-infrastructure-and-nobodys-ready/5302450"
+        ],
+        "supporting_article_ids": [
+          "de285ab0cebaaf683e4cabd0"
+        ],
+        "scope_hint": "Dünya",
+        "source_observations": [
+          {
+            "url": "https://www.theregister.com/security/2026/10/11/ai-systems-are-fully-capable-of-carrying-out-nightmare-attacks-against-infrastructure-and-nobodys-ready/5302450",
+            "accessed_at": "2026-10-13T04:37:44.726Z",
+            "observation": "The Register'ın 11 Ekim özgün yazısı Booz Allen Hamilton OT laboratuvarının 8 özerk AI saldırı senaryosu testinden söz ediyor; kritik sistem kullanıcı yetkileri ve insan müdahale süreleri kayıt ihtiyacı doğurabilir. Gerçek saldırı gerçekleştiği iddia edilmiyor; kaynak model laboratuvar testi.",
+            "strength": "original_or_primary"
+          }
+        ]
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-201fa7cf7e718287/001.json",
+  "valid_until": "2026-11-12T04:37:44Z"
+}
