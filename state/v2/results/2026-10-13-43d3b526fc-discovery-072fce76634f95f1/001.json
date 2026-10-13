@@ -1,0 +1,97 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-43d3b526fc-discovery-072fce76634f95f1",
+  "input_hash": "072fce76634f95f1e8922749c5714b6c7ee6abf017880ced06bd902c24f08402",
+  "token": "e9073851-33f0-424b-88c6-0cdcdabcd3af",
+  "finished_at": "2026-10-13T18:21:18.696Z",
+  "outcome": "done",
+  "reason": "10 haber değerlendirildi: DOE'nin resmî SPR petrol takası için 1 ham operasyon ürünü, 8 no_opportunity, Korea OnAI 4+6 model iddiası birincil sayımla doğrulanamadığı için 1 unverified. 10 Aralık 2025 Yüzer GES yönetmeliği mevcut tarihî fikirle eşleştirilip tekrar üretilmedi.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "82f737f4850aca7c02c94287",
+        "decision": "opportunity",
+        "reason": "ABD Enerji Bakanlığının 10 Ekim 2026 birincil açıklaması fırtına nedeniyle ExxonMobil ve BP America için ikişer milyon varile kadar (toplam azami 4 milyon varil) SPR petrol ödünç verme/takasına izin verdi; alınan petrol 2027'de ek prim varilleriyle dönecek. Bu henüz tam 4 milyon fiziksel teslimat yapıldığı anlamına gelmez. Eylül ayında başka SPR takas RFP'lerinin de duyurulması, devlet petrol takasının koşul/depozito/geri verme/prim maddeleri için tekrar eden bir mali-varlık kontrol akışı olduğunu gösteriyor.",
+        "canonical_source_url": "https://www.energy.gov/articles/energy-department-authorizes-strategic-petroleum-reserve-exchange-address-supply",
+        "opportunities": [
+          {
+            "idea_name": "SPR Ham Petrol Takas Yükümlülük Defteri",
+            "canonical_key": "oil-refiners-and-spr-contract-teams|reconcile-emergency-crude-exchange-and-premium-return|barrel-award-delivery-return-and-evidence-ledger",
+            "target_customer": "ABD stratejik petrol rezervi ile acil ham petrol takası yapan rafineri sözleşme, hazine ve lojistik ekipleri",
+            "core_job": "Ödünç verilen ve iade edilmesi gereken ham petrol varil miktarı, prim, teslimat, saha ve dönüş yıllarının belge eşleşmesini yönetmek",
+            "product_mechanism": "İthal veri yerine müşterinin verdiği award/exchange CSV'si, sözleşme teslim tarihi, alınan/iade edilen varil, premium, kalite ve sevk belgesi, manuel durum denetimi; devlet API'si ve banka/ERP entegrasyonu zorunlu değildir",
+            "before_state": "Kamu takas tahsisi, terminal çekim ve gelecek yıl geri verme prim koşulları sözleşmeler/tanker çizelgeleri/Excel'de ayrı",
+            "after_state": "Takas bazlı borç ve prim varilleri, eksik kanıt, koşullu teslimat ve iade hazırlık matrisinde birbirine bağlanır",
+            "scope_hint": "Dünya",
+            "raw_id": "2026-10-13-43d3b526fc-discovery-072fce76634f95f1:82f737f4850aca7c02c94287:01",
+            "why_now": "ABD Enerji Bakanlığının 10 Ekim 2026 birincil açıklaması fırtına nedeniyle ExxonMobil ve BP America için ikişer milyon varile kadar (toplam azami 4 milyon varil) SPR petrol ödünç verme/takasına izin verdi; alınan petrol 2027'de ek prim varilleriyle dönecek. Bu henüz tam 4 milyon fiziksel teslimat yapıldığı anlamına gelmez. Eylül ayında başka SPR takas RFP'lerinin de duyurulması, devlet petrol takasının koşul/depozito/geri verme/prim maddeleri için tekrar eden bir mali-varlık kontrol akışı olduğunu gösteriyor.",
+            "canonical_source_urls": [
+              "https://www.energy.gov/articles/energy-department-authorizes-strategic-petroleum-reserve-exchange-address-supply"
+            ],
+            "supporting_article_ids": [
+              "da298c5f9f13f7077dc12683"
+            ],
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "82fdbc6386711252d7055393",
+        "decision": "unverified",
+        "reason": "ZDNet Kore RSS başlığı kamu çalışanı AI platformunda dört yerli ve altı yabancı LLM bulunduğunu ileri sürüyor; aynı yayıncının 13 Ağustos 2026 OnAI/Samsung SDS/Naver yayılımı teyit edildi, ancak tam 4+6 model sayımı ve güncel kamu teknik listesi birincil kaynakta doğrulanamadı. Model entegrasyonunu ve kesin ürün uygunluğunu uydurmadık.",
+        "canonical_source_url": "https://zdnet.co.kr/view/?no=20260813175310",
+        "opportunities": []
+      },
+      {
+        "article_key": "831c04f26ad2187d57412302",
+        "decision": "no_opportunity",
+        "reason": "Amazon Cloud ve Yao Foundation'a 1 milyon USD aynî/nakdî spor+AI eğitim desteği kurum bağış/program duyurusudur. Tek bağış olayı ayrı müşterinin tekrar eden ticari yazılım işini göstermez.",
+        "opportunities": []
+      },
+      {
+        "article_key": "834bf9146d9c2d670aa36a0c",
+        "decision": "no_opportunity",
+        "reason": "Eski ByteDance çalışanının AI laboratuvarı ve yaklaşık 30 milyon USD fonlama iddiası startup yatırım haberidir. Ayrı doğrulanabilir işletme iş akışı veya yeni erişilebilir teknik veri yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "836dababc578ad76573953d9",
+        "decision": "no_opportunity",
+        "reason": "NVIDIA'nın Reflection AI yatırımı/satın alma görüşmesi haberinde tamamlanmış bir anlaşma veya açık ağırlık/standart erişimi yok. Tekrar eden ticari iş akışına dönüştürülmedi.",
+        "opportunities": []
+      },
+      {
+        "article_key": "83bbcba077eb7709a1d95b36",
+        "decision": "no_opportunity",
+        "reason": "LivSyn Robotics'in robotları AI modellerine bağlayan platformu ve Series A finansmanı yeni dış model servislerine dayalı ticarî ürün. Sıfır ek AI runtime şartıyla aynı çekirdek işlev tekrar üretilemez; ayrı deterministik kullanıcı işi kanıtı yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "840a1941a49f37591c4035c2",
+        "decision": "no_opportunity",
+        "reason": "Xiaomi Mijia 7 Max robot süpürgesi 50°C su püskürtmeli ürün lansmanı ve perakende fiyatıdır. Yeni B2B standart, kamu API'si veya süreklilik iş akışı tanımlamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "846ed04c14c733e290013cda",
+        "decision": "no_opportunity",
+        "reason": "Yüzer GES su yüzeyi kullanımı ve kiralanması yönetmeliği 13 Ekim yeni düzenleme değil; Tarım ve Orman Bakanlığı ve DSİ resmî kayıtlarına göre 10 Aralık 2025'te yayımlandı. Korunan 91 ürün içindeki Yüzer GES Başvuru Uyum Masası işi bu düzenlemeyi zaten kapsıyor; mükerrer fikir açılmadı.",
+        "canonical_source_url": "https://www.tarimorman.gov.tr/HHGM/Sayfalar/GormeEngellilerDetay.aspx?Liste=Haber&OgeId=202",
+        "opportunities": []
+      },
+      {
+        "article_key": "84d7a838e08311d5c224dd66",
+        "decision": "no_opportunity",
+        "reason": "AI ve matematik araştırması kim kazanır Çin ekonomi köşe yazısı yeni veri, akademik standart, somut alıcı için özgün süreç veya açık araç ilanı değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "852ca331207cbdde8aceb671",
+        "decision": "no_opportunity",
+        "reason": "ETNews özgün 11 Ekim haberi SK Telecom, KT, LG Uplus'ın finans sektöründeki AI destekli siber atak gelişmeleri sonrasında kurum genelinde zafiyet denetimini ve anomali izlemeyi artırdığını doğruluyor; kullanılan güvenlik ürünleri/kurumsal envanter dış API veya sistem sahibi iç veri gerektirir. Mevcut AI-Assisted Attack Incident Ledger/Legacy Agent Exposure Register ile iş ayrımı zayıf; sadece bu olaydan mükerrer ham fikir çıkarılmadı.",
+        "canonical_source_url": "https://www.etnews.com/20261008000266",
+        "opportunities": []
+      }
+    ]
+  }
+}
