@@ -1,0 +1,75 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-303921cff0b5d0cb",
+  "input_hash": "303921cff0b5d0cbf5b17e8567dd3d405bc6be94eb26af96972d32f3739d474a",
+  "token": "w1-1791863260046-47625622",
+  "finished_at": "2026-10-13T03:47:53.844Z",
+  "outcome": "done",
+  "reason": "Zenity birincil araştırması ve The Register haberi doğrulandı; AWS'nin itirazı ve 29 Eylül 2026 düzeltmeleri kaydedildi. Türkiye'de sıfır doğrudan rakip, küresel rakip sayısı ve mevcut katalogla semantik özgünlük kesinleştirilemedi; qualified kararı verilemez.",
+  "result": {
+    "decision": "unverified",
+    "reason": "Zenity birincil araştırması ve The Register haberi doğrulandı; AWS'nin itirazı ve 29 Eylül 2026 düzeltmeleri kaydedildi. Türkiye'de sıfır doğrudan rakip, küresel rakip sayısı ve mevcut katalogla semantik özgünlük kesinleştirilemedi; qualified kararı verilemez.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://labs.zenity.io/post/agentcorruption-how-a-single-prompt-collapsed-the-entire-cloud-security-model",
+        "accessed_at": "2026-10-13T03:47:53.844Z",
+        "claim": "AgentCore aşırı izinli varsayılan rollerinin riski",
+        "observation": "Zenity 2025-2026 bulgularını ve Eylül 2026'daki izin daraltmasını belgeliyor; AWS bulguların yorumuna itiraz ediyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "trigger",
+        "url": "https://www.theregister.com/security/2026/10/09/aws-agentcore-security-undone-by-prompt-requesting-credentials/5302436",
+        "accessed_at": "2026-10-13T03:47:53.844Z",
+        "claim": "Bağımsız haber",
+        "observation": "The Register Zenity bulgularını ve AWS'nin karşı açıklamasını aktarıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/scope-credential-provider-access.html",
+        "accessed_at": "2026-10-13T03:47:53.844Z",
+        "claim": "Agent yetkileri kapsamlandırılabilir",
+        "observation": "AWS kaynak/kimlik bazlı IAM kısıtlarını belgeler; offline CSV/JSON matrisi olasıdır, gerçek uygulama güvenliği ayrıca sınanmalıdır.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "queries": [],
+        "scope": "Türkiye agent IAM yetki matrisi rekabeti tam taranmadı",
+        "search_complete": false,
+        "direct_competitors": []
+      },
+      "global": {
+        "direct_count": null,
+        "queries": [
+          "AgentIAM Scope Ledger agent permission matrix AWS AgentCore competitors agent identity governance 2026"
+        ],
+        "scope": "Küresel ilk tarama, doğrudan rakip ayrımı tamamlanmadı",
+        "search_complete": false,
+        "direct_competitors": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Tarayıcıda yerel CSV/JSON rol dosyası içe aktarma, statik kaynak-eylem matrisi, yerel rapor üretimi; bulut kimlik doğrulama veya canlı yetki taraması yok.",
+      "dependency_inventory": [
+        "Tarayıcı JavaScript",
+        "Kullanıcı CSV/JSON içe aktarması",
+        "Yerel JSON/CSV rapor dışa aktarımı"
+      ]
+    },
+    "history_review": {
+      "decision": "uncertain",
+      "reason": "Kaynak iş kaydında Agent Sandbox Policy Desk ile olası semantik eşleşme bulunuyor; güncel katalog karşılaştırması tamamlanmadı."
+    }
+  }
+}
