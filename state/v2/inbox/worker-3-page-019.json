@@ -4,27 +4,13 @@
   "queue_mode": "shared",
   "current_run": "2026-10-13-43d3b526fc",
   "lease_minutes": 30,
-  "ready_count": 364,
+  "ready_count": 363,
   "job_count": 365,
-  "queue_revision": "9c2fb14369b3a9c5dbe6223dada1515b417bac4d46b8cf0565205b89dfdab45d",
+  "queue_revision": "5505aba747bcf262e115e4e22155107c48bab18ec8f52e8f22256d34e98993ac",
   "page": 19,
   "page_count": 19,
   "next_page": null,
   "jobs": [
-    {
-      "job_id": "2026-10-12-4bb3b46a63-discovery-f4f90e52f3f63720",
-      "path": "state/v2/jobs/2026-10-12-4bb3b46a63-discovery-f4f90e52f3f63720.json",
-      "run_id": "2026-10-12-4bb3b46a63",
-      "kind": "discovery",
-      "input_hash": "f4f90e52f3f6372056c094c3d660a81a384a612643fb9c3d90107ad63e161eac",
-      "legacy_lane": 4,
-      "queue_group": "backlog",
-      "preferred_worker": 5,
-      "state": "ready",
-      "attempt": 1,
-      "claim_path": "state/v2/claims/2026-10-12-4bb3b46a63-discovery-f4f90e52f3f63720/001.json",
-      "result_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-f4f90e52f3f63720/001.json"
-    },
     {
       "job_id": "2026-10-12-4bb3b46a63-discovery-f5c53549b887c248",
       "path": "state/v2/jobs/2026-10-12-4bb3b46a63-discovery-f5c53549b887c248.json",
@@ -66,6 +52,19 @@
       "attempt": 1,
       "claim_path": "state/v2/claims/2026-10-12-4bb3b46a63-discovery-fe6c8fccce8a943b/001.json",
       "result_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-fe6c8fccce8a943b/001.json"
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-570f7c19b0db278b",
+      "path": "state/v2/jobs/2026-10-10-migration-validation-570f7c19b0db278b.json",
+      "run_id": "2026-10-10-migration",
+      "kind": "validation",
+      "input_hash": "570f7c19b0db278b33c57b858cedf2a216675c64004d696faebd070d98596e83",
+      "legacy_lane": 4,
+      "queue_group": "backlog",
+      "preferred_worker": 2,
+      "state": "leased",
+      "attempt": 1,
+      "expires_at": "2026-10-13T04:38:39.816Z"
     },
     {
       "job_id": "2026-10-13-43d3b526fc-discovery-0c2956796dbb77f9",
