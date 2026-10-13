@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T08:02:38Z",
+  "controller_observed_at": "2026-10-13T08:06:52Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
@@ -41,31 +41,18 @@
       "last_receipt_at": "2026-10-13T04:08:49.764Z"
     },
     "3": {
-      "last_started_at": "2026-10-13T07:38:25.547Z",
+      "last_started_at": "2026-10-13T08:06:38.289Z",
       "last_event": {
         "schema_version": 1,
         "worker": 3,
-        "invocation_id": "222a223d-e810-483e-bb68-23a8067c6d76",
-        "event": "finished",
-        "at": "2026-10-13T08:02:21.772Z",
-        "completed_receipts": 10,
-        "discovery_articles_triaged": 100,
-        "raw_opportunities": 15,
-        "article_decisions": {
-          "opportunity": 15,
-          "no_opportunity": 77,
-          "unverified": 8
-        },
-        "validation_decisions": {
-          "qualified": 0,
-          "rejected": 0,
-          "duplicate": 0,
-          "unverified": 0
-        },
-        "note": "Ten original immutable discovery receipts saved and read back; one other attempt to create a claim for different current job was rejected by platform security and was not retried. Existing 5 scheduled worker tasks, prompts, and protected catalog files were not altered.",
-        "path": "state/v2/worker-events/3/222a223d-e810-483e-bb68-23a8067c6d76/999-finished.json"
+        "invocation_id": "e3a6582e-8225-445f-90e0-8a37193e68c1",
+        "event": "started",
+        "at": "2026-10-13T08:06:38.289Z",
+        "execution_mode": "user_requested_manual",
+        "note": "Independent master research; five scheduled tasks/prompts unchanged.",
+        "path": "state/v2/worker-events/3/e3a6582e-8225-445f-90e0-8a37193e68c1/000-started.json"
       },
-      "receipts_this_invocation": 10,
+      "receipts_this_invocation": 0,
       "write_and_receipt_verified": true,
       "last_receipt_at": "2026-10-13T08:01:27.798Z"
     },
