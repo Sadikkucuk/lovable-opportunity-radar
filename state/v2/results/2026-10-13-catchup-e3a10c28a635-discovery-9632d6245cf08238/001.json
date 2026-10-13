@@ -1,0 +1,93 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-9632d6245cf08238",
+  "input_hash": "9632d6245cf0823840bfcbf11f2bb27aed9bdb6385896680896b6492a0130e3b",
+  "token": "23a5c91a-a254-4103-8864-544c9155b26f",
+  "finished_at": "2026-10-13T10:41:16.452Z",
+  "outcome": "done",
+  "reason": "10 haber kararlandı: yonga alt tedarik menşe kanıtı için 1 ham fırsat, 9 no_opportunity. Çin/Pekin AI çağrı merkezi dış modeli ve Vodafone–ArkSigner mevcut altyapı hizmet anlaşması için sahte yeni yükümlülük üretilmedi.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "b72bc110030903dd05d8b829",
+        "decision": "no_opportunity",
+        "reason": "TikTok yöneticisi Shou Chew'in üç yıl içinde AI bilimsel atılımı beklentisi öngörüdür; gerçekleşmiş teknik standart veya bağımsız Lovable işi olarak okunmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b79061a2ef6cd1475a13e9b5",
+        "decision": "no_opportunity",
+        "reason": "AB bölgelerinde 'kalma hakkı' ve refah yatırımları politik söylemidir. Yayımlanmış yeni teşvik kriteri veya mevzuat günü bu yazıdan doğrulanmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b7aeb83ad3b4f9b9a7bb8c33",
+        "decision": "no_opportunity",
+        "reason": "XPeng'in 2026 sonunda humanoid seri üretim ve 2027 ilk yarı teslimat hedefi geleceğe yönelik şirket planıdır; gerçekleşmiş üretim/teslimat değildir. Endüstriyel humanoid readiness benzeri kataloğa zaten var.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b827d1988aa0b8ba0da9eee1",
+        "decision": "no_opportunity",
+        "reason": "Pekin belediyesinin 12 Ekim resmi metni 12345 çağrı hattının 7 yılı aşkın sürede ~200 milyon talebe hizmet verdiğini, Jingjing AI ajanının ses kaydı, metin, iş emri oluşturmada kullanıldığını açıklıyor. Kamu kurumu sistemine ve büyük modele bağımlı operasyon, sıfır harici AI servisli uygulama olarak farklılaştırılamadı.",
+        "canonical_source_url": "https://english.beijing.gov.cn/srpc/whatson/updates/202610/t20261012_4898054.html",
+        "opportunities": []
+      },
+      {
+        "article_key": "b83352c478b860a3888c125d",
+        "decision": "opportunity",
+        "reason": "SIA'nın 9 Ekim raporuna dayalı SCMP 12 Ekim haberinde ABD yonga üretim alımlarının tedarikçi merkezine göre %95'inin ABD/AB/Japonya, üretim yerine göre %68'inin bu ülkelerden geldiği anlatılıyor. Çin'deki galyum/tungsten gibi üst zincir bağımlılığı ilk kademe tedarikçi listesinden gizlenebilir. Üretici ve satın alma için doğrudan tedarikçi ülke adı ile gerçek malzeme/alt tedarik tesis menşei ayrımını CSV kaynak kanıtıyla incelemek farklı iş hipotezidir.",
+        "canonical_source_url": "https://www.scmp.com/tech/tech-trends/article/3370581/mapping-us-chip-supply-chain-china-accounts-far-more-it-appears-report-says",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-9632d6245cf08238:b83352c478b860a3888c125d:01",
+            "idea_name": "Yarı İletken Alt Tedarik Menşe Kanıt Matrisi",
+            "canonical_key": "semiconductor-material-procurement-teams|trace-first-tier-vs-upstream-country-of-origin|supplier-site-critical-mineral-provenance-and-substitution-ledger",
+            "target_customer": "Yarı iletken üreticileri ve kritik malzeme satın alma uyum/tedarik sürekliliği ekipleri",
+            "core_job": "Birinci kademe satıcı merkez ülkesinden farklı olabilecek gerçek üretim ve kritik ara malzeme kaynaklarını risk ve ikame yeterliğiyle eşlemek",
+            "product_mechanism": "Üretici/manüel BOM CSV, tedarikçi merkezi, gerçek fabrika/ülke, kritik mineral veya paketleme alt malzemesi, menşe belgesi, rota, ikame ve insan onaylı kanıt defteri; canlı gümrük API'si yok",
+            "why_now": "SIA'nın 9 Ekim raporuna dayalı SCMP 12 Ekim haberinde ABD yonga üretim alımlarının tedarikçi merkezine göre %95'inin ABD/AB/Japonya, üretim yerine göre %68'inin bu ülkelerden geldiği anlatılıyor. Çin'deki galyum/tungsten gibi üst zincir bağımlılığı ilk kademe tedarikçi listesinden gizlenebilir. Üretici ve satın alma için doğrudan tedarikçi ülke adı ile gerçek malzeme/alt tedarik tesis menşei ayrımını CSV kaynak kanıtıyla incelemek farklı iş hipotezidir.",
+            "before_state": "Tedarikçi sözleşme ülkesi ve ara malzeme üretim kökeni aynı varsayılarak risk raporu olduğundan düşük gösterilebiliyor",
+            "after_state": "Çok kademeli alt tedarikçi ve menşe belgesi bağlantılı kanıt/ikame riski ve tedarik eylemi",
+            "canonical_source_urls": [
+              "https://www.scmp.com/tech/tech-trends/article/3370581/mapping-us-chip-supply-chain-china-accounts-far-more-it-appears-report-says"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "b888983504fb8b98a5c6d173",
+        "decision": "no_opportunity",
+        "reason": "IT之家 GEO hizmet sağlayıcı seçimi pazarlama analizi; harici model/arama altyapısı veri bağımlı, resmi yeni şart veya farklı belge türü saptanmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b8a0e0731208d36d62ed43fb",
+        "decision": "no_opportunity",
+        "reason": "Çin yeni ağır ticari EV küçük otobüs lansmanı mevcut donanım/araç modelidir. Bağımsız yeni API, sektör düzenlemesi veya müşteri kayıt mekanizması duyurulmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b922fa33b85203da35429991",
+        "decision": "no_opportunity",
+        "reason": "Vodafone Business ve ArkSigner 12 Ekim resmî açıklaması dijital imza/kimlik şirketinin bağlantı, private cloud, veri merkezi ve siber güvenlik altyapısının Vodafone'la ölçeklenmesini anlatıyor. Bu iki tedarikçi arası yönetilen altyapı anlaşması yeni zorunlu e-imza standardı veya satılabilir farklı alıcı workflow'u değil.",
+        "canonical_source_url": "https://medyamerkezi.vodafone.com.tr/basin-bultenleri/vodafone-business-ve-arksigner-dijital-donusum-icin-stratejik-is-birligi-yapti",
+        "opportunities": []
+      },
+      {
+        "article_key": "b92e9ba04407633ed51d078b",
+        "decision": "no_opportunity",
+        "reason": "Güney Kore Jeonbuk Technopark/Namwon 2026 ICT makethon yarışma katılımcı çağrısı etkinlik haberidir; geniş ve tekrarlanan kurum işi kanıtlamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b937eae112d4c5f1325b57a2",
+        "decision": "no_opportunity",
+        "reason": "VW ID. ERA 8X/5X Çin EREV model tanıtım planı fiziksel araç lansmanı, yeni EV mevzuat erişimi veya farklı müşteri günlük işlemi değil.",
+        "opportunities": []
+      }
+    ]
+  }
+}
