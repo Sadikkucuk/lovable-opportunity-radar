@@ -1,0 +1,174 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-299792b8200adaeb",
+  "input_hash": "299792b8200adaebbf1e6b341d1aed09eaf3b7abddf739c8eaf90405846e67df",
+  "token": "7e197e1b-9088-4613-8332-c48e82b90c81",
+  "finished_at": "2026-10-13T23:14:19.945Z",
+  "outcome": "done",
+  "reason": "ITmedia'nın 12 Ekim özgün araştırma haberinde 17 ülkedeki 750 üst düzey şirket yetkilisi anketi, AI token bütçe aşımı ve iş sonucuna bağlanamayan harcama açıkça bildiriliyor; %44 olası tasarruf geleceğe dönük senaryo, gerçekleşmiş sonuç değil. Aynı B2B FinOps müşteri/iş/akışını sunan dört ayrı global ticari yazılımın orijinal ürün sayfaları incelendi: CloudZero AI Signals, Finout, Vantage, Harness AI Cost Management. Hepsi model/uygulama/takım bazlı AI maliyetini harcama sorumluluğu, bütçe ve iş çıktısı göstergelerine bağlama hizmeti sunuyor. En az 4 doğrudan global rakip olduğundan Radar max 3 şartı başarısız; Türkiye yokluğu kanıtlanmadı. Aday reddedildi, katalog değiştirilmedi.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Global doğrudan rakip üst sınırı aşıldı: CloudZero, Finout, Vantage ve Harness, kurumsal FinOps ekipleri için yapay zekâ model/token kullanım maliyetinin takım/uygulama/iş çıktısı veya birim değer bazında tahsisini, bütçe sorumlusunu ve karar raporunu zaten sunuyor. Vantage ayrıca kullanıcı tarafından sağlanan/elle içe aktarılan token kullanım verisiyle tahsis olanağı tanımlar. İddia edilen 'yalnız CSV ile çalışır' farklılığı aynı çekirdek müşterinin aynı işini bağımsız pazara dönüştürdüğünü kanıtlamıyor. Türkiye'de sıfır doğrudan rakip iddiasında bulunulmadı.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.itmedia.co.jp/enterprise/articles/2610/08/news036.html",
+        "accessed_at": "2026-10-13T23:14:19.945Z",
+        "claim": "Accenture anketi, token bütçesi aşımı ve AI harcamasının finansal sonuçlarla ilişkilendirilememesi sorununu gösteriyor.",
+        "observation": "ITmedia 12 Ekim 2026 orijinal makalesi: anket 2026 Temmuz 17 ülke, ciro >1 milyar USD olan firmalardan 750 yönetici; 3 firmadan 1'i yıllık token bütçesini aşmış, harcamanın <20%'sinde nicel sonuç bağı gösterilebiliyor. %44 tasarruf önümüzdeki iki yılda POTANSİYEL artış azaltımı, gerçekleşmiş performans değil.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.cloudzero.com/go/ai-signals/",
+        "accessed_at": "2026-10-13T23:14:19.945Z",
+        "claim": "Aynı kurumsal AI FinOps harcama sorumluluğu ve iş birimi/çıktı metrikleri.",
+        "observation": "CloudZero AI Signals, AI maliyetini team/use-case/model harcama ve birim ekonomi ile izleyip harcama anomalisi ve maliyet hesabı sağlar; son kullanıcı operasyon sonucu izleme bağlamı açıklanır.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.finout.io/blog/how-finout-connects-ai-spend-to-real-business-outcomes",
+        "accessed_at": "2026-10-13T23:14:19.945Z",
+        "claim": "AI faturalarını team/app/user ve finansal/operasyonel sonuçlara dağıtır.",
+        "observation": "Finout kendi ürününde AI spending'i Virtual Tags/iş birimi ve sonuç metriğine; örn. resolved tickets / PR shipped / cost per workflow birimine bağlayarak FinOps/engineering karar ve bütçe raporu sunar.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.vantage.sh/features",
+        "accessed_at": "2026-10-13T23:14:19.945Z",
+        "claim": "Model/LLM token kullanımı dahil harcama dağıtımı, bütçe, birim maliyet ve manuel veri içe aktarma.",
+        "observation": "Vantage resmî özellik listesinde AI/LLM maliyet, teams/services allocations, budgets ve business metrics bulunur; kullanıcı tanımlı token metrikleri ve maliyet dağıtımı ana akıştır.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.harness.io/products/use-cases/ai-cost",
+        "accessed_at": "2026-10-13T23:14:19.945Z",
+        "claim": "AI harcamasını uygulama/sahip takım ve üretilen iş değeriyle ilişkilendirir.",
+        "observation": "Harness AI Cost Management, model/servis/team bazlı visibility, allocation ve AI harcamasının value/outcome ölçümleriyle ilişkilendirilmesi ve kontrolü hizmetini açıklıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://ledops.app/tr",
+        "accessed_at": "2026-10-13T23:14:19.945Z",
+        "claim": "Türkiye kaynaklı ürün araması, olası benzer FinOps sağlayıcısı.",
+        "observation": "Ledops Türkçe resmî sayfasında Claude/OpenAI/Gemini tüketimi, token ve bulut maliyeti ile birim ekonomi gibi çok benzer yetenekler tanıtılıyor; 'early access/design partner' niteliği nedeniyle genel ticari kullanım doğrulanmadı, kesin direkt rakip sayısına eklenmedi.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "queries": [
+          "Türkiye yapay zeka token kullanım maliyeti departman bütçe sorumlusu FinOps platformu SaaS",
+          "Türkçe AI model kullanımı iş birimi maliyeti dağıtımı bütçe takip yazılımı",
+          "Ledops FinOps Türkiye yapay zeka tüketim iş sonucu ROI"
+        ],
+        "scope": "Türkiye genelinde sıfır rakip sayısı kanıtlanamadı. Ledops çok yakın eşleşen yerli çözüm adayıdır ancak sayfa erken erişim/tasarım ortaklığı aşamasında, ödeme/kurulum doğrulaması eksiktir. Dünyadaki dört ayrı global çözümün Türk kurumsal müşterilere sunulup sunulmadığı ayrıca sayılmadı.",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_competitors": [
+          {
+            "name": "Ledops (erken erişim)",
+            "url": "https://ledops.app/tr",
+            "reason": "Türkiye çıkışlı AI/LLM maliyet-finops ürün açıklaması, takım/model maliyeti, feature/unit economics; genel canlı satış ve aynı workflow için müşteri kanıtı eksik olduğu için direkt sayıya katılmadı."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 4,
+        "queries": [
+          "AI token spend allocation team cost per outcome FinOps SaaS software",
+          "AI LLM FinOps business metrics unit cost chargeback model usage Vantage",
+          "Finout connect AI spending business outcome",
+          "CloudZero AI Signals team costs outcomes monitoring",
+          "Harness AI cost management spend outcomes teams"
+        ],
+        "scope": "Farklı dört ticari vendorın resmî sayfalarında aynı büyük kurum BT/FinOps alıcısı; AI token/model harcaması -> takım/use-case paylaşımı -> bütçe/maliyet raporu -> iş sonuçlarına maliyet bağlama workflow'u doğrudan eşleşir. Bu minimum dört sayı, pazarda başka satıcı olmadığı iddiası değildir.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "CloudZero AI Signals",
+            "url": "https://www.cloudzero.com/go/ai-signals/",
+            "same_customer_job_workflow_reason": "Kurumsal AI FinOps ve mühendislik harcama sahipleri; model/use case/team AI maliyeti, anomali/allocations ve değer/birim metriği raporu."
+          },
+          {
+            "name": "Finout AI Cost Allocation",
+            "url": "https://www.finout.io/blog/how-finout-connects-ai-spend-to-real-business-outcomes",
+            "same_customer_job_workflow_reason": "FinOps ekipleri AI harcamasını uygulama/takım/iş değeri, cost per ticket/PR and chargeback ölçeğinde birleştirir."
+          },
+          {
+            "name": "Vantage AI/LLM FinOps",
+            "url": "https://www.vantage.sh/features",
+            "same_customer_job_workflow_reason": "AI/LLM model token maliyetini tags/team/app kategorisine tahsis, budgets, unit costs ve metrikler üzerinden karar raporu; manuel token girişleri mümkün."
+          },
+          {
+            "name": "Harness AI Cost Management",
+            "url": "https://www.harness.io/products/use-cases/ai-cost",
+            "same_customer_job_workflow_reason": "FinOps ve model platformu sorumluları için AI maliyetini takım/workload'a atama ve ürün/iş çıktısına göre ROI/harcama yönetimi."
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Kullanıcının sağlayıcı web panellerinden elle dışa aldığı model/token CSV faturalarını tarayıcı JavaScript ile yükleme, birim/owner mapping, grup maliyet ve kullanım eşikleri hesaplama; farklı kaynaklardan elle girilen insan onaylı iş çıktı adet/süre/başarı metriğine birim maliyeti bağlama, uyarı ve CSV/PDF çıktı. Canlı token tracking, API, çok kullanıcılı ortak veritabanı ve çalışan AI modeli tasarlanan offline MVP'nin zorunlu parçası değil, fakat canlı sistemlerle tutarlılık garanti edilemez.",
+      "dependency_inventory": [
+        "Kullanıcı tarafından indirilmiş token/fatura CSV verileri",
+        "Ekip/uygulama/sorumlu eşleme tablosu",
+        "İnsan onaylı iş sonuç metriği veri dosyası",
+        "Tarayıcı kural motoru, indirme/yerel veri saklama"
+      ],
+      "actual_zero_costs_verifiable": "Zorunlu harici runtime servis yok; geliştirme, hosting, alan adı ve kullanıcı operasyon işgücü gideri ayrı tutulur."
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "Korunan 91 fikirde birebir canonical key yok. Yakın ürün AI Value Renewal, KOBİ AI yatırım yenileme kararına yöneliktir; bu aday ise enterprise takım/model bazında AI token faturası tahsisi ve FinOps sahipliği. Aynı geniş değer ailesinde ancak core JTBD, alıcı ve karar döngüsü farklı. Sonuç rekabet eşiğiyle bağımsız reddedildi."
+    },
+    "research_attempts": [
+      {
+        "url": "https://www.itmedia.co.jp/enterprise/articles/2610/08/news036.html",
+        "status": "publisher_full_article_read",
+        "observation": "Makale üyelik uyarısına rağmen ana anket detaylarını içeren gövde açık okundu."
+      },
+      {
+        "url": "https://www.cloudzero.com/go/ai-signals/",
+        "status": "official_product_page_read"
+      },
+      {
+        "url": "https://www.finout.io/blog/how-finout-connects-ai-spend-to-real-business-outcomes",
+        "status": "official_product_page_read"
+      },
+      {
+        "url": "https://www.vantage.sh/features",
+        "status": "official_product_page_read"
+      },
+      {
+        "url": "https://www.harness.io/products/use-cases/ai-cost",
+        "status": "official_product_page_read"
+      },
+      {
+        "url": "https://ledops.app/tr",
+        "status": "local_product_site_read_early_access",
+        "observation": "Türkiye yerli pazar adayı, canlı commercial GA doğrulanmadı."
+      }
+    ],
+    "quality_gate": {
+      "passes_turkey_zero_direct": null,
+      "passes_global_at_most_three": false,
+      "passes_no_external_runtime": true,
+      "qualified": false
+    }
+  }
+}
