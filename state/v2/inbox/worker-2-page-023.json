@@ -4,27 +4,13 @@
   "queue_mode": "shared",
   "current_run": "2026-10-13-catchup-e3a10c28a635",
   "lease_minutes": 30,
-  "ready_count": 460,
+  "ready_count": 459,
   "job_count": 461,
-  "queue_revision": "05013a0b5326a0d0ad519b1499c1910f75ea90b6c7924274da6a5b21c4c91265",
+  "queue_revision": "fc6ee10e7c57e2e6e7882c9b16c9422b62c699286fd26ad443db7e829aab4ee8",
   "page": 23,
   "page_count": 24,
   "next_page": "state/v2/inbox/worker-2-page-024.json",
   "jobs": [
-    {
-      "job_id": "2026-10-13-43d3b526fc-discovery-b4d00704d966f1ef",
-      "path": "state/v2/jobs/2026-10-13-43d3b526fc-discovery-b4d00704d966f1ef.json",
-      "run_id": "2026-10-13-43d3b526fc",
-      "kind": "discovery",
-      "input_hash": "b4d00704d966f1ef33578e5f3f2c8f04ac7bde4ca706c7829ee3a2625b6d10bd",
-      "legacy_lane": 4,
-      "queue_group": "backlog",
-      "preferred_worker": 5,
-      "state": "ready",
-      "attempt": 1,
-      "claim_path": "state/v2/claims/2026-10-13-43d3b526fc-discovery-b4d00704d966f1ef/001.json",
-      "result_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-b4d00704d966f1ef/001.json"
-    },
     {
       "job_id": "2026-10-13-43d3b526fc-discovery-b56b013237d3f6f5",
       "path": "state/v2/jobs/2026-10-13-43d3b526fc-discovery-b56b013237d3f6f5.json",
@@ -290,6 +276,19 @@
       "attempt": 1,
       "claim_path": "state/v2/claims/2026-10-13-43d3b526fc-discovery-f90a6d927f2c3b38/001.json",
       "result_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-f90a6d927f2c3b38/001.json"
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-03356e535d09be98",
+      "path": "state/v2/jobs/2026-10-13-catchup-e3a10c28a635-discovery-03356e535d09be98.json",
+      "run_id": "2026-10-13-catchup-e3a10c28a635",
+      "kind": "discovery",
+      "input_hash": "03356e535d09be98699f122aa0d2244e12ca190f0feb7c8fefbe55690bed3986",
+      "legacy_lane": 4,
+      "queue_group": "current",
+      "preferred_worker": 5,
+      "state": "leased",
+      "attempt": 1,
+      "expires_at": "2026-10-13T08:20:35.422Z"
     }
   ]
 }
