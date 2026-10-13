@@ -1,0 +1,30 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "cf5152471c15d421e7ac5d50af566cab90db52f09f60efdcb3b4d9bb804925a7",
+  "decision": {
+    "article_key": "c783da41213fe02dca74941b",
+    "decision": "opportunity",
+    "reason": "EET-China özgün teknik yazısı sürücüsüz araç işlemcisi seçiminin yalnız INT8/FP16 ham TOPS ile değil gerçek model batch/latency, ön-son işleme, SRAM/bellek bant genişliği, enerji/termal koşullar ve algoritma/toolchain portuna göre değerlendirilmesini öneriyor. Bu, yeni yasal standart değil; tedarikçi seçimindeki karışık benchmark iddialarını tutarlı karşılaştırma ihtiyacına ilişkin teknik kaynak.",
+    "canonical_source_url": "https://www.eet-china.com/mp/a529963.html",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-da8f47d00c271013:c783da41213fe02dca74941b:01",
+        "idea_name": "ADAS Etkin TOPS Kanıt Karşılaştırıcısı",
+        "canonical_key": "adas-soc-integration-teams|compare-vendor-advertised-and-effective-inference-performance|precision-batch-latency-memory-thermal-and-toolchain-evidence-matrix",
+        "target_customer": "ADAS otomotiv elektronik mimarları ve SoC satın alma/kalifikasyon ekipleri",
+        "core_job": "Araç çipinin teorik TOPS beyanını gerçek benchmark, model türü ve araç termal kısıtındaki etkili hesap kapasitesiyle karşılaştırmak",
+        "product_mechanism": "Mühendisin izinli benchmark CSV'si: veri türü, batch, FPS, p50/p99 gecikme, pre/post-process, termal limit, bellek ve toolchain; deterministic normalize karşılaştırıcı; çip/model işletmez",
+        "why_now": "EET-China özgün teknik yazısı sürücüsüz araç işlemcisi seçiminin yalnız INT8/FP16 ham TOPS ile değil gerçek model batch/latency, ön-son işleme, SRAM/bellek bant genişliği, enerji/termal koşullar ve algoritma/toolchain portuna göre değerlendirilmesini öneriyor. Bu, yeni yasal standart değil; tedarikçi seçimindeki karışık benchmark iddialarını tutarlı karşılaştırma ihtiyacına ilişkin teknik kaynak.",
+        "before_state": "INT4/INT8/FP16 TOPS farklı yöntemle sunulur ve gecikme/enerji/işlemci kullanım kanıtı farklı üretici PDF'lerinde kalır",
+        "after_state": "Çip bazında kaynak-provenans, açıklanan test koşulu ve kıyaslanabilir performans/uygunluk boşluk raporu",
+        "canonical_source_urls": [
+          "https://www.eet-china.com/mp/a529963.html"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-da8f47d00c271013/002.json",
+  "valid_until": "2026-11-12T18:30:16Z"
+}

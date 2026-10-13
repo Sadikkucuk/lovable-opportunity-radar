@@ -1,0 +1,30 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "0365015749b9a57c5e914506f397ee5fc8d06f993236e244fa1437e392913428",
+  "decision": {
+    "article_key": "c7b00e43ffe61d44c09d4f88",
+    "decision": "opportunity",
+    "reason": "13 Ekim LG Uplus resmî basın bülteni U+one AI agent'ın sadece bilgi araması yerine fatura görüntüleme/ödeme ve roaming önerisi/satın alma adımlarını eylem olarak tamamlamaya dönüştüğünü duyuruyor. Yazılımın kendisi mevcut telekom BSS erişimi ve AI agent gerektirir; ayrı manuel/CSV test ve settlement kanıt defteri ancak satıcıdan bağımsız test süreci olarak ürün hipotezidir.",
+    "canonical_source_url": "https://www.lg.co.kr/media/release/30666",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-da8f47d00c271013:c7b00e43ffe61d44c09d4f88:01",
+        "idea_name": "Telekom AI Agent İşlem Sonucu Test Defteri",
+        "canonical_key": "telecom-bss-quality-teams|reconcile-ai-agent-customer-intent-with-payment-and-roaming-fulfilment|dialogue-intent-transaction-receipt-and-exception-ledger",
+        "target_customer": "Mobil operatör BSS/CRM kalite ve müşteri deneyimi test ekipleri",
+        "core_job": "Fatura ödeme veya roaming satın alma talebinin agent konuşmasından gerçek BSS/ödeme işlemine eksiksiz, idempotent ve onaylı geçtiğini kanıtlamak",
+        "product_mechanism": "Operatörün manuel sağladığı anonimleştirilmiş intent, agent action, payment/roaming receipt ve fulfilment CSV/JSON dosyalarını eşleştirip çift tahsilat/boş sipariş/iptal istisnası üreten deterministik tarayıcı aracı",
+        "why_now": "13 Ekim LG Uplus resmî basın bülteni U+one AI agent'ın sadece bilgi araması yerine fatura görüntüleme/ödeme ve roaming önerisi/satın alma adımlarını eylem olarak tamamlamaya dönüştüğünü duyuruyor. Yazılımın kendisi mevcut telekom BSS erişimi ve AI agent gerektirir; ayrı manuel/CSV test ve settlement kanıt defteri ancak satıcıdan bağımsız test süreci olarak ürün hipotezidir.",
+        "before_state": "Bir AI agent konuşmada işlemin yapıldığını söylerken ödeme, paket aktivasyonu veya CRM siparişi farklı sistemlerde ayrı test edilir",
+        "after_state": "İnsan onaylı niyet/işlem/sonuç uzlaştırması, failed/no-op/duplicate aksiyon matrisi; canlı BSS/API/AI runtime gerekmez",
+        "canonical_source_urls": [
+          "https://www.lg.co.kr/media/release/30666"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-da8f47d00c271013/002.json",
+  "valid_until": "2026-11-12T18:30:16Z"
+}
