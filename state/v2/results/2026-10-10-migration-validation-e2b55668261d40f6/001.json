@@ -1,0 +1,150 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-e2b55668261d40f6",
+  "input_hash": "e2b55668261d40f636818d67e3bc678436cb57da9391ce7304ea28d3454dedf7",
+  "token": "f9cc5d84-bf91-4aa1-82c9-2996cf40c407",
+  "finished_at": "2026-10-13T18:37:24.759Z",
+  "outcome": "done",
+  "reason": "Supplier Tooling Custody Ledger rejected: Japonya özgün 300 katılımcılı anket ve dört global kalıp mülkiyet/emanet takibi sağlayıcısı doğrulandı. Türkiye sayısı belirsiz, katalog korundu.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Supplier Tooling Custody Ledger için Japon anket tetikleyicisi doğrulandı; müşteriye ait kalıp envanteri, custodian, saklama/bakım şartı ve iade/transfer onayı işini yapan dört ayrı ticari küresel ürün (ERPLax, ECOSIRE Odoo, Naologic, NS-ToolOrd) tespit edildi. Aynı müşteri, aynı sahiplik/kustodi karar işi ve aynı temel kayıt/denetim akışı var; <=3 global doğrudan rakip kriteri aşıldığından rejected. Türkiye'de sıfır birebir rakip iddia edilmedi. Japon özel 取適法 düzeni Türkiye'ye doğrudan uyarlanamaz. Yeni ürün yayımlanmadı.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://monoist.itmedia.co.jp/mn/articles/2610/09/news037.html",
+        "accessed_at": "2026-10-13T18:37:24.759Z",
+        "claim": "Japon 300 yönetici/tesis sorumlusu örnekleminde %51,3 müşteri kalıbının ücretsiz tedarikçi deposunda tutulması raporlandı",
+        "observation": "9 Ekim MONOist, 7 Ekim Resilire imalat anketini aktarıyor; oran tüm Japon üretici nüfusu için sayım değil, 300 kişilik anket örneklemi.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "primary_survey",
+        "url": "https://prtimes.jp/main/html/rd/p/000000097.000044535.html",
+        "accessed_at": "2026-10-13T18:37:24.759Z",
+        "claim": "Resilire 7 Ekim anket örneklemi n=300; ücretsiz müşteri kalıbı depolama %51,3, maliyet/otorite risk algısı",
+        "observation": "Özgün açıklama anket metodolojisi ve Japon 取適法 riski; Türkiye'ye otomatik hukukî transfer edilmedi.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://erplax.com/plastic-injection-moulding-companies-erp-software",
+        "accessed_at": "2026-10-13T18:37:24.759Z",
+        "claim": "ERPLax Customer-Owned Mould Management müşteri sahipliğinde tooling varlığının saklama, mülkiyet ve custody takibini sunar",
+        "observation": "Üçüncü taraf müşteriye ait kalıbın mülkiyet, teslim, lokasyon, kondisyon, saklama/bakım ve iade durumunu aynı imalat ERP kalıp defterinde tutar",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://ecosire.com/apps/odoo/odoo-tooling-dies-mold-management",
+        "accessed_at": "2026-10-13T18:37:24.759Z",
+        "claim": "ECOSIRE Odoo Tooling Dies Mold Management müşteri sahipliğinde tooling varlığının saklama, mülkiyet ve custody takibini sunar",
+        "observation": "Customer-owned kalıp/kalıp sahibi ve fiziksel lokasyon, custody check-in/out, bakım, transfer ve müşteriye audit chain-of-custody raporu",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://naologic.com/industry/injection-molding",
+        "accessed_at": "2026-10-13T18:37:24.759Z",
+        "claim": "Naologic Injection Molding ERP müşteri sahipliğinde tooling varlığının saklama, mülkiyet ve custody takibini sunar",
+        "observation": "Tekil kalıp seri numarası, müşteri/kendi mülkiyeti, fiziksel konum, yaşam döngüsü ve bakım doğrulama/üretim bağlantısı",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.nicks-software.com/NS-ToolOrd-tooling-register.html",
+        "accessed_at": "2026-10-13T18:37:24.759Z",
+        "claim": "NS-ToolOrd Customer Tooling Register müşteri sahipliğinde tooling varlığının saklama, mülkiyet ve custody takibini sunar",
+        "observation": "Müşteriye ait tooling kayıtları, mülkiyet, saklama konumu, kondisyon, evrak, hareket geçmişi, müşteri tool return kaydı ve audit çıktı",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "search_complete": false,
+        "scope": "Türkiye çok kademeli imalat alıcı–tedarikçi müşteriye ait kalıp/tools saklama, mülkiyet, transfer iş akışı için birebir sağlayıcı sayımı sonuçlanmadı",
+        "queries": [
+          "Türkiye müşteri kalıbı zimmet takip yazılım",
+          "Türkiye plastik enjeksiyon kalıp mülkiyet takip depolama yazılım"
+        ],
+        "direct_competitors": []
+      },
+      "global": {
+        "direct_count": 4,
+        "search_complete": true,
+        "scope": "Müşteri sahibi olup tedarikçi üretim sahasında kalan mold/tool envanteri; mülkiyet, custody, maintenance, transfer/return and audit workflow",
+        "queries": [
+          "customer owned mould management ERPLax",
+          "ECOSIRE Odoo customer owned tooling custody tracking",
+          "Naologic mold tooling ownership tracking",
+          "NS ToolOrd customer tooling register return"
+        ],
+        "direct_competitors": [
+          {
+            "name": "ERPLax Customer-Owned Mould Management",
+            "url": "https://erplax.com/plastic-injection-moulding-companies-erp-software",
+            "same_customer_job_workflow_reason": "Üçüncü taraf müşteriye ait kalıbın mülkiyet, teslim, lokasyon, kondisyon, saklama/bakım ve iade durumunu aynı imalat ERP kalıp defterinde tutar"
+          },
+          {
+            "name": "ECOSIRE Odoo Tooling Dies Mold Management",
+            "url": "https://ecosire.com/apps/odoo/odoo-tooling-dies-mold-management",
+            "same_customer_job_workflow_reason": "Customer-owned kalıp/kalıp sahibi ve fiziksel lokasyon, custody check-in/out, bakım, transfer ve müşteriye audit chain-of-custody raporu"
+          },
+          {
+            "name": "Naologic Injection Molding ERP",
+            "url": "https://naologic.com/industry/injection-molding",
+            "same_customer_job_workflow_reason": "Tekil kalıp seri numarası, müşteri/kendi mülkiyeti, fiziksel konum, yaşam döngüsü ve bakım doğrulama/üretim bağlantısı"
+          },
+          {
+            "name": "NS-ToolOrd Customer Tooling Register",
+            "url": "https://www.nicks-software.com/NS-ToolOrd-tooling-register.html",
+            "same_customer_job_workflow_reason": "Müşteriye ait tooling kayıtları, mülkiyet, saklama konumu, kondisyon, evrak, hareket geçmişi, müşteri tool return kaydı ve audit çıktı"
+          }
+        ],
+        "adjacent_competitors": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Üretim şirketinin elle girdiği mould ID, müşteri adı, mülkiyet koşulu, saklama yeri, kullanım hakkı, bakım geçmişi, dönüş tarihi, talep/onay ve PDF envanter dışa aktarımı; otomatik tedarikçi ERP entegrasyonu yok.",
+      "dependency_inventory": [
+        "Tarayıcı JS/yerel IndexedDB",
+        "İzinli müşteri/kalıp verileri ve mülkiyet sözleşmesi manuel input",
+        "CSV/PDF client export",
+        "Çoklu-taraf onay/senkron için hosting/auth üretim güvenlik limitleri ayrıca doğrulanmalı"
+      ],
+      "cash_zero_verified": false
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "Korunmuş 91 fikirde kalıp mülkiyet/kustodi defteriyle birebir aynı üçlü kimlik gözlenmedi; ret sebebi global doğrudan rakip sayısıdır."
+    },
+    "research_attempts": [
+      {
+        "queries": [
+          "monoist 2026-10-09 無償 金型 保管 51.3",
+          "Resilire October 7 2026 mold survey"
+        ],
+        "outcome": "Özgün haber + birincil ankette oran ve örneklem doğrulandı"
+      },
+      {
+        "queries": [
+          "ERPLax mould ownership return",
+          "ECOSIRE tooling custody",
+          "Naologic injection molding ownership",
+          "NS ToolOrd customer tooling return"
+        ],
+        "outcome": "Dört ayrı resmî sağlayıcıda müşteri kalıbı mülkiyet/konum/kustodi fonksiyonları doğrulandı"
+      }
+    ]
+  }
+}
