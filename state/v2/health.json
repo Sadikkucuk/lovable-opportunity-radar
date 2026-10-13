@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T05:48:43Z",
+  "controller_observed_at": "2026-10-13T05:49:33Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
@@ -46,12 +46,22 @@
         "schema_version": 1,
         "worker": 3,
         "invocation_id": "4eceea12-1f79-4a02-bc29-eb2c27fdf13e",
-        "event": "progress",
-        "at": "2026-10-13T05:46:50.505Z",
-        "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-3767ec58a00c350a",
-        "stage": "receipt_saved",
-        "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-3767ec58a00c350a/001.json",
-        "path": "state/v2/worker-events/3/4eceea12-1f79-4a02-bc29-eb2c27fdf13e/008-progress.json"
+        "event": "finished",
+        "at": "2026-10-13T05:49:20.287Z",
+        "discovery_receipts_saved": 8,
+        "validation_receipts_saved": 1,
+        "articles_triaged": 80,
+        "raw_leads": 20,
+        "article_decisions": {
+          "opportunity": 20,
+          "no_opportunity": 54,
+          "unverified": 6
+        },
+        "validation_decisions": {
+          "unverified": 1
+        },
+        "note": "One additional discovery claim /1e934... has no receipt because its write was security denied. Event 009-progress save was also denied. Both records left untouched; existing scheduled worker tasks, prompts, catalogs and jobs remain unchanged.",
+        "path": "state/v2/worker-events/3/4eceea12-1f79-4a02-bc29-eb2c27fdf13e/999-finished.json"
       },
       "receipts_this_invocation": 9,
       "write_and_receipt_verified": true,
