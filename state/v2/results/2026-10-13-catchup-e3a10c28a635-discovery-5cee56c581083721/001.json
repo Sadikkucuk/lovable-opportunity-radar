@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-5cee56c581083721",
+  "input_hash": "5cee56c5810837211cc362bb73e628c323b2de38e903cf5a0433e646ebb8c41d",
+  "token": "34cfc356-830c-4aa1-9355-6d065b4372c3",
+  "finished_at": "2026-10-13T09:36:51.723Z",
+  "outcome": "done",
+  "reason": "10 haber: Ekim 10 FreightWaves özgün Northwest reefer kapasite/ret artışı nedeniyle 1 manuel CSV temelli soğuk zincir tender ürün hipotezi, 8 no_opportunity ve 1 dış doğrulama eksik saldırı iddiası unverified; abonelik SONAR canlı veri hakkı iddia edilmedi.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "d07ef16c23ad8e70e237b4e9",
+        "decision": "no_opportunity",
+        "reason": "PetroTurk günlük elektrik üretim-tüketim verisi genel enerji piyasası veri bültenidir; yeni kurallar, özgün onay yükümlülüğü veya katalogdakilerden farklı deterministic alıcı problemi göstermiyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "d08f07f63648843b9acc2d18",
+        "decision": "no_opportunity",
+        "reason": "Yinxi Technology şirketinin Dongguan Connod'da %20,2 payı yaklaşık 29m CNY'ye edinmesi sermaye işlemi ve yatırım haberidir, tekrarlanan SaaS operasyon işi değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "d0a131cb82227b5d4a320b83",
+        "decision": "no_opportunity",
+        "reason": "Caixin Çin NEV KDV ihracat iadesinin %13'ten %9'a düşmesi kararını tekrar analiz ediyor. Aynı duyurudan vergi ihracat simülasyon ham fikri günün ilk araştırmasında oluşturuldu, mükerrer ürün yapılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "d0ca2bc5b8800d92bbdf7735",
+        "decision": "no_opportunity",
+        "reason": "ABD AI devlerinin üçüncü çeyrek bilanço bekleyişi finansal piyasa yorumu, yeni müşteri uyum zorunluluğu veya açık veri hakkı değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "d1030697dd3f992e5680c2f9",
+        "decision": "no_opportunity",
+        "reason": "China Daily uzmanlarının dijital eşitsizliği AI ile aşma görüşü genel toplumsal/teknik değerlendirmedir; ayrı sıfır external runtime yazılım alıcı işi kanıtlamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "d14132c8c8da4d478d83fe4c",
+        "decision": "no_opportunity",
+        "reason": "AI gözlüklerinin henüz olgun olmadığına ilişkin OFweek tüketici cihaz deneyim değerlendirmesi; harici ses/görüntü AI ve cihaz API'si gerektirmeden ayrı yararlı B2B görev göstermiyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "d151c21de33a3c9c8d9bd7a4",
+        "decision": "unverified",
+        "reason": "South China Morning Post'un Suudi Arabistan ana havalimanına yönelik Husi saldırısı başlığının bağımsız doğrulanmış resmî olay zamanı, hasar ve karşı önlem kaydı bulunmadan ayrıntıları kesin gerçek gibi sunulmadı. Bu savaş haberinden ürün fırsatı çıkarılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "d1c42bee5a4651c690435a13",
+        "decision": "opportunity",
+        "reason": "FreightWaves'in 10 Ekim 2026 özgün analizine göre Ekim başında ABD Northwest reefer tender rejection yaklaşık %41, Midwest yaklaşık %29; NW van <%5. Bu oranlar FreightWaves SONAR abonelik verilerindendir ve buradan ücretsiz canlı feed hakkı doğmaz. Küçük ABD taze ürün 3PL'leri kendi teklif kabul/red CSV'leri ve taşıyıcı yanıt gecikmeleriyle kapasite senaryosu, yedek taşıyıcı ve taze ürün zaman penceresi hesabı yapabilir.",
+        "canonical_source_url": "https://www.freightwaves.com/news/the-two-tightest-regions-tell-two-very-different-stories-about-the-freight-market",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-5cee56c581083721:d1c42bee5a4651c690435a13:01",
+            "idea_name": "US Seasonal Reefer Tender Contingency Desk",
+            "canonical_key": "us-produce-freight-brokers|plan-reefer-seasonal-tender-rejection-and-perishability|carrier-offer-acceptance-backup-and-delivery-window-ledger",
+            "target_customer": "ABD kuzeybatı ve orta batı soğuk zincir spot yük komisyoncuları, taze ürün forwarder'ları",
+            "core_job": "Soğutmalı kamyon kıtlığında yükün teslim tarihini ve ürün bozulma riskini güvenceye almak için teklif red, yedek taşıyıcı ve zaman penceresi planı oluşturmak",
+            "product_mechanism": "Yalnız broker'ın kendi kullanıcı kaynaklı taşıma teklifi/ret yanıtı ve fiyat CSV'si, taze ürün raf ömrü, yükleme takvimi, reefer kapasite, taşıyıcı yedekleme kararı; deterministik risk/ek maliyet hesaplama, SONAR otomatik API yok",
+            "why_now": "FreightWaves'in 10 Ekim 2026 özgün analizine göre Ekim başında ABD Northwest reefer tender rejection yaklaşık %41, Midwest yaklaşık %29; NW van <%5. Bu oranlar FreightWaves SONAR abonelik verilerindendir ve buradan ücretsiz canlı feed hakkı doğmaz. Küçük ABD taze ürün 3PL'leri kendi teklif kabul/red CSV'leri ve taşıyıcı yanıt gecikmeleriyle kapasite senaryosu, yedek taşıyıcı ve taze ürün zaman penceresi hesabı yapabilir.",
+            "before_state": "Ekim hasadında reefer taşıyıcı ret/yanıt oranları yük, gönderici, bölge ve ürün bazında farklı mesajlarda izlenir",
+            "after_state": "Gönderi başına teklif kabul kaydı, yedek taşıyıcı denemeleri, bozulma riski ve açıklanabilir SLA kararı",
+            "canonical_source_urls": [
+              "https://www.freightwaves.com/news/the-two-tightest-regions-tell-two-very-different-stories-about-the-freight-market"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "d1dff75f6f83afefcaf5d87c",
+        "decision": "no_opportunity",
+        "reason": "Çin Shuangpai Robotics A+ finansman turu sermaye yatırımıdır; kurulmuş robot entegrasyon standardı veya dış ekipler için açık ürün veri API'si açıklamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "d1e55f762e09f48b308d9652",
+        "decision": "no_opportunity",
+        "reason": "Goldman yöneticisinin Şanghay finans merkezi potansiyeline dair yorumu piyasa stratejisi, yeni kurumsal risk kontrolü veya açık veri standardı değil.",
+        "opportunities": []
+      }
+    ]
+  }
+}
