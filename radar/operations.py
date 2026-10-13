@@ -41,7 +41,7 @@ def fair_order(records, worker):
 
 def write_inboxes(e, jobs, states, config):
     manifests = [e.read(p) for p in e.paths("state/v2/runs/*/manifest.json")]
-    daily = [m["run_id"] for m in manifests if m["kind"] == "daily"]
+    daily = [m["run_id"] for m in manifests if m["kind"] in ("daily", "catchup")]
     current = max(daily, default=max((j["run_id"] for j in jobs.values()), default=None))
     records = []
     for key, job in jobs.items():
