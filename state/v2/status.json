@@ -5,9 +5,9 @@
   "catalog_count": 91,
   "counts": {
     "done": 22,
-    "ready": 367,
-    "leased": 1,
-    "unverified": 1
+    "ready": 365,
+    "unverified": 3,
+    "leased": 1
   },
   "runs": [
     {
@@ -15,7 +15,8 @@
       "processing_status": "in_progress",
       "job_counts": {
         "done": 19,
-        "ready": 76
+        "ready": 74,
+        "unverified": 2
       },
       "validation_decisions": {
         "duplicate": 3,
@@ -28,7 +29,7 @@
       "articles_expected": null,
       "publication_status": "github_release_available",
       "site_delivery": "not_observed_by_controller",
-      "state_changed_at": "2026-10-13T03:47:59Z"
+      "state_changed_at": "2026-10-13T03:50:09Z"
     },
     {
       "run_id": "2026-10-11-a4dcde1ff5",
@@ -89,12 +90,6 @@
     "state": "attention_required",
     "alerts": [
       {
-        "code": "worker_finished_without_receipt",
-        "worker": 1,
-        "severity": "critical",
-        "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
-      },
-      {
         "code": "worker_blocked",
         "worker": 2,
         "severity": "critical",
@@ -119,7 +114,7 @@
         "user_action": "Durum raporundaki hatalı kayıt incelenmeli; doğrulanmış fikirler yayında kalır."
       }
     ],
-    "last_verified_progress_at": "2026-10-13T03:47:53Z",
-    "controller_observed_at": "2026-10-13T03:49:28Z"
+    "last_verified_progress_at": "2026-10-13T03:49:59Z",
+    "controller_observed_at": "2026-10-13T03:50:09Z"
   }
 }

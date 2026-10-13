@@ -1,27 +1,28 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T03:49:28Z",
+  "controller_observed_at": "2026-10-13T03:50:09Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
-  "ready_jobs": 367,
-  "unfinished_jobs": 368,
-  "last_verified_progress_at": "2026-10-13T03:47:53Z",
+  "ready_jobs": 365,
+  "unfinished_jobs": 366,
+  "last_verified_progress_at": "2026-10-13T03:49:59Z",
   "workers": {
     "1": {
-      "last_started_at": "2026-10-13T03:48:49.411Z",
+      "last_started_at": "2026-10-13T03:49:37.807Z",
       "last_event": {
         "schema_version": 1,
         "worker": 1,
-        "invocation_id": "manual-w1-1791863327698-8290471",
+        "invocation_id": "manual-w1-1791863377807-35094036",
         "event": "finished",
-        "at": "2026-10-13T03:49:06.683Z",
-        "receipts_verified": 1,
-        "path": "state/v2/worker-events/1/manual-w1-1791863327698-8290471/999-finished.json"
+        "at": "2026-10-13T03:50:05.725Z",
+        "receipts_verified": 2,
+        "note": "Two validation jobs recorded unverified due to missing independent evidence; no catalog publications.",
+        "path": "state/v2/worker-events/1/manual-w1-1791863377807-35094036/999-finished.json"
       },
-      "receipts_this_invocation": 0,
+      "receipts_this_invocation": 2,
       "write_and_receipt_verified": true,
-      "last_receipt_at": "2026-10-13T03:47:53.844Z"
+      "last_receipt_at": "2026-10-13T03:49:59.212Z"
     },
     "2": {
       "last_started_at": "2026-10-13T03:42:03.993Z",
@@ -98,10 +99,10 @@
         "estimated_minutes_for_stage": 0
       },
       "validation": {
-        "completed_in_window": 2,
-        "known_remaining": 76,
-        "observed_jobs_per_hour": null,
-        "estimated_minutes_for_stage": null
+        "completed_in_window": 4,
+        "known_remaining": 74,
+        "observed_jobs_per_hour": 2.0,
+        "estimated_minutes_for_stage": 2220.0
       }
     },
     "estimated_minutes_remaining": null,
@@ -122,12 +123,6 @@
     }
   ],
   "alerts": [
-    {
-      "code": "worker_finished_without_receipt",
-      "worker": 1,
-      "severity": "critical",
-      "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
-    },
     {
       "code": "worker_blocked",
       "worker": 2,
