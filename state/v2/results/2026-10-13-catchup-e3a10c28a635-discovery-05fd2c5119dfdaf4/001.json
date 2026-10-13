@@ -1,0 +1,111 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-05fd2c5119dfdaf4",
+  "input_hash": "05fd2c5119dfdaf41c1d23ff5a0ef9a49008337832bdd7e4601340d2292cf2f5",
+  "token": "06235b2e-bcad-4dec-9648-a0ee7080e8c6",
+  "finished_at": "2026-10-13T08:01:27.798Z",
+  "outcome": "done",
+  "reason": "10 haberden Yandex ödeme kesintisi ve M365 özellik sonlandırma yönetimi için 2 ham ürün fikri; 7 no_opportunity, 1 kırpılmış şirket haberi unverified. Kesinti kaynakları üçüncü taraf ve erişim durumuyla açıklandı.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "285f17b9a9fef7f8bf35217a",
+        "decision": "opportunity",
+        "reason": "12 Ekim The Register Yandex'ın Sasovo/Kaluga/Vladimir veri merkezlerine 7–9 Ekim saldırılarının ardından bulut ve ödeme hizmetlerinde kesinti yaşandığını, fintech yöneticisinin Telegram üzerinden paraların güvende olduğunu fakat hizmetlerin henüz açılmadığını bildirdiğini aktarıyor. Bu savaş hasarı raporu, bağımsız soruşturma ve kalıcı veri kaybı kanıtı değildir. E-ticaret ve perakendeciler için olay anında alternatif ödeme/eldeki işlemleri elle tutan uzlaşma kanıt masası uygun iş hipotezidir.",
+        "canonical_source_url": "https://www.theregister.com/security/2026/10/12/ukrainian-drone-strikes-on-yandex-datacenters-knock-cloud-and-payments-offline/5302577",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-05fd2c5119dfdaf4:285f17b9a9fef7f8bf35217a:01",
+            "idea_name": "Offline Payment Incident Reconciliation Book",
+            "canonical_key": "small-merchants-dependent-on-cloud-payments|reconcile-customer-orders-during-cloud-payments-outage|manual-pending-order-alternative-payment-and-postincident-settlement-ledger",
+            "target_customer": "Bulut ödeme altyapısına bağlı küçük perakendeciler ve hizmet işletmeleri",
+            "core_job": "Ödeme platformu erişilemediğinde müşterinin siparişi, alternatif ödeme talebi, kısmi teslim, sonradan uzlaşma ve çift tahsilat riskini insan denetimiyle izlemek",
+            "product_mechanism": "Kullanıcının offline CSV sipariş numarası, müşteri iletişimi, ödeme durumu, alternatif ödeme teyidi, teslimat, olay nedeni ve kapanış işareti; canlı ödeme/finans hesabı API'si yok",
+            "why_now": "12 Ekim The Register Yandex'ın Sasovo/Kaluga/Vladimir veri merkezlerine 7–9 Ekim saldırılarının ardından bulut ve ödeme hizmetlerinde kesinti yaşandığını, fintech yöneticisinin Telegram üzerinden paraların güvende olduğunu fakat hizmetlerin henüz açılmadığını bildirdiğini aktarıyor. Bu savaş hasarı raporu, bağımsız soruşturma ve kalıcı veri kaybı kanıtı değildir. E-ticaret ve perakendeciler için olay anında alternatif ödeme/eldeki işlemleri elle tutan uzlaşma kanıt masası uygun iş hipotezidir.",
+            "before_state": "Ödeme servisi kesintisinde bekleyen sipariş ve alternatif ödeme kanıtı WhatsApp/kâğıt içinde kaybolur",
+            "after_state": "Kesinti sonrası sipariş/ödeme eşleştirmesi ve insan teyitli çözüm bekleyen işlem raporu",
+            "canonical_source_urls": [
+              "https://www.theregister.com/security/2026/10/12/ukrainian-drone-strikes-on-yandex-datacenters-knock-cloud-and-payments-offline/5302577"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "286abe710601a495aaf422b0",
+        "decision": "opportunity",
+        "reason": "12 Ekim The Register Microsoft'un Copilot uygulamasında Office belgesi oluşturmayı bazı Frontier müşterileri için açarken Outlook 'Themes by Copilot' özelliğini kaldıracağını; sonuncusunun geri yüklenemeyeceğini aktarıyor. Temel neden ve kesin tüm müşteri takvimi bilinmiyor; abonelik BT yöneticisi mevcut çalışanlara devreye alınan/kaldırılan özelliklerin erişim ve iletişim etkisini manuel kayıtla kanıtlamak isteyebilir.",
+        "canonical_source_url": "https://www.theregister.com/applications/2026/10/12/microsoft-giveth-and-microsoft-taketh-away-copilot-edition/5302542",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-05fd2c5119dfdaf4:286abe710601a495aaf422b0:01",
+            "idea_name": "M365 Feature Sunset Change Ledger",
+            "canonical_key": "microsoft365-admins-and-communications-teams|document-copilot-feature-addition-removal-impact|manually-entered-licence-user-and-deprecation-action-register",
+            "target_customer": "Microsoft 365 BT yöneticileri ve değişim iletişimi ekipleri",
+            "core_job": "Microsoft ürünündeki yeni/sonlandırılan özellik duyurusunu etkilenen kullanıcı lisansı, çalışma grubu ve geçiş eylemine bağlamak",
+            "product_mechanism": "Microsoft Message Center'dan kullanıcının manuel CSV/metin aldığı değişiklik kimliği, etki tarihi, lisans türü, kullanıcı grubu, bilgilendirme, test ve onay kayıtları",
+            "why_now": "12 Ekim The Register Microsoft'un Copilot uygulamasında Office belgesi oluşturmayı bazı Frontier müşterileri için açarken Outlook 'Themes by Copilot' özelliğini kaldıracağını; sonuncusunun geri yüklenemeyeceğini aktarıyor. Temel neden ve kesin tüm müşteri takvimi bilinmiyor; abonelik BT yöneticisi mevcut çalışanlara devreye alınan/kaldırılan özelliklerin erişim ve iletişim etkisini manuel kayıtla kanıtlamak isteyebilir.",
+            "before_state": "Feature lansmanı/sonlandırması BT ve iş ekipleri tarafından ayrı takvim/e-postayla takip edilir",
+            "after_state": "Özellik bazlı lisans uyumu, emekliye ayrılma takvimi ve iş birimi bildirim/kapanış kanıt listesi",
+            "canonical_source_urls": [
+              "https://www.theregister.com/applications/2026/10/12/microsoft-giveth-and-microsoft-taketh-away-copilot-edition/5302542"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "28d42c9f670ebc19c764b4a5",
+        "decision": "no_opportunity",
+        "reason": "Dublin'de OpenAI'ın 200 ek istihdam ve uygulamalı AI laboratuvarı büyütme haberi şirket içi kadro yatırımı; kullanıcılara yeni zorunlu veri formatı veya ayrı deterministik uygulama işi sunmuyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "2951257a281f264d2ef9578b",
+        "decision": "no_opportunity",
+        "reason": "Sifted G2 Venture Partners haberleri tag/index sayfası tekil olay değil, yeniden indekslenen kategori.",
+        "opportunities": []
+      },
+      {
+        "article_key": "297e1af92515f5e93d3a11e9",
+        "decision": "no_opportunity",
+        "reason": "İtalya turizm ekonomisi geleceğine ilişkin manifesto/görüş yazısı; kanıtlanmış yeni platform API'si veya bağlayıcı yönetmelik değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "297f3ff30fa71a1a1829d339",
+        "decision": "no_opportunity",
+        "reason": "Microsoft Başkanının Britanya'nın AI regülasyonunda lider olabileceği görüşü önceki güncel paketlerde işlendi. Yeni yasa yürürlüğe girmiş olarak sunulmadı ve tekrar fikir açılmadı.",
+        "canonical_source_url": "https://www.reuters.com/legal/litigation/microsoft-president-says-milk-faces-more-regulation-than-ai-2026-10-12/",
+        "opportunities": []
+      },
+      {
+        "article_key": "29ca85ce6e2d1dc3c8b8088c",
+        "decision": "no_opportunity",
+        "reason": "Eski posta güverciniyle internet paket gönderme hatırasının Christie's müzayede haberi teknik merak/antika; bugünün ticari yeni çalışma akışı değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "29dcf22c4596051cbce15998",
+        "decision": "unverified",
+        "reason": "ChangXin Memory '公告' ifadesi kırpılmış, teknik/finansal özgün olayın konusu, yayımlayan şirket ve doğrulanabilir URL erişilemedi. Haber içerik ve kaynak kanıtı olmadan fikir üretilmedi.",
+        "opportunities": []
+      },
+      {
+        "article_key": "29e12ca81e7a9fc07a69d1b4",
+        "decision": "no_opportunity",
+        "reason": "Yuanjie Technology'nin 3. çeyrek kâr büyüme beklentisi borsa finans haberi; bağımsız alıcı işi veya yeni veri standardı değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "2a6888a2708028ba1a6985c9",
+        "decision": "no_opportunity",
+        "reason": "The Next Web 12 Ekim OPay'in NYSE halka arz başvurusu yaptığını Semafor ve bne IntelliNews'e dayanarak aktarıyor; fiyat aralığı henüz belirlenmemiştir. Halka arz şirketin finansman işlemidir, farklı yeni Lovable-uyumlu çekirdek hizmet yaratmaz.",
+        "canonical_source_url": "https://thenextweb.com/news/opay-nigeria-fintech-new-york-ipo",
+        "opportunities": []
+      }
+    ]
+  }
+}
