@@ -1,0 +1,55 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "5bca5f336aa25ec558504253c62f9b61c5a4914632f73fed2e1ebbcf8802f31e",
+  "decision": {
+    "article_key": "fc644d36fff66ec012d5245e",
+    "decision": "opportunity",
+    "reason": "iTnews 12 Ekim özgün haberi ve Citrix 8 Ekim tarihli CTX697191 resmî bildirimi: CVE-2026-107406 kritik 9,5 CVSSv4 memory overflow SAML IdP/SP yapılandırılmış NetScaler cihazlarında sürüme göre RCE/DoS riski; Eylül'de önceki zero-day için patch yapılmış 14.1-73.37…73.41 ve 13.1-64.23…64.28 sürümleri yeni soruna MARUZ KALIYOR. BEFORE ekipler önceki yama bitti işaretleyip kayıt kapatabilir. AFTER sonraki advisory, cihazın patch sürecini reopen etmesi, build aralığı + SAML rolü + iş kesintisi/yeniden test kanıtını yeniden hesaplaması gerekir. Citrix'in yönetilen bulut servisi ayrı sağlayıcı tarafından yamalanıyor. Bu statik CSV-based preflight, canlı cihazı yamalamaz veya siber tarama yapmaz; mevcut attack surface management ve patch/CMDB çözümleri doğrudan rekabet olabilir.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-2bfd2b8b0a-discovery-7c08b5bdfcd223d3:fc644d36fff66ec012d5245e:1",
+        "canonical_key": "citrix-netscaler-infrastructure-owners|reopen-previously-patched-saml-appliance-exposure-by-version-and-idp-sp-role|offline-patch-cve-role-range-exception-and-retest-evidence-register",
+        "idea_name": "NetScaler Ardışık Yama SAML Uygunluk Kanıt Defteri",
+        "core_job": "NetScaler ADC/Gateway cihazlarının mevcut build ve SAML IdP/SP rolüne göre bir önceki yamadan sonra yeniden kritik CVE'ye maruz kalıp kalmadığını, yeniden yama ve doğrulama delillerini insan sorumlusuyla izlemek",
+        "target_customer": "NetScaler ADC/Gateway yöneten kurumsal altyapı, ağ güvenliği, bankacılık ve yönetilen BT hizmeti ekipleri",
+        "buyer": "Ağ güvenliği ekip lideri ve altyapı değişiklik yöneticisi",
+        "product_mechanism": "İçeri alınan CSV'de cihaz ID, train/build, SAML IdP veya SP konfigürasyonu, önceki patch tarihi, yeni bulletin şart sürümü, bakım/onay ve test kanıtını saf JS karşılaştırma tablolarıyla değerlendirip exposed/not-proven/needs-retest ve imza raporu üretme; canlı NetScaler bağlantısı/otomatik patch, uzaktan tarama veya AI modeli yok.",
+        "why_now": "8 Ekim 2026 Citrix CVE-2026-107406 bulletin, Eylül güvenlik açıklarını kapatan sürümlerde yeni kritik risk doğduğunu ve rol/build aralığına bağlı koşullar gösterdi.",
+        "before_state": "Yamalanmış cihazlar kapalı remediation ticket'ında ve SAML rolü/ürün sürümü başka CMDB veya admin dosyasında kalır.",
+        "after_state": "Yeni advisory build/rol kuralı ile daha önce kapanmış varlıkları tekrar tarayan, owner imzalı bakım ve test kanıtı dosyası hazırlanır.",
+        "canonical_source_urls": [
+          "https://support.citrix.com/external/article/CTX697191/citrix-netscaler-adc-and-citrix-netscale.html",
+          "https://www.itnews.com.au/news/netscaler-builds-that-fixed-zero-days-carry-critical-flaw-too-629542?edate=20261012&eid=1"
+        ],
+        "supporting_article_ids": [
+          "04bcc0200f4974f3cfc9ad3a"
+        ],
+        "source_observations": [
+          {
+            "url": "https://support.citrix.com/external/article/CTX697191/citrix-netscaler-adc-and-citrix-netscale.html",
+            "verification": "official_vendor_bulletin_page_read",
+            "observation": "Citrix CTX697191: CVE-2026-107406 CVSSv4=9.5; 14.1-73.37…73.41 veya 13.1-64.23…64.28 build'e SAML IdP rolü; daha eski build'de IdP/SP; düzeltme 14.1-73.46+ ve 13.1-64.29+; workaround yok."
+          },
+          {
+            "url": "https://www.itnews.com.au/news/netscaler-builds-that-fixed-zero-days-carry-critical-flaw-too-629542?edate=20261012&eid=1",
+            "verification": "publisher_search_excerpt_read_full_open_blocked",
+            "observation": "12 Ekim haber önceki patch'te yamalanan cihazlarda yeni sorun olduğunu ve Citrix açıklamasını aktarıyor; tam web.open erişimi devre dışıydı."
+          }
+        ],
+        "scope_hint": "Dünya, NetScaler kurumsal altyapı sahibi",
+        "local_evidence": {
+          "signals": [
+            "Üreticinin yeni bulletin'i eski 'patched' statüsünün geçersiz olabileceği belirli bir koşullu değişikliktir."
+          ],
+          "unknowns": [
+            "TR/global CMDB, exposure management ve patch compliance ürünleriyle doğrudan rekabet yüksek olabilir; sayıları Validation'a bırakıldı.",
+            "Yönetilen hizmet farklı ve SAML rolünü CSV'de doğru işaretlemek kullanıcı sorumluluğundadır.",
+            "Sürüm karşılaştırma FIPS/NDcPP özel kuralları ve yeni bulletin sürümleri manuel güncellenmeli."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-2bfd2b8b0a-discovery-7c08b5bdfcd223d3/001.json",
+  "valid_until": "2026-11-12T23:09:34Z"
+}

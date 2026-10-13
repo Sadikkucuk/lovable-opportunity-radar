@@ -1,0 +1,49 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "513a9828029ac8fa8abde75bd9d0b3fb724b54ad411bf51f04443c5ec1936d44",
+  "decision": {
+    "article_key": "fa30f3e7995bf26ac17e7124",
+    "decision": "opportunity",
+    "reason": "中国经济网 kaynaklı 12 Ekim Xiàmén 2026 mantar endüstrisi fuarı yazısının tam metni yeniden yayınlayan Çin Enterprise Report'ta okundu. Qiwu Tech robotlu mantar hasadı için kendi beyanına göre %99+ tanıma, %95+ tutuş, %5 altı kırılma ve 43,2 kg/saat pik verim söylüyor; bunlar tek satıcının reklam/test iddiası, bağımsız saha sertifikası DEĞİL. 1 Şubat 2026'dan beri mantar toplama robotu için bir topluluk standardı olduğu haberde belirtiliyor; yeni Ekim yürürlüğü yok. BEFORE narin mantar hasadında yüksek kırık ve elle kalite sınıflama riski. AFTER farklı robot/demo/hizmet tedarikçileri fiziksel sahada kullanılabilir; çiftlik işletmecisinin teklif öncesi partiler bazında kırık, olgunluk, net kg/saat, ilk 6 katlı erişim ve tekrar test kabulünü karşılaştırma ihtiyacı somut olabilir.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-2bfd2b8b0a-discovery-7c08b5bdfcd223d3:fa30f3e7995bf26ac17e7124:1",
+        "canonical_key": "commercial-mushroom-farms-buying-harvesting-robots|measure-gentle-pick-damage-yield-and-robot-reach-acceptance|offline-lot-grading-cycle-time-and-human-farm-signoff-matrix",
+        "idea_name": "Mantar Hasat Robotu Kırık–Verim Kabul Matrisi",
+        "core_job": "Çiftlik deneme partilerinde robotik mantar hasadının kırık oranı, olgunluk sınıfı, net kilogram/saat, raf katı erişimi ve iş gücü karşılığı iddialarını ölçülmüş numune ile kabul etmek",
+        "target_customer": "Kültür mantarı üreticileri ve robot hasat hatları alan tarım tesisi proje/kalite ekipleri",
+        "buyer": "Mantar çiftliği üretim müdürü ve hasat otomasyonu satın alma yetkilisi",
+        "product_mechanism": "Müşterinin manuel saha hasat CSV'sinden lot, raf katı, deneme robot modeli, olgunluk grade, başarılı toplama, net kilogram, kırık/ezik adetleri, vardiya, retest, tedarikçi garanti eşiği ve insan onayını deterministik kıyaslayıp eksik kabul ve ödeme milestone raporu üretme; foto/video AI algılama veya robot kontrol API'si zorunlu değil.",
+        "why_now": "Ekim 2026 Xiamen endüstri fuarında mantar hasat robotlarına yabancı alıcı ilgisi ve belirli üretici test iddiaları görünür oldu; iş alıcısının tedarikçi beyanı ile kendi ürün hasarı/verim testini karşılaştırması gerekir.",
+        "before_state": "Robotun fuar/demo tanıtım verimi ve gerçek çiftlikte kırık/kalite/mesai ölçümleri ayrı tablolar ve satıcı tekliflerinde.",
+        "after_state": "Saha lotu–test koşulu–mantar hasarı–verim–raf erişimi–insan onayı zinciri aynı kabul raporunda, reklam iddiaları gözlem sonuçlarından ayrılmış.",
+        "canonical_source_urls": [
+          "https://www.cenr.com.cn/cyjj/sp/2026/10/12/234968.html"
+        ],
+        "supporting_article_ids": [
+          "17dccfa4f02f293449c49e6a"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.cenr.com.cn/cyjj/sp/2026/10/12/234968.html",
+            "verification": "full_republished_article_read",
+            "observation": "2026 Xiamen mantar fuarı, Qiwu Tech üretici iddiası >99% tanıma, >95% tutuş, <5% hasar, pik 43.2 kg/saat; 2026-02-01 grup standardı var; üreticinin fiili saha garanti koşulları açıklanmıyor."
+          }
+        ],
+        "scope_hint": "Global kültür mantarı üretim tesisleri",
+        "local_evidence": {
+          "signals": [
+            "Yüksek kırılganlıkta ürün toplama için tedarikçilerin doğrudan fiziksel ürün/hasar/kilo kabulü somut satın alma kontrolüdür."
+          ],
+          "unknowns": [
+            "Global tarım robotu tedarikçi teklif/QMS ürünleri ve Türk çiftlik robot kurulum sağlayıcılarında doğrudan rakip sayısı Validation'da aranmalı.",
+            "Grup standardının orijinal numarası ve yürürlüğü birincil standart otoritesinden henüz teyit edilmedi.",
+            "Çiftliğin kayıt kalitesi ve örnekleme planı saha uzmanı doğrulamalı."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-2bfd2b8b0a-discovery-7c08b5bdfcd223d3/001.json",
+  "valid_until": "2026-11-12T23:09:34Z"
+}
