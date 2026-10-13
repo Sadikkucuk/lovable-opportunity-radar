@@ -1,0 +1,30 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "e8f1bca06cb7c8312f61d8f90a8bac072ad01189b6c6ff1c18d792b27e3b7130",
+  "decision": {
+    "article_key": "fdce17f8b7af2614cbc24748",
+    "decision": "opportunity",
+    "reason": "Türk İnternet'in 12 Ekim yayımladığı Kaspersky kaynaklı rapor 1 Ağustos–18 Eylül arasında 31 binden fazla kötü amaçlı yönlendirme bağlantılı sahte e-posta engellendiğini aktarıyor; bu sayı başarılı hesap ele geçirme sayısı değildir. Microsoft Entra uygulama kayıtları/redirect URI'lerin izinli domain envanterine göre insan inceleme ve olay kanıtı takibi iş akışı harici tehdit API'si olmadan yürütülebilir; saldırı tekniği uygulama yönergesine dönüştürülmedi.",
+    "canonical_source_url": "https://turk-internet.com/microsoft-kimlik-dogrulama-altyapisini-istismar-eden-31-binden-fazla-sahte-e-posta-tespit-edildi/",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-8f014d0c4b07bf71:fdce17f8b7af2614cbc24748:01",
+        "idea_name": "Entra OAuth Redirect Evidence Register",
+        "canonical_key": "small-business-entra-admin-teams|review-registered-application-redirect-destinations|manual-app-domain-approval-and-phishing-case-ledger",
+        "target_customer": "Microsoft Entra kullanan KOBİ BT ve siber güvenlik sorumluları",
+        "core_job": "Kurumun yetkili uygulamalarındaki yönlendirme alanlarının izinli domain, uygulama sahibi ve güvenlik inceleme kaydını süreli takip etmek",
+        "product_mechanism": "Yalnız admin tarafından dışa aktarılmış uygulama adı/id, redirect URI ve domain CSV'si; izinli etki alanı karşılaştırması, şüpheli olayı kullanıcı onayıyla kapatma kaydı, dış tehdit tespit servisi yok",
+        "why_now": "Türk İnternet'in 12 Ekim yayımladığı Kaspersky kaynaklı rapor 1 Ağustos–18 Eylül arasında 31 binden fazla kötü amaçlı yönlendirme bağlantılı sahte e-posta engellendiğini aktarıyor; bu sayı başarılı hesap ele geçirme sayısı değildir. Microsoft Entra uygulama kayıtları/redirect URI'lerin izinli domain envanterine göre insan inceleme ve olay kanıtı takibi iş akışı harici tehdit API'si olmadan yürütülebilir; saldırı tekniği uygulama yönergesine dönüştürülmedi.",
+        "before_state": "Uygulama kaydı sahipliği, yönlendirme URL envanteri ve oltalama şikâyetleri birbirinden kopuk",
+        "after_state": "Uygulama-sahip-domain istisna defteri, manuel araştırma/kanıt ve insan onaylı kapanış raporu",
+        "canonical_source_urls": [
+          "https://turk-internet.com/microsoft-kimlik-dogrulama-altyapisini-istismar-eden-31-binden-fazla-sahte-e-posta-tespit-edildi/"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-8f014d0c4b07bf71/001.json",
+  "valid_until": "2026-11-12T10:32:46Z"
+}
