@@ -4,27 +4,13 @@
   "queue_mode": "shared",
   "current_run": "2026-10-13-catchup-e3a10c28a635",
   "lease_minutes": 30,
-  "ready_count": 365,
+  "ready_count": 364,
   "job_count": 365,
-  "queue_revision": "95df756bf2fdda4a6221a4b5f51fddb0c6b569ff65e6e0a31444a5b5bbedafbf",
+  "queue_revision": "54261df66adcf8822d82c5d857da1cf542106d82384a26ee7836f1f49947e73b",
   "page": 19,
   "page_count": 19,
   "next_page": null,
   "jobs": [
-    {
-      "job_id": "2026-10-13-43d3b526fc-discovery-ea3e8f9f8f1698a8",
-      "path": "state/v2/jobs/2026-10-13-43d3b526fc-discovery-ea3e8f9f8f1698a8.json",
-      "run_id": "2026-10-13-43d3b526fc",
-      "kind": "discovery",
-      "input_hash": "ea3e8f9f8f1698a87764c4690e0aaaf48fd18fbba2b9ed8533357197676c180f",
-      "legacy_lane": 3,
-      "queue_group": "backlog",
-      "preferred_worker": 4,
-      "state": "ready",
-      "attempt": 1,
-      "claim_path": "state/v2/claims/2026-10-13-43d3b526fc-discovery-ea3e8f9f8f1698a8/001.json",
-      "result_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-ea3e8f9f8f1698a8/001.json"
-    },
     {
       "job_id": "2026-10-13-43d3b526fc-discovery-ec13ff2c9990302a",
       "path": "state/v2/jobs/2026-10-13-43d3b526fc-discovery-ec13ff2c9990302a.json",
@@ -80,6 +66,19 @@
       "attempt": 1,
       "claim_path": "state/v2/claims/2026-10-13-43d3b526fc-discovery-f90a6d927f2c3b38/001.json",
       "result_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-f90a6d927f2c3b38/001.json"
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-caf457b9f2adab11",
+      "path": "state/v2/jobs/2026-10-13-catchup-e3a10c28a635-discovery-caf457b9f2adab11.json",
+      "run_id": "2026-10-13-catchup-e3a10c28a635",
+      "kind": "discovery",
+      "input_hash": "caf457b9f2adab117e9265f2830d93650bad00f826dcdd8ae3d7a520b6be2aa7",
+      "legacy_lane": 1,
+      "queue_group": "current",
+      "preferred_worker": 4,
+      "state": "leased",
+      "attempt": 1,
+      "expires_at": "2026-10-13T16:46:48.241Z"
     }
   ]
 }
