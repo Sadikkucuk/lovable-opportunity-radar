@@ -1,0 +1,115 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-43d3b526fc-discovery-28d246ba8ae632b9",
+  "input_hash": "28d246ba8ae632b9ed99c6f49d39ffa11f64fff4766ca8dafb29ecfb479bb2d3",
+  "token": "d9c6afc2-4554-4145-b4f5-0e4929c0abb1",
+  "finished_at": "2026-10-13T18:27:57.021Z",
+  "outcome": "done",
+  "reason": "10 güncel RSS makalesi karara bağlandı; FMCSA 30 günlük acil HOS muafiyeti ve MIIT araç tasarım/test taslağı için 2 yeni ham fırsat, diğer 8'i no_opportunity. 2027 taslak hükümleri yürürlükte bağlayıcı kural olarak sunulmadı.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "971c17ea0d64e5e4fcae1696",
+        "decision": "no_opportunity",
+        "reason": "IMF/Dünya Bankası toplantısında enerji enflasyonu ve borç gündemi siyasi/makroekonomik takvim haberidir; ayrı yazılım için yeni uygulanan sektör standardı veya erişilebilir farklı veri açıklamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "974bad23ed142a6f802d237f",
+        "decision": "no_opportunity",
+        "reason": "Çin Tarım Bakanlığı tarım inovasyonu/pilot tesis ve kavram doğrulama altyapısı planlayacağını duyurdu; özel açık çağrının başvuru şartları ve tarihleri bu başlıkta doğrulanmadı, henüz yürürlükte hibe zorunluluğu sanılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "974c9dd69f40b258351c56ba",
+        "decision": "opportunity",
+        "reason": "FMCSA'nin 5 Ekim 2026 son değişikliği, belirli afetler sırasında doğrudan yardım sağlayan uygun taşımacıların saat hizmet sınırı muafiyeti için süreyi yeniden 30 güne çıkardı; yardım türü, bölgesi ve koşul sınırları resmî FMCSA bildirimiyle belirlenir. FreightWaves'in 10 Ekim haberinde HOS muafiyetinin genişlemesi ayrı değişikliktir. Acil lojistik operatörünün her seferin gerçekten kapsama ve kayıt koşullarını karşıladığını kontrol edip istisna süresi sona erince normal HOS'a dönüşünü belgeleme işi vardır.",
+        "canonical_source_url": "https://www.fmcsa.dot.gov/emergency-declarations",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-43d3b526fc-discovery-28d246ba8ae632b9:974c9dd69f40b258351c56ba:01",
+            "idea_name": "Afet HOS Muafiyet Uygunluk Kontrol Defteri",
+            "canonical_key": "us-emergency-relief-carriers|prove-hos-emergency-relief-eligibility-and-expiry|declaration-lane-cargo-driver-duty-and-evidence-ledger",
+            "target_customer": "ABD afet yardımına katılan küçük/orta karayolu taşımacılığı filoları",
+            "core_job": "Bölgesel afet sırasında seferin geçici sürüş-saati muafiyet kapsamına girip girmediğini ve sona erme/geri dönüş koşullarını kanıtlamak",
+            "product_mechanism": "Kullanıcının yazdığı afet declaration id, il/eyalet, ürün/yük amaç tanımı, sürücü hizmet günü, muafiyet süresi, HOS istisnası/normal vardiya geçiş ve insan onayı kontrol listesi; FMCSA canlı veri API'si yok",
+            "why_now": "FMCSA'nin 5 Ekim 2026 son değişikliği, belirli afetler sırasında doğrudan yardım sağlayan uygun taşımacıların saat hizmet sınırı muafiyeti için süreyi yeniden 30 güne çıkardı; yardım türü, bölgesi ve koşul sınırları resmî FMCSA bildirimiyle belirlenir. FreightWaves'in 10 Ekim haberinde HOS muafiyetinin genişlemesi ayrı değişikliktir. Acil lojistik operatörünün her seferin gerçekten kapsama ve kayıt koşullarını karşıladığını kontrol edip istisna süresi sona erince normal HOS'a dönüşünü belgeleme işi vardır.",
+            "before_state": "Muafiyet süresi genel e-postalarda ve sürücü ataması HOS çizelgesinden kopuk",
+            "after_state": "Deklarasyona kaynak linkli sefer istisna ispatı, geri dönüş uyarı tarihleri ve uyum inceleme raporu",
+            "scope_hint": "Dünya",
+            "canonical_source_urls": [
+              "https://www.fmcsa.dot.gov/emergency-declarations"
+            ],
+            "supporting_article_ids": [
+              "27b00a2d9d3544e96ecbfe10"
+            ],
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "977ccccdf3145545e7f5edac",
+        "decision": "opportunity",
+        "reason": "Çin MIIT, Kamu Güvenliği, Ekoloji ve Piyasa Düzenleme kurumlarının 10 Ekim 2026 araç yenilikçi tasarım ve R&D doğrulaması düzenleme **taslağını** 10 Kasım'a kadar görüşe açtığı resmî olarak doğrulandı. Taslakta 1 Ocak 2027 yeni, 1 Temmuz 2027 mevcut onaylı araç raporlaması; ≥1 yıllık iki kış/bir yaz çevre testleri, ≥30.000 km reliability, tam gizli kapı kolu ve foldable ekran kısıtları var. Henüz kesin yürürlüğe girmiş uygulama hükmü olarak sunulmaz; OEM homologasyon ekibi için taslak gereksinim/test ve model-varyant etkisi matrisi hipotezi.",
+        "canonical_source_url": "https://www.miit.gov.cn/xwfb/mtbd/wzbd/art/2026/art_0235344fc3904e31ae57b3ac2f6b312f.html",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-43d3b526fc-discovery-28d246ba8ae632b9:977ccccdf3145545e7f5edac:01",
+            "idea_name": "Çin Araç Tasarım Taslak Şartname İzleme Matrisi",
+            "canonical_key": "chinese-vehicle-homologation-teams|prepare-2027-vehicle-hmi-design-and-test-draft-controls|model-variant-feature-30k-km-and-two-winter-one-summer-evidence-ledger",
+            "target_customer": "Çin'de satış/homologasyon yapan araç OEM ve tedarikçi teknik uyum ekipleri",
+            "core_job": "Yeni 2026 görüşe açık taslaktaki sürüş HMI, kapı kolu, ekran/koltuk sınırları ve 30.000 km/iki kış bir yaz test şartlarının her araç varyantındaki etkisini takip etmek",
+            "product_mechanism": "Manuel varyant donanım CSV, kapı/tuş/koltuk değişiklik listesi, test tarihi-kilometre-hava koşulu, rapor URL referansı, yorum son tarihi, mevzuat sürümü ve insan onay matrisi",
+            "why_now": "Çin MIIT, Kamu Güvenliği, Ekoloji ve Piyasa Düzenleme kurumlarının 10 Ekim 2026 araç yenilikçi tasarım ve R&D doğrulaması düzenleme **taslağını** 10 Kasım'a kadar görüşe açtığı resmî olarak doğrulandı. Taslakta 1 Ocak 2027 yeni, 1 Temmuz 2027 mevcut onaylı araç raporlaması; ≥1 yıllık iki kış/bir yaz çevre testleri, ≥30.000 km reliability, tam gizli kapı kolu ve foldable ekran kısıtları var. Henüz kesin yürürlüğe girmiş uygulama hükmü olarak sunulmaz; OEM homologasyon ekibi için taslak gereksinim/test ve model-varyant etkisi matrisi hipotezi.",
+            "before_state": "Araç tasarım versiyonu, kış/yaz test takvimi ve mevzuat taslağı birbirinden farklı mühendislik planlarında",
+            "after_state": "Taslak aşaması açıkça etiketli etki/eksik test matrisi; nihai mevzuat yürürlüğünden önce düzenleyici risk hazırlığı",
+            "scope_hint": "Dünya",
+            "canonical_source_urls": [
+              "https://www.miit.gov.cn/xwfb/mtbd/wzbd/art/2026/art_0235344fc3904e31ae57b3ac2f6b312f.html"
+            ],
+            "supporting_article_ids": [
+              "bbaa74e6a1c3a41165a84081"
+            ],
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "97858c01734c62687109522d",
+        "decision": "no_opportunity",
+        "reason": "Yarı iletken wet process ultra temiz diyafram valfleri hakkındaki sektör tanıtımı; yeni resmî ISO standardı, test spesifikasyonu veya ücretsiz tedarikçi veri hakkı gösterilmiyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "97faa28a0a3d3c1b3a315306",
+        "decision": "no_opportunity",
+        "reason": "Thales'in Japonya'da savunma bakım üssü açma planı tek şirket hizmet/genişleme duyurusu, yeni genel sertifika ve kullanıcı veri hakkı açıklamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "988a9c5149f26f9793e73eba",
+        "decision": "no_opportunity",
+        "reason": "Omdia'nın 2031'de ağ uygulamalarına harcamanın %12'sinin AI özelliğinden geleceği tahmini, bugünkü bağlayıcı değişiklik veya müşteri teknolojisi değildir.",
+        "opportunities": []
+      },
+      {
+        "article_key": "99610b4a2c86d281550c89aa",
+        "decision": "no_opportunity",
+        "reason": "a16z raporundaki teknoloji yatırımlarının ABD ekonomisindeki payı hakkında görüş ve yatırım analizi, yeni tekrarlanan ayrı müşteri iş akışına dayanak değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "9a548ddc441b240bd456fd93",
+        "decision": "no_opportunity",
+        "reason": "Baidu World 2026 konferansının 12 Kasım organizasyon tarihi ve AI kurum konsepti etkinlik duyurusudur, satıcıdan bağımsız yeni iş veya açık API yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "9ab43cf4a902291c4eb00d2e",
+        "decision": "no_opportunity",
+        "reason": "JD Tech ile Çin MIIT talent center sanayi eğitim merkezi işbirliği başlatılması kurumsal eğitim/ortaklık haberi; ayrı kamu teknik işlem standardı veya müşteriye zorunlu kanıt yükü doğrulanmadı.",
+        "opportunities": []
+      }
+    ]
+  }
+}
