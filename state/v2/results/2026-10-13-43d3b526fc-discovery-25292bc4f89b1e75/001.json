@@ -1,0 +1,100 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-43d3b526fc-discovery-25292bc4f89b1e75",
+  "input_hash": "25292bc4f89b1e75189dddc93b738648f33a7b4aa46fc5956487c5efd495b125",
+  "token": "505e38da-8a50-45b7-8bfd-a9f0e8674e83",
+  "finished_at": "2026-10-13T17:49:12.105Z",
+  "outcome": "done",
+  "reason": "Orijinal 13 Ekim günlük snapshot'tan 10 haber değerlendirildi: SBOM etkilenebilirlik/bakım penceresi için 1 koşullu ham fırsat, 8 no_opportunity, SIA veri kaynağı tam doğrulanmadığı için 1 unverified. Rakip doğrulaması ve zero external cost henüz Finalizer kararı değil.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "d94daaeda8176d48f2cebd1c",
+        "decision": "unverified",
+        "reason": "SIA ABD yarı iletken tedarik zinciri bağımlılıkları hakkındaki rapor haberi başlığı RSS'te yer alıyor. Doğrudan SIA veri seti, kategori tanımları ve kullanıma izinli lisans dosyası doğrulanmadı; kritik tedarikçi bağımlılığı var diye kesin sonuç çıkarılmadı.",
+        "canonical_source_url": "https://www.eet-china.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "d9c01b47d6c1160dd119acaf",
+        "decision": "no_opportunity",
+        "reason": "Xinhua AI'nın araştırmada altyapı hâline dönüşmesine yönelik genel eğilim makalesi; ücretsiz/haricî AI olmadan yeni teknik işlem gereği, açık veri hakkı veya mevzuat ortaya koymuyor.",
+        "canonical_source_url": "https://www.xinhuanet.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "d9f2deda234f38a540b8dd9b",
+        "decision": "no_opportunity",
+        "reason": "İtalyan şirketlerde kıdemli ve genç işgücü işbirliği üzerine yönetim görüşü; yeni resmî iş ilişkisi standardı veya ayrı kullanıcı iş akışı sunmuyor.",
+        "canonical_source_url": "https://www.ilsole24ore.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "da04cd152224975818d47ccf",
+        "decision": "opportunity",
+        "reason": "Computerwoche'nin 12 Ekim uzman makalesinde tedarikçinin sertifikalı olması veya SBOM'da CVE bulunması etkilenen belirli OT ağ geçidinin gerçekten sömürülebilir olduğu ve bakım penceresinin mevcut olduğu anlamına gelmiyor. Ürün sürümü, gerçek kurulu konfigürasyon, ağ erişimi, geçici önlem ve bakım kısıtını ayrı kanıtlarla değerlendirmek tekrarlanan güvenlik alıcısı işi.",
+        "canonical_source_url": "https://www.computerwoche.de/article/4232490/die-sbom-kennt-kein-wartungsfenster.html",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-43d3b526fc-discovery-25292bc4f89b1e75:da04cd152224975818d47ccf:01",
+            "canonical_key": "industrial-ot-product-security-teams|triage-sbom-component-cve-by-field-deployment-and-maintenance-window|sbom-component-reachability-asset-and-compensating-control-ledger",
+            "idea_name": "SBOM OT Zafiyet Gerçek Etki ve Bakım Penceresi Masası",
+            "target_customer": "Endüstriyel tesis OT siber güvenlik ekipleri ve ekipman/uzaktan bağlantı gateway üreticileri",
+            "core_job": "Tedarikçi SBOM bileşenindeki CVE'nin kurulu sürüm/erişim şartı nedeniyle gerçekten etkileyip etkilemediğini ve üretimi durdurmadan telafi planını kanıtlarla onaylamak",
+            "product_mechanism": "Müşterinin yüklediği CycloneDX/SPDX/CSV, CVE/advisory bilgileri (manuel), cihaz-envanter/konfigürasyon, network segmenti, telafi/patch penceresi, operatör imzası ve gerekçe ilişkisi; harici CVE API ya da saldırı aracı çalıştırmaz",
+            "before_state": "SBOM CVE listesi cihazın gerçek reachability ve OT bakım penceresinden kopuk, alarm ve belirsizlik birikir",
+            "after_state": "Her komponent-zafiyet için etki şartı, vendor kanıtı, uygulanabilir geçici önlem, bakıma onaylı risk kaydı",
+            "why_now": "Computerwoche'nin 12 Ekim uzman makalesinde tedarikçinin sertifikalı olması veya SBOM'da CVE bulunması etkilenen belirli OT ağ geçidinin gerçekten sömürülebilir olduğu ve bakım penceresinin mevcut olduğu anlamına gelmiyor. Ürün sürümü, gerçek kurulu konfigürasyon, ağ erişimi, geçici önlem ve bakım kısıtını ayrı kanıtlarla değerlendirmek tekrarlanan güvenlik alıcısı işi.",
+            "canonical_source_urls": [
+              "https://www.computerwoche.de/article/4232490/die-sbom-kennt-kein-wartungsfenster.html"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "da5c8c00c87b3d6058534757",
+        "decision": "no_opportunity",
+        "reason": "Kore Foodlogic'in KOBİ gıda dışı AI işbirliği devlet challenge'ına seçilmesi mevcut girişim/etkinlik başarı haberi. Orijinal idari zorunluluk ve açık veri hizmeti doğrulanmadı, ücretli AI çalıştırma gerektiren yazılım önerilmedi.",
+        "canonical_source_url": "https://www.etnews.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "da8f6625f50ad9aeffd8e2ca",
+        "decision": "no_opportunity",
+        "reason": "Çin NEV ilk dokuz ay üretim/satış ve ihracat çift haneli büyüme istatistiği yeni yasa veya tanımlı ayrı müşteri işi değil.",
+        "canonical_source_url": "https://www.caam.org.cn/",
+        "opportunities": []
+      },
+      {
+        "article_key": "db01347bcea68129522ad2fe",
+        "decision": "no_opportunity",
+        "reason": "Çin yatırım kurumlarının AI harcama döngüsü ve hisse pazarlarına dair strateji görüşü finansal yorum; yeni bağımsız süreç tetiklemez.",
+        "canonical_source_url": "https://www.yicai.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "db08a5ec2389629a432926e1",
+        "decision": "no_opportunity",
+        "reason": "Il Sole 24 Ore Enerji, İnşaat ve Bölge 13 Ekim günlük bülteni konu derlemesidir; makale/standart alt kaynağı ayrı ayrıştırılmadan tek olay olarak yeni fikir üretilmez.",
+        "canonical_source_url": "https://www.ilsole24ore.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "db681fbaa6027a23d93a099b",
+        "decision": "no_opportunity",
+        "reason": "Çin istihdam bakanlığının AI gelişimiyle uyumlu iş/meslek eğitimi programını uygulamaya yönelik açıklaması genel politika beyanıdır; program başvuru şartları ve zorunlu takvim bu başlıktan doğrulanmadı.",
+        "canonical_source_url": "https://www.mohrss.gov.cn/",
+        "opportunities": []
+      },
+      {
+        "article_key": "dc51c6b475744d430effc5ea",
+        "decision": "no_opportunity",
+        "reason": "Li Auto yöneticisinin batarya markasının satın alma kararında önemine dair görüşü pazarlama/üretici açıklamasıdır; açık model test verisi veya ayrı uygulama hakları açılmadı.",
+        "canonical_source_url": "https://www.leiphone.com/",
+        "opportunities": []
+      }
+    ]
+  }
+}
