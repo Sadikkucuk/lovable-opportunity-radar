@@ -1,0 +1,40 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "72e92a0ffa59c1b25701f255626e5552f8a3cd426916858511e9789cce42e656",
+  "decision": {
+    "article_key": "0c5912a97d6c3e9ac408b2a3",
+    "decision": "opportunity",
+    "reason": "Citrix 27 Eylül güvenlik bülteninde CVE-2026-88771 ve 88772 dahil NetScaler ADC/Gateway açıklıklarını ve 14.1-73.37, 13.1-64.23 gibi asgari yamalı sürümleri yayımladı; Kanada siber kurumu uyarıyı 9 Ekim güncelledi. Aktif istismar riskinden kaynaklanan çok ortamlı NetScaler envanteri, yama muafiyeti, sürüm, dış doğrulama ve onay kanıtı iş akışı somuttur. Aynı işi yapan global güvenlik yazılımlarının sayısı henüz araştırılmadı, raw stage.",
+    "canonical_source_url": "https://support.citrix.com/external/article/CTX697096",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-11-a4dcde1ff5-discovery-a1744a42778e1675:0c5912a97d6c3e9ac408b2a3:01",
+        "idea_name": "NetScaler 2026 Exploit Patch Proof",
+        "canonical_key": "netscaler-estate-it-security-teams|prove-cve-specific-remediation-across-appliances|version-exposure-exemption-and-patch-evidence-register",
+        "target_customer": "NetScaler ADC/Gateway kullanan çok şubeli kurumsal BT/siber güvenlik operasyonları",
+        "buyer": "Güvenlik operasyon ve altyapı değişiklik yöneticisi",
+        "core_job": "NetScaler cihazlarının CVE-2026-88771/72 düzeltici sürüme geçtiğini, muafiyetleri ve onayları varlık bazında kanıtlamak",
+        "product_mechanism": "Manuel cihaz envanteri CSV, çalışan firmware, Citrix CVE asgari patched release kuralı, muafiyet süresi, kanıt referansı ve remediation onayı; sömürü tespiti, canlı tarama veya otomatik cihaz bağlantısı yok",
+        "before_state": "NetScaler uygulaması, firmware farkı ve yama istisna kanıtları ITSM ve Excel arasında dağınık",
+        "after_state": "CVE/cihaz/sürüm bazlı açıklanabilir uygunluk ve kontrol kanıtı matrisi",
+        "canonical_source_urls": [
+          "https://support.citrix.com/external/article/CTX697096",
+          "https://www.cyber.gc.ca/en/alerts-advisories/al26-024-critical-vulnerabilities-affecting-citrix-netscaler-adc-netscaler-gateway-cve-2026-88771-cve-2026-88772"
+        ],
+        "scope_hint": "Dünya",
+        "why_now": "Citrix 27 Eylül güvenlik bülteninde CVE-2026-88771 ve 88772 dahil NetScaler ADC/Gateway açıklıklarını ve 14.1-73.37, 13.1-64.23 gibi asgari yamalı sürümleri yayımladı; Kanada siber kurumu uyarıyı 9 Ekim güncelledi. Aktif istismar riskinden kaynaklanan çok ortamlı NetScaler envanteri, yama muafiyeti, sürüm, dış doğrulama ve onay kanıtı iş akışı somuttur. Aynı işi yapan global güvenlik yazılımlarının sayısı henüz araştırılmadı, raw stage.",
+        "source_observations": [
+          {
+            "url": "https://support.citrix.com/external/article/CTX697096",
+            "accessed_at": "2026-10-13T19:11:22.707Z",
+            "observation": "Citrix 27 Eylül güvenlik bülteninde CVE-2026-88771 ve 88772 dahil NetScaler ADC/Gateway açıklıklarını ve 14.1-73.37, 13.1-64.23 gibi asgari yamalı sürümleri yayımladı; Kanada siber kurumu uyarıyı 9 Ekim güncelledi. Aktif istismar riskinden kaynaklanan çok ortamlı NetScaler envanteri, yama muafiyeti, sürüm, dış doğrulama ve onay kanıtı iş akışı somuttur. Aynı işi yapan global güvenlik yazılımlarının sayısı henüz araştırılmadı, raw stage.",
+            "verification": "official_or_independent",
+            "scope": "source_fact_only;market_gap_unverified"
+          }
+        ]
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-11-a4dcde1ff5-discovery-a1744a42778e1675/001.json",
+  "valid_until": "2026-11-12T19:11:22Z"
+}
