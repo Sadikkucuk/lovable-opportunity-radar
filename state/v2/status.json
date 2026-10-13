@@ -4,18 +4,25 @@
   "protected_records": 89,
   "catalog_count": 91,
   "counts": {
+    "ready": 366,
     "done": 27,
-    "ready": 360,
     "unverified": 3,
     "leased": 1
+  },
+  "evidence_research": {
+    "followup_jobs": 6,
+    "open": 6,
+    "terminal_unverified": 0,
+    "exhausted_needing_manual_review": 0,
+    "max_rounds": 2
   },
   "runs": [
     {
       "run_id": "2026-10-10-migration",
       "processing_status": "in_progress",
       "job_counts": {
+        "ready": 75,
         "done": 24,
-        "ready": 69,
         "unverified": 2
       },
       "validation_decisions": {
@@ -29,7 +36,7 @@
       "articles_expected": null,
       "publication_status": "github_release_available",
       "site_delivery": "not_observed_by_controller",
-      "state_changed_at": "2026-10-13T03:52:09Z"
+      "state_changed_at": "2026-10-13T04:03:50Z"
     },
     {
       "run_id": "2026-10-11-a4dcde1ff5",
@@ -90,18 +97,6 @@
     "state": "attention_required",
     "alerts": [
       {
-        "code": "worker_finished_without_receipt",
-        "worker": 2,
-        "severity": "critical",
-        "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
-      },
-      {
-        "code": "worker_not_started",
-        "worker": 3,
-        "severity": "critical",
-        "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
-      },
-      {
         "code": "worker_blocked",
         "worker": 4,
         "severity": "critical",
@@ -115,6 +110,6 @@
       }
     ],
     "last_verified_progress_at": "2026-10-13T03:51:57Z",
-    "controller_observed_at": "2026-10-13T03:52:24Z"
+    "controller_observed_at": "2026-10-13T04:03:50Z"
   }
 }

@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T03:52:24Z",
+  "controller_observed_at": "2026-10-13T04:03:50Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
-  "ready_jobs": 360,
-  "unfinished_jobs": 361,
+  "ready_jobs": 366,
+  "unfinished_jobs": 367,
   "last_verified_progress_at": "2026-10-13T03:51:57Z",
   "workers": {
     "1": {
@@ -98,9 +98,9 @@
       },
       "validation": {
         "completed_in_window": 9,
-        "known_remaining": 69,
+        "known_remaining": 75,
         "observed_jobs_per_hour": 4.5,
-        "estimated_minutes_for_stage": 920.0
+        "estimated_minutes_for_stage": 1000.0
       }
     },
     "estimated_minutes_remaining": null,
@@ -121,18 +121,6 @@
     }
   ],
   "alerts": [
-    {
-      "code": "worker_finished_without_receipt",
-      "worker": 2,
-      "severity": "critical",
-      "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
-    },
-    {
-      "code": "worker_not_started",
-      "worker": 3,
-      "severity": "critical",
-      "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
-    },
     {
       "code": "worker_blocked",
       "worker": 4,
