@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T20:39:32Z",
+  "controller_observed_at": "2026-10-13T20:39:59Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
@@ -47,12 +47,13 @@
         "worker": 3,
         "invocation_id": "94f4769e-c895-4282-8f13-d8e10236ff85",
         "event": "progress",
-        "at": "2026-10-13T20:37:30.208Z",
-        "job_id": "2026-10-10-migration-validation-97e89d8c3ad4f001",
-        "stage": "receipt_saved",
-        "receipt_path": "state/v2/results/2026-10-10-migration-validation-97e89d8c3ad4f001/001.json",
-        "decision": "duplicate",
-        "path": "state/v2/worker-events/3/94f4769e-c895-4282-8f13-d8e10236ff85/003-progress.json"
+        "at": "2026-10-13T20:39:45.966Z",
+        "job_id": "2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374",
+        "stage": "claim_saved",
+        "claim_path": "state/v2/claims/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json",
+        "reviewed_raw_opportunities": 167,
+        "semantic_clusters_under_review": 7,
+        "path": "state/v2/worker-events/3/94f4769e-c895-4282-8f13-d8e10236ff85/004-progress.json"
       },
       "receipts_this_invocation": 2,
       "write_and_receipt_verified": true,
@@ -98,10 +99,10 @@
     "window_minutes": 120.0,
     "stages": {
       "discovery": {
-        "completed_in_window": 27,
+        "completed_in_window": 26,
         "known_remaining": 236,
-        "observed_jobs_per_hour": 13.5,
-        "estimated_minutes_for_stage": 1048.9
+        "observed_jobs_per_hour": 13.0,
+        "estimated_minutes_for_stage": 1089.2
       },
       "merge": {
         "completed_in_window": 0,
