@@ -1,0 +1,215 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-1e934380178f4314",
+  "input_hash": "1e934380178f4314546ed30ca61e788eb168ec9581e0c40ba1b464c0611b33fd",
+  "token": "d7b91663-7e73-46cd-b71c-20ceea94fc70",
+  "finished_at": "2026-10-13T20:34:14.851Z",
+  "outcome": "done",
+  "reason": "10 donmuş haberin tamamı özgün yayıncı veya güvenilir birincil/ikincil kaynaklar üzerinden tek tek incelendi; 4 somut ürün fırsatı ve 6 gerekçeli no_opportunity kararı kaydedildi. Kaynak belirsizlikleri gerekçelerde korunuyor. Katalog/rekabet kararı Merge ve Validation'a bırakıldı.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "cd91aabadb2cca11cbb1e698",
+        "decision": "opportunity",
+        "reason": "EVENT: Navitas, NVIDIA işbirliği ile 24 kW'lık 800 VDC→12 VDC GaN güç kartını 12 Ekim'de duyurdu; 97% verim bir HEDEF, saha sonucu değil. BEFORE: 50 V ara dönüştürücü içeren güç zinciri. AFTER: tek aşamalı doğrudan 12 V topolojisi. DELTA: dönüşüm kademesi, ısıl kayıp ve BOM seçenekleri. İkinci derece etki: veri merkezi elektrik ekiplerinin alternatif tasarım varsayımlarını tutarlı karşılaştırma ve kabul kanıtı ihtiyacı.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-1e934380178f4314:cd91aabadb2cca11cbb1e698:1",
+            "canonical_key": "ai-data-center-electrical-teams|compare-power-delivery-topologies|offline-loss-thermal-bom-scenario-workbook",
+            "idea_name": "800V Güç Yolu Senaryo Defteri",
+            "core_job": "Yüksek yoğunluklu AI raflarında 800 V/12 V güç topolojilerinin kayıp, ısıl yük, güç yoğunluğu, parça sayısı ve kabul farklarını hesaplamak",
+            "target_customer": "AI veri merkezi ve yüksek güçlü sunucu elektrik tasarımı ekipleri",
+            "buyer": "Güç elektroniği mühendislik yöneticisi",
+            "product_mechanism": "Mühendislerin girdiği dönüşüm kademesi/ölçüm/tedarikçi veri sayfası parametreleriyle çalışan tarayıcı içi deterministik kayıp ve senaryo hesaplayıcısı, PDF/CSV kabul dosyası",
+            "why_now": "12 Ekim 2026'da duyurulan 24 kW 800→12 V PDB, 50 V ara kademeyi kaldırarak alternatif raf güç tasarımı seçimlerini yeniden gündeme getirdi.",
+            "before_state": "Farklı tedarikçinin güç tasarımları ve test tabloları manuel karşılaştırılıyor.",
+            "after_state": "Aynı yük altında varsayımlar, verim hedefi ile ölçülmüş verim ayrımı, termal kayıp ve BOM kıyaslaması kayıtlı oluyor.",
+            "canonical_source_urls": [
+              "https://www.globenewswire.com/news-release/2026/10/12/3379241/0/en/index.html",
+              "https://www.semiconductor-today.com/news_items/2026/oct/navitas-131026.shtml"
+            ],
+            "supporting_article_ids": [
+              "351e71ef8f607cda7928c05b"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.globenewswire.com/news-release/2026/10/12/3379241/0/en/index.html",
+                "observation": "Navitas şirket açıklaması: 24 kW kart, 800 VDC→12 VDC tek aşama, 50 V IBC kaldırma, tam yükte %97 hedef verim; ticari saha garantisi yok."
+              }
+            ],
+            "scope_hint": "Dünya; CSV/datasheet içe aktarma, istemci tarafında deterministik hesaplama, zorunlu harici API, model, DB veya canlı cihaz entegrasyonu yok.",
+            "local_evidence": {
+              "signals": [
+                "Elektrik şebekesinden xPU'ya güç tasarımında güç kaybı azaltma ve yoğunluk gereksinimi şirket açıklamasında belirtiliyor"
+              ],
+              "unknowns": [
+                "Bağımsız verim testi yayınlanmadı",
+                "Tedarikçi BOM fiyatları kullanıcı girdisiyle karşılanmalı"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "cdac5d1304c9459e718d5598",
+        "decision": "no_opportunity",
+        "reason": "EVENT: 10 Ekim Reuters/Financial Times haberine göre NVIDIA Reflection AI'a yeni yatırım, lisanslama veya satın alma alternatiflerini görüşüyor. OFweek özgün metni bu oturumda açılmadı; Reuters doğrulama yerine geçen ikincil haber. STATUS: kesinleşmiş satın alma değil. Öncesi/sonrası operasyonel müşteri işi kanıtlanmadı; genel AI servisleri ise ürün politikasındaki dış model kısıtına takılır.",
+        "opportunities": []
+      },
+      {
+        "article_key": "cdc40e5b604d8d36d3f84a1b",
+        "decision": "no_opportunity",
+        "reason": "EVENT: Handelsblatt 12 Ekim'de Bundeswehr dijital telsizinin hareket hâlinde saha testlerinde ilerleme, fakat seri entegrasyonda gecikme olduğunu bildirdi. DELTA: saha testinden seri kabul ve koordinasyon geçişi. Ancak mevcut kapalı savunma entegrasyon sisteminin üçüncü taraf bağımsız Lovable ürününe ihtiyaç duyduğu ya da yeni satılabilir süreç kanıtlanmadı; bu bir ürün reddi değil Discovery'de ayrı fırsat bulunmama kararı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "cde825c8ec99a58d5deb8f26",
+        "decision": "opportunity",
+        "reason": "EVENT: REA Group 13 Ekim tarihli iTnews söyleşisinde B2C yaşam döngüsü sinyallerini B2B emlak profesyonellerinin Ignite akışına taşıdığını ve Listing Bump kullanımında %250 artış bildirdi. BEFORE: genel bilgilendirme. AFTER: ilan düzeyinde kullanılmamış özelliği saptayan eylem önerileri. DELTA: veri ve davranışa göre görev fırsatlarının görünürleşmesi. Özgün REA uygulaması zaten mevcut: Validation'da doğrudan rakip olarak incelenmeli.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-1e934380178f4314:cde825c8ec99a58d5deb8f26:1",
+            "canonical_key": "property-marketplace-operators|find-underused-listing-campaign-tools|csv-based-rule-action-worklist",
+            "idea_name": "Emlak İlanı Aksiyon Eksikliği Listesi",
+            "core_job": "Emlak profesyonellerinin aktif ilan kampanyasında kullanmadığı değerli pazaryeri özelliklerini tespit edip aksiyon listesi üretmek",
+            "target_customer": "Emlak ilan pazaryeri B2B büyüme ve müşteri başarı ekipleri",
+            "buyer": "Pazaryeri B2B büyüme lideri",
+            "product_mechanism": "Manuel dışa aktarılmış ilan/ajan kullanım CSV dosyasını kural setiyle işleyerek kampanya aşamasına göre fırsat ve takip raporu çıkaran çevrimdışı araç",
+            "why_now": "REA Group'un aynı iş akışında bildirilen kullanım artışı, özellik benimsetmenin sayısallaştırılabilir değerini görünür kılıyor.",
+            "before_state": "Temsilcilere genel ürün tanıtım mesajları verilir.",
+            "after_state": "İlan bazlı henüz kullanılmamış özellik için manuel takip edilebilir aksiyon listesi oluşur.",
+            "canonical_source_urls": [
+              "https://www.itnews.com.au/news/rea-group-scales-personalisation-across-both-sides-of-its-marketplace-629257"
+            ],
+            "supporting_article_ids": [
+              "7d6c17a6ca6a1110c906a3e3"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.itnews.com.au/news/rea-group-scales-personalisation-across-both-sides-of-its-marketplace-629257",
+                "observation": "REA Listing Bump kullanımında %250 artış bildirdi; REA'nın kendi Ignite iş akışında zaten uygulanıyor ve Tealium/Braze entegrasyonlarından söz ediliyor."
+              }
+            ],
+            "scope_hint": "Dünya; harici Tealium/Braze şartı yok, sadece müşteri dışa aktarımı kullanılır. REA'nın mevcut çözümü ve CRM sistemleri için doğrudan rakip analizi gerekir.",
+            "local_evidence": {
+              "signals": [
+                "iTnews tarafından bildirilen mevcut REA kullanım senaryosu"
+              ],
+              "unknowns": [
+                "Diğer emlak pazaryerlerinin aynı iş akışına talebi doğrulanmadı",
+                "Türkiye'de benzer ürünler araştırılmadı"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "ce0b0245d86bd462861acf15",
+        "decision": "opportunity",
+        "reason": "EVENT: 24 Eylül'de U Mobile/ZTE Malezya'da iki lokasyonda tam şebekeden bağımsız 4G/5G POC tamamladı. Üç günlük saha kurulum, konfigürasyona bağlı 52 saat güneşsiz batarya yedeği ve uydu backhaul şirket açıklamasında. Nikkei'nin Ekim derlemesini yeni Ekim lansmanı saymıyorum. DELTA: uzun kule/şebeke kurulumu yerine taşınabilir sistem; enerji otonomisi ve hızlı saha kabul planlaması somut JTBD.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-1e934380178f4314:ce0b0245d86bd462861acf15:1",
+            "canonical_key": "mobile-network-operators|plan-portable-offgrid-5g-site-readiness|offline-power-autonomy-commissioning-workbook",
+            "idea_name": "Off-grid 5G Saha Hazırlık Defteri",
+            "core_job": "Taşınabilir şebekeden bağımsız 4G/5G sahalarında PV, batarya, radyo yükü, uydu erişimi ve kabul adımlarını planlamak",
+            "target_customer": "Mobil şebeke operatörleri, kırsal kapsama ve afet haberleşme saha ekipleri",
+            "buyer": "RAN saha planlama ve enerji mühendisliği yöneticisi",
+            "product_mechanism": "Kullanıcı verisiyle çalışan tarayıcı içi enerji dengesi/batarya otonomisi hesabı, saha kurulum malzeme-checklist ve manuel test kanıt paketi",
+            "why_now": "ZTE/U Mobile 24 Eylül 2026 POC iki sahada güneş enerjili uydu backhaul ile hızlı taşınabilir kurulum gösterdi; yeni iş akışları için gerçek teknik örnek.",
+            "before_state": "Saha kurulum/enerji/backhaul planları ayrı ekiplerde ve tablolarla hazırlanır.",
+            "after_state": "Saha çevresel ve operasyonel girdilerinden dayanım senaryoları ve kabul testleri tek dosyaya bağlanır.",
+            "canonical_source_urls": [
+              "https://www.zte.com.cn/global/about/news/u-mobile-and-zte-demonstrate-portable-100-green-energy-5g-site-to-connect-remote-and-underserved-communities.html"
+            ],
+            "supporting_article_ids": [
+              "c267dcc7bed49184d1936b7a"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.zte.com.cn/global/about/news/u-mobile-and-zte-demonstrate-portable-100-green-energy-5g-site-to-connect-remote-and-underserved-communities.html",
+                "observation": "ZTE resmi duyuru 24 Eylül: 2 Malezya sahası, 3 gün devreye alma, 52 saate kadar batarya, güneş + uydu backhaul POC; sayı konfigürasyona bağlıdır."
+              }
+            ],
+            "scope_hint": "Dünya; saha telemetrisi ve canlı şebeke entegrasyonu gerekmeyen CSV ve manuel veri senaryoları. Harici API/DB/AI modeli gerekmez.",
+            "local_evidence": {
+              "signals": [
+                "İki gerçek Malezya pilotunun saha süreleri ZTE tarafından bildiriliyor"
+              ],
+              "unknowns": [
+                "Yerel Türkiye talebi ve yetkilendirme sorumlulukları araştırılmadı",
+                "Tedarikçi telekom enerji yazılımlarıyla rekabet açık"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "ce19e815c455968c89428d19",
+        "decision": "no_opportunity",
+        "reason": "EVENT: 12 Ekim 2026 KOSPI 6384.24 ile %3,65 geriledi; Seoul Economic Daily ve Kore Times ile doğrulandı. Tek bir fiyat/sermaye piyasası dalgalanması belirli bir yeni müşteri iş akışı ya da dış API gerektirmeyen farklılaşmış yazılım ürün ihtiyacı göstermiyor. ETNews asıl yayın tam metni bu araştırmada okunmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "cf32e618febdf639d4461205",
+        "decision": "no_opportunity",
+        "reason": "EVENT: YourStory'nin 12 Ekim tarihli özgün haberi Boldfit'in yaklaşık INR 400 crore Serie B fonunu perakende genişleme, üretim ve ürün yeniliğine ayıracağını bildiriyor. DELTA: büyüme sermayesi. Mevcut yaygın ERP, perakende tedarik ve stok süreçlerinden ayrı, haberce doğrulanmış yeni bir iş mekanizması veya niş müşteri problemi bulunmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "cf341fb71e45d68534b55420",
+        "decision": "no_opportunity",
+        "reason": "EVENT: 36Kr 12 Ekim 2026 makalesi 8 Ekim'de tamamlanan 500 milyon dolar üzeri Manus finansmanını ve 4 milyar USD hedef değerleme haberlerini aktarıyor; son değerleme açıklanmadı. Generik agent rekabeti finansman/strateji haberidir. Dış LLM olmadan aynı agent ana değerini üretmek ürün politikasına uygun değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "cf46bf8f82f0b770b41fcb5f",
+        "decision": "opportunity",
+        "reason": "EVENT: Economic Times, BASF Evonik işlemi henüz kesinleşmemişken BASF'nin sıvı soğutma ürününü gündeme aldı. BASF'nin 8 Ekim birincil duyurusu GLYTHERMIN DC PG25'in NVIDIA DSX Ready Coolant yeterliliğini doğrular. BEFORE: akışkan uygunluğu farklı datasheetlerde. AFTER: kabul edilen sıcaklık/kimya/loop gereksinimlerinin açık teknik yeterlilik ölçütü. DELTA: soğutma sıvısı uyumluluk ve kanıt izleme gereksinimi.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-1e934380178f4314:cf46bf8f82f0b770b41fcb5f:1",
+            "canonical_key": "data-center-facility-engineers|qualify-coolant-and-maintain-compatibility-evidence|offline-datasheet-approval-matrix",
+            "idea_name": "Soğutma Sıvısı Uygunluk Kanıt Matrisi",
+            "core_job": "Sıvı soğutmalı AI veri merkezlerinde değişik üreticilerin akışkanlarını loop tasarımı ve sertifikasyon şartlarına göre belgeleyip karşılaştırmak",
+            "target_customer": "AI veri merkezi mekanik tasarım, sıvı soğutma ve devreye alma ekipleri",
+            "buyer": "Veri merkezi mekanik/commissioning yöneticisi",
+            "product_mechanism": "Kullanıcının sağladığı teknik spesifikasyon ve datasheet ölçümlerini kurallarla kıyaslayıp uygunluk/uyumsuzluk ve eksik kanıt raporu üreten yerel matriks",
+            "why_now": "8 Ekim 2026 BASF GLYTHERMIN DC PG25 ürününün NVIDIA DSX Ready Coolant niteliğini açıklaması, tedarikçi/akışkan onay kriterlerinin somutlaşmasına işaret etti.",
+            "before_state": "Soğutma akışkanının kimya, uyumluluk, sıcaklık ve inhibitör verileri ayrı tedarikçi dosyalarında değerlendirilir.",
+            "after_state": "Kriter sürümü, tedarikçi kanıt URL/sertifika ve test sonucu karşılaştırması tek kanıt matrisinde tutulur.",
+            "canonical_source_urls": [
+              "https://www.basf.com/global/en/media/news-releases/2026/10/p-26-162",
+              "https://chemicals.economictimes.indiatimes.com/news/industry-and-market/basfs-speciality-chemicals-push-gathers-pace-as-evonik-deal-talks-remain-open/134887971"
+            ],
+            "supporting_article_ids": [
+              "ed481623e6bfe729da85c672"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.basf.com/global/en/media/news-releases/2026/10/p-26-162",
+                "observation": "BASF 8 Ekim açıklaması NVIDIA DSX Ready Coolant PG25 niteliğini, sekonder loop tek faz cold plate kullanımını belirtiyor; ürün lansmanı Evonik devralmasının tamamlandığı anlamına gelmez."
+              }
+            ],
+            "scope_hint": "Dünya; teknik datasheet, kullanıcı CSV içe aktarma, deterministik kurallar; zorunlu dış API/DB/AI modeli yok.",
+            "local_evidence": {
+              "signals": [
+                "BASF somut DSX Ready Coolant teknik yeterlilik açıklaması"
+              ],
+              "unknowns": [
+                "Tüm tedarikçilerin onay listesi ve doküman telif/hakları ayrı kontrol gerektirir",
+                "Türkiye/global doğrudan rakip sayısı bilinmiyor"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "cf54516aa3a57b8fe007bdd4",
+        "decision": "no_opportunity",
+        "reason": "EVENT: Meta 12 Ekim'de Muse Wonder ve Full modellerinin Meta Model API/Muse Code üzerinden sunulduğunu duyurdu. Modelin kendisini zorunlu dış API ile çağıran yeni uygulama Radar ürünündeki sıfır harici AI runtime politikasına uymaz. Bu habere bağlanan özgün bağımsız deterministik müşteri problemi mevcut kanıtla saptanmadı.",
+        "opportunities": []
+      }
+    ]
+  }
+}
