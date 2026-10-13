@@ -1,27 +1,24 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T04:08:43Z",
+  "controller_observed_at": "2026-10-13T04:08:57Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
-  "ready_jobs": 363,
-  "unfinished_jobs": 365,
-  "last_verified_progress_at": "2026-10-13T04:07:45Z",
+  "ready_jobs": 362,
+  "unfinished_jobs": 364,
+  "last_verified_progress_at": "2026-10-13T04:08:49Z",
   "workers": {
     "1": {
-      "last_started_at": "2026-10-13T04:06:51.813Z",
+      "last_started_at": "2026-10-13T04:08:44.794Z",
       "last_event": {
         "schema_version": 1,
         "worker": 1,
-        "invocation_id": "manual-w1-1791864411813-3759112",
-        "event": "finished",
-        "at": "2026-10-13T04:07:50.899Z",
-        "receipts_verified": 2,
-        "articles_triaged": 20,
-        "note": "20 feed records screened at metadata level; all unverified; 2 discovery job receipts saved.",
-        "path": "state/v2/worker-events/1/manual-w1-1791864411813-3759112/999-finished.json"
+        "invocation_id": "manual-w1-1791864524794-1347970",
+        "event": "started",
+        "at": "2026-10-13T04:08:44.794Z",
+        "path": "state/v2/worker-events/1/manual-w1-1791864524794-1347970/000-started.json"
       },
-      "receipts_this_invocation": 2,
+      "receipts_this_invocation": 0,
       "write_and_receipt_verified": true,
       "last_receipt_at": "2026-10-13T04:07:45.916Z"
     },
@@ -31,13 +28,16 @@
         "schema_version": 1,
         "worker": 2,
         "invocation_id": "manual-20261013040828557-w2",
-        "event": "started",
-        "at": "2026-10-13T04:08:28.557Z",
-        "path": "state/v2/worker-events/2/manual-20261013040828557-w2/000-started.json"
+        "at": "2026-10-13T04:08:54.170Z",
+        "event": "progress",
+        "job_id": "2026-10-10-migration-validation-570f7c19b0db278b",
+        "stage": "receipt_saved",
+        "receipt_path": "state/v2/results/2026-10-10-migration-validation-570f7c19b0db278b/001.json",
+        "path": "state/v2/worker-events/2/manual-20261013040828557-w2/001-progress.json"
       },
-      "receipts_this_invocation": 0,
+      "receipts_this_invocation": 1,
       "write_and_receipt_verified": true,
-      "last_receipt_at": "2026-10-13T03:51:05.416Z"
+      "last_receipt_at": "2026-10-13T04:08:49.764Z"
     },
     "3": {
       "last_started_at": null,
@@ -98,10 +98,10 @@
         "estimated_minutes_for_stage": 0
       },
       "validation": {
-        "completed_in_window": 9,
-        "known_remaining": 75,
-        "observed_jobs_per_hour": 4.5,
-        "estimated_minutes_for_stage": 1000.0
+        "completed_in_window": 10,
+        "known_remaining": 74,
+        "observed_jobs_per_hour": 5.0,
+        "estimated_minutes_for_stage": 888.0
       }
     },
     "estimated_minutes_remaining": null,
