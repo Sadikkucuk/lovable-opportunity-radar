@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "record_type": "independent_prevalidation_evidence_not_controller_receipt",
+  "accessed_at_utc": "2026-10-13T20:13:33.525Z",
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "source_audits": [
+    "audits/independent-research/2026-10-13-catchup-last-10.json",
+    "audits/independent-research/2026-10-13-daily-10-9995dbe6.json"
+  ],
+  "scope_note": "Bu rapor 91 katalog ve 91 tarihçe fikrinin ad, canonical_key ve core_job alanlarına karşı ön semantik taramayı, tarihli web rekabet kaynaklarına dayalı ön incelemeyi saklar. Controller kararına dahil değildir. Hiçbir iş claim'i, worker receipt'i, catalog mutasyonu veya Qualified kararı değildir.",
+  "catalog_review": {
+    "catalog_records_read": 91,
+    "history_records_read": 91,
+    "baseline_protected": 89,
+    "checkpoint_protected": 91,
+    "important_existing_keys": [
+      "ai-auditor|validate-trace-trust-records|browser-validator-signature-check-human-readable-report",
+      "content-publishers-and-brand-compliance-teams|record-ai-generated-media-provenance-verification-and-review|provenance-check-register-and-reviewer-signoff-workflow",
+      "enterprise-ai-infrastructure-team|assess-ai-infrastructure-readiness|evidence-gap-remediation-workspace",
+      "enerji-yoğun-tesislerin-proje-ekipleri|batarya-ile-tepe-güç-üretimi-seçeneklerinin-tco-hesabını-yap|kullanıcı-girdili-capex-opex-ömür-çevrim-ve-duyarlılık-hesap",
+      "sme-it-teams-deploying-desktop-or-coding-agents|define-least-privilege-resource-scopes-for-each-agent-before-deploymen|agent-registry-with-resource-permission-matrix-json-policy-drafts-vers",
+      "legacy-web-application-owners|manage-autonomous-agent-exposure|surface-register-risk-remediation-evidence"
+    ]
+  },
+  "candidates": [
+    {
+      "id": "Q1",
+      "name": "Atıl Güneş Enerjisi Hesaplama Kapasitesi Planlayıcısı",
+      "source_article": "https://spectrum.ieee.org/data-center-excess-solar",
+      "tr_search_queries": [
+        "Türkiye GES fazla enerji veri merkezi yük planlama batarya simülasyon yazılımı",
+        "Türkiye güneş batarya boyutlandırma saatlik simülasyon yazılımı"
+      ],
+      "global_search_queries": [
+        "solar curtailment compute data center battery sizing modeling software",
+        "PV + data center joint siting and sizing simulation"
+      ],
+      "competitor_leads": [
+        {
+          "name": "solarVis",
+          "url": "https://solarvis.co/tr/solutions/battery-modeling",
+          "location": "Türkiye",
+          "classification": "adjacent",
+          "same_customer_job_workflow_reason": "Saatlik GES üretim, yük, kritik yük ve batarya hesaplar; özgün adayın fazla enerji->GPU compute kapasitesi ve kesintisiz iş yükü planı bileşenini ürün metninde göstermiyor"
+        },
+        {
+          "name": "OpenG2G",
+          "url": "https://gpu2grid.io/openg2g/examples/pv-dc-siting/",
+          "location": "global",
+          "classification": "potential_direct_research_tool_not_verified_commercial_competitor",
+          "same_customer_job_workflow_reason": "PV+data center birlikte konumlama/boyutlandırma ve curtailment optimizasyonu var; teslim edilen ticari kullanıcı akışı/solar-only GPU+batarya kararı tam eşleşmesi doğrulanmadı"
+        },
+        {
+          "name": "SolarPlus",
+          "url": "https://www.solarplus.co/commercial/",
+          "location": "global",
+          "classification": "adjacent",
+          "same_customer_job_workflow_reason": "PV ve batarya tasarım/fizibilite simülasyonu; GPU workload takvimi ve PV curtailment compute modeli doğrulanmadı"
+        },
+        {
+          "name": "LōD",
+          "url": "https://lod.io/ai-data-centers",
+          "location": "global",
+          "classification": "adjacent",
+          "same_customer_job_workflow_reason": "Data center canlı enerji routing/curtailment, ancak baştan offline PV/batarya/GPU kurulum fizibilitesi değil"
+        },
+        {
+          "name": "Rune Energy",
+          "url": "https://spectrum.ieee.org/data-center-excess-solar",
+          "location": "global",
+          "classification": "triggering_market_operator_not_direct_software_confirmed",
+          "same_customer_job_workflow_reason": "RELIC fiziksel compute operatörü; kendi iç saha modellemesi satılabilir açık araç olarak kanıtlanmadı"
+        }
+      ],
+      "tr_direct_count": null,
+      "global_direct_count": null,
+      "search_complete": false,
+      "history_identity": "uncertain_potential_adjacent_PeakPower_Compare",
+      "dependency_review": "Tarayıcıda deterministik saatlik CSV enerji simülasyonu teknik olarak mümkün; dış veri getiren hava/enerji fiyat API'si şart koşulmamalı",
+      "qualified": false,
+      "reason": "PV+DC rakibi güçlü yakın eşleşme; ticari kapsam ve Türkiye kapsamı genişletilmeden rekabet sayısı kesinleştirilemez"
+    },
+    {
+      "id": "Q2",
+      "name": "Yarı İletken Fab Enerji Kabul Kontrol Matrisi",
+      "source_article": "https://zdnet.co.kr/view/?no=20261011122138",
+      "tr_search_queries": [
+        "Türkiye yarı iletken fab UPS enerji test kabul matrisi yazılımı"
+      ],
+      "global_search_queries": [
+        "semiconductor fab facility power UPS commissioning software acceptance test evidence matrix"
+      ],
+      "competitor_leads": [
+        {
+          "name": "Schneider Electric",
+          "url": "https://zdnet.co.kr/view/?no=20261011122138",
+          "location": "global",
+          "classification": "adjacent_utility_integrator",
+          "same_customer_job_workflow_reason": "UPS, fab utility optimization ve otomasyon çözümü; user-provided offline acceptance evidence matrisi ürününün doğrudan müşteriye satılan eşleşmesi doğrulanmadı"
+        }
+      ],
+      "tr_direct_count": null,
+      "global_direct_count": null,
+      "search_complete": false,
+      "history_identity": "uncertain_potential_overlap_AI_Altyapi_Hazirlik",
+      "qualified": false,
+      "reason": "Mevcut AI Altyapı Hazırlık ürünü readiness/eksik kanıt yönetimi yapar fakat fab spesifik güç/UPS/soğutma commissioning kullanımı farklı olabilir; mekanizma netleştirilmeli"
+    },
+    {
+      "id": "Q3",
+      "name": "AI Müzik Katkı ve Lisans Beyanı Defteri",
+      "source_article": "https://www.etnews.com/20261012000216",
+      "tr_search_queries": [
+        "Türkiye yapay zeka müzik eser kaydı AI kullanım beyanı telif hakları platformu",
+        "Türkiye AI müzik etiketi kayıt lisans yönetimi beyan yazılımı"
+      ],
+      "global_search_queries": [
+        "music AI contribution declaration provenance metadata licensing platform software",
+        "AI music copyright declarations human contribution rights management SaaS catalog"
+      ],
+      "competitor_leads": [
+        {
+          "name": "OZBeat AAM 2.0 B2B",
+          "url": "https://auaimusic.com/news/ozbeat-ai-launches-aam-2-0-b2b-declaration-module?lang=en",
+          "location": "global",
+          "classification": "probable_direct",
+          "same_customer_job_workflow_reason": "Doğrudan müzik dağıtımcıları/platformlar için AI Work/Recording katkı beyanı ürün modülü"
+        },
+        {
+          "name": "ACC Creator Declaration",
+          "url": "https://www.artclearancecertification.org/declaration",
+          "location": "global",
+          "classification": "potential_direct",
+          "same_customer_job_workflow_reason": "Müzik kayıtlarını HUMAN/SEMI-MIX/AI GEN olarak beyan edip metadata/asset hash ve kanıt sertifikası saklar, fakat hedef alıcı kısmen yaratıcı"
+        },
+        {
+          "name": "Audiverify",
+          "url": "https://www.audiverify.com/",
+          "location": "global",
+          "classification": "potential_direct",
+          "same_customer_job_workflow_reason": "Müzik için AI katkı beyan ve tarihli kanıt; alıcı yaratıcı/ortak çalışmalar, rights administrators farkı doğrulanmalı"
+        },
+        {
+          "name": "RightsDocket",
+          "url": "https://www.rightsdocket.com/",
+          "location": "global",
+          "classification": "potential_direct",
+          "same_customer_job_workflow_reason": "AI-assisted music human contribution/AI disclosure imzalı kanıt kayıtları; inceleme iş akışı benzer"
+        },
+        {
+          "name": "Tagmusic",
+          "url": "https://tagmusic.io/",
+          "location": "global",
+          "classification": "adjacent",
+          "same_customer_job_workflow_reason": "C2PA müzik provenance imzası, katkı ve AI disclosure; ürünün ilan edilen deneyimi pilot aşamasında"
+        },
+        {
+          "name": "YouTube Music partner disclosures",
+          "url": "https://support.google.com/youtube/answer/17124251?hl=en",
+          "location": "global",
+          "classification": "platform_builtin_adjacent",
+          "same_customer_job_workflow_reason": "YouTube müzik yayıncısının teslim ettiği DDEX/CSV üzerinde AI etiketleme. Tek başına cross-platform license approval ledger değil"
+        }
+      ],
+      "tr_direct_count": null,
+      "global_direct_count": null,
+      "search_complete": false,
+      "history_identity": "uncertain_high_overlap_with_Sentetik_Medya_Beyan_Dogrulama_Kaydi",
+      "qualified": false,
+      "reason": "Dört veya daha fazla benzer ürün bulundu, fakat aynı alıcı/iş/akış testi hepsi için net değil; rakip sayısı sıfır veya en fazla üç varsayılamaz. Bu adayın özgünlüğü zayıf."
+    },
+    {
+      "id": "Q4",
+      "name": "AI Ajan Form Gönderim Güvenlik Olay Defteri",
+      "source_article": "https://www.anthropic.com/news/investigating-unintended-model-actions",
+      "tr_search_queries": [
+        "Türkiye yapay zeka ajan yetkisiz form gönderimi test kayıt doğrulama aracı",
+        "Türkiye AI ajan eylem log denetimi politika yazılımı"
+      ],
+      "global_search_queries": [
+        "AI agent actions evaluation incident audit logs form submission guard software offline trace validation",
+        "AgentDojo BrowserGym Guardrails unsafe agent action tool-use evaluation"
+      ],
+      "competitor_leads": [
+        {
+          "name": "Obsign",
+          "url": "https://github.com/obsign/obsign",
+          "location": "global",
+          "classification": "potential_direct",
+          "same_customer_job_workflow_reason": "AI ajan eylem yetkisi ve offline denetlenebilir kanıt paketleri sağlar; daha çok canlı proxy-gateway ve signed receipts"
+        },
+        {
+          "name": "Agent Blackbox",
+          "url": "https://github.com/govern-agents/agent-blackbox",
+          "location": "global",
+          "classification": "potential_direct",
+          "same_customer_job_workflow_reason": "On-prem zero external dependency tamper-evident AI agent eylem günlükleri; log sonradan doğrulanır"
+        },
+        {
+          "name": "AgentDojo",
+          "url": "https://arxiv.org/abs/2406.13352",
+          "location": "global",
+          "classification": "adjacent_evaluation_framework",
+          "same_customer_job_workflow_reason": "Ajan saldırı/defans simülasyon ve değerlendirme ortamı; yüklenen gerçek form-submission loglarının basit risk eylem matrisi değil"
+        },
+        {
+          "name": "EvalGuard",
+          "url": "https://evalguard.ai/docs/blueprints/security-agent",
+          "location": "global",
+          "classification": "potential_direct",
+          "same_customer_job_workflow_reason": "Eylem kararı denetimi, imzalı offline doğrulanabilir evidence; SOC agent bağlamı"
+        },
+        {
+          "name": "Microsoft Agent Governance Toolkit",
+          "url": "https://microsoft.github.io/agent-governance-toolkit/COMPARISON/",
+          "location": "global",
+          "classification": "adjacent",
+          "same_customer_job_workflow_reason": "AI ajanların eylemlerini yönetir; after-action bağımsız CSV/JSON postmortem inceleme farklı olabilir"
+        },
+        {
+          "name": "Guardion",
+          "url": "https://guardion.ai/docs/guides/observability",
+          "location": "global",
+          "classification": "adjacent",
+          "same_customer_job_workflow_reason": "Canlı API telemetry sessions/traces/spans gözlemi; offline karşılaştırma için runtime bağımlılıklı"
+        }
+      ],
+      "tr_direct_count": null,
+      "global_direct_count": null,
+      "search_complete": false,
+      "history_identity": "uncertain_potential_overlap_TRACE_Inspector_and_AI_Agent_Kaynak_Yetki_Politikasi",
+      "qualified": false,
+      "reason": "Birden çok global yakın rakip ve mevcut 91 katalogda AI ajan izin/trace incelemesi ürünleri var. Şimdilik duplicate/qualified kesinliği yok; doğrudanlık ayrı teyit edilmeli."
+    }
+  ],
+  "cross_candidate_findings": "Q1 PV-DC fizibilitesi ile Q2 Fab acceptance işi semantik açıdan farklı. Q3 medya AI provenance işi kataloğa girilmiş sentetik medya beyan kaydıyla benzer; Q4 mevcut AI ajan politikası, güvenlik olayı ve TRACE doğrulama ürünleriyle karşılaştırılmalı. Dört adayın hiçbiri henüz Qualified değildir.",
+  "technical_policy": "Q1-Q4 ancak canlı dış API/DB/AI ajan bağımlılığı olmaksızın dosya alımı, tarayıcı hesaplama ve insan incelemesiyle sunulduğu dar kapsamda teknik aday olabilir. Altyapı/live monitoring/içerik analizi genişletmesi bağımlılıkları değiştirebilir.",
+  "outcome": {
+    "candidate_checks_investigated": 4,
+    "qualified": 0,
+    "rejected": 0,
+    "duplicate": 0,
+    "unverified": 4,
+    "official_worker_results": 0,
+    "site_changed": false,
+    "worker_schedules_changed": false,
+    "controller_files_changed": false
+  },
+  "needs_work": [
+    "Belirli tarihli çoklu Türkçe ve global rakip arama sonuçları sektör bazında genişletilmeli",
+    "Rakip satıcıların gerçek hedef müşteri ve iş akışları tek tek doğrulanmalı",
+    "91 fikir tarihçesine göre semantik iş mekanizması kesin karşılaştırması yapılmalı",
+    "Müşteri ödeme kanıtı/teknik risk ve zorunlu dış servis yeniden sorgulanmalı"
+  ]
+}
