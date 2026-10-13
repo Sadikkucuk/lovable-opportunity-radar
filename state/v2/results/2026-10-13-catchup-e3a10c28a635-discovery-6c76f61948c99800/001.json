@@ -1,0 +1,100 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-6c76f61948c99800",
+  "input_hash": "6c76f61948c998005842ff364129eea2400c3bb74d886572b4f280175911be17",
+  "token": "146c12f8-7ff7-49a0-97c3-5dd6e3a6c987",
+  "finished_at": "2026-10-13T07:11:50.163Z",
+  "outcome": "done",
+  "reason": "10 haberin her birinin kaynağı ve yeni müşteri işi değerlendirildi: Reuters LNG vs renewables maliyet/tedarik projesinden 1 ham fikir, 9 no_opportunity. İtalyan arabuluculuk kuralı 2025 kökenli, UK AI safety ve GEO haberleri önceki kayıtların tekrarları.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "9a415975a4fe9e237570b6ed",
+        "decision": "no_opportunity",
+        "reason": "İtalya çevrim içi arabuluculukta dijital imza prosedürü 2025'te yürürlüğe giren D.Lgs. 216/2024 Art.8-bis kaynaklıdır. Il Sole 24 ORE 12 Ekim açıklama haberi yeni imza zorunluluğu veya API açmıyor. Genel e-imza sağlayıcı altyapısı gerektirecek uygulamayı sıfır runtime servisle yeni ürün diye kurgulamadık.",
+        "canonical_source_url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=25G00003&atto.dataPubblicazioneGazzetta=2025-01-10",
+        "opportunities": []
+      },
+      {
+        "article_key": "9a69cb4ede5b4698387bbbb0",
+        "decision": "no_opportunity",
+        "reason": "12 Ekim Çin robot yapay kas/aktüatör pazarının büyümesine dair menkul kıymet araştırma raporu, yeni teknik standart, açık test kaydı ya da OEM onay protokolü belirtmiyor. Robotik motor modellerini analiz eden donanım AI modelleri harici sistem gerektirir.",
+        "canonical_source_url": "https://www.yicai.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "9a72ade9742462efb6a7b32d",
+        "decision": "no_opportunity",
+        "reason": "13 Ekim IMF'nin jeopolitik ve teknolojik nedenlerle dünya ekonomi iki patika ayrışıyor değerlendirmesi makro ekonomidir, ayrı yeni somut kurum içi operasyon veya erişilebilir veri hakkı oluşturmaz; özgün IMF rapor başlığı birebir doğrulanmadı.",
+        "canonical_source_url": "https://www.imf.org/",
+        "opportunities": []
+      },
+      {
+        "article_key": "9a9e25db77f8751a12690725",
+        "decision": "no_opportunity",
+        "reason": "2026 GEO satıcı değerlendirme rehberi, bugün işlenen `2026-10-13-catchup-e3a10c28a635-discovery-5529932ccde95bb0` dosyasındaki GEO Vendor Proof and Baseline Workbook ürün hipoteziyle aynı alıcı+teklif kanıtı+KPI karşılaştırması işini anlatıyor. Ayrı ham aday üretilmedi.",
+        "canonical_source_url": "https://www.ithome.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "9ae86c321202afbb82b6fceb",
+        "decision": "no_opportunity",
+        "reason": "Mercedes-Benz Q3 küresel otomobil satışlarının %8, Çin satışının %31 düştüğüne dair şirket finansal/teslimat istatistiğidir. Yeni açık yazılım standardı, servis talimatı veya operasyonel zorunluluk doğurmuyor.",
+        "canonical_source_url": "https://autonews.gasgoo.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "9b044ecd315aa47cc5daa131",
+        "decision": "no_opportunity",
+        "reason": "13 Ekim Hong Kong borsasında NEV hisse fiyatlarının düşüşü menkul kıymet piyasa haberidir; yeni bağımsız B2B yazılım müşterisi işi tanımlamıyor.",
+        "canonical_source_url": "https://www.yicai.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "9bb4054653b0ea8e9beef667",
+        "decision": "opportunity",
+        "reason": "12 Ekim Reuters Asya'da LNG terminal/gaz santrali planlarının pahalı LNG, gaz türbini tedarik süreleri ve ucuz yenilenebilir nedeniyle ertelendiğini aktarıyor. Wood Mackenzie 2030'a dek Güneydoğu Asya'da planlı 53GW gaz kurulumundan yalnız 14,9GW'ın devreye girebileceğini tahmin ediyor; bu bir gerçekleşen sayı değil. Geliştiricinin tüm alternatif enerji yatırım taahhütlerini varsayım ve izin bağımlılığıyla compare etmesi somut karar/JTBD.",
+        "canonical_source_url": "https://www.reuters.com/business/energy/emerging-asias-power-driven-lng-demand-risk-renewables-gain-ground-2026-10-12/",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-6c76f61948c99800:9bb4054653b0ea8e9beef667:01",
+            "idea_name": "ASEAN Power-Plant Switch Decision Ledger",
+            "canonical_key": "emerging-asia-power-project-investors|compare-delayed-lng-turbine-projects-against-renewable-options|permit-supply-fuel-price-and-npv-assumption-ledger",
+            "target_customer": "Vietnam, Filipinler ve yakın ASEAN bölgesi elektrik santrali proje sahipleri ve yatırım komitesi ekipleri",
+            "core_job": "Gaz türbini tedariki gecikmesi/LNG fiyat riski ve güneş-rüzgâr alternatiflerinde yatırım zamanlaması ve kaynak sürekliliği kararı vermek",
+            "product_mechanism": "Kullanıcının sağladığı kapasite MW, turbine teslim ETA, izin tarihi, LNG/yenilenebilir enerji varsayımları, capex ve beklenen enerji geliri CSV'lerini tarayıcıda NPV/yıllık nakit akışı duyarlılığına çevirmek; canlı piyasa/üçüncü taraf API yok",
+            "why_now": "12 Ekim Reuters Asya'da LNG terminal/gaz santrali planlarının pahalı LNG, gaz türbini tedarik süreleri ve ucuz yenilenebilir nedeniyle ertelendiğini aktarıyor. Wood Mackenzie 2030'a dek Güneydoğu Asya'da planlı 53GW gaz kurulumundan yalnız 14,9GW'ın devreye girebileceğini tahmin ediyor; bu bir gerçekleşen sayı değil. Geliştiricinin tüm alternatif enerji yatırım taahhütlerini varsayım ve izin bağımlılığıyla compare etmesi somut karar/JTBD.",
+            "before_state": "Gaz santrali tedarik belirsizliği ve yenilenebilir maliyeti ayrı fizibilite sayfalarında gösterilir",
+            "after_state": "Senaryo bazlı izin/teslim/enerji kaynağı ve yatırım onayı gerekçe matrisi",
+            "canonical_source_urls": [
+              "https://www.reuters.com/business/energy/emerging-asias-power-driven-lng-demand-risk-renewables-gain-ground-2026-10-12/"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "9bec070391654378b3f83fa7",
+        "decision": "no_opportunity",
+        "reason": "12 Ekim UK AI güvenliği/incident reporting çağrısı daha önce Reuters ve Korea ETNews ile bu günün snapshot'ında birkaç kez değerlendirildi. Mevzuat yürürlüğe girmiş genel kayıt yükümlülüğü değildir, duplicate fırsat yok.",
+        "canonical_source_url": "https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks",
+        "opportunities": []
+      },
+      {
+        "article_key": "9c5f3a306f7bbff1e09298d9",
+        "decision": "no_opportunity",
+        "reason": "1Komma5Grad 12 Ekim 70 milyon EUR finansmanla 1,35 milyar USD değerlemeye yükseldi ve 2027'de Heartbeat AI enerji otomasyonuna 100 milyon EUR+ yatırım hedefliyor. Bu finansman, canlı fiyat/otomatik enerji ticareti motorunu ücretsiz dış servis olmadan geliştirmek için kullanıcı hakkı sağlamıyor. Halihazırdaki PeakPower Compare işine semantik yakınlık yüksek.",
+        "canonical_source_url": "https://www.handelsblatt.com/unternehmen/energie/energie-startup-1komma5grad-steigert-bewertung-auf-135-milliarden-dollar/100261463.html",
+        "opportunities": []
+      },
+      {
+        "article_key": "9c683350f4ffdf526f840472",
+        "decision": "no_opportunity",
+        "reason": "OFweek 晶晨/芯原/瑞芯微 uç cihaz AI işlemci firmalarının piyasa konumuna dair sektör yorumu; yeni ortak tedarikçi API'sı veya geçerli zorunlu standardizasyon kanıtı yok. Genel çip pazarı kıyaslayıcısı için net yeni iş gerekçesi çıkmadı.",
+        "canonical_source_url": "https://www.ofweek.com/",
+        "opportunities": []
+      }
+    ]
+  }
+}
