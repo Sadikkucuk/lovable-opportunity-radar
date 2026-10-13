@@ -4,27 +4,13 @@
   "queue_mode": "shared",
   "current_run": "2026-10-13-catchup-e3a10c28a635",
   "lease_minutes": 30,
-  "ready_count": 352,
+  "ready_count": 351,
   "job_count": 353,
-  "queue_revision": "d68110807e1d8336fdbea5aa2d2b6617b2cc3b0493d2897b53eb0f1bb483d089",
+  "queue_revision": "5c9bb05d69f32a2ce3060c5fd5165f59cd3d5e5c152179f3334847d15c8e0a66",
   "page": 18,
   "page_count": 18,
   "next_page": null,
   "jobs": [
-    {
-      "job_id": "2026-10-13-43d3b526fc-discovery-c79ea38225e19f60",
-      "path": "state/v2/jobs/2026-10-13-43d3b526fc-discovery-c79ea38225e19f60.json",
-      "run_id": "2026-10-13-43d3b526fc",
-      "kind": "discovery",
-      "input_hash": "c79ea38225e19f60b09dfa29935b0290b2c4207e5ea39a02bf34c0f07b523408",
-      "legacy_lane": 1,
-      "queue_group": "backlog",
-      "preferred_worker": 1,
-      "state": "ready",
-      "attempt": 1,
-      "claim_path": "state/v2/claims/2026-10-13-43d3b526fc-discovery-c79ea38225e19f60/001.json",
-      "result_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-c79ea38225e19f60/001.json"
-    },
     {
       "job_id": "2026-10-13-43d3b526fc-discovery-c8e72307c10d6468",
       "path": "state/v2/jobs/2026-10-13-43d3b526fc-discovery-c8e72307c10d6468.json",
@@ -178,6 +164,19 @@
       "attempt": 1,
       "claim_path": "state/v2/claims/2026-10-13-43d3b526fc-discovery-f90a6d927f2c3b38/001.json",
       "result_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-f90a6d927f2c3b38/001.json"
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-818e788851403a8d",
+      "path": "state/v2/jobs/2026-10-13-catchup-e3a10c28a635-discovery-818e788851403a8d.json",
+      "run_id": "2026-10-13-catchup-e3a10c28a635",
+      "kind": "discovery",
+      "input_hash": "818e788851403a8dcfaf73147b5692c99d0058c31116ca325da65460de1bd27a",
+      "legacy_lane": 1,
+      "queue_group": "current",
+      "preferred_worker": 3,
+      "state": "leased",
+      "attempt": 2,
+      "expires_at": "2026-10-13T18:11:54.763Z"
     },
     {
       "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-da8f47d00c271013",
