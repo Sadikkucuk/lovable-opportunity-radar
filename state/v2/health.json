@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T04:44:32Z",
+  "controller_observed_at": "2026-10-13T04:45:27Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
   "ready_jobs": 356,
-  "unfinished_jobs": 357,
-  "last_verified_progress_at": "2026-10-13T04:43:07Z",
+  "unfinished_jobs": 356,
+  "last_verified_progress_at": "2026-10-13T04:45:11Z",
   "workers": {
     "1": {
       "last_started_at": "2026-10-13T04:08:44.794Z",
@@ -45,17 +45,25 @@
         "worker": 3,
         "invocation_id": "a14bd8cb-77df-4d53-b8c7-5c7ed1f75bd6",
         "event": "progress",
-        "at": "2026-10-13T04:43:19.069Z",
-        "job_id": "2026-10-13-43d3b526fc-discovery-24cc57afd99577f0",
+        "at": "2026-10-13T04:45:21.068Z",
+        "job_id": "2026-10-10-migration-validation-1995552b0b7edba3",
         "stage": "receipt_saved",
-        "receipt_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-24cc57afd99577f0/001.json",
-        "articles_triaged": 10,
-        "raw_opportunities": 5,
-        "path": "state/v2/worker-events/3/a14bd8cb-77df-4d53-b8c7-5c7ed1f75bd6/008-progress.json"
+        "receipt_path": "state/v2/results/2026-10-10-migration-validation-1995552b0b7edba3/001.json",
+        "completed_checks": [
+          "trigger",
+          "competition_tr",
+          "competition_global",
+          "feasibility",
+          "history"
+        ],
+        "remaining_checks": [],
+        "decision": "rejected",
+        "global_direct_competitors": 4,
+        "path": "state/v2/worker-events/3/a14bd8cb-77df-4d53-b8c7-5c7ed1f75bd6/009-progress.json"
       },
-      "receipts_this_invocation": 5,
+      "receipts_this_invocation": 6,
       "write_and_receipt_verified": true,
-      "last_receipt_at": "2026-10-13T04:43:07.762Z"
+      "last_receipt_at": "2026-10-13T04:45:11.953Z"
     },
     "4": {
       "last_started_at": "2026-10-13T03:41:34.910Z",
@@ -109,10 +117,10 @@
         "estimated_minutes_for_stage": 0
       },
       "validation": {
-        "completed_in_window": 11,
-        "known_remaining": 73,
-        "observed_jobs_per_hour": 5.5,
-        "estimated_minutes_for_stage": 796.4
+        "completed_in_window": 12,
+        "known_remaining": 72,
+        "observed_jobs_per_hour": 6.0,
+        "estimated_minutes_for_stage": 720.0
       }
     },
     "estimated_minutes_remaining": null,
