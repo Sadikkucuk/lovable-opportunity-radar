@@ -4,9 +4,9 @@
   "queue_mode": "shared",
   "current_run": "2026-10-13-catchup-e3a10c28a635",
   "lease_minutes": 30,
-  "ready_count": 489,
+  "ready_count": 488,
   "job_count": 490,
-  "queue_revision": "0c9f630aaeeaafe69a300889beffcb4bb86454a90e4b0d700dd832e6396f5d45",
+  "queue_revision": "2643156c8009554fab76bd82c33eadb460e45dffb8a6da8b021c2efb5e2bb7a7",
   "page": 11,
   "page_count": 25,
   "next_page": "state/v2/inbox/worker-4-page-012.json",
@@ -24,20 +24,6 @@
       "attempt": 1,
       "claim_path": "state/v2/claims/2026-10-10-migration-validation-898be8e00c6426f3/001.json",
       "result_path": "state/v2/results/2026-10-10-migration-validation-898be8e00c6426f3/001.json"
-    },
-    {
-      "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-fda87aa2ce490ee5",
-      "path": "state/v2/jobs/2026-10-13-catchup-e3a10c28a635-discovery-fda87aa2ce490ee5.json",
-      "run_id": "2026-10-13-catchup-e3a10c28a635",
-      "kind": "discovery",
-      "input_hash": "fda87aa2ce490ee57473f04164c7159ca54e31f47528139537f9a173b7931d2e",
-      "legacy_lane": 1,
-      "queue_group": "current",
-      "preferred_worker": 1,
-      "state": "ready",
-      "attempt": 1,
-      "claim_path": "state/v2/claims/2026-10-13-catchup-e3a10c28a635-discovery-fda87aa2ce490ee5/001.json",
-      "result_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-fda87aa2ce490ee5/001.json"
     },
     {
       "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-fea0ccd4547dd2ad",
@@ -290,6 +276,20 @@
       "attempt": 1,
       "claim_path": "state/v2/claims/2026-10-12-4bb3b46a63-discovery-c24505ffab472a4e/001.json",
       "result_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-c24505ffab472a4e/001.json"
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-ad8ae71ec869b6af",
+      "path": "state/v2/jobs/2026-10-10-migration-validation-ad8ae71ec869b6af.json",
+      "run_id": "2026-10-10-migration",
+      "kind": "validation",
+      "input_hash": "ad8ae71ec869b6af71ffa33723c6b5006acbc0e923f4c3988bfdd4d995e931f1",
+      "legacy_lane": 2,
+      "queue_group": "backlog",
+      "preferred_worker": 3,
+      "state": "ready",
+      "attempt": 1,
+      "claim_path": "state/v2/claims/2026-10-10-migration-validation-ad8ae71ec869b6af/001.json",
+      "result_path": "state/v2/results/2026-10-10-migration-validation-ad8ae71ec869b6af/001.json"
     }
   ]
 }
