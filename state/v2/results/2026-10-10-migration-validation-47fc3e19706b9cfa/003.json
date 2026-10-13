@@ -1,0 +1,141 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-47fc3e19706b9cfa",
+  "input_hash": "47fc3e19706b9cfa6baa8b0156c14bb7d23ac3c3a4f7ec9cf5bda5ca362b6902",
+  "token": "b8dd9f80-51f9-44a9-b0a4-b0d37d4d1a53",
+  "finished_at": "2026-10-13T20:46:14.308Z",
+  "outcome": "done",
+  "reason": "SupplierDefect Trail'in tetikleyici makalesi özgün yayınevinde okundu. Ancak Türkiye'de WEEC eQMS Tedarikçi CAPA/8D, aynı çok tedarikçili imalatçıların parti/lot kaynaklı tekrarlanan kusurlarını, giriş kalite raporlarını, kök nedeni, 8D/CAPA düzeltici faaliyetlerini ve kapanışın etkinlik doğrulamasını mevcut üründe yönetiyor. 1 doğrulanmış doğrudan Türkiye rakibi Radar politikasındaki 0 şartını ihlal ettiği için aday reddedildi. Globalde WorkCell ve HoldField benzer iş akışlarını sağlıyor. Bilinmeyen rakipler sıfıra indirilmedi.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Rekabet Quality Gate başarısız: Türkiye'de en az bir doğrudan rakip — WEEC eQMS Tedarikçi CAPA/8D. Aynı müşteri (imalatçı tedarikçi kalite ekibi), aynı temel iş (tekrarlayan lot/batch kusurunu ve CAPA kapanışını kanıtlamak), büyük ölçüde aynı iş akışı (lot tespiti → kök neden → tedarikçi aksiyonu → 8D → tekrar/etkinlik doğrulaması).",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.qualitymag.com/articles/99985-why-manufacturers-need-better-inspection-history-not-just-more-quality-data",
+        "accessed_at": "2026-10-13T20:46:14.308Z",
+        "claim": "Tekrarlayan tedarikçi/lot kusurlarının bağlı muayene ve düzeltici faaliyet tarihiyle izlenmesi gerçek bir üretim işidir.",
+        "observation": "Yayınevi makalesi parti, tedarikçi, muayene, CAPA, tekrar ve etkinlik izleme ilişkisinin üreticiler için önemini açıkça anlatıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://www.weec.com.tr/tr/eqms-tedarikci-capa-8d/",
+        "accessed_at": "2026-10-13T20:46:14.308Z",
+        "claim": "Türkiye'de aynı imalatçı müşteri işi ve büyük ölçüde aynı workflow'a sahip doğrudan rakip vardır.",
+        "observation": "WEEC ürün sayfası aynı ürün/lot, giriş kontrol, tekrar eden uygunsuzluk, 8D, tedarikçi kanıtı ve etkinlik doğrulaması iş akışını açıklıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://workcell.ai/software/qms",
+        "accessed_at": "2026-10-13T20:46:14.308Z",
+        "claim": "Globalde mevcut bir doğrudan imalatçı tedarikçi kalite iş akışı bulunur.",
+        "observation": "WorkCell QMS üreticiler için lot izlenebilirlik, tedarikçi bazlı hata ölçümü, muayene, 8D CAPA ve tekrar kontrolünü aynı veritabanında sunuyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.holdfield.com/demo/qms/supplier-quality",
+        "accessed_at": "2026-10-13T20:46:14.308Z",
+        "claim": "Globalde aynı iş akışının ürün demosu olarak sunulduğu doğrulandı.",
+        "observation": "HoldField demo lot kusur kümelerini tedarikçi riskine, SCAR/CAPA kanıtlarına ve insan onayına bağlıyor; demo niteliği gerçek müşteri kurulum sayısını kanıtlamaz.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 1,
+        "queries": [
+          "tedarikçi bazında tekrar eden lot kalite hatası CAPA 8D takip yazılım Türkiye",
+          "tedarikçi parti uygunsuzluk 8D kalite yönetimi Türkiye WEEC",
+          "giriş kalite tedarikçi lot 8D SCAR yazılım"
+        ],
+        "scope": "13 Ekim 2026 tarihli web kapsamı: en az bir doğrulanmış doğrudan Türk yazılım sağlayıcısı; tüm Türkiye ekosisteminin eksiksiz sayımı iddiası değil.",
+        "search_complete": false,
+        "direct_competitors": [
+          {
+            "name": "WEEC eQMS Tedarikçi CAPA/8D",
+            "url": "https://www.weec.com.tr/tr/eqms-tedarikci-capa-8d/",
+            "same_customer_job_workflow_reason": "Türk üretici tedarikçi kalite ekipleri; kaynak parti uygunsuzluğu → giriş kontrol → 8D kök neden → tedarikçi aksiyonu → tekrar etmeme etkinliği doğrulaması."
+          }
+        ],
+        "adjacent_competitors": [
+          {
+            "name": "NetSystem Kalite Süreç Yönetimi",
+            "url": "https://www.netsystem.com.tr/kalite-surec-yonetimi.html",
+            "reason": "Genel kalite ve tedarikçi PPM yetenekleri; tam lot-kusur zinciri eşleşmesi bu turda ayrıca sonuçlandırılmadı."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 2,
+        "queries": [
+          "manufacturing supplier lot recurring defect inspection CAPA traceability QMS software",
+          "supplier receiving incoming lot defect cluster SCAR audit evidence QMS",
+          "WorkCell manufacturing QMS supplier lot inspection 8D CAPA",
+          "HoldField QMS supplier quality lot defects"
+        ],
+        "scope": "İki sayfası gerçekten okunan global ürünün aynı müşteri+iş+akış eşleşmesi; başka rakiplerin bulunmadığı anlamına gelmez.",
+        "search_complete": false,
+        "direct_competitors": [
+          {
+            "name": "WorkCell QMS",
+            "url": "https://workcell.ai/software/qms",
+            "same_customer_job_workflow_reason": "İmalatçı/tedarikçi kalite, lot bazlı muayene ve tekrarlı NCR, CAPA doğrulama ve tedarikçi performansını tek geçmişte tutma."
+          },
+          {
+            "name": "HoldField Supplier Quality QMS",
+            "url": "https://www.holdfield.com/demo/qms/supplier-quality",
+            "same_customer_job_workflow_reason": "Gelen parti hata kümeleri, tedarikçi risk, SCAR/CAPA bağlama, insan onayı ve denetim paketi; ürün demosu gösterilir."
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Tek kullanıcı veya cihaz için tarayıcıda çalışan CSV/JSON tedarikçi/lot/defect içe aktarma, normalize hata sözlüğü, geçmiş ve tekrar sayacı, insan onaylı CAPA raporu, indirilebilir dosya. Canlı ERP/SCADA, harici API, AI modeli, DB servisi gerekmez. Tarayıcı içinde çok kullanıcılı senkronizasyonda sınırlamalar açıkça belirtilir.",
+      "dependency_inventory": [
+        "Kullanıcı tarafından sağlanan tedarikçi lot veri CSV/JSON dosyaları",
+        "Tarayıcı IndexedDB/yerel dosya kaydı veya indirme",
+        "Deterministik tekrar sınıflama kuralları",
+        "Kullanıcı girdili CAPA/8D aksiyon/kapanış verisi",
+        "Tarayıcıdan dışa aktarım"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "91 kayıtlı tarihçede aynı canonical key tam eşleşmesi yok. Ancak tarihsel semantik yakınlık nihai qualified araştırmasına dönüştürülmedi; doğrudan Türkiye rakibi yüzünden aday zaten elendi."
+    },
+    "research_attempts": [
+      {
+        "url": "https://www.qualitymag.com/articles/99985-why-manufacturers-need-better-inspection-history-not-just-more-quality-data",
+        "status": "original_publisher_page_read"
+      },
+      {
+        "url": "https://www.weec.com.tr/tr/eqms-tedarikci-capa-8d/",
+        "status": "official_product_page_read",
+        "observation": "Türk doğrudan rakip görüldü."
+      },
+      {
+        "url": "https://workcell.ai/software/qms",
+        "status": "official_product_page_read"
+      },
+      {
+        "url": "https://www.holdfield.com/demo/qms/supplier-quality",
+        "status": "official_product_demo_page_read"
+      }
+    ],
+    "policy_result": {
+      "passes_turkiye_zero_direct_competitor_gate": false,
+      "passes_global_at_most_three_observed_competitor_gate": true,
+      "qualified": false
+    }
+  }
+}
