@@ -1,0 +1,179 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-11-a4dcde1ff5-discovery-17b834ce8ff3ae22",
+  "input_hash": "17b834ce8ff3ae224a13aa141bd69e18f0e6bd584653914f4174ccaaa1e89055",
+  "token": "89ba4305-2e04-41c0-9c89-ccff445292b5",
+  "finished_at": "2026-10-13T20:52:04.941Z",
+  "outcome": "done",
+  "reason": "10 özgün 11 Ekim Discovery girdi makalesi teker teker işlendi. Üç farklı yeni müşteri iş akışı kaydedildi; eski/kayıtlı catchup ham fırsatlarının tekrarı ayrıldı; erişilemeyen MIT kaynak `unverified` bırakıldı; EPDK'da 2027 yürürlük tarihi korundu; haberler arası karşılaştırma yapıldı.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "c6410882b79f02a49c70968d",
+        "decision": "no_opportunity",
+        "reason": "Heise/SIGS açık özgün makale bölümü Data Mesh mülkiyetinden GraphRAG veri ilişkilerinin yapılandırılmasına geçişi teknik mimari görüşü olarak ele alıyor. Metnin kalanına SIGS+ oturumu gerektiği için erişilemedi. Yeni kullanıma giren zorunlu standart, erişime açılmış benzersiz veri veya somut ödeyen müşteri akışı doğrulanmadı; işçi açısından genellenebilir bir yenilik iddia edilmedi.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c642cfc2f2790837314e59eb",
+        "decision": "opportunity",
+        "reason": "Handelsblatt 9 Ekim 2026 konuk yazısı: lisans başına maliyet → kullanım/talep başına AI token ve veri platformu maliyeti. 396 kuruluşta %89 maliyet öngörü sapması metinde üçüncü taraf anket verisi olarak aktarılıyor, bağımsız yeniden ölçüm değil. Fark: bir kez yapılandırılmış bilgiyle tekrar retrieval yapan çok çağrılı tasarımın maliyetini karşılaştırma ihtiyacı. Buyer AI platform bütçe/çözüm mimarisi lideri; somut girdi çağrı sayısı, indeks ön işleme eforu, belge tekrar oranı; çıktı yıllık maliyet/senaryo/ölçüm kanıtı. AI modeli çağırmadan formül bazlı simülasyon mümkündür.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-11-a4dcde1ff5-discovery-17b834ce8ff3ae22:c642cfc2f2790837314e59eb:1",
+            "canonical_key": "enterprise-ai-solution-architects|compare-rag-retrieval-and-context-cost-topologies|offline-query-volume-token-and-data-platform-scenario-calculator",
+            "idea_name": "RAG Bağlam–Token Maliyet Senaryo Hesaplayıcısı",
+            "core_job": "Retrieval mimarisi (her istek tam belge, çoklu tool call, ön indekslenmiş Graph/RAG) arasında istek başı/aylık/yıllık maliyet, gereksiz bağlam ve bilgi hazırlama amortismanını ölçmek",
+            "target_customer": "Kurumsal AI çözüm mimarisi ve FinOps ekipleri",
+            "buyer": "AI platformu CTO/FinOps yöneticisi",
+            "product_mechanism": "Kullanıcı tarafından girilen istek/ay, ortalama token, tool çağrısı, hazırlık CAPEX, vektör veri platformu maliyeti ve duplike doküman oranını tarayıcıda deterministik hesaplayan üç mimari senaryo ve hassasiyet raporu",
+            "why_now": "9 Ekim Handelsblatt uzman yazısı, kullanıma dayalı AI harcamalarının token dışı veri altyapısı ve bilgi hazırlama maliyetleriyle birlikte büyüdüğünü, mimari seçimin ROI etkisini gösteriyor.",
+            "before_state": "Genel aylık token bütçesi var, retrieval topolojisi alternatifleri için ayrı birim ekonomi yok.",
+            "after_state": "Mimari tercih başına maliyet ve kanıtlanmamış performans varsayımları, kullanıcı tarafından ayarlanabilir kıyas raporunda.",
+            "canonical_source_urls": [
+              "https://live.handelsblatt.com/bevor-die-ki-rechnung-explodiert-7-fragen-vor-dem-naechsten-ki-budget/"
+            ],
+            "supporting_article_ids": [
+              "0aa97a7ee39275a654dfd105"
+            ],
+            "source_observations": [
+              {
+                "url": "https://live.handelsblatt.com/bevor-die-ki-rechnung-explodiert-7-fragen-vor-dem-naechsten-ki-budget/",
+                "observation": "Konuk yazısı, yedi bütçe sorusu ve retrieval/context/token+veri platformu maliyetleri; anket oranları yazıdaki üçüncü taraf çalışma atfıdır."
+              }
+            ],
+            "scope_hint": "Dünya; yalnız manuel/CSV senaryo girdisi, harici LLM/API/veritabanı veya canlı usage toplama şart değil.",
+            "local_evidence": {
+              "signals": [
+                "Konuk yazısında kullanım bazlı fiyatlama, veri platformu maliyeti ve tekrar bağlamı ayrı maliyet sürücüleri olarak açıklanıyor."
+              ],
+              "unknowns": [
+                "Türkiye'de aynı spesifik senaryo hesaplayıcılar ve global rakipler Validation'da doğrulanmalı.",
+                "Gerçek token tarifeleri kullanıcının güncellemesine bağlı."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "c6dbd32dc830f2b34403539d",
+        "decision": "no_opportunity",
+        "reason": "MONOist'in 10 Ekim özet yazısı 5–9 Ekim haberlerinin derlemesi; Park24 kimlik hesabı sızıntısı ve tedarik zinciri saldırı riskini vurguluyor. Bu derleme yeni bir ürün standardı/ortak veri/bağımsız müşteri ihtiyacı ilanı değil. Tedarikçi siber olay koordinasyonu genel kategori olarak mevcut; somut ayrı müşterinin ödeme nedeni kanıtlanmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c6f3a76d19520db03c631790",
+        "decision": "opportunity",
+        "reason": "ETDatacenters 9 Ekim 2026: Hindistan AI veri merkezi yükünün 2030'a kadar yaklaşık 2,7 GW'den 5,4 GW'ye çıkacağı ve yenilenebilir tedarikinin 16,1→32,4 GW olabileceği analist projeksiyonu, gerçekleşmiş kapasite değil. Hyperscaler uzun vadeli 15–20 yıl enerji alım anlaşmaları, 7x24 veri merkezi yükü ile saatlik güneş/rüzgâr üretim profilini uzlaştırma problemi doğurur. Mevcut PPA ürün rakipleri Validation'da kontrol edilmeden sıfır rakip sonucu yok.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-11-a4dcde1ff5-discovery-17b834ce8ff3ae22:c6f3a76d19520db03c631790:1",
+            "canonical_key": "india-data-center-and-renewable-ppa-negotiators|stress-test-24x7-compute-load-vs-renewable-contract-volume|offline-hourly-supply-demand-and-shortfall-simulator",
+            "idea_name": "Veri Merkezi PPA 7x24 Açık Senaryo Defteri",
+            "core_job": "Veri merkezi 7x24 yük eğrisine karşı birden çok enerji satın alma anlaşmasının saatlik arz, kayıp, eksik ve fazla üretim/hedge ihtiyacını kontrat kararı öncesi değerlendirmek",
+            "target_customer": "Hindistan ve global veri merkezi enerji tedarik/yenilenebilir PPA proje ekipleri",
+            "buyer": "Enerji tedarik direktörü veya proje finans analiz lideri",
+            "product_mechanism": "Kullanıcının saatlik talep/solar-rüzgâr profil CSV'si, PPA fiyat/tenor/firma üretim/ikmal varsayımlarını deterministik kıyaslayan sözleşme kapsam ve kısa pozisyon raporu",
+            "why_now": "9 Ekim ET analist tahminleri 2030 Hindistan veri merkezi yenilenebilir ihtiyacının artışını ve 15–20 yıllık hyperscaler PPA'larını tanımlıyor.",
+            "before_state": "Toplam yıllık enerji eşleştirmesi saatlik değişkenleri maskeleyebilir.",
+            "after_state": "Sözleşme ve proje senaryosu başına 24x7 saatlik açık/taşkın enerji ve tedarik riski görünür.",
+            "canonical_source_urls": [
+              "https://datacenters.economictimes.indiatimes.com/news/energy-cooling-sustainability/hyperscalers-drive-indias-data-centre-renewable-energy-demand/134830362"
+            ],
+            "supporting_article_ids": [
+              "1e80a295921d9b9eddb47744"
+            ],
+            "source_observations": [
+              {
+                "url": "https://datacenters.economictimes.indiatimes.com/news/energy-cooling-sustainability/hyperscalers-drive-indias-data-centre-renewable-energy-demand/134830362",
+                "observation": "2030 32.4 GW yenilenebilir ihtiyaç analist öngörüsü; teknoloji firmaları uzun vadeli PPA imzalıyor. Gelecekte kesinleşmiş enerji/şebeke kapasitesi değildir."
+              }
+            ],
+            "scope_hint": "Dünya; saatlik veri CSV ve kullanıcı kontrat değişkenleri; canlı elektrik borsası/API/AI modele zorunlu bağımlılık yok.",
+            "local_evidence": {
+              "signals": [
+                "Hindistan hyperscaler PPA kullanım ve veri merkezi artışı haberleştirilmiş."
+              ],
+              "unknowns": [
+                "Türk ve global enerji sözleşmesi yazılımı rekabeti bilinmiyor.",
+                "PPA hukuki sözleşme ve tahminli üretim fiyat garantisi değildir."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "c74c66504556c212280a1ecb",
+        "decision": "opportunity",
+        "reason": "Enerji Günlüğü özgün haber 10 Ekim: EPDK 8 Ekim 14938 sayılı kurul kararıyla Akedaş, Dicle, Fırat, Toroslar elektrik dağıtım bölgeleri için belirli görevli tedarik/OSB ortaklı tedarikçilerde avans ödemelerini 1 Ocak–31 Aralık 2027 arasında fatura son ödeme tarihine erteledi. BEFORE: genel avans ödeme takvimi; AFTER: koşullu 2027 uygulaması ve faiz/temerrüt ihtarı istisnası. Takvim yürürlüğe girmeden önce başvuru sahibi, kapsama koşulu, fatura dönem son tarih ve hesaplama kanıtını izlemek somut tekrar eden aylık iş olabilir. Resmî kurul kararı tam metni bu araştırmada bağımsız okunmadı; hukuki hüküm müşteri danışmanına aittir.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-11-a4dcde1ff5-discovery-17b834ce8ff3ae22:c74c66504556c212280a1ecb:1",
+            "canonical_key": "turkish-earthquake-region-electricity-retail-suppliers|track-2027-settlement-advance-deferral-eligibility-and-due-dates|offline-region-customer-type-and-billing-deadline-evidence-ledger",
+            "idea_name": "2027 EDAŞ Avans Erteleme Uygunluk Defteri",
+            "core_job": "Dört deprem bölgesi EDAŞ alanında kapsamdaki elektrik tedarik/OSB ortaklı satışları için 2027 avans ödeme ertelenme uygunluğunu, fatura son tarihini ve borç/temerrüt izini belgelemek",
+            "target_customer": "Deprem bölgelerindeki görevli tedarik şirketleri ve OSB ortaklı tedarik firmalarının uzlaştırma/finans ekipleri",
+            "buyer": "Elektrik tedarik şirketi mutabakat ve mali işler lideri",
+            "product_mechanism": "Kullanıcı tarafından girilen işletmeci, bölge, müşteri tipi, fatura dönemi, avans bildirim tutarı ve vade verilerinden kural tabanlı 2027 kapsam, takvim ve istisna CSV/PDF raporu",
+            "why_now": "8 Ekim 2026 EPDK kararının 1 Ocak 2027'de başlayacak uygulaması, ilgili tedarikçiler için yeni avans-vade planı yaratıyor.",
+            "before_state": "Genel avans ödeme yaklaşımı ve EPDK uzlaştırma fatura tarihi ayrı tablolarda.",
+            "after_state": "Kapsam/vade koşulları uzman onayıyla şeffaf senaryo takviminde saklanıyor.",
+            "canonical_source_urls": [
+              "https://www.enerjigunlugu.net/epdk-deprem-bolgesindeki-4-edasin-odemelerini-erteledi-70132h.htm"
+            ],
+            "supporting_article_ids": [
+              "34e625763584c538181e91d8"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.enerjigunlugu.net/epdk-deprem-bolgesindeki-4-edasin-odemelerini-erteledi-70132h.htm",
+                "observation": "10 Ekim haber, 8 Ekim tarihli 14938 Kurul kararı; 1 Ocak-31 Aralık 2027 erteleme; Akedaş/Dicle/Fırat/Toroslar ve belirli OSB ortaklı tedarikçiler. Resmi kararın tam metni ayrıca kontrol edilmeli."
+              }
+            ],
+            "scope_hint": "Türkiye; EPDK mevzuat maddesi manuel bakım, insan onayı, CSV/XML yerel içe aktarma; EPİAŞ canlı API şart değil.",
+            "local_evidence": {
+              "signals": [
+                "Gerçek Türkiye enerji düzenlemesi ve 4 bölge isimleri haberde belirtiliyor."
+              ],
+              "unknowns": [
+                "Kurul kararı tam metni doğrulanmadı.",
+                "Kapsamdaki toplam tedarik şirketi sayısı ve satış ihtiyacı bilinmiyor.",
+                "Bir yıllık düzenleme nedeniyle ticari tekrar sıklığı sınırlı; Validation'la test edilmeli."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "c75345909f92b051498db850",
+        "decision": "unverified",
+        "reason": "MIT Technology Review 9 Ekim The Download bülteni özgün sayfası robots/erişim engeline takıldı. Aynı bültene ilişkin ikincil Pipedot ve üniversite haber indeksleri AI modelin reddetme mekanizması riskleri ile GLP-1 ilaç haberini başlık olarak doğruluyor; özgün gövde ve birincil araştırma/belgeler tam doğrulanmadan yeni yazılım fırsatı veya güçlü kanıt çıkarılmadı. İlgisiz iki makaleyi tek ürün sinyali olarak birleştirmedim.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c773b6f270d898949f918b75",
+        "decision": "no_opportunity",
+        "reason": "'Tech.eu - European Startup, Funding and Technology News' adlı RSS kaydı yayıncının genel ana sayfasıdır. Orijinal Tech.eu sitesi açıldı; URL özgül olay, aktör, yeni lansman veya tarihli bilim/teknoloji gelişmesi göstermiyor. Genel ana sayfadan ticari ürün tetikleyicisi üretmek metodolojiye aykırı. Kaynak türü (homepage) gözlemi raporlanmalı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c777be1590dbd0f1ecbf6d2d",
+        "decision": "no_opportunity",
+        "reason": "Ars Technica 9 Ekim özgün kaynak, Yandex'in iki veri merkezinin saldırıda hasar gördüğünü ve kullanıcı hizmetlerinin aksadığını Reuters'a dayanarak bildirdi. Bu gerçek süreklilik/DR sorunudur; fakat aynı günkü catchup kuyruğunda zaten 'Cloud Recovery Ownership & Test Ledger' ve 'Kritik Bulut Bağımlılığı Geri Dönüş Kanıt Defteri' fırsatları mevcut. Aynı müşteri/geri dönüş test kanıt defterini sırf yeni haber başlığı ile yeniden üretmemek için ayrı ham aday açılmadı. Hadisenin olay tarihi 8–9 Ekim'dir.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c83363262e0d0e51cc74440f",
+        "decision": "no_opportunity",
+        "reason": "ShiftDelete.Net'in 10 Ekim özgün haberi artan bellek fiyatlarıyla Intel/AMD'nin DDR4 desteğini sürdürme/yeniden destekleme niyetini anlatıyor; resmen piyasaya sürülmüş işlemci özelliği veya kanıtlanmış düşük TCO sonucu değil. PC sistem yükseltme kararları için catchup kuyruğunda 'SME PC Fleet Refresh Deferral Matrix' bulunuyor; aynı TCO müşteri/iş/modelini yeniden açma yerine tekrarı korudum.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c8fa1942bdeed41e359d0f90",
+        "decision": "no_opportunity",
+        "reason": "8 Ekim Electronic Engineering Times China özgün teknik piyasası listesi (与非网 tekrar yayını) TI/ST/TDK altı popüler parça için fiyat/tedarik sinyalleri ve tasarım bağlamı sunuyor. Sayılan spot fiyatlar canlı teklif garantisi değil. Aynı catchup Merge girdisinde 'Elektronik Bileşen Arz Risk Matrisi' ve 'Elektronik Parça Teklif Geçerlilik Kontrol Defteri' bulunuyor; aynı parça tedarik riskini kopya ham fikir olarak eklemedim.",
+        "opportunities": []
+      }
+    ]
+  }
+}
