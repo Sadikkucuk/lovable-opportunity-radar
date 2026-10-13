@@ -4,13 +4,27 @@
   "queue_mode": "shared",
   "current_run": "2026-10-13-catchup-e3a10c28a635",
   "lease_minutes": 30,
-  "ready_count": 342,
-  "job_count": 344,
-  "queue_revision": "4cb6e8c9f6c354b520ce46a94da03854af8604feb018d456137f91649ab832b5",
+  "ready_count": 343,
+  "job_count": 343,
+  "queue_revision": "8d0c79adefa23bbd2dd7c4794bf69417e87539a25f259b8f678fbbb92bee0827",
   "page": 18,
   "page_count": 18,
   "next_page": null,
   "jobs": [
+    {
+      "job_id": "2026-10-13-43d3b526fc-discovery-edf0a4259b2fbdff",
+      "path": "state/v2/jobs/2026-10-13-43d3b526fc-discovery-edf0a4259b2fbdff.json",
+      "run_id": "2026-10-13-43d3b526fc",
+      "kind": "discovery",
+      "input_hash": "edf0a4259b2fbdff8e58104ca1b28ac787be430e58c846726cf4a1f2d76bd538",
+      "legacy_lane": 3,
+      "queue_group": "backlog",
+      "preferred_worker": 4,
+      "state": "ready",
+      "attempt": 1,
+      "claim_path": "state/v2/claims/2026-10-13-43d3b526fc-discovery-edf0a4259b2fbdff/001.json",
+      "result_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-edf0a4259b2fbdff/001.json"
+    },
     {
       "job_id": "2026-10-13-43d3b526fc-discovery-eeb72e94bc196086",
       "path": "state/v2/jobs/2026-10-13-43d3b526fc-discovery-eeb72e94bc196086.json",
@@ -38,33 +52,6 @@
       "attempt": 1,
       "claim_path": "state/v2/claims/2026-10-13-43d3b526fc-discovery-f90a6d927f2c3b38/001.json",
       "result_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-f90a6d927f2c3b38/001.json"
-    },
-    {
-      "job_id": "2026-10-13-43d3b526fc-discovery-12e4b220417ccdc2",
-      "path": "state/v2/jobs/2026-10-13-43d3b526fc-discovery-12e4b220417ccdc2.json",
-      "run_id": "2026-10-13-43d3b526fc",
-      "kind": "discovery",
-      "input_hash": "12e4b220417ccdc272815974dd9437eaf492d01b3d085e191d3bfb84790d474d",
-      "legacy_lane": 4,
-      "queue_group": "backlog",
-      "preferred_worker": 2,
-      "state": "leased",
-      "attempt": 1,
-      "expires_at": "2026-10-13T18:35:26.793Z"
-    },
-    {
-      "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-da8f47d00c271013",
-      "path": "state/v2/jobs/2026-10-13-catchup-e3a10c28a635-discovery-da8f47d00c271013.json",
-      "run_id": "2026-10-13-catchup-e3a10c28a635",
-      "kind": "discovery",
-      "input_hash": "da8f47d00c271013ddfcc3bc577a0e125d9a32346cd5ce0e62c2eefa0a011b48",
-      "legacy_lane": 1,
-      "queue_group": "current",
-      "preferred_worker": 1,
-      "state": "retry_wait",
-      "attempt": 1,
-      "retry_at": "2026-10-13T18:06:32Z",
-      "reason": "worker lease expired without a receipt"
     }
   ]
 }
