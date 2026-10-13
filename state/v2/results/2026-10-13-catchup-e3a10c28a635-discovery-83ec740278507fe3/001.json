@@ -1,0 +1,101 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-83ec740278507fe3",
+  "input_hash": "83ec740278507fe36c286565b1b2614fdde860f582a3b3c1b4c81abc1fa7b745",
+  "token": "2302c448-2bd7-4782-ab83-75381bb41528",
+  "finished_at": "2026-10-13T10:15:18.186Z",
+  "outcome": "done",
+  "reason": "10 sabit haber değerlendirildi: Maextro V800 mekanik test raporunda araştırılmış arıza ve yeni taslak test kurallarından 1 ham mühendislik kanıt dosyası, 9 no_opportunity. Fren mekanik hatasının nihai nedeni ve yeni yasal şartlar kesinleşmiş sayılmadı; aynı AI sanal yüz olayı tekrar ürün yapılmadı.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "060ed5a43e91be0a7526a12a",
+        "decision": "no_opportunity",
+        "reason": "Müzik denetleyicisini masa oyunu gibi tasarlama elektronik DIY atölye yazısı; yeni bağlayıcı standart, açık kurum verisi veya tekrarlanan B2B alıcı işi sunmuyor.",
+        "canonical_source_url": "https://www.heise.de/",
+        "opportunities": []
+      },
+      {
+        "article_key": "0634ac7c5c6373d34aa56193",
+        "decision": "no_opportunity",
+        "reason": "'A smarter path to distribution growth' genel sponsorluk/tedarik dağıtım optimizasyon tavsiyesi; tarihlenmiş bağımsız yeni işletme kuralı, API veya ayırt edilebilir yazılım işi yok.",
+        "canonical_source_url": "https://www.supplychaindive.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "0661768636449bf4a9fe56d5",
+        "decision": "no_opportunity",
+        "reason": "PERM ve H-1B ABD çalışma/göçmenlik prosedürlerini karşılaştıran açıklayıcı içeriktir; mevcut göç mevzuatında yeni tarihli değişiklik doğrulanmadığından bağlayıcı yeni iş akışı varsayılmadı.",
+        "canonical_source_url": "https://economictimes.indiatimes.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "06ef9b6e70e1f6d7eb59869a",
+        "decision": "opportunity",
+        "reason": "12 Ekim SCMP, Huawei/JAC destekli Maextro V800 için medya acil fren testinde üç aracın fren pedalı montaj braketi kırıldığını aktardı. Otomobil üreticisi yanıt verdi; mekanik arızanın kök nedeni hâlen soruşturma altında. 10 Ekim MIIT ve diğer bakanlıkların yeni model test prosedürleri taslağı yayımladığı bildiriliyor, henüz yürürlüğe giren sonuçlanmış yeni kural değil. Araç/OEM ve mekanik parça tedarikçisinin tasarım revizyonuna bağlı test numunesi, yük/fren protokolü, sapma ve insan imzalı kapanış kanıtını tutması müşterinin tekrarlanan kalite işidir; gerçek fren güvenliği sistem tarafından belirlenmez.",
+        "canonical_source_url": "https://www.scmp.com/business/china-evs/article/3370548/brake-pedal-failures-luxury-ev-put-chinese-cars-quality-regulatory-spotlight",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-83ec740278507fe3:06ef9b6e70e1f6d7eb59869a:01",
+            "idea_name": "Mechanical Brake Test Deviation Evidence Desk",
+            "canonical_key": "automotive-brake-component-quality-teams|retain-test-specimen-traceability-and-pedal-bracket-failure-evidence|mechanical-load-design-revision-incident-and-test-report-ledger",
+            "target_customer": "Araç OEM fren-pedal mekanik sistem kalite ekipleri ve Tier-1 mekanik parça tedarikçileri",
+            "core_job": "Fren pedalı braketi/yük taşıyan mekanik aksam için test edilen ürün varyantı, test metodu, numune seri/lot, tasarım revizyonu ve uygunsuzluk kapatma delilini teknik incelemeye hazırlamak",
+            "product_mechanism": "Kullanıcının test cihazından çıkardığı CSV/PDF, parça revizyonu, lot, yükleme profili, test yeri, onaylı protokol, bulgu, parça değişiklik nedeni ve insan imzalı CAPA tutanaklarının deterministic izlenebilirlik matrisi; fren testi çalıştırmaz, uygunluk/sertifika hükmü vermez",
+            "why_now": "12 Ekim SCMP, Huawei/JAC destekli Maextro V800 için medya acil fren testinde üç aracın fren pedalı montaj braketi kırıldığını aktardı. Otomobil üreticisi yanıt verdi; mekanik arızanın kök nedeni hâlen soruşturma altında. 10 Ekim MIIT ve diğer bakanlıkların yeni model test prosedürleri taslağı yayımladığı bildiriliyor, henüz yürürlüğe giren sonuçlanmış yeni kural değil. Araç/OEM ve mekanik parça tedarikçisinin tasarım revizyonuna bağlı test numunesi, yük/fren protokolü, sapma ve insan imzalı kapanış kanıtını tutması müşterinin tekrarlanan kalite işidir; gerçek fren güvenliği sistem tarafından belirlenmez.",
+            "before_state": "Mekanik mukavemet test planları, kırılan numuneler, tasarım kararı ve tedarikçi düzeltici faaliyeti farklı teknik dokümanlarda kopuk",
+            "after_state": "Varyant→numune→test koşulu→bulgu→tasarım değişikliği→yeniden test zinciri; mühendis onayı olmadan güvenlik kararı oluşturmaz",
+            "canonical_source_urls": [
+              "https://www.scmp.com/business/china-evs/article/3370548/brake-pedal-failures-luxury-ev-put-chinese-cars-quality-regulatory-spotlight",
+              "https://carnewschina.com/2026/10/08/huawei-jacs-maextro-v800-faces-safety-scrutiny-following-brake-pedal-failure-reports/"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "074e870ca00c07ebf62ce269",
+        "decision": "no_opportunity",
+        "reason": "Les Echos kurumsal AI ajanları yaygınlaşırken siber güvenlik ekiplerinin güvenlik/denetim zorluklarına yetişmesini inceliyor. Mevcut Enterprise agent access recertification, Agent Sandbox Policy Desk, AI-Assisted Attack Incident Ledger kayıtları aynı izin/olay/kanıt alanına yakın; bağımsız yeni kural/API ayrıştırılamadı.",
+        "canonical_source_url": "https://www.lesechos.fr/",
+        "opportunities": []
+      },
+      {
+        "article_key": "07a4b402cef92b01a57d82ac",
+        "decision": "no_opportunity",
+        "reason": "Çin AI sanal insan 'bizzat denedim/etkilidir' reklam iddiaları 12 Ekim Workers Daily ve sonraki Securities Times haberiyle önceki gün içi Discovery'de Virtual Influencer Claim Review ham fikri olarak işlendi; tekrar kaydedilmedi.",
+        "canonical_source_url": "https://stcn.com/article/detail/4211576.html",
+        "opportunities": []
+      },
+      {
+        "article_key": "07c4f8d5b0c9d47f22b43d43",
+        "decision": "no_opportunity",
+        "reason": "Apple iOS 27 arayüzünün beş küçük özelliğini anlatan tüketici kullanım rehberi, yeni kurum düzenlemesi veya ayrı ücretsiz tarayıcı SaaS işi değil.",
+        "canonical_source_url": "https://www.zdnet.fr/",
+        "opportunities": []
+      },
+      {
+        "article_key": "07d290b0036d48c487392e38",
+        "decision": "no_opportunity",
+        "reason": "Çin AI suistimaline karşı sert uygulama çağrısı genel editoryaldir; yayımlanmış somut yeni işletme yükümlülüğü veya doğrulanmış yeni makine erişim kuralı yok.",
+        "canonical_source_url": "https://www.ce.cn/",
+        "opportunities": []
+      },
+      {
+        "article_key": "07fb82cbd3c0f4e1ddc49875",
+        "decision": "no_opportunity",
+        "reason": "Çin humanoid robotlarda seri üretim ve ticari kabul tartışması genel sektör haberidir; işlediğimiz Kore humanoid KC belge ve robot devreye alma kayıtlarından farklı satılabilir yeni somut görev doğrulanmadı.",
+        "canonical_source_url": "https://www.news.cn/",
+        "opportunities": []
+      },
+      {
+        "article_key": "080633aa78ff3c16cb4432a1",
+        "decision": "no_opportunity",
+        "reason": "Çin VC/özel sermaye fonlarının toplantı kararları hakkında haber; yeni yürürlükte kamu fon başvurusu/raporlama belgesi veya ayrı kullanıcı ihtiyacı kanıtlanmadı.",
+        "canonical_source_url": "https://www.stcn.com/",
+        "opportunities": []
+      }
+    ]
+  }
+}
