@@ -1,0 +1,148 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-7b3b955104a3cc3a",
+  "input_hash": "7b3b955104a3cc3a7e643da349608537bc62b8daa591b7971e48a6aab60594a8",
+  "token": "99d0f950-b68f-4e5c-806f-2b77dfa78b76",
+  "finished_at": "2026-10-13T07:20:49.540Z",
+  "outcome": "done",
+  "reason": "AI Coding Regression Ledger source mechanics re-read; 36Kr article describes LLM eval/hillclimbing rather than source code bug tracking, and mature Qodo CodeRabbit GitLab alternatives dominate. Rejected without inventing four direct rivals or TR=0.",
+  "result": {
+    "decision": "rejected",
+    "reason": "36Kr özgün sayfası doğrulandı ancak haberin temel mekanizması Claude API'yle müşteri hizmeti cevap test bankası, prompt değişikliği ve gizli kabul seti üzerinden hillclimb/regresyon. Önerilen AI Coding Regression Ledger bunu AI-authored source code commit→defect→repair tracking kategorisine genişletiyor; haber bu ürüne özgü yenilik/dönüşüm kanıtlamıyor. Dahası Qodo, CodeRabbit ve GitLab aynı yazılım takımı için kod değişikliği/test/defect/fix kanıt işinin büyük bölümünü halihazırda kapsıyor, SonarQube ise ilgili quality gate görevini yapıyor ancak tam end-to-end kapsamı belirsiz. En az üç doğrudan alternatife karşı ayırt edici zero-runtime MVP avantajı veya yeni alıcı problemi kanıtlanamadı; mevcut aday bu halde rejected. Türkiye doğrudan rakip sayısı bilinmiyor; bu ret 0 iddiasına dayanmaz.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://eu.36kr.com/en/p/4017801971732354",
+        "accessed_at": "2026-10-13T07:20:49.540Z",
+        "claim": "36Kr 9 Ekim 'AI Coding debugging' yazısının merkezinde Claude API cevaplarını tekrar test eden evaluation ve hillclimbing iş akışı bulunur",
+        "observation": "Orijinal tam metinde /claude-api build-eval ile müşteri hizmeti soru bankası/skorlama ve /claude-api hillclimb ile prompt/model değişikliklerini gizli kabul setinde test edip geri alma anlatılıyor. Bu esasen LLM davranış/prompt regression örneği; salt AI-yazılmış source code commit→bug→fix ledger ürününü doğrudan yeni standart veya market access olarak kanıtlamıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.qodo.ai/solutions/testing/",
+        "accessed_at": "2026-10-13T07:20:49.540Z",
+        "claim": "Qodo AI Code Governance + Testing AI kaynaklı yazılım regression/fix izleme süreçlerine alternatif",
+        "observation": "Software engineering teams: code/commit değişiminden regresyon testi, hata/yetersiz kapsama, düzeltme ve yeniden test kanıtı yürütüyor",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.coderabbit.ai/",
+        "accessed_at": "2026-10-13T07:20:49.540Z",
+        "claim": "CodeRabbit Agentic Change Management AI kaynaklı yazılım regression/fix izleme süreçlerine alternatif",
+        "observation": "AI kaynaklı PR kod değişiklikleri, review defekti, otomatik düzeltme ve düzeltmeyi doğrulayan regresyon test/kanıt değişimini PR üzerinden izliyor",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://about.gitlab.com/press/releases/2026-10-06-gitlab-announces-the-foundation-for-the-governed-software-factory/",
+        "accessed_at": "2026-10-13T07:20:49.540Z",
+        "claim": "GitLab Governed Software Factory AI kaynaklı yazılım regression/fix izleme süreçlerine alternatif",
+        "observation": "AI kodlama akışında plan→kod→review→test→güvenlik değişikliği→doğrulanmış remediation kanıtını aynı CI/git lifecycle ile bağlıyor",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://docs.sonarsource.com/sonarqube-server/2026.1/quality-standards-administration/ai-code-assurance/monitor-projects-with-ai-code",
+        "accessed_at": "2026-10-13T07:20:49.540Z",
+        "claim": "SonarQube AI Code Assurance AI kaynaklı yazılım regression/fix izleme süreçlerine alternatif",
+        "observation": "AI ile oluşturulan kodda quality gate, issue status ve düzeltmeden sonra yeniden analiz; özel test case tasarım ve ayrı tam defect ledger kapsamı belirsiz",
+        "page_read": true,
+        "support": "adjacent_some_scope_unclear"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://smartbear.com/news/news-releases/state-of-software-quality-testing-2026/",
+        "accessed_at": "2026-10-13T07:20:49.540Z",
+        "claim": "AI kod hatalarının ölçüm/attribution süreci gerçek, fakat bir müşteri ihtiyacı tek haberle kanıtlanmaz",
+        "observation": "SmartBear 30 Eylül 1.436 ABD/BK katılımcısının %46'sının AI kod kaynaklı prod hata gördüğünü bildiriyor, katılımcı anketi ve satıcı araştırmasıdır. Otomatik düzeltme/test yazılımı başka sağlayıcılarda sunuluyor.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "search_complete": false,
+        "queries": [
+          "Türkiye AI kaynak kod regression test düzeltme takip yazılımı",
+          "AI code QA regression defects evidence ledger Turkish SaaS"
+        ],
+        "scope": "Türkiye yazılım takımı AI ile yazılmış kod değişikliği/tetiklenen test/hata/düzeltme rapor zinciri",
+        "direct_competitors": []
+      },
+      "global": {
+        "direct_count": 3,
+        "search_complete": false,
+        "queries": [
+          "AI-authored code change regression test defect fix governance Qodo CodeRabbit GitLab",
+          "SonarQube AI code assurance regression issue trace"
+        ],
+        "scope": "2026-10-13 yazılım ekipleri için AI kod kaynaklı change/test/defect/repair kanıt zinciri; SonarQube tam kapsamı bilinmediği için adjacent",
+        "direct_competitors": [
+          {
+            "name": "Qodo AI Code Governance + Testing",
+            "url": "https://www.qodo.ai/solutions/testing/",
+            "same_customer_job_workflow_reason": "Software engineering teams: code/commit değişiminden regresyon testi, hata/yetersiz kapsama, düzeltme ve yeniden test kanıtı yürütüyor"
+          },
+          {
+            "name": "CodeRabbit Agentic Change Management",
+            "url": "https://www.coderabbit.ai/",
+            "same_customer_job_workflow_reason": "AI kaynaklı PR kod değişiklikleri, review defekti, otomatik düzeltme ve düzeltmeyi doğrulayan regresyon test/kanıt değişimini PR üzerinden izliyor"
+          },
+          {
+            "name": "GitLab Governed Software Factory",
+            "url": "https://about.gitlab.com/press/releases/2026-10-06-gitlab-announces-the-foundation-for-the-governed-software-factory/",
+            "same_customer_job_workflow_reason": "AI kodlama akışında plan→kod→review→test→güvenlik değişikliği→doğrulanmış remediation kanıtını aynı CI/git lifecycle ile bağlıyor"
+          }
+        ],
+        "adjacent_competitors": [
+          {
+            "name": "SonarQube AI Code Assurance",
+            "url": "https://docs.sonarsource.com/sonarqube-server/2026.1/quality-standards-administration/ai-code-assurance/monitor-projects-with-ai-code",
+            "same_customer_job_workflow_reason": "AI ile oluşturulan kodda quality gate, issue status ve düzeltmeden sonra yeniden analiz; özel test case tasarım ve ayrı tam defect ledger kapsamı belirsiz"
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Kullanıcının verdiği commit SHA, test case CSV, bulgu ID, düzeltme açıklaması ve yeniden çalıştırma sonucu yerel tarayıcı defterinde ilişkilendirilir. Otomatik GitHub entegrasyonu, CI test çalıştırma, kod parse ve AI düzeltme servisi yok; elle kayıt üreticinin asıl değerinin çok gerisinde.",
+      "dependency_inventory": [
+        "User-supplied CSV/test result",
+        "Browser JavaScript/IndexedDB",
+        "CSV/PDF rapor",
+        "Hosting/domain ayrı"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "91 korunan fikirde birebir AI-coded source regression ledger kimliği yok; Technical Submission Quality Gate ile kısmi kod kalite kanıtı/inceleme örtüşüyor. Bu ret, birebir geçmiş tekrar iddiası değil, trigger-mekanizma uyuşmazlığı ve piyasada olgun alternatifler nedeniyledir."
+    },
+    "research_attempts": [
+      {
+        "queries": [
+          "Full original 36Kr 4017801971732354",
+          "Claude /claude-api build-eval hillclimb Sept 28"
+        ],
+        "outcome": "Tam metin müşteri hizmeti cevap eval/prompt tuning aracı; kod bug tracker ürün işini doğrudan açıklamıyor."
+      },
+      {
+        "queries": [
+          "Qodo testing",
+          "CodeRabbit AI code regression fix validation",
+          "GitLab governed software factory",
+          "SonarQube AI code assurance"
+        ],
+        "outcome": "3 doğrudan yazılım takımı alternatif akış, 1 yakın otomatik quality gate kanıtı."
+      }
+    ]
+  }
+}
