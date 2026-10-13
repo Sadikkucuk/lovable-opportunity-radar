@@ -1,0 +1,31 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "03b47a1780f638515f7aca9060f16ef2379f96af10daa2e24512b89c3001496d",
+  "decision": {
+    "article_key": "9e00e4b0f73421b5617cbf66",
+    "decision": "opportunity",
+    "reason": "12 Ekim Reuters duyurusunda NYT, Economist, AFP dahil 40'tan fazla yayıncı SPUR koalisyonuna katıldı. SPUR **Content Telemetry Standard v1 resmi olarak 2 Ekim 2026** yayımlanmış açık/isteğe bağlı endüstri standardıdır, yürürlüğe giren bağlayıcı yasa değil. content_retrieved/grounded/cited/presented/engaged gibi tanımlanmış olayların yayıncı tarafında tedarikçilerden gelen CSV/JSON telemetri raporlarıyla lisanslı içerik/sözleşme hakları açısından mutabakatı yeni operasyonel görev; standart AI sağlayıcılarından kullanım raporu otomatik gelmesini garanti etmez.",
+    "canonical_source_url": "https://www.reuters.com/legal/litigation/nyt-economist-among-publishers-joining-coalition-curb-unpaid-ai-use-2026-10-12/",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-86ac0101727c147e:9e00e4b0f73421b5617cbf66:01",
+        "idea_name": "Publisher Content Telemetry Contract Reconciliation Desk",
+        "canonical_key": "news-publisher-rights-teams|reconcile-ai-content-usage-telemetry-with-licensing-terms|spur-event-csv-content-owner-and-contract-evidence-ledger",
+        "target_customer": "Haber yayıncılarının lisanslama, fikrî haklar ve ticari gelir ekipleri",
+        "core_job": "AI şirketinden alınabilen gerçek kullanım olaylarını SPUR Content Telemetry biçiminde lisans sözleşmesi ve belirlenmiş içerik haklarıyla karşılaştırmak",
+        "product_mechanism": "Kullanıcının sağladığı SPUR telemetry CSV/JSON, lisanslı içerik ID, retrieved/grounded/cited/presented/engaged olayları, dönemi, sözleşme paketini ve manuel istisna onayını statik JS ile eşleme; dış model veya yayıncı web taraması yok",
+        "before_state": "AI lisans görüşmesi ve olay günlükleri farklı yerlerde; içerik kullanımının hangi lisans maddesine bağlandığı bilinmeyebiliyor",
+        "after_state": "Verilen olayların lisans/kontrat maddesi eşleşmesi ve mutabakat farkları için kanıtlı dönem raporu; eksik veya raporlanmayan kullanım tespit edilemez",
+        "why_now": "12 Ekim Reuters duyurusunda NYT, Economist, AFP dahil 40'tan fazla yayıncı SPUR koalisyonuna katıldı. SPUR **Content Telemetry Standard v1 resmi olarak 2 Ekim 2026** yayımlanmış açık/isteğe bağlı endüstri standardıdır, yürürlüğe giren bağlayıcı yasa değil. content_retrieved/grounded/cited/presented/engaged gibi tanımlanmış olayların yayıncı tarafında tedarikçilerden gelen CSV/JSON telemetri raporlarıyla lisanslı içerik/sözleşme hakları açısından mutabakatı yeni operasyonel görev; standart AI sağlayıcılarından kullanım raporu otomatik gelmesini garanti etmez.",
+        "scope_hint": "Dünya",
+        "canonical_source_urls": [
+          "https://www.reuters.com/legal/litigation/nyt-economist-among-publishers-joining-coalition-curb-unpaid-ai-use-2026-10-12/",
+          "https://www.spurcoalition.org/updates/spur-content-telemetry-standard-v1-published"
+        ],
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-86ac0101727c147e/001.json",
+  "valid_until": "2026-11-12T10:27:41Z"
+}
