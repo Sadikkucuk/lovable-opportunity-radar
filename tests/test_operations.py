@@ -280,7 +280,15 @@ class OperationsTests(unittest.TestCase):
         self.assertTrue(self.e.paths("state/v2/inbox/worker-1-page-*.json"))
         job = next(iter(self.e.jobs().values()))
         claim = self.claim(job)
-        self.receipt(job, claim)
+        # A rejected job becomes terminal without creating an evidence
+        # followup; an unverified validation would correctly replace itself
+        # with a ready followup and keep this second inbox page populated.
+        self.e.write(f"state/v2/results/{job['job_id']}/001.json", {
+            "schema_version": 2, "job_id": job["job_id"],
+            "input_hash": job["input_hash"], "token": claim["token"],
+            "finished_at": iso(self.e.now), "outcome": "rejected",
+            "reason": "ineligible", "result": {}
+        }, immutable=True)
         self.tick()
         self.assertNotEqual(revision, self.e.read("state/v2/inbox/worker-1.json")["queue_revision"])
         self.assertFalse(self.e.paths("state/v2/inbox/worker-1-page-*.json"))
