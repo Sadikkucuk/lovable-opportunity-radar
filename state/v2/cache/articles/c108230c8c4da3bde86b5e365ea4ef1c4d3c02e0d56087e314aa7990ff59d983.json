@@ -1,0 +1,30 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "c108230c8c4da3bde86b5e365ea4ef1c4d3c02e0d56087e314aa7990ff59d983",
+  "decision": {
+    "article_key": "b83352c478b860a3888c125d",
+    "decision": "opportunity",
+    "reason": "SIA'nın 9 Ekim raporuna dayalı SCMP 12 Ekim haberinde ABD yonga üretim alımlarının tedarikçi merkezine göre %95'inin ABD/AB/Japonya, üretim yerine göre %68'inin bu ülkelerden geldiği anlatılıyor. Çin'deki galyum/tungsten gibi üst zincir bağımlılığı ilk kademe tedarikçi listesinden gizlenebilir. Üretici ve satın alma için doğrudan tedarikçi ülke adı ile gerçek malzeme/alt tedarik tesis menşei ayrımını CSV kaynak kanıtıyla incelemek farklı iş hipotezidir.",
+    "canonical_source_url": "https://www.scmp.com/tech/tech-trends/article/3370581/mapping-us-chip-supply-chain-china-accounts-far-more-it-appears-report-says",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-9632d6245cf08238:b83352c478b860a3888c125d:01",
+        "idea_name": "Yarı İletken Alt Tedarik Menşe Kanıt Matrisi",
+        "canonical_key": "semiconductor-material-procurement-teams|trace-first-tier-vs-upstream-country-of-origin|supplier-site-critical-mineral-provenance-and-substitution-ledger",
+        "target_customer": "Yarı iletken üreticileri ve kritik malzeme satın alma uyum/tedarik sürekliliği ekipleri",
+        "core_job": "Birinci kademe satıcı merkez ülkesinden farklı olabilecek gerçek üretim ve kritik ara malzeme kaynaklarını risk ve ikame yeterliğiyle eşlemek",
+        "product_mechanism": "Üretici/manüel BOM CSV, tedarikçi merkezi, gerçek fabrika/ülke, kritik mineral veya paketleme alt malzemesi, menşe belgesi, rota, ikame ve insan onaylı kanıt defteri; canlı gümrük API'si yok",
+        "why_now": "SIA'nın 9 Ekim raporuna dayalı SCMP 12 Ekim haberinde ABD yonga üretim alımlarının tedarikçi merkezine göre %95'inin ABD/AB/Japonya, üretim yerine göre %68'inin bu ülkelerden geldiği anlatılıyor. Çin'deki galyum/tungsten gibi üst zincir bağımlılığı ilk kademe tedarikçi listesinden gizlenebilir. Üretici ve satın alma için doğrudan tedarikçi ülke adı ile gerçek malzeme/alt tedarik tesis menşei ayrımını CSV kaynak kanıtıyla incelemek farklı iş hipotezidir.",
+        "before_state": "Tedarikçi sözleşme ülkesi ve ara malzeme üretim kökeni aynı varsayılarak risk raporu olduğundan düşük gösterilebiliyor",
+        "after_state": "Çok kademeli alt tedarikçi ve menşe belgesi bağlantılı kanıt/ikame riski ve tedarik eylemi",
+        "canonical_source_urls": [
+          "https://www.scmp.com/tech/tech-trends/article/3370581/mapping-us-chip-supply-chain-china-accounts-far-more-it-appears-report-says"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-9632d6245cf08238/001.json",
+  "valid_until": "2026-11-12T10:41:16Z"
+}
