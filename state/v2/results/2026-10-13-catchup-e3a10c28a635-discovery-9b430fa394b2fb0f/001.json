@@ -1,0 +1,110 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-9b430fa394b2fb0f",
+  "input_hash": "9b430fa394b2fb0f87344f34b02802b82e566ebf0c7123007666ba2270764af1",
+  "token": "0bfc0578-1469-4260-918f-aee1008c45d1",
+  "finished_at": "2026-10-13T10:49:25.520Z",
+  "outcome": "done",
+  "reason": "10 haber: 2 farklı ham fırsat (İtalya STG çoklu sayaç geçiş kabulü, Hindistan denizaltı kablo landing hazırlık), 8 no_opportunity. İtalya uzatması öneri, yürürlüğe girmedi; Henox kablosu halen plan/doğrulama safhasında, tamamlanmış değil.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "c366138f5437d96dd6bb972c",
+        "decision": "no_opportunity",
+        "reason": "Meta'nın borsa açılışında %4 artış göstermesi hisse piyasa haberi; hizmet/API/düzenleme yeniliği yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c3895259d8b1bd1e1ac4795b",
+        "decision": "no_opportunity",
+        "reason": "İtalyan başbakanın enerji ateşkesine ilişkin Ukrayna açıklaması jeopolitik siyasettir; doğrulanmış genel müşteri yazılımı ihtiyacı ve hukuki işlem hakkı yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c3d1deb24cd353a1b26c7a5f",
+        "decision": "no_opportunity",
+        "reason": "AMD Helion rack açık şablonu aynı gün önceki catchup'da Helion Rack kapasite/soğutma senaryo fikriyle işlenmiştir; ikinci kez ürün yazılmadı.",
+        "canonical_source_url": "https://www.amd.com/en/products/rackscale-solutions/helion.html",
+        "opportunities": []
+      },
+      {
+        "article_key": "c3d64fdb5fa3fe5a26b5388c",
+        "decision": "no_opportunity",
+        "reason": "Çin AI yatırımından kimlerin kazandığı üzerine piyasa/danışman yorumu; AI Value Renewal ile yakın, farklı yeni veri/mevzuat yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c4160eda515eab644b0146b6",
+        "decision": "opportunity",
+        "reason": "12 Ekim ARERA birincil açıklamasına göre İtalya elektrik Servizio a Tutele Graduali normalde 31 Mart 2027 bitecek, 1 Nisan'da uygun serbest piyasa teklifine otomatik geçiş var ve abonelere bilgilendirme iletiliyor. MASE aynı gün 31 Aralık 2027'ye uzatmayı DEĞERLENDİRİYOR ancak onaylanmış değil. Küçük işletmeler ve yöneticileri için kendi çoklu abonelik tesislerini belirli seçenek/deadline karşılaştırma ve kanıtlı karar kaydı somut JTBD; ARERA'nın var olan fiyat karşılaştırma portalını klonlamıyoruz.",
+        "canonical_source_url": "https://www.arera.it/comunicati-stampa/dettaglio/elettricita-prime-comunicazioni-arera-in-bolletta-per-spiegare-cosa-fare-con-la-fine-del-servizio-a-tutele-graduali-il-31-marzo-2027",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-9b430fa394b2fb0f:c4160eda515eab644b0146b6:01",
+            "idea_name": "Italy STG Energy Contract Transition Desk",
+            "canonical_key": "italian-small-business-multisite-energy-buyers|track-stg-enddate-and-offer-choice-readiness|meter-site-vulnerability-terms-and-approval-ledger",
+            "target_customer": "İtalya birden fazla sayacı olan KOBİ elektrik alıcıları ve tesis yöneticileri",
+            "core_job": "31 Mart 2027 STG bitişine göre sayaç/kontrat bazında teklif geçişini, otomatik geçiş koşulunu ve olası resmi uzatmanın sonuçlarını takip etmek",
+            "product_mechanism": "Kullanıcının girdiği POD/sayaç, tedarikçi, fiyat koşulu, hassas kullanıcı statüsü, yenileme takvimi, karar ve yazılı teklif kayıtları, manuel ARERA portal dışa aktarımı; canlı fiyat API'si yok",
+            "why_now": "12 Ekim ARERA birincil açıklamasına göre İtalya elektrik Servizio a Tutele Graduali normalde 31 Mart 2027 bitecek, 1 Nisan'da uygun serbest piyasa teklifine otomatik geçiş var ve abonelere bilgilendirme iletiliyor. MASE aynı gün 31 Aralık 2027'ye uzatmayı DEĞERLENDİRİYOR ancak onaylanmış değil. Küçük işletmeler ve yöneticileri için kendi çoklu abonelik tesislerini belirli seçenek/deadline karşılaştırma ve kanıtlı karar kaydı somut JTBD; ARERA'nın var olan fiyat karşılaştırma portalını klonlamıyoruz.",
+            "before_state": "Çoklu elektrik sayacının geçiş koşulu farklı şubelerde ve faturalarda ayrışıyor",
+            "after_state": "Şube/sayaç bazlı alıcı onay durumu ve gecikmiş sözleşme karar listesi",
+            "canonical_source_urls": [
+              "https://www.arera.it/comunicati-stampa/dettaglio/elettricita-prime-comunicazioni-arera-in-bolletta-per-spiegare-cosa-fare-con-la-fine-del-servizio-a-tutele-graduali-il-31-marzo-2027"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "c44f9237776d166cdf59fe6e",
+        "decision": "no_opportunity",
+        "reason": "AWS/NVIDIA açık robotik araç seti teknoloji duyurusu; robot AI modelinin çalışması değer zincirinin temelidir, sıfır dış model kullanım koşuluyla ayrı bağımsız tarayıcı ürün gereği kanıtlanmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c4ab5cf830b4c0df47545e9d",
+        "decision": "no_opportunity",
+        "reason": "Japon 'CryoCMOS' konu dizin etiketi belirli tarihli açık teknoloji/uyum olayı değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c4d6ca691fbb27e3988307ce",
+        "decision": "no_opportunity",
+        "reason": "Çin AI sektörünün 10 trilyon CNY büyüklüğü hedefi ve hisse hareketlerine dair yatırım yorumu; kesinleşmiş teknik müşteri workflow'u yaratmaz.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c507ea711d879f7f7e42bafc",
+        "decision": "no_opportunity",
+        "reason": "ZDNet Fransa kablolu/kablosuz HDMI televizyon kurulumu tüketici rehberidir; harici donanımdan bağımsız farklı SaaS sorunu yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c54d46b3d09081c67ccebc69",
+        "decision": "opportunity",
+        "reason": "12 Ekim ETDatacenters özgün haberi Henox Crest kablo projesinin Gujarat–Mangaluru–Kochi–Chennai–Visakhapatnam kıyı güzergâhı, Visakhapatnam SubConnex bağlantısı ve APTelecom teknik/ticari ortaklığını bildiriyor. PROJE hâlen mühendislik doğrulama ve ticari geliştirme aşamasında; bitmiş denizaltı kablosu değil. Çok duraklı denizaltı kıyı çıkış noktaları için yerel izin, kıyı geçişi, backhaul ve interconnection hazırlık kanıt defteri süreç hipotezidir.",
+        "canonical_source_url": "https://datacenters.economictimes.indiatimes.com/amp/news/ai-compute-infrastructure/henox-launches-crest-submarine-cable-to-support-ai-connectivity-in-india-partners-aptelecom/134895529",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-9b430fa394b2fb0f:c54d46b3d09081c67ccebc69:01",
+            "idea_name": "Submarine Cable Landing Readiness Ledger",
+            "canonical_key": "subsea-cable-project-owners|coordinate-multilanding-permit-route-and-interconnect-readiness|landing-country-consent-backhaul-and-test-evidence-matrix",
+            "target_customer": "Denizaltı fiber kablo sistemi proje mühendisliği ve regülasyon ekipleri",
+            "core_job": "Çoklu kıyı çıkış ve kara taşıma bağlantısı için yerel izin, deniz taban etüdü, parkur varyantı, karasal bağlantı/müşterek kullanım hazırlığını izlemesi",
+            "product_mechanism": "Kullanıcı CSV ile landing site, ülke/yerel otorite izni, çevre etüdü, backhaul bağlantısı, kablo test/seal dokümanları, yüklenici sorumlusu, deadline ve insan onayı; dış canlı network API yok",
+            "why_now": "12 Ekim ETDatacenters özgün haberi Henox Crest kablo projesinin Gujarat–Mangaluru–Kochi–Chennai–Visakhapatnam kıyı güzergâhı, Visakhapatnam SubConnex bağlantısı ve APTelecom teknik/ticari ortaklığını bildiriyor. PROJE hâlen mühendislik doğrulama ve ticari geliştirme aşamasında; bitmiş denizaltı kablosu değil. Çok duraklı denizaltı kıyı çıkış noktaları için yerel izin, kıyı geçişi, backhaul ve interconnection hazırlık kanıt defteri süreç hipotezidir.",
+            "before_state": "Kıyı projelerinin izin durumları, sözleşmeleri ve saha testleri ayrı bölge raporlarında parçalı",
+            "after_state": "Landing başına kritik kanıt, risk, eksik bağlantı/sözleşme ve operasyon başlangıç matrisi",
+            "canonical_source_urls": [
+              "https://datacenters.economictimes.indiatimes.com/amp/news/ai-compute-infrastructure/henox-launches-crest-submarine-cable-to-support-ai-connectivity-in-india-partners-aptelecom/134895529"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      }
+    ]
+  }
+}
