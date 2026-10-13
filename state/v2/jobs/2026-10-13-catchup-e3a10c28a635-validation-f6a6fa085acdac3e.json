@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-f6a6fa085acdac3e",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "f6a6fa085acdac3e1106cd555b7a609bc9d06eb1ac4ced520ad931acbef00e0c",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "rail-maintenance-contractors|document-segment-rail-crack-inspection-and-speed-restriction-closure|segment-defect-test-repair-acceptance-ledger",
+      "idea_name": "Ray Kesimi Çatlak ve Hız Kısıtı Kanıt Defteri",
+      "core_job": "Ray çatlak riskli kilometre/kesimlerin muayene, geçici hız kısıtı, onarım ve kapatma onayını sürüme bağlamak",
+      "target_customer": "Demiryolu altyapı işletmecisi ray bakım ve muayene yüklenicileri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Kullanıcının CSV/saha tutanaklarından km başlangıç-bitiş, hat/yol, ultrasonik/tahribatsız test tarihi, defekt sınıfı, hız kısıtı, yedek ray ve iş bitim kanıtı yükleyip insan onay listesi/raporu oluşturan tarayıcı aracı; tren sinyalizasyonuna bağlanmaz ve işletme için emniyet onayı vermez",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-60e1ff8cac9ad4b1:2f24505d611314e3a18620ff:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.tu.no/samferdsel/sprekker-i-skinnene-etter-syv-ar-lite-togtrafikk-far-skylden/7145539"
+      ],
+      "triggering_article_ids": [
+        "2f24505d611314e3a18620ff"
+      ],
+      "supporting_article_ids": [
+        "2f24505d611314e3a18620ff"
+      ],
+      "why_now": "12 Ekim TU özgün haberinde 2019 açılmış Danimarka Kopenhag–Ringsted demiryolunda yedi yıl sonra ray çatlakları bulunduğunu, bazı kesimlerde 40 km/saat hız kısıtları uygulandığını aktarıyor. Düşük tren trafiği hipotezi başlıkta geçiyor ama nedensellik resmî inceleme ile kesinleşmiş gibi gösterilmez. Elle yürütülen ray kesimi muayene/defekt/düzeltici faaliyet kanıtı hem işletmeci hem bakım tedarikçisi için somut iş ihtiyacıdır.",
+      "before_state": "Hat kesimi muayene raporları, hız kısıt kararı, iş emri ve onarım sonrası ölçüm ayrı sistem/kağıt formlarında dağılır",
+      "after_state": "Her kritik ray çatlağı için kusur tipi, ölçüm, onarım, hız kısıtı ve bağımsız insan kapatma onayı tek denetlenebilir dosyada",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

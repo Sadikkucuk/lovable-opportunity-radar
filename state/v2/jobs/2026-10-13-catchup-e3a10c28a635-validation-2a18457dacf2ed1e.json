@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-2a18457dacf2ed1e",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "2a18457dacf2ed1ed1acc0b5f9297ebea2d73aab6fce5dae365a24a52763f9e7",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "electric-rail-pipeline-asset-operators|triage-airship-and-drone-inspection-findings-to-asset-repairs|csv-span-asset-defect-priority-and-workorder-evidence-ledger",
+      "idea_name": "Aerial Utility Inspection Finding-to-Repair Desk",
+      "core_job": "Hava aracı taraması dosyalarını hat açıklığı/span/boru hattı varlık kimliği, foto/defect insan incelemesi ve bakım emrine dönüştürüp onarım kapatma tutanağına bağlamak",
+      "target_customer": "Avrupa elektrik iletim/boru hattı/demiryolu altyapı varlık bakım ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Sağlayıcı bağımsız kullanıcı CSV uçuş segment/varlık kimliği, elle sınıflandırılmış bulgu ciddiyeti, bakım emir sorumlusu, fotoğraf linki, saha kanıtı ve tekrar inceleme defteri; otomatik görüntü AI sistemi veya drone API'si yok",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-7735bd9c3d8977ea:66b732347187a661ac7388d2:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.eu-startups.com/2026/10/hylight-raises-e13-million-for-its-autonomous-airships-inspecting-europes-critical-infrastructure/"
+      ],
+      "triggering_article_ids": [
+        "66b732347187a661ac7388d2"
+      ],
+      "supporting_article_ids": [
+        "66b732347187a661ac7388d2"
+      ],
+      "why_now": "EU-Startups 12 Ekim HyLight'in 13 milyon EUR yatırımını ve hidrojen destekli otonom hava araçları ile elektrik hattı, demiryolu ve boru hattı taraması için kilometrelerce saha uçuşunu bildiriyor. AeroMorning 750+ saat ve 4'ten 15 araca geçiş hedefini ekliyor (hedef, gerçekleşmiş değil). Müşteri altyapı işletmecisi için hava aracı sağlayıcısından alınan dosyayı arıza önceliği, asset ID, bakım emrine ve kapanış kanıtına ilişkilendirme somut vendor-agnostic iş olabilir.",
+      "before_state": "Hava aracı raporu, bakım varlık kodu ve arıza düzeltme takibi farklı tedarikçi sistemlerde kopuk",
+      "after_state": "Uçuş bulgusu→saha kusuru→iş emri→insan kapatma kanıtı basamaklı izlenebilirlik",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-55f99bb6d0f60438",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "55f99bb6d0f60438fc3a87f64d52e435cbd88c2b399b84b37fabfbdee78c2ce3",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "fulfillment-center-automation-supervisors|resolve-asrs-breakpack-and-manual-handoff-exceptions|event-triage-bin-ownership-and-closure-proof-ledger",
+      "idea_name": "Fulfillment Robot İstisna ve Manuel Devir Defteri",
+      "core_job": "Otomatik depolama/raflama adımlarında robotun ayıramadığı kutu ve ürünü uygun insana devretmek, istisna nedenini ve teslim kapanışını izlemek",
+      "target_customer": "Robotik depolama sistemi kullanan e-ticaret depo işletmecilerinin operasyon amirleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Kullanıcı sağladığı robot hata/iş emri CSV, depo istasyonu, SKU/boyut, sorumlu, manuel müdahale ve kalite kapanış belgesiyle kurallı etiketleme/rapor, harici API yok",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-f5854268da66ddc5:09d9793ae75cba8260ca26c8:01"
+      ],
+      "canonical_source_urls": [
+        "https://corporate.walmart.com/news/2026/10/stockton-next-generation-fulfillment-center",
+        "https://www.supplychaindive.com/news/walmart-opens-next-gen-california-facility-to-boost-west-coast-fulfillmen/832631/"
+      ],
+      "triggering_article_ids": [
+        "09d9793ae75cba8260ca26c8"
+      ],
+      "supporting_article_ids": [
+        "09d9793ae75cba8260ca26c8"
+      ],
+      "why_now": "Walmart 8 Ekim resmî duyurusunda Stockton'da 900 bin ft² üzeri beşinci yeni nesil fulfillment tesisini açtığını; AS/RS otomasyonunun sipariş işini geleneksel 12 adımdan beş adıma indirdiğini, 1000+ kişilik istihdam hedefini açıkladı. 12 Ekim Supply Chain Dive yeniden aktardı. Robot iş istasyonu sapması, manuel breakpack devri ve istisna kapanışını ayrı belgelemek operatör sorunudur; bu ihtiyaç henüz müşteri görüşmesiyle doğrulanmadı.",
+      "before_state": "ASRS arıza ve manuel breakpack işleri farklı operasyon günlüklerinde kayboluyor",
+      "after_state": "İstasyon ve SKU bazında sorumlu, neden, devralma ve kapanış kanıtı; fiziksel otomasyona kumanda etmez",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

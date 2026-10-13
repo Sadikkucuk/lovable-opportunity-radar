@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-fa073c53fcea0d74",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "fa073c53fcea0d74ebb0df6e2b521a71d20917b785f906691abe85e3b64eac52",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "sme-cloud-tenants|prioritize-independent-backup-restore-before-vendor-ransomware-outage|asset-backup-rpo-rto-and-drill-evidence-ledger",
+      "idea_name": "Cloud Recovery Ownership & Test Ledger",
+      "core_job": "Sağlayıcı veri kurtaramadığı durumda hangi VM/veri tabanı yedeğinin müşteride bulunduğunu, restorasyon sırasını ve tatbikat sonucunu belgelemek",
+      "target_customer": "Harici cloud barındırma kullanan KOBİ BT ve iş sürekliliği sorumluları",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Yalnız kullanıcı girdiği VM, yedek konumu/medyası, son tarih, RPO/RTO hedefi, test sonucu, geri alma adımı ve yetkili onayı; hiçbir buluta otomatik bağlanmaz",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-d26e3e4d3a3f6faa:0154e29cc18eb15fc6832c5d:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.itmedia.co.jp/news/article/2610/09/2000002147/"
+      ],
+      "triggering_article_ids": [
+        "0154e29cc18eb15fc6832c5d"
+      ],
+      "supporting_article_ids": [
+        "0154e29cc18eb15fc6832c5d"
+      ],
+      "why_now": "IDC Frontier'ın 7 Ekim 2026'daki fidye yazılımı saldırısı sonrası 495 kuruluş etkilendi; 8 Ekim duyurusuna göre bazı cloud zonelarının sağlayıcı tarafından geri yüklenmesi güç ve müşteri kendi yedeklerine muhtaç. 9-10 Ekim ITmedia düzeltmesi ve sağlayıcı açıklamaları bunu doğruluyor. KOBİ cloud müşterisi için müşteri-yedek dosya envanteri, geri dönüş sırası ve test kanıtı defteri net iş akışıdır; canlı backup API şart değil.",
+      "before_state": "Cloud sözleşmesi restore sorumluluğunu belirsiz bırakır, müşterinin kendi yedeği ve düzenli restore testi görünür değildir",
+      "after_state": "İş kritikliği ve bağımsız yedek varlığına göre sistem-sistem kurtarma sırası, eksik yedek ve test-kapanış denetim defteri",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

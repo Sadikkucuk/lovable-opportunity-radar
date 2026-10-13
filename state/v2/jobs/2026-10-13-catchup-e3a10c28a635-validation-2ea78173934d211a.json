@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-2ea78173934d211a",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "2ea78173934d211add606e82ecc1450c39ea1c4ff72d655b85eac3c3d1f33655",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "china-ev-export-finance-teams|model-2027-export-vat-rebate-reduction|shipment-date-product-and-margin-simulator",
+      "idea_name": "NEV İhracat Vergi İadesi Etki Simülatörü",
+      "core_job": "Ürün ve gümrük çıkış tarihine göre 2027 vergi iadesi düşüşünü marj bütçesine işlemek",
+      "target_customer": "Çinli NEV üreticileri ve ihracat finans ekipleri",
+      "buyer": "İhracat finansmanı müdürü",
+      "product_mechanism": "Kullanıcının girdiği ürün kodu, matrah, ihracat tarihi, 13/9% senaryosu ve toplam sapma tablosu",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-08252109d36f01d7:88b5ab9057341e1b734577f0:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.yicai.com/brief/103390128.html"
+      ],
+      "triggering_article_ids": [
+        "88b5ab9057341e1b734577f0"
+      ],
+      "supporting_article_ids": [
+        "88b5ab9057341e1b734577f0"
+      ],
+      "why_now": "12 Ekim 2026 duyurusunda 1 Nisan 2027 tarihinden itibaren NEV iadesinin düşürülmesi",
+      "before_state": "Araç bazlı sipariş/gümrük çıkış tarihi ile vergi bütçesi farklı tablolarla planlanıyor",
+      "after_state": "Tarih/sınıf bazlı farklı iade senaryoları ve marj etki raporu; resmî vergi görüşü değildir",
+      "scope_hint": "Dünya",
+      "source_observations": [
+        {
+          "url": "https://www.yicai.com/brief/103390128.html",
+          "accessed_at": "2026-10-13T05:17:29.107Z",
+          "observation": "12 Ekim Çin Maliye Bakanlığı/Vergi İdaresi duyurusu 1 Nisan 2027 itibarıyla NEV ihracat KDV iade oranının %13'ten %9'a ineceğini, sınırın gümrük beyanı tarihine bağlandığını doğruluyor. İhracat finans departmanı için sevkiyat tarihi, ürün kapsamı ve marj senaryosu hesaplaması gerekli.",
+          "provenance": "original_or_primary"
+        }
+      ],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

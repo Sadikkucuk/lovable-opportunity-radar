@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-b0809dce65b286a3",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "b0809dce65b286a3fd7fb95b49bbaa403afccecab28739100d92fbf3e1353d05",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "lunar-science-research-groups|review-released-artemis2-observations-with-auditable-provenance|pds-product-id-annotation-and-review-ledger",
+      "idea_name": "NASA Lunar Observation Provenance Notebook",
+      "core_job": "NASA PDS'den seçilmiş görüntü/astronot yorumlarını asıl ürün kimliğine bağlayıp gözlem, kaynak ve insan incelemesini sürümlemek",
+      "target_customer": "Üniversite ay jeolojisi, krater araştırması ve uzay eğitim ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Kullanıcının elle seçtiği PDS ürün ID/URL, görev günü, olay/krater etiketi, koordinat veya yön, iddia/karşı kanıt ve bilimsel kontrol notu CSV/JSON; dosyaları topluca çekmez, AI modeli çalıştırmaz",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-c830891d301f2de5:4b8f8d0cfe5d8c68ef2fb732:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.nasa.gov/blogs/artemis/2026/10/07/nasa-releases-artemis-ii-lunar-science-data-images/"
+      ],
+      "triggering_article_ids": [
+        "4b8f8d0cfe5d8c68ef2fb732"
+      ],
+      "supporting_article_ids": [
+        "4b8f8d0cfe5d8c68ef2fb732"
+      ],
+      "why_now": "NASA 7 Ekim 2026 Artemis II görevinin 800 GB üzeri ay bilimi görüntü/ses/rapor verisini PDS deposuna kamuya açık yayımladı. 12 Ekim IT之家 yeniden aktarım olup yeni veri yükleme tarihi değildir. Araştırmacılar için kullanıcı seçimiyle PDS ürün kimliği, gözlem zamanı, konum/tema, orijinal dosya provenansı ve insan notlarını sürümleyen offline CSV/JSON inceleme defteri hipotezi; 800 GB veriyi SaaS'a indirme/depolama şart değil.",
+      "before_state": "NASA veri taraması görüntü, ses, rapor ve farklı not defterlerine yayılır; aynı gözlemin iddia/provenans zinciri kaybolabilir",
+      "after_state": "Atıf verilebilir, hata düzeltilebilir insan inceleme ve PDS referans defteri",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

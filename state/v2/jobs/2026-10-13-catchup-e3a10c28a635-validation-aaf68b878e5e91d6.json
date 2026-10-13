@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-aaf68b878e5e91d6",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "aaf68b878e5e91d63ef9c592d7f26875907db4a52e612f69b897959adfa43dbd",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "ai-fabric-design-and-test-teams|compare-new-usfp-port-thermal-and-power-constraints|supplier-spec-lane-pinout-and-test-acceptance-matrix",
+      "idea_name": "USFP Çok Satıcılı Optik Kabul Planlayıcı",
+      "core_job": "Planlanan USFP optik dönüştürücü için farklı tedarikçilerin bant genişliği, port ısısı, güç ve uyumluluk kabulünü test maddelerine bağlamak",
+      "target_customer": "AI veri merkezi network/optik mühendisleri ve laboratuvar test ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Üretici veri sayfalarından elle girilen hat hızları, lane/port sayısı, güç bütçesi, ısı termal limit, konektör ve test protokol matrisi; canlı ağ API'si yok",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-34ecf3a1097042d5:a6c905d0ad6ec614721c208c:01"
+      ],
+      "canonical_source_urls": [
+        "https://nvidianews.nvidia.com/news/nvidia-and-cisco-introduce-new-pluggable-optics-form-factor-to-scale-ai-factories"
+      ],
+      "triggering_article_ids": [
+        "a6c905d0ad6ec614721c208c"
+      ],
+      "supporting_article_ids": [
+        "a6c905d0ad6ec614721c208c"
+      ],
+      "why_now": "12 Ekim NVIDIA/Cisco ortak USFP optik modül biçim faktörü duyurusu 400Gb/s/lane hedefi, 12.8 Tb/s birikimli kapasite iddiası, 4× yoğunluk ve 1,3× güç verimliliğini açıklıyor. Bu bir önerilen/planlanan ürün ekosistemi, yaygın saha dağıtımı değil. Çok satıcılı optik modül kabulü, yüzey termal bütçe ve port uyumluluğunu manuel BOM üzerinden karşılaştırmak somut B2B test planlama hipotezi.",
+      "before_state": "Yeni form factor için terminoloji ve veri sayfaları farklı ürünlerin uyum/ısıl maliyet hesabını zorlaştırıyor",
+      "after_state": "Çok satıcılı karşılaştırma, açıklanan varsayımlı tüketim/kapasite senaryosu ve kabul/test listesi",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

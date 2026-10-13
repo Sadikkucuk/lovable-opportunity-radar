@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-857e3038b8ce0dfd",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "857e3038b8ce0dfd538cccd8a1fb003f01ce8c772cad3f5d0e9807186328c8c4",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "telecom-bss-quality-teams|reconcile-ai-agent-customer-intent-with-payment-and-roaming-fulfilment|dialogue-intent-transaction-receipt-and-exception-ledger",
+      "idea_name": "Telekom AI Agent İşlem Sonucu Test Defteri",
+      "core_job": "Fatura ödeme veya roaming satın alma talebinin agent konuşmasından gerçek BSS/ödeme işlemine eksiksiz, idempotent ve onaylı geçtiğini kanıtlamak",
+      "target_customer": "Mobil operatör BSS/CRM kalite ve müşteri deneyimi test ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Operatörün manuel sağladığı anonimleştirilmiş intent, agent action, payment/roaming receipt ve fulfilment CSV/JSON dosyalarını eşleştirip çift tahsilat/boş sipariş/iptal istisnası üreten deterministik tarayıcı aracı",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-da8f47d00c271013:c7b00e43ffe61d44c09d4f88:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.lg.co.kr/media/release/30666"
+      ],
+      "triggering_article_ids": [
+        "c7b00e43ffe61d44c09d4f88"
+      ],
+      "supporting_article_ids": [
+        "c7b00e43ffe61d44c09d4f88"
+      ],
+      "why_now": "13 Ekim LG Uplus resmî basın bülteni U+one AI agent'ın sadece bilgi araması yerine fatura görüntüleme/ödeme ve roaming önerisi/satın alma adımlarını eylem olarak tamamlamaya dönüştüğünü duyuruyor. Yazılımın kendisi mevcut telekom BSS erişimi ve AI agent gerektirir; ayrı manuel/CSV test ve settlement kanıt defteri ancak satıcıdan bağımsız test süreci olarak ürün hipotezidir.",
+      "before_state": "Bir AI agent konuşmada işlemin yapıldığını söylerken ödeme, paket aktivasyonu veya CRM siparişi farklı sistemlerde ayrı test edilir",
+      "after_state": "İnsan onaylı niyet/işlem/sonuç uzlaştırması, failed/no-op/duplicate aksiyon matrisi; canlı BSS/API/AI runtime gerekmez",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

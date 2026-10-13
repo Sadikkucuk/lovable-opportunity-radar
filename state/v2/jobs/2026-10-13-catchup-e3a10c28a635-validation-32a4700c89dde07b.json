@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-32a4700c89dde07b",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "32a4700c89dde07b48e95efc5b8b209cacb2a9422d500f98ffff474ceebee2d2",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "authorized-auto-service-networks|track-manufacturer-recall-repair-closure|vin-import-inspection-parts-and-completion-ledger",
+      "idea_name": "VIN Recall Dealer Closure Ledger",
+      "core_job": "Geri çağırma kapsamında etkilenen şasi numaralarını servis randevusuna, parça teminine ve onarım kanıtına bağlamak",
+      "target_customer": "Yetkili otomotiv servis zincirleri ve distribütör satış sonrası ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Üreticiden manuel yüklenen izinli VIN CSV'si, varyant, muayene sonucu, yedek parça, müşteri randevu ve servis kapanış kanıtı; üretici VIN API'si zorunlu değil",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-20b97d5a9fbce840:51338168b5546ed021aeb68d:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.chery.my/2026/10/11/chery-auto-malaysia-melaksanakan-kempen-panggil-semula-untuk-omoda-5/"
+      ],
+      "triggering_article_ids": [
+        "51338168b5546ed021aeb68d"
+      ],
+      "supporting_article_ids": [
+        "51338168b5546ed021aeb68d"
+      ],
+      "why_now": "11 Ekim Chery Malaysia birincil duyurusunda OMODA 5 C/H etkilenen varyantların VIN ile üretici sitesinde kontrol edileceği, yetkili bayide ücretsiz muayene ve gerekirse parça değişimi yapılacağı doğrulanıyor. JPJ araştırması ve 8.878 araç sayısı ikincil açıklamadan; bu müşteri listesi olmadan sistem VIN uyumunu kendi başına kesin hesaplayamaz. Yetkili servis için ithal edilen üretici VIN listesiyle kapatma/kanıt/tedarik parçası takibi iş akışı var.",
+      "before_state": "Geri çağırma listesindeki araç ve servis/onarım ilerlemesi ayrı Excel ve çağrı kayıtlarında kalıyor",
+      "after_state": "Yetkili servisin parça bekleyen, tamamlanan ve müşteriye bildirilen VIN durum matrisi",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

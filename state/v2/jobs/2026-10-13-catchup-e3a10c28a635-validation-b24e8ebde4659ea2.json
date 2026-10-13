@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-b24e8ebde4659ea2",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "b24e8ebde4659ea22a8b198f82d6b654198d969a2162be5e2ee07e55e1523059",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "local-model-evaluation-teams|detect-retrieval-position-sensitivity-from-exported-model-answers|prompt-position-answer-comparison-and-confidence-ledger",
+      "idea_name": "Local LLM Position Stability Benchmark Ledger",
+      "core_job": "Sabit içerik soruları aynı bilgi farklı uzun bağlam pozisyonlarında yerleşince cevabın tutarlılığını kanıtlamak",
+      "target_customer": "Ücretsiz yerel LLM kullanan geliştirici ve kurum test ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Kullanıcı tarafından getirilen prompt-test/cevap CSV dosyalarını farklı konum ve benchmark cevaplarına göre deterministic skorlayan JS karşılaştırıcı",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-ac88c8183ae78fc0:cc91bc8962745dd22d36aab0:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.scmp.com/tech/tech-trends/article/3370550/deepseeks-cost-saving-ai-may-lead-inaccuracy-model-performance-research"
+      ],
+      "triggering_article_ids": [
+        "cc91bc8962745dd22d36aab0"
+      ],
+      "supporting_article_ids": [
+        "cc91bc8962745dd22d36aab0"
+      ],
+      "why_now": "12 Ekim SCMP, ByteDance ve ABD üniversiteleri yazarlarının hakem incelemesinden geçmemiş araştırmasını aktarıyor: uzun promptta anahtar bilginin pozisyonu doğruluğu etkileyebilir. Ücretsiz yerel model QA takımı için sabit bilgi test setlerini yerel sağlanan cevap dosyalarından analiz etmek farklı denetim iş akışıdır; model çalıştırma API'si zorunlu değil.",
+      "before_state": "Bağlam konumu kalite farkı tekil benchmark skorlarına yansımaz",
+      "after_state": "Pozisyona duyarlı doğruluk sapma matrisi ve tekrar test planı",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

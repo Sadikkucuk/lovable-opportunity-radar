@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-ae1d53fdb80ed171",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "ae1d53fdb80ed171f641b49965e60d18fd325e8804734987f57a8a41d84ef209",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "us-importing-consumer-brands|allocate-nonrecurring-tariff-recovery-to-supply-chain-actions|refund-eligibility-investment-allocation-and-evidence-ledger",
+      "idea_name": "Tarife İadesi Tedarik Yatırım Dağıtım Defteri",
+      "core_job": "Tek seferlik geri kazanılan ithalat vergisini alternatif yatırım, sevkiyat, stok boşaltma ve kârlılık senaryolarına izlenebilir dağıtmak",
+      "target_customer": "ABD ithalatçı marka finans ve tedarik yöneticileri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Manuel iade bazlı CSV muhasebe kalemi, dağıtım hedefi, iş paketi, plan/gerçekleşen bütçe ve onay kanıtı",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-259e521e3cd23897:60b67dfb8f69854ac49cb06d:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.supplychaindive.com/news/levis-to-use-part-of-80m-tariff-refund-for-supply-chain/832562/"
+      ],
+      "triggering_article_ids": [
+        "60b67dfb8f69854ac49cb06d"
+      ],
+      "supporting_article_ids": [
+        "60b67dfb8f69854ac49cb06d"
+      ],
+      "why_now": "12 Ekim Supply Chain Dive kaynak raporuna göre Levi Strauss, önceki çeyrekte yaklaşık 80 milyon USD tarife iadesi yazdı; bunun üçte dördünü dağıtım, lojistik ve pazarlama iyileştirmelerine ayırmayı planlıyor. İade gelirini tedarik/fiyat telafisi, stok boşaltma ve tek seferlik kampanyalar arasında belgeyle eşleştirme, gümrük alıcısının genel hibe değil özel varyans işleri için makul kullanıcı problemi.",
+      "before_state": "İade tutarı mali tablolarda toplulaştırılır, hangi lojistik/kampanya yatırımına gittiği izlenemez",
+      "after_state": "İade bütçe varyansı ve her sipariş/tedarik aksiyonuna bağlantılı kabul/harcama kontrol tablosu",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

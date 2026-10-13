@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-cbb06802044ffdb8",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "cbb06802044ffdb89750de066e3b107b7dc1d647d6f7e5988bc754dfa3acd465",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "chinese-food-beverage-manufacturers|align-retailer-channel-promises-with-supplier-capacity-and-expiry|channel-sku-shelf-life-margin-and-delivery-ledger",
+      "idea_name": "Food Brand Channel-SKU Supply Promise Matrix",
+      "core_job": "Market, üyelik mağazası ve indirimli atıştırmalık kanalları için SKU başına hacim, raf ömrü, iade/iskonto ve tedarik kapasitesini sipariş teklifinden önce kıyaslamak",
+      "target_customer": "Çin gıda ve içecek markalarının satış operasyonu, tedarik planlama ve kanal yöneticileri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Tedarikçi CSV/manuel SKU raf ömrü, lot, kanal iskonto, hedef marj, minimum sipariş, günlük kapasite ve gerçekleşen iadeyi işleyen tarayıcı senaryosu; dış satış API'si gerekmez",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-c3716b5f4b9522d2:2d65b516c13402b88f654cc6:01"
+      ],
+      "canonical_source_urls": [
+        "https://health.people.com.cn/n1/2026/1013/c14739-40813350.html"
+      ],
+      "triggering_article_ids": [
+        "2d65b516c13402b88f654cc6"
+      ],
+      "supporting_article_ids": [
+        "2d65b516c13402b88f654cc6"
+      ],
+      "why_now": "13 Ekim People's Daily/Zhengquan Ribao sektörel haberinde Çin gıda/içecek üreticilerinin geleneksel market, üyelik ve indirimli atıştırmalık kanallarında raf alanı/ciro koşullarının ayrıştığı; markaların yeni ürün, tedarik yanıtı ve marjı kanala göre planlaması gerektiği anlatılıyor. Bu ekonometrik nedensellik kanıtı değil; üretici ürün/hizmet alıcısının girdiği sözleşme/SKU tahmini üzerinden deterministik planlama hipotezi.",
+      "before_state": "Perakende kanalın promosyon şartı ile üreticinin gerçek lot kapasitesi ve raf ömrü farklı tablo ve epostalarda",
+      "after_state": "Kanal/SKU teklif uygunluğu, stok kaybı, eksik kapasite ve insan onaylı teslim garantisi kontrol paketi",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

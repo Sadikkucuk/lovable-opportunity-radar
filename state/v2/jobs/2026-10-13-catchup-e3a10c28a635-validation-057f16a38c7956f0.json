@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-057f16a38c7956f0",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "057f16a38c7956f0e9df725a430c7c695cc5fd09b734a8e14ea4c27a77624a93",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "municipal-waterway-maintenance-contractors|document-floating-litter-robot-service-and-acceptance|area-litter-battery-and-cleanup-evidence-ledger",
+      "idea_name": "Su Yüzeyi Temizlik Hizmeti Kabul Defteri",
+      "core_job": "Otonom/manuel yüzer çöp toplama seferlerinin sözleşmedeki temizlik alanı, ağırlık, rota, görev saati ve müdahale koşullarını kanıtlamak",
+      "target_customer": "Belediye su-kanal çevre hizmetleri ve yüzer çöp toplama yüklenicileri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Kullanıcının getirdiği temizlik rota/alanı CSV, çöp tip ve miktarı, pil/arıza süreleri, foto referansı, müşteri kabul ve hizmet kesinti raporu; robot kontrol API'si veya AI algılama yok",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-8f4d21dedd024ae9:2110073dbff3e25e8d64a066:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.etnews.com/20261012000325"
+      ],
+      "triggering_article_ids": [
+        "2110073dbff3e25e8d64a066"
+      ],
+      "supporting_article_ids": [
+        "2110073dbff3e25e8d64a066"
+      ],
+      "why_now": "12 Ekim ETNews, Çinli Dongfang Shuili'nin H3 yüzer çöp toplama robotunun iddia edilen 12 saatten uzun çalışma, kamerayla çöp algılama, otomatik toplama/dönüş özelliklerini tanıtıyor. Bunlar basın/video/üretici iddialarıdır; sahada doğrulanmış verim testi değildir. Belediye su temizliği sözleşmelerinde günlük alan/çöp türü/toplama ağırlığı, pil/arıza ve çevre hizmeti kabul kayıtlarının bağımsız takibi somut süreçtir.",
+      "before_state": "Temizlik dronlarının cihaz sayaçları, saha fotoğrafları ve belediye hizmet kabul raporları birbirinden kopuk",
+      "after_state": "Günlük görev-rotaya göre hizmet KPI, arıza ve insan onaylı iş bitiş kanıt paketi",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

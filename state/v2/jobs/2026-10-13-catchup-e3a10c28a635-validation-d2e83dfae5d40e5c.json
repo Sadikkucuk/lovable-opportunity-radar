@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-d2e83dfae5d40e5c",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "d2e83dfae5d40e5cb194ae31beee94d304a4059bc91b0ed8a96f999975a619f1",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "research-soft-robotics-labs|compare-manual-teleoperation-touch-and-grasp-trials|control-input-sensor-latency-and-grasp-evidence-ledger",
+      "idea_name": "Soft Robot Teleop Test Tekrarlanabilirlik Defteri",
+      "core_job": "Parmakla kontrol edilen küçük robotun dokunsal ve görsel geri besleme denemelerinde başarı/latency şartlarının tekrarlanabilirliğini ölçmek",
+      "target_customer": "Üniversite/robotik Ar-Ge laboratuvarlarının yumuşak robot ve teleoperasyon test mühendisleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Kullanıcı deney CSV girişi: kontrol pozisyonu, basınç, gözlem/video dosya referansı, tutuş nesnesi, başarı, test koşulu/sürüm, kural temelli varyans; robot kontrol mekanizması değil",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-038283ae5c0f9286:d773bd0f0de3618bae91693f:01"
+      ],
+      "canonical_source_urls": [
+        "https://news.kaist.ac.kr/newsen/html/news/?mng_no=68090&mode=V"
+      ],
+      "triggering_article_ids": [
+        "d773bd0f0de3618bae91693f"
+      ],
+      "supporting_article_ids": [
+        "d773bd0f0de3618bae91693f"
+      ],
+      "why_now": "13 Ekim KAIST birincil haberinde BeetleBot, yapay kas, kamera, dokunsal sensör ve parmak yamasıyla kontrol edilen araştırma prototipi olarak açıklandı; insani erişimi zor dar alan ve küçük obje alma kullanımı gelecekte potansiyel, ticari saha kurulum değildir. Deney operatörleri için sensör gecikmesi, tutma kuvveti, tekrar başarısı ve test koşullarını kaynak dosyalarıyla karşılaştırma iş akışı düşünülebilir; robotu çalıştıran canlı kontrol API'si yapılmaz.",
+      "before_state": "Yapay kas, dokunma ve teleop test gözlemleri notlar, cihaz logları ve video dosyalarına dağılmış",
+      "after_state": "Deney koşuluna göre başarısız tutuş, gecikme ve sensör tekrar uygunluğu kanıt dökümü",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

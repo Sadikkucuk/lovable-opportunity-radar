@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-f51b12a45b5ad8b5",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "f51b12a45b5ad8b597c23f4f46542f608771b8e80cb5c5df96dd9406401af077",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "vehicle-dealers-and-fleet-privacy-teams|document-connected-car-app-sharing-disclosures|vendor-data-field-consent-and-remediation-ledger",
+      "idea_name": "Bağlantılı Araç Veri Paylaşım Açıklama Defteri",
+      "core_job": "Araç/app ve üçüncü taraf arasında paylaşıldığı bildirilen VIN, lokasyon, eposta gibi alanlara ilişkin müşteriye yapılan açıklama, izin ve itiraz/kapatma adımlarını belgelemek",
+      "target_customer": "Bağlantılı otomobil satan bayilerin uyum ve filo veri gizliliği ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Araç modeli ve app sürüm bazlı kullanıcı girilen paylaşılan veri türü, tedarikçi, varsayımsal izin, kullanım kısıtı, talep/tamamlama kanıtı CSV/PDF; gerçek ağ trafiği ölçümü yok",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-e2b4d5df954f3243:f3fbec0c90550cb0392e80f5:01"
+      ],
+      "canonical_source_urls": [
+        "https://shiftdelete.net/yeni-otomobiller-kullanici-verilerini-paylasiyor?amp=1"
+      ],
+      "triggering_article_ids": [
+        "f3fbec0c90550cb0392e80f5"
+      ],
+      "supporting_article_ids": [
+        "f3fbec0c90550cb0392e80f5"
+      ],
+      "why_now": "12 Ekim ShiftDelete araştırma aktarımında Northeastern Üniversitesi testleri 21 araç ve 30 mobil araç uygulamasını, 19 aracın Wi-Fi üzerinden üçüncü taraflara veri aktardığını ve yedi uygulamanın VIN/email/konum paylaştığını raporluyor. Test dönemi Ekim 2024–Ağustos 2025, bugün yapılmış yeni test değil; ayrıntılı orijinal çalışma ayrıca kontrol edilmeli. Otomotiv bayisi/flosu için manuel veri akışı açıklama ve hak talebi izleme problemi somut.",
+      "before_state": "Veri paylaşımı maddeleri araç sözleşmeleri, uygulama koşulları ve destek taleplerinde dağınık",
+      "after_state": "Kullanıcıya gösterilebilen veri alanı/aktarım kapsamı ve manuel silme/itiraz takibi kanıt matrisi",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-2f21a0e127e0e8fa",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "2f21a0e127e0e8fa7f0d99347998730450313fede9599f7dab5f023396c09af7",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "industrial-compressed-air-maintenance-teams|track-oil-sample-deterioration-against-asset-service-decisions|viscosity-acidity-water-and-wear-metals-ledger",
+      "idea_name": "Kompresör Yağ Analizi Servis Kanıt Defteri",
+      "core_job": "Kompresör yağ numunelerindeki viskozite, TAN/asit, nem ve aşınma metaline göre bakım talebini kanıtla bağlamak",
+      "target_customer": "Hava kompresörü işletmecisi KOBİ bakım ve enerji verimliliği ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Dış laboratuvardan kullanıcının CSV/PDF alımı, OEM yağ türü, viskozite indeksi, değişim saatleri, basınç/sıcaklık, numune eşik/delta karşılaştırması ve insan servis onayı",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-038c4ff910f63375:6404fc1f1c0778d9b0e1377e:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.plantservices.com/home/article/11340612/articles"
+      ],
+      "triggering_article_ids": [
+        "6404fc1f1c0778d9b0e1377e"
+      ],
+      "supporting_article_ids": [
+        "6404fc1f1c0778d9b0e1377e"
+      ],
+      "why_now": "12 Ekim Plant Services/Hitachi Global Air Power makalesi vidalı kompresörler için OEM akışkanının viskozite, oksidasyon/asitlik, su ve aşınma metali üzerinden dönemsel örneklenmesinin bakım ihtiyacını önceleyebildiğini açıklıyor. Uygunsuz yağ analizine rağmen üretime devam etmek potansiyel arıza zinciri yaratır; bu risk evrensel arıza tahmini doğruluğu iddiası değildir. Bakım uzmanı için laboratuvar numunesi, rulman/kompresör kimliği ve eşik aşımı kararını kanıt defterinde izlemek somut JTBD.",
+      "before_state": "Laboratuvar raporları makine çalışma saati ve servis kararı ile bağlanmadığında erken bozulma uyarıları unutuluyor",
+      "after_state": "Kompresör bazında trend, önerilen kontrol, insan onaylı bakım kapanışı ve yağa bağlı verim kaybı hipotez raporu",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

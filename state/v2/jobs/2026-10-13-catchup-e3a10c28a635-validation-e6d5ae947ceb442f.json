@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-e6d5ae947ceb442f",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "e6d5ae947ceb442f6bfc7fa58fd1e253546ef671b771c55dd91d6a262dd6ba6f",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "italian-small-business-multisite-energy-buyers|track-stg-enddate-and-offer-choice-readiness|meter-site-vulnerability-terms-and-approval-ledger",
+      "idea_name": "Italy STG Energy Contract Transition Desk",
+      "core_job": "31 Mart 2027 STG bitişine göre sayaç/kontrat bazında teklif geçişini, otomatik geçiş koşulunu ve olası resmi uzatmanın sonuçlarını takip etmek",
+      "target_customer": "İtalya birden fazla sayacı olan KOBİ elektrik alıcıları ve tesis yöneticileri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Kullanıcının girdiği POD/sayaç, tedarikçi, fiyat koşulu, hassas kullanıcı statüsü, yenileme takvimi, karar ve yazılı teklif kayıtları, manuel ARERA portal dışa aktarımı; canlı fiyat API'si yok",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-9b430fa394b2fb0f:c4160eda515eab644b0146b6:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.arera.it/comunicati-stampa/dettaglio/elettricita-prime-comunicazioni-arera-in-bolletta-per-spiegare-cosa-fare-con-la-fine-del-servizio-a-tutele-graduali-il-31-marzo-2027"
+      ],
+      "triggering_article_ids": [
+        "c4160eda515eab644b0146b6"
+      ],
+      "supporting_article_ids": [
+        "c4160eda515eab644b0146b6"
+      ],
+      "why_now": "12 Ekim ARERA birincil açıklamasına göre İtalya elektrik Servizio a Tutele Graduali normalde 31 Mart 2027 bitecek, 1 Nisan'da uygun serbest piyasa teklifine otomatik geçiş var ve abonelere bilgilendirme iletiliyor. MASE aynı gün 31 Aralık 2027'ye uzatmayı DEĞERLENDİRİYOR ancak onaylanmış değil. Küçük işletmeler ve yöneticileri için kendi çoklu abonelik tesislerini belirli seçenek/deadline karşılaştırma ve kanıtlı karar kaydı somut JTBD; ARERA'nın var olan fiyat karşılaştırma portalını klonlamıyoruz.",
+      "before_state": "Çoklu elektrik sayacının geçiş koşulu farklı şubelerde ve faturalarda ayrışıyor",
+      "after_state": "Şube/sayaç bazlı alıcı onay durumu ve gecikmiş sözleşme karar listesi",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

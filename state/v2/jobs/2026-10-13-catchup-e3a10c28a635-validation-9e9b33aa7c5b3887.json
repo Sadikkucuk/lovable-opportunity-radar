@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-9e9b33aa7c5b3887",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "9e9b33aa7c5b3887dd4ed0116c3eeb7b1d12bd9b8380d067d37d9f6c76747f48",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "optical-transceiver-production-engineers|document-cpo-uv-curing-parameter-and-alignment-yield-trials|alignment-source-power-time-temperature-and-sample-evidence-ledger",
+      "idea_name": "CPO UV Curing Alignment Qualification Ledger",
+      "core_job": "Yeni UV kürleme ışık kaynağına geçerken aktif hizalama ofseti, kürleme kayması ve test numunesi kalite kabulünü süreç reçetesi sürümüne göre kanıtlamak",
+      "target_customer": "CPO/optik transceiver aktif hizalama ekipmanları geliştiren OEM proses, optik üretim ve kalite ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Kullanıcıdan cihaz/LED driver sürümü, UV optik güç mW, kür süresi, ısıl test ve kürleme sonrası sapma mikron bilgisi, lot/numune ID, sapma tolerans aralığı, proses mühendisi kararı içeren CSV/JSON tabanlı rapor; LED ışığını, lazeri veya hareket sistemini sürmez",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-863c78fe99b77945:6c968f7115f84a3008413296:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.thelec.net/news/articleView.html?idxno=14526",
+        "https://www.etnews.com/20261012000252"
+      ],
+      "triggering_article_ids": [
+        "6c968f7115f84a3008413296"
+      ],
+      "supporting_article_ids": [
+        "6c968f7115f84a3008413296"
+      ],
+      "why_now": "The Elec 12 Ekim özgün kaynak Global Technology–ADST işbirliğiyle CPO aktif optik hizalama cihazı UV kürleme LED sürücü IC geliştirilmesine başlanacağını doğruluyor. Bu, seri üretimde kanıtlanmış düşük hata değil; henüz geliştirme hedefi. Optik birim lazer/lens konumu, UV çıkışı, kürleme süresi, sıcaklık/çekme ve test lotu kabul raporlarının belirli revizyona bağlı tutulması yeni proses mühendisi kalite görevi olabilir.",
+      "before_state": "Optik aktif hizalama parametresi, UV ışık sürücü kontrolü ve numune kabul sapmaları ayrı ekipman laboratuvar kayıtlarında",
+      "after_state": "Parametre sürümü→numune→UV kürleme→mekanik pozisyon sapması→insan kabul/ret raporu; optik güvenlik uygunluğunu kendisi belirlemez",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

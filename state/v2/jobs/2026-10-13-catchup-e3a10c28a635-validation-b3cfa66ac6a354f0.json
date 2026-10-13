@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-b3cfa66ac6a354f0",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "b3cfa66ac6a354f0c80b2a0c8684325a5dbd00ae4493f6835952b9e3b2da7fa4",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "small-it-ops-teams|document-control-plane-outage-fallback-and-recovery|incident-impact-task-deferment-and-rollback-evidence-ledger",
+      "idea_name": "SaaS Yönetim Paneli Kesinti Operasyon Defteri",
+      "core_job": "EAC gibi kontrol paneli kesildiğinde ertelenen BT işlemlerini, alternatif prosedürleri ve servis normale dönünce kapanışını izlemek",
+      "target_customer": "Microsoft 365 kullanan KOBİ BT yöneticileri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Kullanıcının manuel olay zaman çizelgesi, etkilenen yönetici işleri, geri alma/alternatif onayı, ertelenen iş kuyruğu ve kapanış kanıtı CSV/PDF",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-20b97d5a9fbce840:5083727098471436f4e3c07e:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.theregister.com/saas/2026/10/12/microsoft-blames-a-configuration-change-for-exchange-admin-center-tumble/5302698"
+      ],
+      "triggering_article_ids": [
+        "5083727098471436f4e3c07e"
+      ],
+      "supporting_article_ids": [
+        "5083727098471436f4e3c07e"
+      ],
+      "why_now": "12 Ekim The Register özgün açıklamada Microsoft Exchange Admin Center erişimindeki Internal Server Error / HTTP 302 hatasını konfigürasyon değişikliğine ve çözümü geri almaya bağlıyor. EAC kullanılamadığında IT ekibinin acil yönetim ve değişiklik kararlarını hangi kontrol/checklist ile yaptığı, karşılaşılan kritik işler ve kanıtları düzenli tutma ihtiyacı somut.",
+      "before_state": "Panel sorunu esnasında etkilenen talepler ve acil değişiklik kararları eposta ve sohbet içinde kayboluyor",
+      "after_state": "Olay, iş etkisi, alternatif onay ve ertelenmiş işlemlerin tamamlanmasını gösteren denetim izli rapor",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

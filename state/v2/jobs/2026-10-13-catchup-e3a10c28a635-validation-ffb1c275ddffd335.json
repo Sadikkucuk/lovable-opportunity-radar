@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-ffb1c275ddffd335",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "ffb1c275ddffd33546dbeccc427b2db29ebbd38a1f6d024f0509b8e411f79f32",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "electric-grid-restoration-teams|reconcile-storm-crew-segment-and-customer-service-restoration|manual-outage-workorder-and-restoration-evidence-ledger",
+      "idea_name": "Grid Restoration Proof Ledger",
+      "core_job": "Fırtına olayındaki başlangıç/kapanış kesintilerini bölge, hat tipi, saha ekip müdahalesi ve müşteri restorasyon zamanına bağlayıp eksik müdahale kanıtını görmek",
+      "target_customer": "Elektrik dağıtım şirketlerinin olay sonrası kalite güvence ve saha yönetim ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Şirketin elle sağladığı kesinti CSV, ekip görev, segment tipi, müşteri sayısı, restore zamanı, açıklama ve mühendis onay kaydı; gerçek zamanlı kesinti/SCADA/OMS API'si gerektirmez",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-038c4ff910f63375:632f457a98e8905c0cff0ba6:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.utilitydive.com/topic/grid-security-reliability/"
+      ],
+      "triggering_article_ids": [
+        "632f457a98e8905c0cff0ba6"
+      ],
+      "supporting_article_ids": [
+        "632f457a98e8905c0cff0ba6"
+      ],
+      "why_now": "Utility Dive 12 Ekim kasırga toparlanması haberinde fırtına zirvesinde yaklaşık 950 bin abonenin elektriğinin kesildiği ve üçüncü gün yaklaşık 160 bin kişinin etkilenmeye devam ettiği bildiriliyor; elektrik dağıtım şirketlerinin yeraltı hatlarının havai hatlardan sekiz kat daha iyi performans gösterdiği kaynak açıklaması olarak aktarılıyor. Bu bir senaryo beyanı, bütün bölgeler için karşılaştırmalı deney değil. Şebeke olay sonrası kesinti, saha müdahale, müşteri restorasyonu ve donanım tipine göre güvenilirlik kanıt defteri işi düşünülebilir.",
+      "before_state": "Dağıtım şebekesi tasarım/arıza sonrası restorasyon kanıtları farklı OMS, saha, müşteri şikâyeti raporlarında",
+      "after_state": "Denetlenebilir olay sonu müşteri geri dönüş zaman matrisi ve saha ekip müdahale/öğrenim kanıtı",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

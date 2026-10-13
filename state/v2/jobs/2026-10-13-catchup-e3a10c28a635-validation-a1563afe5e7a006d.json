@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-a1563afe5e7a006d",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "a1563afe5e7a006d5d920ed0cf8a43aa5ebe7f3d35dd6a47bc2247dca8af62b1",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "pjm-region-data-center-developers|prepare-large-load-registry-evidence-before-grid-intake|site-mw-phasing-power-source-and-change-provenance-ledger",
+      "idea_name": "PJM Veri Merkezi Büyük Yük Başvuru Kanıt Defteri",
+      "core_job": "Yeni büyük tüketim projesi için hizmete giriş ve aşamalı MW talep öngörüsünü, tesis yeri/enerji kaynağı ve resmî şebeke başvuru kanıtı ile takip etmek",
+      "target_customer": "PJM şebeke bölgesinde veri merkezi geliştiricileri ve utility bağlantı planlama ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Proje planlama CSV'si, yıl-ay yük basamakları, alternatif enerji kaynakları, şebeke bağlantı ön koşul belgesi, güncelleme/insan onayı ve risk revizyonu defteri; FERC/PJM canlı API ve hukuki karar içermez",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-b551490e944a7e2a:51eff3d2278a5c3217655f2e:01",
+        "2026-10-13-catchup-e3a10c28a635-discovery-15e866d3d38057ab:e04ee8eb62bfb25cb63da671:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/business/energy/us-panel-approves-pjms-registry-data-centers-rejects-plan-curtail-power-them-2026-10-12/",
+        "https://www.utilitydive.com/news/ferc-pjm-large-load-interconnection-iras-byonc/832716/"
+      ],
+      "triggering_article_ids": [
+        "51eff3d2278a5c3217655f2e",
+        "e04ee8eb62bfb25cb63da671"
+      ],
+      "supporting_article_ids": [
+        "51eff3d2278a5c3217655f2e",
+        "e04ee8eb62bfb25cb63da671"
+      ],
+      "why_now": "Reuters 12 Ekim'e göre FERC, PJM'nin veri merkezleri ve büyük talepler için öngördüğü kayıt sistemini onayladı ancak zirve talebinde elektrik kesinti/curtailment önlemi teklifini reddetti. Kayıt sistemi için hizmete giriş tarihi, yük planı, yakıt/güç kaynağı ve lokasyon bilgileri açıklanıyor; belirli saha yükümlülüklerinin tam resmî FERC karar metni henüz bağımsız incelenmedi, registry üretimde aktif sayılmaz. Veri merkezi geliştiricilerinin proje başvuru aşamasında doğrulanabilir yük kanıtı ve değişiklik geçmişini hazırlaması yeni dar iş hipotezi. | FERC 9 October 2026 order substantially rejected PJM's proposed Interim Resource Adequacy Service and bring-your-own-new-capacity rules, citing retail-rate/state jurisdiction and discriminatory issues, but approved its proposed large-load definition and large-load registry covering facility location, ramp schedule, capacity supply, etc. It is not correct to claim the rejected curtailment scheme became binding. Data center applicant needs a transparent project-based readiness/evidence register under an evolving grid-connection rule set.",
+      "before_state": "Geliştiricinin şebekeye tahsis ettiği talep ve fiziksel/finansal proje kanıtı farklı etaplarda ayrışabiliyor / Datacenter yük artış çizelgesi, yük tahminleri, şebeke/yerel tarifeler ve piyasa teklifleri farklı proje ekiplerinde",
+      "after_state": "Büyük yük kayıt hazırlık envanteri, belge/varsayım sürümü ve şebeke proje değişiklik izi / FERC onaylanan kayıt alanlarıyla ayrı işaretlenmiş, reddedilen IRAS/BYONC önerileriyle karıştırılmayan, tarih/sürüm bazlı hazırlık matrisi",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Birleştirilen 2 ham kayıt; PJM büyük yük kaydı ve devreye girme/ramp kanıtı aynı şebeke başvuru sahibinin aynı registry workflow'u.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

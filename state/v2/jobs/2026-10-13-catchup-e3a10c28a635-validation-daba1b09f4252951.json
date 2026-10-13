@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-daba1b09f4252951",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "daba1b09f42529513d8e9d2fb1178c9a59148fb79a1b94301b2447bc4eeaa466",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "electronics-component-brokers|prevent-price-eta-fraud-between-supplier-quote-and-customer-offer|quote-expiry-lot-proof-and-margin-approval-ledger",
+      "idea_name": "Elektronik Parça Teklif Geçerlilik Kontrol Defteri",
+      "core_job": "Müşteriye bağlayıcı fiyat/teslimat süresi açıklamadan önce distribütör fiyatının geçerliliğini, orijinalliği ve gecikme riskini kontrol etmek",
+      "target_customer": "Çok tedarikçiden parça bulan küçük elektronik komponent brokerları",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Manuel tedarikçi fiyat teklifi zaman damgası, döviz, geçerlilik dk, stok teyidi, parça/lot sertifikası, ETA, alternatif ve marj stres testi",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-e74889b52479cfb0:98f4c868601a92b6f132eccb:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.eefocus.com/video/2099436.html"
+      ],
+      "triggering_article_ids": [
+        "98f4c868601a92b6f132eccb"
+      ],
+      "supporting_article_ids": [
+        "98f4c868601a92b6f132eccb"
+      ],
+      "why_now": "Eefocus/芯广场 12 Ekim elektronik komponent brokerlarına ilişkin yorum, fiyatın bazen dakikalar içinde değişmesini, kondansatör kıtlığını ve sahte parça/termin gecikmesi riskini anlatıyor. Zaman ifadesi belgelenmiş istatistik değil satıcı gözlemidir. Distribütörün müşteriye fiyat ve teslimat teklifi verirken tedarikçi teklif süresi, ikame ve sertifika riskini kanıtlı olarak sınırlandırma işi var.",
+      "before_state": "Teklifler eposta/WeChat'lerde kısa süreli değişirken müşteri satış taahhüdü eski fiyata kilitleniyor",
+      "after_state": "Geçerlilik sona erme, marj/döviz/risk uyarısı ve insan onaylı satış teklifi kontrol raporu",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

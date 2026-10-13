@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-2c8862b89886e57b",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "2c8862b89886e57b17c9e984c2bca006fdc2fd64695506a9cb6ccc59e59e020d",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "electronics-sme-procurement|prioritize-long-lead-components-and-alternates|manual-bom-supplier-leadtime-and-quote-risk-matrix",
+      "idea_name": "Elektronik Bileşen Arz Risk Matrisi",
+      "core_job": "Parça bazında tedarik süreleri, teklif geçerliliği ve ikame riskini farklı tedarikçilerden kıyaslamak",
+      "target_customer": "Elektronik üreticilerin satın alma ve planlama ekipleri",
+      "buyer": "Satın alma planlama müdürü",
+      "product_mechanism": "Kullanıcı CSV BOM, parça fiyatı, onaylı ikame, stok ve ETA verileriyle kurallı uyarı sıralaması",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-09696e853648b01c:f009bc9c84151c4c356ad85b:01"
+      ],
+      "canonical_source_urls": [
+        "https://caifuhao.eastmoney.com/news/20261010135518397529010"
+      ],
+      "triggering_article_ids": [
+        "f009bc9c84151c4c356ad85b"
+      ],
+      "supporting_article_ids": [
+        "f009bc9c84151c4c356ad85b"
+      ],
+      "why_now": "2026 Eylül elektronik parçalarında AI kaynaklı üretim önceliklendirmesi ve fiyat/ETA ayrışması",
+      "before_state": "Farklı teklif Excel'leri ve manuel eposta teslim süreleri",
+      "after_state": "Riskli parça sıralaması, alternatif koşullar ve teslim gecikmesi senaryosu",
+      "scope_hint": "Dünya",
+      "source_observations": [
+        {
+          "url": "https://caifuhao.eastmoney.com/news/20261010135518397529010",
+          "observed_at": "2026-10-13T05:19:06.059Z",
+          "observation": "10 Ekim Eastmoney'deki Eylül 2026 bileşen piyasası yazısı ileri HBM/MLCC/MCU arz baskısı, bazı kalemlerde 52 haftaya uzayan teslim ve parça bazlı fiyat ayrışmasını anlatıyor. Orijinal EET-China tam metni doğrulanamadı; fiyatlar doğrulanmış spot quote değildir. Elektronik üreticisinin elle girilen teklif ve BOM verileriyle ikame/lead-time riskini kıyaslaması somut JTBD.",
+          "verification_scope": "secondary_full_article"
+        }
+      ],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

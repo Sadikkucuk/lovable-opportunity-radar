@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-cd7398c485316add",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "cd7398c485316addd05ea954394635c7bd8e29ed496e5f26e03b120cbce3e2bd",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "creative-agencies-using-consumption-billed-generative-media|allocate-credit-spend-to-customer-jobs|credit-unit-cost-job-margin-and-approval-ledger",
+      "idea_name": "Creative AI Credit Job Margin Ledger",
+      "core_job": "Görsel üretimi ve video süresi başına harcanan kredileri teklif edilen sabit müşteri bütçesi ve revizyon sınırlamasına göre izlemek",
+      "target_customer": "Meitu ve benzeri kredili görsel/video AI hizmetleriyle müşteri işi teslim eden pazarlama ve kreatif ajanslar",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Kullanıcıdan manuel girilen kredi paketi, birim kur, görsel/saniye tüketimi CSV, müşteri proje talebi, yeniden üretim/revizyon sayısı ve kâr marjı senaryosu; görsel üretmez ve AI API kullanmaz",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-3d0ab655afe93e16:df0a00721348575849672ee6:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.meitu.com/en/media/437",
+        "https://www.meituhub.com/docs?f_id=1&id=148"
+      ],
+      "triggering_article_ids": [
+        "df0a00721348575849672ee6"
+      ],
+      "supporting_article_ids": [
+        "df0a00721348575849672ee6"
+      ],
+      "why_now": "Meitu resmî 2026 Q1 metriklerinde Kaipai ve RoboNeo AI credit tüketiminde güçlü büyüme ve abonelik artı kullandıkça-öde stratejisini bildirdi; MeituHub dokümanı kredi paketi, görsel başına ve video saniyesi başına maliyet modelini doğruluyor. 12 Ekim OFweek yazısı bu stratejinin finans etkisini yorumluyor, fiyat geçişi yeni başlamış gibi gösterilmez. Yaratıcı ajanslar AI kullanım kredisiyle faturalandırdığı müşteriye iş emri başına tahmini/gerçek marj takibi yapmak zorunda kalabilir.",
+      "before_state": "AI medya üretimi abonelik/credit giderleri müşterinin proje kârlılığına ayrı iş emri olarak yansıtılmıyor",
+      "after_state": "Müşteri başına kredit maliyeti, israf, fiyat revizyonu ve onaylanabilir bütçe/gerçekleşen kâr raporu",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

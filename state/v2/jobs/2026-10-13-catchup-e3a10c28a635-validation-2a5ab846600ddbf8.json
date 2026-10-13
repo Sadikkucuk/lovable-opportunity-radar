@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-2a5ab846600ddbf8",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "2a5ab846600ddbf8db81b3835faf2543e32226843c7cc823551e49d5134db9f6",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "ai-data-center-electrical-teams|compare-power-delivery-topologies|offline-loss-thermal-bom-scenario-workbook",
+      "idea_name": "800V Güç Yolu Senaryo Defteri",
+      "core_job": "Yüksek yoğunluklu AI raflarında 800 V/12 V güç topolojilerinin kayıp, ısıl yük, güç yoğunluğu, parça sayısı ve kabul farklarını hesaplamak",
+      "target_customer": "AI veri merkezi ve yüksek güçlü sunucu elektrik tasarımı ekipleri",
+      "buyer": "Güç elektroniği mühendislik yöneticisi",
+      "product_mechanism": "Mühendislerin girdiği dönüşüm kademesi/ölçüm/tedarikçi veri sayfası parametreleriyle çalışan tarayıcı içi deterministik kayıp ve senaryo hesaplayıcısı, PDF/CSV kabul dosyası",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-1e934380178f4314:cd91aabadb2cca11cbb1e698:1"
+      ],
+      "canonical_source_urls": [
+        "https://www.globenewswire.com/news-release/2026/10/12/3379241/0/en/index.html",
+        "https://www.semiconductor-today.com/news_items/2026/oct/navitas-131026.shtml"
+      ],
+      "triggering_article_ids": [
+        "cd91aabadb2cca11cbb1e698"
+      ],
+      "supporting_article_ids": [
+        "cd91aabadb2cca11cbb1e698"
+      ],
+      "why_now": "12 Ekim 2026'da duyurulan 24 kW 800→12 V PDB, 50 V ara kademeyi kaldırarak alternatif raf güç tasarımı seçimlerini yeniden gündeme getirdi.",
+      "before_state": "Farklı tedarikçinin güç tasarımları ve test tabloları manuel karşılaştırılıyor.",
+      "after_state": "Aynı yük altında varsayımlar, verim hedefi ile ölçülmüş verim ayrımı, termal kayıp ve BOM kıyaslaması kayıtlı oluyor.",
+      "scope_hint": "Dünya; CSV/datasheet içe aktarma, istemci tarafında deterministik hesaplama, zorunlu harici API, model, DB veya canlı cihaz entegrasyonu yok.",
+      "source_observations": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/10/12/3379241/0/en/index.html",
+          "observation": "Navitas şirket açıklaması: 24 kW kart, 800 VDC→12 VDC tek aşama, 50 V IBC kaldırma, tam yükte %97 hedef verim; ticari saha garantisi yok."
+        }
+      ],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

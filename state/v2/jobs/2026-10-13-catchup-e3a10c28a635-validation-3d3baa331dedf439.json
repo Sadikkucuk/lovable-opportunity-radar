@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-3d3baa331dedf439",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "3d3baa331dedf439f239173274f0aaa860235c7224b189b8faeee432f1e84d48",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "norwegian-hydropower-dam-operators|close-regulator-identified-dam-safety-control-defects|asset-rule-inspection-remediation-and-retest-ledger",
+      "idea_name": "Dam Safety Finding-to-Closure Evidence Desk",
+      "core_job": "NVE veya iç baraj emniyeti denetimindeki yapısal olmayan teknik/süreç bulgularını mevzuat maddesi ve tesis varlığına bağlayarak kanıtlı kapatmak",
+      "target_customer": "Norveç su gücü baraj işletmecileri ve EHS/asset-integrity ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Kullanıcı baraj/kapak/sensör varlık CSV, bulgu ID, NVE gereklilik referansı, test ve bakım kanıt dosya kodu, sorumlu, termin, risk derecesi ve yeniden kontrol onay izi; SCADA veya emniyet mühendisliği hesabı yok",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-c917124c79bb3a1b:376f1812e9470bc2540f53c6:01"
+      ],
+      "canonical_source_urls": [
+        "https://kommunikasjon.ntb.no/pressemelding/19101315/nve-avdekket-avvik-i-statkrafts-arbeid-med-damsikkerhet?lang=no&publisherId=89280"
+      ],
+      "triggering_article_ids": [
+        "376f1812e9470bc2540f53c6"
+      ],
+      "supporting_article_ids": [
+        "376f1812e9470bc2540f53c6"
+      ],
+      "why_now": "Norveç enerji düzenleyicisi NVE'nin 12 Ekim birincil açıklaması Statkraft'ın Sauda ve Kuzey Norveç'teki baraj güvenlik takiplerinde sırasıyla 26 ve 20 ciddi bulgu (toplam 46) saptandığını, iç kontrol/teknik gereklilik/izleme/emniyet değerlendirmesi eksiklerini doğruluyor. NVE acil baraj yıkılma tehlikesi belirtmiyor; potansiyel idari zorlamaya rağmen ceza verilmiş sayılmamalı. Baraj işletmecileri için denetim bulgusu–fiziksel baraj kimliği–mevzuat maddesi–sorumlu–takip kanıtı/yeniden test kapanışı ürün hipotezi.",
+      "before_state": "Bulgular tesislerde ve merkezi uyum ofisinde ayrı Excel/rapor sistemlerinde; izleme kayıtları eksik, yeniden kontrol sorumluluğu belirsiz",
+      "after_state": "Her bulgu/asset/regülasyon/termin için izlenebilir kapanış ve bağımsız mühendis denetim paketi",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

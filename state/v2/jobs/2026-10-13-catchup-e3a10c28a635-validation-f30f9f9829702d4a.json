@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-f30f9f9829702d4a",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "f30f9f9829702d4af4251de93e81759381a1da439e6b380d10b9b538a11fe95b",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "deno-deploy-application-operators|migrate-before-six-month-service-closure|compatibility-hosting-runtime-dependency-and-cutover-evidence-ledger",
+      "idea_name": "Deno Deploy Sunset Migration Preflight",
+      "core_job": "Deno Deploy kapanmadan önce hizmetleri alternatif barındırma ortamına taşımak için bağımlılık, veri, çevresel değişken ve test/cutover engellerini belgelendirmek",
+      "target_customer": "Deno Deploy kullanan küçük SaaS ve B2B web uygulaması ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Manuel package.json/deno.json CSV/JSON manifest, HTTP/websocket, cron/worker, KV, JSR, env/secrets yalnız ad referansı (değerler yüklenmez), devreye alma ve rollback/test kanıtı karşılaştırması; canlı deploy/API/secret erişimi yok",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-3778e006c0de3375:16fd22f9b0af32d3d84db901:01",
+        "2026-10-13-catchup-e3a10c28a635-discovery-5d2e609071354ce1:33fa448e00a72a848df92cb2:01"
+      ],
+      "canonical_source_urls": [
+        "https://deno.com/blog/cloudflare",
+        "https://blog.cloudflare.com/deno-joins-cloudflare/"
+      ],
+      "triggering_article_ids": [
+        "16fd22f9b0af32d3d84db901",
+        "33fa448e00a72a848df92cb2"
+      ],
+      "supporting_article_ids": [
+        "16fd22f9b0af32d3d84db901",
+        "33fa448e00a72a848df92cb2"
+      ],
+      "why_now": "Deno kurucusu Ryan Dahl'ın 9 Ekim 2026 birincil duyurusu şirketin Cloudflare'a katıldığını, Deno runtime için bir yıl aylık hata/güvenlik güncellemesi sonrasında kendi geliştirmelerinin biteceğini, Deno Deploy'un altı ay içinde kapanacağını, JSR'nin süreceğini bildiriyor. Haber 12 Ekim Kore'de yeniden yayımlandı; yeni kapanış politikası SaaS dağıtım sahiplerinin taşıma takvimini ve API/Node uyumluluk engellerini görünür kılıyor. | 9 Ekim 2026 Deno'nun resmî açıklaması: Cloudflare ekibine katılım, Deno Deploy servisinin altı ay içinde kapanması, Deno runtime'ın ise bir yıl hata/güvenlik güncellemesi sonrasında geliştirilmeyecek oluşu; JSR'nin devam etmesi. Bu gerçekleşen müşteri migrasyonu/son tarih riski, ücretli entegrasyon gerektirmeyen portföy geçiş kontrol işini tetikliyor.",
+      "before_state": "Deno Deploy uygulamasının servis kesintisinden önce taşınacak API, runtime kütüphane ve hosting bağımlılıkları dağınık ve tarihsiz kalır / Deno Deploy proje listesi, platform özellikleri ve her servisin taşınma durumu farklı repolarda; kapanışa dek eski platform açık kalabilir",
+      "after_state": "Hedef ortam, manuel uyumluluk testi, kritik veri/secret devri, kesinti planı ve insan imzalı kesime geçiş matrisi / Ürün/servis önceliğine göre taşınma, geri alma ve kapanış delili içeren kontrol matrisi",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Birleştirilen 2 ham kayıt; Deno Deploy servis kapanışı için aynı uygulama operatörünün aynı dependency/cutover/migration kontrol işini yapıyor.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

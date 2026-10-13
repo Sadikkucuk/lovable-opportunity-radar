@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-458c115f39879463",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "458c115f39879463343b59aaf0eed970190e697db484e7a4d77d27d9c4c8d72b",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "desalination-pilot-operators|prove-brine-recovery-yield-and-energy-value-economics|stream-salinity-yield-power-value-and-quality-ledger",
+      "idea_name": "Brine-to-Salt Pilot Economics and Evidence Ledger",
+      "core_job": "Atık konsantre salamuranın su geri kazanımı ve endüstriyel tuz hammaddesi satışına dönüşümünde malzeme denklik ve değer bazlı enerji verimlilik iddialarını ispatlamak",
+      "target_customer": "Tuzlu su arıtma/deniz suyu desalinasyon pilotu işleten sanayi tesisi proses ve finans ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Tesisin el ile yüklediği giriş salamura tonajı, tuzluluk, çıkış suyu ve konsantre kütle ölçümleri, kWh, dönem birim satış değeri, laboratuvar kalite kanıtı, sözleşme alıcı ve operatör onay CSV'si; canlı sensör/API veya fiziksel proses kontrolü yok",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-8b28ca36c41e136e:39672b75f24c177eebe9a052:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.scmp.com/news/china/science/article/3370356/chinese-desalination-plant-cuts-60-energy-use-turning-waste-brine-industrial-salt"
+      ],
+      "triggering_article_ids": [
+        "39672b75f24c177eebe9a052"
+      ],
+      "supporting_article_ids": [
+        "39672b75f24c177eebe9a052"
+      ],
+      "why_now": "12 Ekim SCMP, Tangshan Caofeidian tuzlu atık su ön işlem tesisinin Eylül'den bu yana deneme üretiminde 3 ton geri dönüş sularından 1 ton konsantre (120g/L) ve 2 ton su üretiminin anlatıldığını bildiriyor. 'Elektrikte %60 azalma' tüm tesis mutlak tüketiminde değil, **üretilen her 10.000 yuan ekonomik değer başına elektrik** kıyasına ilişkindir; ticari tam kapasite ve sürdürülebilir marj bağımsız doğrulanmamıştır. Desalinasyon tesisinin salamura akışı, ürünleşen tuz alıcısı, kalite ve enerji başına ekonomik değer KPI'larını elle izlemek yeni farklı müşteri işidir.",
+      "before_state": "Salamura uzaklaştırma maliyeti, konsantre satış değeri ve tesis kWh verisi farklı muhasebe/proses günlüklerinde; 60% açıklamasının paydası karışabiliyor",
+      "after_state": "Kg/ton kütle dengesi, salinite verisi, kWh/ürün ve kWh/10.000 CNY değer karşılaştırması, deneme üretimi kabul bulgusu ve insan onaylı pilot ekonomik raporu",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-636d1fe08f1177f3",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "636d1fe08f1177f3530595deaa8dfd432a799ff5937ae62002300714677ba20d",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "multi-store-consumer-retailers|coordinate-customer-offline-fallback-after-member-app-breach|service-channel-notice-deadline-and-case-evidence-ledger",
+      "idea_name": "Retail Breach Service-Continuity Action Register",
+      "core_job": "Üye uygulaması erişimi kapatıldığında hangi işlemin hangi mağaza/alternatif forma yönlendirileceği, müşteri bildirimi, puan/vade uzatma, çağrı merkezi vaka kapanışı ve insan onayını takip etmek",
+      "target_customer": "Zincir marketlerin müşteri operasyon ve kişisel veri olay ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Sadece kullanıcıdan gelen etkilenen süreç listesi, şube alternatifleri, bildirim tarihler, hizmet süresi ve vaka durumu CSV; gerçek üye kişisel veri tutulmadan anonim vaka kimlikleriyle işlenebilir",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-db252c5113c9b23c:453b950dcaa8beee435a77e0:01"
+      ],
+      "canonical_source_urls": [
+        "https://online.seicomart.co.jp/delivery/cms/preview.php?pre_no=122"
+      ],
+      "triggering_article_ids": [
+        "453b950dcaa8beee435a77e0"
+      ],
+      "supporting_article_ids": [
+        "453b950dcaa8beee435a77e0"
+      ],
+      "why_now": "Seicomart 5 Ekim dördüncü birincil duyurusunda 574.647 uygulama üyesinin verisinin üçüncü kişi tarafından görüntülenmiş olabileceğini raporladı; 29–30 Eylül duyuruları online üye hesabı işlemlerinin kesildiğini, bazı işlemlerin mağazadan ve misafir rezervasyonuyla sürdürüldüğünü belirtiyor. RSS 12 Ekim haberinin olayı yeni saldırı değil; müşteri veri hakkı ile dijital kanal kesintisinde fiziksel şube alternatiflerinin kanıt ve iletişimini takip etmek tekrarlanabilir iş hipotezi.",
+      "before_state": "App ihlal raporu ve mağaza yedek hizmet talimatı farklı dokümanlarda, müşteri hangi kanala gideceğini bulamıyor",
+      "after_state": "İşlem türü ve kanal göre acil alternatif yol, son tarih, iletişim onayı, düzeltici faaliyet ve kapanış kanıt paketi",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

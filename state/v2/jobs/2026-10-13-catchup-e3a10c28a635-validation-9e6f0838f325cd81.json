@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-9e6f0838f325cd81",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "9e6f0838f325cd81a0b09a43728302c435ab331b80ad53f7c8a334285a11f97d",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "gujarat-aided-school-administrators|reconcile-cts-vs-udise-enrollment-and-staff-accounts|manual-csv-record-key-diff-and-signoff-ledger",
+      "idea_name": "CTS–UDISE+ Okul Veri Uyuşmazlık Defteri",
+      "core_job": "CTS ve UDISE+ kayıtlarında öğrenciler, öğretmen, idari personel unvanı ve sayılarını karşılaştırarak 2 günlük düzeltme raporuna hazırlanmak",
+      "target_customer": "Gujarat kamu yardımlı ortaöğretim ve liselerin idari müdürleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "İki portaldan yetkili kullanıcıların manuel indirdiği CSV'leri tarayıcıda kimlik/anonymize anahtarı ve sınıf/personel unvanı bazında eşleştirmek; eksik/çift/yanlış satır istisna listesi ve müdür imza günlüğü; gerçek portal erişimi yok",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-92e0a83ef31cfab3:f683bdcc91fd1a49eecd00bd:01"
+      ],
+      "canonical_source_urls": [
+        "https://education.economictimes.indiatimes.com/news/industry/gujarat-gives-aided-schools-two-days-to-reconcile-cts-udise-data/134883337"
+      ],
+      "triggering_article_ids": [
+        "f683bdcc91fd1a49eecd00bd"
+      ],
+      "supporting_article_ids": [
+        "f683bdcc91fd1a49eecd00bd"
+      ],
+      "why_now": "12 Ekim Economic Times ve 11 Ekim Times of India haberleri Gujarat hükümet destekli ortaöğretim okullarına CTS ile UDISE+ portal öğrenci ve personel verisi uyuşmazlıklarını iki günde gidermeleri talimatı verildiğini bildiriyor. UDISE+ devlet yardımı/ödenek ve idari personel yetki hesabında ana kayıt; gizli portal API erişimi varsayılmaz. Okulların kendi indirdiği öğrenci/personel özetlerini satır bazlı eşleştirip istisnaları belgelendirmek açık acil müşteri görevidir.",
+      "before_state": "İki ayrı idari portaldaki öğrenci/personel sayıları farklı ve resmî finansman kararında fark çıkıyor",
+      "after_state": "İnsan onaylı kayıt uyuşmazlık matrisi, düzeltilecek satırlar ve kanıt dosyası",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

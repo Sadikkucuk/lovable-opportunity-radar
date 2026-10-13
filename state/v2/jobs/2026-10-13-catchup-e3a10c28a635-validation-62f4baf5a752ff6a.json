@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-62f4baf5a752ff6a",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "62f4baf5a752ff6a1b2cc0f0d6d37f5480a8b08cab8c1187ff091c17142e9068",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "turkish-cross-border-road-fleets|compare-corridor-customs-dwell-and-handover-delays|manual-trip-border-event-and-document-gap-ledger",
+      "idea_name": "Orta Koridor Sefer Güvenilirlik Kanıt Defteri",
+      "core_job": "Sefer bazında hudut kapısı ve aktarma gecikmelerinin izin, operasyon ve maliyet kaynaklarını görünür kılmak",
+      "target_customer": "Türkiye'den Orta Koridor'a çalışan uluslararası kara taşıma filoları",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Şirketin elle verdiği GPS zamanı gerektirmeyen sefer/kapı/giriş-çıkış damgası, geçiş belgesi ve terminal aktarma CSV'si, gecikme gerekçesi, vade/SLA defteri",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-31e544ba4a330c95:32252b0e75d561508d01aeea:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.und.org.tr/medya-detay/undden-haberler/und-den-logistech-te-kesintisiz-ve-ongorulebilir-tasimacilik-vurgusu"
+      ],
+      "triggering_article_ids": [
+        "32252b0e75d561508d01aeea"
+      ],
+      "supporting_article_ids": [
+        "32252b0e75d561508d01aeea"
+      ],
+      "why_now": "UND'nin 12 Ekim LOGISTECH Zengezur/Middle Corridor panelinde sınır geçişlerinin kolaylaştırılması, dijitalleşme, ülkeler arası koordinasyon ve koridor performansının uçtan uca ölçümü gerektiği vurgulanıyor. Bu bir yürürlüğe girmiş geçiş mevzuatı değil; Türk taşımacılarının kendi seferlerindeki bekleme süreleri, izin/evrak eksikleri ve transit aktarma tutanaklarını sefer bazında karşılaştırması somut JTBD hipotezidir.",
+      "before_state": "Sınır zamanları, permit ve müşteri teslim kanıtı Excel/mesajlarda dağınık",
+      "after_state": "Kayıtlı seferler için gecikme nedeni, hat bazında varyans ve müşteri uyuşmazlığı kanıt raporu",
+      "scope_hint": "Türkiye",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

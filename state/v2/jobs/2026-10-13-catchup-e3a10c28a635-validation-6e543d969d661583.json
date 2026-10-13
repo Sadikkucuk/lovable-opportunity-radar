@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-6e543d969d661583",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "6e543d969d661583dedb973d87bb5ad6bcc6f07adafcc66aa49366632393bbc4",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "hyperscale-datacenter-infrastructure-planners|compare-2027-ai-inference-rack-power-density-and-efficiency|spec-driven-hardware-thermal-capacity-evidence-ledger",
+      "idea_name": "Inference Rack Power Budget Proof",
+      "core_job": "AI çıkarım rack'lerinin yıllık güç, soğutma, bellek bant genişliği ve performans/kW kabullerini farklı ürün senaryolarına göre dokümante etmek",
+      "target_customer": "Veri merkezi altyapı/mühendislik planlama ve tedarik ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Kullanıcı tarafından sağlanan rack/chip teknik spesifikasyonları CSV, 96× hızlandırıcı maliyeti, kW, HBM, üst/alt sıcaklık ve yerleşim limitleri için deterministik hesaplama, karar/kanıt matrisi",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-c4574d8446fb80ec:a2e368b7f430277a9ef5dbb6:01"
+      ],
+      "canonical_source_urls": [
+        "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/"
+      ],
+      "triggering_article_ids": [
+        "a2e368b7f430277a9ef5dbb6"
+      ],
+      "supporting_article_ids": [
+        "a2e368b7f430277a9ef5dbb6"
+      ],
+      "why_now": "Microsoft 12 Ekim 2026 resmî Maia 300 açıklamasında 2027 dağıtım hedefi, 96 hızlandırıcılı 167 kW rack, toplam 27,6 TB HBM ve en çok 7 katlık rack token throughput beklentisi doğrulandı; beklenen performans garantili saha sonucu değildir. Heterojen rack planlamasında soğutma, güç ve bellek varsayımını sürüm/test kanıtına bağlama B2B işi olabilir. Aynı gün Helion raw lead ile semantik merge incelenecek.",
+      "before_state": "Maia, Helion, GPU rack alternatifleri farklı veri sayfalarında bellek, yoğunluk, watt ve soğutma şartlarıyla karşılaştırılıyor",
+      "after_state": "BOM senaryoları için watt/slot/HBM ve soğutma karar kanıtı; gerçek token throughput öngörüsü donanım yük testi olmadan iddia edilmez",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

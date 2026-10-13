@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-299792b8200adaeb",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "299792b8200adaebbf1e6b341d1aed09eaf3b7abddf739c8eaf90405846e67df",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "enterprise-financeops-teams|allocate-ai-token-budget-to-verified-workflow-benefit|team-model-spend-overage-and-outcome-evidence-ledger",
+      "idea_name": "AI Token Harcama Sahipliği Bütçe Defteri",
+      "core_job": "Model sağlayıcı faturası token maliyetini iş birimi, uygulama ve doğrulanmış çıktı türüne bağlayıp limit aşımlarının sorumlusunu belirlemek",
+      "target_customer": "AI araç abonelikleri kullanan kurumsal BT/FinOps ve iş birimi bütçe ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Ürünlerden manuel indirilen CSV faturalar/token tüketim, birim/ücret tablosu, işlem başına başarı/işletme değeri varsayımı ve sorumlu/onay matrisi; hiçbir canlı API veya AI model çalıştırması zorunlu değil",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-038283ae5c0f9286:d73ce7119b0ebb2af3b899c0:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.itmedia.co.jp/enterprise/articles/2610/08/news036.html"
+      ],
+      "triggering_article_ids": [
+        "d73ce7119b0ebb2af3b899c0"
+      ],
+      "supporting_article_ids": [
+        "d73ce7119b0ebb2af3b899c0"
+      ],
+      "why_now": "12 Ekim ITmedia haberine göre Accenture Eylül 2026'da 17 ülkede 750 büyük şirket yöneticisini araştırdı; 1/3 işletme yıllık token bütçesini aşmış, token giderlerinin yaklaşık %80'i açık iş sonucuna bağlanamıyor. Model yönlendirme ve tüketime göre bütçe ilişkilendirmesiyle olası maliyet artışının en çok %44 azaltılması senaryodur, kesin gerçekleşmiş tasarruf değil. AI harcama ekiplerinin salt maliyet değil iş çıktısı düzeyinde CSV masraf dağıtımı ayrı müşteri problemidir.",
+      "before_state": "Token kullanım hacmi hızla büyür ama hangi ekip çıktı, yeniden işleme ve tasarrufla ilişkilendirdiği ayrı dosyalarda",
+      "after_state": "Takım bazında maliyet sapması, tartışmalı fatura girdisi, iş sonucu bağı ve insan onaylı bütçe değişim raporu",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

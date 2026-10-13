@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-5dc3b8774c476875",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "5dc3b8774c47687579bacb33fa9fe06ebd3f446fbc7b1c8284b38481b279da48",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "french-food-manufacturers|simulate-proposed-2027-sugar-tax-sku-exposure|sku-sugar-content-price-and-rule-scenario-ledger",
+      "idea_name": "France Sugar Levy Proposal SKU Impact Desk",
+      "core_job": "2027 bütçe taslağında olası şeker bazlı ilave verginin ürün/SKU marjına ve reformülasyon seçimine senaryo etkisini hesaplamak",
+      "target_customer": "Fransız şekerli işlenmiş gıda üreticileri ve ürün/finans planlama ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Kullanıcı SKU/şeker gramı, ürün çeşidi/işleme sınıfı, hacim, fiyat ve **taslak** oran varsayımını girer; kural sürümü, duyarlılık ve marj raporu hesaplanır, vergi beyannamesi/nihai vergi kararı üretmez",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-86ac0101727c147e:9e68d1c688f7e6a765916421:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.reuters.com/business/what-is-frances-2027-budget-2026-10-01/"
+      ],
+      "triggering_article_ids": [
+        "9e68d1c688f7e6a765916421"
+      ],
+      "supporting_article_ids": [
+        "9e68d1c688f7e6a765916421"
+      ],
+      "why_now": "Fransa 2027 bütçe teklifinde 1 Ekim 2026 itibarıyla yüksek şekerli ultra işlenmiş ürünlere ek vergi genişlemesi öngörüldü; gıda sanayi dernekleri Ekim'de itiraz etti. Reuters ~300 milyon avro gelir tahmini veriyor. Bu **henüz parlamento tarafından kesin yasalaştırılmamış bütçe önerisi** ve hedef ürün tanımları değişebilir; gıda üreticisi SKU/formülasyon ve ürün sınıfı için olası maliyetleri hazırlık senaryolarında izlemek müşteri işidir.",
+      "before_state": "Taslak vergide kapsama girecek ürünler ve beklenen bütçe etkisi fabrika, pazarlama ve finans arasında aynı tablodan izlenmiyor",
+      "after_state": "Yasal olmayan senaryo varsayımını açıkça işaretleyen SKU bazlı muhtemel maliyet, sınıf belirsizliği ve yönetim karar matrisi",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

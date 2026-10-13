@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-6a6d08e62523848d",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "6a6d08e62523848d97417d4b598d3f47f743fdb72a75e74d4b492c0c148997a9",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "indian-marketplace-sme-sellers|plan-festival-stock-return-support-surge|sales-csv-capacity-and-reverse-logistics-worksheet",
+      "idea_name": "Festive Surge Stock-and-Return Desk",
+      "core_job": "Festival satışında anlık sipariş patlamasının stok, sevkiyat, müşteri desteği ve iade maliyetine etkisini önceden belirlemek",
+      "target_customer": "Hindistan e-ticaret pazar yeri KOBİ satıcıları",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Platformdan dışa aktarılan sipariş CSV, SKU stok, iade varsayımı, kurye günlük kapasite sınırlarıyla tıkanma ve ihtiyaç çizelgesi",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-191931d0c9d96cd2:4d4a4a01753571a95c57f7f1:01"
+      ],
+      "canonical_source_urls": [
+        "https://yourstory.com/2026/10/ecomm-firms-goods-worth-rs-24k-cr-first-two-days-festive-sales-redseer"
+      ],
+      "triggering_article_ids": [
+        "4d4a4a01753571a95c57f7f1"
+      ],
+      "supporting_article_ids": [
+        "4d4a4a01753571a95c57f7f1"
+      ],
+      "why_now": "YourStory/PTI 11 Ekim haberinde Redseer'e göre Hindistan'da ilk iki festival satış günü yaklaşık 24 bin crore INR GMV ve 8-9 crore sipariş bildiriliyor (tahmini, platform gerçek zamanlı data değil). Kampanya sonrası küçük satıcıların stok tükenmesi/iade personeli/teslimat yüküne karşı CSV bazlı kapasite senaryosu müşteri işi olabilir.",
+      "before_state": "Kampanya tahmini GMV büyümesi stok ve iade operasyonuna çevrilmiyor",
+      "after_state": "Manuel CSV üzerinde günlük sipariş, stok tüketimi, iade ve personel kapasite senaryo raporu",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

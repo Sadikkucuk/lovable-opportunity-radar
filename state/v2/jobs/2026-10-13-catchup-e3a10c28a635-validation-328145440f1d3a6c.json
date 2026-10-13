@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-328145440f1d3a6c",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "328145440f1d3a6c21037d028d5d22d9d6d53b54648e249bd90945c15aebab6d",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "small-merchants-dependent-on-cloud-payments|reconcile-customer-orders-during-cloud-payments-outage|manual-pending-order-alternative-payment-and-postincident-settlement-ledger",
+      "idea_name": "Offline Payment Incident Reconciliation Book",
+      "core_job": "Ödeme platformu erişilemediğinde müşterinin siparişi, alternatif ödeme talebi, kısmi teslim, sonradan uzlaşma ve çift tahsilat riskini insan denetimiyle izlemek",
+      "target_customer": "Bulut ödeme altyapısına bağlı küçük perakendeciler ve hizmet işletmeleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Kullanıcının offline CSV sipariş numarası, müşteri iletişimi, ödeme durumu, alternatif ödeme teyidi, teslimat, olay nedeni ve kapanış işareti; canlı ödeme/finans hesabı API'si yok",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-05fd2c5119dfdaf4:285f17b9a9fef7f8bf35217a:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.theregister.com/security/2026/10/12/ukrainian-drone-strikes-on-yandex-datacenters-knock-cloud-and-payments-offline/5302577"
+      ],
+      "triggering_article_ids": [
+        "285f17b9a9fef7f8bf35217a"
+      ],
+      "supporting_article_ids": [
+        "285f17b9a9fef7f8bf35217a"
+      ],
+      "why_now": "12 Ekim The Register Yandex'ın Sasovo/Kaluga/Vladimir veri merkezlerine 7–9 Ekim saldırılarının ardından bulut ve ödeme hizmetlerinde kesinti yaşandığını, fintech yöneticisinin Telegram üzerinden paraların güvende olduğunu fakat hizmetlerin henüz açılmadığını bildirdiğini aktarıyor. Bu savaş hasarı raporu, bağımsız soruşturma ve kalıcı veri kaybı kanıtı değildir. E-ticaret ve perakendeciler için olay anında alternatif ödeme/eldeki işlemleri elle tutan uzlaşma kanıt masası uygun iş hipotezidir.",
+      "before_state": "Ödeme servisi kesintisinde bekleyen sipariş ve alternatif ödeme kanıtı WhatsApp/kâğıt içinde kaybolur",
+      "after_state": "Kesinti sonrası sipariş/ödeme eşleştirmesi ve insan teyitli çözüm bekleyen işlem raporu",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

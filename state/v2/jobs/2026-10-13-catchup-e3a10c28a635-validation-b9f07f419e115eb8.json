@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-b9f07f419e115eb8",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 3,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "b9f07f419e115eb8cf8a4d80cd82fec4b003b7a51f9083cc1c3cff23bf5e1d80",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "freight-brokers-and-shippers|verify-carrier-identity-before-pickup-and-release|contact-callback-pickup-authorization-and-evidence-ledger",
+      "idea_name": "Freight Pickup Identity Handoff Ledger",
+      "core_job": "Yük devrinden önce gerçek taşıyıcı ve yükü teslim almaya gelen sürücü ile bağımsız geri arama, belge ve insan onayını kayıt altına almak",
+      "target_customer": "ABD kargo brokerları, göndericiler ve orta ölçekli lojistik aracıları",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Manuel taşıyıcı MC/DOT kimliği, şirketin onaylı sabit numarası, yük referansı, sürücü kimlik/doğrulama zamanı, iki imza ve ayrık callback kanıt kaydı; sigorta veya üçüncü taraf kayıt API'si zorunlu değil",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-d58356ab0a3f38b6:b6c4b2e6b5a4e64a6dfba53d:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.freightwaves.com/news/freight-fraud-awareness-day-returns-as-strategic-cargo-theft-reshapes-trucking"
+      ],
+      "triggering_article_ids": [
+        "b6c4b2e6b5a4e64a6dfba53d"
+      ],
+      "supporting_article_ids": [
+        "b6c4b2e6b5a4e64a6dfba53d"
+      ],
+      "why_now": "12 Ekim FreightWaves özgün haberinde 14 Ekim Freight Fraud Awareness Day ve kimlik taklidi, sahte teslim alma, çift aracılık (double brokering) gibi güncel yük dolandırıcılığı riskleri açıklanıyor. Organizasyon kampanyası tek başına yeni kanun değil; taşıyıcı/broker kimliği, havale/kargo devri ve manuel iki kişili teyit kanıtı için alıcı işi belirgin. Canlı carrier doğrulama API'si yoksa kanıtın doğruluğu yalnız insan kontrolüdür.",
+      "before_state": "Yük teslim talimatları ve sürücü kimlik teyidi değiştirilebilir eposta/mesajlarda ve ayrı TMS kayıtlarında",
+      "after_state": "Her yük için callback ve yetkilendirilmiş teslim kişi kanıtı; doğrulanmamış kimliği otomatik gerçek saymaz",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

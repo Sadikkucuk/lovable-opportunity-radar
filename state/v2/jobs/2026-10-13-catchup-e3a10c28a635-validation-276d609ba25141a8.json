@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-276d609ba25141a8",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "276d609ba25141a836ce747a9089fb94e226d95b8e6f7635cd63ca5594a825d1",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "multi-store-grocery-operators|track-refrigeration-cyber-incident-readiness|controller-patch-stock-loss-and-recovery-evidence-ledger",
+      "idea_name": "Cold-Chain Cyber Recovery Drillbook",
+      "core_job": "Soğutma kontrolörü güvenlik açıkları ve sıcaklık olayı sonrası stok kurtarma/kanıt adımlarını belgelemek",
+      "target_customer": "Market zincirlerinin soğuk zincir operasyon ve OT bakım sorumluları",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Varlık envanteri CSV, firmware durum matrisi, sıcaklık ihlali foto/manuel kanıtı, lot imha/kurtarma kararı, olay kapanış kontrol listesi",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-15377748807bd98b:89cbe6b62026a33e316dab64:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.zdnet.fr/actualites/cauchemar-en-grande-distribution-le-piratage-informatique-de-systemes-frigorifiques-aboutit-a-un-gigantesque-gaspillage-alimentaire-505585.htm"
+      ],
+      "triggering_article_ids": [
+        "89cbe6b62026a33e316dab64"
+      ],
+      "supporting_article_ids": [
+        "89cbe6b62026a33e316dab64"
+      ],
+      "why_now": "ZDNET'in 12 Ekim özgün haberi Fransa'da çok sayıda perakende soğutma sisteminin siber olayla etkilenip gıda kaybına uğradığını bildiriyor; etkilenen mağaza sayısı bilinmiyor. Claroty araştırması ve Danfoss güvenlik bülteni AK-SM 800A ve 4.3.1 firmware tavsiyesini doğruluyor. Saldırı ile spesifik CVE arasında doğrudan adli nedensellik ayrıca kanıtlanmış değil.",
+      "before_state": "OT yama, mağaza ekipman ve stok kaybı kararları kopuk eposta ve tutanaklarda",
+      "after_state": "Sorumlusu, cihazı, riskli stok ve müdahale kanıtı bağlı soğuk zincir olay paketi",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

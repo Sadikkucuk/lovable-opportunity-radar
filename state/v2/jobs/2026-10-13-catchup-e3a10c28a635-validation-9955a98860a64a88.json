@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-9955a98860a64a88",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "9955a98860a64a8871baac893fa75e2765c34e99ed9ded8719f7460db788cfa9",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "microsoft-365-family-subscribers|plan-2027-shared-onedrive-quota-transition|user-storage-export-simulation-and-migration-checklist",
+      "idea_name": "Microsoft 365 Aile Depolama Geçiş Hesaplayıcı",
+      "core_job": "Kişi başı 1 TB'den ortak 2 TB'ye geçişte veri taşıma, aile içi kota ve alternatif plan kararını belirlemek",
+      "target_customer": "Microsoft 365 Family/Premium hesap sahipleri ve çok kullanıcılı aileler",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Kullanıcının manuel girdiği hesap başı kullanılan GB, kota, yenileme tarihi, korunacak dosya, dışa alma/taşıma liste ve fiyat senaryosu; Microsoft Graph veya hesap erişimi yok",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-e59e22c37b10df2a:46564bacd61df9d9cf78e10e:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.zdnet.fr/actualites/vous-disposez-dun-abonnement-microsoft-365-votre-espace-de-stockage-est-sur-le-point-de-diminuer-505504.htm"
+      ],
+      "triggering_article_ids": [
+        "46564bacd61df9d9cf78e10e"
+      ],
+      "supporting_article_ids": [
+        "46564bacd61df9d9cf78e10e"
+      ],
+      "why_now": "ZDNet 12 Ekim, Microsoft 365 Family/Premium paylaşımlı depolamanın kişi başı 1 TB'den plan başına ortak 2 TB havuza geçeceğini; yeni/upgrade planlarda 8 Ekim 2026, mevcut abonelerde 2 Mayıs 2027 sonrası ilk yenilemede uygulanacağını belirtiyor. Ev/çok kullanıcılı küçük işletme kullanıcılarının kişisel kota taşımadan önce dışa aktarılan kullanım dosyasıyla taşınacak GB, satın alma maliyeti ve yeni limit riskini senaryolaştırma işi var.",
+      "before_state": "Her kullanıcı depolama limitini ayrı tutuyor; ortak havuz aşılıp yenileme sonrası tahmini fark görünmüyor",
+      "after_state": "Yeni ortak kapasite, GB açık/kalan, transfer sırası, yükseltme karşılaştırması ve CSV/PDF rapor",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-abfd3fdae1f3746e",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 4,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "abfd3fdae1f3746ec9019669c5f7214601dedeacae45b4f1a04c9b37358f11c6",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "us-multi-state-fleet-acquirers|prove-acquired-vehicle-dispatch-eligibility-across-jurisdictions|title-registration-tax-permit-renewal-and-migration-ledger",
+      "idea_name": "Fleet Acquisition Permit Continuity Desk",
+      "core_job": "Satın alınan çekici/treylerlerin unvan, tescil, izin ve eyalet vergileri aktarılmadan yük taahhüdüne gönderilmesini önlemek",
+      "target_customer": "ABD çok eyaletli kara taşımacılığı filosu satın alan taşıyıcılar ve fleet M&A entegrasyon ekipleri",
+      "buyer": "Alıcı rolü henüz Discovery girdisinde belirtilmedi; Validation sırasında belirlenmeli.",
+      "product_mechanism": "Kullanıcı CSV'sinden VIN, satın alınan şirket, eyalet, tescil/permit son tarihleri, belge sahibi, yenileme takvimi, operasyon bloke/onay kayıtları; devlet kayıt API'si yok, insan hukuki teyidi gerekli",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-3e586ab8ec708bd8:ae216c1feee956c582a1c34b:01"
+      ],
+      "canonical_source_urls": [
+        "https://www.freightwaves.com/news/tag/compliance"
+      ],
+      "triggering_article_ids": [
+        "ae216c1feee956c582a1c34b"
+      ],
+      "supporting_article_ids": [
+        "ae216c1feee956c582a1c34b"
+      ],
+      "why_now": "FreightWaves 12 Ekim J.J. Keller yöneticisi Stephanie Schmidt ile yapılan 'The Hidden Business Risk Inside Fleet Compliance' sponsorlu röportajda birden fazla ABD eyaletinde taşıt tescil, vergi, izin, belge yenileme ve devralma sonrası varlıkların hukuken sevk edilebilir olmasının kapasite sınırı olduğunu vurguluyor. Sponsorlu satıcı görüşüdür; istatistiksel bağımsız sektör çalışması değildir. Birleşme sonrası çekici/treyler belge devrini sevk kararıyla ilişkilendirme özel JTBD hipotezidir.",
+      "before_state": "Satın alma sonrası farklı eyalet sistemlerinde tescil ve title/permit kanıtları ayrışır; operasyon sevke hazır sanabilir",
+      "after_state": "Varlık bazında izin geçerlilik tarihi/kanıt/durdurma gerekçesi ve sevke alma onay matrisi",
+      "scope_hint": "Dünya",
+      "source_observations": [],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}

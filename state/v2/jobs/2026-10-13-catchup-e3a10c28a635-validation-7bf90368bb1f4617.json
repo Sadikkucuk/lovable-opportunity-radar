@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-7bf90368bb1f4617",
+  "run_id": "2026-10-13-catchup-e3a10c28a635",
+  "kind": "validation",
+  "lane": 2,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "7bf90368bb1f4617f15313fcbcb947c141823cd47f32e21a72a7017236a164b7",
+  "payload": {
+    "source_commit": "c28cd209a4d8ed268e0fa4ff992a647f8120c59e",
+    "candidate": {
+      "canonical_key": "property-marketplace-operators|find-underused-listing-campaign-tools|csv-based-rule-action-worklist",
+      "idea_name": "Emlak İlanı Aksiyon Eksikliği Listesi",
+      "core_job": "Emlak profesyonellerinin aktif ilan kampanyasında kullanmadığı değerli pazaryeri özelliklerini tespit edip aksiyon listesi üretmek",
+      "target_customer": "Emlak ilan pazaryeri B2B büyüme ve müşteri başarı ekipleri",
+      "buyer": "Pazaryeri B2B büyüme lideri",
+      "product_mechanism": "Manuel dışa aktarılmış ilan/ajan kullanım CSV dosyasını kural setiyle işleyerek kampanya aşamasına göre fırsat ve takip raporu çıkaran çevrimdışı araç",
+      "source_raw_ids": [
+        "2026-10-13-catchup-e3a10c28a635-discovery-1e934380178f4314:cde825c8ec99a58d5deb8f26:1"
+      ],
+      "canonical_source_urls": [
+        "https://www.itnews.com.au/news/rea-group-scales-personalisation-across-both-sides-of-its-marketplace-629257"
+      ],
+      "triggering_article_ids": [
+        "cde825c8ec99a58d5deb8f26"
+      ],
+      "supporting_article_ids": [
+        "cde825c8ec99a58d5deb8f26"
+      ],
+      "why_now": "REA Group'un aynı iş akışında bildirilen kullanım artışı, özellik benimsetmenin sayısallaştırılabilir değerini görünür kılıyor.",
+      "before_state": "Temsilcilere genel ürün tanıtım mesajları verilir.",
+      "after_state": "İlan bazlı henüz kullanılmamış özellik için manuel takip edilebilir aksiyon listesi oluşur.",
+      "scope_hint": "Dünya; harici Tealium/Braze şartı yok, sadece müşteri dışa aktarımı kullanılır. REA'nın mevcut çözümü ve CRM sistemleri için doğrudan rakip analizi gerekir.",
+      "source_observations": [
+        {
+          "url": "https://www.itnews.com.au/news/rea-group-scales-personalisation-across-both-sides-of-its-marketplace-629257",
+          "observation": "REA Listing Bump kullanımında %250 artış bildirdi; REA'nın kendi Ignite iş akışında zaten uygulanıyor ve Tealium/Braze entegrasyonlarından söz ediliyor."
+        }
+      ],
+      "history_match_key": null,
+      "history_match_reason": null,
+      "merge_note": "Bu girdi diğer 166 kayıtla müşteri+iş+mekanizma temelinde karşılaştırıldı; doğrudan semantik mükerrer bulunmadı. Rakip/doğrulama hükmü değildir.",
+      "source_evidence_caveat": "Kaynak URL'leri ve why_now gözlemleri Discovery'den devralındı. Bu Merge aşaması yeni bir kaynak okuyup page_read kanıtı üretmez."
+    },
+    "merge_receipt": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+  }
+}
