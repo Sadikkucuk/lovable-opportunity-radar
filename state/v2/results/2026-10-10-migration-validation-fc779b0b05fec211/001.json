@@ -1,0 +1,141 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-fc779b0b05fec211",
+  "input_hash": "fc779b0b05fec211d71c503c151711209795ad965c5b3f1ec2181eeea749ef5d",
+  "token": "a2db472f-b6f8-409c-a7fe-46c1c17a7dfb",
+  "finished_at": "2026-10-13T19:09:33.413Z",
+  "outcome": "done",
+  "reason": "PartShortage WhatIf: verified source problem and 4 global direct BOM/material delay/production planning competitors; reject under strict global <=3 rule. Turkish exact direct competitor count unknown.",
+  "result": {
+    "decision": "rejected",
+    "reason": "9 Ekim Economic Times yazısındaki OEM parça gecikme kullanım senaryosu okunarak doğrulandı. Aynı otomotiv yan sanayi ve makine üreticisi, kritik parça stok/termin→BOM→etkilenen üretim emri→yeniden planlama çekirdek işini sağlayan dört ayrı global ticari çözüm belirlendi: Netstock, Siemens Opcenter, MRPeasy ve Craftsync MRP Advanced Readiness (Odoo App Store'daki bağımsız ücretli modül). Global doğrudan rakip sınırı <=3 aşılır, REJECTED. Yerel Türk sağlayıcılarının birebir rakip sayımı doğrulanmadı, 'Türkiye'de rakip yok' iddiası yapılmıyor. Bağımsız, sıfır API ile CSV what-if MVP'si yapılabilir; farklılaşma koşulu ve yarış sınırı aşılıyor.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://supplychain.economictimes.indiatimes.com/news/ai-and-technology/beyond-visibility-how-ai-is-moving-supply-chains-from-reactive-to-predictive/134819164",
+        "accessed_at": "2026-10-13T19:09:33.413Z",
+        "claim": "9 Ekim Economic Times makalesi OEM parça gecikmesinin stok/BOM/üretim/sipariş sonuçlarını önceden karşılaştırma ihtiyacını anlatıyor",
+        "observation": "Yazı piyasa düzenlemesi veya yeni açık veri değildir; Integra Robotics CEO'sunun görüş makalesidir, somut iş senaryosu doğrulanıyor",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.netstock.com/industries/manufacturing/",
+        "accessed_at": "2026-10-13T19:09:33.413Z",
+        "claim": "Netstock Manufacturing Scenario Planning kritik parça kıtlığı ve üretim planı aksiyonunu karşılıyor",
+        "observation": "BOM seviyesinde parça talebi, tedarikçi gecikme senaryosu, stok tükenmesi ve üretim etkisini what-if analiziyle ölçen üretim planlama ürünü",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.siemens.com/en-us/products/opcenter/advanced-planning-scheduling-aps/advanced-scheduling-software/",
+        "accessed_at": "2026-10-13T19:09:33.413Z",
+        "claim": "Siemens Opcenter APS kritik parça kıtlığı ve üretim planı aksiyonunu karşılıyor",
+        "observation": "Hammadde/alt montaj/iş emri stok kısıtı, malzeme gezgini, kısıtları değiştirerek üretim ve teslim takvimine etkiyi karşılaştırma",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.mrpeasy.com/resources/user-manual/production-planning/manufacturing-orders/add/",
+        "accessed_at": "2026-10-13T19:09:33.413Z",
+        "claim": "MRPeasy kritik parça kıtlığı ve üretim planı aksiyonunu karşılıyor",
+        "observation": "BOM patlatma, eksik parça, tedarik terminleri ve üretim emri başlangıcını yeniden hesaplayan imalat planı; alternatif parça gecikme senaryolarıyla üretim süre riski",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://apps.odoo.com/apps/modules/19.0/mrp_advanced_readiness_full",
+        "accessed_at": "2026-10-13T19:09:33.413Z",
+        "claim": "Craftsync MRP Advanced Readiness / Exception Manager (Odoo addon) kritik parça kıtlığı ve üretim planı aksiyonunu karşılıyor",
+        "observation": "Malzeme kıtlığında kesin stok bitiş tarihi, riskteki üretim siparişi, hızlı yeniden çizelgeleme ve öncelikli siparişe stok aktarma what-if özelliği",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "search_complete": false,
+        "queries": [
+          "Türkiye BOM stok termin gecikme üretim çizelgeleme simülasyonu yazılım",
+          "Türkiye üretim kritik parça eksik stok tükenmesi senaryo MRP"
+        ],
+        "scope": "Türkiye; otomotiv yan sanayi/makine imalatçıları, BOM/stock/tedarikçi gecikmesiyle üretim emri kıtlık simülasyonu",
+        "direct_competitors": []
+      },
+      "global": {
+        "direct_count": 4,
+        "search_complete": true,
+        "queries": [
+          "BOM level manufacturing supply delay what if production scenario software",
+          "Netstock manufacturing shortage scenario analysis",
+          "Siemens Opcenter material shortage scheduling scenario",
+          "MRPeasy shortages lead time material scheduling",
+          "Craftsync Odoo MRP Advanced Readiness exceptions what if"
+        ],
+        "scope": "Aynı üretim-planlama müdürü işi için parça gecikmesinin BOM/stok/etkilenen sipariş analizini sunan dört ticari ürün; Craftsync bağımsız modüldür",
+        "direct_competitors": [
+          {
+            "name": "Netstock Manufacturing Scenario Planning",
+            "url": "https://www.netstock.com/industries/manufacturing/",
+            "same_customer_job_workflow_reason": "BOM seviyesinde parça talebi, tedarikçi gecikme senaryosu, stok tükenmesi ve üretim etkisini what-if analiziyle ölçen üretim planlama ürünü",
+            "source_type": "official_vendor"
+          },
+          {
+            "name": "Siemens Opcenter APS",
+            "url": "https://www.siemens.com/en-us/products/opcenter/advanced-planning-scheduling-aps/advanced-scheduling-software/",
+            "same_customer_job_workflow_reason": "Hammadde/alt montaj/iş emri stok kısıtı, malzeme gezgini, kısıtları değiştirerek üretim ve teslim takvimine etkiyi karşılaştırma",
+            "source_type": "official_vendor"
+          },
+          {
+            "name": "MRPeasy",
+            "url": "https://www.mrpeasy.com/resources/user-manual/production-planning/manufacturing-orders/add/",
+            "same_customer_job_workflow_reason": "BOM patlatma, eksik parça, tedarik terminleri ve üretim emri başlangıcını yeniden hesaplayan imalat planı; alternatif parça gecikme senaryolarıyla üretim süre riski",
+            "source_type": "official_vendor"
+          },
+          {
+            "name": "Craftsync MRP Advanced Readiness / Exception Manager (Odoo addon)",
+            "url": "https://apps.odoo.com/apps/modules/19.0/mrp_advanced_readiness_full",
+            "same_customer_job_workflow_reason": "Malzeme kıtlığında kesin stok bitiş tarihi, riskteki üretim siparişi, hızlı yeniden çizelgeleme ve öncelikli siparişe stok aktarma what-if özelliği",
+            "source_type": "official_marketplace_listing"
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Kullanıcının sağladığı CSV BOM, stok, iş emri ve tedarikçi ETA; istemci JavaScript ile parça stok tüketimi tarih ve üretim emri gecikmesi senaryoları; yalnız yerel dosya/IndexedDB, PDF/CSV export. Canlı ERP entegrasyonu yok ve veri doğruluğu müşteri sorumluluğunda.",
+      "dependency_inventory": [
+        "Tarayıcı JavaScript",
+        "Kullanıcı CSV BOM/stok/iş emri/tarih",
+        "Yerel dosya ve isteğe bağlı browser IndexedDB",
+        "İstemci tarafı rapor indirme"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "91 protected fikirde birebir müşterisi/işi/CSV stok-termin üretim gecikme analizi eşleşmesi bulunmadı; yakın olanlar Genealogy Lite ve Agricultural Raw-Material Early Warning Desk farklı alıcı ve iş aşamasına sahip. Ret global dört rakip nedeniyle."
+    },
+    "research_attempts": [
+      {
+        "queries": [
+          "manufacturing BOM component shortage lead time what-if production impact",
+          "same customer job workflow software planning"
+        ],
+        "outcome": "Dört üretim planlama yazılımında kritik parça kıtlığı/üretim planı bağımlılığı resmî sayfalarda bulundu"
+      },
+      {
+        "queries": [
+          "Türkiye MRP kritk parça stok termin üretim senaryo"
+        ],
+        "outcome": "Yerel birebir rakip kesin sayı kanıtlanmadı; ayrı 0 iddiası yapılmadı"
+      }
+    ]
+  }
+}
