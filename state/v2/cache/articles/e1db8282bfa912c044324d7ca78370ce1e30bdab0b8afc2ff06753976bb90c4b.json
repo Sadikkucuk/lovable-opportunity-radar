@@ -1,0 +1,31 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "e1db8282bfa912c044324d7ca78370ce1e30bdab0b8afc2ff06753976bb90c4b",
+  "decision": {
+    "article_key": "e9efece2bae71bdbab09728d",
+    "decision": "opportunity",
+    "reason": "12 Ekim Çin haberi DPVR RoboPilot'un Unitree çift kol robotuyla teleoperasyon ve 6DoF el/kol hareket kaydı uyarlamasını raporluyor. Gerçek saha verisi toplama için sol/sağ kol senkronizasyonu, farklı demonstrasyon görevleri, örnek kabul koşulu ve tekrar örneği izlenebilir olmalıdır; robot kontrolü, eğitim veya ROS entegrasyonu yapmayan saf CSV/JSON kalite onay defteri ayrı müşteri işi olabilir. Tedarikçi beyanından doğruluk/latency sonucu varsayılmadı.",
+    "canonical_source_url": "https://4g.stockstar.com/detail/IG2026101200014287",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-7f26f95201145676:e9efece2bae71bdbab09728d:01",
+        "idea_name": "Dual-arm Robot Demonstration Data Acceptance Desk",
+        "canonical_key": "robotics-teleoperation-dataset-teams|verify-dual-arm-demonstration-provenance-and-label-quality|episode-6dof-synchronization-version-and-acceptance-ledger",
+        "target_customer": "Çift kollu robot teleoperasyon ve veri kümesi üreten robot entegratörleri/AR-GE ekipleri",
+        "core_job": "Operatör demonstrasyonundan çıkan sol/sağ 6DoF trajektori örneklerinin saha görevi, platform sürümü ve kalite kabulünü yayın veya AI eğitimi öncesi kayıtlamak",
+        "product_mechanism": "Kullanıcıdan yalnız JSON/CSV dataset metadata, robot/teleoperasyon yazılım sürümü, senkron timestamp, trajektori boşluk oranı, görev açıklama, gizlilik/izin durumu ve insan onayı; robotu kontrol etmez, canlı veri almaz, AI eğitimi veya puanlama modelini çalıştırmaz",
+        "why_now": "12 Ekim Çin haberi DPVR RoboPilot'un Unitree çift kol robotuyla teleoperasyon ve 6DoF el/kol hareket kaydı uyarlamasını raporluyor. Gerçek saha verisi toplama için sol/sağ kol senkronizasyonu, farklı demonstrasyon görevleri, örnek kabul koşulu ve tekrar örneği izlenebilir olmalıdır; robot kontrolü, eğitim veya ROS entegrasyonu yapmayan saf CSV/JSON kalite onay defteri ayrı müşteri işi olabilir. Tedarikçi beyanından doğruluk/latency sonucu varsayılmadı.",
+        "before_state": "Demonstrasyon video, hareket dizisi, kalite/tekrar notları farklı operatör istasyonlarında; görev ve robot sürümüyle bağları kopabiliyor",
+        "after_state": "Episode bazlı kaynak, veri bütünlüğü, insan görev etiketi ve yeniden kayıt gereği raporu; gerçek robot emniyeti testini üstlenmez",
+        "canonical_source_urls": [
+          "https://4g.stockstar.com/detail/IG2026101200014287",
+          "https://github.com/unitreerobotics/xr_teleoperate"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-7f26f95201145676/001.json",
+  "valid_until": "2026-11-12T10:18:44Z"
+}
