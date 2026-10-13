@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T03:41:00Z",
+  "controller_observed_at": "2026-10-13T03:41:49Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
@@ -46,8 +46,17 @@
       "last_receipt_at": null
     },
     "4": {
-      "last_started_at": null,
-      "last_event": null,
+      "last_started_at": "2026-10-13T03:41:34.910Z",
+      "last_event": {
+        "schema_version": 1,
+        "worker": 4,
+        "invocation_id": "manual-w4-1791862894910-064c27c3413998",
+        "event": "blocked",
+        "at": "2026-10-13T03:41:47.000Z",
+        "reason_code": "permission_denied",
+        "reason": "Claim oluşturma isteği OpenAI güvenlik kontrolü tarafından engellendi; claim ve receipt yazılmadı.",
+        "path": "state/v2/worker-events/4/manual-w4-1791862894910-064c27c3413998/999-blocked.json"
+      },
       "receipts_this_invocation": 0,
       "write_and_receipt_verified": false,
       "last_receipt_at": null
@@ -125,7 +134,7 @@
       "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
     },
     {
-      "code": "worker_not_started",
+      "code": "worker_blocked",
       "worker": 4,
       "severity": "critical",
       "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
