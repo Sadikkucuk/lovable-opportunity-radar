@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T03:44:12Z",
+  "controller_observed_at": "2026-10-13T03:46:45Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
   "ready_jobs": 368,
-  "unfinished_jobs": 370,
-  "last_verified_progress_at": "2026-10-13T03:40:34Z",
+  "unfinished_jobs": 369,
+  "last_verified_progress_at": "2026-10-13T03:46:39Z",
   "workers": {
     "1": {
       "last_started_at": "2026-10-13T03:43:47.530Z",
@@ -14,14 +14,16 @@
         "schema_version": 1,
         "worker": 1,
         "invocation_id": "manual-w1-1791863027530-72945763",
-        "event": "started",
-        "at": "2026-10-13T03:43:47.530Z",
-        "trigger": "manual_owner_request",
-        "path": "state/v2/worker-events/1/manual-w1-1791863027530-72945763/000-started.json"
+        "event": "progress",
+        "at": "2026-10-13T03:46:32.906Z",
+        "job_id": "2026-10-13-43d3b526fc-discovery-295605f89e51dd8f",
+        "stage": "research_in_progress",
+        "note": "Receipt write blocked by provider safety control; preserving claim without fabricated completion.",
+        "path": "state/v2/worker-events/1/manual-w1-1791863027530-72945763/001-progress.json"
       },
-      "receipts_this_invocation": 0,
-      "write_and_receipt_verified": false,
-      "last_receipt_at": null
+      "receipts_this_invocation": 1,
+      "write_and_receipt_verified": true,
+      "last_receipt_at": "2026-10-13T03:46:39.171Z"
     },
     "2": {
       "last_started_at": "2026-10-13T03:42:03.993Z",
@@ -86,8 +88,8 @@
     "window_minutes": 120.0,
     "stages": {
       "discovery": {
-        "completed_in_window": 0,
-        "known_remaining": 293,
+        "completed_in_window": 1,
+        "known_remaining": 292,
         "observed_jobs_per_hour": null,
         "estimated_minutes_for_stage": null
       },
