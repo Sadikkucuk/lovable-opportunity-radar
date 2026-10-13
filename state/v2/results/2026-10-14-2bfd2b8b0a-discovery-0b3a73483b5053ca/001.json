@@ -1,0 +1,193 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-2bfd2b8b0a-discovery-0b3a73483b5053ca",
+  "input_hash": "0b3a73483b5053ca282cfadf7a80d8bc73cd0cef0db011ff59201e47b4d82381",
+  "token": "8c7016fd-acde-4444-b8a3-52b45fa2eb50",
+  "finished_at": "2026-10-13T21:12:45.869Z",
+  "outcome": "done",
+  "reason": "İkinci dondurulmuş 10'lu birimde her makaleye karar verildi; üç ham fırsat kaydedildi, beş haber fırsat üretmedi, iki özgün sayfa kanıtı eksik olduğundan unverified kaldı.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "e599ed4db0f512239d170e91",
+        "decision": "opportunity",
+        "reason": "Huxiu başlığı bağımsız okunamadı; ancak OpenAI'nin birincil 2026 güvenlik açıklaması eğitim duraklatma, iş yükü izolasyonu, ağ izolasyonu ve devam için kanıt gereksinimini doğruluyor. Bu karar zinciri dış hizmet gerektirmeyen kanıt kapısı ürününe dönüşebilir.",
+        "canonical_source_urls": [
+          "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"
+        ],
+        "source_observations": [
+          "OpenAI son model RL eğitiminde iki haftalık duraklama ve en büyük planlı koşunun beklemede olduğunu; küçük değerlendirmelerle hizalama kanıtı toplandığını açıkladı."
+        ],
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-2bfd2b8b0a-discovery-0b3a73483b5053ca:e599ed4db0f512239d170e91:1",
+            "canonical_key": "frontier-model-labs|authorize-training-resume-after-safety-pause|offline-evidence-gate-ledger",
+            "idea_name": "Model Eğitimi Yeniden Başlatma Kanıt Kapısı",
+            "core_job": "Güvenlik olayı sonrası bir eğitim iş yükünün hangi kanıtlarla yeniden başlayabileceğini izlemek",
+            "target_customer": "İleri model geliştiren araştırma laboratuvarları ve iç risk ekipleri",
+            "buyer": "AI güvenlik, araştırma operasyonu veya risk lideri",
+            "product_mechanism": "Yerel dosya ve manuel bulguları izolasyon, izleme, kırmızı takım ve hizalama kontrol listelerine bağlayan; karar matrisi ve imzalı dışa aktarım üreten tarayıcı uygulaması",
+            "why_now": "2026'da kamuya açıklanan eğitim yavaşlatma ve izolasyon önlemleri, devam kararının belgelenmesini zorunlu kılıyor.",
+            "before_state": "Güvenlik bulguları, çalışma yükü sahipleri ve devam koşulları farklı dokümanlarda kalıyor.",
+            "after_state": "Her koşu için engel, kanıt, sorumlu ve yeniden başlatma kararı tek denetlenebilir pakette tutuluyor.",
+            "supporting_article_ids": [
+              "e79272c1effb080722b75dd6"
+            ],
+            "scope_hint": "Dünya",
+            "local_evidence": [
+              "Açıklanan önlemler iş yükü izolasyonu, ağ izolasyonu, izleme genişletmesi ve küçük ölçekli değerlendirmeleri içeriyor.",
+              "Ürün model çalıştırmaz ve hiçbir dış AI/API/DB gerektirmez."
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "e5a66d4ce976a42703b910e8",
+        "decision": "no_opportunity",
+        "reason": "Panasonic-Google, Samsung-Gemini ve LG-OpenAI entegrasyonları dış bulut/AI platformlarına bağlıdır; sıfır dış çalışma zamanı hizmeti politikası altında temel değer korunamaz.",
+        "canonical_source_urls": [
+          "https://m.etnews.com/20261008000207"
+        ],
+        "source_observations": [
+          "Haber akıllı ev anomali tespiti ve kişiselleştirmeyi Google üretken AI ve bulutuyla birleştiriyor."
+        ],
+        "opportunities": []
+      },
+      {
+        "article_key": "e5a7db2c274a8e73d631a685",
+        "decision": "opportunity",
+        "reason": "ShuruKar'ın dört aşamalı yerel problemden ilk müşteriye yolculuğu, dış AI copilot olmadan da kanıt odaklı ve çevrimdışı bir kurucu çalışma defterine dönüştürülebilir.",
+        "canonical_source_urls": [
+          "https://yourstory.com/2026/10/shurukar-bihar-patna-district-entrepreneurship-startup-india"
+        ],
+        "source_observations": [
+          "Program problem bulma, fikri şekillendirme, mentorla geliştirme ve yerel fırsata erişme aşamalarını tanımlıyor; devlet yapıları içinde yeni fon istemeden çalışıyor."
+        ],
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-2bfd2b8b0a-discovery-0b3a73483b5053ca:e5a7db2c274a8e73d631a685:1",
+            "canonical_key": "non-metro-first-time-founders|turn-local-problem-into-first-customer|offline-evidence-sprint-workbook",
+            "idea_name": "Yerel Problemden İlk Müşteriye Kanıt Defteri",
+            "core_job": "Yerel bir problemi doğrulanabilir müşteri görüşmesi ve ilk satış adımlarına çevirmek",
+            "target_customer": "Metropol dışındaki ilk kez girişim kuran kişiler ve yerel girişim merkezleri",
+            "buyer": "Bireysel kurucu veya girişimcilik merkezi yöneticisi",
+            "product_mechanism": "Problem gözlemi, aktör, mevcut çözüm, fiyat sinyali, müşteri adayı ve temas sonucunu yerel tarayıcıda tutan; haftalık deney ve ilk müşteri dosyası üreten kural tabanlı çalışma alanı",
+            "why_now": "ShuruKar 2026'da ilçe düzeyinde ilk müşteriye kadar uzanan destek açığını açıkça tanımladı.",
+            "before_state": "Kurucu genel eğitim içerikleri izliyor fakat yerel problem ve müşteri kanıtını tek akışta biriktiremiyor.",
+            "after_state": "Her fikir için kaynaklı problem kanıtı, müşteri listesi, deney sonucu ve sonraki karar birlikte izleniyor.",
+            "supporting_article_ids": [
+              "5de1385eea5e664fa032af6b"
+            ],
+            "scope_hint": "Türkiye ve benzer bölgesel pazarlar",
+            "local_evidence": [
+              "Akış dış AI gerektirmez; tüm veri kullanıcı girişi ve yerel dosya olarak tutulabilir."
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "e5d32ea94df7cee2f1b03e65",
+        "decision": "no_opportunity",
+        "reason": "STCN'nin satış bülteni tek şirketin otomotiv hacimlerini bildiriyor; yeni ve tekrar eden bir müşteri darboğazı ortaya koymuyor.",
+        "canonical_source_urls": [
+          "https://www.stcn.com/article/detail/4211475.html"
+        ],
+        "source_observations": [
+          "Ocak-Eylül yakıtlı araç satışı %34,82 artarken toplam ve yeni enerji aracı verileri farklı yönlerde hareket ediyor."
+        ],
+        "opportunities": []
+      },
+      {
+        "article_key": "e5ddafb14d79bf02cb8fce99",
+        "decision": "no_opportunity",
+        "reason": "Aynı Radiocor jeopolitik açıklaması önceki birimde de görüldü; yeni ürün iş akışı yok ve yinelenen tetikleyici olarak ayrıldı.",
+        "canonical_source_urls": [
+          "https://www.borsaitaliana.it/borsa/notizie/radiocor/prima-pagina/dettaglio/ucraina-zelensky-stop-attacchi-a-raffinerie-se-russia-ferma-quelli-su-energia-nRC_11102026_1218_185551956.html"
+        ],
+        "source_observations": [
+          "Il Sole sayfası robots.txt nedeniyle okunamadı; Borsa Italiana aynı metni yayımlıyor."
+        ],
+        "opportunities": []
+      },
+      {
+        "article_key": "e618cbb4fa4d499447ac58db",
+        "decision": "no_opportunity",
+        "reason": "Reuters/IMF haberi makro büyüme ve işgücü etkisini ölçüyor; belirli müşteri ve dar iş akışı göstermediğinden genel ekonomi göstergesinden ürün türetilmedi.",
+        "canonical_source_urls": [
+          "https://www.reuters.com/world/china/imf-says-ai-investment-keeps-global-growth-around-3-with-major-asia-benefits-2026-10-12/"
+        ],
+        "source_observations": [
+          "IMF AI altyapı yatırımının büyümeyi yaklaşık %3'te tuttuğunu, işlerin %40'ını ve gelişmiş ekonomilerde %60'a kadarını etkileyebileceğini belirtiyor."
+        ],
+        "opportunities": []
+      },
+      {
+        "article_key": "e63d6d420081f1bf5c774f4b",
+        "decision": "opportunity",
+        "reason": "Çin Devlet Güvenlik Bakanlığı birkaç saniyelik sesin klonlama için kullanılabileceğini ve şüpheli aramalarda hızlı doğrulama ihtiyacını somutlaştırıyor; çevrimdışı aile/işletme doğrulama protokolü üretilebilir.",
+        "canonical_source_urls": [
+          "https://www.ithome.com/1/011/574.htm"
+        ],
+        "source_observations": [
+          "Biyometrik özelliklerin toplanıp kopyalanabildiği; şüpheli aramada bağımsız kanaldan doğrulama ve hızlı kapatma öneriliyor."
+        ],
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-2bfd2b8b0a-discovery-0b3a73483b5053ca:e63d6d420081f1bf5c774f4b:1",
+            "canonical_key": "families-and-small-businesses|verify-urgent-voice-requests|offline-challenge-protocol-card",
+            "idea_name": "Ses Klonu Acil Talep Doğrulama Kartı",
+            "core_job": "Yakın veya yönetici gibi konuşan bir arayanın para ya da bilgi talebini sesine güvenmeden doğrulamak",
+            "target_customer": "Aileler, küçük işletmeler ve para transferi yapan ekipler",
+            "buyer": "Aile yöneticisi veya küçük işletme sahibi",
+            "product_mechanism": "Kullanıcının önceden belirlediği gizli olmayan meydan okuma soruları, geri arama numaraları, ikinci kişi kuralı ve olay kaydını cihazda tutan; yazdırılabilir kart/PDF üreten çevrimdışı araç",
+            "why_now": "11 Ekim 2026 güvenlik uyarısı birkaç saniyelik ses örneğinin klonlanabildiğini bildiriyor.",
+            "before_state": "Kullanıcı acil aramada tanıdık sese güveniyor ve doğrulama adımlarını hatırlamıyor.",
+            "after_state": "Para veya hassas bilgi talebi, önceden tanımlı bağımsız kanal ve iki kişi kuralıyla belgeli biçimde doğrulanıyor.",
+            "supporting_article_ids": [
+              "d21e0ea7d24d01d97ff6d3fd"
+            ],
+            "scope_hint": "Dünya",
+            "local_evidence": [
+              "Uygulama arama dinlemez, ses kaydetmez ve AI kullanmaz; yalnızca yerel protokol üretir."
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "e65f8acf4d378cf8b74864bc",
+        "decision": "no_opportunity",
+        "reason": "Manus ana şirketinin 500 milyon dolar üzeri finansmanı kurumsal işlem haberidir; tek başına yeni müşteri iş akışı kanıtlamıyor ve haberin çekirdeği dış AI ajan hizmetine bağlı.",
+        "canonical_source_urls": [
+          "https://www.investing.com/news/stock-market-news/manus-raises-more-than-500-million-after-meta-exit-4938004"
+        ],
+        "source_observations": [
+          "Butterfly Effect, Meta işleminin çözülmesinden sonra bağımsız operasyona dönüp finansman aldı."
+        ],
+        "opportunities": []
+      },
+      {
+        "article_key": "e6bc443a5c910bd4897d37bb",
+        "decision": "unverified",
+        "reason": "L'Usine Nouvelle özgün makalesinin tam metni okunamadı; başlık ve genel AB Safety Gate kaynakları kontrolsüz pazar yeri ithalat riskini desteklese de mobilya sektörüne özgü iş akışı doğrulanamadı.",
+        "canonical_source_urls": [
+          "https://associationdesjouets.ch/fr/news/detail/safety-gate-bericht-2025-spielwaren-und-online-marktplaetze-im-visier"
+        ],
+        "source_observations": [
+          "Arama, Shein/AliExpress üzerinden kontrolsüz ithalat şikâyeti başlığını buldu; tam makale kanıtı yok."
+        ],
+        "opportunities": []
+      },
+      {
+        "article_key": "e70911cb485fbd04d970b29c",
+        "decision": "unverified",
+        "reason": "Nat Habit'in 142 crore rupi Seri C finansman başlığı doğrulandı ancak bu araştırma turunda özgün sayfa okunamadı; finansman haberi tek başına ürün darboğazı oluşturmadığından fırsat çıkarılmadı.",
+        "canonical_source_urls": [],
+        "source_observations": [
+          "Özgün YourStory sayfasına ilişkin okunabilir sayfa kanıtı elde edilemedi."
+        ],
+        "opportunities": []
+      }
+    ]
+  }
+}
