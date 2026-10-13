@@ -4,13 +4,27 @@
   "queue_mode": "shared",
   "current_run": "2026-10-14-2bfd2b8b0a",
   "lease_minutes": 30,
-  "ready_count": 494,
+  "ready_count": 495,
   "job_count": 497,
-  "queue_revision": "25cdf0942e82377aba377aa117a00d724b8186bd89dc90c35f3131e7b7697f80",
+  "queue_revision": "519a35078e423129f76832bd9339a4bf9c1c79d8a70edca2bd5cdec1905e6cd0",
   "page": 25,
   "page_count": 25,
   "next_page": null,
   "jobs": [
+    {
+      "job_id": "2026-10-13-43d3b526fc-discovery-cab887f2f88ae46d",
+      "path": "state/v2/jobs/2026-10-13-43d3b526fc-discovery-cab887f2f88ae46d.json",
+      "run_id": "2026-10-13-43d3b526fc",
+      "kind": "discovery",
+      "input_hash": "cab887f2f88ae46d9ebf91ba96788054038bb1d6ab00260ee7bc3609860e2cc6",
+      "legacy_lane": 1,
+      "queue_group": "backlog",
+      "preferred_worker": 4,
+      "state": "ready",
+      "attempt": 1,
+      "claim_path": "state/v2/claims/2026-10-13-43d3b526fc-discovery-cab887f2f88ae46d/001.json",
+      "result_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-cab887f2f88ae46d/001.json"
+    },
     {
       "job_id": "2026-10-13-43d3b526fc-discovery-dbbeab4957473581",
       "path": "state/v2/jobs/2026-10-13-43d3b526fc-discovery-dbbeab4957473581.json",
@@ -208,19 +222,6 @@
       "result_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-fec05d4d0f3c48f3/001.json"
     },
     {
-      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-057f16a38c7956f0",
-      "path": "state/v2/jobs/2026-10-13-catchup-e3a10c28a635-validation-057f16a38c7956f0.json",
-      "run_id": "2026-10-13-catchup-e3a10c28a635",
-      "kind": "validation",
-      "input_hash": "057f16a38c7956f0e9df725a430c7c695cc5fd09b734a8e14ea4c27a77624a93",
-      "legacy_lane": 4,
-      "queue_group": "backlog",
-      "preferred_worker": 3,
-      "state": "leased",
-      "attempt": 1,
-      "expires_at": "2026-10-13T22:04:17.729Z"
-    },
-    {
       "job_id": "2026-10-14-2bfd2b8b0a-discovery-09ab283297024606",
       "path": "state/v2/jobs/2026-10-14-2bfd2b8b0a-discovery-09ab283297024606.json",
       "run_id": "2026-10-14-2bfd2b8b0a",
@@ -229,9 +230,10 @@
       "legacy_lane": 1,
       "queue_group": "current",
       "preferred_worker": 1,
-      "state": "leased",
+      "state": "retry_wait",
       "attempt": 1,
-      "expires_at": "2026-10-13T21:34:48Z"
+      "retry_at": "2026-10-13T21:39:48Z",
+      "reason": "worker lease expired without a receipt"
     },
     {
       "job_id": "2026-10-14-2bfd2b8b0a-discovery-500b7a275376a2aa",
