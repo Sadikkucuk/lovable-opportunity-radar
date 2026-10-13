@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-8c5042b0adb2a7ef",
+  "input_hash": "8c5042b0adb2a7ef34618a94568328507bc8c36a9fb300705623b54d97ef8c98",
+  "token": "ce04dd38-dc1e-4ef1-a938-c071348e3ee1",
+  "finished_at": "2026-10-13T15:09:01.699Z",
+  "outcome": "done",
+  "reason": "Algorithmic Pricing Governance Log duplicate: earlier qualified Franchise AI Fiyat Kararı Defteri same customer, job and end-to-end workflow; catalog protected.",
+  "result": {
+    "decision": "duplicate",
+    "duplicate_of": "franchise-networks|prove-independent-ai-pricing-decisions|recommendation-override-audit-ledger",
+    "reason": "Semantik üçlü eşleşme kesin: yeni aday franchisor/multi-location retailer için algoritmik fiyat önerisini, kaynak veri bağını, bağımsız insan onay/override kararını ve denetim dışa aktarımını izliyor. 6 Ekim 2026'dan katalog geçmişinde bulunan Franchise AI Fiyat Kararı Defteri, franchise ağları ve çok lokasyonlu perakende/restoran müşterilerine aynı fiyat önerisi → bağımsız onay/override → giriş verisi kökeni → audit export görevini sunuyor. Alıcı, çekirdek iş ve veri/karar akışı aynı olduğundan 'duplicate'; McDonalds ile ilgili 8 Ekim Reuters haberi yeni bağımsız ürün değil ek kanıt. Karar küresel rakip sayısını sıfır varsaymıyor, çünkü kalifiye/onaylanmış yeni ürün yok.",
+    "history_review": {
+      "decision": "duplicate",
+      "matched_name": "Franchise AI Fiyat Kararı Defteri",
+      "matched_key": "franchise-networks|prove-independent-ai-pricing-decisions|recommendation-override-audit-ledger",
+      "reason": "Franchise AI Fiyat Kararı Defteri (2026-10-06), aynı franchise/çok lokasyonlu perakende alıcısı, bağımsız fiyat kararı ve audit kanıtının aynı mekanizması; 'multi-location retail' kelimesi yeni bir segment değil geçmiş hedefin parçası."
+    },
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.reuters.com/business/ai-pricing-lawsuit-against-mcdonalds-raises-new-antitrust-questions-2026-10-08/",
+        "accessed_at": "2026-10-13T15:09:01.699Z",
+        "claim": "Algoritmik fiyatlandırmaya ilişkin hukuki tartışma iş tetikleyicisi",
+        "observation": "McDonalds'a ilişkin Reuters kaynaklı dava iddiası hukuki uyuşmazlık olup ihlal kararı değildir."
+      },
+      {
+        "role": "history",
+        "url": "https://www.reuters.com/legal/government/mcdonalds-hit-with-class-action-over-menu-prices-2026-10-05/",
+        "accessed_at": "2026-10-13T15:09:01.699Z",
+        "claim": "Mevcut fikir tarihsel tetikleyici",
+        "observation": "6 Ekim'de aynı fiyat önerisi-insan bağımsız karar ve veri kökeni takibi katalog geçmişine kaydedilmiş."
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "search_complete": false
+      },
+      "global": {
+        "direct_count": null,
+        "search_complete": false
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Var olan katalog ürününün manuel CSV ve tarayıcı kural tabanlı veri açıklama/onay defteri; yeni ürün olarak ayrı uygulama başlatılmaz.",
+      "dependency_inventory": [
+        "Manual CSV uploads",
+        "Browser-native evidence ledger",
+        "Client-side PDF export"
+      ]
+    }
+  }
+}
