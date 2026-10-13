@@ -1,0 +1,30 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "95ab6ed62478861b03ab7c57e05a41895841da72cadcd2e7281dfe6933f38e78",
+  "decision": {
+    "article_key": "0d03babce2e8fa57cafa154d",
+    "decision": "opportunity",
+    "reason": "INTERNET Watch 13 Ekim değerlendirmesi Contrast Security'nin 20 Mayıs/27 Ağustos araştırmasından aynı Java uygulamasına çalışan üç AI scanner'ın 59 bulgusundan sadece 3'üne hep birlikte rastlandığı, aynı scanner'ın tekrar çalışmasında bile sonuçların değişebildiği satıcı bildirimi olduğunu belirtiyor. Sonuçlar bağımsız kör benchmark değildir, örneklemi bir üreticinin platformundan. BT güvenlik ekibinin dışa aktarılmış bulguları kanıt, tekrar, şiddet/owner bakımından deterministik uzlaştırması müşteri işi.",
+    "canonical_source_url": "https://internet.watch.impress.co.jp/docs/column/security/2146074.html",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-35a4d29c63817525:0d03babce2e8fa57cafa154d:01",
+        "idea_name": "AI AppSec Tarama Uzlaştırma ve Tekrar Kanıt Defteri",
+        "canonical_key": "application-security-review-teams|reconcile-inconsistent-ai-scanner-findings|scan-import-finding-fingerprint-retest-and-human-triage-ledger",
+        "target_customer": "AI destekli statik kod tarama raporlarını kullanan AppSec, SOC ve yazılım güvenlik ekipleri",
+        "core_job": "Birden fazla scanner/tarama turundan gelen bulguları aynı dosya/kod/kanıt temeline göre eşleyip çelişkili şiddet ve tekrar bulunabilirliğini denetlemek",
+        "product_mechanism": "Kullanıcıdan CSV/JSON bulgu raporu, dosya/line/CWE/kanıt referansı, çakışma toleransı, retest sonuçları ve insan triage onayı; canlı kod tarama, harici AI veya üretim sistemi bağlantısı yok",
+        "why_now": "INTERNET Watch 13 Ekim değerlendirmesi Contrast Security'nin 20 Mayıs/27 Ağustos araştırmasından aynı Java uygulamasına çalışan üç AI scanner'ın 59 bulgusundan sadece 3'üne hep birlikte rastlandığı, aynı scanner'ın tekrar çalışmasında bile sonuçların değişebildiği satıcı bildirimi olduğunu belirtiyor. Sonuçlar bağımsız kör benchmark değildir, örneklemi bir üreticinin platformundan. BT güvenlik ekibinin dışa aktarılmış bulguları kanıt, tekrar, şiddet/owner bakımından deterministik uzlaştırması müşteri işi.",
+        "before_state": "Bulgular araçlar arasında tekrar eder ve şiddet kararsızlığı güvenlik ekibinin öncelik kararını zayıflatır",
+        "after_state": "Tekrar oranı, birbirine uymayan bulgular, manuel kabul-red ve tekrar test kanıtı matrisi",
+        "canonical_source_urls": [
+          "https://internet.watch.impress.co.jp/docs/column/security/2146074.html"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-35a4d29c63817525/001.json",
+  "valid_until": "2026-11-12T08:42:27Z"
+}
