@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T09:39:43Z",
+  "controller_observed_at": "2026-10-13T09:42:45Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
@@ -41,28 +41,18 @@
       "last_receipt_at": "2026-10-13T04:08:49.764Z"
     },
     "3": {
-      "last_started_at": "2026-10-13T09:11:10.842Z",
+      "last_started_at": "2026-10-13T09:42:31.372Z",
       "last_event": {
         "schema_version": 1,
         "worker": 3,
-        "invocation_id": "806756b2-cc99-4904-9a08-babc067c1839",
-        "event": "finished",
-        "at": "2026-10-13T09:39:19.865Z",
+        "invocation_id": "99c11d71-81de-4581-9774-a35ec14e29c1",
+        "event": "started",
+        "at": "2026-10-13T09:42:31.372Z",
         "execution_mode": "user_requested_manual_master",
-        "discovery_receipts_saved": 13,
-        "discovery_articles_triaged": 130,
-        "raw_opportunities": 10,
-        "validation_receipts_saved": 1,
-        "validation_decisions": {
-          "rejected": 1,
-          "qualified": 0,
-          "duplicate": 0,
-          "unverified": 0
-        },
-        "note": "13 Discovery immutable receipts read back, 1 Validation rejected receipt read back. Existing five scheduled worker tasks, their settings/prompts, protected product catalog, and publication gates unchanged.",
-        "path": "state/v2/worker-events/3/806756b2-cc99-4904-9a08-babc067c1839/999-finished.json"
+        "note": "Continue only new ready work without changing existing scheduled tasks, their prompts, protected catalog or controller.",
+        "path": "state/v2/worker-events/3/99c11d71-81de-4581-9774-a35ec14e29c1/000-started.json"
       },
-      "receipts_this_invocation": 14,
+      "receipts_this_invocation": 0,
       "write_and_receipt_verified": true,
       "last_receipt_at": "2026-10-13T09:38:54.576Z"
     },
@@ -106,10 +96,10 @@
     "window_minutes": 120.0,
     "stages": {
       "discovery": {
-        "completed_in_window": 44,
+        "completed_in_window": 42,
         "known_remaining": 354,
-        "observed_jobs_per_hour": 22.0,
-        "estimated_minutes_for_stage": 965.5
+        "observed_jobs_per_hour": 21.0,
+        "estimated_minutes_for_stage": 1011.4
       },
       "merge": {
         "completed_in_window": 0,
