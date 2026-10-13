@@ -76,3 +76,27 @@
 - Sorunda görevleri durdur, mode=maintenance yap, iş kayıtlarını silmeden
   backup/pre-night-operations-20261012 dalını karşılaştır. Main'i force
   push ile geri götürme.
+
+## Kanıt tamamlama ve Worker throughput güncellemesi — 13.10.2026
+- Original validation receipt outcome=done + decision=unverified is kept immutable.
+  The candidate is NOT qualified and the old review is NOT reusable as approval.
+- The deterministic controller creates a linked validation job with
+  payload.evidence_followup including round, parent_job_id, parent_receipt_path,
+  prior_reason and the missing_checks. At most two extra rounds; no infinite loop.
+- Only checked, dated, genuinely read and supported existing evidence can shorten
+  repeat research. Old research notes and inaccessible URLs are not proof.
+- Before claim creation validate job/input_hash, inbox entry/attempt, actual
+  worker 1..4 start event, paths, token and 30-minute lease using the checklist
+  in radar/claim_guard.py and WORK_PROTOCOL. Fail closed without writing when
+  there is an identity mismatch.
+- On GitHub 409/422 read back then skip if owned. On 401/403 stop and report
+  without bypass. On transient 429/5xx/timeout first read back, then retry
+  at most three times. Do not invent technical error categories.
+- Manual throughput target is at least 20 evidence-investigated small work units
+  WHEN feasible; it never overrides primary-source, date-scoped direct-
+  competitor, feasibility, history or immutable write rules. Final report
+  separates durable review receipts, new qualified catalog records, unverified
+  decisions and open evidence followups. The system can report an unmet target.
+- GitHub status.json includes evidence_research.followup_jobs/open/
+  terminal_unverified/max_rounds; older validated ideas and baseline 91 remain
+  under unchanged protection checks.
