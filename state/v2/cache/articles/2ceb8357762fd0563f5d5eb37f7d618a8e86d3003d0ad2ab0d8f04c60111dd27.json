@@ -1,0 +1,30 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "2ceb8357762fd0563f5d5eb37f7d618a8e86d3003d0ad2ab0d8f04c60111dd27",
+  "decision": {
+    "article_key": "48e292531c787c66de0e72d3",
+    "decision": "opportunity",
+    "reason": "Intel'in resmî 2026 Ekim SGX geçiş kılavuzu, Diamond Rapids'in Intel SGX destekleyen son Xeon nesli olacağını ve gelecekte Confidential Computing yatırımlarının TDX'e yönleneceğini doğruluyor. SGX kullanan BT/ISV ekiplerinin mevcut enclave, attestation, EPC bellek, güvenlik sınırı ve TDX alternatifine göç kanıtını paketlemesi somut zorunlu teknoloji ömrü yönetimi; geçiş tarihi/ürün desteği otomatik nihai EOL olarak uydurulamaz.",
+    "canonical_source_url": "https://cc-enabling.trustedservices.intel.com/intel-sgx-transition-path/01/introduction/",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-67201d7d0ef06c7d:48e292531c787c66de0e72d3:01",
+        "idea_name": "Intel SGX → TDX Geçiş Kanıt Matrisi",
+        "canonical_key": "confidential-computing-application-owners|prepare-intel-sgx-to-tdx-transition-readiness|enclave-inventory-attestation-security-boundary-and-test-evidence-ledger",
+        "target_customer": "Intel SGX teknolojisini kullanan finans, kimlik doğrulama ve ISV güvenli veri işleme ekipleri",
+        "core_job": "Mevcut Intel SGX enclave uygulamaları için TDX VM sınırına taşınırken hangi güvenlik mekanizmalarının, attestation doğrulamalarının ve veri sözleşmelerinin değiştiğini belgelemek",
+        "product_mechanism": "Sadece kullanıcıdan içeri aktarılan modül/envanter/SGX API, EPC bellek, attestation bağımlılığı, enclave–VM güven sınırı ve test planı CSV; kurala dayalı göç bağımlılık matrisi, onay ve artefakt raporu; gerçek kriptografi/attestation çalıştırmaz",
+        "before_state": "SGX uygulamalarının sahipliği, enclave bağımlılıkları, güvenlik kanıtları ve hedef işlemci ömrü ayrı belgelerde dağınık",
+        "after_state": "SGX–TDX dönüşüm için kapsam, güvenlik değişiklikleri, açık uyumsuzluk/test listesi ve sorumlu geçiş onayı",
+        "why_now": "Intel'in resmî 2026 Ekim SGX geçiş kılavuzu, Diamond Rapids'in Intel SGX destekleyen son Xeon nesli olacağını ve gelecekte Confidential Computing yatırımlarının TDX'e yönleneceğini doğruluyor. SGX kullanan BT/ISV ekiplerinin mevcut enclave, attestation, EPC bellek, güvenlik sınırı ve TDX alternatifine göç kanıtını paketlemesi somut zorunlu teknoloji ömrü yönetimi; geçiş tarihi/ürün desteği otomatik nihai EOL olarak uydurulamaz.",
+        "canonical_source_urls": [
+          "https://cc-enabling.trustedservices.intel.com/intel-sgx-transition-path/01/introduction/"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-67201d7d0ef06c7d/001.json",
+  "valid_until": "2026-11-12T09:49:28Z"
+}
