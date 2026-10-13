@@ -1,0 +1,138 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-c4af3c88f095d929",
+  "input_hash": "c4af3c88f095d929f4f47a098ac6a8cb5f4110499c6003ec2e8fbd1fe6fe3375",
+  "token": "3c0d81bc-f256-4f36-a871-74f5d06c4e96",
+  "finished_at": "2026-10-13T18:32:54.585Z",
+  "outcome": "done",
+  "reason": "HR Skills Evidence Map rejected after 4 direct global competitors and explicit manual zero-external-runtime feasibility. Turkey direct count unresolved; no new catalog publication.",
+  "result": {
+    "decision": "rejected",
+    "reason": "ITmedia'nın SAP/TechWolf alımı tetikleyicisi doğrulandı. HR Skills Evidence Map'in hedef alıcısı ve ana akışı (AI çıkarılmış beceri → iş kanıtı → çalışan/yönetici doğrulaması → HR profili) için resmî ürün sayfalarında 4 bağımsız global doğrudan rakip saptandı: Workday Skills Cloud, Gloat Skill Validation Agent, Fuel50 Skills Data Accelerator, Eightfold Talent Intelligence. Küresel en fazla üç doğrudan rakip kriteri aşıldığından rejected. Türkiye'de tam aynı iş akışının doğrudan rakip sayısı hâlâ kesin belgelenmedi; sıfır denmedi. Haricî AI model/API olmadan kullanıcı CSV ve manuel onayla dar MVP mümkün olabilir, fakat bu rekabet engelini kaldırmaz.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.itmedia.co.jp/enterprise/articles/2610/09/news019.html",
+        "accessed_at": "2026-10-13T18:32:54.585Z",
+        "claim": "SAP TechWolf satın alma haberi, AI kaynaklı skills profillerinde iş kanıtı ihtiyacını anlatıyor",
+        "observation": "ITmedia Enterprise 9 Ekim içerik dizini ve özgün aday kaynak URL'si doğrulandı; SAP/TechWolf satın alma girişimi, AI'la çıkarılan skill profilinin iş kanıtına bağlanması için ürün hipotezi; gerçek tüketici talebini kendi başına kanıtlamaz.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://doc.workday.com/admin-guide/en-us/human-capital-management/skills-and-skills-cloud/skills-cloud/ilb1557158988004.html",
+        "accessed_at": "2026-10-13T18:32:54.585Z",
+        "claim": "Workday Skills Cloud skills claim->work evidence->validation işini zaten ürünleştiriyor",
+        "observation": "HR ekipleri için çalışanların iş geçmişi/proje kayıtlarından skill çıkarımı, profil üzerinden çalışan doğrulaması ve HR yetenek kanıtı; pozisyon/süreç kartıyla eşleşiyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://gloat.com/use-cases-agents/skill-validation-agent/",
+        "accessed_at": "2026-10-13T18:32:54.585Z",
+        "claim": "Gloat Skill Validation Agent skills claim->work evidence->validation işini zaten ürünleştiriyor",
+        "observation": "Çalışan beceri iddiasını gerçek iş çıktısı/proje/sertifika ve insan değerlendiricisine bağlayarak doğrular, rol bazında onay/puan tutar.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://fuel50.com/skills-data-accelerator",
+        "accessed_at": "2026-10-13T18:32:54.585Z",
+        "claim": "Fuel50 Skills Data Accelerator skills claim->work evidence->validation işini zaten ürünleştiriyor",
+        "observation": "HR yetenek haritalaması, çalışan tarafından beceri doğrulaması, geçerli yetkinlik kanıtıyla güncel skills inventory ve yönetici onayı sağlar.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://preview.eightfold.ai/talent-intelligence-platform/",
+        "accessed_at": "2026-10-13T18:32:54.585Z",
+        "claim": "Eightfold Talent Intelligence Platform skills claim->work evidence->validation işini zaten ürünleştiriyor",
+        "observation": "Kurumsal HR veri girişiyle Validated/Likely/To-be-Validated/Missing beceri sınıfları ve insan/iş kanıtı değerlendirmesi sağlar.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "search_complete": false,
+        "queries": [
+          "Türkiye çalışan beceri kanıtı HR beceri doğrulama yazılımı",
+          "Türkiye çalışan yetkinlik kanıt iş çıktısı HR analitiği"
+        ],
+        "direct_competitors": [],
+        "scope": "Türkiye kuruluşları, HR analytics buyer ve employee skill work evidence validation"
+      },
+      "global": {
+        "direct_count": 4,
+        "search_complete": true,
+        "queries": [
+          "Workday Skills Cloud skills inference verify worker profile",
+          "Gloat skill validation agent work evidence",
+          "Fuel50 skills data accelerator validation",
+          "Eightfold AI validated skills talent intelligence"
+        ],
+        "direct_competitors": [
+          {
+            "name": "Workday Skills Cloud",
+            "url": "https://doc.workday.com/admin-guide/en-us/human-capital-management/skills-and-skills-cloud/skills-cloud/ilb1557158988004.html",
+            "same_customer_job_workflow_reason": "HR ekipleri için çalışanların iş geçmişi/proje kayıtlarından skill çıkarımı, profil üzerinden çalışan doğrulaması ve HR yetenek kanıtı; pozisyon/süreç kartıyla eşleşiyor."
+          },
+          {
+            "name": "Gloat Skill Validation Agent",
+            "url": "https://gloat.com/use-cases-agents/skill-validation-agent/",
+            "same_customer_job_workflow_reason": "Çalışan beceri iddiasını gerçek iş çıktısı/proje/sertifika ve insan değerlendiricisine bağlayarak doğrular, rol bazında onay/puan tutar."
+          },
+          {
+            "name": "Fuel50 Skills Data Accelerator",
+            "url": "https://fuel50.com/skills-data-accelerator",
+            "same_customer_job_workflow_reason": "HR yetenek haritalaması, çalışan tarafından beceri doğrulaması, geçerli yetkinlik kanıtıyla güncel skills inventory ve yönetici onayı sağlar."
+          },
+          {
+            "name": "Eightfold Talent Intelligence Platform",
+            "url": "https://preview.eightfold.ai/talent-intelligence-platform/",
+            "same_customer_job_workflow_reason": "Kurumsal HR veri girişiyle Validated/Likely/To-be-Validated/Missing beceri sınıfları ve insan/iş kanıtı değerlendirmesi sağlar."
+          }
+        ],
+        "scope": "Global enterprise HR skill evidence, employee review and capability verification"
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "İnsan tarafından sağlanan CSV beceri/belge/proje verisinden iddia-kanıt matrisi; çalışan ve HR yöneticisi manuel review; browser-based form/CSV-PDF export; otomatik ML skill inference çalıştırılmaz.",
+      "dependency_inventory": [
+        "Manual HR CSV imports",
+        "Client-side browser rule engine and export",
+        "No paid AI runtime",
+        "Hosting/domain separate"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "91 kayıtlı tarihçede birebir müşteri+iş+iş akışı canonical key yok; ret nedeni rekabettir"
+    },
+    "research_attempts": [
+      {
+        "queries": [
+          "SAP TechWolf acquisition ITmedia Oct 9 2026"
+        ],
+        "outcome": "Article event identified"
+      },
+      {
+        "queries": [
+          "Workday Skills Cloud",
+          "Gloat Skill Validation",
+          "Fuel50 Skills Data",
+          "Eightfold validated skills"
+        ],
+        "outcome": "Four independent same-buyer/job/workflow global competitors verified"
+      }
+    ]
+  }
+}
