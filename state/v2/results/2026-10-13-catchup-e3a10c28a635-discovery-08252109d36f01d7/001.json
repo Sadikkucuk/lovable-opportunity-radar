@@ -1,0 +1,167 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-08252109d36f01d7",
+  "input_hash": "08252109d36f01d7138f4dbefda47b194c1af457e897587689dcdf299b86ab8d",
+  "token": "d9b9c0c1-4cb4-4f25-bcd8-c30160a98b92",
+  "finished_at": "2026-10-13T05:17:29.107Z",
+  "outcome": "done",
+  "reason": "10 sabit catchup haberinin tamamı karara bağlandı: 3'ü koşullu ham fırsat, 7'si no_opportunity. Kotanın ön mutabakat niteliği ve orijinal kaynağa erişim sınırlamaları ayrı belirtildi; Qualified ve Türkiye/global rekabet onayı değildir.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "87c86e3667f912c97ff46b82",
+        "decision": "no_opportunity",
+        "reason": "12 Ekim özgün Inc42 haberi Lenskart'ın büyük ortak hisse satışı ve borsa hareketini doğruluyor. İhracat/teknoloji/iş süreci için yeni veri hakkı, zorunluluk veya belirlenebilir farklı bir müşteri işi yaratmıyor.",
+        "canonical_source_url": "https://inc42.com/buzz/lenskart-shares-slump-5-amid-bulk-deal-buzz/",
+        "opportunities": []
+      },
+      {
+        "article_key": "87c8ed5daa0a5d96976528ad",
+        "decision": "opportunity",
+        "reason": "12 Ekim Reuters haberinde AB-Çin hibrit araç ithalatı için yıllık 350 bin araçlık ön mutabakat aktarılıyor; nihai uygulama/mevzuat yürürlük koşulu ayrıca resmen doğrulanmadı. Bayi ve ithalatçı için gelecekteki tahsis, sipariş öncelik ve fiyat senaryolarını elle karşılaştırma iş akışı somut.",
+        "canonical_source_url": "https://www.reuters.com/business/autos-transportation/european-chinese-automakers-launch-product-blitz-paris-car-show-fight-market-2026-10-12/",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-08252109d36f01d7:87c8ed5daa0a5d96976528ad:01",
+            "canonical_key": "eu-hybrid-vehicle-importers|evaluate-import-allocation-under-proposed-quota|manual-quota-stock-margin-scenario-ledger",
+            "idea_name": "AB Hibrit İthalat Kota Senaryosu",
+            "target_customer": "AB hibrit araç ithalatçıları",
+            "buyer": "Ürün ve ithalat planlama müdürü",
+            "core_job": "Önerilen ithalat kotası koşullarında araç siparişlerini ithalatçı/marka/model arasında önceliklendirmek",
+            "product_mechanism": "İthalat planı CSV, talep, mevcut stok, potansiyel kota limiti, dağıtım ve marj senaryosu",
+            "why_now": "AB ve Çin arasında hibrit araç miktarına ilişkin ön anlaşma haberi",
+            "before_state": "İthalatçı sipariş ve kota etkileri manuel tablolarla ayrı kıyaslanıyor",
+            "after_state": "Farklı limit varsayımlarına göre tahsis ve kâr etkisi; hukukî uygunluk kararı değildir",
+            "scope_hint": "Dünya",
+            "canonical_source_urls": [
+              "https://www.reuters.com/business/autos-transportation/european-chinese-automakers-launch-product-blitz-paris-car-show-fight-market-2026-10-12/"
+            ],
+            "supporting_article_ids": [
+              "9b11ab916af2143127a45501"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.reuters.com/business/autos-transportation/european-chinese-automakers-launch-product-blitz-paris-car-show-fight-market-2026-10-12/",
+                "accessed_at": "2026-10-13T05:17:29.107Z",
+                "observation": "12 Ekim Reuters haberinde AB-Çin hibrit araç ithalatı için yıllık 350 bin araçlık ön mutabakat aktarılıyor; nihai uygulama/mevzuat yürürlük koşulu ayrıca resmen doğrulanmadı. Bayi ve ithalatçı için gelecekteki tahsis, sipariş öncelik ve fiyat senaryolarını elle karşılaştırma iş akışı somut.",
+                "provenance": "independent_corroboration"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "88609c8f52214006a590bf5a",
+        "decision": "no_opportunity",
+        "reason": "Securities Times'ın 13 Ekim özgün analizinde üreticiler ve uygulamalar arasında MCP/A2A ile izinli AI telefon entegrasyonu anlatılıyor. Temel değer harici mobil/agent entegrasyonu gerektiriyor; yalnız manuel izin matrisi önerisi mevcut Agent Sandbox Policy Desk'e semantik yakın. Bağımsız yeni ürün çıkarılmadı.",
+        "canonical_source_url": "https://stcn.com/article/detail/4213396.html",
+        "opportunities": []
+      },
+      {
+        "article_key": "889bb59aec46aae9cf0d8d8b",
+        "decision": "no_opportunity",
+        "reason": "Reuters 12 Ekim Paris Otomobil Fuarı örnekleri Renault, Stellantis ve Çinli markaların model lansmanlarını anlatıyor. Bu fuar rekabeti tek başına yeni düzenli operasyonel iş ya da ayrı yazılım zorunluluğu ortaya koymuyor; hibrit ithalat kotası ayrı 1 numaralı makalede değerlendirildi.",
+        "canonical_source_url": "https://www.reuters.com/business/autos-transportation/european-chinese-automakers-launch-product-blitz-paris-car-show-fight-market-2026-10-12/",
+        "opportunities": []
+      },
+      {
+        "article_key": "88b5ab9057341e1b734577f0",
+        "decision": "opportunity",
+        "reason": "12 Ekim Çin Maliye Bakanlığı/Vergi İdaresi duyurusu 1 Nisan 2027 itibarıyla NEV ihracat KDV iade oranının %13'ten %9'a ineceğini, sınırın gümrük beyanı tarihine bağlandığını doğruluyor. İhracat finans departmanı için sevkiyat tarihi, ürün kapsamı ve marj senaryosu hesaplaması gerekli.",
+        "canonical_source_url": "https://www.yicai.com/brief/103390128.html",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-08252109d36f01d7:88b5ab9057341e1b734577f0:01",
+            "canonical_key": "china-ev-export-finance-teams|model-2027-export-vat-rebate-reduction|shipment-date-product-and-margin-simulator",
+            "idea_name": "NEV İhracat Vergi İadesi Etki Simülatörü",
+            "target_customer": "Çinli NEV üreticileri ve ihracat finans ekipleri",
+            "buyer": "İhracat finansmanı müdürü",
+            "core_job": "Ürün ve gümrük çıkış tarihine göre 2027 vergi iadesi düşüşünü marj bütçesine işlemek",
+            "product_mechanism": "Kullanıcının girdiği ürün kodu, matrah, ihracat tarihi, 13/9% senaryosu ve toplam sapma tablosu",
+            "why_now": "12 Ekim 2026 duyurusunda 1 Nisan 2027 tarihinden itibaren NEV iadesinin düşürülmesi",
+            "before_state": "Araç bazlı sipariş/gümrük çıkış tarihi ile vergi bütçesi farklı tablolarla planlanıyor",
+            "after_state": "Tarih/sınıf bazlı farklı iade senaryoları ve marj etki raporu; resmî vergi görüşü değildir",
+            "scope_hint": "Dünya",
+            "canonical_source_urls": [
+              "https://www.yicai.com/brief/103390128.html"
+            ],
+            "supporting_article_ids": [
+              "bb040c57c333f3f344ed144e"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.yicai.com/brief/103390128.html",
+                "accessed_at": "2026-10-13T05:17:29.107Z",
+                "observation": "12 Ekim Çin Maliye Bakanlığı/Vergi İdaresi duyurusu 1 Nisan 2027 itibarıyla NEV ihracat KDV iade oranının %13'ten %9'a ineceğini, sınırın gümrük beyanı tarihine bağlandığını doğruluyor. İhracat finans departmanı için sevkiyat tarihi, ürün kapsamı ve marj senaryosu hesaplaması gerekli.",
+                "provenance": "original_or_primary"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "88f48da615547e5302b2e5e7",
+        "decision": "opportunity",
+        "reason": "ThePaper Jiangning bölgesi 9 Ekim birincil saha haberinde Nanjing'de yaklaşık 5.000 m² ortak robot gerçek ortam eğitim/test sahasının son hazırlıkları, çoklu zeminli testler, sensör kayıtları ve yetenek profili açıklanıyor. Robotik KOBİ'ler için iş/zemin test serilerinin tekrarlanabilir kabul kayıtları ürün hipotezidir.",
+        "canonical_source_url": "https://m.thepaper.cn/newsDetail_forward_34217292",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-08252109d36f01d7:88f48da615547e5302b2e5e7:01",
+            "canonical_key": "robotics-training-site-teams|record-repeatable-terrain-task-acceptance|scenario-test-trial-and-defect-ledger",
+            "idea_name": "Robot Saha Kabul Deneyi Defteri",
+            "target_customer": "Robotik test/eğitim merkezleri ve robot entegratörleri",
+            "buyer": "Saha test ve kalite sorumlusu",
+            "core_job": "Robotun farklı engel/zeminlerdeki başarısını kabul testlerine göre belgelemek",
+            "product_mechanism": "Senaryo/zemin görevi, tekrar sayısı, sensör dosyası referansı, hata ve operatör puanlama CSV kayıtları",
+            "why_now": "Nanjing çoklu saha robot test okulunun açılış hazırlığı ve ortak kullanımı",
+            "before_state": "Robot performansı videolar, laboratuvar notları ve ayrı test tablolarında parçalanıyor",
+            "after_state": "İzlenebilir test denemesi, koşul/provenans ve kabul istisnası matrisi",
+            "scope_hint": "Dünya",
+            "canonical_source_urls": [
+              "https://m.thepaper.cn/newsDetail_forward_34217292"
+            ],
+            "supporting_article_ids": [
+              "6cd7525963d24b401a560ab4"
+            ],
+            "source_observations": [
+              {
+                "url": "https://m.thepaper.cn/newsDetail_forward_34217292",
+                "accessed_at": "2026-10-13T05:17:29.107Z",
+                "observation": "ThePaper Jiangning bölgesi 9 Ekim birincil saha haberinde Nanjing'de yaklaşık 5.000 m² ortak robot gerçek ortam eğitim/test sahasının son hazırlıkları, çoklu zeminli testler, sensör kayıtları ve yetenek profili açıklanıyor. Robotik KOBİ'ler için iş/zemin test serilerinin tekrarlanabilir kabul kayıtları ürün hipotezidir.",
+                "provenance": "original_or_primary"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "891d723a2123181980b3c803",
+        "decision": "no_opportunity",
+        "reason": "12 Ekim 财联社 yatırım değerlendirmesi Avrupa hisselerinin ABD AI temalı rallisinin gerisinde kalışını açıklıyor. Piyasa performansı ölçümleri yeni Lovable-uyumlu bir alıcı iş akışı veya operasyonel zorunluluk sağlamıyor.",
+        "canonical_source_url": "https://finance.eastmoney.com/a/202610123892885270.html",
+        "opportunities": []
+      },
+      {
+        "article_key": "891dc69733bba9523f8cac3c",
+        "decision": "no_opportunity",
+        "reason": "WEMC 2026 resmi konferans programı 12-14 Ekim etkinliğini doğruluyor; organizasyon/sergi yeni bir ticarî zorunluluk, veri akışı veya farklılaşan yazılım müşterisi gereği göstermiyor.",
+        "canonical_source_url": "https://www.wemc-new.com/cnt_273.html",
+        "opportunities": []
+      },
+      {
+        "article_key": "89639512414b29b1b2f742f1",
+        "decision": "no_opportunity",
+        "reason": "China Daily RSS başlığındaki Putin-Trump telefon görüşmesi siyasi/diplomatik haber; doğrulanmış, Lovable tabanlı, harici canlı veri veya servis istemeyen yeni müşteri iş akışı bulunmadı. Özgün haberin tam metni teyit edilmedi.",
+        "canonical_source_url": "https://www.chinadaily.com.cn/",
+        "opportunities": []
+      },
+      {
+        "article_key": "899fb8d9f367a667d562dd0f",
+        "decision": "no_opportunity",
+        "reason": "'Management Consultant: 284 Jobs' arama sonucu dinamik iş ilanı listeleme sayfası; yeni sektörel olay veya müşteriye özel tekrarlanan problem kanıtlamıyor. Liste her an değişebilir.",
+        "canonical_source_url": "https://jobs.heise.de/",
+        "opportunities": []
+      }
+    ]
+  }
+}
