@@ -1,0 +1,139 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-0dd241ccd32eaef3",
+  "input_hash": "0dd241ccd32eaef3a63c96bfe5f36d4a6132643adc8d33bce07fe21fdb95fcaa",
+  "token": "109ad71e-4cf1-4489-bbf9-ac8091ee5750",
+  "finished_at": "2026-10-13T05:22:45.334Z",
+  "outcome": "done",
+  "reason": "10 haberde 2 doğrulanabilir ham fırsat, 6 no_opportunity, 2 tam metni doğrulanamadığı için unverified. Sogou kapanış tarihi ve ifo anketinde artan malzeme sıkıntısı birincil/özgün kaynakla doğrulandı.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "5e7fe3b18d347f73ca123d8a",
+        "decision": "unverified",
+        "reason": "Nikkei xTECH 12 Ekim haberinde Lib Work ile 3D baskı teknoloji girişiminin Güneydoğu Asya konut pazarında sermaye ortaklığı başlığı var; özgün tam metin robot erişim engeli nedeniyle okunamadı, partner adı ve kullanım yetenekleri bağımsız doğrulanamadı. Tek başına işlev çıkartılmadı.",
+        "canonical_source_url": "https://xtech.nikkei.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "5e8384c7bf6fd8034dda7972",
+        "decision": "opportunity",
+        "reason": "IT之家 özgün 12 Ekim makalesi Tencent'e bağlı Sogou Wenwen ve mağazanın 7 Kasım 2026 23:59'da kalıcı kapanacağını, kullanıcı hesaplarının otomatik silineceğini ve puan kullanımının son tarihe bağlı olduğunu duyuruyor. Kullanıcının veri/ödül/abonelik tasfiye adımlarını manu­el belge ve hatırlatma listesiyle izlemek tekrarlanan SaaS kapanma problemidir.",
+        "canonical_source_url": "https://www.ithome.com/1/012/040.htm",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-0dd241ccd32eaef3:5e8384c7bf6fd8034dda7972:01",
+            "idea_name": "Dijital Hizmet Kapanış Hazırlık Defteri",
+            "canonical_key": "consumer-service-sunset-users|track-export-reward-expiry-and-account-closure|user-provided-exit-document-and-deadline-ledger",
+            "target_customer": "Kapanan dijital servislerin veri saklamak isteyen müşterileri",
+            "buyer": "Kullanıcı veya küçük kurum BT sorumlusu",
+            "core_job": "Servis kapanışında veri dışa aktarımı, biriken kredi ve hesap tasfiyesini kaçırmamak",
+            "product_mechanism": "Kullanıcı manuel kaydettiği servis, veri dosyası, ödül bakiyesi ve son tarih görev defteri; takvim/PDF dışa aktarımı",
+            "why_now": "Tencent Sogou Wenwen'nin 7 Kasım 2026 kapanış duyurusu",
+            "before_state": "Kapanış duyuruları ve kullanıcı veri/talep hakları farklı servis panellerinde kalıyor",
+            "after_state": "İşlem doğrulama listesi, birikmiş puan ve veri arşiv kanıtı",
+            "scope_hint": "Dünya",
+            "canonical_source_urls": [
+              "https://www.ithome.com/1/012/040.htm"
+            ],
+            "supporting_article_ids": [
+              "52bfe2fddd24a2e3e32ebdf2"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.ithome.com/1/012/040.htm",
+                "accessed_at": "2026-10-13T05:22:45.334Z",
+                "observation": "IT之家 özgün 12 Ekim makalesi Tencent'e bağlı Sogou Wenwen ve mağazanın 7 Kasım 2026 23:59'da kalıcı kapanacağını, kullanıcı hesaplarının otomatik silineceğini ve puan kullanımının son tarihe bağlı olduğunu duyuruyor. Kullanıcının veri/ödül/abonelik tasfiye adımlarını manu­el belge ve hatırlatma listesiyle izlemek tekrarlanan SaaS kapanma problemidir.",
+                "provenance": "original_publisher"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "5edfba21d60cb0bf0f2a36a2",
+        "decision": "opportunity",
+        "reason": "ifo 12 Ekim 2026 birincil sanayi anketine göre ara mamul sıkıntısı %13,3'ten %14,6'ya, bilişim/elektronik/optik üreticilerinde %33,2'den %37,8'e yükseldi. Bu makro anket, her üreticinin aynı stok sorunu yaşadığı anlamına gelmez; düşük stok-uzun tedarik alternatifi için satın alma senaryosu somut iş hipotezidir.",
+        "canonical_source_url": "https://www.ifo.de/en/facts/2026-10-12/material-shortages-german-manufacturing-rise-again",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-0dd241ccd32eaef3:5edfba21d60cb0bf0f2a36a2:01",
+            "idea_name": "Ara Mamul Kıtlık Üretim Senaryosu",
+            "canonical_key": "electronics-manufacturing-planners|simulate-component-shortage-impact-on-workorders|manual-bom-stock-alternate-and-workorder-triage",
+            "target_customer": "Almanya ağırlıklı elektronik ve optik ekipman üreticileri",
+            "buyer": "Üretim planlama ve satın alma müdürü",
+            "core_job": "Kritik parça eksikliğinin sipariş teslim, üretim çizelgesi ve ikame seçeneklerine etkisini öngörmek",
+            "product_mechanism": "Manuel BOM, sipariş önceliği, mevcut stok, ETA, alternatif onayı ve gecikme maliyeti ile senaryo hesaplama",
+            "why_now": "ifo Eylül anketinde elektronik ve optik üretimde malzeme kıtlığında artış",
+            "before_state": "İş emri, tedarikçi teslim ve ikame bilgisi Excel'lerde dağınık tutuluyor",
+            "after_state": "Gecikecek iş emri, alternatif parça gereği ve teslimat öncelik raporu",
+            "scope_hint": "Dünya",
+            "canonical_source_urls": [
+              "https://www.ifo.de/en/facts/2026-10-12/material-shortages-german-manufacturing-rise-again"
+            ],
+            "supporting_article_ids": [
+              "1694119d8a7b71a13b0c1392"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.ifo.de/en/facts/2026-10-12/material-shortages-german-manufacturing-rise-again",
+                "accessed_at": "2026-10-13T05:22:45.334Z",
+                "observation": "ifo 12 Ekim 2026 birincil sanayi anketine göre ara mamul sıkıntısı %13,3'ten %14,6'ya, bilişim/elektronik/optik üreticilerinde %33,2'den %37,8'e yükseldi. Bu makro anket, her üreticinin aynı stok sorunu yaşadığı anlamına gelmez; düşük stok-uzun tedarik alternatifi için satın alma senaryosu somut iş hipotezidir.",
+                "provenance": "official_primary"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "5ee6a1f0782e42f8f5a77218",
+        "decision": "no_opportunity",
+        "reason": "AI evrimi günlük bülteni Unitree kurucusu Wang Xingxing'in geçmişte AI'ye yeterince inanmadığı şeklindeki ifadesini aktarır. Yeni yazılım kullanma hakkı, düzenleme ya da tanımlı başka iş akışı kanıtlamıyor; özgün bülten tam metni doğrulanamadı.",
+        "canonical_source_url": "https://www.yicai.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "5ef7c62b80e6c9d5fe26ae54",
+        "decision": "no_opportunity",
+        "reason": "CnEVPost'un 12 Ekim özgün makalesi Xpeng Mona L03'ün Avustralya/Yeni Zelanda satış lansmanını ve 2027 ADAS planını doğruluyor; yeni modelin piyasaya girişi ayrıca kendi özel ürününü satmak için bağımsız bir veri/hak/tekrarlanan Lovable iş akışı göstermiyor.",
+        "canonical_source_url": "https://cnevpost.com/2026/10/12/xpeng-mona-l03-launch-australia-new-zealand/",
+        "opportunities": []
+      },
+      {
+        "article_key": "5f25f492ef68dd687f07bc53",
+        "decision": "no_opportunity",
+        "reason": "ET Retail 12 Ekim analist raporuna dayalı haberde Q2 FY27 Hindistan quick-commerce satış hacmi tahmini +%21,6 olarak aktarılıyor; henüz gerçekleşme veya yeni zorunlu operasyon değil. Tahminler tek başına eşsiz bir ürün mekaniği doğurmuyor.",
+        "canonical_source_url": "https://retail.economictimes.indiatimes.com/news/e-commerce/e-tailing/indias-quick-commerce-growth-set-to-accelerate-food-delivery-to-remain-steady-report/134880965",
+        "opportunities": []
+      },
+      {
+        "article_key": "5f703b3d535717421ec8f435",
+        "decision": "no_opportunity",
+        "reason": "CCTV Çin yerli SiC üreticisi Tongguang Semiconductor'ın gelişimiyle ilgili sektör tanıtımı; doğrulanmış özgün teknik detay, yeni standart, açık API veya alıcı için tekrarlanan darboğaz raporda erişilebilir değil.",
+        "canonical_source_url": "https://www.eet-china.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "5f71a102cd62978293fd0d14",
+        "decision": "unverified",
+        "reason": "2026 Çin Token Factory beyaz kitap başlığı algılanıyor; tam whitepaper, metrik metodolojisi, sürüm ve açık bağlantı doğrulanamadığından token maliyet/kapasite çıkarımları kanıtsız kalacak. Erişilemeyen belge bir launch gibi sayılmadı.",
+        "canonical_source_url": "https://www.ofweek.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "5fa643d6241120ea4c384e8f",
+        "decision": "no_opportunity",
+        "reason": "Hexagon Future Skills Forum konuşmacı programı duyurusu; etkinlik kadrosu açıklaması yeni ölçülebilir müşteri işi veya kuralsal yenilik sunmuyor. Tam özgün konuşmacı listesinin doğrulanması gerekmiyor çünkü tetik yalnız organizasyon haberi.",
+        "canonical_source_url": "https://www.theengineer.co.uk/",
+        "opportunities": []
+      },
+      {
+        "article_key": "5fbb5014c7798f6d804ad229",
+        "decision": "no_opportunity",
+        "reason": "Reuters'ın 12 Ekim özel haber aktarması CAISSI içinden üç yetkilinin Beyaz Saray'a raporlamaya taşınması planı; henüz yürürlükte ticari AI test standardı veya alıcı yükümlülüğü doğduğu belgelenmedi. Potansiyel politika değişimini mecburi uyum diye yorumlamadık.",
+        "canonical_source_url": "https://www.reuters.com/world/us/trump-administration-plans-move-ai-testing-agency-officials-white-house-2026-10-12/",
+        "opportunities": []
+      }
+    ]
+  }
+}
