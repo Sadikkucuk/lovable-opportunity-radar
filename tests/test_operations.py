@@ -94,6 +94,46 @@ class OperationsTests(unittest.TestCase):
         for path, raw in originals.items():
             self.assertEqual((self.root / path).read_bytes(), raw)
 
+    def test_all_four_research_workers_can_claim_after_0700_manually(self):
+        # 14:30 Istanbul: outside the automatic night-start window.
+        # The window must NOT reject fresh first-writer claims/receipts.
+        from radar.night_ops import within_night_window
+        self.e.now = datetime(2026, 10, 13, 11, 30, tzinfo=timezone.utc)
+        self.config["operations"].update({
+            "start_local": "00:01", "end_local": "07:00",
+            "hours": list(range(7)), "manual_claims_anytime": True,
+            "manual_research_workers": [1, 2, 3, 4],
+            "automatic_starts_only_in_night_window": True,
+            "claim_cutoff_after_0700": False
+        })
+        self.e.write("state/v2/config.json", self.config)
+        self.assertFalse(within_night_window(self.e.now, self.config["operations"]))
+        for worker in range(1, 5):
+            with self.subTest(worker=worker):
+                job = self.job(100 + worker, lane=(worker % 4) + 1)
+                claim = self.claim(job, worker=worker)
+                self.e.validate_claim(job, claim)
+                self.receipt(job, claim)
+                self.assertEqual(self.e.evaluate(job)["state"], "done")
+        self.assertEqual(self.e.check_protected(), 1)
+
+    def test_manual_receipt_reconciliation_does_not_create_daytime_news_run(self):
+        from radar.night_ops import within_night_window
+        self.e.now = datetime(2026, 10, 13, 11, 30, tzinfo=timezone.utc)
+        self.config["operations"].update({
+            "start_local": "00:01", "end_local": "07:00",
+            "hours": list(range(7)), "manual_claims_anytime": True
+        })
+        self.e.write("state/v2/config.json", self.config)
+        job = self.job(222)
+        claim = self.claim(job, worker=2)
+        self.receipt(job, claim)
+        self.assertFalse(within_night_window(self.e.now, self.config["operations"]))
+        self.e.tick("a" * 40, create=True)
+        self.assertEqual(self.e.evaluate(job)["state"], "done")
+        self.assertFalse(self.e.paths("state/v2/runs/2026-10-13*/manifest.json"))
+        self.assertEqual(self.e.check_protected(), 1)
+
     def test_pool_claim_requires_matching_saved_start_and_short_lease(self):
         job = self.job()
         claim = self.claim(job)
