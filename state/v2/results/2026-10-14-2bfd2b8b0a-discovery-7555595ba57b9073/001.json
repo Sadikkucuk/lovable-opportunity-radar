@@ -1,0 +1,182 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-2bfd2b8b0a-discovery-7555595ba57b9073",
+  "input_hash": "7555595ba57b90730a60ecc578e93cd8e852ce9bfb6cf566188e6966e403368e",
+  "token": "a99a876d-a407-42ae-84b6-fd1665f450ea",
+  "finished_at": "2026-10-13T21:33:30.010Z",
+  "outcome": "done",
+  "reason": "2026-10-14 frozen on haber ayrı kaynak/olay zamanı ve JTBD olarak tarandı: üç farklı ürüne dönüşebilir kanıtlı haber sinyali, altı belirgin yeni akış sunmayan haber, bir eyalete özgü tam kaynağı doğrulanamayan sinyal. Yönetici atama Haziran, ofis agent Eylül lansmanı, 13 Ekim planlı AI gözlük tanıtımı, 2026 ürün satış sayıları doğru statüde sınıflandırıldı. Ürünler yalnız Discovery hipotezi; rakip, dış hizmet ve tarihçe doğrulaması Validation'a kaldı.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "6763797dcb42963cc625668b",
+        "decision": "no_opportunity",
+        "reason": "L'Usine Nouvelle Carmen Muñoz Dormoy IESF başkanı portresidir. IESF bölgesel resmi açıklamaya göre seçimi 30 Haziran 2026'da gerçekleşmiştir; Ekim 2026'da yeni bir zorunlu mühendislik standardı, API veya operasyonel müşteri işi doğmamıştır. Dernek profili/çeşitlilik haberinden otomatik B2B ürün üretmek yeni deltanın kanıtı değildir.",
+        "opportunities": []
+      },
+      {
+        "article_key": "677fb543de15264cce103d82",
+        "decision": "opportunity",
+        "reason": "Orijinal üretici tanıtım yazısına dayanan EET China WT3000T güvenlik uygulama metni (2026 Ekim), klasik zil/buzzer ve önceden kayıtlı az sayıda alarmın tersine çok bölgeden gelen olay kodunu yerel TTS sözlü uyarıya dönüştürme mekanizmasını açıklar. BEFORE alarm mesajı için çip ses kaydı yeniden programlama. AFTER offline metinden konuşmaya uyarı, değişken bölge/olay metinlerini üretebilir. Ancak çip teknik datasheet koşulları ve bağımsız ses kalitesi/tehlike testi doğrulanmadı. Saha entegratörü alarm olay–ses metni–öncelik–yerinde tekrar/insan kabul matrisi hazırlamak zorunda olabilir.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-2bfd2b8b0a-discovery-7555595ba57b9073:677fb543de15264cce103d82:1",
+            "canonical_key": "physical-security-installation-teams|verify-multizone-offline-tts-alert-message-mapping|event-priority-text-coverage-and-human-site-acceptance-ledger",
+            "idea_name": "Çok Bölgeli Sesli Alarm Olay–Metin Kabul Defteri",
+            "core_job": "Farklı kapı, PIR, yangın ve davetsiz giriş alarm olaylarının cihazda söylenecek metin, dil, öncelik, susma/tekrar ve saha kabul adımlarını kurallı denetlemek",
+            "target_customer": "Küçük ve orta ölçekli ticari bina alarm kurulum/teknik servis entegratörleri",
+            "buyer": "Fiziksel güvenlik sistemleri devreye alma lideri",
+            "product_mechanism": "Kullanıcı alarm bölge ID/event code/metin/dil/öncelik/uyarı süre/tarih CSV'sini içe alarak eksik/çakışan mesaj, aynı anda öncelik çatışması ve insan sahada duyuldu işaretlerini tarayıcıda deterministik denetler; çipi kontrol etmez",
+            "why_now": "Ekim WT3000T yerel TTS tasarım notu yeniden ROM ses kaydı gerekmeden dinamik olay metni üretimini örnekliyor; entegratör konfigürasyon kontrolünü daha sık yapabilir.",
+            "before_state": "Alarm olayı→telesekreter ses dosyası eşlemesi cihaz bazında ayrık servis formlarındadır.",
+            "after_state": "Yalın olay–konuşma metni matrisi; hangi bölge hangi metni söyleyip ne zaman sahada onaylandığı raporlanır.",
+            "canonical_source_urls": [
+              "https://mbb.eet-china.com/forum/topic/163978_1_1.html"
+            ],
+            "supporting_article_ids": [
+              "93fab0a82272b00aa1484651"
+            ],
+            "source_observations": [
+              {
+                "url": "https://mbb.eet-china.com/forum/topic/163978_1_1.html",
+                "observation": "Üretici kullanıcı forum içeriği WT3000T çipin sabit ses kayıtları yerine metinle yerel uyarı üretimine dayanan önerilen uygulamasını anlatıyor; güvenlik performansının bağımsız doğrulaması yok."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_evidence": {
+              "signals": [
+                "Güvenlik sireni olay metninin fiziksel bölgelerle doğrulanması tekrar eden kurulum kabul işidir."
+              ],
+              "unknowns": [
+                "Saha donanım ve alarm markası entegrasyonu zorunlu değildir fakat gerçek kuruluma manuel test gerekir.",
+                "Türkiye/global alarm konfigürasyon sistemleri rekabeti bilinmiyor.",
+                "İçerik üreticisinin iddiaları gerçek sertifika/test değildir."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "678127c465fe5a18a9e5e1ee",
+        "decision": "no_opportunity",
+        "reason": "CnEVPost özgün 10 Ekim haberi Geely Galaxy Cruiser 700 PHEV aracının fiyat ve varyantla Çin'de satışa sunulduğunu doğruluyor. 12 dakika içinde 10 bin kesin sipariş şirketin sosyal medya iddiasıdır; teslimat değildir. Yeni bir model/indirim ve trade-in desteği, genel araç karşılaştırma/kampanya fiyatlandırma araçlarının mevcut müşteri işinden ayrışan ve Lovable'da satışa değer bağımsız akışını kanıtlamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "67925c938d80f274597a92fb",
+        "decision": "unverified",
+        "reason": "CLS kısa başlığı 'Mississippi eyaleti AI data center elektrik talebine uyarı' diyor. Ancak özgün elektrik regülatörü raporu, bildirim tarihi, yük MW, şebeke operatörleri ve uygulanacak somut bağlantı koşulları özgün sayfadan bağımsız okunamadı. Reuters'ın 13 Ekim Amerika genelindeki enerji ihtiyacı araştırması Mississippi eyaletine özgü yeni yükümlülüğü tek başına doğrulamaz. Bu yüzden resmi yerel olay FULL ARTICLE NOT VERIFIED; PJM Large-load Registry ve Grid Cost Allocation gibi mevcut catchup fikirlerini tekrar açmadım.",
+        "opportunities": []
+      },
+      {
+        "article_key": "679d3c09faae520232a555fb",
+        "decision": "no_opportunity",
+        "reason": "IT之家 özgün 12 Ekim haberinde projeksiyon cihazı şirketi 大眼橙 ve DingTalk'ın 13 Ekim 14:30'da QwenNote/AI 'dinleme-kayıt' gözlüğü tanıtacağını ilan ediyor. Bu bir takvimli lansman vaadi, RSS tarihi itibarıyla yapılmış etkinlik veya ticari satılmış ürün değil. Temel değer kaydı/yazıya çevirme, DingTalk Qwen agent/harici yazılım entegrasyonuna bağlı; böyle bir otomatik hizmet sıfır dış AI/runtime ilkesini karşılamaz. Alternatif bağımsız manuel iş kanıtlanmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "6850817395811414b7326eee",
+        "decision": "opportunity",
+        "reason": "CLS 12 Ekim özgün film endüstrisi haberinde PineDrama 2025 Aralık'tan bu yana 100m+ indirme ve yaklaşık 7m DAU'nun Sensor Tower atıflı tahmin olduğunu, reklamla bölüm açma modelini, başka platformlar için gelir/AI içerik teşvik sistemlerini anlatıyor. BEFORE yeni reklamla ücretsiz bölümü açma kanalı ve AI bazlı episodik içerik çoğalırken yapımcı platform reklam-verim, yayınlanan bölüm, hak/AI üretim maliyeti ve dağıtım kesintisini farklı raporlarda tutar. AFTER çoklu short-drama platformuna bağımsız içerik portföyü gönderen stüdyonun elle dışa aktarılan platform CSV'sini yapım masrafı ve kanal bazında mutabakat ihtiyacı artabilir. Doğrudan 0 rakip kanıtlanmadı.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-2bfd2b8b0a-discovery-7555595ba57b9073:6850817395811414b7326eee:1",
+            "canonical_key": "short-drama-indie-producers|reconcile-ad-unlock-revenue-and-episode-licensing-across-platforms|csv-episode-platform-revenue-rights-and-credit-ledger",
+            "idea_name": "Kısa Dizi Reklam Geliri ve Bölüm Hak Mutabakatı",
+            "core_job": "AI/klasik kısa dizi yapan bağımsız yapımcıların bölüm bazında reklamla açılma gelirlerini, platform payını, dağıtım ve üretim maliyeti ile lisans hakkına mutabakat etmek",
+            "target_customer": "Çoklu reklam destekli kısa dizi platformunda içerik yayınlayan bağımsız yapım ve dağıtım stüdyoları",
+            "buyer": "İçerik portföy finans/dijital dağıtım yöneticisi",
+            "product_mechanism": "Stüdyonun yayın/bölüm, platform dışa aktarım CSV, eCPM, unlock, net gelir payı, dil/varyant, AI kredi ve insan lisans onayı girdi dosyalarıyla tarayıcı içi deterministic gerçek-gelir/hesap/eksik-hak uyuşmazlık defteri; video üretmez, reklam SDK bağlanmaz",
+            "why_now": "PineDrama'nın reklamla kısa bölümü ücretsiz açma iş modeli ve AI dizilerin çok hızlı çoğalması 12 Ekim kaynakta açık; bağımsız stüdyo birim ekonomisini platformlar arasında kanıtlama ihtimali artıyor.",
+            "before_state": "Platform gelir CSV'leri, bölüm varyantı, içerik lisansı ve AI üretim gideri ayrı kişilerin manuel tablolarında kalır.",
+            "after_state": "Bölüm/ülke/platform başına gerçekleşen reklam hak edişi, komisyon, lisans ve üretim maliyeti sahip imzalı raporda eşlenir.",
+            "canonical_source_urls": [
+              "https://www.cls.cn/detail/2501885"
+            ],
+            "supporting_article_ids": [
+              "628f1545cf394835a8607081"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.cls.cn/detail/2501885",
+                "observation": "CLS 12 Ekim: PineDrama reklam izleyerek bölüm kilidi açılan dağıtım modelini kullanıyor; downloads/DAU üçüncü taraf analist verisidir, gerçek stüdyo royalty tahsilatı makalede doğrulanmamış."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_evidence": {
+              "signals": [
+                "Reklam destekli kısa dizi izlenmesini ürünleştiren yeni dağıtım kanallarının kapsamı genişliyor."
+              ],
+              "unknowns": [
+                "Yapımcı platformlarında bölüme göre gelir CSV ihracatı standart değil, gerçek veri erişimi müşteriden istenmeli.",
+                "Türkiye/global telif ve royalty araçlarının doğrudan rekabet sayısı bilinmiyor.",
+                "İçerik lisans şartları ülkeler arasında uzman onayı gerektirir."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "685efa45be1755cd2116d348",
+        "decision": "no_opportunity",
+        "reason": "36Kr 12 Ekim Çin Lojistik Satınalma Federasyonu eylül endeksini %51,5 ve aylık +0,6 puan olarak bildiriyor; 5 aydır genişleme bölgesi. Bu yalnız makro ekonomik endeks ve gerçekleşen geçmiş dönem ölçümüdür; somut yeni ithalat kuralı, depo ürün standardı veya müşteri departmanında sonradan doğan ayrı workflow sunmuyor. Mevcut kargo/CMMS/tedarik planlama yazılımı fırsatlarına başlıktan kopya eklenmedi.",
+        "opportunities": []
+      },
+      {
+        "article_key": "68b4c6ed01f002166fb118d9",
+        "decision": "no_opportunity",
+        "reason": "Huxiu'nin Ekim tarihli rekabet haberi Feishu/Doubao iş arkadaşı agentının 15 Eylül 2026'daki lansmanını, diğer büyük Çin internet platformlarıyla ofis automation rekabetini anlatıyor. Ürünler zaten canlı agent, üçüncü taraf mesaj/belge, kurumsal yetki ve model sağlayıcıları gerektiriyor; bu ana ürünü sıfır dış API/agent runtime ile kopyalamak mümkün değil. Sırf farklı agent adıyla Lovable ürün fırsatı çıkarılmadı; yeni Ekim lansmanı olduğu da iddia edilmedi.",
+        "opportunities": []
+      },
+      {
+        "article_key": "68c71f69480c7756a5024248",
+        "decision": "opportunity",
+        "reason": "TechCrunch 11 Ekim özgün yazısı Amazon'un Microsoft'u izleyerek yerel yönetimlerle veri merkezi müzakerelerinde NDA kullanmayı bırakacağını teyit ediyor. Önceden kamu bilgilendirme ve yük tüketim tablolarını gizlilik sınırlayabilirdi; şimdi yeni proje paydaşlarının kamuya açıklanmış elektrik/su/istihdam/şebeke masrafı iddialarını farklı oturumlar ve sürelerde tutarlı açıklama/fikri mülkiyet redaksiyonu için bir yerel iş akışı doğabilir. Bu herhangi bir yerel veri açıklama yasası ilanı değildir ve NDA kaldırımı zorunlu proje onayı sağlamaz. Kamu katılımını kolaylaştıran offline kanıt karşılaştırma hipotezi; mevcut permit/townhall yazılımları direkt rakip olabilir.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-2bfd2b8b0a-discovery-7555595ba57b9073:68c71f69480c7756a5024248:1",
+            "canonical_key": "data-center-project-community-liaison-teams|reconcile-public-utility-impact-disclosures-and-resident-questions|offline-claim-source-redaction-and-hearing-response-ledger",
+            "idea_name": "Veri Merkezi Kamusal Etki Açıklama Kanıt Defteri",
+            "core_job": "Yeni veri merkezi projesinin kamuya açıkladığı enerji, su, imar, vergi indirimi ve iş yaratma iddialarını orijinal kanıt/belge sürümüne ve belediye/sakin sorularına eşleyerek tutarlı cevap dosyası oluşturmak",
+            "target_customer": "Büyük veri merkezi geliştiricilerinin kamu ilişkileri/izin ekipleri ve belediye danışmanları",
+            "buyer": "Veri merkezi proje ruhsat/paydaş ilişkileri direktörü",
+            "product_mechanism": "Kullanıcının belge bağlantısı, açıklama tarihi, kaynak hesap varsayımı, su/elektrik yük tablosu, kamu toplantı soru/yanıt ve redaksiyon onayı CSV'sini çevrimdışı karşılaştırır; kamu forumlarından otomatik veri çekmez veya resmi ruhsat kararı vermez",
+            "why_now": "Amazon Ekim başında ve Microsoft daha önce belediyelerle veri merkezi görüşmelerinde NDA'dan vazgeçeceğini duyurdu; kamunun mühendislik etkilerini inceleme talebi görünür oldu.",
+            "before_state": "Kamu duyurusu, mühendislik etki raporu, belediye oturum dosyası, gizlilik/redaksiyon kararları aynı projenin farklı ekiplerinde bulunabilir.",
+            "after_state": "Kamuya açıklanan her iddia belge versiyonu/varsayım/tarih ile bağlanır; eksik yanıt ve çelişkili beyan denetim tablosu oluşur.",
+            "canonical_source_urls": [
+              "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/",
+              "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndAs/"
+            ],
+            "supporting_article_ids": [
+              "4a73955d5cb378c58139ac84"
+            ],
+            "source_observations": [
+              {
+                "url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/",
+                "observation": "Amazon ve Microsoft'un yerel veri merkezi pazarlıklarında NDA'dan vazgeçme kararı ve açıklama kısıtları tartışılıyor; etkilerin kamuya gerçekten nasıl yayımlanacağı hâlâ belirsiz."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_evidence": {
+              "signals": [
+                "Veri merkezi şebeke-su etkisi ve sakin itirazları ekonomik karar ve izin sürecini etkileyen gerçek paydaş işidir."
+              ],
+              "unknowns": [
+                "Kamu etki raporu / izin yönetimi SaaS rakiplerinin TR/global doğrudan sayısı bilinmiyor.",
+                "NDA kalktı diye tüm ticari sır belgelerinin kamuya otomatik açılacağı varsayılmıyor.",
+                "Sektör için kamuya açıklama standardı bu haberde yasalaştırılmadı."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "68d873c3eaddec320c7df7cb",
+        "decision": "no_opportunity",
+        "reason": "重庆千里科技 12 Ekim resmi geçici duyuru Eylül binek araç satışını 6252 adet, geçen yılın aynı ayına göre -%50,25; NEV alt grup 235 -%94,69 olarak bildiriyor. Şirket kendi raporunda nihai rakamların denetime tabi olduğunu söylüyor. Şirketin satış düşüşü yeni ihracat şartı/ürün teknolojisi/tekrarlayan alıcı workflow'u yaratmaz; araç/stok satış tahmini genel yazılım pazarında yeterince ayrışmış yeni mekanizma olarak ispatlanmadı.",
+        "opportunities": []
+      }
+    ]
+  }
+}
