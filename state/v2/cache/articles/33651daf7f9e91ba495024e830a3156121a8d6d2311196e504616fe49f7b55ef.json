@@ -1,0 +1,48 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "33651daf7f9e91ba495024e830a3156121a8d6d2311196e504616fe49f7b55ef",
+  "decision": {
+    "article_key": "cf46bf8f82f0b770b41fcb5f",
+    "decision": "opportunity",
+    "reason": "EVENT: Economic Times, BASF Evonik işlemi henüz kesinleşmemişken BASF'nin sıvı soğutma ürününü gündeme aldı. BASF'nin 8 Ekim birincil duyurusu GLYTHERMIN DC PG25'in NVIDIA DSX Ready Coolant yeterliliğini doğrular. BEFORE: akışkan uygunluğu farklı datasheetlerde. AFTER: kabul edilen sıcaklık/kimya/loop gereksinimlerinin açık teknik yeterlilik ölçütü. DELTA: soğutma sıvısı uyumluluk ve kanıt izleme gereksinimi.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-1e934380178f4314:cf46bf8f82f0b770b41fcb5f:1",
+        "canonical_key": "data-center-facility-engineers|qualify-coolant-and-maintain-compatibility-evidence|offline-datasheet-approval-matrix",
+        "idea_name": "Soğutma Sıvısı Uygunluk Kanıt Matrisi",
+        "core_job": "Sıvı soğutmalı AI veri merkezlerinde değişik üreticilerin akışkanlarını loop tasarımı ve sertifikasyon şartlarına göre belgeleyip karşılaştırmak",
+        "target_customer": "AI veri merkezi mekanik tasarım, sıvı soğutma ve devreye alma ekipleri",
+        "buyer": "Veri merkezi mekanik/commissioning yöneticisi",
+        "product_mechanism": "Kullanıcının sağladığı teknik spesifikasyon ve datasheet ölçümlerini kurallarla kıyaslayıp uygunluk/uyumsuzluk ve eksik kanıt raporu üreten yerel matriks",
+        "why_now": "8 Ekim 2026 BASF GLYTHERMIN DC PG25 ürününün NVIDIA DSX Ready Coolant niteliğini açıklaması, tedarikçi/akışkan onay kriterlerinin somutlaşmasına işaret etti.",
+        "before_state": "Soğutma akışkanının kimya, uyumluluk, sıcaklık ve inhibitör verileri ayrı tedarikçi dosyalarında değerlendirilir.",
+        "after_state": "Kriter sürümü, tedarikçi kanıt URL/sertifika ve test sonucu karşılaştırması tek kanıt matrisinde tutulur.",
+        "canonical_source_urls": [
+          "https://www.basf.com/global/en/media/news-releases/2026/10/p-26-162",
+          "https://chemicals.economictimes.indiatimes.com/news/industry-and-market/basfs-speciality-chemicals-push-gathers-pace-as-evonik-deal-talks-remain-open/134887971"
+        ],
+        "supporting_article_ids": [
+          "ed481623e6bfe729da85c672"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.basf.com/global/en/media/news-releases/2026/10/p-26-162",
+            "observation": "BASF 8 Ekim açıklaması NVIDIA DSX Ready Coolant PG25 niteliğini, sekonder loop tek faz cold plate kullanımını belirtiyor; ürün lansmanı Evonik devralmasının tamamlandığı anlamına gelmez."
+          }
+        ],
+        "scope_hint": "Dünya; teknik datasheet, kullanıcı CSV içe aktarma, deterministik kurallar; zorunlu dış API/DB/AI modeli yok.",
+        "local_evidence": {
+          "signals": [
+            "BASF somut DSX Ready Coolant teknik yeterlilik açıklaması"
+          ],
+          "unknowns": [
+            "Tüm tedarikçilerin onay listesi ve doküman telif/hakları ayrı kontrol gerektirir",
+            "Türkiye/global doğrudan rakip sayısı bilinmiyor"
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-1e934380178f4314/002.json",
+  "valid_until": "2026-11-12T20:34:14Z"
+}

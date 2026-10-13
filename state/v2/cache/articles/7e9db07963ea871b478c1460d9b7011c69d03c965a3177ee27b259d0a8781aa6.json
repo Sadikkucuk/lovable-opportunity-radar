@@ -1,0 +1,47 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "7e9db07963ea871b478c1460d9b7011c69d03c965a3177ee27b259d0a8781aa6",
+  "decision": {
+    "article_key": "ce0b0245d86bd462861acf15",
+    "decision": "opportunity",
+    "reason": "EVENT: 24 Eylül'de U Mobile/ZTE Malezya'da iki lokasyonda tam şebekeden bağımsız 4G/5G POC tamamladı. Üç günlük saha kurulum, konfigürasyona bağlı 52 saat güneşsiz batarya yedeği ve uydu backhaul şirket açıklamasında. Nikkei'nin Ekim derlemesini yeni Ekim lansmanı saymıyorum. DELTA: uzun kule/şebeke kurulumu yerine taşınabilir sistem; enerji otonomisi ve hızlı saha kabul planlaması somut JTBD.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-1e934380178f4314:ce0b0245d86bd462861acf15:1",
+        "canonical_key": "mobile-network-operators|plan-portable-offgrid-5g-site-readiness|offline-power-autonomy-commissioning-workbook",
+        "idea_name": "Off-grid 5G Saha Hazırlık Defteri",
+        "core_job": "Taşınabilir şebekeden bağımsız 4G/5G sahalarında PV, batarya, radyo yükü, uydu erişimi ve kabul adımlarını planlamak",
+        "target_customer": "Mobil şebeke operatörleri, kırsal kapsama ve afet haberleşme saha ekipleri",
+        "buyer": "RAN saha planlama ve enerji mühendisliği yöneticisi",
+        "product_mechanism": "Kullanıcı verisiyle çalışan tarayıcı içi enerji dengesi/batarya otonomisi hesabı, saha kurulum malzeme-checklist ve manuel test kanıt paketi",
+        "why_now": "ZTE/U Mobile 24 Eylül 2026 POC iki sahada güneş enerjili uydu backhaul ile hızlı taşınabilir kurulum gösterdi; yeni iş akışları için gerçek teknik örnek.",
+        "before_state": "Saha kurulum/enerji/backhaul planları ayrı ekiplerde ve tablolarla hazırlanır.",
+        "after_state": "Saha çevresel ve operasyonel girdilerinden dayanım senaryoları ve kabul testleri tek dosyaya bağlanır.",
+        "canonical_source_urls": [
+          "https://www.zte.com.cn/global/about/news/u-mobile-and-zte-demonstrate-portable-100-green-energy-5g-site-to-connect-remote-and-underserved-communities.html"
+        ],
+        "supporting_article_ids": [
+          "c267dcc7bed49184d1936b7a"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.zte.com.cn/global/about/news/u-mobile-and-zte-demonstrate-portable-100-green-energy-5g-site-to-connect-remote-and-underserved-communities.html",
+            "observation": "ZTE resmi duyuru 24 Eylül: 2 Malezya sahası, 3 gün devreye alma, 52 saate kadar batarya, güneş + uydu backhaul POC; sayı konfigürasyona bağlıdır."
+          }
+        ],
+        "scope_hint": "Dünya; saha telemetrisi ve canlı şebeke entegrasyonu gerekmeyen CSV ve manuel veri senaryoları. Harici API/DB/AI modeli gerekmez.",
+        "local_evidence": {
+          "signals": [
+            "İki gerçek Malezya pilotunun saha süreleri ZTE tarafından bildiriliyor"
+          ],
+          "unknowns": [
+            "Yerel Türkiye talebi ve yetkilendirme sorumlulukları araştırılmadı",
+            "Tedarikçi telekom enerji yazılımlarıyla rekabet açık"
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-1e934380178f4314/002.json",
+  "valid_until": "2026-11-12T20:34:14Z"
+}

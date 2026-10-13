@@ -1,0 +1,48 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "3742e4ef3b74e0a987a4b7b77c63acaf700b3be3f7ab28f838244e20cb074097",
+  "decision": {
+    "article_key": "cd91aabadb2cca11cbb1e698",
+    "decision": "opportunity",
+    "reason": "EVENT: Navitas, NVIDIA işbirliği ile 24 kW'lık 800 VDC→12 VDC GaN güç kartını 12 Ekim'de duyurdu; 97% verim bir HEDEF, saha sonucu değil. BEFORE: 50 V ara dönüştürücü içeren güç zinciri. AFTER: tek aşamalı doğrudan 12 V topolojisi. DELTA: dönüşüm kademesi, ısıl kayıp ve BOM seçenekleri. İkinci derece etki: veri merkezi elektrik ekiplerinin alternatif tasarım varsayımlarını tutarlı karşılaştırma ve kabul kanıtı ihtiyacı.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-1e934380178f4314:cd91aabadb2cca11cbb1e698:1",
+        "canonical_key": "ai-data-center-electrical-teams|compare-power-delivery-topologies|offline-loss-thermal-bom-scenario-workbook",
+        "idea_name": "800V Güç Yolu Senaryo Defteri",
+        "core_job": "Yüksek yoğunluklu AI raflarında 800 V/12 V güç topolojilerinin kayıp, ısıl yük, güç yoğunluğu, parça sayısı ve kabul farklarını hesaplamak",
+        "target_customer": "AI veri merkezi ve yüksek güçlü sunucu elektrik tasarımı ekipleri",
+        "buyer": "Güç elektroniği mühendislik yöneticisi",
+        "product_mechanism": "Mühendislerin girdiği dönüşüm kademesi/ölçüm/tedarikçi veri sayfası parametreleriyle çalışan tarayıcı içi deterministik kayıp ve senaryo hesaplayıcısı, PDF/CSV kabul dosyası",
+        "why_now": "12 Ekim 2026'da duyurulan 24 kW 800→12 V PDB, 50 V ara kademeyi kaldırarak alternatif raf güç tasarımı seçimlerini yeniden gündeme getirdi.",
+        "before_state": "Farklı tedarikçinin güç tasarımları ve test tabloları manuel karşılaştırılıyor.",
+        "after_state": "Aynı yük altında varsayımlar, verim hedefi ile ölçülmüş verim ayrımı, termal kayıp ve BOM kıyaslaması kayıtlı oluyor.",
+        "canonical_source_urls": [
+          "https://www.globenewswire.com/news-release/2026/10/12/3379241/0/en/index.html",
+          "https://www.semiconductor-today.com/news_items/2026/oct/navitas-131026.shtml"
+        ],
+        "supporting_article_ids": [
+          "351e71ef8f607cda7928c05b"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.globenewswire.com/news-release/2026/10/12/3379241/0/en/index.html",
+            "observation": "Navitas şirket açıklaması: 24 kW kart, 800 VDC→12 VDC tek aşama, 50 V IBC kaldırma, tam yükte %97 hedef verim; ticari saha garantisi yok."
+          }
+        ],
+        "scope_hint": "Dünya; CSV/datasheet içe aktarma, istemci tarafında deterministik hesaplama, zorunlu harici API, model, DB veya canlı cihaz entegrasyonu yok.",
+        "local_evidence": {
+          "signals": [
+            "Elektrik şebekesinden xPU'ya güç tasarımında güç kaybı azaltma ve yoğunluk gereksinimi şirket açıklamasında belirtiliyor"
+          ],
+          "unknowns": [
+            "Bağımsız verim testi yayınlanmadı",
+            "Tedarikçi BOM fiyatları kullanıcı girdisiyle karşılanmalı"
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-1e934380178f4314/002.json",
+  "valid_until": "2026-11-12T20:34:14Z"
+}
