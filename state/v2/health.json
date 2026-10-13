@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T18:25:29Z",
+  "controller_observed_at": "2026-10-13T18:25:47Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
@@ -46,11 +46,12 @@
         "schema_version": 1,
         "worker": 3,
         "invocation_id": "2682fd5d-1458-4eec-8a9a-395cb2847b18",
-        "event": "started",
-        "at": "2026-10-13T18:23:25.704Z",
-        "execution_mode": "user_requested_manual_master",
-        "note": "Only the manual claim/receipt stream; no modification of existing scheduled tasks or prompts.",
-        "path": "state/v2/worker-events/3/2682fd5d-1458-4eec-8a9a-395cb2847b18/000-started.json"
+        "event": "progress",
+        "at": "2026-10-13T18:25:31.547Z",
+        "job_id": "2026-10-11-a4dcde1ff5-discovery-37e947e9f2a059c1",
+        "stage": "receipt_saved",
+        "receipt_path": "state/v2/results/2026-10-11-a4dcde1ff5-discovery-37e947e9f2a059c1/001.json",
+        "path": "state/v2/worker-events/3/2682fd5d-1458-4eec-8a9a-395cb2847b18/001-progress.json"
       },
       "receipts_this_invocation": 1,
       "write_and_receipt_verified": true,
