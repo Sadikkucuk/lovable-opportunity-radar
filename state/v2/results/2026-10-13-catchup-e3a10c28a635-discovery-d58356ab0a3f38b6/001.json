@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-d58356ab0a3f38b6",
+  "input_hash": "d58356ab0a3f38b64bd46bfb72919a60b09387a6315df8efe0f2e40d58409787",
+  "token": "3518867f-7d08-4761-a897-faa317a8cd28",
+  "finished_at": "2026-10-13T16:11:24.880Z",
+  "outcome": "done",
+  "reason": "10 haberden Freight Fraud Awareness Day'in işaret ettiği taşıyıcı kimlik/doğrulama zinciri için bir koşullu ham ürün, 9 no_opportunity. Mevcut kataloğa yayın yapılmadı; rekabet/iş süreci sonraki aşama.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "b5098de2b07d911b4fa6e91e",
+        "decision": "no_opportunity",
+        "reason": "Çin-AB hibrit araç ticaretinde olası büyüme hakkında rapor aynı gün daha önceki AB hibrit kota senaryosu ham fırsatına dayanıyor. Yeni ürün mekanizması ve kesin düzenleyici kota hakkı ayrıca doğrulanmadı, mükerrer aday açılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b510289a6a2821e4813a7f07",
+        "decision": "no_opportunity",
+        "reason": "YourStory ana sayfa/kategori indeks başlığı bir olay anlatmıyor; tarihli özgün bilgi yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b534a1112a343a0b9380afe8",
+        "decision": "no_opportunity",
+        "reason": "LSware SuSEC 2026 Endonezya siber güvenlik konferansı etkinlik ilanı; yeni güvenlik standardı, zorunlu kontrol veya API erişimi ortaya koymuyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b55cf353da09c1981fd192ff",
+        "decision": "no_opportunity",
+        "reason": "Çin Nasdaq teknoloji ETF için geçici işlem durdurma/yeniden açma duyurusu finans piyasası operasyonu, yeni yazılım fırsatı değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b57bbe415c131b1c6e906f25",
+        "decision": "no_opportunity",
+        "reason": "Spor koçluğu için büyük AI modelinin B serisi yatırım haberi. Koçun çalıştırılması dış model, video sensor ve AI runtime gerektiriyor; başka doğrulanmış Lovable deterministik müşteri akışı yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b5e800f23a621c2c1cc848f9",
+        "decision": "no_opportunity",
+        "reason": "MBDA Fransa teknik eğitmen işe alım ilanı, dönemsel iş fırsatı; sektör çapında yeni yazılım hakkı değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b60f980813726a9395aa4a0e",
+        "decision": "no_opportunity",
+        "reason": "AkzoNobel'in Montataire boya tesisini 27 milyon avroyla modernize etmesi sermaye yatırımı haberi. Yeniden kullanılabilir yeni mevzuat, ürün dış bağlantı veya müşteri standardı kanıtlanmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b63703fd7b36f406a71c4c8f",
+        "decision": "no_opportunity",
+        "reason": "Tayvan'da parti içi çekişme siyasi haber, teknik/kamusal alıcı için yeni veri protokolü veya güncel yazılım zorunluluğu bulunmuyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b6c4b2e6b5a4e64a6dfba53d",
+        "decision": "opportunity",
+        "reason": "12 Ekim FreightWaves özgün haberinde 14 Ekim Freight Fraud Awareness Day ve kimlik taklidi, sahte teslim alma, çift aracılık (double brokering) gibi güncel yük dolandırıcılığı riskleri açıklanıyor. Organizasyon kampanyası tek başına yeni kanun değil; taşıyıcı/broker kimliği, havale/kargo devri ve manuel iki kişili teyit kanıtı için alıcı işi belirgin. Canlı carrier doğrulama API'si yoksa kanıtın doğruluğu yalnız insan kontrolüdür.",
+        "canonical_source_url": "https://www.freightwaves.com/news/freight-fraud-awareness-day-returns-as-strategic-cargo-theft-reshapes-trucking",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-d58356ab0a3f38b6:b6c4b2e6b5a4e64a6dfba53d:01",
+            "canonical_key": "freight-brokers-and-shippers|verify-carrier-identity-before-pickup-and-release|contact-callback-pickup-authorization-and-evidence-ledger",
+            "idea_name": "Freight Pickup Identity Handoff Ledger",
+            "target_customer": "ABD kargo brokerları, göndericiler ve orta ölçekli lojistik aracıları",
+            "core_job": "Yük devrinden önce gerçek taşıyıcı ve yükü teslim almaya gelen sürücü ile bağımsız geri arama, belge ve insan onayını kayıt altına almak",
+            "product_mechanism": "Manuel taşıyıcı MC/DOT kimliği, şirketin onaylı sabit numarası, yük referansı, sürücü kimlik/doğrulama zamanı, iki imza ve ayrık callback kanıt kaydı; sigorta veya üçüncü taraf kayıt API'si zorunlu değil",
+            "before_state": "Yük teslim talimatları ve sürücü kimlik teyidi değiştirilebilir eposta/mesajlarda ve ayrı TMS kayıtlarında",
+            "after_state": "Her yük için callback ve yetkilendirilmiş teslim kişi kanıtı; doğrulanmamış kimliği otomatik gerçek saymaz",
+            "why_now": "12 Ekim FreightWaves özgün haberinde 14 Ekim Freight Fraud Awareness Day ve kimlik taklidi, sahte teslim alma, çift aracılık (double brokering) gibi güncel yük dolandırıcılığı riskleri açıklanıyor. Organizasyon kampanyası tek başına yeni kanun değil; taşıyıcı/broker kimliği, havale/kargo devri ve manuel iki kişili teyit kanıtı için alıcı işi belirgin. Canlı carrier doğrulama API'si yoksa kanıtın doğruluğu yalnız insan kontrolüdür.",
+            "canonical_source_urls": [
+              "https://www.freightwaves.com/news/freight-fraud-awareness-day-returns-as-strategic-cargo-theft-reshapes-trucking"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "b71d6914d68acd75cd49c817",
+        "decision": "no_opportunity",
+        "reason": "2026 Ekim GEO hizmet sağlayıcı listesi ürün tanıtımı ve ajans seçimi rehberidir; ücretli arama/AI API'si bağımlılığı olmadan yeni çekirdek müşteri işi ispatlanmadı.",
+        "opportunities": []
+      }
+    ]
+  }
+}
