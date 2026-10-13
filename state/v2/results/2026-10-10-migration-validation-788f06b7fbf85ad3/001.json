@@ -1,0 +1,142 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-788f06b7fbf85ad3",
+  "input_hash": "788f06b7fbf85ad3838d06d6895c3c4eceb147684714fd0523c7fe2a5079e908",
+  "token": "3f039bb9-71d9-43be-90a4-7e40ec2ea7ff",
+  "finished_at": "2026-10-13T07:13:55.608Z",
+  "outcome": "done",
+  "reason": "AutonomyClaim Review için Reuters özgün trigger, dört yakın ancak doğrulanmamış doğrudan ürün, Türkiye bilinmezliği, otomotiv normları ve tarayıcı MVP inceledi. Kesin qualification/rejection mümkün olmadığı için unverified.",
+  "result": {
+    "decision": "unverified",
+    "reason": "9 Ekim Reuters Tesla TAD yeniden adlandırma tetikleyicisi doğrulandı. Otomotiv ADAS pazarlama iddialarını sürücü gözetime ilişkin kabiliyet sınıfları, ülke, sürüm ve test kanıtına bağlayan ürünün küresel doğrudan rakip sayısı güvenilir tarihli taramada kesinleşmedi. Evidory OEM evidence, Veridat, Warrant, Falcomply benzer iddia→kanıt→inceleme/onay zinciri sunuyor, ancak üçlü aynı müşteri+ADAS işi+aynı iş akışı olarak kesin DIRECT doğrulanmadı. TR pazarı birebir sayım, UNECE kapsam tablosu, üretici verisi erişimi ve yerel zero-runtime SaaS modeli de doğrulanmadı. Bu nedenle published/qualified veya rejected ilan edilmez; evidence followup araştırması gerekir.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.reuters.com/business/autos-transportation/tesla-renames-full-self-driving-assisted-driving-europe-it-chases-clearance-2026-10-09/",
+        "accessed_at": "2026-10-13T07:13:55.608Z",
+        "claim": "Tesla Avrupa web sitelerinde Full Self-Driving ifadesini Tesla Assisted Driving olarak değiştirdi; pazarlama iddiasının sürücü gözetimiyle uyumlu olması tartışılıyor",
+        "observation": "Reuters 9 Ekim haberinde Almanya'nın yanlış yönlendirici tam otonomi adı endişesi, Eylül görüşmeleri ve Aralık'a ertelenen AB tartışmasını aktarıyor. Bu ad değişimi genel ADAS pazarlama yazılımı için yeni hukukî zorunluluk kanıtı değildir.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://evidory.com/solutions/brands-oem",
+        "accessed_at": "2026-10-13T07:13:55.608Z",
+        "claim": "Evidory Brands/OEM Approval Evidence otomotiv dışı geniş ürün claim kanıt/inceleme işi sunuyor",
+        "observation": "OEM product variants, market-specific claims, test evidence, document/approval revision tracking; ADAS teknik test→ülke→pazarlama iddiası alt türü ayrıca doğrulanmadı",
+        "page_read": true,
+        "support": "adjacent_not_direct_confirmed"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.getveridat.com/product",
+        "accessed_at": "2026-10-13T07:13:55.608Z",
+        "claim": "Veridat Marketing/Performance Claim Review otomotiv dışı geniş ürün claim kanıt/inceleme işi sunuyor",
+        "observation": "Product/performance marketing wording, proof, owner and reviewer decision workflows; otomotiv/ADAS sektöründe etkin müşteri doğrulanmadı",
+        "page_read": true,
+        "support": "adjacent_not_direct_confirmed"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://hellowarrant.com/",
+        "accessed_at": "2026-10-13T07:13:55.608Z",
+        "claim": "Warrant Marketing Approval otomotiv dışı geniş ürün claim kanıt/inceleme işi sunuyor",
+        "observation": "Reklam/ürün pazarlama hukukî delil ve ülke uyumluluk onayı; otomotiv ADAS test gerekliliği veya UNECE kapsamı ürün sayfasında belirtilmiyor",
+        "page_read": true,
+        "support": "adjacent_not_direct_confirmed"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.falcomply.com/",
+        "accessed_at": "2026-10-13T07:13:55.608Z",
+        "claim": "Falcomply Claim Evidence Approval otomotiv dışı geniş ürün claim kanıt/inceleme işi sunuyor",
+        "observation": "Kampanya reklam iddiaları, referans delil, onay/versiyon, mevzuat notu; otomotiv OEM müşterisi ve ADAS kanıtı bağımsız teyit edilmedi",
+        "page_read": true,
+        "support": "adjacent_not_direct_confirmed"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://www.tuvsud.com/en-us/industries/automotive/autonomous-vehicle-testing-and-homologation-services/simulation-validation-for-autonomous-vehicles",
+        "accessed_at": "2026-10-13T07:13:55.608Z",
+        "claim": "ADAS/onay iddiaları teknik test ve düzenleyici kanıt bütünlüğünü gerektirir",
+        "observation": "TÜV SÜD R157, EU 2022/1426 ve simülasyon veri kalitesi onayı ayrıntıları; sadece manuel iddia matrisi bu teknik testleri kendi başına doğrulayamaz.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "search_complete": false,
+        "queries": [
+          "Türkiye ADAS sürüş destek pazarlama reklam iddiaları kanıt onay yazılımı",
+          "otomotiv sürüş destek ülke bazlı ürün iddiası doğrulama SaaS Türkiye",
+          "autonomous driving marketing claims evidence registry Türkiye"
+        ],
+        "scope": "Türkiye otomotiv ADAS ürün/marketing compliance yöneticisi, sürücünün kontrol zorunluluğu dahil iddia kanıtı/ülke/sürüm onayı",
+        "direct_competitors": []
+      },
+      "global": {
+        "direct_count": null,
+        "search_complete": false,
+        "queries": [
+          "automotive ADAS driver-assistance marketing claims approval evidence software",
+          "ADAS naming regulatory marketing claims workflow product proof OEM SaaS",
+          "Evidory Veridat Warrant Falcomply ADAS automotive specific customer"
+        ],
+        "scope": "Otomotiv OEM/ADAS tedarikçisi için ADAS kabiliyet pazarlama ifadeleri, teknik kanıt referansı, versiyon ve ülke onayı; geniş genel claim araçları yan ürün",
+        "direct_competitors": [],
+        "adjacent_competitors": [
+          {
+            "name": "Evidory Brands/OEM Approval Evidence",
+            "url": "https://evidory.com/solutions/brands-oem",
+            "reason": "OEM product variants, market-specific claims, test evidence, document/approval revision tracking; ADAS teknik test→ülke→pazarlama iddiası alt türü ayrıca doğrulanmadı",
+            "direct": false
+          },
+          {
+            "name": "Veridat Marketing/Performance Claim Review",
+            "url": "https://www.getveridat.com/product",
+            "reason": "Product/performance marketing wording, proof, owner and reviewer decision workflows; otomotiv/ADAS sektöründe etkin müşteri doğrulanmadı",
+            "direct": false
+          },
+          {
+            "name": "Warrant Marketing Approval",
+            "url": "https://hellowarrant.com/",
+            "reason": "Reklam/ürün pazarlama hukukî delil ve ülke uyumluluk onayı; otomotiv ADAS test gerekliliği veya UNECE kapsamı ürün sayfasında belirtilmiyor",
+            "direct": false
+          },
+          {
+            "name": "Falcomply Claim Evidence Approval",
+            "url": "https://www.falcomply.com/",
+            "reason": "Kampanya reklam iddiaları, referans delil, onay/versiyon, mevzuat notu; otomotiv OEM müşterisi ve ADAS kanıtı bağımsız teyit edilmedi",
+            "direct": false
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Otomotiv OEM'in kendi güvenli şekilde verdiği ADAS fonksiyon/capability seviye satırları, test belgesi referansları ve pazar/dil pazarlama iddiaları CSV olarak manuel yüklenir; tarayıcı deterministik kelime/sürüm/ülke matrisinde eksikleri işaretler, hukuk ve teknik insan onayını belgeye aktarır. Asla gerçek otonom sürüş kabiliyeti sertifikası vermez veya araç ECU'su ile bağlantı kurmaz.",
+      "dependency_inventory": [
+        "Browser JS ve kullanıcı sağlanan CSV",
+        "Sürüm ve ülke kural matrisi kullanıcı tarafından güncellenir",
+        "Local browser storage",
+        "Rapor CSV/PDF export; dış otomotiv mevzuat API'si yok"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "91 kayıt içinde bu spesifik otomotiv ADAS satış iddiası/ülke/teknik test kanıtı kanonik anahtarı bulunmadı. Yakınlar: RoboTurn — Robotaxi Turnaround Ops, Autonomous Fleet Ready — Otonom Şantiye Hazırlık Masası, Architecture Evidence Matrix, Automotive sensing compliance and validation Çalışma Alanı., Autonomous-freight lane readiness Çalışma Alanı., Legacy Agent Exposure Register; otomotiv teknik/izin projeleri ADAS pazarlama claim approval ile birebir eşit olduğu doğrulanmadı."
+    },
+    "remaining_checks": [
+      "Türkiye'de doğrudan rakip sıfırın kapsamlı kanıt taraması",
+      "Küresel otomotiv ADAS özel yazılımları için yeterli kesin rakip sayımı",
+      "UNECE/AB ülke sürücü kontrol ve ADAS pazarlama iddiası kural tablosunun güncel birincil hukuk kaynağı",
+      "Sıfır dış API ile kural/veri bakım maliyeti, gerçek teknik kanıtı insan onayıyla alma",
+      "Satın alıcı ADAS tedarikçisi kullanıcı iş akışı ihtiyacının saha doğrulaması"
+    ]
+  }
+}
