@@ -4,26 +4,26 @@
   "queue_mode": "shared",
   "current_run": "2026-10-13-catchup-e3a10c28a635",
   "lease_minutes": 30,
-  "ready_count": 387,
+  "ready_count": 386,
   "job_count": 387,
-  "queue_revision": "8e6a8a7c1b8f243aeef08e07ca0901de1f701878d823e458b41148ecef39ea23",
+  "queue_revision": "ec6859f452f24b25fa0719114aee5b734847eac93881c6ca308aecd52cd645d5",
   "page": 3,
   "page_count": 20,
   "next_page": "state/v2/inbox/worker-3-page-004.json",
   "jobs": [
     {
-      "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-dd305c720134abfc",
-      "path": "state/v2/jobs/2026-10-13-catchup-e3a10c28a635-discovery-dd305c720134abfc.json",
+      "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-e118f4087aebb3ca",
+      "path": "state/v2/jobs/2026-10-13-catchup-e3a10c28a635-discovery-e118f4087aebb3ca.json",
       "run_id": "2026-10-13-catchup-e3a10c28a635",
       "kind": "discovery",
-      "input_hash": "dd305c720134abfceeb27d9abebc199b5f04d74ebcc0219b73ba2227095092b6",
-      "legacy_lane": 2,
+      "input_hash": "e118f4087aebb3ca0550ff268f7d7e7f3f1a318f2915ae386f03dcb0c98b28e5",
+      "legacy_lane": 3,
       "queue_group": "current",
-      "preferred_worker": 1,
+      "preferred_worker": 2,
       "state": "ready",
       "attempt": 1,
-      "claim_path": "state/v2/claims/2026-10-13-catchup-e3a10c28a635-discovery-dd305c720134abfc/001.json",
-      "result_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-dd305c720134abfc/001.json"
+      "claim_path": "state/v2/claims/2026-10-13-catchup-e3a10c28a635-discovery-e118f4087aebb3ca/001.json",
+      "result_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-e118f4087aebb3ca/001.json"
     },
     {
       "job_id": "2026-10-11-a4dcde1ff5-discovery-a8674ec621112ce6",
@@ -40,20 +40,6 @@
       "result_path": "state/v2/results/2026-10-11-a4dcde1ff5-discovery-a8674ec621112ce6/001.json"
     },
     {
-      "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-e118f4087aebb3ca",
-      "path": "state/v2/jobs/2026-10-13-catchup-e3a10c28a635-discovery-e118f4087aebb3ca.json",
-      "run_id": "2026-10-13-catchup-e3a10c28a635",
-      "kind": "discovery",
-      "input_hash": "e118f4087aebb3ca0550ff268f7d7e7f3f1a318f2915ae386f03dcb0c98b28e5",
-      "legacy_lane": 3,
-      "queue_group": "current",
-      "preferred_worker": 2,
-      "state": "ready",
-      "attempt": 1,
-      "claim_path": "state/v2/claims/2026-10-13-catchup-e3a10c28a635-discovery-e118f4087aebb3ca/001.json",
-      "result_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-e118f4087aebb3ca/001.json"
-    },
-    {
       "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-e181ccce8d13c081",
       "path": "state/v2/jobs/2026-10-13-catchup-e3a10c28a635-discovery-e181ccce8d13c081.json",
       "run_id": "2026-10-13-catchup-e3a10c28a635",
@@ -66,20 +52,6 @@
       "attempt": 1,
       "claim_path": "state/v2/claims/2026-10-13-catchup-e3a10c28a635-discovery-e181ccce8d13c081/001.json",
       "result_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-e181ccce8d13c081/001.json"
-    },
-    {
-      "job_id": "2026-10-10-migration-validation-fc779b0b05fec211",
-      "path": "state/v2/jobs/2026-10-10-migration-validation-fc779b0b05fec211.json",
-      "run_id": "2026-10-10-migration",
-      "kind": "validation",
-      "input_hash": "fc779b0b05fec211d71c503c151711209795ad965c5b3f1ec2181eeea749ef5d",
-      "legacy_lane": 1,
-      "queue_group": "backlog",
-      "preferred_worker": 3,
-      "state": "ready",
-      "attempt": 1,
-      "claim_path": "state/v2/claims/2026-10-10-migration-validation-fc779b0b05fec211/001.json",
-      "result_path": "state/v2/results/2026-10-10-migration-validation-fc779b0b05fec211/001.json"
     },
     {
       "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-e327f663e5f23a21",
@@ -96,6 +68,20 @@
       "result_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-e327f663e5f23a21/001.json"
     },
     {
+      "job_id": "2026-10-10-migration-validation-fc779b0b05fec211",
+      "path": "state/v2/jobs/2026-10-10-migration-validation-fc779b0b05fec211.json",
+      "run_id": "2026-10-10-migration",
+      "kind": "validation",
+      "input_hash": "fc779b0b05fec211d71c503c151711209795ad965c5b3f1ec2181eeea749ef5d",
+      "legacy_lane": 1,
+      "queue_group": "backlog",
+      "preferred_worker": 3,
+      "state": "ready",
+      "attempt": 1,
+      "claim_path": "state/v2/claims/2026-10-10-migration-validation-fc779b0b05fec211/001.json",
+      "result_path": "state/v2/results/2026-10-10-migration-validation-fc779b0b05fec211/001.json"
+    },
+    {
       "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-e59e22c37b10df2a",
       "path": "state/v2/jobs/2026-10-13-catchup-e3a10c28a635-discovery-e59e22c37b10df2a.json",
       "run_id": "2026-10-13-catchup-e3a10c28a635",
@@ -108,20 +94,6 @@
       "attempt": 1,
       "claim_path": "state/v2/claims/2026-10-13-catchup-e3a10c28a635-discovery-e59e22c37b10df2a/001.json",
       "result_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-e59e22c37b10df2a/001.json"
-    },
-    {
-      "job_id": "2026-10-11-a4dcde1ff5-discovery-ab8b47bf698b174d",
-      "path": "state/v2/jobs/2026-10-11-a4dcde1ff5-discovery-ab8b47bf698b174d.json",
-      "run_id": "2026-10-11-a4dcde1ff5",
-      "kind": "discovery",
-      "input_hash": "ab8b47bf698b174dbdad9ee4961cfd615395e3ca423288df9d2738c74ac69c54",
-      "legacy_lane": 4,
-      "queue_group": "backlog",
-      "preferred_worker": 3,
-      "state": "ready",
-      "attempt": 1,
-      "claim_path": "state/v2/claims/2026-10-11-a4dcde1ff5-discovery-ab8b47bf698b174d/001.json",
-      "result_path": "state/v2/results/2026-10-11-a4dcde1ff5-discovery-ab8b47bf698b174d/001.json"
     },
     {
       "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-e74889b52479cfb0",
@@ -138,6 +110,20 @@
       "result_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-e74889b52479cfb0/001.json"
     },
     {
+      "job_id": "2026-10-11-a4dcde1ff5-discovery-ab8b47bf698b174d",
+      "path": "state/v2/jobs/2026-10-11-a4dcde1ff5-discovery-ab8b47bf698b174d.json",
+      "run_id": "2026-10-11-a4dcde1ff5",
+      "kind": "discovery",
+      "input_hash": "ab8b47bf698b174dbdad9ee4961cfd615395e3ca423288df9d2738c74ac69c54",
+      "legacy_lane": 4,
+      "queue_group": "backlog",
+      "preferred_worker": 3,
+      "state": "ready",
+      "attempt": 1,
+      "claim_path": "state/v2/claims/2026-10-11-a4dcde1ff5-discovery-ab8b47bf698b174d/001.json",
+      "result_path": "state/v2/results/2026-10-11-a4dcde1ff5-discovery-ab8b47bf698b174d/001.json"
+    },
+    {
       "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-ef23a214afa1d2cf",
       "path": "state/v2/jobs/2026-10-13-catchup-e3a10c28a635-discovery-ef23a214afa1d2cf.json",
       "run_id": "2026-10-13-catchup-e3a10c28a635",
@@ -150,20 +136,6 @@
       "attempt": 1,
       "claim_path": "state/v2/claims/2026-10-13-catchup-e3a10c28a635-discovery-ef23a214afa1d2cf/001.json",
       "result_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-ef23a214afa1d2cf/001.json"
-    },
-    {
-      "job_id": "2026-10-10-migration-validation-0212e43d8422a6c9",
-      "path": "state/v2/jobs/2026-10-10-migration-validation-0212e43d8422a6c9.json",
-      "run_id": "2026-10-10-migration",
-      "kind": "validation",
-      "input_hash": "0212e43d8422a6c9b201c3a73d1c63e3dfa7d8ab2322e62c982ee481088e7097",
-      "legacy_lane": 2,
-      "queue_group": "backlog",
-      "preferred_worker": 5,
-      "state": "ready",
-      "attempt": 1,
-      "claim_path": "state/v2/claims/2026-10-10-migration-validation-0212e43d8422a6c9/001.json",
-      "result_path": "state/v2/results/2026-10-10-migration-validation-0212e43d8422a6c9/001.json"
     },
     {
       "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-f2f08de9dc93eb21",
@@ -180,6 +152,20 @@
       "result_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-f2f08de9dc93eb21/001.json"
     },
     {
+      "job_id": "2026-10-10-migration-validation-0212e43d8422a6c9",
+      "path": "state/v2/jobs/2026-10-10-migration-validation-0212e43d8422a6c9.json",
+      "run_id": "2026-10-10-migration",
+      "kind": "validation",
+      "input_hash": "0212e43d8422a6c9b201c3a73d1c63e3dfa7d8ab2322e62c982ee481088e7097",
+      "legacy_lane": 2,
+      "queue_group": "backlog",
+      "preferred_worker": 5,
+      "state": "ready",
+      "attempt": 1,
+      "claim_path": "state/v2/claims/2026-10-10-migration-validation-0212e43d8422a6c9/001.json",
+      "result_path": "state/v2/results/2026-10-10-migration-validation-0212e43d8422a6c9/001.json"
+    },
+    {
       "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-f5854268da66ddc5",
       "path": "state/v2/jobs/2026-10-13-catchup-e3a10c28a635-discovery-f5854268da66ddc5.json",
       "run_id": "2026-10-13-catchup-e3a10c28a635",
@@ -192,20 +178,6 @@
       "attempt": 1,
       "claim_path": "state/v2/claims/2026-10-13-catchup-e3a10c28a635-discovery-f5854268da66ddc5/001.json",
       "result_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-f5854268da66ddc5/001.json"
-    },
-    {
-      "job_id": "2026-10-11-a4dcde1ff5-discovery-afd0e96fd0ed143d",
-      "path": "state/v2/jobs/2026-10-11-a4dcde1ff5-discovery-afd0e96fd0ed143d.json",
-      "run_id": "2026-10-11-a4dcde1ff5",
-      "kind": "discovery",
-      "input_hash": "afd0e96fd0ed143dd6bbb8f02e3539d0215ea19c9bc8beaabc6456c518e3e9cb",
-      "legacy_lane": 1,
-      "queue_group": "backlog",
-      "preferred_worker": 3,
-      "state": "ready",
-      "attempt": 1,
-      "claim_path": "state/v2/claims/2026-10-11-a4dcde1ff5-discovery-afd0e96fd0ed143d/001.json",
-      "result_path": "state/v2/results/2026-10-11-a4dcde1ff5-discovery-afd0e96fd0ed143d/001.json"
     },
     {
       "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-fce1d0c6ca26456b",
@@ -222,6 +194,20 @@
       "result_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-fce1d0c6ca26456b/001.json"
     },
     {
+      "job_id": "2026-10-11-a4dcde1ff5-discovery-afd0e96fd0ed143d",
+      "path": "state/v2/jobs/2026-10-11-a4dcde1ff5-discovery-afd0e96fd0ed143d.json",
+      "run_id": "2026-10-11-a4dcde1ff5",
+      "kind": "discovery",
+      "input_hash": "afd0e96fd0ed143dd6bbb8f02e3539d0215ea19c9bc8beaabc6456c518e3e9cb",
+      "legacy_lane": 1,
+      "queue_group": "backlog",
+      "preferred_worker": 3,
+      "state": "ready",
+      "attempt": 1,
+      "claim_path": "state/v2/claims/2026-10-11-a4dcde1ff5-discovery-afd0e96fd0ed143d/001.json",
+      "result_path": "state/v2/results/2026-10-11-a4dcde1ff5-discovery-afd0e96fd0ed143d/001.json"
+    },
+    {
       "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-fda87aa2ce490ee5",
       "path": "state/v2/jobs/2026-10-13-catchup-e3a10c28a635-discovery-fda87aa2ce490ee5.json",
       "run_id": "2026-10-13-catchup-e3a10c28a635",
@@ -236,20 +222,6 @@
       "result_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-fda87aa2ce490ee5/001.json"
     },
     {
-      "job_id": "2026-10-10-migration-validation-254b9edf16cc1408",
-      "path": "state/v2/jobs/2026-10-10-migration-validation-254b9edf16cc1408.json",
-      "run_id": "2026-10-10-migration",
-      "kind": "validation",
-      "input_hash": "254b9edf16cc1408f1ec7028d285db6decba0ef4b29dac4d025152d56b3eeb69",
-      "legacy_lane": 1,
-      "queue_group": "backlog",
-      "preferred_worker": 4,
-      "state": "ready",
-      "attempt": 1,
-      "claim_path": "state/v2/claims/2026-10-10-migration-validation-254b9edf16cc1408/001.json",
-      "result_path": "state/v2/results/2026-10-10-migration-validation-254b9edf16cc1408/001.json"
-    },
-    {
       "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-fea0ccd4547dd2ad",
       "path": "state/v2/jobs/2026-10-13-catchup-e3a10c28a635-discovery-fea0ccd4547dd2ad.json",
       "run_id": "2026-10-13-catchup-e3a10c28a635",
@@ -262,6 +234,20 @@
       "attempt": 1,
       "claim_path": "state/v2/claims/2026-10-13-catchup-e3a10c28a635-discovery-fea0ccd4547dd2ad/001.json",
       "result_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-fea0ccd4547dd2ad/001.json"
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-254b9edf16cc1408",
+      "path": "state/v2/jobs/2026-10-10-migration-validation-254b9edf16cc1408.json",
+      "run_id": "2026-10-10-migration",
+      "kind": "validation",
+      "input_hash": "254b9edf16cc1408f1ec7028d285db6decba0ef4b29dac4d025152d56b3eeb69",
+      "legacy_lane": 1,
+      "queue_group": "backlog",
+      "preferred_worker": 4,
+      "state": "ready",
+      "attempt": 1,
+      "claim_path": "state/v2/claims/2026-10-10-migration-validation-254b9edf16cc1408/001.json",
+      "result_path": "state/v2/results/2026-10-10-migration-validation-254b9edf16cc1408/001.json"
     },
     {
       "job_id": "2026-10-11-a4dcde1ff5-discovery-b52d6262db7eeae1",
@@ -290,6 +276,20 @@
       "attempt": 1,
       "claim_path": "state/v2/claims/2026-10-10-migration-validation-37cd1d66768eccbc/001.json",
       "result_path": "state/v2/results/2026-10-10-migration-validation-37cd1d66768eccbc/001.json"
+    },
+    {
+      "job_id": "2026-10-11-a4dcde1ff5-discovery-c451109fb4c316a7",
+      "path": "state/v2/jobs/2026-10-11-a4dcde1ff5-discovery-c451109fb4c316a7.json",
+      "run_id": "2026-10-11-a4dcde1ff5",
+      "kind": "discovery",
+      "input_hash": "c451109fb4c316a7343943b42e8a8dd027d821a2531e92026a37790463f5d602",
+      "legacy_lane": 4,
+      "queue_group": "backlog",
+      "preferred_worker": 3,
+      "state": "ready",
+      "attempt": 1,
+      "claim_path": "state/v2/claims/2026-10-11-a4dcde1ff5-discovery-c451109fb4c316a7/001.json",
+      "result_path": "state/v2/results/2026-10-11-a4dcde1ff5-discovery-c451109fb4c316a7/001.json"
     }
   ]
 }
