@@ -1,0 +1,30 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "7ba81303b6022feabe5fc05c7b93f2a85aa7e1908cbb0d969c8ebc36d55c79df",
+  "decision": {
+    "article_key": "33fa448e00a72a848df92cb2",
+    "decision": "opportunity",
+    "reason": "9 Ekim 2026 Deno'nun resmî açıklaması: Cloudflare ekibine katılım, Deno Deploy servisinin altı ay içinde kapanması, Deno runtime'ın ise bir yıl hata/güvenlik güncellemesi sonrasında geliştirilmeyecek oluşu; JSR'nin devam etmesi. Bu gerçekleşen müşteri migrasyonu/son tarih riski, ücretli entegrasyon gerektirmeyen portföy geçiş kontrol işini tetikliyor.",
+    "canonical_source_url": "https://deno.com/blog/cloudflare",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-5d2e609071354ce1:33fa448e00a72a848df92cb2:01",
+        "idea_name": "Deno Deploy Kapanış ve Geçiş Kanıt Masası",
+        "canonical_key": "deno-deploy-application-owners|plan-six-month-sunset-and-runtime-support-exit|service-inventory-dependency-deadline-and-migration-evidence-ledger",
+        "target_customer": "Deno Deploy kullanan küçük yazılım ekipleri ve uygulama sahipleri",
+        "core_job": "Deno Deploy kapanışı ve bir yıl sonra runtime desteğinin sona ermesine karşı uygulamaları taşımak, bağımlılıkları ve teslim kabulünü izlemek",
+        "product_mechanism": "Uygulama envanteri CSV, endpoint/secret referansları (gizli değeri saklamadan), cron/kv/runtime fark matrisi, test kanıtları, kapanış takvimi, onay ve taşıma tamamlandı imzası; dış ücretli API yok",
+        "before_state": "Deno Deploy proje listesi, platform özellikleri ve her servisin taşınma durumu farklı repolarda; kapanışa dek eski platform açık kalabilir",
+        "after_state": "Ürün/servis önceliğine göre taşınma, geri alma ve kapanış delili içeren kontrol matrisi",
+        "why_now": "9 Ekim 2026 Deno'nun resmî açıklaması: Cloudflare ekibine katılım, Deno Deploy servisinin altı ay içinde kapanması, Deno runtime'ın ise bir yıl hata/güvenlik güncellemesi sonrasında geliştirilmeyecek oluşu; JSR'nin devam etmesi. Bu gerçekleşen müşteri migrasyonu/son tarih riski, ücretli entegrasyon gerektirmeyen portföy geçiş kontrol işini tetikliyor.",
+        "canonical_source_urls": [
+          "https://deno.com/blog/cloudflare"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-5d2e609071354ce1/001.json",
+  "valid_until": "2026-11-12T09:44:21Z"
+}
