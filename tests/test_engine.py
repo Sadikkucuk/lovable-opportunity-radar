@@ -148,14 +148,63 @@ class EngineTests(unittest.TestCase):
         self.assertEqual(self.e.evaluate(j)["attempt"], 2)
 
     def test_same_candidate_reuses_valid_research_without_resetting_ttl(self):
-        j = self.validation(); self.receipt(j)
+        j = self.validation(); self.receipt(j, self.qualified(j))
         self.e.tick("a"*40, create=False)
         jid = self.e.add_job("2026-10-11-new", "validation", j["payload"], 1)
         reused = self.e.read(f"state/v2/jobs/{jid}.json")
         self.assertTrue(self.e.evaluate(reused)["reused"])
-        self.e.now += timedelta(days=2)
-        jid2 = self.e.add_job("2026-10-13-new", "validation", j["payload"], 1)
+        self.e.now += timedelta(days=8)
+        jid2 = self.e.add_job("2026-10-19-new", "validation", j["payload"], 1)
         self.assertNotIn("reuse", self.e.read(f"state/v2/jobs/{jid2}.json"))
+
+    def test_unverified_is_not_a_reusable_validation_and_creates_evidence_job(self):
+        j = self.validation(); self.receipt(j)
+        first_bytes = (self.root / f"state/v2/results/{j['job_id']}/001.json").read_bytes()
+        self.e.tick("a"*40, create=False)
+        followups = [job for job in self.e.jobs().values()
+                     if job["payload"].get("evidence_followup")]
+        self.assertEqual(len(followups), 1)
+        next_job = followups[0]
+        meta = next_job["payload"]["evidence_followup"]
+        self.assertEqual(meta["round"], 1)
+        self.assertEqual(meta["parent_job_id"], j["job_id"])
+        self.assertIn("competition:tr", meta["missing_checks"])
+        self.assertNotIn("reuse", next_job)
+        self.assertEqual(self.e.evaluate(next_job)["state"], "ready")
+        self.assertEqual((self.root / f"state/v2/results/{j['job_id']}/001.json").read_bytes(), first_bytes)
+        self.e.tick("b"*40, create=False)
+        self.assertEqual(len([job for job in self.e.jobs().values()
+                              if job["payload"].get("evidence_followup")]), 1)
+        jid = self.e.add_job("2026-10-11-new", "validation", j["payload"], 1)
+        self.assertNotIn("reuse", self.e.read(f"state/v2/jobs/{jid}.json"))
+        self.assertEqual(self.e.read("state/v2/status.json")["evidence_research"]["open"], 1)
+        self.assertEqual(self.e.check_protected(), 1)
+
+    def test_evidence_followups_bounded_after_two_additional_unverified_results(self):
+        j = self.validation(); self.receipt(j)
+        for round_no in (1, 2):
+            self.e.tick("a"*40, create=False)
+            followups = [x for x in self.e.jobs().values()
+                         if x["payload"].get("evidence_followup", {}).get("round") == round_no]
+            self.assertEqual(len(followups), 1)
+            self.receipt(followups[0], {"decision": "unverified", "reason": "Evidence remains incomplete"})
+        self.e.tick("z"*40, create=False)
+        followups = [x for x in self.e.jobs().values() if x["payload"].get("evidence_followup")]
+        self.assertEqual(len(followups), 2)
+        self.assertEqual({x["payload"]["evidence_followup"]["round"] for x in followups}, {1, 2})
+        self.assertEqual(len(self.e.read("state/idea_catalog.json")["ideas"]), 1)
+
+    def test_research_followup_can_qualify_without_changing_original_receipt(self):
+        j = self.validation(); self.receipt(j)
+        old = (self.root / f"state/v2/results/{j['job_id']}/001.json").read_bytes()
+        self.e.tick("a"*40, create=False)
+        followup = next(x for x in self.e.jobs().values()
+                        if x["payload"].get("evidence_followup"))
+        self.receipt(followup, self.qualified(followup))
+        self.e.tick("b"*40, create=False)
+        self.assertEqual(len(self.e.read("state/idea_catalog.json")["ideas"]), 2)
+        self.assertEqual((self.root / f"state/v2/results/{j['job_id']}/001.json").read_bytes(), old)
+        self.assertEqual(self.e.read("state/v2/status.json")["evidence_research"]["open"], 0)
 
     def test_receipt_remains_valid_after_time_passes_but_unpublished_stale_proof_is_held(self):
         j = self.validation(); self.receipt(j, self.qualified(j))
