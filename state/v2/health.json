@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T21:23:30Z",
+  "controller_observed_at": "2026-10-13T21:25:02Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T21:01:00Z",
   "ready_jobs": 497,
-  "unfinished_jobs": 500,
-  "last_verified_progress_at": "2026-10-13T21:16:20Z",
+  "unfinished_jobs": 499,
+  "last_verified_progress_at": "2026-10-13T21:24:46Z",
   "workers": {
     "1": {
       "last_started_at": "2026-10-13T21:02:16Z",
@@ -55,7 +55,7 @@
       },
       "receipts_this_invocation": 0,
       "write_and_receipt_verified": true,
-      "last_receipt_at": "2026-10-13T21:16:20.611Z"
+      "last_receipt_at": "2026-10-13T21:24:46.536Z"
     },
     "4": {
       "last_started_at": "2026-10-13T21:05:35Z",
@@ -97,10 +97,10 @@
     "window_minutes": 120.0,
     "stages": {
       "discovery": {
-        "completed_in_window": 17,
+        "completed_in_window": 16,
         "known_remaining": 289,
-        "observed_jobs_per_hour": 8.5,
-        "estimated_minutes_for_stage": 2040.0
+        "observed_jobs_per_hour": 8.0,
+        "estimated_minutes_for_stage": 2167.5
       },
       "merge": {
         "completed_in_window": 1,
@@ -109,10 +109,10 @@
         "estimated_minutes_for_stage": 0
       },
       "validation": {
-        "completed_in_window": 6,
-        "known_remaining": 211,
-        "observed_jobs_per_hour": 3.0,
-        "estimated_minutes_for_stage": 4220.0
+        "completed_in_window": 7,
+        "known_remaining": 210,
+        "observed_jobs_per_hour": 3.5,
+        "estimated_minutes_for_stage": 3600.0
       }
     },
     "estimated_minutes_remaining": null,
@@ -139,6 +139,12 @@
     }
   ],
   "alerts": [
+    {
+      "code": "worker_heartbeat_missing",
+      "worker": 1,
+      "severity": "critical",
+      "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
+    },
     {
       "code": "controller_rejected_record",
       "worker": null,
