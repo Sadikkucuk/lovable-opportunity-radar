@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T18:17:03Z",
+  "controller_observed_at": "2026-10-13T18:19:31Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
@@ -47,12 +47,12 @@
         "worker": 3,
         "invocation_id": "6918fda5-3f81-44e5-a361-f52095bf7a4f",
         "event": "progress",
-        "at": "2026-10-13T18:11:07.670Z",
-        "job_id": "2026-10-13-43d3b526fc-discovery-204f18a900f01715",
+        "at": "2026-10-13T18:19:19.061Z",
+        "job_id": "2026-10-10-migration-validation-c1b026054934f37e",
         "stage": "receipt_saved",
-        "receipt_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-204f18a900f01715/001.json",
-        "articles_triaged": 10,
-        "path": "state/v2/worker-events/3/6918fda5-3f81-44e5-a361-f52095bf7a4f/004-progress.json"
+        "receipt_path": "state/v2/results/2026-10-10-migration-validation-c1b026054934f37e/001.json",
+        "decision": "rejected",
+        "path": "state/v2/worker-events/3/6918fda5-3f81-44e5-a361-f52095bf7a4f/006-progress.json"
       },
       "receipts_this_invocation": 6,
       "write_and_receipt_verified": true,
@@ -98,10 +98,10 @@
     "window_minutes": 120.0,
     "stages": {
       "discovery": {
-        "completed_in_window": 24,
+        "completed_in_window": 23,
         "known_remaining": 278,
-        "observed_jobs_per_hour": 12.0,
-        "estimated_minutes_for_stage": 1390.0
+        "observed_jobs_per_hour": 11.5,
+        "estimated_minutes_for_stage": 1450.4
       },
       "merge": {
         "completed_in_window": 0,
