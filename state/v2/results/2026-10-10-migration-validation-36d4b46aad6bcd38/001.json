@@ -1,0 +1,143 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-36d4b46aad6bcd38",
+  "input_hash": "36d4b46aad6bcd38edc4e77191299f2e02fbf25a833e30bad7483cacd8abbd23",
+  "token": "3a0e9e25-330d-4d6a-9c51-09955ffa8204",
+  "finished_at": "2026-10-13T05:20:51.783Z",
+  "outcome": "done",
+  "reason": "ModelSafetyCard Registry Validation: tetikleyici SemiAnalysis/Reuters, dört global doğrudan ürün, geçmiş ve sıfır haricî hizmet mimarisi değerlendirildi. Global <=3 eşik aşımı nedeniyle rejected.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Reuters/SemiAnalysis kaynak olayı doğrulandı. Alıcı işi 'model sürümlerinin test ve güvenlik kanıtını standart biçimde yayımlamak/değerlendirmek' için resmi ürün sayfalarında en az dört aynı temel iş akışını sağlayan global rakip belirlendi: AWS SageMaker Model Cards, IBM AI Factsheets, Hugging Face Model Cards ve Microsoft Azure ML Responsible AI Scorecard (preview). Global 3 doğrudan rakip sınırı aşıldığı için rejected. Türkiye pazarı için kesin birebir rakip sayımı yapılmadı, sıfır iddiasında bulunulmadı. 91 geçmiş kayıt içinde birebir aynı üçlü anahtar yok, ancak komşu AI governance ürünleri var. Haricî API/DB/AI model gerekmeyen yalnız manuel dokümantasyon MVP'si teknik olarak mümkün; doğrudan ürün rakipliği nedeniyle yayımlanmaz.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.reuters.com/legal/litigation/china-ai-developers-publish-safety-tests-just-36-model-releases-report-finds-2026-10-09/",
+        "accessed_at": "2026-10-13T05:20:51.783Z",
+        "claim": "2021-Eylül 2026 Çin model sürümleri için açık safety test kartı 857 modelin 31'inde, %3,6",
+        "observation": "Reuters ve SemiAnalysis özgün çalışması 857 release/31 model-specific safety disclosure; özel testlerin yapılmadığı anlamına gelmediğini açıkça belirtiyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-cards.html",
+        "accessed_at": "2026-10-13T05:20:51.783Z",
+        "claim": "Amazon SageMaker Model Cards sürümlü model değerlendirme/kanıt kartı sağlıyor",
+        "observation": "ML model geliştirici ve denetçilerinin modele bağlı sürümlü kart, kullanım/risk seviyesi, ölçüm/kanıt ve raporlama ihtiyaçlarını karşılar",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.ibm.com/docs/en/watsonx/saas?topic=governing-ai",
+        "accessed_at": "2026-10-13T05:20:51.783Z",
+        "claim": "IBM watsonx.governance AI Factsheets sürümlü model değerlendirme/kanıt kartı sağlıyor",
+        "observation": "AI model tedarikçisi ve kurumsal risk ekibinin model sürümü, güvenlik değerlendirmesi, yaşam döngüsü ve onay kanıtını katalogda gösterir",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://huggingface.co/docs/hub/model-cards",
+        "accessed_at": "2026-10-13T05:20:51.783Z",
+        "claim": "Hugging Face Model Cards sürümlü model değerlendirme/kanıt kartı sağlıyor",
+        "observation": "Açık model yayıncısına model/versiyon bazında güvenlik testleri, değerlendirme sonuçları, kaynak bağlantıları ve sürüm kartı oluşturma iş akışını sunar",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://learn.microsoft.com/azure/machine-learning/how-to-responsible-ai-scorecard",
+        "accessed_at": "2026-10-13T05:20:51.783Z",
+        "claim": "Microsoft Azure ML Responsible AI Scorecard sürümlü model değerlendirme/kanıt kartı sağlıyor",
+        "observation": "Kayıtlı AI model için teknik değerlendirme/bulguları risk yöneticileri ve denetçilere PDF rapor ve kanıt paketi olarak sunar; preview ürün olarak ayrı belirtilmeli",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "queries": [
+          "Türkiye AI model kartı güvenlik değerlendirmesi sürüm yazılım model risk yönetimi",
+          "yerli yapay zeka model governance model card güvenlik kanıtı SaaS",
+          "Türkçe yapay zekâ model sürümü test matrisi güvenlik dokümantasyonu"
+        ],
+        "scope": "13 Ekim 2026 Türkiye odaklı genel arama; yeterli doğrudan yerel satıcı doğrulaması olmadığı için kesin sayı yok",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_competitors": []
+      },
+      "global": {
+        "direct_count": 4,
+        "queries": [
+          "SageMaker Model Cards model version risk evidence",
+          "IBM watsonx Factsheets model evaluation safety version",
+          "Hugging Face model cards structured evaluation safety disclosure",
+          "Microsoft Azure Machine Learning Responsible AI scorecard"
+        ],
+        "scope": "13 Ekim 2026 itibarıyla model geliştirici/kurumsal model risk yöneticisi; sürümlü model kartı ve test/kanıt gösterimi iş akışı; 4 belgeyle doğrulanan ürün",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "Amazon SageMaker Model Cards",
+            "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-cards.html",
+            "same_customer_job_workflow_reason": "ML model geliştirici ve denetçilerinin modele bağlı sürümlü kart, kullanım/risk seviyesi, ölçüm/kanıt ve raporlama ihtiyaçlarını karşılar"
+          },
+          {
+            "name": "IBM watsonx.governance AI Factsheets",
+            "url": "https://www.ibm.com/docs/en/watsonx/saas?topic=governing-ai",
+            "same_customer_job_workflow_reason": "AI model tedarikçisi ve kurumsal risk ekibinin model sürümü, güvenlik değerlendirmesi, yaşam döngüsü ve onay kanıtını katalogda gösterir"
+          },
+          {
+            "name": "Hugging Face Model Cards",
+            "url": "https://huggingface.co/docs/hub/model-cards",
+            "same_customer_job_workflow_reason": "Açık model yayıncısına model/versiyon bazında güvenlik testleri, değerlendirme sonuçları, kaynak bağlantıları ve sürüm kartı oluşturma iş akışını sunar"
+          },
+          {
+            "name": "Microsoft Azure ML Responsible AI Scorecard",
+            "url": "https://learn.microsoft.com/azure/machine-learning/how-to-responsible-ai-scorecard",
+            "same_customer_job_workflow_reason": "Kayıtlı AI model için teknik değerlendirme/bulguları risk yöneticileri ve denetçilere PDF rapor ve kanıt paketi olarak sunar; preview ürün olarak ayrı belirtilmeli"
+          }
+        ],
+        "adjacent_competitors": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Sürüm/kart matrisi kullanıcıdan CSV/JSON veya manuel girişle alınır; belirlenmiş güvenlik test tipleri ve bulgu bağlantılarını browser JS ile eşler, eksiklik raporu oluşturur, PDF/JSON indirmeye izin verir; kanıtın gerçekliğini kendisi test etmez ve harici model, API, bulut veritabanı kullanmaz.",
+      "dependency_inventory": [
+        "Tarayıcı JavaScript ve local file storage",
+        "Kullanıcının sağladığı model ve test artefaktları",
+        "Domain/hosting maliyeti ayrı",
+        "PDF/JSON client-side export"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "91 kayıtlı katalog/geçmişte birebir aynı üçlü semantik kimlik bulunmadı. AI governance, TRACE Inspector ve model safety evaluation kayıtları aynı pazara komşu; bu yüzden ret gerekçesi öncelikle doğrulanan global rakip sayısıdır."
+    },
+    "research_attempts": [
+      {
+        "queries": [
+          "Türkiye AI model kartı güvenlik değerlendirmesi sürüm yazılım model risk yönetimi",
+          "yerli yapay zeka model governance model card güvenlik kanıtı SaaS",
+          "Türkçe yapay zekâ model sürümü test matrisi güvenlik dokümantasyonu"
+        ],
+        "outcome": "Türkiye doğrudan rakip sayımı güvenilir şekilde sonlandırılamadı."
+      },
+      {
+        "queries": [
+          "SageMaker Model Cards model version risk evidence",
+          "IBM watsonx Factsheets model evaluation safety version",
+          "Hugging Face model cards structured evaluation safety disclosure",
+          "Microsoft Azure Machine Learning Responsible AI scorecard"
+        ],
+        "outcome": "Dört resmi ürünün model-sürüm güvenlik ölçüm belgesi işlevi okundu."
+      }
+    ]
+  }
+}
