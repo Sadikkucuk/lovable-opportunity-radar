@@ -1,0 +1,30 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "3e47ff0fde7afbfa6cebbd00c53b1386627adacd1e77a20a245adb209ddea365",
+  "decision": {
+    "article_key": "a7ef8a2c302ef9bbc57e009b",
+    "decision": "opportunity",
+    "reason": "Google Cloud 6 Ekim 2026 MCP Toolbox Java SDK v1.0'da ayrık kimlik bilgisi tedarikçisi, şifrelenmemiş HTTP üzerinden kimlik bilgisi aktarım uyarısı, server-side bağlı parametre temizliği, sürüm anlaşması ve özel başlıkları duyurdu. Heise 12 Ekim bunu yeniden aktardı. Bu teknik ayrıntılar güvenli DB-ajan entegrasyonu için konfigürasyon dosyalarını gerçek veritabanına veya AI servisine bağlamadan statik kontrolden geçirme iş hipotezi sunar. Genel Agent Sandbox Policy Desk'e komşudur; Merge/Validation semantik kontrol gerekecek.",
+    "canonical_source_url": "https://cloud.google.com/blog/topics/developers-practitioners/announcing-mcp-toolbox-java-sdk-v10-agentic-data-access-for-the-enterprise/",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-2cdb764df23c8004:a7ef8a2c302ef9bbc57e009b:01",
+        "canonical_key": "java-mcp-database-app-teams|preflight-mcp-toolbox-credential-and-tenant-configuration|tools-yaml-http-credential-policy-and-bound-parameter-review",
+        "idea_name": "MCP Database Credential Preflight",
+        "target_customer": "Java ve Spring tabanlı MCP Toolbox/ajan-veritabanı entegrasyonu geliştiren kurumsal yazılım ekipleri",
+        "core_job": "Ajan veritabanına bağlanmadan önce MCP tools.yaml tanımlarında HTTPS/credential yöntemi, sunucu tarafı sabit tenant parametreleri ve rol kapsamı gibi riskleri incelemek",
+        "product_mechanism": "Kullanıcıdan sağlanan tools.yaml ve istemci SDK ayarlarından yerel tarayıcıda kural tabanlı HTTPS uyarısı, tenant bound-parametre kontrolü, açıklık/mapping raporu ve manuel onay defteri; kimlik bilgisi, çalışan ajan veya canlı veritabanı kullanılmaz",
+        "why_now": "Google Cloud 6 Ekim 2026 MCP Toolbox Java SDK v1.0'da ayrık kimlik bilgisi tedarikçisi, şifrelenmemiş HTTP üzerinden kimlik bilgisi aktarım uyarısı, server-side bağlı parametre temizliği, sürüm anlaşması ve özel başlıkları duyurdu. Heise 12 Ekim bunu yeniden aktardı. Bu teknik ayrıntılar güvenli DB-ajan entegrasyonu için konfigürasyon dosyalarını gerçek veritabanına veya AI servisine bağlamadan statik kontrolden geçirme iş hipotezi sunar. Genel Agent Sandbox Policy Desk'e komşudur; Merge/Validation semantik kontrol gerekecek.",
+        "before_state": "Tool tanımındaki yetkiler ve güvenli transport şartları kod incelemesinde dağınık kalıyor",
+        "after_state": "Açıklanabilir policy/lint raporu, onaylanan parametre alanı, erişim kapsamı ve eksik test kanıtı",
+        "canonical_source_urls": [
+          "https://cloud.google.com/blog/topics/developers-practitioners/announcing-mcp-toolbox-java-sdk-v10-agentic-data-access-for-the-enterprise/"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-2cdb764df23c8004/001.json",
+  "valid_until": "2026-11-12T08:36:40Z"
+}
