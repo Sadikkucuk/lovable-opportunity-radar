@@ -1,0 +1,90 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-8ebaeb40aef65475",
+  "run_id": "2026-10-10-migration",
+  "kind": "validation",
+  "lane": 1,
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "input_hash": "8ebaeb40aef654756adfc5ce9716b905dbb20d81b0547ed400d5fe6147403cc0",
+  "payload": {
+    "candidate": {
+      "candidate_id": "radar-20261010-093",
+      "validation_index": 93,
+      "validator_assignment": "A",
+      "canonical_key": "çok-şubeli-perakende-zincirleri|robot-denetim-bulgularını-görev-listesine-çevirmek|csv-import-raf-sku-eşleştirme-görev-atama-ve-kapanış-kanıtı",
+      "idea_name": "ShelfAction CSV — raf robotu bulgusunu mağaza görevine dönüştürme",
+      "core_job": "Robot/denetim bulgularını görev listesine çevirmek",
+      "target_customer": "Çok şubeli perakende zincirleri",
+      "buyer": "Mağaza operasyon müdürü",
+      "product_mechanism": "CSV import, raf/SKU eşleştirme, görev atama ve kapanış kanıtı",
+      "triggering_article_ids": [
+        "6751011d91ae8944f6de7270"
+      ],
+      "supporting_article_ids": [
+        "6751011d91ae8944f6de7270"
+      ],
+      "canonical_source_urls": [
+        "https://www.automatedwarehouseonline.com/groceryshop-2026-retail-robots-are-scaling-now-what/"
+      ],
+      "article_verification_summary": [
+        {
+          "raw_id": "W1-B02-14-009",
+          "verification": "corroborated",
+          "article_titles": [
+            "Groceryshop 2026 shows that retail robots are ready to scale, use AI - The Robot Report"
+          ],
+          "evidence_notes": {
+            "source_observation": "Automated Warehouse analizi Simbe'nin 3.000 robot kurulumunu ve raf verisinin karar desteğine dönüştürülmesini ele alıyor.",
+            "proposed_product_is_inference": true,
+            "validation_needed": "Gerçek müşteri iş akışı ve veri erişimi pilot görüşmede doğrulanmalı.",
+            "verification": "corroborated",
+            "fact": "Automated Warehouse analizi Simbe'nin 3.000 robot kurulumunu ve raf verisinin karar desteğine dönüştürülmesini ele alıyor."
+          }
+        }
+      ],
+      "before_state": "Veri üretilse bile hangi personelin ne yapacağı takip edilmiyor",
+      "after_state": "CSV import, raf/SKU eşleştirme, görev atama ve kapanış kanıtı",
+      "why_now": "Groceryshop 2026 değerlendirmesi 3.000 Tally robotu ve veri aksiyon ihtiyacını anlatıyor.",
+      "market_gap_hypothesis": "Perakende robotlarının ürettiği raf verisinin operasyonel karara dönüştürülmesi yeni darboğaz. Ticari talep ve doğrudan rakipler henüz bağımsız doğrulanmadı.",
+      "scope_hint": "Dünya",
+      "trakya_transferability_hypothesis": null,
+      "local_scope_evidence_hints": [],
+      "zero_cost_stack_outline": "Lovable web UI + browser-native deterministic workflows + user-supplied CSV/manual inputs; free-tier auth/storage only if limits and production suitability are confirmed. External cash=0 NOT YET VERIFIED.",
+      "estimated_lovable_credits": 130,
+      "history_match_key": null,
+      "history_match_reason": null,
+      "candidate_status": "needs_validation",
+      "source_raw_ids": [
+        "W1-B02-14-009"
+      ],
+      "source_worker_ids": [
+        1
+      ],
+      "source_article_titles": [
+        "Groceryshop 2026 shows that retail robots are ready to scale, use AI - The Robot Report"
+      ],
+      "source_zero_cost_feasibility": "plausible",
+      "source_delta_types": [
+        "DATA_DELTA",
+        "CAPABILITY_DELTA"
+      ],
+      "source_affected_workflow": "Raf robotu CSV → stok/etiket istisnası → mağaza görevi → kapatma",
+      "merge_note": "Distinct customer/job/workflow candidate; no final competition validation."
+    },
+    "source_commit": "345e7c18647624639f4861d43f5599431f4f4d6e",
+    "legacy_research_path": "state/runs/2026-10-10",
+    "prior_evidence_is_not_v2_approval": true,
+    "evidence_followup": {
+      "round": 1,
+      "parent_job_id": "2026-10-10-migration-validation-5b33a104f1e1178d",
+      "parent_receipt_path": "state/v2/results/2026-10-10-migration-validation-5b33a104f1e1178d/001.json",
+      "missing_checks": [
+        "competition:global",
+        "competition:tr",
+        "evidence:competition_tr",
+        "evidence:feasibility"
+      ],
+      "prior_reason": "Özgün 8 Ekim saha raporu doğrulandı. Simbe, Badger ve ShelfOptix ürünleri aynı alıcı+çekirdek mağaza görevi+robot raf alarmından aksiyon ve kapanış iş akışını güncel sitelerinde doğruluyor. Zebra SmartSight 2020 ürün sayfası aynı mekanizmayı sunuyor ancak 2026 etkin satışı/doğrudan bağımsız ürün olarak devamlılığı kanıtlanamadı. Güncel kesin global doğrudan rakip sayısı en az 3, dördüncü aday tarihsel ve belirsiz. Türkiye pazarı için yeterli tarihli tarama yok; direct_count=null, qualified değildir. Dokümante edilmiş küresel alternatifler nedeniyle yenilik yüksek değil, ama mevcut 3 sınırını aşma kanıtı eksiksiz olmadığından nihai rejection ve qualification yerine unverified + evidence_followup gerekir."
+    }
+  }
+}
