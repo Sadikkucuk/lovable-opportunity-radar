@@ -452,19 +452,19 @@ class Engine:
 
     def evidence_gaps(self, result):
         """Report what needs to be researched; never synthesize evidence."""
-        roles = {e.get("role") for e in result.get("evidence", []) if isinstance(e, dict)}
+        roles = {e.get("role") for e in (result.get("evidence") or []) if isinstance(e, dict)}
         required = ("trigger", "competition_tr", "competition_global", "feasibility")
         gaps = [f"evidence:{role}" for role in required if role not in roles]
-        competition = result.get("competition", {})
+        competition = result.get("competition") or {}
         for market in ("tr", "global"):
-            block = competition.get(market, {})
+            block = competition.get(market) or {}
             if not block.get("search_complete") or block.get("direct_count") is None:
                 gaps.append(f"competition:{market}")
-        feasibility = result.get("feasibility", {})
+        feasibility = result.get("feasibility") or {}
         if any(feasibility.get(key) is not False for key in
                ("runtime_external_api", "runtime_external_database", "runtime_ai_agent_or_model")):
             gaps.append("feasibility:runtime")
-        if result.get("history_review", {}).get("decision") not in ("new", "duplicate"):
+        if (result.get("history_review") or {}).get("decision") not in ("new", "duplicate"):
             gaps.append("history:semantic_match")
         return sorted(set(gaps))
 
@@ -642,6 +642,11 @@ class Engine:
                                         "terminal_unverified": sum(
                                             states[k]["state"] == "done" and
                                             states[k]["receipt"]["result"]["decision"] == "unverified"
+                                            for k in evidence_jobs),
+                                        "exhausted_needing_manual_review": sum(
+                                            states[k]["state"] == "done" and
+                                            states[k]["receipt"]["result"]["decision"] == "unverified" and
+                                            jobs[k]["payload"]["evidence_followup"]["round"] >= MAX_EVIDENCE_FOLLOWUPS
                                             for k in evidence_jobs),
                                         "max_rounds": MAX_EVIDENCE_FOLLOWUPS},
                   "runs": run_reports, "errors": sorted(set(self.errors))}
