@@ -4,27 +4,13 @@
   "queue_mode": "shared",
   "current_run": "2026-10-14-2bfd2b8b0a",
   "lease_minutes": 30,
-  "ready_count": 498,
+  "ready_count": 497,
   "job_count": 500,
-  "queue_revision": "36dc533b2eb34e90616de91f0adcffc5d8091f43f49ae7a80746568d2c2de1f8",
+  "queue_revision": "ae2349189a1f95a7a604e00a101787af138cc86037b54a1f1590e6ae37802b41",
   "page": 25,
   "page_count": 25,
   "next_page": null,
   "jobs": [
-    {
-      "job_id": "2026-10-13-43d3b526fc-discovery-b73c64af4c50ebb1",
-      "path": "state/v2/jobs/2026-10-13-43d3b526fc-discovery-b73c64af4c50ebb1.json",
-      "run_id": "2026-10-13-43d3b526fc",
-      "kind": "discovery",
-      "input_hash": "b73c64af4c50ebb1cc18126cd4d9a08b2f6ee1ea0fe41c3c1b98a1de52952d04",
-      "legacy_lane": 4,
-      "queue_group": "backlog",
-      "preferred_worker": 4,
-      "state": "ready",
-      "attempt": 1,
-      "claim_path": "state/v2/claims/2026-10-13-43d3b526fc-discovery-b73c64af4c50ebb1/001.json",
-      "result_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-b73c64af4c50ebb1/001.json"
-    },
     {
       "job_id": "2026-10-13-43d3b526fc-discovery-bcc576d3f1ffaa27",
       "path": "state/v2/jobs/2026-10-13-43d3b526fc-discovery-bcc576d3f1ffaa27.json",
@@ -262,6 +248,19 @@
       "attempt": 1,
       "claim_path": "state/v2/claims/2026-10-13-43d3b526fc-discovery-f90a6d927f2c3b38/001.json",
       "result_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-f90a6d927f2c3b38/001.json"
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-0bd28d5a0ee86811",
+      "path": "state/v2/jobs/2026-10-13-catchup-e3a10c28a635-validation-0bd28d5a0ee86811.json",
+      "run_id": "2026-10-13-catchup-e3a10c28a635",
+      "kind": "validation",
+      "input_hash": "0bd28d5a0ee86811e77dfce4212cfaa8ba6163c9bf63b99744ae5f7c4c1cc8be",
+      "legacy_lane": 2,
+      "queue_group": "backlog",
+      "preferred_worker": 3,
+      "state": "leased",
+      "attempt": 1,
+      "expires_at": "2026-10-13T21:53:14.028Z"
     },
     {
       "job_id": "2026-10-14-2bfd2b8b0a-discovery-09ab283297024606",
