@@ -1,0 +1,53 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "23ffdb8416741a199111f55b863ceca762cd74c3c47f997bae752716394642af",
+  "decision": {
+    "article_key": "7d470f09252a2d996d5738e9",
+    "decision": "opportunity",
+    "reason": "Fuxin Technology 12 Ekim yatırımcı açıklamasında 400/800G MicroTEC için fiili ticari sevkiyat bulunduğu, 1.6T daha küçük ölçek ve CPO için numune doğrulama süreci olduğu bilinen Eylül 23 ve Haziran resmi açıklamalarına tutarlıdır. Ancak 12 Ekim yönetici 'sipariş ve kârlılık piyasa talebine bağlı' dedi; CPO platformuna kesin satış/2026 gelir üretimi yok. BEFORE ürünler consumer/standard optical modules ile test edilir. AFTER 1.6T/CPO soğutma termal parametreleri ve tedarikçi numune doğrulaması farklılaşabilir. Datacenter optik bileşen OEM QA ekipleri için sıcaklık çevrimi, boyut, akım/ΔT ve seri lot kabul matrisi JTBD.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-2bfd2b8b0a-discovery-758d2b7e905abc14:7d470f09252a2d996d5738e9:1",
+        "canonical_key": "optical-module-cpo-engineers|qualify-microtec-supplier-thermal-performance-across-400g-800g-1p6t-cpo|offline-sample-temperature-current-and-lot-acceptance-evidence-matrix",
+        "idea_name": "Optik Modül MicroTEC Numune–Termal Kabul Defteri",
+        "core_job": "400G/800G/1.6T ve CPO prototiplerinde MicroTEC soğutma parçası lotlarını sıcaklık farkı, enerji girişi, modül fiziksel sınırı, fail/retest ve tedarikçi numune kabulü açısından izlemek",
+        "target_customer": "Yüksek hızlı optik modül/CPO tasarım ve parça kalifikasyon mühendislik ekipleri",
+        "buyer": "Optik transceiver kalite ve termal tasarım yöneticisi",
+        "why_now": "12 Ekim 2026 Fuxin MicroTEC talep ve kârlılık belirsizliğine dair resmî yatırımcı görüşmesi, 400G/800G seri ile CPO numune doğrulama arasındaki fiziksel tasarım/ticari olgunluk farkını vurguluyor.",
+        "before_state": "Optik modül farklı hız jenerasyonlarının termal test ve müşteri şartları ayrı tedarikçi PDF'lerinde, CPO prototip numuneleri ayrı elle izlenir.",
+        "after_state": "Farklı form factor/lot/test deneyi ve CPO hazır olma kanıtı yeniden sınanabilir matrise bağlanır; gerçek üretim verimi otomatik iddia edilmez.",
+        "canonical_source_urls": [
+          "https://www.yicai.com/brief/103389410.html",
+          "https://www.yicai.com/brief/103376081.html"
+        ],
+        "supporting_article_ids": [
+          "2bb29c2756b4b20d0a16b82c"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.yicai.com/brief/103376081.html",
+            "observation": "23 Eylül Fuxin açıklaması 400G/800G MicroTEC satışa, 1.6T küçük lota, CPO yalnız numune doğrulamaya geldi; 2026 CPO gelir beklememe uyarısı var."
+          },
+          {
+            "url": "https://www.yicai.com/brief/103389410.html",
+            "observation": "12 Ekim yatırımcı bilgilendirmesi Micro TEC brüt kar marjı mevcut consumer kullanımından farklı, gelecek sipariş/kârlılık belirsiz."
+          }
+        ],
+        "scope_hint": "Dünya",
+        "local_evidence": {
+          "signals": [
+            "400/800G satış, 1.6T küçük lot ve CPO test numuneleri arasındaki olgunluk ayrımı somut vendor QA işidir."
+          ],
+          "unknowns": [
+            "Türkiye/global PLM/QMS tedarikçi testleri doğrudan rakip analizi tamam değil.",
+            "Malzeme termal ve montaj testleri olmadan güvenilirlik sertifikası verilmez.",
+            "MicroTEC/CPO 2026 gelir iddiası kaynaklarca desteklenmiyor."
+          ]
+        },
+        "product_mechanism": "Kullanıcı termal test ölçümü CSV, I/V, sıcaklık profili, lot, dalga boyu/modül tipi, numune BOM sürümü, kabul kriteri ve mühendis onayını tarayıcıda deterministik eşleyen test farkı ve tedarikçi karşılaştırma defteri."
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-2bfd2b8b0a-discovery-758d2b7e905abc14/002.json",
+  "valid_until": "2026-11-12T21:43:29Z"
+}

@@ -1,0 +1,49 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "14adceabab82f4eb380f17d14a02247b62a396270f03511b0a41858bf1b693f9",
+  "decision": {
+    "article_key": "7d6d5bf1a4a1fe9ed1def6d5",
+    "decision": "opportunity",
+    "reason": "11 Ekim EDaily ve Korea Economic Daily, Counterpoint Research'ün 2026 8300 Tbit → 2030 172000 Tbit 20x humanoid DRAM talep tahminini, robot başına 19→39 GB tahminini aktarıyor. Gerçek 2030 sevkiyatı değil. DELTA: fiziksel robot düşük enerji/termal sınırı altında kamera/LiDAR/dokunma akışları, hafıza buffer ve karar modelinin paylaşılan RAM'inin ön boyutlandırılması. Bellek tedarik ve embedded platform ekipleri tahmini ve gerçek testin farkını modellenmiş ayırmalı. Harici AI model çalıştırmadan, kullanıcı tanımlı GB, sensor stream ve test CSV ile tasarım senaryosu teknik ürün olabilir.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-2bfd2b8b0a-discovery-758d2b7e905abc14:7d6d5bf1a4a1fe9ed1def6d5:1",
+        "canonical_key": "humanoid-robot-embedded-teams|size-memory-thermal-and-battery-budget-for-multisensor-edge-inference|offline-sensor-buffer-model-ram-power-and-test-scenario-ledger",
+        "idea_name": "Humanoid Robot RAM–Enerji Bütçe Senaryo Defteri",
+        "core_job": "Humanoid robot sensör akışlarında toplam çalışma belleği ve sahada ölçülmüş pil/ısıl sınırı aşma riskini proje tasarımı öncesi CPU/GPU ve DRAM konfigürasyonlarıyla kıyaslamak",
+        "target_customer": "Humanoid/AMR robot kontrol bilgisayarı tasarlayan gömülü donanım ve platform ekipleri",
+        "buyer": "Robot donanım mimarı veya embedded platform tedarik yönetici",
+        "why_now": "11 Ekim Counterpoint büyüme projeksiyonu humanoid DRAM yoğunluğunu 2026 kişi başına 19GB'den 2030 39GB öngörüyor; robot OEM bütçe/tasarım tradeoff baskısı artabilir.",
+        "before_state": "Robotun sensör/multimodal edge inference RAM ve batarya termal ölçümleri ayrı takım dosyalarında, yalnız kıyas benchmark ile planlanabilir.",
+        "after_state": "Model çalışma belleği, video/sensör tamponu, bellek alternatif güç tüketimi ve fiziksel saha test kriteri senaryosu aynı karar raporunda görünür.",
+        "canonical_source_urls": [
+          "https://tv.edaily.co.kr/News/NewsRead?Kind=257&NewsId=01476006645611936",
+          "https://www.hankyung.com/article/2026101139707"
+        ],
+        "supporting_article_ids": [
+          "7bff83d2aa33f8ae915b3a3f"
+        ],
+        "source_observations": [
+          {
+            "url": "https://tv.edaily.co.kr/News/NewsRead?Kind=257&NewsId=01476006645611936",
+            "observation": "11 Ekim EDaily Counterpoint 2026 8300 Tbit ve 2030 172000 Tbit robot DRAM talep projeksiyonu, robot başına 19→39GB beklenti aktarıyor; gerçek satış değil."
+          }
+        ],
+        "scope_hint": "Dünya",
+        "local_evidence": {
+          "signals": [
+            "Tek robot için paylaşılan bellek boyutunun ikiye katlanması öngörüsü OEM RAM/soğutma/batarya tasarım kararına etki edebilir."
+          ],
+          "unknowns": [
+            "2026 dünya satış sayıları ve Counterpoint ham çalışması görülmedi; tahmin ayrı tutuldu.",
+            "Runtime yerel AI inferansı bu ürünün içinde yok; sadece dışarıdan girilmiş bellek ihtiyacı hesaplanır.",
+            "TR/global robot hardware qualification araçları rakip araştırması yapılmalı."
+          ]
+        },
+        "product_mechanism": "Kullanıcının görüntü frame rate/buffer, sensör sayısı/veri genişliği, yerel model çalışma RAM'i, kod cache ve DRAM alternatif tedarikçi W/GB tahmini ile test CSV dosyasını deterministik kapasite/enerji ve tolerans senaryolarına dönüştüren çevrimdışı web hesaplayıcı."
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-2bfd2b8b0a-discovery-758d2b7e905abc14/002.json",
+  "valid_until": "2026-11-12T21:43:29Z"
+}
