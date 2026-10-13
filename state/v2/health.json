@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T21:02:36Z",
+  "controller_observed_at": "2026-10-13T21:05:06Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
-  "ready_jobs": 505,
+  "ready_jobs": 504,
   "unfinished_jobs": 505,
   "last_verified_progress_at": "2026-10-13T20:52:04Z",
   "workers": {
@@ -14,9 +14,11 @@
         "schema_version": 1,
         "worker": 1,
         "invocation_id": "bb2b921b-36d0-4f1c-8e76-218c0d37bc81",
-        "event": "started",
-        "at": "2026-10-13T21:02:16Z",
-        "path": "state/v2/worker-events/1/bb2b921b-36d0-4f1c-8e76-218c0d37bc81/000-started.json"
+        "event": "progress",
+        "at": "2026-10-13T21:04:58Z",
+        "job_id": "2026-10-14-2bfd2b8b0a-discovery-09ab283297024606",
+        "stage": "claim_saved",
+        "path": "state/v2/worker-events/1/bb2b921b-36d0-4f1c-8e76-218c0d37bc81/001-progress.json"
       },
       "receipts_this_invocation": 0,
       "write_and_receipt_verified": true,
@@ -37,38 +39,17 @@
       "last_receipt_at": "2026-10-13T04:08:49.764Z"
     },
     "3": {
-      "last_started_at": "2026-10-13T20:30:58.957Z",
+      "last_started_at": "2026-10-13T21:04:51.338Z",
       "last_event": {
         "schema_version": 1,
         "worker": 3,
-        "invocation_id": "94f4769e-c895-4282-8f13-d8e10236ff85",
-        "event": "finished",
-        "at": "2026-10-13T20:53:46.235Z",
-        "execution_mode": "owner_requested_manual_github_research_no_scheduled_task_modification",
-        "completed_receipts": 7,
-        "discovery_receipts_saved": 2,
-        "discovery_articles_triaged": 20,
-        "merge_receipts_saved": 1,
-        "merge_raw_opportunities": 167,
-        "merge_candidates_created": 160,
-        "validation_receipts_saved": 4,
-        "validation_decisions": {
-          "duplicate": 1,
-          "rejected": 3,
-          "qualified": 0,
-          "unverified": 0
-        },
-        "explicit_nonactions": [
-          "no_schedule_change",
-          "no_workflow_prompt_changes",
-          "no_legacy_claim_overwrites",
-          "no_catalog_or_history_direct_mutations",
-          "no_lovable_site_change"
-        ],
-        "note": "Research results committed and read back; controller accepted all seven at most recently observed 245 done. Open queue remains to future normal processing.",
-        "path": "state/v2/worker-events/3/94f4769e-c895-4282-8f13-d8e10236ff85/999-finished.json"
+        "invocation_id": "c40b85d3-ad8a-458e-a895-5ab35ee090d5",
+        "event": "started",
+        "at": "2026-10-13T21:04:51.338Z",
+        "execution_mode": "user_requested_manual_master_no_worker_schedule_edits",
+        "path": "state/v2/worker-events/3/c40b85d3-ad8a-458e-a895-5ab35ee090d5/000-started.json"
       },
-      "receipts_this_invocation": 7,
+      "receipts_this_invocation": 0,
       "write_and_receipt_verified": true,
       "last_receipt_at": "2026-10-13T20:52:04.941Z"
     },
