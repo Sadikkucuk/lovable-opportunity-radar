@@ -5,7 +5,7 @@
   "catalog_count": 91,
   "counts": {
     "done": 245,
-    "ready": 447,
+    "ready": 505,
     "unverified": 7
   },
   "evidence_research": {
@@ -112,6 +112,24 @@
       "publication_status": "github_release_available",
       "site_delivery": "not_observed_by_controller",
       "state_changed_at": "2026-10-13T20:41:04Z"
+    },
+    {
+      "run_id": "2026-10-14-2bfd2b8b0a",
+      "processing_status": "in_progress",
+      "job_counts": {
+        "ready": 58
+      },
+      "validation_decisions": {},
+      "article_decisions": {
+        "opportunity": 239,
+        "no_opportunity": 1457,
+        "unverified": 106
+      },
+      "articles_processed": 1802,
+      "articles_expected": 2374,
+      "publication_status": "github_release_available",
+      "site_delivery": "not_observed_by_controller",
+      "state_changed_at": "2026-10-13T21:02:36Z"
     }
   ],
   "errors": [
@@ -120,12 +138,6 @@
   "health": {
     "state": "attention_required",
     "alerts": [
-      {
-        "code": "worker_blocked",
-        "worker": 1,
-        "severity": "critical",
-        "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
-      },
       {
         "code": "worker_blocked",
         "worker": 4,
@@ -140,6 +152,6 @@
       }
     ],
     "last_verified_progress_at": "2026-10-13T20:52:04Z",
-    "controller_observed_at": "2026-10-13T20:54:19Z"
+    "controller_observed_at": "2026-10-13T21:02:36Z"
   }
 }
