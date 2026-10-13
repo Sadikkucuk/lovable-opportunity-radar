@@ -1,0 +1,30 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "665c315cdfa24243eeb2399a21603d7da313d6328f60d7aee50fb8ff2687b03c",
+  "decision": {
+    "article_key": "ccb7b6a2dbc485546ff0402d",
+    "decision": "opportunity",
+    "reason": "Tencent Yuanqi platformunun 8 Ekim 2026 tarihli RESMÎ kapanış duyurusunda 29 Ekim'den itibaren yeni agent oluşturma/API key dağıtımı duruyor; 9 Kasım servis, API ve kanallar kapanıyor; agent konfigürasyon, workflow, konuşma kayıtlarının dışa aktarımı için 9 Ocak 2027 son tarih. Genel tüketici hizmet kapanış işinden farklı olarak enterprise bot yönetici çok-kanallı kanal eşleştirme/kesinti öncesi kabul testine ihtiyaç duyuyor. Yazılım harici agent çalıştırmadan exported JSON/CSV ile yardımcı olabilir.",
+    "canonical_source_url": "https://yuanqi.tencent.com/cl/service-discontinuation",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-43d3b526fc-discovery-609ee2de680e9946:ccb7b6a2dbc485546ff0402d:01",
+        "canonical_key": "organizations-running-tencent-yuanqi-bots|prepare-agent-channel-cutover-and-retirement-evidence|exported-agent-workflow-channel-and-acceptance-mapping-ledger",
+        "idea_name": "Kapanan AI Agent Platformu Geçiş Kanıt Defteri",
+        "target_customer": "Tencent Yuanqi veya benzer düşük kodlu agent yayın platformlarını kullanan işletme chatbot/sosyal kanal yöneticileri",
+        "core_job": "Agent konfigürasyonlarını/konuşma geçmişini zamanında dışarı aktarmak, WeChat kanalı eşleştirmelerini başka altyapıya geçmeden önce eksik/bozuk noktaları belgelemek ve kesintisiz geçiş için insan onaylı kabul listesi yapmak",
+        "product_mechanism": "Kullanıcının indirdiği agent workflow JSON/CSV, kanal listesi, webhook adresi, export kontrol toplamı, hedef platform eşleştirme, taslak kabul testi ve kapanış onay raporu; mevcut agentı çalıştırmaz veya API kullanmaz",
+        "before_state": "Agent konfigürasyonu ve hedef kanal değişim işleri ayrı dosyalarda; API 9 Kasım'da kesildiğinde geri dönülemez hata oluşabilir",
+        "after_state": "Kanal/agent/veri export kanıtı, açık kabul testleri ve migration go/no-go raporu",
+        "why_now": "Tencent Yuanqi platformunun 8 Ekim 2026 tarihli RESMÎ kapanış duyurusunda 29 Ekim'den itibaren yeni agent oluşturma/API key dağıtımı duruyor; 9 Kasım servis, API ve kanallar kapanıyor; agent konfigürasyon, workflow, konuşma kayıtlarının dışa aktarımı için 9 Ocak 2027 son tarih. Genel tüketici hizmet kapanış işinden farklı olarak enterprise bot yönetici çok-kanallı kanal eşleştirme/kesinti öncesi kabul testine ihtiyaç duyuyor. Yazılım harici agent çalıştırmadan exported JSON/CSV ile yardımcı olabilir.",
+        "canonical_source_urls": [
+          "https://yuanqi.tencent.com/cl/service-discontinuation"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-609ee2de680e9946/001.json",
+  "valid_until": "2026-11-12T17:50:47Z"
+}
