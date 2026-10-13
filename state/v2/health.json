@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T21:11:09Z",
+  "controller_observed_at": "2026-10-13T21:11:27Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
   "ready_jobs": 500,
-  "unfinished_jobs": 503,
-  "last_verified_progress_at": "2026-10-13T21:08:33Z",
+  "unfinished_jobs": 502,
+  "last_verified_progress_at": "2026-10-13T21:11:15Z",
   "workers": {
     "1": {
       "last_started_at": "2026-10-13T21:02:16Z",
@@ -31,14 +31,15 @@
         "worker": 2,
         "invocation_id": "eb9a2f4d-b154-4f02-8e6b-acde23af3f48",
         "event": "progress",
-        "at": "2026-10-13T21:09:57.594Z",
+        "at": "2026-10-13T21:11:23.114Z",
         "job_id": "2026-10-14-2bfd2b8b0a-discovery-051bad4c56f6f9c6",
-        "stage": "claim_saved",
-        "path": "state/v2/worker-events/2/eb9a2f4d-b154-4f02-8e6b-acde23af3f48/001-progress.json"
+        "stage": "receipt_saved",
+        "receipt_path": "state/v2/results/2026-10-14-2bfd2b8b0a-discovery-051bad4c56f6f9c6/001.json",
+        "path": "state/v2/worker-events/2/eb9a2f4d-b154-4f02-8e6b-acde23af3f48/002-progress.json"
       },
-      "receipts_this_invocation": 0,
+      "receipts_this_invocation": 1,
       "write_and_receipt_verified": true,
-      "last_receipt_at": "2026-10-13T04:08:49.764Z"
+      "last_receipt_at": "2026-10-13T21:11:15.209Z"
     },
     "3": {
       "last_started_at": "2026-10-13T21:08:42.323Z",
@@ -95,9 +96,9 @@
     "stages": {
       "discovery": {
         "completed_in_window": 20,
-        "known_remaining": 291,
+        "known_remaining": 290,
         "observed_jobs_per_hour": 10.0,
-        "estimated_minutes_for_stage": 1746.0
+        "estimated_minutes_for_stage": 1740.0
       },
       "merge": {
         "completed_in_window": 1,
