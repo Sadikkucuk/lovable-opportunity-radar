@@ -1,0 +1,49 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "d88e4acb505239db5a842c24086add354676bc9176b1118d3854512309bace5c",
+  "decision": {
+    "article_key": "ca8cefbdf7cc859dd5d33b34",
+    "decision": "opportunity",
+    "reason": "SK Shieldus'un 8 Ekim 2026 tarihli resmî açıklaması ARTEX ile ilişkili Kore banka ihlallerini mevcut Shadow IT ve API authentication/authorization zafiyetlerinin otomasyonla ölçeklenmesi olarak değerlendiriyor; yeni yapay zeka kaynaklı sıfır gün açığı olarak sunmuyor. Banka destek, bayi/loan-broker sistemlerinde sahibi bilinmeyen API, internete açık servis ve WAF/EDR kontrol kanıtı için saha güvenlik ekiplerinin manuel varlık CSV + sahiplik/audit ön kontrol işi bulunabilir. Ürün canlı API tarayıcısı değil, offline yetki/kontrol açıklığı defteridir. Ancak EASM/ASPM rakipleri yoğun ve SK'nin halihazırda aynı işi sağlayan ücretli hizmeti var; Validation'da doğrudan rakip testi şarttır.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-2bfd2b8b0a-discovery-7f479a003ccde663:ca8cefbdf7cc859dd5d33b34:1",
+        "canonical_key": "financial-services-api-security-owners|assign-shadow-it-partner-api-owner-and-authz-evidence|offline-endpoint-exposure-asset-owner-control-and-retest-matrix",
+        "idea_name": "Banka Partner API Shadow IT Sahiplik Kanıt Matrisi",
+        "core_job": "Banka/finans kurumunun kredi aracısı ve dış satış platformundaki kayıt dışı veya sorumlusu belirsiz API uç noktalarını sahiplemek ve kimlik yetki/izleme/retetste eksik kanıtı kapatmak",
+        "target_customer": "Finans kuruluşları API gateway güvenliği, üçüncü taraf risk ve BT envanter ekipleri",
+        "buyer": "Banka API güvenliği lideri veya üçüncü taraf risk yöneticisi",
+        "product_mechanism": "Müşterinin elindeki gateway API envanter CSV, partner/sistem sahibi, internet maruziyeti, authentication/authorization test referansı, WAF/takip/SIEM sahipliği, insan doğrulaması ve retest planı ile deterministik risk/kanıt açıklığı raporu; canlı pasif/aktif sızma testi, bulut hesabı veya AI model zorunlu değil",
+        "why_now": "8 Ekim SK Shieldus rehberi, Kore finans saldırılarının Shadow IT ve dışa açık partner API yönetimindeki görünürlük sorunlarını güncel örnek olarak ortaya koydu.",
+        "before_state": "Ana bankacılık API envanteri ile dış loan-broker/çalışan destek platformlarının owner, politika ve EDR/SIEM kanıtları ayrı sistemlerde.",
+        "after_state": "Her partner endpoint'in gerçek sahibi, yetki testi, izleme sorumlusu ve eksik retest/imza kanıtı tek kuru listede.",
+        "canonical_source_urls": [
+          "https://www.skshieldus.com/company/newsroom/skshieldus-shadow-it-artex"
+        ],
+        "supporting_article_ids": [
+          "91b5eb21c18f7829a62362ce"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.skshieldus.com/company/newsroom/skshieldus-shadow-it-artex",
+            "observation": "Resmî 8 Ekim duyurusu ARTEX'i yeni exploit sınıfı olarak değil mevcut Shadow IT/API eksiklerinin otomasyonu olarak değerlendiriyor; tanımlama/izleme/tespit ve müdahale üç aşaması var; satıcı zaten ASM/API-Security/MXDR hizmetleri sunuyor.",
+            "verification": "official_vendor_page_read"
+          }
+        ],
+        "scope_hint": "Dünya; banka partner API güvenlik ve üçüncü taraf risk",
+        "local_evidence": {
+          "signals": [
+            "Kore finans sektörü kaynak duyurusunda anonim partner/loan broker API'lerinin takipsiz kalması somut operasyon kör noktasıdır."
+          ],
+          "unknowns": [
+            "Türkiye'de aynı müşteri+iş+kanıt workflow'u yapan ürünler ve global direct4+ çok muhtemeldir; sistematik Validation gerekir.",
+            "Bu araç canlı keşif yapmaz, kurumun CSV listesinin tamlığı garanti edilemez.",
+            "Zorunlu harici API yok ama manuel envanter güncelleme maliyeti yüksektir."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-2bfd2b8b0a-discovery-7f479a003ccde663/001.json",
+  "valid_until": "2026-11-12T23:17:17Z"
+}

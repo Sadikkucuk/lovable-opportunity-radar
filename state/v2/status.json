@@ -4,10 +4,9 @@
   "protected_records": 89,
   "catalog_count": 91,
   "counts": {
-    "done": 262,
+    "done": 263,
     "ready": 488,
-    "unverified": 7,
-    "leased": 1
+    "unverified": 7
   },
   "evidence_research": {
     "followup_jobs": 10,
@@ -121,21 +120,20 @@
       "run_id": "2026-10-14-2bfd2b8b0a",
       "processing_status": "in_progress",
       "job_counts": {
-        "done": 12,
-        "ready": 45,
-        "leased": 1
+        "done": 13,
+        "ready": 45
       },
       "validation_decisions": {},
       "article_decisions": {
-        "opportunity": 271,
-        "no_opportunity": 1530,
-        "unverified": 121
+        "opportunity": 273,
+        "no_opportunity": 1537,
+        "unverified": 122
       },
-      "articles_processed": 1922,
+      "articles_processed": 1932,
       "articles_expected": 2374,
       "publication_status": "github_release_available",
       "site_delivery": "not_observed_by_controller",
-      "state_changed_at": "2026-10-13T23:15:53Z"
+      "state_changed_at": "2026-10-13T23:17:33Z"
     }
   ],
   "errors": [
@@ -146,6 +144,12 @@
   "health": {
     "state": "attention_required",
     "alerts": [
+      {
+        "code": "worker_not_started",
+        "worker": 1,
+        "severity": "critical",
+        "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
+      },
       {
         "code": "worker_heartbeat_missing",
         "worker": 1,
@@ -177,7 +181,7 @@
         "user_action": "Durum raporundaki hatalı kayıt incelenmeli; doğrulanmış fikirler yayında kalır."
       }
     ],
-    "last_verified_progress_at": "2026-10-13T23:14:19Z",
-    "controller_observed_at": "2026-10-13T23:15:53Z"
+    "last_verified_progress_at": "2026-10-13T23:17:17Z",
+    "controller_observed_at": "2026-10-13T23:17:33Z"
   }
 }

@@ -1,0 +1,49 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "7785b613e3c78658bcc4939cd2f91c1695526a8458d379c6192131368a5988a5",
+  "decision": {
+    "article_key": "c4e7d8f5a9918fefe4a0f45d",
+    "decision": "opportunity",
+    "reason": "10 Ekim Shenzhen Weichuang Zhiyin üreticisi tarafından yayımlanan kahve robotu tasarım notu (与非网'de tam özgün içerik) WT4101B-C04L yaklaşma radarı, WT4102B-C03 sabit insan algılayıcısı ve WT2606A yerel komut-ses çipini birleşik senaryo olarak tanıtıyor; menzil ve ses tanıma sayıları satıcının tasarım beyanı, bağımsız saha ölçümü değil. BEFORE kızılötesi/ayak basma sistemlerinde duran müşteri, parlak ışık ve yanlış kapanma sorunları; AFTER yerel radar + offline ses algısı ile self-service akışı farklılaşabilir. Ayrı buyer işi cihaz konfigürasyonu ve müşteri bekleme/menü/uyandırma saha kabulü, üreticinin halihazırda konuşma/sensör işini dışarıda model çağırmadan test edebilecek manuel CSV test kanıt defteri.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-2bfd2b8b0a-discovery-7f479a003ccde663:c4e7d8f5a9918fefe4a0f45d:1",
+        "canonical_key": "self-service-coffee-robot-installers|qualify-customer-presence-wake-and-voice-order-state-transitions|offline-sensor-command-latency-false-exit-and-signoff-evidence-matrix",
+        "idea_name": "Kahve Robotu Yaklaşma–Sesli Sipariş Saha Kabul Defteri",
+        "core_job": "Self-servis kahve kioskunda yaklaşma, sabit durma, ekran uyanma, menü sesi, müşteri ayrılma ve yanlış kapanma durumlarının sahada test edilerek kabulünün kanıtlanması",
+        "target_customer": "AVM/ofis kahve robotu teknik kurulum, marka servis ve OEM devreye alma ekipleri",
+        "buyer": "Robot kiosk saha operasyon kalite/devreye alma yöneticisi",
+        "product_mechanism": "Kullanıcı kurulum senaryosu CSV'si (bölge, algılama mesafesi, müşteri durağan süre, wake delay, ses komutu ID, iptal/teslim, hata ve QA imzası) ile tarayıcı içi kural/eksik test matrisi; canlı mikrofon/robot/LLM entegrasyonu gerekli değil",
+        "why_now": "10 Ekim sensör tasarım yazısı ikili radar+offline ses çipi ile kahve kioskunda durağan müşteri ve ses komutu yönetimini gündeme getirdi; fiziksel saha doğrulama ihtiyacı ortaya çıkabilir.",
+        "before_state": "Üreticinin nominal sensör aralığı ve fiili kiosk parlak ışık, ses gürültüsü, müşterinin beklemesi, ayrılması testleri ayrı servis formlarındadır.",
+        "after_state": "Her kullanıcı durumu için gözlenen süre/mesafe, hata, düzeltme, tekrarlı test ve insan onayı tek kanıt matrisinde.",
+        "canonical_source_urls": [
+          "https://www.eefocus.com/article/2099435.html"
+        ],
+        "supporting_article_ids": [
+          "ad2468ae5bc03747acbbcac8"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.eefocus.com/article/2099435.html",
+            "observation": "Tam yayıncı sayfası: WT4101B-C04L yaklaşma, WT4102B-C03 sabit insan algılama, WT2606A offline voice; datasheet iddiaları sahada bağımsız doğrulanmadı.",
+            "verification": "publisher_full_page_read"
+          }
+        ],
+        "scope_hint": "Global kiosk/otomatik satış robotu integratörleri",
+        "local_evidence": {
+          "signals": [
+            "Sabit duran müşteri için ayrı radar davranışı ve offline ses siparişi ölçülebilir kabul senaryosu doğuruyor."
+          ],
+          "unknowns": [
+            "Robot/kiosk OEM servis yazılımı ve IoT kabul paketlerinin Türkiye/global doğrudan rakipleri henüz sayılmadı.",
+            "Sensör başarımı ve dil desteği fiziksel saha testine bağlıdır.",
+            "Rekabet ve dış maliyet doğrulaması Validation'a kalır."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-2bfd2b8b0a-discovery-7f479a003ccde663/001.json",
+  "valid_until": "2026-11-12T23:17:17Z"
+}
