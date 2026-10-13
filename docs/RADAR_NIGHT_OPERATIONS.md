@@ -6,9 +6,11 @@
 - Main bakım modunda kaldıkça ChatGPT görevleri durdurulmuş olmalıdır.
 - PR #6 kabul testleri geçip incelenmeden ve ayrı üretim etkinleştirmesi
   yapılmadan ilk araştırma çalışması başlatılmaz.
-- Gece saati Europe/Istanbul 00:01 dahil, 07:00 hariç. Kapasite sınırsız
-  varsayımı çalışma bütçesi planlaması içindir; sağlayıcı erişim, kota,
-  çalışma süresi ve güvenlik kontrollerini kaldırmaz.
+- Otomatik başlama penceresi Europe/Istanbul 00:01 dahil, 07:00 hariçtir.
+  **07:00'den sonra yeni claim oluşturma yasağı kaldırıldı.** Saat 07:00,
+  çalışan bir Worker'ın claim veya sonuç kaydetmesini kesmez. Kullanıcı
+  dört araştırma Worker'ından istediğini 7/24 manuel başlatabilir.
+  Sınırsız kullanım plan varsayımıdır; gerçek sağlayıcı limitleri geçerlidir.
 
 ## Mevcut beş görevin görev ayrımı
 - Worker 1 saatlik 00:01..06:01 (dakika 01).
@@ -49,9 +51,16 @@
 2. state/v2/inbox/worker-N.json ve next_page sayfalarından bekleyen tek
    bir iş seç. Claim/result yolları tam olarak controller'ın verdiği
    yollar olsun.
-3. ChatGPT konuşmasında 'Radar'ın sıradaki uygun işini mevcut protokole
-   göre manuel işle ve sonucu GitHub'a kaydet; hiçbir prompt/katalog
-   dosyasını değiştirme' talimatını ver.
+3. Günün HER SAATİNDE istenen Worker için ayrı sohbet komutu ver:
+   "Radar WORKER_ID=1 (veya 2/3/4) için MANUEL ÇALIŞTIRMA:
+   main config.mode=active ise kuyruktaki sıradaki uygun işleri
+   WORK_PROTOCOL'e göre arka arkaya işle, gerçek UUID ile started,
+   first-writer claim, sonuç, read-back ve heartbeat kayıtlarını
+   oluştur; katalog, jobs ve görev/saat ayarlarını değiştirme."
+   Manuel işlem yalnızca bu açık kullanıcı talimatıyla başlatılır;
+   zamanlanmış görevlerin sonraki gece başlaması beklenmez.
+   Bir iş tamamlandıktan sonra kapasite yetiyorsa sıradakine geç.
+   Saatin 07:00 sonrası olması yeni claim açmayı ENGELLEMEZ.
 4. İlk yazanın kazandığı claim, token ve input_hash doğrulanmadan
    araştırma yapılmış gibi bildirme. 30 dakikalık lease dolarsa
    geç kalmış kayıt üretme; controller'ın sonraki attempt'ini bekle.
