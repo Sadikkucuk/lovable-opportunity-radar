@@ -1,0 +1,40 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "91ff6726f37f301f767631825c20a023d567b04441b36edc1de42ea8739e703c",
+  "decision": {
+    "article_key": "d603970d557edf1ae7639557",
+    "decision": "opportunity",
+    "reason": "Cloudflare 9 Ekim 2026 resmi duyurusunda Deno ekibinin katılacağını, workerd ve celld çalışmalarını birleştirerek Workers/Durable Objects'in bağımsız/self-hosted ortamlarında daha kolay çalışmasını hedeflediğini açıklıyor. Bu bugün tüm taşınabilirlik veya tam uyumluluk yayımlandı demek değildir. TypeScript/JS geliştiricilerinin sürüm, özellik API kapsamı ve state formatı bakımından taşınabilirlik uygunluk kanıtını üretmesi yeni kontrol iş hipotezi.",
+    "canonical_source_url": "https://blog.cloudflare.com/deno-joins-cloudflare/",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-43d3b526fc-discovery-8c42e1a253a5183f:d603970d557edf1ae7639557:01",
+        "idea_name": "Deno Workers Portability Change Ledger",
+        "canonical_key": "typescript-platform-engineering-teams|check-deno-cloudflare-runtime-portability-assumptions|api-feature-state-version-and-migration-evidence-ledger",
+        "target_customer": "Deno Deploy ve Cloudflare Workers altyapısı kullanan TypeScript uygulama geliştirme ekipleri",
+        "buyer": "Platform mimarı/teknik lider",
+        "core_job": "Deno ve Workers/Durable Objects taşınabilirliği hedefi açıklanırken hangi sürüm API farkının ortam aktarımını engelleyebileceğini kaynak temelli izlemek",
+        "product_mechanism": "Kullanıcı elle girilen JS API, run config, state bağımlılığı, workerd/celld sürümü ve test çıktısı CSV/JSON; deterministik eksik şart, sorumlu/karar/kanıt defteri; API ya da servis host etmiyor",
+        "before_state": "Deno, Workers ve farklı self-hosted runtime destek iddiaları ayrı roadmap dokümanlarında",
+        "after_state": "Uygulama API'si ve state kalıcılığı için insan onaylı göç hazırlık matrisi, entegrasyon garantisi yok",
+        "canonical_source_urls": [
+          "https://blog.cloudflare.com/deno-joins-cloudflare/"
+        ],
+        "scope_hint": "Dünya",
+        "why_now": "Cloudflare 9 Ekim 2026 resmi duyurusunda Deno ekibinin katılacağını, workerd ve celld çalışmalarını birleştirerek Workers/Durable Objects'in bağımsız/self-hosted ortamlarında daha kolay çalışmasını hedeflediğini açıklıyor. Bu bugün tüm taşınabilirlik veya tam uyumluluk yayımlandı demek değildir. TypeScript/JS geliştiricilerinin sürüm, özellik API kapsamı ve state formatı bakımından taşınabilirlik uygunluk kanıtını üretmesi yeni kontrol iş hipotezi.",
+        "discovery_only": true,
+        "source_observations": [
+          {
+            "url": "https://blog.cloudflare.com/deno-joins-cloudflare/",
+            "accessed_at": "2026-10-13T19:32:46.014Z",
+            "observation": "Cloudflare 9 Ekim 2026 resmi duyurusunda Deno ekibinin katılacağını, workerd ve celld çalışmalarını birleştirerek Workers/Durable Objects'in bağımsız/self-hosted ortamlarında daha kolay çalışmasını hedeflediğini açıklıyor. Bu bugün tüm taşınabilirlik veya tam uyumluluk yayımlandı demek değildir. TypeScript/JS geliştiricilerinin sürüm, özellik API kapsamı ve state formatı bakımından taşınabilirlik uygunluk kanıtını üretmesi yeni kontrol iş hipotezi.",
+            "verification": "official_or_primary_trade",
+            "source_claim_only": true
+          }
+        ]
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-8c42e1a253a5183f/001.json",
+  "valid_until": "2026-11-12T19:32:46Z"
+}

@@ -1,0 +1,40 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "90563aef0d162fadabadd05f67342b54b6e46418868f21d32a271793e1698156",
+  "decision": {
+    "article_key": "d331a2a23209712c17a65b58",
+    "decision": "opportunity",
+    "reason": "Pandaily 11 Ekim haberinde eski NVIDIA mimarının Y10 robot işlemcisini bir milisaniyenin altında algı–karar–eylem kapalı döngü gecikmesi için tasarladığını, 2026 FPGA prototipi planladığını aktarıyor. Bu henüz doğrulanmış saha gecikmesi değildir; farklı edge kontrolcülerin ölçüm örneklerine göre latency dağılımı, jitter ve güvenlik bütçesini insan onayıyla değerlendirme iş akışı hipotezidir.",
+    "canonical_source_url": "https://pandaily.com/y10-physical-ai-chip-1ms-closed-loop-latency-fpga-platform-xu-feixiang/",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-43d3b526fc-discovery-8c42e1a253a5183f:d331a2a23209712c17a65b58:01",
+        "idea_name": "Robot 1ms Closed-Loop Trial Evidence Desk",
+        "canonical_key": "industrial-robot-controller-evaluation-teams|compare-sub-millisecond-control-latency-and-jitter-evidence|sensor-compute-actuator-timing-test-and-handover-ledger",
+        "target_customer": "Robot kontrolcü mühendislik ve fabrika otomasyon test ekipleri",
+        "buyer": "Gerçek zamanlı robotik QA sorumlusu",
+        "core_job": "Farklı donanım/FPGA/CPU kontrolcülerin algılama-hesap-aktüasyon kapalı döngü gecikmesi ve jitter testlerini güvenlik varsayımına göre kıyaslamak",
+        "product_mechanism": "Kullanıcı CSV olarak sensör zaman damgası, compute bitiş, command ve actuator ölçümü yükler; deterministik p50/p99/jitter hesaplayıcı ve hatalı örnek açıklaması üretir; canlı robot kontrolcüsüne müdahale yok",
+        "before_state": "Tedarikçilerin alt-milisaniye gecikme iddiaları farklı donanım/test koşullarıyla karşılaştırılamıyor",
+        "after_state": "Aynı görev/ısı/yük altında ölçüm örneklerini ve insan onayını kıyaslayan kabul kanıtı",
+        "canonical_source_urls": [
+          "https://pandaily.com/y10-physical-ai-chip-1ms-closed-loop-latency-fpga-platform-xu-feixiang/"
+        ],
+        "scope_hint": "Dünya",
+        "why_now": "Pandaily 11 Ekim haberinde eski NVIDIA mimarının Y10 robot işlemcisini bir milisaniyenin altında algı–karar–eylem kapalı döngü gecikmesi için tasarladığını, 2026 FPGA prototipi planladığını aktarıyor. Bu henüz doğrulanmış saha gecikmesi değildir; farklı edge kontrolcülerin ölçüm örneklerine göre latency dağılımı, jitter ve güvenlik bütçesini insan onayıyla değerlendirme iş akışı hipotezidir.",
+        "discovery_only": true,
+        "source_observations": [
+          {
+            "url": "https://pandaily.com/y10-physical-ai-chip-1ms-closed-loop-latency-fpga-platform-xu-feixiang/",
+            "accessed_at": "2026-10-13T19:32:46.014Z",
+            "observation": "Pandaily 11 Ekim haberinde eski NVIDIA mimarının Y10 robot işlemcisini bir milisaniyenin altında algı–karar–eylem kapalı döngü gecikmesi için tasarladığını, 2026 FPGA prototipi planladığını aktarıyor. Bu henüz doğrulanmış saha gecikmesi değildir; farklı edge kontrolcülerin ölçüm örneklerine göre latency dağılımı, jitter ve güvenlik bütçesini insan onayıyla değerlendirme iş akışı hipotezidir.",
+            "verification": "official_or_primary_trade",
+            "source_claim_only": true
+          }
+        ]
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-8c42e1a253a5183f/001.json",
+  "valid_until": "2026-11-12T19:32:46Z"
+}
