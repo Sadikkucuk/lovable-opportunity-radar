@@ -4,13 +4,27 @@
   "queue_mode": "shared",
   "current_run": "2026-10-14-2bfd2b8b0a",
   "lease_minutes": 30,
-  "ready_count": 494,
-  "job_count": 497,
-  "queue_revision": "0d86f7b6911f7c1b7df0de9d96e91e22e0458dc3dd6fd060dbe090efbb6d4098",
+  "ready_count": 495,
+  "job_count": 496,
+  "queue_revision": "17810bd689431aa03eee912e19183842e6c70ef24bcb6c94331e0f39e42c2a1a",
   "page": 5,
   "page_count": 25,
   "next_page": "state/v2/inbox/worker-4-page-006.json",
   "jobs": [
+    {
+      "job_id": "2026-10-11-a4dcde1ff5-discovery-9c557b86104011b5",
+      "path": "state/v2/jobs/2026-10-11-a4dcde1ff5-discovery-9c557b86104011b5.json",
+      "run_id": "2026-10-11-a4dcde1ff5",
+      "kind": "discovery",
+      "input_hash": "9c557b86104011b5e637ec6194bf20d5a1c857d819ab13fd4aabb35471a90297",
+      "legacy_lane": 4,
+      "queue_group": "backlog",
+      "preferred_worker": 4,
+      "state": "ready",
+      "attempt": 1,
+      "claim_path": "state/v2/claims/2026-10-11-a4dcde1ff5-discovery-9c557b86104011b5/001.json",
+      "result_path": "state/v2/results/2026-10-11-a4dcde1ff5-discovery-9c557b86104011b5/001.json"
+    },
     {
       "job_id": "2026-10-10-migration-validation-e9b493e918ad6159",
       "path": "state/v2/jobs/2026-10-10-migration-validation-e9b493e918ad6159.json",
@@ -276,20 +290,6 @@
       "attempt": 1,
       "claim_path": "state/v2/claims/2026-10-13-catchup-e3a10c28a635-validation-1cbca0fc5d787c7d/001.json",
       "result_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-validation-1cbca0fc5d787c7d/001.json"
-    },
-    {
-      "job_id": "2026-10-12-4bb3b46a63-discovery-1dc7a81b2cbcc944",
-      "path": "state/v2/jobs/2026-10-12-4bb3b46a63-discovery-1dc7a81b2cbcc944.json",
-      "run_id": "2026-10-12-4bb3b46a63",
-      "kind": "discovery",
-      "input_hash": "1dc7a81b2cbcc9441b3d59f02e15eab81c2ebd85ec1ec211cef82629db15f006",
-      "legacy_lane": 4,
-      "queue_group": "backlog",
-      "preferred_worker": 4,
-      "state": "ready",
-      "attempt": 1,
-      "claim_path": "state/v2/claims/2026-10-12-4bb3b46a63-discovery-1dc7a81b2cbcc944/001.json",
-      "result_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-1dc7a81b2cbcc944/001.json"
     }
   ]
 }
