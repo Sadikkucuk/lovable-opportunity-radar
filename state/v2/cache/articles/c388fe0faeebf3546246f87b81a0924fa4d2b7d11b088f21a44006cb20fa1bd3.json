@@ -1,0 +1,53 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "c388fe0faeebf3546246f87b81a0924fa4d2b7d11b088f21a44006cb20fa1bd3",
+  "decision": {
+    "article_key": "094def4cac375efc6eb9c6bd",
+    "decision": "opportunity",
+    "reason": "EVENT: IT之家 10 Ekim orijinal TypeSafe/Jev haberi Bloomberg'e atıfla yaklaşık 870 milyon USD yatırım ve 7,5 milyar USD değerleme bildiriyor; bu tek başına müşteri kullanım kanıtı değil. Aynı yayın 5 Ekim Jev'in 15 Eylül'de sohbet etmeyen sınıflandırma/puan karar modeli olarak açıldığını anlatıyor. BEFORE üretime alınan karar modeli sonuca bakılmadan ortalama doğrulukla övülebilir; AFTER farklı vendor decision modelleri çok hızlı çok sayıda yes/no veya risk sınıfı kararı üretebiliyor, fakat hangi bağlamda güvenilmez ve yanlış kararların bedeli ne sorusu devam ediyor. Bağımsız insan onaylı, geçmiş karar–ground truth–model sürüm–calibration karşılaştırması gerçek ve tekrar eden iş olabilir. Şirketin Fortune500 kullanım iddiası bağımsız kanıtlanmadı; maliyet üstünlüğü ürünleşmiş benchmark değildir.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-2bfd2b8b0a-discovery-54a15ed0d7ff1e21:094def4cac375efc6eb9c6bd:1",
+        "canonical_key": "enterprise-decision-model-quality-teams|recheck-calibration-and-error-rates-of-binary-ai-decisions|offline-versioned-score-groundtruth-and-human-approval-ledger",
+        "idea_name": "AI Karar Modeli Kalibrasyon ve Hata Kanıt Defteri",
+        "core_job": "Sınıflandırma/yes-no/puan çıktısı üreten AI karar modellerinin geçmiş deneme sonuçlarında kalibrasyon, yanlış pozitif/negatif, eşik kayması ve insan düzeltmesini sürüm bazında ölçmek",
+        "target_customer": "AI tabanlı müşteri risk, ticari karar ve operasyonel sınıflandırma modellerini QA ile izleyen kurumsal veri/ürün ekipleri",
+        "buyer": "Model risk yönetimi veya karar motoru kalite yöneticisi",
+        "product_mechanism": "Yalnız kullanıcının sağladığı model ID, karar tarihi, sürüm, skor, eşik, daha sonra ölçülen gerçek sonuç ve insan onayı CSV/JSON dosyalarıyla browser-native confusion matrix, calibration binleri, grup bazlı sapma ve yeniden test kanıt raporu",
+        "why_now": "IT之家 10 Ekim haberinde TypeSafe Jev finansman ve Eylül model lansmanı; çok kullanılan deterministik yanıt sınıfı karar motorlarında hata/maliyet kararları görünür hale geliyor, ancak kullanıcı sayıları sağlayıcı iddiasıdır.",
+        "before_state": "Üretici model performansı tek küresel accuracy skoruyla sunulabilir, uygulama gruplarındaki hata ve kalibrasyon takip dışıdır.",
+        "after_state": "Aynı frozen örnek kümesi model sürümleri arasında tekrar çalıştırılmış geçmiş çıktı kayıtları üzerinden yanlış ret/kabul, Brier, kalibrasyon ve insan imza kanıtı verilir.",
+        "canonical_source_urls": [
+          "https://www.ithome.com/1/011/170.htm",
+          "https://www.ithome.com/1/009/744.htm"
+        ],
+        "supporting_article_ids": [
+          "95fc314c185820e138563123"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.ithome.com/1/011/170.htm",
+            "observation": "10 Ekim 2026 IT之家: 870 milyon USD finansman, 7,5 milyar USD değerleme Bloomberg'e atıflı; belirtilen Fortune500 oranı şirket beyanı ve müşteri listesi açıklanmamış."
+          },
+          {
+            "url": "https://www.ithome.com/1/009/744.htm",
+            "observation": "5 Ekim IT之家 15 Eylül Jev lansmanını, sohbet üretimi yerine önceden belirlenmiş sınıflardan cevap/puan tahmin eden karar modelini açıklar."
+          }
+        ],
+        "scope_hint": "Dünya",
+        "local_evidence": {
+          "signals": [
+            "Binary/çok sınıflı karar çıktısı ve üretim eşik kararları tekrarlanabilir kalite izleme problemi oluşturur."
+          ],
+          "unknowns": [
+            "Türkiye'de ML model monitoring, bias/calibration ürünlerinin birebir rakipleri bilinmiyor.",
+            "Global MLOps rakiplerinin sayı/iş akışı Validation'da sınanmalı.",
+            "Dış model çağrılmaz: kullanıcı arşiv çıktı CSV'lerini yükler; canlı iş akışı ölçümü değildir."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-2bfd2b8b0a-discovery-54a15ed0d7ff1e21/001.json",
+  "valid_until": "2026-11-12T21:30:02Z"
+}
