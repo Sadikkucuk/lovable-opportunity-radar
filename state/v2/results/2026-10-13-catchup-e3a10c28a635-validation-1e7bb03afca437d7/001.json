@@ -1,0 +1,183 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-1e7bb03afca437d7",
+  "input_hash": "1e7bb03afca437d70e08bfc93b78bc82414b1a39573040aca32d05483a26422e",
+  "token": "fd0e3c32-82f1-454d-b1a3-fdfaf1e74f58",
+  "finished_at": "2026-10-13T21:40:15.467Z",
+  "outcome": "done",
+  "reason": "BARE-AI makalesi 12 Ekim 2026 özgün yayıncı metninde araştırma ön baskısıdır, ticari çalışan endüstri standardı değildir. AI accelerator yonga test laboratuvarının fault injection campaign, baseline/test sonucu, dedup, coverage ve signoff kayıtlarını yöneten mevcut dört farklı global sağlayıcı resmi ürünlerinde doğrulandı: Cadence Verisium Manager Safety, Siemens Questa One Sim FX, Synopsys VC Functional Safety Manager / VC Z01X, Ansys medini analyze. Hiçbirinin ayrı ürün adı geçişiyle birden fazla kez sayımı yapılmadı. Bu dört EDA suite aynı SoC doğrulama müşteri/JTBD/fault campaign kanıt mekanizması için doğrudan rekabettir, AI yonga odaklı ek analitik doğrulama eklense bile müşteri çekirdek işi aynı. Radar şartı global <=3 başarısız; Türkiye kesin sayısı bilinmese de aday reddedildi.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Global doğrudan rakip sayısı en az 4, izin verilen <=3 eşiğini aşıyor. Mevcut EDA paketleri aynı SoC/chip validation laboratuvarında fault injection senaryoları, coverage, gözlenen test sonuçları, imza/rapor ve safety requirement izlenebilirliğini sunuyor. Özgün BARE-AI bulgusu yalnız akademik preprint ve yeni ticari kabul standardı değildir. Offline CSV rapor aracı bu laboratuvar işinden ayrışmış ücretli değer kanıtlamıyor.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://semiengineering.com/on-chip-monitors-detect-bit-flip-attacks-in-ai-accelerators-uf-ut-dallas-rpi/",
+        "accessed_at": "2026-10-13T21:40:15.467Z",
+        "claim": "AI accelerator fault-injection test evidence / diagnostics campaign workflow",
+        "observation": "Semiconductor Engineering 12 Ekim 2026 Florida/UT Dallas/RPI 'BARE-AI' arXiv 2610.08739 ön baskısını aktarır; bit-flip AI inferans belleği/performans sayaçları tespiti araştırma önerisi, onaylı ürün değildir.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.cadence.com/en_US/home/solutions/automotive-solution/functional-safety.html",
+        "accessed_at": "2026-10-13T21:40:15.467Z",
+        "claim": "AI accelerator fault-injection test evidence / diagnostics campaign workflow",
+        "observation": "Cadence Verisium Manager Safety ile fault campaign plan/management, requirements traceability, analog+digital injection, test sonuç DB, diagnostic coverage ve safety raporu doğrudan sağlar.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.siemens.com/en-us/products/ic/questa-one/simulation/",
+        "accessed_at": "2026-10-13T21:40:15.467Z",
+        "claim": "AI accelerator fault-injection test evidence / diagnostics campaign workflow",
+        "observation": "Siemens Questa One Sim FX functional safety fault simulation, fault grading ve test coverage/kapanış aynı RTL/SoC doğrulama ekibinin işi.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.synopsys.com/verification/vc-functional-safety-manager.html",
+        "accessed_at": "2026-10-13T21:40:15.467Z",
+        "claim": "AI accelerator fault-injection test evidence / diagnostics campaign workflow",
+        "observation": "Synopsys VC Functional Safety Manager FMEA/FMEDA, failure mode bazlı fault campaign, simülasyon sonuç back-annotation, diagnostic coverage ve ISO rapor çıktısı sunar.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.synopsys.com/verification/simulation/z01x-functional-safety.html",
+        "accessed_at": "2026-10-13T21:40:15.467Z",
+        "claim": "AI accelerator fault-injection test evidence / diagnostics campaign workflow",
+        "observation": "Synopsys Z01X Fault Manager bit-level SEU/transition/stuck fault test listesi, simülasyon ve fault coverage report; aynı vendorun ikinci ürünü ayrı global rakip SAYILMADI.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://ansyshelp.ansys.com/public/Views/Secured/medini/v242/en/medini_analyze_ug/sec_fault_injection_ipd.html",
+        "accessed_at": "2026-10-13T21:40:15.467Z",
+        "claim": "AI accelerator fault-injection test evidence / diagnostics campaign workflow",
+        "observation": "Ansys medini analyze IPD-XML ile SoC fault injection campaign ve sonuç CSV/XML import bağlantısını, ölçülen diagnostic coverage ve güvenlik mekanizmasına back annotation sağlar.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://www.siemens.com/tr-tr/products/ic/verification-and-validation/",
+        "accessed_at": "2026-10-13T21:40:15.467Z",
+        "claim": "AI accelerator fault-injection test evidence / diagnostics campaign workflow",
+        "observation": "Siemens Türkiye kurumsal site dijital IC doğrulama kapsam/EDA çözümlerinin Türkiye dilinde tanıtımını içerir, fakat Türkiye'de aynı ürünü tam olarak kim satar/uygular, doğrulanmadığından yerel direkt rakip sayısı uydurulmadı.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "queries": [
+          "Türkiye çip hata enjeksiyonu rapor test coverage yönetimi yazılım",
+          "Türkiye EDA hata enjeksiyon fault campaign ISO 26262 Synopsys Siemens Cadence",
+          "Siemens Türkiye Questa fault simulation verification",
+          "yonga tasarım doğrulama deney enjekte edilmiş bit flip hata test sonuçları"
+        ],
+        "scope": "Küresel vendor Siemens Türkiye dili/kanalıyla EDA sunar, ancak aynı spesifik SoC fault injection çözümünün Türkiye satış sayımı ve yerli ürün portföyü tam net değil; global başarısızlık ret için yeterli. Türkiye sıfır rakip iddiası yapılmadı.",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_competitors": [
+          {
+            "name": "Siemens EDA Türkiye doğrulama platformu",
+            "url": "https://www.siemens.com/tr-tr/products/ic/verification-and-validation/",
+            "reason": "Türkiye yerelleştirilmiş EDA ürün sayfası, spesifik fault-injection iş akışı için yerel dağıtım teyidi yok."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 4,
+        "queries": [
+          "AI accelerator fault injection RTL coverage campaign results dashboard",
+          "Synopsys VC Z01X fault manager fault simulation coverage report",
+          "Cadence Verisium Manager Safety fault campaigns diagnostics",
+          "Siemens Questa One Sim FX fault coverage fault grading",
+          "Ansys medini fault injection FMEDA import test results diagnostic coverage"
+        ],
+        "scope": "Aynı SoC/çip fault-injection kampanya ve test/coverage kanıt akışını sunan dört ayrı kurumsal vendor; AI accelerator özel model optimizasyonu değil SoC düzeyi müşteri core job eşleşmesi. Global minimum dört, kalan sağlayıcıların yokluğu iddia edilmez.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "Cadence Verisium Manager Safety",
+            "url": "https://www.cadence.com/en_US/home/solutions/automotive-solution/functional-safety.html",
+            "same_customer_job_workflow_reason": "Çip doğrulama laboratuvarı; fault campaign yönetim, requirements traceability, injection result, coverage ve safety reporting."
+          },
+          {
+            "name": "Siemens Questa One Sim FX",
+            "url": "https://www.siemens.com/en-us/products/ic/questa-one/simulation/",
+            "same_customer_job_workflow_reason": "RTL/SoC safety/fault test mühendisleri; hata simülasyonu, coverage closure ve doğrulama test sonuçlarına dayalı onay."
+          },
+          {
+            "name": "Synopsys VC Functional Safety Manager / Z01X",
+            "url": "https://www.synopsys.com/verification/vc-functional-safety-manager.html",
+            "same_customer_job_workflow_reason": "Semiconductor reliability/verification ekibi; injection campaign case, test sonucunu back-annotate, tanı kapsaması ve FMEDA raporlama. Synopsys Z01X ayrı sağlayıcı olarak sayılmadı."
+          },
+          {
+            "name": "Ansys medini analyze",
+            "url": "https://ansyshelp.ansys.com/public/Views/Secured/medini/v242/en/medini_analyze_ug/sec_fault_injection_ipd.html",
+            "same_customer_job_workflow_reason": "SoC IP reliability test sonuçlarının fault injection campaign ID ve failure mode altında toplanması, coverage güncelleme ve review; gerçek simülasyonu üçüncü taraf yapabilir."
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Kullanıcının deneyden çıkardığı CSV/JSON dosya, fault type/bit location, baseline, performans sayacı, detection flag, test environment, mitigation result ve mühendis değerlendirmesini browser native JavaScript ile eşleyip sürüm bazında coverage ve rapor üretme. Donanımda gerçek fault injection, BARE-AI detection veya canlı EDA araçları çalıştırılmaz; bu fonksiyon ürünün dışında kullanıcı lab sistemlerindedir.",
+      "dependency_inventory": [
+        "Laboratuvarın fault injection/functional simulation çıktı CSV dosyaları",
+        "Manual test kriteri/şiddet/insan QA onayı",
+        "Deterministic JSON/CSV normalizasyon, kıyaslama ve yerel dosya raporu",
+        "Kullanıcı tarafından sağlanmış kaynak/paper URL"
+      ],
+      "cash_cost_zero_verified": false
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "91 tarihte birebir anahtar eşleşmesi görülmedi; yasal koruma ve katalog sürümü değiştirilmedi. Global dört doğrudan rakip nedeniyle yeni ürün kabulü yok."
+    },
+    "research_attempts": [
+      {
+        "url": "https://semiengineering.com/on-chip-monitors-detect-bit-flip-attacks-in-ai-accelerators-uf-ut-dallas-rpi/",
+        "status": "original_page_read",
+        "observation": "paper preprint arxiv link, 12 Oct date"
+      },
+      {
+        "url": "https://www.cadence.com/en_US/home/solutions/automotive-solution/functional-safety.html",
+        "status": "vendor_page_read"
+      },
+      {
+        "url": "https://www.siemens.com/en-us/products/ic/questa-one/simulation/",
+        "status": "vendor_page_read"
+      },
+      {
+        "url": "https://www.synopsys.com/verification/vc-functional-safety-manager.html",
+        "status": "vendor_page_read"
+      },
+      {
+        "url": "https://www.synopsys.com/verification/simulation/z01x-functional-safety.html",
+        "status": "vendor_page_read_no_double_count"
+      },
+      {
+        "url": "https://ansyshelp.ansys.com/public/Views/Secured/medini/v242/en/medini_analyze_ug/sec_fault_injection_ipd.html",
+        "status": "official_help_page_read"
+      }
+    ],
+    "quality_gate": {
+      "tr_zero_pass": null,
+      "global_at_most_three_pass": false,
+      "zero_external_runtime_possible": true,
+      "qualified": false
+    }
+  }
+}
