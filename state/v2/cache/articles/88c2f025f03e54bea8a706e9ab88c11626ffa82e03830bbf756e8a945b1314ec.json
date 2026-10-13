@@ -1,0 +1,30 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "88c2f025f03e54bea8a706e9ab88c11626ffa82e03830bbf756e8a945b1314ec",
+  "decision": {
+    "article_key": "51338168b5546ed021aeb68d",
+    "decision": "opportunity",
+    "reason": "11 Ekim Chery Malaysia birincil duyurusunda OMODA 5 C/H etkilenen varyantların VIN ile üretici sitesinde kontrol edileceği, yetkili bayide ücretsiz muayene ve gerekirse parça değişimi yapılacağı doğrulanıyor. JPJ araştırması ve 8.878 araç sayısı ikincil açıklamadan; bu müşteri listesi olmadan sistem VIN uyumunu kendi başına kesin hesaplayamaz. Yetkili servis için ithal edilen üretici VIN listesiyle kapatma/kanıt/tedarik parçası takibi iş akışı var.",
+    "canonical_source_url": "https://www.chery.my/2026/10/11/chery-auto-malaysia-melaksanakan-kempen-panggil-semula-untuk-omoda-5/",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-20b97d5a9fbce840:51338168b5546ed021aeb68d:01",
+        "idea_name": "VIN Recall Dealer Closure Ledger",
+        "canonical_key": "authorized-auto-service-networks|track-manufacturer-recall-repair-closure|vin-import-inspection-parts-and-completion-ledger",
+        "target_customer": "Yetkili otomotiv servis zincirleri ve distribütör satış sonrası ekipleri",
+        "core_job": "Geri çağırma kapsamında etkilenen şasi numaralarını servis randevusuna, parça teminine ve onarım kanıtına bağlamak",
+        "product_mechanism": "Üreticiden manuel yüklenen izinli VIN CSV'si, varyant, muayene sonucu, yedek parça, müşteri randevu ve servis kapanış kanıtı; üretici VIN API'si zorunlu değil",
+        "why_now": "11 Ekim Chery Malaysia birincil duyurusunda OMODA 5 C/H etkilenen varyantların VIN ile üretici sitesinde kontrol edileceği, yetkili bayide ücretsiz muayene ve gerekirse parça değişimi yapılacağı doğrulanıyor. JPJ araştırması ve 8.878 araç sayısı ikincil açıklamadan; bu müşteri listesi olmadan sistem VIN uyumunu kendi başına kesin hesaplayamaz. Yetkili servis için ithal edilen üretici VIN listesiyle kapatma/kanıt/tedarik parçası takibi iş akışı var.",
+        "before_state": "Geri çağırma listesindeki araç ve servis/onarım ilerlemesi ayrı Excel ve çağrı kayıtlarında kalıyor",
+        "after_state": "Yetkili servisin parça bekleyen, tamamlanan ve müşteriye bildirilen VIN durum matrisi",
+        "canonical_source_urls": [
+          "https://www.chery.my/2026/10/11/chery-auto-malaysia-melaksanakan-kempen-panggil-semula-untuk-omoda-5/"
+        ],
+        "scope_hint": "Dünya",
+        "note": "Discovery only, history/global/TR competition unverified"
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-20b97d5a9fbce840/001.json",
+  "valid_until": "2026-11-12T05:38:52Z"
+}
