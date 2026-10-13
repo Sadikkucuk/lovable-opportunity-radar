@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-c830891d301f2de5",
+  "input_hash": "c830891d301f2de5a4c3d99b982d3b2661d3932e3399ab8d1ed7f42dbb9eefd3",
+  "token": "865e8159-8858-4c2f-b79d-2b89e1bcadf6",
+  "finished_at": "2026-10-13T12:02:42.041Z",
+  "outcome": "done",
+  "reason": "10 haber: NASA Artemis II açık PDS bilim verileri ve BESS model-lab-FAT/SAT performans kanıtı için 2 ham fikir; 7 no_opportunity ve 1 Ring orijinal cihaz özellikleri doğrulanamadı. NASA özgün 7 Ekim yayımı, sponsorlu BESS yorumu ise resmî bağlayıcı kural sayılmadı.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "4a032733bd22bb3b9f55ea1f",
+        "decision": "unverified",
+        "reason": "ZDNET Fransa Ring'in yeni akıllı kilidi ve güvenlik sistemini bildirdiği başlık var, resmî Amazon/Ring ürün sayfasında hangi yeni teknik API, entegrasyon hakkı veya güvenlik standardı olduğu bağımsız doğrulanamadı. Yalnız ürün özelliği varsayılarak yeni yazılım yapılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "4a591ec6b64eb68de1e398ad",
+        "decision": "no_opportunity",
+        "reason": "Çin çip şirketinin 2022 halka arzından sonra fiyat gerilemesi ve arz miktarı menkul kıymet anlatımı; operasyonel tekrarlı alıcı işi bulunmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "4a9b0bd48098e279637ac68e",
+        "decision": "no_opportunity",
+        "reason": "Dünya Bankası'nın Orta Doğu enerji şoku nedeniyle 30-40 ülkeyle destek görüşmesi resmî tamamlanmış hibe/finansman şartlarının ve başvuru haklarının somut yayımlandığı anlamına gelmez. Görüşme için otomatik hibe uyumu uydurulmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "4ad626f1c9ffcd14e53bc7db",
+        "decision": "no_opportunity",
+        "reason": "Qingdao'da 20. yarı iletken ve entegre teknoloji konferansı açılması akademik etkinlik haberidir; yayımlanmış somut açık veri/teknik bağlayıcı standart bildirilmedi.",
+        "opportunities": []
+      },
+      {
+        "article_key": "4af88856a75002b743624a2d",
+        "decision": "no_opportunity",
+        "reason": "Runze Technology hakim ortağın 500 milyon–1 milyar CNY aralığında ek hisse alma niyeti borsa bildirimi, bağımsız müşteri iş akışı değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "4b02467be32a4b0227da7bb9",
+        "decision": "no_opportunity",
+        "reason": "ThePaper Çin matematiksel teoremler ve AI okuma kulübü etkinliğidir; yeni yayınlanmış teorem veri/API standardı veya müşterinin tekrarlı iş yükümlülüğü değildir.",
+        "opportunities": []
+      },
+      {
+        "article_key": "4b17ec50d64d6f17a8e45e2d",
+        "decision": "no_opportunity",
+        "reason": "36Kr NVIDIA'nın 25 milyar dolarlık AI girişimine yaklaşımı başlıklı yatırım/satın alma spekülasyonu, bağlayıcı kapanmış anlaşma gibi kabul edilmedi.",
+        "opportunities": []
+      },
+      {
+        "article_key": "4b6be2933a7a6938446fbcce",
+        "decision": "no_opportunity",
+        "reason": "Supply Chain Dive 2026 tedarik zincirinde aşırı/az değerlendirilmiş öncelikler analizi görüş/öngörüdür; belirli yeni regülasyon, imzalanmış satın alma kararı veya benzersiz tekrarlı operasyon belirlenmedi.",
+        "opportunities": []
+      },
+      {
+        "article_key": "4b8f8d0cfe5d8c68ef2fb732",
+        "decision": "opportunity",
+        "reason": "NASA 7 Ekim 2026 Artemis II görevinin 800 GB üzeri ay bilimi görüntü/ses/rapor verisini PDS deposuna kamuya açık yayımladı. 12 Ekim IT之家 yeniden aktarım olup yeni veri yükleme tarihi değildir. Araştırmacılar için kullanıcı seçimiyle PDS ürün kimliği, gözlem zamanı, konum/tema, orijinal dosya provenansı ve insan notlarını sürümleyen offline CSV/JSON inceleme defteri hipotezi; 800 GB veriyi SaaS'a indirme/depolama şart değil.",
+        "canonical_source_url": "https://www.nasa.gov/blogs/artemis/2026/10/07/nasa-releases-artemis-ii-lunar-science-data-images/",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-c830891d301f2de5:4b8f8d0cfe5d8c68ef2fb732:01",
+            "idea_name": "NASA Lunar Observation Provenance Notebook",
+            "canonical_key": "lunar-science-research-groups|review-released-artemis2-observations-with-auditable-provenance|pds-product-id-annotation-and-review-ledger",
+            "target_customer": "Üniversite ay jeolojisi, krater araştırması ve uzay eğitim ekipleri",
+            "core_job": "NASA PDS'den seçilmiş görüntü/astronot yorumlarını asıl ürün kimliğine bağlayıp gözlem, kaynak ve insan incelemesini sürümlemek",
+            "product_mechanism": "Kullanıcının elle seçtiği PDS ürün ID/URL, görev günü, olay/krater etiketi, koordinat veya yön, iddia/karşı kanıt ve bilimsel kontrol notu CSV/JSON; dosyaları topluca çekmez, AI modeli çalıştırmaz",
+            "why_now": "NASA 7 Ekim 2026 Artemis II görevinin 800 GB üzeri ay bilimi görüntü/ses/rapor verisini PDS deposuna kamuya açık yayımladı. 12 Ekim IT之家 yeniden aktarım olup yeni veri yükleme tarihi değildir. Araştırmacılar için kullanıcı seçimiyle PDS ürün kimliği, gözlem zamanı, konum/tema, orijinal dosya provenansı ve insan notlarını sürümleyen offline CSV/JSON inceleme defteri hipotezi; 800 GB veriyi SaaS'a indirme/depolama şart değil.",
+            "before_state": "NASA veri taraması görüntü, ses, rapor ve farklı not defterlerine yayılır; aynı gözlemin iddia/provenans zinciri kaybolabilir",
+            "after_state": "Atıf verilebilir, hata düzeltilebilir insan inceleme ve PDS referans defteri",
+            "canonical_source_urls": [
+              "https://www.nasa.gov/blogs/artemis/2026/10/07/nasa-releases-artemis-ii-lunar-science-data-images/"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "4ba4775130afcdb88a70fb0c",
+        "decision": "opportunity",
+        "reason": "Utility Dive 12 Ekim EnerNex/KEMA Labs sponsorlu teknik yazısı BESS için laboratuvar performans testleri, model/sahada komisyonlama ölçümleri, hücre-BMS-konvertör-şebeke etkileşimi ve SoC/ısıya göre performans doğrulamasının önemini anlatıyor. Bu yazı yasal yeni test zorunluluğu değildir; batarya depolama proje sahibi için üretici vaadi, FAT/SAT bulgusu, ölçülen çevrim verimi ve garanti test kanıtlarını insan denetimine bağlama koşullu iş hipotezi.",
+        "canonical_source_url": "https://www.utilitydive.com/spons/battery-storage-is-scaling-fast-heres-how-utilities-can-trust-it-to-perfo/831960/",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-c830891d301f2de5:4ba4775130afcdb88a70fb0c:01",
+            "idea_name": "BESS Owner FAT/SAT Model-to-Field Proof Ledger",
+            "canonical_key": "utility-battery-storage-owner-engineers|compare-bess-warranty-model-and-commissioning-actuals|lab-factory-site-performance-and-exception-matrix",
+            "target_customer": "Şebekeye bağlı BESS yatırımcı/owner's engineering ve saha kabul ekipleri",
+            "core_job": "Batarya performans garantisi ile lab/fabrika/saha ölçümlerinin uyuşup uyuşmadığını proje ve dönem bazında kanıtlamak",
+            "product_mechanism": "Kullanıcı FAT/SAT CSV, deşarj/şarj güç eğrisi, SoC/ısı, inverter/PCS verimi, garanti toleransı, insan onayı ve NCR/yeniden test defteri; canlı BMS/SCADA bağlantısı yok",
+            "why_now": "Utility Dive 12 Ekim EnerNex/KEMA Labs sponsorlu teknik yazısı BESS için laboratuvar performans testleri, model/sahada komisyonlama ölçümleri, hücre-BMS-konvertör-şebeke etkileşimi ve SoC/ısıya göre performans doğrulamasının önemini anlatıyor. Bu yazı yasal yeni test zorunluluğu değildir; batarya depolama proje sahibi için üretici vaadi, FAT/SAT bulgusu, ölçülen çevrim verimi ve garanti test kanıtlarını insan denetimine bağlama koşullu iş hipotezi.",
+            "before_state": "BESS hücre, invertör, BMS, şebeke bağlantısı ve performans şartları farklı dokümanlarda, sahada neden kabul edildiği bulanık",
+            "after_state": "Tesise göre performans/test farkı, şartname kanıtı ve kabul için açık istisna/yeniden test dosyası",
+            "canonical_source_urls": [
+              "https://www.utilitydive.com/spons/battery-storage-is-scaling-fast-heres-how-utilities-can-trust-it-to-perfo/831960/"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      }
+    ]
+  }
+}
