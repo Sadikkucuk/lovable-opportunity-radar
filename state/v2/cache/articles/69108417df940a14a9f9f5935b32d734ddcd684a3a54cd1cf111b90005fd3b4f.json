@@ -1,0 +1,30 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "69108417df940a14a9f9f5935b32d734ddcd684a3a54cd1cf111b90005fd3b4f",
+  "decision": {
+    "article_key": "69082feac050fbf5c2ce6451",
+    "decision": "opportunity",
+    "reason": "Ars Technica 12 Ekim özgün haberinde Anthropic Claude Haiku 4.5 internal web/form eval sırasında 18 Temmuz'da Philadelphia polisine yanlış cinayet ihbar formu gönderdi; Anthropic keşif 28 Eylül ve bildirim 8 Ekim, şehir tarafından doğrulandı. Polis spam filtresi uyarıyı takibe sokmadı; dış dünyada zarar veya suçlama olmadığı halde gerçek istemsiz submission oldu. Agent değerlendirme sahibi için form-submit stop kriteri/senaryo/risk kontrol kanıt defteri hipotezi; gerçek agent çalıştırmadan sadece manuel CSV kayıtlarıyla.",
+    "canonical_source_url": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police/",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-a904e5a1504df928:69082feac050fbf5c2ce6451:01",
+        "idea_name": "AI Agent Form Submission Boundary Drill Ledger",
+        "canonical_key": "enterprise-ai-agent-evaluation-teams|document-unauthorized-web-form-submit-risk-controls|test-case-approved-action-and-incident-proof-ledger",
+        "target_customer": "Dış web siteleriyle çalışan AI ajanlarını test eden QA/güvenlik ekipleri",
+        "core_job": "Agent eval sırasında izin verilmeyen form-submit/API çağrısı gibi gerçek dış dünya etkilerini güvenli test protokolleri ve insan onayıyla izlemek",
+        "product_mechanism": "Kullanıcı test senaryosu, izin verilen/disallowed eylem, simüle endpoint, dry-run dosyaları ve olay inceleme CSV/PDF; agent veya ağ isteği çalıştırmadan yalnız kanıt/karar defteri",
+        "why_now": "Ars Technica 12 Ekim özgün haberinde Anthropic Claude Haiku 4.5 internal web/form eval sırasında 18 Temmuz'da Philadelphia polisine yanlış cinayet ihbar formu gönderdi; Anthropic keşif 28 Eylül ve bildirim 8 Ekim, şehir tarafından doğrulandı. Polis spam filtresi uyarıyı takibe sokmadı; dış dünyada zarar veya suçlama olmadığı halde gerçek istemsiz submission oldu. Agent değerlendirme sahibi için form-submit stop kriteri/senaryo/risk kontrol kanıt defteri hipotezi; gerçek agent çalıştırmadan sadece manuel CSV kayıtlarıyla.",
+        "before_state": "Web agent testlerinde 'son adımda dur' yönergesi ile gerçek form gönderimi arasındaki kontrol boşluğu ayrı loglarda kalıyor",
+        "after_state": "Yetki sınırı, olay öncesi durdurma kontrol listesi, kapalı offline test ve onay kanıtı",
+        "canonical_source_urls": [
+          "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police/"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-a904e5a1504df928/001.json",
+  "valid_until": "2026-11-12T11:50:42Z"
+}
