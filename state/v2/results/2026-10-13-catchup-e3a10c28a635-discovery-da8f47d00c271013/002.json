@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-da8f47d00c271013",
+  "input_hash": "da8f47d00c271013ddfcc3bc577a0e125d9a32346cd5ce0e62c2eefa0a011b48",
+  "token": "b314b215-01db-4d87-a80c-aa3a490ebb33",
+  "finished_at": "2026-10-13T18:30:16.027Z",
+  "outcome": "done",
+  "reason": "10 ayrı sabit haberden 2 manuel CSV/kanıt tabanlı ham fırsat (ADAS etkin TOPS ve Telekom AI Agent işlem uzlaştırma), 8 no_opportunity. Eski/Nadella/Meta ortak kaynaklar yeniden ürün oluşturmadı; dış model çalıştırma dahil değil.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "c6d5593a80b3ad4ec43b577e",
+        "decision": "no_opportunity",
+        "reason": "Xinhua Chongqing ReSheng Technology imalat profili üretici şirketin iş kolu değiştirme ve büyüme anlatısıdır; bağımsız yeni standart, sipariş prosedürü ya da veri hakkı belgesi yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c6e4f07e402fa3d0c17b8eca",
+        "decision": "no_opportunity",
+        "reason": "Euler Wanxiang şirketinin yüz milyonlarca RMB melek finansmanı haberi yatırım işlemi; yeni erişilebilir yazılım ihtiyacı veya müşteriye uygulanmış zorunluluk kanıtlamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c753d72f0dd0c8052b4b5354",
+        "decision": "no_opportunity",
+        "reason": "36Kr ayakkabı markasının ikinci büyüme girişimi hakkındaki iş analizi; ürün-kategori ticaret öyküsü olup doğrulanmış belirli yeni operasyon kuralı yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c768cc94821ede09b4304da5",
+        "decision": "no_opportunity",
+        "reason": "Amazon Prime kampanyasında Ray-Ban Meta gözlüklerinin indirim ürün listesi; ürün satın alma haberi yeni Lovable-uyumlu B2B süreç değişikliği sağlamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c76b9e8116eb909536469af3",
+        "decision": "no_opportunity",
+        "reason": "HuXiu AI ile yapılmış kısa dizi pazarlamasının orta yaş izleyicileri etkilediği yönünde tartışma içeriyor; 800 milyon kullanıcı iddiasının yöntemi ve bu haberden doğan yeni yasal yükümlülük teyit edilmedi. Yayıncılıkta AI Disclosure Ops ve Synthetic-media disclosure katalog ürünleriyle mekanizma çakışır.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c783da41213fe02dca74941b",
+        "decision": "opportunity",
+        "reason": "EET-China özgün teknik yazısı sürücüsüz araç işlemcisi seçiminin yalnız INT8/FP16 ham TOPS ile değil gerçek model batch/latency, ön-son işleme, SRAM/bellek bant genişliği, enerji/termal koşullar ve algoritma/toolchain portuna göre değerlendirilmesini öneriyor. Bu, yeni yasal standart değil; tedarikçi seçimindeki karışık benchmark iddialarını tutarlı karşılaştırma ihtiyacına ilişkin teknik kaynak.",
+        "canonical_source_url": "https://www.eet-china.com/mp/a529963.html",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-da8f47d00c271013:c783da41213fe02dca74941b:01",
+            "idea_name": "ADAS Etkin TOPS Kanıt Karşılaştırıcısı",
+            "canonical_key": "adas-soc-integration-teams|compare-vendor-advertised-and-effective-inference-performance|precision-batch-latency-memory-thermal-and-toolchain-evidence-matrix",
+            "target_customer": "ADAS otomotiv elektronik mimarları ve SoC satın alma/kalifikasyon ekipleri",
+            "core_job": "Araç çipinin teorik TOPS beyanını gerçek benchmark, model türü ve araç termal kısıtındaki etkili hesap kapasitesiyle karşılaştırmak",
+            "product_mechanism": "Mühendisin izinli benchmark CSV'si: veri türü, batch, FPS, p50/p99 gecikme, pre/post-process, termal limit, bellek ve toolchain; deterministic normalize karşılaştırıcı; çip/model işletmez",
+            "why_now": "EET-China özgün teknik yazısı sürücüsüz araç işlemcisi seçiminin yalnız INT8/FP16 ham TOPS ile değil gerçek model batch/latency, ön-son işleme, SRAM/bellek bant genişliği, enerji/termal koşullar ve algoritma/toolchain portuna göre değerlendirilmesini öneriyor. Bu, yeni yasal standart değil; tedarikçi seçimindeki karışık benchmark iddialarını tutarlı karşılaştırma ihtiyacına ilişkin teknik kaynak.",
+            "before_state": "INT4/INT8/FP16 TOPS farklı yöntemle sunulur ve gecikme/enerji/işlemci kullanım kanıtı farklı üretici PDF'lerinde kalır",
+            "after_state": "Çip bazında kaynak-provenans, açıklanan test koşulu ve kıyaslanabilir performans/uygunluk boşluk raporu",
+            "canonical_source_urls": [
+              "https://www.eet-china.com/mp/a529963.html"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "c7b00e43ffe61d44c09d4f88",
+        "decision": "opportunity",
+        "reason": "13 Ekim LG Uplus resmî basın bülteni U+one AI agent'ın sadece bilgi araması yerine fatura görüntüleme/ödeme ve roaming önerisi/satın alma adımlarını eylem olarak tamamlamaya dönüştüğünü duyuruyor. Yazılımın kendisi mevcut telekom BSS erişimi ve AI agent gerektirir; ayrı manuel/CSV test ve settlement kanıt defteri ancak satıcıdan bağımsız test süreci olarak ürün hipotezidir.",
+        "canonical_source_url": "https://www.lg.co.kr/media/release/30666",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-da8f47d00c271013:c7b00e43ffe61d44c09d4f88:01",
+            "idea_name": "Telekom AI Agent İşlem Sonucu Test Defteri",
+            "canonical_key": "telecom-bss-quality-teams|reconcile-ai-agent-customer-intent-with-payment-and-roaming-fulfilment|dialogue-intent-transaction-receipt-and-exception-ledger",
+            "target_customer": "Mobil operatör BSS/CRM kalite ve müşteri deneyimi test ekipleri",
+            "core_job": "Fatura ödeme veya roaming satın alma talebinin agent konuşmasından gerçek BSS/ödeme işlemine eksiksiz, idempotent ve onaylı geçtiğini kanıtlamak",
+            "product_mechanism": "Operatörün manuel sağladığı anonimleştirilmiş intent, agent action, payment/roaming receipt ve fulfilment CSV/JSON dosyalarını eşleştirip çift tahsilat/boş sipariş/iptal istisnası üreten deterministik tarayıcı aracı",
+            "why_now": "13 Ekim LG Uplus resmî basın bülteni U+one AI agent'ın sadece bilgi araması yerine fatura görüntüleme/ödeme ve roaming önerisi/satın alma adımlarını eylem olarak tamamlamaya dönüştüğünü duyuruyor. Yazılımın kendisi mevcut telekom BSS erişimi ve AI agent gerektirir; ayrı manuel/CSV test ve settlement kanıt defteri ancak satıcıdan bağımsız test süreci olarak ürün hipotezidir.",
+            "before_state": "Bir AI agent konuşmada işlemin yapıldığını söylerken ödeme, paket aktivasyonu veya CRM siparişi farklı sistemlerde ayrı test edilir",
+            "after_state": "İnsan onaylı niyet/işlem/sonuç uzlaştırması, failed/no-op/duplicate aksiyon matrisi; canlı BSS/API/AI runtime gerekmez",
+            "canonical_source_urls": [
+              "https://www.lg.co.kr/media/release/30666"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "c7b34da5573152ef4ab336c7",
+        "decision": "no_opportunity",
+        "reason": "Microsoft CEO Satya Nadella'nın AI için acil durdurma mekanizması gereğine ilişkin görüşü aynı gün Navitas/REA haber paketinde daha önce incelendi, yeni ürüne mükerrer ham aday yazılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c7fe5b3b3f43db9a49b85997",
+        "decision": "no_opportunity",
+        "reason": "Meta'nın Muse Wonder öncü model iddiası model sürümü pazarlamasıdır. Bağımsız harici model/ücretli runtime gerektiren yeni model/ajan kopyası yaratılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "c83163058b315795cd3e360e",
+        "decision": "no_opportunity",
+        "reason": "Nikkei xTECH 3D gıda yazıcısı konu/etiket sayfası sabit yeni geliştirme, açık standart veya belirli tedarikçi tarihli kanıt sağlamıyor.",
+        "opportunities": []
+      }
+    ]
+  }
+}
