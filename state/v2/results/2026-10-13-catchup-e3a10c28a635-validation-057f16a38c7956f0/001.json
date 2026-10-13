@@ -1,0 +1,202 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-057f16a38c7956f0",
+  "input_hash": "057f16a38c7956f0e9df725a430c7c695cc5fd09b734a8e14ea4c27a77624a93",
+  "token": "8249c058-dbed-4b12-aeb4-427eef27cc47",
+  "finished_at": "2026-10-13T21:35:31.839Z",
+  "outcome": "done",
+  "reason": "Su yüzeyi temizliği robotlarında birincil özgün haber ve doğrudan vendor ürün dökümleri tarandı. Globalde RanMarine Connect ve Clearbot'un belediye/liman/atık toplama operatörlerine görev/rota, temizlenen atık miktarı, foto ve raporlama sunduğu doğrulandı. IADYS platformu aynı su robotu operasyonunda kısmen örtüşüyor; atık ağırlığı ve sözleşme kabul izleme tam eşleşmesi kanıtlanmadığı için komşu. Türkiye'deki genel kara çöp/filo yazılımları aynı su yüzeyi hizmet kabul iş akışı için doğrudan kanıtlanamadı, dolayısıyla Türkiye=0 evrensel sonucuna varılamaz. Yeni ürünü qualified veya kesin rejected diye sunmak için Türkiye pazarının doğrudan sıfır rekabet koşulunun güvenilir kanıtı yetersiz. İkinci tur kontrollü takip araştırmasına bırakıldı.",
+  "result": {
+    "decision": "unverified",
+    "reason": "Globalde aynı su yüzeyi belediye/liman hizmet operatörlerine rota, günlük toplama ağırlığı/foto ve impact raporlaması sunan 2 doğrudan ürün mevcut (RanMarine Connect, Clearbot Dashboard). Bu sayı <=3 olsa da daha başka global doğrudan satıcı olasılığı kapatılamadı. Türkiye'de aynı su yüzeyi robotu hizmet kabul işinin bağımsız ürün sağlayıcısı bulunmadığını kanıtlayacak kapsamdaki doğrudan rakip araması sonuçlanmadı; TR sayısı null bırakıldı. Müşteri sözleşmesi imzalı acceptance işini yalnız dashboard/ESG raporlamasından ayrıştıran fiyatlandırılmış pazar talebi de kanıtlanmadı. Bu koşullarda qualified yasaktır.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.etnews.com/20261012000325",
+        "accessed_at": "2026-10-13T21:35:31.839Z",
+        "claim": "Kaynak gelişme veya doğrudan/komşu rakip özellik denetimi",
+        "observation": "ETNews 12 Ekim kısa özgün yazı Dongfang Shuili HeBao DF-H3 robotunun kamera ve otomatik toplama, şarj başına 12+ saat ve 4 km/s üretici/video iddialarını anlatır; tüm ölçüler sahada bağımsız doğrulanmamıştır.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.ranmarine.io/data-solutions/",
+        "accessed_at": "2026-10-13T21:35:31.839Z",
+        "claim": "Kaynak gelişme veya doğrudan/komşu rakip özellik denetimi",
+        "observation": "RanMarine Connect WasteShark filo için canlı/historik rota, batarya, atık hacim/ağırlık, müşteri foto, CSV kayıt ve Generate Impact Report ile belediye/liman su temizliği operasyonları için doğrudan rapor iş akışıdır.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.clearbot.org/blog-post/revolutionize-hyacinth-removal-with-clearbot",
+        "accessed_at": "2026-10-13T21:35:31.839Z",
+        "claim": "Kaynak gelişme veya doğrudan/komşu rakip özellik denetimi",
+        "observation": "Clearbot müşteri su robotu görev/durumunu, atık türü/miktarı, temizlik rota/alanı ve operasyon raporlarını bir arayüzde sunmaktadır.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.clearbot.org/class-2",
+        "accessed_at": "2026-10-13T21:35:31.839Z",
+        "claim": "Kaynak gelişme veya doğrudan/komşu rakip özellik denetimi",
+        "observation": "Clearbot Class 2 resmi ürünü liman/çevre kurumu müşterisine su yüzeyi atık toplama ve dashboard/smart data raporlama verir.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.iadys.com/iadys-monitoring-station/",
+        "accessed_at": "2026-10-13T21:35:31.839Z",
+        "claim": "Kaynak gelişme veya doğrudan/komşu rakip özellik denetimi",
+        "observation": "IADYS Jellyfishbot Monitoring Station saha misyon ve sensör/veri görselleştirme yapar, ancak müşteri atık tutarı ve hizmet kabul raporu tam üründe doğrulanamadı; şu an bitişik rekabet.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://www.sim-sistem.com/SIM_WEB/html/tr/garbage.html",
+        "accessed_at": "2026-10-13T21:35:31.839Z",
+        "claim": "Kaynak gelişme veya doğrudan/komşu rakip özellik denetimi",
+        "observation": "Türkiye SİM belediye kara konteyner toplama rota/atık ağırlık/iş emri ve performans raporunu sunuyor. Aynı belediye işveren fakat yüzeysel kara-su ayrımı nedeniyle aynı su yüzeyi robot görevi olup olmadığı kanıtlanamadı; adjacent.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://www.turkiye.gov.tr/arama?aranan=%C3%87%C3%B6p+Toplama+Bilgisi+Sorgulama",
+        "accessed_at": "2026-10-13T21:35:31.839Z",
+        "claim": "Kaynak gelişme veya doğrudan/komşu rakip özellik denetimi",
+        "observation": "Türkiye e-Devlet belediye çöp toplama sorgu kanalları var, ancak yüzen atık ve robot hizmet kabul workflow'u değil. Tek başına direkt rakip yokluğunu kanıtlamaz.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "queries": [
+          "Türkiye su yüzeyi temizleme robotu yazılım görev raporu belediye su atık toplama",
+          "Türkiye yüzer çöp toplama robot yazılım raporlama belediye deniz temizliği proje",
+          "belediye göl dere su yüzeyi temizlik hizmeti görev miktar raporu yazılım",
+          "marine cleanup robot service acceptance software Türkiye"
+        ],
+        "scope": "Kara konteyner/belediye filo çözümleri çıktı; Türk su yüzeyi cleanup hizmet kabul yazılımının kesin yokluğu bu kapsamla kanıtlanamaz. Doğrudan sayı null, sıfır değeri uydurulmadı.",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_competitors": [
+          {
+            "name": "SİM Akıllı Çöp Toplama Sistemi",
+            "url": "https://www.sim-sistem.com/SIM_WEB/html/tr/garbage.html",
+            "reason": "Belediye kara konteyner/çöp kamyonu rota/ağırlık/zaman/performans kayıtları; su robotu görev kabulü ayrı."
+          },
+          {
+            "name": "GBSoft Belediye Operasyon Platformu",
+            "url": "https://gbsoftt.com/",
+            "reason": "Belediye kara araç iş emirleri, AI rota ve operatör kapatma; su toplama robotu sözleşme KPI'si açık değil."
+          },
+          {
+            "name": "Roboticsan Kanalizasyon Robotu Raporlama",
+            "url": "https://roboticsan.com.tr/",
+            "reason": "Su altyapısı/kanalizasyon muayene robot yazılımı, su yüzeyindeki yüzer çöp rotası ve atık kabul kayıtlarından farklı."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 2,
+        "queries": [
+          "floating trash skimmer robot municipal service route battery collected litter dashboard reports WasteShark RanMarine Jellyfishbot Clearbot",
+          "Clearbot waste collection dashboard routes amount waste reports",
+          "RanMarine Connect mission logs waste photos generate impact report",
+          "IADYS Jellyfishbot Monitoring Station collection reporting",
+          "Ocean Cleanup interceptor pilot public tonnage dashboard"
+        ],
+        "scope": "En az 2 doğrudan ürün birincil satıcı sayfasında doğrulandı; küresel tüm rakiplerin nihai envanteri değil.",
+        "search_complete": false,
+        "direct_competitors": [
+          {
+            "name": "RanMarine Connect",
+            "url": "https://www.ranmarine.io/data-solutions/",
+            "same_customer_job_workflow_reason": "Marina/belediye su yüzeyi çöp toplama işletmecisi: misyon/rota/batarya/atık miktar foto ve stakeholder report; aynı müşteri işi ve ana raporlama akışı."
+          },
+          {
+            "name": "Clearbot Dashboard",
+            "url": "https://www.clearbot.org/blog-post/revolutionize-hyacinth-removal-with-clearbot",
+            "same_customer_job_workflow_reason": "Liman/şehir robot atık toplama servisi için robot misyonu, toplanan atık tipi/miktarı, rota/alan, rapor/dashboard üzerinden görev çıktısı."
+          }
+        ],
+        "adjacent_competitors": [
+          {
+            "name": "IADYS Monitoring Station",
+            "url": "https://www.iadys.com/iadys-monitoring-station/",
+            "reason": "Jellyfishbot saha görev/sensör veri görselleştirme; doğrudan atık miktarı + foto + müşteri kabul onayı paketi doğrulanmadı."
+          },
+          {
+            "name": "The Ocean Cleanup Dashboard",
+            "url": "https://theoceancleanup.com/dashboard/",
+            "reason": "Yayımlanmış temizlik etki metrikleri ve sistem durumları, bağımsız yüklenici-kamu sözleşmesi imza/kabul defteri değil."
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Kullanıcıdan robotun dışa verdiği mission CSV, su alan/rota, toplanan atık tür/ağırlık, kamera foto ref ve insan müşteri kontrolü; browser native kural/eşik, tek sayfa rapor/PDF/CSV ihracı. Gerçek robotu canlı kontrol, su üzeri AI algılama, harici API ya da harici DB gerektirmez. Müşteri tek taraflı rapor doğruluğunun sınırlı olduğu belirtilir.",
+      "dependency_inventory": [
+        "Operatörün manuel veri girişi ya da robottan dışa aktarılmış CSV",
+        "Saha kabul foto/ıslak imza dosya referansları",
+        "Tarayıcı yerel depolama ve CSV/PDF indirilebilir çıktı",
+        "Kural ile birim/toplama alanı/süre/KPI raporu"
+      ],
+      "external_cash_cost_verified": false
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "Mevcut 91 tarihsel katalog kaydında su yüzeyi çöp toplama kabul defteriyle birebir kanonik eşleşme görülmedi; rekabet ve satın alma kanıtı tamam değil."
+    },
+    "research_attempts": [
+      {
+        "url": "https://www.etnews.com/20261012000325",
+        "status": "original_page_read",
+        "note": "Üretici video iddialarının boyutu ve tarih ayrıldı."
+      },
+      {
+        "url": "https://www.ranmarine.io/data-solutions/",
+        "status": "vendor_product_page_read",
+        "note": "atık hacim/ağırlık, foto, rapor, rota."
+      },
+      {
+        "url": "https://www.clearbot.org/blog-post/revolutionize-hyacinth-removal-with-clearbot",
+        "status": "vendor_page_read",
+        "note": "Rota, atık tür ve miktarı, işletmeci dashboard."
+      },
+      {
+        "url": "https://www.iadys.com/iadys-monitoring-station/",
+        "status": "vendor_page_read",
+        "note": "Saha verisi ve görev, bağımsız cleanup acceptance kanıtı eksik."
+      },
+      {
+        "url": "https://www.sim-sistem.com/SIM_WEB/html/tr/garbage.html",
+        "status": "vendor_page_read",
+        "note": "Kara çöp toplama belediye rota iş emri."
+      },
+      {
+        "query": "Türkiye yüzer su çöp temizleme robotu yazılım müşteri kabul raporu",
+        "status": "search_performed",
+        "note": "Kesin direkt sıfır rakip çıkarılamadı."
+      }
+    ],
+    "evidence_followup_plan": {
+      "needed": [
+        "Türkiye'de su yüzeyi robot temizlik operatörleri/yerel ürün katalogları ile aynı hizmet kabul yazılımı olup olmadığını daha çok yerel dil eş anlamlılarıyla test etmek",
+        "Clearbot ve RanMarine robot üreticisi dışı bağımsız 3. ve 4. global yazılım çözümü var mı genişletmek",
+        "Müşteri hizmet sözleşmesinde bağımsız acceptance raporuna ödeme isteğini doküman ve vaka ile doğrulamak"
+      ],
+      "news_status": "ETNews kısa haber ürün iddiasını aktarıyor, saha test sonucu bağımsız değil."
+    }
+  }
+}
