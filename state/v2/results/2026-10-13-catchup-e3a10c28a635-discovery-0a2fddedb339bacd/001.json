@@ -1,0 +1,113 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-0a2fddedb339bacd",
+  "input_hash": "0a2fddedb339bacda36ad60343fafdcfbc6c3a901d6680e1248f769f18c59f4f",
+  "token": "fc08a25a-fce3-4506-8a40-730d470d0bab",
+  "finished_at": "2026-10-13T08:08:19.672Z",
+  "outcome": "done",
+  "reason": "10 articles reviewed. Two conditional raw workflows (offline truck auction tally and proposed Swedish household water-tier scenario), seven no_opportunity and one original government PDF unverified. 2023 ENEOS plant not treated as new 2026 launch.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "90861593bbd7b15ed04ee924",
+        "decision": "no_opportunity",
+        "reason": "Ailong Technology controlling shareholder planned reduction in company stake is financial-market disclosure. No new buyer workflow or accessible technical standard.",
+        "opportunities": []
+      },
+      {
+        "article_key": "90aabbced2d5d44de6ac094e",
+        "decision": "no_opportunity",
+        "reason": "Sankai Electromechanical Series B funding is a startup finance event. No distinct buyer burden, regulatory change, or zero-service workflow from the financing itself.",
+        "opportunities": []
+      },
+      {
+        "article_key": "90d88a5271d380475382ef73",
+        "decision": "no_opportunity",
+        "reason": "Eni's 12 October 2026 official release confirms binding agreements to sell two groups of 10% Indonesian upstream interests to Pertamina and Medco, subject to approvals. This is a company-specific asset transaction rather than a newly mandated repeated SaaS workflow.",
+        "canonical_source_url": "https://www.eni.com/en-IT/media/press-release/2026/10/eni-signs-two-agreements-for-the-sale-of-stakes-in-selected-upstream-assets-indonesia.html",
+        "opportunities": []
+      },
+      {
+        "article_key": "90e768a177016a8eb5d0bb44",
+        "decision": "no_opportunity",
+        "reason": "The 12 October 2026 Australian Manufacturing article reports opening of ENEOS green hydrogen demonstration facility at Brisbane Bulwer Island, but the same site opening was already reported on 2 February 2023 with 20 kg/day capacity. Without proof of a separate 2026 plant or milestone, treat headline as recycled story, not new opportunity.",
+        "canonical_source_url": "https://www.australianmanufacturing.com.au/new-bulwer-island-facility-backs-qld-as-global-hydrogen-powerhouse/",
+        "opportunities": []
+      },
+      {
+        "article_key": "911e96938cd0fc5595ad048a",
+        "decision": "opportunity",
+        "reason": "MONOist on 13 October recaps TerraSky's 8 October announcement: Mitsubishi Fuso's four regional used-truck B2B auctions moved from paper/fax/spreadsheets to Salesforce, cutting manual bid tally by over three hours per event, with system launched in April 2026. Clearly evidenced tender/bid tally burden; a narrowly scoped import/export bid-audit worksheet is plausible, but competing general auctions are abundant and final competition is open.",
+        "canonical_source_url": "https://monoist.itmedia.co.jp/mn/articles/2610/13/news023.html",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-0a2fddedb339bacd:911e96938cd0fc5595ad048a:01",
+            "idea_name": "Used Commercial Vehicle Bid Tally Evidence Ledger",
+            "canonical_key": "small-commercial-vehicle-auction-organizers|reconcile-offline-used-truck-bids-and-awards|lot-bid-validation-winner-rule-and-evidence-export",
+            "target_customer": "Küçük ticari kamyon/iş makinesi ihalelerini yöneten ikinci el satıcı birlikleri ve galeriler",
+            "buyer": "İhale operasyon yöneticisi",
+            "core_job": "Kağıt, eposta ve Excel üzerinden alınan araç tekliflerini ürün/lot bazında kontrol ederek hatasız kazanan, sıra ve sonuç tutanağı oluşturmak",
+            "product_mechanism": "Kullanıcının yüklediği lot/araç VIN, katılımcı, kapalı teklif CSV'si, saat/durum, eşik/çekilme kuralı; deterministic kazanan hesaplama, çift teklif uyarısı ve PDF tutanağı. Online ödeme, canlı teklif, Salesforce API veya dış servis yok.",
+            "why_now": "MONOist on 13 October recaps TerraSky's 8 October announcement: Mitsubishi Fuso's four regional used-truck B2B auctions moved from paper/fax/spreadsheets to Salesforce, cutting manual bid tally by over three hours per event, with system launched in April 2026. Clearly evidenced tender/bid tally burden; a narrowly scoped import/export bid-audit worksheet is plausible, but competing general auctions are abundant and final competition is open.",
+            "before_state": "Teklifler kağıt ve Excel'de tekrar elle sayılıyor ve müşteri bilgilendirmesi gecikiyor",
+            "after_state": "Bid doğrulama, lot bazlı kazanan kararı ve insan onaylı paylaşılabilir sonuç tutanağı",
+            "canonical_source_urls": [
+              "https://monoist.itmedia.co.jp/mn/articles/2610/13/news023.html"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "9147182db2d78607cbfef2d6",
+        "decision": "opportunity",
+        "reason": "12 October Infometric corporate PR explains Sweden VA Syd is studying higher tariffs for high-consuming homes after water tariff rises; it explicitly says NO decision yet and legal basis is disputed. Proposal creates a conditional scenario analysis need for property managers with actual readouts. Do not claim tariffs already enacted or 35% savings.",
+        "canonical_source_url": "https://news.cision.com/se/infometric/r/dyrare-vatten-for-storforbrukare-visar-pa-behov-av-individuell-vattenmatning--imd-%2Cc4407426",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-0a2fddedb339bacd:9147182db2d78607cbfef2d6:01",
+            "idea_name": "Sweden Water Tier Scenario Readiness",
+            "canonical_key": "swedish-housing-associations|stress-test-hypothetical-water-use-tier-tariffs|household-meter-readings-threshold-and-bill-scenario-workbook",
+            "target_customer": "İsveç site/apartman yöneticileri ve konut kooperatifleri",
+            "buyer": "Bina işletme ve gider paylaşımı sorumlusu",
+            "core_job": "Ev bazlı su tüketimi yüksek olduğunda tarifeye konu olan tüketim dilimi önerilerinin aidat ve fatura dağılımına olası etkisini şeffaf senaryoyla göstermek",
+            "product_mechanism": "Mevcut sayaç tüketim CSV + kullanıcıya ait mevcut/varsayımsal kademe eşikleri ve birim fiyatlarla deterministic fatura farkı, sakin uyarısı ve açıklanabilir bütçe denemesi; IoT veya gerçek belediye API erişimi yok.",
+            "why_now": "12 October Infometric corporate PR explains Sweden VA Syd is studying higher tariffs for high-consuming homes after water tariff rises; it explicitly says NO decision yet and legal basis is disputed. Proposal creates a conditional scenario analysis need for property managers with actual readouts. Do not claim tariffs already enacted or 35% savings.",
+            "before_state": "Bina ve daire bazlı ölçüm ile varsayımsal yeni su tarifesi etkisi farklı Excel ve fatura belgelerinde",
+            "after_state": "Mevcut resmî tarifeyle ayrıca açıkça etiketlenmiş varsayımsal fiyat senaryolarını karşılaştıran insan onaylı fatura etki raporu; hukukî uygunluk kararı değildir",
+            "canonical_source_urls": [
+              "https://news.cision.com/se/infometric/r/dyrare-vatten-for-storforbrukare-visar-pa-behov-av-individuell-vattenmatning--imd-%2Cc4407426"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "916e2910dae2e67a357f6a75",
+        "decision": "no_opportunity",
+        "reason": "Hyundai and Kia's strategic investment in Vast Data supports their robotics/autonomous tech infrastructure; no new public interface, binding data right, or deterministic buyer workflow.",
+        "opportunities": []
+      },
+      {
+        "article_key": "923237194e5792fcb2b78597",
+        "decision": "no_opportunity",
+        "reason": "Norwegian aircraft altitude sensor technology commentary does not provide new open specification, mandate, or buyer workflow separate from avionics hardware.",
+        "opportunities": []
+      },
+      {
+        "article_key": "92689b6d5bd78c10a55f8b07",
+        "decision": "unverified",
+        "reason": "Energy and Natural Resources Ministry PDF is identified only by opaque UUID filename in feed, not its actual document content, publication/entry-into-force date, or official regulatory text. Do not infer a regulation or invention without opening the document.",
+        "opportunities": []
+      },
+      {
+        "article_key": "92a5df3dfe8d00989ac9a3e9",
+        "decision": "no_opportunity",
+        "reason": "Apple iOS 27 push-to-upgrade release article is platform product lifecycle coverage, not a new independently purchasable zero-external-API B2B job based on this headline.",
+        "opportunities": []
+      }
+    ]
+  }
+}
