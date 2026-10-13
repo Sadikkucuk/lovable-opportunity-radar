@@ -1,0 +1,108 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-c4aba21549e2a6e5",
+  "input_hash": "c4aba21549e2a6e56181b7ea28e6a74fb4111f7e43320fb0870c582578d1847c",
+  "token": "104a7e0b-6e0d-40b0-8b6d-c44cdaf2bfac",
+  "finished_at": "2026-10-13T20:48:18.728Z",
+  "outcome": "done",
+  "reason": "Stok eşik/karar gerekçesi/onay ve tedarikçi aksiyonu programı, Türkiye'de WEEC Intelligence Talep-Tedarik-Stok Risk Yönetimi ile Cari Plus stok yenileme/onay süreçleri tarafından fiilen karşılanıyor. WEEC, stok/tedarik alternatifini kaynak veriler ve gerekçe ile gösteriyor, insanın kabul/ret/gerekçe kararını ve işlem onayını günlüğe bağlıyor. Türkiye doğrudan rakip şartı 0 sağlanmadığı için yeni ürün reddedildi. Tetikleyici StockIQ Edison üçüncü taraf çalışan agent; aynı hizmeti harici AI runtime olmadan aynen sunma varsayımı doğru değil.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Türkiye'de en az 1 doğrudan aynı müşteri işi çözümü mevcut: WEEC ERP Intelligence stok/tedarik risk kararlarının kaynak, alternatif, insan gerekçesi, onay ve işlem/sonuç günlüğünü yönetiyor. Kullanıcı tarafından önerilen deterministik minimum stok karar defteri bu süreçten ticari açıdan ayrıştığını kanıtlayamıyor.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.packworld.com/trends/logistics-supply-chain/product/22976144/stockiq-technologies-ai-supply-chain-intelligence-agent",
+        "accessed_at": "2026-10-13T20:48:18.728Z",
+        "claim": "Aday ürünün gerçek haber tetikleyicisi veya aynı müşteri+iş+workflow rakip kanıtı",
+        "observation": "9 Ekim 2026 StockIQ Edison mevcut StockIQ mimarisinde talep/stok/ERP verisiyle anomali, tahmin, öneri ve insan destekli stok/tedarik kararını sunan agent tanıtımı.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://www.weec.com.tr/tr/erp-yapay-zeka-asistani/",
+        "accessed_at": "2026-10-13T20:48:18.728Z",
+        "claim": "Aday ürünün gerçek haber tetikleyicisi veya aynı müşteri+iş+workflow rakip kanıtı",
+        "observation": "Türk ERP çözümü, talep-tedarik-stok riski, seçenek gerekçesi, insan kabul/ret, işlem taslağı ve gerçekleşen stok etkisini kayda bağlar. Aynı üretici/dağıtıcı müşteri ve stok kararı iş akışı.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://cariplus.com.tr/icerik/cari-plus-ile-yapay-zeka-destekli-stok-yenileme-ve-talep-tahmini-kobiler-icin-akilli-stok-yonetimi-rehberi",
+        "accessed_at": "2026-10-13T20:48:18.728Z",
+        "claim": "Aday ürünün gerçek haber tetikleyicisi veya aynı müşteri+iş+workflow rakip kanıtı",
+        "observation": "Cari Plus KOBİ stok eşiği, yeniden sipariş tavsiyesi ve insan onayından satın alma siparişine dönüşüm yeteneğini aktarıyor; stok karar gerekçesi tam izi WEEC kadar açık değil.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 1,
+        "queries": [
+          "Türkiye stok karar gerekçesi onay yönetimi yazılım",
+          "Türkiye yeniden sipariş önerisi stok eşiği tedarikçi aksiyon log yazılım",
+          "stok karar destek satın alma önerileri onay Logo Netsis Mikro",
+          "WEEC ERP Intelligence talep tedarik stok risk karar onay kayıt"
+        ],
+        "scope": "WEEC tam eşleşen 1 ürün, Cari Plus örtüşen ancak gerekçeli karar izi daha sınırlı, tam Türkiye rekabet envanteri değil.",
+        "search_complete": false,
+        "direct_competitors": [
+          {
+            "name": "WEEC ERP Intelligence",
+            "url": "https://www.weec.com.tr/tr/erp-yapay-zeka-asistani/",
+            "same_customer_job_workflow_reason": "İmalat/dağıtım stok planlayıcısı, stok/tedarik riski → seçenek/gerekçe → insan karar/onay → satın alma taslağı → kayıt/sonuç."
+          }
+        ],
+        "adjacent_competitors": [
+          {
+            "name": "Cari Plus stok yenileme",
+            "url": "https://cariplus.com.tr/icerik/cari-plus-ile-yapay-zeka-destekli-stok-yenileme-ve-talep-tahmini-kobiler-icin-akilli-stok-yonetimi-rehberi",
+            "reason": "Stok eşik ve satın alma önerisi ile onayı var; karar gerekçesi/audit tam eşleşmesi ayrıca doğrulanmadı."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": null,
+        "queries": [
+          "inventory approval justification replenishment decision log reorder point human explainability software",
+          "StockIQ Edison supply chain intelligence agent 2026"
+        ],
+        "scope": "Global doğrudan rakipler bu ret için sayısal olarak tamamlanmadı; sıfır rekabet iddiası yapılmaz.",
+        "search_complete": false,
+        "direct_competitors": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "İstemci içi CSV stok/sipariş/tedarikçi girdi, deterministik min-max stok kural motoru, insan onay notu ve CSV/PDF karar günlüğü. StockIQ Edison benzeri canlı ERP/agent fonksiyonları zorunlu değil; bununla birlikte onlarsız güncellik ve öngörü sınırlanır.",
+      "dependency_inventory": [
+        "Kullanıcı tarafından girilen veya yüklenen stok ve tedarikçi tabloları",
+        "İstemci tarafı JavaScript/kural motoru",
+        "İndirilebilir JSON/CSV karar günlüğü"
+      ]
+    },
+    "history_review": {
+      "decision": "uncertain",
+      "reason": "91 katalog fikriyle benzer karar defteri terimleri var; ayrıntılı kesin semantik eşleşme bitmedi; TR rekabet kapısı zaten ret."
+    },
+    "research_attempts": [
+      {
+        "url": "https://www.packworld.com/trends/logistics-supply-chain/product/22976144/stockiq-technologies-ai-supply-chain-intelligence-agent",
+        "result": "original_publisher_page_read"
+      },
+      {
+        "url": "https://www.weec.com.tr/tr/erp-yapay-zeka-asistani/",
+        "result": "official_product_read"
+      },
+      {
+        "url": "https://cariplus.com.tr/icerik/cari-plus-ile-yapay-zeka-destekli-stok-yenileme-ve-talep-tahmini-kobiler-icin-akilli-stok-yonetimi-rehberi",
+        "result": "product_feature_page_read"
+      }
+    ]
+  }
+}
