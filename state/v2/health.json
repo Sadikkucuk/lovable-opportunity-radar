@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T04:07:38Z",
+  "controller_observed_at": "2026-10-13T04:07:53Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
-  "ready_jobs": 365,
-  "unfinished_jobs": 366,
-  "last_verified_progress_at": "2026-10-13T04:07:24Z",
+  "ready_jobs": 364,
+  "unfinished_jobs": 365,
+  "last_verified_progress_at": "2026-10-13T04:07:45Z",
   "workers": {
     "1": {
       "last_started_at": "2026-10-13T04:06:51.813Z",
@@ -14,13 +14,16 @@
         "schema_version": 1,
         "worker": 1,
         "invocation_id": "manual-w1-1791864411813-3759112",
-        "event": "started",
-        "at": "2026-10-13T04:06:51.813Z",
-        "path": "state/v2/worker-events/1/manual-w1-1791864411813-3759112/000-started.json"
+        "event": "finished",
+        "at": "2026-10-13T04:07:50.899Z",
+        "receipts_verified": 2,
+        "articles_triaged": 20,
+        "note": "20 feed records screened at metadata level; all unverified; 2 discovery job receipts saved.",
+        "path": "state/v2/worker-events/1/manual-w1-1791864411813-3759112/999-finished.json"
       },
-      "receipts_this_invocation": 1,
+      "receipts_this_invocation": 2,
       "write_and_receipt_verified": true,
-      "last_receipt_at": "2026-10-13T04:07:24.484Z"
+      "last_receipt_at": "2026-10-13T04:07:45.916Z"
     },
     "2": {
       "last_started_at": "2026-10-13T03:51:43.693Z",
@@ -83,10 +86,10 @@
     "window_minutes": 120.0,
     "stages": {
       "discovery": {
-        "completed_in_window": 2,
-        "known_remaining": 291,
-        "observed_jobs_per_hour": null,
-        "estimated_minutes_for_stage": null
+        "completed_in_window": 3,
+        "known_remaining": 290,
+        "observed_jobs_per_hour": 1.5,
+        "estimated_minutes_for_stage": 11600.0
       },
       "merge": {
         "completed_in_window": 0,
