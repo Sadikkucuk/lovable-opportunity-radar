@@ -1,0 +1,111 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-038c4ff910f63375",
+  "input_hash": "038c4ff910f63375811643b0ad3558de7645860c1425ae911420b0da597afcb5",
+  "token": "01f55344-bc0d-49d7-97e0-60c84b0f6a03",
+  "finished_at": "2026-10-13T07:56:18.337Z",
+  "outcome": "done",
+  "reason": "10 makale gözden geçirildi: fırtına sonrası şebeke kesinti restorasyon kanıtı ve kompresör yağ numune trendi için 2 ham fırsat, 8 no_opportunity. Gerçek zamanlı SCADA/OMS ve harici AI servisi gerektirmeyen dosya tabanlı sürüm düşünüldü.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "632f457a98e8905c0cff0ba6",
+        "decision": "opportunity",
+        "reason": "Utility Dive 12 Ekim kasırga toparlanması haberinde fırtına zirvesinde yaklaşık 950 bin abonenin elektriğinin kesildiği ve üçüncü gün yaklaşık 160 bin kişinin etkilenmeye devam ettiği bildiriliyor; elektrik dağıtım şirketlerinin yeraltı hatlarının havai hatlardan sekiz kat daha iyi performans gösterdiği kaynak açıklaması olarak aktarılıyor. Bu bir senaryo beyanı, bütün bölgeler için karşılaştırmalı deney değil. Şebeke olay sonrası kesinti, saha müdahale, müşteri restorasyonu ve donanım tipine göre güvenilirlik kanıt defteri işi düşünülebilir.",
+        "canonical_source_url": "https://www.utilitydive.com/topic/grid-security-reliability/",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-038c4ff910f63375:632f457a98e8905c0cff0ba6:01",
+            "idea_name": "Grid Restoration Proof Ledger",
+            "canonical_key": "electric-grid-restoration-teams|reconcile-storm-crew-segment-and-customer-service-restoration|manual-outage-workorder-and-restoration-evidence-ledger",
+            "target_customer": "Elektrik dağıtım şirketlerinin olay sonrası kalite güvence ve saha yönetim ekipleri",
+            "core_job": "Fırtına olayındaki başlangıç/kapanış kesintilerini bölge, hat tipi, saha ekip müdahalesi ve müşteri restorasyon zamanına bağlayıp eksik müdahale kanıtını görmek",
+            "product_mechanism": "Şirketin elle sağladığı kesinti CSV, ekip görev, segment tipi, müşteri sayısı, restore zamanı, açıklama ve mühendis onay kaydı; gerçek zamanlı kesinti/SCADA/OMS API'si gerektirmez",
+            "why_now": "Utility Dive 12 Ekim kasırga toparlanması haberinde fırtına zirvesinde yaklaşık 950 bin abonenin elektriğinin kesildiği ve üçüncü gün yaklaşık 160 bin kişinin etkilenmeye devam ettiği bildiriliyor; elektrik dağıtım şirketlerinin yeraltı hatlarının havai hatlardan sekiz kat daha iyi performans gösterdiği kaynak açıklaması olarak aktarılıyor. Bu bir senaryo beyanı, bütün bölgeler için karşılaştırmalı deney değil. Şebeke olay sonrası kesinti, saha müdahale, müşteri restorasyonu ve donanım tipine göre güvenilirlik kanıt defteri işi düşünülebilir.",
+            "before_state": "Dağıtım şebekesi tasarım/arıza sonrası restorasyon kanıtları farklı OMS, saha, müşteri şikâyeti raporlarında",
+            "after_state": "Denetlenebilir olay sonu müşteri geri dönüş zaman matrisi ve saha ekip müdahale/öğrenim kanıtı",
+            "canonical_source_urls": [
+              "https://www.utilitydive.com/topic/grid-security-reliability/"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "63b51a85fdede7326f627b3c",
+        "decision": "no_opportunity",
+        "reason": "36Kr yüksek ücretle dahi işgücü bulma zorluğunu tartışan haber; hangi uzmanlık/yerel rol olduğunu asıl metinden teyit edemediğim için yeni özgün iş akışı üretmedim.",
+        "opportunities": []
+      },
+      {
+        "article_key": "6404fc1f1c0778d9b0e1377e",
+        "decision": "opportunity",
+        "reason": "12 Ekim Plant Services/Hitachi Global Air Power makalesi vidalı kompresörler için OEM akışkanının viskozite, oksidasyon/asitlik, su ve aşınma metali üzerinden dönemsel örneklenmesinin bakım ihtiyacını önceleyebildiğini açıklıyor. Uygunsuz yağ analizine rağmen üretime devam etmek potansiyel arıza zinciri yaratır; bu risk evrensel arıza tahmini doğruluğu iddiası değildir. Bakım uzmanı için laboratuvar numunesi, rulman/kompresör kimliği ve eşik aşımı kararını kanıt defterinde izlemek somut JTBD.",
+        "canonical_source_url": "https://www.plantservices.com/home/article/11340612/articles",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-038c4ff910f63375:6404fc1f1c0778d9b0e1377e:01",
+            "idea_name": "Kompresör Yağ Analizi Servis Kanıt Defteri",
+            "canonical_key": "industrial-compressed-air-maintenance-teams|track-oil-sample-deterioration-against-asset-service-decisions|viscosity-acidity-water-and-wear-metals-ledger",
+            "target_customer": "Hava kompresörü işletmecisi KOBİ bakım ve enerji verimliliği ekipleri",
+            "core_job": "Kompresör yağ numunelerindeki viskozite, TAN/asit, nem ve aşınma metaline göre bakım talebini kanıtla bağlamak",
+            "product_mechanism": "Dış laboratuvardan kullanıcının CSV/PDF alımı, OEM yağ türü, viskozite indeksi, değişim saatleri, basınç/sıcaklık, numune eşik/delta karşılaştırması ve insan servis onayı",
+            "why_now": "12 Ekim Plant Services/Hitachi Global Air Power makalesi vidalı kompresörler için OEM akışkanının viskozite, oksidasyon/asitlik, su ve aşınma metali üzerinden dönemsel örneklenmesinin bakım ihtiyacını önceleyebildiğini açıklıyor. Uygunsuz yağ analizine rağmen üretime devam etmek potansiyel arıza zinciri yaratır; bu risk evrensel arıza tahmini doğruluğu iddiası değildir. Bakım uzmanı için laboratuvar numunesi, rulman/kompresör kimliği ve eşik aşımı kararını kanıt defterinde izlemek somut JTBD.",
+            "before_state": "Laboratuvar raporları makine çalışma saati ve servis kararı ile bağlanmadığında erken bozulma uyarıları unutuluyor",
+            "after_state": "Kompresör bazında trend, önerilen kontrol, insan onaylı bakım kapanışı ve yağa bağlı verim kaybı hipotez raporu",
+            "canonical_source_urls": [
+              "https://www.plantservices.com/home/article/11340612/articles"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "645fb0cda33e821721a55de7",
+        "decision": "no_opportunity",
+        "reason": "Çin Infinigence/无问芯穹 Token Factory olarak tanıtılan mevcut şirketin finansman ve ürün satış modeli; bunu kopyalamak büyük GPU/AI çalışma servisi gerektirir. Bu haberde yeni açık API/kural yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "64707a7440a308d202c97158",
+        "decision": "no_opportunity",
+        "reason": "TeamViewer ONE yeni entegre yönetim/IT olay otomasyonu ürün haberi. Aynı iş için uzaktan makine erişimi, uygulama entegrasyonları ve AI agent çalışma servisleri gerekmektedir; sıfır harici hizmet iş modeline doğrudan uymaz.",
+        "opportunities": []
+      },
+      {
+        "article_key": "6476409ba6a3e4b9a8e72097",
+        "decision": "no_opportunity",
+        "reason": "Robot ETF pay alımları finansal fon piyasası hareketidir; endüstriyel robot kurulum zorunluluğu göstermez.",
+        "opportunities": []
+      },
+      {
+        "article_key": "64836095ffb497f7cad2bb05",
+        "decision": "no_opportunity",
+        "reason": "Microsoft Azure ekibinde iç reorganizasyon haberidir, müşteriler için onaylı yeni faturalama veya kamuya açık teknik API değildir.",
+        "opportunities": []
+      },
+      {
+        "article_key": "649be433eb17c11d5b1a7357",
+        "decision": "no_opportunity",
+        "reason": "Win11 cihazında iki antivirüs yazılımını birlikte kurmama uyarısı bilinen işletim sistemi operasyon tavsiyesidir; Windows endpoint güvenliği gerçek sistem API'si gerektirir ve yeni bağlayıcı iş akışı doğurmaz.",
+        "opportunities": []
+      },
+      {
+        "article_key": "64e334a67e4570726ab2bd13",
+        "decision": "no_opportunity",
+        "reason": "Microsoft Başkanı Smith'in AI düzenleme ihtiyacına dair açıklaması önceki same-day Discovery paketlerinde işlendi; kanun yürürlükte değil, tekrarlanan habere yeni ham fikir verilmedi.",
+        "canonical_source_url": "https://www.reuters.com/legal/litigation/microsoft-president-says-milk-faces-more-regulation-than-ai-2026-10-12/",
+        "opportunities": []
+      },
+      {
+        "article_key": "6525339d0f9e63f41650ae27",
+        "decision": "no_opportunity",
+        "reason": "Tokyo Tatemono'nun bina yönetim merkezine KANRI ROID ve Knowledge AI kurması zaten piyasada mevcut ürünlerdir. Dış yapay zekâ/özel bina API olmadan aynı hazır yazılımı kopyalamak özgün model gereğini karşılamaz; mevcut CMMS fikirleriyle örtüşür.",
+        "canonical_source_url": "https://built.itmedia.co.jp/",
+        "opportunities": []
+      }
+    ]
+  }
+}
