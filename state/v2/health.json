@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T17:24:41Z",
+  "controller_observed_at": "2026-10-13T17:24:56Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
@@ -46,11 +46,14 @@
         "schema_version": 1,
         "worker": 3,
         "invocation_id": "dbe70cc9-a614-405f-8acf-b911d3879386",
-        "event": "started",
-        "at": "2026-10-13T17:21:59.811Z",
-        "execution_mode": "user_requested_manual_master",
-        "note": "Manual research against current shared queue. Scheduled tasks and prompts not edited.",
-        "path": "state/v2/worker-events/3/dbe70cc9-a614-405f-8acf-b911d3879386/000-started.json"
+        "event": "progress",
+        "at": "2026-10-13T17:24:43.406Z",
+        "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-e59e22c37b10df2a",
+        "stage": "receipt_saved",
+        "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-e59e22c37b10df2a/001.json",
+        "articles_triaged": 10,
+        "raw_opportunities": 3,
+        "path": "state/v2/worker-events/3/dbe70cc9-a614-405f-8acf-b911d3879386/001-progress.json"
       },
       "receipts_this_invocation": 1,
       "write_and_receipt_verified": true,
