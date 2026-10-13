@@ -1,0 +1,153 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-2bfd2b8b0a-discovery-500b7a275376a2aa",
+  "input_hash": "500b7a275376a2aa95eacfe8d620b8b6df53926934c1c9a5356dbb9d1c7bdc53",
+  "token": "2c6d9215-95f1-4fd6-8aaf-3e431d81da57",
+  "finished_at": "2026-10-13T23:06:44.690Z",
+  "outcome": "done",
+  "reason": "Donmuş on haberin tamamı tek tek değerlendirildi. İki somut müşteri iş hipotezi çıkarıldı: fiziksel yayın baskı öncesi asistan istemi sızıntısı ve iletim trafosu parsel/şantiye erişim kanıt zinciri. Diğer sekiz haberde ayrı bir yeni buyer+job+workflow veya kanıtlı delta bulunmadı. Birincil sayfa olarak IT之家, Enerji Günlüğü, Huxiu, YourStory okundu; kaynak kapsamı/eksikleri makale gerekçelerinde saklandı. Sıfır rakip veya katalog geçişi iddia edilmedi.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "8dde91f4dcd4011be93fd78e",
+        "decision": "opportunity",
+        "reason": "IT之家 12 Ekim özgün makalesi ve 10 Ekim önceki haber: Çin'deki 《终焉路独行》 basılı kitap metnine düzenleme/yazım asistanının 'biraz daha düzenleyeyim mi' türü etkileşim satırı yanlışlıkla girdi; proje ekibi orijinal eserde satırın olmadığını, düzenleme/kısaltma sırasında proofreading yazılımının istem metninin kitap metnine yapıştırıldığını kabul etti. Yayıncı, dağıtılan nüshaları geri toplama/yeniden baskı bildirdi. BEFORE web/eser asıl metniyle matbaa baskıya hazır metin arasındaki insan ve model kontaminasyonları kaçabilir. AFTER fiziksel iade/yeniden baskı maliyeti belirginleşti; yayın/üretim ekiplerine offline referans-karşılaştırma ve konuşma-artığı pattern denetimi yönelik ürün hipotezi. LLM tespiti garantisi verilmez; bölüm farkı + şüpheli diyalog kalıbı için insan onayı gerekir.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-2bfd2b8b0a-discovery-500b7a275376a2aa:8dde91f4dcd4011be93fd78e:1",
+            "canonical_key": "publishers-and-book-production-editors|stop-proofreading-assistant-prompts-leaking-into-print-ready-book-text|offline-source-manuscript-vs-typeset-diff-and-dialogue-residue-preflight",
+            "idea_name": "Baskı Öncesi AI Talimat Sızıntısı ve Metin Fark Kontrolü",
+            "core_job": "Basılacak kitap/dergi dizgi metnini yazarın onaylı ana metniyle karşılaştırıp eklenmiş editör/AI diyalog satırlarını ve kritik bölümsel farklılıkları matbaa tesliminden önce doğrulamak",
+            "target_customer": "Kitap yayıncıları, dijitalden baskıya eser uyarlayan içerik yayın evleri, dizgi kalite kontrol ekipleri",
+            "buyer": "Yayın yönetmeni, üretim editörü veya baskı öncesi QA sorumlusu",
+            "product_mechanism": "Yayın ekibinin yüklediği onaylı kaynak TXT/DOCX'den dışa aktarılmış metin ve baskı hazır PDF'den çıkarılmış UTF-8 metin/CSV bölüm listelerini tarayıcıda deterministik diff, olağandışı yeni soru/konuşma kalıbı ve editör açıklama sözlüğüyle karşılaştırıp bölüm/satır kanıtı ve insan onaylı redaksiyon raporu üretir; zorunlu harici API/AI modeli/DB yok",
+            "why_now": "12 Ekim 2026 gerçek fiziksel kitap geri çekme olayı, editing assistant diyalog metninin basılı nüshaya sızması halinde yüksek yeniden baskı ve itibar maliyetini somutlaştırdı.",
+            "before_state": "Orijinal e-kitap/web roman ve son dizgi çıktısı değişiklikleri insan göz okumasında farklı ekiplerden geçiyor; görünür asistan istemleri fark edilmeyebilir.",
+            "after_state": "Bölüm/satır kaynak-dizgi farkı ve yüksek riskli metin parçası, baskı öncesi iki insan imzasıyla raporlanır.",
+            "canonical_source_urls": [
+              "https://www.ithome.com/1/011/740.htm",
+              "https://www.ithome.com/1/011/352.htm"
+            ],
+            "supporting_article_ids": [
+              "bee20bb5888940b9bfdda631"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.ithome.com/1/011/740.htm",
+                "observation": "12 Ekim IT之家 yayınevi özür yazısını aktarır: orijinal metinde olmayan proofreading software AI istem satırı basılı kitaba yanlışlıkla geçmiş; baskı dağıtılan nüshalar geri çağrılıyor.",
+                "verification": "original_article_page_read"
+              },
+              {
+                "url": "https://www.ithome.com/1/011/352.htm",
+                "observation": "10 Ekim erken haber, kağıt kitap bölümünde çevrimiçi sürümde olmayan AI yardımcı yazım ifadesini gösterir.",
+                "verification": "original_article_page_read"
+              }
+            ],
+            "scope_hint": "Dünya; yayıncılık, matbaa öncesi belgelendirme",
+            "local_evidence": {
+              "signals": [
+                "Üretim hatası yayınevi tarafından kabul edildi ve basılı ürünlerin geri çekilmesi açıklandı."
+              ],
+              "unknowns": [
+                "Türkçe yayınevi/prepress QA sistemlerinin ve global metin-diff sistemlerinin doğrudan rakip envanteri Validation'da araştırılmalı.",
+                "Sadece metin çıkarma ve kalıp kontrolleri yanlış pozitif/negatif yapabilir; insan denetimi zorunlu.",
+                "PDF/görsel OCR ve kapalı font akışları MVP kapsamında zorunlu değil."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "8e398724b1519b5c4761f6d8",
+        "decision": "no_opportunity",
+        "reason": "Huxiu'nun 10 Ekim AI100 kapalı toplantı raporu 28 Eylül panel görüşlerini anlatır. Rokid, Baidu ve AI cihaz kurucuları sahne-özgül veri tekrar kullanımı, bakım ve inference maliyetlerinin önemli olduğunu tartışıyor; yeni AI donanım standardı, zorunlu veri formatı veya belli ödeme yetkisine sahip müşterinin bağımsız yeni işi ilan edilmiyor. Üretici görüşü ile kanıtlı satın alma talebi karıştırılmadı; genel donanım ürün karması/gider karşılaştırması mevcut birçok araçla örtüşür.",
+        "opportunities": []
+      },
+      {
+        "article_key": "8e47eefbd63a8d23fe7e9381",
+        "decision": "no_opportunity",
+        "reason": "中国经济网 tarafından 12 Ekim yayınlanan 国际商报 'AI küresel işbölümünü dönüştürüyor' genel makro analizidir. Tarihli resmi eşik, yeni açılmış işlem API'si, bağımsız uygulanabilir sektör workflow'u teyit edilemedi. Yayıncı kategori/arşivi kaynak tarihini doğruluyor ancak özel müşteri tarife/satın alma sorumluluğu üretmiyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "8e882771065dc07ccb415713",
+        "decision": "no_opportunity",
+        "reason": "ZDNet Korea'daki 11 Ekim GuardSquare mobil uygulama güvenliği gündemi, üreticinin önceden var olan DexGuard, iXGuard, AppSweep ve tehdit izleme ürünleri ile AI destekli tersine mühendislik riskini anlatır. 2020 Kore GuardSquare dağıtım haberi ürünün yeni olmadığını doğruluyor. Kaynak, yeni bağımsız izin/rapor standardından ziyade bir üretici ürün/eğitim açıklamasıdır; sıfır zorunlu harici agent ve mevcut AppSec platformlarına farklılaşmış satılabilir iş saptanmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "9129c6b51bdfb89ffa6cae84",
+        "decision": "no_opportunity",
+        "reason": "ZDNet Fransa 11 Ekim AX9 Max mini-PC donanım testini duyurdu; 'yerelde AI iş yükü' editoryal tek cihaz denemesidir. Tek performans incelemesiyle yeni endüstri standardı veya kanıtlanmış müşteri iş akışı değişikliği yok. Mevcut PC satın alma/TCO ve yerel model deployment adaylarına yalnız donanım varyantı eklemek semantik tekrar olacaktır.",
+        "opportunities": []
+      },
+      {
+        "article_key": "91a30ed3b47ea6f097e9308c",
+        "decision": "opportunity",
+        "reason": "10 Ekim Enerji Günlüğü özgün haberinde 9 Ekim 11858 sayılı karar ile TEİAŞ'ın Tekirdağ Çorlu–Marmaraereğlisi arasındaki 400/154 kV Rumeli TM proje alanı için 2942/27 acele kamulaştırma işlemi kararı alındığı bildiriliyor. Kararda tek tek parsel/alan/malik listesi HABERDE YER ALMIYOR; kararın verilmiş olması parsellerin teslim edildiği veya tesisin inşaata başladığı anlamına gelmiyor. DELTA: kamu enerji altyapısında parsel hak/teslim/itiraz/ölçüm/şantiye devri paydaş koordinasyonu ihtimali. Bir B2B kanıt izleme hipotezi kurulabilir, ancak kadastral birincil parsellere ulaşım ve hukuki süreç mevzuat uzmanı onayı gerektirir.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-2bfd2b8b0a-discovery-500b7a275376a2aa:91a30ed3b47ea6f097e9308c:1",
+            "canonical_key": "transmission-substation-project-control-teams|track-emergency-expropriation-parcel-possession-and-site-handover-evidence|offline-parcel-rights-notice-legal-milestone-and-construction-readiness-ledger",
+            "idea_name": "Trafo Merkezi Kamulaştırma–Şantiye Teslim Kanıt Defteri",
+            "core_job": "Yeni transformatör merkezi yatırımında parsel bazlı acele kamulaştırma kararı, tebligat, ekspertiz, fiili yer teslimi ve şantiye/altyapı giriş ön koşullarını kanıt bazlı kapatmak",
+            "target_customer": "İletim trafo merkezi proje sahibi temsilcileri, enerji EPC yüklenicileri ve proje kamulaştırma/hukuk koordinasyon ekipleri",
+            "buyer": "EPC program kontrol direktörü veya proje arazi-hukuk koordinasyon lideri",
+            "product_mechanism": "Kuruluşun manuel sağladığı parsel CSV, karar no/tarih, paydaş/yetkili kişi, tebligat, kamulaştırma tescil durum/not, saha teslim tutanağı ve inşaat geçiş kriterini tarayıcı içi checklist ve sürüm geçmişine bağlar; tapu/kadastro resmi API veya üçüncü taraf DB zorunlu değil; hukuki hüküm üretmez",
+            "why_now": "9 Ekim 2026 tarihli 11858 sayılı acele kamulaştırma kararı Tekirdağ Rumeli 400/154 kV TM projesinde yeni bir proje-saha ön koşulu yarattı.",
+            "before_state": "Karar, tapu/parsel ve proje sahaya erişim sorumlulukları ayrı hukuk-EPC dosyalarında takip edilir.",
+            "after_state": "Parsel/onay/yer teslim delilleri ve gecikmeye yol açan eksik kanıtlar tek insan imzalı şantiye başlangıç dosyasında görünür.",
+            "canonical_source_urls": [
+              "https://www.enerjigunlugu.net/teiastan-tekirdaga-yeni-trafo-merkezi-70136h.htm"
+            ],
+            "supporting_article_ids": [
+              "3b3ad2db4f2e79247ac85752"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.enerjigunlugu.net/teiastan-tekirdaga-yeni-trafo-merkezi-70136h.htm",
+                "observation": "10 Ekim haber 400/154 kV Rumeli TM, Çorlu–Marmaraereğlisi bölgesi, 9 Ekim 11858 karar, 2942 sayılı Kanun md.27; haberde malik/parsel sayısı yok.",
+                "verification": "original_article_page_read"
+              }
+            ],
+            "scope_hint": "Türkiye; elektrik iletim ve enerji EPC",
+            "local_evidence": {
+              "signals": [
+                "Yeni karar proje alanına erişimin, hukuk dosyası ve yer teslim koordinasyonuna bağlı olduğunu gösteriyor."
+              ],
+              "unknowns": [
+                "Kararın tam Resmi Gazete ekleri ve tapu/kadastro kaydı bağımsız incelenmedi.",
+                "Türkiye'de proje kamulaştırma ERP/CBS ve global right-of-way yazılımı rakip taraması tamamlanmadı.",
+                "Bu spesifik kamu projesi müşteri kazanıldığına dair kanıt değildir."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "923e646f748e9eda0d558630",
+        "decision": "no_opportunity",
+        "reason": "11 Ekim Huxiu yazarı yapay zekâ nedeniyle çırak/ilk seviye meslek girişlerinin ve çalışan eğitim zincirinin zayıflayabileceğine dair yorum yazdı. Gerçek yeni meslek unvanlarının kamu siciline zorunlu girişi veya belirli işverene yüklenmiş yeni bir eğitim kaydı hukuki zorunluluğu ilan edilmedi. Genel upskilling/kurs pazarı çok kalabalık ve aynı müşteri+işe sahip yeni farklılaşan uygulama kanıtlanmıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "9275017ea038e5302afde60c",
+        "decision": "no_opportunity",
+        "reason": "中国经济网 'teknolojik yenilik toplum yararına yönelmeli' yorum/makro politika tavsiyesi yayımlıyor; yeni regülasyon, tarihli procurement portal, alıcı rolü veya ölçülebilir yeni teknoloji veri kaynağı gösterilmiyor. Bu kaynak başlığından evrensel sosyal fayda SaaS'ı üretmek haberden ürüne nedensellik eşiğini karşılamaz.",
+        "opportunities": []
+      },
+      {
+        "article_key": "92ebbbce35dd7e7a1363bbec",
+        "decision": "no_opportunity",
+        "reason": "中国经济网 'AI ile yüzleşince samimi yaratıcılık' konulu görüş yazısı kültür/publishing üzerine normatif değerlendirmedir; zorunlu AI menşe lisansı/sertifika standardı veya yeni pazar altyapısı doğrulamadı. Fiziksel basılı kitaba editör sohbet satırı sızıntısı ise ayrı somut kaynakta kanıtlı ve ilk kayıtta ürün hipotezine dönüştürüldü.",
+        "opportunities": []
+      },
+      {
+        "article_key": "930c21e4a957bd28a2c0eb1c",
+        "decision": "no_opportunity",
+        "reason": "YourStory 11 Ekim ShuruKar Daily Capsule ve 10 Ekim özgün haberi, DPIIT/Startup India ortak girişimiyle Patna'da 10 Ekim'de ShuruKar programının BAŞLATILDIĞINI ve yerel sorun bulma/mentor/eşleşme/ilk müşteri akışının programın kendi içinde sunulduğunu anlatıyor. BEFORE ilçe girişimcisinin mentor ve müşteri erişimi sınırlı. AFTER ShuruKar doğrudan bu boşluğu doldurmaya başlıyor; aynı işi yapan bir micro-SaaS, zaten çalışan platform ile doğrudan çakışır. Eğitim ve özel devlet hibe alım hakları otomatik verilmiyor. Bu kayıt, ayrı 2026 UP Startup procurement fikrine kanıt atfı olarak kullanılabilir; yeni eş değer program kopyası yapılmadı.",
+        "opportunities": []
+      }
+    ]
+  }
+}
