@@ -1,0 +1,132 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-5b33a104f1e1178d",
+  "input_hash": "5b33a104f1e1178d250118383134bae06434408e61c8e682e4bba4708e5f74d2",
+  "token": "daf19c65-2a71-4eef-81d0-5a2452005552",
+  "finished_at": "2026-10-13T05:33:46.361Z",
+  "outcome": "done",
+  "reason": "Saha haberi, üç güncel ve bir tarihsel global doğrudan ürün, harici servissiz dar CSV MVP, semantik katalog araştırıldı. Türkiye ve dördüncü güncel rakip netleşmedi; unverified için bağlı ikinci araştırma gerekli.",
+  "result": {
+    "decision": "unverified",
+    "reason": "Özgün 8 Ekim saha raporu doğrulandı. Simbe, Badger ve ShelfOptix ürünleri aynı alıcı+çekirdek mağaza görevi+robot raf alarmından aksiyon ve kapanış iş akışını güncel sitelerinde doğruluyor. Zebra SmartSight 2020 ürün sayfası aynı mekanizmayı sunuyor ancak 2026 etkin satışı/doğrudan bağımsız ürün olarak devamlılığı kanıtlanamadı. Güncel kesin global doğrudan rakip sayısı en az 3, dördüncü aday tarihsel ve belirsiz. Türkiye pazarı için yeterli tarihli tarama yok; direct_count=null, qualified değildir. Dokümante edilmiş küresel alternatifler nedeniyle yenilik yüksek değil, ama mevcut 3 sınırını aşma kanıtı eksiksiz olmadığından nihai rejection ve qualification yerine unverified + evidence_followup gerekir.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.automatedwarehouseonline.com/groceryshop-2026-retail-robots-are-scaling-now-what/",
+        "accessed_at": "2026-10-13T05:33:46.361Z",
+        "claim": "2026 Groceryshop raporu 3000 Tally robotu ve gerçek zamanlı raf içgörüsünün göreve dönüştürülmesini inceliyor",
+        "observation": "8 Ekim Automated Warehouse analizi Simbe Tally 3000 kurulum, Badger ve ShelfOptix ekiplerinden bahsediyor; robot verisinin aksiyona dönüşümünü bir kategori ihtiyacı olarak tanımlıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.simberobotics.com/store-intelligence/tally",
+        "accessed_at": "2026-10-13T05:33:46.361Z",
+        "claim": "Simbe Tally / Simbe Mobile App için raf denetimi→görev ve aksiyon iş akışı",
+        "observation": "Robot raf envanter hatası, ürün/etiket kontrolü, personel için mobil öncelikli görev listesi ve yönetici raporu",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.badger-technologies.com/resource/blog/from-data-to-action-mobile-apps-store-productivity.html",
+        "accessed_at": "2026-10-13T05:33:46.361Z",
+        "claim": "Badger Technologies için raf denetimi→görev ve aksiyon iş akışı",
+        "observation": "Raf robotu stockout/etiket sorunu tespit eder, mobil uygulamada öncelikli görev yaratır, yönetici görev kapanışını izler",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://shelfoptix.com/",
+        "accessed_at": "2026-10-13T05:33:46.361Z",
+        "claim": "ShelfOptix için raf denetimi→görev ve aksiyon iş akışı",
+        "observation": "Robot tarama, SKU/planogram/raf hata listesi, mobil saha görev atama ve tamamlanma takibi",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.zebra.com/us/en/about-zebra/newsroom/press-releases/2020/zebra-unveils-new-intelligent-automation-solution-at-nrf.html",
+        "accessed_at": "2026-10-13T05:33:46.361Z",
+        "claim": "Zebra SmartSight / EMA50 (2020 release) için raf denetimi→görev ve aksiyon iş akışı",
+        "observation": "Tarihsel 2020 ürün: robot raf sorunu taraması ve mağaza personeline mobil düzeltici görev atama. 2026 ticari bulunabilirlik / aktif ürünün sürekliliği bağımsız teyit edilmedi",
+        "page_read": true,
+        "support": "historical_status_uncertain"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "search_complete": false,
+        "queries": [
+          "Türkiye raf robotu mobil görev listesi stok yok düzeltici faaliyet yazılım",
+          "Türkiye raf tarama robotu personel görev takibi mağaza uygulaması",
+          "Türkiye stok raf görüntü iş emri yazılımı"
+        ],
+        "scope": "Türkiye'de aynı müşteri, robot kaynaklı raf denetim hatası, mağaza personeline görev ve kapanış kanıtı bulunan sistem",
+        "direct_competitors": []
+      },
+      "global": {
+        "direct_count": 3,
+        "search_complete": false,
+        "queries": [
+          "retail robot shelf scan tasks store associates app",
+          "Simbe Tally Badger ShelfOptix mobile worklist completion",
+          "Zebra SmartSight EMA50 active 2026 or discontinued"
+        ],
+        "scope": "Güncel ürün siteleri 2026 Simbe, Badger, ShelfOptix; 2020 Zebra SmartSight tarihi çözüme benziyor fakat 2026 aktif durum açıklığa kavuşmadı",
+        "direct_competitors": [
+          {
+            "name": "Simbe Tally / Simbe Mobile App",
+            "url": "https://www.simberobotics.com/store-intelligence/tally",
+            "direct": true,
+            "observation": "Robot raf envanter hatası, ürün/etiket kontrolü, personel için mobil öncelikli görev listesi ve yönetici raporu"
+          },
+          {
+            "name": "Badger Technologies",
+            "url": "https://www.badger-technologies.com/resource/blog/from-data-to-action-mobile-apps-store-productivity.html",
+            "direct": true,
+            "observation": "Raf robotu stockout/etiket sorunu tespit eder, mobil uygulamada öncelikli görev yaratır, yönetici görev kapanışını izler"
+          },
+          {
+            "name": "ShelfOptix",
+            "url": "https://shelfoptix.com/",
+            "direct": true,
+            "observation": "Robot tarama, SKU/planogram/raf hata listesi, mobil saha görev atama ve tamamlanma takibi"
+          }
+        ],
+        "historical_unconfirmed": [
+          {
+            "name": "Zebra SmartSight / EMA50 (2020 release)",
+            "url": "https://www.zebra.com/us/en/about-zebra/newsroom/press-releases/2020/zebra-unveils-new-intelligent-automation-solution-at-nrf.html",
+            "direct": null,
+            "observation": "Tarihsel 2020 ürün: robot raf sorunu taraması ve mağaza personeline mobil düzeltici görev atama. 2026 ticari bulunabilirlik / aktif ürünün sürekliliği bağımsız teyit edilmedi"
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Kullanıcı robot sağlayıcısının CSV çıktılarını manuel yükler; SKU/raf sorun türünü kural tabanlı görev satırına dönüştürür; personel manuel atar, foto/rapor dosyasını yerel tutar; CSV/PDF çıkarır. Otomatik robot bağlantısı ve canlı görev bildirimleri kapsamında değildir.",
+      "dependency_inventory": [
+        "Tarayıcı JavaScript",
+        "Kullanıcı CSV dışa aktarımı",
+        "IndexedDB / browser local storage",
+        "İstemci tarafı PDF çıktı"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "91 kayıtta aynı perakendeci robot raf denetimi→çalışan görevi→kapanış ana iş akışı bulunmadı. Diğer fiziksel robot veya retail projeleri aynı işin doğrudan kopyası değil."
+    },
+    "remaining_checks": [
+      "competition:tr direct count dated verification",
+      "competition:global Zebra SmartSight 2026 active and another potential commercial competitor",
+      "feasibility:robot supplier usable CSV format and zero ongoing external dependency confirmation"
+    ]
+  }
+}
