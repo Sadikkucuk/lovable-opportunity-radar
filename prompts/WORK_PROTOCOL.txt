@@ -61,7 +61,13 @@ SAVE AND CONTINUE
    001-progress.json, 002-progress.json, ... (new increasing numbers).
    Same identity fields, event=progress, at=actual UTC time, plus job_id and
    stage=claim_saved|receipt_saved|research_in_progress. For receipt_saved include
-   the exact receipt_path. Events are observability, never evidence of completion.
+   the exact receipt_path. In research_in_progress validation events, record
+   completed_checks (trigger, competition_tr, competition_global, feasibility,
+   history), remaining_checks and brief supported URL/observation notes when
+   material progress exists. This is the staged research checkpoint, using the
+   ALREADY REQUIRED heartbeat event: do not create five extra GitHub writes
+   merely to mark phases. Reuse only genuine still-fresh evidence after read-back.
+   Events are observability, never proof of approval or qualification.
 8. For an evidence_followup validation job, BEFORE claim read its
    parent_job_id/parent_receipt_path and the immutable earlier candidate
    history. Treat past evidence as research leads, not automatic approval.
