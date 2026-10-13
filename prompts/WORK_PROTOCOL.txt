@@ -69,11 +69,23 @@ SAVE AND CONTINUE
    inspect exact paths after timeouts before retrying. Never bypass approvals.
 
 USER SIGNAL AND TWO-HOUR WINDOW
-10. Check the Europe/Istanbul overnight window BEFORE every new claim. Work only
-    from 00:01 inclusive to 07:00 exclusive; an hourly trigger is a restart,
-    NOT a one-job cap. Persist completed results and finish safely at the
-    boundary. The user may explicitly request a one-job manual intervention,
-    which must be separately logged and does not weaken research rules.
+10. AUTOMATIC START WINDOW is 00:01 inclusive to 07:00 exclusive
+    (Europe/Istanbul). It determines when scheduled invocations START,
+    NOT when a new claim may be created or an accepted result saved.
+    NO 07:00 CLAIM CUTOFF: a worker already active after 07:00 may continue
+    claiming eligible jobs and saving results, provided mode=active.
+    Manual invocations explicitly requested by the owner are authorized
+    for any of workers 1, 2, 3, 4, at ANY local hour. They may claim and
+    complete successive ready jobs; there is no one-job manual limit.
+    Before each new claim, check mode=active, immutable inbox paths, job
+    state, existing claim/lease and input_hash; 30-minute lease, start
+    event, fencing, read-back, evidence quality and publication gates are
+    identical for manual and scheduled work. Log the manual invocation
+    with its real worker ID, UUID and event identity. Do not create new
+    scheduled tasks or change any prompt to progress manually. NEVER
+    treat the mere absence of a scheduled night slot as a permission
+    failure for an explicit manual request. This grants no permission
+    to bypass external provider or GitHub access controls.
     Start the task reply with "MÜDAHALE GEREKLİ" only for a confirmed access/onay
     block, missing start/progress alarm, or stale controller; state worker, last
     persisted result, observed reason and the specific next action. Otherwise
