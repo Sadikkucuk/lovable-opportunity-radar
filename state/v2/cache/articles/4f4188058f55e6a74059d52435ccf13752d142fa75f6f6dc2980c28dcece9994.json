@@ -1,0 +1,30 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "4f4188058f55e6a74059d52435ccf13752d142fa75f6f6dc2980c28dcece9994",
+  "decision": {
+    "article_key": "0725065d010a542cb2a602e7",
+    "decision": "opportunity",
+    "reason": "9-10 Ekim 2026'da Jiangsu Phoenix yayınevinin fiziksel romanda editoryal AI yanıt cümlesi basıldığı şikâyeti üzerine dağıtılan kitapları geri çağırıp imha etmeyi ve revize basmayı planladığı doğrulandı. Hata yazardan değil editoryal üretim zincirinden kaynaklandığı beyan edildi; bu haber yeni AI kullanım yasağı değildir. Matbaaya gitmeden insan editörlerin kaynak metin ile düzenlenmiş metin diff ve olası editör/AI artifakt dizesini manuel incelemesi için iş akışı vardır.",
+    "canonical_source_url": "https://www.ithome.com/1/011/352.htm",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-43d3b526fc-discovery-54a8f4a977f5694a:0725065d010a542cb2a602e7:01",
+        "idea_name": "Yayınevi Basım Öncesi AI Artifakt Kontrol Defteri",
+        "canonical_key": "book-publishers-and-editorial-production-teams|verify-proof-copy-against-source-and-prompt-artifact-strings|source-proof-diff-exception-and-editor-signoff-ledger",
+        "target_customer": "Basılı kitap yayınevleri ve editoryal üretim/kalite ekipleri",
+        "core_job": "Kaynak eser/metin ile dizgiye gönderilecek baskı prova metnini karşılaştırarak istemeden kalmış AI yanıt/prompt gibi editoryal artifaktları baskı öncesi insan onayından geçirmek",
+        "product_mechanism": "Yayınevinin kullanıcı olarak yüklediği kaynak düz metin ve baskı prova metnindeki bölümlerin diff karşılaştırması, tekrarlanan hazır AI boilerplate dize desenleri, anomali işareti, editör yorumu ve kitap/bölüm/sürüm kabul imza defteri; dış OCR/LLM servisi veya yayın dosyası API'si yok",
+        "why_now": "9-10 Ekim 2026'da Jiangsu Phoenix yayınevinin fiziksel romanda editoryal AI yanıt cümlesi basıldığı şikâyeti üzerine dağıtılan kitapları geri çağırıp imha etmeyi ve revize basmayı planladığı doğrulandı. Hata yazardan değil editoryal üretim zincirinden kaynaklandığı beyan edildi; bu haber yeni AI kullanım yasağı değildir. Matbaaya gitmeden insan editörlerin kaynak metin ile düzenlenmiş metin diff ve olası editör/AI artifakt dizesini manuel incelemesi için iş akışı vardır.",
+        "before_state": "Dizgi revizyonları, çeviri/parafraz ve AI destekli editör metinleri son kalite kontrolde tüm kaynak eserle adım adım eşlenmiyor",
+        "after_state": "Sürüm/bölüm bazında insan onaylı düzeltme, metin farklılığı ve basım öncesi makbuz; otomatik AI-generated tespiti iddia edilmez",
+        "scope_hint": "Dünya",
+        "canonical_source_urls": [
+          "https://www.ithome.com/1/011/352.htm"
+        ],
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-54a8f4a977f5694a/001.json",
+  "valid_until": "2026-11-12T18:49:11Z"
+}
