@@ -1,0 +1,48 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "38815512d29679cf503d446745d7aa1d83ccb1fc2158363000f65c08e08b3e3c",
+  "decision": {
+    "article_key": "677fb543de15264cce103d82",
+    "decision": "opportunity",
+    "reason": "Orijinal üretici tanıtım yazısına dayanan EET China WT3000T güvenlik uygulama metni (2026 Ekim), klasik zil/buzzer ve önceden kayıtlı az sayıda alarmın tersine çok bölgeden gelen olay kodunu yerel TTS sözlü uyarıya dönüştürme mekanizmasını açıklar. BEFORE alarm mesajı için çip ses kaydı yeniden programlama. AFTER offline metinden konuşmaya uyarı, değişken bölge/olay metinlerini üretebilir. Ancak çip teknik datasheet koşulları ve bağımsız ses kalitesi/tehlike testi doğrulanmadı. Saha entegratörü alarm olay–ses metni–öncelik–yerinde tekrar/insan kabul matrisi hazırlamak zorunda olabilir.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-2bfd2b8b0a-discovery-7555595ba57b9073:677fb543de15264cce103d82:1",
+        "canonical_key": "physical-security-installation-teams|verify-multizone-offline-tts-alert-message-mapping|event-priority-text-coverage-and-human-site-acceptance-ledger",
+        "idea_name": "Çok Bölgeli Sesli Alarm Olay–Metin Kabul Defteri",
+        "core_job": "Farklı kapı, PIR, yangın ve davetsiz giriş alarm olaylarının cihazda söylenecek metin, dil, öncelik, susma/tekrar ve saha kabul adımlarını kurallı denetlemek",
+        "target_customer": "Küçük ve orta ölçekli ticari bina alarm kurulum/teknik servis entegratörleri",
+        "buyer": "Fiziksel güvenlik sistemleri devreye alma lideri",
+        "product_mechanism": "Kullanıcı alarm bölge ID/event code/metin/dil/öncelik/uyarı süre/tarih CSV'sini içe alarak eksik/çakışan mesaj, aynı anda öncelik çatışması ve insan sahada duyuldu işaretlerini tarayıcıda deterministik denetler; çipi kontrol etmez",
+        "why_now": "Ekim WT3000T yerel TTS tasarım notu yeniden ROM ses kaydı gerekmeden dinamik olay metni üretimini örnekliyor; entegratör konfigürasyon kontrolünü daha sık yapabilir.",
+        "before_state": "Alarm olayı→telesekreter ses dosyası eşlemesi cihaz bazında ayrık servis formlarındadır.",
+        "after_state": "Yalın olay–konuşma metni matrisi; hangi bölge hangi metni söyleyip ne zaman sahada onaylandığı raporlanır.",
+        "canonical_source_urls": [
+          "https://mbb.eet-china.com/forum/topic/163978_1_1.html"
+        ],
+        "supporting_article_ids": [
+          "93fab0a82272b00aa1484651"
+        ],
+        "source_observations": [
+          {
+            "url": "https://mbb.eet-china.com/forum/topic/163978_1_1.html",
+            "observation": "Üretici kullanıcı forum içeriği WT3000T çipin sabit ses kayıtları yerine metinle yerel uyarı üretimine dayanan önerilen uygulamasını anlatıyor; güvenlik performansının bağımsız doğrulaması yok."
+          }
+        ],
+        "scope_hint": "Dünya",
+        "local_evidence": {
+          "signals": [
+            "Güvenlik sireni olay metninin fiziksel bölgelerle doğrulanması tekrar eden kurulum kabul işidir."
+          ],
+          "unknowns": [
+            "Saha donanım ve alarm markası entegrasyonu zorunlu değildir fakat gerçek kuruluma manuel test gerekir.",
+            "Türkiye/global alarm konfigürasyon sistemleri rekabeti bilinmiyor.",
+            "İçerik üreticisinin iddiaları gerçek sertifika/test değildir."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-2bfd2b8b0a-discovery-7555595ba57b9073/001.json",
+  "valid_until": "2026-11-12T21:33:30Z"
+}
