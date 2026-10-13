@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T19:36:16Z",
+  "controller_observed_at": "2026-10-13T19:37:58Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
@@ -41,30 +41,18 @@
       "last_receipt_at": "2026-10-13T04:08:49.764Z"
     },
     "3": {
-      "last_started_at": "2026-10-13T19:04:22.282Z",
+      "last_started_at": "2026-10-13T19:37:41.179Z",
       "last_event": {
         "schema_version": 1,
         "worker": 3,
-        "invocation_id": "398a7f77-2e42-413e-8ac4-e960ce6da9dc",
-        "event": "finished",
-        "at": "2026-10-13T19:36:02.213Z",
-        "execution_mode": "user_requested_master_manual",
-        "saved_receipts": 14,
-        "discovery_batches": 13,
-        "discovery_articles_triaged": 130,
-        "discovery_raw_opportunities": 16,
-        "article_decisions": {
-          "no_opportunity": 110,
-          "opportunity": 16,
-          "unverified": 4
-        },
-        "validation_decisions": {
-          "rejected": 1
-        },
-        "notes": "All fourteen immutable results saved and read-back verified. Existing scheduled workers, task prompts, queue job identities and 91-item protected catalog were not modified. One independently claimable daily record was declined by provider safety controls and left unchanged.",
-        "path": "state/v2/worker-events/3/398a7f77-2e42-413e-8ac4-e960ce6da9dc/999-finished.json"
+        "invocation_id": "434f8341-75b2-4404-8977-2825dc862be5",
+        "event": "started",
+        "at": "2026-10-13T19:37:41.179Z",
+        "execution_mode": "user_requested_manual_master",
+        "note": "Manual research continuing shared queue, without changing scheduled workers.",
+        "path": "state/v2/worker-events/3/434f8341-75b2-4404-8977-2825dc862be5/000-started.json"
       },
-      "receipts_this_invocation": 14,
+      "receipts_this_invocation": 0,
       "write_and_receipt_verified": true,
       "last_receipt_at": "2026-10-13T19:34:51.345Z"
     },
