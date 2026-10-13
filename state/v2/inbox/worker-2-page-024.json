@@ -4,27 +4,13 @@
   "queue_mode": "shared",
   "current_run": "2026-10-13-catchup-e3a10c28a635",
   "lease_minutes": 30,
-  "ready_count": 480,
+  "ready_count": 479,
   "job_count": 482,
-  "queue_revision": "0c6b47c818eed13a5d44708ce1b931673d1d69da36e06c09f8b9b0a9fe1aa10b",
+  "queue_revision": "3dbad4f4374345bef1f0ca2948402a4b269d2e7df5ec603d8f47013ec177f37a",
   "page": 24,
   "page_count": 25,
   "next_page": "state/v2/inbox/worker-2-page-025.json",
   "jobs": [
-    {
-      "job_id": "2026-10-13-43d3b526fc-discovery-b4d00704d966f1ef",
-      "path": "state/v2/jobs/2026-10-13-43d3b526fc-discovery-b4d00704d966f1ef.json",
-      "run_id": "2026-10-13-43d3b526fc",
-      "kind": "discovery",
-      "input_hash": "b4d00704d966f1ef33578e5f3f2c8f04ac7bde4ca706c7829ee3a2625b6d10bd",
-      "legacy_lane": 4,
-      "queue_group": "backlog",
-      "preferred_worker": 5,
-      "state": "ready",
-      "attempt": 1,
-      "claim_path": "state/v2/claims/2026-10-13-43d3b526fc-discovery-b4d00704d966f1ef/001.json",
-      "result_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-b4d00704d966f1ef/001.json"
-    },
     {
       "job_id": "2026-10-13-43d3b526fc-discovery-b56b013237d3f6f5",
       "path": "state/v2/jobs/2026-10-13-43d3b526fc-discovery-b56b013237d3f6f5.json",
@@ -290,6 +276,20 @@
       "attempt": 1,
       "claim_path": "state/v2/claims/2026-10-13-43d3b526fc-discovery-f90a6d927f2c3b38/001.json",
       "result_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-f90a6d927f2c3b38/001.json"
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-47fc3e19706b9cfa",
+      "path": "state/v2/jobs/2026-10-10-migration-validation-47fc3e19706b9cfa.json",
+      "run_id": "2026-10-10-migration",
+      "kind": "validation",
+      "input_hash": "47fc3e19706b9cfa6baa8b0156c14bb7d23ac3c3a4f7ec9cf5bda5ca362b6902",
+      "legacy_lane": 4,
+      "queue_group": "backlog",
+      "preferred_worker": 1,
+      "state": "retry_wait",
+      "attempt": 2,
+      "retry_at": "2026-10-13T06:10:10Z",
+      "reason": "worker lease expired without a receipt"
     }
   ]
 }
