@@ -1,0 +1,168 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-ad8ae71ec869b6af",
+  "input_hash": "ad8ae71ec869b6af71ffa33723c6b5006acbc0e923f4c3988bfdd4d995e931f1",
+  "token": "92d48887-f81e-4421-a2cf-f5e25bc16615",
+  "finished_at": "2026-10-13T18:14:33.779Z",
+  "outcome": "done",
+  "reason": "QualityMaintenance Link: source, 91 history, zero paid API client-side outline and 4 direct global competitors checked; global 3 limit exceeded, reject.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Quality Magazine 2026 inceleme yazısı kalite ve bakım geçmişini ilişkilendirme ihtiyacını somut biçimde açıklıyor, yeni hukuki zorunluluk değil. FAST Quality, Field Eagle, Lumina ve Golain'in resmi ürün sayfaları üretim tesisi kalite/bakım karar ekiplerine aynı temel işlemi (kusur + varlık + bakım geçmişi + zaman bağlantısı ve RCA/düzeltme değerlendirmesi) sunduğunu gösteriyor. İthal Excel/CSV ile sıfır ek runtime servisi MVP'si teknik olarak yapılabilir; ancak dört doğrulanmış global doğrudan iş akışı rakibi >3 eşiğini aşıyor. Türkiye için kesin sıfır rakip denemez; Centra QMS/QM-CMMS yerli güçlü komşu üründür. 91 tarihi fikir içinde birebir aynı müşteri+iş+workflow kimliği yok ama pazardaki rekabet nedeniyle rejected.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.qualitymag.com/articles/99985-why-manufacturers-need-better-inspection-history-not-just-more-quality-data",
+        "accessed_at": "2026-10-13T18:14:33.779Z",
+        "claim": "Üretim kalite muayeneleri, düzeltici faaliyetler ve ekipman bakım geçmişi ortak bağlamda incelenmeli",
+        "observation": "Quality Magazine özgün yazısı kalite sapmaları, ekipman durumu ve bakımı beraber izlemenin RCA ve tekrar kusur riskini azaltabileceğini anlatıyor; nedensel otomatik ispat sunmaz",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.fastqualitysoftware.com/maintenance-management-software/",
+        "accessed_at": "2026-10-13T18:14:33.779Z",
+        "claim": "FAST Quality — Maintenance Management aynı alıcı işini kalite+bakım varlık/zaman bağıyla destekler",
+        "observation": "Üretim kalite ve bakım ekiplerinin ekipman/varlık/tarih bazında bakım geçmişini, muayene sapması ve CAPA kaydını aynı zaman çizelgesiyle eşleyip tekrar kusurunu incelemesi; platform açıkça aynı alıcı ve sorunu hedefliyor",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.fieldeagle.com/asset-management-software/",
+        "accessed_at": "2026-10-13T18:14:33.779Z",
+        "claim": "Field Eagle — Asset Management Inspection aynı alıcı işini kalite+bakım varlık/zaman bağıyla destekler",
+        "observation": "Endüstriyel bakım/kalite ekipleri için varlık bazlı muayene bulgusu, kusur, bakım geçmişi, düzeltici aksiyon ve tekrar eden duruma ilişkin çok dönemli rapor",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://lumina.express/solutions/manufacturing/root-cause-analysis",
+        "accessed_at": "2026-10-13T18:14:33.779Z",
+        "claim": "Lumina Manufacturing Root Cause Analysis aynı alıcı işini kalite+bakım varlık/zaman bağıyla destekler",
+        "observation": "Üretim kalite ve bakım ekiplerinin kusur olaylarını makine bakım ve kalibrasyon geçmişi ile zaman/varlık üzerinden eşleştirerek temporal korelasyon/RCA incelemesi; Excel/CSV ithali açık",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.golain.io/solutions",
+        "accessed_at": "2026-10-13T18:14:33.779Z",
+        "claim": "Golain Plant Intelligence aynı alıcı işini kalite+bakım varlık/zaman bağıyla destekler",
+        "observation": "Üretim, kalite ve bakım için tek varlık/hat/shift zaman çizelgesinde kalite reddi, ekipman sinyali ve onarımı kanıtla ilişkilendirip gerçek düzeltme kararına bağlar",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr_adjacent",
+        "url": "https://www.centra.com.tr/en/solutions/quality-management-system-qms/calibration-management",
+        "accessed_at": "2026-10-13T18:14:33.779Z",
+        "claim": "Türkiye QMS'inde bakım ve kalibrasyon varlık geçmişi bir arada",
+        "observation": "Türkiye'de QMS bakım/kalibrasyon modülü olduğu teyit; CSV birleşme ve kalite sapması korelasyonu aynen sunulduğu belirsiz, dolayısıyla zero local competitor iddiası kanıtsız",
+        "page_read": true,
+        "support": "adjacent"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "search_complete": false,
+        "queries": [
+          "Türkiye kalite bakım olay korelasyonu yazılımı QMS CMMS",
+          "kalite sapması bakım geçmişi tarih ilişkilendirme yazılımı Türk",
+          "kalibrasyon bakım kalite sapma takibi Türkiye Centra"
+        ],
+        "scope": "Üretim kalite ve bakım lideri; ayrı kusur ve bakım geçmişini aynı varlık/tarih düzlemine taşıma",
+        "direct_competitors": [],
+        "adjacent_competitors": [
+          {
+            "name": "Centra Calibration & Maintenance Management",
+            "url": "https://www.centra.com.tr/en/solutions/quality-management-system-qms/calibration-management",
+            "reason": "QMS içinde bakım ve kalibrasyon raporu; birebir temporal CSV korelasyon yeteneği henüz teyit edilmedi"
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 4,
+        "search_complete": true,
+        "queries": [
+          "inspection defect maintenance history same asset timeline software",
+          "manufacturing root cause maintenance event correlation quality",
+          "inspection corrective action asset maintenance history software",
+          "production rejects maintenance shift context timeline"
+        ],
+        "scope": "10/13 2026 üretim kalite ve bakım ekibi için inceleme/defect+work order maintenance geçmişi aynı varlık/tarih bağlamında",
+        "direct_competitors": [
+          {
+            "name": "FAST Quality — Maintenance Management",
+            "url": "https://www.fastqualitysoftware.com/maintenance-management-software/",
+            "same_customer_job_workflow_reason": "Üretim kalite ve bakım ekiplerinin ekipman/varlık/tarih bazında bakım geçmişini, muayene sapması ve CAPA kaydını aynı zaman çizelgesiyle eşleyip tekrar kusurunu incelemesi; platform açıkça aynı alıcı ve sorunu hedefliyor",
+            "source_type": "official_product"
+          },
+          {
+            "name": "Field Eagle — Asset Management Inspection",
+            "url": "https://www.fieldeagle.com/asset-management-software/",
+            "same_customer_job_workflow_reason": "Endüstriyel bakım/kalite ekipleri için varlık bazlı muayene bulgusu, kusur, bakım geçmişi, düzeltici aksiyon ve tekrar eden duruma ilişkin çok dönemli rapor",
+            "source_type": "official_product"
+          },
+          {
+            "name": "Lumina Manufacturing Root Cause Analysis",
+            "url": "https://lumina.express/solutions/manufacturing/root-cause-analysis",
+            "same_customer_job_workflow_reason": "Üretim kalite ve bakım ekiplerinin kusur olaylarını makine bakım ve kalibrasyon geçmişi ile zaman/varlık üzerinden eşleştirerek temporal korelasyon/RCA incelemesi; Excel/CSV ithali açık",
+            "source_type": "official_product"
+          },
+          {
+            "name": "Golain Plant Intelligence",
+            "url": "https://www.golain.io/solutions",
+            "same_customer_job_workflow_reason": "Üretim, kalite ve bakım için tek varlık/hat/shift zaman çizelgesinde kalite reddi, ekipman sinyali ve onarımı kanıtla ilişkilendirip gerçek düzeltme kararına bağlar",
+            "source_type": "official_product"
+          }
+        ],
+        "adjacent_competitors": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "İstemci tarafı JS ile kullanıcıdan iki CSV (quality inspection, CMMS work order) yükle, varlık alias tablosuyla normalize et, tarih aralığı tolerans/inspection type filtrele, eşleşmeleri zaman çizelgesiyle sun; sadece temporal association; neden-sonuç kararı insana bırakılır.",
+      "dependency_inventory": [
+        "Tarayıcı CSV yükleme ve yerel indeks",
+        "Kullanıcıya ait bakım ve muayene dışa aktarımı",
+        "İstemci tarafı CSV/PDF rapor",
+        "Domain/hosting ayrıca"
+      ],
+      "cash_cost_0_verified": false,
+      "reason": "Yerel deterministik motor haricî ücretli API kullanmaz; üretim hosting ve veri güvenliği koşulları henüz bağımsız teyit edilmedi"
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "91 tarih kaydında aynı canonical_key yok. Inspector Judgment Coach/CAPA ve Genealogy Lite kısmi komşu işler; birebir aynı CSV-temporal correlation değil."
+    },
+    "research_attempts": [
+      {
+        "queries": [
+          "quality magazine better inspection history maintenance 2026"
+        ],
+        "observation": "Özgün 2026 problem yazısı okundu."
+      },
+      {
+        "queries": [
+          "FAST Quality linked inspection maintenance",
+          "Field Eagle inspection maintenance",
+          "Lumina manufacturing defect maintenance correlation",
+          "Golain quality maintenance plant intelligence"
+        ],
+        "observation": "4 birincil ürün sayfasında aynı kullanıcı işi doğrulandı."
+      },
+      {
+        "queries": [
+          "Turkey QMS calibration maintenance defects Centra"
+        ],
+        "observation": "TR birebir sayı kesinleşmedi; veri saklandı, Türkiye sıfır iddia edilmedi."
+      }
+    ]
+  }
+}
