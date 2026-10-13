@@ -22,6 +22,7 @@ TERMINAL = {"done", "unverified", "rejected", "failed"}
 MAX_ATTEMPTS = 3
 LEASE_MINUTES = 90
 POOL_LEASE_MINUTES = 30
+MAX_EVIDENCE_FOLLOWUPS = 2  # finite second-pass research; no recursive work explosion
 RETRY_MINUTES = [5, 30, 120]
 REPO = "Sadikkucuk/lovable-opportunity-radar"
 
@@ -140,10 +141,15 @@ class Engine:
         job = {"schema_version": 2, "job_id": job_id, "run_id": run_id,
                "kind": kind, "lane": lane, "policy_version": POLICY,
                "input_hash": input_hash, "payload": payload}
-        if kind == "validation":
+        if kind == "validation" and not payload.get("evidence_followup"):
             cached = self.read(f"state/v2/cache/candidates/{digest(payload['candidate'])}.json")
             if cached and cached["policy_version"] == POLICY and dt(cached["valid_until"]) > self.now:
-                job["reuse"] = {"receipt_path": cached["receipt_path"], "checked_at": iso(self.now)}
+                prior = self.read(cached.get("receipt_path", ""), {})
+                # An unverified outcome is an unfinished investigation, NOT
+                # reusable approval. Never silently skip fresh verification.
+                if (prior.get("result", {}).get("decision") != "unverified"
+                        and prior.get("outcome") == "done"):
+                    job["reuse"] = {"receipt_path": cached["receipt_path"], "checked_at": iso(self.now)}
         self.write(f"state/v2/jobs/{job_id}.json", job, immutable=True)
         return job_id
 
@@ -395,10 +401,13 @@ class Engine:
     def cache_discovery(self, job, state):
         if job["kind"] == "validation" and state["state"] == "done":
             receipt = state["receipt"]
-            ttl = 1 if receipt["result"]["decision"] == "unverified" else 7
+            if receipt["result"]["decision"] == "unverified":
+                # Preserve the immutable unverified receipt for audit, but do
+                # not cache it as a reusable final validation result.
+                return
             self.write(f"state/v2/cache/candidates/{digest(job['payload']['candidate'])}.json", {
                 "policy_version": POLICY, "receipt_path": state["receipt_path"],
-                "valid_until": iso(dt(receipt["finished_at"]) + timedelta(days=ttl))})
+                "valid_until": iso(dt(receipt["finished_at"]) + timedelta(days=7))})
             return
         if job["kind"] != "discovery" or state["state"] != "done":
             return
@@ -440,6 +449,60 @@ class Engine:
                         "source_commit": job["payload"]["source_commit"], "candidate": c,
                         "merge_receipt": states[job_id]["receipt_path"],
                     }, n % 4 + 1)
+
+    def evidence_gaps(self, result):
+        """Report what needs to be researched; never synthesize evidence."""
+        roles = {e.get("role") for e in (result.get("evidence") or []) if isinstance(e, dict)}
+        required = ("trigger", "competition_tr", "competition_global", "feasibility")
+        gaps = [f"evidence:{role}" for role in required if role not in roles]
+        competition = result.get("competition") or {}
+        for market in ("tr", "global"):
+            block = competition.get(market) or {}
+            if not block.get("search_complete") or block.get("direct_count") is None:
+                gaps.append(f"competition:{market}")
+        feasibility = result.get("feasibility") or {}
+        if any(feasibility.get(key) is not False for key in
+               ("runtime_external_api", "runtime_external_database", "runtime_ai_agent_or_model")):
+            gaps.append("feasibility:runtime")
+        if (result.get("history_review") or {}).get("decision") not in ("new", "duplicate"):
+            gaps.append("history:semantic_match")
+        return sorted(set(gaps))
+
+    def advance_evidence_followups(self, jobs, states):
+        """Create at most two fresh validation rounds for unverified evidence.
+
+        The old job and receipt remain immutable. A new job keeps the exact
+        frozen candidate and a pointer to the prior research, enabling manual
+        or scheduled workers to complete missing proof without claiming that
+        empty fields are supported. Reconciliation is deterministic/idempotent.
+        """
+        for job_id, job in sorted(jobs.items()):
+            state = states[job_id]
+            if (job["kind"] != "validation" or state["state"] != "done"
+                    or state["receipt"]["result"]["decision"] != "unverified"):
+                continue
+            prior_round = job["payload"].get("evidence_followup", {}).get("round", 0)
+            if prior_round >= MAX_EVIDENCE_FOLLOWUPS:
+                continue
+            prior_result = state["receipt"]["result"]
+            gaps = self.evidence_gaps(prior_result)
+            if not gaps:
+                # Preserve the uncertainty; a Worker may have identified a
+                # substantive research gap not represented by a standard role.
+                gaps = ["decision:unverified"]
+            payload = {
+                **job["payload"],
+                "evidence_followup": {
+                    "round": prior_round + 1,
+                    "parent_job_id": job_id,
+                    "parent_receipt_path": state["receipt_path"],
+                    "missing_checks": gaps,
+                    "prior_reason": prior_result.get("reason", "unknown"),
+                }
+            }
+            # A different payload makes a distinct immutable job. Existing
+            # followups are discovered by content address and never duplicated.
+            self.add_job(job["run_id"], "validation", payload, job["lane"])
 
     def publish(self, jobs, states):
         self.check_protected()
@@ -532,6 +595,7 @@ class Engine:
             for k, j in jobs.items():
                 self.cache_discovery(j, states[k])
             self.advance(jobs, states)
+            self.advance_evidence_followups(jobs, states)
         jobs = self.jobs()
         states = {k: self.evaluate(j) for k, j in jobs.items()}
         appended = self.publish(jobs, states)
@@ -567,9 +631,24 @@ class Engine:
             report["state_changed_at"] = old.get("state_changed_at", iso(self.now)) if {k:v for k,v in old.items() if k != "state_changed_at"} == report else iso(self.now)
             self.write(f"state/v2/runs/{run_id}/report.json", report)
             run_reports.append(report)
+        evidence_jobs = {k: j for k, j in jobs.items()
+                         if j["kind"] == "validation" and j["payload"].get("evidence_followup")}
+        open_evidence = sum(states[k]["state"] not in TERMINAL for k in evidence_jobs)
         status = {"schema_version": 2, "policy_version": POLICY, "protected_records": protected,
                   "catalog_count": len(self.read("state/idea_catalog.json")["ideas"]),
                   "counts": dict(Counter(s["state"] for s in states.values())),
+                  "evidence_research": {"followup_jobs": len(evidence_jobs),
+                                        "open": open_evidence,
+                                        "terminal_unverified": sum(
+                                            states[k]["state"] == "done" and
+                                            states[k]["receipt"]["result"]["decision"] == "unverified"
+                                            for k in evidence_jobs),
+                                        "exhausted_needing_manual_review": sum(
+                                            states[k]["state"] == "done" and
+                                            states[k]["receipt"]["result"]["decision"] == "unverified" and
+                                            jobs[k]["payload"]["evidence_followup"]["round"] >= MAX_EVIDENCE_FOLLOWUPS
+                                            for k in evidence_jobs),
+                                        "max_rounds": MAX_EVIDENCE_FOLLOWUPS},
                   "runs": run_reports, "errors": sorted(set(self.errors))}
         self.write("state/v2/status.json", status)
         reconcile_health(self, jobs, states, config, status)

@@ -7,6 +7,23 @@ competition research for the same customer/job/workflow. Insufficient search
 means unknown. Prove feasibility without external API/DB/AI runtime services.
 Use current history for semantic dedupe; renamed existing ideas are duplicates.
 Historical research is evidence to assess, not automatically v2 approval.
+If payload.evidence_followup exists: inspect previous immutable
+parent_receipt_path, missing_checks and prior_reason BEFORE research.
+Start by repairing unresolved source/competitor/feasibility/history checks;
+do not repeat already proven and still-fresh page readings unnecessarily.
+Previous research notes are leads, not substitute for current scoped dated
+evidence; revisit changing regulations, competitor pages and stale proof.
+Do not allow a parent unverified decision to be inherited as a final approval.
+Use the staged sequence trigger/primary source -> Türkiye direct competitors
+-> global direct competitors -> zero-external-service feasibility ->
+history/semantic-identity comparison -> final validation. Where a stage
+takes long, include its actually verified URLs/findings and remaining checks
+in the next regular 15-minute research_in_progress event. Do not treat an
+event as a final receipt or skip any stage to hit a 20-job target.
+Record actual attempts, source URLs, dated findings and access errors.
+If a temporary GitHub permission/tool failure prevented research, return
+receipt outcome=retry if a valid claim is still held; do NOT manufacture
+a completed unverified research review to satisfy a job count.
 
 Receipt outcome=done. result fields:
 decision: qualified|rejected|unverified|duplicate.
@@ -38,4 +55,10 @@ false, new semantic identity and all evidence read within seven days.
 Cache only under controller's same-input/policy/TTL rule. Reread changed/stale
 claims. Missing proof gives unverified, preserving nulls and research attempts.
 Transient tool failure gives outcome=retry. Neither blocks other candidates.
+If exhaustive bounded attempts still leave unsupported facts, use
+decision=unverified, reason with the precise missing evidence and
+research_attempts (URLs, query, access outcome); do not submit an empty
+research placeholder after only reading the job payload. New followups
+(max 2) will be scheduled by the controller and linked to prior receipts.
+Progress KPIs distinguish terminal review from a qualified product.
 Never bypass platform approvals or disguise unverified claims as supported.

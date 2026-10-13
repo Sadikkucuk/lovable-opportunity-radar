@@ -23,7 +23,19 @@ FAIR SHARED WORK
    every saved receipt. Empty groups do not waste capacity. Preferred-worker
    hints reduce collisions; every worker may take any ready job, including work
    whose original lane differs. Never use strict oldest-run-first anymore.
-5. Inspect the exact claim/result paths before claiming. Skip already claimed,
+5. PREFLIGHT BEFORE EVERY CLAIM (see radar/claim_guard.py):
+   (a) main config mode=active, worker is one of 1..4 and saved start event
+       has same worker/invocation as the proposed claim;
+   (b) read the current immutable job file and recompute or compare its
+       authoritative input_hash, job_id and policy; NEVER copy an ID from
+       a different inbox row or conversational context;
+   (c) inbox entry is READY, its attempt number and exact claim_path and
+       result_path agree with job_id, /001..003.json and input_hash;
+   (d) no existing claim owns the path; claim token is fresh, timestamps are
+       actual UTC, and the lease is <=30 minutes;
+   (e) if any identity/path mismatch, DO NOT WRITE; record
+       preflight_failed with the exact field and select a different ready job.
+   Inspect the exact claim/result paths before claiming. Skip already claimed,
    completed or delayed entries and move to the next ready job. Use first-writer
    GitHub create_file on main at the controller-supplied claim_path. NEVER update
    or overwrite it, force refs, invent a retry attempt, or steal an active lease.
@@ -49,8 +61,23 @@ SAVE AND CONTINUE
    001-progress.json, 002-progress.json, ... (new increasing numbers).
    Same identity fields, event=progress, at=actual UTC time, plus job_id and
    stage=claim_saved|receipt_saved|research_in_progress. For receipt_saved include
-   the exact receipt_path. Events are observability, never evidence of completion.
-8. Continue consecutive small jobs in THIS invocation while tools and budget
+   the exact receipt_path. In research_in_progress validation events, record
+   completed_checks (trigger, competition_tr, competition_global, feasibility,
+   history), remaining_checks and brief supported URL/observation notes when
+   material progress exists. This is the staged research checkpoint, using the
+   ALREADY REQUIRED heartbeat event: do not create five extra GitHub writes
+   merely to mark phases. Reuse only genuine still-fresh evidence after read-back.
+   Events are observability, never proof of approval or qualification.
+8. For an evidence_followup validation job, BEFORE claim read its
+   parent_job_id/parent_receipt_path and the immutable earlier candidate
+   history. Treat past evidence as research leads, not automatic approval.
+   Record which of missing_checks were actually investigated, with canonical
+   URLs, retrieval errors and dated page_read evidence; revalidate stale
+   or non-primary claims. Do not invent 0 competitors, product feasibility,
+   or qualifying evidence. The engine issues at most TWO followup rounds
+   after an unverified result; the prior result stays immutable. Never
+   manufacture a fresh candidate to escape this bounded retry policy.
+   Continue consecutive small jobs in THIS invocation while tools and budget
    permit. Ten articles/one candidate is a persistence unit, not a run cap. No
    Top-N, one-stage stop, five-candidate limit, recursive or ad hoc new tasks.
    Inboxes are paginated (20 entries per page, NOT an invocation cap). Follow
@@ -65,8 +92,16 @@ SAVE AND CONTINUE
    persistence_failed|provider_limit|unknown, and a short factual Turkish reason.
    Do NOT claim auth failure unless a tool actually returned one. Never expose
    credentials. If GitHub cannot save even the blocked event, report the exact
-   failure in this task's Turkish reply. Try transient writes at most 3 times;
-   inspect exact paths after timeouts before retrying. Never bypass approvals.
+   failure in this task's Turkish reply. GitHub error routing:
+   HTTP 409/422 => read intended claim/result path and verify identity;
+   if already owned, SKIP to next ready job, never overwrite.
+   HTTP 401/403 or explicit permission/security denial => STOP that write
+   and report observed error; no repeated bypass, alternate connector
+   or hidden retries. HTTP 429/500/502/503/504 and actual timeout/reset =>
+   FIRST read-back path to detect successful partial write, then retry
+   at most 3 times with bounded delay if still absent. Unknown codes =>
+   report exact code without guessing rate limits. See radar/claim_guard.py.
+   Never bypass approvals.
 
 USER SIGNAL AND TWO-HOUR WINDOW
 10. AUTOMATIC START WINDOW is 00:01 inclusive to 07:00 exclusive
@@ -90,6 +125,13 @@ USER SIGNAL AND TWO-HOUR WINDOW
     block, missing start/progress alarm, or stale controller; state worker, last
     persisted result, observed reason and the specific next action. Otherwise
     report actual persisted progress briefly. Never count last_run_time as proof.
+    Target >=20 genuinely investigated units per manual session when actual
+    time/tools allow; this is a throughput GOAL, never a one-run cap or
+    permission to issue low-evidence placeholders. Report separately:
+    accepted receipts, qualified, rejected, duplicates, unverified and
+    open evidence_followup jobs. If evidence research cannot be performed,
+    state the actual access/time/tool cause and preserve the work as
+    unresolved; never turn missing research into a claimed qualification.
     Read state/v2/health.json and any due state/v2/windows/*.json report. Two
     hours is a publication/status target, NOT permission to discard candidates,
     weaken research or mark unfinished work complete. Report completed, remaining,
