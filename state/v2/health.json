@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T19:35:37Z",
+  "controller_observed_at": "2026-10-13T19:36:16Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
@@ -46,14 +46,23 @@
         "schema_version": 1,
         "worker": 3,
         "invocation_id": "398a7f77-2e42-413e-8ac4-e960ce6da9dc",
-        "event": "progress",
-        "at": "2026-10-13T19:35:08.838Z",
-        "job_id": "2026-10-13-43d3b526fc-discovery-853ec1f7218bebe3",
-        "stage": "receipt_saved",
-        "receipt_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-853ec1f7218bebe3/001.json",
-        "articles_triaged": 10,
-        "raw_opportunities": 1,
-        "path": "state/v2/worker-events/3/398a7f77-2e42-413e-8ac4-e960ce6da9dc/014-progress.json"
+        "event": "finished",
+        "at": "2026-10-13T19:36:02.213Z",
+        "execution_mode": "user_requested_master_manual",
+        "saved_receipts": 14,
+        "discovery_batches": 13,
+        "discovery_articles_triaged": 130,
+        "discovery_raw_opportunities": 16,
+        "article_decisions": {
+          "no_opportunity": 110,
+          "opportunity": 16,
+          "unverified": 4
+        },
+        "validation_decisions": {
+          "rejected": 1
+        },
+        "notes": "All fourteen immutable results saved and read-back verified. Existing scheduled workers, task prompts, queue job identities and 91-item protected catalog were not modified. One independently claimable daily record was declined by provider safety controls and left unchanged.",
+        "path": "state/v2/worker-events/3/398a7f77-2e42-413e-8ac4-e960ce6da9dc/999-finished.json"
       },
       "receipts_this_invocation": 14,
       "write_and_receipt_verified": true,
