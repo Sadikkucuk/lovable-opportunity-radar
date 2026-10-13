@@ -1,0 +1,98 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-97e89d8c3ad4f001",
+  "input_hash": "97e89d8c3ad4f0012b9d7806c5f0d7f12a7fd50d1f55815ed9da478809b7776c",
+  "token": "515b9865-99e3-4645-836c-622290572a84",
+  "finished_at": "2026-10-13T20:37:11.464Z",
+  "outcome": "done",
+  "reason": "Tarihsel 91-kayıtlı katalog ve tarihçe karşılaştırmasında aynı hedef müşteri (Türkiye Hamle Programı sanayi yatırımcısı), aynı iş (mevzuat değişikliğini uygunluk ve belge şartlarına uyarlayıp başvuru tamamlamak) ve aynı mekanizma (eligibility/evrak/sorumlu/son tarih ve başvuru paketi) tespit edildi. 8 Mayıs 2026 tarihli 33247 sayılı Tebliğ Ekim'de yeni bir gelişme değildir. Yeni fikir olarak yeniden yayımlanamaz.",
+  "result": {
+    "decision": "duplicate",
+    "reason": "Industrial Incentive Change Tracker, mevcut Hamle Programı Başvuru Masası'nın yeniden adlandırılmış aynı iş akışıdır; ekim haberindeki geçmiş düzenleme yeni ürün kimliği oluşturmaz.",
+    "duplicate_of": "turkiye-industrial-investors|prepare-hamle-program-application|eligibility-evidence-submission-workspace",
+    "history_review": {
+      "decision": "duplicate",
+      "reason": "Hedef müşteri ve alıcı aynı; başvuruyu mevzuata göre uygunluk kontrolü, eksik kanıt ve son tarih akışından geçirme işi ve web checklist mekanizması aynıdır. Değişiklik izleme bağımsız ürün değil aynı mevcut ürünün kural güncellemesidir."
+    },
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.lexpera.com.tr/resmi-gazete/metin/teknoloji-hamlesi-programi-uygulama-usul-ve-esaslari-tebliginde-degisiklik-yapilmasina-dair-teblig",
+        "accessed_at": "2026-10-13T20:37:11.464Z",
+        "claim": "Tebliğ 08.05.2026 tarihli ve 33247 numaralıdır.",
+        "observation": "Lexpera orijinal metinde 8 Mayıs 2026 RG 33247, revizyon için 5 ila 15 günlük süre ve proje değerlendirme/izleme adımları yer alıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "trigger",
+        "url": "https://www.iso.org.tr/duyurular/resm%C3%AE-gazete/teknoloji-hamlesi-programi-tebliginde-onemli-degisiklikler-yapildi-karar-sayisi-33247/",
+        "accessed_at": "2026-10-13T20:37:11.464Z",
+        "claim": "Değişikliğin 8 Mayıs 2026'da yayımlandığı sektör odasıyla doğrulandı.",
+        "observation": "İstanbul Sanayi Odası 8 Mayıs tarihli uyum değişikliklerini ve program başvuru/değerlendirme/yatırım izleme farklarını açıklıyor.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "queries": [
+          "Teknoloji Hamlesi Programı başvuru takip yazılımı proje değerlendirme teşvik belge yönetimi 2026",
+          "yatırım teşvik takip yazılımı başvuru belge yönetimi sistemleri Türkiye"
+        ],
+        "scope": "Tarihçe tekrarı kesin olduğu için Türkiye piyasa yokluğu sonucu çıkarılmadı; resmi E-TUYS platformu bitişik kamu başvuru altyapısıdır.",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_competitors": [
+          {
+            "name": "E-TUYS resmi teşvik başvuru sistemi",
+            "url": "https://www.iso.org.tr/hizmetler/yatirim-tesvik-belgesi/belge-duzenleme/",
+            "reason": "Resmi başvuru kanalı; hedef müşteriyle ilişkili ancak bağımsız preflight/checklist uygulamasıyla aynı workflow değil."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": null,
+        "queries": [
+          "industrial investment incentive application tracker software eligibility document deadlines Europe"
+        ],
+        "scope": "Mevcut tarihte Türkiye'ye özgü mevzuatın uluslararası doğrudan rakip eşleştirmesi tamamlanmadı; tarihsel duplicate nedeniyle sıfır rakip iddiası yapılmadı.",
+        "search_complete": false,
+        "direct_competitors": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Tarayıcıda kullanıcı tarafından güncellenen mevzuat kural tablosu, projenin CSV/manüel bilgileri, gereksinim eşlemesi ve indirilebilir başvuru kontrol raporu. Portal otomasyonu, resmi mevzuat veri API'si veya harici model gerekli değildir.",
+      "dependency_inventory": [
+        "Tarayıcı/yerel JSON veya CSV proje girdileri",
+        "Güncel mevzuatı manuel doğrulayacak yatırım uzmanı",
+        "İndirilebilir CSV/PDF rapor formatı"
+      ]
+    },
+    "research_attempts": [
+      {
+        "url": "https://www.lexpera.com.tr/resmi-gazete/metin/teknoloji-hamlesi-programi-uygulama-usul-ve-esaslari-tebliginde-degisiklik-yapilmasina-dair-teblig",
+        "status": "read",
+        "observation": "08.05.2026 33247 orijinal düzenleme"
+      },
+      {
+        "url": "https://www.iso.org.tr/duyurular/resm%C3%AE-gazete/teknoloji-hamlesi-programi-tebliginde-onemli-degisiklikler-yapildi-karar-sayisi-33247/",
+        "status": "read",
+        "observation": "İSO tarih ve program açıklaması"
+      },
+      {
+        "scope": "full_catalog_history_match",
+        "status": "read",
+        "observation": "Hamle Programı Başvuru Masası tam kanonik eşleşmesi"
+      }
+    ],
+    "evidence_followup_of": {
+      "parent_job_id": "2026-10-10-migration-validation-a01455648e40b1c2",
+      "round": 1
+    }
+  }
+}
