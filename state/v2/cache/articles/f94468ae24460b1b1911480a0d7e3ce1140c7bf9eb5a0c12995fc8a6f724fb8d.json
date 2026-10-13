@@ -1,0 +1,30 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "f94468ae24460b1b1911480a0d7e3ce1140c7bf9eb5a0c12995fc8a6f724fb8d",
+  "decision": {
+    "article_key": "632f457a98e8905c0cff0ba6",
+    "decision": "opportunity",
+    "reason": "Utility Dive 12 Ekim kasırga toparlanması haberinde fırtına zirvesinde yaklaşık 950 bin abonenin elektriğinin kesildiği ve üçüncü gün yaklaşık 160 bin kişinin etkilenmeye devam ettiği bildiriliyor; elektrik dağıtım şirketlerinin yeraltı hatlarının havai hatlardan sekiz kat daha iyi performans gösterdiği kaynak açıklaması olarak aktarılıyor. Bu bir senaryo beyanı, bütün bölgeler için karşılaştırmalı deney değil. Şebeke olay sonrası kesinti, saha müdahale, müşteri restorasyonu ve donanım tipine göre güvenilirlik kanıt defteri işi düşünülebilir.",
+    "canonical_source_url": "https://www.utilitydive.com/topic/grid-security-reliability/",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-038c4ff910f63375:632f457a98e8905c0cff0ba6:01",
+        "idea_name": "Grid Restoration Proof Ledger",
+        "canonical_key": "electric-grid-restoration-teams|reconcile-storm-crew-segment-and-customer-service-restoration|manual-outage-workorder-and-restoration-evidence-ledger",
+        "target_customer": "Elektrik dağıtım şirketlerinin olay sonrası kalite güvence ve saha yönetim ekipleri",
+        "core_job": "Fırtına olayındaki başlangıç/kapanış kesintilerini bölge, hat tipi, saha ekip müdahalesi ve müşteri restorasyon zamanına bağlayıp eksik müdahale kanıtını görmek",
+        "product_mechanism": "Şirketin elle sağladığı kesinti CSV, ekip görev, segment tipi, müşteri sayısı, restore zamanı, açıklama ve mühendis onay kaydı; gerçek zamanlı kesinti/SCADA/OMS API'si gerektirmez",
+        "why_now": "Utility Dive 12 Ekim kasırga toparlanması haberinde fırtına zirvesinde yaklaşık 950 bin abonenin elektriğinin kesildiği ve üçüncü gün yaklaşık 160 bin kişinin etkilenmeye devam ettiği bildiriliyor; elektrik dağıtım şirketlerinin yeraltı hatlarının havai hatlardan sekiz kat daha iyi performans gösterdiği kaynak açıklaması olarak aktarılıyor. Bu bir senaryo beyanı, bütün bölgeler için karşılaştırmalı deney değil. Şebeke olay sonrası kesinti, saha müdahale, müşteri restorasyonu ve donanım tipine göre güvenilirlik kanıt defteri işi düşünülebilir.",
+        "before_state": "Dağıtım şebekesi tasarım/arıza sonrası restorasyon kanıtları farklı OMS, saha, müşteri şikâyeti raporlarında",
+        "after_state": "Denetlenebilir olay sonu müşteri geri dönüş zaman matrisi ve saha ekip müdahale/öğrenim kanıtı",
+        "canonical_source_urls": [
+          "https://www.utilitydive.com/topic/grid-security-reliability/"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-038c4ff910f63375/001.json",
+  "valid_until": "2026-11-12T07:56:18Z"
+}
