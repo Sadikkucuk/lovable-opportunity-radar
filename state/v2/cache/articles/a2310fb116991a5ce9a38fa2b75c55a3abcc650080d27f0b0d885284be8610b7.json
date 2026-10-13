@@ -1,0 +1,48 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "a2310fb116991a5ce9a38fa2b75c55a3abcc650080d27f0b0d885284be8610b7",
+  "decision": {
+    "article_key": "19d92643588323c548be088a",
+    "decision": "opportunity",
+    "reason": "Xinhua'nın 11 Ekim özgün haberinde Gansu Hexi Koridoru çöl/Gobi enerji santrallerinin -20 °C ile 40 °C üstü çevre şartlarında geleneksel lityum depolama dezavantajları, Lanzhou University sodyum iyon fosfat-pirofosfat katot araştırması ve China Resources Power saha demosu planı ayrıntılanır. Henüz saha üretim performans garantisi ve gerçekleşmiş BESS sertifikası değil. Yeni saha kıyas ihtiyacı: grid BESS alıcısı farklı kimya, günlük çevre sıcaklığı, peak shaving/frequency response senaryolarının saha test ve tedarikçi datasheet varsayımını tek matrisle karşılaştırma. Teknik emniyet onayı mühendisindir.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-2bfd2b8b0a-discovery-7b57511063f9dd6f:19d92643588323c548be088a:1",
+        "canonical_key": "desert-renewable-bess-owner-engineers|compare-sodium-and-lithium-storage-qualification-in-extreme-climate|offline-temperature-cycle-degradation-gridservice-and-acceptance-evidence-matrix",
+        "idea_name": "Çöl BESS Sodyum–Lityum İklim Kabul Matrisi",
+        "core_job": "Aşırı sıcak-soğuk çöl yenilenebilir santrallerinde lityum/sodyum batarya kimyalarını ortam sıcaklığı, kapasite kaybı, şarj çevrimi, MW/MWh, şebeke frekans ve pik talebi test koşulları bakımından kabul için karşılaştırmak",
+        "target_customer": "Çöl/gobi güneş-rüzgâr BESS proje sahibi mühendislik ve batarya devreye alma ekipleri",
+        "buyer": "Enerji depolama tasarım/işletme mühendisi veya owner engineer",
+        "product_mechanism": "Çevrim/çevre sıcaklık CSV, enerji çıkışı, kapasite bozulma, kimya lot/versiyon, tedarikçi laboratuvar ölçümü ve grid servis hedeflerinin deterministic kıyas/eksik numune/eşik raporu; gerçek batarya kontrolü, fiziksel dayanım kararı ve BMS API yok",
+        "why_now": "11 Ekim Xinhua Lanzhou Üniversitesi ekibinin -20 ila +40°C üstü çöl sahası koşullarına uygun yeni sodyum iyon katot materyalini saha demonstrasyonuna hazırladığını ve Li/Na hibrit senaryosunu anlattı.",
+        "before_state": "Tedarikçi laboratuvar testi, Gobi gün içi sıcaklık ve owner-grid dispatch kabul matrisi ayrı dokümanlarda.",
+        "after_state": "Kimya/lot ve sıcaklık çevrimi bazında kapasite ve grid görevi kabul açığı, saha ölçümüyle iddiayı ayıran mühendis kanıt dosyası.",
+        "canonical_source_urls": [
+          "https://www.news.cn/politics/20261011/684d76f720704d228574fb9ae1c8a2cc/c.html"
+        ],
+        "supporting_article_ids": [
+          "577eb6edc754fb2805f80bf1"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.news.cn/politics/20261011/684d76f720704d228574fb9ae1c8a2cc/c.html",
+            "observation": "Xinhua 11 Ekim: Hexi Gobi -20°C/+40°C, Lanzhou fosfat-pirofosfat sodyum katot ekibi, Jinchuan, HiNa, China Resources Power ortak çalışma; uygulama demosu hazırlanıyor, seri saha performansı açıklanmadı."
+          }
+        ],
+        "scope_hint": "Dünya: kurak iklim BESS",
+        "local_evidence": {
+          "signals": [
+            "Çöl güneş/rüzgâr saha sıcaklık toleransı ile farklı pil kimyası kapasite/şebeke hizmeti kabulü tekrarlanan BESS engineering kararıdır."
+          ],
+          "unknowns": [
+            "Batarya emniyet standardı ve gerçek kapasite/ömrü laboratuvar ölçümleri gerektirir.",
+            "Mevcut BESS Owner FAT/SAT Model-to-Field Proof Ledger ile alan yakınlığı ve global vendor rekabeti Validation/Merge'de çözülmeli.",
+            "Sıfır zorunlu harici API uygunluğu müşteri CSV format ve manuel test girdilerine bağlı."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-2bfd2b8b0a-discovery-7b57511063f9dd6f/001.json",
+  "valid_until": "2026-11-12T21:48:43Z"
+}

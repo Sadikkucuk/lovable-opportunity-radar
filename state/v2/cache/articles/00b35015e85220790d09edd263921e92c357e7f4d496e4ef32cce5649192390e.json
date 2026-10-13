@@ -1,0 +1,48 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "00b35015e85220790d09edd263921e92c357e7f4d496e4ef32cce5649192390e",
+  "decision": {
+    "article_key": "18e5948bde33af3fa8826dc9",
+    "decision": "opportunity",
+    "reason": "ETSupplyChain 11 Ekim özgün röportajı Meesho, Zepto, Reliance Retail ve Aditya Birla yöneticilerinin yoğun sezon dalgalanmasında küçük depolarda otomasyona yapılan yatırımın hacim/yatırım geri dönüşüyle kıyaslanması ve geçici işçi eğitim/istisna ihtiyacını vurguladığını doğruluyor. Büyük merkezde sürekli hacim varsa robot kârlı, küçük dağıtım noktasında esnek işgücü ve düzen kritik. Satın alıcı bölgesel depo operasyon lideri; öncesi statik vardiya/robot yatırımı; sonrası günlük talep, depo adım kapasiteleri, işçi maliyeti, tekrar ve iade dahil elle girdili karma çalışan/robot senaryoları. Haber yeni pazar standardı değil, somut B2B karar nedenidir.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-2bfd2b8b0a-discovery-7b57511063f9dd6f:18e5948bde33af3fa8826dc9:1",
+        "canonical_key": "india-regional-warehouse-operators|choose-temporary-staff-vs-automation-for-festive-demand-surges|offline-volume-shift-cost-error-and-payback-threshold-workbook",
+        "idea_name": "Bayram Deposu İnsan–Otomasyon Eşik Karar Defteri",
+        "core_job": "Talebi bayram/indirim döneminde artan küçük-orta depolarda geçici vardiya işçiliği, yerleşim ve otomasyon yatırımı seçeneklerinin maliyet, hata ve kapasite kırılma eşiklerini hesaplamak",
+        "target_customer": "Hindistan ve benzer pazarlarda bölgesel e-ticaret depo/dark store operasyon planlama ekipleri",
+        "buyer": "Bölgesel depo operasyon direktörü veya otomasyon yatırım kontrol yöneticisi",
+        "product_mechanism": "Müşteri CSV verisiyle günlük sipariş, SKU, iade, raf mesafesi, çalışan saat ücreti/öğrenme süresi, otomasyon kapasitesi, CAPEX ve bakım maliyeti girip vardiya + ROI + SLA risk senaryolarını deterministik karşılaştıran tarayıcı hesaplayıcı",
+        "why_now": "11 Ekim sektör yöneticileri yüksek sürekli hacimde robotların, daha küçük istasyonlarda esnek vardiya ve süreç iyileştirmenin üstünlüğünü açıkça vurguladı; tatil yoğunluğu yatırım eşiklerini görünür kılıyor.",
+        "before_state": "İşgücü vardiyası ve tedarikçi otomasyon teklifi ayrı, sürdürülebilir düşük sezon hacmine göre ROI tutarsız hesaplanır.",
+        "after_state": "Yoğun/düşük sezon hacmi, hata ve iade etkisiyle hangi eşikte robot/manuel/hibrid düzen seçileceği gerekçeli maliyet raporunda görünür.",
+        "canonical_source_urls": [
+          "https://supplychain.economictimes.indiatimes.com/news/sourcing-and-warehousing/festive-rush-puts-warehouse-automation-labour-flexibility-to-the-test-experts/134867407"
+        ],
+        "supporting_article_ids": [
+          "9032307e3ba52134f3a0d8ea"
+        ],
+        "source_observations": [
+          {
+            "url": "https://supplychain.economictimes.indiatimes.com/news/sourcing-and-warehousing/festive-rush-puts-warehouse-automation-labour-flexibility-to-the-test-experts/134867407",
+            "observation": "Meesho yüksek ve sürekli hacimde ROI ile otomasyonu savunuyor, Zepto küçük depoda rota/yerleşim ve inbound disiplininin önemini, Reliance ve ABFRL iade, geçici işçi esneklik/kalite kararını vurguluyor."
+          }
+        ],
+        "scope_hint": "Hindistan ve global",
+        "local_evidence": {
+          "signals": [
+            "Yüksek hacimde CAPEX robot otomasyonu ile küçük depoda geçici insan vardiyası arasında hesaplanabilir iş yükü eşiği vardır."
+          ],
+          "unknowns": [
+            "Gerçek sezon dönemselliği ve stopaj/işçi güvenliği kuralları kullanıcı verisi olmadan bilemez.",
+            "Küresel WMS ve warehouse labor management rakipleri büyük olasılıkla mevcut; doğrudan sayı Validation'da araştırılmalı.",
+            "Bu hipotez catchup Festive Surge Stock-and-Return Desk'ten stok/iade yerine ekipman/işgücü kararıyla ayrışır ama Merge tekrar kontrol etmeli."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-2bfd2b8b0a-discovery-7b57511063f9dd6f/001.json",
+  "valid_until": "2026-11-12T21:48:43Z"
+}

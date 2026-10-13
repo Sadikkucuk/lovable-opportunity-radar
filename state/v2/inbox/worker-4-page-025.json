@@ -5,8 +5,8 @@
   "current_run": "2026-10-14-2bfd2b8b0a",
   "lease_minutes": 30,
   "ready_count": 492,
-  "job_count": 494,
-  "queue_revision": "ef665bfd89fcd2f13c0113ca624113abb2a761a8770195e368983f2f02e16711",
+  "job_count": 493,
+  "queue_revision": "c73a303cca20ab3f007dd9f7dd1f7bf27e31dfb3bbc71036581952365eabe08f",
   "page": 25,
   "page_count": 25,
   "next_page": null,
@@ -188,22 +188,10 @@
       "legacy_lane": 3,
       "queue_group": "current",
       "preferred_worker": 3,
-      "state": "leased",
+      "state": "retry_wait",
       "attempt": 1,
-      "expires_at": "2026-10-13T21:47:27.126Z"
-    },
-    {
-      "job_id": "2026-10-14-2bfd2b8b0a-discovery-7b57511063f9dd6f",
-      "path": "state/v2/jobs/2026-10-14-2bfd2b8b0a-discovery-7b57511063f9dd6f.json",
-      "run_id": "2026-10-14-2bfd2b8b0a",
-      "kind": "discovery",
-      "input_hash": "7b57511063f9dd6ff98e5ff03e485cb1d7c6d517cfdb2beb1e216ec4bd0c6e52",
-      "legacy_lane": 3,
-      "queue_group": "current",
-      "preferred_worker": 3,
-      "state": "leased",
-      "attempt": 1,
-      "expires_at": "2026-10-13T22:16:57.929Z"
+      "retry_at": "2026-10-13T21:52:27Z",
+      "reason": "worker lease expired without a receipt"
     }
   ]
 }
