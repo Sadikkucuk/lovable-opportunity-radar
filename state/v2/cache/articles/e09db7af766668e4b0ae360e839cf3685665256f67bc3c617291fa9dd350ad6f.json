@@ -1,0 +1,31 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "e09db7af766668e4b0ae360e839cf3685665256f67bc3c617291fa9dd350ad6f",
+  "decision": {
+    "article_key": "911e96938cd0fc5595ad048a",
+    "decision": "opportunity",
+    "reason": "MONOist on 13 October recaps TerraSky's 8 October announcement: Mitsubishi Fuso's four regional used-truck B2B auctions moved from paper/fax/spreadsheets to Salesforce, cutting manual bid tally by over three hours per event, with system launched in April 2026. Clearly evidenced tender/bid tally burden; a narrowly scoped import/export bid-audit worksheet is plausible, but competing general auctions are abundant and final competition is open.",
+    "canonical_source_url": "https://monoist.itmedia.co.jp/mn/articles/2610/13/news023.html",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-0a2fddedb339bacd:911e96938cd0fc5595ad048a:01",
+        "idea_name": "Used Commercial Vehicle Bid Tally Evidence Ledger",
+        "canonical_key": "small-commercial-vehicle-auction-organizers|reconcile-offline-used-truck-bids-and-awards|lot-bid-validation-winner-rule-and-evidence-export",
+        "target_customer": "Küçük ticari kamyon/iş makinesi ihalelerini yöneten ikinci el satıcı birlikleri ve galeriler",
+        "buyer": "İhale operasyon yöneticisi",
+        "core_job": "Kağıt, eposta ve Excel üzerinden alınan araç tekliflerini ürün/lot bazında kontrol ederek hatasız kazanan, sıra ve sonuç tutanağı oluşturmak",
+        "product_mechanism": "Kullanıcının yüklediği lot/araç VIN, katılımcı, kapalı teklif CSV'si, saat/durum, eşik/çekilme kuralı; deterministic kazanan hesaplama, çift teklif uyarısı ve PDF tutanağı. Online ödeme, canlı teklif, Salesforce API veya dış servis yok.",
+        "why_now": "MONOist on 13 October recaps TerraSky's 8 October announcement: Mitsubishi Fuso's four regional used-truck B2B auctions moved from paper/fax/spreadsheets to Salesforce, cutting manual bid tally by over three hours per event, with system launched in April 2026. Clearly evidenced tender/bid tally burden; a narrowly scoped import/export bid-audit worksheet is plausible, but competing general auctions are abundant and final competition is open.",
+        "before_state": "Teklifler kağıt ve Excel'de tekrar elle sayılıyor ve müşteri bilgilendirmesi gecikiyor",
+        "after_state": "Bid doğrulama, lot bazlı kazanan kararı ve insan onaylı paylaşılabilir sonuç tutanağı",
+        "canonical_source_urls": [
+          "https://monoist.itmedia.co.jp/mn/articles/2610/13/news023.html"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-0a2fddedb339bacd/001.json",
+  "valid_until": "2026-11-12T08:08:19Z"
+}
