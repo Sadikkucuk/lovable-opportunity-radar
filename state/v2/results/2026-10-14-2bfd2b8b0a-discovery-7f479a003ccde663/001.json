@@ -1,0 +1,147 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-2bfd2b8b0a-discovery-7f479a003ccde663",
+  "input_hash": "7f479a003ccde6633742d9ef362cc992da711f7763871a066eba7be67fc09a63",
+  "token": "1b44596c-54c6-4908-af31-24857fb9c8ab",
+  "finished_at": "2026-10-13T23:17:17.920Z",
+  "outcome": "done",
+  "reason": "14 Ekim on donmuş haber ayrı ayrı kaynak/olay/JTBD açısından işlendi. 2 yeni erken aşama hipotez: self-service kahve robotu sensör/konuşma uçtan uca saha kabul defteri ve banka partner API kayıt dışı varlık/owner yetki kanıt matrisi. 7 gerekçeli no_opportunity; Mutares Savoie yeniden sermayelendirme için özgün metin doğrulanamadığından 1 unverified. Üretici iddiası bağımsız performans sayılmadı, İran tehdidi fiili kapanma sayılmadı, 2027 Leapmotor ikinci marka bugünkü satış gibi yazılmadı. Rakip/hukuk/harici-runtime Quality Gate yayın onayı verilmedi.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "c4e7d8f5a9918fefe4a0f45d",
+        "decision": "opportunity",
+        "reason": "10 Ekim Shenzhen Weichuang Zhiyin üreticisi tarafından yayımlanan kahve robotu tasarım notu (与非网'de tam özgün içerik) WT4101B-C04L yaklaşma radarı, WT4102B-C03 sabit insan algılayıcısı ve WT2606A yerel komut-ses çipini birleşik senaryo olarak tanıtıyor; menzil ve ses tanıma sayıları satıcının tasarım beyanı, bağımsız saha ölçümü değil. BEFORE kızılötesi/ayak basma sistemlerinde duran müşteri, parlak ışık ve yanlış kapanma sorunları; AFTER yerel radar + offline ses algısı ile self-service akışı farklılaşabilir. Ayrı buyer işi cihaz konfigürasyonu ve müşteri bekleme/menü/uyandırma saha kabulü, üreticinin halihazırda konuşma/sensör işini dışarıda model çağırmadan test edebilecek manuel CSV test kanıt defteri.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-2bfd2b8b0a-discovery-7f479a003ccde663:c4e7d8f5a9918fefe4a0f45d:1",
+            "canonical_key": "self-service-coffee-robot-installers|qualify-customer-presence-wake-and-voice-order-state-transitions|offline-sensor-command-latency-false-exit-and-signoff-evidence-matrix",
+            "idea_name": "Kahve Robotu Yaklaşma–Sesli Sipariş Saha Kabul Defteri",
+            "core_job": "Self-servis kahve kioskunda yaklaşma, sabit durma, ekran uyanma, menü sesi, müşteri ayrılma ve yanlış kapanma durumlarının sahada test edilerek kabulünün kanıtlanması",
+            "target_customer": "AVM/ofis kahve robotu teknik kurulum, marka servis ve OEM devreye alma ekipleri",
+            "buyer": "Robot kiosk saha operasyon kalite/devreye alma yöneticisi",
+            "product_mechanism": "Kullanıcı kurulum senaryosu CSV'si (bölge, algılama mesafesi, müşteri durağan süre, wake delay, ses komutu ID, iptal/teslim, hata ve QA imzası) ile tarayıcı içi kural/eksik test matrisi; canlı mikrofon/robot/LLM entegrasyonu gerekli değil",
+            "why_now": "10 Ekim sensör tasarım yazısı ikili radar+offline ses çipi ile kahve kioskunda durağan müşteri ve ses komutu yönetimini gündeme getirdi; fiziksel saha doğrulama ihtiyacı ortaya çıkabilir.",
+            "before_state": "Üreticinin nominal sensör aralığı ve fiili kiosk parlak ışık, ses gürültüsü, müşterinin beklemesi, ayrılması testleri ayrı servis formlarındadır.",
+            "after_state": "Her kullanıcı durumu için gözlenen süre/mesafe, hata, düzeltme, tekrarlı test ve insan onayı tek kanıt matrisinde.",
+            "canonical_source_urls": [
+              "https://www.eefocus.com/article/2099435.html"
+            ],
+            "supporting_article_ids": [
+              "ad2468ae5bc03747acbbcac8"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.eefocus.com/article/2099435.html",
+                "observation": "Tam yayıncı sayfası: WT4101B-C04L yaklaşma, WT4102B-C03 sabit insan algılama, WT2606A offline voice; datasheet iddiaları sahada bağımsız doğrulanmadı.",
+                "verification": "publisher_full_page_read"
+              }
+            ],
+            "scope_hint": "Global kiosk/otomatik satış robotu integratörleri",
+            "local_evidence": {
+              "signals": [
+                "Sabit duran müşteri için ayrı radar davranışı ve offline ses siparişi ölçülebilir kabul senaryosu doğuruyor."
+              ],
+              "unknowns": [
+                "Robot/kiosk OEM servis yazılımı ve IoT kabul paketlerinin Türkiye/global doğrudan rakipleri henüz sayılmadı.",
+                "Sensör başarımı ve dil desteği fiziksel saha testine bağlıdır.",
+                "Rekabet ve dış maliyet doğrulaması Validation'a kalır."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "ca61e98e34076e0b4d9a66b3",
+        "decision": "no_opportunity",
+        "reason": "11 Ekim Andrej Karpathy'nin yaklaşık 5 bin frontier lab kullanıcısından milyarlarca düşük kullanım düzeyine uzanan AI erişim hunisi sosyal medya yorumu ve kabaca tahmindir; resmi kullanıcı sayım araştırması veya yeni ticari zorunluluk değildir. Eğitim/AI beceri ölçüm SaaS'ları zaten yaygın; özgül yeni alıcı iş akışı kaynakça kanıtlanmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "ca8cefbdf7cc859dd5d33b34",
+        "decision": "opportunity",
+        "reason": "SK Shieldus'un 8 Ekim 2026 tarihli resmî açıklaması ARTEX ile ilişkili Kore banka ihlallerini mevcut Shadow IT ve API authentication/authorization zafiyetlerinin otomasyonla ölçeklenmesi olarak değerlendiriyor; yeni yapay zeka kaynaklı sıfır gün açığı olarak sunmuyor. Banka destek, bayi/loan-broker sistemlerinde sahibi bilinmeyen API, internete açık servis ve WAF/EDR kontrol kanıtı için saha güvenlik ekiplerinin manuel varlık CSV + sahiplik/audit ön kontrol işi bulunabilir. Ürün canlı API tarayıcısı değil, offline yetki/kontrol açıklığı defteridir. Ancak EASM/ASPM rakipleri yoğun ve SK'nin halihazırda aynı işi sağlayan ücretli hizmeti var; Validation'da doğrudan rakip testi şarttır.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-2bfd2b8b0a-discovery-7f479a003ccde663:ca8cefbdf7cc859dd5d33b34:1",
+            "canonical_key": "financial-services-api-security-owners|assign-shadow-it-partner-api-owner-and-authz-evidence|offline-endpoint-exposure-asset-owner-control-and-retest-matrix",
+            "idea_name": "Banka Partner API Shadow IT Sahiplik Kanıt Matrisi",
+            "core_job": "Banka/finans kurumunun kredi aracısı ve dış satış platformundaki kayıt dışı veya sorumlusu belirsiz API uç noktalarını sahiplemek ve kimlik yetki/izleme/retetste eksik kanıtı kapatmak",
+            "target_customer": "Finans kuruluşları API gateway güvenliği, üçüncü taraf risk ve BT envanter ekipleri",
+            "buyer": "Banka API güvenliği lideri veya üçüncü taraf risk yöneticisi",
+            "product_mechanism": "Müşterinin elindeki gateway API envanter CSV, partner/sistem sahibi, internet maruziyeti, authentication/authorization test referansı, WAF/takip/SIEM sahipliği, insan doğrulaması ve retest planı ile deterministik risk/kanıt açıklığı raporu; canlı pasif/aktif sızma testi, bulut hesabı veya AI model zorunlu değil",
+            "why_now": "8 Ekim SK Shieldus rehberi, Kore finans saldırılarının Shadow IT ve dışa açık partner API yönetimindeki görünürlük sorunlarını güncel örnek olarak ortaya koydu.",
+            "before_state": "Ana bankacılık API envanteri ile dış loan-broker/çalışan destek platformlarının owner, politika ve EDR/SIEM kanıtları ayrı sistemlerde.",
+            "after_state": "Her partner endpoint'in gerçek sahibi, yetki testi, izleme sorumlusu ve eksik retest/imza kanıtı tek kuru listede.",
+            "canonical_source_urls": [
+              "https://www.skshieldus.com/company/newsroom/skshieldus-shadow-it-artex"
+            ],
+            "supporting_article_ids": [
+              "91b5eb21c18f7829a62362ce"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.skshieldus.com/company/newsroom/skshieldus-shadow-it-artex",
+                "observation": "Resmî 8 Ekim duyurusu ARTEX'i yeni exploit sınıfı olarak değil mevcut Shadow IT/API eksiklerinin otomasyonu olarak değerlendiriyor; tanımlama/izleme/tespit ve müdahale üç aşaması var; satıcı zaten ASM/API-Security/MXDR hizmetleri sunuyor.",
+                "verification": "official_vendor_page_read"
+              }
+            ],
+            "scope_hint": "Dünya; banka partner API güvenlik ve üçüncü taraf risk",
+            "local_evidence": {
+              "signals": [
+                "Kore finans sektörü kaynak duyurusunda anonim partner/loan broker API'lerinin takipsiz kalması somut operasyon kör noktasıdır."
+              ],
+              "unknowns": [
+                "Türkiye'de aynı müşteri+iş+kanıt workflow'u yapan ürünler ve global direct4+ çok muhtemeldir; sistematik Validation gerekir.",
+                "Bu araç canlı keşif yapmaz, kurumun CSV listesinin tamlığı garanti edilemez.",
+                "Zorunlu harici API yok ama manuel envanter güncelleme maliyeti yüksektir."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "ca9974d4ea45170137152d71",
+        "decision": "no_opportunity",
+        "reason": "Yicai orijinal 10 Ekim haberi Shanghai 2026 AI+High End Manufacturing Industry Map'in 12 Ekim fuar etkinliğinde planlandığını yazıyor. 12 Ekim sonraki resmi yayında raporun beş ana bölümle yayımlandığı doğrulandı; kronoloji korundu. Bu bir sektör haritası ve olgunluk sınıflandırması, tüm üretici işletmelere yeni zorunlu standart veya bağımsız tedarik API'si değil. Genel 'AI transformation planner' aynı problemlerde farklılaşmış buyer job kanıtlamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "cac4ea90ad4d45ac9f584cf6",
+        "decision": "no_opportunity",
+        "reason": "Kore ZDNet 12 Ekim Hanwha Group başkanının kriz/AI rekabetçiliği ve yönetim hazırlığı açıklaması şirket içi stratejik talimattır; yeni satın alınabilir teknoloji veya müşteri yönetmelik şartı değildir. Orijinal Kore tam makalesine erişim doğrulanamadı; başlıktan daha kapsamlı olay uydurulmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "cb0db8425d61f0440a4906b5",
+        "decision": "no_opportunity",
+        "reason": "CLS 10 Ekim sabah bülteni ABD teknoloji hisseleri ve petrol/altının günlük fiyat hareketlerini, İran'ın Hürmüz Boğazı konusundaki tehdidini listeliyor. Tehdit, gerçek geçişin kapandığı veya yürürlüğe girmiş taşıma yasak kuralı değildir; istatistik haberini doğrulanmış arz kesilmesi olarak sunmadım. Petrol/Deniz rotası risk fikirleri catchup listesinde zaten mevcut.",
+        "opportunities": []
+      },
+      {
+        "article_key": "cb1c8cf31ceba12b67a43d53",
+        "decision": "no_opportunity",
+        "reason": "Dünya Gazetesi 10 Ekim İsrail ekonomik makro göstergeler ve vatandaşların hayat pahalılığı algısı arasındaki fark konulu haber/yorum yayımladı. Kaynak verinin istatistiksel temsiliyeti ve yeni işletme yükümlülüğü gösterilmedi; tüketici anketi hizmeti mevcut genel pazarlama çözümü alanından ayrışmış müşteri işi değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "cb302fec98199731c929523c",
+        "decision": "unverified",
+        "reason": "L'Usine Nouvelle 12 Ekim Mutares ve La Rochette Cartonboard (Savoie) likidite desteği başlığı, ambalaj pazarı bozulması/yeniden yapılandırmaya işaret ediyor. Özgün makale ve Mutares'in duyurduğu finansman miktarı/işlem kapanışı okunamadı; gerçekleşen ödeme ve işçi planı kesin ilan edilmedi. KOBİ tedarik/likidite kanıtı için somut sözleşmeli buyer iş akışı bağımsız doğrulanmadı; FULL ARTICLE NOT VERIFIED.",
+        "opportunities": []
+      },
+      {
+        "article_key": "cbbfe4f47773fdb0a859c2d2",
+        "decision": "no_opportunity",
+        "reason": "LeiFeng 10 Ekim Geely Leapmotor ikinci marka/premium elektrikli araç planlarını aktarıyor; 16–17 Eylül teknik lansman ve 2027 Q4 ikinci marka hedefi yeni Ekim satışa başlamış ürün değil. Ürün stratejisi için ayrı tekrar eden küçük yazılım ihtiyacı gösterilmiyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "cbe47878924c1f9c9344c196",
+        "decision": "no_opportunity",
+        "reason": "11 Ekim CCTV/China Logistics and Purchasing Federation verisi Eylül 2026'da Çin çıkışlı 15 yeni uluslararası hava kargo rotası ve haftada toplam 42 uçuş (Asya 9, Avrupa 4, Kuzey Amerika 2), yılbaşından Eylül sonuna 130 yeni hat 334 haftalık uçuş aktarır. Bunlar açıklanan geçmiş arz kapasitesi, slot/rota bazlı fiyat veya gümrük transit garantisi değil. Mevcut Air Cargo Lane Launch Readiness ve fresh produce cold-chain route fikirleriyle aynı müşteri/risk aileleri çakıştığından yeni ham kopya açılmadı.",
+        "opportunities": []
+      }
+    ]
+  }
+}
