@@ -1,0 +1,93 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-3778e006c0de3375",
+  "input_hash": "3778e006c0de3375555b0f9bec22d03bcfd0a41014c54253eee4999c8c5ce83e",
+  "token": "8095fa85-1fec-4875-96ea-f84c7dacc468",
+  "finished_at": "2026-10-13T08:47:21.823Z",
+  "outcome": "done",
+  "reason": "10 haber: Deno–Cloudflare birincil kaynaklı altı aylık Deploy sunset için 1 ham migration fikri, 8 no_opportunity, Çin-Moğolistan enerji projesi birincil anlaşma kanıtı eksik olduğu için 1 unverified. ARTEX saldırı haberi mevcut kanıt/olay kataloğuna mükerrer eklenmedi.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "15bf630d521036cd81199a0a",
+        "decision": "no_opportunity",
+        "reason": "Meta Muse Wonder ileri AI modeli 13 Ekim Japon medya haberidir. Dış/yerel temel modeli çalıştırma maliyeti ve AI servis bağımlılığı gerekir; başka bir uygulama ihtiyacının yeni bağlayıcı kanıtı bu başlıkta yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "15ec98d3838688552dcd0173",
+        "decision": "no_opportunity",
+        "reason": "Zoho kurumsal AI için en büyük LLM yerine maliyet/veri koruma dengesini vurguluyor. Kurum AI altyapı seçimi mevcut AI Value Renewal ve AI Integration Ready kataloğu ile yakın; yeni veri hakkı veya farklı alıcı görevi yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "15ff372643b56303401cb50e",
+        "decision": "no_opportunity",
+        "reason": "Sam Altman/Bill Gates'in AI korkuları hakkındaki görüş karşılaştırması yorum yazısı; yeni yürürlüğe giren güvenlik standardı veya müşteri taahhüt protokolü değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "160263f39530f14fabefb96e",
+        "decision": "unverified",
+        "reason": "China Daily Moğolistan ile yeni sınır aşan enerji anlaşması başlığını paylaşıyor, ancak imzalayan taraflar, proje kapasitesi, yürürlük, somut enerji transferi veya birincil anlaşma dosyası teyit edilemedi. Yalnız başlıktan transit ticaret ürün hipotezi kurulmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "16bb7eb8b031b117273a4302",
+        "decision": "no_opportunity",
+        "reason": "ThePaper'daki Agentic AI için yüksek kaliteli veri setinden pekiştirmeli öğrenmeye geçiş incelemesi sektör fırsatı yorumudur; özgün test/standart, lisans koşulu ve sıfır harici LLM gerektiren iş erişimi açıklamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "16c4f9b3e3b948f0cb1f8f13",
+        "decision": "no_opportunity",
+        "reason": "Startup Daily 'Bec Sands' yazar/kişi profil sayfası tarihlenmiş bağımsız gelişme değildir; ürün çıkarılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "16fd22f9b0af32d3d84db901",
+        "decision": "opportunity",
+        "reason": "Deno kurucusu Ryan Dahl'ın 9 Ekim 2026 birincil duyurusu şirketin Cloudflare'a katıldığını, Deno runtime için bir yıl aylık hata/güvenlik güncellemesi sonrasında kendi geliştirmelerinin biteceğini, Deno Deploy'un altı ay içinde kapanacağını, JSR'nin süreceğini bildiriyor. Haber 12 Ekim Kore'de yeniden yayımlandı; yeni kapanış politikası SaaS dağıtım sahiplerinin taşıma takvimini ve API/Node uyumluluk engellerini görünür kılıyor.",
+        "canonical_source_url": "https://deno.com/blog/cloudflare",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-3778e006c0de3375:16fd22f9b0af32d3d84db901:01",
+            "canonical_key": "deno-deploy-application-operators|migrate-before-six-month-service-closure|compatibility-hosting-runtime-dependency-and-cutover-evidence-ledger",
+            "idea_name": "Deno Deploy Sunset Migration Preflight",
+            "target_customer": "Deno Deploy kullanan küçük SaaS ve B2B web uygulaması ekipleri",
+            "core_job": "Deno Deploy kapanmadan önce hizmetleri alternatif barındırma ortamına taşımak için bağımlılık, veri, çevresel değişken ve test/cutover engellerini belgelendirmek",
+            "product_mechanism": "Manuel package.json/deno.json CSV/JSON manifest, HTTP/websocket, cron/worker, KV, JSR, env/secrets yalnız ad referansı (değerler yüklenmez), devreye alma ve rollback/test kanıtı karşılaştırması; canlı deploy/API/secret erişimi yok",
+            "why_now": "Deno kurucusu Ryan Dahl'ın 9 Ekim 2026 birincil duyurusu şirketin Cloudflare'a katıldığını, Deno runtime için bir yıl aylık hata/güvenlik güncellemesi sonrasında kendi geliştirmelerinin biteceğini, Deno Deploy'un altı ay içinde kapanacağını, JSR'nin süreceğini bildiriyor. Haber 12 Ekim Kore'de yeniden yayımlandı; yeni kapanış politikası SaaS dağıtım sahiplerinin taşıma takvimini ve API/Node uyumluluk engellerini görünür kılıyor.",
+            "before_state": "Deno Deploy uygulamasının servis kesintisinden önce taşınacak API, runtime kütüphane ve hosting bağımlılıkları dağınık ve tarihsiz kalır",
+            "after_state": "Hedef ortam, manuel uyumluluk testi, kritik veri/secret devri, kesinti planı ve insan imzalı kesime geçiş matrisi",
+            "canonical_source_urls": [
+              "https://deno.com/blog/cloudflare",
+              "https://blog.cloudflare.com/deno-joins-cloudflare/"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "173521b01549962ffc44f672",
+        "decision": "no_opportunity",
+        "reason": "Kyungpook National University ITCE EXPO sensör standı tanıtımı etkinlik duyurusu; yeni genel teknik erişim standardı yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "173a3f7e7990eb2508f369d1",
+        "decision": "no_opportunity",
+        "reason": "OFweek Manus değerleme/fiyat ve AI agent stratejisi makalesi piyasa yorumu, ayrıca haricî agent/model runtime bağımlıdır; farklı Lovable-uyumlu operasyon işi kanıtlamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "177165f2a773374b105d72f2",
+        "decision": "no_opportunity",
+        "reason": "Reuters'ın 9 Ekim ARTEX agent'ın kötüye kullanım iddiası ardından kapalı kaynak hâline getirildiğine ilişkin haberi kaynak olay olarak doğrulandı. Güney Kore bankalarına yönelik saldırı açıklamaları hâlen soruşturma düzeyindedir; 12 Ekim HuXiu haberi aynı olayın tekrarı. Katalogdaki AI-Assisted Attack Incident Ledger ve Prompt Propagation Guard ile müşteri/iş örtüşür, saldırı aracı/ajan geliştirilmez.",
+        "canonical_source_url": "https://www.reuters.com/world/china/chinese-developer-makes-artex-ai-agent-closed-source-after-korean-bank-hack-2026-10-09/",
+        "opportunities": []
+      }
+    ]
+  }
+}
