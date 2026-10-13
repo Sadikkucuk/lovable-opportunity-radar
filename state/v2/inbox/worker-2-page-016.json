@@ -6,7 +6,7 @@
   "lease_minutes": 30,
   "ready_count": 312,
   "job_count": 313,
-  "queue_revision": "b5df5d1185bbd2c7373b62b4558965bdec2fddd672178110674e634f4a2856ee",
+  "queue_revision": "eda16782c94ced76f23e4f910d2c30d7505dad32e274202f4614b799c9aea8e3",
   "page": 16,
   "page_count": 16,
   "next_page": null,
@@ -188,9 +188,10 @@
       "legacy_lane": 3,
       "queue_group": "backlog",
       "preferred_worker": 3,
-      "state": "leased",
+      "state": "retry_wait",
       "attempt": 1,
-      "expires_at": "2026-10-13T19:02:06.396Z"
+      "retry_at": "2026-10-13T19:07:06Z",
+      "reason": "worker lease expired without a receipt"
     }
   ]
 }
