@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T06:48:31Z",
+  "controller_observed_at": "2026-10-13T06:50:00Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
   "ready_jobs": 479,
-  "unfinished_jobs": 480,
-  "last_verified_progress_at": "2026-10-13T05:48:29Z",
+  "unfinished_jobs": 479,
+  "last_verified_progress_at": "2026-10-13T06:49:41Z",
   "workers": {
     "1": {
       "last_started_at": "2026-10-13T05:09:52.124Z",
@@ -46,15 +46,16 @@
         "schema_version": 1,
         "worker": 3,
         "invocation_id": "356dea83-8688-4d2b-9279-886cc39ff6f2",
-        "event": "started",
-        "at": "2026-10-13T06:47:25.718Z",
-        "execution_mode": "user_requested_manual_master",
-        "note": "Research session only; preexisting scheduled tasks not edited",
-        "path": "state/v2/worker-events/3/356dea83-8688-4d2b-9279-886cc39ff6f2/000-started.json"
+        "event": "progress",
+        "at": "2026-10-13T06:49:56.487Z",
+        "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-515d4e32b24c584e",
+        "stage": "receipt_saved",
+        "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-515d4e32b24c584e/001.json",
+        "path": "state/v2/worker-events/3/356dea83-8688-4d2b-9279-886cc39ff6f2/001-progress.json"
       },
-      "receipts_this_invocation": 0,
+      "receipts_this_invocation": 1,
       "write_and_receipt_verified": true,
-      "last_receipt_at": "2026-10-13T05:48:29.823Z"
+      "last_receipt_at": "2026-10-13T06:49:41.581Z"
     },
     "4": {
       "last_started_at": "2026-10-13T03:41:34.910Z",
@@ -96,10 +97,10 @@
     "window_minutes": 120.0,
     "stages": {
       "discovery": {
-        "completed_in_window": 11,
-        "known_remaining": 410,
-        "observed_jobs_per_hour": 5.5,
-        "estimated_minutes_for_stage": 4472.7
+        "completed_in_window": 12,
+        "known_remaining": 409,
+        "observed_jobs_per_hour": 6.0,
+        "estimated_minutes_for_stage": 4090.0
       },
       "merge": {
         "completed_in_window": 0,
