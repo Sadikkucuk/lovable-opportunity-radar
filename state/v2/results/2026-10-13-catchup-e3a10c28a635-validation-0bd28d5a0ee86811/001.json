@@ -1,0 +1,199 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-0bd28d5a0ee86811",
+  "input_hash": "0bd28d5a0ee86811e77dfce4212cfaa8ba6163c9bf63b99744ae5f7c4c1cc8be",
+  "token": "ca1b819d-203c-4d28-9d78-f58a85463d11",
+  "finished_at": "2026-10-13T21:24:46.536Z",
+  "outcome": "done",
+  "reason": "Özgün Japon AppSec makalesi ve güvenlik araştırması tarandı. Türkiye kökenli Kondukto uygulama güvenliği tarama sonuçlarını farklı scanner'lardan birleştirip tekilleştirme/süreç takibi yapıyor. Global doğrudan workflow ürünleri DefectDojo, ArmorCode, PlexTrac ve apPosture ilgili ürün veya resmi teknik sayfalarda belgeli. Aynı müşteri, aynı bulgu normalizasyonu/dedup/retest işini sunan en az 4 global çözüm var; Türkiye=0 ve global<=3 şartları sağlanmıyor. Yeni kataloga ekleme yapılmamalı.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Zorunlu rekabet kalite kapısı başarısız: Türkiye kökenli Kondukto SAST/SCA scanner bulgu birleştirme ve dedup işlemini zaten sunuyor; bağımsız global rakipler en az DefectDojo, ArmorCode, PlexTrac, apPosture olmak üzere dört ayrı sağlayıcı. Amaçlanan offline CSV aracı daha az özellik içerse bile aynı müşterinin aynı çekirdek sorununu çözüyor; ücretli yeni farklılık kanıtlanmadı.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://internet.watch.impress.co.jp/docs/column/security/2146074.html",
+        "accessed_at": "2026-10-13T21:24:46.536Z",
+        "claim": "Japon yayıncının özgün haberi çoklu AI scanner uyuşmazlığı ve tekrar tutarlılığı sorunu açıklıyor.",
+        "observation": "INTERNET Watch örnek 50.000 satır Java kodunu tarayan 3 scanner arasında toplam 59 bulgu, yalnız 3 ortak bulgu, farklı tarama tekrarlarında %17 tekrar oranı aktarıyor; bu tek deneyin sonuçları evrensel gerçek değildir.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://docs.kondukto.io/docs/global-settings",
+        "accessed_at": "2026-10-13T21:24:46.536Z",
+        "claim": "Türkiye'de geliştirilmiş Kondukto ürününde farklı SAST/SCA scanner sonuçları birleştirilip tekilleştirilebiliyor.",
+        "observation": "Kondukto'nun resmî ürün dokümanı SAST, SCA ve container scanning kategorilerinde dedup, baskın scanner seçimi, scan tekrar ve geliştiriciye sevk kurallarını tanımlıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://www.scalexventures.com/companies/kondukto",
+        "accessed_at": "2026-10-13T21:24:46.536Z",
+        "claim": "Kondukto İstanbul'da kurulmuş aynı AppSec ekibi işini sunan üründür.",
+        "observation": "Yatırımcı şirket sayfası şirketin İstanbul/Türkiye HQ geçmişini, 2019 kurucularını ve uygulama güvenliği bulgularını birleştiren ASOC yazılımını doğruluyor; satın alınmış olması yerli kaynaklı ürünün varlığını değiştirmez, bugünkü tüzel konumunu ayrı değerlendir.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://docs.defectdojo.com/triage_findings/finding_deduplication/deduplication_across_tools/",
+        "accessed_at": "2026-10-13T21:24:46.536Z",
+        "claim": "DefectDojo aynı scanner raporu import/dedup/retest bulgu akışını sunuyor.",
+        "observation": "500+ tarayıcı raporunu içe alma; aynı ve farklı araç arasında CWE, severity, dosya satırına göre dedup, tekrar import ve düzeltilen bulguyu kapatma belgelenmiş.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.armorcode.com/application-security-posture-management",
+        "accessed_at": "2026-10-13T21:24:46.536Z",
+        "claim": "ArmorCode aynı AppSec scanner raporu birleştirme ve bulgu triage işini sunuyor.",
+        "observation": "Ürün sayfasında çoklu scanner/pen-test bulgularını toplama, normalize, dedup ile görev/kayıt oluşturma ve risk/yeniden işleme raporu var.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://plextrac.com/platform/overview/",
+        "accessed_at": "2026-10-13T21:24:46.536Z",
+        "claim": "PlexTrac çoklu test/scanner bulgularını tekilleştirip inceleme iş akışında birleştiriyor.",
+        "observation": "Ürün sayfası scanner/pen-test raporlarını import, vulnerability dedup, QA review ve bulgu handoff işini açıkça veriyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://docs.aspm.apposture.com/intelligence/correlation/",
+        "accessed_at": "2026-10-13T21:24:46.536Z",
+        "claim": "apPosture farklı scanner'ların aynı kod/varlık bulgusunu tek bir root cause kaydıyla karşılaştırıyor.",
+        "observation": "SAST için vuln_class+file:line gibi kaynak-türü özgül fingerprint ve triage/retest/kanıt/risk kanıtı sürecini sunuyor.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 1,
+        "queries": [
+          "Türkiye uygulama güvenlik tarayıcı bulgularını birleştirme tekilleştirme SAST DAST ASPM",
+          "Türk yazılım güvenliği SAST SCA bulgu yönetimi tekilleştirme Kondukto",
+          "Türkiye ASPM platformu vulnerability dedup scanner finding",
+          "Kondukto Istanbul Turkey AppSec"
+        ],
+        "scope": "En az bir Türkiye kaynaklı ürün doğrudan workflow eşleşmesiyle kanıtlandı; Kondukto sonradan Invicti tarafından satın alındı. Türkiye'deki bütün şirketlerin tam sayımı değildir.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "Kondukto / Invicti ASPM",
+            "url": "https://docs.kondukto.io/docs/global-settings",
+            "same_customer_job_workflow_reason": "İstanbul kökenli AppSec scanner çıktısı tek noktada toplayıp SAST/SCA bulgularını dedup, severity ve tekrar tarama insan triage iş akışına bağlar."
+          }
+        ],
+        "adjacent_competitors": [
+          {
+            "name": "Bozok.io Project Flow",
+            "url": "https://www.bozok.io/project-flow/",
+            "reason": "Türkçe resmi ürün arama kaydında scanner bulgularını tekilleştirme ve retest yeteneği bulunuyor; sayfa web'de JS nedeniyle metin olarak okunamadığından güvenilir minimum doğrudan sayıya dahil edilmedi."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 4,
+        "queries": [
+          "SAST SCA DAST scanner report finding deduplication application security posture management tools",
+          "appsec multi scanner findings normalize deduplicate retest CSV import",
+          "DefectDojo cross scanner dedup reimport",
+          "ArmorCode aggregate normalize AppSec scanners dedup",
+          "PlexTrac scanner import deduplicate QA",
+          "apPosture source-aware fingerprint risk"
+        ],
+        "scope": "4 ayrı ürünün müşteri+iş+iş akışı birebir özelliği birincil ürün sayfalarından okunarak kanıtlandı; başka rakiplerin hiç olmadığı iddia edilmez.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "DefectDojo",
+            "url": "https://docs.defectdojo.com/triage_findings/finding_deduplication/deduplication_across_tools/",
+            "same_customer_job_workflow_reason": "AppSec takımına farklı scanner report JSON/XML/CSV import, CWE/code location normalizasyonu, dedup ve sonraki scan ile retest/kapanış sağlar."
+          },
+          {
+            "name": "ArmorCode ASPM",
+            "url": "https://www.armorcode.com/application-security-posture-management",
+            "same_customer_job_workflow_reason": "AppSec ekibi farklı tarayıcı sonuçlarını toplar, tekil bulgu/risk ve insana görev triage/QA kaydına dönüştürür."
+          },
+          {
+            "name": "PlexTrac",
+            "url": "https://plextrac.com/platform/overview/",
+            "same_customer_job_workflow_reason": "Pentest/AppSec scanner report import, deduplicated vulnerabilities ve kalite gözden geçirme/rapor akışı sunar."
+          },
+          {
+            "name": "apPosture",
+            "url": "https://docs.aspm.apposture.com/intelligence/correlation/",
+            "same_customer_job_workflow_reason": "AppSec SAST/SCA/DAST bulgularını fingerprint ile aynı root cause kaydına bağlar, kaynakları korur, severity ve retest sonucunu izler."
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Kullanıcı dosyasından yalnız JSON/CSV veya SARIF olarak dışa aktarılmış scanner bulgularını tarayıcı belleğinde ve indirilir dosyada normalize et; repo/dosya/satır/CWE/bug fingerprint kural motoru ve manuel false positive/retest hükmü üret. Veri güvenirliği ve büyük ölçek operasyon/çok kullanıcı senkronizasyonu sınırlı; harici scanner API, sürekli DB ya da çalışan AI modeli zorunlu değil.",
+      "dependency_inventory": [
+        "Manuel scanner CSV/JSON/SARIF raporları",
+        "Tarayıcıda çalışan deterministic fingerprint ve severity eşleme",
+        "Manuel doğrulama/karar alanı",
+        "CSV/JSON raporu indirme"
+      ],
+      "zero_external_runtime_possible": true
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "91 mevcut tarihsel kayıt arasında güvenlik terimli benzer kayıtlar incelendi; birebir AppSec scanner bulguları cross-tool dedup ve re-test iş akışının kanonik eşleşmesi görülmedi, fakat doğrudan rakip kanıtı yeterli reddir."
+    },
+    "research_attempts": [
+      {
+        "url": "https://internet.watch.impress.co.jp/docs/column/security/2146074.html",
+        "result": "full_original_page_read"
+      },
+      {
+        "url": "https://docs.kondukto.io/docs/global-settings",
+        "result": "official_product_docs_read"
+      },
+      {
+        "url": "https://www.scalexventures.com/companies/kondukto",
+        "result": "investor_origin_page_read"
+      },
+      {
+        "url": "https://docs.defectdojo.com/triage_findings/finding_deduplication/deduplication_across_tools/",
+        "result": "official_product_docs_read"
+      },
+      {
+        "url": "https://www.armorcode.com/application-security-posture-management",
+        "result": "official_product_page_read"
+      },
+      {
+        "url": "https://plextrac.com/platform/overview/",
+        "result": "official_product_page_read"
+      },
+      {
+        "url": "https://docs.aspm.apposture.com/intelligence/correlation/",
+        "result": "official_product_docs_read"
+      },
+      {
+        "url": "https://www.bozok.io/project-flow/",
+        "result": "search_description_visible_page_js_body_inaccessible",
+        "observation": "Minimum direct count calculated without this one."
+      }
+    ],
+    "quality_gate": {
+      "tr_zero_pass": false,
+      "global_max_3_pass": false,
+      "runtime_zero_pass": true,
+      "history_unique_inconclusive": false,
+      "qualified": false
+    }
+  }
+}
