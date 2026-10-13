@@ -1,0 +1,30 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "9d9ff3bc76b3669bb0bde9d22132e7d6237dd554f0c3102f8db1c219fe55b32f",
+  "decision": {
+    "article_key": "285f17b9a9fef7f8bf35217a",
+    "decision": "opportunity",
+    "reason": "12 Ekim The Register Yandex'ın Sasovo/Kaluga/Vladimir veri merkezlerine 7–9 Ekim saldırılarının ardından bulut ve ödeme hizmetlerinde kesinti yaşandığını, fintech yöneticisinin Telegram üzerinden paraların güvende olduğunu fakat hizmetlerin henüz açılmadığını bildirdiğini aktarıyor. Bu savaş hasarı raporu, bağımsız soruşturma ve kalıcı veri kaybı kanıtı değildir. E-ticaret ve perakendeciler için olay anında alternatif ödeme/eldeki işlemleri elle tutan uzlaşma kanıt masası uygun iş hipotezidir.",
+    "canonical_source_url": "https://www.theregister.com/security/2026/10/12/ukrainian-drone-strikes-on-yandex-datacenters-knock-cloud-and-payments-offline/5302577",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-05fd2c5119dfdaf4:285f17b9a9fef7f8bf35217a:01",
+        "idea_name": "Offline Payment Incident Reconciliation Book",
+        "canonical_key": "small-merchants-dependent-on-cloud-payments|reconcile-customer-orders-during-cloud-payments-outage|manual-pending-order-alternative-payment-and-postincident-settlement-ledger",
+        "target_customer": "Bulut ödeme altyapısına bağlı küçük perakendeciler ve hizmet işletmeleri",
+        "core_job": "Ödeme platformu erişilemediğinde müşterinin siparişi, alternatif ödeme talebi, kısmi teslim, sonradan uzlaşma ve çift tahsilat riskini insan denetimiyle izlemek",
+        "product_mechanism": "Kullanıcının offline CSV sipariş numarası, müşteri iletişimi, ödeme durumu, alternatif ödeme teyidi, teslimat, olay nedeni ve kapanış işareti; canlı ödeme/finans hesabı API'si yok",
+        "why_now": "12 Ekim The Register Yandex'ın Sasovo/Kaluga/Vladimir veri merkezlerine 7–9 Ekim saldırılarının ardından bulut ve ödeme hizmetlerinde kesinti yaşandığını, fintech yöneticisinin Telegram üzerinden paraların güvende olduğunu fakat hizmetlerin henüz açılmadığını bildirdiğini aktarıyor. Bu savaş hasarı raporu, bağımsız soruşturma ve kalıcı veri kaybı kanıtı değildir. E-ticaret ve perakendeciler için olay anında alternatif ödeme/eldeki işlemleri elle tutan uzlaşma kanıt masası uygun iş hipotezidir.",
+        "before_state": "Ödeme servisi kesintisinde bekleyen sipariş ve alternatif ödeme kanıtı WhatsApp/kâğıt içinde kaybolur",
+        "after_state": "Kesinti sonrası sipariş/ödeme eşleştirmesi ve insan teyitli çözüm bekleyen işlem raporu",
+        "canonical_source_urls": [
+          "https://www.theregister.com/security/2026/10/12/ukrainian-drone-strikes-on-yandex-datacenters-knock-cloud-and-payments-offline/5302577"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-05fd2c5119dfdaf4/001.json",
+  "valid_until": "2026-11-12T08:01:27Z"
+}
