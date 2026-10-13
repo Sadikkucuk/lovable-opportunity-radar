@@ -1,0 +1,30 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "a724b986272b4ede9f0719731ea77c0dfc6e7aae0b61c9d70b25443f6aa56289",
+  "decision": {
+    "article_key": "4566a5c31a55f3f4e7cf1a7c",
+    "decision": "opportunity",
+    "reason": "Semiconductor Engineering 12 Ekim 2026'da UF/UT Dallas/RPI BARE-AI arXiv:2610.08739 ön baskısını aktarıyor. AI accelerator runtime'da memory bit-flip fault injection etkilerinin performans sayacıyla tespiti iddia ediliyor; henüz ticari donanım standardı, doğrulanmış üretim ürünü değil. Donanım laboratuvarının dışa aktardığı bit flip test vakaları, baseline, sonuç, istisna ve test kapsama kanıtını manuel arayüzde yönetmek farklı iş hipotezidir; algılama algoritmasını tarayıcıda çalıştırdığı iddia edilmez.",
+    "canonical_source_url": "https://semiengineering.com/on-chip-monitors-detect-bit-flip-attacks-in-ai-accelerators-uf-ut-dallas-rpi/",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-db252c5113c9b23c:4566a5c31a55f3f4e7cf1a7c:01",
+        "idea_name": "AI Accelerator Fault-Injection Evidence Ledger",
+        "canonical_key": "ai-accelerator-chip-validation-labs|organize-bitflip-fault-detection-and-mitigation-test-coverage|scenario-counter-baseline-anomaly-and-signoff-ledger",
+        "target_customer": "AI hızlandırıcı yonga tasarım laboratuvarlarının donanım doğrulama ve güvenlik test ekipleri",
+        "core_job": "Bit-flip fault injection araştırma testlerinde deney konfigürasyonu, performans sayacı baseline, kritik çıktı sapması ve düzeltme sonucunu test sürümüne bağlamak",
+        "product_mechanism": "Kullanıcının dışa aktardığı test/çıktı CSV, hata tipi, bellek bölgesi, sayaç değeri, yanlış cevap ve tespit/kurtarma ölçütü; tarayıcı JS tabanlı tolerans/coverage matrisi; hiçbir donanım sistemine bağlanmaz",
+        "why_now": "Semiconductor Engineering 12 Ekim 2026'da UF/UT Dallas/RPI BARE-AI arXiv:2610.08739 ön baskısını aktarıyor. AI accelerator runtime'da memory bit-flip fault injection etkilerinin performans sayacıyla tespiti iddia ediliyor; henüz ticari donanım standardı, doğrulanmış üretim ürünü değil. Donanım laboratuvarının dışa aktardığı bit flip test vakaları, baseline, sonuç, istisna ve test kapsama kanıtını manuel arayüzde yönetmek farklı iş hipotezidir; algılama algoritmasını tarayıcıda çalıştırdığı iddia edilmez.",
+        "before_state": "Arızaya dayanıklılık deneyleri farklı scripts/EDA loglarında karşılaştırılamıyor; araştırma prototip sonucu üretim standardı sanılabilir",
+        "after_state": "Donanım/test konfigürasyonuna göre gözlenmiş performans farkı, eksik saldırı kapsamı, kanıt URL ve insan imzası raporu; BARE-AI algılama algoritmasını uygulamaz",
+        "canonical_source_urls": [
+          "https://semiengineering.com/on-chip-monitors-detect-bit-flip-attacks-in-ai-accelerators-uf-ut-dallas-rpi/"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-db252c5113c9b23c/001.json",
+  "valid_until": "2026-11-12T16:24:26Z"
+}
