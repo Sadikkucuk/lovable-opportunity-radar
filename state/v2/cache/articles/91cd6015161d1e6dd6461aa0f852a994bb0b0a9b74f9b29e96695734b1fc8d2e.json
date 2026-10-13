@@ -1,0 +1,43 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "91cd6015161d1e6dd6461aa0f852a994bb0b0a9b74f9b29e96695734b1fc8d2e",
+  "decision": {
+    "article_key": "c6f59f62552535bc4a16e2f1",
+    "decision": "opportunity",
+    "reason": "11 Ekim tarihli Economic Daily yazısının People's Daily'deki kopyası; robotların ölçekli kullanımı için veri kalitesi, simülasyon-gerçek ortam farkı ve farklı veri biçimlerinin birlikte kullanım güçlüğü açıklanıyor. Bir veri seti kontrol/normalizasyon aracı makul ürün hipotezidir. People's Daily sayfasının tam metin çağrısında 502 oldu; arama sonucu ilk bölüm ve yayın kaydı okunabildi, bu sınırlama korunmuştur.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-43d3b526fc-discovery-06c3407074493982:c6f59f62552535bc4a16e2f1:01",
+        "idea_name": "Robot Veri Seti Uyumluluk Denetçisi",
+        "canonical_key": "robotics-test-teams|normalize-and-assess-robot-task-data|schema-conformance-drift-and-coverage-validator",
+        "target_customer": "Robotik test ve veri ekipleri",
+        "buyer": "Veri kalitesi lideri",
+        "core_job": "Farklı robot deneme verilerinin şema ve kapsam tutarlılığını ölçmek",
+        "product_mechanism": "Yüklenmiş CSV/JSON içinde alan eşlemesi, birim farkı ve kapsama kuralları",
+        "why_now": "Robot eğitim verisinde format/kalite tutarsızlıkları",
+        "before_state": "Dağınık kaynaklardan gelen test dosyalarının elle incelenmesi",
+        "after_state": "Tekrarlanabilir şema/kapsama kontrol raporları",
+        "scope_hint": "Dünya",
+        "canonical_source_urls": [
+          "https://finance.people.com.cn/n1/2026/1011/c1004-40812286.html"
+        ],
+        "supporting_article_ids": [
+          "62ecba201e451f0fd4084877"
+        ],
+        "source_observations": [
+          {
+            "url": "https://finance.people.com.cn/n1/2026/1011/c1004-40812286.html",
+            "observed_at": "2026-10-13T04:28:38.650Z",
+            "observation": "People.com üzerindeki haber arama önizlemesindeki veri formatı sorunları görüldü; 502 tam metin erişim sınırlaması var.",
+            "evidence_strength": "partial"
+          }
+        ],
+        "local_scope_evidence": null
+      }
+    ],
+    "canonical_source_url": "https://finance.people.com.cn/n1/2026/1011/c1004-40812286.html",
+    "source_notes": "People.com üzerindeki haber arama önizlemesindeki veri formatı sorunları görüldü; 502 tam metin erişim sınırlaması var."
+  },
+  "receipt_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-06c3407074493982/001.json",
+  "valid_until": "2026-11-12T04:28:38Z"
+}

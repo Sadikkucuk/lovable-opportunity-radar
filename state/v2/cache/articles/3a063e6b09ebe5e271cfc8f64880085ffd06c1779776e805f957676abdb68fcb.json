@@ -1,0 +1,43 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "3a063e6b09ebe5e271cfc8f64880085ffd06c1779776e805f957676abdb68fcb",
+  "decision": {
+    "article_key": "c8fa1942bdeed41e359d0f90",
+    "decision": "opportunity",
+    "reason": "8 Ekim özgün Çin elektronik bileşen analizinin metni okundu; bazı TI, TDK ve ST bileşenlerinin arz/fiyat değişimleri, ICM-42688-P örneği ve farklı fiyat teklifleri anlatılıyor. Canlı fiyat API'si olmadan elle yüklenen BOM-teklif dosyalarını karşılaştırma ayrı bir satın alma işidir.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-43d3b526fc-discovery-06c3407074493982:c8fa1942bdeed41e359d0f90:01",
+        "idea_name": "Elektronik BOM Teklif Sapma Kontrolü",
+        "canonical_key": "electronics-procurement-teams|reconcile-component-quote-price-dispersion|bom-quote-normalization-and-exception-review",
+        "target_customer": "Elektronik üreticilerinin satın alma ekipleri",
+        "buyer": "Satın alma müdürü",
+        "core_job": "Parça bazında fiyat farklılığı, tedarik riski ve teklif sapmasını karşılaştırmak",
+        "product_mechanism": "Manuel CSV BOM/tedarikçi tekliflerini parça numarasına göre eşleyen kontrolcü",
+        "why_now": "Bazı çiplerde fiyat oynaklığı ve farklı tedarikçi teklifleri",
+        "before_state": "E-posta teklifleri ve farklı kodlamalı Excel dosyaları",
+        "after_state": "Normalleştirilmiş fiyat karşılaştırma ve kontrol istisnaları",
+        "scope_hint": "Dünya",
+        "canonical_source_urls": [
+          "https://www.eet-china.com/mp/a529277.html"
+        ],
+        "supporting_article_ids": [
+          "c34a0d078a81599fdf166fba"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.eet-china.com/mp/a529277.html",
+            "observed_at": "2026-10-13T04:28:38.650Z",
+            "observation": "8 Ekim EET-China özgün teknik pazar haberi okundu; fiyatlar üçüncü taraf göstergesi.",
+            "evidence_strength": "source_read"
+          }
+        ],
+        "local_scope_evidence": null
+      }
+    ],
+    "canonical_source_url": "https://www.eet-china.com/mp/a529277.html",
+    "source_notes": "8 Ekim EET-China özgün teknik pazar haberi okundu; fiyatlar üçüncü taraf göstergesi."
+  },
+  "receipt_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-06c3407074493982/001.json",
+  "valid_until": "2026-11-12T04:28:38Z"
+}
