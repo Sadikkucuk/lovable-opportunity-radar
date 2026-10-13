@@ -1,0 +1,164 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-1995552b0b7edba3",
+  "input_hash": "1995552b0b7edba3bd988e17a1a60a431a23d085329df4cbc3f0053f4e46f1bb",
+  "token": "e3027b6e-8207-470b-b6fe-cba7bc965d8a",
+  "finished_at": "2026-10-13T04:45:11.953Z",
+  "outcome": "done",
+  "reason": "Tetikleyici kaynak ve 4 global doğrudan rakip doğrulandı; politikada en fazla 3 sınırı aşıldığından candidate rejected. Türkiye direct sayısı belirsiz olarak null.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Özgün 9 Ekim 2026 Ars Technica tetikleyicisi doğrulandı. FeatureFlow Ledger'ın hedeflediği issue/PR/review/rework ve AI'ye bağlı gerçek teslimat etkisi işi dünya pazarında en az dört doğrudan ürünce (Jellyfish, Swarmia, LinearB, DX) sağlanıyor. Radar v2 global maksimum 3 doğrudan rakip koşulu karşılanmadığından REJECTED. Türkiye'deki doğrudan rakip sayısı araştırma derinliği yetersizliğinden null bırakıldı; ret için evrensel TR sıfır iddiası gerekmiyor. 91 kayıtlı katalog/geçmiş içinde birebir aynı anahtar bulunmadı. Harici servis olmaksızın elle CSV karşılaştırması teknik olarak mümkün fakat kapsam/kalite sınırı var.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+        "accessed_at": "2026-10-13T04:45:11.953Z",
+        "claim": "AI coding agents kod/PR üretimini artırsa da issue kapanışı ve kod inceleme darboğazı benzer oranla iyileşmeyebilir",
+        "observation": "9 Ekim Ars Technica yazısında Chen & Stratton/Jellyfish çalışma sonuçları: ~700 firma, 2026 Mart'a kadar analiz; kod satırları +30%, PR +23%, review süresi +49%, issue/epic kapanışında istatistiksel anlamlı artış yok. Gözlemsel bulgudur; bugünkü her ekip için garanti değildir.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://useworktivity.com/tr/blog/haberler-trendler/yazilimcilar-icin-verimlilik-olcutleri-neyi-izlemeli",
+        "accessed_at": "2026-10-13T04:45:11.953Z",
+        "claim": "Türkiye dilinde çalışan verimliliği ölçüm araçları mevcut, tam kaynaklara dayanarak TR 0 rakip sonucu yapılamaz",
+        "observation": "Worktivity makalesi cycle time, deploy frequency ve kalite ölçümü anlatıyor; şirketlerin yerli doğrudan ürün kökeni ve FeatureFlow aynı üçlü iş akışı daha ileri araştırılmadı.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://jellyfish.co/newsroom/jellyfish-reveals-ais-real-impact-on-engineering-teams/",
+        "accessed_at": "2026-10-13T04:45:11.953Z",
+        "claim": "Jellyfish AI Impact AI destekli yazılım etkinliklerini teslimat sonucuyla karşılaştırır",
+        "observation": "Engineering executive için AI kullanımının kod/PR aktivitesi, Jira issue/çıktı ve review darboğazına etkisini ilişkilendiren ölçüm platformu",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.swarmia.com/developer-productivity-insights-platform/",
+        "accessed_at": "2026-10-13T04:45:11.953Z",
+        "claim": "Swarmia AI Impact AI destekli yazılım etkinliklerini teslimat sonucuyla karşılaştırır",
+        "observation": "CTO'ya AI etkisini biten user story ve PR, maliyet/iş birimi, inceleme kuyruğu ve issue ilerlemesiyle birlikte gösteren mühendislik istihbaratı aracı",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://linearb.io/platform/ai-developer-productivity-insights",
+        "accessed_at": "2026-10-13T04:45:11.953Z",
+        "claim": "LinearB AI & Developer Productivity AI destekli yazılım etkinliklerini teslimat sonucuyla karşılaştırır",
+        "observation": "Kod aktivitesi, AI destekli PR, cycle time, bug/refactor ve teslim edilen iş metriklerinin ekibe/ürüne etkisini birlikte raporluyor",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://docs.getdx.com/reports/ai-impact/",
+        "accessed_at": "2026-10-13T04:45:11.953Z",
+        "claim": "DX AI Impact AI destekli yazılım etkinliklerini teslimat sonucuyla karşılaştırır",
+        "observation": "AI benimsenmesinin Jira/Linear issue -> PR -> review -> deployment yaşam döngüsü ve mühendislik maliyetine etkisini karşılaştırıyor",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "queries": [
+          "Türkçe yazılım ekibi issue PR cycle time AI verimlilik ürün Türkiye",
+          "yerli yazılım mühendisliği analitiği Jira pull request üretkenlik AI",
+          "Türkiye developer productivity intelligence yazılımı issue flow metrikleri"
+        ],
+        "scope": "Türkiye menşeli yazılım geliştirme üretkenliği/AI etkisi ürünleri için 13 Ekim 2026 sınırlı Türkçe tarama; tam/sonuçlandırılmış doğrudan rakip sayımı yok.",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_competitors": [
+          {
+            "name": "Worktivity",
+            "url": "https://useworktivity.com/tr/blog/haberler-trendler/yazilimcilar-icin-verimlilik-olcutleri-neyi-izlemeli",
+            "reason": "Türkçe verimlilik analizi var; tam aynı engineering delivery ürünü kanıtlanmadı"
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 4,
+        "queries": [
+          "AI engineering analytics PR issue throughput impact",
+          "Swarmia AI impact shipped user stories vs pull request",
+          "LinearB AI metrics delivery cycle time rework",
+          "DX AI impact Jira issue lifecycle",
+          "Jellyfish AI Impact engineering delivery outcomes"
+        ],
+        "scope": "13 Ekim 2026 tarihinde ürün geliştiricilerinin resmi AI engineering-impact sayfalarında PR review, issue/feature delivery ve kod kalite/AI etkinlik metriklerinin değerlendirilmesi; en az dört aynı iş akışı",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "Jellyfish AI Impact",
+            "url": "https://jellyfish.co/newsroom/jellyfish-reveals-ais-real-impact-on-engineering-teams/",
+            "same_customer_job_workflow_reason": "Engineering executive için AI kullanımının kod/PR aktivitesi, Jira issue/çıktı ve review darboğazına etkisini ilişkilendiren ölçüm platformu",
+            "primary": true
+          },
+          {
+            "name": "Swarmia AI Impact",
+            "url": "https://www.swarmia.com/developer-productivity-insights-platform/",
+            "same_customer_job_workflow_reason": "CTO'ya AI etkisini biten user story ve PR, maliyet/iş birimi, inceleme kuyruğu ve issue ilerlemesiyle birlikte gösteren mühendislik istihbaratı aracı",
+            "primary": true
+          },
+          {
+            "name": "LinearB AI & Developer Productivity",
+            "url": "https://linearb.io/platform/ai-developer-productivity-insights",
+            "same_customer_job_workflow_reason": "Kod aktivitesi, AI destekli PR, cycle time, bug/refactor ve teslim edilen iş metriklerinin ekibe/ürüne etkisini birlikte raporluyor",
+            "primary": true
+          },
+          {
+            "name": "DX AI Impact",
+            "url": "https://docs.getdx.com/reports/ai-impact/",
+            "same_customer_job_workflow_reason": "AI benimsenmesinin Jira/Linear issue -> PR -> review -> deployment yaşam döngüsü ve mühendislik maliyetine etkisini karşılaştırıyor",
+            "primary": true
+          }
+        ],
+        "adjacent_competitors": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Tek kullanıcı/ekip web arayüzü: Jira issue ve GitHub/GitLab PR CSV dosyalarını tarayıcı File API ile alır, ID/tarih bağlantıları ve manuel AI-bölüm bayrağı ile cycle time/rework/issue kapanma sayısı hesaplar; grafik ve CSV rapor dışa aktarır. Otomatik Jira/GitHub API entegrasyonu, bulut veri tabanı, AI model ve eşzamanlı kullanıcı senkronizasyonu kapsam dışında bırakılır.",
+      "dependency_inventory": [
+        "Tarayıcı JavaScript File API",
+        "Kullanıcı tarafından dışa aktarılmış Jira/PR CSV girdileri",
+        "Yerel tarayıcı hesaplama ve rapor indirme",
+        "Domain ve hosting (ayrı maliyet)"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "91 tarih/katalog kaydı `canonical_key`, hedef alıcı-iş-mekanizma karşılaştırması yapıldı; birebir aynı üçlü anahtar bulunamadı, fakat global doğrudan pazar rekabeti gerekçesiyle reddedildi."
+    },
+    "research_attempts": [
+      {
+        "queries": [
+          "Türkçe yazılım ekibi issue PR cycle time AI verimlilik ürün Türkiye",
+          "yerli yazılım mühendisliği analitiği Jira pull request üretkenlik AI",
+          "Türkiye developer productivity intelligence yazılımı issue flow metrikleri"
+        ],
+        "observation": "TR yerli ürün eşleşmesi kesinleşmedi: tr.direct_count=null"
+      },
+      {
+        "queries": [
+          "AI engineering analytics PR issue throughput impact",
+          "Swarmia AI impact shipped user stories vs pull request",
+          "LinearB AI metrics delivery cycle time rework",
+          "DX AI impact Jira issue lifecycle",
+          "Jellyfish AI Impact engineering delivery outcomes"
+        ],
+        "observation": "4 global doğrudan ürünün resmi sayfaları okundu"
+      }
+    ]
+  }
+}
