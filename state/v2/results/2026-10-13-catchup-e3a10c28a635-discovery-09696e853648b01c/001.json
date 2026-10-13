@@ -1,0 +1,111 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-09696e853648b01c",
+  "input_hash": "09696e853648b01c4624bfcd96c4eea6bbd58d9a2d8b00b024bd799aeb6c8c00",
+  "token": "5a72d855-7d8d-442f-855b-8d34cac2e532",
+  "finished_at": "2026-10-13T05:19:06.059Z",
+  "outcome": "done",
+  "reason": "10 haberin tümü ayrı değerlendirildi: 1 ham tedarik fırsatı, 7 no_opportunity, 2 unverified özgün kaynağı erişilemeyen içerik. 2026-08-20 TechCrunch etkinlik tanıtımı yeni olay sayılmadı.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "f009bc9c84151c4c356ad85b",
+        "decision": "opportunity",
+        "reason": "10 Ekim Eastmoney'deki Eylül 2026 bileşen piyasası yazısı ileri HBM/MLCC/MCU arz baskısı, bazı kalemlerde 52 haftaya uzayan teslim ve parça bazlı fiyat ayrışmasını anlatıyor. Orijinal EET-China tam metni doğrulanamadı; fiyatlar doğrulanmış spot quote değildir. Elektronik üreticisinin elle girilen teklif ve BOM verileriyle ikame/lead-time riskini kıyaslaması somut JTBD.",
+        "canonical_source_url": "https://caifuhao.eastmoney.com/news/20261010135518397529010",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-09696e853648b01c:f009bc9c84151c4c356ad85b:01",
+            "idea_name": "Elektronik Bileşen Arz Risk Matrisi",
+            "canonical_key": "electronics-sme-procurement|prioritize-long-lead-components-and-alternates|manual-bom-supplier-leadtime-and-quote-risk-matrix",
+            "target_customer": "Elektronik üreticilerin satın alma ve planlama ekipleri",
+            "buyer": "Satın alma planlama müdürü",
+            "core_job": "Parça bazında tedarik süreleri, teklif geçerliliği ve ikame riskini farklı tedarikçilerden kıyaslamak",
+            "product_mechanism": "Kullanıcı CSV BOM, parça fiyatı, onaylı ikame, stok ve ETA verileriyle kurallı uyarı sıralaması",
+            "why_now": "2026 Eylül elektronik parçalarında AI kaynaklı üretim önceliklendirmesi ve fiyat/ETA ayrışması",
+            "before_state": "Farklı teklif Excel'leri ve manuel eposta teslim süreleri",
+            "after_state": "Riskli parça sıralaması, alternatif koşullar ve teslim gecikmesi senaryosu",
+            "scope_hint": "Dünya",
+            "canonical_source_urls": [
+              "https://caifuhao.eastmoney.com/news/20261010135518397529010"
+            ],
+            "supporting_article_ids": [
+              "33d7e5a9a73457f18c184a49"
+            ],
+            "source_observations": [
+              {
+                "url": "https://caifuhao.eastmoney.com/news/20261010135518397529010",
+                "observed_at": "2026-10-13T05:19:06.059Z",
+                "observation": "10 Ekim Eastmoney'deki Eylül 2026 bileşen piyasası yazısı ileri HBM/MLCC/MCU arz baskısı, bazı kalemlerde 52 haftaya uzayan teslim ve parça bazlı fiyat ayrışmasını anlatıyor. Orijinal EET-China tam metni doğrulanamadı; fiyatlar doğrulanmış spot quote değildir. Elektronik üreticisinin elle girilen teklif ve BOM verileriyle ikame/lead-time riskini kıyaslaması somut JTBD.",
+                "verification_scope": "secondary_full_article"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "f029c67adb05423e50c558e2",
+        "decision": "no_opportunity",
+        "reason": "9 Ekim Bloomberg özgün finansman haberi Ramp'ın yaklaşık 60 milyar USD değere dayalı 1,85 milyar USD tur görüşmelerini/sonucunu aktarıyor. Yeni uygulama API veya erişim sağlanmıyor; halihazırdaki harcama yazılımı yeni benzersiz ürün gereği oluşturmuyor.",
+        "canonical_source_url": "https://www.bloomberg.com/news/articles/2026-10-09/ramp-hits-60-billion-valuation-in-1-85-billion-funding-round",
+        "opportunities": []
+      },
+      {
+        "article_key": "f057dc25a2ab3ef7a40ba3d9",
+        "decision": "no_opportunity",
+        "reason": "DealStreetAsia listesi Prashanth Fertility'nin stratejik yatırımcılarla fon toplama görüşmelerini doğruluyor, ancak tam görüşme maddeleri ve yeni yazılım talebi kanıtı erişilemedi. Finansman görüşmesi başlı başına yeni müşteri/iş akışı doğurmuyor.",
+        "canonical_source_url": "https://media.dealstreetasia.com/sectors/financial-services",
+        "opportunities": []
+      },
+      {
+        "article_key": "f05b07581bf55777725fa2f8",
+        "decision": "no_opportunity",
+        "reason": "İtalya sanayi temsilcisinin Rus doğal gazı arzına yönelik görüşü; uygulanmış fiyat, kontrat veya bağlayıcı mevzuat kaynak belgesi bulunmadı. Dış canlı enerji veri servisi olmadan özgün yeni operasyonel tetikleyici teyit edilmedi.",
+        "canonical_source_url": "https://www.ilsole24ore.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "f061e5145f9822244ca8ba4e",
+        "decision": "unverified",
+        "reason": "Nikkei xTECH 'specification-driven development' makalesi başlık ve RSS düzeyinde tespit edildi; orijinal gövde robots kısıtı nedeniyle okunamadı. Situational fit/adaptation hakkında teknik süreç çıkarımlarını kanıt varmış gibi yapmadık.",
+        "canonical_source_url": "https://xtech.nikkei.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "f06fa8ff01b8b2d4efbd4983",
+        "decision": "no_opportunity",
+        "reason": "JAC 12 Ekim ilk finans verisi/duyurusunda eylül elektrikli binek satışının 2.932, yıllık farkın -%18,85 olduğu görülüyor. Tek üretici satış raporu yeni bağımsız iş akışı veya dış hizmet değişikliği yaratmıyor.",
+        "canonical_source_url": "https://www.yicai.com/brief/103390126.html",
+        "opportunities": []
+      },
+      {
+        "article_key": "f07317049cdad221d0f547e6",
+        "decision": "no_opportunity",
+        "reason": "TechCrunch içeriği gerçekte 20 Ağustos 2026'da yayımlanan Disrupt 2026 etkinlik rehberi; 11 Ekim RSS tarihlemesi yeni gelişme değil, fuar promosyonu.",
+        "canonical_source_url": "https://techcrunch.com/2026/08/20/the-investors-guide-to-techcrunch-disrupt-2026-everything-you-need-to-know/",
+        "opportunities": []
+      },
+      {
+        "article_key": "f09fd9ea0f50a56564e5f6a0",
+        "decision": "no_opportunity",
+        "reason": "Eğitimde dijital ders kitapları ve AI'nın yasaklanması gerektiği yönündeki editoryal yorum; somut yürürlüğe konmuş yeni eğitim düzenlemesi doğrulanmadı. Öğretmenlere yazılım olanağı sonucu çıkarılmadı.",
+        "canonical_source_url": "https://asia.nikkei.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "f0c9e1ced8c84d92bf66a0b8",
+        "decision": "unverified",
+        "reason": "Gıda Türk başlıklı üretim hız/verimlilik haberinin orijinal gövdesine erişilemedi; somut fabrika, teknoloji, KPI, olay zamanı bağımsız doğrulanamadı. Yalnız sektör sloganından fırsat üretilmedi.",
+        "canonical_source_url": "https://gidaturk.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "f0d1a1780cd471a9a62b8131",
+        "decision": "no_opportunity",
+        "reason": "12 Ekim Ars Technica özgün ürün lansmanı, Fitbit Edge donanımını, Google Health ekosistemini ve 27 Ekim sevkini doğruluyor. Donanım veya Google verileriyle gerçek fayda için dış servise bağımlı olur; bağımsız deterministik B2B müşteri işi saptanmadı.",
+        "canonical_source_url": "https://arstechnica.com/gadgets/2026/10/google-announces-the-fitbit-edge-a-middle-ground-between-pixel-watch-5-and-fitbit-air/",
+        "opportunities": []
+      }
+    ]
+  }
+}
