@@ -1,0 +1,208 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-1486ef8bfefbf20a",
+  "input_hash": "1486ef8bfefbf20a549861a5803866dcb8a79cf05f26dd168c6addba6704fa71",
+  "token": "f11f177e-9d34-4a54-a16f-fa0c62436ad2",
+  "finished_at": "2026-10-13T04:34:44.202Z",
+  "outcome": "done",
+  "reason": "Bir Validation adayı trigger, TR/global rekabet, uygulanabilirlik ve 91 kayıt semantik geçmiş üzerinden doğrulandı. 5 doğrudan global rakip nedeniyle politika gereği rejected.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Özgün Ørsted olayı doğrulandı. Türkiye'de aynı risk/istisna denetim ürününe birebir rastlanmadı; yakın ticari uçuş kontrol araçları listelendi. Küresel kapsamda DroneLogbook, FlyFreely, Aloft, Dronedesk ve Unifly ürünlerinin aynı ticari operatör/görev emniyeti/risk kontrol listesi işini yaptığı ürün sayfalarından görüldü: en az 5 doğrudan rakip. Radar v2 global maksimum 3 koşulunu aştığı için qualified değil, REJECTED. Mevcut katalogda birebir aynı müşteri-iş-mekanizma anahtarı bulunmadı. Sadece tarayıcı/CSV ile dar sürüm yapılabilir; gerçek müşteri talebi doğrulanmış değil.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://orsted.co.uk/media/newsroom/news/2026/10/big-cargo-drones-deliver-toolkits-to-wind-turbines-in-the-north-sea",
+        "accessed_at": "2026-10-13T04:34:44.202Z",
+        "claim": "Ørsted Hornsea 2 offshore bakım lojistiği drone testi",
+        "observation": "7 Ekim 2026 tarihli Ørsted duyurusu: dört haftalık testte 55-65 kg bakım paketleri, operatör Skyports, hava/deniz koşulları koordinasyonu, BVLOS 4 km misyonu ve denetlenen emniyet gereksinimleri",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://www.dronbul.com.tr/drone-filo-yonetimi",
+        "accessed_at": "2026-10-13T04:34:44.202Z",
+        "claim": "Türkiye'de yerel drone filo yazılımı var",
+        "observation": "Dronbul Hangar uçuş defteri, bakım, ekip ve SHGM uyum belgelerini listeliyor; dar kapsamlı görev hava/risk istisna kontrol akışı aynı olarak doğrulanamadığı için adjacent",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://iharehber.com/rehber/76-hazir-kontrol-listeleri",
+        "accessed_at": "2026-10-13T04:34:44.202Z",
+        "claim": "Türkiye'de ticari drone pilotları için kontrol listeleri var",
+        "observation": "Ticari operasyon, uçuş öncesi, hava durumu/risk ve uçuş sonrası kontrol listeleri erişilebilir; kurumsal exception ledger doğrudan kanıtlanmadı",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.dronelogbook.com/hp/1/features.html",
+        "accessed_at": "2026-10-13T04:34:44.202Z",
+        "claim": "DroneLogbook aynı drone görev riski/kontrol listesi yazılımı işini sunuyor",
+        "observation": "Drone hizmet operatörlerinde görev planlama, özelleştirilmiş risk değerlendirme formları, checklist ve dokümantasyon doğrudan aynı amaç",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://flyfreely.io/features",
+        "accessed_at": "2026-10-13T04:34:44.202Z",
+        "claim": "FlyFreely aynı drone görev riski/kontrol listesi yazılımı işini sunuyor",
+        "observation": "Ticari drone operatörü SOP/mission workflow, görev onayı, versiyonlu risk assessment ve checklistler aynı uçuş güvenliği süreci",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.aloft.ai/feature/pre-flight-planning/",
+        "accessed_at": "2026-10-13T04:34:44.202Z",
+        "claim": "Aloft aynı drone görev riski/kontrol listesi yazılımı işini sunuyor",
+        "observation": "Kurumsal drone ekiplerinin merkezi checklistleri, uçuş/pilot risk profili, hava durumu ve görev onaylarını kapsıyor",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://help.dronedesk.io/en/articles/77-what-risk-assessment-formats-are-available",
+        "accessed_at": "2026-10-13T04:34:44.202Z",
+        "claim": "Dronedesk aynı drone görev riski/kontrol listesi yazılımı işini sunuyor",
+        "observation": "Ticari drone görevleri için tehlike tespiti, initial/residual risk ve risk sorumlusu atanmış uçuş görev formları sunuyor",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.unifly.aero/operator/",
+        "accessed_at": "2026-10-13T04:34:44.202Z",
+        "claim": "Unifly aynı drone görev riski/kontrol listesi yazılımı işini sunuyor",
+        "observation": "Ticari UAS operatörlerinin uçuş planı, hava durumu/deviation threshold, operasyon doğrulama ve emniyet iş akışlarını kapsıyor",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/File_API",
+        "accessed_at": "2026-10-13T04:34:44.202Z",
+        "claim": "Tarayıcı tabanlı kullanıcı CSV dosyası işlenmesi mümkündür",
+        "observation": "Tek kullanıcı için dosya yükleme, istemci JavaScript işlem, indirme/yerel saklama mimarisi zorunlu dış API/AI sunucusu gerektirmeyen teknik seçenektir; tam ticari ölçek maliyeti kanıtlanmış değildir",
+        "page_read": false,
+        "support": "context_only"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 0,
+        "queries": [
+          "Türkiye İHA drone filo operasyon yönetimi risk değerlendirme uçuş emniyet kontrol listesi yazılım",
+          "ticari drone uçuş risk checklist operasyon takip yazılım Türkiye",
+          "İHA Rehber ticari operasyon kontrol listesi uçuş öncesi sonrası risk değerlendirme",
+          "Dronbul Hangar drone filo operasyon yönetimi özellikleri",
+          "Spektrion REGIS mission planning checklists flight risk"
+        ],
+        "scope": "13 Ekim 2026 erişilebilir Türkiye ticarî drone yazılımı ve kontrol listesi ürün sayfalarının sınırlandırılmış araştırması; tam pazar yokluğu iddia edilmez",
+        "search_complete": true,
+        "direct_competitors": [],
+        "adjacent_competitors": [
+          {
+            "name": "İHA Rehber",
+            "url": "https://iharehber.com/rehber/76-hazir-kontrol-listeleri",
+            "reason": "Ticari uçuşlar ve risk değerlendirmesi için interaktif kontrol listeleri var; kurumsal görev istisnalarının onay/kanıt defteri ürün kapsamı açıkça gösterilmiyor"
+          },
+          {
+            "name": "Dronbul Hangar",
+            "url": "https://www.dronbul.com.tr/drone-filo-yonetimi",
+            "reason": "Türkiye'de ticari operatörlere filo, bakım, uçuş defteri ve SHGM kayıtları sunuyor; tanımlı görev bazlı meteoroloji risk/misyon istisna kontrolü aynı iş akışı olarak doğrulanmadı"
+          },
+          {
+            "name": "Spektrion REGIS",
+            "url": "https://spektrion.com/regis/",
+            "reason": "Görev uçuş planlama ve telemetri var; form tabanlı risk/istisna onayı sayfada görünmüyor"
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 5,
+        "queries": [
+          "drone mission safety risk assessment weather deviations checklist software",
+          "DroneLogbook mission risk checklists",
+          "FlyFreely risk assessment checklists drone operations",
+          "Aloft preflight flight risk assessment checklists",
+          "Dronedesk drone flight risk hazard mitigation documentation",
+          "Unifly drone operator risk assessment mission planning"
+        ],
+        "scope": "13 Ekim 2026 dünya geneli İngilizce drone service provider görev güvenliği ve risk checklist yazılımı; en az 5 somut ürün",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "DroneLogbook",
+            "url": "https://www.dronelogbook.com/hp/1/features.html",
+            "same_customer_job_workflow_reason": "Drone hizmet operatörlerinde görev planlama, özelleştirilmiş risk değerlendirme formları, checklist ve dokümantasyon doğrudan aynı amaç"
+          },
+          {
+            "name": "FlyFreely",
+            "url": "https://flyfreely.io/features",
+            "same_customer_job_workflow_reason": "Ticari drone operatörü SOP/mission workflow, görev onayı, versiyonlu risk assessment ve checklistler aynı uçuş güvenliği süreci"
+          },
+          {
+            "name": "Aloft",
+            "url": "https://www.aloft.ai/feature/pre-flight-planning/",
+            "same_customer_job_workflow_reason": "Kurumsal drone ekiplerinin merkezi checklistleri, uçuş/pilot risk profili, hava durumu ve görev onaylarını kapsıyor"
+          },
+          {
+            "name": "Dronedesk",
+            "url": "https://help.dronedesk.io/en/articles/77-what-risk-assessment-formats-are-available",
+            "same_customer_job_workflow_reason": "Ticari drone görevleri için tehlike tespiti, initial/residual risk ve risk sorumlusu atanmış uçuş görev formları sunuyor"
+          },
+          {
+            "name": "Unifly",
+            "url": "https://www.unifly.aero/operator/",
+            "same_customer_job_workflow_reason": "Ticari UAS operatörlerinin uçuş planı, hava durumu/deviation threshold, operasyon doğrulama ve emniyet iş akışlarını kapsıyor"
+          }
+        ],
+        "adjacent_competitors": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Tek kullanıcılı Lovable ile üretilen tarayıcı web arayüzü. Görev, pilot, meteoroloji gözlemi, risk skoru ve istisna kayıtları kullanıcı tarafından formlarla veya lokal CSV import ile girilir; JS kuralları değerlendirilir; JSON/CSV/PDF tarayıcı dışa aktarımı yapılır. Kalıcı çoklu kullanıcı bulut senkronizasyonu bu sürüme dahil değildir. Uçuş meteoroloji gerçek zaman verisi/NOTAM API'si yoktur.",
+      "dependency_inventory": [
+        "Web tarayıcısı JS runtime",
+        "Kullanıcının sağladığı CSV/JSON ya da manuel girdi",
+        "Tarayıcı File API ve yerel depolama/indirilebilir dosya",
+        "Domain/hosting (hesaplaması ayrıca gerekli)"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "91 kayıt katalog/geçmişi semantik olarak karşılaştırıldı. Safety Action Ledger/Autonomous Fleet Ready gibi komşu projeler mevcut, fakat uçuş operatörünün görev öncesi hava ve uçuş risk istisnası kontrolüyle üçlü aynı iş tanımlı fikir bulunmadı."
+    },
+    "research_attempts": [
+      {
+        "query": [
+          "Türkiye İHA drone filo operasyon yönetimi risk değerlendirme uçuş emniyet kontrol listesi yazılım",
+          "ticari drone uçuş risk checklist operasyon takip yazılım Türkiye",
+          "İHA Rehber ticari operasyon kontrol listesi uçuş öncesi sonrası risk değerlendirme",
+          "Dronbul Hangar drone filo operasyon yönetimi özellikleri",
+          "Spektrion REGIS mission planning checklists flight risk"
+        ],
+        "observation": "İHA Rehber, Dronbul, REGIS: adjacent, tam kapsam birebir teyitsiz"
+      },
+      {
+        "query": [
+          "drone mission safety risk assessment weather deviations checklist software",
+          "DroneLogbook mission risk checklists",
+          "FlyFreely risk assessment checklists drone operations",
+          "Aloft preflight flight risk assessment checklists",
+          "Dronedesk drone flight risk hazard mitigation documentation",
+          "Unifly drone operator risk assessment mission planning"
+        ],
+        "observation": "Aynı iş akışını kapsayan 5 ürünün resmi özellik sayfaları incelendi"
+      }
+    ]
+  }
+}
