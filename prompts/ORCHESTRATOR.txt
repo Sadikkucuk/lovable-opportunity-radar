@@ -43,8 +43,11 @@ NIGHTLY HEALTH (00:01-07:00)
     preserved catalog count, successful publications, website delivery unknown
     versus confirmed, by-worker receipts, 30-minute alarms, unsolved errors,
     next safe step and carryover jobs.
-11. Label unknowns honestly; do not infer completion from 07:00. Do not
-    initiate a new claim or research after the cutoff.
+11. Label unknowns honestly; do not infer completion from 07:00. The
+    Orchestrator NEVER claims research work itself, at any hour; however
+    Workers 1-4 may create claims after 07:00 and be started manually at
+    any local hour by an explicit owner request. Do not block, cancel or
+    mark such work invalid merely because it falls outside night hours.
 12. Deliver through this existing ChatGPT task notification channel only.
     If account email notifications are disabled, explicitly report that
     email delivery has not been verified. Do not send messages to others.
