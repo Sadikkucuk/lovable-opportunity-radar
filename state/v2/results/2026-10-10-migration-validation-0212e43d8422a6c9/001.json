@@ -1,0 +1,136 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-0212e43d8422a6c9",
+  "input_hash": "0212e43d8422a6c9b201c3a73d1c63e3dfa7d8ab2322e62c982ee481088e7097",
+  "token": "27d975e2-d8ab-4d7d-997c-636194c5fc8e",
+  "finished_at": "2026-10-13T19:44:13.884Z",
+  "outcome": "done",
+  "reason": "Robot Teleoperation Data QA: 4 doğrulanmış global doğrudan rakip, 91 katalogla semantik kontrol, sıfır harici servis MVP varsayımları ve TR sayım belirsizliği sonrası rejected.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Bu adayın alıcısı robotik veri seti sağlayıcısı veri operasyon yöneticisi, temel işi insan teleoperasyon gösterimi bölümleme/etiketleme kalitesini inceleme→red ve tekrar eğitim/toplama kuyruğuna alma. Encord, SuperAnnotate, Scale AI ve Labelbox'ın resmi kaynaklarında aynı veri operasyon dizisini işleten dört global doğrudan alternatif doğrulandı. Bu, global en fazla üç rakip sınırını aşıyor; otomatik kalite onayı verilmedi ve rejected. Türkiye'de sıfır rakip olduğuna dair kanıt yoktur. Kaynak haber önceki job'da full doğrulanmış; bu oturumdaki Huxiu erişimi timeout olduğu için kaynağın yeniden okunabildiği iddia edilmiyor.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.huxiu.com/article/4896039.html",
+        "accessed_at": "2026-10-13T19:44:13.884Z",
+        "claim": "Robot teleoperation/UMI/egocentric veri toplama operatörlerinde kalite ve tekrar işleme problemi",
+        "observation": "İşin değişmez başvuru dosyasındaki verification=full ve özgün Huxiu raporu başlığına dayanıyor. Bu oturumda özgün sayfaya web erişimi zaman aşımı verdi; yeni full-read iddiası bulunmuyor.",
+        "page_read": false,
+        "support": "job_previous_full_verification"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://encord.com/physical-ai-data/",
+        "accessed_at": "2026-10-13T19:44:13.884Z",
+        "claim": "Encord Physical AI Data robot demonstration verisini toplayıp QC/anotasyon/geri besleme aşamalarında işliyor",
+        "observation": "Robotik ekiplerinin teleoperasyon verisini toplama, ham senkronize çoklu sensör kayıtlarını düzenleme, kalitesini/QC kontrol edip anotasyon→eğitim/değerlendirme için geri besleme döngüsüne alma.",
+        "page_read": true,
+        "support": "official_vendor_documentation"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.superannotate.com/robotics",
+        "accessed_at": "2026-10-13T19:44:13.884Z",
+        "claim": "SuperAnnotate Robotics robot demonstration verisini toplayıp QC/anotasyon/geri besleme aşamalarında işliyor",
+        "observation": "Teleop episode → uzman etiketleme/başarı-kurtarma-arıza derecelendirme → kalite kapısı ve yeniden toplama/retrain hedefi iş akışını doğrudan sunuyor.",
+        "page_read": true,
+        "support": "official_vendor_documentation"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://scale.com/blog/physical-ai",
+        "accessed_at": "2026-10-13T19:44:13.884Z",
+        "claim": "Scale AI Data Engine for Physical AI robot demonstration verisini toplayıp QC/anotasyon/geri besleme aşamalarında işliyor",
+        "observation": "Robot kontrol gösterim verisini toplar, yapı/aksiyon etiketler, çoklu doğrulama ve yararlı veriyi eğitime alma kalite sürecini idare eder; robotik data-ops aynı temel işi yapar.",
+        "page_read": true,
+        "support": "official_vendor_documentation"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://labelbox.com/",
+        "accessed_at": "2026-10-13T19:44:13.884Z",
+        "claim": "Labelbox Terra Robotics Data robot demonstration verisini toplayıp QC/anotasyon/geri besleme aşamalarında işliyor",
+        "observation": "Teleoperated demonstration toplama, robotik veri kontrolü/uzman değerlendirmesi, model training ve evaluation ortamlarına katma zincirini aynı müşteri ekibi için sunar.",
+        "page_read": true,
+        "support": "official_vendor_documentation"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "search_complete": false,
+        "queries": [
+          "Türkiye robot teleoperasyon veri etiketleme kalite kontrol platform",
+          "Türkiye robotics dataset annotation review software",
+          "teleoperasyon robot veri kalite kontrol yazılım Türkiye"
+        ],
+        "scope": "Türkiye merkezli robot teleop annotation/QC SaaS sağlayıcıları; kesin sayım tamamlanmadı.",
+        "direct_competitors": []
+      },
+      "global": {
+        "direct_count": 4,
+        "search_complete": true,
+        "queries": [
+          "robot teleoperation dataset QC annotation rejection retraining SaaS platform",
+          "Encord SuperAnnotate Scale Labelbox robot demonstration data QA"
+        ],
+        "scope": "Robot data ops ekiplerinin teleop/human demonstration segment/annotate/QC/rework→training readiness süreçleri",
+        "direct_competitors": [
+          {
+            "name": "Encord Physical AI Data",
+            "url": "https://encord.com/physical-ai-data/",
+            "same_customer_job_workflow_reason": "Robotik ekiplerinin teleoperasyon verisini toplama, ham senkronize çoklu sensör kayıtlarını düzenleme, kalitesini/QC kontrol edip anotasyon→eğitim/değerlendirme için geri besleme döngüsüne alma."
+          },
+          {
+            "name": "SuperAnnotate Robotics",
+            "url": "https://www.superannotate.com/robotics",
+            "same_customer_job_workflow_reason": "Teleop episode → uzman etiketleme/başarı-kurtarma-arıza derecelendirme → kalite kapısı ve yeniden toplama/retrain hedefi iş akışını doğrudan sunuyor."
+          },
+          {
+            "name": "Scale AI Data Engine for Physical AI",
+            "url": "https://scale.com/blog/physical-ai",
+            "same_customer_job_workflow_reason": "Robot kontrol gösterim verisini toplar, yapı/aksiyon etiketler, çoklu doğrulama ve yararlı veriyi eğitime alma kalite sürecini idare eder; robotik data-ops aynı temel işi yapar."
+          },
+          {
+            "name": "Labelbox Terra Robotics Data",
+            "url": "https://labelbox.com/",
+            "same_customer_job_workflow_reason": "Teleoperated demonstration toplama, robotik veri kontrolü/uzman değerlendirmesi, model training ve evaluation ortamlarına katma zincirini aynı müşteri ekibi için sunar."
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Kullanıcının LeRobot/RLDS/HDF5'ten önceden oluşturduğu CSV metadata ve episode manifest verisi tarayıcıya yüklenir. Dosya adı, timestamp, frame/sensor completeness, success/failure, reviewer, reject reason ve rework queue gibi deterministik metrikler hesaplanır; gerçek video/teleop model eğitimi veya ajan motoru çalıştırılmaz.",
+      "dependency_inventory": [
+        "Tarayıcı JavaScript/IndexedDB",
+        "Kullanıcıdan alınan episode manifest/annotation metadata CSV",
+        "Dış API, bulut DB, LLM runtime yok; hosting/domain ayrı",
+        "Larger raw videos local storage quota nedeniyle kapsam dışı"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "91 mevcut fikirde aynı 3 bileşenli kanonik anahtar yok; komşu robot safety/readiness ürünleri var. Global dört doğrudan sağlayıcı rekabet kuralını ihlal ediyor."
+    },
+    "research_attempts": [
+      {
+        "queries": [
+          "2026 robot demonstration QC tools teleop annotation",
+          "robotics data annotation review pipeline vendors"
+        ],
+        "observation": "Resmi Encord, SuperAnnotate, Scale AI ve Labelbox sayfalarında dört doğrudan örnek."
+      },
+      {
+        "queries": [
+          "Türkiye robot teleop annotation QC platform"
+        ],
+        "observation": "Türkiye'de birebir rakip sayısı bu turda kesin olarak tamamlanmadı."
+      }
+    ],
+    "publishable": false
+  }
+}
