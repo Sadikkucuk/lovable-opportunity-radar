@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T16:10:05Z",
+  "controller_observed_at": "2026-10-13T16:10:26Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
@@ -46,11 +46,12 @@
         "schema_version": 1,
         "worker": 3,
         "invocation_id": "355705ef-bf8f-49e0-889e-15b7f924d670",
-        "event": "started",
-        "at": "2026-10-13T16:08:05.309Z",
-        "execution_mode": "manual_master_research",
-        "note": "Direct user-initiated continuation, no modifications to scheduled tasks or worker prompts.",
-        "path": "state/v2/worker-events/3/355705ef-bf8f-49e0-889e-15b7f924d670/000-started.json"
+        "event": "progress",
+        "at": "2026-10-13T16:10:10.833Z",
+        "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-d26e3e4d3a3f6faa",
+        "stage": "receipt_saved",
+        "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-d26e3e4d3a3f6faa/001.json",
+        "path": "state/v2/worker-events/3/355705ef-bf8f-49e0-889e-15b7f924d670/001-progress.json"
       },
       "receipts_this_invocation": 1,
       "write_and_receipt_verified": true,
