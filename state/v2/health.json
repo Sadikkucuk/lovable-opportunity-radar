@@ -1,40 +1,40 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T03:51:27Z",
+  "controller_observed_at": "2026-10-13T03:52:09Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
-  "ready_jobs": 362,
-  "unfinished_jobs": 363,
-  "last_verified_progress_at": "2026-10-13T03:51:09Z",
+  "ready_jobs": 360,
+  "unfinished_jobs": 361,
+  "last_verified_progress_at": "2026-10-13T03:51:57Z",
   "workers": {
     "1": {
-      "last_started_at": "2026-10-13T03:50:47.768Z",
+      "last_started_at": "2026-10-13T03:51:39.366Z",
       "last_event": {
         "schema_version": 1,
         "worker": 1,
-        "invocation_id": "manual-w1-1791863446350-62710436",
+        "invocation_id": "manual-w1-1791863499366-9483689",
         "event": "finished",
-        "at": "2026-10-13T03:51:15.242Z",
+        "at": "2026-10-13T03:52:04.474Z",
         "receipts_verified": 2,
-        "note": "Two source-checked validation receipts, unverified decisions; no published ideas.",
-        "path": "state/v2/worker-events/1/manual-w1-1791863446350-62710436/999-finished.json"
+        "note": "Two validation evidence-gap receipts saved, no qualified candidates.",
+        "path": "state/v2/worker-events/1/manual-w1-1791863499366-9483689/999-finished.json"
       },
       "receipts_this_invocation": 2,
       "write_and_receipt_verified": true,
-      "last_receipt_at": "2026-10-13T03:51:09.285Z"
+      "last_receipt_at": "2026-10-13T03:51:57.999Z"
     },
     "2": {
-      "last_started_at": "2026-10-13T03:50:46.419Z",
+      "last_started_at": "2026-10-13T03:51:43.693Z",
       "last_event": {
         "schema_version": 1,
         "worker": 2,
-        "invocation_id": "w2-manual-20261013035046419",
-        "at": "2026-10-13T03:51:12.385Z",
+        "invocation_id": "w2-manual-20261013035143692",
         "event": "finished",
-        "path": "state/v2/worker-events/2/w2-manual-20261013035046419/999-finished.json"
+        "at": "2026-10-13T03:51:53.128Z",
+        "path": "state/v2/worker-events/2/w2-manual-20261013035143692/999-finished.json"
       },
-      "receipts_this_invocation": 1,
+      "receipts_this_invocation": 0,
       "write_and_receipt_verified": true,
       "last_receipt_at": "2026-10-13T03:51:05.416Z"
     },
@@ -97,10 +97,10 @@
         "estimated_minutes_for_stage": 0
       },
       "validation": {
-        "completed_in_window": 7,
-        "known_remaining": 71,
-        "observed_jobs_per_hour": 3.5,
-        "estimated_minutes_for_stage": 1217.1
+        "completed_in_window": 9,
+        "known_remaining": 69,
+        "observed_jobs_per_hour": 4.5,
+        "estimated_minutes_for_stage": 920.0
       }
     },
     "estimated_minutes_remaining": null,
@@ -121,6 +121,12 @@
     }
   ],
   "alerts": [
+    {
+      "code": "worker_finished_without_receipt",
+      "worker": 2,
+      "severity": "critical",
+      "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
+    },
     {
       "code": "worker_not_started",
       "worker": 3,
