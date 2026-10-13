@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-57fb097c16e0b24b",
+  "input_hash": "57fb097c16e0b24b4b9fa88f891448f36e204e5d147270c38e593d164cb0c518",
+  "token": "bda0fc21-cbca-45a7-9b5d-878496ca9879",
+  "finished_at": "2026-10-13T09:22:54.991Z",
+  "outcome": "done",
+  "reason": "10 haber karara bağlandı: AP'nin fabrika ithal parça/tarife şokundan 1 koşullu ham finans-operasyon simülatörü, 8 no_opportunity, 1 füzyon bilimi özgün test kanıtı eksik. FPT–NAVER AI Factory MoU'su doğrulandı ama harici AI gerektirdi.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "1c7730ec82a381c14039c811",
+        "decision": "unverified",
+        "reason": "OFweek'de ENN Fusion şirketinin 'artificial sun/ilk kıvılcım' tekniği duyuruldu; deneyin enerji kazanımı, füzyon enerji üretim aşaması veya bağımsız fizik test kanıtı birincil deney kaynağından doğrulanmadı. Bilimsel atılımı tamamlanmış ticari sistem saymadık.",
+        "opportunities": []
+      },
+      {
+        "article_key": "1c858762e1be79de97c1935e",
+        "decision": "no_opportunity",
+        "reason": "China Daily AI inovasyonunun hızla ticarete dönmesi üzerine sektör beklentisi ve trend analizi; yeni kamu veri/API hakkı veya özgün zorunlu müşteriye ait tekrarlı iş yükü yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "1c8b92e157861152479fd3b7",
+        "decision": "no_opportunity",
+        "reason": "Supply Chain Dive '5 steps to a resilient supply chain' yönetim tavsiyesi evergreen niteliğinde. Mevcut Electronic Component Supply Risk Matrix ve supplier evidence işleriyle örtüşen kategori, özgün yeni tetikleyici bulunmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "1c9e0c0148cba711d3f3c5e2",
+        "decision": "no_opportunity",
+        "reason": "Neptune'nin mobil oyundan 20 milyar KRW hasılatı tek firmaya özgü yayın finansal sonucu; yeni mevzuat/veri standardı doğurmuyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "1ca4c24bdb0898d3da3cc0e0",
+        "decision": "no_opportunity",
+        "reason": "FPT ve NAVER Cloud 12 Ekim'de APAC GPUaaS ve AI Factory ortak geliştirme MoU'su imzaladı; iki tarafın özgün duyuruları doğruluyor. Bu bağlayıcı kamu GPU satın alma hakkı değil; ürünün çekirdek değeri gerçek AI hesaplama servisi/API maliyeti ister, sıfır dış runtime kriterine uygun müstakil fikir saptanmadı.",
+        "canonical_source_url": "https://fpt.com/en/news/fpt-and-naver-cloud-form-strategic-alliance-to-fuel-ai-innovation-across-asia-pacific-and-beyond",
+        "opportunities": []
+      },
+      {
+        "article_key": "1cb2b9470520f74115241156",
+        "decision": "no_opportunity",
+        "reason": "Çin'de 260 halka açık şirketin girişim sermayesi piyasasına yatırım tutarı finansal toplamdır; tekil müşteri iş/standart sorunu bulunmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "1cb308a79e88c78082af4a84",
+        "decision": "opportunity",
+        "reason": "Associated Press'in 12 Ekim haberinde ithal edilen parçalara uygulanan ABD tarifeleriyle üretim maliyeti arttığı için Michigan saat üreticisinin fabrikasını kapatıp yaklaşık 200 işten çıkarma vakası anlatılıyor. Bu bir örnekten evrensel firma davranışı kanıtı değildir. İthal komponente bağımlı KOBİ fabrikası için ülke/ürün tarife şokunu parça maliyeti, yerli alternatif, üretim vardiya planı ve işçi etkisine birlikte senaryolamak farklı bir müşteri işi olabilir.",
+        "canonical_source_url": "https://www.manufacturing.net/operations/news/22976209/from-clockmakers-to-pet-food-plants-factory-workers-blame-layoffs-on-tariff-spikes",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-57fb097c16e0b24b:1cb308a79e88c78082af4a84:01",
+            "idea_name": "Import Tariff Factory Viability Scenario",
+            "canonical_key": "us-sme-factory-planners|simulate-landing-cost-tariff-shock-and-workforce-decisions|component-import-cost-substitution-and-shift-budget-matrix",
+            "target_customer": "ABD ithal parça kullanan küçük üretici işletmelerinin operasyon/finans yönetimi",
+            "core_job": "Tarife artışının ithal parça maliyeti, ürün marjı, yerli alternatife geçiş, stok ve vardiya kapasitesi üzerindeki etkisini açıklanabilir senaryolara ayırmak",
+            "product_mechanism": "Elle girilen ithal BOM, menşe ülke, tarifeye göre senaryo oranı, hammadde teklif süresi, üretim hacmi ve işçilik/sabit maliyet CSV'si; hukuki gümrük sınıflandırması/istihdam kararı otomatik verilmez",
+            "before_state": "Yeni tarife belirsizliği yerli alternatif, fiyat teklifi, fabrika kapasitesi ve çalışan bütçe kararlarını farklı tablolar arasında koparıyor",
+            "after_state": "Ürün–parça–üretim senaryolarının maliyet ve istihdam baskısı karşılaştırma raporu, insan kararı ve kanıt defteri",
+            "why_now": "Associated Press'in 12 Ekim haberinde ithal edilen parçalara uygulanan ABD tarifeleriyle üretim maliyeti arttığı için Michigan saat üreticisinin fabrikasını kapatıp yaklaşık 200 işten çıkarma vakası anlatılıyor. Bu bir örnekten evrensel firma davranışı kanıtı değildir. İthal komponente bağımlı KOBİ fabrikası için ülke/ürün tarife şokunu parça maliyeti, yerli alternatif, üretim vardiya planı ve işçi etkisine birlikte senaryolamak farklı bir müşteri işi olabilir.",
+            "canonical_source_urls": [
+              "https://www.manufacturing.net/operations/news/22976209/from-clockmakers-to-pet-food-plants-factory-workers-blame-layoffs-on-tariff-spikes"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "1cd0a587b88a1f55bdc66311",
+        "decision": "no_opportunity",
+        "reason": "HuXiu yazılım reverse engineering ve kapalı kaynak kod bariyerleri hakkındaki genel tartışması özgün meşru müşteri JTBD ve izinli veri standardı göstermiyor; kaynak kod kopyalama/satış için erişim veya lisans hakkı doğmuş sayılmaz.",
+        "opportunities": []
+      },
+      {
+        "article_key": "1cd61a168801c49853e3d426",
+        "decision": "no_opportunity",
+        "reason": "Çin 'AI+' ülke eylem stratejisi uygulama haberi günün başka RSS makalelerinde işlendi; genel politika vizyonu farklı yeni gereksinim değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "1d1a2b3ee26fdf3671941b59",
+        "decision": "no_opportunity",
+        "reason": "Çin NEV ihracat KDV iadesinin 1 Nisan 2027'den itibaren %9'a düşmesi aynı gün diğer haberler ve ham fikirde temsil edildi; mükerrer aday üretilmedi.",
+        "opportunities": []
+      }
+    ]
+  }
+}
