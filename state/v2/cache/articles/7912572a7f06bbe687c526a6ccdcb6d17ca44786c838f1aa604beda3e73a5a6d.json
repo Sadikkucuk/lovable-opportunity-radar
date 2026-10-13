@@ -1,0 +1,47 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "7912572a7f06bbe687c526a6ccdcb6d17ca44786c838f1aa604beda3e73a5a6d",
+  "decision": {
+    "article_key": "03ade8edcdab6ddc64615407",
+    "decision": "opportunity",
+    "reason": "8 Ekim özgün sektör röportajı Phoenix/OFweek kopyası, imalatçı tedarikçi aylık mutabakatın birden fazla gün sürdüğünü, şablon sistemle birkaç saate düştüğünü anlatıyor; sayı tek şirkete ve öz beyana ait. Ayrıca şirketlerarası görev sınırı/uzman onayı AI yayılımı engeli. BEFORE ERP ve tedarikçi çıktı dosyası ayrı, farklı eşleştirme kuralları kişide. AFTER küçük otomasyon bir departmanda kapanabilir, fakat diğer bölüme insan yetki/onayı gerekir. Harici LLM olmadan CSV kolon-haritalama ve satır uyuşmazlıkları tutmak olası yeni niche; diğer invoice reconciliation rakipleri Validation'da incelenmeli.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-2bfd2b8b0a-discovery-006f5ebb78ec4fdc:03ade8edcdab6ddc64615407:1",
+        "canonical_key": "small-mfg-finance-reconciliation-teams|reconcile-erp-vs-supplier-month-end-invoices-and-approval-boundaries|offline-csv-column-map-exception-and-signoff-desk",
+        "idea_name": "İmalatçı Tedarikçi Mutabakat İstisna Defteri",
+        "core_job": "Üretim işletmesinde ERP'den ve tedarikçiden gelen aylık alış, iskonto, fatura ve sevkiyat satırlarını eşleyerek farkları ve bölüm onayını kapatmak",
+        "target_customer": "İmalatçı KOBİ muhasebe, satın alma ve tedarikçi mutabakat ekipleri",
+        "buyer": "Finans operasyon müdürü ve satın alma kontrol yöneticisi",
+        "product_mechanism": "Farklı kolon adlarında dışa aktarılmış manuel ERP/satıcı CSV dosyalarını kullanıcı eşleme kurallarıyla normalize edip tutar/belge/lot farkı, insan inceleme, itiraz ve kapanış kanıt tablosu oluşturma",
+        "why_now": "Ekim 2026 sahadan görüşmeler ERP/sağlayıcı tablo uyumsuzluğunun çok gün süren aylık mutabakat yarattığını, küçük ölçekte otomasyonun zamanı azaltabildiğini gösteriyor.",
+        "before_state": "Tedarikçi xlsx ile ERP tablo satırlarının eşlemesi elle ve departmanlar arası yazışmayla yapılıyor.",
+        "after_state": "Satır eşleşme gerekçesi, fark tutarı, sorumlu, fatura kanıtı ve kapanış tek mutabakat paketinde görünür.",
+        "canonical_source_urls": [
+          "https://tech.ifeng.com/c/8x3NDLW2zwG"
+        ],
+        "supporting_article_ids": [
+          "29d8b39c2cdf0b0b2e8bf334"
+        ],
+        "source_observations": [
+          {
+            "url": "https://tech.ifeng.com/c/8x3NDLW2zwG",
+            "observation": "Röportajda tek büyük imalatçıda ay sonu mutabakatın iki güne kadar mesai gerektirdiği, AI ile yarım güne indirildiği belirtiliyor; yeni sistem departmanlar arası yetki olmadan yaygınlaştırılamamış."
+          }
+        ],
+        "scope_hint": "Dünya",
+        "local_evidence": {
+          "signals": [
+            "Aylık tedarikçi karşılaştırması tekrar eden iş ve belgelendirilebilir uyuşmazlıklar içermektedir."
+          ],
+          "unknowns": [
+            "Türkiye'deki muhasebe mutabakat SaaS'leriyle doğrudan rekabet bilinmiyor.",
+            "Tedarikçilerin CSV formatı ve e-fatura entegrasyonu canlı hizmet olmadan sınırlıdır."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-2bfd2b8b0a-discovery-006f5ebb78ec4fdc/001.json",
+  "valid_until": "2026-11-12T21:08:33Z"
+}

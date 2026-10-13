@@ -1,0 +1,48 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "0f03c1e13a417e19ba56c303732207565922b07557693cfebcc61f20e3006634",
+  "decision": {
+    "article_key": "02d39a903388a5f41129cae2",
+    "decision": "opportunity",
+    "reason": "Toray resmi 8 Ekim duyurusu CTI sayfasında yeniden aktarılmıştır: Toray/Nagoya University 150°C film kapasitörle prototip inverteri denedi; soğutma yapısının %50 küçülmesi hesaplamalı simülasyon öngörüsü, doğrulanmış üretim sonucu değil. BEFORE geleneksel film kondansatörünün sıcaklık sınırı inverter çevresel tasarımını daraltır. AFTER yeni dielektrik prototip ve ısıl yapı varyantları sistem mimarisine senaryo açar. Tasarım ve test/kabul matrisi ayrı müşteri işi olabilir.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-2bfd2b8b0a-discovery-006f5ebb78ec4fdc:02d39a903388a5f41129cae2:1",
+        "canonical_key": "ev-aircraft-inverter-engineers|compare-150c-film-capacitor-thermal-package-qualification|offline-thermal-envelope-revision-test-evidence-matrix",
+        "idea_name": "150°C İnverter Kapasitör Isıl Kabul Matrisi",
+        "core_job": "EV ve elektrikli hava taşıtı inverterinde 150°C film kapasitör/soğutma paketi tasarım varyantlarının sıcaklık, güç yükü ve test koşulu kabul kanıtını karşılaştırmak",
+        "target_customer": "İnverter tasarlayan otomotiv ve ileri mobilite OEM/Tier-1 mühendislik ekipleri",
+        "buyer": "Elektrikli güç aktarım sistemi kalite/validasyon yöneticisi",
+        "product_mechanism": "Manuel test CSV'siyle ortam/yük/film varyantı/sıcaklık/tolerans/soğutma ağırlığı ve gereksinim kaynaklarını kabul veya eksik kanıta bağlayan tarayıcı kural matrisi",
+        "why_now": "8 Ekim Toray 150°C prototip inverter testini duyurdu; %50 küçülme yalnız simülasyondur, geliştirme sürüyor.",
+        "before_state": "Dielektrik sıcaklık sınırı, inverter ısıl simülasyonları ve numune test tabloları ayrı tutulur.",
+        "after_state": "Varyant–test numunesi–güç/yük–ısıl limit–kanıt kaydı ve yeniden test takip tablosu çıkar.",
+        "canonical_source_urls": [
+          "https://www.ctiweb.co.jp/en/toray-demonstrates-150c-inverter-operation-with-film-capacitor-that-could-halve-heat-dissipation-structure-size-for-next-generation-mobility/",
+          "https://www.toray.com/news/"
+        ],
+        "supporting_article_ids": [
+          "0dbe906b092530cc346e45f3"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.ctiweb.co.jp/en/toray-demonstrates-150c-inverter-operation-with-film-capacitor-that-could-halve-heat-dissipation-structure-size-for-next-generation-mobility/",
+            "observation": "Resmi şirket basın metni tam alıntısı: 150°C prototip inverter çalışması ayrı, ısı dağıtım yapısı yarıya inebilir bulgusu ayrı simülasyon; ticari ürün sertifikası yok."
+          }
+        ],
+        "scope_hint": "Dünya",
+        "local_evidence": {
+          "signals": [
+            "Yeni ısıl sınır güç paketi gereksinimlerinin yeniden test ihtiyacını doğurabilir."
+          ],
+          "unknowns": [
+            "Gerçek OEM test standardı, fiyatlar ve ürün rakipleri bilinmiyor.",
+            "Güvenlik sınıfı/gerçek termal mühendislik onayı uzmanlara ait."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-2bfd2b8b0a-discovery-006f5ebb78ec4fdc/001.json",
+  "valid_until": "2026-11-12T21:08:33Z"
+}

@@ -1,0 +1,48 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "fb5b8db0c0f3874aaa2abe7517fc072247df2875013ea52ddebfbb3652c713d4",
+  "decision": {
+    "article_key": "0377932133565ed23d67475b",
+    "decision": "opportunity",
+    "reason": "Yicai 12 Ekim tıbbi hesaplama yazısı kopyası, Çin 15. Beş Yıllık İlaç Sanayi planının hesaplamalı tıbbı Ar-Ge kullanım alanına koyduğunu ve uzmanların erken keşif hızını klinik başarıyla eşitlememek gerektiği uyarısını içeriyor. BEFORE AI keşif alt süreç hızına bakılarak toplam ilaç Ar-Ge değeri abartılır. AFTER programların hesaplamalı öneri→laboratuvar deney→aşama kabul kanıtı zincirini nesnel ölçme talebi hipotezi. Gerçek ilaç geliştirme iddiası veya klinik yorum vermeyen offline izleme tasarlandı.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-2bfd2b8b0a-discovery-006f5ebb78ec4fdc:0377932133565ed23d67475b:1",
+        "canonical_key": "biopharma-rd-program-teams|trace-computational-drug-candidate-hypotheses-to-wetlab-verification|offline-proposal-experiment-decision-evidence-ledger",
+        "idea_name": "Hesaplamalı İlaç Hipotezi–Deney Kanıt Defteri",
+        "core_job": "AI/hisabî model kaynaklı ilaç aday hipotezini ıslak laboratuvar protokolü, deney sonucu, insan go/no-go ve sonuç başarısızlık nedenine bağlayarak doğrulamak",
+        "target_customer": "Biopharma Ar-Ge operasyon ve deney planlama ekipleri",
+        "buyer": "İlaç Ar-Ge proje portföy yöneticisi ve deney platform kalite lideri",
+        "product_mechanism": "Kullanıcı sağladığı hipotez ID, hesaplama koşul sürümü, laboratuvar deney tasarımı, çıktı CSV'si, eşik, kalite protokolü ve insan kararını düzenleyen audit-defter; molekül önermez veya tıbbi karar vermez",
+        "why_now": "2026 Çin sanayi planında hesaplamalı tıp vurgusu ve 12 Ekim Yicai haberinde süreç hızının ilaç başarısına eşit olmadığı tartışması, hipotezden deney kanıtına izlenebilirlik sorunu ortaya koyuyor.",
+        "before_state": "In-silico seçim ile in-vitro/in-vivo test sonuçları farklı araçlarda ve slaytlarda izlenir.",
+        "after_state": "Aday gerekçesi–deney koşulu–sonuç–insan ret/kabul kanıtı ve aşama dönüşüm oranı auditlenebilir olur.",
+        "canonical_source_urls": [
+          "https://finance.eastmoney.com/a/202610123892206687.html",
+          "https://cj.sina.com.cn/articles/view/1733360754/6750fc7202001jzfc"
+        ],
+        "supporting_article_ids": [
+          "1e84dc581a7c25414ee8f237"
+        ],
+        "source_observations": [
+          {
+            "url": "https://finance.eastmoney.com/a/202610123892206687.html",
+            "observation": "Yicai kaynaklı orijinal muhabir röportajının yayımlanmış kopyasında 15. Plan'ın hesaplamalı tıbbı vurguladığı, erken keşif verimliliğinin tüm Ar-Ge sonucuna oranının sınırlı olabileceği açık."
+          }
+        ],
+        "scope_hint": "Dünya",
+        "local_evidence": {
+          "signals": [
+            "2026 ilaç endüstrisi 5 yıl planında hesaplamalı tıp somut uygulama alanı olarak yer alıyor."
+          ],
+          "unknowns": [
+            "Regüle GxP doğrulama gereksinimlerini düz dosya uygulaması karşılamayabilir.",
+            "İlaç Ar-Ge LIMS/ELN direkt rekabeti muhtemelen yüksek; Validation'da incelenmeli."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-2bfd2b8b0a-discovery-006f5ebb78ec4fdc/001.json",
+  "valid_until": "2026-11-12T21:08:33Z"
+}

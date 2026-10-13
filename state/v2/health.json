@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T21:05:52Z",
+  "controller_observed_at": "2026-10-13T21:09:08Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
-  "ready_jobs": 503,
-  "unfinished_jobs": 505,
-  "last_verified_progress_at": "2026-10-13T20:52:04Z",
+  "ready_jobs": 502,
+  "unfinished_jobs": 503,
+  "last_verified_progress_at": "2026-10-13T21:08:33Z",
   "workers": {
     "1": {
       "last_started_at": "2026-10-13T21:02:16Z",
@@ -25,33 +25,32 @@
       "last_receipt_at": "2026-10-13T04:09:13.821Z"
     },
     "2": {
-      "last_started_at": "2026-10-13T04:08:28.557Z",
+      "last_started_at": "2026-10-13T21:09:05.548Z",
       "last_event": {
         "schema_version": 1,
         "worker": 2,
-        "invocation_id": "manual-20261013040828557-w2",
-        "event": "finished",
-        "at": "2026-10-13T04:09:01.533Z",
-        "path": "state/v2/worker-events/2/manual-20261013040828557-w2/999-finished.json"
+        "invocation_id": "eb9a2f4d-b154-4f02-8e6b-acde23af3f48",
+        "event": "started",
+        "at": "2026-10-13T21:09:05.548Z",
+        "path": "state/v2/worker-events/2/eb9a2f4d-b154-4f02-8e6b-acde23af3f48/000-started.json"
       },
-      "receipts_this_invocation": 1,
+      "receipts_this_invocation": 0,
       "write_and_receipt_verified": true,
       "last_receipt_at": "2026-10-13T04:08:49.764Z"
     },
     "3": {
-      "last_started_at": "2026-10-13T21:04:51.338Z",
+      "last_started_at": "2026-10-13T21:08:42.323Z",
       "last_event": {
         "schema_version": 1,
         "worker": 3,
-        "invocation_id": "c40b85d3-ad8a-458e-a895-5ab35ee090d5",
+        "invocation_id": "c4f51bb7-0de4-44a2-a1d5-bc4a0a93a5af",
         "event": "started",
-        "at": "2026-10-13T21:04:51.338Z",
-        "execution_mode": "user_requested_manual_master_no_worker_schedule_edits",
-        "path": "state/v2/worker-events/3/c40b85d3-ad8a-458e-a895-5ab35ee090d5/000-started.json"
+        "at": "2026-10-13T21:08:42.323Z",
+        "path": "state/v2/worker-events/3/c4f51bb7-0de4-44a2-a1d5-bc4a0a93a5af/000-started.json"
       },
       "receipts_this_invocation": 0,
       "write_and_receipt_verified": true,
-      "last_receipt_at": "2026-10-13T20:52:04.941Z"
+      "last_receipt_at": "2026-10-13T21:08:33.093Z"
     },
     "4": {
       "last_started_at": "2026-10-13T21:05:35Z",
@@ -59,13 +58,15 @@
         "schema_version": 1,
         "worker": 4,
         "invocation_id": "5c8b6a19-b716-4a05-9f50-957bed735a46",
-        "event": "started",
-        "at": "2026-10-13T21:05:35Z",
-        "path": "state/v2/worker-events/4/5c8b6a19-b716-4a05-9f50-957bed735a46/000-started.json"
+        "event": "progress",
+        "at": "2026-10-13T21:06:19Z",
+        "job_id": "2026-10-14-2bfd2b8b0a-discovery-36e67f5cdc85bfff",
+        "stage": "claim_saved",
+        "path": "state/v2/worker-events/4/5c8b6a19-b716-4a05-9f50-957bed735a46/001-progress.json"
       },
-      "receipts_this_invocation": 0,
-      "write_and_receipt_verified": false,
-      "last_receipt_at": null
+      "receipts_this_invocation": 1,
+      "write_and_receipt_verified": true,
+      "last_receipt_at": "2026-10-13T21:07:03Z"
     },
     "5": {
       "last_started_at": "2026-10-13T03:26:21.664Z",
@@ -84,17 +85,17 @@
     }
   },
   "all_five_receipt_verified": false,
-  "all_research_workers_receipt_verified": false,
+  "all_research_workers_receipt_verified": true,
   "research_worker_count": 4,
   "orchestrator_worker": 5,
   "capacity": {
     "window_minutes": 120.0,
     "stages": {
       "discovery": {
-        "completed_in_window": 19,
-        "known_remaining": 293,
-        "observed_jobs_per_hour": 9.5,
-        "estimated_minutes_for_stage": 1850.5
+        "completed_in_window": 20,
+        "known_remaining": 291,
+        "observed_jobs_per_hour": 10.0,
+        "estimated_minutes_for_stage": 1746.0
       },
       "merge": {
         "completed_in_window": 1,
