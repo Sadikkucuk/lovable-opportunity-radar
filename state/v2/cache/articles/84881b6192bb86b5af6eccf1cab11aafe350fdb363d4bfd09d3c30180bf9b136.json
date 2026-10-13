@@ -1,0 +1,38 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "84881b6192bb86b5af6eccf1cab11aafe350fdb363d4bfd09d3c30180bf9b136",
+  "decision": {
+    "article_key": "eb2a8a378a0eb9aead26e242",
+    "decision": "opportunity",
+    "reason": "AWS 7 Ekim 2026 resmî Physical AI Toolchain duyurusunda NVIDIA Isaac/GR00T/Cosmos modelleriyle AWS altyapı bileşenleri arasında veri seti, simülasyon, eğitim ve uç cihaz dağıtımına uzanan işlem zincirini, Zarr, LeRobot, URDF, ONNX ve ROS2 gibi farklı formatları özetliyor. Gerçek toolchain ücretli bulut servisleri gerektirir ve Radar MVP'si bunu çalıştırmamalıdır. Ancak laboratuvarın format/sürüm artefakt teslim kanıtları için sadece manuel metadata kontrolü ayrı ürün olabilir.",
+    "canonical_source_url": "https://aws.amazon.com/blogs/physical-ai/introducing-aws-physical-ai-toolchain/",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-43d3b526fc-discovery-5be0a6eae47c7c77:eb2a8a378a0eb9aead26e242:01",
+        "idea_name": "Physical AI Artifact Handoff Manifest",
+        "canonical_key": "robotics-ai-lab-and-edge-deployment-teams|check-cross-stage-robotics-data-and-model-artefact-handoff-readiness|dataset-simulator-policy-edge-format-version-and-provenance-ledger",
+        "target_customer": "Robotik Ar-Ge laboratuvarları ve fiziksel AI model/simülasyon ekipleri",
+        "buyer": "Robotik platform entegrasyon ve QA sorumlusu",
+        "core_job": "Robot deneme veri seti, simülasyon sahnesi, model policy sürümü ve ROS2/ONNX/URDF saha devri sırasında eksik format ve sürüm kanıtını ayırmak",
+        "product_mechanism": "Kullanıcının manuel getirdiği artefakt meta CSV/JSON'larını ve dosya adı/hash/format/sürüm/ortam bağımlılığı alanlarını deterministic kural matrisiyle karşılaştırır; AWS, NVIDIA, GPU/model runtime veya ücretli API çağırmaz",
+        "why_now": "AWS 7 Ekim 2026 resmî Physical AI Toolchain duyurusunda NVIDIA Isaac/GR00T/Cosmos modelleriyle AWS altyapı bileşenleri arasında veri seti, simülasyon, eğitim ve uç cihaz dağıtımına uzanan işlem zincirini, Zarr, LeRobot, URDF, ONNX ve ROS2 gibi farklı formatları özetliyor. Gerçek toolchain ücretli bulut servisleri gerektirir ve Radar MVP'si bunu çalıştırmamalıdır. Ancak laboratuvarın format/sürüm artefakt teslim kanıtları için sadece manuel metadata kontrolü ayrı ürün olabilir.",
+        "before_state": "Simülasyon, eğitim, test ve saha cihazına verilen model/dataset dosyalarının provenans ve şema kabulü eposta/wiki listelerinde",
+        "after_state": "Model/dataset/sim/saha aşaması için format, hash, sahiplik ve insan onayı gösteren teslim eksiklik raporu",
+        "canonical_source_urls": [
+          "https://aws.amazon.com/blogs/physical-ai/introducing-aws-physical-ai-toolchain/"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true,
+        "source_observations": [
+          {
+            "url": "https://aws.amazon.com/blogs/physical-ai/introducing-aws-physical-ai-toolchain/",
+            "accessed_at": "2026-10-13T19:28:06.391Z",
+            "observation": "AWS'nin 7 Ekim 2026 toolchain duyurusu gerçek format transfer ihtiyacını anlatıyor; fikrin dünya/Türkiye benzersizliği henüz doğrulanmadı"
+          }
+        ]
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-43d3b526fc-discovery-5be0a6eae47c7c77/001.json",
+  "valid_until": "2026-11-12T19:28:06Z"
+}
