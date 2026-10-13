@@ -1,0 +1,31 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "82e446eb1a4499e19048180eba3b683846e0dab4e852bb218e3d16257360af70",
+  "decision": {
+    "article_key": "16fd22f9b0af32d3d84db901",
+    "decision": "opportunity",
+    "reason": "Deno kurucusu Ryan Dahl'ın 9 Ekim 2026 birincil duyurusu şirketin Cloudflare'a katıldığını, Deno runtime için bir yıl aylık hata/güvenlik güncellemesi sonrasında kendi geliştirmelerinin biteceğini, Deno Deploy'un altı ay içinde kapanacağını, JSR'nin süreceğini bildiriyor. Haber 12 Ekim Kore'de yeniden yayımlandı; yeni kapanış politikası SaaS dağıtım sahiplerinin taşıma takvimini ve API/Node uyumluluk engellerini görünür kılıyor.",
+    "canonical_source_url": "https://deno.com/blog/cloudflare",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-3778e006c0de3375:16fd22f9b0af32d3d84db901:01",
+        "canonical_key": "deno-deploy-application-operators|migrate-before-six-month-service-closure|compatibility-hosting-runtime-dependency-and-cutover-evidence-ledger",
+        "idea_name": "Deno Deploy Sunset Migration Preflight",
+        "target_customer": "Deno Deploy kullanan küçük SaaS ve B2B web uygulaması ekipleri",
+        "core_job": "Deno Deploy kapanmadan önce hizmetleri alternatif barındırma ortamına taşımak için bağımlılık, veri, çevresel değişken ve test/cutover engellerini belgelendirmek",
+        "product_mechanism": "Manuel package.json/deno.json CSV/JSON manifest, HTTP/websocket, cron/worker, KV, JSR, env/secrets yalnız ad referansı (değerler yüklenmez), devreye alma ve rollback/test kanıtı karşılaştırması; canlı deploy/API/secret erişimi yok",
+        "why_now": "Deno kurucusu Ryan Dahl'ın 9 Ekim 2026 birincil duyurusu şirketin Cloudflare'a katıldığını, Deno runtime için bir yıl aylık hata/güvenlik güncellemesi sonrasında kendi geliştirmelerinin biteceğini, Deno Deploy'un altı ay içinde kapanacağını, JSR'nin süreceğini bildiriyor. Haber 12 Ekim Kore'de yeniden yayımlandı; yeni kapanış politikası SaaS dağıtım sahiplerinin taşıma takvimini ve API/Node uyumluluk engellerini görünür kılıyor.",
+        "before_state": "Deno Deploy uygulamasının servis kesintisinden önce taşınacak API, runtime kütüphane ve hosting bağımlılıkları dağınık ve tarihsiz kalır",
+        "after_state": "Hedef ortam, manuel uyumluluk testi, kritik veri/secret devri, kesinti planı ve insan imzalı kesime geçiş matrisi",
+        "canonical_source_urls": [
+          "https://deno.com/blog/cloudflare",
+          "https://blog.cloudflare.com/deno-joins-cloudflare/"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-3778e006c0de3375/001.json",
+  "valid_until": "2026-11-12T08:47:21Z"
+}
