@@ -1,0 +1,144 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-7ea38d340fec9057",
+  "input_hash": "7ea38d340fec9057356a8fa445d29cd7b2385fcf5decd764213ddf6fbc4f6b20",
+  "token": "60f04498-1d75-4537-9bb6-9485789f3ea3",
+  "finished_at": "2026-10-13T09:53:53.147Z",
+  "outcome": "done",
+  "reason": "Tesla'nın AB FSD→Assisted Driving tetikleyicisi, 4 global claim review rakibi, 91 geçmiş kayıt, sıfır dış AI çalışma mimarisi incelendi. Global <=3 kuralı aşıldığı için rejected.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Reuters tetikleyicisi gerçek: Tesla Avrupa'da 'Full Self-Driving' yerine 'Assisted Driving' ifadesine geçti. Hedef alıcı otomotiv/ADAS ürün pazarlama ve hukuk/uyum ekibi; çekirdek iş iddia metnini doğrulayıcı teknik/regülasyon kanıtına, ülke koşuluna ve yayın onayına bağlamaktır. Dört global resmi ürün aynı ana iddia→kanıt/risk→legal onay→yayın denetimi iş akışını destekliyor: Red Marker (otomotiv sektörünü ayrıca adlandırır), Aprimo, Eudia, Admation. Hiçbiri özel olarak ADAS sertifika kurumu iddiasıyla sunulmuyor; genel çok sektör pazarlama claim compliance çözümleridir ama aynı satın alan ve merkezi iş sürecinde doğrudan ikame olabilir. 3 global rakip üst sınırı aşılmıştır; sonuç rejected, katalog değişmez. Türkiye birebir rakip sayısı kanıtlanamadı; sıfır olduğu iddia edilmez.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.reuters.com/business/autos-transportation/tesla-renames-full-self-driving-assisted-driving-europe-it-chases-clearance-2026-10-09/",
+        "accessed_at": "2026-10-13T09:53:53.147Z",
+        "claim": "Tesla FSD pazarlama adını AB sitelerinde Assisted Driving olarak değiştirdi",
+        "observation": "9 Ekim Reuters Tesla'nın AB web sitelerinde ismi Tesla Assisted Driving olarak değiştirmesini ve tüketicide tam otonomi izlenimine yönelik düzenleyici itirazı anlatır; uluslararası ADAS onayları ülkeye bağlıdır, tüm AB'de otomatik sertifika verilmiş değildir.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://redmarker.ai/en-us/use-cases/marketing-teams",
+        "accessed_at": "2026-10-13T09:53:53.147Z",
+        "claim": "Red Marker — Automotive Marketing Compliance claim evidence/legal approval controls",
+        "observation": "Otomotiv dahil markaların hukuk/marketing ekipleri için promosyon iddiası riski ve disclaimer denetimi, yayın öncesi legal onay",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.aprimo.com/solutions/industries/regulatory-and-compliance-teams",
+        "accessed_at": "2026-10-13T09:53:53.147Z",
+        "claim": "Aprimo — Regulatory Claims & References claim evidence/legal approval controls",
+        "observation": "Pazarlama ve compliance için kanıt ile desteklenen iddia/kaynak, bölgesel materyal sürümü ve yasal onay izleme",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.eudia.com/platform/compliance",
+        "accessed_at": "2026-10-13T09:53:53.147Z",
+        "claim": "Eudia — AI Marketing Compliance Review claim evidence/legal approval controls",
+        "observation": "Marka ürün iddialarını onaylı ifade, kanıt/düzenleyici gereklilik ve insan hukuki gözden geçirmesi üzerinden denetleme",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.simple.io/solutions/marketing-risk-compliance",
+        "accessed_at": "2026-10-13T09:53:53.147Z",
+        "claim": "Admation — Marketing Risk & Compliance claim evidence/legal approval controls",
+        "observation": "Regüle ürün marketing belgelerini compliance aşamalarından geçirip tanıtım iddiaları ve değişiklikleri tarihli denetim iziyle onaylama",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "queries": [
+          "Türkiye ADAS sürüş destek reklam iddia onay takip yazılımı",
+          "otomotiv pazarlama iddia hukuki onay delil SaaS Türkiye",
+          "araç otonom sürüş reklam iddiaları uyum yazılımı Türkiye"
+        ],
+        "search_complete": false,
+        "scope": "Türkiye'de reklam/teknik otomotiv iddialarının kanıt ve pazarlama onayına bağlanması; yeterli doğrudan ürün sayımı bulunmadı",
+        "direct_competitors": []
+      },
+      "global": {
+        "direct_count": 4,
+        "queries": [
+          "automotive advertising claims compliance software evidence approval",
+          "Red Marker automotive promotional claim review",
+          "Aprimo claim reference regulatory legal approval global marketing",
+          "Eudia evidence claims legal compliance review",
+          "Admation regulated marketing approval audit"
+        ],
+        "search_complete": true,
+        "scope": "Aynı alıcı: ADAS üretici/tanıtım hukuk ekipleri; aynı çekirdek iddia kanıtı/jurisdiction/kapsam/approval/revizyon işi. Dördü de çok sektörlü marketing/legal workflow, ADAS-a özel teknik homologasyon araçları olarak yanlış etiketlenmez.",
+        "direct_competitors": [
+          {
+            "name": "Red Marker — Automotive Marketing Compliance",
+            "url": "https://redmarker.ai/en-us/use-cases/marketing-teams",
+            "same_customer_job_workflow_reason": "Otomotiv dahil markaların hukuk/marketing ekipleri için promosyon iddiası riski ve disclaimer denetimi, yayın öncesi legal onay"
+          },
+          {
+            "name": "Aprimo — Regulatory Claims & References",
+            "url": "https://www.aprimo.com/solutions/industries/regulatory-and-compliance-teams",
+            "same_customer_job_workflow_reason": "Pazarlama ve compliance için kanıt ile desteklenen iddia/kaynak, bölgesel materyal sürümü ve yasal onay izleme"
+          },
+          {
+            "name": "Eudia — AI Marketing Compliance Review",
+            "url": "https://www.eudia.com/platform/compliance",
+            "same_customer_job_workflow_reason": "Marka ürün iddialarını onaylı ifade, kanıt/düzenleyici gereklilik ve insan hukuki gözden geçirmesi üzerinden denetleme"
+          },
+          {
+            "name": "Admation — Marketing Risk & Compliance",
+            "url": "https://www.simple.io/solutions/marketing-risk-compliance",
+            "same_customer_job_workflow_reason": "Regüle ürün marketing belgelerini compliance aşamalarından geçirip tanıtım iddiaları ve değişiklikleri tarihli denetim iziyle onaylama"
+          }
+        ],
+        "adjacent_competitors": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Kullanıcının ADAS özellik/beyan/ülke/test referansı/yorum/imza kanıtı CSV veya form girişleri; sabit kategorili risk-tetikleyici kuralları, disclaimer ve insan onay/ret defteri, PDF/JSON belge çıktısı. Hukuki kararı veya ürün sertifikasını yazılım vermez.",
+      "dependency_inventory": [
+        "Tarayıcı JavaScript",
+        "Kullanıcıya ait teknik rapor/claim CSV",
+        "Local IndexedDB veya manuel JSON dışa aktarımı",
+        "Opsiyonel domain/hosting (hariç)"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "91 fikir kataloğunda tam kanonik üçlü iş kimliği bulunmadı. AI Disclosure Ops, Synthetic Media Disclosure ve Architecture Evidence Matrix semantik komşu fakat doğrudan ADAS pazarlama iddiası onayı değil. Ret kararı ana rakip eşiğine dayanıyor."
+    },
+    "research_attempts": [
+      {
+        "queries": [
+          "automotive advertising claims compliance software evidence approval",
+          "Red Marker automotive promotional claim review",
+          "Aprimo claim reference regulatory legal approval global marketing",
+          "Eudia evidence claims legal compliance review",
+          "Admation regulated marketing approval audit"
+        ],
+        "outcome": "Dört resmî çok sektör claim review ürünüyle çekirdek iş akışı eşleşmesi doğrulandı."
+      },
+      {
+        "queries": [
+          "Türkiye ADAS sürüş destek reklam iddia onay takip yazılımı",
+          "otomotiv pazarlama iddia hukuki onay delil SaaS Türkiye",
+          "araç otonom sürüş reklam iddiaları uyum yazılımı Türkiye"
+        ],
+        "outcome": "Türkiye doğrudan rakip sayısı güvenle sıfıra indirilemedi, sayısal karar verilmedi."
+      }
+    ]
+  }
+}
