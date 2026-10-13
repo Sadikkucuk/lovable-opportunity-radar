@@ -1,0 +1,47 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "af50794b61b271f3250dd28e4013fda566d17f8b637b817ae723e205ddef2320",
+  "decision": {
+    "article_key": "c6f3a76d19520db03c631790",
+    "decision": "opportunity",
+    "reason": "ETDatacenters 9 Ekim 2026: Hindistan AI veri merkezi yükünün 2030'a kadar yaklaşık 2,7 GW'den 5,4 GW'ye çıkacağı ve yenilenebilir tedarikinin 16,1→32,4 GW olabileceği analist projeksiyonu, gerçekleşmiş kapasite değil. Hyperscaler uzun vadeli 15–20 yıl enerji alım anlaşmaları, 7x24 veri merkezi yükü ile saatlik güneş/rüzgâr üretim profilini uzlaştırma problemi doğurur. Mevcut PPA ürün rakipleri Validation'da kontrol edilmeden sıfır rakip sonucu yok.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-11-a4dcde1ff5-discovery-17b834ce8ff3ae22:c6f3a76d19520db03c631790:1",
+        "canonical_key": "india-data-center-and-renewable-ppa-negotiators|stress-test-24x7-compute-load-vs-renewable-contract-volume|offline-hourly-supply-demand-and-shortfall-simulator",
+        "idea_name": "Veri Merkezi PPA 7x24 Açık Senaryo Defteri",
+        "core_job": "Veri merkezi 7x24 yük eğrisine karşı birden çok enerji satın alma anlaşmasının saatlik arz, kayıp, eksik ve fazla üretim/hedge ihtiyacını kontrat kararı öncesi değerlendirmek",
+        "target_customer": "Hindistan ve global veri merkezi enerji tedarik/yenilenebilir PPA proje ekipleri",
+        "buyer": "Enerji tedarik direktörü veya proje finans analiz lideri",
+        "product_mechanism": "Kullanıcının saatlik talep/solar-rüzgâr profil CSV'si, PPA fiyat/tenor/firma üretim/ikmal varsayımlarını deterministik kıyaslayan sözleşme kapsam ve kısa pozisyon raporu",
+        "why_now": "9 Ekim ET analist tahminleri 2030 Hindistan veri merkezi yenilenebilir ihtiyacının artışını ve 15–20 yıllık hyperscaler PPA'larını tanımlıyor.",
+        "before_state": "Toplam yıllık enerji eşleştirmesi saatlik değişkenleri maskeleyebilir.",
+        "after_state": "Sözleşme ve proje senaryosu başına 24x7 saatlik açık/taşkın enerji ve tedarik riski görünür.",
+        "canonical_source_urls": [
+          "https://datacenters.economictimes.indiatimes.com/news/energy-cooling-sustainability/hyperscalers-drive-indias-data-centre-renewable-energy-demand/134830362"
+        ],
+        "supporting_article_ids": [
+          "1e80a295921d9b9eddb47744"
+        ],
+        "source_observations": [
+          {
+            "url": "https://datacenters.economictimes.indiatimes.com/news/energy-cooling-sustainability/hyperscalers-drive-indias-data-centre-renewable-energy-demand/134830362",
+            "observation": "2030 32.4 GW yenilenebilir ihtiyaç analist öngörüsü; teknoloji firmaları uzun vadeli PPA imzalıyor. Gelecekte kesinleşmiş enerji/şebeke kapasitesi değildir."
+          }
+        ],
+        "scope_hint": "Dünya; saatlik veri CSV ve kullanıcı kontrat değişkenleri; canlı elektrik borsası/API/AI modele zorunlu bağımlılık yok.",
+        "local_evidence": {
+          "signals": [
+            "Hindistan hyperscaler PPA kullanım ve veri merkezi artışı haberleştirilmiş."
+          ],
+          "unknowns": [
+            "Türk ve global enerji sözleşmesi yazılımı rekabeti bilinmiyor.",
+            "PPA hukuki sözleşme ve tahminli üretim fiyat garantisi değildir."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-11-a4dcde1ff5-discovery-17b834ce8ff3ae22/001.json",
+  "valid_until": "2026-11-12T20:52:04Z"
+}

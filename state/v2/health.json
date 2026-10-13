@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T20:49:20Z",
+  "controller_observed_at": "2026-10-13T20:52:24Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
   "ready_jobs": 447,
-  "unfinished_jobs": 448,
-  "last_verified_progress_at": "2026-10-13T20:48:18Z",
+  "unfinished_jobs": 447,
+  "last_verified_progress_at": "2026-10-13T20:52:04Z",
   "workers": {
     "1": {
       "last_started_at": "2026-10-13T05:09:52.124Z",
@@ -47,24 +47,17 @@
         "worker": 3,
         "invocation_id": "94f4769e-c895-4282-8f13-d8e10236ff85",
         "event": "progress",
-        "at": "2026-10-13T20:46:25.802Z",
-        "job_id": "2026-10-10-migration-validation-47fc3e19706b9cfa",
+        "at": "2026-10-13T20:52:21.454Z",
+        "job_id": "2026-10-11-a4dcde1ff5-discovery-17b834ce8ff3ae22",
         "stage": "receipt_saved",
-        "receipt_path": "state/v2/results/2026-10-10-migration-validation-47fc3e19706b9cfa/003.json",
-        "completed_checks": [
-          "trigger",
-          "competition_tr",
-          "competition_global",
-          "feasibility",
-          "history"
-        ],
-        "decision": "rejected",
-        "verified_direct_tr_competitors": 1,
-        "path": "state/v2/worker-events/3/94f4769e-c895-4282-8f13-d8e10236ff85/005-progress.json"
+        "receipt_path": "state/v2/results/2026-10-11-a4dcde1ff5-discovery-17b834ce8ff3ae22/001.json",
+        "discovery_articles_triaged": 10,
+        "raw_opportunities": 3,
+        "path": "state/v2/worker-events/3/94f4769e-c895-4282-8f13-d8e10236ff85/006-progress.json"
       },
-      "receipts_this_invocation": 6,
+      "receipts_this_invocation": 7,
       "write_and_receipt_verified": true,
-      "last_receipt_at": "2026-10-13T20:48:18.728Z"
+      "last_receipt_at": "2026-10-13T20:52:04.941Z"
     },
     "4": {
       "last_started_at": "2026-10-13T03:41:34.910Z",
@@ -106,10 +99,10 @@
     "window_minutes": 120.0,
     "stages": {
       "discovery": {
-        "completed_in_window": 19,
-        "known_remaining": 236,
-        "observed_jobs_per_hour": 9.5,
-        "estimated_minutes_for_stage": 1490.5
+        "completed_in_window": 20,
+        "known_remaining": 235,
+        "observed_jobs_per_hour": 10.0,
+        "estimated_minutes_for_stage": 1410.0
       },
       "merge": {
         "completed_in_window": 1,

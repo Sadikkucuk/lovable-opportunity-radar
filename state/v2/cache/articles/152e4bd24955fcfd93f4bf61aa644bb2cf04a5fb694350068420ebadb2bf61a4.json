@@ -1,0 +1,48 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "152e4bd24955fcfd93f4bf61aa644bb2cf04a5fb694350068420ebadb2bf61a4",
+  "decision": {
+    "article_key": "c74c66504556c212280a1ecb",
+    "decision": "opportunity",
+    "reason": "Enerji Günlüğü özgün haber 10 Ekim: EPDK 8 Ekim 14938 sayılı kurul kararıyla Akedaş, Dicle, Fırat, Toroslar elektrik dağıtım bölgeleri için belirli görevli tedarik/OSB ortaklı tedarikçilerde avans ödemelerini 1 Ocak–31 Aralık 2027 arasında fatura son ödeme tarihine erteledi. BEFORE: genel avans ödeme takvimi; AFTER: koşullu 2027 uygulaması ve faiz/temerrüt ihtarı istisnası. Takvim yürürlüğe girmeden önce başvuru sahibi, kapsama koşulu, fatura dönem son tarih ve hesaplama kanıtını izlemek somut tekrar eden aylık iş olabilir. Resmî kurul kararı tam metni bu araştırmada bağımsız okunmadı; hukuki hüküm müşteri danışmanına aittir.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-11-a4dcde1ff5-discovery-17b834ce8ff3ae22:c74c66504556c212280a1ecb:1",
+        "canonical_key": "turkish-earthquake-region-electricity-retail-suppliers|track-2027-settlement-advance-deferral-eligibility-and-due-dates|offline-region-customer-type-and-billing-deadline-evidence-ledger",
+        "idea_name": "2027 EDAŞ Avans Erteleme Uygunluk Defteri",
+        "core_job": "Dört deprem bölgesi EDAŞ alanında kapsamdaki elektrik tedarik/OSB ortaklı satışları için 2027 avans ödeme ertelenme uygunluğunu, fatura son tarihini ve borç/temerrüt izini belgelemek",
+        "target_customer": "Deprem bölgelerindeki görevli tedarik şirketleri ve OSB ortaklı tedarik firmalarının uzlaştırma/finans ekipleri",
+        "buyer": "Elektrik tedarik şirketi mutabakat ve mali işler lideri",
+        "product_mechanism": "Kullanıcı tarafından girilen işletmeci, bölge, müşteri tipi, fatura dönemi, avans bildirim tutarı ve vade verilerinden kural tabanlı 2027 kapsam, takvim ve istisna CSV/PDF raporu",
+        "why_now": "8 Ekim 2026 EPDK kararının 1 Ocak 2027'de başlayacak uygulaması, ilgili tedarikçiler için yeni avans-vade planı yaratıyor.",
+        "before_state": "Genel avans ödeme yaklaşımı ve EPDK uzlaştırma fatura tarihi ayrı tablolarda.",
+        "after_state": "Kapsam/vade koşulları uzman onayıyla şeffaf senaryo takviminde saklanıyor.",
+        "canonical_source_urls": [
+          "https://www.enerjigunlugu.net/epdk-deprem-bolgesindeki-4-edasin-odemelerini-erteledi-70132h.htm"
+        ],
+        "supporting_article_ids": [
+          "34e625763584c538181e91d8"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.enerjigunlugu.net/epdk-deprem-bolgesindeki-4-edasin-odemelerini-erteledi-70132h.htm",
+            "observation": "10 Ekim haber, 8 Ekim tarihli 14938 Kurul kararı; 1 Ocak-31 Aralık 2027 erteleme; Akedaş/Dicle/Fırat/Toroslar ve belirli OSB ortaklı tedarikçiler. Resmi kararın tam metni ayrıca kontrol edilmeli."
+          }
+        ],
+        "scope_hint": "Türkiye; EPDK mevzuat maddesi manuel bakım, insan onayı, CSV/XML yerel içe aktarma; EPİAŞ canlı API şart değil.",
+        "local_evidence": {
+          "signals": [
+            "Gerçek Türkiye enerji düzenlemesi ve 4 bölge isimleri haberde belirtiliyor."
+          ],
+          "unknowns": [
+            "Kurul kararı tam metni doğrulanmadı.",
+            "Kapsamdaki toplam tedarik şirketi sayısı ve satış ihtiyacı bilinmiyor.",
+            "Bir yıllık düzenleme nedeniyle ticari tekrar sıklığı sınırlı; Validation'la test edilmeli."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-11-a4dcde1ff5-discovery-17b834ce8ff3ae22/001.json",
+  "valid_until": "2026-11-12T20:52:04Z"
+}

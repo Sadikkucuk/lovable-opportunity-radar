@@ -1,0 +1,47 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "4cb36334a5bce9b832a5f39e201418081ea4da699b5397beaf875222fd9a02bc",
+  "decision": {
+    "article_key": "c642cfc2f2790837314e59eb",
+    "decision": "opportunity",
+    "reason": "Handelsblatt 9 Ekim 2026 konuk yazısı: lisans başına maliyet → kullanım/talep başına AI token ve veri platformu maliyeti. 396 kuruluşta %89 maliyet öngörü sapması metinde üçüncü taraf anket verisi olarak aktarılıyor, bağımsız yeniden ölçüm değil. Fark: bir kez yapılandırılmış bilgiyle tekrar retrieval yapan çok çağrılı tasarımın maliyetini karşılaştırma ihtiyacı. Buyer AI platform bütçe/çözüm mimarisi lideri; somut girdi çağrı sayısı, indeks ön işleme eforu, belge tekrar oranı; çıktı yıllık maliyet/senaryo/ölçüm kanıtı. AI modeli çağırmadan formül bazlı simülasyon mümkündür.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-11-a4dcde1ff5-discovery-17b834ce8ff3ae22:c642cfc2f2790837314e59eb:1",
+        "canonical_key": "enterprise-ai-solution-architects|compare-rag-retrieval-and-context-cost-topologies|offline-query-volume-token-and-data-platform-scenario-calculator",
+        "idea_name": "RAG Bağlam–Token Maliyet Senaryo Hesaplayıcısı",
+        "core_job": "Retrieval mimarisi (her istek tam belge, çoklu tool call, ön indekslenmiş Graph/RAG) arasında istek başı/aylık/yıllık maliyet, gereksiz bağlam ve bilgi hazırlama amortismanını ölçmek",
+        "target_customer": "Kurumsal AI çözüm mimarisi ve FinOps ekipleri",
+        "buyer": "AI platformu CTO/FinOps yöneticisi",
+        "product_mechanism": "Kullanıcı tarafından girilen istek/ay, ortalama token, tool çağrısı, hazırlık CAPEX, vektör veri platformu maliyeti ve duplike doküman oranını tarayıcıda deterministik hesaplayan üç mimari senaryo ve hassasiyet raporu",
+        "why_now": "9 Ekim Handelsblatt uzman yazısı, kullanıma dayalı AI harcamalarının token dışı veri altyapısı ve bilgi hazırlama maliyetleriyle birlikte büyüdüğünü, mimari seçimin ROI etkisini gösteriyor.",
+        "before_state": "Genel aylık token bütçesi var, retrieval topolojisi alternatifleri için ayrı birim ekonomi yok.",
+        "after_state": "Mimari tercih başına maliyet ve kanıtlanmamış performans varsayımları, kullanıcı tarafından ayarlanabilir kıyas raporunda.",
+        "canonical_source_urls": [
+          "https://live.handelsblatt.com/bevor-die-ki-rechnung-explodiert-7-fragen-vor-dem-naechsten-ki-budget/"
+        ],
+        "supporting_article_ids": [
+          "0aa97a7ee39275a654dfd105"
+        ],
+        "source_observations": [
+          {
+            "url": "https://live.handelsblatt.com/bevor-die-ki-rechnung-explodiert-7-fragen-vor-dem-naechsten-ki-budget/",
+            "observation": "Konuk yazısı, yedi bütçe sorusu ve retrieval/context/token+veri platformu maliyetleri; anket oranları yazıdaki üçüncü taraf çalışma atfıdır."
+          }
+        ],
+        "scope_hint": "Dünya; yalnız manuel/CSV senaryo girdisi, harici LLM/API/veritabanı veya canlı usage toplama şart değil.",
+        "local_evidence": {
+          "signals": [
+            "Konuk yazısında kullanım bazlı fiyatlama, veri platformu maliyeti ve tekrar bağlamı ayrı maliyet sürücüleri olarak açıklanıyor."
+          ],
+          "unknowns": [
+            "Türkiye'de aynı spesifik senaryo hesaplayıcılar ve global rakipler Validation'da doğrulanmalı.",
+            "Gerçek token tarifeleri kullanıcının güncellemesine bağlı."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-11-a4dcde1ff5-discovery-17b834ce8ff3ae22/001.json",
+  "valid_until": "2026-11-12T20:52:04Z"
+}
