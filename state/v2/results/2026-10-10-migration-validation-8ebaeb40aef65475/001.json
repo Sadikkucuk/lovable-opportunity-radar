@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-8ebaeb40aef65475",
+  "input_hash": "8ebaeb40aef654756adfc5ce9716b905dbb20d81b0547ed400d5fe6147403cc0",
+  "token": "fd84c965-6dac-4856-8d6d-e9274c0aae92",
+  "finished_at": "2026-10-13T15:15:07.242Z",
+  "outcome": "done",
+  "reason": "ShelfAction CSV follow-up: four current global direct economic substitutes, including active Focal Systems Action Tool; rejected global competitor threshold; no catalog publish.",
+  "result": {
+    "decision": "rejected",
+    "reason": "İlk Validation'da doğrulanmış güncel üç robot çözümüne (Simbe Mobile/Tally, Badger Digital Teammates, ShelfOptix) ek olarak Focal Systems Action Tool'un 2026'da aktif olarak raf kamerası gözlemini SKU/raf öncelikli çalışan görevlerine, tamamlanma işaretine ve store ops takibine çevirdiği üretici sayfasından doğrulandı. Focal sensöründe robot yoktur ancak hedef müşteri (çok şubeli perakendeci), çekirdek problem (raf istisnasından işe) ve sonuç akışı (SKU eşleştir→önceliklendir→görevlendir→kapat) bakımından doğrudan ekonomik alternatiftir. Böylece aynı müşteri-iş-akışına hizmet eden en az 4 global rakip doğrulandı ve <=3 global kriteri geçilmedi. Türkiye'de birebir sayım tamamlanmadığı için sıfır olarak iddia edilmez. Önceki unverified araştırma ve kanıt takip işi korunarak son karar rejected; katalog değişmez.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.automatedwarehouseonline.com/groceryshop-2026-retail-robots-are-scaling-now-what/",
+        "accessed_at": "2026-10-13T15:15:07.242Z",
+        "claim": "Groceryshop 2026 retail robot scale to shelf-action workflow",
+        "observation": "Önceki parent receipt'te özgün haber ve robot tedarikçileri incelenmişti; bu URL güncel yeni turda 403 erişim engeli verdi, orijinal kaynağa bu turda okunmuş gibi işaretlenmedi.",
+        "page_read": false,
+        "support": "prior_receipt_only"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://play.google.com/store/apps/details?id=com.simbe.android.v2prod",
+        "accessed_at": "2026-10-13T15:15:07.242Z",
+        "claim": "Simbe Robotics — Tally / Simbe Mobile aynı raf görev akışını yerine getirir",
+        "observation": "Retail zincirlerinde Tally robotu raf/etiket/OOS bulgusunu mobil görev listesi ve store associates kapanış aksiyonu olarak yönetiyor; Ağustos 2026 uygulama sürümü güncel.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.badger-technologies.com/resource/blog/from-data-to-action-mobile-apps-store-productivity.html",
+        "accessed_at": "2026-10-13T15:15:07.242Z",
+        "claim": "Badger Technologies — Digital Teammates aynı raf görev akışını yerine getirir",
+        "observation": "Perakende robotunun SKU/fiyat/raf bulgularını öncelikli personel görev listelerine, aksiyon/doğrulama panosuna dönüştürüyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://shelfoptix.com/",
+        "accessed_at": "2026-10-13T15:15:07.242Z",
+        "claim": "ShelfOptix — Robot Scans and Mobile Worklists aynı raf görev akışını yerine getirir",
+        "observation": "Perakende zinciri için insan eşlikli robot raf taramasında SKU/plano/fiyat istisnalarını mobil store associate iş listesine yönlendiriyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://focal.systems/action-tool/",
+        "accessed_at": "2026-10-13T15:15:07.242Z",
+        "claim": "Focal Systems — Action Tool aynı raf görev akışını yerine getirir",
+        "observation": "Perakende zincirleri için AI shelf camera bulgularını mağaza/raf/SKU ile eşlenmiş öncelikli görev ve personel tamamlama kayıtlarına dönüştürüyor. Robot yerine sabit raf kamerasıyla veri toplaması farklı; ancak aynı alıcı, raf istisnasını görev ve kapanışa çevirme temel işi ve akışı bakımından ticarî ikame üründür.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "search_complete": false,
+        "queries": [
+          "Türkiye robot raf taraması mağaza görevi SKU mobil iş listesi",
+          "Türkiye mağaza raf otomatik denetim robotu görev listesi"
+        ],
+        "scope": "Türkiye perakende raf robot tespitini SKU ve personel göreviyle kapatan mevcut ticarî servislerin ayrı ve tam sayımı yapılmadı",
+        "direct_competitors": []
+      },
+      "global": {
+        "direct_count": 4,
+        "search_complete": true,
+        "queries": [
+          "Simbe Mobile Tally robot shelf task associates",
+          "Badger Technologies mobile apps autonomous robots shelf task",
+          "ShelfOptix robot shelf mobile worklists",
+          "Focal Systems shelf cameras Action Tool stock corrections"
+        ],
+        "scope": "Çok lokasyonlu market/perakende zincirinde raf istisnası tespiti, SKU/konum bazlı mobil personel görevlendirmesi ve kapanış. Focal kaynak donanımı farklı olsa da aynı işin ikame ürünüdür.",
+        "direct_competitors": [
+          {
+            "name": "Simbe Robotics — Tally / Simbe Mobile",
+            "url": "https://play.google.com/store/apps/details?id=com.simbe.android.v2prod",
+            "same_customer_job_workflow_reason": "Retail zincirlerinde Tally robotu raf/etiket/OOS bulgusunu mobil görev listesi ve store associates kapanış aksiyonu olarak yönetiyor; Ağustos 2026 uygulama sürümü güncel."
+          },
+          {
+            "name": "Badger Technologies — Digital Teammates",
+            "url": "https://www.badger-technologies.com/resource/blog/from-data-to-action-mobile-apps-store-productivity.html",
+            "same_customer_job_workflow_reason": "Perakende robotunun SKU/fiyat/raf bulgularını öncelikli personel görev listelerine, aksiyon/doğrulama panosuna dönüştürüyor."
+          },
+          {
+            "name": "ShelfOptix — Robot Scans and Mobile Worklists",
+            "url": "https://shelfoptix.com/",
+            "same_customer_job_workflow_reason": "Perakende zinciri için insan eşlikli robot raf taramasında SKU/plano/fiyat istisnalarını mobil store associate iş listesine yönlendiriyor."
+          },
+          {
+            "name": "Focal Systems — Action Tool",
+            "url": "https://focal.systems/action-tool/",
+            "same_customer_job_workflow_reason": "Perakende zincirleri için AI shelf camera bulgularını mağaza/raf/SKU ile eşlenmiş öncelikli görev ve personel tamamlama kayıtlarına dönüştürüyor. Robot yerine sabit raf kamerasıyla veri toplaması farklı; ancak aynı alıcı, raf istisnasını görev ve kapanışa çevirme temel işi ve akışı bakımından ticarî ikame üründür."
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Robot üreticisinin izinli/elle dışa aktarılmış CSV dosyası tarayıcıda SKU/raf eşleştirme, görev atama ve insan kapanış denetimine girer. Canlı robot servisi, dış AI modeli ve üretici SDK'sı zorunlu değildir.",
+      "dependency_inventory": [
+        "Manuel CSV upload",
+        "Browser-side deterministic SKU matching",
+        "Client-side task closure ledger",
+        "PDF/CSV export"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "91 katalog kaydında aynı perakendeci SKU robot tarama-to-task kanıt akışının birebir semantik üçlü kimliği yok; ret nedeni global rekabet."
+    },
+    "research_attempts": [
+      {
+        "round": 0,
+        "decision": "unverified",
+        "source_job_id": "2026-10-10-migration-validation-5b33a104f1e1178d",
+        "observation": "3 güncel robot iş akışı ve 1 tarihsel Zebra çözüme sahipti; 2026 dördüncü rakip doğrulama eksikti."
+      },
+      {
+        "round": 1,
+        "decision": "rejected",
+        "observation": "Focal Systems 2026 aktif perakende raf kamera-to-task mobil listesi ve tamamlanma akışı aynı alıcı işinde dördüncü aktif ikame."
+      }
+    ]
+  }
+}
