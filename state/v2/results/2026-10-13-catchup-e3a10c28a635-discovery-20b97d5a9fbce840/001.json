@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-20b97d5a9fbce840",
+  "input_hash": "20b97d5a9fbce8408ac43aea3d1af4f3f81d59cb7bee2379ccdffb6e1c6b9874",
+  "token": "5d1cf4ec-365c-409a-9fae-8e88820fa713",
+  "finished_at": "2026-10-13T05:38:52.430Z",
+  "outcome": "done",
+  "reason": "Özgün haberler ayrıştırıldı, eski 2025 MET düzenlemesi yeni gibi gösterilmedi; 10 haberden 3 ham operasyonel fırsat, 7 no_opportunity. Rakip ve semantik doğrulama sonraki aşamaya bırakıldı.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "4f4a04b5ea158a48c87bdb35",
+        "decision": "no_opportunity",
+        "reason": "12 Ekim ST Endüstri haberi Tektronix 7 Series DPO osiloskop ürün özellikleri (25 GHz, 8 kanal, 125 GS/s) ve kullanım örneklerini anlatıyor. Zaten 2025'ten beri tanıtılan ürünün haberinde yeni açık makine-veri hakkı veya tedarikçi bağımsız tekrarlanan müşteri işinin tetiklendiği kanıtlanmadı.",
+        "canonical_source_url": "https://www.stendustri.com.tr/tektronix-7-serisi-dpo-dijital-osiloskoplar",
+        "opportunities": []
+      },
+      {
+        "article_key": "4f4c8528cf847fe5f37d5370",
+        "decision": "no_opportunity",
+        "reason": "12 Ekim Reuters'a göre Tencent'in yaklaşık 4,5 milyar USD'lik tahvil satışı planı AI sermaye ihtiyacına yöneliktir; fonlama finansal işlemdir, yeni Lovable-uyumlu yazılım müşteri iş akışını kanıtlamıyor.",
+        "canonical_source_url": "https://www.reuters.com/world/asia-pacific/tencent-plans-dollar-offshore-yuan-bond-sale-under-note-programme-2026-10-12/",
+        "opportunities": []
+      },
+      {
+        "article_key": "4ff7e66c1c52917efd51ce45",
+        "decision": "no_opportunity",
+        "reason": "Resmi Gazete 33093 sayılı Diğer Üretim Faaliyetlerinde MET Tebliği 30.11.2025 tarihinde yayımlanmış; 13 Ekim 2026'da yürürlüğe giren yeni düzenleme değildir. 91 mevcut üründeki MET/BAT Uyum Masası işlevine semantik olarak çok yakın; değişiklik kanıtı olmayan yeniden yayımlanan mevzuattan mükerrer aday oluşturulmadı.",
+        "canonical_source_url": "https://www.lexpera.com.tr/resmi-gazete/metin/diger-uretim-faaliyetlerinde-mevcut-en-iyi-teknikler-tebligi-33093",
+        "opportunities": []
+      },
+      {
+        "article_key": "4ffa2f6dd38ea3b5c86133cf",
+        "decision": "no_opportunity",
+        "reason": "11 Ekim FreightWaves, INEGI kaynaklı Eylül Meksika otomotiv ihracatı 277.369 (-%11,9) ve ABD payı Ocak-Eylül %76,4 istatistiğini aktarıyor. Mevcut istatistik ekonomik yoğunlaşmayı gösterse de ayrı yeni mevzuat/hak/standart veya tekrarlanabilir özgün ürün mekaniği açıklamıyor.",
+        "canonical_source_url": "https://www.freightwaves.com/news/borderlands-mexico-us-takes-76-of-vehicle-exports-as-september-shipments-plunge",
+        "opportunities": []
+      },
+      {
+        "article_key": "5000c3696af059732a9091f8",
+        "decision": "no_opportunity",
+        "reason": "AI altyapı yatırımlarının getirisi ve harcama baskısı hakkında sektör yorumu. Katalogda AI Value Renewal ürünüyle aynı yatırımın maliyet/sonuç karşılaştırma işi var; farklı somut veri hakkı veya zorunluluk olmadan mükerrer ham fikir çıkarılmadı.",
+        "canonical_source_url": "https://www.reuters.com/commentary/reuters-open-interest/wall-streets-ai-bet-is-now-too-big-hit-2026-10-12/",
+        "opportunities": []
+      },
+      {
+        "article_key": "5028e6c9bdf20086e8b668af",
+        "decision": "opportunity",
+        "reason": "12 Ekim ThePaper özgün konuşması Sharpa'nın ileride restoran/perakende/otellerde 30.000 robot kullanma planını aktarıyor; zaman belirtilmemiştir, gerçekleştirilmiş kurulum değildir. Ağustosta bir DQ dükkanında pilotu var; robotun mevcut insan altyapısını değiştirmeden, kesintisiz çalışabilmesi için yerel operasyon kabul ve insan güvenliği devreye alma iş akışı doğabilir.",
+        "canonical_source_url": "https://www.thepaper.cn/newsDetail_forward_34235490",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-20b97d5a9fbce840:5028e6c9bdf20086e8b668af:01",
+            "idea_name": "Robotlu Mağaza Devreye Alma İstisna Defteri",
+            "canonical_key": "retail-robot-pilot-operators|document-unmodified-store-rollout-acceptance|site-check-task-safety-uptime-and-escalation-ledger",
+            "target_customer": "Zincir mağaza/otel/restoran robot pilot ve iş güvenliği sorumluları",
+            "core_job": "Mağaza ortamını değiştirmeden insanla ortak robot iş kabulünü ve arıza/escalation planını kanıtlamak",
+            "product_mechanism": "Manuel saha foto referansı, servis görev/çevrim süresi, emniyet/insan devralma koşulu, tekrar test ve kabul imza defteri",
+            "why_now": "12 Ekim ThePaper özgün konuşması Sharpa'nın ileride restoran/perakende/otellerde 30.000 robot kullanma planını aktarıyor; zaman belirtilmemiştir, gerçekleştirilmiş kurulum değildir. Ağustosta bir DQ dükkanında pilotu var; robotun mevcut insan altyapısını değiştirmeden, kesintisiz çalışabilmesi için yerel operasyon kabul ve insan güvenliği devreye alma iş akışı doğabilir.",
+            "before_state": "Robot demo kabulü şube iş akışından ayrı, süreklilik ve saha riski belgelenemiyor",
+            "after_state": "Pilot başına görev-süre, güvenlik istisnası, insan devralma ve operasyon devreye alma raporu",
+            "canonical_source_urls": [
+              "https://www.thepaper.cn/newsDetail_forward_34235490"
+            ],
+            "scope_hint": "Dünya",
+            "note": "Discovery only, history/global/TR competition unverified"
+          }
+        ]
+      },
+      {
+        "article_key": "502dd9dc0a2da88acd0e0e8d",
+        "decision": "no_opportunity",
+        "reason": "12 Ekim Philadelphia Semiconductor Index gün içi açılışta -%2 bildirimi finans piyasası fiyat haberi. Satın alanın yeni operasyonel JTBD'si veya veri hakkı yok.",
+        "canonical_source_url": "https://www.cls.cn/",
+        "opportunities": []
+      },
+      {
+        "article_key": "5083727098471436f4e3c07e",
+        "decision": "opportunity",
+        "reason": "12 Ekim The Register özgün açıklamada Microsoft Exchange Admin Center erişimindeki Internal Server Error / HTTP 302 hatasını konfigürasyon değişikliğine ve çözümü geri almaya bağlıyor. EAC kullanılamadığında IT ekibinin acil yönetim ve değişiklik kararlarını hangi kontrol/checklist ile yaptığı, karşılaşılan kritik işler ve kanıtları düzenli tutma ihtiyacı somut.",
+        "canonical_source_url": "https://www.theregister.com/saas/2026/10/12/microsoft-blames-a-configuration-change-for-exchange-admin-center-tumble/5302698",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-20b97d5a9fbce840:5083727098471436f4e3c07e:01",
+            "idea_name": "SaaS Yönetim Paneli Kesinti Operasyon Defteri",
+            "canonical_key": "small-it-ops-teams|document-control-plane-outage-fallback-and-recovery|incident-impact-task-deferment-and-rollback-evidence-ledger",
+            "target_customer": "Microsoft 365 kullanan KOBİ BT yöneticileri",
+            "core_job": "EAC gibi kontrol paneli kesildiğinde ertelenen BT işlemlerini, alternatif prosedürleri ve servis normale dönünce kapanışını izlemek",
+            "product_mechanism": "Kullanıcının manuel olay zaman çizelgesi, etkilenen yönetici işleri, geri alma/alternatif onayı, ertelenen iş kuyruğu ve kapanış kanıtı CSV/PDF",
+            "why_now": "12 Ekim The Register özgün açıklamada Microsoft Exchange Admin Center erişimindeki Internal Server Error / HTTP 302 hatasını konfigürasyon değişikliğine ve çözümü geri almaya bağlıyor. EAC kullanılamadığında IT ekibinin acil yönetim ve değişiklik kararlarını hangi kontrol/checklist ile yaptığı, karşılaşılan kritik işler ve kanıtları düzenli tutma ihtiyacı somut.",
+            "before_state": "Panel sorunu esnasında etkilenen talepler ve acil değişiklik kararları eposta ve sohbet içinde kayboluyor",
+            "after_state": "Olay, iş etkisi, alternatif onay ve ertelenmiş işlemlerin tamamlanmasını gösteren denetim izli rapor",
+            "canonical_source_urls": [
+              "https://www.theregister.com/saas/2026/10/12/microsoft-blames-a-configuration-change-for-exchange-admin-center-tumble/5302698"
+            ],
+            "scope_hint": "Dünya",
+            "note": "Discovery only, history/global/TR competition unverified"
+          }
+        ]
+      },
+      {
+        "article_key": "511d5b48db9aa76131b2843d",
+        "decision": "no_opportunity",
+        "reason": "Heise'nin Münih kamu BT Open Source politika haberi gerçekte 13 Mayıs 2026'da yayımlanmıştır, bugünün yeni gelişmesi değil. 2026–2032 kamu kaynak kodunu yayımlama planı biliniyordu; bu RSS başlığında yeni karar/uygulama kanıtlanmadı.",
+        "canonical_source_url": "https://www.heise.de/en/news/Munich-s-IT-transition-Open-Source-is-the-default-for-the-new-coalition-11292449.html",
+        "opportunities": []
+      },
+      {
+        "article_key": "51338168b5546ed021aeb68d",
+        "decision": "opportunity",
+        "reason": "11 Ekim Chery Malaysia birincil duyurusunda OMODA 5 C/H etkilenen varyantların VIN ile üretici sitesinde kontrol edileceği, yetkili bayide ücretsiz muayene ve gerekirse parça değişimi yapılacağı doğrulanıyor. JPJ araştırması ve 8.878 araç sayısı ikincil açıklamadan; bu müşteri listesi olmadan sistem VIN uyumunu kendi başına kesin hesaplayamaz. Yetkili servis için ithal edilen üretici VIN listesiyle kapatma/kanıt/tedarik parçası takibi iş akışı var.",
+        "canonical_source_url": "https://www.chery.my/2026/10/11/chery-auto-malaysia-melaksanakan-kempen-panggil-semula-untuk-omoda-5/",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-20b97d5a9fbce840:51338168b5546ed021aeb68d:01",
+            "idea_name": "VIN Recall Dealer Closure Ledger",
+            "canonical_key": "authorized-auto-service-networks|track-manufacturer-recall-repair-closure|vin-import-inspection-parts-and-completion-ledger",
+            "target_customer": "Yetkili otomotiv servis zincirleri ve distribütör satış sonrası ekipleri",
+            "core_job": "Geri çağırma kapsamında etkilenen şasi numaralarını servis randevusuna, parça teminine ve onarım kanıtına bağlamak",
+            "product_mechanism": "Üreticiden manuel yüklenen izinli VIN CSV'si, varyant, muayene sonucu, yedek parça, müşteri randevu ve servis kapanış kanıtı; üretici VIN API'si zorunlu değil",
+            "why_now": "11 Ekim Chery Malaysia birincil duyurusunda OMODA 5 C/H etkilenen varyantların VIN ile üretici sitesinde kontrol edileceği, yetkili bayide ücretsiz muayene ve gerekirse parça değişimi yapılacağı doğrulanıyor. JPJ araştırması ve 8.878 araç sayısı ikincil açıklamadan; bu müşteri listesi olmadan sistem VIN uyumunu kendi başına kesin hesaplayamaz. Yetkili servis için ithal edilen üretici VIN listesiyle kapatma/kanıt/tedarik parçası takibi iş akışı var.",
+            "before_state": "Geri çağırma listesindeki araç ve servis/onarım ilerlemesi ayrı Excel ve çağrı kayıtlarında kalıyor",
+            "after_state": "Yetkili servisin parça bekleyen, tamamlanan ve müşteriye bildirilen VIN durum matrisi",
+            "canonical_source_urls": [
+              "https://www.chery.my/2026/10/11/chery-auto-malaysia-melaksanakan-kempen-panggil-semula-untuk-omoda-5/"
+            ],
+            "scope_hint": "Dünya",
+            "note": "Discovery only, history/global/TR competition unverified"
+          }
+        ]
+      }
+    ]
+  }
+}
