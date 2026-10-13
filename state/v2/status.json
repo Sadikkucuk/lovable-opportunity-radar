@@ -4,10 +4,10 @@
   "protected_records": 89,
   "catalog_count": 91,
   "counts": {
-    "done": 248,
+    "done": 249,
     "ready": 499,
     "unverified": 7,
-    "leased": 3
+    "leased": 2
   },
   "evidence_research": {
     "followup_jobs": 9,
@@ -100,7 +100,8 @@
       "processing_status": "in_progress",
       "job_counts": {
         "done": 139,
-        "ready": 160
+        "leased": 1,
+        "ready": 159
       },
       "validation_decisions": {},
       "article_decisions": {
@@ -112,31 +113,32 @@
       "articles_expected": 1374,
       "publication_status": "github_release_available",
       "site_delivery": "not_observed_by_controller",
-      "state_changed_at": "2026-10-13T20:41:04Z"
+      "state_changed_at": "2026-10-13T21:14:08Z"
     },
     {
       "run_id": "2026-10-14-2bfd2b8b0a",
       "processing_status": "in_progress",
       "job_counts": {
-        "done": 3,
-        "leased": 3,
-        "ready": 52
+        "done": 4,
+        "leased": 1,
+        "ready": 53
       },
       "validation_decisions": {},
       "article_decisions": {
-        "opportunity": 249,
-        "no_opportunity": 1474,
-        "unverified": 109
+        "opportunity": 253,
+        "no_opportunity": 1479,
+        "unverified": 110
       },
-      "articles_processed": 1832,
+      "articles_processed": 1842,
       "articles_expected": 2374,
       "publication_status": "github_release_available",
       "site_delivery": "not_observed_by_controller",
-      "state_changed_at": "2026-10-13T21:11:43Z"
+      "state_changed_at": "2026-10-13T21:14:08Z"
     }
   ],
   "errors": [
-    "2026-10-10-migration-validation-47fc3e19706b9cfa attempt 1: invalid attempt: invalid claim identity"
+    "2026-10-10-migration-validation-47fc3e19706b9cfa attempt 1: invalid attempt: invalid claim identity",
+    "2026-10-14-2bfd2b8b0a-discovery-0b3a73483b5053ca attempt 1: invalid attempt: incomplete or duplicate raw opportunity"
   ],
   "health": {
     "state": "attention_required",
@@ -148,7 +150,7 @@
         "user_action": "Durum raporundaki hatalı kayıt incelenmeli; doğrulanmış fikirler yayında kalır."
       }
     ],
-    "last_verified_progress_at": "2026-10-13T21:11:15Z",
-    "controller_observed_at": "2026-10-13T21:11:43Z"
+    "last_verified_progress_at": "2026-10-13T21:11:55Z",
+    "controller_observed_at": "2026-10-13T21:14:08Z"
   }
 }

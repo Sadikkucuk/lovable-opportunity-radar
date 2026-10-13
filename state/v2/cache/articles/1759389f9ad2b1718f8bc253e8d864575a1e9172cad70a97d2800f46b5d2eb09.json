@@ -1,0 +1,47 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "1759389f9ad2b1718f8bc253e8d864575a1e9172cad70a97d2800f46b5d2eb09",
+  "decision": {
+    "article_key": "1be46ddcda6fa732922fe572",
+    "decision": "opportunity",
+    "reason": "RobotStart 11 Ekim özgün haber SpaceData'nın 9 Ekim duyurusu: 360° kamera ile mevcut depoda aynı gün 3D dijital ikiz demo; 119 nesne, 239 collision shape, ölçekte yaklaşık ±%1 hata referans palet ölçümüyle karşılaştırılmış; bunlar pilot iddiası, her depoda garanti değil. BEFORE eski deponun güncel çizimi/BIM yok; AFTER robot route sim öncesi resim→ölçek/temas modeli kabul gerektirir. Aynı SpaceData teknik motorunu taklit etmek yerine 3D model/koridor ölçü ve manuel hat onayı için test kabul defteri hipotezi.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-2bfd2b8b0a-discovery-2fd3059ffa0918ea:1be46ddcda6fa732922fe572:1",
+        "canonical_key": "warehouse-amr-integration-teams|prove-360camera-rebuilt-site-model-measurement-and-collision-acceptance|offline-survey-obstruction-and-pilot-signoff-ledger",
+        "idea_name": "Depo AMR Dijital İkiz Ölçek ve Çakışma Kabul Defteri",
+        "core_job": "AMR veya otonom forklift kurulacak çizimsiz depoda 360° modelden türetilmiş koridor/geçit/nesne ölçülerini gerçek saha ölçümleriyle kontrol edip çarpışma risk bulgularını onaylamak",
+        "target_customer": "Eski depo robot otomasyonu kuran AMR entegratörleri ve depo operasyon proje ekipleri",
+        "buyer": "Robot devreye alma projesi sahibi / depo güvenlik yöneticisi",
+        "product_mechanism": "Kullanıcının yüklediği konum/koridor/nesne CSV, karşılaştırmalı manuel lazer ölçüm, ölçek toleransları, test rotası, çarpışma denemesi ve insan düzeltme imzası; 3D rendering veya robot sim motoru yok",
+        "why_now": "9 Ekim SpaceData demonstrasyonu güncel BIM olmayan depoda 360° video tabanlı 3D ikiz ve çarpışma modeli oluşturdu; 11 Ekim RobotStart ölçüm ve kabul sınırlarını açıkladı.",
+        "before_state": "Güncel BIM olmayan depoda robot rotası çizilir ama ölçüm doğruluğu ve collision model varsayımı belirsiz olabilir.",
+        "after_state": "Konum x ölçüm x protokol x risk x saha onayı matrisiyle kabul kanıtı hazırlanır.",
+        "canonical_source_urls": [
+          "https://robotstart.info/article/2026/10/11/382507.html"
+        ],
+        "supporting_article_ids": [
+          "cdf550a48052b9ff7c91f2de"
+        ],
+        "source_observations": [
+          {
+            "url": "https://robotstart.info/article/2026/10/11/382507.html",
+            "observation": "SpaceData RobotBrain pilotu 119 3D nesne, 239 çarpışma şekli, paletle ±%1 ölçek ölçümü; tek depo POC sonucu, tüm depolara vaat değil."
+          }
+        ],
+        "scope_hint": "Dünya",
+        "local_evidence": {
+          "signals": [
+            "Eski depolarda güncel çizim/BIM yokluğunun robot kurulum hazırlığını geciktirdiği açıkça aktarılıyor."
+          ],
+          "unknowns": [
+            "AMR sim/komisyon devreye alma yazılımları ve entegratörleriyle doğrudan rekabet yüksek olabilir.",
+            "Tespitler sahada manuel ölçülememişse yazılım doğru karar garanti etmez."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-2bfd2b8b0a-discovery-2fd3059ffa0918ea/001.json",
+  "valid_until": "2026-11-12T21:11:55Z"
+}

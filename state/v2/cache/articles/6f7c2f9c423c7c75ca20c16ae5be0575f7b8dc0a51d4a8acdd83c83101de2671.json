@@ -1,0 +1,47 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "6f7c2f9c423c7c75ca20c16ae5be0575f7b8dc0a51d4a8acdd83c83101de2671",
+  "decision": {
+    "article_key": "1be0aeb15448b90fa82a2488",
+    "decision": "opportunity",
+    "reason": "The Korea Herald 12–13 Ekim haberi Koreli LFP malzeme sağlayıcılarının ABD ileri üretim vergi kredisi / PFE dışı menşe gereksinimlerinden kaynaklanan fırsatını, Posco Future M ve L&F tedarik planlarını aktarıyor. 2026, 2027 ve sonrası PFE dışı maliyet oranları haberin özeti olarak var ancak mevzuat tam metni/gerçek vergi danışmanlığı kararı bu aşamada okunmadı. BEFORE düşük fiyat odaklı Çin kaynak; AFTER menşe ve ekonomik fayda arasında tedarikçi nitelendirme belgesi gerekir. Temel iş dış AI veya canlı vergi API gerektirmeyen uygunluk ön karar matrisidir.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-2bfd2b8b0a-discovery-2fd3059ffa0918ea:1be0aeb15448b90fa82a2488:1",
+        "canonical_key": "us-ess-battery-supply-chain-tax-teams|precheck-lfp-direct-material-nonpfe-cost-shares|offline-bom-origin-supplier-attestation-and-scenario-ledger",
+        "idea_name": "LFP PFE Dışı Menşe–Maliyet Kanıt Matrisi",
+        "core_job": "ABD ESS batarya üreticisinin LFP katot ve diğer direkt malzeme faturalarındaki PFE kaynaklı maliyet payı/tedarikçi delil açığını planlanan vergi kredisi başvurusundan önce görmek",
+        "target_customer": "ABD'de ESS batarya üretimi/tedarik zinciri planlayan Koreli ve küresel şirketler",
+        "buyer": "Batarya malzeme tedarik müdürü, vergi uyum sorumlusu",
+        "product_mechanism": "Kullanıcı BOM, tedarikçi sertifika, maliyet/menşe CSV'si, geçerlilik yılı, doğrulanmamış kaynak, vekil menşe riski ve koşullu hesap şablonuyla insan hukuk/mali müşavir onaylı rapor oluşturma; resmi teşvik başvurusu yapmaz",
+        "why_now": "Ekim 2026 Korea Herald, ABD vergi kredisi PFE kısıtlarının Kore LFP malzemeleri lehine sipariş doğurduğunu, fakat Çin maliyet avantajının sürdüğünü bildiriyor.",
+        "before_state": "Kısa vadeli maliyet ile teşvik eligibility belgeleri ayrı satın alma ve mali müşavir tablolarında.",
+        "after_state": "BOM satırı kaynak menşei, maliyet oranı, tedarikçi beyanı, düzenleme yılı ve belirsizliği kanıta bağlanır.",
+        "canonical_source_urls": [
+          "https://asianews.network/us-rules-give-korean-lfp-makers-rare-opening-against-china/"
+        ],
+        "supporting_article_ids": [
+          "4d9d4c61b88b7c9b8842e98d"
+        ],
+        "source_observations": [
+          {
+            "url": "https://asianews.network/us-rules-give-korean-lfp-makers-rare-opening-against-china/",
+            "observation": "The Korea Herald haberi Korea üreticilerinin LFP üretim dönüşümü ve PFE menşe/maliyet kısıtları; yüzde eşikler hukuki doğrulama gerektirir."
+          }
+        ],
+        "scope_hint": "Dünya",
+        "local_evidence": {
+          "signals": [
+            "Tedarik zinciri maliyet kompozisyonu teşvik uygunluğunda etkili oluyor."
+          ],
+          "unknowns": [
+            "ABD kanun ve US Treasury güncel PFE tanımı/yıl eşikleri birincil kaynaktan ayrıca doğrulanmalı.",
+            "Gizli upstream menşe verisi, doğrulanamayan attestations ve TR/global yazılım rakipleri araştırılmalı."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-2bfd2b8b0a-discovery-2fd3059ffa0918ea/001.json",
+  "valid_until": "2026-11-12T21:11:55Z"
+}
