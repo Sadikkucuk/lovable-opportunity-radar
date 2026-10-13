@@ -1,0 +1,31 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "b68a2362878ea96b1bb4be693c3a6bc82404898f0eca6124a1b2777485bc92cd",
+  "decision": {
+    "article_key": "06ef9b6e70e1f6d7eb59869a",
+    "decision": "opportunity",
+    "reason": "12 Ekim SCMP, Huawei/JAC destekli Maextro V800 için medya acil fren testinde üç aracın fren pedalı montaj braketi kırıldığını aktardı. Otomobil üreticisi yanıt verdi; mekanik arızanın kök nedeni hâlen soruşturma altında. 10 Ekim MIIT ve diğer bakanlıkların yeni model test prosedürleri taslağı yayımladığı bildiriliyor, henüz yürürlüğe giren sonuçlanmış yeni kural değil. Araç/OEM ve mekanik parça tedarikçisinin tasarım revizyonuna bağlı test numunesi, yük/fren protokolü, sapma ve insan imzalı kapanış kanıtını tutması müşterinin tekrarlanan kalite işidir; gerçek fren güvenliği sistem tarafından belirlenmez.",
+    "canonical_source_url": "https://www.scmp.com/business/china-evs/article/3370548/brake-pedal-failures-luxury-ev-put-chinese-cars-quality-regulatory-spotlight",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-83ec740278507fe3:06ef9b6e70e1f6d7eb59869a:01",
+        "idea_name": "Mechanical Brake Test Deviation Evidence Desk",
+        "canonical_key": "automotive-brake-component-quality-teams|retain-test-specimen-traceability-and-pedal-bracket-failure-evidence|mechanical-load-design-revision-incident-and-test-report-ledger",
+        "target_customer": "Araç OEM fren-pedal mekanik sistem kalite ekipleri ve Tier-1 mekanik parça tedarikçileri",
+        "core_job": "Fren pedalı braketi/yük taşıyan mekanik aksam için test edilen ürün varyantı, test metodu, numune seri/lot, tasarım revizyonu ve uygunsuzluk kapatma delilini teknik incelemeye hazırlamak",
+        "product_mechanism": "Kullanıcının test cihazından çıkardığı CSV/PDF, parça revizyonu, lot, yükleme profili, test yeri, onaylı protokol, bulgu, parça değişiklik nedeni ve insan imzalı CAPA tutanaklarının deterministic izlenebilirlik matrisi; fren testi çalıştırmaz, uygunluk/sertifika hükmü vermez",
+        "why_now": "12 Ekim SCMP, Huawei/JAC destekli Maextro V800 için medya acil fren testinde üç aracın fren pedalı montaj braketi kırıldığını aktardı. Otomobil üreticisi yanıt verdi; mekanik arızanın kök nedeni hâlen soruşturma altında. 10 Ekim MIIT ve diğer bakanlıkların yeni model test prosedürleri taslağı yayımladığı bildiriliyor, henüz yürürlüğe giren sonuçlanmış yeni kural değil. Araç/OEM ve mekanik parça tedarikçisinin tasarım revizyonuna bağlı test numunesi, yük/fren protokolü, sapma ve insan imzalı kapanış kanıtını tutması müşterinin tekrarlanan kalite işidir; gerçek fren güvenliği sistem tarafından belirlenmez.",
+        "before_state": "Mekanik mukavemet test planları, kırılan numuneler, tasarım kararı ve tedarikçi düzeltici faaliyeti farklı teknik dokümanlarda kopuk",
+        "after_state": "Varyant→numune→test koşulu→bulgu→tasarım değişikliği→yeniden test zinciri; mühendis onayı olmadan güvenlik kararı oluşturmaz",
+        "canonical_source_urls": [
+          "https://www.scmp.com/business/china-evs/article/3370548/brake-pedal-failures-luxury-ev-put-chinese-cars-quality-regulatory-spotlight",
+          "https://carnewschina.com/2026/10/08/huawei-jacs-maextro-v800-faces-safety-scrutiny-following-brake-pedal-failure-reports/"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-83ec740278507fe3/001.json",
+  "valid_until": "2026-11-12T10:15:18Z"
+}
