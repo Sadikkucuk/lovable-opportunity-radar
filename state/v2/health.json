@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T21:05:27Z",
+  "controller_observed_at": "2026-10-13T21:05:52Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
-  "ready_jobs": 504,
+  "ready_jobs": 503,
   "unfinished_jobs": 505,
   "last_verified_progress_at": "2026-10-13T20:52:04Z",
   "workers": {
@@ -54,16 +54,14 @@
       "last_receipt_at": "2026-10-13T20:52:04.941Z"
     },
     "4": {
-      "last_started_at": "2026-10-13T03:41:34.910Z",
+      "last_started_at": "2026-10-13T21:05:35Z",
       "last_event": {
         "schema_version": 1,
         "worker": 4,
-        "invocation_id": "manual-w4-1791862894910-064c27c3413998",
-        "event": "blocked",
-        "at": "2026-10-13T03:41:47.000Z",
-        "reason_code": "permission_denied",
-        "reason": "Claim oluşturma isteği OpenAI güvenlik kontrolü tarafından engellendi; claim ve receipt yazılmadı.",
-        "path": "state/v2/worker-events/4/manual-w4-1791862894910-064c27c3413998/999-blocked.json"
+        "invocation_id": "5c8b6a19-b716-4a05-9f50-957bed735a46",
+        "event": "started",
+        "at": "2026-10-13T21:05:35Z",
+        "path": "state/v2/worker-events/4/5c8b6a19-b716-4a05-9f50-957bed735a46/000-started.json"
       },
       "receipts_this_invocation": 0,
       "write_and_receipt_verified": false,
@@ -93,10 +91,10 @@
     "window_minutes": 120.0,
     "stages": {
       "discovery": {
-        "completed_in_window": 20,
+        "completed_in_window": 19,
         "known_remaining": 293,
-        "observed_jobs_per_hour": 10.0,
-        "estimated_minutes_for_stage": 1758.0
+        "observed_jobs_per_hour": 9.5,
+        "estimated_minutes_for_stage": 1850.5
       },
       "merge": {
         "completed_in_window": 1,
@@ -135,12 +133,6 @@
     }
   ],
   "alerts": [
-    {
-      "code": "worker_blocked",
-      "worker": 4,
-      "severity": "critical",
-      "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
-    },
     {
       "code": "controller_rejected_record",
       "worker": null,
