@@ -1,0 +1,94 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-67201d7d0ef06c7d",
+  "input_hash": "67201d7d0ef06c7d3c2bee8c48d81c6088541ffa608fceadeffef6d3c85d63c7",
+  "token": "6dd91282-64c0-4b46-afa4-06aece5ed451",
+  "finished_at": "2026-10-13T09:49:28.484Z",
+  "outcome": "done",
+  "reason": "10 haber değerlendirildi: Intel SGX–TDX geçişi için 1 yeni ham fikir, 7 no_opportunity ve 2 unverified. Fransa market soğutması, AMD Helion ve AirTrunk 7 Ekim haberleri önceki kayıtlarla mükerrerleştirilmedi.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "48c865755ffa69c02135bc9d",
+        "decision": "no_opportunity",
+        "reason": "12 Ekim Claroty özgün olay raporu Fransa perakende soğutma sistemlerinin siber olayını ve güncel kaybı doğruluyor, fakat saldırganların sisteme kesin hangi yöntemle girdiğinin bilinmediğini açıkça belirtiyor. Bu olay aynı günlük kapsamda Cold-Chain Cyber Recovery Drillbook ham fırsatıyla işlenmiştir; aynı iş ikinci kez ürüne çevrilmedi. Savunma önerisi yalnız yama/erişim envanteridir.",
+        "canonical_source_url": "https://claroty.com/blog/france-supermarket-hacks-expose-risks-of-internet-facing-refrigeration-systems",
+        "opportunities": []
+      },
+      {
+        "article_key": "48e292531c787c66de0e72d3",
+        "decision": "opportunity",
+        "reason": "Intel'in resmî 2026 Ekim SGX geçiş kılavuzu, Diamond Rapids'in Intel SGX destekleyen son Xeon nesli olacağını ve gelecekte Confidential Computing yatırımlarının TDX'e yönleneceğini doğruluyor. SGX kullanan BT/ISV ekiplerinin mevcut enclave, attestation, EPC bellek, güvenlik sınırı ve TDX alternatifine göç kanıtını paketlemesi somut zorunlu teknoloji ömrü yönetimi; geçiş tarihi/ürün desteği otomatik nihai EOL olarak uydurulamaz.",
+        "canonical_source_url": "https://cc-enabling.trustedservices.intel.com/intel-sgx-transition-path/01/introduction/",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-67201d7d0ef06c7d:48e292531c787c66de0e72d3:01",
+            "idea_name": "Intel SGX → TDX Geçiş Kanıt Matrisi",
+            "canonical_key": "confidential-computing-application-owners|prepare-intel-sgx-to-tdx-transition-readiness|enclave-inventory-attestation-security-boundary-and-test-evidence-ledger",
+            "target_customer": "Intel SGX teknolojisini kullanan finans, kimlik doğrulama ve ISV güvenli veri işleme ekipleri",
+            "core_job": "Mevcut Intel SGX enclave uygulamaları için TDX VM sınırına taşınırken hangi güvenlik mekanizmalarının, attestation doğrulamalarının ve veri sözleşmelerinin değiştiğini belgelemek",
+            "product_mechanism": "Sadece kullanıcıdan içeri aktarılan modül/envanter/SGX API, EPC bellek, attestation bağımlılığı, enclave–VM güven sınırı ve test planı CSV; kurala dayalı göç bağımlılık matrisi, onay ve artefakt raporu; gerçek kriptografi/attestation çalıştırmaz",
+            "before_state": "SGX uygulamalarının sahipliği, enclave bağımlılıkları, güvenlik kanıtları ve hedef işlemci ömrü ayrı belgelerde dağınık",
+            "after_state": "SGX–TDX dönüşüm için kapsam, güvenlik değişiklikleri, açık uyumsuzluk/test listesi ve sorumlu geçiş onayı",
+            "why_now": "Intel'in resmî 2026 Ekim SGX geçiş kılavuzu, Diamond Rapids'in Intel SGX destekleyen son Xeon nesli olacağını ve gelecekte Confidential Computing yatırımlarının TDX'e yönleneceğini doğruluyor. SGX kullanan BT/ISV ekiplerinin mevcut enclave, attestation, EPC bellek, güvenlik sınırı ve TDX alternatifine göç kanıtını paketlemesi somut zorunlu teknoloji ömrü yönetimi; geçiş tarihi/ürün desteği otomatik nihai EOL olarak uydurulamaz.",
+            "canonical_source_urls": [
+              "https://cc-enabling.trustedservices.intel.com/intel-sgx-transition-path/01/introduction/"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "48f05874b7ce27efbab30621",
+        "decision": "no_opportunity",
+        "reason": "Çin özel sermaye ve girişim fonu komite toplantısına ilişkin kısa finans sektör duyurusu; yeni bağlayıcı kayıt şeması, işlem hakkı ve müşteri sürekliliğinde değişiklik saptanmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "494bc6b27d4aa618e5a5176f",
+        "decision": "no_opportunity",
+        "reason": "YourStory ana haber dizini, tekil güncel olay değil; farklı müşteri workflow verisi sunmuyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "49778f2e98029ab8754b16f5",
+        "decision": "no_opportunity",
+        "reason": "FinTech İstanbul 12 Ekim eposta bülteni özgün birincil düzenleme değil, bağlantı derlemesidir. İçindeki tekil haberler kaynak bazında ayrı ele alınmalıdır; bültenin kendisinden ürün üretilmedi.",
+        "opportunities": []
+      },
+      {
+        "article_key": "498e403ee5427b714ecd540d",
+        "decision": "no_opportunity",
+        "reason": "7 Ekim Reuters AirTrunk TOK1 veri merkezinde AI yükü için yaklaşık 1 milyar USD likit soğutma yatırımı haberidir. 13 Ekim Japon kaynakta yeniden listelenmesi yeni yatırım kararı değildir. Veri merkezi soğutma ve rack güç planlaması daha önce Helion ve Maia ham fikirlerinde işlenmiş; farklı tetikleyiciye özel yeni müşteri işi yok.",
+        "canonical_source_url": "https://www.reuters.com/world/asia-pacific/blackstone-backed-airtrunk-invest-1-billion-japan-data-centre-campus-2026-10-07/",
+        "opportunities": []
+      },
+      {
+        "article_key": "49d02ab3b3c54b9bd7c49ca1",
+        "decision": "unverified",
+        "reason": "China Daily Pekin'in AI ile kent hizmetlerini geliştirmesi başlığı var; yeni belediye alım protokolü, veri entegrasyon yetkisi veya yayınlanmış devreye alma değerlendirme raporu orijinal tam metinden teyit edilemedi. Genel başlıktan ürün türetilmedi.",
+        "opportunities": []
+      },
+      {
+        "article_key": "49d5a065ab5c1b363c812071",
+        "decision": "unverified",
+        "reason": "Nikkei Japon veri merkezi iklimlendirme verimini artıran alüminyum bölme çözümünü anıyor; spesifik üretici ürün performans test metodu ve bağımsız enerji tasarruf değeri doğrulanamadı. Sırf malzeme başlığından teknik simülasyon/geri ödeme iddiası yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "49dd46946fb4ec990806cbc4",
+        "decision": "no_opportunity",
+        "reason": "AMD Helion rack tanıtımı güncel; bu donanım mimarisi bu günkü daha önceki Discovery paketinde Helion Rack Kapasite Sıcaklık Karşılaştırıcı olarak değerlendirilmiş. Aynı 12 Ekim kaynaktan ikinci ham ürün çıkartılmadı.",
+        "canonical_source_url": "https://www.amd.com/en/products/rackscale-solutions/helion.html",
+        "opportunities": []
+      },
+      {
+        "article_key": "49fcbd355b0619744d392cdc",
+        "decision": "no_opportunity",
+        "reason": "Genç AI şirketinin finansman/değerleme hikâyesi bağımsız somut müşteri iş yükünü değiştirmiyor; ticari fikir lehine haber başlığına dayanarak çıkarım yapılmadı.",
+        "opportunities": []
+      }
+    ]
+  }
+}
