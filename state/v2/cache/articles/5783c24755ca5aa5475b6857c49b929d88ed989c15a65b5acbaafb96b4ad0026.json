@@ -1,0 +1,55 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "5783c24755ca5aa5475b6857c49b929d88ed989c15a65b5acbaafb96b4ad0026",
+  "decision": {
+    "article_key": "8dde91f4dcd4011be93fd78e",
+    "decision": "opportunity",
+    "reason": "IT之家 12 Ekim özgün makalesi ve 10 Ekim önceki haber: Çin'deki 《终焉路独行》 basılı kitap metnine düzenleme/yazım asistanının 'biraz daha düzenleyeyim mi' türü etkileşim satırı yanlışlıkla girdi; proje ekibi orijinal eserde satırın olmadığını, düzenleme/kısaltma sırasında proofreading yazılımının istem metninin kitap metnine yapıştırıldığını kabul etti. Yayıncı, dağıtılan nüshaları geri toplama/yeniden baskı bildirdi. BEFORE web/eser asıl metniyle matbaa baskıya hazır metin arasındaki insan ve model kontaminasyonları kaçabilir. AFTER fiziksel iade/yeniden baskı maliyeti belirginleşti; yayın/üretim ekiplerine offline referans-karşılaştırma ve konuşma-artığı pattern denetimi yönelik ürün hipotezi. LLM tespiti garantisi verilmez; bölüm farkı + şüpheli diyalog kalıbı için insan onayı gerekir.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-2bfd2b8b0a-discovery-500b7a275376a2aa:8dde91f4dcd4011be93fd78e:1",
+        "canonical_key": "publishers-and-book-production-editors|stop-proofreading-assistant-prompts-leaking-into-print-ready-book-text|offline-source-manuscript-vs-typeset-diff-and-dialogue-residue-preflight",
+        "idea_name": "Baskı Öncesi AI Talimat Sızıntısı ve Metin Fark Kontrolü",
+        "core_job": "Basılacak kitap/dergi dizgi metnini yazarın onaylı ana metniyle karşılaştırıp eklenmiş editör/AI diyalog satırlarını ve kritik bölümsel farklılıkları matbaa tesliminden önce doğrulamak",
+        "target_customer": "Kitap yayıncıları, dijitalden baskıya eser uyarlayan içerik yayın evleri, dizgi kalite kontrol ekipleri",
+        "buyer": "Yayın yönetmeni, üretim editörü veya baskı öncesi QA sorumlusu",
+        "product_mechanism": "Yayın ekibinin yüklediği onaylı kaynak TXT/DOCX'den dışa aktarılmış metin ve baskı hazır PDF'den çıkarılmış UTF-8 metin/CSV bölüm listelerini tarayıcıda deterministik diff, olağandışı yeni soru/konuşma kalıbı ve editör açıklama sözlüğüyle karşılaştırıp bölüm/satır kanıtı ve insan onaylı redaksiyon raporu üretir; zorunlu harici API/AI modeli/DB yok",
+        "why_now": "12 Ekim 2026 gerçek fiziksel kitap geri çekme olayı, editing assistant diyalog metninin basılı nüshaya sızması halinde yüksek yeniden baskı ve itibar maliyetini somutlaştırdı.",
+        "before_state": "Orijinal e-kitap/web roman ve son dizgi çıktısı değişiklikleri insan göz okumasında farklı ekiplerden geçiyor; görünür asistan istemleri fark edilmeyebilir.",
+        "after_state": "Bölüm/satır kaynak-dizgi farkı ve yüksek riskli metin parçası, baskı öncesi iki insan imzasıyla raporlanır.",
+        "canonical_source_urls": [
+          "https://www.ithome.com/1/011/740.htm",
+          "https://www.ithome.com/1/011/352.htm"
+        ],
+        "supporting_article_ids": [
+          "bee20bb5888940b9bfdda631"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.ithome.com/1/011/740.htm",
+            "observation": "12 Ekim IT之家 yayınevi özür yazısını aktarır: orijinal metinde olmayan proofreading software AI istem satırı basılı kitaba yanlışlıkla geçmiş; baskı dağıtılan nüshalar geri çağrılıyor.",
+            "verification": "original_article_page_read"
+          },
+          {
+            "url": "https://www.ithome.com/1/011/352.htm",
+            "observation": "10 Ekim erken haber, kağıt kitap bölümünde çevrimiçi sürümde olmayan AI yardımcı yazım ifadesini gösterir.",
+            "verification": "original_article_page_read"
+          }
+        ],
+        "scope_hint": "Dünya; yayıncılık, matbaa öncesi belgelendirme",
+        "local_evidence": {
+          "signals": [
+            "Üretim hatası yayınevi tarafından kabul edildi ve basılı ürünlerin geri çekilmesi açıklandı."
+          ],
+          "unknowns": [
+            "Türkçe yayınevi/prepress QA sistemlerinin ve global metin-diff sistemlerinin doğrudan rakip envanteri Validation'da araştırılmalı.",
+            "Sadece metin çıkarma ve kalıp kontrolleri yanlış pozitif/negatif yapabilir; insan denetimi zorunlu.",
+            "PDF/görsel OCR ve kapalı font akışları MVP kapsamında zorunlu değil."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-2bfd2b8b0a-discovery-500b7a275376a2aa/002.json",
+  "valid_until": "2026-11-12T23:06:44Z"
+}
