@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-2cdb764df23c8004",
+  "input_hash": "2cdb764df23c8004b2b70e028631177cb8eb9c86a049837e2da7a842e43236f0",
+  "token": "8219ce51-b9b4-453b-9c52-ba40756caa98",
+  "finished_at": "2026-10-13T08:36:40.098Z",
+  "outcome": "done",
+  "reason": "10 haberde 1 özgün MCP Java SDK yapılandırma güvenliği ham fırsatı, 9 no_opportunity. SDK'nın 6 Ekim 2026 birincil sürümü doğrulandı; yatırım haberleri ve ürün reklamları ayrı fırsata dönüşmedi.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "a78d75c2cb7bb586c82d313c",
+        "decision": "no_opportunity",
+        "reason": "China Daily, Intuitive Surgical'ın Şanghay ile robotik sağlık teknolojisi işbirliğini aktarıyor; bağımsız bir hastane kullanıcıya açılan yeni yazılım veri hakkı/standart veya dış donanımdan bağımsız iş akışı doğrulanmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "a7a386ea7f919a2e4e329d94",
+        "decision": "no_opportunity",
+        "reason": "A-hisseleri AI training corpus teması hisse hareketi ve fon girişi haberidir; yeni veri lisansı, çalışma standardı ya da müşteri problemine kanıt değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "a7ad087ef3fcf2383831a249",
+        "decision": "no_opportunity",
+        "reason": "SiC gelir ve sevkiyat artışı karşılaştırması üretici performansı göstergesidir; üreticilerin onaylı malzeme spesifikasyonları/lot veri arayüzü kamuya açılmadığı için özgün tedarikçi uygunluk ürünü doğduğu ispatlanmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "a7b4374d96c7c02f92f93ed5",
+        "decision": "no_opportunity",
+        "reason": "Çin içten yanmalı otomobil satışı düşüşü piyasa trendi, yeni doğrudan kontrol veya ürün geliştirici zorunluluğu değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "a7c18557c2e147237bac56b5",
+        "decision": "no_opportunity",
+        "reason": "Haopeng Technology üçüncü çeyrek net kâr tahmini finansal yatırım verisidir, ticari operasyon yazılımı gereksinimi yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "a7ef8a2c302ef9bbc57e009b",
+        "decision": "opportunity",
+        "reason": "Google Cloud 6 Ekim 2026 MCP Toolbox Java SDK v1.0'da ayrık kimlik bilgisi tedarikçisi, şifrelenmemiş HTTP üzerinden kimlik bilgisi aktarım uyarısı, server-side bağlı parametre temizliği, sürüm anlaşması ve özel başlıkları duyurdu. Heise 12 Ekim bunu yeniden aktardı. Bu teknik ayrıntılar güvenli DB-ajan entegrasyonu için konfigürasyon dosyalarını gerçek veritabanına veya AI servisine bağlamadan statik kontrolden geçirme iş hipotezi sunar. Genel Agent Sandbox Policy Desk'e komşudur; Merge/Validation semantik kontrol gerekecek.",
+        "canonical_source_url": "https://cloud.google.com/blog/topics/developers-practitioners/announcing-mcp-toolbox-java-sdk-v10-agentic-data-access-for-the-enterprise/",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-2cdb764df23c8004:a7ef8a2c302ef9bbc57e009b:01",
+            "canonical_key": "java-mcp-database-app-teams|preflight-mcp-toolbox-credential-and-tenant-configuration|tools-yaml-http-credential-policy-and-bound-parameter-review",
+            "idea_name": "MCP Database Credential Preflight",
+            "target_customer": "Java ve Spring tabanlı MCP Toolbox/ajan-veritabanı entegrasyonu geliştiren kurumsal yazılım ekipleri",
+            "core_job": "Ajan veritabanına bağlanmadan önce MCP tools.yaml tanımlarında HTTPS/credential yöntemi, sunucu tarafı sabit tenant parametreleri ve rol kapsamı gibi riskleri incelemek",
+            "product_mechanism": "Kullanıcıdan sağlanan tools.yaml ve istemci SDK ayarlarından yerel tarayıcıda kural tabanlı HTTPS uyarısı, tenant bound-parametre kontrolü, açıklık/mapping raporu ve manuel onay defteri; kimlik bilgisi, çalışan ajan veya canlı veritabanı kullanılmaz",
+            "why_now": "Google Cloud 6 Ekim 2026 MCP Toolbox Java SDK v1.0'da ayrık kimlik bilgisi tedarikçisi, şifrelenmemiş HTTP üzerinden kimlik bilgisi aktarım uyarısı, server-side bağlı parametre temizliği, sürüm anlaşması ve özel başlıkları duyurdu. Heise 12 Ekim bunu yeniden aktardı. Bu teknik ayrıntılar güvenli DB-ajan entegrasyonu için konfigürasyon dosyalarını gerçek veritabanına veya AI servisine bağlamadan statik kontrolden geçirme iş hipotezi sunar. Genel Agent Sandbox Policy Desk'e komşudur; Merge/Validation semantik kontrol gerekecek.",
+            "before_state": "Tool tanımındaki yetkiler ve güvenli transport şartları kod incelemesinde dağınık kalıyor",
+            "after_state": "Açıklanabilir policy/lint raporu, onaylanan parametre alanı, erişim kapsamı ve eksik test kanıtı",
+            "canonical_source_urls": [
+              "https://cloud.google.com/blog/topics/developers-practitioners/announcing-mcp-toolbox-java-sdk-v10-agentic-data-access-for-the-enterprise/"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "a81c22f62da8ae5b8860d432",
+        "decision": "no_opportunity",
+        "reason": "Havacılık teknoloji şirketi üst yöneticisinin hisselerini azaltma borsa bildirimi aynı gün başka paketlerde görüldü; yeni ürün çıkarılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "a82fae3471fd18c97bf22942",
+        "decision": "no_opportunity",
+        "reason": "Salesforce'un Loops AI analiz ürününü satın alma kesin anlaşma haberi, yeni platform API'si veya zorunlu şirketler arası veri protokolü henüz doğurmuyor. Loops fonlama haberi ayrı mevcut günlük listede işlendi; genel satın alım haberinden tekrarlı fikir çıkarılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "a855d8fa862691cc53ef3407",
+        "decision": "no_opportunity",
+        "reason": "Amazon indirim kampanyasında Ecovacs robot süpürge ürünleri alışveriş/tanıtım yazısıdır, yeni teknik API veya müşteri iş zorunluluğu değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "a8bb715d50615020ab9afeb8",
+        "decision": "no_opportunity",
+        "reason": "Eylül yarı iletken şirket birleşme ve devralmaları derlemesi sektör işlemlerinin retrospektif özetidir; yasal süreç değişimi, veri hakkı, ayrı kullanıcı işi doğrulanmadı.",
+        "opportunities": []
+      }
+    ]
+  }
+}
