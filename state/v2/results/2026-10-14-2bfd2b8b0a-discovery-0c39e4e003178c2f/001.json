@@ -1,0 +1,251 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-2bfd2b8b0a-discovery-0c39e4e003178c2f",
+  "input_hash": "0c39e4e003178c2f2a71d1a902030b4f31b641210cc2a5ad2f1b050c21bf2bcb",
+  "token": "d0cb055a-06cf-4c4e-b539-2ff237ae635b",
+  "finished_at": "2026-10-13T22:03:03.617Z",
+  "outcome": "done",
+  "reason": "Donmuş paketteki 10 haberin tamamı özgün veya birincil/doğrulayıcı sayfalarla tarandı: 5 opportunity, 4 no_opportunity ve 1 unverified. Fikirler yalnız Discovery adayıdır; rekabet, fizibilite ve geçmiş benzerliği Validation'da doğrulanacaktır.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "a8c77a5a94a28bb3eb2d34f2",
+        "decision": "opportunity",
+        "reason": "9 Ekim tarihli sektör yayını dört SiC yatırımını; inşaat, teslim, deneme üretimi ve tam kapasite gibi farklı olgunluk aşamalarıyla doğruluyor. Toplam kapasite başlığı tek başına ticari yazılım gerekçesi değildir; fakat otomotiv sınıfı modül hattında tesis–ekipman–numune–müşteri kabul kanıtlarının dağınık olması somut devreye alma işi oluşturur.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-2bfd2b8b0a-discovery-0c39e4e003178c2f:a8c77a5a94a28bb3eb2d34f2:1",
+            "canonical_key": "sic-module-production-ramp-teams|prove-line-readiness-from-construction-through-customer-qualification|offline-milestone-sample-and-capacity-evidence-ledger",
+            "idea_name": "SiC Hat Devreye Alma Kanıt Defteri",
+            "core_job": "Yeni SiC modül hattında bina, ekipman kurulumu, numune, otomotiv güvenilirlik testi ve müşteri kabulünü seri üretim kapasitesi iddiasına bağlamak",
+            "target_customer": "SiC güç modülü üreticilerinin proje, kalite ve üretim devreye alma ekipleri",
+            "buyer": "Fabrika devreye alma program yöneticisi veya otomotiv kalite direktörü",
+            "product_mechanism": "Kullanıcının girdiği kilometre taşı, ekipman FAT/SAT, numune lotu, test sonucu, sapma ve müşteri onayını yerel CSV/JSON dosyasında ilişkilendiren tarayıcı içi kanıt matrisi",
+            "why_now": "Dört Çin SiC projesi aynı hafta %80 inşaat, yıl sonu teslim, gelecek yıl deneme üretimi ve tam yüklü üretim gibi farklı hazırlık aşamaları bildirdi.",
+            "before_state": "Kapasite hedefleri, şantiye ilerlemesi, ekipman kabulü ve müşteri numune kanıtı ayrı tablolarla izlenir.",
+            "after_state": "Her kapasite iddiasının hangi tesis, ekipman, lot ve müşteri kabul kanıtına dayandığı ve hangi engelin açık olduğu görünür.",
+            "canonical_source_urls": [
+              "https://www.eet-china.com/mp/a529625.html"
+            ],
+            "supporting_article_ids": [
+              "335c7869ddd149db859f797b"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.eet-china.com/mp/a529625.html",
+                "observation": "9 Ekim yayını dört projede %80 inşaat, yıl sonu tesis teslimi, gelecek yıl deneme üretimi ve 600 bin/yıl tam yüklü hat gibi farklı aşamaları ayrı ayrı bildiriyor."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_evidence": {
+              "signals": [
+                "Çoklu tesis devreye alma durumları ve kapasite iddiaları ayrı doğrulama kanıtları gerektiriyor."
+              ],
+              "unknowns": [
+                "Türkiye'deki doğrudan rakipler ve global ürün sayısı Validation'da araştırılmalı.",
+                "Otomotiv kalite standardı yorumunu uygulama değil uzman kullanıcı yapmalıdır."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "a92dde871f88d89e9b85512d",
+        "decision": "opportunity",
+        "reason": "12 Ekim tarihli tam metin, çoklu AI bilim sistemlerinin hipotez ve deney planı ürettiğini; Biomni örneğinde fiziksel uygulama ile insan muhakemesinin son kilometre olduğunu ve sistemin 30 milyon satırlık veride kritik bir sütunu başlangıçta atladığını aktarıyor. Harici AI çalıştırmayan, öneri–insan düzeltmesi–deney kanıtı izi tutan ürün hipotezi ayrıştırıldı.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-2bfd2b8b0a-discovery-0c39e4e003178c2f:a92dde871f88d89e9b85512d:1",
+            "canonical_key": "experimental-research-teams-using-ai-proposals|trace-ai-generated-hypotheses-to-human-corrections-and-wetlab-results|offline-hypothesis-experiment-and-deviation-evidence-ledger",
+            "idea_name": "AI Bilim Hipotezi–Deney Sapma Defteri",
+            "core_job": "AI tarafından önerilen bilimsel hipotez ve deney adımlarını insan düzeltmeleri, fiziksel laboratuvar uygulaması, sapmalar ve gerçek sonuçlarla izlenebilir biçimde bağlamak",
+            "target_customer": "AI destekli deney tasarımı kullanan üniversite ve biyoteknoloji araştırma ekipleri",
+            "buyer": "Laboratuvar operasyon yöneticisi veya araştırma kalite sorumlusu",
+            "product_mechanism": "AI çağrısı yapmadan, kullanıcı tarafından içe aktarılan öneri metni/CSV'sini protokol sürümü, insan düzeltmesi, deney adımı, sapma, çıktı ve onayla bağlayan istemci içi kayıt aracı",
+            "why_now": "2026 tarihli inceleme AI ortak bilim sistemlerinin planlamaya ilerlediğini, fakat fiziksel uygulama ve kritik veri yorumunun hâlâ insan doğrulaması gerektirdiğini gösteriyor.",
+            "before_state": "AI önerileri, laboratuvar protokolleri ve sonradan yapılan insan düzeltmeleri farklı dosyalarda kalır.",
+            "after_state": "Her hipotezin hangi insan düzeltmesinden geçtiği, laboratuvarda neyin değiştiği ve sonucun öneriyi destekleyip desteklemediği auditlenir.",
+            "canonical_source_urls": [
+              "https://www.ncsti.gov.cn/kjdt/kjrd/qtrd_kjrd/202610/t20261012_258068.html"
+            ],
+            "supporting_article_ids": [
+              "ca997c77e6e2a58a387fdf57"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.ncsti.gov.cn/kjdt/kjrd/qtrd_kjrd/202610/t20261012_258068.html",
+                "observation": "Metin Biomni'nin deney planlayabildiğini fakat fiziksel uygulama yapmadığını; Kosmos'un kritik bir veri sütununu insan uyarısına kadar atladığını açıklıyor."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_evidence": {
+              "signals": [
+                "İnsan düzeltmesi ve deney sapmasının kayıt altına alınması, model üretmekten ayrı bir kalite işidir."
+              ],
+              "unknowns": [
+                "ELN/LIMS ürünleriyle doğrudan rekabet ve regüle laboratuvar gereklilikleri Validation'da belirlenmeli.",
+                "Ürün harici AI/model çalıştırmayacaktır."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "a953c3c3451ae59e56d75d7b",
+        "decision": "no_opportunity",
+        "reason": "Finansman haberi davetli çalışan kişisel AI asistanı Instinct'in seyahat, rezervasyon ve abonelik işlerini telefon/bilgisayar üzerinden yürüttüğünü doğruluyor. Çekirdek değer harici AI modeli, canlı iletişim ve hizmet entegrasyonlarına bağlıdır; sıfır harici runtime hizmeti kuralıyla farklılaşmış ürün kurulmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "a95c814259e8f2d1eb3e1627",
+        "decision": "opportunity",
+        "reason": "12 Ekim tam metni, robot eğitimi için kalabalık veri toplamada talep dolunca görevin kapanması, nadir sahnelerin daha yüksek teşvik alması, ekipman, sigorta, kalite ve ödeme yönetimi gerektiğini doğruluyor. Canlı pazar yeri/ödeme servisi kurmadan, kurum içinde CSV tabanlı görev–rıza–kalite–teslim kanıt paketi üretmek ayrı bir iş akışıdır.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-2bfd2b8b0a-discovery-0c39e4e003178c2f:a95c814259e8f2d1eb3e1627:1",
+            "canonical_key": "embodied-ai-data-procurement-teams|prove-crowd-task-consent-scene-scarcity-quality-and-delivery|offline-task-consent-quality-and-payout-evidence-pack",
+            "idea_name": "Robot Veri Görevi Rıza–Kalite Kanıt Paketi",
+            "core_job": "Dağıtık kişilerden toplanan birinci şahıs robot eğitim verisinde görev kapsamı, rıza, sahne kıtlığı, kalite kontrolü, teslim ve hakediş kanıtını paketlemek",
+            "target_customer": "Robotik veri seti satın alan veya kurum içi saha toplaması yöneten küçük veri operasyon ekipleri",
+            "buyer": "Veri operasyon yöneticisi, mahremiyet sorumlusu veya veri seti kalite lideri",
+            "product_mechanism": "Canlı pazar yeri veya ödeme entegrasyonu olmadan görev CSV'si, imzalı rıza dosyası, sahne sınıfı, kalite kontrol örneği, ret nedeni ve hakediş dışa aktarımını tarayıcı içinde bağlayan kanıt üretici",
+            "why_now": "2026'da Çin'de yüz milyonlarca yuan teşvikli kalabalık veri uygulamaları, talep kotası ve nadir sahne fiyatlandırmasıyla yaygınlaşmaya başladı.",
+            "before_state": "Görev talebi, katılımcı rızası, video dosyası, kalite kontrolü ve ödeme tablosu ayrı sistemlerde tutulur.",
+            "after_state": "Her veri teslimi hangi görev/rıza/sahne/kalite/ret ve hakediş kaydına dayandığıyla dışa aktarılabilir.",
+            "canonical_source_urls": [
+              "https://www.donews.com/article/detail/8280/108197.html"
+            ],
+            "supporting_article_ids": [
+              "f2d34dd77824af476e9d8ec9"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.donews.com/article/detail/8280/108197.html",
+                "observation": "Yayın, görev kotası dolunca kapanma, kıt sahneye daha yüksek teşvik, ekipman, sigorta, kredi ve kalite yönetimi ihtiyaçlarını açıkça sıralıyor."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_evidence": {
+              "signals": [
+                "Aynı veri tesliminin rıza, kalite ve hakediş kanıtı boyunca izlenmesi somut operasyon ihtiyacıdır."
+              ],
+              "unknowns": [
+                "Türkiye'de kişisel veri ve iş hukuku kapsamı uzman incelemesi ister.",
+                "Global veri operasyon platformlarıyla doğrudan rekabet Validation'da sayılmalı."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "a99c8cb9d59ec4b1c175e346",
+        "decision": "no_opportunity",
+        "reason": "36Kr özgün haberi üç Aichi girişiminin CIIE'de kanal, ürün geliştirme ve yatırım görüşmesi aradığını doğruluyor. Bu tek etkinlik ve standart eşleştirme formu, kalıcı ve farklılaşmış yazılım iş akışını kanıtlamıyor; genel CRM/etkinlik eşleştirme fikri türetilmedi.",
+        "opportunities": []
+      },
+      {
+        "article_key": "a9b7bc6cb51142c20bf24e88",
+        "decision": "no_opportunity",
+        "reason": "IMF 2026 çalışma kâğıdı Asya'da AI benimsemesinin senaryoya göre büyümeyi artırabileceğine dair makro simülasyon veriyor. Bu bir müşteri düzeyi zorunlu iş akışı veya yeni uygulanabilir ürün mekanizması değildir; büyüme tahmini satın alma kanıtı sayılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "a9d4f2237f0f6eb9102645eb",
+        "decision": "opportunity",
+        "reason": "10 Ekim tarım bilimi toplantısı, araştırma altyapısı, pilot/orta ölçek ve kavram doğrulama platformları planlanmasını; uygulama etkisiyle değerlendirme ve teknoloji transferinin son kilometresini vurguluyor. Dış veri servisi kullanmadan proje kanıtı ve saha geçiş kararını izleyen hipotez ayrıştırıldı.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-2bfd2b8b0a-discovery-0c39e4e003178c2f:a9d4f2237f0f6eb9102645eb:1",
+            "canonical_key": "agricultural-research-commercialization-programs|prove-concept-pilot-field-transfer-and-practical-benefit|offline-stage-gate-evidence-and-extension-handoff-register",
+            "idea_name": "Tarım Kavram Kanıtı–Saha Devir Dosyası",
+            "core_job": "Tarım Ar-Ge çıktısını kavram kanıtı, pilot/orta ölçek denemesi, saha faydası, yayım kuruluşuna devir ve kapanış kararı boyunca kanıtlamak",
+            "target_customer": "Tarım araştırma enstitüleri, üniversite teknoloji transfer birimleri ve tarımsal pilot program ekipleri",
+            "buyer": "Ar-Ge program yöneticisi veya teknoloji transfer ofisi sorumlusu",
+            "product_mechanism": "Manuel proje/deneme CSV'si, deney kanıtı, saha lokasyonu, ölçülen fayda, eksik koşul, paydaş onayı ve yayım devir paketini tarayıcı içi aşama kapılarında ilişkilendirme",
+            "why_now": "10 Ekim 2026 toplantısı yeni tarımsal büyük altyapı, pilot ve kavram doğrulama platformlarının planlanmasını ve pratik etkiyle değerlendirmeyi açıkça istedi.",
+            "before_state": "Laboratuvar sonucu, pilot kayıtları, saha faydası ve yayım kuruluşuna devir belgeleri ayrı tutulur.",
+            "after_state": "Her projenin laboratuvardan sahaya geçiş koşulu, ölçülen faydası, eksik kanıtı ve devir sahibi tek karar dosyasında görünür.",
+            "canonical_source_urls": [
+              "https://nmj.chifeng.gov.cn/zwxx/sndt/nmsz/202610/t20261012_2829156.html",
+              "https://www.yicai.com/news/103388740.html"
+            ],
+            "supporting_article_ids": [
+              "b88c345a6406164b1234793b"
+            ],
+            "source_observations": [
+              {
+                "url": "https://nmj.chifeng.gov.cn/zwxx/sndt/nmsz/202610/t20261012_2829156.html",
+                "observation": "Resmî yerel hükümet aktarımı kavram doğrulama/pilot platformlarını, teknoloji yayım sistemini ve uygulama faydısıyla değerlendirmeyi aynı programda sayıyor."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_evidence": {
+              "signals": [
+                "Kavram doğrulama ile sahaya devir arasında kanıt ve sorumlu geçişi açıkça vurgulanmıştır."
+              ],
+              "unknowns": [
+                "Türkiye'de TTO ve tarımsal proje yönetim araçlarıyla doğrudan rekabet araştırılmalı.",
+                "Tarım uzmanlığı ve saha ölçümü kullanıcı sorumluluğunda kalır."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "a9dc8421e1f4c54c5c006e6c",
+        "decision": "no_opportunity",
+        "reason": "ETNews özgün foto-haberi Argo 612 adlı dört ayaklı devriye robotuna AI video analizi eklenerek kör noktalara gidildiğini gösteriyor. Haber tek ürün gösterimi; robot kontrolü, video analizi ve canlı entegrasyon harici runtime/hardware bağımlılığı taşır. Ayrı deterministik web ürünü için yeni iş akışı kanıtı yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "acc7df7ede25741ee4135bb3",
+        "decision": "unverified",
+        "reason": "Feed başlığı yalnızca yayın adını tekrar ediyor; özgün LatePost makalesinin konusu veya gövdesi belirlenemedi. Arama yalnız yayın podcast sayfasını buldu. Başlık/özetten olay, aktör, değişim ve ürün işi çıkarılamadığı için doğrulanamadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "ad210439363565a48ca2ed89",
+        "decision": "opportunity",
+        "reason": "Xinhua ve The Paper, 2026 ilk dokuz ay Çin NEV üretim/satışı ve ihracat artışını doğruluyor. Makro büyüme tek başına ürün değildir; ancak ihracatın 4,006 milyon araca çıkmasıyla ülke/pazar bazlı belge ve uygunluk değişikliklerini kanıt paketine bağlama işi plausible bir hipotezdir. Canlı mevzuat servisi olmadan kullanıcı yüklemeli dosya yaklaşımı seçildi.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-2bfd2b8b0a-discovery-0c39e4e003178c2f:ad210439363565a48ca2ed89:1",
+            "canonical_key": "small-nev-export-program-teams|assemble-market-specific-homologation-document-and-change-evidence|offline-market-requirement-document-and-approval-matrix",
+            "idea_name": "NEV İhracat Pazar Uygunluk Dosyası",
+            "core_job": "Elektrikli araç ihracatında hedef pazar bazında homologasyon gereği, teknik belge sürümü, test kanıtı, çeviri ve onay durumunu sevkiyat öncesi kapatmak",
+            "target_customer": "Birden çok pazara elektrikli araç veya dönüşüm kiti ihraç eden küçük OEM ve ihracat program ekipleri",
+            "buyer": "İhracat homologasyon yöneticisi veya uluslararası satış operasyon lideri",
+            "product_mechanism": "Canlı mevzuat API'si olmadan uzman kullanıcının yüklediği gereksinim CSV/PDF referanslarını model/ülke/belge/test/sürüm/son tarih/onay matrisi ve eksik paket raporuna bağlayan tarayıcı aracı",
+            "why_now": "2026 ilk dokuz ay Çin NEV ihracatı 4,006 milyon adede ve yıllık %130 artışa ulaştı; pazar çeşitlenmesi belge koordinasyonu talebini büyütebilir.",
+            "before_state": "Ülke şartları, araç varyantı belgeleri, test raporları ve satış sevkiyat onayları ayrı klasörlerde tutulur.",
+            "after_state": "Her araç/pazar kombinasyonu için geçerli belge sürümü, kanıt sahibi, eksik test ve sevkiyat engeli görünür.",
+            "canonical_source_urls": [
+              "https://www.xinhuanet.com/fortune/20261012/86323a70bc2c42efa464adf1d8692d7d/c.html",
+              "https://www.thepaper.cn/newsDetail_forward_34235599"
+            ],
+            "supporting_article_ids": [
+              "220505db2a8f10583665d4bc"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.xinhuanet.com/fortune/20261012/86323a70bc2c42efa464adf1d8692d7d/c.html",
+                "observation": "Xinhua, Ocak–Eylül 2026 NEV ihracatını 4,006 milyon ve yıllık artışı 1,3 kat olarak; üretim/satışı 12,483/12,472 milyon olarak bildiriyor."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_evidence": {
+              "signals": [
+                "Artan ihracat hacmi çoklu pazar belge koordinasyonu ihtimali doğurur."
+              ],
+              "unknowns": [
+                "Makale homologasyon sorununu doğrudan ölçmüyor; müşteri talebi ayrıca doğrulanmalı.",
+                "Türkiye ve global doğrudan rakipler Validation'da araştırılmalı.",
+                "Mevzuat doğruluğu uzman girdisine bağlıdır; canlı dış servis yoktur."
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
