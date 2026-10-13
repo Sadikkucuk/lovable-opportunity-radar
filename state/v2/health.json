@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T03:48:28Z",
+  "controller_observed_at": "2026-10-13T03:49:00Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
@@ -9,18 +9,17 @@
   "last_verified_progress_at": "2026-10-13T03:47:53Z",
   "workers": {
     "1": {
-      "last_started_at": "2026-10-13T03:47:32.723Z",
+      "last_started_at": "2026-10-13T03:48:49.411Z",
       "last_event": {
         "schema_version": 1,
         "worker": 1,
-        "invocation_id": "manual-w1-1791863252723-5235676",
-        "event": "finished",
-        "at": "2026-10-13T03:47:59.295Z",
-        "receipts_verified": 1,
-        "note": "One validation receipt saved, decision unverified.",
-        "path": "state/v2/worker-events/1/manual-w1-1791863252723-5235676/999-finished.json"
+        "invocation_id": "manual-w1-1791863327698-8290471",
+        "event": "started",
+        "at": "2026-10-13T03:48:49.411Z",
+        "trigger": "manual_owner_request",
+        "path": "state/v2/worker-events/1/manual-w1-1791863327698-8290471/000-started.json"
       },
-      "receipts_this_invocation": 1,
+      "receipts_this_invocation": 0,
       "write_and_receipt_verified": true,
       "last_receipt_at": "2026-10-13T03:47:53.844Z"
     },
@@ -140,6 +139,12 @@
       "worker": 4,
       "severity": "critical",
       "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
+    },
+    {
+      "code": "controller_rejected_record",
+      "worker": null,
+      "severity": "critical",
+      "user_action": "Durum raporundaki hatalı kayıt incelenmeli; doğrulanmış fikirler yayında kalır."
     }
   ],
   "invalid_events": []

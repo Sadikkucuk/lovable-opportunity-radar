@@ -82,7 +82,9 @@
       "state_changed_at": "2026-10-13T03:46:45Z"
     }
   ],
-  "errors": [],
+  "errors": [
+    "2026-10-10-migration-validation-47fc3e19706b9cfa attempt 1: invalid attempt: invalid claim identity"
+  ],
   "health": {
     "state": "attention_required",
     "alerts": [
@@ -103,9 +105,15 @@
         "worker": 4,
         "severity": "critical",
         "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
+      },
+      {
+        "code": "controller_rejected_record",
+        "worker": null,
+        "severity": "critical",
+        "user_action": "Durum raporundaki hatalı kayıt incelenmeli; doğrulanmış fikirler yayında kalır."
       }
     ],
     "last_verified_progress_at": "2026-10-13T03:47:53Z",
-    "controller_observed_at": "2026-10-13T03:48:28Z"
+    "controller_observed_at": "2026-10-13T03:49:00Z"
   }
 }
