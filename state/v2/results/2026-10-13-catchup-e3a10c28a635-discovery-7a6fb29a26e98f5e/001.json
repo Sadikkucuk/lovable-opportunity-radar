@@ -1,0 +1,100 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-7a6fb29a26e98f5e",
+  "input_hash": "7a6fb29a26e98f5ec79b3c56b73a609386d03cd6de346a9f4e1c6711466d043f",
+  "token": "9305996b-993e-499e-a85a-4930aa173956",
+  "finished_at": "2026-10-13T10:05:51.529Z",
+  "outcome": "done",
+  "reason": "10 makalenin tümü ayrı karara bağlandı: Kore humanoid ithalat KC/bayi hazırlığı için 1 koşullu ham fırsat, 7 fırsatsız haber, 2 bağımsız doğrulanamayan veri ihlali/model benchmark iddiası. LA port hacmi birincil resmî kayıtla kontrol edildi. Çin NEV vergi ve NVIDIA optik olayları tekrarlanmadı.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "0db48f4da9f52c8d97ab1225",
+        "decision": "no_opportunity",
+        "reason": "Geer Software iki günlük fiyat tavanı sonrasında AI hizmet gelirinin hâlen toplam hasılatın küçük kısmını oluşturduğunu bildiriyor. Şirkete özgü yatırımcı açıklaması yeni satın alanın operasyonuna erişilebilir açık veri/hukukî yükümlülük kazandırmıyor.",
+        "canonical_source_url": "https://www.stcn.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "0e022c41c2b25acc51d8b4b1",
+        "decision": "no_opportunity",
+        "reason": "NVIDIA yeni USFP optik standardı ve Meta Muse model haberi aynı günlük önceki haber paketlerinde değerlendirilmiş; aynı haber/iş akışından ikinci fırsat çıkarılmadı.",
+        "canonical_source_url": "https://nvidianews.nvidia.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "0eec62fe7a3c51a442ba49ab",
+        "decision": "no_opportunity",
+        "reason": "Port of Los Angeles 9 Ekim resmî duyurusunda Eylül 2026'da 1.042.652 TEU ile tarihin en yoğun ayı ve yaklaşık 371 bin boş konteyner raporladı. Bu gerçekleşmiş liman hacmidir; tek başına kullanıcı bazlı yeni düzenleme, veri erişim hakkı veya diğer lojistik ürünlerden ayrışan ürün mekanizması ortaya çıkmıyor.",
+        "canonical_source_url": "https://portoflosangeles.org/references/2026-news-releases/news_100926_sept_cargo",
+        "opportunities": []
+      },
+      {
+        "article_key": "0f2c8837a6188a2d744753af",
+        "decision": "no_opportunity",
+        "reason": "Çin NEV ihracat KDV iade oranı %13'ten %9'a 1 Nisan 2027'de düşmesi aynı gün NEV İhracat Vergi İadesi Etki Simülatörü ham fikriyle işlendi; etkisini anlatan tekrar haber yeni fikir yaratmaz.",
+        "canonical_source_url": "https://www.gov.cn/",
+        "opportunities": []
+      },
+      {
+        "article_key": "0f2e81abd53add00f2facb2f",
+        "decision": "opportunity",
+        "reason": "12 Ekim Electronic Times özgün haberine göre Çin ilk 10 humanoid üreticisinden sekizi Kore'de KC belgesi, marka veya dağıtım kanalından en az birini edinmiş; bu sekizinin tamamının KC onayı almış olduğu anlamına gelmez. AgiBot X2 Ultra, Unitree G1, Booster T1/K1 KC belgeleri örnek; Galbot/UBTech ürünlerinin büyük ölçekli saha satışı ve bazılarının KC onayı beklemede. Distribütör ve OEM ekiplerinin ürün/model bazlı düzenleyici uygunluk, marka/vekalet, satış sonrası ve deneme şartlarının ilerleme kanıtı ayrı iş akışıdır.",
+        "canonical_source_url": "https://www.etnews.com/20261012000274",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-7a6fb29a26e98f5e:0f2e81abd53add00f2facb2f:01",
+            "idea_name": "Korea Humanoid Import Qualification Ledger",
+            "canonical_key": "korean-humanoid-robot-importers|prepare-model-specific-certification-trademark-and-distributor-readiness|kc-model-market-entry-trial-and-approval-evidence-ledger",
+            "target_customer": "Güney Kore humanoid robot distribütörleri, ithalatçılar ve OEM pazar giriş ekipleri",
+            "core_job": "Yeni robot modelinde KC sertifika kapsamı, marka yetkisi, bayilik anlaşması, garanti/servis ve müşteri PoC koşullarını satışa çıkmadan önce denetlemek",
+            "product_mechanism": "Kullanıcıdan robot model/VIN veya ürün kodu, KC kayıt numarası, marka belge referansı, dağıtım yetkisi, test/Poc/servis planı ve tarihli manuel CSV girişi; KC sistemine dış API veya ürün telemetri bağlantısı yok",
+            "why_now": "12 Ekim Electronic Times özgün haberine göre Çin ilk 10 humanoid üreticisinden sekizi Kore'de KC belgesi, marka veya dağıtım kanalından en az birini edinmiş; bu sekizinin tamamının KC onayı almış olduğu anlamına gelmez. AgiBot X2 Ultra, Unitree G1, Booster T1/K1 KC belgeleri örnek; Galbot/UBTech ürünlerinin büyük ölçekli saha satışı ve bazılarının KC onayı beklemede. Distribütör ve OEM ekiplerinin ürün/model bazlı düzenleyici uygunluk, marka/vekalet, satış sonrası ve deneme şartlarının ilerleme kanıtı ayrı iş akışıdır.",
+            "before_state": "Aynı ithalatçı için bazı humanoid modelleri sertifikalı, bazıları sadece distribütör anlaşmalı; model-varyant ve belgesel ilerleme karışıyor",
+            "after_state": "Model bazlı satışa hazırlık kriteri, eksik yetki/tescil, müşteri pilotu ve onay kanıt defteri",
+            "scope_hint": "Dünya",
+            "canonical_source_urls": [
+              "https://www.etnews.com/20261012000274"
+            ],
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "0f9df70ed776fa891f08fcc3",
+        "decision": "unverified",
+        "reason": "Confluent, Deloitte, KFC, MoneyGram hakkında saldırganların veri sızdırdıkları iddiaları haberleştirilmiş; müşteri veya adli araştırma kaynaklı doğrulanmış sızıntı kapsamı ve tarihli resmî açıklamalar elde edilmedi. İddialar gerçek doğrulanmış ihlal veya zorunlu bildirim olayı sayılmaz.",
+        "canonical_source_url": "https://www.heise.de/",
+        "opportunities": []
+      },
+      {
+        "article_key": "0fa3a7164f44df024bada246",
+        "decision": "no_opportunity",
+        "reason": "Bathurst 1000 archive başlığı yeni olay değil; arşiv/kategori dinamik kaydı.",
+        "canonical_source_url": "https://thedriven.io/",
+        "opportunities": []
+      },
+      {
+        "article_key": "0fc429167b3b3e623e1b9e87",
+        "decision": "no_opportunity",
+        "reason": "Robot sektöründe yatırım fırsatı ve haber sonrası pozisyon kapatma görüşü finansal piyasa yorumu; Lovable'la üretilebilen farklı B2B operasyonel görev kanıtlamıyor.",
+        "canonical_source_url": "https://www.yicai.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "1056a9a22b55ab57f053b1f0",
+        "decision": "unverified",
+        "reason": "Huawei ve East China Normal University'nin zaman serisi tahmini temel modelinde iki benchmark liderliği başlıkta yer alıyor; veri seti isimleri, bağımsız tekrarlanabilir test koşulları ve orijinal araştırma dokümanına erişim doğrulanamadı. Benchmark sonucunu kesin kanıt/ürün tetikleyicisi yapmadık.",
+        "canonical_source_url": "https://www.ithome.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "1089afd76a53f269356b05f6",
+        "decision": "no_opportunity",
+        "reason": "Ay/Mars görevlerindeki risklere ilişkin bilim ve kamuoyu anlatısı; yeni doğrulanabilir açık veri seti/standart veya özgün tekrarlı KOBİ yazılım işi saptanmadı.",
+        "canonical_source_url": "https://www.technologyreview.com/",
+        "opportunities": []
+      }
+    ]
+  }
+}
