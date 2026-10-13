@@ -1,0 +1,30 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "1200dda17902995ac328b44123e4c26f62aa0381e3a1f1b9c6656a1961eb5e1a",
+  "decision": {
+    "article_key": "cc91bc8962745dd22d36aab0",
+    "decision": "opportunity",
+    "reason": "12 Ekim SCMP, ByteDance ve ABD üniversiteleri yazarlarının hakem incelemesinden geçmemiş araştırmasını aktarıyor: uzun promptta anahtar bilginin pozisyonu doğruluğu etkileyebilir. Ücretsiz yerel model QA takımı için sabit bilgi test setlerini yerel sağlanan cevap dosyalarından analiz etmek farklı denetim iş akışıdır; model çalıştırma API'si zorunlu değil.",
+    "canonical_source_url": "https://www.scmp.com/tech/tech-trends/article/3370550/deepseeks-cost-saving-ai-may-lead-inaccuracy-model-performance-research",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-ac88c8183ae78fc0:cc91bc8962745dd22d36aab0:01",
+        "idea_name": "Local LLM Position Stability Benchmark Ledger",
+        "canonical_key": "local-model-evaluation-teams|detect-retrieval-position-sensitivity-from-exported-model-answers|prompt-position-answer-comparison-and-confidence-ledger",
+        "target_customer": "Ücretsiz yerel LLM kullanan geliştirici ve kurum test ekipleri",
+        "core_job": "Sabit içerik soruları aynı bilgi farklı uzun bağlam pozisyonlarında yerleşince cevabın tutarlılığını kanıtlamak",
+        "product_mechanism": "Kullanıcı tarafından getirilen prompt-test/cevap CSV dosyalarını farklı konum ve benchmark cevaplarına göre deterministic skorlayan JS karşılaştırıcı",
+        "why_now": "12 Ekim SCMP, ByteDance ve ABD üniversiteleri yazarlarının hakem incelemesinden geçmemiş araştırmasını aktarıyor: uzun promptta anahtar bilginin pozisyonu doğruluğu etkileyebilir. Ücretsiz yerel model QA takımı için sabit bilgi test setlerini yerel sağlanan cevap dosyalarından analiz etmek farklı denetim iş akışıdır; model çalıştırma API'si zorunlu değil.",
+        "before_state": "Bağlam konumu kalite farkı tekil benchmark skorlarına yansımaz",
+        "after_state": "Pozisyona duyarlı doğruluk sapma matrisi ve tekrar test planı",
+        "canonical_source_urls": [
+          "https://www.scmp.com/tech/tech-trends/article/3370550/deepseeks-cost-saving-ai-may-lead-inaccuracy-model-performance-research"
+        ],
+        "scope_hint": "Dünya",
+        "discovery_only": true
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-ac88c8183ae78fc0/001.json",
+  "valid_until": "2026-11-12T07:35:15Z"
+}
