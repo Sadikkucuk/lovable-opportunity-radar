@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T07:31:55Z",
+  "controller_observed_at": "2026-10-13T07:32:11Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
@@ -46,9 +46,12 @@
         "schema_version": 1,
         "worker": 3,
         "invocation_id": "7ac4f717-e895-4aef-9a01-125bfac08a6a",
-        "event": "started",
-        "at": "2026-10-13T07:30:05.498Z",
-        "path": "state/v2/worker-events/3/7ac4f717-e895-4aef-9a01-125bfac08a6a/000-started.json"
+        "event": "progress",
+        "at": "2026-10-13T07:31:56.834Z",
+        "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-8c02bf59cd51f982",
+        "stage": "receipt_saved",
+        "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-8c02bf59cd51f982/001.json",
+        "path": "state/v2/worker-events/3/7ac4f717-e895-4aef-9a01-125bfac08a6a/001-progress.json"
       },
       "receipts_this_invocation": 1,
       "write_and_receipt_verified": true,
@@ -94,10 +97,10 @@
     "window_minutes": 120.0,
     "stages": {
       "discovery": {
-        "completed_in_window": 17,
+        "completed_in_window": 16,
         "known_remaining": 400,
-        "observed_jobs_per_hour": 8.5,
-        "estimated_minutes_for_stage": 2823.5
+        "observed_jobs_per_hour": 8.0,
+        "estimated_minutes_for_stage": 3000.0
       },
       "merge": {
         "completed_in_window": 0,
