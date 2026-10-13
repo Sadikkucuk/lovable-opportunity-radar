@@ -1,0 +1,93 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-b551490e944a7e2a",
+  "input_hash": "b551490e944a7e2a06ae3f4521d102e098b85e74a444395bcd2b8743718ca5d5",
+  "token": "f7e3c7c3-3d6f-4eca-9549-e53f0e3379f2",
+  "finished_at": "2026-10-13T11:54:17.619Z",
+  "outcome": "done",
+  "reason": "10 haberin 1'inde FERC'nin PJM veri merkezi yük kayıt sistemi onayı ile yeni dar kanıt hazırlık fırsatı, 8 no_opportunity, 1 başlığı belirsiz unverified. Curtailment teklifinin reddedildiği açıklandı; elektrik kesme zorunluluğu iddiası yaratılmadı.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "51380ff7b0fa12cd8ec0316c",
+        "decision": "no_opportunity",
+        "reason": "China Daily turistlerin Shaanxi bölgesinin doğal güzelliklerini ziyaret ettiğine yönelik turizm tanıtımı; yeni resmî veri erişim hakkı veya bağımsız alıcı iş akışı açıklamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "519849dfbfb52c92bd22df77",
+        "decision": "unverified",
+        "reason": "OFweek 'AI,突发重磅!' gibi olay/firma/standart içermeyen genel başlık; özgün habere ait bağlayıcı içerik ve güncel kaynak belirlenmediğinden doğrulanmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "51b3903dd6c8b8901a3d1e59",
+        "decision": "no_opportunity",
+        "reason": "Avustralya parlamento incelemesinde sovereign AI ve devletin yerli tedarikçilere öncelik vermesi politika tavsiyesidir. 30 Kasım 2026 nihai rapor tarihi öngörülmüş; bugünden yürürlüğe girmiş yeni bütün kamu ihale zorunluluğu gibi gösterilmedi.",
+        "canonical_source_url": "https://www.aph.gov.au/Parliamentary_Business/Committees/Joint/Artificial_Intelligence/ArtificialIntelligence",
+        "opportunities": []
+      },
+      {
+        "article_key": "51cd45a68e6bc3a6eb03dfca",
+        "decision": "no_opportunity",
+        "reason": "Hong Kong Mobvista 7 günlük toplam hisse geri alımı borsa/şirket finansmanı açıklamasıdır, yeni bağımsız operasyon yazılımı işi değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "51e6a93de73a0b49a71aac7f",
+        "decision": "no_opportunity",
+        "reason": "Microsoft'un 2027 Maia 300 dağıtım planı aynı gün rack güç bütçesi ham fikirleriyle önceki Discovery paketlerinde işlendi. Bu aktarma haberle mükerrer fikir açılmadı.",
+        "canonical_source_url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+        "opportunities": []
+      },
+      {
+        "article_key": "51eff3d2278a5c3217655f2e",
+        "decision": "opportunity",
+        "reason": "Reuters 12 Ekim'e göre FERC, PJM'nin veri merkezleri ve büyük talepler için öngördüğü kayıt sistemini onayladı ancak zirve talebinde elektrik kesinti/curtailment önlemi teklifini reddetti. Kayıt sistemi için hizmete giriş tarihi, yük planı, yakıt/güç kaynağı ve lokasyon bilgileri açıklanıyor; belirli saha yükümlülüklerinin tam resmî FERC karar metni henüz bağımsız incelenmedi, registry üretimde aktif sayılmaz. Veri merkezi geliştiricilerinin proje başvuru aşamasında doğrulanabilir yük kanıtı ve değişiklik geçmişini hazırlaması yeni dar iş hipotezi.",
+        "canonical_source_url": "https://www.reuters.com/business/energy/us-panel-approves-pjms-registry-data-centers-rejects-plan-curtail-power-them-2026-10-12/",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-b551490e944a7e2a:51eff3d2278a5c3217655f2e:01",
+            "idea_name": "PJM Veri Merkezi Büyük Yük Başvuru Kanıt Defteri",
+            "canonical_key": "pjm-region-data-center-developers|prepare-large-load-registry-evidence-before-grid-intake|site-mw-phasing-power-source-and-change-provenance-ledger",
+            "target_customer": "PJM şebeke bölgesinde veri merkezi geliştiricileri ve utility bağlantı planlama ekipleri",
+            "core_job": "Yeni büyük tüketim projesi için hizmete giriş ve aşamalı MW talep öngörüsünü, tesis yeri/enerji kaynağı ve resmî şebeke başvuru kanıtı ile takip etmek",
+            "product_mechanism": "Proje planlama CSV'si, yıl-ay yük basamakları, alternatif enerji kaynakları, şebeke bağlantı ön koşul belgesi, güncelleme/insan onayı ve risk revizyonu defteri; FERC/PJM canlı API ve hukuki karar içermez",
+            "why_now": "Reuters 12 Ekim'e göre FERC, PJM'nin veri merkezleri ve büyük talepler için öngördüğü kayıt sistemini onayladı ancak zirve talebinde elektrik kesinti/curtailment önlemi teklifini reddetti. Kayıt sistemi için hizmete giriş tarihi, yük planı, yakıt/güç kaynağı ve lokasyon bilgileri açıklanıyor; belirli saha yükümlülüklerinin tam resmî FERC karar metni henüz bağımsız incelenmedi, registry üretimde aktif sayılmaz. Veri merkezi geliştiricilerinin proje başvuru aşamasında doğrulanabilir yük kanıtı ve değişiklik geçmişini hazırlaması yeni dar iş hipotezi.",
+            "before_state": "Geliştiricinin şebekeye tahsis ettiği talep ve fiziksel/finansal proje kanıtı farklı etaplarda ayrışabiliyor",
+            "after_state": "Büyük yük kayıt hazırlık envanteri, belge/varsayım sürümü ve şebeke proje değişiklik izi",
+            "canonical_source_urls": [
+              "https://www.reuters.com/business/energy/us-panel-approves-pjms-registry-data-centers-rejects-plan-curtail-power-them-2026-10-12/"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "524e12fbb5809531b19da8d4",
+        "decision": "no_opportunity",
+        "reason": "NetEase LOOK canlı yayınında bahşiş fonksiyonunun kapatılmasının etkisi platform kullanıcı haberidir. Resmî uygulama tarihi, geri ödeme/veri taşınabilirliği ve müşteri kapsamı belgelenmedi, bağımsız 'hizmet kapanış defteri' mükerrer olay yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "52999973bff1fc0242d3352b",
+        "decision": "no_opportunity",
+        "reason": "Caixin Microsoft başkanının AI güvenlik düzenlemesi çağrısı, Çin NEV vergisinin düşüşü ve havalimanı olayını aynı günde özetleyen bülten; ilk iki gelişme daha önce işlendi ve başka özgün Lovable ürünü çıkartılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "530aa0a8cd3ff8ca1bdb0dec",
+        "decision": "no_opportunity",
+        "reason": "Çin batarya şirketinin sermaye yatırımı ve Nvidia karşılaştırmalı finansman stratejisi köşe yazısı, ticari yatırım trendidir, farklı kamu standardı/tekrarlı veri erişimi değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "531eff5959f6d8d7f43bf340",
+        "decision": "no_opportunity",
+        "reason": "Hyosung Chemical Avrupa'da EV/robot plastik malzemesi polyketone portföy tanıtımı, BASF Ultrason'un aynı gün malzeme OEM kanıt kıyası fikrine yakın. Tam teknik sayfa ile yeni açık sertifika değişikliği ispatlanmadı, mükerrer yeni fikir yapılmadı.",
+        "opportunities": []
+      }
+    ]
+  }
+}
