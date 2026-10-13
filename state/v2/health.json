@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T03:33:26Z",
+  "controller_observed_at": "2026-10-13T03:40:19Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
@@ -9,32 +9,30 @@
   "last_verified_progress_at": null,
   "workers": {
     "1": {
-      "last_started_at": "2026-10-12T21:02:46Z",
+      "last_started_at": "2026-10-13T03:40:07.598Z",
       "last_event": {
         "schema_version": 1,
         "worker": 1,
-        "invocation_id": "07ac4711-aad4-44a3-8829-1cb290b7d96d",
-        "event": "progress",
-        "at": "2026-10-12T21:03:20Z",
-        "job_id": "2026-10-12-4bb3b46a63-discovery-06720c5d85931eee",
-        "stage": "claim_saved",
-        "path": "state/v2/worker-events/1/07ac4711-aad4-44a3-8829-1cb290b7d96d/001-progress.json"
+        "invocation_id": "manual-w1-1791862807598-774754325",
+        "event": "finished",
+        "at": "2026-10-13T03:40:15.895Z",
+        "receipts_verified": 0,
+        "note": "Manual invocation started and verified; queue and discovery instructions inspected; no claim taken or receipt saved in this invocation.",
+        "path": "state/v2/worker-events/1/manual-w1-1791862807598-774754325/999-finished.json"
       },
       "receipts_this_invocation": 0,
       "write_and_receipt_verified": false,
       "last_receipt_at": null
     },
     "2": {
-      "last_started_at": "2026-10-12T21:04:28Z",
+      "last_started_at": "2026-10-13T03:40:11.708Z",
       "last_event": {
         "schema_version": 1,
         "worker": 2,
-        "invocation_id": "502dcd13-cae6-4297-95dd-0ba2d860adf3",
-        "event": "progress",
-        "at": "2026-10-12T21:04:59Z",
-        "job_id": "2026-10-13-43d3b526fc-discovery-00c31037c88999ef",
-        "stage": "claim_saved",
-        "path": "state/v2/worker-events/2/502dcd13-cae6-4297-95dd-0ba2d860adf3/001-progress.json"
+        "invocation_id": "w2-manual-20261013034011708",
+        "event": "started",
+        "at": "2026-10-13T03:40:11.708Z",
+        "path": "state/v2/worker-events/2/w2-manual-20261013034011708/000-started.json"
       },
       "receipts_this_invocation": 0,
       "write_and_receipt_verified": false,
@@ -115,26 +113,8 @@
   ],
   "alerts": [
     {
-      "code": "worker_not_started",
+      "code": "worker_finished_without_receipt",
       "worker": 1,
-      "severity": "critical",
-      "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
-    },
-    {
-      "code": "worker_heartbeat_missing",
-      "worker": 1,
-      "severity": "critical",
-      "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
-    },
-    {
-      "code": "worker_not_started",
-      "worker": 2,
-      "severity": "critical",
-      "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
-    },
-    {
-      "code": "worker_heartbeat_missing",
-      "worker": 2,
       "severity": "critical",
       "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
     },
