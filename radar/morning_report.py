@@ -39,6 +39,7 @@ def build(root, now):
         "feed_items": feed.get("item_count"), "feed_cap": feed.get("aggregate_limit"),
         "catalog_ideas": len(catalog.get("ideas", [])),
         "preserved_baseline": 91, "jobs": status.get("counts", {}),
+        "evidence_research": status.get("evidence_research", {}),
         "night_run": actual, "health": {"state": health.get("state"),
             "alerts": health.get("alerts", []),
             "last_verified_progress_at": health.get("last_verified_progress_at")},
@@ -58,6 +59,9 @@ def render(data):
              f"- RSS son üretim: {data['feed_generated_at']}; mevcut havuz: {data['feed_items']}",
              f"- Kanonik katalog: {data['catalog_ideas']} fikir; koruma hedefi: en az 91",
              f"- Toplam tamamlanan iş: {done}; bekleyen/aktif iş: {pending}",
+             f"- Kanıt tamamlama kuyruğu: {data['evidence_research'].get('open', 'bilinmiyor')} açık; "
+             f"{data['evidence_research'].get('followup_jobs', 'bilinmiyor')} toplam ek iş; "
+             f"{data['evidence_research'].get('exhausted_needing_manual_review', 0)} manuel gözden geçirme ihtiyacı",
              f"- Bugünkü araştırma: {data['night_run'].get('processing_status', 'not_started_or_not_reconciled')}",
              f"- Bugünkü haber kapsaması: {data['night_run'].get('articles_processed', 0)} / {data['night_run'].get('articles_expected', 'unknown')}",
              f"- Günlük doğrulama kararları: {json.dumps(data['night_run'].get('validation_decisions', {}), ensure_ascii=False)}",
