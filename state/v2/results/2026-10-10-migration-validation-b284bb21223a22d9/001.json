@@ -1,0 +1,78 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-b284bb21223a22d9",
+  "input_hash": "b284bb21223a22d984822cb5429a2ffc902fcec1edfae5705fdab6fc23996610",
+  "token": "12912bf7-0e7e-472d-bbe7-3610fd449b92",
+  "finished_at": "2026-10-13T20:42:45.749Z",
+  "outcome": "done",
+  "reason": "Aday, Çongçing Eylül 2026 tarihli kamu destek ve sektör geliştirme politikasını 'HR AI rollout compliance obligation' gibi yorumluyor. Özgün kaynak 19 tedbirle sektör yatırım desteği, pilot platform, insan kaynakları uygulaması ve teşvik öngörüyor; Türkiye veya küresel işverenler için yeni zorunlu rollout uyum şartı ilan etmiyor. Ürünün temel tetikleyici/why-now iddiası geçersiz olduğu için yeni katalog ürünü reddedildi.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Kaynak uyum yükümlülüğü değil, 28 Eylül tarihli Çin/Çongçing insan kaynakları AI destek ve sektör dönüşüm programıdır; önerilen genel HR hizmet sağlayıcısı zorunlu uyum planlayıcısının müşteri ihtiyacı bu haberle kanıtlanmıyor. Adayı isim değiştirerek yeniden sunma.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://cbgc.scol.com.cn/news/8035215",
+        "accessed_at": "2026-10-13T20:42:45.749Z",
+        "claim": "Kaynağın aktardığı 19 önlem 28 Eylül 2026 tarihli Çongçing yerel AI+HR sektör programıdır.",
+        "observation": "Sayfada 渝府办发〔2026〕47号, 2026-09-28 tarihli yazı; hesaplama desteği, HR veri seti, pilot platform, AI iş gücü uygulamalarını teşvik eden 19 tedbir bulunuyor. Türkiye'de genel HR AI uyum yükümlülüğü bulunmuyor.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "trigger_review": {
+      "original_development_date": "2026-09-28",
+      "article_published_at": "2026-10-08",
+      "geography": "Chongqing, China",
+      "development_type": "sector-support-policy",
+      "claim_gap": "Mandatory obligations for HR providers not present in source"
+    },
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "queries": [
+          "Türkiye insan kaynakları yapay zeka uyum kontrol paneli işveren ai işe alım kullanım yönetimi yazılım"
+        ],
+        "scope": "Haber tetikleyici koşulu başarısız olduğu için Türkiye sıfır doğrudan rakip iddiası araştırılmadı.",
+        "search_complete": false,
+        "direct_competitors": []
+      },
+      "global": {
+        "direct_count": null,
+        "queries": [
+          "HR AI adoption compliance planner 2026 rollout readiness software EU AI Act employees governance workplace",
+          "global AI governance HR AI compliance tools employer workplace employee AI deployments companies"
+        ],
+        "scope": "Kapsam eksik; çok sayıda adjacent AI governance platformu görülüyor fakat müşteri+iş+akış koşullarıyla tek tek sınıflanmadı.",
+        "search_complete": false,
+        "direct_competitors": []
+      }
+    },
+    "history_review": {
+      "decision": "uncertain",
+      "reason": "Başlıktaki zorunluluk iddiası kaynaktan çıkmadığı için yayın öncesi semantik tarihsel eşleşme incelemesi gerekmeden ret; katalog değiştirilmedi."
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Salt statik politika checklist ve CSV içe aktarma yapılabilir; ancak gerçek düzenleyici yükümlülük bulunmadığından mekanizma doğrulanmış alıcı değerine dönüşmüyor.",
+      "dependency_inventory": [
+        "Kullanıcı elindeki iş akışı ve politika kayıtları",
+        "Yerel tarayıcı hesaplama ve dışa aktarma"
+      ]
+    },
+    "research_attempts": [
+      {
+        "url": "https://cbgc.scol.com.cn/news/8035215",
+        "status": "original_page_read",
+        "observation": "Chongqing Sep 28 19 measures support policy; no claimed mandatory worldwide HR rollout requirement."
+      },
+      {
+        "query": "HR AI governance 2026 tools",
+        "status": "searched",
+        "observation": "Mitratech, Credo AI, OneTrust, IBM watsonx.governance gibi bitişik çözümler tespit edildi; doğrudan sayıya dönüştürülmedi."
+      }
+    ]
+  }
+}
