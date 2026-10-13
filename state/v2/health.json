@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T03:42:05Z",
+  "controller_observed_at": "2026-10-13T03:42:20Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
@@ -14,26 +14,27 @@
         "schema_version": 1,
         "worker": 1,
         "invocation_id": "manual-w1-1791862911924-80089952",
-        "event": "started",
-        "at": "2026-10-13T03:41:51.924Z",
-        "trigger": "manual_owner_request",
-        "path": "state/v2/worker-events/1/manual-w1-1791862911924-80089952/000-started.json"
+        "event": "progress",
+        "at": "2026-10-13T03:42:06.772Z",
+        "job_id": "2026-10-13-43d3b526fc-discovery-0c2956796dbb77f9",
+        "stage": "claim_saved",
+        "path": "state/v2/worker-events/1/manual-w1-1791862911924-80089952/001-progress.json"
       },
       "receipts_this_invocation": 0,
       "write_and_receipt_verified": false,
       "last_receipt_at": null
     },
     "2": {
-      "last_started_at": "2026-10-13T03:40:11.708Z",
+      "last_started_at": "2026-10-13T03:42:03.993Z",
       "last_event": {
         "schema_version": 1,
         "worker": 2,
-        "invocation_id": "w2-manual-20261013034011708",
-        "at": "2026-10-13T03:40:41.932Z",
-        "event": "finished",
-        "path": "state/v2/worker-events/2/w2-manual-20261013034011708/999-finished.json"
+        "invocation_id": "w2-manual-20261013034203993",
+        "event": "started",
+        "at": "2026-10-13T03:42:03.993Z",
+        "path": "state/v2/worker-events/2/w2-manual-20261013034203993/000-started.json"
       },
-      "receipts_this_invocation": 1,
+      "receipts_this_invocation": 0,
       "write_and_receipt_verified": true,
       "last_receipt_at": "2026-10-13T03:40:34.442Z"
     },
