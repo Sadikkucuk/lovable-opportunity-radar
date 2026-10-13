@@ -1,0 +1,118 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-86ac0101727c147e",
+  "input_hash": "86ac0101727c147e29cf0e4a5ed57caa97cb5c46e161e3b42aa9957bbf122cf0",
+  "token": "738e032b-4688-427a-8ed6-974dad5ec5a3",
+  "finished_at": "2026-10-13T10:27:41.134Z",
+  "outcome": "done",
+  "reason": "10 makale ayrıştırıldı: 2 yeni ham fikir (SPUR isteğe bağlı telemetri standardını içerik haklarıyla mutabakat ve Fransa 2027 taslak şeker vergisi için SKU senaryosu), 8 no_opportunity. SPUR v1 2 Ekim yayımlandı, 12 Ekim katılım haberi; Fransa bütçesi henüz yasalaşmadı. KFC/Deloitte ihlal ve Aksa kapasite tekrarları ürün yapılmadı.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "9ccf63bcb76b1ce804c1e92b",
+        "decision": "no_opportunity",
+        "reason": "YourStory ana giriş/kategori içerik sayfası yeni tarihli ayrı haber olayı değil; kaynaktan ayırt edici müşteri yükümlülüğü çıkmadı.",
+        "canonical_source_url": "https://yourstory.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "9cd56e6d1c9f56703c112e43",
+        "decision": "no_opportunity",
+        "reason": "Microsoft Başkanı Brad Smith'in AI'ya süt ürünlerinden daha az düzenleme geldiği görüşü daha önceki gün içi güvenlik/yönetişim haberlerinde işlendi; henüz yürürlüğe girmiş yeni yasa olmadığı için yeni aday üretilmedi.",
+        "canonical_source_url": "https://www.reuters.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "9cf9d7a639eb661fb449b4bc",
+        "decision": "no_opportunity",
+        "reason": "Aksa'nın KKTC Kalecik tesisini 35 MW büyütme haberi daha önceki günlük RSS'de işlendi. Tek şirket kapasite yatırımını ikinci kez ürün fırsatı yapmadık.",
+        "canonical_source_url": "https://www.enerjigunlugu.net/",
+        "opportunities": []
+      },
+      {
+        "article_key": "9d44d4cee3ad04a754c68821",
+        "decision": "no_opportunity",
+        "reason": "Kling AI video üretim modelinin finansal değerlemesi ve kârlılık beklentisi sermaye piyasası yorumu; dış AI model runtime zorunluluğunu kaldıran bir teknik standart/iş akışı sunmuyor.",
+        "canonical_source_url": "https://www.36kr.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "9dc1d91535c12bdd9a7e0477",
+        "decision": "no_opportunity",
+        "reason": "ShinyHunters operasyonuyla ilgili üçüncü gözaltı/yargı vakası siber suç soruşturması haberi; adli süreçten müşteri kişisel verisi çıkartma veya saldırı göstergesi erişim hakkı türetilmedi. AI-Assisted Attack Incident Ledger mevcut katalogda olay kanıtı işini kapsıyor.",
+        "canonical_source_url": "https://www.techinside.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "9e00e4b0f73421b5617cbf66",
+        "decision": "opportunity",
+        "reason": "12 Ekim Reuters duyurusunda NYT, Economist, AFP dahil 40'tan fazla yayıncı SPUR koalisyonuna katıldı. SPUR **Content Telemetry Standard v1 resmi olarak 2 Ekim 2026** yayımlanmış açık/isteğe bağlı endüstri standardıdır, yürürlüğe giren bağlayıcı yasa değil. content_retrieved/grounded/cited/presented/engaged gibi tanımlanmış olayların yayıncı tarafında tedarikçilerden gelen CSV/JSON telemetri raporlarıyla lisanslı içerik/sözleşme hakları açısından mutabakatı yeni operasyonel görev; standart AI sağlayıcılarından kullanım raporu otomatik gelmesini garanti etmez.",
+        "canonical_source_url": "https://www.reuters.com/legal/litigation/nyt-economist-among-publishers-joining-coalition-curb-unpaid-ai-use-2026-10-12/",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-86ac0101727c147e:9e00e4b0f73421b5617cbf66:01",
+            "idea_name": "Publisher Content Telemetry Contract Reconciliation Desk",
+            "canonical_key": "news-publisher-rights-teams|reconcile-ai-content-usage-telemetry-with-licensing-terms|spur-event-csv-content-owner-and-contract-evidence-ledger",
+            "target_customer": "Haber yayıncılarının lisanslama, fikrî haklar ve ticari gelir ekipleri",
+            "core_job": "AI şirketinden alınabilen gerçek kullanım olaylarını SPUR Content Telemetry biçiminde lisans sözleşmesi ve belirlenmiş içerik haklarıyla karşılaştırmak",
+            "product_mechanism": "Kullanıcının sağladığı SPUR telemetry CSV/JSON, lisanslı içerik ID, retrieved/grounded/cited/presented/engaged olayları, dönemi, sözleşme paketini ve manuel istisna onayını statik JS ile eşleme; dış model veya yayıncı web taraması yok",
+            "before_state": "AI lisans görüşmesi ve olay günlükleri farklı yerlerde; içerik kullanımının hangi lisans maddesine bağlandığı bilinmeyebiliyor",
+            "after_state": "Verilen olayların lisans/kontrat maddesi eşleşmesi ve mutabakat farkları için kanıtlı dönem raporu; eksik veya raporlanmayan kullanım tespit edilemez",
+            "why_now": "12 Ekim Reuters duyurusunda NYT, Economist, AFP dahil 40'tan fazla yayıncı SPUR koalisyonuna katıldı. SPUR **Content Telemetry Standard v1 resmi olarak 2 Ekim 2026** yayımlanmış açık/isteğe bağlı endüstri standardıdır, yürürlüğe giren bağlayıcı yasa değil. content_retrieved/grounded/cited/presented/engaged gibi tanımlanmış olayların yayıncı tarafında tedarikçilerden gelen CSV/JSON telemetri raporlarıyla lisanslı içerik/sözleşme hakları açısından mutabakatı yeni operasyonel görev; standart AI sağlayıcılarından kullanım raporu otomatik gelmesini garanti etmez.",
+            "scope_hint": "Dünya",
+            "canonical_source_urls": [
+              "https://www.reuters.com/legal/litigation/nyt-economist-among-publishers-joining-coalition-curb-unpaid-ai-use-2026-10-12/",
+              "https://www.spurcoalition.org/updates/spur-content-telemetry-standard-v1-published"
+            ],
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "9e39274873bc860fdbd6cb41",
+        "decision": "no_opportunity",
+        "reason": "Teknoloji masaüstü gadget tavsiyesi tüketici alışveriş derlemesi; yeni B2B teknik mevzuat, veri/API ve kullanıcı işi yok.",
+        "canonical_source_url": "https://techcrunch.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "9e60a7422801f9f5fddc7f3c",
+        "decision": "no_opportunity",
+        "reason": "Kore'nin yarıiletken ihracatında yeni rekor istatistiği şirket/ülke ekonomi verisidir, tek başına yeni operasyonel işlem/uyum standardı sunmuyor.",
+        "canonical_source_url": "https://www.stcn.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "9e68d1c688f7e6a765916421",
+        "decision": "opportunity",
+        "reason": "Fransa 2027 bütçe teklifinde 1 Ekim 2026 itibarıyla yüksek şekerli ultra işlenmiş ürünlere ek vergi genişlemesi öngörüldü; gıda sanayi dernekleri Ekim'de itiraz etti. Reuters ~300 milyon avro gelir tahmini veriyor. Bu **henüz parlamento tarafından kesin yasalaştırılmamış bütçe önerisi** ve hedef ürün tanımları değişebilir; gıda üreticisi SKU/formülasyon ve ürün sınıfı için olası maliyetleri hazırlık senaryolarında izlemek müşteri işidir.",
+        "canonical_source_url": "https://www.reuters.com/business/what-is-frances-2027-budget-2026-10-01/",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-86ac0101727c147e:9e68d1c688f7e6a765916421:01",
+            "idea_name": "France Sugar Levy Proposal SKU Impact Desk",
+            "canonical_key": "french-food-manufacturers|simulate-proposed-2027-sugar-tax-sku-exposure|sku-sugar-content-price-and-rule-scenario-ledger",
+            "target_customer": "Fransız şekerli işlenmiş gıda üreticileri ve ürün/finans planlama ekipleri",
+            "core_job": "2027 bütçe taslağında olası şeker bazlı ilave verginin ürün/SKU marjına ve reformülasyon seçimine senaryo etkisini hesaplamak",
+            "product_mechanism": "Kullanıcı SKU/şeker gramı, ürün çeşidi/işleme sınıfı, hacim, fiyat ve **taslak** oran varsayımını girer; kural sürümü, duyarlılık ve marj raporu hesaplanır, vergi beyannamesi/nihai vergi kararı üretmez",
+            "before_state": "Taslak vergide kapsama girecek ürünler ve beklenen bütçe etkisi fabrika, pazarlama ve finans arasında aynı tablodan izlenmiyor",
+            "after_state": "Yasal olmayan senaryo varsayımını açıkça işaretleyen SKU bazlı muhtemel maliyet, sınıf belirsizliği ve yönetim karar matrisi",
+            "why_now": "Fransa 2027 bütçe teklifinde 1 Ekim 2026 itibarıyla yüksek şekerli ultra işlenmiş ürünlere ek vergi genişlemesi öngörüldü; gıda sanayi dernekleri Ekim'de itiraz etti. Reuters ~300 milyon avro gelir tahmini veriyor. Bu **henüz parlamento tarafından kesin yasalaştırılmamış bütçe önerisi** ve hedef ürün tanımları değişebilir; gıda üreticisi SKU/formülasyon ve ürün sınıfı için olası maliyetleri hazırlık senaryolarında izlemek müşteri işidir.",
+            "scope_hint": "Dünya",
+            "canonical_source_urls": [
+              "https://www.reuters.com/business/what-is-frances-2027-budget-2026-10-01/"
+            ],
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "9e8ca12ccf96bece6a3fb676",
+        "decision": "no_opportunity",
+        "reason": "PlayStation 5 QSSR görüntü iyileştirmesiyle eski oyunlardaki performans sorunları cihaz/oyun uyumluluğu haberi. Harici donanım ve oyun lisansı dışında bağımsız farklı SaaS çekirdeği doğrulanmadı.",
+        "canonical_source_url": "https://shiftdelete.net/",
+        "opportunities": []
+      }
+    ]
+  }
+}
