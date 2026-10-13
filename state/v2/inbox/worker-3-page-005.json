@@ -4,27 +4,13 @@
   "queue_mode": "shared",
   "current_run": "2026-10-13-catchup-e3a10c28a635",
   "lease_minutes": 30,
-  "ready_count": 362,
+  "ready_count": 361,
   "job_count": 362,
-  "queue_revision": "d55bfbb1cbff77beea57793dfee7d028423dc8265f5a119787ed3cf0688e537a",
+  "queue_revision": "4f3e6e6536e09030db3edc9e1928e1fc9852bd281c55b322557dfe263e601d6d",
   "page": 5,
   "page_count": 19,
   "next_page": "state/v2/inbox/worker-3-page-006.json",
   "jobs": [
-    {
-      "job_id": "2026-10-10-migration-validation-b0c7ec94609a3c74",
-      "path": "state/v2/jobs/2026-10-10-migration-validation-b0c7ec94609a3c74.json",
-      "run_id": "2026-10-10-migration",
-      "kind": "validation",
-      "input_hash": "b0c7ec94609a3c743696536c10177055a847077bf515fceb4c766c9097c5c501",
-      "legacy_lane": 4,
-      "queue_group": "backlog",
-      "preferred_worker": 5,
-      "state": "ready",
-      "attempt": 1,
-      "claim_path": "state/v2/claims/2026-10-10-migration-validation-b0c7ec94609a3c74/001.json",
-      "result_path": "state/v2/results/2026-10-10-migration-validation-b0c7ec94609a3c74/001.json"
-    },
     {
       "job_id": "2026-10-13-43d3b526fc-discovery-562daf293fb3b8d9",
       "path": "state/v2/jobs/2026-10-13-43d3b526fc-discovery-562daf293fb3b8d9.json",
@@ -290,6 +276,20 @@
       "attempt": 1,
       "claim_path": "state/v2/claims/2026-10-11-a4dcde1ff5-discovery-09e8fa02a2d87170/001.json",
       "result_path": "state/v2/results/2026-10-11-a4dcde1ff5-discovery-09e8fa02a2d87170/001.json"
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-d2b571e27e73cb76",
+      "path": "state/v2/jobs/2026-10-10-migration-validation-d2b571e27e73cb76.json",
+      "run_id": "2026-10-10-migration",
+      "kind": "validation",
+      "input_hash": "d2b571e27e73cb766adbf11b1ada8715674853ed70d40122dafdde4673f2d6e6",
+      "legacy_lane": 1,
+      "queue_group": "backlog",
+      "preferred_worker": 1,
+      "state": "ready",
+      "attempt": 1,
+      "claim_path": "state/v2/claims/2026-10-10-migration-validation-d2b571e27e73cb76/001.json",
+      "result_path": "state/v2/results/2026-10-10-migration-validation-d2b571e27e73cb76/001.json"
     }
   ]
 }
