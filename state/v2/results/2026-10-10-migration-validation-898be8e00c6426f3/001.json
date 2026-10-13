@@ -1,0 +1,162 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-898be8e00c6426f3",
+  "input_hash": "898be8e00c6426f3d88855b3e4abfe02c04185aecf8002bc9bd7e950fdaacab3",
+  "token": "52892c33-e868-452b-82e7-cc63a9586cd5",
+  "finished_at": "2026-10-13T09:29:29.550Z",
+  "outcome": "done",
+  "reason": "Agent RPA Handoff Ledger: doğrudan kaynak SS&C WorkHQ, ayrıca UiPath, Automation Anywhere, Camunda ve Microsoft 5 global eşdeğeri doğrulandı; global <=3 Quality Gate ihlal edildi, rejected. Katalog aynı.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Kaynaktaki tetikleyici aslında ürün kategorisinde doğrudan faal SS&C Blue Prism WorkHQ tanıtımıdır. Aynı enterprise-automation buyer, AI-agent→kural tabanlı RPA/human handoff→exception/audit işini en az 5 güncel global ürün karşılıyor: WorkHQ, UiPath, Automation Anywhere, Camunda, Microsoft Copilot Studio. Global en fazla 3 doğrudan rakip sınırı açıkça aşılıyor. Türkiye'de tam aynı yazılım için kesin 0 rakip doğrulanmadı. Yalnız CSV/elle girilen ledger AI veya RPA yürütmesini üstlenemez, bu yüzden adayın 'routing' çekirdek vaadini sıfır dış runtime servisle uçtan uca karşılamak da kanıtlanmadı.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.itmedia.co.jp/enterprise/articles/2610/09/news030.html",
+        "accessed_at": "2026-10-13T09:29:29.550Z",
+        "claim": "SS&C Blue Prism WorkHQ Japanese launch 7 Oct and separation agent decision/RPA execution",
+        "observation": "9 Oct ITmedia article verifies product already supplies the exact candidate workflow: input/output logs, task classification, RPA dispatch and human approval. Vendor claims 82 to 5 min should not be treated as independent efficacy.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.itmedia.co.jp/enterprise/articles/2610/09/news030.html",
+        "accessed_at": "2026-10-13T09:29:29.550Z",
+        "claim": "SS&C Blue Prism WorkHQ performs the same core agent/automation handoff and audit workflow",
+        "observation": "Enterprise automation architects: agent task classification, deterministic digital worker execution, API/RPA/human approval exception routing and step audit; released Japanese edition Oct 7",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.uipath.com/platform/agentic-automation/agentic-ai",
+        "accessed_at": "2026-10-13T09:29:29.550Z",
+        "claim": "UiPath agentic automation / Maestro performs the same core agent/automation handoff and audit workflow",
+        "observation": "Enterprise automators: AI agents integrated with RPA robots/APIs/humans, Action Center exceptions, governed traces and audit logs",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.automationanywhere.com/products/robotic-process-automation-system",
+        "accessed_at": "2026-10-13T09:29:29.550Z",
+        "claim": "Automation Anywhere APA + RPA performs the same core agent/automation handoff and audit workflow",
+        "observation": "Enterprise automation architects: AI agent-to-RPA/control-room handoffs, human controls, workload routing and full governance audit",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://camunda.com/orchestrate/agents/",
+        "accessed_at": "2026-10-13T09:29:29.550Z",
+        "claim": "Camunda agentic orchestration performs the same core agent/automation handoff and audit workflow",
+        "observation": "Enterprise process owners: governed BPMN AI agent and deterministic steps, human review/escalation, end-to-end process state, history audit",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://learn.microsoft.com/microsoft-copilot-studio/flows-overview",
+        "accessed_at": "2026-10-13T09:29:29.550Z",
+        "claim": "Microsoft Copilot Studio agent flows performs the same core agent/automation handoff and audit workflow",
+        "observation": "Enterprise automation teams: agent-triggered deterministic flows, approval actions, execution monitoring and linking Power Automate flows",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "search_complete": false,
+        "scope": "Türkiye pazarındaki yerel satıcı/entegratörler için eksiksiz tarihli direkt ürün taraması yürütülmedi; 0 rekabet iddia edilmez",
+        "queries": [
+          "Türkiye AI ajan RPA handoff automation workflow platform",
+          "yerli RPA AI agent orchestration human approval denetim kaydı"
+        ],
+        "direct_competitors": []
+      },
+      "global": {
+        "direct_count": 5,
+        "search_complete": true,
+        "scope": "Kurumsal otomasyon mimarı; agent reasoning to deterministic RPA execution, exception approvals, trace/audit lifecycle; 13 Oct 2026 published official sources",
+        "queries": [
+          "SS&C Blue Prism WorkHQ AI agent RPA Japanese launch",
+          "UiPath agentic agents robots human approval audit",
+          "Automation Anywhere AI agent RPA handoff governance logs",
+          "Camunda AI agent BPMN human task deterministic audit",
+          "Copilot Studio agent flows run agent deterministic approval"
+        ],
+        "direct_competitors": [
+          {
+            "name": "SS&C Blue Prism WorkHQ",
+            "url": "https://www.itmedia.co.jp/enterprise/articles/2610/09/news030.html",
+            "same_customer_job_workflow_reason": "Enterprise automation architects: agent task classification, deterministic digital worker execution, API/RPA/human approval exception routing and step audit; released Japanese edition Oct 7",
+            "proof": "original_product_launch_article"
+          },
+          {
+            "name": "UiPath agentic automation / Maestro",
+            "url": "https://www.uipath.com/platform/agentic-automation/agentic-ai",
+            "same_customer_job_workflow_reason": "Enterprise automators: AI agents integrated with RPA robots/APIs/humans, Action Center exceptions, governed traces and audit logs",
+            "proof": "official_vendor"
+          },
+          {
+            "name": "Automation Anywhere APA + RPA",
+            "url": "https://www.automationanywhere.com/products/robotic-process-automation-system",
+            "same_customer_job_workflow_reason": "Enterprise automation architects: AI agent-to-RPA/control-room handoffs, human controls, workload routing and full governance audit",
+            "proof": "official_vendor"
+          },
+          {
+            "name": "Camunda agentic orchestration",
+            "url": "https://camunda.com/orchestrate/agents/",
+            "same_customer_job_workflow_reason": "Enterprise process owners: governed BPMN AI agent and deterministic steps, human review/escalation, end-to-end process state, history audit",
+            "proof": "official_vendor"
+          },
+          {
+            "name": "Microsoft Copilot Studio agent flows",
+            "url": "https://learn.microsoft.com/microsoft-copilot-studio/flows-overview",
+            "same_customer_job_workflow_reason": "Enterprise automation teams: agent-triggered deterministic flows, approval actions, execution monitoring and linking Power Automate flows",
+            "proof": "official_docs"
+          }
+        ],
+        "adjacent_competitors": []
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Dar manuel prototip: kullanıcı CSV/JSON ile agent/robot adım listelerini, karar/istisna/sorumlu/kanıt linklerini girer; tarayıcıda deterministik yetki/eksik kayıt denetimi ve PDF/JSON export. Gerçek zamanlı agent veya RPA sevkiyatı değil.",
+      "dependency_inventory": [
+        "Kullanıcı tarafından sağlanan süreç/olay CSV'si",
+        "Tarayıcı JavaScript/IndexedDB",
+        "PDF/JSON çıkışı",
+        "Gerçek agent→RPA routing için harici kurumsal sistemler gerekir"
+      ],
+      "full_mechanism_zero_external_runtime_proven": false
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "91 kayıtlı ürünle birebir aynı alıcı+iş+mekanik eşleşme belirlenmedi. Agent Sandbox Policy Desk, Enterprise agent access recertification ve ServiceNow Action Queue yakın yönetişim ürünleri; ana ret gerekçesi doğrudan mevcut 5 ticari ürün."
+    },
+    "research_attempts": [
+      {
+        "queries": [
+          "Türkiye agentic RPA platformu ajan robot devri",
+          "AI RPA orchestration Turkey"
+        ],
+        "outcome": "TR kesin doğrudan rakip sayımı doğrulanmadı, sayı null."
+      },
+      {
+        "queries": [
+          "SS&C Blue Prism WorkHQ",
+          "UiPath Maestro",
+          "Automation Anywhere APA",
+          "Camunda AI agent orchestration",
+          "Microsoft Copilot Studio agent flows"
+        ],
+        "outcome": "Resmî veya özgün kaynaklardan beş direkt alıcı/iş/iş akışı eşleşmesi okundu."
+      }
+    ]
+  }
+}
