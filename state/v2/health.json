@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T12:02:58Z",
+  "controller_observed_at": "2026-10-13T12:03:42Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
@@ -46,12 +46,25 @@
         "schema_version": 1,
         "worker": 3,
         "invocation_id": "4045d481-1cba-4386-ab8a-056e19d0502c",
-        "event": "progress",
-        "at": "2026-10-13T11:56:48.710Z",
-        "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-b993347c02a475dc",
-        "stage": "receipt_saved",
-        "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-b993347c02a475dc/001.json",
-        "path": "state/v2/worker-events/3/4045d481-1cba-4386-ab8a-056e19d0502c/006-progress.json"
+        "event": "finished",
+        "at": "2026-10-13T12:03:29.502Z",
+        "execution_mode": "manual_master_research",
+        "discovery_receipts_saved": 10,
+        "articles_triaged": 100,
+        "raw_opportunities": 14,
+        "article_decisions": {
+          "opportunity": 14,
+          "no_opportunity": 79,
+          "unverified": 7
+        },
+        "validation_decisions": {
+          "qualified": 0,
+          "rejected": 0,
+          "duplicate": 0,
+          "unverified": 0
+        },
+        "note": "All 10 immutable receipts fetched back and verified with 10 article decisions each. Existing five scheduled workers, prompts, configuration, idea history and catalog not edited.",
+        "path": "state/v2/worker-events/3/4045d481-1cba-4386-ab8a-056e19d0502c/999-finished.json"
       },
       "receipts_this_invocation": 10,
       "write_and_receipt_verified": true,
