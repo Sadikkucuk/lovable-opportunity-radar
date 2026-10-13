@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-13T20:52:54Z",
+  "controller_observed_at": "2026-10-13T20:53:44Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-13T03:01:00Z",
@@ -47,13 +47,41 @@
         "worker": 3,
         "invocation_id": "94f4769e-c895-4282-8f13-d8e10236ff85",
         "event": "progress",
-        "at": "2026-10-13T20:52:21.454Z",
-        "job_id": "2026-10-11-a4dcde1ff5-discovery-17b834ce8ff3ae22",
+        "at": "2026-10-13T20:53:26.060Z",
         "stage": "receipt_saved",
-        "receipt_path": "state/v2/results/2026-10-11-a4dcde1ff5-discovery-17b834ce8ff3ae22/001.json",
-        "discovery_articles_triaged": 10,
-        "raw_opportunities": 3,
-        "path": "state/v2/worker-events/3/94f4769e-c895-4282-8f13-d8e10236ff85/006-progress.json"
+        "verified_receipts": 7,
+        "receipts": [
+          {
+            "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-1e934380178f4314",
+            "path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-discovery-1e934380178f4314/002.json"
+          },
+          {
+            "job_id": "2026-10-10-migration-validation-97e89d8c3ad4f001",
+            "path": "state/v2/results/2026-10-10-migration-validation-97e89d8c3ad4f001/001.json"
+          },
+          {
+            "job_id": "2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374",
+            "path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-merge-3986318f975fe374/001.json"
+          },
+          {
+            "job_id": "2026-10-10-migration-validation-b284bb21223a22d9",
+            "path": "state/v2/results/2026-10-10-migration-validation-b284bb21223a22d9/001.json"
+          },
+          {
+            "job_id": "2026-10-10-migration-validation-47fc3e19706b9cfa",
+            "path": "state/v2/results/2026-10-10-migration-validation-47fc3e19706b9cfa/003.json"
+          },
+          {
+            "job_id": "2026-10-10-migration-validation-c4aba21549e2a6e5",
+            "path": "state/v2/results/2026-10-10-migration-validation-c4aba21549e2a6e5/001.json"
+          },
+          {
+            "job_id": "2026-10-11-a4dcde1ff5-discovery-17b834ce8ff3ae22",
+            "path": "state/v2/results/2026-10-11-a4dcde1ff5-discovery-17b834ce8ff3ae22/001.json"
+          }
+        ],
+        "note": "Owner-authorized manual research; no scheduled worker settings, old claims, catalog, controller-generated state or website modified.",
+        "path": "state/v2/worker-events/3/94f4769e-c895-4282-8f13-d8e10236ff85/007-progress.json"
       },
       "receipts_this_invocation": 7,
       "write_and_receipt_verified": true,
