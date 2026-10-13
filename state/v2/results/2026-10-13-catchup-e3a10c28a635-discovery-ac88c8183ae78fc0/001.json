@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-discovery-ac88c8183ae78fc0",
+  "input_hash": "ac88c8183ae78fc0a794e400a7425999dd6a79e6fcd53852fb9bad5c57f87f9f",
+  "token": "cb3f5c35-57f2-4df2-ae2d-3afec7b45994",
+  "finished_at": "2026-10-13T07:35:15.293Z",
+  "outcome": "done",
+  "reason": "10 article: 3 raw opportunities, 6 no_opportunity, 1 unverified. AMD open rack and DeepSeek unreviewed study status distinguished; published ideas remain unchanged.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "cbed8d034360e96efd4e8d98",
+        "decision": "no_opportunity",
+        "reason": "Nvidia Reflection AI'yi satın alma/yeni yatırım hakkında basın iddiası; bağlayıcı kapanmış anlaşma yok. Finansman olayından benzersiz sıfır harici servise dayalı uygulama işi çıkmıyor.",
+        "canonical_source_url": "https://www.ft.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "cc0f6eb6daa7d7eceb47d7f1",
+        "decision": "no_opportunity",
+        "reason": "Samsung'un La Liste 2027 Korea etkinliği için AI mutfak ürün sponsorluğu; yapay zeka donanımı ve etkinlik lansmanı belirgin yeni veri API'si veya mevzuat sunmuyor.",
+        "canonical_source_url": "https://zdnet.co.kr/",
+        "opportunities": []
+      },
+      {
+        "article_key": "cc14f71250c6a45724bf8071",
+        "decision": "no_opportunity",
+        "reason": "İtalya başbakanının 2026 büyüme %1 tahmini ve enerji yatırımı çağrısı görüş niteliğindedir; bağımsız operasyon yazılımı tetikleyicisi değil.",
+        "canonical_source_url": "https://www.ilsole24ore.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "cc405db6ddc652656053e463",
+        "decision": "unverified",
+        "reason": "Güney Kore savunma otonom araç sanal test projesi başlığı var; resmî ihale teslimat koşulları ve dış geliştirici erişimi bağımsız doğrulanamadı. Askeri canlı sistem yazılımına dönüştürülmedi.",
+        "canonical_source_url": "https://zdnet.co.kr/",
+        "opportunities": []
+      },
+      {
+        "article_key": "cc5741e8c998c949e9a6bcf8",
+        "decision": "opportunity",
+        "reason": "AMD 12 Ekim Helion OCP rack referans tasarımını, 32.768 CPU çekirdeği üst limiti, hava/sıvı soğutmalı yapı ve CPU-only/karma seçimleri duyurdu. Henüz Kasım 2026'da ortaklarca çıkması bekleniyor; farklı işletim ölçeği için watt/core/network kapasitesini açıklanabilir senaryoyla kıyaslamak ürün fikri.",
+        "canonical_source_url": "https://www.amd.com/en/products/rackscale-solutions/helion.html",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-ac88c8183ae78fc0:cc5741e8c998c949e9a6bcf8:01",
+            "idea_name": "Helion Rack Kapasite Sıcaklık Karşılaştırıcı",
+            "canonical_key": "enterprise-ai-infrastructure-planners|compare-open-rack-cpu-gpu-cooling-capacity-scenarios|manual-hardware-spec-power-and-bandwidth-matrix",
+            "target_customer": "AI veri merkezi donanım mimarları",
+            "core_job": "Farklı Helion CPU-only ve CPU/GPU tasarımlarında çekirdek, watt, soğutma ve network riski karşılaştırmak",
+            "product_mechanism": "Kullanıcı BOM/şasi/sunum değerleri ile tüketim, slot doluluk ve soğutma limitlerini hesaplayan tarayıcı aracı",
+            "why_now": "AMD 12 Ekim Helion OCP rack referans tasarımını, 32.768 CPU çekirdeği üst limiti, hava/sıvı soğutmalı yapı ve CPU-only/karma seçimleri duyurdu. Henüz Kasım 2026'da ortaklarca çıkması bekleniyor; farklı işletim ölçeği için watt/core/network kapasitesini açıklanabilir senaryoyla kıyaslamak ürün fikri.",
+            "before_state": "Rack üreticisi veri sayfalarında çekirdek/network/ısı ayrı ölçülür",
+            "after_state": "Alternatif rack mimarileri için toplam enerji ve termal bütçe senaryosu",
+            "canonical_source_urls": [
+              "https://www.amd.com/en/products/rackscale-solutions/helion.html"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "cc91bc8962745dd22d36aab0",
+        "decision": "opportunity",
+        "reason": "12 Ekim SCMP, ByteDance ve ABD üniversiteleri yazarlarının hakem incelemesinden geçmemiş araştırmasını aktarıyor: uzun promptta anahtar bilginin pozisyonu doğruluğu etkileyebilir. Ücretsiz yerel model QA takımı için sabit bilgi test setlerini yerel sağlanan cevap dosyalarından analiz etmek farklı denetim iş akışıdır; model çalıştırma API'si zorunlu değil.",
+        "canonical_source_url": "https://www.scmp.com/tech/tech-trends/article/3370550/deepseeks-cost-saving-ai-may-lead-inaccuracy-model-performance-research",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-ac88c8183ae78fc0:cc91bc8962745dd22d36aab0:01",
+            "idea_name": "Local LLM Position Stability Benchmark Ledger",
+            "canonical_key": "local-model-evaluation-teams|detect-retrieval-position-sensitivity-from-exported-model-answers|prompt-position-answer-comparison-and-confidence-ledger",
+            "target_customer": "Ücretsiz yerel LLM kullanan geliştirici ve kurum test ekipleri",
+            "core_job": "Sabit içerik soruları aynı bilgi farklı uzun bağlam pozisyonlarında yerleşince cevabın tutarlılığını kanıtlamak",
+            "product_mechanism": "Kullanıcı tarafından getirilen prompt-test/cevap CSV dosyalarını farklı konum ve benchmark cevaplarına göre deterministic skorlayan JS karşılaştırıcı",
+            "why_now": "12 Ekim SCMP, ByteDance ve ABD üniversiteleri yazarlarının hakem incelemesinden geçmemiş araştırmasını aktarıyor: uzun promptta anahtar bilginin pozisyonu doğruluğu etkileyebilir. Ücretsiz yerel model QA takımı için sabit bilgi test setlerini yerel sağlanan cevap dosyalarından analiz etmek farklı denetim iş akışıdır; model çalıştırma API'si zorunlu değil.",
+            "before_state": "Bağlam konumu kalite farkı tekil benchmark skorlarına yansımaz",
+            "after_state": "Pozisyona duyarlı doğruluk sapma matrisi ve tekrar test planı",
+            "canonical_source_urls": [
+              "https://www.scmp.com/tech/tech-trends/article/3370550/deepseeks-cost-saving-ai-may-lead-inaccuracy-model-performance-research"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "cd16dfadca638aa61aee5a9f",
+        "decision": "no_opportunity",
+        "reason": "Microsoft CEO'nun AI kill switch ihtiyacına ilişkin yorum haberi daha önce aynı günlük döngüde değerlendirildi, yeni aynı raw fırsat yazılmadı.",
+        "canonical_source_url": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+        "opportunities": []
+      },
+      {
+        "article_key": "cd433d9f24748c6095c58934",
+        "decision": "opportunity",
+        "reason": "Adm/Gdz Elektrik 12 Ekim göçmen kuşlara yönelik enerji hattı güvenlik programı başlığı; bağımsız ekipman sayısı ve gerçekleştirilen saha iyileştirme detayları özgün kaynaktan doğrulanamadı. Gene de ancak saha operatörünün manuel kuş çarpışma gözlemi, hat kesiti ve iyileştirme kayıtları için koşullu hipotez; doğrulanmamış olay/bulgular nedensel kanıt değildir.",
+        "canonical_source_url": "https://www.petroturk.com/",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-13-catchup-e3a10c28a635-discovery-ac88c8183ae78fc0:cd433d9f24748c6095c58934:01",
+            "idea_name": "Elektrik Hattı Kuş Güvenlik Saha Kanıt Defteri",
+            "canonical_key": "distribution-utility-environmental-teams|track-avian-collision-risk-reduction-measures|pole-span-observation-and-remediation-evidence-ledger",
+            "target_customer": "Elektrik dağıtım şirketlerinin çevre/şebeke bakım ekipleri",
+            "core_job": "Göçmen kuş rotalarına denk gelen direk ve açıklıklarda çarpışma riskini gözlemleyip sahadaki önlemleri kapatmak",
+            "product_mechanism": "Hat segmenti, direk, gözlem, çarpışma belirtisi, izolatör/spiral önlem, tarih ve bakım kapanışı CSV/manual tutanağı",
+            "why_now": "Adm/Gdz Elektrik 12 Ekim göçmen kuşlara yönelik enerji hattı güvenlik programı başlığı; bağımsız ekipman sayısı ve gerçekleştirilen saha iyileştirme detayları özgün kaynaktan doğrulanamadı. Gene de ancak saha operatörünün manuel kuş çarpışma gözlemi, hat kesiti ve iyileştirme kayıtları için koşullu hipotez; doğrulanmamış olay/bulgular nedensel kanıt değildir.",
+            "before_state": "Saha kuş gözlemleri ve şebeke bakım emirleri farklı kayıtlarda saklanır",
+            "after_state": "Hat açıklığı/önlem/etkinlik ve bakım kanıtı bağlantılı kayıt",
+            "canonical_source_urls": [
+              "https://www.petroturk.com/"
+            ],
+            "scope_hint": "Dünya",
+            "discovery_only": true
+          }
+        ]
+      },
+      {
+        "article_key": "cd6ce80ed37137c583339a80",
+        "decision": "no_opportunity",
+        "reason": "Grok'a banka kartı fotoğrafı verme konusunda X sahibi önerisi veri mahremiyeti/PCI risk tartışmasıdır. Kart görselini işleyen ürün veya dış AI hizmeti gerektiren akış bu politika altında önerilmedi.",
+        "canonical_source_url": "https://yourstory.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "cd82411472b7c1bcb1d1188f",
+        "decision": "no_opportunity",
+        "reason": "ABD uzun vadeli tahvil faizinde artış ve Hazine'nin borç vadesi ayarlama ihtimali piyasa spekülasyonudur; yürürlüğe girmiş karar veya B2B ürün işi yok.",
+        "canonical_source_url": "https://www.36kr.com/",
+        "opportunities": []
+      }
+    ]
+  }
+}
