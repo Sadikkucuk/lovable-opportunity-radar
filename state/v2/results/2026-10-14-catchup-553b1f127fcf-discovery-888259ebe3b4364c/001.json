@@ -1,0 +1,149 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-888259ebe3b4364c",
+  "input_hash": "888259ebe3b4364cf868bea7fec379ccb06e410eb55ea0ad7cda0f684854eba1",
+  "token": "manual-v3-20261014-888259ebe3b4364c-1",
+  "finished_at": "2026-10-14T08:02:07.465Z",
+  "outcome": "done",
+  "reason": "10 haberin tümü haber/özgün kaynak ve ihtiyaç perspektifiyle değerlendirildi: 2 ham fırsat (RTL inceleme; güneş paneli ABD sertifikasyon kanıt masası), 6 no_opportunity, 2 özgün bilgi doğrulanamadığı için unverified. Henüz Merge/Validation veya katalog yayını değildir.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "a5b95039a6c6fde735acdf1c",
+        "decision": "unverified",
+        "reason": "Korece kaynak HD Hyundai–Siemens AI tersanesi ve yüzde 30 inşa süresi hedefini bildiriyor. Kaynağın tam özgün sayfası ve hedefin hangi üretim/scheduling iş akışını değiştirdiği bağımsız doğrulanamadı. Yalnız manşete dayalı ticari fırsat üretilmedi.",
+        "canonical_source_url": "https://zdnet.co.kr",
+        "source_read_state": "original_not_retrieved",
+        "opportunities": []
+      },
+      {
+        "article_key": "a6146e6373e349f6e7cbb625",
+        "decision": "no_opportunity",
+        "reason": "Enerji Günlüğü'nün 13 Ekim tam haberi, OPEC'in 2026 petrol talep artışını 180 bin varile düşürmesi ve 2027 artış tahminini 2,55 milyon varile yükseltmesiyle ilgili. Bu makro tahmin revizyonu tek başına belirli müşteriye yeni bir zorunlu iş akışı, belge veya bağımsız sıfır-API SaaS ihtiyaç kanıtı sunmuyor.",
+        "canonical_source_url": "https://www.enerjigunlugu.net/opec-2026-talep-tahminini-dusurdu-70166h.htm",
+        "source_read_state": "original_or_editorial_index_read",
+        "opportunities": []
+      },
+      {
+        "article_key": "a63ab694d8cbaff33d941f89",
+        "decision": "opportunity",
+        "reason": "Semiconductor Engineering 13 Ekim teknik özet, Columbia/Google araştırmasının RTL doğrulamadaki simülasyon dalga verilerini normalleştirilmiş kayıtlarla ve sinyal-anomali ilişkisiyle inceleme ihtiyacını gösteriyor. Önerilen ürün araştırmanın agentic motorunu kopyalamaz; mühendis tarafından sağlanan CSV ile deterministik triage ve insan onayı tutan ayrı hipotezdir.",
+        "canonical_source_url": "https://semiengineering.com/agentic-ai-automates-rtl-waveform-analysis-and-debugging-columbia-google/",
+        "source_read_state": "original_or_editorial_index_read",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-888259ebe3b4364c:a63ab694d8cbaff33d941f89:01",
+            "idea_name": "RTL Waveform Review Evidence Ledger",
+            "canonical_key": "chip-design-verification-teams|triage-post-simulation-signal-anomalies-with-manual-evidence|rtl-version-signal-exception-and-review-ledger",
+            "target_customer": "Yarı iletken RTL doğrulama mühendisleri ve EDA doğrulama ekipleri",
+            "buyer": "ASIC doğrulama ekibi lideri",
+            "core_job": "Simülasyon sonrası waveform/sinyal anomalilerini ilgili RTL sürümü ve beklenen davranışla ilişkilendirip insan tarafından kapanışa almak",
+            "product_mechanism": "Kullanıcının içe aktardığı sinyal-zaman-anomali CSV'si, RTL commit/sürüm kimliği, assertion/test kimliği ve reviewer onayı ile kural tabanlı eşleştirme/istisna/kanıt raporu; LLM, agent, simülatör veya dış veritabanı çalıştırmaz",
+            "why_now": "13 Ekim 2026 Columbia/Google BTTF araştırması RTL waveform debugging alanındaki manuel doğrulama sürtünmesini görünür kıldı; önerilen MVP ayrı hafif kanıt defteridir",
+            "before_state": "Dalga formu anomali satırları, RTL sürüm atıfları ve incelemeci kararları bağımsız rapor/CSV içinde dağınık",
+            "after_state": "Signal anomaly → RTL build/commit → assertion/test → reviewer disposition → signoff/export şeklinde izlenebilir karar geçmişi",
+            "scope_hint": "Dünya",
+            "canonical_source_urls": [
+              "https://semiengineering.com/agentic-ai-automates-rtl-waveform-analysis-and-debugging-columbia-google/"
+            ],
+            "supporting_article_ids": [
+              "aa32d2f764075e3346d8c029"
+            ],
+            "source_observations": [
+              {
+                "url": "https://semiengineering.com/agentic-ai-automates-rtl-waveform-analysis-and-debugging-columbia-google/",
+                "observation": "13 Oct BTTF paper covers large post-simulation dumps and waveform debugging; proposed manual ledger is a product hypothesis distinct from agentic paper system.",
+                "observed_at": "2026-10-14T08:02:07.465Z",
+                "caveat": "Customer interviews, direct competitors and zero external runtime feasibility require later Validation."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "a63fb617eebc763a89987ada",
+        "decision": "no_opportunity",
+        "reason": "China Economic Net'in 13 Ekim haberini yansıtan Sina Finance tam metni, bir Hong Kong internet teknoloji endeks fonunun yıl içi yaklaşık yüzde 33 düşüşünü ve portföy ağırlıklarını bildiriyor. Bu yatırım getirisi haberi, politika/operasyon değişikliği veya savunulabilir yeni B2B workflow ortaya koymuyor.",
+        "canonical_source_url": "https://finance.sina.com.cn/jjxw/2026-10-13/doc-inivafqi7308916.shtml",
+        "source_read_state": "original_or_editorial_index_read",
+        "opportunities": []
+      },
+      {
+        "article_key": "a6461218640884e22f6408d3",
+        "decision": "no_opportunity",
+        "reason": "ZDNET Morning 13 Ekim özgün sayfa birden çok eski/ayrı haberin editoryal günlük özetidir: Dublin işe alımı, soğutma sistemleri saldırısı, serbest çalışan platform tercihleri. Başlık tek başına özgün bir delta değildir; münferit haberler diğer haber kayıtlarında ayrıca incelenmelidir.",
+        "canonical_source_url": "https://www.zdnet.fr/actualites/zdnet-morning-13-10-2026-openai-accelere-en-europe-piratage-de-systemes-frigorifiques-70-des-freelances-cherchent-a-saffranchir-des-plateformes-505652.htm",
+        "source_read_state": "original_or_editorial_index_read",
+        "opportunities": []
+      },
+      {
+        "article_key": "a68ec8a8c92562caf4b3269d",
+        "decision": "no_opportunity",
+        "reason": "36Kr 13 Ekim tam yazısı ve ilk basın değerlendirmeleri, DeepSeek'in Winverse AI seed turunu yöneteceği iddiasını aktarıyor; anlaşmanın tamamlandığı teyit edilmiyor. Salt yatırım haberi ücretsiz harici AI model bağımlılığı olmaksızın farklı bir müşterinin yeni zorunlu işini kanıtlamıyor. Finansman iddiası gerçekleşmiş olay olarak sunulmadı.",
+        "canonical_source_url": "https://eu.36kr.com/zh/p/4024117944242055",
+        "source_read_state": "original_or_editorial_index_read",
+        "opportunities": []
+      },
+      {
+        "article_key": "a6902a7f272cfe8acbc8c9b2",
+        "decision": "unverified",
+        "reason": "Google'ın uzayda dört TPU ile on beş dakikalık ısıl/enerji kısıtlı test yaptığı iddiasını taşıyan Çin başlığı için özgün haber gövdesi veya proje birincil kanıtı bağımsız erişimde bulunamadı. Teyitsiz mühendislik değerlerinden uzay AI ısı yönetimi ürünü çıkarılmıyor.",
+        "canonical_source_url": "https://mp.ofweek.com",
+        "source_read_state": "original_not_retrieved",
+        "opportunities": []
+      },
+      {
+        "article_key": "a695a653711b4420825875ae",
+        "decision": "no_opportunity",
+        "reason": "EE Times Japan'ın 13 Ekim elektronik tasarım bülteni editör notu, Intel 50. yıl etkinliğinde AI çevirisine ilişkin kişisel gözlemdir. Resmî ürün ya da mevzuat değişimi, yeni zorunlu tekrarlanan müşteri işi gösterilmiyor.",
+        "canonical_source_url": "https://eetimes.itmedia.co.jp/ee/subtop/domestic/index.html",
+        "source_read_state": "original_or_editorial_index_read",
+        "opportunities": []
+      },
+      {
+        "article_key": "a697ba29ef24bc9bf33bbef8",
+        "decision": "opportunity",
+        "reason": "Dünya Gazetesi'nin 13 Ekim özgün haberinde Kıvanç Enerji ABD güneş paneli pazarına giriş için test/sertifikasyon, finansal ve teknik kabul denetimleri ile üretim kapasitesi hazırlığını anlattı. Türk güneş paneli ihracatçısının ABD hedef ürün SKU bazlı test, belgelendirme, denetim ve eksik kanıtını takip etmesi için dış servissiz evrak kontrol masası ürün hipotezi ortaya çıkıyor. ABD'de hukuki/bankability onayı verme iddiası yok.",
+        "canonical_source_url": "https://www.dunya.com/sirketler/kivanc-enerji-rotayi-abdye-cevirdi-ihracatla-kuresel-buyume-hedefi-haberi-843660",
+        "source_read_state": "original_or_editorial_index_read",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-888259ebe3b4364c:a697ba29ef24bc9bf33bbef8:01",
+            "idea_name": "Solar Export Bankability Evidence Desk",
+            "canonical_key": "turkiye-solar-module-exporters|prepare-us-module-certification-and-bankability-audit|sku-market-test-and-evidence-readiness-ledger",
+            "target_customer": "Türkiye güneş paneli üreticileri, kalite ve ABD ihracat uyum ekipleri",
+            "buyer": "Güneş paneli üreticisi ihracat ve kalite direktörü",
+            "core_job": "ABD pazarına çıkacak panel SKU'larının gerekli test, sertifikasyon, kalite ve finansal kabul kanıtındaki eksikleri önceden belirlemek",
+            "product_mechanism": "Ürün SKU/teknoloji tablosu, elle girilen ABD pazar testi ve sertifika gereksinimleri, üretim kapasitesi belgesi, denetim/yenileme durumu, sorumlu-kapanış ve CSV/PDF kanıt çıktısı; dış API ve belge düzenleme zorunluluğu yok",
+            "why_now": "13 Ekim 2026 Kıvanç Enerji'nin ABD ihracat ve bankability hazırlığında farklı ülke sertifikasyon koşulları ile denetim gerekliliğini açıklaması",
+            "before_state": "SKU bazlı test raporları, sertifika tarihi, üretim-denetim kayıtları ve banka kabul kanıtları ayrı Excel/dosyada",
+            "after_state": "Hedef pazar/ürün → gereksinim/kanıt → eksik → owner/termin → dışa aktarılabilir denetim paketi",
+            "scope_hint": "Türkiye",
+            "canonical_source_urls": [
+              "https://www.dunya.com/sirketler/kivanc-enerji-rotayi-abdye-cevirdi-ihracatla-kuresel-buyume-hedefi-haberi-843660"
+            ],
+            "supporting_article_ids": [
+              "32b4120e71b82360e517655e"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.dunya.com/sirketler/kivanc-enerji-rotayi-abdye-cevirdi-ihracatla-kuresel-buyume-hedefi-haberi-843660",
+                "observation": "Dünya 13 October original Kıvanç Enerji article describes US entry bankability and differing country test/certification requirements; no completed accreditation is claimed.",
+                "observed_at": "2026-10-14T08:02:07.465Z",
+                "caveat": "No proof of zero direct Turkish competitors yet; needs independent competitor/feasibility validation."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "a6f1c3e2e71ed0e0e705aa85",
+        "decision": "no_opportunity",
+        "reason": "YourStory RSS girdisi belirli haber değil 'Stories about startups & entrepreneurships' kategori/ana sayfa başlığı. Sayfada birçok farklı tarihli haber listeleniyor; tek bir özgün 13 Ekim gelişmesi ve ayrı workflow çıkarılamaz. Bu feed hijyen kaydıdır.",
+        "canonical_source_url": "https://yourstory.com/",
+        "source_read_state": "original_or_editorial_index_read",
+        "opportunities": []
+      }
+    ]
+  }
+}
