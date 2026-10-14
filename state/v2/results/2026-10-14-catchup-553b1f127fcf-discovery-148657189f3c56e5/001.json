@@ -1,0 +1,151 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-148657189f3c56e5",
+  "input_hash": "148657189f3c56e5dd554289d0609a322fe4b58901948d1e014d6c3f99294a5e",
+  "token": "77fa2f91-7eb6-4a32-a56c-b94f5921944c",
+  "finished_at": "2026-10-14T04:19:44.410Z",
+  "outcome": "done",
+  "reason": "Donmuş 10 haber tam kaynak/olay/iş-akışı tarandı: mainframe iş-kuralı fark onayı ve insan denetimli kamu AI belge özeti QA olmak üzere 2 farklı başlangıç fırsatı, 8 ayrı no_opportunity. Japon dergi sayısı 15 Ekim gelecekte, mainframe makale Japon saatinde 14 Ekim yayımlandı. ORG raporu ve Birleşik Krallık parlamento verilerinde payda/dönem farkları korundu. Hiçbir TR/global rekabet veya gelir doğrulaması yapılmış sayılmadı; bunlar Validation adaylarıdır.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "3825186ceff9b305e413ce98",
+        "decision": "no_opportunity",
+        "reason": "Nikkei Computer 15 Ekim 2026 tarihli sayı henüz 14 Ekim sabahında yayımlanmış tam sayı değildir; Fujisan satış/konu kataloğu NEC strateji, kurumsal AI çalışanları ve güvenlik içeriklerini listeliyor. Dergi sayı ilanı tekil gerçekleşmiş yeni ticari teknoloji ya da alıcı workflow'u vermez. Yalnız içerik listesinden ürün üretilmedi.",
+        "opportunities": []
+      },
+      {
+        "article_key": "383716e9f7757dcffe52ef4b",
+        "decision": "no_opportunity",
+        "reason": "13 Ekim Securities Times özgün duyuru Şanghay Shuyu Dingyuan II yatırım fonunun Qichacha sicilinde kurulduğunu ve yatırımcıları bildirdi. Private equity yeni fonun kuruluşu belirli SaaS satın alma süreç değişimi, yeni açık veri protokolü veya ölçeklenebilir niş müşteri işi kanıtlamaz. Fon oluşumunu gerçekleşmiş portföy yatırımıyla karıştırmadım.",
+        "opportunities": []
+      },
+      {
+        "article_key": "3857ebe474eaf0875864e6c6",
+        "decision": "opportunity",
+        "reason": "14 Ekim 05:00 JST yayımlanmış @IT/ITmedia özgün teknik yazı; Japon ana bilgisayar desteği/geri çekilme sinyallerinin ve otomatik kod dönüştürmenin eski-yeni çıktılardaki iş semantiği farklılıklarını gidermediğini somutlaştırıyor. Yazarın örneğinde 1 yen yuvarlama farkının doğru olması iş birimi, muhasebe ve yöneticilerin kararını gerektirmiş. BEFORE otomatik dönüşüm sonrası yüzlerce sonuç farkı teknik test loglarında dağınık. AFTER teknik test daha erken biterken iş gerekçesi, zarar/denetim etkisi ve yönetici imzası karar kuyruğu darboğaz olur. Deterministik CSV karşılaştırma ve fark sınıflama/karar defteri yalnız hipotezdir; ticari farklılaşma ve TR/global rakipler Validation'da sınanmalı.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-148657189f3c56e5:3857ebe474eaf0875864e6c6:01",
+            "canonical_key": "mainframe-modernization-governance-teams|adjudicate-legacy-to-new-system-financial-output-mismatches|offline-dualrun-rule-diff-business-signoff-ledger",
+            "idea_name": "Mainframe Geçiş Farkı İş Kararı Defteri",
+            "core_job": "COBOL/legacy geçişinde iki sistemin aynı vaka/para/tutar için ürettiği farklı sonuçların kaynak kural, müşteri etkisi ve yetkili iş birimi tarafından kabul/düzeltme kararına bağlanması",
+            "target_customer": "Banka, sigorta, büyük muhasebe ve mainframe modernizasyon test/iş analizi ekipleri",
+            "buyer": "Legacy modernizasyon program direktörü ve finansal iş kuralı ürün sahibi",
+            "product_mechanism": "Kullanıcının eski ve yeni test sonuç CSV dosyalarını vaka anahtarıyla eşleyip sayısal tolerans/yuvarlama ve istisna kuralları üzerinden sapma türü, gerekçe, iş sahibi, müşteri/denetim etki kararı ve imzalı kabul CSV/PDF listesi oluşturan tarayıcı içi araç; AI veya canlı ana bilgisayar bağlantısı gerekmez",
+            "why_now": "14 Ekim ITmedia makalesi Japonya ana bilgisayar dönüşümünde kod dönüştürmenin hızlandığını fakat açıklanamayan parasal/iş kuralı farkı için çok birimli insan kararının haftalar alabildiğini somut örnekliyor.",
+            "before_state": "Eski-yeni paralel test çıktıları ayrı dosyalar, finans/ticaret karar sahipleri ve tarihçe gerekçeleri bulunamayan iş kuralları manuel toplantı ve epostalarla yönetiliyor.",
+            "after_state": "Her fark için veri versiyonu, yuvarlama gerekçesi, etkilenen kullanıcı grubu, onaylayan bölüm, kabul/red ve yeniden test izi tek kabul dosyasında tutulur.",
+            "canonical_source_urls": [
+              "https://atmarkit.itmedia.co.jp/ait/articles/2610/13/news005.html"
+            ],
+            "supporting_article_ids": [
+              "7c80076832af447cddd234dd"
+            ],
+            "source_observations": [
+              {
+                "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/13/news005.html",
+                "observation": "14 Ekim 05:00 JST @IT özgün makale; yazar 1 yen yuvarlama sapması için yaklaşık altı hafta çapraz bölüm kararı sürecini anekdot olarak aktarıyor, genelleştirilebilir benchmark değil."
+              }
+            ],
+            "scope_hint": "Dünya; Japonya'da legacy dönüşüm haberinden doğdu",
+            "local_evidence": {
+              "signals": [
+                "Özgün yazıda farklı yuvarlama kuralının teknik hata değil iş kararı olduğu, finans/müşteri/denetim etkisine göre adjudication gerektirdiği açık."
+              ],
+              "unknowns": [
+                "Kurumsal ALM/test management rekabeti muhtemelen geniş; TR 0 ve global <=3 henüz doğrulanmadı.",
+                "Test çıktı CSV'de müşteri verileri maskelenmeli, bilgi güvenliği sorumluluğu kullanıcıda.",
+                "Gerçek 'six weeks' örneği tek saha anekdotu, piyasa genel süre tasarrufu kanıtı değil."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "3883321d4d9ce377372e6d97",
+        "decision": "no_opportunity",
+        "reason": "13 Ekim Securities Times'ın Eastmoney yeniden yayımında Liang Wenfeng/DeepSeek'in Winverse AI robotik startup'ına yatırım YAPMAYI PLANLADIĞI ve 400 milyon USD olası değerlemesi kaynağa dayalı piyasa haberi olarak sunuldu. İşlem kesinleşmiş yatırım veya imzalı tedarik anlaşması değildir; bilinmeyen robot şirketinin SDK'sını kullanarak sıfır harici model/agent API ile yeni ürün kurmak politika dışıdır. Doğrulanmış tekrarlı müşteri işi bulunmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "38d3f94ad55075f15944f08f",
+        "decision": "opportunity",
+        "reason": "12 Ekim Open Rights Group birincil inceleme raporu ve Birleşik Krallık Parlamentosu resmî yanıtları, Home Office ACS ve APS sığınma başvuru dosyası yardım araçlarında belge tutarlılığı/eksik olgu ve bağımsız kalite incelemesi ihtiyacını gündeme getiriyor. ORG iddiasına göre canlı örneklerin yalnız %0,3'ü uzman tarafından denetlenmiş; pilotta %9 hatalı/eksik ACS özeti dışlanmış. Rakamlar farklı örnekleme ve dönemlere aittir ve 'her beş kararın biri yanlış' sonucu çıkarılamaz. BEFORE AI özet çıktısı ile asıl mülakat dökümündeki önemli olguların karşılaştırması ve insan imzalı düzeltme izi dağınık. AFTER dosya QA'nun tarafsız, test edilebilir örneklem ve işaretleme kaydı ürün hipotezi. Sığınma kararı üretmeyen, dış LLM çalıştırmayan, özel veri dışarı göndermeyen çevrimdışı denetim tasarımı.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-148657189f3c56e5:38d3f94ad55075f15944f08f:01",
+            "canonical_key": "public-sector-casework-qa-teams|audit-ai-generated-case-summaries-against-cited-records|offline-source-claim-omission-correction-and-human-review-ledger",
+            "idea_name": "Kamu AI Dosya Özeti Hata ve İnsan Kontrol Defteri",
+            "core_job": "Kritik kamu karar dosyalarında AI özetindeki iddia/dışlanan olgu ve kaynak belge alıntısını insan incelemesine göre eşleyerek tutarlılık, eksik gerekçe, örneklem ve düzeltme kararını kanıtlamak",
+            "target_customer": "Kamu kurumları, bağımsız kalite denetim ekipleri ve hukuki destek kuruluşlarının belge doğrulama operatörleri",
+            "buyer": "Kamu bilgi/kalite güvencesi ve bağımsız inceleme direktörü",
+            "product_mechanism": "Yetkili kullanıcı tarafından hassas verisi maskelenmiş, yerel olarak yüklenen olgu/özet paragraf/doküman alıntısı CSV'si ile manuel maddesel eşleme, hata/eksik kaynak bayrağı, sürüm, reviewer ve düzeltme sonucu defteri; hiçbir kamu dosyasına canlı bağlantı, karar önerisi veya dış AI modeli yok",
+            "why_now": "12 Ekim ORG raporu ACS/APS için denetlenebilirlik, özetlerin eksik bilgi ve sınırlı örneklem kalite denetimi sorunlarına odaklandı; 13 Ekim haber bunu kamusal tartışmaya taşıdı.",
+            "before_state": "Özetleme aracının kaynak mülakat/siyasi ülke bilgisiyle tutarlılığı standardize edilmiş maddesel reviewer/kanıt izinde tutulmayabilir.",
+            "after_state": "İnsan denetleyici, kaynağı ve özet iddiasını, eksik/yanlış/sapmalı kararını, hangi resmi düzeltmeyi istediğini ve dosya örneklem oranını indirilebilir denetim paketinde saklar.",
+            "canonical_source_urls": [
+              "https://www.openrightsgroup.org/publications/the-use-of-chatgpt-in-asylum-decisions/",
+              "https://questions-statements.parliament.uk/written-questions/detail/2026-04-10/125721/"
+            ],
+            "supporting_article_ids": [
+              "b7e710f41e9e8e0290dd11be"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.openrightsgroup.org/publications/the-use-of-chatgpt-in-asylum-decisions/",
+                "observation": "12 Ekim ORG altı aylık araştırma: pilot ACS %9 dışlama, Nisan-Temmuz üretilen özetlerin %0,3 uzman denetimi iddiası ve bağımsız inceleme eksikliği. Veriler farklı metodoloji/dönemlerden."
+              },
+              {
+                "url": "https://questions-statements.parliament.uk/written-questions/detail/2026-04-10/125721/",
+                "observation": "UK Parliament 20 Nisan 2026 bakan yanıtı ACS pilotunda %9 eksik/yanlış özet dışlama, %23 vaka çalışanlarının özete tam güvenmemesi ve insan kontrol şartlarını açıkça anlatıyor."
+              }
+            ],
+            "scope_hint": "Birleşik Krallık ve benzer insan denetimli kamu belge iş akışları",
+            "local_evidence": {
+              "signals": [
+                "Resmî bakan yanıtı ile ORG denetimi, AI yardımcı özetin insan kaynak-belge kontrolünün ölçülmesi gerektiği konusunu destekliyor."
+              ],
+              "unknowns": [
+                "Bu hassas alan veri koruma ve temsilcilik hukuku gerektirir; ürün karar vermez veya adli güvenilirlik sertifikası değildir.",
+                "Public sector AI QA/observability ve legal case management rakipleri Validation'da araştırılmalı.",
+                "Özet ile belgeyi otomatik semantik eşleştirme yok; gizlilik için yalnız manuel/CSV eşleme ve insana ait denetim.",
+                "Kamu sistemlerine entegrasyon olmadan ciddi değer boşluğu oluşabilir."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "38f6787795da28174d995600",
+        "decision": "no_opportunity",
+        "reason": "13 Ekim Securities Times özgün haberi Çin JYD Education (竞业达) ve Kylin Software arasında OS uyarlama, AI eğitim ve laboratuvar ortaklığı için stratejik anlaşma imzalandığını anlatıyor. Anlaşma imzalandı, ancak önerilen çoklu işletim sistemi laboratuvarı ve kitlesel eğitim/ürün devreye alma geleceğe ilişkin. Var olan akıllı eğitim platformları varken yeni üçüncü taraf bağımsız uyumluluk boşluğu veya yeni teknik sertifika şartı gösterilmedi.",
+        "opportunities": []
+      },
+      {
+        "article_key": "3909fc5163afdeb23846a3a9",
+        "decision": "no_opportunity",
+        "reason": "14 Ekim People's Daily/Renmin iş becerileri yazısı 48. WorldSkills Shanghai yarışmasında geleneksel el becerileri ile robot sistemleri/dron sisteminin bir arada yer almasını örnekliyor. Eğitim ve kariyer görüş yazısı yeni tarihli zorunlu yetenek ölçüm protokolü veya ücretli müşteri workflow'u doğrulamıyor. Sertifikalı eğitim platformları için piyasa yokluğu çıkarımı yapılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "3997b952c088c8eecab4b8ea",
+        "decision": "no_opportunity",
+        "reason": "13 Ekim First Financial/Yicai borsa haberinde Hang Seng Tech endeksi gün içi yaklaşık 4050'ye ve 2025 Ekim zirvesi 6715'e karşı yaklaşık %40 aşağıya geriliyor; endeksin Aralık 2026'dan başlayacak bileşen revizyonu (30'dan 50'ye) haberin ayrı konusu. Piyasa fiyat/geçici hisse ağırlığı sektörde farklılaşmış alıcı işini tek başına kanıtlamıyor; otomatik sinyal veya güvenilir yatırım tahmin SaaS'i çıkarılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "39b4de80976333a4d81e65b5",
+        "decision": "no_opportunity",
+        "reason": "13 Ekim EE Times CASPA 35. CEO Summit etkinliği 23-24 Ekim 2026'da planlanmıştır; 35'ten fazla yönetici, 2000 katılımcı beklentisi düzenleyici standart veya gerçekleşmiş AI hardware satışları değildir. Yayımlanmış agenda konuşma başlıkları genel trend sinyalidir; bu özel etkinlikte yeni satılabilir müşteri işi saptanmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "39bec7e415bbc120c96ac16b",
+        "decision": "no_opportunity",
+        "reason": "13 Ekim 36Kr/OFweek Çin World Robot Competition gençlik robotik yarışması yazısı ebeveyn, öğrenci, kurs/robot marka ticaret dinamiğini anlatıyor. Yetenek/youth yarışma ekosistemi mevcut eğitim-robotik platformlarında sunuluyor; bu yazıda yeni teknik ölçüm standardı, erişimi açılan yeni okul API'si veya yazılıma özgü bağımsız iş koşulu kanıtlanmadı. Genel kişisel öğrenci verisi toplama aracı üretilmedi.",
+        "opportunities": []
+      }
+    ]
+  }
+}
