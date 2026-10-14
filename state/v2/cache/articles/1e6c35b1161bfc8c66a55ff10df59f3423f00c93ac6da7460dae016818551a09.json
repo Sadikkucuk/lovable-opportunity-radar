@@ -1,0 +1,43 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "1e6c35b1161bfc8c66a55ff10df59f3423f00c93ac6da7460dae016818551a09",
+  "decision": {
+    "article_key": "fc56a63d2d5f2ad4e4b5c545",
+    "decision": "opportunity",
+    "reason": "ZDNET ve Reuters haberleri okundu; yüzlerce markette internetten erişilebilen eski soğutma kontrol yazılımlarının yamalanmaması gıda kaybına yol açtı. Çok markalı ekipman için çevrimdışı kanıtlı patch/izolasyon defteri ihtiyacı açık.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-11abfaedc1661b05:fc56a63d2d5f2ad4e4b5c545:01",
+        "canonical_key": "supermarket-refrigeration-operators|prove-patch-isolation-and-reconnection-readiness-across-legacy-controllers|asset-firmware-exposure-remediation-and-signoff-register",
+        "idea_name": "Soğuk Zincir Kontrol Sistemi Yama Kanıt Defteri",
+        "core_job": "Eski soğutma kontrol cihazlarını yeniden internete bağlamadan önce sürüm, maruziyet, yama ve izolasyon kanıtını tamamlamak",
+        "target_customer": "Süpermarket zincirleri ve soğutma bakım firmaları",
+        "buyer": "OT güvenlik sorumlusu veya teknik bakım müdürü",
+        "product_mechanism": "Manuel/CSV varlık envanteri, firmware/EOL kaydı, internet maruziyeti kontrol kanıtı, VPN/yama aksiyonu ve insan onaylı yeniden bağlama raporu; canlı tarama/API yok",
+        "why_now": "13 Ekim 2026 haberleri Danfoss, Copeland ve Dixell sistemlerinde yüzlerce mağazayı etkileyen uzaktan müdahale ile ürün kaybını; eski firmware ve açık arayüzleri belgeliyor.",
+        "before_state": "Farklı marka kontrol cihazlarının sürüm, EOL ve izolasyon durumu bakım tablolarında dağınık.",
+        "after_state": "Her cihaz için yama/izolasyon kanıtı ve yeniden bağlama onayı görünür oluyor.",
+        "canonical_source_urls": [
+          "https://www.zdnet.fr/actualites/piratage-des-frigos-danfoss-nest-plus-le-seul-mis-en-cause-505690.htm"
+        ],
+        "supporting_article_ids": [
+          "66d7c8dcde1fee6c30fde209"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.zdnet.fr/actualites/piratage-des-frigos-danfoss-nest-plus-le-seul-mis-en-cause-505690.htm",
+            "accessed_at": "2026-10-14T03:09:12.930Z",
+            "page_read": true,
+            "claim": "Piratage des frigos : Danfoss n'est plus le seul mis en cause - ZDNET",
+            "observation": "ZDNET, çok sayıda markette Danfoss yanında Copeland/Dixell arayüzlerinin etkilendiğini; CERT-FR'nin internetten ayırma, VPN, sıfırlama ve yama önerdiğini aktarıyor."
+          }
+        ],
+        "scope_hint": "Dünya",
+        "local_scope_evidence_hints": [],
+        "local_evidence": []
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-11abfaedc1661b05/001.json",
+  "valid_until": "2026-11-13T03:09:12Z"
+}
