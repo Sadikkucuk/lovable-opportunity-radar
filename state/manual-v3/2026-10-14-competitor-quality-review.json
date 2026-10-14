@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "kind": "manual_v3_quality_review_and_decision_supersession",
+  "as_of": "2026-10-14T06:19:45.842Z",
+  "immutable_prior_ledgers_unchanged": true,
+  "prior_count": 22,
+  "overridden_to_hold": 3,
+  "added_new_terminal": 1,
+  "confirmed_effective_terminal_count": 20,
+  "confirmed_effective_semantic_duplicate": 3,
+  "confirmed_effective_rejected": 17,
+  "confirmed_effective_qualified": 0,
+  "manual_holds_this_session": 3,
+  "v2_controller_accepted_receipts": 0,
+  "new_published_ideas": 0,
+  "overrides": [
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-328145440f1d3a6c",
+      "original_file": "state/manual-v3/2026-10-14-verified-decisions-031-040.json",
+      "change_from": "rejected",
+      "change_to": "hold",
+      "why": "Clover, Square, Shopify and Lightspeed perform their own POS offline payment recording; candidate is vendor-independent manual backup reconciling orders, alternative payment evidence, partial fulfilment and double collection across outages. Same buyer but not established substantially same end-to-end workflow across four direct rivals. A parallel standalone reconciliation competitor search is still required.",
+      "source_support": [
+        "https://docs.clover.com/dev/docs/payment-reconciliation-and-recovery",
+        "https://squareup.com/help/us/en/article/8551-view-offline-payments"
+      ]
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-34d6412a4e5a1638",
+      "original_file": "state/manual-v3/2026-10-14-verified-decisions-031-040.json",
+      "change_from": "rejected",
+      "change_to": "hold",
+      "why": "Aruba, InfoCert, TeamSystem, Namirial primarily provide legally-compliant e-invoice conservation; candidate is a multi-client legal deadline interpretation, vendor-delivery proof and discrepancy tracker rather than lawful archive provider. Same buyer but direct identical core job and workflow not established.",
+      "source_support": [
+        "https://agenziaentrate.gov.it/portale/web/guest/aree-tematiche/fatturazione-elettronica/guida-fatturazione-elettronica/come-predisporre-inviare-ricevere-fe/come-si-conservano-fe",
+        "https://www.adm.gov.it/portale/-/f-1"
+      ]
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-535ea466a5368f96",
+      "original_file": "state/manual-v3/2026-10-14-verified-decisions-041-042.json",
+      "change_from": "rejected",
+      "change_to": "hold",
+      "why": "Veeva, Ennov, MasterControl and EXTEDO evidence centers on pharma/life-sciences regulatory submissions, whereas the candidate specifically names regulated consumer goods firms. Scope overlap is not sufficient to establish four SAME buyer class and substantially identical consumer-goods filing review workflows.",
+      "source_support": [
+        "https://www.veeva.com/products/veeva-submissions/",
+        "https://en.ennov.com/solutions/regulatory/doc/"
+      ]
+    }
+  ],
+  "new_terminal": [
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-32a4700c89dde07b",
+      "input_hash": "32a4700c89dde07b48e95efc5b8b209cacb2a9422d500f98ffff474ceebee2d2",
+      "candidate_name": "VIN Recall Dealer Closure Ledger",
+      "canonical_key": "authorized-auto-service-networks|track-manufacturer-recall-repair-closure|vin-import-inspection-parts-and-completion-ledger",
+      "decision": "rejected",
+      "decision_reason": "four_identified_direct_global_competitors_for_dealer_recall_lifecycle",
+      "primary_trigger_url": "https://www.chery.my/2026/10/11/chery-auto-malaysia-melaksanakan-kempen-panggil-semula-untuk-omoda-5/",
+      "primary_trigger_read": "2026-10-14",
+      "primary_trigger_facts": "Chery Auto Malaysia announced OMODA 5 variants C and H VIN eligibility checks, inspection and replacement as needed, carried out by authorised Chery service centers.",
+      "target_customer": "Yetkili otomotiv servis zincirleri ve distribütör satış sonrası ekipleri",
+      "core_job": "Geri çağırma kapsamında etkilenen şasi numaralarını servis randevusuna, parça teminine ve onarım kanıtına bağlamak",
+      "product_mechanism": "Üreticiden manuel yüklenen izinli VIN CSV'si, varyant, muayene sonucu, yedek parça, müşteri randevu ve servis kapanış kanıtı; üretici VIN API'si zorunlu değil",
+      "global_direct_competitors": [
+        {
+          "name": "Recall Masters",
+          "url": "https://www.recallmasters.com/overview/",
+          "same_job": "VIN-level unperformed recall identification; dealer outreach; repair completion followup"
+        },
+        {
+          "name": "BizzyCar",
+          "url": "https://www.bizzycar.com/recall-management",
+          "same_job": "Dealer VIN campaign, parts/bay readiness and recall appointment scheduling with follow-up status"
+        },
+        {
+          "name": "Dealer-FX",
+          "url": "https://www.dealer-fx.com/workflow/recalls-warranty",
+          "same_job": "VIN recall flagged during dealer scheduling and captured in service/repair order for traceability"
+        },
+        {
+          "name": "Total Recall",
+          "url": "https://totalrecall.vin/",
+          "same_job": "VIN recall identification, customer contacts, appointment and mark-vehicle-repaired closure ledger"
+        }
+      ],
+      "global_direct_count_identified": 4,
+      "turkiye_direct_count": null,
+      "review_date": "2026-10-14",
+      "manual_v3_only": true,
+      "no_publication": true
+    }
+  ],
+  "notes": "Supersession applies to manual v3 research tally and records only. Do NOT modify v2 claims/results/jobs, v2 counters, protected catalog, or public release. Distinguish market rejection from production validation. Vendor evidence and narrow workflow differences must be read as cited."
+}
