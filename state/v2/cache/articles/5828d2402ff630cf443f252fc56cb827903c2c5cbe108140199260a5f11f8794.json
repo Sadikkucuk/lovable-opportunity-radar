@@ -1,0 +1,29 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "5828d2402ff630cf443f252fc56cb827903c2c5cbe108140199260a5f11f8794",
+  "decision": {
+    "article_key": "23b5c028c274fa839fce52a5",
+    "decision": "opportunity",
+    "reason": "RobotStart 13 Ekim özgün haberi ve puerisomnia'nın 9 Ekim orijinal basın bülteni, dört ayaklı robot sırtında bağlı drone ile GPS olmayan metro/su/enerji/karayolu altyapısına denetim ve güvenlik platformunun satışa sunulduğunu doğruluyor. Satın alan su/enerji operatörlerinin robot ve drone görevlerindeki gözlem, erişilemeyen nokta, kontrol sorumlusu ve saha kabul kanıtını tek elle girilen CSV/rapor defterinde toplama hipotezi çıkarıldı. Robot/drone kontrol yazılımı veya ücretli sensör API gerektirmez; mevcut Multi-Vendor Asset Inspection Acceptance Ledger adayıyla semantik çakışma Merge aşamasında değerlendirilmeli.",
+    "source_url": "https://robotstart.info/article/2026/10/13/382514.html",
+    "opportunities": [
+      {
+        "raw_id": "radar-manual-20261014-622097d6-robotdrone",
+        "canonical_key": "critical-infrastructure-inspection-buyers|reconcile-air-ground-robot-inspection-acceptance|mission-coverage-observation-handoff-evidence-ledger",
+        "idea_name": "AirGround Inspection Handoff — Robot/Drone Saha Kabul Kanıtı",
+        "core_job": "Su, enerji ve köprü altyapısı denetiminde birleşik robot ve drone görevi kapsamını, gözlem kanıtını ve saha kabul eksiklerini bağımsız kaydetmek",
+        "target_customer": "Su/atık su, enerji, köprü ve otoyol saha varlık yönetimi ile kontrol yüklenicileri",
+        "product_mechanism": "Kullanıcı tarafından yüklenen görev/alan CSV'si, aygıt tipi, sensör referansı, uçuş/yer görev süresi, bulgu kodu, insan inceleme görevi ve onay çıktısı; deterministic kapsama/eksik kontrolü, sürümlü foto URL kanıt listesi ve PDF/CSV raporu. Canlı robot/drone API'si ve AI modeli gerekmez.",
+        "why_now": "puerisomnia 9 Ekim duyurusuyla kara robotu ve bağlı dronun entegre altyapı inceleme hizmetini başlattı; 13 Ekim fuar demosu ve kurumsal satış çağrısı mevcut.",
+        "before_state": "Drone ve kara robot incelemeleri farklı çizelge ve raporlarda; gözetlenemeyen kesit ve sorumlu kapatma eylemleri net değil.",
+        "after_state": "Tesis bölümü ve görev → robot/drone gözlem girdisi → boş kapsama → bulgu/kanıt eşleme → saha kontrol sorumlusu ve kabul → çıktılar.",
+        "canonical_source_urls": [
+          "https://prtimes.jp/main/html/rd/p/000000009.000164204.html",
+          "https://robotstart.info/article/2026/10/13/382514.html"
+        ]
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-622097d6d504f0e0/001.json",
+  "valid_until": "2026-11-13T07:48:30Z"
+}
