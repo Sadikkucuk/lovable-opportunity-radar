@@ -1,0 +1,48 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "157cc6559b134bba8762d13afd486b6c5551aa33009e107295e1610b4895350a",
+  "decision": {
+    "article_key": "eed9c0d05f9b6e09dcfbeff4",
+    "decision": "opportunity",
+    "reason": "The Register 13 Ekim Intel Connectivity Performance Suite (ICPS) optimizasyon özellikleriyle istemsiz IPv6 ağ kararsızlığı raporunu ve bir Samsung Galaxy Book kullanıcısının OneDrive/OneNote arızası vakasını anlatıyor. Tek/az sayıda kullanıcı anekdotu, bütün Intel sürücüleri için kusur kanıtı değildir. Ancak müşteri destek/Microsoft 365 endpoint ekiplerinin sürücü/servis versiyonu, IPv6 resolver/MTU, etkilenen app, tekrar test ve geri alma kararı delilini manuel standartlaştırma ihtiyacı bir iş hipotezidir. Canlı telemetri/driver patch uygulamaz, yalnız kullanıcıdan test kayıtları alır.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-1c2166779757ed8d:eed9c0d05f9b6e09dcfbeff4:1",
+        "canonical_key": "managed-office-endpoint-support-teams|reproduce-intel-connectivity-optimizer-ipv6-onedrive-failures|offline-driver-configuration-app-network-test-and-rollback-evidence-ledger",
+        "idea_name": "Windows IPv6 Sürücü–Uygulama Regresyon Kanıt Defteri",
+        "core_job": "Kurumsal uç cihazda Windows/Intel Connectivity Performance Suite sürümü ve IPv6/OneDrive/OneNote bağlantı sorunlarını aynı test/driver restore senaryosunda yeniden üretip yardım masası kapatma kanıtını oluşturmak",
+        "target_customer": "Windows laptop/m365 destek veren MSP, help desk ve masaüstü mühendislik ekipleri",
+        "buyer": "Kurumsal endpoint yönetimi ve IT servis masası yöneticisi",
+        "product_mechanism": "Cihaz-model, sürücü sürümü, Intel ICPS optimizasyon bayrağı, IPv6 DNS/MTU, ping/tracert/tcp testi, OneDrive/OneNote senkronizasyon sonucu, geri alma ve insan onayını kullanıcı CSV/formuyla deterministic sorumlu/fark raporuna bağlayan browser-only iş emri defteri",
+        "why_now": "13 Ekim The Register gerçek raporlanmış ICPS/IPv6 kararsızlık kullanıcı örneğini yayımladı; son kullanıcı ile ağ sürücü üreticisi için tekrarlanabilir önce/sonra kabul vakası oluşuyor.",
+        "before_state": "Yardım masasında OneDrive/OneNote hatası kullanıcıya özgü bulanık 'ağ yavaş' açıklaması ve dağınık ekran görüntüleri halinde.",
+        "after_state": "Sürücü/ayar-IPv6-app testine ve rollback sonucu/insan onayına bağlı kök neden hipotezi/kanıt raporu.",
+        "canonical_source_urls": [
+          "https://www.theregister.com/2026/10/13/intel_connectivity_performance_suite_ipv6/"
+        ],
+        "supporting_article_ids": [
+          "712cc3409ec9457fabbf5792"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.theregister.com/2026/10/13/intel_connectivity_performance_suite_ipv6/",
+            "observation": "The Register 13 Ekim; Intel Connectivity Performance Suite optimizasyonu bazı kullanıcıların IPv6 bağlantı sorunlarına bağladığı haber; geniş dağıtım testinden elde edilmiş evrensel kusur oranı değil."
+          }
+        ],
+        "scope_hint": "Windows enterprise endpoints/remote help desk",
+        "local_evidence": {
+          "signals": [
+            "Karma M365-sürücü-IPv6 kaynaklı tekrar edilebilir masaüstü destek vakaları bulunabilir."
+          ],
+          "unknowns": [
+            "Intune/Microsoft Endpoint Analytics ve DEX ürünleri güçlü global/yerel rakip olabilir.",
+            "Yalnız manuel kayıt gerçek test/driver değişikliği sağlamaz.",
+            "Haber özgün detaylarının erişim kapsamı sınırlı; sürücü issue advisory resmi Intel sayfasıyla ayrıca teyit edilmeli."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-1c2166779757ed8d/001.json",
+  "valid_until": "2026-11-13T02:57:44Z"
+}
