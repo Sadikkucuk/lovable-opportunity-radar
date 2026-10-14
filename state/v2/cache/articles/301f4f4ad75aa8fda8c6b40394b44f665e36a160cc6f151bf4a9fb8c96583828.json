@@ -1,0 +1,48 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "301f4f4ad75aa8fda8c6b40394b44f665e36a160cc6f151bf4a9fb8c96583828",
+  "decision": {
+    "article_key": "aed0364640b8c0f0d559b133",
+    "decision": "opportunity",
+    "reason": "Dünya 12 Ekim fındık üretimi yazısında Giresun'da kabuklu ürün potansiyeli 91 bin ton, normal iç randımanı yaklaşık %54 iken kahverengi kokarca hasarıyla %45 düzeyine inişten 49 bin yerine 40 bin ton ürün tahmini ve yaklaşık 9 bin ton KAYIP RİSKİ ifade ediliyor. Bu gerçekleşmiş resmi bölge stok sayımı değil sektör üreticisi işleme tahminidir. DELTA: ham kabuklu satın almış ihracatçı/işleyicinin gerçek laboratuvar lot randımanı sözleşmedeki teslim edilebilir iç fındık tonajı ve tedarik eksikliğini etkiliyor. Kuru iç verim, mevcut kontrat ve alternatif tedarik tonajını CSV ile karşılaştıran deterministic sözleşme açık raporu somut iş kararı.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-3b4aff9653962386:aed0364640b8c0f0d559b133:01",
+        "canonical_key": "turkish-hazelnut-processors-and-exporters|translate-in-shell-lot-quality-yield-loss-into-kernel-export-delivery-risk|offline-batch-kernel-yield-contracted-volume-and-shortfall-scenario-ledger",
+        "idea_name": "Fındık Randıman–İhracat Taahhüt Açık Defteri",
+        "core_job": "Fındık kabuklu alım lotlarının iç verimini laboratuvar numune raporuyla doğrulayıp ihracat sözleşmesindeki teslim edilebilir iç fındık tonajı, sipariş açığı, kalite/çürük ve tedarik alternatiflerini planlamak",
+        "target_customer": "Giresun/Ordu ve global alıcılara kabuklu fındıktan iç mamul ihraç eden üreticiler, işleyici kooperatifleri ve ihracat sözleşme ekipleri",
+        "buyer": "Fındık işleme tesisinin üretim ve ihracat planlama müdürü",
+        "product_mechanism": "Lot bazlı kabuklu tonaj, numune iç randımanı, bozuk/kokarca oranı, sözleşme sevkiyat taahhütü, kalite standardı, eksik lot ETA ve referans fiyat CSV girdilerini deterministik net yenebilir iç ton, açık, alternatif satın alma ve senaryo raporuna dönüştüren yerel browser tablosu; canlı borsa API/pest control gerektirmez",
+        "why_now": "12 Ekim 2026 Dünya haberi kokarca kaynaklı kalite/randıman sapmasının Giresun'da yaklaşık 9 bin ton iç fındık kayıp riski oluşturabileceğini üretici uzman beyanıyla aktardı; riski gerçek sözleşmeye bağlama ihtiyacı artabilir.",
+        "before_state": "Kabuklu alım ağırlıkları, farklı lotların randıman testi ve ihracat teslim sözleşmesi operasyonun farklı excel ve e-postasında kalır.",
+        "after_state": "Her lotta laboratuvar randıman → beklenen net iç fındık → sözleşme doluluk/eksik → tedarik aksiyonu ve insan onaylı rapor zinciri olur.",
+        "canonical_source_urls": [
+          "https://www.dunya.com/ekonomi/findikta-9-bin-tonluk-kayip-riski-kahverengi-kokarca-uretimi-vurdu-haberi-843535"
+        ],
+        "supporting_article_ids": [
+          "9d942afce1786613fd4bcb23"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.dunya.com/ekonomi/findikta-9-bin-tonluk-kayip-riski-kahverengi-kokarca-uretimi-vurdu-haberi-843535",
+            "observation": "Dünya 12 Ekim: 91k ton kabuklu * varsayılan %54 iç randımanı ~49k, zarar gören %45 ile ~40k; 9k iç fındık açığı geleceğe dönük risk tahmini, kesin gerçekleşen kayıp değil."
+          }
+        ],
+        "scope_hint": "Türkiye, Karadeniz fındık tedarik zinciri; diğer kabuklu ürünlere genelleştirilebilir",
+        "local_evidence": {
+          "signals": [
+            "İhracat teslimine bağlanan fındık lot randımanı çevresel zararlılarla hızla değişiyor; iç verim zinciri ürün-ham stok dönüşüm kararı."
+          ],
+          "unknowns": [
+            "Gerçek lot laboratuvar sonucu olmadan tüm bölge için %45 kesin randıman denilemez.",
+            "Türkiye/global fındık işleme ERP ve randıman takip rekabeti Validation'da araştırılmalı.",
+            "Sağlık/pestisit/bitki hastalık yönetimi bu ürünün konusu değildir."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-3b4aff9653962386/001.json",
+  "valid_until": "2026-11-13T03:37:01Z"
+}

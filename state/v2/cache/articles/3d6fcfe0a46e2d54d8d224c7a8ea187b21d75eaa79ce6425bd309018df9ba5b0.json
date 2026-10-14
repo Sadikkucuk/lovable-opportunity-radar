@@ -1,0 +1,53 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "3d6fcfe0a46e2d54d8d224c7a8ea187b21d75eaa79ce6425bd309018df9ba5b0",
+  "decision": {
+    "article_key": "ade97871393882c73955d04d",
+    "decision": "opportunity",
+    "reason": "EVENT: Il Sole 24 Ore 13 Ekim Hypesound ultrases/biyoteknoloji anlatısı; özgün yayın tam gövde erişimi sınırlı ancak şirket HypeSound resmi sitesi ve Planet B.io 20 Ocak 2026 birincil laboratuvar yazısı, 2025'ten beri uygulanan düşük frekans ses stimülasyonunu alg/maya/bakteri yetiştirme deneyinde kullandığını doğruluyor. Yani yeni Ekim lansmanı değil, önceki prototipin yeni haberle yeniden görünürlüğü. FARK: akustik parametreli mevcut fermantasyon batchlerinin sessiz kontrol/karşılaştırma koşulları ve insan test notları birbirine bağlanmalı. Şirketin %300 üretim, %95 saflık ve %50 maliyet azaltım yüzdeleri sağlayıcı tanıtım iddiası; bağımsız test değil. Farklı müşteri olan endüstriyel fermantasyon laboratuvarı için deterministic kanıt defteri hipotezi; canlı bioreactor API veya AI model gerektirmez, laboratuvar sertifikası vermez.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-3b4aff9653962386:ade97871393882c73955d04d:01",
+        "canonical_key": "industrial-fermentation-scaleup-labs|compare-acoustic-stimulation-trials-against-matched-control-batches|offline-frequency-dose-biomass-yield-and-process-evidence-ledger",
+        "idea_name": "Fermantasyon Akustik Deney–Kontrol Parti Kanıt Defteri",
+        "core_job": "Fermantasyon biyoprosesinde akustik uyarı kullanılan ve kontrol biyokültür partilerinin frekans, güç, ortam, büyüme hızı, saflık ve lot bazlı ölçümünün aynı koşullarda karşılaştırılması",
+        "target_customer": "Biyoteknoloji endüstriyel fermantasyon pilot laboratuvarları, üretim geliştirme ve proses doğrulama ekipleri",
+        "buyer": "Biyoproses geliştirme ve kalite kontrol mühendisi",
+        "product_mechanism": "Kullanıcının yüklediği control/sonic batch CSV dosyası, uygulama frekansı/süre, inokulum, reaktör, sıcaklık, başlangıç ve final biyokütle, saflık, deney değişkeni, ölçüm cihazı tarihiyle deterministik normalize verim, etki boyutu, eksik eşleştirme ve insan onaylı rapor; ses dalgası üretimi veya gerçek zamanlı biyoreaktör bağlantısı yok",
+        "why_now": "13 Ekim Hypesound şirket haberi, önceden 2025–26 pilot uygulamalarının endüstriyel ölçek geçişi ve tür/proses özel optimizasyon gerektirdiğini görünür kılıyor.",
+        "before_state": "Farklı mikroorganizma ve ses titreşimi denemelerinin kontrol parti koşulları Excel/laboratuvar defterleri arasında kaybolabilir.",
+        "after_state": "Aynı strain, besiyeri, yük ve süre koşullarında akustik uyarımlı/baseline lotları birimlere çevrilip yan yana deney kabul kanıtı olarak incelenebilir.",
+        "canonical_source_urls": [
+          "https://www.planet-b.io/news/from-sound-to-scale-hypesound-innovates-in-planet-bio-s-flexible-bio-lab/",
+          "https://www.hypesound.it/"
+        ],
+        "supporting_article_ids": [
+          "e9ad44a33532f7d384430975"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.planet-b.io/news/from-sound-to-scale-hypesound-innovates-in-planet-bio-s-flexible-bio-lab/",
+            "observation": "20 Ocak 2026 laboratuvar birincil açıklaması: HypeSound 2025 Ekim'de Delft'te lab kullanmaya başladı; alga, yeast, bacteria için frekansın organizma ve tüm proses bağımlılığı açıklandı."
+          },
+          {
+            "url": "https://www.hypesound.it/",
+            "observation": "Üretici sitesindeki %300 verim, %95 saflık, %50 maliyet rakamları öz iddiadır; bağımsız doğrulanmış saha başarımı olarak alınmadı."
+          }
+        ],
+        "scope_hint": "Dünya",
+        "local_evidence": {
+          "signals": [
+            "Aynı organizmanın bile bira, ekmek ve precision fermentation prosesinde farklı akustik optimal frekans gerektirdiği laboratuvar açıklamasında belirtildi."
+          ],
+          "unknowns": [
+            "Ekim Il Sole özgün gövde erişimi sınırlı; olay 2025 pilot/2026 ölçeklendirme bağlamında.",
+            "Biyoproses ELN/LIMS ürünleri globalde yüksek rekabet gösterebilir; doğrudan sayım henüz yok.",
+            "Yalnız CSV batch deney kaydı; GxP veri bütünlüğü ve endüstriyel kontrol sorumluluğu kullanıcıda."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-3b4aff9653962386/001.json",
+  "valid_until": "2026-11-13T03:37:01Z"
+}

@@ -1,0 +1,48 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "45e33ef3ffcdd8885db41b6f2b82d21a4b353b85ca6b8ac5f78c2880c819f670",
+  "decision": {
+    "article_key": "af572f9bee77601d535cbc1f",
+    "decision": "opportunity",
+    "reason": "Utility Dive 13 Ekim California elektrik uygunluk/ucuzluk krizine dair görüş yazısı Eylül ve önceki CPUC utility tracking account tartışmasını açıklar. Yazar 2018'de ~86m USD, 2024'te ~2.4bn USD bazı wildfire/utility maliyetleri veya alt hesap toplandığı örnekleri verir; değişik bütçe tabanları ve yıllar için karşılaştırma yapıyor. Bunlar yazarın kaynaklarına dayalı değerlendirmelerdir, resmî yeni tarife zorunluluğu veya otomatik fark tahsilat kararı değildir. DELTA: kamu temsilcisi/dağıtım şirketi rate-case uzmanlarının tarihi maliyet kalemi, docket, açıklama, denetim sorusu ve tüketiciye yansıtma gerekçelerini kaynak sürümüyle yan yana izleme gereği. Modüler, offline CSV kanıt dosyası Discovery hipotezi; hukuki/eşitlik kararı vermez.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-3b4aff9653962386:af572f9bee77601d535cbc1f:01",
+        "canonical_key": "california-utility-rate-case-advocates|reconcile-tracking-account-claims-and-yearly-cost-allocation-evidence|offline-docket-cost-category-ratepayer-claim-and-question-ledger",
+        "idea_name": "Kaliforniya Elektrik Tarife Maliyet Kanıt Matrisi",
+        "core_job": "California utility rate case sürecinde yangın önleme, iletim, enerji alım ve geçiş maliyet kalemlerinin hangi yıl, karar, hesap ve ratepayer grubuna dayandığını kanıt/soru karşılaştırmasıyla değerlendirmek",
+        "target_customer": "California tüketici savunucu kurumlar, utility rate-case danışmanları ve küçük belediye enerji politikası analiz ekipleri",
+        "buyer": "Enerji regülasyon dosyası inceleme lideri veya utility rate case analisti",
+        "product_mechanism": "Kullanıcının manuel sağladığı CPUC docket, utility tracking account kalemi CSV, kaynak tarife belge URL'si, yıllık baz bütçe, fatura yansıma oranı ve halk yorum/soru yanıtını deterministik eksik kanıt/tarih-maliyet mutabakat matrisine çeviren tarayıcı uygulaması; CPUC API, canlı tarife feed veya dış DB yok",
+        "why_now": "13 Ekim Utility Dive piyasa/rate case analizi, farklı utility takip hesabı ve yıllar arasındaki maliyet artışının halk ve regulator tarafından nasıl görünür kılındığını ve kamu tartışması sürdüğünü somut örnekliyor.",
+        "before_state": "Utility faturaya yansıyan kalem, geçmiş tracking account verisi, regulator docket dosyası ve itiraz gerekçesi farklı PDF/Excel zincirlerinde.",
+        "after_state": "Her maliyet iddiası kaynak dosya, dönem, açıklama ve sorumlu onayla ilişkilendirilip eksik/kıyas raporu indirilebilir.",
+        "canonical_source_urls": [
+          "https://www.utilitydive.com/news/solving-californias-energy-affordability-crisis-can-help-the-whole-nation/832815/"
+        ],
+        "supporting_article_ids": [
+          "b082e424a3494cdb31e2e72e"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.utilitydive.com/news/solving-californias-energy-affordability-crisis-can-help-the-whole-nation/832815/",
+            "observation": "Utility Dive 13 Ekim opinion: California electric affordability crisis ve wildfire/tracking-account maliyetlerinin açıklama/denetim için ayrıştırılması önerisi; yeni yasa/politika kabul edildiği iddia edilmedi."
+          }
+        ],
+        "scope_hint": "ABD / Kaliforniya",
+        "local_evidence": {
+          "signals": [
+            "Tarife/maliyet talebinin düzenleyici hesap kodu/CPUC docket ve yıla göre kanıtlanması sürekli tekrarlanan teknik mevzuat işidir."
+          ],
+          "unknowns": [
+            "Mevcut CPUC taraf/sponsor rate-case filing software ürünlerinin direkt rakip sayımı yapılmadı.",
+            "Yazı opinon olduğundan rakamların resmi CPUC ham docket verisiyle ayrıca eşlenmesi Validation'a açık.",
+            "Kullanıcıların düzenleme dosyalarına manuel erişimi gerekir; ayrı PDF OCR harici servis yok."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-3b4aff9653962386/001.json",
+  "valid_until": "2026-11-13T03:37:01Z"
+}
