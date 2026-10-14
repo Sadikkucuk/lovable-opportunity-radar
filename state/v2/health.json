@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-14T02:13:15Z",
+  "controller_observed_at": "2026-10-14T02:16:08Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
-  "expected_start_at": "2026-10-14T01:01:00Z",
+  "expected_start_at": "2026-10-14T02:01:00Z",
   "ready_jobs": 638,
   "unfinished_jobs": 638,
   "last_verified_progress_at": "2026-10-14T02:12:40Z",
@@ -74,15 +74,14 @@
       "last_receipt_at": "2026-10-14T02:12:40.295Z"
     },
     "5": {
-      "last_started_at": "2026-10-13T21:15:37.073Z",
+      "last_started_at": "2026-10-14T02:15:55.239Z",
       "last_event": {
         "schema_version": 1,
         "worker": 5,
-        "invocation_id": "eb17e428-d178-47a0-a8c5-c1b823eac2a5",
-        "event": "finished",
-        "at": "2026-10-13T21:18:01.073Z",
-        "note": "Gece sağlık denetimi tamamlandı; araştırma claim'i veya korunan veri değişikliği yapılmadı.",
-        "path": "state/v2/worker-events/5/eb17e428-d178-47a0-a8c5-c1b823eac2a5/999-finished.json"
+        "invocation_id": "7985afb6-120e-4060-895f-d5c8f3f86e69",
+        "event": "started",
+        "at": "2026-10-14T02:15:55.239Z",
+        "path": "state/v2/worker-events/5/7985afb6-120e-4060-895f-d5c8f3f86e69/000-started.json"
       },
       "receipts_this_invocation": 0,
       "write_and_receipt_verified": false,
@@ -148,12 +147,6 @@
     {
       "code": "worker_heartbeat_missing",
       "worker": 2,
-      "severity": "critical",
-      "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
-    },
-    {
-      "code": "worker_not_started",
-      "worker": 5,
       "severity": "critical",
       "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
     },
