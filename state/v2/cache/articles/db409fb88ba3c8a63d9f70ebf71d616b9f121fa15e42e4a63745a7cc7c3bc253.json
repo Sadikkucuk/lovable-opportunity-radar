@@ -1,0 +1,53 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "db409fb88ba3c8a63d9f70ebf71d616b9f121fa15e42e4a63745a7cc7c3bc253",
+  "decision": {
+    "article_key": "2152189f1553a487c2785ada",
+    "decision": "opportunity",
+    "reason": "Ny Teknik özgün sayfasına robots kısıtı, ancak Microsoft'un 12 Ekim resmî blogu ve Reuters aynı Maia 300 olayını doğruluyor: Maia 200 mevcut iş yükünde, Maia 300 2027 planı; farklı rack ve token/MW kapasite iddiaları şirket kıyası, eş koşullu tarafsız benchmark değil. DELTA: modellerin rakip hızlandırıcılarda enerji verimi ve ısı/şebeke gücü/kapasite karşılaştırması kritik. Sözleşme öncesi kullanıcı CSV benchmark girdiyle benchmark kanıt ve fiyat tahmini kaydı ayrı alıcı işi olabilir; canlı modeli çalıştırmak veya dış LLM API çağırmak ürünün parçası değil.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-29fbc3b564b3f6c5:2152189f1553a487c2785ada:01",
+        "canonical_key": "inference-data-center-capacity-planners|compare-accelerator-racks-token-throughput-vs-facility-power-and-cooling|offline-benchmark-energy-rack-cost-and-provenance-scorecard",
+        "idea_name": "AI Rack Token/MW Kapasite Kanıt Defteri",
+        "core_job": "Farklı hızlandırıcı raflarında kullanıcının ölçtüğü inference throughput, güç tüketimi, soğutma ve fiyatı karşılaştırarak MW sınırı altında satın alma kapasitesi senaryosu çıkarmak",
+        "target_customer": "AI veri merkezi kapasite-planlama, altyapı mimarisi ve finans mühendisliği ekipleri",
+        "buyer": "Veri merkezi compute-capacity satın alma ve güç altyapı tasarım yöneticisi",
+        "product_mechanism": "CSV ile içe aktarılan token/s, workload/model sürümü, p50/p95 gecikme, raf kW, PUE, soğutma payı, amortisman ve rack CAPEX'i deterministik karşılaştıran istemci içi maliyet/MW ve benchmark provenans hesaplayıcısı",
+        "why_now": "12 Ekim Microsoft Maia 300 çok-gigawatt dağıtımını 2027 için planladı; rack başına 96 çip ve rakip GPU sistemlerine karşı yüzde 40 token/MW iddiası tarafsız kıyas ihtiyacını güncel kılıyor.",
+        "before_state": "Bir vendorun şirket benchmarkı, diğer vendorun farklı model/ısı profiliyle ölçüldüğünden kapasite alımında karşılaştırılabilir değil.",
+        "after_state": "Aynı kullanıcı workload koşulu ve kaynak URL'siyle ölçülmüş/test edilen throughput-MW-TCO senaryoları ve eksik benchmark kanıtları tek tabloda.",
+        "canonical_source_urls": [
+          "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+          "https://www.reuters.com/business/microsoft-plans-huge-deployment-its-own-ai-chips-with-an-eye-saving-costs-2026-10-12/"
+        ],
+        "supporting_article_ids": [
+          "257f8564f583aa2257e234c7"
+        ],
+        "source_observations": [
+          {
+            "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+            "observation": "Microsoft 12 Ekim: Maia200 şu anda üretim iş yükünde, Maia300 ancak 2027 planı; token/MW karşılaştırması üretici iddiası."
+          },
+          {
+            "url": "https://www.reuters.com/business/microsoft-plans-huge-deployment-its-own-ai-chips-with-an-eye-saving-costs-2026-10-12/",
+            "observation": "Reuters 12 Ekim 96/chip rack, 167kW rack ve 2027 çok gigawatt dağıtım planını aktarır."
+          }
+        ],
+        "scope_hint": "Dünya",
+        "local_evidence": {
+          "signals": [
+            "Data center ısı ve şebeke güç sınırı kapasite satın alma ve model başına maliyeti doğrudan sınırlar."
+          ],
+          "unknowns": [
+            "Ticari veri merkezi güç benchmark ürünlerinin global rakip sayısı bilinmiyor.",
+            "Maia300 planlanan 2027 donanımı: sahada ölçülmüş kullanıcı CSV'si bugün bulunmayabilir.",
+            "Gerçek AI inference harici çalışır; bu araç yalnız geçmiş performans ölçüm dosyalarına dayanır."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-29fbc3b564b3f6c5/001.json",
+  "valid_until": "2026-11-13T03:16:07Z"
+}

@@ -1,0 +1,53 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "3ed6bad6da9e65143963630b9c1b88bf725ef131b08fa6612c9fa8b0632fceec",
+  "decision": {
+    "article_key": "225ffbf8116e8cfabe336261",
+    "decision": "opportunity",
+    "reason": "Electronics Weekly'nin 13 Ekim ATT A-Series haberi için orijinal alan robots engeline takıldı; Knowles'ın 30 Eylül 2026 tarihli resmi lansmanı ve ATT A-Series ürün katalog datasheet verisi okundu. DELTA: DC-20GHz RF/mikrodalga zincirde kompakt SMT attenuator alternatifleri; mühendis aynı frekans/güç/sıcaklık/yerleşim koşullarında attenuation ve match uygunluğunu izlemek zorunda. Ekim haberinin yeni lansman tarihi DEĞİL, Eylül lansmanını yeniden duyurma olduğu kayda alındı. Tek cihazı otomatik ölçmez; kullanıcı testiyle karar kanıtı oluşturur.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-29fbc3b564b3f6c5:225ffbf8116e8cfabe336261:01",
+        "canonical_key": "rf-microwave-hardware-design-validation-teams|qualify-smt-attenuator-lots-across-frequency-power-temperature|offline-frequency-attenuation-vswr-tolerance-and-lot-test-ledger",
+        "idea_name": "RF SMT Attenuator Frekans–Güç Kabul Defteri",
+        "core_job": "RF tasarım ve test ekiplerinin kompakt SMT attenuator lotlarının frekansa karşı zayıflatma toleransı, güç kapasitesi, giriş/çıkış uyumu ve sıcaklık kabulünü belgelemesi",
+        "target_customer": "RF/mikrodalga test ve üretim mühendisliği, IoT/radar/telekom RF kart tedarik ekipleri",
+        "buyer": "RF donanım kalite/test lideri",
+        "product_mechanism": "Kullanıcının network analyzer test CSV'si, frekans/S-parametre, atten dB, giriş gücü/derating, sıcaklık ve malzeme lot datasheet verisini tanımlı toleranslarla eşleyip fail/retest ve mühendis imza raporu üretir; RF analiz cihazı API'si ve donanım ölçüm motoru gerektirmez",
+        "why_now": "Knowles 30 Eylül 2026 DC-20GHz A-Series lansmanı, 13 Ekim teknik sektör yayını; yeni fiziksel parça ve üretici alternatiflerinin değerlendirilmesini gerektirir.",
+        "before_state": "RF zincir BOM revizyonu ve laboratuvar vector network analyzer ölçümleri tedarikçi datasheet'lerinden ayrı yönetilir.",
+        "after_state": "Attenuation, frequency, VSWR, thermal, power rating ve mühendis raporu lot/verisyon seviyesinde yan yana onaylanır.",
+        "canonical_source_urls": [
+          "https://www.knowles.com/resources/education/blogs/post/press-releases/2026/09/30/knowles-expands-rf-signal-chain-offering-with-new-a-series-attenuators",
+          "https://product.knowles.com/rf-and-microwave/attenuators?categoryHierarchy%5B0%5D=RF+and+Microwave&categoryHierarchy%5B1%5D=Attenuators"
+        ],
+        "supporting_article_ids": [
+          "8e2e3cdf0fe0f58da3f36ada"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.knowles.com/resources/education/blogs/post/press-releases/2026/09/30/knowles-expands-rf-signal-chain-offering-with-new-a-series-attenuators",
+            "observation": "Knowles resmi 30 Eylül lansmanı ATT A-Series: kompakt SMT, DC-20GHz, yüksek güç ve attenuation accuracy iddiası."
+          },
+          {
+            "url": "https://product.knowles.com/rf-and-microwave/attenuators?categoryHierarchy%5B0%5D=RF+and+Microwave&categoryHierarchy%5B1%5D=Attenuators",
+            "observation": "Resmi katalog çalışma sıcaklığı -55°C ile +125°C, yaklaşık 2.03x1.65x0.30 mm package, 50Ω ve DC-20GHz; datasheet gerçek tolerans testle doğrulanmalı."
+          }
+        ],
+        "scope_hint": "Dünya",
+        "local_evidence": {
+          "signals": [
+            "RF test/tedarik ekipleri farklı attenuator lot/versiyonlarını ölçülmüş VNA eğrisi ve toleransla doğrular."
+          ],
+          "unknowns": [
+            "Türkiye ve global RF compliance/lab data management rakipleri Validation'da taranmalı.",
+            "Parça yeni değildir: şirket Eylül'de lansman yaptı, Ekim yeniden yayın var.",
+            "Tedarikçinin gerçek saha hata oranı bilinmiyor."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-29fbc3b564b3f6c5/001.json",
+  "valid_until": "2026-11-13T03:16:07Z"
+}

@@ -1,0 +1,53 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "5ae09e229cedc686af217b1dc1ab8d5ec968b7f07792c893f6776a58ae6bfdff",
+  "decision": {
+    "article_key": "20ffcb0e1f0bb9f54ce95474",
+    "decision": "opportunity",
+    "reason": "EVENT: 科创板日报'nın 13 Ekim tarihli tam haberinde Jinpan Technology 2026 9 aylık geliri 6,104 milyar CNY, net kârı 544 milyon CNY ve AIDC yeni siparişleri yıllık +%471,96 olarak aktarıyor; bakır ortalama fiyatı yıllık +%32,47. BEFORE güç trafosu EPC tedariğinde kablo/bakır hammadde fiyat, teklif süresi, kur riski ve kısmi teslim dosyaları ayrı. AFTER veri merkezi sipariş artışı ve bakır maliyet farkı daha sık yeniden fiyat/teslim senaryosu gerektiriyor. Finansal rapor üretici beyanıdır, diğer tüm tedarikçilerde aynı sonuç olduğu varsayılmadı. Gerçek fatura, sözleşme maddesi ve kabul şartı kullanıcı tarafından verilmeden maliyet garantisi üretilemez.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-29fbc3b564b3f6c5:20ffcb0e1f0bb9f54ce95474:01",
+        "canonical_key": "ai-data-center-electrical-epc-buyers|compare-transformer-supplier-copper-index-quote-validity-and-delivery-risk|offline-transformer-bom-price-escalation-and-order-evidence-workbook",
+        "idea_name": "AIDC Trafo Bakır Fiyat ve Teslim Risk Defteri",
+        "core_job": "Veri merkezi elektrik altyapısındaki güç trafolarının hammaddeye endeksli fiyat değişimini, teklif geçerliliğini ve tedarikçi teslim/garanti risklerini karşılaştırmak",
+        "target_customer": "AI veri merkezi elektrik altyapı EPC satın alma ve elektrik proje kontrol ekipleri",
+        "buyer": "Elektrik EPC satın alma yöneticisi ve proje maliyet kontrol lideri",
+        "product_mechanism": "Kullanıcının yüklediği trafo BOM, bakır miktarı, temel bakır referans fiyatı, kur, üretici fiyat farkı maddesi, teklif son tarihi ve teslim/hasar test tablosunu tarayıcı içi deterministik fiyat-fark/ETA/eksik kanıt senaryolarıyla karşılaştıran CSV/PDF karar defteri",
+        "why_now": "13 Ekim 2026 Jinpan raporunda AIDC trafo siparişleri artarken elektrolitik bakır maliyeti ciddi yükselmiş; çoklu teklif ve sözleşme şartı inceleme problemi güncel.",
+        "before_state": "Teklif PDF, bakır endeksi, tedarikçi lead time, test kabul koşulları parçalı Excel dosyalarında.",
+        "after_state": "Alternatif trafo tedarikçileri için fiyat farkı, teklif vadesi, teslim ve sözleşme kanıtının karşılaştırması tek karar dosyasında.",
+        "canonical_source_urls": [
+          "https://finance.eastmoney.com/a/202610133894469049.html",
+          "https://www.cnfin.com/gs-lb/detail/20261013/4480211_1.html"
+        ],
+        "supporting_article_ids": [
+          "8726462a716b97a9eb1c15ee"
+        ],
+        "source_observations": [
+          {
+            "url": "https://finance.eastmoney.com/a/202610133894469049.html",
+            "observation": "13 Ekim 科创板日报 haberi: AIDC yeni siparişler +%471,96 ve elektrolitik bakır ortalaması +%32,47; sonuç Jinpan'a özgü gerçekleşen finansal rapor."
+          },
+          {
+            "url": "https://www.cnfin.com/gs-lb/detail/20261013/4480211_1.html",
+            "observation": "Xinhua Finance 13 Ekim şirket raporuna dayanan AIDC sipariş ve maliyet değişimlerini karşılaştırmalı aktarır."
+          }
+        ],
+        "scope_hint": "Dünya",
+        "local_evidence": {
+          "signals": [
+            "Data center elektrik altyapısında trafo tedariği ve bakır fiyatına bağlı CAPEX yeniden fiyatlama gerçek iş akışıdır."
+          ],
+          "unknowns": [
+            "Türkiye ve global trafo procurement/CPQ direkt rekabeti Validation'da incelenmeli.",
+            "Haber hiçbir sözleşmenin bakır endeksini otomatik olarak kullandığını kanıtlamıyor; fiyat farkı maddesi kullanıcı verisi.",
+            "Tedarikçi teslimat ve bağımsız testi erişilebilir veri olarak kesinleşmedi."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-29fbc3b564b3f6c5/001.json",
+  "valid_until": "2026-11-13T03:16:07Z"
+}
