@@ -1,0 +1,172 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-ca4ba7b0f463cb74",
+  "input_hash": "ca4ba7b0f463cb7472792de1be02089a063457eb272e2fc5305a6545532149b4",
+  "token": "2f8ecd9c-6ad3-4fce-a049-bad3bd9c3c23",
+  "finished_at": "2026-10-14T03:03:52.283Z",
+  "outcome": "done",
+  "reason": "Takip araştırması tamamlandı. Aynı robot eğitim verisi provenance/hak/lisans iş akışında en az beş doğrudan global sağlayıcı doğrulandı; Radar'ın global en fazla üç rakip koşulu aşılmıştır.",
+  "result": {
+    "decision": "rejected",
+    "reason": "TrueLabel, Kinetic Blocks, RoboRecs, SirVecs ve Grasp aynı robot veri sağlayıcısı/alıcı müşteri kümesine provenance, hak/lisans, veri kartı ve teslim/marketplace iş akışları sunuyor. Beş doğrulanmış doğrudan global rakip bulunduğundan global ≤3 koşulu sağlanmıyor. Türkiye taramasında bulunan Mintmark sentetik test verisi üreticisidir ve doğrudan rakip değildir. Yerel, dış servissiz tek-kullanıcı MVP teknik olarak mümkün olsa da rekabet eşiği nedeniyle aday reddedildi.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://news.marsbit.co/flash/20260920092345210416.html",
+        "accessed_at": "2026-10-13T07:02:57.312Z",
+        "claim": "Robot veri merkezlerinde çoklu platform ve veri yeniden kullanım karmaşıklığı",
+        "observation": "Parent receipt içinde sayfa okunmuş ve 106 merkez/84 aktif merkez ile çok markalı yapı desteklenmiş; ticari hak açığı doğrudan kanıtlanmamış.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://github.com/lokomotifai/mintmark",
+        "accessed_at": "2026-10-14T03:03:52.283Z",
+        "claim": "Türkiye'de veri provenance çözümü aynı robot veri lisans iş akışını sunuyor mu",
+        "observation": "Mintmark sentetik Türkçe test verisi ve yeniden üretilebilir manifest üretir; robot veri satıcısı için hak/lisans/pazar yeri iş akışını sunmadığından komşu üründür.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://truelabel.ai/",
+        "accessed_at": "2026-10-14T03:03:52.283Z",
+        "claim": "Robot veri sağlayıcıları için provenance ve kalite iş akışı",
+        "observation": "TrueLabel fiziksel AI veri sağlayıcıları, laboratuvarlar ve robotik ekipler için cihaz/oturum/etiket rehberine kadar izlenebilir capture-to-quality platformu sunuyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.kineticblocks.com/",
+        "accessed_at": "2026-10-14T03:03:52.283Z",
+        "claim": "Robot eğitim verisi hak ve provenance pazar yeri",
+        "observation": "Kinetic Blocks doğrulanmış robot veri listelemeleri, satıcı mülkiyeti, fiyat, lisans, dosya kanıtı ve alıcı incelemesini aynı iş akışında sunuyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://roborecs.com/datasets",
+        "accessed_at": "2026-10-14T03:03:52.283Z",
+        "claim": "Robot eğitim verisi lisans, consent ve chain-of-custody platformu",
+        "observation": "RoboRecs episode bazında provenance, consent, lisans katmanı, teslim ve ödeme iş akışını erken erişimde sunuyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://sirvecs.com/",
+        "accessed_at": "2026-10-14T03:03:52.283Z",
+        "claim": "Robot-generated dataset provenance ve lisans yönetimi",
+        "observation": "SirVecs robot sensör verisini capture context, provenance, ticari lisans, teslim makbuzu ve erişim kaydıyla satıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://grasp.im/sell",
+        "accessed_at": "2026-10-14T03:03:52.283Z",
+        "claim": "Robotik veri sahipleri için rights-cleared marketplace",
+        "observation": "Grasp satıcı doğrulaması, hak kanıtı, license provenance, format ve fiyat/şart belirleme akışını sunuyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "feasibility",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API",
+        "accessed_at": "2026-10-14T03:03:52.283Z",
+        "claim": "Çevrimdışı tarayıcı depolamasıyla dış veritabanısız MVP mümkündür",
+        "observation": "MVP, kullanıcı CSV/JSON girdisi, tarayıcı IndexedDB ve yerel PDF/JSON export ile harici API, veritabanı veya AI modeli olmadan uygulanabilir.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": 0,
+        "queries": [
+          "Türkiye robot eğitim veri kümesi lisans izin köken kayıt yazılımı",
+          "Türkiye robot datası provenance consent yönetimi yazılımı",
+          "robot dataset rights management Turkey"
+        ],
+        "scope": "2026-10-14 tarihli Türkçe/İngilizce web taraması; aynı müşteri + robot veri hak/provenance + lisans/teslim iş akışı. Mintmark komşu ürün olarak dışlandı.",
+        "search_complete": true,
+        "direct_competitors": [],
+        "adjacent_products": [
+          {
+            "name": "Mintmark",
+            "url": "https://github.com/lokomotifai/mintmark",
+            "exclusion_reason": "Sentetik Türkçe test verisi ve provenance manifesti üretir; robot veri lisans/pazar yeri iş akışı değildir."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 5,
+        "queries": [
+          "robot training dataset provenance rights licensing platform TrueLabel Kinetic Blocks RoboRecs",
+          "robotics dataset marketplace provenance licensing software",
+          "robot training data passport provenance rights registry"
+        ],
+        "scope": "2026-10-14 tarihli global tarama; robot veri sağlayıcıları/alıcıları için provenance, hak/lisans ve teslim/pazar yeri iş akışı.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "TrueLabel",
+            "url": "https://truelabel.ai/",
+            "same_customer_job_workflow_reason": "Robotik veri sağlayıcıları ve laboratuvarlarda cihaz/oturum kaynak izini ve kalite akışını yönetir."
+          },
+          {
+            "name": "Kinetic Blocks",
+            "url": "https://www.kineticblocks.com/",
+            "same_customer_job_workflow_reason": "Robot eğitim verisini dosya doğrulama, lisans, satıcı mülkiyeti ve pazar yeri iş akışıyla sunar."
+          },
+          {
+            "name": "RoboRecs",
+            "url": "https://roborecs.com/datasets",
+            "same_customer_job_workflow_reason": "Episode bazlı provenance, consent, lisans, teslim ve ödeme iş akışını sunar."
+          },
+          {
+            "name": "SirVecs",
+            "url": "https://sirvecs.com/",
+            "same_customer_job_workflow_reason": "Robot sensör verisini capture context, provenance, ticari lisans ve teslim kaydıyla satar."
+          },
+          {
+            "name": "Grasp",
+            "url": "https://grasp.im/sell",
+            "same_customer_job_workflow_reason": "Robotik veri satıcıları için hak kanıtı, license provenance, doğrulama ve marketplace sunar."
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Tek kurumlu MVP; kullanıcı CSV/JSON içe aktarımı, statik Lovable arayüzü, tarayıcı IndexedDB, SHA-256 checksum, hak belgesi referansları ve yerel PDF/JSON export. Çok kullanıcılı senkronizasyon, marketplace, otomatik ingestion ve AI yok.",
+      "dependency_inventory": [
+        "Tarayıcı JavaScript",
+        "IndexedDB",
+        "Kullanıcı tarafından sağlanan CSV/JSON ve hak belgeleri",
+        "Yerel PDF/JSON export",
+        "Hosting/domain ayrı"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "Parent receipt'teki 91 kayıt incelemesi aynı robot donanım kaynağı + ticari hak/provenance kayıt iş akışının korunan katalogda birebir olmadığını belirtiyor; ancak rekabet eşiği nedeniyle yeni olsa da reddedildi."
+    },
+    "research_attempts": [
+      {
+        "query": "Türkiye robot eğitim veri kümesi lisans izin köken kayıt yazılımı",
+        "outcome": "Doğrudan Türkiye sağlayıcısı bulunmadı; Mintmark komşu ürün olarak okundu."
+      },
+      {
+        "query": "robotics dataset marketplace provenance licensing software",
+        "outcome": "Beş doğrudan global sağlayıcının ürün sayfaları okundu."
+      }
+    ],
+    "remaining_checks": []
+  }
+}
