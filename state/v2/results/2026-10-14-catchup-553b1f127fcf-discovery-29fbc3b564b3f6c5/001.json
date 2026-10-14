@@ -1,0 +1,196 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-29fbc3b564b3f6c5",
+  "input_hash": "29fbc3b564b3f6c5aa201460b1245ba315b138725a8a33e8dc939bf76013fdd2",
+  "token": "822ea649-a1a1-43aa-983d-fdc7cde46a94",
+  "finished_at": "2026-10-14T03:16:07.277Z",
+  "outcome": "done",
+  "reason": "10 donmuş catchup haberi tek tek incelendi: Jinpan AIDC trafo fiyat/teslim, Maia rack enerji benchmark ve Knowles RF attenuator kalifikasyonu için 3 ayrı erken fırsat; kalan 7 kayıt teknik eğitim, yatırım haberi, mevcut ürün yayını veya kanıtlanmamış bağımsız müşteri akışı olduğundan gerekçeli no_opportunity. Özgün veya şirket birincil kanıtları okundu; NyTeknik/ElectronicsWeekly/Nikkei erişim sınırlamaları gerekçelerde belirtildi. Hiçbir aday henüz Validation veya Quality Gate onaylı değil.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "20ffcb0e1f0bb9f54ce95474",
+        "decision": "opportunity",
+        "reason": "EVENT: 科创板日报'nın 13 Ekim tarihli tam haberinde Jinpan Technology 2026 9 aylık geliri 6,104 milyar CNY, net kârı 544 milyon CNY ve AIDC yeni siparişleri yıllık +%471,96 olarak aktarıyor; bakır ortalama fiyatı yıllık +%32,47. BEFORE güç trafosu EPC tedariğinde kablo/bakır hammadde fiyat, teklif süresi, kur riski ve kısmi teslim dosyaları ayrı. AFTER veri merkezi sipariş artışı ve bakır maliyet farkı daha sık yeniden fiyat/teslim senaryosu gerektiriyor. Finansal rapor üretici beyanıdır, diğer tüm tedarikçilerde aynı sonuç olduğu varsayılmadı. Gerçek fatura, sözleşme maddesi ve kabul şartı kullanıcı tarafından verilmeden maliyet garantisi üretilemez.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-29fbc3b564b3f6c5:20ffcb0e1f0bb9f54ce95474:01",
+            "canonical_key": "ai-data-center-electrical-epc-buyers|compare-transformer-supplier-copper-index-quote-validity-and-delivery-risk|offline-transformer-bom-price-escalation-and-order-evidence-workbook",
+            "idea_name": "AIDC Trafo Bakır Fiyat ve Teslim Risk Defteri",
+            "core_job": "Veri merkezi elektrik altyapısındaki güç trafolarının hammaddeye endeksli fiyat değişimini, teklif geçerliliğini ve tedarikçi teslim/garanti risklerini karşılaştırmak",
+            "target_customer": "AI veri merkezi elektrik altyapı EPC satın alma ve elektrik proje kontrol ekipleri",
+            "buyer": "Elektrik EPC satın alma yöneticisi ve proje maliyet kontrol lideri",
+            "product_mechanism": "Kullanıcının yüklediği trafo BOM, bakır miktarı, temel bakır referans fiyatı, kur, üretici fiyat farkı maddesi, teklif son tarihi ve teslim/hasar test tablosunu tarayıcı içi deterministik fiyat-fark/ETA/eksik kanıt senaryolarıyla karşılaştıran CSV/PDF karar defteri",
+            "why_now": "13 Ekim 2026 Jinpan raporunda AIDC trafo siparişleri artarken elektrolitik bakır maliyeti ciddi yükselmiş; çoklu teklif ve sözleşme şartı inceleme problemi güncel.",
+            "before_state": "Teklif PDF, bakır endeksi, tedarikçi lead time, test kabul koşulları parçalı Excel dosyalarında.",
+            "after_state": "Alternatif trafo tedarikçileri için fiyat farkı, teklif vadesi, teslim ve sözleşme kanıtının karşılaştırması tek karar dosyasında.",
+            "canonical_source_urls": [
+              "https://finance.eastmoney.com/a/202610133894469049.html",
+              "https://www.cnfin.com/gs-lb/detail/20261013/4480211_1.html"
+            ],
+            "supporting_article_ids": [
+              "8726462a716b97a9eb1c15ee"
+            ],
+            "source_observations": [
+              {
+                "url": "https://finance.eastmoney.com/a/202610133894469049.html",
+                "observation": "13 Ekim 科创板日报 haberi: AIDC yeni siparişler +%471,96 ve elektrolitik bakır ortalaması +%32,47; sonuç Jinpan'a özgü gerçekleşen finansal rapor."
+              },
+              {
+                "url": "https://www.cnfin.com/gs-lb/detail/20261013/4480211_1.html",
+                "observation": "Xinhua Finance 13 Ekim şirket raporuna dayanan AIDC sipariş ve maliyet değişimlerini karşılaştırmalı aktarır."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_evidence": {
+              "signals": [
+                "Data center elektrik altyapısında trafo tedariği ve bakır fiyatına bağlı CAPEX yeniden fiyatlama gerçek iş akışıdır."
+              ],
+              "unknowns": [
+                "Türkiye ve global trafo procurement/CPQ direkt rekabeti Validation'da incelenmeli.",
+                "Haber hiçbir sözleşmenin bakır endeksini otomatik olarak kullandığını kanıtlamıyor; fiyat farkı maddesi kullanıcı verisi.",
+                "Tedarikçi teslimat ve bağımsız testi erişilebilir veri olarak kesinleşmedi."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "2132b04516a6db2c9363e605",
+        "decision": "no_opportunity",
+        "reason": "证券时报 resmi 13 Ekim özgün haberini okudum: 雷神科技 93 bin hissenin blok işlemi 16,27 CNY, aynı gün kapanış 22,92 CNY ve %29,01 iskontolu satış. Finansal blok satış tek başına yeni düzenleme, süreç/teknoloji farkı, tekrar eden ve farklılaşan yazılım müşteri işi yaratmıyor. Fiyattan piyasa manipülasyonu veya garanti getiri çıkarılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "2152189f1553a487c2785ada",
+        "decision": "opportunity",
+        "reason": "Ny Teknik özgün sayfasına robots kısıtı, ancak Microsoft'un 12 Ekim resmî blogu ve Reuters aynı Maia 300 olayını doğruluyor: Maia 200 mevcut iş yükünde, Maia 300 2027 planı; farklı rack ve token/MW kapasite iddiaları şirket kıyası, eş koşullu tarafsız benchmark değil. DELTA: modellerin rakip hızlandırıcılarda enerji verimi ve ısı/şebeke gücü/kapasite karşılaştırması kritik. Sözleşme öncesi kullanıcı CSV benchmark girdiyle benchmark kanıt ve fiyat tahmini kaydı ayrı alıcı işi olabilir; canlı modeli çalıştırmak veya dış LLM API çağırmak ürünün parçası değil.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-29fbc3b564b3f6c5:2152189f1553a487c2785ada:01",
+            "canonical_key": "inference-data-center-capacity-planners|compare-accelerator-racks-token-throughput-vs-facility-power-and-cooling|offline-benchmark-energy-rack-cost-and-provenance-scorecard",
+            "idea_name": "AI Rack Token/MW Kapasite Kanıt Defteri",
+            "core_job": "Farklı hızlandırıcı raflarında kullanıcının ölçtüğü inference throughput, güç tüketimi, soğutma ve fiyatı karşılaştırarak MW sınırı altında satın alma kapasitesi senaryosu çıkarmak",
+            "target_customer": "AI veri merkezi kapasite-planlama, altyapı mimarisi ve finans mühendisliği ekipleri",
+            "buyer": "Veri merkezi compute-capacity satın alma ve güç altyapı tasarım yöneticisi",
+            "product_mechanism": "CSV ile içe aktarılan token/s, workload/model sürümü, p50/p95 gecikme, raf kW, PUE, soğutma payı, amortisman ve rack CAPEX'i deterministik karşılaştıran istemci içi maliyet/MW ve benchmark provenans hesaplayıcısı",
+            "why_now": "12 Ekim Microsoft Maia 300 çok-gigawatt dağıtımını 2027 için planladı; rack başına 96 çip ve rakip GPU sistemlerine karşı yüzde 40 token/MW iddiası tarafsız kıyas ihtiyacını güncel kılıyor.",
+            "before_state": "Bir vendorun şirket benchmarkı, diğer vendorun farklı model/ısı profiliyle ölçüldüğünden kapasite alımında karşılaştırılabilir değil.",
+            "after_state": "Aynı kullanıcı workload koşulu ve kaynak URL'siyle ölçülmüş/test edilen throughput-MW-TCO senaryoları ve eksik benchmark kanıtları tek tabloda.",
+            "canonical_source_urls": [
+              "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+              "https://www.reuters.com/business/microsoft-plans-huge-deployment-its-own-ai-chips-with-an-eye-saving-costs-2026-10-12/"
+            ],
+            "supporting_article_ids": [
+              "257f8564f583aa2257e234c7"
+            ],
+            "source_observations": [
+              {
+                "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+                "observation": "Microsoft 12 Ekim: Maia200 şu anda üretim iş yükünde, Maia300 ancak 2027 planı; token/MW karşılaştırması üretici iddiası."
+              },
+              {
+                "url": "https://www.reuters.com/business/microsoft-plans-huge-deployment-its-own-ai-chips-with-an-eye-saving-costs-2026-10-12/",
+                "observation": "Reuters 12 Ekim 96/chip rack, 167kW rack ve 2027 çok gigawatt dağıtım planını aktarır."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_evidence": {
+              "signals": [
+                "Data center ısı ve şebeke güç sınırı kapasite satın alma ve model başına maliyeti doğrudan sınırlar."
+              ],
+              "unknowns": [
+                "Ticari veri merkezi güç benchmark ürünlerinin global rakip sayısı bilinmiyor.",
+                "Maia300 planlanan 2027 donanımı: sahada ölçülmüş kullanıcı CSV'si bugün bulunmayabilir.",
+                "Gerçek AI inference harici çalışır; bu araç yalnız geçmiş performans ölçüm dosyalarına dayanır."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "2177c16ab735066025f648b6",
+        "decision": "no_opportunity",
+        "reason": "Ekonomim 13 Ekim özgün portrede TheLifeCo kurucusu Ersin Pamuksüzer'in longevity işini 2002'de düşünmeye başladığı, 21 yıl önce girişim hâline getirdiği ve mevcut 2+4 merkez modelini anlattığı doğrulandı. Bu bir 2026 Ekim teknoloji lansmanı veya yeni wellness düzenlemesi değil. Sağlık bilgisi, harici hasta kaydı veya ücretli AI agent olmadan kullanıcıların karşılanmayan spesifik B2B/B2C yazılım işi bu röportajdan ispatlanmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "2196b329aa9514f51b935888",
+        "decision": "no_opportunity",
+        "reason": "Google'un 13 Ekim 2026 resmî Gemini release notes kaydını okudum: Gemini 4 Argon Pro/Ultra üyeler için yayına açılıyor. Modelin ana kabiliyeti ücretli dış servis kullanımına bağlı. Özgün haber gerçek ama politikadaki zorunlu dış AI/model runtime yasağı nedeniyle bağımsız prompt/agent uygulamasını ürünleştirmek geçerli değil; somut deterministik JTBD de yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "21bf76a29bf9e93304ec34a9",
+        "decision": "no_opportunity",
+        "reason": "Webrazzi 13 Ekim haberi ve smart'ın 12 Ekim resmî Paris tanıtımını okudum: elektrikli iki kişilik smart #2 tanıtıldı. Basın ve sipariş/teslim takvimi ülke bazında farklı olabileceği için satın alım/teslim garantisi çıkarılmadı. Tek otomobil modelinin lansmanı genel EV konfigüratörü/karşılaştırıcı işinden ayrışan yeni profesyonel alıcı problemine kanıt sunmuyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "21fc511a835f3f67d67e090e",
+        "decision": "no_opportunity",
+        "reason": "Nikkei xTECH 13 Ekim Google Keep ile not, resim ve checklist düzenlemeyi anlatan nasıl yapılır/öğretici sayfa; yayıncıya erişim kısıtlı. Google Keep mevcut özellikleri yeni ürün veya düzenleme olarak duyurmuyor. İşletme bazlı yeni zorunluluk veya satın alma problemine dair kanıt olmadığından haberden ürün üretmedim; özgün makalenin tam metni doğrulanmış değildir.",
+        "opportunities": []
+      },
+      {
+        "article_key": "224848c67de81e546f9bc607",
+        "decision": "no_opportunity",
+        "reason": "L'Usine Nouvelle kaynaklı HAYS Geispolsheim üretim hattı operatörü iş ilanı bir istihdam talebi, yeni fabrika otomasyon standardı, ürünü veya kapsamlı piyasa dönüşümünü tek başına ispatlamaz. Personel talebinden yeni SaaS ürünü uydurulmadı; iş ilanı tarihinin proje açılışıyla aynı olduğu varsayılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "225ffbf8116e8cfabe336261",
+        "decision": "opportunity",
+        "reason": "Electronics Weekly'nin 13 Ekim ATT A-Series haberi için orijinal alan robots engeline takıldı; Knowles'ın 30 Eylül 2026 tarihli resmi lansmanı ve ATT A-Series ürün katalog datasheet verisi okundu. DELTA: DC-20GHz RF/mikrodalga zincirde kompakt SMT attenuator alternatifleri; mühendis aynı frekans/güç/sıcaklık/yerleşim koşullarında attenuation ve match uygunluğunu izlemek zorunda. Ekim haberinin yeni lansman tarihi DEĞİL, Eylül lansmanını yeniden duyurma olduğu kayda alındı. Tek cihazı otomatik ölçmez; kullanıcı testiyle karar kanıtı oluşturur.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-29fbc3b564b3f6c5:225ffbf8116e8cfabe336261:01",
+            "canonical_key": "rf-microwave-hardware-design-validation-teams|qualify-smt-attenuator-lots-across-frequency-power-temperature|offline-frequency-attenuation-vswr-tolerance-and-lot-test-ledger",
+            "idea_name": "RF SMT Attenuator Frekans–Güç Kabul Defteri",
+            "core_job": "RF tasarım ve test ekiplerinin kompakt SMT attenuator lotlarının frekansa karşı zayıflatma toleransı, güç kapasitesi, giriş/çıkış uyumu ve sıcaklık kabulünü belgelemesi",
+            "target_customer": "RF/mikrodalga test ve üretim mühendisliği, IoT/radar/telekom RF kart tedarik ekipleri",
+            "buyer": "RF donanım kalite/test lideri",
+            "product_mechanism": "Kullanıcının network analyzer test CSV'si, frekans/S-parametre, atten dB, giriş gücü/derating, sıcaklık ve malzeme lot datasheet verisini tanımlı toleranslarla eşleyip fail/retest ve mühendis imza raporu üretir; RF analiz cihazı API'si ve donanım ölçüm motoru gerektirmez",
+            "why_now": "Knowles 30 Eylül 2026 DC-20GHz A-Series lansmanı, 13 Ekim teknik sektör yayını; yeni fiziksel parça ve üretici alternatiflerinin değerlendirilmesini gerektirir.",
+            "before_state": "RF zincir BOM revizyonu ve laboratuvar vector network analyzer ölçümleri tedarikçi datasheet'lerinden ayrı yönetilir.",
+            "after_state": "Attenuation, frequency, VSWR, thermal, power rating ve mühendis raporu lot/verisyon seviyesinde yan yana onaylanır.",
+            "canonical_source_urls": [
+              "https://www.knowles.com/resources/education/blogs/post/press-releases/2026/09/30/knowles-expands-rf-signal-chain-offering-with-new-a-series-attenuators",
+              "https://product.knowles.com/rf-and-microwave/attenuators?categoryHierarchy%5B0%5D=RF+and+Microwave&categoryHierarchy%5B1%5D=Attenuators"
+            ],
+            "supporting_article_ids": [
+              "8e2e3cdf0fe0f58da3f36ada"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.knowles.com/resources/education/blogs/post/press-releases/2026/09/30/knowles-expands-rf-signal-chain-offering-with-new-a-series-attenuators",
+                "observation": "Knowles resmi 30 Eylül lansmanı ATT A-Series: kompakt SMT, DC-20GHz, yüksek güç ve attenuation accuracy iddiası."
+              },
+              {
+                "url": "https://product.knowles.com/rf-and-microwave/attenuators?categoryHierarchy%5B0%5D=RF+and+Microwave&categoryHierarchy%5B1%5D=Attenuators",
+                "observation": "Resmi katalog çalışma sıcaklığı -55°C ile +125°C, yaklaşık 2.03x1.65x0.30 mm package, 50Ω ve DC-20GHz; datasheet gerçek tolerans testle doğrulanmalı."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_evidence": {
+              "signals": [
+                "RF test/tedarik ekipleri farklı attenuator lot/versiyonlarını ölçülmüş VNA eğrisi ve toleransla doğrular."
+              ],
+              "unknowns": [
+                "Türkiye ve global RF compliance/lab data management rakipleri Validation'da taranmalı.",
+                "Parça yeni değildir: şirket Eylül'de lansman yaptı, Ekim yeniden yayın var.",
+                "Tedarikçinin gerçek saha hata oranı bilinmiyor."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "228f0d919c0ec6997f25b385",
+        "decision": "no_opportunity",
+        "reason": "Sifted 13 Ekim özelleştirilmiş AI CFO startup Light ve kurucu Jonathan Sanders hakkındaki orijinal röportajı okudum. Zaten hizmet veren muhasebe/harcama yönetim platformu, US pazarına genişleme anlatısıdır. Ana AI CFO değeri muhasebe sistemi ve harici model/finans entegrasyonları gerektirir; rakipsiz iş ve sıfır runtime varsayımı geçerli değil. Tek söyleşiden başka bir satın alma iş akışı çıkarılmadı.",
+        "opportunities": []
+      }
+    ]
+  }
+}
