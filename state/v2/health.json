@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-14T03:03:31Z",
+  "controller_observed_at": "2026-10-14T03:04:14Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-14T02:01:00Z",
   "ready_jobs": 626,
-  "unfinished_jobs": 630,
-  "last_verified_progress_at": "2026-10-14T03:02:33Z",
+  "unfinished_jobs": 626,
+  "last_verified_progress_at": "2026-10-14T03:04:10Z",
   "workers": {
     "1": {
       "last_started_at": "2026-10-14T02:59:58.566Z",
@@ -14,16 +14,24 @@
         "schema_version": 1,
         "worker": 1,
         "invocation_id": "b02faa5a-7498-4852-8904-d54fc28f66be",
-        "event": "progress",
-        "at": "2026-10-14T03:00:41.898Z",
-        "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-0cb5022889c57540",
-        "stage": "claim_saved",
-        "claim_path": "state/v2/claims/2026-10-14-catchup-553b1f127fcf-discovery-0cb5022889c57540/001.json",
-        "path": "state/v2/worker-events/1/b02faa5a-7498-4852-8904-d54fc28f66be/002-progress.json"
+        "event": "finished",
+        "at": "2026-10-14T03:04:09.606Z",
+        "verified_receipts": 3,
+        "reviewed_articles": 20,
+        "validation_decisions": {
+          "rejected": 1
+        },
+        "article_decisions": {
+          "opportunity": 12,
+          "no_opportunity": 6,
+          "unverified": 2
+        },
+        "note": "İki discovery paketi (20 haber) ve bir evidence_followup validation sonucu kalıcı receipt olarak kaydedildi; katalog/history değiştirilmedi.",
+        "path": "state/v2/worker-events/1/b02faa5a-7498-4852-8904-d54fc28f66be/999-finished.json"
       },
-      "receipts_this_invocation": 0,
+      "receipts_this_invocation": 3,
       "write_and_receipt_verified": true,
-      "last_receipt_at": "2026-10-14T02:06:53.330Z"
+      "last_receipt_at": "2026-10-14T03:03:52.283Z"
     },
     "2": {
       "last_started_at": "2026-10-13T22:00:07.642Z",
@@ -63,9 +71,9 @@
         "note": "No scheduled worker settings, catalog, controller state, or website modified",
         "path": "state/v2/worker-events/3/8acaa9c0-1a1b-4f88-a423-9ab1d4cc3a17/001-progress.json"
       },
-      "receipts_this_invocation": 10,
+      "receipts_this_invocation": 11,
       "write_and_receipt_verified": true,
-      "last_receipt_at": "2026-10-14T03:02:33.558Z"
+      "last_receipt_at": "2026-10-14T03:04:10.980Z"
     },
     "4": {
       "last_started_at": "2026-10-14T02:07:10.909Z",
@@ -110,10 +118,10 @@
     "window_minutes": 120.0,
     "stages": {
       "discovery": {
-        "completed_in_window": 10,
-        "known_remaining": 423,
-        "observed_jobs_per_hour": 5.0,
-        "estimated_minutes_for_stage": 5076.0
+        "completed_in_window": 13,
+        "known_remaining": 420,
+        "observed_jobs_per_hour": 6.5,
+        "estimated_minutes_for_stage": 3876.9
       },
       "merge": {
         "completed_in_window": 0,
@@ -122,10 +130,10 @@
         "estimated_minutes_for_stage": 0
       },
       "validation": {
-        "completed_in_window": 3,
-        "known_remaining": 207,
-        "observed_jobs_per_hour": 1.5,
-        "estimated_minutes_for_stage": 8280.0
+        "completed_in_window": 4,
+        "known_remaining": 206,
+        "observed_jobs_per_hour": 2.0,
+        "estimated_minutes_for_stage": 6180.0
       }
     },
     "estimated_minutes_remaining": null,
