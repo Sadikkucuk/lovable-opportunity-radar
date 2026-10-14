@@ -1,0 +1,28 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "87b27b7c8abb8d1c280b5584b60c6fcf7adb736f634edf11df4d0fb8ae341b35",
+  "decision": {
+    "article_key": "b64052bd0eb3e2510a2ccd6e",
+    "decision": "opportunity",
+    "reason": "12 Oct NVIDIA/Cisco primary announcement specifies new optical form factor, module-density and efficiency scenarios for data center network buyer; manual comparison workflow can be tested.",
+    "opportunities": [
+      {
+        "raw_id": "manual-20261014-fb21-usfp-01",
+        "canonical_key": "ai-data-center-network-engineers|evaluate-new-usfp-400g-lane-ethernet-module-deployment-scenarios|bandwidth-power-front-panel-and-evidence-matrix",
+        "idea_name": "USFP AI Fabric Optical Upgrade Preflight",
+        "core_job": "Compare 200Gb/s-per-lane modules with proposed USFP form-factor deployment in AI fabric expansion",
+        "target_customer": "AI data-center optical-network architects and infrastructure procurement engineers",
+        "product_mechanism": "User-supplied switch slot count, module/lane data, front-panel density, electrical power, cooling/compatibility assumptions; browser-side deterministic bandwidth and kWh option matrix with validation evidence links",
+        "why_now": "NVIDIA and Cisco's 12 October 2026 official USFP announcement proposes 400Gb/s per lane, 12.8Tb/s overall capacity and higher power efficiency; this is a design proposal and not production availability.",
+        "before_state": "Optical lane density, cage fit, endpoint and rack power options are scattered across vendor claims and local plans",
+        "after_state": "Scenario/BOM input → 200G-vs-USFP assumptions → capacity and power delta → incompatible inputs → evidence and human preflight approval",
+        "canonical_source_urls": [
+          "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m10/nvidia-and-cisco-new-pluggable-optics-to-scale-ai-factories.html"
+        ],
+        "evidence_note": "Official Cisco announcement states planned, not available, hardware specs; savings remain vendor design estimates."
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-fb21cb99aa2bf454/001.json",
+  "valid_until": "2026-11-13T10:16:23Z"
+}
