@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-14T02:53:04Z",
+  "controller_observed_at": "2026-10-14T02:53:26Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-14T02:01:00Z",
@@ -48,10 +48,20 @@
         "schema_version": 1,
         "worker": 3,
         "invocation_id": "8acaa9c0-1a1b-4f88-a423-9ab1d4cc3a17",
-        "event": "started",
-        "at": "2026-10-14T02:36:36.404Z",
-        "execution_mode": "manual_research_only_no_scheduled_worker_modifications",
-        "path": "state/v2/worker-events/3/8acaa9c0-1a1b-4f88-a423-9ab1d4cc3a17/000-started.json"
+        "event": "progress",
+        "at": "2026-10-14T02:53:09.532Z",
+        "job_id": "2026-10-13-catchup-e3a10c28a635-validation-2ddbb52fc0d5c55d",
+        "stage": "receipt_saved",
+        "receipt_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-validation-2ddbb52fc0d5c55d/001.json",
+        "completed_receipts": 6,
+        "discovery_article_decisions": 40,
+        "raw_idea_hypotheses": 4,
+        "validation_decisions": {
+          "rejected": 1,
+          "unverified": 1
+        },
+        "note": "No scheduled worker settings, catalog, controller state, or website modified",
+        "path": "state/v2/worker-events/3/8acaa9c0-1a1b-4f88-a423-9ab1d4cc3a17/001-progress.json"
       },
       "receipts_this_invocation": 6,
       "write_and_receipt_verified": true,
