@@ -1,0 +1,181 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-32ee5a547f46d721",
+  "input_hash": "32ee5a547f46d7213b1c4cbdbb9a5354c39a888bd4e191000db169acf44ccc80",
+  "token": "afc58b62-8e96-47c8-a2d4-ff87c76ad250",
+  "finished_at": "2026-10-14T03:05:46.836Z",
+  "outcome": "done",
+  "reason": "Intel'in Ekim 2026 birincil SGX→TDX geçiş dokümanı ve teknik seçenekler doğrulandı: Diamond Rapids Intel SGX'i destekleyen son Xeon kuşağı planı, SGX 2030'lara kadar desteklenmeye devam edecek; TDX izolasyon granülaritesi enclave'den VM'e değişiyor ve VM attestation uygulama kodunun bütünlüğünü otomatik kanıtlamaz. Intel resmî geçiş dökümanları, Gramine, Red Hat Confidential Containers ve Edgeless Contrast gibi mevcut teknolojiler var; bunlar güçlü alternatif/komşu aktörler ancak aynı alıcı+tam migration readiness evidence ledger'i paket olarak satıp satmadıkları kanıtlanmadı. Türkiye'de doğrudan rakip sıfır/global maksimum 3 sonuçları ve sıfır harici nakit gereksinimi henüz doğrulanmadığından candidate `unverified`, catalog değişmedi.",
+  "result": {
+    "decision": "unverified",
+    "reason": "Yeni bir somut teknik lifecycle tetikleyicisi ve değişen güvenlik sınırı var. Ancak Intel'in kendi SGX→TDX prosedürü, çeşitli vendor confidential computing platformları ve denetim araçları varken TR=0 veya global <=3 tekil tam workflow satıcısı olduğu kesin sayı ile kanıtlanmadı. SGX ile TDX'yi yalnızca 'enclave lift and shift' saymak tehlikeli: application attestation, secrets release policy ve Trusted Computing Base sınıflandırması ayrı inceleme gerektiriyor. Yayımlanmak için kaynak-temelli rekabet ve uygulanabilirlik daraltılması şart.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://cc-enabling.trustedservices.intel.com/intel-sgx-transition-path/01/introduction/",
+        "accessed_at": "2026-10-14T03:05:46.836Z",
+        "claim": "Intel 2026 SGX yatırımını TDX'e odaklamayı ve 2030'lara dek legacy SGX desteğini açıkladı.",
+        "observation": "Intel Intel Xeon Diamond Rapids kuşağının SGX için son Xeon olarak planlandığını, TDX'e geçiş yollarında LibOS vs native SGX SDK ayrımının temel olduğunu belirtiyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "trigger",
+        "url": "https://cc-enabling.trustedservices.intel.com/intel-sgx-transition-path/print_page/",
+        "accessed_at": "2026-10-14T03:05:46.836Z",
+        "claim": "Intel kaynak mimari geçişinde güvenlik sınırları birden fazladır.",
+        "observation": "A1 standard TDX CVM daha büyük TCB; VM attestation native uygulama kimliğini attest etmez; A2 azaltılmış kernel; A3 CoCo/Kata/Red Hat/Edgeless Contrast alternatifleri; native SGX SDK rewrite daha farklı.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://cc-enabling.trustedservices.intel.com/intel-sgx-transition-path/03/libos_transition_options/",
+        "accessed_at": "2026-10-14T03:05:46.836Z",
+        "claim": "Resmî Intel geçiş rehberi müşterinin güvenlik/attestation seçimini zaten yapılandırılmış seçeneklerle tanımlar.",
+        "observation": "İnsan mimar kararı için dokümantasyon birinci el ve ücretsiz, ancak izlenebilir proje signoff yazılımı değildir.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://github.com/gramineproject/gramine/blob/master/Documentation/attestation.rst",
+        "accessed_at": "2026-10-14T03:05:46.836Z",
+        "claim": "Gramine gerçek SGX attestation ve policy kanıtlarını yönetir.",
+        "observation": "Gramine remote/local attestation servis/dosyalarını açıklar; bu gerçek yazılım/verifier, ancak ayrı TDX migration evidence ledger bütünü doğrulanmadı.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.intel.com/content/www/us/en/developer/tools/software-guard-extensions/get-started.html",
+        "accessed_at": "2026-10-14T03:05:46.836Z",
+        "claim": "Intel SGX developer ecosystem ürün sağlayıcılarını listeler.",
+        "observation": "Fortanix Enclave, Open Enclave SDK, Edgeless Systems ve diğer toolkitler; otomatik global direct count değil, komşu tedarikçi evreni.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://docs.anjuna.io/sgx/v1.32/getting_started/command_reference/verify_attestation.html",
+        "accessed_at": "2026-10-14T03:05:46.836Z",
+        "claim": "Anjuna SGX remote attestation quote doğrulayıcı araç sunar.",
+        "observation": "SGX quote MRENCLAVE/MRSIGNER/TCB policy doğrulamaları var; yeni Intel TDX VM mimarisine cutover QA matrisi tam karşılığı ayrı gösterilmedi.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://cc-enabling.trustedservices.intel.com/intel-sgx-transition-path/print_page/",
+        "accessed_at": "2026-10-14T03:05:46.836Z",
+        "claim": "Red Hat OpenShift Confidential Containers ve Edgeless Contrast A3 migration hedefi olarak Intel tarafından referanslanır.",
+        "observation": "Mevcut container attest/secrets policy platformları; migration verification signoff bütün iş akışı kesin sayımla kanıtlanmadı.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "queries": [
+          "Türkiye Intel SGX TDX geçiş değerlendirme kontrol listesi yazılım",
+          "Türkiye confidential computing attestation SGX TDX migration projeleri dokümantasyon"
+        ],
+        "scope": "Türkiye'de Intel confidential computing sistem entegratörleri bulunabilir, fakat aynı müşteri SGX enclave inventory + TDX attestation boundary delta + migration signoff işini ticari ürün olarak sunan firma yokluğu kanıtlanmadı.",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_competitors": []
+      },
+      "global": {
+        "direct_count": null,
+        "queries": [
+          "Intel SGX to TDX migration readiness assessment application inventory attestation tool",
+          "TDX SGX migration evidence control matrix product",
+          "Gramine Edgeless Contrast Red Hat confidential containers migration Intel"
+        ],
+        "scope": "Gerçek technical adjacent platformlar Intel kendi kaynaklarında mevcut, fakat aynı migration audit decision ledger'i tam müşteri+iş+mekanizma eşleşmesiyle 0/1/2/3/4 saymak için fonksiyon taraması eksik.",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_competitors": [
+          {
+            "name": "Intel SGX→TDX Transition Guide",
+            "url": "https://cc-enabling.trustedservices.intel.com/intel-sgx-transition-path/print_page/",
+            "reason": "Ücretsiz geçiş seçimi mimari rehberi, tracker yazılımı değil."
+          },
+          {
+            "name": "Red Hat OpenShift Confidential Containers",
+            "url": "https://www.redhat.com/en/technologies/cloud-computing/openshift/confidential-containers",
+            "reason": "Gizli container ve attestation hedef platformu; kullanıcı seçimine göre eski SGX geçiş readiness signoff yazılımının aynı ürünü olduğu teyit edilmedi."
+          },
+          {
+            "name": "Edgeless Systems Contrast",
+            "url": "https://www.edgeless.systems/products/contrast",
+            "reason": "Kata/attested confidential container policy runtime, migration evidence ledger'den farklı ana iş."
+          },
+          {
+            "name": "Gramine",
+            "url": "https://github.com/gramineproject/gramine/blob/master/Documentation/attestation.rst",
+            "reason": "SGX LibOS/attestation toolkit, migration approval tracking'den farklı kullanım."
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Kullanıcının uygulama listesi (LibOS vs native SGX SDK), enclave entry/trusted code, TCB, migration hedefi (CVM/mini-kernel/CoCo), BIOS/CPU/TDX destek, attestation quote/test log CSV ve secret release policy kanıtını manuel veriyle eşleyerek sadece offline risk/eksik kontrol raporu üret. Gerçek SGX→TDX dönüşümü, quote attestation cryptographic verification, cloud deployment, secrets provision ve hardware test cihazı offline browser formuyla yapılmaz; kullanıcı bağımsız araç/uzman ile gerçekleştirir.",
+      "dependency_inventory": [
+        "Mimari envanter ve üretici resmî geçiş rehberi",
+        "SGX native SDK/LibOS kullanım sınıfı",
+        "TDX host & guest uyumluluk, threat model, TCB ve attestation test çıktıları",
+        "Uzman inceleme/signoff ve yerel CSV/PDF raporu"
+      ],
+      "zero_external_runtime_for_reporting": true,
+      "fully_secure_migration_possible_without_external_technical_runtime": false,
+      "cash_cost_zero_verified": false
+    },
+    "history_review": {
+      "decision": "uncertain",
+      "reason": "91 katalog idea'sında SGX/TDX/attestation yakın ad/key 0 kayıt; tam müşteri+iş+mekanizma aynı değil ifadesi detaylı kanıt için ek incelemeye ihtiyaç duyar. Katalog değiştirilmedi.",
+      "nearby": []
+    },
+    "research_attempts": [
+      {
+        "url": "https://cc-enabling.trustedservices.intel.com/intel-sgx-transition-path/01/introduction/",
+        "status": "official_primary_read"
+      },
+      {
+        "url": "https://cc-enabling.trustedservices.intel.com/intel-sgx-transition-path/print_page/",
+        "status": "official_primary_read"
+      },
+      {
+        "url": "https://cc-enabling.trustedservices.intel.com/intel-sgx-transition-path/03/libos_transition_options/",
+        "status": "official_primary_read"
+      },
+      {
+        "url": "https://github.com/gramineproject/gramine/blob/master/Documentation/attestation.rst",
+        "status": "official_source_read"
+      },
+      {
+        "url": "https://docs.anjuna.io/sgx/v1.32/getting_started/command_reference/verify_attestation.html",
+        "status": "official_vendor_documentation_read"
+      }
+    ],
+    "evidence_followup_plan": {
+      "required": [
+        "Türkiye confidential compute consulting and migration tool exact workflow local competitor search",
+        "Global Intel SGX-to-TDX migration readiness tracker competitor discovery, direct counts by same buyer+job+workflow",
+        "Fiziksel TDX/SGX laboratuvar testleri için zorunlu lisans/donanım ve sıfır dış runtime maliyet ayrımı",
+        "Önceki 91 fikir ile gerçek semantik geçiş iş akışı karşılaştırması"
+      ]
+    },
+    "quality_gate": {
+      "tr_zero_pass": null,
+      "global_max_three_pass": null,
+      "runtime_reporting_zero_pass": true,
+      "cash_zero_pass": null,
+      "qualified": false
+    }
+  }
+}
