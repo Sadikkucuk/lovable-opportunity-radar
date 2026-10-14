@@ -1,0 +1,137 @@
+{
+  "schema_version": 3,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-56a1579cdc6f883a",
+  "input_hash": "56a1579cdc6f883a0093188a7be6005763880fdcf497c3d44b853a5fc8b82592",
+  "token": "manual-v3-20261014-56a1579cdc6f883a-token",
+  "finished_at": "2026-10-14T07:32:45.184Z",
+  "outcome": "done",
+  "reason": "All ten articles reviewed with traceable source URLs, two unvalidated opportunities, seven no-opportunity and one deliberately unverified article.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "82541b181f601d4805f9c0d3",
+        "article_title": "지멘스, 신규 에이전틱 플랫폼 공개...반도체 등 제조 AX 겨냥 - 지디넷코리아",
+        "decision": "no_opportunity",
+        "reason": "Siemens Intelligence Center X industrial agent platform presented in Korea (semiconductor/manufacturing) is a supplier product launch; existing Radar AI Integration Ready maps manufacturer AI integration dependencies, so no independently distinct new software workflow based on this announcement.",
+        "canonical_source_url": "https://biz.chosun.com/en/en-it/2026/10/13/2HP5JZEL4RCCVFAUXHD4BW34KA/",
+        "published_at": "2026-10-13T06:15:23Z",
+        "opportunities": []
+      },
+      {
+        "article_key": "82e30b37cbebddf77865ee15",
+        "article_title": "[2026국감]“실제 얼굴 안 써도 닮으면 침해”…AI 퍼블리시티권 보호 사각지대 우려 - 전자신문",
+        "decision": "opportunity",
+        "reason": "South Korea October parliamentary review identified 74 publicity-right complaints and ambiguous rules for synthetic lookalikes, with many cases untraceable. Rights-owner evidence intake/takedown queue is a non-model workflow distinct from publisher-side source disclosure; new candidate needs validation.",
+        "canonical_source_url": "https://www.etnews.com/20261013000257",
+        "published_at": "2026-10-13T05:18:07Z",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-56a1579cdc6f883a:82e30b37cbebddf77865ee15:01",
+            "canonical_key": "korean-talent-agency-and-brand-rightsholder-teams|document-likeness-and-voice-imitation-complaints-to-platform-takedown|rights-case-asset-link-identifiability-review-and-removal-evidence-ledger",
+            "idea_name": "AI Likeness Claim & Takedown Evidence Desk",
+            "core_job": "Track rightsholder notice and human review of synthesized lookalike/voice complaints with evidence and platform takedown follow-ups",
+            "target_customer": "Talent agencies, performer legal/IP rightsholders and brand abuse response teams",
+            "product_mechanism": "Alleged content URL/video details → consent/rights scope → human reviewed likelihood and legal basis (no automatic biometric matching) → platform appeal/removal steps → evidentiary case closure",
+            "why_now": "2026-10-13 Korean National Assembly audit notes AI-synthesized celebrity resemblance, unclear publicity rights enforcement and low successful investigation among 74 agency-reported incidents",
+            "before_state": "Talent agencies manually share alleged deepfake likeness links and notice emails without verifiable case tracking",
+            "after_state": "Versioned manual evidence chain for lookalike/voice claims and removal, no AI inference or biometric scraping",
+            "canonical_source_urls": [
+              "https://www.etnews.com/20261013000257"
+            ],
+            "scope_hint": "Dünya",
+            "source_product_hypothesis": true
+          }
+        ]
+      },
+      {
+        "article_key": "836e1f9ecab7a9be4dae6f5c",
+        "article_title": "Merkez Bankasının ekim ayı faiz kararı için beklentiler belli oldu - Ekonomim",
+        "decision": "no_opportunity",
+        "reason": "Turkish central bank policy-rate forecast is investor/economist expectation, not enacted rule or distinct repeated no-model software workflow.",
+        "canonical_source_url": "https://www.ekonomim.com/",
+        "published_at": "2026-10-13T09:12:50Z",
+        "opportunities": []
+      },
+      {
+        "article_key": "837d3553d3ddaf7075043d59",
+        "article_title": "上海：推进氢能、绿色甲醇、可持续航空燃料等产品交易平台建设 - 36Kr",
+        "decision": "opportunity",
+        "reason": "Shanghai municipal five-year plan promotes hydrogen, green methanol and SAF product-trading platform development, as reported by Yicai, prompting prospective supplier provenance and pretrade evidence preparation. Platform future launch, not a current live exchange.",
+        "canonical_source_url": "https://www.yicai.com/brief/103392012.html",
+        "published_at": "2026-10-12T20:33:00Z",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-56a1579cdc6f883a:837d3553d3ddaf7075043d59:01",
+            "canonical_key": "shanghai-hydrogen-methanol-and-saf-trade-participants|prepare-low-carbon-fuel-product-verification-before-market-platform-listing|product-batch-origin-standard-certificate-offtaker-document-pretrade-checklist",
+            "idea_name": "Shanghai Green Fuel Pretrade Evidence Pack",
+            "core_job": "Prepare product batch provenance, certification and off-taker acceptance documentation before hydrogen/methanol/SAF exchange onboarding",
+            "target_customer": "Chinese low-carbon fuel producers and proposed Shanghai energy commodity marketplace onboarding teams",
+            "product_mechanism": "Manually imported fuel type/quantity, source electricity, supplier batch, lifecycle GHG document, buyer specs → missing-document checklist → reviewer-approved platform submission pack",
+            "why_now": "Shanghai's 2026-2030 energy/carbon plan explicitly calls for product trading platforms for hydrogen, green methanol and sustainable aviation fuel, with cap-and-trade coordination",
+            "before_state": "Different fuel product proof/certification and prospective exchange eligibility statements remain in spreadsheets and email",
+            "after_state": "Traceable low-carbon fuel batch/document readiness register for human review; no exchange connection, no carbon certificate issuance",
+            "canonical_source_urls": [
+              "https://www.yicai.com/brief/103392012.html"
+            ],
+            "scope_hint": "Dünya",
+            "source_product_hypothesis": true
+          }
+        ]
+      },
+      {
+        "article_key": "8385478297b260eecf058ad4",
+        "article_title": "Firefox 158 mit JPEG XL-Unterstützung - heise online",
+        "decision": "no_opportunity",
+        "reason": "Mozilla Firefox 158 enables JPEG XL support and other browser improvements, but the news reports browser decoder support, not a unique verified unmet SaaS JTBD distinguishable from routine web compatibility QA.",
+        "canonical_source_url": "https://www.teknoblog.com/firefox-158-jpeg-xl-destegini-ekliyor/",
+        "published_at": "2026-10-13T16:13:00Z",
+        "opportunities": []
+      },
+      {
+        "article_key": "8388ac9dd04b441bedffb4de",
+        "article_title": "JBL、AIでボーカルやギターを分離。演奏が一緒に楽しめる「BandBox Solo/Trio」一般販売 - AV Watch",
+        "decision": "no_opportunity",
+        "reason": "JBL BandBox Solo/Trio uses embedded AI sound separation during music play; replicating the core audio inference/product requires hardware or an AI runtime, excluded by model-free no-extra-cost Radar scope.",
+        "canonical_source_url": "https://av.watch.impress.co.jp/",
+        "published_at": "2026-10-13T22:00:00Z",
+        "opportunities": []
+      },
+      {
+        "article_key": "83d68c065886f3ee726b862e",
+        "article_title": "深度云海获华工科技千万级天使轮投资，加速布局企业AI营销入口 - 雷峰网",
+        "decision": "no_opportunity",
+        "reason": "Same 2026-10-13 Deepagens/Huagong enterprise GEO seed investment already in Discovery job 51e6e0054b1f3744, not an independent new operational development; source is company funding statement.",
+        "canonical_source_url": "https://www.deepagens.com/news/shendu-yunhai-huo-huagong-keji-qianwanji-t-l-t-j-b-q-a-y-r",
+        "published_at": "2026-10-13T10:11:00Z",
+        "opportunities": []
+      },
+      {
+        "article_key": "83e28d86dd799dec1ee40a63",
+        "article_title": "CCT Auto Trans expands car haul coverage map in Livingston VTS deal - FreightWaves",
+        "decision": "no_opportunity",
+        "reason": "FreightWaves confirms CCT Auto Trans purchased Livingston VTS with seven Canadian facilities; the deal itself does not demonstrate a novel independent manual fleet transportation coordination problem beyond incumbent vehicle logistics systems.",
+        "canonical_source_url": "https://www.freightwaves.com/news/cct-auto-trans-expands-car-haul-coverage-map-in-livingston-vts-deal",
+        "published_at": "2026-10-13T16:50:49Z",
+        "opportunities": []
+      },
+      {
+        "article_key": "840628164849f560e62a0bbd",
+        "article_title": "靑이어 산업부도 메가프로젝트 전담국 신설…호남 반도체 등 '속도전' - 전자신문",
+        "decision": "unverified",
+        "reason": "The original full Korean ETNews coverage of government mega-project administrative reorganization was not obtained and surrounding items focus on politically proposed semiconductor investment; avoid inferring an actual new enforceable grant/filing process from a headline.",
+        "canonical_source_url": "https://www.etnews.com/",
+        "published_at": "2026-10-13T04:34:45Z",
+        "opportunities": []
+      },
+      {
+        "article_key": "8498910fe680a16e3bb2574d",
+        "article_title": "Should Carney give Canadian tech a (tax) break? - BetaKit",
+        "decision": "no_opportunity",
+        "reason": "BetaKit details Canadian tech leader open letter asking for capital-gains rollover and QSBS-style tax incentive in future federal budget. These are proposals, not enacted law or an eligible compliance obligation today.",
+        "canonical_source_url": "https://betakit.com/should-carney-give-canadian-tech-a-tax-break/",
+        "published_at": "2026-10-13T13:38:23Z",
+        "opportunities": []
+      }
+    ]
+  }
+}
