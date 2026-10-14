@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-14T03:08:11Z",
+  "controller_observed_at": "2026-10-14T03:08:31Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-14T02:01:00Z",
-  "ready_jobs": 625,
+  "ready_jobs": 624,
   "unfinished_jobs": 625,
   "last_verified_progress_at": "2026-10-14T03:07:42Z",
   "workers": {
@@ -14,9 +14,12 @@
         "schema_version": 1,
         "worker": 1,
         "invocation_id": "6ba990c6-2570-437b-b752-50b62d54995c",
-        "event": "started",
-        "at": "2026-10-14T03:07:58.960Z",
-        "path": "state/v2/worker-events/1/6ba990c6-2570-437b-b752-50b62d54995c/000-started.json"
+        "event": "progress",
+        "at": "2026-10-14T03:08:27.639Z",
+        "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-11abfaedc1661b05",
+        "stage": "claim_saved",
+        "claim_path": "state/v2/claims/2026-10-14-catchup-553b1f127fcf-discovery-11abfaedc1661b05/001.json",
+        "path": "state/v2/worker-events/1/6ba990c6-2570-437b-b752-50b62d54995c/001-progress.json"
       },
       "receipts_this_invocation": 0,
       "write_and_receipt_verified": true,
@@ -59,19 +62,16 @@
       "last_receipt_at": "2026-10-14T03:07:42.619Z"
     },
     "4": {
-      "last_started_at": "2026-10-14T02:07:10.909Z",
+      "last_started_at": "2026-10-14T03:08:15.025Z",
       "last_event": {
         "schema_version": 1,
         "worker": 4,
-        "invocation_id": "f33f5afe-a66e-44f3-ac8c-090e710810db",
-        "event": "finished",
-        "at": "2026-10-14T02:12:52.504Z",
-        "verified_receipts": 2,
-        "reviewed_articles": 20,
-        "note": "İki güncel discovery işi, 20 makale ve tüm makale kararları kalıcı receipt olarak kaydedildi; katalog/history değiştirilmedi.",
-        "path": "state/v2/worker-events/4/f33f5afe-a66e-44f3-ac8c-090e710810db/999-finished.json"
+        "invocation_id": "e871906c-7f0c-4586-b896-9e9416b61b86",
+        "event": "started",
+        "at": "2026-10-14T03:08:15.025Z",
+        "path": "state/v2/worker-events/4/e871906c-7f0c-4586-b896-9e9416b61b86/000-started.json"
       },
-      "receipts_this_invocation": 2,
+      "receipts_this_invocation": 0,
       "write_and_receipt_verified": true,
       "last_receipt_at": "2026-10-14T02:12:40.295Z"
     },
