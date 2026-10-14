@@ -1,0 +1,93 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-219e1f09fe109b0d",
+  "input_hash": "219e1f09fe109b0dff8cde49fbd6b6560880f705598b50dfa609ffd7785c12cd",
+  "token": "manual-20261014-1323-219e1f09fe109b0d-001",
+  "finished_at": "2026-10-14T10:34:39.973Z",
+  "outcome": "done",
+  "reason": "Ten per-article Discovery decisions, preserving unverifiable feeds and validating all emitted raw products against read sources.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "7dae5a57a4058615ccef963f",
+        "decision": "no_opportunity",
+        "reason": "Hong Kong EV equities intraday movement is securities commentary, not customer JTBD.",
+        "opportunities": []
+      },
+      {
+        "article_key": "7e813799681de5f1d1c03a32",
+        "decision": "no_opportunity",
+        "reason": "German analyst comments on AI sector investor sentiment are macro-financial opinion.",
+        "opportunities": []
+      },
+      {
+        "article_key": "7e9419b875980f563bcdba13",
+        "decision": "unverified",
+        "reason": "Nikkei AI-powered cyberattack cost-leak story may imply evidence controls, but the original report and incident scope were not read; hold.",
+        "opportunities": []
+      },
+      {
+        "article_key": "7ea0d3cb00cf8952a461ab9a",
+        "decision": "no_opportunity",
+        "reason": "Espressif third-quarter profit forecast is listed-company financial disclosure.",
+        "opportunities": []
+      },
+      {
+        "article_key": "7ed9c6eb3c0f4c581d71d5d1",
+        "decision": "unverified",
+        "reason": "YourStory 'Cleantech startup' feed resolves to a category/index without unique source or factual development.",
+        "opportunities": []
+      },
+      {
+        "article_key": "7f31c92a9f02abf59480bfe7",
+        "decision": "no_opportunity",
+        "reason": "Chinese humanoid innovation-center opening is a facility announcement, without defined third-party software process change.",
+        "opportunities": []
+      },
+      {
+        "article_key": "7f6919d5c830359d9c667069",
+        "decision": "no_opportunity",
+        "reason": "DJI Pocket camera market share estimate is product/market statistics, not a distinct enterprise workflow.",
+        "opportunities": []
+      },
+      {
+        "article_key": "7fafc4f014e07d9b5b738bf9",
+        "decision": "no_opportunity",
+        "reason": "Opinion about professions AI may displace is broad speculation, no specific operational intervention.",
+        "opportunities": []
+      },
+      {
+        "article_key": "7fc20d0aae51f9ab0ce2f51a",
+        "decision": "no_opportunity",
+        "reason": "Audi falling car sales are financial reporting, not a newly changed customer workflow.",
+        "opportunities": []
+      },
+      {
+        "article_key": "7fee3bf508f2188fffb94a0d",
+        "decision": "opportunity",
+        "reason": "36Kr report describes 650 kg tethered, high-rise fire-fighting drone operating beyond ladder access; creates a verifiable human-managed site-acceptance evidence workflow (not autonomous firefighting guidance).",
+        "opportunities": [
+          {
+            "idea_name": "Tethered Fire Drone Field-Test Evidence Register",
+            "canonical_key": "municipal-fire-drone-pilot-managers|document-highrise-drone-field-readiness-and-acceptance|site-access-tether-test-operator-and-safety-evidence-ledger",
+            "core_job": "Record authorized high-rise emergency response drone equipment trial evidence and human approval",
+            "target_customer": "Fire service drone program quality and procurement teams",
+            "product_mechanism": "Manual equipment identity, site access constraints, tether/water/power trial reports, authorized personnel, safety observer, failure records and acceptance signoff; no drone control or tactical directions",
+            "why_now": "36Kr 13 October describes a 650kg ducted drone tethered to water and power to reach 100m facades when ladder trucks cannot reach; independent field acceptance is material.",
+            "before_state": "Pilot equipment claims and safety acceptance evidence isolated in vendor reports.",
+            "after_state": "Human-approved operational-readiness evidence case with explicit safety responsibility.",
+            "canonical_source_urls": [
+              "https://eu.36kr.com/en/p/4022465961005193"
+            ],
+            "raw_id": "w2-20261014-219e-09",
+            "triggering_article_ids": [
+              "ab199b7d546ae59e390c234b"
+            ],
+            "source_article_key": "7fee3bf508f2188fffb94a0d",
+            "source_verification": "primary or original article web-read, downstream qualification pending"
+          }
+        ]
+      }
+    ]
+  }
+}
