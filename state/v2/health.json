@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-14T02:03:53Z",
+  "controller_observed_at": "2026-10-14T02:04:54Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-14T01:01:00Z",
-  "ready_jobs": 641,
+  "ready_jobs": 640,
   "unfinished_jobs": 641,
   "last_verified_progress_at": "2026-10-13T23:19:48Z",
   "workers": {
@@ -14,9 +14,12 @@
         "schema_version": 1,
         "worker": 1,
         "invocation_id": "42ccbf00-642e-474e-a14c-78210456bba4",
-        "event": "started",
-        "at": "2026-10-14T02:03:38.862Z",
-        "path": "state/v2/worker-events/1/42ccbf00-642e-474e-a14c-78210456bba4/000-started.json"
+        "event": "progress",
+        "at": "2026-10-14T02:04:46.658Z",
+        "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-09915d530b700e59",
+        "stage": "claim_saved",
+        "claim_path": "state/v2/claims/2026-10-14-catchup-553b1f127fcf-discovery-09915d530b700e59/001.json",
+        "path": "state/v2/worker-events/1/42ccbf00-642e-474e-a14c-78210456bba4/001-progress.json"
       },
       "receipts_this_invocation": 0,
       "write_and_receipt_verified": true,
