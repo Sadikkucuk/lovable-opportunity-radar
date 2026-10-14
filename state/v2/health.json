@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-14T00:10:25Z",
+  "controller_observed_at": "2026-10-14T02:03:53Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
-  "expected_start_at": "2026-10-13T23:01:00Z",
+  "expected_start_at": "2026-10-14T01:01:00Z",
   "ready_jobs": 641,
   "unfinished_jobs": 641,
   "last_verified_progress_at": "2026-10-13T23:19:48Z",
   "workers": {
     "1": {
-      "last_started_at": "2026-10-13T22:05:28.531Z",
+      "last_started_at": "2026-10-14T02:03:38.862Z",
       "last_event": {
         "schema_version": 1,
         "worker": 1,
-        "invocation_id": "26d92811-7501-4811-a031-269c79c4a4f5",
+        "invocation_id": "42ccbf00-642e-474e-a14c-78210456bba4",
         "event": "started",
-        "at": "2026-10-13T22:05:28.531Z",
-        "path": "state/v2/worker-events/1/26d92811-7501-4811-a031-269c79c4a4f5/000-started.json"
+        "at": "2026-10-14T02:03:38.862Z",
+        "path": "state/v2/worker-events/1/42ccbf00-642e-474e-a14c-78210456bba4/000-started.json"
       },
       "receipts_this_invocation": 0,
       "write_and_receipt_verified": true,
@@ -101,10 +101,10 @@
     "window_minutes": 120.0,
     "stages": {
       "discovery": {
-        "completed_in_window": 4,
+        "completed_in_window": 0,
         "known_remaining": 433,
-        "observed_jobs_per_hour": 2.0,
-        "estimated_minutes_for_stage": 12990.0
+        "observed_jobs_per_hour": null,
+        "estimated_minutes_for_stage": null
       },
       "merge": {
         "completed_in_window": 0,
@@ -113,7 +113,7 @@
         "estimated_minutes_for_stage": 0
       },
       "validation": {
-        "completed_in_window": 1,
+        "completed_in_window": 0,
         "known_remaining": 208,
         "observed_jobs_per_hour": null,
         "estimated_minutes_for_stage": null
@@ -145,25 +145,19 @@
   "alerts": [
     {
       "code": "worker_not_started",
-      "worker": 1,
+      "worker": 2,
       "severity": "critical",
       "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
     },
     {
       "code": "worker_heartbeat_missing",
-      "worker": 1,
+      "worker": 2,
       "severity": "critical",
       "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
     },
     {
       "code": "worker_not_started",
-      "worker": 2,
-      "severity": "critical",
-      "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
-    },
-    {
-      "code": "worker_heartbeat_missing",
-      "worker": 2,
+      "worker": 3,
       "severity": "critical",
       "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
     },
