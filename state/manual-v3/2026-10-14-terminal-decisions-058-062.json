@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-14",
+  "kind": "manual_v3_competitor_validation",
+  "terminal_decisions": 5,
+  "needs_qa": true,
+  "site_ideas_added": 0,
+  "records": [
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-a34d430c5f884f58",
+      "input_hash": "a34d430c5f884f589dad82ca6904fd40cc819d5d3c9218e2bf9620744b8e5e68",
+      "candidate_name": "Batarya İletken Katkı Deneme Kanıt Defteri",
+      "canonical_key": "battery-material-suppliers|compare-carbon-additive-lot-and-formulation-trials|loading-resistance-dispersion-and-acceptance-ledger",
+      "target_customer": "Lityum pil hücresi üreticilerinin malzeme mühendisleri ve karbon katkı tedarikçileri",
+      "core_job": "Farklı nano karbon katkı dozları, parti, özdirenç, homojenlik ve şarj döngüsü testi kabul sonuçlarını standardize edip satın alma kararına bağlamak",
+      "product_mechanism": "Kullanıcının CSV test satırları, lot/kimya, katkı yüzde, dağılım, ohm, çevrim sayısı, aynı test şartı ve dosya kanıtları üzerinden kural tabanlı karşılaştırma",
+      "article_source": "https://chemicals.economictimes.indiatimes.com/news/industry-and-market/carbon-nanostructure-additives-gain-ground-as-ev-batteries-scale-up/134887907",
+      "decision": "rejected",
+      "reason_code": "at_least_four_independent_competing_products_for_same_customer_job",
+      "comparison_rationale": "Battery chemical/material development labs already use sample/lot identifiers, assay/test protocols, acceptance limits, controlled batch comparisons, data review and QC approval through LIMS/ELN platforms. Carbon-additive dose is a parameter in this already-supported lab process.",
+      "global_direct_competitors": [
+        {
+          "name": "LabWare LIMS",
+          "url": "https://www.labware.com/",
+          "overlap": "Sample-lot test results, specs and lab review"
+        },
+        {
+          "name": "LabVantage LIMS",
+          "url": "https://www.labvantage.com/",
+          "overlap": "Materials QC, test lots and specification matching"
+        },
+        {
+          "name": "STARLIMS",
+          "url": "https://www.starlims.com/",
+          "overlap": "Laboratory samples, results, QC releases and chain of custody"
+        },
+        {
+          "name": "Benchling",
+          "url": "https://www.benchling.com/",
+          "overlap": "Scientific experiment records, materials tests and traceable decisions"
+        }
+      ],
+      "tr_direct_competitor_count": null,
+      "reviewed_at": "2026-10-14",
+      "result_format": "manual_market_research_not_controller_receipt",
+      "qualified": false
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-b0809dce65b286a3",
+      "input_hash": "b0809dce65b286a3fd7fb95b49bbaa403afccecab28739100d92fbf3e1353d05",
+      "candidate_name": "NASA Lunar Observation Provenance Notebook",
+      "canonical_key": "lunar-science-research-groups|review-released-artemis2-observations-with-auditable-provenance|pds-product-id-annotation-and-review-ledger",
+      "target_customer": "Üniversite ay jeolojisi, krater araştırması ve uzay eğitim ekipleri",
+      "core_job": "NASA PDS'den seçilmiş görüntü/astronot yorumlarını asıl ürün kimliğine bağlayıp gözlem, kaynak ve insan incelemesini sürümlemek",
+      "product_mechanism": "Kullanıcının elle seçtiği PDS ürün ID/URL, görev günü, olay/krater etiketi, koordinat veya yön, iddia/karşı kanıt ve bilimsel kontrol notu CSV/JSON; dosyaları topluca çekmez, AI modeli çalıştırmaz",
+      "article_source": "https://www.nasa.gov/blogs/artemis/2026/10/07/nasa-releases-artemis-ii-lunar-science-data-images/",
+      "decision": "rejected",
+      "reason_code": "at_least_four_independent_competing_products_for_same_customer_job",
+      "comparison_rationale": "Research groups already link source media/observations to scientific annotations, supporting/counter evidence, versioned review and author provenance via four electronic laboratory notebooks. PDS identifiers are reference metadata.",
+      "global_direct_competitors": [
+        {
+          "name": "SciNote ELN",
+          "url": "https://www.scinote.net/",
+          "overlap": "Research task-experiment-source notes and peer review"
+        },
+        {
+          "name": "LabArchives",
+          "url": "https://www.labarchives.com/",
+          "overlap": "Scientific experiments, annotate images and share provenance"
+        },
+        {
+          "name": "eLabFTW",
+          "url": "https://www.elabftw.net/",
+          "overlap": "Citable signed time-stamped experiment notes and external links"
+        },
+        {
+          "name": "Benchling Notebook",
+          "url": "https://www.benchling.com/",
+          "overlap": "Electronic experimental record, attachments and scientist signoff"
+        }
+      ],
+      "tr_direct_competitor_count": null,
+      "reviewed_at": "2026-10-14",
+      "result_format": "manual_market_research_not_controller_receipt",
+      "qualified": false
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-ae1d53fdb80ed171",
+      "input_hash": "ae1d53fdb80ed171f641b49965e60d18fd325e8804734987f57a8a41d84ef209",
+      "candidate_name": "Tarife İadesi Tedarik Yatırım Dağıtım Defteri",
+      "canonical_key": "us-importing-consumer-brands|allocate-nonrecurring-tariff-recovery-to-supply-chain-actions|refund-eligibility-investment-allocation-and-evidence-ledger",
+      "target_customer": "ABD ithalatçı marka finans ve tedarik yöneticileri",
+      "core_job": "Tek seferlik geri kazanılan ithalat vergisini alternatif yatırım, sevkiyat, stok boşaltma ve kârlılık senaryolarına izlenebilir dağıtmak",
+      "product_mechanism": "Manuel iade bazlı CSV muhasebe kalemi, dağıtım hedefi, iş paketi, plan/gerçekleşen bütçe ve onay kanıtı",
+      "article_source": "https://www.supplychaindive.com/news/levis-to-use-part-of-80m-tariff-refund-for-supply-chain/832562/",
+      "decision": "rejected",
+      "reason_code": "at_least_four_independent_competing_products_for_same_customer_job",
+      "comparison_rationale": "Importing-company corporate finance teams already allocate one-off cash inflows to alternative stock, purchasing, CAPEX and margin-recovery budgets, compare what-if scenarios, approve plans, and record actuals in FP&A budget-planning suites.",
+      "global_direct_competitors": [
+        {
+          "name": "Vena",
+          "url": "https://www.venasolutions.com/",
+          "overlap": "Budget allocations, variance, approver signoff and alternative financial scenarios"
+        },
+        {
+          "name": "Planful",
+          "url": "https://planful.com/",
+          "overlap": "Corporate planning, scenario modeling and forecast versus actual"
+        },
+        {
+          "name": "Anaplan",
+          "url": "https://www.anaplan.com/solutions/finance/",
+          "overlap": "Cross-functional capital/inventory planning and scenario allocation"
+        },
+        {
+          "name": "Workday Adaptive Planning",
+          "url": "https://www.workday.com/en-us/products/adaptive-planning/overview.html",
+          "overlap": "Financial budgeting, flexible what-if, financial reporting and approvals"
+        }
+      ],
+      "tr_direct_competitor_count": null,
+      "reviewed_at": "2026-10-14",
+      "result_format": "manual_market_research_not_controller_receipt",
+      "qualified": false
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-678e21eb9d5f67b6",
+      "input_hash": "678e21eb9d5f67b67b7598d5260eb58fd0bb5c1d6dbb85d0a3c0284b577a51c6",
+      "candidate_name": "Çin Araç Tasarımı 2027 Test Kanıt Hazırlık Masası",
+      "canonical_key": "china-automotive-product-homologation-teams|prepare-2027-design-reliability-evidence-for-draft-approval-rules|prototype-variant-testcycle-and-feature-control-matrix",
+      "target_customer": "Çin pazarına yeni otomobil modeli başvurusu yapacak OEM ve otomotiv tasarım/uyum ekipleri",
+      "core_job": "Araç varyantının yenilikçi tasarım/tuş/ekran/kapı kolu ve çevresel-güvenilirlik test kanıtını taslak MIIT gereksinimlerine göre önceden eşlemek",
+      "product_mechanism": "Yalnız kullanıcının sağladığı model-varyant, prototip, kilometre, kış/yaz test periyodu, HMI/koltuk/kapı kolu tasarımı, test raporu referansı ve sorumlu onay CSV matrisi; hukuki karar veya simülasyon yapmaz",
+      "article_source": "https://www.miit.gov.cn/xwfb/mtbd/wzbd/art/2026/art_0235344fc3904e31ae57b3ac2f6b312f.html",
+      "decision": "rejected",
+      "reason_code": "at_least_four_independent_competing_products_for_same_customer_job",
+      "comparison_rationale": "Chinese OEM homologation engineering teams apply vehicle requirement versions to prototype variants, test conditions, safety/HMI evidence and approval coverage through automotive ALM/verification systems. MIIT draft requirements are a regulation-specific rule set.",
+      "global_direct_competitors": [
+        {
+          "name": "Siemens Polarion",
+          "url": "https://www.siemens.com/tr-tr/products/polarion/requirements/",
+          "overlap": "Automotive standards requirement version, tests, coverage and audit"
+        },
+        {
+          "name": "PTC Codebeamer",
+          "url": "https://www.ptc.com/en/news/2026/ptc-codebeamer-adopted-by-bmw-group",
+          "overlap": "Automotive OEM multi-disciplinary requirement/test configuration"
+        },
+        {
+          "name": "Jama Connect",
+          "url": "https://www.jamasoftware.com/solutions/automotive/",
+          "overlap": "Automotive model/version safety test tracing and signoff"
+        },
+        {
+          "name": "IBM DOORS Next",
+          "url": "https://www.ibm.com/products/engineering-requirements-management-doors-next",
+          "overlap": "Vehicle design requirement coverage and verification evidence"
+        }
+      ],
+      "tr_direct_competitor_count": null,
+      "reviewed_at": "2026-10-14",
+      "result_format": "manual_market_research_not_controller_receipt",
+      "qualified": false
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-3c45375acce80084",
+      "input_hash": "3c45375acce80084b059e2a29818dd5db3417e9e7826f15ac4b1ade9a6ba6a48",
+      "candidate_name": "Solar Piling Robot Site Acceptance Desk",
+      "canonical_key": "solar-farm-epc-contractors|verify-autonomous-piling-robot-site-readiness-and-handover|foundation-test-soil-pile-tolerance-and-safety-evidence-ledger",
+      "target_customer": "Avustralya güneş santrali EPC müteahhitleri ve sahadaki robot operasyon/kalite yöneticileri",
+      "core_job": "Otonom temel kazık çakma/solar panel taşıma robotunun saha devrine, zemin/çakma toleransına ve insan güvenliği gereklerine uygunluğunu belgelerle değerlendirmek",
+      "product_mechanism": "Yüklenici kaynaklı zemin tipi, kazık koordinat sapması, ölçüm örneği, robot site/operatör risk check, test sonucu, kalibrasyon ve insan onayı ile CSV/PDF kabul tutanağı",
+      "article_source": "https://arena.gov.au/news/australian-made-solar-robots-move-towards-commercial-scale-with-32-3-million-in-arena-funding/",
+      "decision": "rejected",
+      "reason_code": "at_least_four_independent_competing_products_for_same_customer_job",
+      "comparison_rationale": "Solar EPC field QA engineers already register construction equipment/site assets, perform installation tests, check pile/geolocation tolerance, record defects and safety punch lists, and sign off site handovers using these field inspection platforms. Autonomous piling robot is the inspected equipment.",
+      "global_direct_competitors": [
+        {
+          "name": "Procore",
+          "url": "https://www.procore.com/quality-and-safety",
+          "overlap": "Construction quality checklists, corrective items and owner inspection"
+        },
+        {
+          "name": "Autodesk Construction Cloud",
+          "url": "https://construction.autodesk.com/workflows/construction-closeout-project-handover/",
+          "overlap": "Field asset acceptance inspection, defects and site closeout"
+        },
+        {
+          "name": "Fieldwire",
+          "url": "https://www.fieldwire.com/",
+          "overlap": "Jobsite inspection, checklist punchlist and sign-off"
+        },
+        {
+          "name": "PlanRadar",
+          "url": "https://www.planradar.com/",
+          "overlap": "Construction inspection reports, punch lists and handover documentation"
+        }
+      ],
+      "tr_direct_competitor_count": null,
+      "reviewed_at": "2026-10-14",
+      "result_format": "manual_market_research_not_controller_receipt",
+      "qualified": false
+    }
+  ]
+}
