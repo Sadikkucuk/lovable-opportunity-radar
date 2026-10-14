@@ -1,0 +1,59 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "8e329640e5620756ae81b7872a1539b892d33d837921baa31adae6538fd47d1a",
+  "decision": {
+    "article_key": "1297d5566e4076098e89b482",
+    "decision": "opportunity",
+    "reason": "MIT Technology Review 13 Ekim haberi özgün sayfa robots nedeniyle tam okunamadı; ikincil Muck Rack yayıncı/yazar meta kaydı ve SimpleClosure'un şirket AssetHub ürün sayfası (birincil) startup kapanışında kod ve Slack/Notion/Google iş kayıtlarının yapay zeka eğitim alıcısına gerçekten lisanslanabildiğini doğruluyor. SimpleClosure Eylül 2026'da 350+ firma kaydının AssetHub'a varlık sunduğunu söylüyor; şirket beyanı, 350 tamamlanmış satım değildir. BEFORE tasfiye halinde dijital çalışan/müşteri iletişimleri kod ve veri hakkı riskleriyle dağınık; AFTER veri hak devri, üçüncü taraf kullanım kısıtları ve PII redaksiyonunun insan onaylı kanıt haritası gerekir. Mevcut SimpleClosure doğrudan/komşu workflow sağlayıcısı olduğundan Validation rakip sorgusu kritiktir.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-08c37953bc15a334:1297d5566e4076098e89b482:1",
+        "canonical_key": "dissolving-startup-counsel-and-data-brokers|preflight-workspace-data-resale-ownership-consent-and-third-party-rights|offline-asset-license-privacy-redaction-evidence-ledger",
+        "idea_name": "Kapanan Girişim Veri Devir Hakkı ve Gizlilik Ön İnceleme Defteri",
+        "core_job": "Kapanan startup kod deposu, Slack/Drive/Notion/Figma mesaj/doküman/dataset varlığını alıcıya lisanslamadan önce hukuki sahiplik, çalışan/müşteri izni, veri saklama, üçüncü taraf lisansı, silme/anonimleştirme ve sorumlu onayını sistematik denetlemek",
+        "target_customer": "Tasfiye edilen teknoloji girişimi kurucuları, IP/insolvency hukuk danışmanları ve B2B data asset brokerları",
+        "buyer": "İflas/tasfiye IP danışmanı veya veri gizliliği sorumlusu",
+        "product_mechanism": "Kullanıcı tarafından manuel CSV asset envanteri, dosya kaynağı, iş ilişkisi, veri kategorisi, privacy/employee rights checklist, onay belgesi, transfer öncesi redaksiyon statüsü ve buyer purpose girdilerini tarayıcıda rule matriksiyle denetleyen indirilebilir PDF/JSON delil dosyası; konuşma metnini model ile taramaz, otomatik hukuki geçerlilik kararı vermez",
+        "why_now": "13 Ekim MIT Technology Review araştırması ve SimpleClosure AssetHub şirket açıklaması 2026 startup kapanışı veri varlıklarının AI training alıcılarına daha aktif sunulduğunu bildiriyor; gizlilik ve sahiplik görevleri ön plana çıkıyor.",
+        "before_state": "Tasfiye edilen girişimde GitHub workspace, doküman, müşteri sözleşmesi, çalışan data izinleri ayrı uygulamalara dağılmış.",
+        "after_state": "Her veri setinin muhtemel mülkiyet/izin kaynakları, kişisel veri/redaksiyon ve alıcı lisans amacı tek devir-öncesi review paketinde insan signoff ile görünür.",
+        "canonical_source_urls": [
+          "https://simpleclosure.com/product/assethub/index.html",
+          "https://simpleclosure.com/solutions/for-data-asset-buyers/",
+          "https://tldrocket.com/story/ai-labs-are-buying-data-from-dead-startups-to-train-their-models"
+        ],
+        "supporting_article_ids": [
+          "d65f014c69d621b064ba847c"
+        ],
+        "source_observations": [
+          {
+            "url": "https://simpleclosure.com/product/assethub/index.html",
+            "observation": "AssetHub kod ve WorkspaceData için devir, PII scrubbing ve licensing support sunduğunu bildiriyor; zaten mevcut rakip/komşu."
+          },
+          {
+            "url": "https://simpleclosure.com/solutions/for-data-asset-buyers/",
+            "observation": "Satıcı tasfiye edilmiş firmaların kaynak kodu ve gerçek operasyon dokümanını AI alıcısına lisanslama/PII çıkarma akışını doğruluyor."
+          },
+          {
+            "url": "https://tldrocket.com/story/ai-labs-are-buying-data-from-dead-startups-to-train-their-models",
+            "observation": "MIT Tech Review Matthew King 13 Ekim yazısının ikincil, eksiltmeli özeti; özgün tam metin tool robots engeli nedeniyle okunamadı."
+          }
+        ],
+        "scope_hint": "US+global; jurisdiction-specific manual legal review",
+        "local_evidence": {
+          "signals": [
+            "Varlığın lisansından önce insan onaylı veri mülkiyet/PII risk check'i fiilen gereken operasyon."
+          ],
+          "unknowns": [
+            "Türkiye ve global doğrudan hukuk veri devri/gizlilik yazılımları sayılmadı.",
+            "SimpleClosure zaten PII scrubbing ve devir sürecini sağlıyor: niş farklılaşma kanıtlanmalı.",
+            "Kaynak içeriğin çalışan onayı/üçüncü kişi hakları için gerçek hukuki izin statüsü yetkili hukukçu tarafından doğrulanmalıdır.",
+            "Haber tam özgün gövdesi doğrudan okunmadı."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-08c37953bc15a334/001.json",
+  "valid_until": "2026-11-13T02:45:30Z"
+}

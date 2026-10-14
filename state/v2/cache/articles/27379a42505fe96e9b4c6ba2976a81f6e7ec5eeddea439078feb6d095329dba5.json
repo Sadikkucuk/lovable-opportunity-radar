@@ -1,0 +1,48 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "27379a42505fe96e9b4c6ba2976a81f6e7ec5eeddea439078feb6d095329dba5",
+  "decision": {
+    "article_key": "1340cb74c1c22ced6c9ebfa5",
+    "decision": "opportunity",
+    "reason": "Electronics Weekly RSS 13 Ekim başlığı Marvell'in CXL memory expander güncellemelerini 'Q1 2026 samples' diye aktarıyor; bu yılın ekiminden önceki dönemi gösterdiği için yanlış/eskimiş başlık. Marvell 12 Ekim 2026 RESMÎ duyurusu Structera X 3406/3506 CXL 3.2, altı DDR4/DDR5 kanal ve PCIe Gen6 desteğiyle yeni ürünü açıklar; sample başlangıcı kesinlikle 2027 Q1 PLANI, 2026 değil. BEFORE geniş bellek havuzu sınırlı kanal/PCIe jenerasyonu; AFTER AI rack 9TB DDR4 veya 6TB DDR5 kapasite ve host paylaşım/codec; data center entegratörünün CXL 3.2 memory expander ile uyumlu/uyumsuz CPU/firmware/DDR tablo testi ve sample signoff planı gerekir. Mevcut 2026 saha test verisi yok; ileri üretim garantisi sunulmadı. Teklif edilmesi muhtemel browser-only kabul matrisi Validation'da geniş rakip araştırmalı.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-08c37953bc15a334:1340cb74c1c22ced6c9ebfa5:1",
+        "canonical_key": "cxl-memory-expansion-rack-integrators|prequalify-six-channel-cxl3p2-ddr-host-interoperability-and-capacity|offline-controller-firmware-host-ddr-and-test-evidence-matrix",
+        "idea_name": "CXL 3.2 Bellek Genişletici Host–DDR Kabul Matrisi",
+        "core_job": "Yeni CXL 3.2 bellek genişletici altı DDR kanalına geçen sunucu ekibinde CPU host, PCIe Gen6/CXL sürüm, firmware, DDR4/DDR5 kapasite, paylaşım kompresyon ve FAT test kanıtını varyant bazında karşılaştırmak",
+        "target_customer": "AI veri merkezi sunucu/anakart OEM ve CXL bellek havuzu entegrasyon ekipleri",
+        "buyer": "Server sistem entegrasyon test ve memory architecture yöneticisi",
+        "product_mechanism": "Üreticinin örnek CXL controller teknik verileri, host revizyonu, DDR lot/kapasite, BIOS firmware sürümü, link speed, CXL sürüm, opsiyonel kompresyon/uyumluluk test CSV'sini tarayıcı içinde deterministik gereksinim/kapsama/eksik kanıt ve signoff matriksine dönüştürür. PCIe cihazına erişmez.",
+        "why_now": "12 Ekim Marvell yeni Structera X 3406/3506 CXL 3.2 altı kanal ve PCIe Gen6 özelliklerini duyurdu; Q1 2027 sample planı ile rakip sunucu prototiplerinin sistem interop testleri yapılacaktır.",
+        "before_state": "Host/firmware/CXL DIMM qualification ihtiyaçları birçok tedarikçinin lab spreadsheet'lerinde, sample kanıtı ve sürüm uyumu dağınık.",
+        "after_state": "CXL 3.2 controller varyantı ve host firmware/DDR ölçüm çıktılarına dayalı test koşulu ve eksik kanıt tek kıyas/kabul tablosunda.",
+        "canonical_source_urls": [
+          "https://investor.marvell.com/news-events/press-releases/detail/1037/marvell-unveils-second-generation-structera-x-industry-first-six-channel-cxl-3-2-memory-expanders-for-ai-inference"
+        ],
+        "supporting_article_ids": [
+          "6501a74f6eb53939b224e544"
+        ],
+        "source_observations": [
+          {
+            "url": "https://investor.marvell.com/news-events/press-releases/detail/1037/marvell-unveils-second-generation-structera-x-industry-first-six-channel-cxl-3-2-memory-expanders-for-ai-inference",
+            "observation": "Marvell resmî 12 Ekim press release: 3406/3506 CXL 3.2 altı kanal, PCIe Gen6, Q1 2027 sample plan. Sahada üretim test onayı değil. Haber başlığındaki 'Q1 2026' kaynakça hatalı."
+          }
+        ],
+        "scope_hint": "Dünya, veri merkezi ve sunucu hardware lab",
+        "local_evidence": {
+          "signals": [
+            "Yeni CXL standardı kontrolcü/sample varyantının gerçek sunucu ve memory interop test gereksinimleri var."
+          ],
+          "unknowns": [
+            "Vendor CXL certification/safety/qualification tools global direkt rakipleri sayılmadı.",
+            "Fiziksel uyumluluk yalnız kullanıcı test girdileriyle desteklenir, araç kendi başına donanım testi yapmaz.",
+            "2027 Q1 planı gerçekleşmiş sevkiyat değildir."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-08c37953bc15a334/001.json",
+  "valid_until": "2026-11-13T02:45:30Z"
+}
