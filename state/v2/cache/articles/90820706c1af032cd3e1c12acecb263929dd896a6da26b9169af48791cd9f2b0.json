@@ -1,0 +1,28 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "90820706c1af032cd3e1c12acecb263929dd896a6da26b9169af48791cd9f2b0",
+  "decision": {
+    "article_key": "6b58f8236753df265deb5359",
+    "decision": "opportunity",
+    "reason": "FreightWaves 13 Ekim özgün haberi Netradyne'nin filosuna Campaign Agent, düşük kodla agent kurucu ve canlı filoya soru-cevap fonksiyonunu duyurduğunu doğruluyor. Dış Netradyne telematik API veya LLM kullanmadan, orta ölçekli filo güvenlik ekiplerinin elle yüklediği sürücü olay/koçluk/izleme CSV'leri ile dönemsel kampanya hedefi, grup, öncesi-sonrası etki ve yönetici onay kanıtını sürümlemek için bağımsız, dar kapsamlı insan denetimli çalışma alanı hipotezi çıkarıldı. Haber bir müşteri alım görüşmesi veya rekabet doğrulaması değildir.",
+    "source_url": "https://www.freightwaves.com/news/netradyne-expands-ai-agents-fleet-safety",
+    "opportunities": [
+      {
+        "raw_id": "radar-manual-20261014-5e2c7a5f-fleet",
+        "canonical_key": "commercial-fleet-safety-ops|prove-driver-coaching-campaign-results|csv-campaign-target-baseline-outcome-evidence-register",
+        "idea_name": "Fleet Campaign Proof — Sürücü Güvenlik Kampanyası Kanıt Defteri",
+        "core_job": "Sürücü güvenlik koçluk kampanyasının hedef, kapsam, öncesi-sonrası sonuç ve yönetici onayını filo platformundan bağımsız belgelemek",
+        "target_customer": "Küçük ve orta ölçekli ticari filo güvenlik / operasyon müdürleri",
+        "product_mechanism": "Kullanıcı sağladığı olay/koçluk CSV'si, sürücü grubu, kampanya tarihi ve performans ölçütlerini manuel girer; tarayıcı içi deterministik karşılaştırma, dönemsel kanıt, istisna inceleme ve PDF/CSV sonuç oluşturur. Netradyne API, ücretli model, telematik canlı bağlantı zorunlu değildir.",
+        "why_now": "Netradyne 13 Ekim 2026'da canlı telematik kullanan sürücü Campaign Agent'ını müşterilerine duyurdu; farklı altyapılara sahip küçük filoların vendor bağımsız onay/kanıt ihtiyacı test edilmeye aday.",
+        "before_state": "Kampanya hedefleri, sürücü koçluğu ve sonuç CSV raporlarında dağınık; yöneticiye ölçülebilir kanıt sunmak zor.",
+        "after_state": "Campaign scope → baseline → dönemsel risk/koçluk CSV'si → hedef/sonuç farkı → insan doğrulaması → denetlenebilir kampanya özeti.",
+        "canonical_source_urls": [
+          "https://www.freightwaves.com/news/netradyne-expands-ai-agents-fleet-safety"
+        ]
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-5e2c7a5f6e7beb1b/001.json",
+  "valid_until": "2026-11-13T07:45:32Z"
+}

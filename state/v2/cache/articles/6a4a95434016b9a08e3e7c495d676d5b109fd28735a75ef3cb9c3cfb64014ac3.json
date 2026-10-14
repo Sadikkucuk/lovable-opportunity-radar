@@ -1,0 +1,28 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "6a4a95434016b9a08e3e7c495d676d5b109fd28735a75ef3cb9c3cfb64014ac3",
+  "decision": {
+    "article_key": "6c77c532760f465ac950d3dc",
+    "decision": "opportunity",
+    "reason": "ZDNet France 13 Ekim özgün haberi Frankfurt-Lizbon Lufthansa uçuşunda kabin içindeki güç bankasının tutuştuğunu ve Lyon'a yönlendirmeyi aktarıyor. Havayolu kabin emniyet/olay komitelerinin taşınabilir batarya olayı sırasında müdahale sırası, eşya bilgisi, kanıt ve disiplinler arası kontrolü kaydetmesi için dış API gerektirmeyen düzenli vaka defteri hipotezi çıkarıldı. Bu tür raporlamanın hâlihazırda havayolu SMS yazılımlarında bulunup bulunmadığı Validation'da araştırılmalıdır.",
+    "source_url": "https://www.zdnet.fr/actualites/zd-tech-pourquoi-votre-batterie-externe-est-devenue-le-cauchemar-des-avions-504839.htm",
+    "opportunities": [
+      {
+        "raw_id": "radar-manual-20261014-5e2c7a5f-cabin",
+        "canonical_key": "regional-airline-cabin-safety|review-portable-battery-cabin-fire-incidents|incident-device-evidence-response-human-closure-ledger",
+        "idea_name": "Cabin Battery Event Ledger — Kabin Batarya Olay Defteri",
+        "core_job": "Güç bankası/lityum pil kaynaklı kabin olaylarında cihaz, müdahale, uçuş etkisi, yer ekiplerine devir ve insan onaylı düzeltici tedbir kanıtını tutmak",
+        "target_customer": "Bölgesel havayolları uçuş emniyet, kabin operasyonu ve SMS olay inceleme ekipleri",
+        "product_mechanism": "Uçuş olay referansı, cihaz sınıfı, olay zaman çizelgesi, kabin ekibi müdahalesi, rapor belge bağlantısı, eğitim/inceleme onay listesi; manuel veri veya CSV ile çalışan deterministik vaka iş akışı ve PDF çıktı. Canlı uçak sistemi/harici servis kullanmaz.",
+        "why_now": "13 Ekim 2026 ZDNet haberi Lufthansa yolcu güç bankası yangını ve rotadan sapma olayını yeniden gündeme taşıdı; benzer olaylar için kanıt bütünlüğü B2B hipotezidir.",
+        "before_state": "Olayın cihaz detayı, müdahale, ekip/onay ve düzeltici faaliyet belgeleri ayrı emniyet formlarında takip edilir.",
+        "after_state": "Olay kaydı → personel/güvenlik müdahalesi → kanıt referansları → görev/sorumlu → emniyet review → kapatma ve eğitim özeti.",
+        "canonical_source_urls": [
+          "https://www.zdnet.fr/actualites/zd-tech-pourquoi-votre-batterie-externe-est-devenue-le-cauchemar-des-avions-504839.htm"
+        ]
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-5e2c7a5f6e7beb1b/001.json",
+  "valid_until": "2026-11-13T07:45:32Z"
+}
