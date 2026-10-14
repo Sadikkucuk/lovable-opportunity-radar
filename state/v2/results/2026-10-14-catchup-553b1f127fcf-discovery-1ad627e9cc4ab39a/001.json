@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-1ad627e9cc4ab39a",
+  "input_hash": "1ad627e9cc4ab39a2d79b2c6c3416974ac5a6961ae8b011b38548d2a933dc563",
+  "token": "3f72593a-d59a-4127-b2c9-506ca9b68b4e",
+  "finished_at": "2026-10-14T02:48:08.146Z",
+  "outcome": "done",
+  "reason": "10 haber ayrı olay/ürün/JTBD olarak değerlendirildi: 1 rüzgâr EPC şebeke bağlantı bekleme/temporary storage kabul hipotezi, 6 no_opportunity, 3 unverified. Eski fonlama, 2027 tasarım hedefi, sponsorlu HR agent ürünü ve HomeView pre-order gerçek zaman/kapsamda aktarıldı; dış runtime gerektiren agent ürünleri ve mevcut sağlayıcı iş akışı çoğaltılmadı. Rekabet kapısı geçilmeden kataloğa fikir eklenmedi.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "4ff4a9662f4d2dbc565f8819",
+        "decision": "no_opportunity",
+        "reason": "ZDNet Fr 13 Ekim OpenAI Dublin Avrupa merkezi/geliştirme ekibi büyütme haberi kurumsal faaliyet/işe alım sinyalidir. Satışa sunulan yeni model, açık veri, düzenleme veya müşteri operasyonel akış farkı değil. Harici AI model kullanımını bağımlılıksız Lovable SaaS sayıp ürün türetilmedi.",
+        "opportunities": []
+      },
+      {
+        "article_key": "502892acbac780d06faba22d",
+        "decision": "opportunity",
+        "reason": "Çin Envision Energy Ekim 2026 'AI风储一体机' whitepaper, kaynak batarya sanayi webinde 12 Ekim haberle doğrulandı. Metin yeni büyük türbinlerde kanat taşıma/dikme sırasında gizli kusurlar, kurulumdan şebeke bağlantısına bazen altı aydan uzun bekleme ve güvenilirlik/ekonomi/enerji depolama entegrasyonu sorunlarını anlatıyor. Bu şirketin çözümü tanıttığı pazarlama/teknoloji belge; gerçek saha ekonomisi tüm türbinlerde kanıtlanmadı. Wind EPC/owner ekipleri geçici depolama, enerji besleme ve ilk devreye alma kabul adımlarını ayrı ayrı modellemek zorunda olabilir. Browser-only manuel senaryo matrisi yeni ön fırsat, gerçek batarya kontrolü değildir.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-1ad627e9cc4ab39a:502892acbac780d06faba22d:1",
+            "canonical_key": "utility-scale-wind-project-owners|plan-turbine-grid-connection-delay-and-temporary-storage-commissioning-risk|offline-erection-to-grid-power-storage-and-acceptance-scenario-ledger",
+            "idea_name": "Rüzgâr Türbini Montaj–Şebeke Bekleme ve Depolama Kabul Defteri",
+            "core_job": "Büyük kara rüzgâr türbini dikiminden ilk şebeke bağlantısına kadar uzayan dönemde düşük bakım enerjisi, geçici depolama kapasitesi, güvenlik/koşul takibi ve test/uzaktan enerji besleme sorumluluğunu senaryolarla kanıtlamak",
+            "target_customer": "Utility-scale rüzgâr EPC, owner-engineer, enerji depolama proje planlama ve commissioning ekipleri",
+            "buyer": "Rüzgâr saha devreye alma ve BESS tasarım proje yöneticisi",
+            "product_mechanism": "Kullanıcıya ait türbin ID, saha kurulum tarihi, bağlantı tahmini ve gerçekleşen tarih, standby güç/enerji tüketimi, geçici BESS kWh/DoD, bakım/enerji kullanımı, gecikme nedeni, sigorta koşulu ve kabul test CSV/manuel girdileriyle deterministik zaman/kWh/boşluk hesaplayıp insan onaylı bekleme risk ve devreye alma raporu üretir. BMS/SCADA canlı API veya model çalıştırmaz.",
+            "why_now": "12 Ekim Envision Energy wind-storage whitepaper, büyük türbinlerin kurulmasıyla şebekeye bağlanması arasında aylar süren bakım enerji ihtiyacı ve gizli kusur riskini sektör sorunu olarak öne çıkarıyor.",
+            "before_state": "EPC takvimi, kurulu ama enerjiye alınmamış türbinin güç ihtiyacı, geçici batarya güvenilirliği ve grid commissioning testleri ayrı dosyalardadır.",
+            "after_state": "Geciken MW/türbin/saha, bekleme kWh, depolama dayanımı, taraf sorumluluğu ve onay kanıtı tek senaryoda raporlanır.",
+            "canonical_source_urls": [
+              "https://www.itdcw.com/news/focus/101215T262026.html"
+            ],
+            "supporting_article_ids": [
+              "fbebfd43d53f90607277c731"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.itdcw.com/news/focus/101215T262026.html",
+                "observation": "12 Ekim batarya sektörü makalesi Envision Energy AI wind-storage whitepaper; kurulum–şebeke arası yarım yıla varabilen gecikme ve rüzgâr varlığı güvenilirlik/safety/ekonomi belirsizliği şirket perspektifi olarak açıklanır."
+              }
+            ],
+            "scope_hint": "Global utility-scale wind + storage; manual design approval",
+            "local_evidence": {
+              "signals": [
+                "Kule dikim ve elektrik bağlantı takvimi arasında gerçekten saha kabul, standby güç ve koruma sorumluluğu yönetim ihtiyacı oluşur."
+              ],
+              "unknowns": [
+                "Gerçek müşteri sayaç/kWh ve enerji fiyat tasarrufu sahada doğrulanmadı.",
+                "İş akışı genel BESS owner FAT/SAT yazılımlarıyla doğrudan rekabet edebilir, TR/global sayıları incelenmeli.",
+                "İlerleyen whitepaper yeni yasal bağlayıcı belge değil."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "506d81981e23d6eb4f62e454",
+        "decision": "unverified",
+        "reason": "ZDNet Korea 13 Ekim K Connect AI etkinlik/birkaç teknoloji fuarının AI odaklı birleştirildiği haberi. Tam özgün sayfanın kapsamı, sözleşmeler ve mevcut tek bir buyer iş problemi doğrulanamadı; fuar şemsiye organizasyonu kendiliğinden bir ürün veya yürürlüğe giren standart değildir. FULL ORIGINAL SOURCE NOT VERIFIED.",
+        "opportunities": []
+      },
+      {
+        "article_key": "50b8c46f64fdce938e1dccd8",
+        "decision": "no_opportunity",
+        "reason": "TNW 13 Ekim Paycom işbirlikli yazısında HR manager karar yorgunluğu, payroll/tatil/masraf standart kural kararlarının otomasyonu savunuluyor. Paycom aynı insan kaynakları işini halihazırda kendi ürününde sağlıyor ve yazı 'Contributed' sponsorlu katkı olarak etiketli. Haber yeni niş gereksinim veya sıfır rakip olmadığını gösterir; Paycom'u yok sayarak basit checklist yeni fikir açılmadı. https://thenextweb.com/news/ai-hr-decision-fatigue-automation-paycom okundu.",
+        "opportunities": []
+      },
+      {
+        "article_key": "51267ea55c217d0c907c8f6c",
+        "decision": "no_opportunity",
+        "reason": "Dünya 13 Ekim fon yöneticilerinin AI hisse rallisinin balon olup olmadığı hakkındaki karşıt görüşleri sermaye piyasası yorumudur. Kesin balon tarihi/yüzde çöküş veya yeni düzenleyici yükümlülük değil. Genel hisse seçme/tahmin hizmeti sıfır harici veri beslemesi varsayamaz.",
+        "opportunities": []
+      },
+      {
+        "article_key": "5148b26bf1660c12fbe0e2b7",
+        "decision": "no_opportunity",
+        "reason": "Fortastra 8 Ekim 2026 30 milyon USD Series A kapanışı ve iki Watchdog V0 test uydusunun yakın yörünge RPO demo görevi Payload/Via Satellite haberlerinde doğrulandı. İkinci nesil operational fleet finansmanla hedefleniyor, tamamlanmış saha güvenlik ürünü ve yayınlanan flight telemetry yok. Askeri yörünge cihazlarının görev yeri/teknik verisi kamuya açık olmadığı ve müşteri satılabilir bağımsız workflow kanıtlanmadığı için haberden yeni ürün çıkarılmadı. https://www.satellitetoday.com/finance/2026/10/08/on-orbit-security-startup-fortastra-raises-30m-in-series-a/ okundu.",
+        "opportunities": []
+      },
+      {
+        "article_key": "5153fcefb5b4f81468048453",
+        "decision": "unverified",
+        "reason": "CLS 13 Ekim İngiltere kuruluşlarının frontier AI güvenlik yönetimini güçlendirmesini istediği kısa bildirimde kurum, hukuki yetki, önerilen kontrol listesi, yürürlük tarihi ve resmi belge özgün kaynaktan okunamadı. Güvenlik çağrısı yeni bağlayıcı UK AI Act gibi sunulmadı. Orijinal kaynağın sayısal metni doğrulanana kadar ürün yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "515a356f15e74ca1fdac9e53",
+        "decision": "no_opportunity",
+        "reason": "ShiftDelete.Net 13 Ekim Peugeot Hypersquare steer-by-wire kare direksiyonun 2027 seri üretim aracında planlandığını, ilkinin 2023 konsept gösterimi olduğunu anlatıyor. Yeni bugün satılan/sertifikalı ürün değil; OEM otomotiv emniyet-HIL/redundancy test araçları ve araç platformları zaten kritik kabul akışına sahip, yeni bağımsız ücretsiz Lovable nişi gösterilmedi. 170 derece ve direksiyon dönüş limitleri yalnız duyurulan tasarım, sahada bütün kullanıcılarca onaylanan güvenlik performansı değildir. https://shiftdelete.net/peugeot-hypersquare-israri-suruyor-kare-direksiyon-2027de-yollarda okundu.",
+        "opportunities": []
+      },
+      {
+        "article_key": "5171c2257a3b34461722e0a6",
+        "decision": "unverified",
+        "reason": "OFweek 13 Ekim Tencent iki AI agent ürünü kapattığı iddiasının hangi ürünler, resmi kapatma takvimi ve tenant veri eksport maddelerini kapsadığı orijinal tam metin ve ürün kapanış resmi sayfasıyla doğrulanamadı. Mevcut 13 Ekim catchup içinde Deno service sunset/DR migration iş ailesi zaten kayıtlı. Yeni kapanış verisi bulunmadan kopya ürün çıkmadı. FULL ARTICLE NOT VERIFIED.",
+        "opportunities": []
+      },
+      {
+        "article_key": "51a8243a1991c2bad4ae5a50",
+        "decision": "no_opportunity",
+        "reason": "Apple 13 Ekim HomeView 7 inç $299 akıllı ev ürünü pre-order olarak açıldı; Ars Technica ve Apple resmî Türkçe newsroom duyurusu destekliyor. Siri AI Apple iCloud ekosistemi/aboneliği gerektiren işlevdir ve Apple'ın kendisinde zaten sağlanan ev cihazı kontrol akışıdır; benzer yazılım çıkarmak harici HomeKit/API ve AI entegrasyonu ister. Ayrıca İngilizce Siri AI ülke desteği Apple TR duyurusunda seçili bölgelerle sınırlı; Türkiye'de bütün özellikleri varmış gibi belirtilmedi. Özgün https://www.apple.com/tr/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/ okundu.",
+        "opportunities": []
+      }
+    ]
+  }
+}
