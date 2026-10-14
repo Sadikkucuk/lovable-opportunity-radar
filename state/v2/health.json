@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-14T03:19:15Z",
+  "controller_observed_at": "2026-10-14T03:20:03Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-14T03:01:00Z",
@@ -95,9 +95,32 @@
         "schema_version": 1,
         "worker": 5,
         "invocation_id": "4a946a52-9fa0-4cd7-ba02-ff6971fc01ed",
-        "event": "started",
-        "at": "2026-10-14T03:18:57.987Z",
-        "path": "state/v2/worker-events/5/4a946a52-9fa0-4cd7-ba02-ff6971fc01ed/000-started.json"
+        "event": "finished",
+        "at": "2026-10-14T03:19:48.826Z",
+        "health_state": "attention_required",
+        "research_claims": 0,
+        "observed_counts": {
+          "done": 286,
+          "ready": 621,
+          "unverified": 7,
+          "leased": 1,
+          "unfinished": 622
+        },
+        "evidence_research": {
+          "followup_jobs": 13,
+          "open": 8,
+          "terminal_unverified": 0,
+          "exhausted_needing_manual_review": 0,
+          "max_rounds": 2
+        },
+        "receipts_this_invocation": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 1
+        },
+        "note": "Gece sağlık denetimi tamamlandı. W5 araştırma claim'i oluşturmadı. Controller güncel; controller_rejected_record kritik alarmı açık. night-stall dosyası merkezi ilerlemenin gerisinde.",
+        "path": "state/v2/worker-events/5/4a946a52-9fa0-4cd7-ba02-ff6971fc01ed/999-finished.json"
       },
       "receipts_this_invocation": 0,
       "write_and_receipt_verified": false,
