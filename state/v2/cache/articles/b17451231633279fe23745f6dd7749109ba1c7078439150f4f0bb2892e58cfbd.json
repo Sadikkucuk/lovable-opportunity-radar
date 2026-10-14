@@ -1,0 +1,43 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "b17451231633279fe23745f6dd7749109ba1c7078439150f4f0bb2892e58cfbd",
+  "decision": {
+    "article_key": "9b379db31290061dfdf37b3c",
+    "decision": "opportunity",
+    "reason": "Firefox 158'in 13 Ekim 2026'da JPEG XL varsayılan desteği ve PDF erişilebilirlik iyileştirmeleri sunması Mozilla sürüm özeti ve başka haberle doğrulandı. Web yayıncıları için dönüşüm dağıtımı, müşteri tarayıcı matrisi ve kalite kanıtının manuel/deterministik izlenmesi olası ayrı kullanım; JPEG XL dönüştürme veya PDF render etme için çalışma zamanı ücretli servis önerilmez.",
+    "canonical_source_url": "https://www.teknoblog.com/firefox-158-jpeg-xl-destegini-ekliyor/",
+    "source_read_state": "original_or_secondary_checked",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-8903de8ffa9488d2:9b379db31290061dfdf37b3c:01",
+        "canonical_key": "web-publishers|plan-jpeg-xl-migration-and-browser-rollout-coverage|browser-asset-compatibility-and-conversion-evidence-planner",
+        "idea_name": "JPEG XL Migration Readiness Planner",
+        "target_customer": "Web yayıncıları, e-ticaret platformları ve frontend performans mühendisleri",
+        "buyer": "Web performans / frontend teknik lideri",
+        "core_job": "JPEG XL dönüşüm planında varlık tiplerini, tarayıcı dağıtım riskini ve kalite test kanıtını insan onayıyla kontrol etmek",
+        "product_mechanism": "Kullanıcının girdiği asset manifest CSV, JPEG XL/format/fallback desteği, hedef browser sürümleri, byte hedefi, test örnekleme tablosu ve dönüşüm kabul kanıtını tarayıcıda deterministik kontrol; dosya dönüştürme, dış codec servisi, AI gerektirmez",
+        "why_now": "Firefox 158 ile 13 Ekimde JPEG XL desteğinin yayılması ve yeni PDF erişilebilirlik iyileştirmeleri; browser format rollout için kaynak/test listesinin önemi",
+        "before_state": "Format/fallback kararları, medya listesi ve tarayıcı doğrulama sonuçları dağınık",
+        "after_state": "Asset envanteri → destek koşulları → fallback/test listesi → ölçülen dosya boyutu farkı → owner signoff ve PDF export",
+        "scope_hint": "Dünya",
+        "canonical_source_urls": [
+          "https://www.teknoblog.com/firefox-158-jpeg-xl-destegini-ekliyor/",
+          "https://jpegxl.info/media/newsroom.html"
+        ],
+        "supporting_article_ids": [
+          "3b383e57d6389098bea4ff5d"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.teknoblog.com/firefox-158-jpeg-xl-destegini-ekliyor/",
+            "observation": "13 Oct Firefox 158 stable added JPEG XL and accessible PDF features, corroborated with JPEG XL newsroom and browser standards coverage.",
+            "observed_at": "2026-10-14T08:04:54.893Z",
+            "caveat": "Potential app independently competes with image management services; competition/triviality not yet validated."
+          }
+        ]
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-8903de8ffa9488d2/001.json",
+  "valid_until": "2026-11-13T08:04:54Z"
+}
