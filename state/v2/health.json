@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-14T02:05:12Z",
+  "controller_observed_at": "2026-10-14T02:07:06Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-14T01:01:00Z",
   "ready_jobs": 640,
-  "unfinished_jobs": 641,
-  "last_verified_progress_at": "2026-10-13T23:19:48Z",
+  "unfinished_jobs": 640,
+  "last_verified_progress_at": "2026-10-14T02:06:53Z",
   "workers": {
     "1": {
       "last_started_at": "2026-10-14T02:03:38.862Z",
@@ -21,9 +21,9 @@
         "claim_path": "state/v2/claims/2026-10-14-catchup-553b1f127fcf-discovery-09915d530b700e59/001.json",
         "path": "state/v2/worker-events/1/42ccbf00-642e-474e-a14c-78210456bba4/001-progress.json"
       },
-      "receipts_this_invocation": 0,
+      "receipts_this_invocation": 1,
       "write_and_receipt_verified": true,
-      "last_receipt_at": "2026-10-13T04:09:13.821Z"
+      "last_receipt_at": "2026-10-14T02:06:53.330Z"
     },
     "2": {
       "last_started_at": "2026-10-13T22:00:07.642Z",
@@ -104,8 +104,8 @@
     "window_minutes": 120.0,
     "stages": {
       "discovery": {
-        "completed_in_window": 0,
-        "known_remaining": 433,
+        "completed_in_window": 1,
+        "known_remaining": 432,
         "observed_jobs_per_hour": null,
         "estimated_minutes_for_stage": null
       },
@@ -187,12 +187,6 @@
       "worker": 5,
       "severity": "critical",
       "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
-    },
-    {
-      "code": "queue_no_progress",
-      "worker": null,
-      "severity": "critical",
-      "user_action": "30 dakikadır doğrulanmış sonuç yok. Son kaydı ve Worker görev geçmişini inceleyin; erişim/kota nedenini varsaymayın."
     },
     {
       "code": "controller_rejected_record",

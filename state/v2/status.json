@@ -4,10 +4,9 @@
   "protected_records": 89,
   "catalog_count": 91,
   "counts": {
-    "done": 264,
+    "done": 265,
     "ready": 640,
-    "unverified": 7,
-    "leased": 1
+    "unverified": 7
   },
   "evidence_research": {
     "followup_jobs": 10,
@@ -141,15 +140,19 @@
       "processing_status": "in_progress",
       "job_counts": {
         "ready": 153,
-        "leased": 1
+        "done": 1
       },
       "validation_decisions": {},
-      "article_decisions": {},
-      "articles_processed": 0,
+      "article_decisions": {
+        "opportunity": 6,
+        "no_opportunity": 3,
+        "unverified": 1
+      },
+      "articles_processed": 10,
       "articles_expected": 1538,
       "publication_status": "github_release_available",
       "site_delivery": "not_observed_by_controller",
-      "state_changed_at": "2026-10-14T02:04:54Z"
+      "state_changed_at": "2026-10-14T02:07:06Z"
     }
   ],
   "errors": [
@@ -203,19 +206,13 @@
         "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
       },
       {
-        "code": "queue_no_progress",
-        "worker": null,
-        "severity": "critical",
-        "user_action": "30 dakikadır doğrulanmış sonuç yok. Son kaydı ve Worker görev geçmişini inceleyin; erişim/kota nedenini varsaymayın."
-      },
-      {
         "code": "controller_rejected_record",
         "worker": null,
         "severity": "critical",
         "user_action": "Durum raporundaki hatalı kayıt incelenmeli; doğrulanmış fikirler yayında kalır."
       }
     ],
-    "last_verified_progress_at": "2026-10-13T23:19:48Z",
-    "controller_observed_at": "2026-10-14T02:05:12Z"
+    "last_verified_progress_at": "2026-10-14T02:06:53Z",
+    "controller_observed_at": "2026-10-14T02:07:06Z"
   }
 }
