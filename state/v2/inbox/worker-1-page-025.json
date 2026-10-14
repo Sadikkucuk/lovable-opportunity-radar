@@ -4,27 +4,13 @@
   "queue_mode": "shared",
   "current_run": "2026-10-14-catchup-553b1f127fcf",
   "lease_minutes": 30,
-  "ready_count": 612,
-  "job_count": 612,
-  "queue_revision": "7462677d6b887b6890f3593ed63bb8fd31543ec991bae5010b679aa46f746ecc",
+  "ready_count": 611,
+  "job_count": 611,
+  "queue_revision": "41450791fbb8e87ffc8fa54dec34127ecea42a6cd8fe806b92c8a8e95e6b03e8",
   "page": 25,
   "page_count": 31,
   "next_page": "state/v2/inbox/worker-1-page-026.json",
   "jobs": [
-    {
-      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-b9f07f419e115eb8",
-      "path": "state/v2/jobs/2026-10-13-catchup-e3a10c28a635-validation-b9f07f419e115eb8.json",
-      "run_id": "2026-10-13-catchup-e3a10c28a635",
-      "kind": "validation",
-      "input_hash": "b9f07f419e115eb8cf8a4d80cd82fec4b003b7a51f9083cc1c3cff23bf5e1d80",
-      "legacy_lane": 3,
-      "queue_group": "backlog",
-      "preferred_worker": 3,
-      "state": "ready",
-      "attempt": 1,
-      "claim_path": "state/v2/claims/2026-10-13-catchup-e3a10c28a635-validation-b9f07f419e115eb8/001.json",
-      "result_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-validation-b9f07f419e115eb8/001.json"
-    },
     {
       "job_id": "2026-10-12-4bb3b46a63-discovery-76dce5154cfe5e10",
       "path": "state/v2/jobs/2026-10-12-4bb3b46a63-discovery-76dce5154cfe5e10.json",
@@ -290,6 +276,20 @@
       "attempt": 1,
       "claim_path": "state/v2/claims/2026-10-12-4bb3b46a63-discovery-a7dae66a502ecf07/001.json",
       "result_path": "state/v2/results/2026-10-12-4bb3b46a63-discovery-a7dae66a502ecf07/001.json"
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-cd7f2e655c6880d8",
+      "path": "state/v2/jobs/2026-10-13-catchup-e3a10c28a635-validation-cd7f2e655c6880d8.json",
+      "run_id": "2026-10-13-catchup-e3a10c28a635",
+      "kind": "validation",
+      "input_hash": "cd7f2e655c6880d85d5180f4bb382e868f218e734a7f5564d4cbd69ebaad7478",
+      "legacy_lane": 1,
+      "queue_group": "backlog",
+      "preferred_worker": 5,
+      "state": "ready",
+      "attempt": 1,
+      "claim_path": "state/v2/claims/2026-10-13-catchup-e3a10c28a635-validation-cd7f2e655c6880d8/001.json",
+      "result_path": "state/v2/results/2026-10-13-catchup-e3a10c28a635-validation-cd7f2e655c6880d8/001.json"
     }
   ]
 }
