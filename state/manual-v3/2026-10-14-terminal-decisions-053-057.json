@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-14",
+  "kind": "manual_v3_competitor_validation",
+  "total": 5,
+  "records": [
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-86570495abd306d9",
+      "input_hash": "86570495abd306d95647f4d8cf87b28d314becaa8b18a24fa4839d89030261f5",
+      "candidate_name": "Green Skills Role-to-Training Gap Ledger",
+      "canonical_key": "italian-manufacturing-smes|map-green-skill-role-gaps-to-upskilling-evidence|role-skill-training-and-readiness-ledger",
+      "customer": "İtalya üretim ve el sanatları KOBİ'lerinin İK/eğitim planlama ekipleri",
+      "job": "Zor bulunan sürdürülebilir üretim becerileri için rol-kritik yetkinlik, kurs, iç eğitim ve kanıt tamamlanma boşluklarını belirlemek",
+      "mechanism": "Kullanıcı rol/yetkinlik/eğitim saati/verifikasyon CSV'si, insan tarafından gözlemlenen beceri, yenileme tarihi, ekip vardiya kapsamı matrisi",
+      "trigger": "https://www.confartigianato.it/2026/10/green-skill-introvabili-16-milioni-di-lavoratori-il-report-di-confartigianato-allevento-seize-the-change/",
+      "manual_decision": "rejected",
+      "reason_code": "four_direct_global_workflow_competitors",
+      "market_rationale": "Italian manufacturing SME HR staff assessing required job-role skills, gaps, assigned learning and employee validation can do essentially the same in skills/talent platforms.",
+      "global_direct_competitor_count_identified": 4,
+      "global_competitors": [
+        {
+          "name": "Cornerstone",
+          "first_party_url": "https://www.cornerstoneondemand.com/",
+          "matching_workflow": "Skills assessment, role competency development and learning completion"
+        },
+        {
+          "name": "SAP SuccessFactors Learning",
+          "first_party_url": "https://www.sap.com/products/hcm/corporate-lms.html",
+          "matching_workflow": "Skills gaps, learning plans and compliance training proof"
+        },
+        {
+          "name": "360Learning",
+          "first_party_url": "https://360learning.com/",
+          "matching_workflow": "Skill gap review, role training assignment and completion"
+        },
+        {
+          "name": "Degreed",
+          "first_party_url": "https://degreed.com/",
+          "matching_workflow": "Employee skill assessment, target capabilities and learning pathways"
+        }
+      ],
+      "competition_review_date": "2026-10-14",
+      "tr_competitor_count": null,
+      "controller_receipt": false,
+      "publication_eligible": false
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-8fdaf276a0f322bd",
+      "input_hash": "8fdaf276a0f322bd0f36226ec79b2a85a3ee93d0d06430fe8f33e8970fcafda3",
+      "candidate_name": "Ara Mamul Kıtlık Üretim Senaryosu",
+      "canonical_key": "electronics-manufacturing-planners|simulate-component-shortage-impact-on-workorders|manual-bom-stock-alternate-and-workorder-triage",
+      "customer": "Almanya ağırlıklı elektronik ve optik ekipman üreticileri",
+      "job": "Kritik parça eksikliğinin sipariş teslim, üretim çizelgesi ve ikame seçeneklerine etkisini öngörmek",
+      "mechanism": "Manuel BOM, sipariş önceliği, mevcut stok, ETA, alternatif onayı ve gecikme maliyeti ile senaryo hesaplama",
+      "trigger": "https://www.ifo.de/en/facts/2026-10-12/material-shortages-german-manufacturing-rise-again",
+      "manual_decision": "rejected",
+      "reason_code": "four_direct_global_workflow_competitors",
+      "market_rationale": "Electronics production planners already use material/BOM availability, production-capacity constraints, alternate sourcing, promised shipment ETAs and what-if scenarios across four production planning tools.",
+      "global_direct_competitor_count_identified": 4,
+      "global_competitors": [
+        {
+          "name": "SAP IBP",
+          "first_party_url": "https://help.sap.com/docs/SAP_INTEGRATED_BUSINESS_PLANNING/252c83bbf8184915a56d4cdd0917ef06/aa7171c1f43b4060aeaf57183c648282.html",
+          "matching_workflow": "Alternative constrained production plans and what-if simulations"
+        },
+        {
+          "name": "o9 Digital Brain",
+          "first_party_url": "https://o9solutions.com/articles/supply-chain-planning-transformation-for-a-global-home-device-manufacturer",
+          "matching_workflow": "Multi-plant material bottlenecks, constrained simulations and decisions"
+        },
+        {
+          "name": "Kinaxis Maestro",
+          "first_party_url": "https://www.kinaxis.com/en/products/maestro",
+          "matching_workflow": "Concurrent what-if plan around supply constraints and inventory"
+        },
+        {
+          "name": "Anaplan Supply Chain",
+          "first_party_url": "https://www.anaplan.com/solutions/supply-chain-planning/",
+          "matching_workflow": "Demand, supply, stock and cost scenario planning"
+        }
+      ],
+      "competition_review_date": "2026-10-14",
+      "tr_competitor_count": null,
+      "controller_receipt": false,
+      "publication_eligible": false
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-b24e8ebde4659ea2",
+      "input_hash": "b24e8ebde4659ea22a8b198f82d6b654198d969a2162be5e2ee07e55e1523059",
+      "candidate_name": "Local LLM Position Stability Benchmark Ledger",
+      "canonical_key": "local-model-evaluation-teams|detect-retrieval-position-sensitivity-from-exported-model-answers|prompt-position-answer-comparison-and-confidence-ledger",
+      "customer": "Ücretsiz yerel LLM kullanan geliştirici ve kurum test ekipleri",
+      "job": "Sabit içerik soruları aynı bilgi farklı uzun bağlam pozisyonlarında yerleşince cevabın tutarlılığını kanıtlamak",
+      "mechanism": "Kullanıcı tarafından getirilen prompt-test/cevap CSV dosyalarını farklı konum ve benchmark cevaplarına göre deterministic skorlayan JS karşılaştırıcı",
+      "trigger": "https://www.scmp.com/tech/tech-trends/article/3370550/deepseeks-cost-saving-ai-may-lead-inaccuracy-model-performance-research",
+      "manual_decision": "rejected",
+      "reason_code": "four_direct_global_workflow_competitors",
+      "market_rationale": "LLM evaluation teams already import prompt/response golden datasets, run or import deterministic reference scoring and compare versions/conditions; relative text location is a configurable testing dimension.",
+      "global_direct_competitor_count_identified": 4,
+      "global_competitors": [
+        {
+          "name": "LangSmith",
+          "first_party_url": "https://docs.langchain.com/langsmith/evaluation-types",
+          "matching_workflow": "Dataset-based evaluation and feedback/rubric scoring"
+        },
+        {
+          "name": "Langfuse",
+          "first_party_url": "https://langfuse.com/docs/evaluation/experiments/compare-experiments",
+          "matching_workflow": "Experiment and dataset scoring comparisons"
+        },
+        {
+          "name": "Braintrust",
+          "first_party_url": "https://www.braintrust.dev/docs/evaluate",
+          "matching_workflow": "Dataset-backed AI response scoring and experiment comparisons"
+        },
+        {
+          "name": "Promptfoo",
+          "first_party_url": "https://www.promptfoo.dev/docs/configuration/expected-outputs/",
+          "matching_workflow": "Test case dataset, expected response and assertion metrics"
+        }
+      ],
+      "competition_review_date": "2026-10-14",
+      "tr_competitor_count": null,
+      "controller_receipt": false,
+      "publication_eligible": false
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-b3cfa66ac6a354f0",
+      "input_hash": "b3cfa66ac6a354f0c80b2a0c8684325a5dbd00ae4493f6835952b9e3b2da7fa4",
+      "candidate_name": "SaaS Yönetim Paneli Kesinti Operasyon Defteri",
+      "canonical_key": "small-it-ops-teams|document-control-plane-outage-fallback-and-recovery|incident-impact-task-deferment-and-rollback-evidence-ledger",
+      "customer": "Microsoft 365 kullanan KOBİ BT yöneticileri",
+      "job": "EAC gibi kontrol paneli kesildiğinde ertelenen BT işlemlerini, alternatif prosedürleri ve servis normale dönünce kapanışını izlemek",
+      "mechanism": "Kullanıcının manuel olay zaman çizelgesi, etkilenen yönetici işleri, geri alma/alternatif onayı, ertelenen iş kuyruğu ve kapanış kanıtı CSV/PDF",
+      "trigger": "https://www.theregister.com/saas/2026/10/12/microsoft-blames-a-configuration-change-for-exchange-admin-center-tumble/5302698",
+      "manual_decision": "rejected",
+      "reason_code": "four_direct_global_workflow_competitors",
+      "market_rationale": "Microsoft 365 IT support teams can log an outage, list affected admin actions, assign recovery/contingency work, track updates and verify incident closure with four IT incident systems.",
+      "global_direct_competitor_count_identified": 4,
+      "global_competitors": [
+        {
+          "name": "ServiceNow Incident Management",
+          "first_party_url": "https://www.servicenow.com/products/itsm/incident-management.html",
+          "matching_workflow": "Affected-service incident tasks, ownership and closure"
+        },
+        {
+          "name": "Jira Service Management",
+          "first_party_url": "https://support.atlassian.com/jira-service-management-cloud/docs/the-incident-management-workflow-for-service-projects/",
+          "matching_workflow": "Service incident workflow, alternatives, actions and resolution"
+        },
+        {
+          "name": "PagerDuty Incident Management",
+          "first_party_url": "https://www.pagerduty.com/platform/incident-management/",
+          "matching_workflow": "Service downtime response actions and resolution status"
+        },
+        {
+          "name": "Freshservice",
+          "first_party_url": "https://www.freshworks.com/freshservice/it-service-management/incident-management/",
+          "matching_workflow": "IT service interruption case, assignment, workaround and closure"
+        }
+      ],
+      "competition_review_date": "2026-10-14",
+      "tr_competitor_count": null,
+      "controller_receipt": false,
+      "publication_eligible": false
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-a45b2e03ec84cfb1",
+      "input_hash": "a45b2e03ec84cfb14eb43a512b7d662ab26240ba743213fbb1db6c3c16c3cd8c",
+      "candidate_name": "Medium-Voltage Switchgear FAT/SAT Evidence Desk",
+      "canonical_key": "industrial-epc-medium-voltage-project-teams|trace-switchgear-panel-factory-and-site-acceptance|serial-device-test-punchlist-and-approval-ledger",
+      "customer": "Yüzer enerji santralleri, EPC ve orta gerilim saha kurulum/kalite ekipleri",
+      "job": "Kesici/pano partilerini fabrikadan saha devreye alma testine kadar seri no., üretici dokümanı, FAT/SAT sonuçları ve düzeltme kapanışıyla izlemek",
+      "mechanism": "Manuel üretici cihaz listesi, seri no., saha/pano konumu, izolasyon/koruma testi, kalibrasyon, NCR, onay, PDF/CSV kabul dosyası; SCADA ve gerçek yüksek gerilim kontrolü yok",
+      "trigger": "https://www.aa.com.tr/tr/enerjiterminali/elektrik/karadeniz-holding-ve-siemens-turkiye-akilli-altyapilar-elektrifikasyon-ve-otomasyonda-isbirligine-imza-atti/60183",
+      "manual_decision": "rejected",
+      "reason_code": "four_direct_global_workflow_competitors",
+      "market_rationale": "Power EPC commissioning teams already link equipment serial records, factory tests, onsite commissioning checklists, punch/NCR, owner review and sign-off in four dedicated commissioning tools.",
+      "global_direct_competitor_count_identified": 4,
+      "global_competitors": [
+        {
+          "name": "Bluerithm",
+          "first_party_url": "https://bluerithm.com/",
+          "matching_workflow": "Industrial and energy commissioning test forms issues and approval"
+        },
+        {
+          "name": "CxAlloy",
+          "first_party_url": "https://www.cxalloy.com/",
+          "matching_workflow": "Equipment commissioning forms, issues and signed closeout"
+        },
+        {
+          "name": "Autodesk Construction Cloud",
+          "first_party_url": "https://construction.autodesk.com/workflows/construction-closeout-project-handover/",
+          "matching_workflow": "Field system equipment checks, defects, documentation and handover"
+        },
+        {
+          "name": "Procore Quality & Safety",
+          "first_party_url": "https://www.procore.com/quality-and-safety",
+          "matching_workflow": "Site inspections, test issues and acceptance documentation"
+        }
+      ],
+      "competition_review_date": "2026-10-14",
+      "tr_competitor_count": null,
+      "controller_receipt": false,
+      "publication_eligible": false
+    }
+  ]
+}
