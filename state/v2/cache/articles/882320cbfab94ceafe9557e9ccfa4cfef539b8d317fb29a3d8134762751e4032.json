@@ -1,0 +1,37 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "882320cbfab94ceafe9557e9ccfa4cfef539b8d317fb29a3d8134762751e4032",
+  "decision": {
+    "article_key": "4c49f91cc019b7883dd9b59a",
+    "decision": "opportunity",
+    "reason": "Scaleway primary press release confirms Oct 13 AMD MI355X/ROCm cloud deployment in Sweden; infrastructure engineers comparing Nvidia/CUDA portability now face hardware/software compatibility and economic evidence tracking.",
+    "canonical_source_url": "https://www.scaleway.com/en/news/scaleway-expands-ai-infrastructure-in-europe-with-new-amd-instinct-gpu-based-supercomputer-in-sweden/",
+    "article_title": "«On sort de notre dépendance à Nvidia sur les GPU» : Scaleway devient le premier acteur du cloud à commercialiser en Europe de la puissance de calcul basée sur les cartes graphiques d’AMD - L'Usine Nouvelle",
+    "published_at": "2026-10-13T16:10:00Z",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-369679286a746af5:4c49f91cc019b7883dd9b59a:01",
+        "canonical_key": "eu-ai-infrastructure-teams|compare-amd-rocm-and-nvidia-cuda-workload-portability-readiness|user-input-software-compatibility-cost-and-runtime-test-evidence-matrix",
+        "idea_name": "GPU Cloud Portability Preflight",
+        "core_job": "Compare workload's library support, build/reproducibility, observed performance and cost against AMD ROCm or Nvidia CUDA hardware",
+        "target_customer": "European enterprise cloud/AI infrastructure architects and finance reviewers",
+        "product_mechanism": "Manually entered dependency/driver/ROCm-CUDA matrix → provider configuration → acceptance/performance CSV → migration issue and sign-off",
+        "why_now": "Scaleway announced first Swedish AMD MI355X cloud supercomputer and expanded European GPU vendor choices on Oct.13",
+        "before_state": "Vendor switching involves undocumented runtime/kernel/library compatibility and price assumptions",
+        "after_state": "Portable evidence matrix and human-reviewed pilot test criteria without connecting to GPUs or paid API",
+        "canonical_source_urls": [
+          "https://www.scaleway.com/en/news/scaleway-expands-ai-infrastructure-in-europe-with-new-amd-instinct-gpu-based-supercomputer-in-sweden/"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.scaleway.com/en/news/scaleway-expands-ai-infrastructure-in-europe-with-new-amd-instinct-gpu-based-supercomputer-in-sweden/",
+            "observation": "Scaleway first-party announcement specifies AMD MI355X GPUs and ROCm ecosystem, commercial offering for European companies."
+          }
+        ],
+        "scope_hint": "Dünya"
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-369679286a746af5/001.json",
+  "valid_until": "2026-11-13T07:19:56Z"
+}
