@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "record_type": "manual_v3_terminal_market_decisions",
+  "count": 4,
+  "records": [
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-a755b2bf13a0f727",
+      "input_hash": "a755b2bf13a0f7272332291b0daa02ec104344012d962d8ae97d936b794ca639",
+      "name": "ASEAN Power-Plant Switch Decision Ledger",
+      "customer": "Vietnam, Filipinler ve yakın ASEAN bölgesi elektrik santrali proje sahipleri ve yatırım komitesi ekipleri",
+      "jtbd": "Gaz türbini tedariki gecikmesi/LNG fiyat riski ve güneş-rüzgâr alternatiflerinde yatırım zamanlaması ve kaynak sürekliliği kararı vermek",
+      "mechanism": "Kullanıcının sağladığı kapasite MW, turbine teslim ETA, izin tarihi, LNG/yenilenebilir enerji varsayımları, capex ve beklenen enerji geliri CSV'lerini tarayıcıda NPV/yıllık nakit akışı duyarlılığına çevirmek; canlı piyasa/üçüncü taraf API yok",
+      "original_article_url": "https://www.reuters.com/business/energy/emerging-asias-power-driven-lng-demand-risk-renewables-gain-ground-2026-10-12/",
+      "decision": "rejected",
+      "disqualification": "four_documented_global_products_serving_overlapping_core_job",
+      "reason": "Power project developers already contrast LNG/gas thermal project schedule and economic risks with solar/wind alternatives, compare CAPEX/OPEX/NPV and optimize planned capacity using four financial and generation scenario platforms. The ASEAN country is a parameter.",
+      "global_competitors": [
+        {
+          "name": "HOMER Pro",
+          "official_url": "https://homerenergy.com/products/pro/docs/latest/compare_economics.html",
+          "functional_overlap": "Gas/renewable project selection NPV, IRR and capital/operating cash flows"
+        },
+        {
+          "name": "Energy Exemplar PLEXOS",
+          "official_url": "https://www.energyexemplar.com/plexos",
+          "functional_overlap": "Gas versus wind/solar alternatives and project asset valuation"
+        },
+        {
+          "name": "NREL System Advisor Model",
+          "official_url": "https://sam.nrel.gov/",
+          "functional_overlap": "Project financial comparison renewable generation/NPV"
+        },
+        {
+          "name": "RETScreen Expert",
+          "official_url": "https://www.nrcan.gc.ca/maps-tools-and-publications/tools/modelling-tools/retscreen/7465",
+          "functional_overlap": "Clean energy project feasibility, financial and risk assessments"
+        }
+      ],
+      "global_direct_competitor_count": 4,
+      "market_date": "2026-10-14",
+      "turkiye_direct_count": null,
+      "evidence_method": "function-level comparison using primary vendor pages",
+      "v2_accepted": false,
+      "publication_status": "not_qualified"
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-82b07e924afc8085",
+      "input_hash": "82b07e924afc8085b0f05d70b79879f63dc5ee66ceeda2f87eac6ef17673f841",
+      "name": "City ITS Coverage Gap Workbook",
+      "customer": "Belediye ulaşım/ITS planlama dairesi",
+      "jtbd": "Kent içi yol kesimleri için ITS kurulum eksiğini ve yatırım gerekçesini karar tablosunda göstermek",
+      "mechanism": "Yerel idarenin elle girdiği yol-kesimi CSV envanteri, ITS bileşeni kapsama oranı, öncelik puanı, bütçe ve belge matrisi",
+      "original_article_url": "https://www.etnews.com/20261011000035",
+      "decision": "rejected",
+      "disqualification": "four_documented_global_products_serving_overlapping_core_job",
+      "reason": "Municipal ITS planners use geocoded road/segment inventories, project coverage maps, investment prioritization, alternative network proposals and corridor modeling in four municipal transport-planning GIS/simulation platforms.",
+      "global_competitors": [
+        {
+          "name": "Bentley OpenPaths",
+          "official_url": "https://www.bentley.com/products/openpaths/",
+          "functional_overlap": "City road network and investment scenario transport modeling"
+        },
+        {
+          "name": "PTV Visum",
+          "official_url": "https://www.ptvgroup.com/en/products/ptv-visum",
+          "functional_overlap": "Transport network coverage and infrastructure planning alternatives"
+        },
+        {
+          "name": "Aimsun Next",
+          "official_url": "https://www.aimsun.com/aimsun-next-transport-modelling-software/",
+          "functional_overlap": "City-wide traffic/ITS network gap evaluation and scenarios"
+        },
+        {
+          "name": "Esri ArcGIS",
+          "official_url": "https://www.esri.com/en-us/industries/transportation/overview",
+          "functional_overlap": "Roadway mapping, network spatial analysis and capital prioritization"
+        }
+      ],
+      "global_direct_competitor_count": 4,
+      "market_date": "2026-10-14",
+      "turkiye_direct_count": null,
+      "evidence_method": "function-level comparison using primary vendor pages",
+      "v2_accepted": false,
+      "publication_status": "not_qualified"
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-857e3038b8ce0dfd",
+      "input_hash": "857e3038b8ce0dfd538cccd8a1fb003f01ce8c772cad3f5d0e9807186328c8c4",
+      "name": "Telekom AI Agent İşlem Sonucu Test Defteri",
+      "customer": "Mobil operatör BSS/CRM kalite ve müşteri deneyimi test ekipleri",
+      "jtbd": "Fatura ödeme veya roaming satın alma talebinin agent konuşmasından gerçek BSS/ödeme işlemine eksiksiz, idempotent ve onaylı geçtiğini kanıtlamak",
+      "mechanism": "Operatörün manuel sağladığı anonimleştirilmiş intent, agent action, payment/roaming receipt ve fulfilment CSV/JSON dosyalarını eşleştirip çift tahsilat/boş sipariş/iptal istisnası üreten deterministik tarayıcı aracı",
+      "original_article_url": "https://www.lg.co.kr/media/release/30666",
+      "decision": "rejected",
+      "disqualification": "four_documented_global_products_serving_overlapping_core_job",
+      "reason": "Telco service-assurance QA already constructs customer intent to downstream API/BSS transaction test cases, validates outcomes, billing and fulfillment, and checks regressions against expected results in four independently offered customer journey/test tools.",
+      "global_competitors": [
+        {
+          "name": "Cyara Velocity",
+          "official_url": "https://cyara.com/products/velocity/",
+          "functional_overlap": "Conversational/agentic test intent to specialized backend API actions"
+        },
+        {
+          "name": "Tricentis Tosca",
+          "official_url": "https://www.tricentis.com/products/automate-continuous-testing-tosca",
+          "functional_overlap": "End-to-end enterprise CRM, billing, backend and UI test verification"
+        },
+        {
+          "name": "Keysight Eggplant",
+          "official_url": "https://www.keysight.com/us/en/products/design-engineering-software/software-quality-engineering/industries/retail.html",
+          "functional_overlap": "Customer action to payment receipt order full E2E transaction test"
+        },
+        {
+          "name": "Hammer",
+          "official_url": "https://www.hammer.com/",
+          "functional_overlap": "Voice and enterprise contact-center journey test automation and follow-through"
+        }
+      ],
+      "global_direct_competitor_count": 4,
+      "market_date": "2026-10-14",
+      "turkiye_direct_count": null,
+      "evidence_method": "function-level comparison using primary vendor pages",
+      "v2_accepted": false,
+      "publication_status": "not_qualified"
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-a0f95f7d4e77457b",
+      "input_hash": "a0f95f7d4e77457baf47d971583dfe48970c7a55515c670427ecef80053666c6",
+      "name": "Dynamic EV Road-Charging Field Test Ledger",
+      "customer": "Kablosuz EV yol şarjı pilotu mühendislik yüklenicileri",
+      "jtbd": "Hareket hâlinde enerji transfer testlerini araç hızı, gerçek güç, verim, güvenlik ve onay koşulu ile tekrarlanabilir kabul kanıtına çevirmek",
+      "mechanism": "Manuel veya CSV kayıtlı hız-süre-enerji, yol segmenti, sensör kalibrasyonu, ısınma, operasyon kesinti raporu ve emniyet kontrolü; gerçek otomatik güç kontrolü yok",
+      "original_article_url": "https://global.honda/en/topics/2026/c_2026-10-05beng.html?from=topicslink_image",
+      "decision": "rejected",
+      "disqualification": "four_documented_global_products_serving_overlapping_core_job",
+      "reason": "Dynamic wireless charging pilot teams validate physical tests and compare observed vehicle speed, input/output power, efficiency and thermal/time series using engineering validation platforms that import measured data and retain repeatable test trace. Four mature engineering test suites serve the test engineer buyer.",
+      "global_competitors": [
+        {
+          "name": "NI LabVIEW",
+          "official_url": "https://www.ni.com/en/shop/labview.html",
+          "functional_overlap": "Instrument test measurements and physical test datasets"
+        },
+        {
+          "name": "DewesoftX",
+          "official_url": "https://dewesoft.com/products/dewesoftx",
+          "functional_overlap": "Automotive/electrical power measurements, review and test report"
+        },
+        {
+          "name": "Vector CANoe",
+          "official_url": "https://www.vector.com/int/en/products/products-a-z/software/canoe/",
+          "functional_overlap": "Automotive in-vehicle verification scenarios and measurement trace"
+        },
+        {
+          "name": "ETAS INCA",
+          "official_url": "https://www.etas.com/en/products/inca_software_products.php",
+          "functional_overlap": "Automotive ECU calibration measurement and test evidence"
+        }
+      ],
+      "global_direct_competitor_count": 4,
+      "market_date": "2026-10-14",
+      "turkiye_direct_count": null,
+      "evidence_method": "function-level comparison using primary vendor pages",
+      "v2_accepted": false,
+      "publication_status": "not_qualified"
+    }
+  ]
+}
