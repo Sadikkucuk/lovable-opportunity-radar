@@ -1,0 +1,112 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-d05a7bf9283b3f68",
+  "input_hash": "d05a7bf9283b3f68c5ea87e0b65e8aa2fc50f478475a3fe589836d301964dcf6",
+  "token": "manual-v3-20261014-d05a7bf9283b3f68-1",
+  "finished_at": "2026-10-14T08:21:49.627Z",
+  "outcome": "done",
+  "reason": "10 haber için 1 NYC 5 milyon dolar mesai dışı teslimat teşvik programı ham fırsatı ve 9 no_opportunity kararı, kaynak/tekrar nedenleriyle ayrı kanıtlanmıştır.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "80e009394a0cc1cf3fe803c5",
+        "decision": "no_opportunity",
+        "reason": "China Money Network 13 Ekim ihracat yükselişi ve iç pazar daralması raporunu Reuters 12 Ekim analizi de doğruluyor. Pazar satış istatistiği, tek başına yeni yazılım yükümlülüğü değil; ithalat kota araştırmaları zaten ayrıca Validation kuyruğunda.",
+        "canonical_source_url": "https://www.reuters.com/business/autos-transportation/china-home-car-sales-downturn-continues-exports-retain-momentum-2026-10-12-2/",
+        "opportunities": []
+      },
+      {
+        "article_key": "814ef993db766cc4451a0cc8",
+        "decision": "no_opportunity",
+        "reason": "Semiconductor Engineering 13 Ekim teknik makale roundup'ı çok sayıda bağımsız araştırma özetinden oluşuyor. Tek bir doğrulanmış yeni ticari işlem veya üretimde zorunlu kontrol değişimi yok; her araştırma yayınevi makalesi sonraki ayrı Discovery kaydında değerlendirilebilir.",
+        "canonical_source_url": "https://semiengineering.com/semiconductor-research/",
+        "opportunities": []
+      },
+      {
+        "article_key": "8157de749a6378123978dc9d",
+        "decision": "no_opportunity",
+        "reason": "Bahçeli'nin Suudi Arabistan'a askeri destek önerisi Türkiye siyaseti/haber beyanıdır. Kabul edilmiş savunma anlaşması, resmî süreç ve yeni bağımsız ticari müşterinin tekrar eden yazılım ihtiyacı kanıtlanmadı.",
+        "canonical_source_url": "https://www.ekonomim.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "81600453385fce82769cc811",
+        "decision": "opportunity",
+        "reason": "NYC DOT 24 Eylül birincil duyuru ve Supply Chain Dive 13 Ekim haberi 5 milyon USD fonlu mesai dışı 19:00–06:00 teslimat teşvik programını doğruluyor; teslimat şirketinin rota zaman penceresi, mağaza kabulü ve başvuru/audit kanıtını manuellerle eşleme ihtiyacı doğabilir. Program fonu kesin kazanım olarak sunulmuyor.",
+        "canonical_source_url": "https://www.nyc.gov/html/dot/html/pr2026/nyc-dot-to-provide-incentives-to-reduce-truck-deliveries-during-busiest-hours.shtml",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-d05a7bf9283b3f68:81600453385fce82769cc811:01",
+            "canonical_key": "new-york-city-freight-delivery-firms|prepare-off-hour-delivery-incentive-and-shift-evidence|receiver-slot-operational-readiness-and-incentive-evidence-ledger",
+            "idea_name": "NYC Off-Hour Delivery Incentive Readiness Desk",
+            "target_customer": "New York City şehir içi yük taşıyıcıları, perakende teslimat alıcıları ve lojistik koordinatörleri",
+            "buyer": "Lojistik filo operasyon sorumlusu / mağaza teslimat koordinatörü",
+            "core_job": "NYC 19:00–06:00 teşvikli teslimat penceresine geçiş için alıcı izinleri, sürücü planı, gece operasyonu ve başvuru kanıtını izlemek",
+            "product_mechanism": "Kullanıcının manuel araç/rota/mağaza alıcı, saat, sürücü vardiyası, imzalı teslim ve kural uygunluk CSV'si; açıklanabilir şift senaryosu, katılım readiness/checklist, PDF; DOT API, GPS veya rota motoru yok",
+            "why_now": "NYC DOT Eylül 2026 Off-Hour Delivery girişiminin 5 milyon USD teşvik fonu ve 19:00–06:00 penceresi, 13 Ekim lojistik haberinde sektörün dikkatine sunuldu",
+            "before_state": "Mağaza kabul saati, gece vardiyası, ticari teslimat kanıtları ve başvuru belgesi ayrı",
+            "after_state": "Alıcı/rota readiness → overnight plan → teslimat kanıt → teşvik dosyası/eksik → owner signoff",
+            "scope_hint": "Dünya",
+            "canonical_source_urls": [
+              "https://www.nyc.gov/html/dot/html/pr2026/nyc-dot-to-provide-incentives-to-reduce-truck-deliveries-during-busiest-hours.shtml",
+              "https://www.supplychaindive.com/news/nyc-offers-5m-to-move-deliveries-away-from-peak-hours/832758/"
+            ],
+            "supporting_article_ids": [
+              "6b880b796aafc0bee99a1198"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.nyc.gov/html/dot/html/pr2026/nyc-dot-to-provide-incentives-to-reduce-truck-deliveries-during-busiest-hours.shtml",
+                "observation": "NYC DOT 24 Eylül birincil duyuru ve Supply Chain Dive 13 Ekim haberi 5 milyon USD fonlu mesai dışı 19:00–06:00 teslimat teşvik programını doğruluyor; teslimat şirketinin rota zaman penceresi, mağaza kabulü ve başvuru/audit kanıtını manuellerle eşleme ihtiyacı doğabilir. Program fonu kesin kazanım olarak sunulmuyor.",
+                "observed_at": "2026-10-14T08:21:49.627Z",
+                "caveat": "Incentive eligibility, actual NYC competition and zero cost operational feasibility require separate validation."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "818f886eeacd5fdc10cd9bba",
+        "decision": "no_opportunity",
+        "reason": "Ny Teknik'te Apple'ın katlanabilir iPhone üretimini artıracağı söylenen haber, duyuma/tedarik planına ilişkindir. Resmî teyit veya bağlayıcı yeni müşteri süreci bulunmuyor; yeni fiziki üretim kapasitesini Lovable SaaS ürünü diye sunmuyoruz.",
+        "canonical_source_url": "https://www.nyteknik.se/",
+        "opportunities": []
+      },
+      {
+        "article_key": "81b24a3012ff26b267adabae",
+        "decision": "no_opportunity",
+        "reason": "ThePaper'da endüstriyel AI girişiminin A serisi yatırım turu haberi, yeni sözleşme/regülasyon değil finansman duyurusu. Ürün adına ilave özgün, kanıtlı fabrika workflow delta'sı saptanmadan paralel AI girişimi klonu önerilmiyor.",
+        "canonical_source_url": "https://www.thepaper.cn/",
+        "opportunities": []
+      },
+      {
+        "article_key": "81c3366bbdaeb4a93fb0fed6",
+        "decision": "no_opportunity",
+        "reason": "36Kr 13 Ekim yüz değiştirme ile ünlü/yapımcı yüz lisansı ve içerik hakları örneklerini anlatıyor. Kullanım izni, projeye göre lisans/süre/geri çekme gibi iş zaten önceki Validation adayında 'Performer AI Consent Scope Ledger' olarak bulunuyor; ayrı tekil ham fırsat oluşturulmadı.",
+        "canonical_source_url": "https://www.36kr.com/p/4022967370764168",
+        "opportunities": []
+      },
+      {
+        "article_key": "81d088fe6a3cc7fcf503a52e",
+        "decision": "no_opportunity",
+        "reason": "13 Ekim Doctolib/NVIDIA birincil basın duyurusu planlanan azınlık yatırımını anlatıyor. Yatırım bekleniyor, tamamlanmış olarak sunulamaz. Tekil yatırım bir ayrı manuel düzenleme/kanıt SaaS tetikleyicisi değil; gerçek klinik AI sistemi dış hizmet/model bağımlılığı gerektirir.",
+        "canonical_source_url": "https://about.doctolib.com/news/doctolib-accelerates-in-healthcare-ai-with-a-new-planned-investment-from-nvidia/",
+        "opportunities": []
+      },
+      {
+        "article_key": "81ea988c4ac4c98235922f3f",
+        "decision": "no_opportunity",
+        "reason": "Xinhua Çin AI uygulamalarının ASEAN ihracatına dair genel sektör röportajı için özel hukuki gereklilik veya kanıt/ihale takvimine erişilemedi. Pazar eğilimi tek başına yeni Lovable ürün fırsatı yeterli değil.",
+        "canonical_source_url": "https://www.news.cn/",
+        "opportunities": []
+      },
+      {
+        "article_key": "8214a1b65e31bdf38f82ab1a",
+        "decision": "no_opportunity",
+        "reason": "13 Ekim TNW ve 12 Ekim Anthropic Frontier Red Team resmi raporu AI'nın IoT cihazlara yakın gelecekte olası otonom çoğalma riskini tartışıyor, gerçekleşmiş vaka değil. Aynı kaynak üçüncü Discovery paketinde Edge AI Worm Containment Drillbook olarak ham fırsat kayıtlandı; duplicate news için tekrar oluşturulmadı.",
+        "canonical_source_url": "https://www.anthropic.com/research/self-replicating-ai",
+        "opportunities": []
+      }
+    ]
+  }
+}
