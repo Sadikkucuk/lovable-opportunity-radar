@@ -1,0 +1,48 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "35295b469395b6ec1a540b51e00528f7979505112f51110acd10bd9b51639c07",
+  "decision": {
+    "article_key": "502892acbac780d06faba22d",
+    "decision": "opportunity",
+    "reason": "Çin Envision Energy Ekim 2026 'AI风储一体机' whitepaper, kaynak batarya sanayi webinde 12 Ekim haberle doğrulandı. Metin yeni büyük türbinlerde kanat taşıma/dikme sırasında gizli kusurlar, kurulumdan şebeke bağlantısına bazen altı aydan uzun bekleme ve güvenilirlik/ekonomi/enerji depolama entegrasyonu sorunlarını anlatıyor. Bu şirketin çözümü tanıttığı pazarlama/teknoloji belge; gerçek saha ekonomisi tüm türbinlerde kanıtlanmadı. Wind EPC/owner ekipleri geçici depolama, enerji besleme ve ilk devreye alma kabul adımlarını ayrı ayrı modellemek zorunda olabilir. Browser-only manuel senaryo matrisi yeni ön fırsat, gerçek batarya kontrolü değildir.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-1ad627e9cc4ab39a:502892acbac780d06faba22d:1",
+        "canonical_key": "utility-scale-wind-project-owners|plan-turbine-grid-connection-delay-and-temporary-storage-commissioning-risk|offline-erection-to-grid-power-storage-and-acceptance-scenario-ledger",
+        "idea_name": "Rüzgâr Türbini Montaj–Şebeke Bekleme ve Depolama Kabul Defteri",
+        "core_job": "Büyük kara rüzgâr türbini dikiminden ilk şebeke bağlantısına kadar uzayan dönemde düşük bakım enerjisi, geçici depolama kapasitesi, güvenlik/koşul takibi ve test/uzaktan enerji besleme sorumluluğunu senaryolarla kanıtlamak",
+        "target_customer": "Utility-scale rüzgâr EPC, owner-engineer, enerji depolama proje planlama ve commissioning ekipleri",
+        "buyer": "Rüzgâr saha devreye alma ve BESS tasarım proje yöneticisi",
+        "product_mechanism": "Kullanıcıya ait türbin ID, saha kurulum tarihi, bağlantı tahmini ve gerçekleşen tarih, standby güç/enerji tüketimi, geçici BESS kWh/DoD, bakım/enerji kullanımı, gecikme nedeni, sigorta koşulu ve kabul test CSV/manuel girdileriyle deterministik zaman/kWh/boşluk hesaplayıp insan onaylı bekleme risk ve devreye alma raporu üretir. BMS/SCADA canlı API veya model çalıştırmaz.",
+        "why_now": "12 Ekim Envision Energy wind-storage whitepaper, büyük türbinlerin kurulmasıyla şebekeye bağlanması arasında aylar süren bakım enerji ihtiyacı ve gizli kusur riskini sektör sorunu olarak öne çıkarıyor.",
+        "before_state": "EPC takvimi, kurulu ama enerjiye alınmamış türbinin güç ihtiyacı, geçici batarya güvenilirliği ve grid commissioning testleri ayrı dosyalardadır.",
+        "after_state": "Geciken MW/türbin/saha, bekleme kWh, depolama dayanımı, taraf sorumluluğu ve onay kanıtı tek senaryoda raporlanır.",
+        "canonical_source_urls": [
+          "https://www.itdcw.com/news/focus/101215T262026.html"
+        ],
+        "supporting_article_ids": [
+          "fbebfd43d53f90607277c731"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.itdcw.com/news/focus/101215T262026.html",
+            "observation": "12 Ekim batarya sektörü makalesi Envision Energy AI wind-storage whitepaper; kurulum–şebeke arası yarım yıla varabilen gecikme ve rüzgâr varlığı güvenilirlik/safety/ekonomi belirsizliği şirket perspektifi olarak açıklanır."
+          }
+        ],
+        "scope_hint": "Global utility-scale wind + storage; manual design approval",
+        "local_evidence": {
+          "signals": [
+            "Kule dikim ve elektrik bağlantı takvimi arasında gerçekten saha kabul, standby güç ve koruma sorumluluğu yönetim ihtiyacı oluşur."
+          ],
+          "unknowns": [
+            "Gerçek müşteri sayaç/kWh ve enerji fiyat tasarrufu sahada doğrulanmadı.",
+            "İş akışı genel BESS owner FAT/SAT yazılımlarıyla doğrudan rekabet edebilir, TR/global sayıları incelenmeli.",
+            "İlerleyen whitepaper yeni yasal bağlayıcı belge değil."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-1ad627e9cc4ab39a/001.json",
+  "valid_until": "2026-11-13T02:48:08Z"
+}
