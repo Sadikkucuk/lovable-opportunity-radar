@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-622097d6d504f0e0",
+  "input_hash": "622097d6d504f0e09de48e32a4562e6f3a68aa5b840cc8c8b67deff29900dd8e",
+  "worker": 1,
+  "invocation_id": "radar-manual-20261014-discovery-001",
+  "token": "discovery-20261014-d2b5c419-7781-4f1d-9120",
+  "finished_at": "2026-10-14T07:48:30.607Z",
+  "outcome": "done",
+  "reason": "Researched ten frozen headlines against accessible reporting and primary releases, including vendor original drone+robot service: 7 reasoned no-opportunity, 1 source-supported workflow candidate for later Merge/Validation, 2 unverified source/evidence gaps; no final catalog qualification claimed.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "22aff8ddb09a5b06096f782c",
+        "decision": "unverified",
+        "reason": "14 Ekim 04:37 CLS kısa haber bülteni OpenAI'nin yeni amiral gemisi model çıkmadan önce güvenlik sorunlarını acilen düzelttiğini söylüyor; https://www.cls.cn/detail/2503930 yayını okundu fakat bir cümlelik anonim bilgi, etkilenen müşteri, somut güvenlik hata türü, model durumu veya yayımlanmış düzeltme kanıtı vermiyor. Zorunlu B2B ürün işi ve başlangıç/son değişimi uydurulmadı.",
+        "source_url": "https://www.cls.cn/detail/2503930",
+        "opportunities": []
+      },
+      {
+        "article_key": "22b056f375bfd9de74c4fe58",
+        "decision": "no_opportunity",
+        "reason": "Yicai 13 Ekim öz haberi HGT'nin Yuexin Semiconductor IPO'sunda 1,99 milyar değil 1,99 yüz milyon yuanlık stratejik pay aldığını ve silikon fotonik/optik paketleme teknolojisi ortaklığı imzaladığını belgeliyor. Bu B2B Ar-Ge ve iştirak yatırım anlaşmasıdır; üçüncü taraf müşteri için yeni zorunlu operasyon/başvuru yöntemi veya bağımsız ücretsiz Lovable ürünü kanıtlanmadı. https://www.yicai.com/brief/103391389.html okundu.",
+        "source_url": "https://www.yicai.com/brief/103391389.html",
+        "opportunities": []
+      },
+      {
+        "article_key": "22ccd715c71fc605e945398d",
+        "decision": "no_opportunity",
+        "reason": "YiCai 13 Ekim 20:29 özgün bülteni Hangzhou Binhjiang ile Yunnan yerel idareleri arasında sınır devriyesinde embodied AI pilot ortaklık anlaşmasının imzalandığını söylüyor. Bu henüz pilot ve kamu güvenlik robot entegrasyon tedariki; ihale teknik şartı, devreye alma/teslim testleri veya ticari müşteri kanıtı yayımlanmamış. Ayrıca gerçek saha robot kontrolü harici runtime ve donanım gerektirecektir. Kamu güvenliği/sınır izleme aracı türetilmedi.",
+        "source_url": "https://www.yicai.com/brief/103392096.html",
+        "opportunities": []
+      },
+      {
+        "article_key": "22d004ef427094ff34f1b758",
+        "decision": "no_opportunity",
+        "reason": "IMF'nin 13 Ekim Global Financial Stability Report duyurusu AI piyasasına ilişkin optimizm ve siber riskleri makro finansal istikrar başlığı olarak yayımladı. China Daily başlığı aynı raporun ekonomik risk açıklaması. Yeni cihaz, lisans, regülasyon yürürlük tarihi veya belirli firma iç süreç değişimi yok; bu makro haberi yeniden pazarlanabilir B2B SaaS mekanizması olarak sunmadım.",
+        "source_url": "https://mediacenter.imf.org/news/imf---global-financial-stability-report-annual-meetings--2026/s/f55368c1-983b-45b7-ba7c-1978f67c168c",
+        "opportunities": []
+      },
+      {
+        "article_key": "23b5c028c274fa839fce52a5",
+        "decision": "opportunity",
+        "reason": "RobotStart 13 Ekim özgün haberi ve puerisomnia'nın 9 Ekim orijinal basın bülteni, dört ayaklı robot sırtında bağlı drone ile GPS olmayan metro/su/enerji/karayolu altyapısına denetim ve güvenlik platformunun satışa sunulduğunu doğruluyor. Satın alan su/enerji operatörlerinin robot ve drone görevlerindeki gözlem, erişilemeyen nokta, kontrol sorumlusu ve saha kabul kanıtını tek elle girilen CSV/rapor defterinde toplama hipotezi çıkarıldı. Robot/drone kontrol yazılımı veya ücretli sensör API gerektirmez; mevcut Multi-Vendor Asset Inspection Acceptance Ledger adayıyla semantik çakışma Merge aşamasında değerlendirilmeli.",
+        "source_url": "https://robotstart.info/article/2026/10/13/382514.html",
+        "opportunities": [
+          {
+            "raw_id": "radar-manual-20261014-622097d6-robotdrone",
+            "canonical_key": "critical-infrastructure-inspection-buyers|reconcile-air-ground-robot-inspection-acceptance|mission-coverage-observation-handoff-evidence-ledger",
+            "idea_name": "AirGround Inspection Handoff — Robot/Drone Saha Kabul Kanıtı",
+            "core_job": "Su, enerji ve köprü altyapısı denetiminde birleşik robot ve drone görevi kapsamını, gözlem kanıtını ve saha kabul eksiklerini bağımsız kaydetmek",
+            "target_customer": "Su/atık su, enerji, köprü ve otoyol saha varlık yönetimi ile kontrol yüklenicileri",
+            "product_mechanism": "Kullanıcı tarafından yüklenen görev/alan CSV'si, aygıt tipi, sensör referansı, uçuş/yer görev süresi, bulgu kodu, insan inceleme görevi ve onay çıktısı; deterministic kapsama/eksik kontrolü, sürümlü foto URL kanıt listesi ve PDF/CSV raporu. Canlı robot/drone API'si ve AI modeli gerekmez.",
+            "why_now": "puerisomnia 9 Ekim duyurusuyla kara robotu ve bağlı dronun entegre altyapı inceleme hizmetini başlattı; 13 Ekim fuar demosu ve kurumsal satış çağrısı mevcut.",
+            "before_state": "Drone ve kara robot incelemeleri farklı çizelge ve raporlarda; gözetlenemeyen kesit ve sorumlu kapatma eylemleri net değil.",
+            "after_state": "Tesis bölümü ve görev → robot/drone gözlem girdisi → boş kapsama → bulgu/kanıt eşleme → saha kontrol sorumlusu ve kabul → çıktılar.",
+            "canonical_source_urls": [
+              "https://prtimes.jp/main/html/rd/p/000000009.000164204.html",
+              "https://robotstart.info/article/2026/10/13/382514.html"
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "24120fb6e2234bdafe8acdfe",
+        "decision": "no_opportunity",
+        "reason": "Handelsblatt Live özgün etkinlik sayfası Alman bankacılık AI egemen altyapısı hakkında 19 Kasım 2026'da yapılacak, STACKIT sponsorlu webinarı duyuruyor. Eğitim/tanıtım oturumu ve olası DORA/MaRisk/EU AI Act genel gündemini anlatır; 13 Ekim tarihli yeni düzenleme, müşteri tedarik zorunluluğu veya teknik ürün teslimi olmadığı için bu reklam RSS kaydı fırsat sayılmaz.",
+        "source_url": "https://live.handelsblatt.com/webinar/digitale-souveraenitaet-fuer-europa-zukunftssichere-ki-infrastruktur-fuer-banken/",
+        "opportunities": []
+      },
+      {
+        "article_key": "2437605be125b7865b642c0e",
+        "decision": "no_opportunity",
+        "reason": "12-13 Ekim WSJ kaynaklı haberler Amazon'un AI çipler arası model taşınabilirlik yazılımı geliştiren Decart'ı yaklaşık 7 milyar dolara satın almak için görüşmeler yaptığını söylüyor; kesinleşmiş satın alma değil. Model çalıştırma/çip optimizasyonu doğrudan büyük bulut donanımı, model runtime ve ücretli altyapıya bağlı. Somut, bağımsız ve sıfır dış maliyetli yeni Lovable-only iş akışı çıkarılmadı.",
+        "source_url": "https://en.sedaily.com/international/2026/10/12/amazon-in-talks-to-buy-ai-chip-software-startup-decart-for",
+        "opportunities": []
+      },
+      {
+        "article_key": "243bdb50372c67c3a2a31a43",
+        "decision": "no_opportunity",
+        "reason": "TechNode 13 Ekim özgün raporu ByteDance Seed içinde Model-Alignment & Preparedness adlı güvenlik ekibinin kurulacağını ve mevcut personelin taşındığını bildiriyor. Yeni firma içi organizasyon, korunacak materyal veya kapsamda kanunen zorunlu yeni müşteri formu duyurusu değil; frontier model davranışı ve CBRN risk testleri büyük model çalıştırmayı gerektirir. Harici modeli olmayan bağımsız SaaS için yeni doğrulanmış B2B mekanizma yok.",
+        "source_url": "https://technode.com/2026/10/13/bytedances-seed-ai-lab-creates-dedicated-model-safety-and-alignment-department/",
+        "opportunities": []
+      },
+      {
+        "article_key": "2468583506ac59cbd525d650",
+        "decision": "no_opportunity",
+        "reason": "13 Ekim Kore MoneyToday ve Economist kaynakları AIM Intelligence ile UAE CPX Holdings'in AI güvenliği alanında pazar giriş/ortak pilot ve ürün doğrulama niyeti içeren MOU imzaladığını doğruluyor. Bağımsız satılabilir ücretsiz yazılım gerektiren yeni kapsam/veri standardı veya nihai müşteri kabul adımı henüz yayımlanmamış. Potansiyel devlet/kurumsal red teaming hizmeti canlı hedef sistem, güvenlik uzmanı ve model gerektirecektir; fırsat ilan edilmedi.",
+        "source_url": "https://www.mt.co.kr/future/2026/10/13/2026101315140259639",
+        "opportunities": []
+      },
+      {
+        "article_key": "248d9d42cb56daf2403d76c9",
+        "decision": "unverified",
+        "reason": "Huxiu 13 Ekim RSS başlığı zararlı yazılımın görünür bilgisayar virüsünden daha gizli dağıtım tekniklerine kaydığını söylüyor; özgün http metni, tarihli ampirik kaynak ve yeni kurum içi iş değişikliği doğrulanmadı. Salt trend başlığından güvenlik ürün, saldırı azaltma sayısı veya rekabet durumu türetilmedi.",
+        "source_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1aS3lKTXRGcTdBYXZUNVFSMzBPUHhKX1lWQ05HOXRKUXAyd1Z2Q3NqdmlNZF81a3BOTER6Z2Q3MWxTVE94QVZORVBSYnR6akdmMHNuSw?oc=5",
+        "opportunities": []
+      }
+    ]
+  }
+}
