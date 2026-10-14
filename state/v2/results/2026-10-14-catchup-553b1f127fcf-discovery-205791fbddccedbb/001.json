@@ -1,0 +1,154 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-205791fbddccedbb",
+  "input_hash": "205791fbddccedbb87411b1a287683155f29b8d976542367983ac6a51a53d11d",
+  "token": "e95bab5e-c034-4ee5-88dd-391c01a4cc65",
+  "finished_at": "2026-10-14T04:28:07.543Z",
+  "outcome": "done",
+  "reason": "10 sabitlenmiş haber için özgün/ikincil kaynaklar incelendi; 3 ham fırsat, 5 fırsatsız karar, 2 eksik doğrulama. Fırsatlar Validation onayı değildir.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "fcba14ebb5f5aaab3b4c9f07",
+        "decision": "no_opportunity",
+        "reason": "Özgün Inc42 makalesi okundu: DealShare yönetici değişikliği ve muhtemel satın alma görüşmeleri mevcut. Bu şirket özelindeki yönetim değişikliği tek başına farklı ve tekrarlanabilir bir yazılım müşteri işi ispatlamıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "fd401f36c0770859aa6a88bc",
+        "decision": "unverified",
+        "reason": "RSS girdisi genel Markets kategori sayfasını gösteriyor; özgün tarihli bir olay ya da somut değişim bulunamadı. Electronics Weekly alan adı web erişiminde engellendi; makale niteliği kesin doğrulanamadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "fd5800932388bc322ce1c630",
+        "decision": "opportunity",
+        "reason": "Özgün Dünya haberi incelendi: Afyonkarahisar'da 800 bin metrekarelik jeotermal topraksız sera yatırımı etaplı planlanıyor. Bu olay, etap teslimi ve üretim/enerji kanıtlarını tutan çevrimdışı proje ilerleme aracına araştırılabilir sinyal veriyor; ticari uygunluk henüz bilinmiyor.",
+        "opportunities": [
+          {
+            "canonical_key": "geothermal-greenhouse-project-managers|track-stage-gates-and-energy-crop-commissioning-evidence|offline-milestone-acceptance-register",
+            "idea_name": "GeoSera Etap Kanıt Defteri",
+            "core_job": "Jeotermal serada etap, enerji ve üretim devreye alma kanıtlarını takip etmek",
+            "target_customer": "Büyük ölçekli sera yatırım proje ekipleri",
+            "buyer": "Sera yatırım ve operasyon direktörü",
+            "product_mechanism": "Yerel CSV/girdi üzerinden etap kontrol listesi ve kabul dosyası oluşturan çevrimdışı kanıt defteri",
+            "why_now": "Kademeli büyük sera yatırımı enerji ve tarım operasyonlarını aynı geçiş planında birleştiriyor",
+            "before_state": "Dağınık etap tutanakları",
+            "after_state": "İzlenebilir aşama kabul matrisi",
+            "scope_hint": "Türkiye",
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-205791fbddccedbb:fd5800932388bc322ce1c630:1",
+            "canonical_source_urls": [
+              "https://www.dunya.com/sirketler/cihangir-sirketler-grubundan-tarimda-stratejik-yatirim-atagi-haberi-843686"
+            ],
+            "supporting_article_ids": [
+              "7ba5c36c10515d436ca2962b"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.dunya.com/sirketler/cihangir-sirketler-grubundan-tarimda-stratejik-yatirim-atagi-haberi-843686",
+                "observation": "Özgün Dünya haberi incelendi: Afyonkarahisar'da 800 bin metrekarelik jeotermal topraksız sera yatırımı etaplı planlanıyor. Bu olay, etap teslimi ve üretim/enerji kanıtlarını tutan çevrimdışı proje ilerleme aracına araştırılabilir sinyal veriyor; ticari uygunluk henüz bilinmiyor."
+              }
+            ],
+            "local_evidence": null
+          }
+        ]
+      },
+      {
+        "article_key": "fd89daec8176222a7a7c2a8e",
+        "decision": "unverified",
+        "reason": "Fransa'da 3 MWc agrivoltaik projeyi doğrulayan ikincil sektör kaynağı okundu; L'Usine Nouvelle özgün sayfası bağımsız doğrulanamadı. Panel altı bitki yetiştiriciliği ve enerji/ekim koordinasyonu için proje takip problemi olası fakat tek olaydan genel ihtiyaç kesinleşmedi.",
+        "opportunities": []
+      },
+      {
+        "article_key": "fe47f1d47bad521603ea096e",
+        "decision": "opportunity",
+        "reason": "Automation World özgün 13 Ekim podcast sayfası okundu. Çok tesiste MES standartlaştırma, hızlı devreye alma ve bağlı cihaz hazırlık kontrolleri ihtiyacı anlatılıyor; mevcut MES ürünlerinin yerine geçmeden offline saha devreye alma kontrol listesi ayrı incelenebilir.",
+        "opportunities": [
+          {
+            "canonical_key": "multi-plant-mes-rollout-teams|prove-site-readiness-before-mes-rollout|offline-mes-readiness-gate-checklist",
+            "idea_name": "MES Hazırlık Kapısı",
+            "core_job": "Tesisin standart MES devreye alımına hazır olduğunu belgelemek",
+            "target_customer": "Çok tesisli üreticilerin MES devreye alma ekipleri",
+            "buyer": "Üretim dijital dönüşüm yöneticisi",
+            "product_mechanism": "Cihaz, süreç, rol ve güvenlik envanterinin yerel CSV girişinden deterministik hazırlık matrisi ve kabul raporu üretimi",
+            "why_now": "İşletmeler MES standartlaştırma ve hızlı çok tesisli devreye alma bekliyor",
+            "before_state": "E-posta ve tablolarla yerel hazırlık",
+            "after_state": "İmzalanabilir aşama/eksik listesi",
+            "scope_hint": "Global",
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-205791fbddccedbb:fe47f1d47bad521603ea096e:1",
+            "canonical_source_urls": [
+              "https://www.automationworld.com/factory/digital-transformation/podcast/55411457/rockwell-automation-hey-dummies-how-advanced-automation-is-changing-mes-strategies"
+            ],
+            "supporting_article_ids": [
+              "2014a320ceb5cce5763a5e56"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.automationworld.com/factory/digital-transformation/podcast/55411457/rockwell-automation-hey-dummies-how-advanced-automation-is-changing-mes-strategies",
+                "observation": "Automation World özgün 13 Ekim podcast sayfası okundu. Çok tesiste MES standartlaştırma, hızlı devreye alma ve bağlı cihaz hazırlık kontrolleri ihtiyacı anlatılıyor; mevcut MES ürünlerinin yerine geçmeden offline saha devreye alma kontrol listesi ayrı incelenebilir."
+              }
+            ],
+            "local_evidence": null
+          }
+        ]
+      },
+      {
+        "article_key": "fea47ac8cd8f57e59cf410b1",
+        "decision": "no_opportunity",
+        "reason": "Özgün iTnews/ECB haberinde AI'ın ücret pazarlığına muhtemel etkisine ilişkin ekonomik değerlendirme var. Bu analiz herhangi yeni somut mevzuat veya belirli müşteri iş akışı oluşturmadığı için özgün ürün fırsatı çıkarılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "fea976c3c8d50bc7ecad07fc",
+        "decision": "no_opportunity",
+        "reason": "Özgün VentureBeat sayfası okundu; Google Cloud ortak içeriği çoklu kurumsal veri ve agent güveni altyapısını savunuyor. Ana ürün dış veri bağlantısı ve AI model çalışma servisine bağımlı; no-runtime-services politikasıyla uyumsuz; başlı başına yeni uygun fırsat çıkarılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "feb75961ba6173f6f77c0abb",
+        "decision": "no_opportunity",
+        "reason": "Özgün ETNews makalesi incelendi: Güney Kore'de 30 memurun katıldığı kamu veri/AI uygulama üretimi etkinliği. Vibe-coding/harici kamu veri API'leri konunun asli mekanizması olduğu için zorunlu dış API/model kullanmadan esas değeri koruyan yeni fırsat henüz belirlenmedi.",
+        "opportunities": []
+      },
+      {
+        "article_key": "feba8f7713f96ac8b7099bef",
+        "decision": "no_opportunity",
+        "reason": "Özgün Japon Cloud Watch makalesi okundu: Fujitsu SPIRAVOLVE Cyber Defense stratejisi ve 2030 gelir hedefi. Kurumsal savunma yönetimi var olan geniş pazarın sinyali; somut ayrışmış müşteri işi ve sıfır harici hizmet mimarisi ayrıca kanıtlanmadan fırsat üretilmedi.",
+        "opportunities": []
+      },
+      {
+        "article_key": "fed6b8e5c3294cbcfac48951",
+        "decision": "opportunity",
+        "reason": "Özgün Inc42 makalesi okundu: Hindistan FSSAI quick-commerce için raf ömrü, etiket ve parti açıklama yükümlülüklerini değerlendiriyor, henüz teklif aşamasında. CSV ile ürün/lot tarih kurallarını karşılaştıran çevrimdışı hazırlık doğrulayıcı adayı çıkarıldı; yürürlüğe girmiş kural olarak sunulmadı.",
+        "opportunities": [
+          {
+            "canonical_key": "indian-quick-commerce-food-sellers|check-expiry-and-batch-label-disclosure-readiness|offline-csv-food-listing-disclosure-validator",
+            "idea_name": "QuickFood Etiket Ön Kontrol",
+            "core_job": "Ürün listelerinde parti, üretim ve son tüketim tarihi açıklamalarını hazırlık düzeyinde kontrol etmek",
+            "target_customer": "Hindistan hızlı market platformu gıda satıcıları",
+            "buyer": "Pazaryeri uyum ve katalog sorumlusu",
+            "product_mechanism": "CSV ürün/lot yüklemesinden tarih alanı ve olası bildirim boşluklarını denetleyen kurallı, çevrimdışı doğrulayıcı",
+            "why_now": "FSSAI e-ticaret açıklama düzenlemesi üzerinde çalışıyor; henüz kesinleşmedi",
+            "before_state": "Manuel etiket/katalog karşılaştırması",
+            "after_state": "İndirilebilir eksik alan raporu",
+            "scope_hint": "India",
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-205791fbddccedbb:fed6b8e5c3294cbcfac48951:1",
+            "canonical_source_urls": [
+              "https://inc42.com/buzz/fssai-eyes-tighter-quick-commerce-rules-for-expiry-dates-food-labelling/"
+            ],
+            "supporting_article_ids": [
+              "1227da90c5608a528f24a6f6"
+            ],
+            "source_observations": [
+              {
+                "url": "https://inc42.com/buzz/fssai-eyes-tighter-quick-commerce-rules-for-expiry-dates-food-labelling/",
+                "observation": "Özgün Inc42 makalesi okundu: Hindistan FSSAI quick-commerce için raf ömrü, etiket ve parti açıklama yükümlülüklerini değerlendiriyor, henüz teklif aşamasında. CSV ile ürün/lot tarih kurallarını karşılaştıran çevrimdışı hazırlık doğrulayıcı adayı çıkarıldı; yürürlüğe girmiş kural olarak sunulmadı."
+              }
+            ],
+            "local_evidence": null
+          }
+        ]
+      }
+    ]
+  }
+}
