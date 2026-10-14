@@ -1,0 +1,32 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "c36ba73f4f0cb4a77c955aaccf71c52fb564e94e386451d41fff9b7407332c21",
+  "decision": {
+    "article_key": "db4fc8fb37d092d5bc11f140",
+    "decision": "opportunity",
+    "reason": "ETNews Oct 13 sector page reports Korean National Parks developing BandalLens AI 17-mammal camera trap labeling with claimed 99% review-time reduction. Separate user-supplied-label QA and human accepted species evidence register is an inference only, not an existing deployed commercial need.",
+    "canonical_source_url": "https://www.etnews.com/news/section.html?id1=22&id2=210&page=1",
+    "article_title": "AI로 야생동물 자동 식별한다…영상 분석 시간 99% 단축 - 전자신문",
+    "published_at": "2026-10-13T03:00:00Z",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-41f642a38190f859:db4fc8fb37d092d5bc11f140:01",
+        "canonical_key": "nature-park-ecological-survey-teams|audit-ai-wildlife-camera-label-uncertainty-and-human-review|camera-observation-species-label-override-and-evidence-ledger",
+        "idea_name": "Wildlife Species Label Review Ledger",
+        "core_job": "Track human validation and exception review of camera trap image AI labels against observation/site/date evidence",
+        "target_customer": "National parks biodiversity monitoring teams and ecological survey contractors",
+        "product_mechanism": "User CSV import of camera site, species prediction, manual accepted label and confidence → exception queue → ecological reviewer signoff → aggregated species counts/evidence export",
+        "why_now": "2026-10-13 Korean National Parks Service reported BandalLens AI to classify 17 Korean mammal species from automated trap cameras with predicted 99% reduction in manual review time",
+        "before_state": "Camera trap species predictions require defensible human sampling, overrides and project reporting spread across export files",
+        "after_state": "Local deterministic rule/sample QC tracking, manual labels and human acceptance/export records; NO deployed ML model or camera API",
+        "canonical_source_urls": [
+          "https://www.etnews.com/news/section.html?id1=22&id2=210&page=1"
+        ],
+        "scope_hint": "Dünya",
+        "market_validation_status": "not_checked"
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-41f642a38190f859/001.json",
+  "valid_until": "2026-11-13T07:27:54Z"
+}
