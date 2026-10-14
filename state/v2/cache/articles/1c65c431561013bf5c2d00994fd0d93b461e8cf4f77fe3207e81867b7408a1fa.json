@@ -1,0 +1,48 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "1c65c431561013bf5c2d00994fd0d93b461e8cf4f77fe3207e81867b7408a1fa",
+  "decision": {
+    "article_key": "3857ebe474eaf0875864e6c6",
+    "decision": "opportunity",
+    "reason": "14 Ekim 05:00 JST yayımlanmış @IT/ITmedia özgün teknik yazı; Japon ana bilgisayar desteği/geri çekilme sinyallerinin ve otomatik kod dönüştürmenin eski-yeni çıktılardaki iş semantiği farklılıklarını gidermediğini somutlaştırıyor. Yazarın örneğinde 1 yen yuvarlama farkının doğru olması iş birimi, muhasebe ve yöneticilerin kararını gerektirmiş. BEFORE otomatik dönüşüm sonrası yüzlerce sonuç farkı teknik test loglarında dağınık. AFTER teknik test daha erken biterken iş gerekçesi, zarar/denetim etkisi ve yönetici imzası karar kuyruğu darboğaz olur. Deterministik CSV karşılaştırma ve fark sınıflama/karar defteri yalnız hipotezdir; ticari farklılaşma ve TR/global rakipler Validation'da sınanmalı.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-148657189f3c56e5:3857ebe474eaf0875864e6c6:01",
+        "canonical_key": "mainframe-modernization-governance-teams|adjudicate-legacy-to-new-system-financial-output-mismatches|offline-dualrun-rule-diff-business-signoff-ledger",
+        "idea_name": "Mainframe Geçiş Farkı İş Kararı Defteri",
+        "core_job": "COBOL/legacy geçişinde iki sistemin aynı vaka/para/tutar için ürettiği farklı sonuçların kaynak kural, müşteri etkisi ve yetkili iş birimi tarafından kabul/düzeltme kararına bağlanması",
+        "target_customer": "Banka, sigorta, büyük muhasebe ve mainframe modernizasyon test/iş analizi ekipleri",
+        "buyer": "Legacy modernizasyon program direktörü ve finansal iş kuralı ürün sahibi",
+        "product_mechanism": "Kullanıcının eski ve yeni test sonuç CSV dosyalarını vaka anahtarıyla eşleyip sayısal tolerans/yuvarlama ve istisna kuralları üzerinden sapma türü, gerekçe, iş sahibi, müşteri/denetim etki kararı ve imzalı kabul CSV/PDF listesi oluşturan tarayıcı içi araç; AI veya canlı ana bilgisayar bağlantısı gerekmez",
+        "why_now": "14 Ekim ITmedia makalesi Japonya ana bilgisayar dönüşümünde kod dönüştürmenin hızlandığını fakat açıklanamayan parasal/iş kuralı farkı için çok birimli insan kararının haftalar alabildiğini somut örnekliyor.",
+        "before_state": "Eski-yeni paralel test çıktıları ayrı dosyalar, finans/ticaret karar sahipleri ve tarihçe gerekçeleri bulunamayan iş kuralları manuel toplantı ve epostalarla yönetiliyor.",
+        "after_state": "Her fark için veri versiyonu, yuvarlama gerekçesi, etkilenen kullanıcı grubu, onaylayan bölüm, kabul/red ve yeniden test izi tek kabul dosyasında tutulur.",
+        "canonical_source_urls": [
+          "https://atmarkit.itmedia.co.jp/ait/articles/2610/13/news005.html"
+        ],
+        "supporting_article_ids": [
+          "7c80076832af447cddd234dd"
+        ],
+        "source_observations": [
+          {
+            "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/13/news005.html",
+            "observation": "14 Ekim 05:00 JST @IT özgün makale; yazar 1 yen yuvarlama sapması için yaklaşık altı hafta çapraz bölüm kararı sürecini anekdot olarak aktarıyor, genelleştirilebilir benchmark değil."
+          }
+        ],
+        "scope_hint": "Dünya; Japonya'da legacy dönüşüm haberinden doğdu",
+        "local_evidence": {
+          "signals": [
+            "Özgün yazıda farklı yuvarlama kuralının teknik hata değil iş kararı olduğu, finans/müşteri/denetim etkisine göre adjudication gerektirdiği açık."
+          ],
+          "unknowns": [
+            "Kurumsal ALM/test management rekabeti muhtemelen geniş; TR 0 ve global <=3 henüz doğrulanmadı.",
+            "Test çıktı CSV'de müşteri verileri maskelenmeli, bilgi güvenliği sorumluluğu kullanıcıda.",
+            "Gerçek 'six weeks' örneği tek saha anekdotu, piyasa genel süre tasarrufu kanıtı değil."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-148657189f3c56e5/001.json",
+  "valid_until": "2026-11-13T04:19:44Z"
+}

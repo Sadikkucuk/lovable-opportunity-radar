@@ -1,0 +1,54 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "08b50abdb519dcea3814cfcdb302e190634e8d2948dca522c9979227e3b9c9e0",
+  "decision": {
+    "article_key": "38d3f94ad55075f15944f08f",
+    "decision": "opportunity",
+    "reason": "12 Ekim Open Rights Group birincil inceleme raporu ve Birleşik Krallık Parlamentosu resmî yanıtları, Home Office ACS ve APS sığınma başvuru dosyası yardım araçlarında belge tutarlılığı/eksik olgu ve bağımsız kalite incelemesi ihtiyacını gündeme getiriyor. ORG iddiasına göre canlı örneklerin yalnız %0,3'ü uzman tarafından denetlenmiş; pilotta %9 hatalı/eksik ACS özeti dışlanmış. Rakamlar farklı örnekleme ve dönemlere aittir ve 'her beş kararın biri yanlış' sonucu çıkarılamaz. BEFORE AI özet çıktısı ile asıl mülakat dökümündeki önemli olguların karşılaştırması ve insan imzalı düzeltme izi dağınık. AFTER dosya QA'nun tarafsız, test edilebilir örneklem ve işaretleme kaydı ürün hipotezi. Sığınma kararı üretmeyen, dış LLM çalıştırmayan, özel veri dışarı göndermeyen çevrimdışı denetim tasarımı.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-148657189f3c56e5:38d3f94ad55075f15944f08f:01",
+        "canonical_key": "public-sector-casework-qa-teams|audit-ai-generated-case-summaries-against-cited-records|offline-source-claim-omission-correction-and-human-review-ledger",
+        "idea_name": "Kamu AI Dosya Özeti Hata ve İnsan Kontrol Defteri",
+        "core_job": "Kritik kamu karar dosyalarında AI özetindeki iddia/dışlanan olgu ve kaynak belge alıntısını insan incelemesine göre eşleyerek tutarlılık, eksik gerekçe, örneklem ve düzeltme kararını kanıtlamak",
+        "target_customer": "Kamu kurumları, bağımsız kalite denetim ekipleri ve hukuki destek kuruluşlarının belge doğrulama operatörleri",
+        "buyer": "Kamu bilgi/kalite güvencesi ve bağımsız inceleme direktörü",
+        "product_mechanism": "Yetkili kullanıcı tarafından hassas verisi maskelenmiş, yerel olarak yüklenen olgu/özet paragraf/doküman alıntısı CSV'si ile manuel maddesel eşleme, hata/eksik kaynak bayrağı, sürüm, reviewer ve düzeltme sonucu defteri; hiçbir kamu dosyasına canlı bağlantı, karar önerisi veya dış AI modeli yok",
+        "why_now": "12 Ekim ORG raporu ACS/APS için denetlenebilirlik, özetlerin eksik bilgi ve sınırlı örneklem kalite denetimi sorunlarına odaklandı; 13 Ekim haber bunu kamusal tartışmaya taşıdı.",
+        "before_state": "Özetleme aracının kaynak mülakat/siyasi ülke bilgisiyle tutarlılığı standardize edilmiş maddesel reviewer/kanıt izinde tutulmayabilir.",
+        "after_state": "İnsan denetleyici, kaynağı ve özet iddiasını, eksik/yanlış/sapmalı kararını, hangi resmi düzeltmeyi istediğini ve dosya örneklem oranını indirilebilir denetim paketinde saklar.",
+        "canonical_source_urls": [
+          "https://www.openrightsgroup.org/publications/the-use-of-chatgpt-in-asylum-decisions/",
+          "https://questions-statements.parliament.uk/written-questions/detail/2026-04-10/125721/"
+        ],
+        "supporting_article_ids": [
+          "b7e710f41e9e8e0290dd11be"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.openrightsgroup.org/publications/the-use-of-chatgpt-in-asylum-decisions/",
+            "observation": "12 Ekim ORG altı aylık araştırma: pilot ACS %9 dışlama, Nisan-Temmuz üretilen özetlerin %0,3 uzman denetimi iddiası ve bağımsız inceleme eksikliği. Veriler farklı metodoloji/dönemlerden."
+          },
+          {
+            "url": "https://questions-statements.parliament.uk/written-questions/detail/2026-04-10/125721/",
+            "observation": "UK Parliament 20 Nisan 2026 bakan yanıtı ACS pilotunda %9 eksik/yanlış özet dışlama, %23 vaka çalışanlarının özete tam güvenmemesi ve insan kontrol şartlarını açıkça anlatıyor."
+          }
+        ],
+        "scope_hint": "Birleşik Krallık ve benzer insan denetimli kamu belge iş akışları",
+        "local_evidence": {
+          "signals": [
+            "Resmî bakan yanıtı ile ORG denetimi, AI yardımcı özetin insan kaynak-belge kontrolünün ölçülmesi gerektiği konusunu destekliyor."
+          ],
+          "unknowns": [
+            "Bu hassas alan veri koruma ve temsilcilik hukuku gerektirir; ürün karar vermez veya adli güvenilirlik sertifikası değildir.",
+            "Public sector AI QA/observability ve legal case management rakipleri Validation'da araştırılmalı.",
+            "Özet ile belgeyi otomatik semantik eşleştirme yok; gizlilik için yalnız manuel/CSV eşleme ve insana ait denetim.",
+            "Kamu sistemlerine entegrasyon olmadan ciddi değer boşluğu oluşabilir."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-148657189f3c56e5/001.json",
+  "valid_until": "2026-11-13T04:19:44Z"
+}
