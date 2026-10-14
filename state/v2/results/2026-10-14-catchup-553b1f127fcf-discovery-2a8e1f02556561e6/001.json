@@ -1,0 +1,259 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-2a8e1f02556561e6",
+  "input_hash": "2a8e1f02556561e6d6e79edf0d4df888ac5789fff0f98e51e0347c9af846fd8e",
+  "token": "9a4e2790-4d3c-47cd-bd83-52a996b3d22a",
+  "finished_at": "2026-10-14T03:07:42.619Z",
+  "outcome": "done",
+  "reason": "10 donmuş feed kaydının tamamı özgün/ana kaynak kontrolü ve ürün dönüşümü filtresiyle kararlandırıldı; beş ayrı ham fırsat korundu, beş kayıt fırsat üretmedi.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "7ff583f1530a1fc9cb4eeb06",
+        "decision": "opportunity",
+        "reason": "Özgün TNW haberi okundu; Avrupa'da açıklanacak 2 milyar dolarlık AI yatırımı ve dört Fransız girişim somut bir sermaye/ortaklık hazırlık iş akışı sinyali veriyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-2a8e1f02556561e6:7ff583f1530a1fc9cb4eeb06:01",
+            "canonical_key": "european-ai-startups|prepare-investor-and-sovereignty-readiness-for-strategic-ai-capital|evidence-room-readiness-matrix-and-export",
+            "idea_name": "Avrupa AI Yatırım Hazırlık Dosyası",
+            "core_job": "Stratejik AI yatırım görüşmelerinden önce egemenlik, altyapı, müşteri kanıtı ve fon kullanım planını tek dosyada hazırlamak",
+            "target_customer": "Avrupa'daki AI girişimleri",
+            "buyer": "Kurucu, CFO veya stratejik ortaklık yöneticisi",
+            "product_mechanism": "Manuel kanıt yükleme, hazırlık matrisi, eksik belge listesi ve indirilebilir yatırım dosyası; harici runtime API/DB/AI yok",
+            "why_now": "Nvidia bir hafta içinde Avrupa'da 2 milyar dolarlık yeni yatırım açıklayacağını ve dört Fransız girişime fon sağladığını duyurdu.",
+            "before_state": "Yatırım ve egemenlik iddiaları sunumlar ile dağınık belgelerde kalıyor.",
+            "after_state": "Kurucu ekip, kanıt boşlukları ve kullanım planı görünür tek bir hazırlık dosyası çıkarıyor.",
+            "canonical_source_urls": [
+              "https://thenextweb.com/news/nvidia-huang-europe-2-billion"
+            ],
+            "supporting_article_ids": [
+              "4703ee9fd56b6196bba0c711"
+            ],
+            "source_observations": [
+              {
+                "url": "https://thenextweb.com/news/nvidia-huang-europe-2-billion",
+                "accessed_at": "2026-10-14T03:07:42.619Z",
+                "page_read": true,
+                "claim": "Nvidia plans $2B in European AI deals in the next week - The Next Web",
+                "observation": "Haberde 13 Ekim 2026 tarihinde Nvidia'nın bir hafta içinde Avrupa'da 2 milyar dolarlık yeni yatırım planladığı, geçen yılki 8 milyar dolar ve dört Fransız girişim yatırımı belirtildi."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_scope_evidence_hints": [],
+            "local_evidence": []
+          }
+        ]
+      },
+      {
+        "article_key": "8000e90450c70951f897710a",
+        "decision": "opportunity",
+        "reason": "ZDNET yazısı tam okundu; token maliyetinin hacim × yoğunluk × fiyat ile iş sonucu başına izlenmesi ve kalite göstergesiyle birlikte yönetilmesi somut FinOps iş akışı oluşturuyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-2a8e1f02556561e6:8000e90450c70951f897710a:01",
+            "canonical_key": "enterprise-ai-finops-teams|measure-ai-cost-per-business-outcome-with-quality|csv-token-ledger-baseline-variance-and-stop-rule-dashboard",
+            "idea_name": "AI Sonuç Başına Maliyet Defteri",
+            "core_job": "AI kullanımını model ya da kullanıcı yerine iş sonucu ve kaliteyle birlikte maliyetlendirmek",
+            "target_customer": "Kurumsal AI kullanan BT ve finans ekipleri",
+            "buyer": "FinOps lideri, DSI/BT yöneticisi veya satın alma yöneticisi",
+            "product_mechanism": "CSV/fatura içe aktarımı, hacim-yoğunluk-fiyat ayrıştırması, baseline, sapma ve durdurma kuralı raporu; harici runtime servisi yok",
+            "why_now": "13 Ekim 2026 tarihli yazı token harcamasının çalışma maliyetine dönüştüğünü, maliyet ile iş değerinin birlikte ölçülmesi gerektiğini ayrıntılandırıyor.",
+            "before_state": "Token ve kredi faturaları sağlayıcı, ekip ve kullanım senaryosu arasında karşılaştırılamıyor.",
+            "after_state": "İş sonucu başına maliyet, kalite ve sapma tek yerel defterde izleniyor.",
+            "canonical_source_urls": [
+              "https://www.zdnet.fr/blogs/green-si/le-token-est-devenu-le-compteur-des-couts-si-505615.htm"
+            ],
+            "supporting_article_ids": [
+              "4a7d249d127bdbea49195f5e"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.zdnet.fr/blogs/green-si/le-token-est-devenu-le-compteur-des-couts-si-505615.htm",
+                "accessed_at": "2026-10-14T03:07:42.619Z",
+                "page_read": true,
+                "claim": "Le token est devenu le compteur des coûts SI - ZDNET",
+                "observation": "Yazı AI faturasını hacim × yoğunluk × fiyat olarak ayrıştırıyor; iş sonucu başına maliyet, kalite, baseline ve durdurma kriterlerini öneriyor."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_scope_evidence_hints": [],
+            "local_evidence": []
+          }
+        ]
+      },
+      {
+        "article_key": "800f8fe5b46c7c4a0edee3d4",
+        "decision": "opportunity",
+        "reason": "Handelsblatt ve Apple duyurusu okundu; DMA veri erişimi/mahremiyet anlaşmazlığının ürünün AB'de sunulmamasına yol açması, pazar-lansman öncesi kanıtlı karar dosyası ihtiyacını gösteriyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-2a8e1f02556561e6:800f8fe5b46c7c4a0edee3d4:01",
+            "canonical_key": "connected-device-product-teams-entering-eu|document-dma-data-access-and-privacy-launch-readiness|requirement-evidence-exception-and-market-go-no-go-matrix",
+            "idea_name": "AB AI Cihaz Lansman Uygunluk Dosyası",
+            "core_job": "AI özellikli bağlı cihazı AB'de sunmadan önce DMA veri erişimi, mahremiyet ve pazar istisnalarını kanıtlamak",
+            "target_customer": "AB pazarına girecek bağlı cihaz ve akıllı ev ürün ekipleri",
+            "buyer": "Ürün uyum lideri veya hukuk/mahremiyet yöneticisi",
+            "product_mechanism": "Manuel gereksinim matrisi, kanıt eki, istisna kaydı ve insan onaylı go/no-go çıktısı; harici runtime servisi yok",
+            "why_now": "Apple'ın HomeView'i veri erişimi ve AI mahremiyeti anlaşmazlığı nedeniyle AB dışında bırakması pazar kaybının doğrudan uyum etkisini gösteriyor.",
+            "before_state": "Ürün, hukuk ve ülke uygunluk kanıtları ayrı belgelerde değerlendirilir.",
+            "after_state": "Pazar bazında şartlar, açık boşluklar ve go/no-go gerekçesi tek dosyada görünür.",
+            "canonical_source_urls": [
+              "https://www.handelsblatt.com/unternehmen/handel-konsumgueter/ki-datenschutz-apple-bringt-neues-smarthome-display-nicht-in-die-eu/100261668.html"
+            ],
+            "supporting_article_ids": [
+              "3991906557bb18e7d25d4840"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.handelsblatt.com/unternehmen/handel-konsumgueter/ki-datenschutz-apple-bringt-neues-smarthome-display-nicht-in-die-eu/100261668.html",
+                "accessed_at": "2026-10-14T03:07:42.619Z",
+                "page_read": true,
+                "claim": "KI-Datenschutz: Apple bringt neues Smarthome-Display nicht in die EU - Handelsblatt",
+                "observation": "13 Ekim 2026 tarihli haber, Apple HomeView'in DMA kapsamında rakip AI hizmetlerine müşteri verisi erişimi anlaşmazlığı nedeniyle AB'de sunulmadığını belirtiyor."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_scope_evidence_hints": [],
+            "local_evidence": []
+          }
+        ]
+      },
+      {
+        "article_key": "801d56d1d0b84b6dd0b9046a",
+        "decision": "no_opportunity",
+        "reason": "Bağlantı belirli bir haber yerine Sina mobil teknoloji akış sayfasına yöneliyor; atanmış kayıt için olay/aktör/iş akışı güvenilir biçimde ayrıştırılamadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "802a89395323dda7ae7a5c4f",
+        "decision": "no_opportunity",
+        "reason": "Başlık yalnızca YourStory ana/indeks sayfasını tanımlıyor; somut gelişme ve etkilenen iş akışı yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "803d0dcd2a96cd1fac2fdb3c",
+        "decision": "no_opportunity",
+        "reason": "Özgün YourStory yazısı okundu; içerik CEO'nun AI'ın gelecekte yeni işler yaratacağına dair genel öngörüsü, doğrulanabilir yeni süreç/regülasyon/ürün değişikliği içermiyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "80683c8c168dca687a4556c9",
+        "decision": "no_opportunity",
+        "reason": "Başlık yalnızca Hang Seng endekslerinin seans içi düşüşünü bildiriyor; Radar ürün dönüşümü için somut müşteri işi veya kalıcı süreç değişikliği yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "80bb50db32d2f51a6e40a884",
+        "decision": "opportunity",
+        "reason": "Handelsblatt makalesi okundu; Almanya'da katılımcıların %42'sinin AI mülakat nedeniyle süreçten çıktığı ve bir çalışmada erken bırakmanın %75'e ulaştığı, insan devri/aday deneyimi denetimi ihtiyacını gösteriyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-2a8e1f02556561e6:80bb50db32d2f51a6e40a884:01",
+            "canonical_key": "high-volume-employers-using-ai-interviews|reduce-qualified-candidate-dropoff-and-prove-human-handoff|candidate-journey-checkpoint-survey-and-exception-ledger",
+            "idea_name": "AI Mülakat Aday Kaybı Denetimi",
+            "core_job": "AI ön mülakatında nitelikli aday kaybını ölçmek ve insan devri noktalarını kanıtlamak",
+            "target_customer": "Yüksek hacimli işe alım yapan şirketler",
+            "buyer": "İşe alım operasyonu lideri veya İK uyum yöneticisi",
+            "product_mechanism": "CSV aday akışı, anonim anket, aşama bazlı terk oranı, insan devri kuralı ve kurul/uyum kanıt raporu; ürün içinde AI servisi yok",
+            "why_now": "13 Ekim 2026 tarihli makale AI mülakatlarında belirgin aday terkini ve AB AI Act/GDPR kapsamında insan kararının önemini belgeliyor.",
+            "before_state": "AI görüşme verimliliği ölçülürken aday güveni ve terk nedeni görünmez kalıyor.",
+            "after_state": "Aşama bazlı kayıp, istisna ve insan devri kararları kanıtlanabilir hale geliyor.",
+            "canonical_source_urls": [
+              "https://www.handelsblatt.com/karriere/karriere-verschrecken-ki-recruiter-qualifizierte-bewerber/100248546.html"
+            ],
+            "supporting_article_ids": [
+              "c39b6985692125d761c63ab8"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.handelsblatt.com/karriere/karriere-verschrecken-ki-recruiter-qualifizierte-bewerber/100248546.html",
+                "accessed_at": "2026-10-14T03:07:42.619Z",
+                "page_read": true,
+                "claim": "Karriere: Verschrecken KI-Recruiter qualifizierte Bewerber? - Handelsblatt",
+                "observation": "Makalede Almanya'da %42 terk, Stanford örneğinde %75 erken bırakma, insan kararının korunması ve iş konseyi/mahremiyet süreci anlatılıyor."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_scope_evidence_hints": [],
+            "local_evidence": []
+          }
+        ]
+      },
+      {
+        "article_key": "80c067824cb3b9e7a673e80f",
+        "decision": "opportunity",
+        "reason": "TU.no haberi ve Kongsberg'in birincil duyurusu okundu; Polonya'da 45 milyon EUR yatırımla 100+ istihdamlı bakım/üretim tesisi ve 2028 seri üretim hedefi, yerel tedarikçi hazırlık iş akışı yaratıyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-2a8e1f02556561e6:80c067824cb3b9e7a673e80f:01",
+            "canonical_key": "polish-industrial-suppliers-seeking-defense-factory-work|prove-supplier-readiness-for-new-cuas-production|capability-certificate-milestone-and-gap-dossier",
+            "idea_name": "Yeni Savunma Fabrikası Tedarikçi Hazırlık Dosyası",
+            "core_job": "Yeni CUAS fabrikasına tedarikçi olmadan önce kapasite, sertifika, güvenlik ve teslimat hazırlığını kanıtlamak",
+            "target_customer": "Polonya ve yakın Avrupa'daki sanayi tedarikçileri",
+            "buyer": "Kalite müdürü, iş geliştirme lideri veya tedarikçi geliştirme yöneticisi",
+            "product_mechanism": "Manuel yetenek/sertifika matrisi, kapasite kilometre taşları, kanıt ekleri ve eksik kapatma planı; harici runtime servisi yok",
+            "why_now": "Kongsberg 13 Ekim 2026'da Gdańsk-Gdynia-Sopot bölgesinde 45 milyon EUR üzerinde yatırım ve 100'den fazla iş ile CUAS üretim/bakım tesisi planını açıkladı.",
+            "before_state": "Tedarikçiler yeni fabrikanın beklentilerine karşı yeterlilik kanıtlarını dağınık dosyalarda tutuyor.",
+            "after_state": "Teklif öncesi kanıt boşlukları ve kapatma tarihleri ortak dosyada görünür.",
+            "canonical_source_urls": [
+              "https://www.kongsberg.com/no/news/news-archive/2026/kongsberg-skal-bygge-produksjonsanlegg-i-polen/"
+            ],
+            "supporting_article_ids": [
+              "f9bcf1bc16128646656ddb51"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.kongsberg.com/no/news/news-archive/2026/kongsberg-skal-bygge-produksjonsanlegg-i-polen/",
+                "accessed_at": "2026-10-14T03:07:42.619Z",
+                "page_read": true,
+                "claim": "Kongsberg skal bygge fabrikk for droneforsvar i Polen - Tu.no",
+                "observation": "Kongsberg'in birincil duyurusu tesisin Polonya'da CUAS üretim/bakımı yapacağını, 200 milyon PLN üzeri yatırım ve 100+ istihdam öngördüğünü bildiriyor."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_scope_evidence_hints": [],
+            "local_evidence": []
+          }
+        ]
+      },
+      {
+        "article_key": "80dbb32e86d024955a51ded7",
+        "decision": "opportunity",
+        "reason": "Etkinlik haberi okundu; şirketlerin %58'inin AI kullandığı, yalnız %27'sinin strateji tanımladığı ve %47'sinin yatırım etkisini ölçemediği; ölçülebilir sonuç defteri ihtiyacını doğrudan destekliyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-2a8e1f02556561e6:80dbb32e86d024955a51ded7:01",
+            "canonical_key": "enterprises-running-ai-transformation|baseline-and-prove-ai-initiative-business-outcomes|manual-kpi-baseline-benefit-and-human-judgment-register",
+            "idea_name": "AI Dönüşüm Sonuç Kanıt Defteri",
+            "core_job": "AI projesinin kullanımını değil iş sonucunu, baseline'ı ve insan karar noktalarını kanıtlamak",
+            "target_customer": "AI dönüşüm programı yürüten orta ve büyük işletmeler",
+            "buyer": "Dönüşüm programı yöneticisi, CFO veya süreç sahibi",
+            "product_mechanism": "Manuel KPI/baseline girişi, önce-sonra ölçümü, kanıt eki, insan karar noktası ve fayda gerçekleşme raporu; dış API/DB/AI yok",
+            "why_now": "13 Ekim 2026 tarihli AX Summit haberinde AI kullanımının %58'e ulaştığı, yalnız %27'nin stratejisi olduğu ve %47'nin yatırım etkisi ölçüm yöntemine sahip olmadığı belirtildi.",
+            "before_state": "AI projeleri kullanım oranı ile raporlanıyor; baseline, kalite ve gerçekleşen fayda dağınık.",
+            "after_state": "Her girişim için ölçülebilir iş sonucu ve kanıtlı fayda gerçekleşmesi izleniyor.",
+            "canonical_source_urls": [
+              "https://www.ajupress.com/view/20261013133270328"
+            ],
+            "supporting_article_ids": [
+              "852035d2a2507a516a5e1cb2"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.ajupress.com/view/20261013133270328",
+                "accessed_at": "2026-10-14T03:07:42.619Z",
+                "page_read": true,
+                "claim": "코오롱베니트, AI 도입 넘어 성과 창출 위한 AX 실행 전략 공개 - 지디넷코리아",
+                "observation": "Haberde 500 katılımcılı AX Summit, %58 kullanım, %27 tanımlı strateji, %47 ölçüm yöntemi eksikliği ve belge otomasyonunda 4 saatten 5 saniyeye düşüş örneği yer alıyor."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_scope_evidence_hints": [],
+            "local_evidence": []
+          }
+        ]
+      }
+    ]
+  }
+}
