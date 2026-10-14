@@ -1,0 +1,36 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "c4d6c0eef98edd2629a172fa37ea65424fd8f47a9f0ca80cb313f5f9a7d41f59",
+  "decision": {
+    "article_key": "b559181ebf6c74b4a6c4c535",
+    "decision": "opportunity",
+    "reason": "Geekom A7 2026 testleri aynı model adında farklı donanım ve NPU bulunmaması nedeniyle yerel AI görev uygunluğunun pazarlama adından çıkarılamadığını gösteriyor; alıcının çevrimdışı görev setiyle kanıt paketi oluşturması değerlidir.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-170209c2412ae420:b559181ebf6c74b4a6c4c535:1",
+        "canonical_key": "small-business-it-buyer|local-ai-pc-fit|offline-benchmark-card",
+        "idea_name": "Yerel AI Bilgisayar Görev Uygunluk Kartı",
+        "core_job": "Mini PC veya dizüstünü gerçek yerel AI görevlarıyla ölçüp satın alma kararını kanıtlamak",
+        "target_customer": "KOBİ BT yöneticileri ve bağımsız geliştiriciler",
+        "buyer": "BT satın alma sorumlusu",
+        "product_mechanism": "Kullanıcının yerel benchmark sonuçlarını CSV ile girdiği görev/memory/süre matrisi, cihaz karşılaştırması ve PDF karar kartı",
+        "why_now": "A7 2026 aynı ad altında farklı CPU konfigürasyonlarına sahip ve test edilen sürümde NPU yok",
+        "before_state": "Model adı ve pazarlama metni gerçek görev uygunluğunu gizliyor",
+        "after_state": "Her cihaz gerçek görev süresi, bellek ve güç ölçümüyle karşılaştırılır",
+        "canonical_source_urls": [
+          "https://www.it-connect.fr/test-geekom-a7-2026-edition/"
+        ],
+        "supporting_article_ids": [
+          "a71"
+        ],
+        "source_observations": [
+          "Test Ryzen 5 7545U, 16 GB RAM, Radeon 740M ve NPU yokluğunu ayrıntılı veriyor."
+        ],
+        "scope_hint": "Türkiye",
+        "local_evidence": "Türkiye'de donanım alıcısının kendi görev setiyle karar vermesi"
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-170209c2412ae420/001.json",
+  "valid_until": "2026-11-13T02:09:55Z"
+}
