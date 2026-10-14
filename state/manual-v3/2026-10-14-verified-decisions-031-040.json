@@ -1,0 +1,437 @@
+{
+  "schema_version": 1,
+  "kind": "manual_v3_candidate_terminal_decisions",
+  "as_of": "2026-10-14",
+  "authoritative_main_state_not_mutated": true,
+  "not_v2_controller_receipt": true,
+  "not_prod_published": true,
+  "terminal_candidate_decisions": 10,
+  "decisions": {
+    "rejected": 10,
+    "semantic_duplicate": 0,
+    "qualified": 0,
+    "hold": 0
+  },
+  "items": [
+    {
+      "job_id": "2026-10-10-migration-validation-8f9837b00060e5a6",
+      "input_hash": "8f9837b00060e5a646c90315385722e07fb5b3a2329db63854edf50bd698a1c8",
+      "candidate_name": "PRReviewQueue — AI kod inceleme darboğazı görünürlüğü",
+      "canonical_key": "aı-ile-yazılım-geliştiren-ekipler|inceleme-darboğazını-ve-riskli-pr-ları-önceliklendirmek|github-csv-manuel-veri-aktarımıyla-bekleme-yaşı-değişiklik-s",
+      "target_customer": "AI ile yazılım geliştiren ekipler",
+      "core_job": "İnceleme darboğazını ve riskli PR'ları önceliklendirmek",
+      "product_mechanism": "GitHub CSV/manuel veri aktarımıyla bekleme yaşı, değişiklik sayısı, sahiplik ve SLA panosu",
+      "trigger_url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "decision": "rejected",
+      "reason_code": "more_than_three_identified_global_direct_competitors",
+      "competition_review_date": "2026-10-14",
+      "global_direct_competitors": [
+        {
+          "name": "Waydev",
+          "url": "https://docs.waydev.co/docs/pr-insights",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "Swarmia",
+          "url": "https://www.swarmia.com/changelog/2026-05-29-ai-review-agent-metrics/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "LinearB",
+          "url": "https://linearb.io/blog/pr-notifications",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "Jellyfish",
+          "url": "https://jellyfish.co/engineering-benchmarks/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        }
+      ],
+      "direct_competitor_count_identified": 4,
+      "reason_tr": "Engineering managers monitor PR pickup/review latency, age, size and team bottlenecks with dashboards and prioritization. Four incumbent engineering intelligence products offer equivalent review-flow visibility (CSV-only import is a lighter ingestion mode, not a new JTBD).",
+      "turkiye_direct_count": null,
+      "original_article_qualification": "Not required for competitor-disqualification decision; no assertion of independent original article page-read",
+      "site_publication": false,
+      "controller_receipt": false,
+      "reviewed_at": "2026-10-14T06:11:12.909Z"
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-6acbee88354786f3",
+      "input_hash": "6acbee88354786f3bbe843286c930fc06779674f6a2631fb3368a87233191975",
+      "candidate_name": "CRMContext Freshness — satış veri güncellik kontrolü",
+      "canonical_key": "küçük-b2b-satış-ekipleri|görevlerde-kullanılan-müşteri-bilgilerinin-güncelliğini-göst|kullanıcının-sahip-olduğu-csv-ile-kaynak-tarihini-saklama-st",
+      "target_customer": "Küçük B2B satış ekipleri",
+      "core_job": "Görevlerde kullanılan müşteri bilgilerinin güncelliğini göstermek",
+      "product_mechanism": "Kullanıcının sahip olduğu CSV ile kaynak tarihini saklama, stale-data uyarısı ve doğrulama görevi",
+      "trigger_url": "https://venturebeat.com/business/zoominfo-launches-native-clickup-integration-through-gtmai",
+      "decision": "rejected",
+      "reason_code": "more_than_three_identified_global_direct_competitors",
+      "competition_review_date": "2026-10-14",
+      "global_direct_competitors": [
+        {
+          "name": "Insycle",
+          "url": "https://www.insycle.com/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "Validity DemandTools",
+          "url": "https://www.validity.com/blog/stop-data-decay-from-quietly-draining-your-revenue/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "Cloudingo",
+          "url": "https://cloudingo.com/partners/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "HubSpot Data Quality",
+          "url": "https://knowledge.hubspot.com/data-management/maintain-a-trusted-source-of-customer-data",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        }
+      ],
+      "direct_competitor_count_identified": 4,
+      "reason_tr": "Sales and RevOps buyers already assess records' staleness, drift and ownership, flag data issues and correct/verify them across four named CRM data-integrity offerings. Manual CSV timing is a deployment variant.",
+      "turkiye_direct_count": null,
+      "original_article_qualification": "Not required for competitor-disqualification decision; no assertion of independent original article page-read",
+      "site_publication": false,
+      "controller_receipt": false,
+      "reviewed_at": "2026-10-14T06:11:12.909Z"
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-56f9aebecd5f2e18",
+      "input_hash": "56f9aebecd5f2e18960d8c41d48d4a2d085cb95108217569c15fc95f5d129ec0",
+      "candidate_name": "Data-centre PUE assurance log",
+      "canonical_key": "data-centre operators|record energy efficiency exceptions|pue entry and exception approval log",
+      "target_customer": "Data-centre operators",
+      "core_job": "Record energy efficiency exceptions",
+      "product_mechanism": "PUE entry and exception approval log",
+      "trigger_url": "https://www.straitstimes.com/singapore/politics/major-data-centres-to-meet-stricter-security-resilience-rules-with-the-passing-of-new-bill",
+      "decision": "rejected",
+      "reason_code": "more_than_three_identified_global_direct_competitors",
+      "competition_review_date": "2026-10-14",
+      "global_direct_competitors": [
+        {
+          "name": "Schneider EcoStruxure PME",
+          "url": "https://product-help.schneider-electric.com/EcoStruxure/Power-Monitoring-Expert-2024/content/6_operating/webapps/reports/energyanalysis/puesummary.htm",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "Sunbird DCIM",
+          "url": "https://www.sunbirddcim.com/product/data-center-energy-management",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "Nlyte Energy Optimizer",
+          "url": "https://www.nlyte.com/products/nlyte-energy-optimizer/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "EkkoSoft Critical",
+          "url": "https://www.ekkosense.com/ekkosoft-critical/estate-dashboard/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        }
+      ],
+      "direct_competitor_count_identified": 4,
+      "reason_tr": "Data-centre facilities/energy teams already receive PUE trend, efficiency exceptions, alerts and audit/reporting dashboards from four independent product suites. Human approval is a configurable last step of the same reporting-and-exception workflow.",
+      "turkiye_direct_count": null,
+      "original_article_qualification": "Not required for competitor-disqualification decision; no assertion of independent original article page-read",
+      "site_publication": false,
+      "controller_receipt": false,
+      "reviewed_at": "2026-10-14T06:11:12.909Z"
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-3538a96761932806",
+      "input_hash": "3538a96761932806f4011545ea30fa9595b3d332165961d97b5540a92617998a",
+      "candidate_name": "Used Commercial Vehicle Bid Tally Evidence Ledger",
+      "canonical_key": "small-commercial-vehicle-auction-organizers|reconcile-offline-used-truck-bids-and-awards|lot-bid-validation-winner-rule-and-evidence-export",
+      "target_customer": "Küçük ticari kamyon/iş makinesi ihalelerini yöneten ikinci el satıcı birlikleri ve galeriler",
+      "core_job": "Kağıt, eposta ve Excel üzerinden alınan araç tekliflerini ürün/lot bazında kontrol ederek hatasız kazanan, sıra ve sonuç tutanağı oluşturmak",
+      "product_mechanism": "Kullanıcının yüklediği lot/araç VIN, katılımcı, kapalı teklif CSV'si, saat/durum, eşik/çekilme kuralı; deterministic kazanan hesaplama, çift teklif uyarısı ve PDF tutanağı. Online ödeme, canlı teklif, Salesforce API veya dış servis yok.",
+      "trigger_url": "https://monoist.itmedia.co.jp/mn/articles/2610/13/news023.html",
+      "decision": "rejected",
+      "reason_code": "more_than_three_identified_global_direct_competitors",
+      "competition_review_date": "2026-10-14",
+      "global_direct_competitors": [
+        {
+          "name": "AuctionMethod",
+          "url": "https://www.auctionmethod.com/auction-event-solutions",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "Auction Flex",
+          "url": "https://help.auctionflex.com/en/articles/11886770-how-to-clerk-a-catalogued-auction",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "BidWrangler",
+          "url": "https://support.bidwrangler.com/en/articles/2671744",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "Auctionsoft",
+          "url": "https://www.auctionsoft.com/auctioneers",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        }
+      ],
+      "direct_competitor_count_identified": 4,
+      "reason_tr": "Auction-house seller/clerk users already manage lot, bidder, bid history, winning bidder, sale/unsold decisions and recorded settlement outcomes across four independent auction tools. Transport equipment is one catalog category, not a distinct auction decision job.",
+      "turkiye_direct_count": null,
+      "original_article_qualification": "Not required for competitor-disqualification decision; no assertion of independent original article page-read",
+      "site_publication": false,
+      "controller_receipt": false,
+      "reviewed_at": "2026-10-14T06:11:12.909Z"
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-145a5e2ccd9f2aee",
+      "input_hash": "145a5e2ccd9f2aee9e4a041126bea4baa92cab9f99fdc046580dc3fde2276379",
+      "candidate_name": "Kritik Bulut Bağımlılığı Geri Dönüş Kanıt Defteri",
+      "canonical_key": "sme-cloud-service-operators|prepare-multisite-vendor-outage-failover-evidence|dependency-rto-rpo-drill-and-recovery-checklist",
+      "target_customer": "Bir dış cloud platformuna bağımlı KOBİ BT operasyon ekipleri",
+      "core_job": "Üçüncü taraf veri merkezi kesintisi uzadığında hangi müşteri süreçleri, ödeme, satış ve kritik veri hizmetlerinin çalışacağını doğrulamak",
+      "product_mechanism": "Manuel hizmet envanteri, bağımlılık tipi, yedek lokasyon, RTO/RPO hedefi, test tarihi/başarı kanıtı, fallback adımı ve müşteri iletişim şablonları; cloud API'si çalıştırmaz",
+      "trigger_url": "https://yandex.com/company/news/2026-10-09",
+      "decision": "rejected",
+      "reason_code": "more_than_three_identified_global_direct_competitors",
+      "competition_review_date": "2026-10-14",
+      "global_direct_competitors": [
+        {
+          "name": "Fusion Risk Management",
+          "url": "https://www.fusionrm.com/solutions/business-continuity-management/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "Continuity2 Meridian",
+          "url": "https://continuity2.com/business-continuity-management-software",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "Everbridge BC in the Cloud",
+          "url": "https://www.everbridge.com/products/bc-in-the-cloud-everbridge/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "BCMStack BCP",
+          "url": "https://bcmstack.com/products/bcp",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        }
+      ],
+      "direct_competitor_count_identified": 4,
+      "reason_tr": "IT/BC practitioners model technology dependencies, fallback plans, RTO/RPO targets, exercises, approval/evidence and recovery actions in four offerings. Small-business manual evidence focus changes price/ingestion, not product mechanism.",
+      "turkiye_direct_count": null,
+      "original_article_qualification": "Not required for competitor-disqualification decision; no assertion of independent original article page-read",
+      "site_publication": false,
+      "controller_receipt": false,
+      "reviewed_at": "2026-10-14T06:11:12.909Z"
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-112b3e7ee09f97f7",
+      "input_hash": "112b3e7ee09f97f7091f6b9f8055991242276a47c6eefbf3e725c807190f2d6d",
+      "candidate_name": "Rail 400/600 kmh Integration Test Evidence Matrix",
+      "canonical_key": "rail-systems-test-engineering-teams|map-high-speed-rail-system-integration-test-coverage|track-wheel-rail-pantograph-signal-and-maglev-test-evidence",
+      "target_customer": "Çin demiryolu ekipmanı/sistem entegrasyon laboratuvarları ve test mühendisliği ekipleri",
+      "core_job": "400 km/s tren ve 600 km/s maglev teknik geliştirme çalışmalarında teker-ray, enerji, sinyal/hat, tolerans ve aşırı koşul testlerini mühendislik şartname sürümlerine bağlamak",
+      "product_mechanism": "Kullanıcının hat/araç konfigurasyonu, test matrisi ve test sonuç PDF/CSV dosyalarından kriter→test→kanıt bağlama, gereksinim sürüm farkı, eksik test/kabul kararı; matematiksel hız/hat emniyeti veya sertifika onayı vermez",
+      "trigger_url": "https://source.nra.gov.cn/xxgk/gkml/ztjg/gfzd/gfxw/zuti/kjgl/202610/t20261012_352162.shtml",
+      "decision": "rejected",
+      "reason_code": "more_than_three_identified_global_direct_competitors",
+      "competition_review_date": "2026-10-14",
+      "global_direct_competitors": [
+        {
+          "name": "Siemens Polarion",
+          "url": "https://blogs.sw.siemens.com/polarion/accelerate-and-scale-early-validation-with-polarion/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "PTC Codebeamer",
+          "url": "https://www.ptc.com/en/products/codebeamer/integrations",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "Jama Connect",
+          "url": "https://www.jamasoftware.com/solutions/test-management/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "IBM DOORS Next/ETM",
+          "url": "https://www.ibm.com/products/engineering-requirements-management-doors-next",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        }
+      ],
+      "direct_competitor_count_identified": 4,
+      "reason_tr": "Rail/complex systems engineering teams already connect requirements versions, test cases, execution evidence, gap coverage and approval trace to releases through four ALM/test-trace tools; maglev domain parameters are project templates, not a separate mechanism.",
+      "turkiye_direct_count": null,
+      "original_article_qualification": "Not required for competitor-disqualification decision; no assertion of independent original article page-read",
+      "site_publication": false,
+      "controller_receipt": false,
+      "reviewed_at": "2026-10-14T06:11:12.909Z"
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-cfe8c3b88d3413b5",
+      "input_hash": "cfe8c3b88d3413b59eb5ae3dfedf0fdebef604ae20ae3430ffe46f62cebd8f8c",
+      "candidate_name": "Agentic test run approval register",
+      "canonical_key": "engineering teams|approve and audit ai-generated regression test results|test evidence review, human sign-off and exception register",
+      "target_customer": "Engineering teams",
+      "core_job": "Approve and audit AI-generated regression test results",
+      "product_mechanism": "Test evidence review, human sign-off and exception register",
+      "trigger_url": "https://dealroom.co/news/161121-zurichs-klarent-raises-7-13m-to-scale-agentic-software-testing/",
+      "decision": "rejected",
+      "reason_code": "more_than_three_identified_global_direct_competitors",
+      "competition_review_date": "2026-10-14",
+      "global_direct_competitors": [
+        {
+          "name": "TestRail",
+          "url": "https://www.testrail.com/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "Qase",
+          "url": "https://www.qase.io/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "Xray Test Management",
+          "url": "https://www.getxray.app/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "PractiTest",
+          "url": "https://www.practitest.com/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        }
+      ],
+      "direct_competitor_count_identified": 4,
+      "reason_tr": "QA/test leads already import automated and human test run outcomes, link test evidence, review exceptions, sign off release readiness, and retain auditable test results in four established test-management systems. AI-generated cases are ordinary imported automated test evidence.",
+      "turkiye_direct_count": null,
+      "original_article_qualification": "Not required for competitor-disqualification decision; no assertion of independent original article page-read",
+      "site_publication": false,
+      "controller_receipt": false,
+      "reviewed_at": "2026-10-14T06:11:12.909Z"
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-328145440f1d3a6c",
+      "input_hash": "328145440f1d3a6c21037d028d5d22d9d6d53b54648e249bd90945c15aebab6d",
+      "candidate_name": "Offline Payment Incident Reconciliation Book",
+      "canonical_key": "small-merchants-dependent-on-cloud-payments|reconcile-customer-orders-during-cloud-payments-outage|manual-pending-order-alternative-payment-and-postincident-settlement-ledger",
+      "target_customer": "Bulut ödeme altyapısına bağlı küçük perakendeciler ve hizmet işletmeleri",
+      "core_job": "Ödeme platformu erişilemediğinde müşterinin siparişi, alternatif ödeme talebi, kısmi teslim, sonradan uzlaşma ve çift tahsilat riskini insan denetimiyle izlemek",
+      "product_mechanism": "Kullanıcının offline CSV sipariş numarası, müşteri iletişimi, ödeme durumu, alternatif ödeme teyidi, teslimat, olay nedeni ve kapanış işareti; canlı ödeme/finans hesabı API'si yok",
+      "trigger_url": "https://www.theregister.com/security/2026/10/12/ukrainian-drone-strikes-on-yandex-datacenters-knock-cloud-and-payments-offline/5302577",
+      "decision": "rejected",
+      "reason_code": "more_than_three_identified_global_direct_competitors",
+      "competition_review_date": "2026-10-14",
+      "global_direct_competitors": [
+        {
+          "name": "Clover",
+          "url": "https://docs.clover.com/dev/docs/payment-reconciliation-and-recovery",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "Square POS",
+          "url": "https://squareup.com/help/us/en/article/8551-view-offline-payments",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "Shopify POS",
+          "url": "https://help.shopify.com/en/manual/sell-in-person/shopify-pos/selling-offline/offline-payments",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "Lightspeed Retail",
+          "url": "https://shopkeep-support.lightspeedhq.com/hc/en-us/articles/47479984822299-Offline-Credit-Payments",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        }
+      ],
+      "direct_competitor_count_identified": 4,
+      "reason_tr": "Merchants using four mainstream POS systems have offline transactions, pending/paid/declined reconciliation and duplicate/decline recovery with statuses and receipts. Multi-provider manual ledger is a lightweight fallback on top of the same checkout-to-settlement job.",
+      "turkiye_direct_count": null,
+      "original_article_qualification": "Not required for competitor-disqualification decision; no assertion of independent original article page-read",
+      "site_publication": false,
+      "controller_receipt": false,
+      "reviewed_at": "2026-10-14T06:11:12.909Z"
+    },
+    {
+      "job_id": "2026-10-13-catchup-e3a10c28a635-validation-34d6412a4e5a1638",
+      "input_hash": "34d6412a4e5a1638966bb1ade84c9c8a5689043be2d7744583a155c8ec870b57",
+      "candidate_name": "İtalya E-Fatura Arşiv Son Tarih Kanıt Defteri",
+      "canonical_key": "italian-accountancy-smes|track-2025-e-invoice-digital-preservation-readiness|regulatory-date-interpretation-document-batch-and-archiving-evidence-ledger",
+      "target_customer": "İtalya muhasebe büroları ve KOBİ vergi/ERP ekipleri",
+      "core_job": "2025 elektronik fatura ve ilgili vergi belgelerinin arşivleme teslimini, yorum farkı içeren Şubat 2027 takvimi için kanıtlı yönetmek",
+      "product_mechanism": "Manuel belge sayısı, müşteri, 1/2 Şubat senaryosu, sağlayıcı teslim fişi, bütünlük kontrolü, mevzuat yorumu/son resmî açıklama kaydı ve onay PDF; resmî saklama hizmetini yerine geçmez",
+      "trigger_url": "https://ntplusfisco.ilsole24ore.com/art/fatture-2025-termine-la-conservazione-digitale-slitta-febbraio-2027-AJGieZhB",
+      "decision": "rejected",
+      "reason_code": "more_than_three_identified_global_direct_competitors",
+      "competition_review_date": "2026-10-14",
+      "global_direct_competitors": [
+        {
+          "name": "Aruba Fatturazione Elettronica",
+          "url": "https://guide.aruba.it/faq/soluzioni-fatturazione-elettronica/fatturazione-elettronica/conservazione-a-norma-ed-esibizione-fatture",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "InfoCert LegalInvoice",
+          "url": "https://help.infocert.it/home/faq/devo-conservare-le-fatture-elettroniche?lang=it",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "TeamSystem Digital Invoice/Archive",
+          "url": "https://www.teamsystem.com/store/ts-digital-invoice/funzionalita/conservazione-digitale-fatture/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "Namirial Conservazione Digitale",
+          "url": "https://www.namirial.com/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        }
+      ],
+      "direct_competitor_count_identified": 4,
+      "reason_tr": "Italian finance/accounting teams already track invoice conservation, receipt/proof status, statutory archival deadlines and missing documents in multiple platforms. Manual ledger which only monitors vendor delivery/status is a narrow piece of the same compliance evidence workflow.",
+      "turkiye_direct_count": null,
+      "original_article_qualification": "Not required for competitor-disqualification decision; no assertion of independent original article page-read",
+      "site_publication": false,
+      "controller_receipt": false,
+      "reviewed_at": "2026-10-14T06:11:12.909Z"
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-56f100a64ff40d5f",
+      "input_hash": "56f100a64ff40d5f95aa4aacd4ac9231d515901d40794ba886726ed73de38b7e",
+      "candidate_name": "Offshore kit chain-of-custody",
+      "canonical_key": "wind-farm maintenance operators|track drone-delivered maintenance kits|kit dispatch receipt and return ledger",
+      "target_customer": "Wind-farm maintenance operators",
+      "core_job": "Track drone-delivered maintenance kits",
+      "product_mechanism": "Kit dispatch receipt and return ledger",
+      "trigger_url": "https://orsted.co.uk/media/newsroom/news/2026/10/big-cargo-drones-deliver-toolkits-to-wind-turbines-in-the-north-sea",
+      "decision": "rejected",
+      "reason_code": "more_than_three_identified_global_direct_competitors",
+      "competition_review_date": "2026-10-14",
+      "global_direct_competitors": [
+        {
+          "name": "Hilti ON!Track",
+          "url": "https://help.ontrack3.hilti.com/hc/en-us/articles/37176286632081-How-to-handle-kits-in-Automated-Transfers",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "ShareMyToolbox",
+          "url": "https://www.sharemytoolbox.com/tool-inventory-app/how-it-works/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "GoCodes",
+          "url": "https://gocodes.com/features/",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        },
+        {
+          "name": "ToolHound",
+          "url": "https://www.toolhound.com/products/toolhound-system-overview",
+          "comparison": "same target buyer and core operating job; includes substantially overlapping workflow"
+        }
+      ],
+      "direct_competitor_count_identified": 4,
+      "reason_tr": "Industrial maintenance and field-tool teams already record kit dispatch, responsible custodian, site/worker receipt, return and audit trails in four independent tool custody platforms. Drone is one transfer mode; core receipt/return control is materially the same.",
+      "turkiye_direct_count": null,
+      "original_article_qualification": "Not required for competitor-disqualification decision; no assertion of independent original article page-read",
+      "site_publication": false,
+      "controller_receipt": false,
+      "reviewed_at": "2026-10-14T06:11:12.909Z"
+    }
+  ]
+}
