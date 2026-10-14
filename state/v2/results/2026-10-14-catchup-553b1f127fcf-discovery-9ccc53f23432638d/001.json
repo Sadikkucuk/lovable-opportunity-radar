@@ -1,0 +1,167 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-9ccc53f23432638d",
+  "input_hash": "9ccc53f23432638d31cc5d0eda620488eb2b429f1b407dc20bb3f020e9f5fb9d",
+  "token": "manual-v3-20261014-9ccc53f23432638d-1",
+  "finished_at": "2026-10-14T08:07:59.426Z",
+  "outcome": "done",
+  "reason": "10 haber karara bağlandı: 3 özgün/çoklu kaynağa dayalı ham SaaS fırsatı, 7 no_opportunity. Ham fırsatlar sadece sonraki Merge/Validation için, katalog veya siteye yeni ürün yayınlanmış değildir.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "05b3e2d89565cbb7f854ccb2",
+        "decision": "no_opportunity",
+        "reason": "IT之家 13 Ekim özgün haberinde Intel D270 GPU'nun yeni Xe3P, FP8, enerji/bellek teknik özellikleri anlatılıyor. Donanım SKU duyurusu tek başına yeni tekrarlanan kurumsal kayıt işi değil; AI accelerator deployment planning katalogda zaten mevcut.",
+        "canonical_source_url": "https://www.ithome.com/1/012/158.htm",
+        "opportunities": []
+      },
+      {
+        "article_key": "05bc5e777f1c471fbf8d0530",
+        "decision": "opportunity",
+        "reason": "FreightWaves 13 Ekim özgün röportajı iki saatte yaklaşık 20 sentlik ULSD yükselişi, red-dyed diesel feragati ve filoların yakıt bütçesine ani şokları doğruluyor. Filo/sözleşme bazında yakıt ek ücreti, marj ve müşteri onayı senaryosu manuel kanıt iş akışına dönüşebilir. Anlık piyasa veri akışı şart değil.",
+        "canonical_source_url": "https://www.freightwaves.com/news/diesel-prices-surge-20-cents-why-the-fuel-market-is-in-crisis",
+        "opportunities": [
+          {
+            "idea_name": "Diesel Shock Freight Margin Evidence Planner",
+            "canonical_key": "road-freight-operators|assess-rapid-diesel-cost-shocks-on-route-margin|trip-fuel-contract-surcharge-and-signoff-scenario-ledger",
+            "target_customer": "Karayolu taşımacılığı filosu ve 3PL fiyatlama ekipleri",
+            "buyer": "Filo finans / ticari fiyatlama müdürü",
+            "core_job": "Ani dizel fiyat artışında rota bazlı maliyet farkını, müşteri yakıt ek ücretini ve kontrat marjını kanıtlı yeniden hesaplamak",
+            "product_mechanism": "Kullanıcının CSV'den aldığı rota km, litre/100km, fiyat öncesi/sonrası, sipariş/navlun bedeli, sözleşme pass-through oranı ve müşteri onayı; deterministik marj/duyarlılık hesaplayıcı, canlı akaryakıt API'si yok",
+            "why_now": "13 Ekim 2026 FreightWaves iki saatte 20 sent ULSD yükselişi ve dizel arz sıkışıklığını bildiriyor",
+            "before_state": "Akaryakıt fiyat şoklarının sefer bazlı gerçek sözleşme marjına etkisi dağınık Excel ve e-postalarda",
+            "after_state": "Trip → fiyat senaryosu → sözleşme surcharge → marj farkı → müşteri/owner onayı → PDF kanıt paketi",
+            "scope_hint": "Dünya",
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-9ccc53f23432638d:05bc5e777f1c471fbf8d0530:01",
+            "canonical_source_urls": [
+              "https://www.freightwaves.com/news/diesel-prices-surge-20-cents-why-the-fuel-market-is-in-crisis"
+            ],
+            "supporting_article_ids": [
+              "47192fec470d0c4501c78743"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.freightwaves.com/news/diesel-prices-surge-20-cents-why-the-fuel-market-is-in-crisis",
+                "observation": "FreightWaves 13 Ekim özgün röportajı iki saatte yaklaşık 20 sentlik ULSD yükselişi, red-dyed diesel feragati ve filoların yakıt bütçesine ani şokları doğruluyor. Filo/sözleşme bazında yakıt ek ücreti, marj ve müşteri onayı senaryosu manuel kanıt iş akışına dönüşebilir. Anlık piyasa veri akışı şart değil.",
+                "observed_at": "2026-10-14T08:07:59.426Z",
+                "caveat": "Product hypothesis for Merge/Validation; no claim of verified Turkish/global competition or final market feasibility."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "06023d951bc698a3f1799e8c",
+        "decision": "no_opportunity",
+        "reason": "Rapidus'un kendi 5 Ekim duyurusu CORE semiconductor design ekosisteminin ve 17 Design Solution Associate'in kurulduğunu açıklıyor. 13 Ekim RSS haberinde bildirilen tasarım destek partnerliği eski bir olay; tek başına önceki katalogdan ayrışan yeni ücretsiz Lovable iş akışı doğurmuyor. Doğrudan paywall kaynağının tam metni okunamadı.",
+        "canonical_source_url": "https://www.rapidus.inc/en/news_topics/information/20261005-2/",
+        "opportunities": []
+      },
+      {
+        "article_key": "06197b9e3ec9ab5f48bc95b3",
+        "decision": "opportunity",
+        "reason": "Reuters 13 Ekim haberinde Anthropic'in bazı AI modellerinin gelecekte IoT cihazlarında otonom yayılım yeteneğine sahip olabileceği uyarısını ve bunun henüz tahmin olduğunu aktarıyor. Bu gerçekleşmiş siber salgın değildir; IoT güvenlik ekipleri için varlık-segment-kapatma tatbikatı, manuel kontrol ve kanıt masası hipotezi üretilebilir. Ağ tarama veya canlı agent çalıştırılmaz.",
+        "canonical_source_url": "https://www.reuters.com/business/ai-models-may-soon-self-replicate-without-access-data-centers-anthropic-warns-2026-10-13/",
+        "opportunities": [
+          {
+            "idea_name": "Edge AI Worm Containment Drillbook",
+            "canonical_key": "iot-security-and-facilities-teams|tabletop-self-replicating-ai-compromise-containment|device-segment-isolation-and-drill-evidence-workflow",
+            "target_customer": "Akıllı bina, üretim IoT ve edge cihaz siber güvenlik ekipleri",
+            "buyer": "OT/IoT siber güvenlik müdürü",
+            "core_job": "AI ile genişleyebilecek otonom bulaşma riskinde IoT ağ segmentlerini, cihaz sahipliğini, izolasyon prosedürlerini ve tatbikat aksiyonlarını kanıta bağlamak",
+            "product_mechanism": "Cihaz/segment CSV envanteri, müdahale runbook'u, yetkili kapanış listesi, tabletop kontrol senaryosu, tatbikat süresi ve aksiyon kanıt defteri; ağ taraması, IoT erişimi, AI ajanı veya otomatik kapatma yok",
+            "why_now": "13 Ekim 2026 Anthropic öz-çoğalma yeteneği riskine ilişkin ileriye dönük araştırma/uyarı yayımlandığı haberle aktarıldı; gerçekleşmiş olay değildir",
+            "before_state": "Envanter, olay tatbikatı, yetkili izolasyon runbook'ları ve karar sahipleri ayrı",
+            "after_state": "Tehdit varsayımı → cihaz/segment → insan izolasyon yetkisi → tatbikat → sonuç/eksik → kapatma kanıtı",
+            "scope_hint": "Dünya",
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-9ccc53f23432638d:06197b9e3ec9ab5f48bc95b3:01",
+            "canonical_source_urls": [
+              "https://www.reuters.com/business/ai-models-may-soon-self-replicate-without-access-data-centers-anthropic-warns-2026-10-13/"
+            ],
+            "supporting_article_ids": [
+              "f2d14d181161f7c6ee626dc2"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.reuters.com/business/ai-models-may-soon-self-replicate-without-access-data-centers-anthropic-warns-2026-10-13/",
+                "observation": "Reuters 13 Ekim haberinde Anthropic'in bazı AI modellerinin gelecekte IoT cihazlarında otonom yayılım yeteneğine sahip olabileceği uyarısını ve bunun henüz tahmin olduğunu aktarıyor. Bu gerçekleşmiş siber salgın değildir; IoT güvenlik ekipleri için varlık-segment-kapatma tatbikatı, manuel kontrol ve kanıt masası hipotezi üretilebilir. Ağ tarama veya canlı agent çalıştırılmaz.",
+                "observed_at": "2026-10-14T08:07:59.426Z",
+                "caveat": "Product hypothesis for Merge/Validation; no claim of verified Turkish/global competition or final market feasibility."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "06508374b306204d271eb539",
+        "decision": "opportunity",
+        "reason": "TechCrunch 13 Ekim özgün haberi Google Play'in ABD'de 18+ kullanıcıların kişisel vibe-coded Android uygulamalarını yayımlamadan özel çalıştırabilmesini duyurduğunu doğruluyor. Özelden yakın çevreye veya halka geçişte veri izinleri, depolama, yaş sınırlaması, paylaşım ve güvenlik kontrolü için dış Android/Google API'si istemeyen yayın öncesi kontrol defteri hipotezi.",
+        "canonical_source_url": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/",
+        "opportunities": [
+          {
+            "idea_name": "Personal Android App Publish Readiness Desk",
+            "canonical_key": "solo-android-app-creators|review-private-to-shared-app-release-readiness|permission-data-policy-test-and-release-signoff-register",
+            "target_customer": "Kişisel Android uygulaması yapan no-code/vibe-code geliştiricileri ve küçük ekipler",
+            "buyer": "Bağımsız uygulama geliştiricisi veya küçük ajans sahibi",
+            "core_job": "Google Play'de özel uygulamayı arkadaşlara veya kamuya sunmadan önce izin, veri politikası, sürüm, test ve yaş/kapsam gereksinimlerini kontrol etmek",
+            "product_mechanism": "Kullanıcının manuel uygulama/izin listesi, veri türü, paylaşım kapsamı, test kanıtı, Play gereksinim checklist sürümü ve onay defteri; Google Play API ya da AI app builder çalıştırmaz",
+            "why_now": "13 Ekim 2026 Google Play özel vibe-coded kişisel Android uygulamaları ABD 18+ kullanıcıya sunmaya başladı; paylaşım kademeleri planlanıyor",
+            "before_state": "Kişisel prototipten kısıtlı paylaşım/yayına geçiş için izin ve güvenlik kararları notlarda kayıp",
+            "after_state": "Sürüm/app → yetki/veri ve policy → test → insan review → yayımla/erteleyip gerekçe",
+            "scope_hint": "Dünya",
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-9ccc53f23432638d:06508374b306204d271eb539:01",
+            "canonical_source_urls": [
+              "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/"
+            ],
+            "supporting_article_ids": [
+              "6f91f2d74207f0308a1b28e2"
+            ],
+            "source_observations": [
+              {
+                "url": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/",
+                "observation": "TechCrunch 13 Ekim özgün haberi Google Play'in ABD'de 18+ kullanıcıların kişisel vibe-coded Android uygulamalarını yayımlamadan özel çalıştırabilmesini duyurduğunu doğruluyor. Özelden yakın çevreye veya halka geçişte veri izinleri, depolama, yaş sınırlaması, paylaşım ve güvenlik kontrolü için dış Android/Google API'si istemeyen yayın öncesi kontrol defteri hipotezi.",
+                "observed_at": "2026-10-14T08:07:59.426Z",
+                "caveat": "Product hypothesis for Merge/Validation; no claim of verified Turkish/global competition or final market feasibility."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "066c6eec19986e42e42ff9f6",
+        "decision": "no_opportunity",
+        "reason": "12 Ekim Hollanda kaynağı VOLT'un Rotterdam AI veri merkezi projesinde Nebius'u ilk sözleşmeli müşteri olarak aldığını bildiriyor. Yeni anchor müşterinin açıklanması tek başına farklı bir tekrar eden SaaS pazarı göstermiyor; veri merkezi teminat/kredi şartı kanıt masası benzeri adaylar mevcut kuyrukta.",
+        "canonical_source_url": "https://rijk.nl/artikel/2026-10-12-nebius-geeft-rotterdams-ai-datacenter-volt-steun-bij-financi/",
+        "opportunities": []
+      },
+      {
+        "article_key": "067262fdb7aa1c8d9bb6ecf6",
+        "decision": "no_opportunity",
+        "reason": "Il Sole 24 Ore OCR/ekonomi liste girdisi OECD İtalya 2026 ekonomik ülke araştırmasına ilişkin genel rapor kaydıdır. Bir işletmeye özgü yürürlüğe giren mevzuat, zorunlu kanıt tablosu veya yeni açık işlem akışı göstermiyor; özgün stream24 video detaylarına erişilemedi.",
+        "canonical_source_url": "https://www.oecd.org/",
+        "opportunities": []
+      },
+      {
+        "article_key": "06dd5775918cbb3c3c56906f",
+        "decision": "no_opportunity",
+        "reason": "LeiFeng özgün haberine göre ByteDance Seed 13 Ekimde Model Alignment & Preparedness departmanı kurulduğunu iç yazıyla duyuruyor. Kurumsal iç organizasyon kararı yeni müşterilere zorunlu SaaS sunumunu kanıtlamıyor; AI safety evaluation ürünleri hali hazırda katalogda.",
+        "canonical_source_url": "https://m.leiphone.com/category/industrynews/jX1ndNxDJ94n6bUu.html",
+        "opportunities": []
+      },
+      {
+        "article_key": "071badf2e55e851ec791787d",
+        "decision": "no_opportunity",
+        "reason": "China Economic Net 'AI reshapes competition in software industry' genel sektör analizi/fikir yazısı manşetidir. Tam özgün metin erişilemedi, somut yürürlük/tedarik işlemi kanıtlanmadı; yalnız genel yorumdan ayrı bir workflow çıkarılmadı.",
+        "canonical_source_url": "http://www.ce.cn/",
+        "opportunities": []
+      },
+      {
+        "article_key": "072483903d6d79903478f0e3",
+        "decision": "no_opportunity",
+        "reason": "The Register 12 Ekim 'The Kettle' podcast dökümü ShinyHunters soruşturması ve Anthropic Mythos tarafından keşfedilen açıkları tartışıyor. Tek podcast gündemi değil; vulnerability finding triage ve technical submission evidence ürünleri zaten benzer çekirdek işi kapsıyor.",
+        "canonical_source_url": "https://www.theregister.com/security/2026/10/12/imagine-theres-no-shiny-hunters-ai-could-make-human-hacking-crews-obsolete/5302430",
+        "opportunities": []
+      }
+    ]
+  }
+}
