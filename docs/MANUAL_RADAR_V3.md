@@ -35,3 +35,22 @@
 - V2 controller errors: 3; open evidence followup: 8.
 - Site sync son gözlem: 91 toplam (89 eski + 2 yeni).
 - Bu belge araştırma receipt'i veya yayın commit'i yerine geçmez.
+
+
+## OTURUM BAŞINA ZORUNLU KAPASİTE — MİNİMUM 20 ADAY (2026-10-14 KULLANICI KARARI)
+Bu başlık manuel Radar v3 için diğer kapasite ve raporlama ifadelerinden üstündür; günlük 40 haber / 5 aday limiti geçersizdir.
+
+1. Kullanıcı "devam et", "işe koyul" veya benzeri açık manuel çalışma emri verdiğinde, normal oturum hedefi **en az 20 ayrı fırsat adayının uçtan uca araştırma ve nihai kararının tamamlanması, kanıta bağlanması ve mümkünse GitHub'a checkpoint commit'inin atılmasıdır**. İşlem ve yanıt sayısını yapay olarak sınırlama. 20 bir taban hedeftir, tavan değildir; elverişli ise daha fazla devam et.
+2. "Aday tamamlandı" saymak için karar **qualified / rejected / semantic_duplicate** olmalı ve ilgili gerçek kaynaklar, geçmiş karşılaştırması, işlevsel gerekçe ve gerekli pazar/teknoloji kanıtları kaydedilmiş olmalı. Opened, read, triaged, candidate_seen, prechecked, pending, hold ve unverified sonuçları tamamlanan 20'ye DAHİL DEĞİLDİR.
+3. Qualified kararı ancak orijinal tetikleyici haber doğrulanmış, müşterinin gerçek işi ve iş akışı tanımlanmış, Türkiye doğrudan rakip araması tarihli/kaynaklı (tespit edilen 0), global doğrudan rakip araması tarihli/kaynaklı (en çok 3), ücretsiz ve dış servis bağımsız MVP doğrulanmış, history semantik çakışma denetimi geçmiş ve eksiksiz ürün kaydı üretilmişse verilebilir. Belirsiz rakip sayısı sıfır değildir. Sadece bir manşet veya RSS özeti yetmez.
+4. Rejected kararı somut gerekçe ve gerçek kontrol kanıtını gerektirir: doğrulanmış ürün politikasına aykırılık, belgeli uygulanamazlık veya yeterli doğrulamadan sonra makul gerekçeyle elenen fırsat. Eksik erişim veya araştırmaya vakit yetmemesi otomatik rejected değildir; HOLD'dur.
+5. Semantic_duplicate kararı için önceki ürünün canonical_key, adı, müşteri, JTBD ve ürün mekanizması alanlarıyla somut eşleştirme bulunmalı; yüzeysel isim benzerliği veya tahmini match tek başına yeterli değildir. Çakışma kararına karşı örnek varsa HOLD olarak yeniden değerlendirilir.
+6. **Akış:** başta 20+ adaylık parti seç → kaynak ve geçmiş indeksini oku → birbirinden bağımsız gerçek kontrolleri paralel yürüt → her sonuç için kanıt ve karar kaydet → GitHub read-back doğrulaması → 20 terminal karara ulaşana kadar mümkün olduğunca sonraki adaylarla sürdür → gerekiyorsa yayın ve site son kontrolü.
+7. Tek bir araştırma paketi kullanıcı isteği olmadan **1–2 adayda kesilmez**. Ara sonuçta kullanıcıya durum verilebilir; ancak mümkün olduğu ölçüde araç çalışmasına devam edilir. Oturum boyunca yavaşlık veya çoklu araç çağrıları, yüzeysel/fabrikasyon delille hızı artırma gerekçesi olamaz.
+8. Gerçek sağlayıcı/izin/güvenlik engeli, bağlantı kesilmesi veya oturum kapasitesi nedeniyle 20'ye ulaşılamazsa, kaydedilen **gerçek terminal karar sayısı**, hold ve examined sayıları ayrı raporlanır; **20 tamamlandı** denmez. Kaydedilebilir kısmı geri okunabilir checkpoint'e yaz, sonraki oturumu kalan adaylardan başlat.
+9. Yeni kayıtlar mevcut v2 iş/claim/result dosyalarının üzerine yazılmaz. v3 kontrol yoluna GitHub feature branch üzerinden açıkça kanıtlı checkpoint olarak aktarılır. V2 controller veya prod siteye eşitleme ayrı kalite/yayın kapılarından geçer.
+10. Etkin 5 zamanlanmış eski worker veya çalışma saatleri kullanıcı ayrıca istemedikçe değiştirilmez. Tam geçişte kullanıcı onayı, katalog korunumu ve test edilmiş yeni publisher gerekir.
+11. Her cevap bitmeden mümkünse **En az 20 terminal aday**, **bekleyen/HOLD**, **GitHub commit ve okunarak doğrulanan kayıt**, **yeni katalog fikri**, **site release_id / gösterim**, **engeller** rakamlarıyla ayrıştırılır.
+
+### Manuel kullanma komutu
+“Radar'a devam et. Canlı GitHub kuyruğundan ve bir önceki v3 checkpoint'inden başlayarak EN AZ 20 ADAYI kaynaklarıyla uçtan uca analiz edip terminal karara bağla; 20'den sonra kapasite varsa devam et. Tamamlanan kararları GitHub'a kaydet ve read-back doğrula. QUALIFIED olanları, bütün kalite/koruma/yayın şartları geçildiğinde siteye ulaştır. Hold ve inceleme ayrı sayılsın. Engeli doğrudan bildir; güvenlik/izin kontrollerini atlatma.”
