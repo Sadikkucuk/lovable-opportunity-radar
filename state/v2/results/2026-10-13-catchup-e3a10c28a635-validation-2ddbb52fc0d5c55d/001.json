@@ -1,0 +1,215 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-2ddbb52fc0d5c55d",
+  "input_hash": "2ddbb52fc0d5c55d723e7948fecdba83eaf8a437bd59fa25ac936837654649b7",
+  "token": "d6744ec4-3861-4aa3-aa42-1f8aba54d5d2",
+  "finished_at": "2026-10-14T02:52:48.271Z",
+  "outcome": "done",
+  "reason": "12-13 Ekim Ledger cihazlarına fiziksel implant vakası özgün ZDNet/BleepingComputer/CoinDesk kaynaklarıyla doğrulandı. Ancak Türkiye'de tam olarak kriptografik güvenli cihaz satıcısının şüpheli seri/lot karantinası, yetkili donanım incelemesi, etkilenen müşteriye bildirim ve olay kapatma kontrolünü aynı baştan sona iş olarak sunan ayrı SaaS ürününün yokluğu kanıtlanamadı. Türkiye genel QMS/ERP seri, bloklama ve karantina araçları bitişik rakipler olarak ayrıldı; global ITAD chain-of-custody yazılımları da birebir crypto-tamper vakası değil. TR=0 ve global<=3 kesin sonuca varılmadığından 'qualified' değil 'unverified'; yeterli pazar kanıtı için kontrollü takip gerekir.",
+  "result": {
+    "decision": "unverified",
+    "reason": "Somut güvenlik olayı gerçek, ödenebilir operasyonel sorun makul. Ancak birebir müşteri+JTBD+iş akışı TR doğrudan rakip yokluğu ve global sağlayıcı sınırının tamamı doğrulanmadı; mevzuat gerektiren sorumluluk zincirinde basit CSV/PDF tek başına bütünlük sağlayan adli chain of custody değildir. Bu nedenle kesin 'qualified' ve 'rejected' kararı için araştırma eksik; ikinci aşama rekabet/uygulanabilirlik kanıtına geçmeli.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.zdnet.fr/actualites/un-materiel-espion-siphonne-86-millions-de-dollars-sur-des-portefeuilles-ledger-505593.htm",
+        "accessed_at": "2026-10-14T02:52:48.271Z",
+        "claim": "Ledger satıcı kanalındaki fiziksel implant ve satış durdurma/karantina olayı.",
+        "observation": "ZDNet France 12 Ekim: CryptoBilis yeniden satıcı kanalıyla bağlantılı en az bir fiziksel müdahale vakası; 86 milyon USD sadece araştırmacıların tahmini olup Ledger'ın onaylı kaybı değil. Etkilenmiş olabilecek müşterilere cihaza yeni kurulum yapmama önerisi.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "trigger",
+        "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
+        "accessed_at": "2026-10-14T02:52:48.271Z",
+        "claim": "Fiziksel implant sıradan cihaz orijinallik kontrolünü aşabilir.",
+        "observation": "BleepingComputer: ek mobil bağlantı/devre bileşeni ile gizli anahtar sızdırma riski; olay doğrulaması yalnız en az bir cihaz; diğer tüm satıcıların risk altında olduğu ilan edilmedi.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "trigger",
+        "url": "https://www.coindesk.com/tech/2026/10/13/ledger-says-spy-chip-inside-cryptobilis-ledger-devices-transmitted-wallet-keys-over-mobile-network",
+        "accessed_at": "2026-10-14T02:52:48.271Z",
+        "claim": "Elektronik donanım üzerindeki ek casus çip normal güvenli eleman testlerinden bağımsızdır.",
+        "observation": "CoinDesk 13 Ekim olay anlatısı donanım müdahalesi bağlamını destekler; adli inceleme prosedürü kaynak haberden daha ileri varsayılmaz.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://www.miraerp.com/sektorler/havacilik",
+        "accessed_at": "2026-10-14T02:52:48.271Z",
+        "claim": "Türkiye kökenli dikey ERP sistemleri seri/lot, muayene, karantina ve tedarikçi kusurunu takip edebilir.",
+        "observation": "Mira ERP havacılık tedarik zincirinde seri/lot/kalite/karantina kaydı; fakat kriptografik cihaz perakendecisinin kompromize satış partisi ve müşteri bildirimi uçtan uca olayı birebir gösterilmedi.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://quvex.io/",
+        "accessed_at": "2026-10-14T02:52:48.271Z",
+        "claim": "Türk QMS sistemleri lot/seri karantina ve inceleme kayıtları sunabilir.",
+        "observation": "Quvex QMS üretim kusuru, lot/seri kalite/karantina ve hatırlatma izlenebilirliği; aynı kriptografik cihaz satış kanalı ve müşteriye incident notification kapsamı bağımsız doğrulanmadı.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_tr",
+        "url": "https://www.weec.com.tr/tr/erp-lot-seri-no-takibi/",
+        "accessed_at": "2026-10-14T02:52:48.271Z",
+        "claim": "Türk ERP seri/lot cihaz tedariği ve hold/release yetenekleri sunar.",
+        "observation": "WEEC lot ve seri takibi ürün girişi/çıkışı ve izlenebilirlik sağlar; fiziksel casus implant delili/özel reseller olay prosedürü birebir değil.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.itamg.com/itad-guides/chain-of-custody-in-itad/",
+        "accessed_at": "2026-10-14T02:52:48.271Z",
+        "claim": "Global ITAD sistemlerinde seri numaralı cihaz chain of custody geçmişi bulunur.",
+        "observation": "ITAMG IT asset disposal cihaz teslim, custody transfer ve imha sertifikası süreçlerini anlatıyor; olay şüphesiyle henüz dağıtılmamış donanım cüzdanı karantinası ayrı.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.reconext.com/test-solutions/rackwipe/",
+        "accessed_at": "2026-10-14T02:52:48.271Z",
+        "claim": "Global ITAD ve cihaz tedarik kalite ekipleri teslim/seri/kayıt akışı kullanır.",
+        "observation": "Reconext güvenli cihaz test/erase ve serial-level chain of custody sunar; cüzdan implant incelemesi ve etkilenen müşteriye bildirimi aynı üründe gösterilmedi.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "queries": [
+          "Türkiye kripto cüzdan donanım satıcısı kurcalanmış cihaz lot karantina müşteri geri çağırma yazılımı",
+          "Türk ERP lot seri karantina ürün kalite geri çağırma tedarikçi risk yönetimi",
+          "hardware crypto wallet counterfeit reseller supply chain incident response Turkey"
+        ],
+        "scope": "Türkiye kaynaklı ERP/QMS cihaz lot karantina çözümleri mevcut; özel hardware-wallet reseller tamper/recovery uçtan uca aynı iş akışı sayımı henüz tamamlanmadı. Yokluk iddiası değildir.",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_competitors": [
+          {
+            "name": "Mira ERP havacılık seri lot/karantina",
+            "url": "https://www.miraerp.com/sektorler/havacilik",
+            "reason": "Aynı seri/karantina kabiliyeti, farklı havacılık kalite müşterisi ve kripto cihaz müşteri tebligatı teyitsiz."
+          },
+          {
+            "name": "Quvex QMS",
+            "url": "https://quvex.io/",
+            "reason": "Parti/seri düzeyinde kalite tutma ve izleme, fakat özel güvenli donanım implanta müdahale ve müşteri iletişimi farkı açık."
+          },
+          {
+            "name": "WEEC Lot-Seri Takibi",
+            "url": "https://www.weec.com.tr/tr/erp-lot-seri-no-takibi/",
+            "reason": "Genel seri/lot izlenebilirlik; fiziksel device tampering incident handling özel iş akışı doğrulanmadı."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": null,
+        "queries": [
+          "hardware wallet tamper suspicion distributor quarantine recall customer notification software",
+          "cryptographic secure element reseller recall serial number incident evidence ledger platform",
+          "hardware device chain of custody quarantine serial distributor inspection customer remediation software",
+          "ITAD chain of custody serial customer recall"
+        ],
+        "scope": "Genel ITAD asset chain-of-custody güçlü komşu rakiptir. Doğrudan secure-wallet reseller tamper/customer remediation sayısı güvenilir şekilde sayılmadı; 0 veya <=3 kesin denmedi.",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_competitors": [
+          {
+            "name": "ITAMG Chain of Custody",
+            "url": "https://www.itamg.com/itad-guides/chain-of-custody-in-itad/",
+            "reason": "Elektronik atık/tasfiye cihazı custody ve cert; şüpheli cüzdan toptancı sevkiyatını bloke etme işi farklı."
+          },
+          {
+            "name": "Reconext RackWipe/Device Processing",
+            "url": "https://www.reconext.com/test-solutions/rackwipe/",
+            "reason": "IT asset intake/test/custody, firmware secure erase; kripto cüzdan fiziksel implantına dair resmi retail incident akışı yok."
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Tek satıcı/distribütörün manuel seri/lot, orijinal tedarik faturası, tamper şüphe fotoğrafı, karantina lokasyonu, emanet veren/alan personel kimliği, yetkili inceleme dosya bağlantısı, müşteri bildirim kanıtı ve insan disposition signoff kaydını tarayıcıda deterministik checklist/CSV/PDF raporu yapan offline prototip. Seed/private key, canlı wallet bağlamaz, transferi yönetmez, çipin güvenliğini kanıtlamaz. Cryptographically signed forensic evidence & multi-party tamper proof log guaranteed değildir.",
+      "dependency_inventory": [
+        "Üreticinin manuel cihaz seri ve tedarik zinciri kayıtları",
+        "Yetkili gerçek donanım laboratuvarı inceleme raporu",
+        "Kullanıcı kaydettiği customer contact ve yasal bildirim şablonları",
+        "İnsan yetki imzası ve offline evidence export",
+        "Şüpheli cihazı aktive etmeme ve güvenli fiziksel mühürleme iş prosedürü"
+      ],
+      "zero_external_runtime_possible": true,
+      "legal_forensic_grade_guaranteed": false,
+      "zero_external_cash_cost_verified": false
+    },
+    "history_review": {
+      "decision": "uncertain",
+      "reason": "91 tarihçe kaydının özel crypto hardware wallet tamper→lot quarantine→customer contact işi için tam anahtar eşleşmesi yok; terminolojik yakın kayıtlar 1 tane, gerçek semantik müşteri ve mekanizma teyidi Validation'da ayrıntılandırılmalı.",
+      "similar_keys": [
+        {
+          "key": "teams-running-connected-ai-agents|detect-and-contain-propagating-prompt-injection|channel-trust-map-quarantine-ledger",
+          "name": "Prompt Propagation Guard"
+        }
+      ]
+    },
+    "research_attempts": [
+      {
+        "url": "https://www.zdnet.fr/actualites/un-materiel-espion-siphonne-86-millions-de-dollars-sur-des-portefeuilles-ledger-505593.htm",
+        "status": "original_publisher_page_read"
+      },
+      {
+        "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
+        "status": "original_publisher_page_read"
+      },
+      {
+        "url": "https://www.coindesk.com/tech/2026/10/13/ledger-says-spy-chip-inside-cryptobilis-ledger-devices-transmitted-wallet-keys-over-mobile-network",
+        "status": "original_publisher_article_read"
+      },
+      {
+        "url": "https://www.miraerp.com/sektorler/havacilik",
+        "status": "vendor_page_read"
+      },
+      {
+        "url": "https://quvex.io/",
+        "status": "vendor_page_read"
+      },
+      {
+        "url": "https://www.weec.com.tr/tr/erp-lot-seri-no-takibi/",
+        "status": "vendor_product_page_read"
+      },
+      {
+        "url": "https://www.itamg.com/itad-guides/chain-of-custody-in-itad/",
+        "status": "vendor_article_read"
+      },
+      {
+        "url": "https://www.reconext.com/test-solutions/rackwipe/",
+        "status": "vendor_page_read"
+      }
+    ],
+    "evidence_followup_plan": {
+      "required": [
+        "Hardware/crypto wallet distributor'a yönelik Türkiye ve diğer ülkeler marketplace/çözüm aramalarını derinleştir: aynı müşteri/iş/mekanizma direct mı adjacent mı kararı",
+        "En az iki güvenli donanım üreticisinin reseller recall/tamper ürünleri var mı, risk ve duplicate değerlendirmesi",
+        "Çok taraflı adli chain-of-custody gereksiniminde sıfır ek maliyetli browser-only yaklaşımın kanıt/delil güvenilirlik sınırını bağımsız değerlendir",
+        "İlgili mevzuat/tüketici bildirimi ve alıcı ödeme kararı kaynağı"
+      ]
+    },
+    "quality_gate": {
+      "passes_turkiye_zero_direct_competitor_gate": null,
+      "passes_global_at_most_three_gate": null,
+      "passes_zero_external_runtime_gate": true,
+      "qualified": false
+    }
+  }
+}
