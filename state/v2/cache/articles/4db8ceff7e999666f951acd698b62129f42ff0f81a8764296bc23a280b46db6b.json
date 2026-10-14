@@ -1,0 +1,42 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "4db8ceff7e999666f951acd698b62129f42ff0f81a8764296bc23a280b46db6b",
+  "decision": {
+    "article_key": "a63ab694d8cbaff33d941f89",
+    "decision": "opportunity",
+    "reason": "Semiconductor Engineering 13 Ekim teknik özet, Columbia/Google araştırmasının RTL doğrulamadaki simülasyon dalga verilerini normalleştirilmiş kayıtlarla ve sinyal-anomali ilişkisiyle inceleme ihtiyacını gösteriyor. Önerilen ürün araştırmanın agentic motorunu kopyalamaz; mühendis tarafından sağlanan CSV ile deterministik triage ve insan onayı tutan ayrı hipotezdir.",
+    "canonical_source_url": "https://semiengineering.com/agentic-ai-automates-rtl-waveform-analysis-and-debugging-columbia-google/",
+    "source_read_state": "original_or_editorial_index_read",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-888259ebe3b4364c:a63ab694d8cbaff33d941f89:01",
+        "idea_name": "RTL Waveform Review Evidence Ledger",
+        "canonical_key": "chip-design-verification-teams|triage-post-simulation-signal-anomalies-with-manual-evidence|rtl-version-signal-exception-and-review-ledger",
+        "target_customer": "Yarı iletken RTL doğrulama mühendisleri ve EDA doğrulama ekipleri",
+        "buyer": "ASIC doğrulama ekibi lideri",
+        "core_job": "Simülasyon sonrası waveform/sinyal anomalilerini ilgili RTL sürümü ve beklenen davranışla ilişkilendirip insan tarafından kapanışa almak",
+        "product_mechanism": "Kullanıcının içe aktardığı sinyal-zaman-anomali CSV'si, RTL commit/sürüm kimliği, assertion/test kimliği ve reviewer onayı ile kural tabanlı eşleştirme/istisna/kanıt raporu; LLM, agent, simülatör veya dış veritabanı çalıştırmaz",
+        "why_now": "13 Ekim 2026 Columbia/Google BTTF araştırması RTL waveform debugging alanındaki manuel doğrulama sürtünmesini görünür kıldı; önerilen MVP ayrı hafif kanıt defteridir",
+        "before_state": "Dalga formu anomali satırları, RTL sürüm atıfları ve incelemeci kararları bağımsız rapor/CSV içinde dağınık",
+        "after_state": "Signal anomaly → RTL build/commit → assertion/test → reviewer disposition → signoff/export şeklinde izlenebilir karar geçmişi",
+        "scope_hint": "Dünya",
+        "canonical_source_urls": [
+          "https://semiengineering.com/agentic-ai-automates-rtl-waveform-analysis-and-debugging-columbia-google/"
+        ],
+        "supporting_article_ids": [
+          "aa32d2f764075e3346d8c029"
+        ],
+        "source_observations": [
+          {
+            "url": "https://semiengineering.com/agentic-ai-automates-rtl-waveform-analysis-and-debugging-columbia-google/",
+            "observation": "13 Oct BTTF paper covers large post-simulation dumps and waveform debugging; proposed manual ledger is a product hypothesis distinct from agentic paper system.",
+            "observed_at": "2026-10-14T08:02:07.465Z",
+            "caveat": "Customer interviews, direct competitors and zero external runtime feasibility require later Validation."
+          }
+        ]
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-888259ebe3b4364c/001.json",
+  "valid_until": "2026-11-13T08:02:07Z"
+}
