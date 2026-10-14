@@ -1,0 +1,196 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-2c8862b89886e57b",
+  "input_hash": "2c8862b89886e57b17c9e984c2bca006fdc2fd64695506a9cb6ccc59e59e020d",
+  "token": "99e145fa-a6ad-440f-adcc-11e239ea2172",
+  "finished_at": "2026-10-14T02:42:35.908Z",
+  "outcome": "done",
+  "reason": "Elektronik Bileşen Arz Risk Matrisi için gerçek elektronik BOM müşteri/iş/akış eşleşmesiyle global 5 bağımsız ticari sağlayıcının birincil sayfası bulundu: Z2Data, SiliconExpert, Altium 365 BOM Portal, Luminovo, PartsBox. Hepsi BOM satırlarında fiyat/stoğa erişim, tedarik/lead time veya ikame riskine müdahale ediyor. Türkiye tüm pazarı ve yerel direkt yokluğu kanıtlanmadı; TR rakip sayısı null bırakıldı. Tek başına global 5 > izin verilen 3 filtresi adayın reddi için kesin yeterli. Tetikleyici kaynak Eastmoney ikincil tam yazısıdır; EET-China özgün gövde bu araştırmada doğrulanmadı. Bu nedenle yeni kataloga qualified olarak eklenmedi.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Quality Gate küresel doğrudan rakip sayısı en az 5; ilk master prompttaki global <=3 eşiği başarısız. Müşteri elektronik OEM/EMS satın alma ve üretim planlama; aynı temel iş BOM satırı tedarik riski, teklif/fiyat/teslim süresi kıyası, alternatif parça kararı. Basit çevrimdışı CSV versiyonu rakiplerin temel sourcing workflow'unun daha az işlevli örneğidir, benzersiz satın alma nedeni gösterilmedi.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://caifuhao.eastmoney.com/news/20261010135518397529010",
+        "accessed_at": "2026-10-14T02:42:35.908Z",
+        "claim": "BOM elektronik bileşenleri için tedarikçi, lead-time, ikame, teklif riski yönetimi",
+        "observation": "10 Ekim Eastmoney, Eylül 2026 elektronik bileşen arz baskısını, üretim ve fiyat/ETA dalgalanmasını aktarıyor; özgün EET-China kaynağı okunmadığından rapor edilen '52 hafta' her MPN için doğrulanmış canlı quote değildir. Orijinal video/belge kesin gösterilmedi.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.z2data.com/solutions/procurement/",
+        "accessed_at": "2026-10-14T02:42:35.908Z",
+        "claim": "BOM elektronik bileşenleri için tedarikçi, lead-time, ikame, teklif riski yönetimi",
+        "observation": "Z2Data BOM risk puanlama, distributor fiyatları ve lead time karşılaştırma, tedarikçi yoğunlaşması ve FFF alternates sıralamasını sunar; aynı elektronik BOM alıcısı.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.siliconexpert.com/proof/bom-risk-assessment/",
+        "accessed_at": "2026-10-14T02:42:35.908Z",
+        "claim": "BOM elektronik bileşenleri için tedarikçi, lead-time, ikame, teklif riski yönetimi",
+        "observation": "SiliconExpert BOM Manager lifecycle, sourcing, stock, lead time, ikame ve çoklu source riskini BOM bazında görünür yapar.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.altium.com/documentation/altium-365/bom-portal/consolidated-bom",
+        "accessed_at": "2026-10-14T02:42:35.908Z",
+        "claim": "BOM elektronik bileşenleri için tedarikçi, lead-time, ikame, teklif riski yönetimi",
+        "observation": "Altium 365 BOM Portal birden çok BOM'u birleştirip fiyat, alternatif parça, tedarikçi ve satın alma/RFQ çıktısı sunar; aynı elektronik BOM tedarik ekipleri.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://luminovo.com/solutions/engineering",
+        "accessed_at": "2026-10-14T02:42:35.908Z",
+        "claim": "BOM elektronik bileşenleri için tedarikçi, lead-time, ikame, teklif riski yönetimi",
+        "observation": "Luminovo BOM satırları için gerçek stok/fiyat/lead time, alternatif parça, sourcing/approval ve çoklu tedarikçi senaryosu sunar.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://partsbox.com/project-bom-pricing.html",
+        "accessed_at": "2026-10-14T02:42:35.908Z",
+        "claim": "BOM elektronik bileşenleri için tedarikçi, lead-time, ikame, teklif riski yönetimi",
+        "observation": "PartsBox BOM pricing farklı supplier offer fiyat, MOQ, katmanlı fiyat, teklif referans/tarih/son geçerlilik tarihi, attached quote ve tedarikçi kıyasını sağlar. Bu vendor için otomatik form-fit-risk kapsamı sınırlı; aynı BOM teklif ve expiry çekirdek satın alma işi eşleşiyor.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "queries": [
+          "Türkiye elektronik BOM alternatif parça tedarikçi teklif kıyas süresi yazılım",
+          "Türkiye elektronik komponent satınalma BOM parça ikame leadtime risk yazılım",
+          "CANIAS BOM satın alma teklif alternatif ürün",
+          "Logo tedarikçi teklif karşılaştırma satın alma elektronik BOM"
+        ],
+        "scope": "Türkiye kaynaklı birebir aynı elektronik komponent risk platformları nihai sayım ile kanıtlanmadı. Genel ERP/teklif modülleri adjacent; zero competitor sonucu ileri sürülmedi.",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_competitors": []
+      },
+      "global": {
+        "direct_count": 5,
+        "queries": [
+          "BOM component risk supplier pricing alternate lead time software",
+          "Z2Data procurement BOM alternates",
+          "SiliconExpert BOM risk assessment alternate lead time",
+          "Altium 365 BOM Portal consolidate BOM quote alternatives",
+          "Luminovo sourcing lead time BOM alternatives",
+          "PartsBox supplier quotes expiration BOM pricing"
+        ],
+        "scope": "Küresel her sağlayıcı tek sayıldı; en az 5 birincil satıcı ürün açıklamasında çekirdek BOM tedariği/alternatif/teslim teklif risk akışı. Bu tam evrensel sayım değil, filtre ihlali için yeterli alt sınır.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "Z2Data Part Risk Manager/Sourcing",
+            "url": "https://www.z2data.com/solutions/procurement/",
+            "same_customer_job_workflow_reason": "Elektronik satın alma BOM risk/stock/lead time/alternates."
+          },
+          {
+            "name": "SiliconExpert BOM Manager",
+            "url": "https://www.siliconexpert.com/proof/bom-risk-assessment/",
+            "same_customer_job_workflow_reason": "Elektronik üretim BOM satırı tedarik, fiyat/availability, alternatif kaynak risk."
+          },
+          {
+            "name": "Altium 365 BOM Portal",
+            "url": "https://www.altium.com/documentation/altium-365/bom-portal/consolidated-bom",
+            "same_customer_job_workflow_reason": "BOM satırında alt parça/tedarikçi kıyas, RFQ/sipariş planlama."
+          },
+          {
+            "name": "Luminovo",
+            "url": "https://luminovo.com/solutions/engineering",
+            "same_customer_job_workflow_reason": "Elektronik BOM lead time, onaylı alternates, stok/fiyat ve sourcing senaryo kıyası."
+          },
+          {
+            "name": "PartsBox",
+            "url": "https://partsbox.com/project-bom-pricing.html",
+            "same_customer_job_workflow_reason": "BOM supplier offer fiyat karşılaştırma, MOQ, quote validity/expiration ve mevcut teklif iş akışı."
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Kullanıcı tarafından sağlanan offline BOM, teklif/supplier listesi, parça MPN, fiyat, lot, teslim ETA, onaylı ikame, teklif bitiş tarihini tarayıcıda deterministik normalize edip satın alma risk skorları ve CSV/PDF üretir. Birim elektronik mühendisliği ikame onayı gereklidir. Canlı piyasa fiyatı/durumunun kendiliğinden güncelleneceği iddia edilmez.",
+      "dependency_inventory": [
+        "BOM CSV ve tedarikçi teklif verisi kullanıcıdan",
+        "Manuel approved substitute listesi",
+        "Deterministik sıralama kural motoru",
+        "İnsan mühendis/satın alma gözden geçirme"
+      ],
+      "zero_external_runtime_possible": true,
+      "cash_cost_zero_verified": false
+    },
+    "history_review": {
+      "decision": "uncertain",
+      "reason": "91 mevcut tarihsel kayıt arasında BOM/tedarik/supplier terminolojisinde 5 potansiyel yakın kayıt örneklemde var; semantik tam mükerrerlik küresel rekabet reddini değiştirmiyor. Yeni katalog kaydı yapılmadı.",
+      "reviewed_catalog_count": 91,
+      "nearby_examples": [
+        {
+          "key": "us-heavy-duty-fleet|compare-2027-nox-compliance-procurement-scenarios|versioned-rule-cost-scenario-calculator",
+          "name": "NOx 2027 Fleet Scenario"
+        },
+        {
+          "key": "energy-importers|track-methane-rule-deadlines|supplier-evidence-workspace",
+          "name": "Metan İthalat Uyum Masası"
+        },
+        {
+          "key": "fashion-supply-chains|prove-supplier-renewable-transition|baseline-milestone-evidence-workspace",
+          "name": "Tedarikçi Yenilenebilir Enerji Geçiş Masası"
+        },
+        {
+          "key": "food-processors-cosmetics-and-pharma-companies-sourcing-agricultural-i|spot-potential-supply-volume-and-quality-disruptions-early|supplier-crop-calendar-contract-exposure-manual-field-alerts-and-risk-",
+          "name": "Agricultural Raw-Material Early Warning Desk"
+        },
+        {
+          "key": "manufacturers-assessing-supplier-relocation|compare-domestic-versus-offshore-total-ownership-cost-with-documented-assumptions|tco-worksheet-supplier-scenario-comparisons-assumption-provenance-and-signoff",
+          "name": "Reshoring TCO Karar Defteri"
+        }
+      ]
+    },
+    "research_attempts": [
+      {
+        "url": "https://caifuhao.eastmoney.com/news/20261010135518397529010",
+        "status": "secondary_article_not_original_technical_release"
+      },
+      {
+        "url": "https://www.z2data.com/solutions/procurement/",
+        "status": "official_page_read"
+      },
+      {
+        "url": "https://www.siliconexpert.com/proof/bom-risk-assessment/",
+        "status": "official_page_read"
+      },
+      {
+        "url": "https://www.altium.com/documentation/altium-365/bom-portal/consolidated-bom",
+        "status": "official_documentation_read"
+      },
+      {
+        "url": "https://luminovo.com/solutions/engineering",
+        "status": "official_page_read"
+      },
+      {
+        "url": "https://partsbox.com/project-bom-pricing.html",
+        "status": "official_page_read"
+      }
+    ],
+    "quality_gate": {
+      "passes_turkiye_zero_direct_competitor_gate": null,
+      "passes_global_at_most_three_gate": false,
+      "can_be_qualified": false
+    }
+  }
+}
