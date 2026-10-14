@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-070e1e6f9f7a6e3c",
+  "input_hash": "070e1e6f9f7a6e3c31a90ab0ee8aa7a3fb885cd14c804b052dd88c9ba6be05bc",
+  "token": "75cd61b4-073e-4fbd-90a8-9949c677cd48",
+  "finished_at": "2026-10-14T02:40:45.541Z",
+  "outcome": "done",
+  "reason": "14 Ekim catchup on haber özgün/ortak haber kaynakları ve mevcut fikir tarihçesiyle karşılaştırıldı: 1 finans kurumu AI agent+bağımsız felaket kurtarma denetçi cevap dosyası hipotezi, 8 gerekçeli no_opportunity, 1 özgün kaynağı doğrulanamayan unverified. Taslak denetçi soruları kanun, Paris EV açılış planı bitmiş teslimat, Dify AWS hizmeti sıfır dış maliyet SaaS sayılmadı. Hiçbir fikir kalite kapısını geçmiş sayılmadı.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "4e91f20879c6feb4c0cfccfa",
+        "decision": "no_opportunity",
+        "reason": "Cloud Watch 14 Ekim Japon özgün ürün duyurusu Ricoh Japan'ın Dify Essential/Standard müşterilerine AWS üzerinde özel yönetilen hosting/operasyon hizmeti sunacağını söylüyor. AWS kullanımı ve çalışan Dify agent/model runtime ana değer teklifinde zorunludur, Radar sıfır harici runtime/model ilkesiyle aynı managed hizmet sunulamaz. Haber kendi satıcısının zaten sağlayacağı mevcut ürünü gösteriyor; bağımsız müşteri işi ve farklılaşmış sıfır maliyetli mekanizma kanıtlanmadı. Özgün https://cloud.watch.impress.co.jp/docs/news/2147560.html okundu. Haberde '18th' başlangıç gününün bağlamı ve gazetenin 14 Ekim yayımlama tarihi çatıştığı için ilan edilmiş hizmet gerçek kullanımla karıştırılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "4ed27007d2b3da851e69d4b0",
+        "decision": "no_opportunity",
+        "reason": "13 Ekim ETNews Korea kaynakta robotla posta sınıflama, tarım ve konteyner elleçleme 2027 kamu fiziksel AI araştırma/demonstrasyon bütçesini ve 7 Ekim KAIST lab ziyaretini anlatıyor. Planlanan ARGE ve demo kapsamı bağımsız satılan saha ürünü/test sonucuna eşit değil. 13 Ekim catchup Merge'de Robot Demo Tekrarlanabilirlik Kanıt Defteri, Fiziksel AI Veri Toplama Görev/Kalite Defteri ve çeşitli robot pilot kabul mekanizmaları mevcut; farklılaştırıcı B2B ödeme olayı görülmedi. https://www.etnews.com/20261013000255 özgün okundu.",
+        "opportunities": []
+      },
+      {
+        "article_key": "4edc680a1a41a89b38b7568b",
+        "decision": "no_opportunity",
+        "reason": "Inc42 13 Ekim Oracle sponsorlu CTO Summit roundtable'unda kurumsal agent verisinin yetki/semantik bağlam, veri silo ve ROI problemi tartışılıyor; 4% hazır altyapı ve 73% ROI anketi ikincil ve örneklem sınırlı. Yeni yürürlüğe giren veri standardı, erişime açılmış vendor-neutral veri seti veya zorunlu yeni workflow değil. Varolan data catalog/semantic layer/AI access governance MDM çözümleriyle farklılaşan bağımsız ücretsiz Lovable ürün kanıtlanmadı. Öz kaynak https://inc42.com/buzz/why-ai-agents-are-forcing-enterprises-to-rebuild-their-data-foundation/ okundu.",
+        "opportunities": []
+      },
+      {
+        "article_key": "4ef517ebdc019b57cf545cb1",
+        "decision": "opportunity",
+        "reason": "Reuters 13 Ekim 2026 kaynaklarına göre Fed/OCC/FDIC ve Avrupa denetçileri bankaların otonom ajan kullanımı, Çin menşe teknoloji bağımlılığı, kurtarma ve bağımsız yedek sistemleri hakkında daha fazla soru sormaya başladı. Bunlar henüz yeni resmî zorunlu AI kanunu değil; denetim görüşmesi/inceleme temasları. BEFORE Agent kullanım envanteri, üçüncü taraf teknoloji sözleşmesi ve bağımsız bare-metal kurtarma test delili ayrı risk/IT dosyalarında. AFTER banka risk ekibi sorulara tek, insan onaylı olay/agent → yetki sınırı → model sağlayıcı → RTO/RPO → yedek test senaryosu kanıt bağlantısıyla cevap hazırlamaya ihtiyaç duyabilir. Çalışma bu canlı modelleri kontrol etmez; kurumsal CSV/manuel kanıt matrisi tasarımlı. TR/global doğrudan bankai governance satıcıları Validation için açık.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-070e1e6f9f7a6e3c:4ef517ebdc019b57cf545cb1:1",
+            "canonical_key": "bank-ai-model-risk-and-cyber-recovery-teams|answer-supervisory-agent-autonomy-and-independent-recovery-questions|offline-agent-provider-control-rto-evidence-matrix",
+            "idea_name": "Banka AI Ajan–Kurtarma Denetim Kanıt Matrisi",
+            "core_job": "Banka denetçilerinin kurumsal ajanların hangi kararlara yetkili olduğu, model/ülke teknoloji bağımlılığı, özerk eylem loglarının sınırı ve ana bankacılık sisteminden bağımsız kurtarma testi sorularına tutarlı kanıt dosyası hazırlamak",
+            "target_customer": "ABD/Avrupa bankalarının AI model riski, BT operasyonel dayanıklılık, üçüncü taraf risk ve iç denetim birimleri",
+            "buyer": "Banka AI model riski ve siber dayanıklılık yöneticisi",
+            "product_mechanism": "Kullanıcının sağladığı model/agent envanter CSV, risk rolü, vendor/ülke, yetkili action listesi, veri kapsamı, RTO/RPO hedefi, son offline bare-metal test sonucu, insan review/signoff ve açık eksiği deterministic çapraz-matriksle eşleyip PDF/CSV denetim dosyası üretme; bankaya canlı erişim veya çalışan LLM/API/DB zorunluluğu yok",
+            "why_now": "13 Ekim Reuters kaynakları ABD ve Avrupa banka denetçilerinin bankalarda agentic AI kontrol ve bağımsız cyber recovery sorgularını artırdığını bildirdi; kesinleşmiş yeni uyum standardı değil denetçi inceleme yoğunluğu.",
+            "before_state": "AI agent erişim yetkileri, üçüncü taraf cloud/model riski ve recovery disaster test belgeleri farklı takım sistemlerinde, aynı sorguya bağlı değil.",
+            "after_state": "Banka denetçisinin sorusu → etkilenen agent/bağımlılık → test raporu ve insan kanıt kabulü → açık eksik/risk yanıt taslağı açık biçimde eşlenir.",
+            "canonical_source_urls": [
+              "https://www.reuters.com/legal/litigation/banking-watchdogs-ramp-up-ai-scrutiny-stability-fears-mount-sources-say-2026-10-13/"
+            ],
+            "supporting_article_ids": [
+              "468c3900fc1b270e2a054247"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.reuters.com/legal/litigation/banking-watchdogs-ramp-up-ai-scrutiny-stability-fears-mount-sources-say-2026-10-13/",
+                "observation": "Reuters 13 Ekim altı kaynağa dayalı denetçi soruları; Fed, BoE/ECB agent AI kontrolü, Chinese-model risk, cyber recovery ve ana sistemden ayrı bare-metal recovery sorgularını ele alır, henüz zorunlu yeni kural konulduğunu iddia etmez."
+              }
+            ],
+            "scope_hint": "US+Europe; independent bank AI risk audit",
+            "local_evidence": {
+              "signals": [
+                "Banka denetçisinin sorusuna sağlayıcı/agent/geri dönüş altyapısı ve test kanıtını birleştirme ticari kalite işi vardır."
+              ],
+              "unknowns": [
+                "ABD/AB yerel MRM/GRC/AI governance yazılımı rekabeti muhtemelen kalabalıktır; TR sıfır ve global en fazla 3 kanıtlanmadı.",
+                "Statik CSV/manuel rapor bankaların gerçek audit trail bütünlük gereksinimini tek başına karşılamayabilir.",
+                "Karşılanmamış buyer ödeme ihtiyacı ayrıca kanıtlanmadı."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "4f3615ead4ddbe53c38d3845",
+        "decision": "no_opportunity",
+        "reason": "Gasgoo 13 Ekim Paris fuarında Li Auto Li 6 2027 Q1 Norveç/Hollanda satış ve teslim başlangıcını şirket planı olarak duyurdu; şu an tamamlanmış Avrupa teslimatı değil. Yeni marka ülke girişinin homologasyon/servis/bayi kanıtı iş akışı zaten 13 Ekim catchup Merge'de EV Brand Entry Homologation Readiness / EU Entry Evidence dosyası ailesinde var. Aynı temel araç Avrupa giriş kontrolü yeni ürün ismiyle kopyalanmadı. Kaynak https://autonews.gasgoo.com/articles/news/li-auto-unveils-european-strategy-at-paris-motor-show-li-6-to-launch-in-q1-2027-2109899905060794368 okundu.",
+        "opportunities": []
+      },
+      {
+        "article_key": "4f376140e874b5a4a41b62f1",
+        "decision": "no_opportunity",
+        "reason": "Reuters 13 Ekim IMF UK mali açık azaltma uyarısı tekil makro bütçe değerlendirmesi; Maliye politikası görüşü işletmelere yeni düzenleyici rapor veya model zorunluluğu olarak yürürlüğe girdiği anlamına gelmez. Önce/sonra bir alıcı operasyon kararı kanıtlanmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "4f4829b5471b991a6cc2a4eb",
+        "decision": "no_opportunity",
+        "reason": "PetroTurk 13 Ekim Türkiye Enerji Bakanı Bayraktar'ın Riyad'da enerji işbirliği görüşmelerini aktarıyor; Bakanlığın 12 Ekim açıklaması uluslararası işbirliği niyetini teyit ediyor. İmzalanmış yeni enerji tedarik anlaşması, tarife veya bölgesel sistem operatörlerinde değişen kural gösterilmediği için doğrudan Lovable saha yazılımı ayrı müşteriye bağlanmadı. Benzer işbirliği kaynakları mevcut enerji kaynak ve sözleşme senaryo aileleriyle ilgilidir.",
+        "opportunities": []
+      },
+      {
+        "article_key": "4f609ca941f82661f3b38f0d",
+        "decision": "no_opportunity",
+        "reason": "UTİKAD 'Sektör Haberleri' genel kategori/arşiv sayfasıdır; RSS 13 Ekim tarihi tek bir spesifik tedarik zinciri olayı veya yeni gümrük kuralını tanımlamıyor. Ana sayfayı belirli düzenleme kanıtı sayıp niş SaaS üretmek yanlış olur. Eşleşen güncel özgün tekil haber URL olmadan karar 'no_opportunity' — generic directory/feed artifact.",
+        "opportunities": []
+      },
+      {
+        "article_key": "4fc0defd2e0aaaeae9afaa31",
+        "decision": "unverified",
+        "reason": "Huxiu 13 Ekim 'AI editing from assist to agent delivery' başlığı video edit otomasyonunun işçilik/tarife modelini tartıştığını gösteriyor; özgün ayrıntılı sayfa, müşteri başı ödeme sözleşmesi ve hangi aracı piyasaya çıktığı doğrulanamadı. Harici video model ve editor agent/runtime zorunlu ürün politika ihlali; sadece metadatası indirilen film gelir/hak mutabakatı önceden catchup Discovery'de var. FULL ARTICLE NOT VERIFIED, yeni fırsat yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "4fc4f71bab657ee4321310d8",
+        "decision": "no_opportunity",
+        "reason": "Enerji Günlüğü 13 Ekim COP31 iklim diplomasisi 'eylem odaklı' değerlendirme yazısı politika yorumu veya müzakere ajandasıdır; anlaşılmış ülke-emisyon kuralı, proje hazırlık şartı veya bağlayıcı bugünkü belge standardı olduğunu göstermiyor. COP31 henüz gelecek uluslararası toplantı/hedef çerçevesi; carbon credit/proje hesaplayıcı yeni regülasyonmuş gibi pazarlanamaz.",
+        "opportunities": []
+      }
+    ]
+  }
+}
