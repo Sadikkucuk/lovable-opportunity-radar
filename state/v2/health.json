@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-14T03:10:54Z",
+  "controller_observed_at": "2026-10-14T03:11:24Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-14T02:01:00Z",
@@ -14,19 +14,23 @@
         "schema_version": 1,
         "worker": 1,
         "invocation_id": "6ba990c6-2570-437b-b752-50b62d54995c",
-        "event": "progress",
-        "at": "2026-10-14T03:10:33.787Z",
-        "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-12908eddd8feeb36",
-        "stage": "receipt_saved",
-        "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-12908eddd8feeb36/001.json",
-        "completed_receipts": 2,
+        "event": "finished",
+        "at": "2026-10-14T03:11:11.608Z",
+        "verified_receipts": 2,
         "reviewed_articles": 20,
         "article_decisions": {
           "opportunity": 8,
           "no_opportunity": 10,
           "unverified": 2
         },
-        "path": "state/v2/worker-events/1/6ba990c6-2570-437b-b752-50b62d54995c/004-progress.json"
+        "validation_decisions": {
+          "qualified": 0,
+          "rejected": 0,
+          "duplicate": 0,
+          "unverified": 0
+        },
+        "note": "İki current Discovery işi tamamlandı; iki immutable receipt read-back ile doğrulandı. 20 makale incelendi.",
+        "path": "state/v2/worker-events/1/6ba990c6-2570-437b-b752-50b62d54995c/999-finished.json"
       },
       "receipts_this_invocation": 2,
       "write_and_receipt_verified": true,
