@@ -1,0 +1,415 @@
+{
+  "schema_version": 1,
+  "mode": "manual_v3_research_ledger",
+  "session_date": "2026-10-14",
+  "source_base": "main",
+  "created_at": "2026-10-14T06:02:23.532Z",
+  "source_repo": "Sadikkucuk/lovable-opportunity-radar",
+  "not_controller_receipt": true,
+  "not_prod_published": true,
+  "terminal_candidate_decisions": 10,
+  "decisions": {
+    "semantic_duplicate": 3,
+    "rejected": 7,
+    "qualified": 0,
+    "hold": 0
+  },
+  "items": [
+    {
+      "job_id": "2026-10-10-migration-validation-573d9250802070b7",
+      "candidate_name": "Synthetic Media Watermark Review",
+      "canonical_key": "media-agencies|track-ai-generated-media-watermark-checks|synthetic-media-watermark-review",
+      "target_customer": "media agencies",
+      "core_job": "Track AI-generated media watermark checks",
+      "product_mechanism": "Synthetic Media Watermark Review web workflow: asset intake → watermark scan → review → evidence",
+      "trigger_url": "https://www.itmedia.co.jp/news/article/2610/08/2000002128/",
+      "decision": "semantic_duplicate",
+      "reason_tr": "Medya/içerik denetim ekipleri aynı AI kaynak/provenance kontrolünü içerik kayıtları, inceleme ve imzalı karar olarak yürütüyor. Watermark check mevcut doğrulama alanının yalnız bir yöntemidir; ayrı JTBD yok.",
+      "checked_at": "2026-10-14T06:02:23.532Z",
+      "source_scope": "v2 frozen job + 2026-10-14 public first-party competitor/previous-catalog inspection",
+      "quality_gate_note": "Research assessment only; not a v2 controller receipt.",
+      "matched_existing_idea": "Sentetik Medya Beyan Doğrulama Kaydı",
+      "matched_canonical_key": "content-publishers-and-brand-compliance-teams|record-ai-generated-media-provenance-verification-and-review|provenance-check-register-and-reviewer-signoff-workflow",
+      "matched_customer": "Medya üreticileri ve içerik denetim ekipleri",
+      "matched_core_job": "Yapay zekâyla üretilmiş içeriklerin kaynak beyanını, kontrolünü ve inceleyen kişi onayını kaydetmek.",
+      "matched_workflow": "Provenance-check register and reviewer signoff workflow",
+      "competition_checked": false
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-9f74cd77ac4495da",
+      "candidate_name": "AgentIAM Scope Ledger — ajan yetki matrisi",
+      "canonical_key": "kurumsal-aı-agent-platform-ekipleri|ajan-bazında-izinleri-en-az-ayrıcalık-ilkesine-göre-belgelem|csv-json-rol-içe-aktarma-kaynak-eylem-matrisi-izin-değişikli",
+      "target_customer": "Kurumsal AI agent platform ekipleri",
+      "core_job": "Ajan bazında izinleri en az ayrıcalık ilkesine göre belgelemek",
+      "product_mechanism": "CSV/JSON rol içe aktarma, kaynak-eylem matrisi, izin değişiklik incelemesi",
+      "trigger_url": "https://www.theregister.com/security/2026/10/09/aws-agentcore-security-undone-by-prompt-requesting-credentials/5302436",
+      "decision": "semantic_duplicate",
+      "reason_tr": "Kurumsal AI güvenlik ekibi için ajan-kaynak izin matrisi, least privilege politikası, versiyon ve onay aynı mekanizma; CSV/JSON eklemesi yeni JTBD doğurmuyor.",
+      "checked_at": "2026-10-14T06:02:23.532Z",
+      "source_scope": "v2 frozen job + 2026-10-14 public first-party competitor/previous-catalog inspection",
+      "quality_gate_note": "Research assessment only; not a v2 controller receipt.",
+      "matched_existing_idea": "AI Agent Kaynak Yetki Politikası Masası",
+      "matched_canonical_key": "sme-it-teams-deploying-desktop-or-coding-agents|define-least-privilege-resource-scopes-for-each-agent-before-deploymen|agent-registry-with-resource-permission-matrix-json-policy-drafts-vers",
+      "matched_customer": "Kurumsal AI platform ve güvenlik ekipleri",
+      "matched_core_job": "Ajan çalıştırmadan önce kaynak izinlerini tanımlamak, sürümlemek ve onaylatmak.",
+      "matched_workflow": "Agent registry with resource-permission matrix, JSON policy drafts, versioning and approval history",
+      "competition_checked": false
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-d63daef970aa6781",
+      "candidate_name": "Tech Startup Certification Checklist",
+      "canonical_key": "turkish-startups|track-documentation-for-technology-innovation-certification|tech-startup-certification-checklist",
+      "target_customer": "Turkish startups",
+      "core_job": "Track documentation for technology-innovation certification",
+      "product_mechanism": "Tech Startup Certification Checklist web workflow: criteria → evidence → application → renewal",
+      "trigger_url": "https://www.etonet.org.tr/uploads/cf/vd-teknoloji-ve-yenilik-odakli-girisimlerin-belirlenmesi-ve-belgelendirilmesine-dair-yonetmelik.pdf",
+      "decision": "semantic_duplicate",
+      "reason_tr": "Türkiye teknoloji girişimleri için inovasyon sertifikası eligibility → kanıt → başvuru hazırlık aynı hedef kitle ve ürün iş akışı.",
+      "checked_at": "2026-10-14T06:02:23.532Z",
+      "source_scope": "v2 frozen job + 2026-10-14 public first-party competitor/previous-catalog inspection",
+      "quality_gate_note": "Research assessment only; not a v2 controller receipt.",
+      "matched_existing_idea": "Teknoloji Girişimi Belgelendirme Masası",
+      "matched_canonical_key": "turkish-tech-startups|prepare-innovation-certification|eligibility-evidence-workspace",
+      "matched_customer": "Türkiye'deki teknoloji girişimleri ve danışmanları",
+      "matched_core_job": "Girişimin kriterlere uygunluğunu ve gerekli kanıtları başvuru öncesi eksiksiz hazırlamak.",
+      "matched_workflow": "Eligibility matrix + evidence checklist + owner/deadline + completeness gate + application pack.",
+      "competition_checked": false
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-9f10fa8d43b88cb7",
+      "candidate_name": "Penetration Test Evidence Hub",
+      "canonical_key": "security-consultancies|track-ai-assisted-and-human-reviewed-penetration-testing-evidence|penetration-test-evidence-hub",
+      "target_customer": "security consultancies",
+      "core_job": "Track AI-assisted and human-reviewed penetration testing evidence",
+      "product_mechanism": "Penetration Test Evidence Hub web workflow: test scope → findings → human validation → report",
+      "trigger_url": "https://cloud.watch.impress.co.jp/docs/news/2146712.html",
+      "decision": "rejected",
+      "reason_tr": "Pentest danışmanları için scope, bulgu, kanıt, insan QA onayı ve müşteri raporu sunan dört doğrudan ürün; global sınır 3 aşıldı.",
+      "checked_at": "2026-10-14T06:02:23.532Z",
+      "source_scope": "v2 frozen job + 2026-10-14 public first-party competitor/previous-catalog inspection",
+      "quality_gate_note": "Research assessment only; not a v2 controller receipt.",
+      "competition_review_date": "2026-10-14",
+      "global_direct_competitors": [
+        {
+          "name": "PlexTrac",
+          "url": "https://plextrac.com/",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "Dradis",
+          "url": "https://dradis.com/solutions/collaboration.html",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "Faraday",
+          "url": "https://faradaysec.com/platform/penetration-testing-reporting/",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "AttackForge",
+          "url": "https://www.attackforge.com/",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        }
+      ],
+      "turkiye_direct_count": null,
+      "feasibility_checked": false,
+      "reason_for_terminal": "global_direct_competitor_count_exceeds_3"
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-ba28517e3300f71b",
+      "candidate_name": "GenAI Evaluation Matrix",
+      "canonical_key": "enterprise-ai-teams|compare-quality-evaluation-runs-against-repeatable-rubrics|genai-evaluation-matrix",
+      "target_customer": "enterprise AI teams",
+      "core_job": "Compare quality evaluation runs against repeatable rubrics",
+      "product_mechanism": "GenAI Evaluation Matrix web workflow: test set → rubric → scoring → release gate",
+      "trigger_url": "https://cloud.watch.impress.co.jp/docs/news/2146765.html",
+      "decision": "rejected",
+      "reason_tr": "Enterprise GenAI ekipleri için dataset/rubric/evaluation score, experiment comparison ve release check yapan dört doğrudan çözüm; global sınır aşıldı.",
+      "checked_at": "2026-10-14T06:02:23.532Z",
+      "source_scope": "v2 frozen job + 2026-10-14 public first-party competitor/previous-catalog inspection",
+      "quality_gate_note": "Research assessment only; not a v2 controller receipt.",
+      "competition_review_date": "2026-10-14",
+      "global_direct_competitors": [
+        {
+          "name": "LangSmith",
+          "url": "https://docs.langchain.com/langsmith/evaluation-types",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "Langfuse",
+          "url": "https://langfuse.com/docs/evaluation/experiments/compare-experiments",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "Arize Phoenix",
+          "url": "https://arize.com/phoenix",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "Braintrust",
+          "url": "https://www.braintrust.dev/articles/how-to-eval",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        }
+      ],
+      "turkiye_direct_count": null,
+      "feasibility_checked": false,
+      "reason_for_terminal": "global_direct_competitor_count_exceeds_3"
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-a20c449d5f6e839d",
+      "candidate_name": "CAPA Proof Loop — düzeltici faaliyet etkinlik kontrolü",
+      "canonical_key": "ıso-kalite-sistemli-tedarikçiler|capa-nın-gerçekten-işe-yaradığını-kanıtlamak|capa-takip-takvimi-kontrol-örneklemi-fotoğraf-ölçüm-kanıtı-v",
+      "target_customer": "ISO kalite sistemli tedarikçiler",
+      "core_job": "CAPA'nın gerçekten işe yaradığını kanıtlamak",
+      "product_mechanism": "CAPA takip takvimi, kontrol örneklemi, fotoğraf/ölçüm kanıtı ve yeniden açma kuralı",
+      "trigger_url": "https://www.qualitymag.com/articles/99985-why-manufacturers-need-better-inspection-history-not-just-more-quality-data",
+      "decision": "rejected",
+      "reason_tr": "ISO/QMS üretim kalite ekiplerinin CAPA kaydı, kapanış kanıtı, effectiveness check ve follow-up iş akışını işleten dört rakip; global sınır aşıldı.",
+      "checked_at": "2026-10-14T06:02:23.532Z",
+      "source_scope": "v2 frozen job + 2026-10-14 public first-party competitor/previous-catalog inspection",
+      "quality_gate_note": "Research assessment only; not a v2 controller receipt.",
+      "competition_review_date": "2026-10-14",
+      "global_direct_competitors": [
+        {
+          "name": "MasterControl",
+          "url": "https://www.mastercontrol.com/quality/capa-software/management/",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "Qualio",
+          "url": "https://www.qualio.com/product/capa-management-software",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "Greenlight Guru",
+          "url": "https://www.greenlight.guru/capa-management-software",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "Intellect QMS",
+          "url": "https://info.intellect.com/corrective-and-preventive-action-get-a-free-demo-of-intellect-qms",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        }
+      ],
+      "turkiye_direct_count": null,
+      "feasibility_checked": false,
+      "reason_for_terminal": "global_direct_competitor_count_exceeds_3"
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-b8167ab4fdbfbce9",
+      "candidate_name": "Project Risk Evidence PMO",
+      "canonical_key": "it-project-management-offices|trace-project-risks-to-evidence-and-mitigations|project-risk-evidence-pmo",
+      "target_customer": "IT project management offices",
+      "core_job": "Trace project risks to evidence and mitigations",
+      "product_mechanism": "Project Risk Evidence PMO web workflow: project signals → risk score → owner → evidence",
+      "trigger_url": "https://cloud.watch.impress.co.jp/docs/news/2146984.html",
+      "decision": "rejected",
+      "reason_tr": "IT PMO risk sinyali → skor → sahip → önlem/kanıt/risk raporu iş akışı dört doğrudan çözümde bulunuyor; global sınır aşıldı.",
+      "checked_at": "2026-10-14T06:02:23.532Z",
+      "source_scope": "v2 frozen job + 2026-10-14 public first-party competitor/previous-catalog inspection",
+      "quality_gate_note": "Research assessment only; not a v2 controller receipt.",
+      "competition_review_date": "2026-10-14",
+      "global_direct_competitors": [
+        {
+          "name": "ProjectManager",
+          "url": "https://www.projectmanager.com/software/risk-management",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "Smartsheet",
+          "url": "https://www.smartsheet.com/content/project-risk-management-software",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "Wrike",
+          "url": "https://help.wrike.com/hc/en-us/articles/360049296653-Project-Risk-Reports",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "monday.com",
+          "url": "https://monday.com/w/use-cases/risk-management",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        }
+      ],
+      "turkiye_direct_count": null,
+      "feasibility_checked": false,
+      "reason_for_terminal": "global_direct_competitor_count_exceeds_3"
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-d5d95bffdedad9a6",
+      "candidate_name": "AI Vulnerability Remediation Queue",
+      "canonical_key": "application-security-teams|prioritize-and-track-ai-discovered-vulnerabilities-through-remediation|ai-vulnerability-remediation-queue",
+      "target_customer": "application security teams",
+      "core_job": "Prioritize and track AI-discovered vulnerabilities through remediation",
+      "product_mechanism": "AI Vulnerability Remediation Queue web workflow: finding import → dedupe → priority → owner → closure",
+      "trigger_url": "https://red.anthropic.com/2026/cvd/snapshots/2026-08-26-1155/",
+      "decision": "rejected",
+      "reason_tr": "AppSec takımları için scanner bulgusu alım, mükerrerleştirme, risk önceliği, owner/ticket ve remediation closure zincirini dört çözüm sağlıyor.",
+      "checked_at": "2026-10-14T06:02:23.532Z",
+      "source_scope": "v2 frozen job + 2026-10-14 public first-party competitor/previous-catalog inspection",
+      "quality_gate_note": "Research assessment only; not a v2 controller receipt.",
+      "competition_review_date": "2026-10-14",
+      "global_direct_competitors": [
+        {
+          "name": "DefectDojo",
+          "url": "https://defectdojo.com/unified-vulnerability-management",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "ArmorCode",
+          "url": "https://www.armorcode.com/application-security-posture-management",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "Brinqa",
+          "url": "https://www.brinqa.com/solutions/vulnerability-management-and-appsec-teams",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "Vulcan Cyber",
+          "url": "https://help.vulcancyber.com/en/articles/9838570-managing-remediation-workflow-best-practice",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        }
+      ],
+      "turkiye_direct_count": null,
+      "feasibility_checked": false,
+      "reason_for_terminal": "global_direct_competitor_count_exceeds_3"
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-73b5f77805cbd8e2",
+      "candidate_name": "Security disclosure SLA tracker",
+      "canonical_key": "software foundations|coordinate private disclosure deadlines|private disclosure timeline and approvals",
+      "target_customer": "Software foundations",
+      "core_job": "Coordinate private disclosure deadlines",
+      "product_mechanism": "Private disclosure timeline and approvals",
+      "trigger_url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "decision": "rejected",
+      "reason_tr": "Software foundation CVD/VDP sorumluları için gizli ifşa intake, zaman çizgisi/status, koordinasyon, onay ve takip dört rakipte var; global sınır aşıldı.",
+      "checked_at": "2026-10-14T06:02:23.532Z",
+      "source_scope": "v2 frozen job + 2026-10-14 public first-party competitor/previous-catalog inspection",
+      "quality_gate_note": "Research assessment only; not a v2 controller receipt.",
+      "competition_review_date": "2026-10-14",
+      "global_direct_competitors": [
+        {
+          "name": "HackerOne",
+          "url": "https://docs.hackerone.com/en/articles/8517457-disclosure-coordinated-vulnerability-disclosure",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "Bugcrowd",
+          "url": "https://www.bugcrowd.com/bugcrowd-pricing/vulnerability_disclosure/",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "Intigriti",
+          "url": "https://www.intigriti.com/product/intigriti-vdp",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "YesWeHack",
+          "url": "https://www.yeswehack.com/product/vulnerability-management",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        }
+      ],
+      "turkiye_direct_count": null,
+      "feasibility_checked": false,
+      "reason_for_terminal": "global_direct_competitor_count_exceeds_3"
+    },
+    {
+      "job_id": "2026-10-10-migration-validation-b23488f208a3feb1",
+      "candidate_name": "DefectMemory — tekrarlayan kusur arşivi",
+      "canonical_key": "orta-ölçekli-üretim-tesisleri|tekrarlayan-kalite-kusurlarını-makine-vardiya-ve-lota-göre-b|kusur-taksonomisi-csv-import-filtreli-geçmiş-ve-tekrar-sıklı",
+      "target_customer": "Orta ölçekli üretim tesisleri",
+      "core_job": "Tekrarlayan kalite kusurlarını makine, vardiya ve lota göre bulmak",
+      "product_mechanism": "Kusur taksonomisi, CSV import, filtreli geçmiş ve tekrar sıklığı analizi",
+      "trigger_url": "https://www.qualitymag.com/articles/99985-why-manufacturers-need-better-inspection-history-not-just-more-quality-data",
+      "decision": "rejected",
+      "reason_tr": "Üretim kalite ekiplerinin kusur/uygunsuzluk geçmişini trend/Pareto, recurring causes ve düzeltici faaliyetle izleyen dört ürün var; global sınır aşıldı. Ürünler farklı ölçeklerde ama üretim kalite sorunu aynı.",
+      "checked_at": "2026-10-14T06:02:23.532Z",
+      "source_scope": "v2 frozen job + 2026-10-14 public first-party competitor/previous-catalog inspection",
+      "quality_gate_note": "Research assessment only; not a v2 controller receipt.",
+      "competition_review_date": "2026-10-14",
+      "global_direct_competitors": [
+        {
+          "name": "Siemens Opcenter X Quality",
+          "url": "https://blogs.sw.siemens.com/opcenter/whats-new-in-opcenter-x-quality-2601/",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "ETQ Reliance",
+          "url": "https://www.etq.com/manufacturing/",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "Intellect QMS",
+          "url": "https://intellect.com/platform/quality-management",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        },
+        {
+          "name": "Greenlight Guru",
+          "url": "https://www.greenlight.guru/quality-management-software",
+          "same_buyer": true,
+          "same_core_job": true,
+          "substantially_same_workflow": true
+        }
+      ],
+      "turkiye_direct_count": null,
+      "feasibility_checked": false,
+      "reason_for_terminal": "global_direct_competitor_count_exceeds_3"
+    }
+  ]
+}
