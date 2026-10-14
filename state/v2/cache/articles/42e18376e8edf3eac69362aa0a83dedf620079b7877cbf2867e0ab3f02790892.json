@@ -1,0 +1,48 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "42e18376e8edf3eac69362aa0a83dedf620079b7877cbf2867e0ab3f02790892",
+  "decision": {
+    "article_key": "8b939432e40339174c1a52da",
+    "decision": "opportunity",
+    "reason": "Supply Chain Dive 13 Ekim özgün haberinde Panama Canal El Niño/kuraklık endişeleriyle 9 Eylül'den 9 Neopanamax slotun 9 Ekim itibarıyla 10'a yükseldiği, yine de 2026 ilk dokuz ayında 100+ saat beklemiş konteyner gemisi payının 2025 %0,6'dan %3,3'e yükseldiği, yükün yaklaşık %5'inin çıkışta LA Limanı'na aktarıldığı açık. BEFORE taşıyıcı alıcının tek kanal tercihli gemi booking ön kararı; AFTER yakıt fiyatı, Pacific port varış ve rail/drayage kapasite/kritik PO teslim tarihi riskini tek kaynak planında yeniden hesaplama gerekir. Yeni bir kanal/slot kısıtı dinamik ve gerçek, fakat dünyadaki TMS/port rota karar yazılımları doğrudan rakip olabilir, Validation'da kıyaslanmadan yeni ürün değildir.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-1b4066bd3faf984a:8b939432e40339174c1a52da:1",
+        "canonical_key": "pacific-importer-logistics-planners|choose-panama-canal-vs-los-angeles-allocation-under-drought-fuel-and-slot-risk|offline-container-booking-deadline-rail-fee-and-transit-variability-scenario",
+        "idea_name": "Panama–Los Angeles Kanal Sapma ve Teslim Eşiği Defteri",
+        "core_job": "Panama geçişli deniz yükünü LA veya başka varış limanı rotasına aktarmadan önce başlangıç portu, su yolu slotu, bekleme günleri, pahalı yakıt, kara-demiryolu son teslim ve alıcı sipariş deadline sonuçlarını senaryo bazında değerlendirmek",
+        "target_customer": "ABD Doğu/Batı kıyısına ithalat yapan orta ölçekli 3PL ve perakende nakliye planlama şirketleri",
+        "buyer": "Uluslararası navlun planlama / ithalat lojistik müdürü",
+        "product_mechanism": "Kullanıcının booking/ETA, Panama/Suez slot varsayımı, navlun/BAF yakıt quote, Los Angeles liman handoff, rail/drayage, PO due date ve demuraj maliyetlerini elle/CSV yükleyip deterministik risk ve maliyet/teslim senaryosu üreten tarayıcı defteri; AIS API, canlı carrier booking, ücretli navlun fiyatı ve model zorunlu değil.",
+        "why_now": "2026 Ekim Panama El Niño etkili kanal slot/wait dalgalanması ve Los Angeles Eylül 1,04m TEU rekoru, yaklaşık %5 origin allocation değişimini pratik örnek olarak ortaya koyuyor.",
+        "before_state": "Freight forwarder tek navlun teklifi ve tahmini varış gününe göre booking değişimini onaylar; kanal bekleme/rail risk/ürün due-date ayrı tablolardadır.",
+        "after_state": "Alternatif origin allocation/su yolu ve intermodal port/ray senaryosu, süre ve toplam risk farkı insan onaylı teslim karar dosyasında görünür.",
+        "canonical_source_urls": [
+          "https://www.supplychaindive.com/news/panama-canal-challenges-drive-shippers-to-port-of-los-angeles/832748/"
+        ],
+        "supporting_article_ids": [
+          "578971c8c6069e3180cdc67f"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.supplychaindive.com/news/panama-canal-challenges-drive-shippers-to-port-of-los-angeles/832748/",
+            "observation": "Supply Chain Dive 13 Ekim: Panama New Panamax 9→10 slot, 100 saatten uzun gemi bekleme 2026 dönem %3,3 ve 2025 %0,6; Port LA Eylül 1,04m TEU, Seroka yaklaşık %5 original allocation kayması; süre ve fiyatlar güncel tarife garantisi değil."
+          }
+        ],
+        "scope_hint": "ABD/Pasifik yük tedarik zinciri; manuel CSV, dinamik canlı navlun bağlantısı olmadan",
+        "local_evidence": {
+          "signals": [
+            "Aşırı bekleme ve yakıt maliyeti rotayı değiştirmekte gerçek satın alma kararı yaratıyor."
+          ],
+          "unknowns": [
+            "Türkiye/global shipping rate/replanning TMS doğrudan rakip sayısı doğrulanmadı.",
+            "Mevcut katalog enerji/transport route disruption ile semantik tekrarı Merge'de incelenmeli.",
+            "Çevrimdışı risk varsayımları actual carrier availability ve gümrük gecikmesini garanti etmez."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-1b4066bd3faf984a/001.json",
+  "valid_until": "2026-11-13T02:55:32Z"
+}
