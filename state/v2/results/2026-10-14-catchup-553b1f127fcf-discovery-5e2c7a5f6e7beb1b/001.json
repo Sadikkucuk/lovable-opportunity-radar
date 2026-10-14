@@ -1,0 +1,130 @@
+{
+  "schema_version": 3,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-5e2c7a5f6e7beb1b",
+  "input_hash": "5e2c7a5f6e7beb1be057667e506a86b79c8b7219609180453f12b89366528e26",
+  "worker": 1,
+  "invocation_id": "radar-manual-20261014-discovery-001",
+  "token": "discovery-20261014-7a38d5e2-b9c1-4c6f-8263",
+  "finished_at": "2026-10-14T07:45:32.497Z",
+  "outcome": "done",
+  "reason": "Ten distinct frozen feed articles examined individually with original reporting/primary economic sources as available: 3 narrow candidate workflows proposed for Merge and later market validation, 4 justified no-opportunity decisions, 3 transparent original-source uncertainties. No original-source access or product uniqueness fabricated.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "6aee57409ed09778363c1fa7",
+        "decision": "no_opportunity",
+        "reason": "Maddyness Factory girişindeki RSS kaydı yeni tarihli ürün/haber değil, kuruluşun uzun süredir sunduğu editoryal ortaklık, podcast/video ve marka içerik üretim hizmetlerinin genel tanıtım sayfasıdır. Özgün https://www.maddyness.com/services/ okunup kaynak karşılaştırıldı; 13 Ekim saat etiketi yeni regülasyon/ürün veya B2B iş akışı değişimi kanıtlamıyor.",
+        "source_url": "https://www.maddyness.com/services/",
+        "opportunities": []
+      },
+      {
+        "article_key": "6b0f0330594d6c9f696b2eed",
+        "decision": "no_opportunity",
+        "reason": "YiCai özgün 13 Ekim 18:52 açıklaması Xinzhisoft hissedarlarının toplam en çok %4 hisselik satış planını ayrıntılandırıyor: işleme konu yatırımcı pay devri, teknoloji ürünü veya yeni müşteri operasyonu talebi değil. Doğrudan hisse piyasası kararı bağımsız Lovable SaaS tetiklemiyor. Özgün https://www.yicai.com/brief/103391920.html okundu.",
+        "source_url": "https://www.yicai.com/brief/103391920.html",
+        "opportunities": []
+      },
+      {
+        "article_key": "6b58f8236753df265deb5359",
+        "decision": "opportunity",
+        "reason": "FreightWaves 13 Ekim özgün haberi Netradyne'nin filosuna Campaign Agent, düşük kodla agent kurucu ve canlı filoya soru-cevap fonksiyonunu duyurduğunu doğruluyor. Dış Netradyne telematik API veya LLM kullanmadan, orta ölçekli filo güvenlik ekiplerinin elle yüklediği sürücü olay/koçluk/izleme CSV'leri ile dönemsel kampanya hedefi, grup, öncesi-sonrası etki ve yönetici onay kanıtını sürümlemek için bağımsız, dar kapsamlı insan denetimli çalışma alanı hipotezi çıkarıldı. Haber bir müşteri alım görüşmesi veya rekabet doğrulaması değildir.",
+        "source_url": "https://www.freightwaves.com/news/netradyne-expands-ai-agents-fleet-safety",
+        "opportunities": [
+          {
+            "raw_id": "radar-manual-20261014-5e2c7a5f-fleet",
+            "canonical_key": "commercial-fleet-safety-ops|prove-driver-coaching-campaign-results|csv-campaign-target-baseline-outcome-evidence-register",
+            "idea_name": "Fleet Campaign Proof — Sürücü Güvenlik Kampanyası Kanıt Defteri",
+            "core_job": "Sürücü güvenlik koçluk kampanyasının hedef, kapsam, öncesi-sonrası sonuç ve yönetici onayını filo platformundan bağımsız belgelemek",
+            "target_customer": "Küçük ve orta ölçekli ticari filo güvenlik / operasyon müdürleri",
+            "product_mechanism": "Kullanıcı sağladığı olay/koçluk CSV'si, sürücü grubu, kampanya tarihi ve performans ölçütlerini manuel girer; tarayıcı içi deterministik karşılaştırma, dönemsel kanıt, istisna inceleme ve PDF/CSV sonuç oluşturur. Netradyne API, ücretli model, telematik canlı bağlantı zorunlu değildir.",
+            "why_now": "Netradyne 13 Ekim 2026'da canlı telematik kullanan sürücü Campaign Agent'ını müşterilerine duyurdu; farklı altyapılara sahip küçük filoların vendor bağımsız onay/kanıt ihtiyacı test edilmeye aday.",
+            "before_state": "Kampanya hedefleri, sürücü koçluğu ve sonuç CSV raporlarında dağınık; yöneticiye ölçülebilir kanıt sunmak zor.",
+            "after_state": "Campaign scope → baseline → dönemsel risk/koçluk CSV'si → hedef/sonuç farkı → insan doğrulaması → denetlenebilir kampanya özeti.",
+            "canonical_source_urls": [
+              "https://www.freightwaves.com/news/netradyne-expands-ai-agents-fleet-safety"
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "6b8732e84c7728fd238f9b1b",
+        "decision": "unverified",
+        "reason": "ZDNet Korea RSS başlığı IMF'nin finans kuruluşlarına AI kaynaklı saldırı ve altyapı/teknoloji sağlayıcısı riskini duyurduğunu özetliyor; ilgili özgün ZDNet Kore haber gövdesi ve direkt URL elde edilemedi. IMF'nin 30 Haziran tarihli AI/Cybersecurity notu ve 13 Ekim 2026 finansal istikrar raporu ortak altyapı ve siber konsantrasyon riskini gerçekten ele alıyor; fakat bu birincil raporların aynı gün yayımlanan ZDNet haberde hangi spesifik yeni satın alma koşulunu doğurduğu doğrulanmadı. Tetikleyici özgün sayfa olmadan yeni fırsat varsayılmadı.",
+        "source_url": "https://www.imf.org/en/publications/imf-notes/issues/2026/06/29/artificial-intelligence-and-cybersecurity-in-the-financial-sector-576706",
+        "opportunities": []
+      },
+      {
+        "article_key": "6bff735d5f34d3c6ea95f9e0",
+        "decision": "no_opportunity",
+        "reason": "13 Ekim IMF Global Financial Stability Report doğrudan finansal piyasa riskleri, AI yatırım beklentilerinin düzeltmesi ve gelişen ekonomilere ilişkin kırılganlıkları anlatıyor. Il Sole 24 Ore başlığı aynı makroekonomik olaya atıfta bulunuyor; özgün Il Sole içeriği erişilemedi. Kaynak IMF duyurusu doğrulandı ancak ülkelerin AI ekonomik büyüme görünümü tek başına özgün, ücretsiz bağımsız operasyona yönelik müşteri iş akışı değişimi göstermiyor. Makro rapor yeni SaaS ürünü olarak alınmadı.",
+        "source_url": "https://mediacenter.imf.org/news/imf---global-financial-stability-report-annual-meetings--2026/s/f55368c1-983b-45b7-ba7c-1978f67c168c",
+        "opportunities": []
+      },
+      {
+        "article_key": "6c3d169ee8f940cd934e2b5c",
+        "decision": "unverified",
+        "reason": "Nikkei Xtech 14 Ekim başlığı Chiba'daki Inbanuma set kırılmasında piping hipotezi ve resmî soruşturma komitesi eksikliğini söylüyor. 3 Ekim NHK özetinde piping fiziksel bir olasılık olarak anılıyor; başka yerel teknik analizlerde su seviyesi/şev koşulları farklı aktarılıyor. Nikkei özgün metni ve resmî nihai arıza nedeni kanıtı okunmadığı için ürün gerekçesi olarak 'piping kesin saptandı' denemez. Bölgesel set inceleme defterinin talebi araştırılabilir, fakat tetikleyici mekanizma ve alıcı ayrıntıları doğrulanana dek HOLD.",
+        "source_url": "https://datazoo.jp/tv/%E9%A6%96%E9%83%BD%E5%9C%8F%E6%83%85%E5%A0%B1%2B%E3%83%8D%E3%82%BF%E3%83%89%E3%83%AA%EF%BC%81/1896941",
+        "opportunities": []
+      },
+      {
+        "article_key": "6c41b48e2cea6f0c3c3b63c2",
+        "decision": "opportunity",
+        "reason": "The Next Web 13 Ekim haberi Pluto Security'nin 42 milyon USD toplam finansmanla AI çalışan uygulama/agent çalışma alanının güvenlik envanteri ve denetimine odaklanarak çıktığını doğruluyor; FinanceWire kaynakta AI ajanları ve çalışan üretimi uygulamaların üçüncü taraf servis/erişim riskleri ayrıca tanımlı. Harici endpoint taramadan manuel çalışan uygulama ve agent sahipliği ile izin/tedarikçi inceleme kanıtını tutan küçük organizasyon kontrol defteri potansiyelidir; mevcut 'Kurumsal AI Agent Erişim Yenileme Masası' ile semantik çakışma riski Merge'de kontrol edilmelidir.",
+        "source_url": "https://thenextweb.com/news/pluto-security-42m-ai-workspace-security-stealth",
+        "opportunities": [
+          {
+            "raw_id": "radar-manual-20261014-5e2c7a5f-aiworkspace",
+            "canonical_key": "sme-it-security|catalog-employee-built-ai-app-and-agent-risk|app-dependency-owner-data-scope-exception-ledger",
+            "idea_name": "Shadow AI Workspace Review — Çalışan AI Uygulama Risk Defteri",
+            "core_job": "Çalışanların oluşturduğu AI uygulamaları ve ajanları için sahip, veri erişimi, dış bileşen, onay ve istisna gerekçelerini tek dosyada izlemek",
+            "target_customer": "Çalışan yapımı AI uygulamalarını kullanan KOBİ BT ve güvenlik sorumluları",
+            "product_mechanism": "Kullanıcı girişli uygulama/ajan/bağlantı CSV'si, veri sınıfı, hesap sahipliği, servis bağımlılık ve erişim kapsamı; deterministik kural kontrolü, insan onayı, izlenebilir istisna ve rapor. Endpoint ajanı, gerçek connector taraması veya harici AI modeli gerektirmez.",
+            "why_now": "Pluto Security 13 Ekim 2026'da çalışan AI araçlarının ve agent'larının gölge BT riskini azaltan AI workspace koruma odağında yatırım/hizmet duyurdu.",
+            "before_state": "Çalışan yapımı AI uygulaması ve bağlantılarının kim sahibi, nereye erişiyor ve nasıl gözden geçiriliyor sorularının kanıtı e-posta ve tablolarda dağınık.",
+            "after_state": "Asset register → permission/data dependency map → risk/owner assignment → onay/istisna → periyodik yeniden inceleme → denetim paketi.",
+            "canonical_source_urls": [
+              "https://thenextweb.com/news/pluto-security-42m-ai-workspace-security-stealth"
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "6c666367a2229eb7f522d27b",
+        "decision": "unverified",
+        "reason": "ZDNet Korea 13 Ekim RSS başlığı Nvidia'nın Physical AI tedarik zincirinin Kore üretimi için fırsat olduğunu anlatıyor; asıl Korece sayfa, şirketin spesifik tedarik/sertifikasyon şartları ve tarihli sözleşme değişimi doğrulanamadı. Yalnız genel gelecek/tedarik zinciri yorumu sözleşme-ready işletme problemi olarak sunulamaz. Tekelleştirici tedarik listesi veya ödeme davranışı varsayılmadı.",
+        "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE96Y2NqVUt0Q0NjZkRIMmhqYkJTRE9fdE12MVFaS0VmMWQxaGhDV2VjUWNOU3Q4Y2Q3MUxsVUdOR3Jub1BmMThNRnNscnZONENTdmZRRnpB?oc=5",
+        "opportunities": []
+      },
+      {
+        "article_key": "6c77c532760f465ac950d3dc",
+        "decision": "opportunity",
+        "reason": "ZDNet France 13 Ekim özgün haberi Frankfurt-Lizbon Lufthansa uçuşunda kabin içindeki güç bankasının tutuştuğunu ve Lyon'a yönlendirmeyi aktarıyor. Havayolu kabin emniyet/olay komitelerinin taşınabilir batarya olayı sırasında müdahale sırası, eşya bilgisi, kanıt ve disiplinler arası kontrolü kaydetmesi için dış API gerektirmeyen düzenli vaka defteri hipotezi çıkarıldı. Bu tür raporlamanın hâlihazırda havayolu SMS yazılımlarında bulunup bulunmadığı Validation'da araştırılmalıdır.",
+        "source_url": "https://www.zdnet.fr/actualites/zd-tech-pourquoi-votre-batterie-externe-est-devenue-le-cauchemar-des-avions-504839.htm",
+        "opportunities": [
+          {
+            "raw_id": "radar-manual-20261014-5e2c7a5f-cabin",
+            "canonical_key": "regional-airline-cabin-safety|review-portable-battery-cabin-fire-incidents|incident-device-evidence-response-human-closure-ledger",
+            "idea_name": "Cabin Battery Event Ledger — Kabin Batarya Olay Defteri",
+            "core_job": "Güç bankası/lityum pil kaynaklı kabin olaylarında cihaz, müdahale, uçuş etkisi, yer ekiplerine devir ve insan onaylı düzeltici tedbir kanıtını tutmak",
+            "target_customer": "Bölgesel havayolları uçuş emniyet, kabin operasyonu ve SMS olay inceleme ekipleri",
+            "product_mechanism": "Uçuş olay referansı, cihaz sınıfı, olay zaman çizelgesi, kabin ekibi müdahalesi, rapor belge bağlantısı, eğitim/inceleme onay listesi; manuel veri veya CSV ile çalışan deterministik vaka iş akışı ve PDF çıktı. Canlı uçak sistemi/harici servis kullanmaz.",
+            "why_now": "13 Ekim 2026 ZDNet haberi Lufthansa yolcu güç bankası yangını ve rotadan sapma olayını yeniden gündeme taşıdı; benzer olaylar için kanıt bütünlüğü B2B hipotezidir.",
+            "before_state": "Olayın cihaz detayı, müdahale, ekip/onay ve düzeltici faaliyet belgeleri ayrı emniyet formlarında takip edilir.",
+            "after_state": "Olay kaydı → personel/güvenlik müdahalesi → kanıt referansları → görev/sorumlu → emniyet review → kapatma ve eğitim özeti.",
+            "canonical_source_urls": [
+              "https://www.zdnet.fr/actualites/zd-tech-pourquoi-votre-batterie-externe-est-devenue-le-cauchemar-des-avions-504839.htm"
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "6cbbd4a6703812fcc169a8a7",
+        "decision": "no_opportunity",
+        "reason": "13 Ekim Kore NewsPrime haberi Yuil Robotics'in 2027 CES'te tekerlekli yarı insansı prototipini tanıtmayı planladığını, UL belgelendirmesi ve aktüatör geliştirmesini şirket/analist yorumları olarak veriyor. 2027 gelecekteki prototip gösterimi, saha kabulü, alıcı sözleşme takvimi veya zorunlu başka operasyon aracı kurulduğunun kanıtı değil. Aynı beklentiye ürün uydurmadan katalog dışı bırakıldı.",
+        "source_url": "https://www.newsprime.co.kr/news/article/?no=750641",
+        "opportunities": []
+      }
+    ]
+  }
+}
