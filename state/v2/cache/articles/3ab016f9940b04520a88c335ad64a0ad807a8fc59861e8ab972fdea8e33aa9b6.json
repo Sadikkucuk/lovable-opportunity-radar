@@ -1,0 +1,28 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "3ab016f9940b04520a88c335ad64a0ad807a8fc59861e8ab972fdea8e33aa9b6",
+  "decision": {
+    "article_key": "758b3b4a1c837e9e3e1b7a26",
+    "decision": "opportunity",
+    "reason": "12 Ekim Borsa Italiana/Radiocor resmî toplantı haberi İtalya Maliye Bakanı Giorgetti'nin sanayi yatırımı hyper-amortisation mekanizmasını uzatıp güçlendirme niyetini bildirdiğini doğruluyor. Yeni 2027 yatırım teşviki oranları ve uygunluk henüz yasalaşmadığından, şirketlerin öneri/var olan kuralları ayrı senaryolarla karşılaştırması ve insan/muhasebeci onayı taşıması için Lovable'a uygun bağımsız karar destek defteri hipotezi çıktı. Onaylanan vergi oranı veya hukuki vergi görüşü uydurulmadı.",
+    "source_url": "https://www.borsaitaliana.it/borsa/notizie/radiocor/prima-pagina/dettaglio/dpfp-giorgetti-iperammortamento-sara--prorogato-e-rafforzato-nRC_12102026_1943_607118469.html",
+    "opportunities": [
+      {
+        "raw_id": "radar-manual-20261014-7d193e3f-italycapex",
+        "canonical_key": "italian-sme-industrial-finance|compare-proposed-hyper-amortization-2027-capex-timing|draft-rule-asset-cost-sensitivity-and-approval-ledger",
+        "idea_name": "Italy Capex Incentive Scenario — Taslak Vergi Teşviki Defteri",
+        "core_job": "İtalyan KOBİ'nin 2027 yatırım takvimini, henüz kesinleşmemiş hyper-amortisation teşvikiyle yasal yürürlükteki alternatif üzerinden senaryolaştırmak",
+        "target_customer": "İtalya imalat KOBİ finans/muhasebe ve yatırım komitesi ekipleri",
+        "product_mechanism": "Kullanıcının girdiği varlık türü, CAPEX, amortisman yılı, farklı taslak indirim/teşvik oranı, kısıt varsayımı, alternatif yatırım tarihi CSV'sini tarayıcıda hesaplar; taslak/yürürlükte statü etiketi, belirsizlik ve muhasebeci onay izi üretir. Vergi beyannamesi göndermek, dış mevzuat/API/LLM çağırmak gerekmez.",
+        "why_now": "12 Ekim 2026 Giorgetti parlamentoda hyper-amortisation'ın uzatılıp güçlendirileceğini açıkladı; 2027 bütçe yasalaşmadan yatırım ertele/öne al senaryoları tartışılabilir.",
+        "before_state": "Yatırım, vergi ve kredi varsayımları manuel dosyalarda tek senaryo olarak saklanır; taslak teşvik kesinleşmiş oranla karışabilir.",
+        "after_state": "Rule vintage (proposal vs enacted) → equipment CAPEX → dönem karşılaştırması → olasılıklı belirsizlik etiketleri → insan onayı ve belge paketi.",
+        "canonical_source_urls": [
+          "https://www.borsaitaliana.it/borsa/notizie/radiocor/prima-pagina/dettaglio/dpfp-giorgetti-iperammortamento-sara--prorogato-e-rafforzato-nRC_12102026_1943_607118469.html"
+        ]
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-7d193e3f7426a90a/001.json",
+  "valid_until": "2026-11-13T07:51:40Z"
+}
