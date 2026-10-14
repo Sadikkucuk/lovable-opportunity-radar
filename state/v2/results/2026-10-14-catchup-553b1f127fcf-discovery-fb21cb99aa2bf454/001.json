@@ -1,0 +1,106 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-fb21cb99aa2bf454",
+  "input_hash": "fb21cb99aa2bf4546fc95fa25ea8922282e8bbec044d8a2674d3c2a21bb5e1ae",
+  "token": "manual_manual_1791972844141_630657127_fb21cb99aa2bf454",
+  "finished_at": "2026-10-14T10:16:23.134Z",
+  "outcome": "done",
+  "reason": "Investigated all ten assigned news events, corroborated the USFP and Nota pilot announcements and generated two source-grounded software hypotheses.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "b5f6e5fee71d78f3677fbbde",
+        "decision": "no_opportunity",
+        "reason": "Securities Times report is afternoon trading movement of defense stocks, no structural repeatable buyer/regulatory change.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b6109fa86e02af5ddec65dd9",
+        "decision": "no_opportunity",
+        "reason": "Xinhua Shanghai international AI delegation site visit is an enterprise networking event, no supported product-specific workflow requirement.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b612ef8168e5335d2998ddc3",
+        "decision": "no_opportunity",
+        "reason": "KAIST innovation award is a personal science recognition event, not a new product/operation delta.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b64052bd0eb3e2510a2ccd6e",
+        "decision": "opportunity",
+        "reason": "12 Oct NVIDIA/Cisco primary announcement specifies new optical form factor, module-density and efficiency scenarios for data center network buyer; manual comparison workflow can be tested.",
+        "opportunities": [
+          {
+            "raw_id": "manual-20261014-fb21-usfp-01",
+            "canonical_key": "ai-data-center-network-engineers|evaluate-new-usfp-400g-lane-ethernet-module-deployment-scenarios|bandwidth-power-front-panel-and-evidence-matrix",
+            "idea_name": "USFP AI Fabric Optical Upgrade Preflight",
+            "core_job": "Compare 200Gb/s-per-lane modules with proposed USFP form-factor deployment in AI fabric expansion",
+            "target_customer": "AI data-center optical-network architects and infrastructure procurement engineers",
+            "product_mechanism": "User-supplied switch slot count, module/lane data, front-panel density, electrical power, cooling/compatibility assumptions; browser-side deterministic bandwidth and kWh option matrix with validation evidence links",
+            "why_now": "NVIDIA and Cisco's 12 October 2026 official USFP announcement proposes 400Gb/s per lane, 12.8Tb/s overall capacity and higher power efficiency; this is a design proposal and not production availability.",
+            "before_state": "Optical lane density, cage fit, endpoint and rack power options are scattered across vendor claims and local plans",
+            "after_state": "Scenario/BOM input → 200G-vs-USFP assumptions → capacity and power delta → incompatible inputs → evidence and human preflight approval",
+            "canonical_source_urls": [
+              "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m10/nvidia-and-cisco-new-pluggable-optics-to-scale-ai-factories.html"
+            ],
+            "evidence_note": "Official Cisco announcement states planned, not available, hardware specs; savings remain vendor design estimates."
+          }
+        ]
+      },
+      {
+        "article_key": "b697b9ef5da9474927703806",
+        "decision": "no_opportunity",
+        "reason": "Bloomberg HT summarizes IAB research on early career employment; workforce trend alone does not define a dated new implementation or compliance workflow.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b69f31f50ad279aa8dc294a9",
+        "decision": "opportunity",
+        "reason": "Nota 13 Oct original Etnews article confirms enterprise AI surveillance cost claim and deployed industrial safety pilots; procurement teams could verify on-site compute economics with a no-camera-API tool.",
+        "opportunities": [
+          {
+            "raw_id": "manual-20261014-fb21-nota-01",
+            "canonical_key": "industrial-video-surveillance-buyers|verify-vendor-compute-saving-claims-before-vlm-deployment|camera-channel-server-cost-baseline-and-pilot-evidence-workbook",
+            "idea_name": "Video AI Server Savings Pilot Proof Desk",
+            "core_job": "Audit vendor-declared industrial safety video analytics cost/channel reductions before procurement",
+            "target_customer": "Manufacturing and construction site video-safety procurement and IT teams",
+            "product_mechanism": "Manual baseline cameras/channels, GPU/server watts and costs, before-after observed frame-rate, monitoring edge conditions and test evidence CSV with deterministic TCO/savings range",
+            "why_now": "Nota's 13 October 2026 announcement claims its VLM-based Nota Vision Agent can reduce video surveillance server deployment costs up to 85% and handle twice the channels using same server at ~20 sites.",
+            "before_state": "Vendor efficiency claims and industrial safety camera pilot measurements are not normalized to comparable hardware configurations and recording conditions",
+            "after_state": "Document baseline → vendor claim → real pilot CSV test → normalized channel throughput and server CAPEX delta → acceptance and caution notes",
+            "canonical_source_urls": [
+              "https://m.etnews.com/20261013000273",
+              "https://en.sedaily.com/technology/2026/10/13/nota-cuts-ai-video-monitoring-server-costs-by-up-to-85"
+            ],
+            "evidence_note": "85% is a vendor claim reported by publishers; not independently verified. Tool does not run AI detection or connect to cameras."
+          }
+        ]
+      },
+      {
+        "article_key": "b6dcedff118928f2d2a7bf06",
+        "decision": "no_opportunity",
+        "reason": "ThePaper.com public-company shareholder divorce and stake transfer is an ownership event without verified affected customer workflow.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b707d95ca5d4ff2b75a03b15",
+        "decision": "no_opportunity",
+        "reason": "IT Home generic AI hearing aid brand buying guide and promotion; no new medical/technical standard or identifiable discrete recurring buyer need.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b7084f9872aa59db82a00675",
+        "decision": "no_opportunity",
+        "reason": "Les Echos Solutions general career transition advice piece, not a dated triggered business process.",
+        "opportunities": []
+      },
+      {
+        "article_key": "b72c0d2f787a8dbe3ad19965",
+        "decision": "no_opportunity",
+        "reason": "Gıda Hattı cites Turkish statistical milk production increases, an industry metric, not a specific novel producer compliance or user workflow.",
+        "opportunities": []
+      }
+    ]
+  }
+}
