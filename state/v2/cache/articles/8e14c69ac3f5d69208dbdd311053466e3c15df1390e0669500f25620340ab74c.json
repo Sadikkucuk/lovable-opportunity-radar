@@ -1,0 +1,48 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "8e14c69ac3f5d69208dbdd311053466e3c15df1390e0669500f25620340ab74c",
+  "decision": {
+    "article_key": "de6254419444ad83d4b2713a",
+    "decision": "opportunity",
+    "reason": "Ars Technica 13 Ekim özgün tam metin ve ESA'nın USTR başvurusu: hak sahibine ait olmayan binlerce ROM içeren SD kartları emülatör el cihazlarıyla satan üçüncü taraf satıcılar hedefleniyor; cihaz üreticisinin bunları kendisinin paketlediği kanıtlanmamış. Notorious Markets listesine ALINMA henüz gerçekleşmedi; ESA yalnız önerdi ve dahil edilme doğrudan otomatik yasak demek değil. BEFORE pazar yeri satıcısının ROM/SD aksesuarının içerik lisans kaydı ve satıcı SKU'su karışabilir; AFTER özelleştirilmiş bundle ilanları ve hak sahibinden izin kayıtlarının buyer review öncesi denetlenmesi gerekebilir. Lisans sahipliği hukuk uzmanına ait; otomatik korsanlık hükmü yok.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-308385a69eb4c84f:de6254419444ad83d4b2713a:01",
+        "canonical_key": "retro-handheld-resellers-and-marketplace-compliance-teams|preflight-rom-bundle-content-rights-and-sku-evidence|offline-sku-rom-license-source-and-remediation-review-ledger",
+        "idea_name": "Retro Oyun ROM Bundle Lisans Kanıt Defteri",
+        "core_job": "Retro oyun cihazı satan mağazalarda SD kart/ROM bundle SKU'larının içerik listesi, lisans/izin iddiası, tedarikçi kanıtı ve insan yayına alma kararını kayıt altına almak",
+        "target_customer": "Emülatör cihazları ve retro oyun SD kart aksesuarı satan e-ticaret distribütörleri ile pazaryeri uyum ekipleri",
+        "buyer": "Perakende pazar yeri IP uyum ve tedarik kontrol yöneticisi",
+        "product_mechanism": "Manuel cihaz SKU + SD kart paket/içerik manifestosu CSV, eser/hak sahibi, lisans belge URL'si, tedarikçi beyanı, indirme kaynak URL ve insan incelemesiyle eksik hak kanıtı raporu oluşturan deterministik tarayıcı defteri; ROM dosyasını dağıtmaz veya kopya koruma kırmaz",
+        "why_now": "ESA Ekim 2026 USTR başvurusunda üçüncü taraf ROM ön yüklü SD kart satıcı paketleri konusunda Notorious Markets incelemesi istedi.",
+        "before_state": "Cihaz üreticisi beyanı, bağımsız SD kart satıcısı ve oyuna ait dağıtım lisansı kaydı ayrı tutulur.",
+        "after_state": "Her satış SKU'sunun içerik manifestosu, belge durumu, sorumlu inceleme ve gerekiyorsa ilandan kaldırma aksiyonu izlenir.",
+        "canonical_source_urls": [
+          "https://arstechnica.com/gaming/2026/10/esa-targets-anbernic-emulation-handhelds-as-superfake-piracy-enablers/"
+        ],
+        "supporting_article_ids": [
+          "8488f5d7b0b6dc752e7d6f08"
+        ],
+        "source_observations": [
+          {
+            "url": "https://arstechnica.com/gaming/2026/10/esa-targets-anbernic-emulation-handhelds-as-superfake-piracy-enablers/",
+            "observation": "ESA USTR'ye Notorious Markets dahil etme talebi sundu, henüz dahil edilme/otomatik ithalat yasağı değil; orijinal marka üreticisi ile ROM SD kart sunan satıcı ayrımı açık."
+          }
+        ],
+        "scope_hint": "Dünya, özellikle ABD'ye satış",
+        "local_evidence": {
+          "signals": [
+            "ROM lisans kaydı ile market listing bundle manifestosu arasındaki farklı satıcı sorumluluğu gerçek ve belgelenebilir sorun."
+          ],
+          "unknowns": [
+            "Bazı homebrew/lisanslı ROM içerikleri tamamen yasal olabilir; hukuk kararı ve ülke lisans farkı uzman incelemesi gerektirir.",
+            "Marketplaces'in dahili IP policy yazılımı ve global/TR doğrudan rakipleri incelenmeli.",
+            "USTR talebinin kabul edildiği varsayılmadı."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-308385a69eb4c84f/001.json",
+  "valid_until": "2026-11-13T03:21:25Z"
+}
