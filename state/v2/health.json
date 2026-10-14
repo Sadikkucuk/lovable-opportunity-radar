@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-14T03:07:07Z",
+  "controller_observed_at": "2026-10-14T03:07:55Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-14T02:01:00Z",
   "ready_jobs": 625,
-  "unfinished_jobs": 626,
-  "last_verified_progress_at": "2026-10-14T03:05:46Z",
+  "unfinished_jobs": 625,
+  "last_verified_progress_at": "2026-10-14T03:07:42Z",
   "workers": {
     "1": {
       "last_started_at": "2026-10-14T02:59:58.566Z",
@@ -53,16 +53,21 @@
         "schema_version": 1,
         "worker": 3,
         "invocation_id": "45882318-f10c-455b-9561-e8e7255f058e",
-        "event": "progress",
-        "at": "2026-10-14T03:06:19.868Z",
-        "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-2a8e1f02556561e6",
-        "stage": "claim_saved",
-        "claim_path": "state/v2/claims/2026-10-14-catchup-553b1f127fcf-discovery-2a8e1f02556561e6/001.json",
-        "path": "state/v2/worker-events/3/45882318-f10c-455b-9561-e8e7255f058e/001-progress.json"
+        "event": "finished",
+        "at": "2026-10-14T03:07:52.110Z",
+        "verified_receipts": 1,
+        "reviewed_articles": 10,
+        "article_decisions": {
+          "opportunity": 5,
+          "no_opportunity": 5,
+          "unverified": 0
+        },
+        "note": "Worker isteği değişmeden önce açık claim güvenli biçimde receipt ile kapatıldı; yeni claim alınmadı.",
+        "path": "state/v2/worker-events/3/45882318-f10c-455b-9561-e8e7255f058e/999-finished.json"
       },
-      "receipts_this_invocation": 0,
+      "receipts_this_invocation": 1,
       "write_and_receipt_verified": true,
-      "last_receipt_at": "2026-10-14T03:05:46.836Z"
+      "last_receipt_at": "2026-10-14T03:07:42.619Z"
     },
     "4": {
       "last_started_at": "2026-10-14T02:07:10.909Z",
@@ -107,10 +112,10 @@
     "window_minutes": 120.0,
     "stages": {
       "discovery": {
-        "completed_in_window": 13,
-        "known_remaining": 420,
-        "observed_jobs_per_hour": 6.5,
-        "estimated_minutes_for_stage": 3876.9
+        "completed_in_window": 14,
+        "known_remaining": 419,
+        "observed_jobs_per_hour": 7.0,
+        "estimated_minutes_for_stage": 3591.4
       },
       "merge": {
         "completed_in_window": 0,
