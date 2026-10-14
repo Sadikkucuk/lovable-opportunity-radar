@@ -1,0 +1,187 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-10-migration-validation-254b9edf16cc1408",
+  "input_hash": "254b9edf16cc1408f1ec7028d285db6decba0ef4b29dac4d025152d56b3eeb69",
+  "token": "4c180c79-a77f-4129-b218-c587a64f90ae",
+  "finished_at": "2026-10-14T03:28:26.160Z",
+  "outcome": "done",
+  "reason": "9 Ekim Reuters haberi özgün sayfadan okundu: AB Komisyonu Ağustos sonunda 30'dan fazla AI şirketinden risk, güvenlik, şeffaflık ve telif yükümlülükleriyle ilgili bilgi istemiştir; soruşturmaya ve cezaya dönüşebilir ama cezalar gerçekleşmiş değil. En az 5 ayrı küresel ürün (OneTrust, Trustible, Credo AI, ModelOp, Holistic AI) aynı AI uyum ekibinin belge/kanıt/sorumlu/denetim-yanıt akışını resmi ürün sayfalarında sunmaktadır. Global doğrudan rakip sayısı asgari 5, Radar <=3 şartını ihlal ediyor. Türkiye'de kapsamlı yerel yokluk iddiası veya sıfır rakip kararı verilmedi. Aday reddedilmelidir.",
+  "result": {
+    "decision": "rejected",
+    "reason": "Global doğrudan rakip eşiği başarısız: aynı AI geliştirici/uyum müşteri grubunun regülatör sorusu → kanıtın sahibi → model riski/kontrol → gözden geçirme → rapor/denetim yanıtı işine en az beş ayrı mevcut yazılım çözümü var. Düzenleyici bilgi talebini ayrı küçük CSV tablosuna indirgemek ürünün çekirdek işini farklılaştırmıyor.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://www.reuters.com/world/eu-tech-chief-says-bloc-well-equipped-fend-off-rogue-ai-risk-2026-10-09/",
+        "accessed_at": "2026-10-14T03:28:26.160Z",
+        "claim": "Düzenleyici AI bilgi taleplerini model/riske bağlı kanıt dosyaları, sorumlular, kontrol/approval ve dışa aktarım ile destekleyen müşteri iş akışı",
+        "observation": "Reuters 9 Ekim AB teknoloji yetkilisi açıklaması: Ağustos sonunda 30'dan fazla AI firması bilgi talebi aldı; önce güvenlik/performans sonra şeffaflık ve telif soruları; olası soruşturma/yüzde 7 azami ceza gerçekleştirilmiş sonuç değil.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "trigger",
+        "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-16",
+        "accessed_at": "2026-10-14T03:28:26.160Z",
+        "claim": "Düzenleyici AI bilgi taleplerini model/riske bağlı kanıt dosyaları, sorumlular, kontrol/approval ve dışa aktarım ile destekleyen müşteri iş akışı",
+        "observation": "AB AI Act Article16 yüksek riskli sistem sağlayıcısına kayıt/belge/otoritenin gerekçeli talebine uyum kanıtı verme yükümlülüğü atfediyor; tekil tüm AI startup'ları aynı kategoriye zorunlu girmiyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.onetrust.com/solutions/ai-governance/",
+        "accessed_at": "2026-10-14T03:28:26.160Z",
+        "claim": "Düzenleyici AI bilgi taleplerini model/riske bağlı kanıt dosyaları, sorumlular, kontrol/approval ve dışa aktarım ile destekleyen müşteri iş akışı",
+        "observation": "OneTrust AI sistem, model ve uygulama envanterini sorumluya atıyor; EU AI Act risk/uyum kontrolü, approval, audit-ready evidences raporlaması.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://trustible.ai/",
+        "accessed_at": "2026-10-14T03:28:26.160Z",
+        "claim": "Düzenleyici AI bilgi taleplerini model/riske bağlı kanıt dosyaları, sorumlular, kontrol/approval ve dışa aktarım ile destekleyen müşteri iş akışı",
+        "observation": "Trustible AI governance sisteminde control evidence/ownership ve EU AI Act/ISO 42001 uyum kanıtı üzerinden denetim dosyası hazırlanıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.credo.ai/solutions/artifacts",
+        "accessed_at": "2026-10-14T03:28:26.160Z",
+        "claim": "Düzenleyici AI bilgi taleplerini model/riske bağlı kanıt dosyaları, sorumlular, kontrol/approval ve dışa aktarım ile destekleyen müşteri iş akışı",
+        "observation": "Credo AI, AI use case için kontrol kanıtı, checklist, onay karar izi ve hazır compliance/şeffaflık raporu üretiyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.modelop.com/ai-governance-software/reporting",
+        "accessed_at": "2026-10-14T03:28:26.160Z",
+        "claim": "Düzenleyici AI bilgi taleplerini model/riske bağlı kanıt dosyaları, sorumlular, kontrol/approval ve dışa aktarım ile destekleyen müşteri iş akışı",
+        "observation": "ModelOp AI faaliyetini denetim izi olarak model karta, test, değişiklik, insan review, signoff ve regülatör-grade rapora bağlıyor.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.holisticai.com/",
+        "accessed_at": "2026-10-14T03:28:26.160Z",
+        "claim": "Düzenleyici AI bilgi taleplerini model/riske bağlı kanıt dosyaları, sorumlular, kontrol/approval ve dışa aktarım ile destekleyen müşteri iş akışı",
+        "observation": "Holistic AI EU AI Act kontrollerine bağlanmış onay, compliance ve audit-ready delillerin sürdürülmesini sağlıyor.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "queries": [
+          "Türkiye yapay zeka yönetişim yazılım AI Act düzenleyici bilgi talebi kanıt dosyası",
+          "Türkiye AI governance compliance AI Act platform denetim kanıt üretimi",
+          "Türk AI Act uyum platform doküman izleme"
+        ],
+        "scope": "Türkçe ve Türkiye odaklı alanlar genel araştırıldı; tam aynı iş akışına sahip yerel yazılım şirketlerinin yokluğu kanıtlanamadı ve global5 zaten kesin engel.",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_competitors": [
+          {
+            "name": "AB AI Act resmi bilgi/başvuru kaynakları",
+            "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-16",
+            "reason": "Hukuki yükümlülük açıklaması; müşteri workflow yazılımı olarak rakip değil."
+          }
+        ]
+      },
+      "global": {
+        "direct_count": 5,
+        "queries": [
+          "EU AI Act regulator information request evidence dossier AI governance software",
+          "OneTrust AI Governance ownership controls documentation audit ready",
+          "Credo AI audit artifacts AI systems regulator documents",
+          "Trustible model regulatory compliance evidence audit",
+          "ModelOp regulatory audit ready reporting AI governance",
+          "Holistic AI governance documentation evidence EU AI Act"
+        ],
+        "scope": "Düzenlenen AI sağlayıcılarının model/AI sistem kontrol, kanıt sahipliği ve otoriteye sunulabilir belge/dosya işini resmi satıcı ürün metniyle açıkça sunan beş ayrı doğrudan ürün; bütün küresel rakiplerin tüketici sayımı değil asgari 5.",
+        "search_complete": true,
+        "direct_competitors": [
+          {
+            "name": "OneTrust AI Governance",
+            "url": "https://www.onetrust.com/solutions/ai-governance/",
+            "reason": "AI sistem/model sahibi uyum ekipleri; EU AI Act kontrol eşlemesi, belge ve kanıt üretimi, atanmış risk ve değerlendirme/onay iş akışını sunuyor."
+          },
+          {
+            "name": "Trustible AI Governance",
+            "url": "https://trustible.ai/",
+            "reason": "Düzenlemeye tabi AI geliştirici ve deployer uyum ekipleri; merkezi AI varlıkları, risk kontrolü, kanıtlı denetim izi, EU AI Act uyum kontrolü ve dış denetime hazır kanıt."
+          },
+          {
+            "name": "Credo AI Audit Artifacts",
+            "url": "https://www.credo.ai/solutions/artifacts",
+            "reason": "AI/ML governance ve kontrol takımları; her AI use case için gerekli kontrol belgesini, teknik değerlendirmeyi, onayları ve şeffaflık/denetim raporunu tek platformda üretir."
+          },
+          {
+            "name": "ModelOp Governance Reporting",
+            "url": "https://www.modelop.com/ai-governance-software/reporting",
+            "reason": "AI yönetişim, risk ve yasal uyum ekipleri; AI yaşam döngüsü test/izleme/review/approval belgelerini regülatör derecesinde denetim ve cevap dosyasına dönüştürür."
+          },
+          {
+            "name": "Holistic AI Governance",
+            "url": "https://www.holisticai.com/",
+            "reason": "AI uygulayıcı/geliştirici regüle şirketlerin AI varlık ve kontrollerini EU AI Act/ISO 42001 ile eşleştirir, approvals, kanıt ve denetim raporu sunar."
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Tek operatörün tarayıcıda elle hazırladığı soru ID, kanıt dosyası sürümü, kontrol maddesi, model/AI use case ID, belge URL, sorumlu, yanıt tarihi, inceleme onayı; JSON/CSV içe-dışa aktarma ve tarayıcı yerel depolama ile deterministik cevapsız/eksik madde matrisi. Gerçek regülatör portala otomatik cevap/gönderim yok; çok aktörlü güvenli işbirliği ayrıca sunucu veya kullanıcıların manuel dosya değişimini gerektirebilir.",
+      "dependency_inventory": [
+        "Kullanıcı tarafından içe aktarılan düzenleyici soru metni ve kurum yetki kapsamı",
+        "Kullanıcı tarafından sağlanan belge ve model kontrol CSV/JSON",
+        "Tarayıcı JavaScript deterministik uygunluk/missing evidence hesaplama",
+        "İnsan ve hukuk uzmanı onayından sonra ayrı resmi gönderim"
+      ]
+    },
+    "history_review": {
+      "decision": "new",
+      "reason": "91 korunan katalog kaydı tam kanonik anahtar olarak tarandı. Italy AI 231 Evidence Desk genel AI uyum kanıtına tematik benziyor ancak farklı alıcı/kapsam ve özel İtalyan 231 prosedürü; kesin duplicate hükmü kurulmadan global>=5 doğrudan rakip üzerinden ret verildi."
+    },
+    "research_attempts": [
+      {
+        "url": "https://www.reuters.com/world/eu-tech-chief-says-bloc-well-equipped-fend-off-rogue-ai-risk-2026-10-09/",
+        "status": "original_publisher_page_read",
+        "observation": "30+ company RFI sent end of Aug, responses being assessed"
+      },
+      {
+        "url": "https://www.onetrust.com/solutions/ai-governance/",
+        "status": "official_product_page_read"
+      },
+      {
+        "url": "https://trustible.ai/",
+        "status": "official_product_page_read"
+      },
+      {
+        "url": "https://www.credo.ai/solutions/artifacts",
+        "status": "official_product_page_read"
+      },
+      {
+        "url": "https://www.modelop.com/ai-governance-software/reporting",
+        "status": "official_product_page_read"
+      },
+      {
+        "url": "https://www.holisticai.com/",
+        "status": "official_product_page_read"
+      }
+    ],
+    "quality_gate": {
+      "tr_zero_pass": null,
+      "global_at_most_three_pass": false,
+      "runtime_zero_possible": true,
+      "qualified": false
+    }
+  }
+}
