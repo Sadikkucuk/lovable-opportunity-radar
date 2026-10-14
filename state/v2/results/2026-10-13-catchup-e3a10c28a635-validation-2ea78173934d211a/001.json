@@ -1,0 +1,182 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-13-catchup-e3a10c28a635-validation-2ea78173934d211a",
+  "input_hash": "2ea78173934d211add606e82ecc1450c39ea1c4ff72d655b85eac3c3d1f33655",
+  "token": "641fd51e-6bc2-4c75-99dc-88a1e49ffea6",
+  "finished_at": "2026-10-14T02:59:34.903Z",
+  "outcome": "done",
+  "reason": "Çin Maliye Bakanlığı/Vergi İdaresi 2026/29 resmî kararının 12 Ekim 2026 yayımlandığı, NEV KDV ihracat iadesinin 1 Nisan 2027'den itibaren %13'ten %9'a indiği ve oranı belirleyen olayın ihracat gümrük beyannamesindeki TARİH olduğu doğrulandı. Gerçek tarih ve ürün kapsamı belirsiz genel fiyat senaryosu değildir. Kingdee kurumsal uluslararası vergi/İhracat iade uyumu yazılımı ve Çin devletinin dijital/offline resmî iade bildirim sistemi mevcuttur; bunlar en azından bitişik rekabet ve hazır altyapıdır. Ancak birebir NEV ürün kodu+2027 iki oran+PO shipment margin senaryo işini doğrudan satan TR/global sağlayıcıların güvenilir nihai sayılarını kanıtlayan pazar taraması tamamlanmadı. TR sıfır/global en fazla 3 koşulu varsayılmadan unverified ve bounded evidence_followup kararı verildi.",
+  "result": {
+    "decision": "unverified",
+    "reason": "Olay tetikleyicisi yeni ve birincil resmî belgeyle kanıtlı. Henüz ürünün Türkiye pazarı açısından '0 doğrudan rakip' ve global ≤3 doğrudan rakip sınırı kesin sayı ve benzersiz iş akışıyla doğrulanamadı. Bazı Çin ERP/tax ürünleri ve resmî yazılımlar ihracat iade oranı/yürürlük uyumu sağlar, fakat bu ürünün ayrı sözleşme başına NEV tarih ve marj simülatörüyle birebir mi yalnız bitişik mi olduğu ayrıntılandırılmalı. Hukuki müşteri kullanımı, ürün kapsamı Ek 1 kod listesi ve veri erişim hakları tamamlanmadan qualified yayımlanamaz.",
+    "evidence": [
+      {
+        "role": "trigger",
+        "url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5252906/content.html",
+        "accessed_at": "2026-10-14T02:59:34.903Z",
+        "claim": "2027 NEV export VAT rebate rate change, margin planning and related vendor overlap",
+        "observation": "Çin Maliye Bakanlığı ve Devlet Vergi İdaresi, 12 Ekim 2026 tarihli 2026/29 sayılı tebliğ; NEV ihracat KDV iadesi 1 Nisan 2027'den itibaren %13→%9; gümrük beyannamesindeki ihracat tarihi esastır; ürün listesi Ek 1. E-sigara ürün iadesi ayrı EK 2'de tamamen kaldırılır.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "trigger",
+        "url": "https://www.reuters.com/world/china-lower-vat-export-rebate-new-energy-vehicles-2026-10-12/",
+        "accessed_at": "2026-10-14T02:59:34.903Z",
+        "claim": "2027 NEV export VAT rebate rate change, margin planning and related vendor overlap",
+        "observation": "Reuters 12 Ekim yeni duyurunun NEV ihracat teşviği ve %13→%9 tarihini bağımsız olarak açıklıyor; 2027'de geçerli, Ekim 2026'da hâlâ mevcut %13 rejimi uygulanır.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://www.kingdee.com/resources/articles/1494330921486506817",
+        "accessed_at": "2026-10-14T02:59:34.903Z",
+        "claim": "2027 NEV export VAT rebate rate change, margin planning and related vendor overlap",
+        "observation": "Kingdee Çin ERP/tax compliance ürünü ihracat KDV iade uyumunun kural güncelleme, bildirim noktaları, sözleşme/fatura/ödeme/lojistik mutabakatını ve 2026 politika değişikliğine adaptasyonu pazarlıyor. NEV gümrük çıkış tarihinde marj simülasyonu özel özelliği kesin görülmediği için adjacent, doğrudan sayısına konulmadı.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://guangdong.chinatax.gov.cn/gdsw/cktsxzfw/city_pull_list.shtml",
+        "accessed_at": "2026-10-14T02:59:34.903Z",
+        "claim": "2027 NEV export VAT rebate rate change, margin planning and related vendor overlap",
+        "observation": "Çin Devlet Vergi İdaresi ihracatçılar için offline export refund filing yazılımı ve güncellenen tax rate library dağıtıyor. Resmî beyan kanalını göstermekle birlikte shipment margin projection nişi birebir değil.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://fgk.chinatax.gov.cn/zcfgk/c102424/c5252849/content.html",
+        "accessed_at": "2026-10-14T02:59:34.903Z",
+        "claim": "2027 NEV export VAT rebate rate change, margin planning and related vendor overlap",
+        "observation": "Vergi idaresinin 2026C rate library sürümü resmen var, yasa değişimleri ürün/harmonize code bazında veritabanı güncellemesine yansıtılıyor; 2027 Nisan ürün kapsamını otomatik anlayacağına dair bir garanti yok.",
+        "page_read": true,
+        "support": "supported"
+      },
+      {
+        "role": "competition_global",
+        "url": "https://guangdong.chinatax.gov.cn/gdsw/rjxz/common_list.shtml",
+        "accessed_at": "2026-10-14T02:59:34.903Z",
+        "claim": "2027 NEV export VAT rebate rate change, margin planning and related vendor overlap",
+        "observation": "2026 C oran kütüphanesi ve offline beyan yazılımı resmi listede, bu da ödeyen müşterinin hazır ücretsiz devlet seçenekleri olduğunu gösteriyor. Ancak web sayfası gelecek oran için margin simülasyon raporu tanımlamıyor.",
+        "page_read": true,
+        "support": "supported"
+      }
+    ],
+    "competition": {
+      "tr": {
+        "direct_count": null,
+        "queries": [
+          "Türkiye Çin elektrikli araç ihracatı yüzde 13 yüzde 9 KDV iadesi simülasyon yazılımı",
+          "Çin ihracat KDV iadesi 2027 NEV ürün kodu simülatörü Türkiyeli yazılım"
+        ],
+        "scope": "Ürün esasen Çin'den ihracat finansı müşterisi için niş. Türkiye'ye özgü doğrudan sağlayıcı yokluğu sadece yapılan iki aramayla evrensel olarak kanıtlanamaz; sayısal sonuç bilinmiyor.",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_competitors": []
+      },
+      "global": {
+        "direct_count": null,
+        "queries": [
+          "China 2027 NEV export tax rebate date margin simulator SaaS",
+          "新能源汽车 2027 出口退税 13 9 产品代码 出口日期 利润 测算 软件",
+          "金蝶 出口退税 税率 更新 退税 订单 利润 测算"
+        ],
+        "scope": "Çin Kingdee vergi değişiklik uygulaması ve resmi e-tax vendor altyapısı var, ancak aynı NEV ürün ve export order margin scenario işini birebir yapan satıcı sayısı araştırması tamam değil. 0 veya <=3 diye iddia edilmez.",
+        "search_complete": false,
+        "direct_competitors": [],
+        "adjacent_competitors": [
+          {
+            "name": "Kingdee 财税管理/出口退税",
+            "url": "https://www.kingdee.com/resources/articles/1494330921486506817",
+            "reason": "İhracat refund güncel oran/uyum/otomatik iş akışı, NEV shipment margin scenario özel özelliği kanıtlanmadı."
+          },
+          {
+            "name": "China SAT offline Export Refund Filing System",
+            "url": "https://guangdong.chinatax.gov.cn/gdsw/cktsxzfw/city_pull_list.shtml",
+            "reason": "Mevcut resmî beyan, dönem/ürün kodu oran kütüphane altyapısı; teklif sevkiyat tarihi üzerinden ileri dönük fiyat/marj simülasyonu doğrulanmadı."
+          }
+        ]
+      }
+    },
+    "feasibility": {
+      "runtime_external_api": false,
+      "runtime_external_database": false,
+      "runtime_ai_agent_or_model": false,
+      "architecture": "Tarayıcıda kullanıcı manuel ERP/PO/shipments.csv ile 2026/29 resmi doküman sürümü ve yetkili insan tarafından onaylı Ek 1 ürün kodlarını seçer. İhracat gümrük beyannamesi kayıt tarihi esas alınarak %13 veya %9, vergi matrahı ve senaryo tarihe/araç sınıfına göre matematiksel olarak kıyaslanır. Canlı China tax portal API, LLM, veri tabanı ve ERP connector zorunlu değil. Hukuki hesapları vergi müşaviri doğrular; oran uygulaması mahsup/iade işleminden farklıdır.",
+      "dependency_inventory": [
+        "Resmî Tebliğ 2026/29 Ek 1 kapsamında ürün kodlarının uzman doğrulaması",
+        "İhracat beyannamesindeki tarih, EV ürün, net vergi matrahı ve satış maliyeti CSV",
+        "Manuel senaryo değişkenleri ve insan denetçi imzası",
+        "Tarayıcı deterministic kural motoru ve indirilebilir CSV/PDF"
+      ],
+      "zero_external_runtime_possible": true,
+      "additional_external_cash_cost_proof_incomplete": true
+    },
+    "history_review": {
+      "decision": "uncertain",
+      "reason": "91 kayıtlı idea history içinde export/tax/VAT yakın terimli 5 örnek bulundu. Aynı EV+2027 Çin rebate müşteri/ürün-süreç akışı tam semantik karşılaştırma ve doğrudan rakip sayımı tamamlanmadan qualified ilan edilmedi.",
+      "nearby_examples": [
+        {
+          "key": "fresh-produce-exporter|decide-route-with-permit-quota-border-delay-and-shelf-life|shipment-scenario-decision-ledger",
+          "name": "FreshRoute TR — İhracat Geçiş ve Raf Ömrü Masası"
+        },
+        {
+          "key": "robotaxi-fleet-operator|standardize-vehicle-turnaround|service-reset-readiness-ledger",
+          "name": "RoboTurn — Robotaxi Turnaround Ops"
+        },
+        {
+          "key": "turkish-tech-startups|prepare-innovation-certification|eligibility-evidence-workspace",
+          "name": "Teknoloji Girişimi Belgelendirme Masası"
+        },
+        {
+          "key": "cross-border-e-commerce-shippers|track-cross-border-parcel-tariff-rule-changes-and-shipment-exception-evidence|shipment-rule-applicability-checklist-and-manual-evidence-log",
+          "name": "EU parcel customs changeover register"
+        },
+        {
+          "key": "lighting-manufacturers-and-exporters-supplying-china|track-product-by-product-ccc-transition-readiness-and-certification-ev|sku-rule-matrix-expiry-reminders-document-requirements-and-approval-ch",
+          "name": "China CCC Lighting Transition Desk"
+        }
+      ]
+    },
+    "research_attempts": [
+      {
+        "url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5252906/content.html",
+        "status": "original_official_document_read"
+      },
+      {
+        "url": "https://www.reuters.com/world/china-lower-vat-export-rebate-new-energy-vehicles-2026-10-12/",
+        "status": "news_source_read"
+      },
+      {
+        "url": "https://www.kingdee.com/resources/articles/1494330921486506817",
+        "status": "official_vendor_page_read"
+      },
+      {
+        "url": "https://guangdong.chinatax.gov.cn/gdsw/cktsxzfw/city_pull_list.shtml",
+        "status": "official_tax_software_list_read"
+      },
+      {
+        "url": "https://fgk.chinatax.gov.cn/zcfgk/c102424/c5252849/content.html",
+        "status": "official_rate_library_notice_read"
+      }
+    ],
+    "evidence_followup_plan": {
+      "needed": [
+        "Chinese local NEV OEM pricing/tax workflow vendors exact 2027-04-01 customs-date scenario competition classification and validated direct counts",
+        "Türkiye direct competitor absence research scoped same buyer+same NEV rebate",
+        "2026/29 Ek 1 product code mapping and 2027 effective date integration into deductible/VAT base with expert/legal review",
+        "Buyer need and incumbent ERP gaps proof before claiming cost/sales attractiveness"
+      ]
+    },
+    "quality_gate": {
+      "tr_zero_pass": null,
+      "global_max_three_pass": null,
+      "zero_external_runtime_pass": true,
+      "history_unique_pass": null,
+      "qualified": false
+    }
+  }
+}
