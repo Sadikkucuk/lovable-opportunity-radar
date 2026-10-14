@@ -1,0 +1,122 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-8903de8ffa9488d2",
+  "input_hash": "8903de8ffa9488d2d8ef6ab7931639ddbe48f5595ead5326b6c7e41e123e6fb7",
+  "token": "manual-v3-20261014-8903de8ffa9488d2-1",
+  "finished_at": "2026-10-14T08:04:54.893Z",
+  "outcome": "done",
+  "reason": "10 haber için 1 kaynaklı ham fırsat (JPEG XL migration), 6 gerekçeli no_opportunity ve özgün kaynak doğrulanamayan 3 unverified kararı verildi. Bu kayıt Merge/Validation onayı değildir.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "9adcbecb133ddfb3d47f47e6",
+        "decision": "unverified",
+        "reason": "Intel'in gerçek robot kullanımı hakkındaki Korece kaynak tam özgün gövdesine erişilemedi. RSS manşeti laboratuvar-saha farkını ima ediyor ancak hangi performans/standart yükümlülüğünün yeni değiştiği kanıtlanmadı; manşetten yeni hazır ürün kararı üretilmedi.",
+        "canonical_source_url": "https://zdnet.co.kr",
+        "source_read_state": "original_unavailable",
+        "opportunities": []
+      },
+      {
+        "article_key": "9aec818c43d50a1a807300d5",
+        "decision": "no_opportunity",
+        "reason": "Türk İnternet'in 12 Ekim özgün yazısına göre Axios kaynağından aktarılan iddia, OpenAI/Anthropic'in büyük AI olayı sonrası tepki senaryolarına hazırlandığı; 6–12 ay tahmini uzman görüşü ve gerçekleşmiş felaket değil. Bu politik/senaryo haberi belirli pazarda yeni zorunlu bağımsız SaaS iş akışı kanıtlamıyor. Var olan risk defteri alternatifleriyle ayrışma yok.",
+        "canonical_source_url": "https://turk-internet.com/openai-ve-anthropic-buyuk-bir-yapay-zeka-felaketinin-yasanmasina-durumunda-olacaklara-ve-halk-tepkisine-karsi-calisma-yapiyor/",
+        "source_read_state": "original_or_secondary_checked",
+        "opportunities": []
+      },
+      {
+        "article_key": "9b29201297d86d37b037ee7a",
+        "decision": "unverified",
+        "reason": "Nikkei CrossTech manşeti Omron'un ABD IPC şirketini 100 milyar yen üzerinde satın aldığı iddiasını içeriyor; özgün haber ve satın alınan şirketin operasyon süreçleri robots erişiminde doğrulanamadı. Yalnız şirket satın alımından Lovable ürün hipotezi kesinleştirilmiyor.",
+        "canonical_source_url": "https://xtech.nikkei.com",
+        "source_read_state": "paywall_or_robots_original_unavailable",
+        "opportunities": []
+      },
+      {
+        "article_key": "9b379db31290061dfdf37b3c",
+        "decision": "opportunity",
+        "reason": "Firefox 158'in 13 Ekim 2026'da JPEG XL varsayılan desteği ve PDF erişilebilirlik iyileştirmeleri sunması Mozilla sürüm özeti ve başka haberle doğrulandı. Web yayıncıları için dönüşüm dağıtımı, müşteri tarayıcı matrisi ve kalite kanıtının manuel/deterministik izlenmesi olası ayrı kullanım; JPEG XL dönüştürme veya PDF render etme için çalışma zamanı ücretli servis önerilmez.",
+        "canonical_source_url": "https://www.teknoblog.com/firefox-158-jpeg-xl-destegini-ekliyor/",
+        "source_read_state": "original_or_secondary_checked",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-8903de8ffa9488d2:9b379db31290061dfdf37b3c:01",
+            "canonical_key": "web-publishers|plan-jpeg-xl-migration-and-browser-rollout-coverage|browser-asset-compatibility-and-conversion-evidence-planner",
+            "idea_name": "JPEG XL Migration Readiness Planner",
+            "target_customer": "Web yayıncıları, e-ticaret platformları ve frontend performans mühendisleri",
+            "buyer": "Web performans / frontend teknik lideri",
+            "core_job": "JPEG XL dönüşüm planında varlık tiplerini, tarayıcı dağıtım riskini ve kalite test kanıtını insan onayıyla kontrol etmek",
+            "product_mechanism": "Kullanıcının girdiği asset manifest CSV, JPEG XL/format/fallback desteği, hedef browser sürümleri, byte hedefi, test örnekleme tablosu ve dönüşüm kabul kanıtını tarayıcıda deterministik kontrol; dosya dönüştürme, dış codec servisi, AI gerektirmez",
+            "why_now": "Firefox 158 ile 13 Ekimde JPEG XL desteğinin yayılması ve yeni PDF erişilebilirlik iyileştirmeleri; browser format rollout için kaynak/test listesinin önemi",
+            "before_state": "Format/fallback kararları, medya listesi ve tarayıcı doğrulama sonuçları dağınık",
+            "after_state": "Asset envanteri → destek koşulları → fallback/test listesi → ölçülen dosya boyutu farkı → owner signoff ve PDF export",
+            "scope_hint": "Dünya",
+            "canonical_source_urls": [
+              "https://www.teknoblog.com/firefox-158-jpeg-xl-destegini-ekliyor/",
+              "https://jpegxl.info/media/newsroom.html"
+            ],
+            "supporting_article_ids": [
+              "3b383e57d6389098bea4ff5d"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.teknoblog.com/firefox-158-jpeg-xl-destegini-ekliyor/",
+                "observation": "13 Oct Firefox 158 stable added JPEG XL and accessible PDF features, corroborated with JPEG XL newsroom and browser standards coverage.",
+                "observed_at": "2026-10-14T08:04:54.893Z",
+                "caveat": "Potential app independently competes with image management services; competition/triviality not yet validated."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article_key": "9b616fffff3f7f78fd56d496",
+        "decision": "no_opportunity",
+        "reason": "14 Ekim Impress'de erişilen Notta Memo Pro özgün kişisel ürün incelemesi, ses kaydedicinin fiziksel kullanımına odaklanıyor; ayrı müşteri zorunlu yeni iş veya API/AI bağımsız SaaS boşluğu kanıtlamıyor.",
+        "canonical_source_url": "https://kaden.watch.impress.co.jp/docs/column/kanhoo/2147668.html",
+        "source_read_state": "original_or_secondary_checked",
+        "opportunities": []
+      },
+      {
+        "article_key": "9b8ab89e87f30de0b01cdf0d",
+        "decision": "no_opportunity",
+        "reason": "EU-Startups RSS satırı yalnız Content Editor (yazar/profil kategorisi) başlığıdır; doğrulanabilir 13 Ekim tekil olay veya müşteri iş değişimi bulunmuyor. Haber değil feed hijyen girdisi.",
+        "canonical_source_url": "https://www.eu-startups.com/",
+        "source_read_state": "original_or_secondary_checked",
+        "opportunities": []
+      },
+      {
+        "article_key": "9ba9c7311a12651814dd380e",
+        "decision": "unverified",
+        "reason": "Les Echos 'AI washing' varlık yönetimi yorumuna kaynak erişimi robots engeli nedeniyle sağlanamadı. İddianın kapsamı, yasal dayanağı ve uygulama takvimi bilinmediğinden ürün fırsatı veya kesin no-op yapılmadı.",
+        "canonical_source_url": "https://www.lesechos.fr/",
+        "source_read_state": "robots_blocked",
+        "opportunities": []
+      },
+      {
+        "article_key": "9baa613fdd0c2466ac8ad0ea",
+        "decision": "no_opportunity",
+        "reason": "TechCrunch 13 Ekim özgün haberi Mind Robotics'e eski Ford EV yöneticisi Doug Field'ın başkan olarak katıldığını, şirketin üretim robotiği odağını anlatıyor. Personel ataması tek başına bağımsız müşteriye yeni zorunlu robotik veri iş akışı doğurmuyor; fiziksel AI modeli geliştirmek harici AI gerektiriyor.",
+        "canonical_source_url": "https://techcrunch.com/2026/10/13/rivians-startup-mind-robotics-hires-former-ford-ev-chief-doug-field/",
+        "source_read_state": "original_or_secondary_checked",
+        "opportunities": []
+      },
+      {
+        "article_key": "9c17c5873dd942252fcd5477",
+        "decision": "no_opportunity",
+        "reason": "YourStory 13 Ekim özgün haberinde Nandan Nilekani'nin AI kaynaklı iş kaybı iddialarının abartıldığı yönünde konuşması aktarılıyor. Görüş açıklaması ürün/mevzuat/teknik veri akışı değişimi değildir.",
+        "canonical_source_url": "https://yourstory.com/ai-story/ai-job-loss-predictions-nandan-nilekani-disaster-marketing",
+        "source_read_state": "original_or_secondary_checked",
+        "opportunities": []
+      },
+      {
+        "article_key": "9c1eb9c4aab9f22eee56dd21",
+        "decision": "no_opportunity",
+        "reason": "36Kr RSS, matematikçi Yau'nun bin akademisyenle matematik temel modeli oluşturma planını bildiriyor; özgün teknik rapor/veri ve taahhüt kapsamı bağımsız erişimde doğrulanamadı. Ürünün kendisi model eğitimi gerektireceğinden dış AI'sız Lovable SaaS kriterini karşılamıyor; haberden somut bağımsız kayıt/uyum JTBD çıkarılamadı.",
+        "canonical_source_url": "https://eu.36kr.com/",
+        "source_read_state": "original_or_secondary_checked",
+        "opportunities": []
+      }
+    ]
+  }
+}
