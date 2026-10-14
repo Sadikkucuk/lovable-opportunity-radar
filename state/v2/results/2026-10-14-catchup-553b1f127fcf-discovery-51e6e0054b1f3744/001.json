@@ -1,0 +1,155 @@
+{
+  "schema_version": 3,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-51e6e0054b1f3744",
+  "input_hash": "51e6e0054b1f37441955d742cbb3df3c63bc955ce2acfc05e8027ce431cd9e44",
+  "token": "manual-v3-20261014-51e6e0054b1f3744-token",
+  "finished_at": "2026-10-14T07:30:09.178Z",
+  "outcome": "done",
+  "reason": "All ten assigned articles investigated: three source-supported but NOT validation-approved raw opportunities, seven no-opportunity; news source URLs and company/policy evidence recorded.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "2cb959a6dd0aa64fadcc0430",
+        "article_title": "深度云海获华工科技千万级天使轮投资，加速布局企业AI营销入口 - 新华网",
+        "published_at": "2026-10-13T09:46:28Z",
+        "decision": "no_opportunity",
+        "reason": "Deepagens first-party 13 Oct statement discloses a multi-million RMB AI marketing/GEO startup financing led by Huagong Technology. The business uses external AI platform visibility and no distinct new independent no-model workflow from a funding transaction.",
+        "canonical_source_url": "https://www.deepagens.com/news/shendu-yunhai-huo-huagong-keji-qianwanji-t-l-t-j-b-q-a-y-r",
+        "opportunities": []
+      },
+      {
+        "article_key": "2cc8a8ec15284e4adc47dcc2",
+        "article_title": "L’agentic AI stationne au Mondial de l'Auto, mais sa gouvernance n'est pas à bord - ZDNET",
+        "published_at": "2026-10-13T16:00:27Z",
+        "decision": "opportunity",
+        "reason": "ZDNet read article citing Capgemini survey: 68% of automotive executives testing/using agentic AI in product R&D but only 5% full governance. A purely manual AI R&D agent accountability, data and human-approval ledger is hypothesized; must compare historic governance offerings at validation.",
+        "canonical_source_url": "https://www.zdnet.fr/actualites/lagentic-ai-stationne-au-mondial-de-lauto-moins-sa-gouvernance-nest-pas-a-bord-505688.htm",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-51e6e0054b1f3744:2cc8a8ec15284e4adc47dcc2:01",
+            "canonical_key": "automotive-research-ai-agent-deployment-teams|track-agentic-ai-rd-decision-ownership-data-lineage-and-human-acceptance|development-phase-agent-register-accountability-evidence-and-handoff-checklist",
+            "idea_name": "Automotive Agentic R&D Governance Evidence Desk",
+            "core_job": "Track governance owner, data provenance, decision outputs and engineering human signoff for AI agents used during automotive R&D",
+            "target_customer": "Automotive OEM and Tier-1 product development AI governance teams",
+            "product_mechanism": "AI use case+owner register → training/test dataset provenance references → allowed design/R&D decisions → human override/evidence → risk ownership/review",
+            "why_now": "Capgemini survey covered by ZDNet 13 October 2026 reports 68% surveyed auto firms already using or trialing agentic R&D but only 5% claim full governance, exposing traceability and accountability gaps",
+            "before_state": "Vehicle R&D uses agents while accountability, tests and policy reviews split across spreadsheets",
+            "after_state": "Human-reviewed versioned R&D use-case record and scoped governance readiness checklist",
+            "canonical_source_urls": [
+              "https://www.zdnet.fr/actualites/lagentic-ai-stationne-au-mondial-de-lauto-moins-sa-gouvernance-nest-pas-a-bord-505688.htm"
+            ],
+            "scope_hint": "Dünya",
+            "validation_not_done": true
+          }
+        ]
+      },
+      {
+        "article_key": "2cffdad045dc3e0a9862b7d3",
+        "article_title": "星宸科技：前三季度净利润同比预增663.13%—697.75% - 第一财经",
+        "published_at": "2026-10-13T09:03:15Z",
+        "decision": "no_opportunity",
+        "reason": "Yicai earnings forecast of +663% to +698% profits for publicly traded SigmaStar provides no new independent product-customer process or regulatory workflow.",
+        "canonical_source_url": "https://www.yicai.com",
+        "opportunities": []
+      },
+      {
+        "article_key": "2d08a4ac4f1d94dad12b1929",
+        "article_title": "我国部署“十五五”铁路科技创新重点任务 - 新华网",
+        "published_at": "2026-10-13T02:55:27Z",
+        "decision": "no_opportunity",
+        "reason": "Xinhua confirms Chinese National Railway Administration's broad five-year technology innovation plan, target 30 bases/100 breakthroughs/500 achievements. Without project-specific procurement, new documented acceptance rules or a unique buyer mechanism, broad R&D targets alone do not imply a new no-external-service micro SaaS.",
+        "canonical_source_url": "https://www2.xinhuanet.com/politics/20261012/c83e0e994bb049dc949c6a79f2eee0c9/c.html",
+        "opportunities": []
+      },
+      {
+        "article_key": "2d1e5f7ecf1e2e2d06649b88",
+        "article_title": "Cyber Resilience in the Age of AI - ET CISO",
+        "published_at": "2026-10-12T09:45:00Z",
+        "decision": "no_opportunity",
+        "reason": "ETCISO title is general cybersecurity commentary, and no distinct newly imposed security control or independently verified separate requirement is established from this news item.",
+        "canonical_source_url": "https://cio.economictimes.indiatimes.com/",
+        "opportunities": []
+      },
+      {
+        "article_key": "2d20a0f4c35dddbdcfe967d5",
+        "article_title": "Microsoft、次世代AIチップ「Maia 300」詳細公開。ラック単位の処理量は最大7倍に - 株式会社インプレス",
+        "published_at": "2026-10-13T04:04:28Z",
+        "decision": "no_opportunity",
+        "reason": "Microsoft's Maia 300 chips and announced faster rack-scale inference are internal proprietary compute hardware; constructing equivalent inference requires specialized hardware and external runtime AI services, contrary to Radar model-free application criteria.",
+        "canonical_source_url": "https://www.microsoft.com/en-us/research/blog/introducing-maia-300/",
+        "opportunities": []
+      },
+      {
+        "article_key": "2d506167bcb21378f94c4352",
+        "article_title": "China to lower VAT export rebate on new energy vehicles - Reuters",
+        "published_at": "2026-10-12T09:25:29Z",
+        "decision": "opportunity",
+        "reason": "The official Chinese State Tax Administration Ministry of Finance Notice 2026 No.29 unequivocally drops NEV VAT export rebate from 13% to 9% effective 1 April 2027, export customs declaration date determines applicability; manual date/HS/price-margin comparison qualifies as preliminary regulatory delta idea.",
+        "canonical_source_url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5252906/content.html",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-51e6e0054b1f3744:2d506167bcb21378f94c4352:01",
+            "canonical_key": "china-new-energy-vehicle-exporters|calculate-nev-vat-export-rebate-cut-exposure-from-customs-date-and-product-list|effective-date-hs-code-export-order-margin-and-evidence-workbook",
+            "idea_name": "China NEV Export VAT Rebate Impact Ledger",
+            "core_job": "Calculate policy-versioned NEV export rebate differential and shipment margin implications before the official April 2027 rate change",
+            "target_customer": "Chinese EV exporters, dealers and finance/logistics tax teams",
+            "product_mechanism": "Manually imported shipment/customs date, vehicle category/HS list and tax base → effective rate 13%/9% → rebate and gross margin delta → scenario approval and document export",
+            "why_now": "Official Ministry of Finance and State Taxation Administration notice No29 issued 12 Oct 2026: NEV VAT rebate 13%→9% from 1 April 2027, based on customs declaration export date",
+            "before_state": "Export price contracts and deliveries planned without reflecting changed rebate in customs-date margin assumptions",
+            "after_state": "Traceable future-date rebate scenarios with product-list applicability and finance signoff; does not file taxes or access government APIs",
+            "canonical_source_urls": [
+              "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5252906/content.html",
+              "https://www.reuters.com/world/china-lower-vat-export-rebate-new-energy-vehicles-2026-10-12/"
+            ],
+            "scope_hint": "Dünya",
+            "validation_not_done": true
+          }
+        ]
+      },
+      {
+        "article_key": "2d535a1b8fc9cf38a474c6fc",
+        "article_title": "Claudeが警察サイトに架空タレコミ。Anthropic、AIの想定外行動を公開 - PC Watch",
+        "published_at": "2026-10-13T03:07:45Z",
+        "decision": "no_opportunity",
+        "reason": "Impress Watch reports Anthropic internal transcript review: Claude mistakenly sent information to police site. Prior v2 validation job AI Agent Form Submission Boundary Drill Ledger already covers agent external form-submit controls, so do not create a second raw candidate on same incident.",
+        "canonical_source_url": "https://pc.watch.impress.co.jp/docs/news/2147538.html",
+        "opportunities": []
+      },
+      {
+        "article_key": "2d627ddad792bf29dba8ca5c",
+        "article_title": "SC seeks wider drug price regulation, questions high markups on medicines, medical devices - pharma.economictimes.indiatimes.com",
+        "published_at": "2026-10-13T02:16:01Z",
+        "decision": "opportunity",
+        "reason": "India Supreme Court questioned the breadth of proposed pharma/medical-device trade margin controls beyond certain oncology drugs; explicitly still under consideration, not enacted. Modelling proposed margins under documented scenario labels is plausible but market research required.",
+        "canonical_source_url": "https://news.webindia123.com/news/articles/india/20261012/4510027.html",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-51e6e0054b1f3744:2d627ddad792bf29dba8ca5c:01",
+            "canonical_key": "india-pharma-distributors-and-medical-device-suppliers|model-proposed-pharma-trade-margin-cap-expansion-uncertainty|sku-mrp-trade-margin-proposal-and-legal-review-scenario-ledger",
+            "idea_name": "India Drug Margin Proposal Scenario Ledger",
+            "core_job": "Estimate effect on distributor/trade margin and SKU economics under proposed/non-enacted price cap scenarios",
+            "target_customer": "Indian pharmaceutical distributors, device suppliers and pricing/compliance finance teams",
+            "product_mechanism": "Imported SKU MRP/invoice and purchase price table → propose 30% margin/alternate cap across affected category → margin stress and human legal/policy review record",
+            "why_now": "India Supreme Court 12 Oct hearing pressed government to consider expanding proposed 30% trade margin cap beyond designated cancer medicine; court inquiry is NOT a final enforceable nationwide cap",
+            "before_state": "Pricing committees must model uncertain proposed caps and carve-outs in detached spreadsheets with unclear effective dates",
+            "after_state": "Revision-labeled hypothetical exposure dashboard and lawyer-approved action queue with explicit proposed/not-enacted label",
+            "canonical_source_urls": [
+              "https://news.webindia123.com/news/articles/india/20261012/4510027.html"
+            ],
+            "scope_hint": "Dünya",
+            "validation_not_done": true
+          }
+        ]
+      },
+      {
+        "article_key": "2ddf9ea62cc9cd7cc0933405",
+        "article_title": "Promise Robotics partners with D.R. Horton on physical AI for homebuilding - The Robot Report",
+        "published_at": "2026-10-13T13:12:03Z",
+        "decision": "no_opportunity",
+        "reason": "The Robot Report reports same D.R. Horton–Promise Robotics agreement already assigned raw candidate Prefab Factory-to-Site Handoff Reconciler in completed Discovery job 2f21972ca70c4efb; avoid duplicate opportunity.",
+        "canonical_source_url": "https://news.promiserobotics.com/promise-robotics-expands-physical-ai-production-infrastructure-for-u-s-homebuilding-through-multi-year-commercial-agreement-with-d-r-horton/",
+        "opportunities": []
+      }
+    ]
+  }
+}
