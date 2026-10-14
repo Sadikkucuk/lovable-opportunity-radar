@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "stage": "discovery_source_review",
+  "source_run_id": "2026-10-14-catchup-553b1f127fcf",
+  "source_job_id": "2026-10-14-catchup-553b1f127fcf-discovery-369679286a746af5",
+  "source_input_hash": "369679286a746af546ca292510f29dd3657e58b905889ff3cbe60d480feff775",
+  "source_commit": "4427324aa4cc23d000bf404f51f99c55b3ee22d9",
+  "status": "research_done_awaiting_official_controller_receipt",
+  "not_official_v2_result": true,
+  "not_v2_claim": true,
+  "article_count": 10,
+  "decision_counts": {
+    "opportunity": 4,
+    "no_opportunity": 6,
+    "unverified": 0
+  },
+  "result": {
+    "articles": [
+      {
+        "article_key": "4bca12f186e8d794ef1baf1f",
+        "decision": "no_opportunity",
+        "reason": "Securities Times confirms Tianyang Technology signed a contract for 20,000 Nvidia RTX PRO 5500 Blackwell GPUs, delivered in stages, for hardware procurement; this single capital purchase has no demonstrated new independent software compliance/workflow gap.",
+        "canonical_source_url": "https://www.stcn.com/article/detail/4213631.html",
+        "article_title": "天阳科技：签订2万张英伟达GPU产品采购合同 - 证券时报网",
+        "published_at": "2026-10-13T00:08:00Z",
+        "opportunities": []
+      },
+      {
+        "article_key": "4bf3f6dc8de1cfd5824ecc59",
+        "decision": "no_opportunity",
+        "reason": "Securities Times video quotes general Ministry of Finance innovation-funding priorities; no specific newly enacted grant rule, buyer deadline, or actionable independent SaaS workflow is confirmed.",
+        "canonical_source_url": "https://stcn.com/live/video-detail/25999.html",
+        "article_title": "财政部：提高科技创新投入效能 加大对关键性、战略性领域的支持力度 - 证券时报网",
+        "published_at": "2026-10-12T01:14:00Z",
+        "opportunities": []
+      },
+      {
+        "article_key": "4c24e769b26d032b797fba4a",
+        "decision": "opportunity",
+        "reason": "SEMI confirmed at Semicon West 2026 that silicon/organic bridges are a production response to limitations of large interposers; engineers plausibly need versioned process trial, measurement and yield evidence. Competition belongs to Validation.",
+        "canonical_source_url": "https://www.thelec.net/news/articleView.html?idxno=14567",
+        "article_title": "SEMI Says Bridge Technology Will Lead Next-Gen Large-Format Packaging - THE ELEC, Korea Electronics Industry Media",
+        "published_at": "2026-10-13T07:46:52Z",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-369679286a746af5:4c24e769b26d032b797fba4a:01",
+            "canonical_key": "advanced-packaging-development-lab|compare-chip-bridge-prototype-yield-against-interposer-constraints|chiplet-bridge-process-design-trial-evidence-matrix",
+            "idea_name": "Chiplet Bridge Process Trial Ledger",
+            "core_job": "Record bridge material, process and package trial tolerance/yield evidence against competing interposer designs",
+            "target_customer": "Advanced semiconductor package design and process engineering teams",
+            "product_mechanism": "Design/bridge type → material & alignment measurement CSV → thermal/cycle test results → yield deviation → engineer signoff",
+            "why_now": "SEMI 12 Oct 2026 briefing predicts bridge packaging to replace larger interposers for advanced heterogeneous chiplet packaging",
+            "before_state": "Package bridge process tests, physical defect/yield metrics and test evidence are in supplier emails and unlinked lab reports",
+            "after_state": "Trace each experimental process recipe and package design to measurement, tolerance, failures and go/no-go decision",
+            "canonical_source_urls": [
+              "https://www.thelec.net/news/articleView.html?idxno=14567"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.thelec.net/news/articleView.html?idxno=14567",
+                "observation": "SEMI's Beth Keser discusses silicon/organic bridge transition at Semicon West; direct publication confirms technical constraints of large interposers."
+              }
+            ],
+            "scope_hint": "Dünya"
+          }
+        ]
+      },
+      {
+        "article_key": "4c2d6cfe30eb2777db03f09c",
+        "decision": "no_opportunity",
+        "reason": "Tech Planet/36Kr describes Tencent and ByteDance doubling down on AI-generated interactive media, mostly model-dependent game/film products; no distinct model-free user workflow emerges from this platform-product roundup.",
+        "canonical_source_url": "https://m.pedaily.cn/news/570198",
+        "article_title": "腾讯字节押注新风口，互动内容尽头是游戏？ - 36Kr",
+        "published_at": "2026-10-12T22:37:00Z",
+        "opportunities": []
+      },
+      {
+        "article_key": "4c4863f78b7bf6296c197efe",
+        "decision": "no_opportunity",
+        "reason": "TNW confirms Chapter 11 restructuring and Disney's 20M USD asset bid. Legal/bankruptcy sale affects this platform; no separately proven B2B buyer workflow distinct from generic service exit/case records is established.",
+        "canonical_source_url": "https://thenextweb.com/news/character-ai-files-for-bankruptcy-as-disney-bids-20m-for-some-assets",
+        "article_title": "Character.AI files for bankruptcy as Disney bids $20M for some assets - The Next Web",
+        "published_at": "2026-10-13T08:06:23Z",
+        "opportunities": []
+      },
+      {
+        "article_key": "4c49f91cc019b7883dd9b59a",
+        "decision": "opportunity",
+        "reason": "Scaleway primary press release confirms Oct 13 AMD MI355X/ROCm cloud deployment in Sweden; infrastructure engineers comparing Nvidia/CUDA portability now face hardware/software compatibility and economic evidence tracking.",
+        "canonical_source_url": "https://www.scaleway.com/en/news/scaleway-expands-ai-infrastructure-in-europe-with-new-amd-instinct-gpu-based-supercomputer-in-sweden/",
+        "article_title": "«On sort de notre dépendance à Nvidia sur les GPU» : Scaleway devient le premier acteur du cloud à commercialiser en Europe de la puissance de calcul basée sur les cartes graphiques d’AMD - L'Usine Nouvelle",
+        "published_at": "2026-10-13T16:10:00Z",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-369679286a746af5:4c49f91cc019b7883dd9b59a:01",
+            "canonical_key": "eu-ai-infrastructure-teams|compare-amd-rocm-and-nvidia-cuda-workload-portability-readiness|user-input-software-compatibility-cost-and-runtime-test-evidence-matrix",
+            "idea_name": "GPU Cloud Portability Preflight",
+            "core_job": "Compare workload's library support, build/reproducibility, observed performance and cost against AMD ROCm or Nvidia CUDA hardware",
+            "target_customer": "European enterprise cloud/AI infrastructure architects and finance reviewers",
+            "product_mechanism": "Manually entered dependency/driver/ROCm-CUDA matrix → provider configuration → acceptance/performance CSV → migration issue and sign-off",
+            "why_now": "Scaleway announced first Swedish AMD MI355X cloud supercomputer and expanded European GPU vendor choices on Oct.13",
+            "before_state": "Vendor switching involves undocumented runtime/kernel/library compatibility and price assumptions",
+            "after_state": "Portable evidence matrix and human-reviewed pilot test criteria without connecting to GPUs or paid API",
+            "canonical_source_urls": [
+              "https://www.scaleway.com/en/news/scaleway-expands-ai-infrastructure-in-europe-with-new-amd-instinct-gpu-based-supercomputer-in-sweden/"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.scaleway.com/en/news/scaleway-expands-ai-infrastructure-in-europe-with-new-amd-instinct-gpu-based-supercomputer-in-sweden/",
+                "observation": "Scaleway first-party announcement specifies AMD MI355X GPUs and ROCm ecosystem, commercial offering for European companies."
+              }
+            ],
+            "scope_hint": "Dünya"
+          }
+        ]
+      },
+      {
+        "article_key": "4ca190392331038deb646eb1",
+        "decision": "no_opportunity",
+        "reason": "RobotStart lists NEDO CEATEC 2026 technology demonstrations; demonstrations of AI robotics and autonomous driving alone provide no specific new independently confirmed user process or repeatable software requirement.",
+        "canonical_source_url": "https://robotstart.info/article/2026/10/13/382511.html",
+        "article_title": "NEDO、AIロボットや自動運転など最先端技術を体験展示…CEATEC 2026 - ロボスタ",
+        "published_at": "2026-10-13T05:00:03Z",
+        "opportunities": []
+      },
+      {
+        "article_key": "4cdd902b47d305eaf20512a5",
+        "decision": "opportunity",
+        "reason": "Yicai reports China Transportation Ministry, Industry Ministry, Energy Administration's 2026-2030 river shipping strategy including doubling new-energy ship stock by 2028 and electric vessel/port charging corridor targets, creating a route infrastructure checklist hypothesis.",
+        "canonical_source_url": "https://www.yicai.com/news/103391666.html",
+        "article_title": "三部门：到2028年，内河新能源船舶保有量较2025年翻倍 - 第一财经",
+        "published_at": "2026-10-13T07:46:15Z",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-369679286a746af5:4cdd902b47d305eaf20512a5:01",
+            "canonical_key": "china-inland-electric-vessel-port-and-route-planners|map-electric-vessel-charging-and-methanol-bunkering-readiness-to-route-demand|route-asset-charging-gap-and-conversion-milestone-ledger",
+            "idea_name": "Inland Vessel Energy Corridor Readiness Desk",
+            "core_job": "Plan port/river-segment readiness and track new-energy vessel charger/methanol-fueling gaps for 2026-2030 targets",
+            "target_customer": "Inland river port operators, vessel conversion programs and regional maritime infrastructure planners",
+            "product_mechanism": "Route/port assets CSV → vessel energy type and turnaround → shore charging or methanol coverage map/list → budget/milestones/evidence",
+            "why_now": "Chinese ministries issued 2026–2030 inland new-energy ship implementation action plan: electric transport vessels over 1,000 by 2028 and 3,000km green routes target",
+            "before_state": "Shore facility/ship energy needs and capex deadline evidence are not consistently tracked across ports",
+            "after_state": "Exportable deterministic route-coverage and project readiness checklist; no live maps or ship telemetry",
+            "canonical_source_urls": [
+              "https://www.yicai.com/news/103391666.html"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.yicai.com/news/103391666.html",
+                "observation": "Yicai reports three ministries' new plan with 2028 electric vessel and zero-carbon river corridor targets."
+              }
+            ],
+            "scope_hint": "Dünya"
+          }
+        ]
+      },
+      {
+        "article_key": "4cdf0cf06a98845bf31bbdac",
+        "decision": "no_opportunity",
+        "reason": "ETNews confirms Samsung-backed Korean SME Smart Factory 4.0 adds AI adoption support and on-site engineering coaching. Existing Radar catalog includes AI Integration Ready manufacturing dependency mapping; the report alone does not establish a distinct mechanism/customer JTBD.",
+        "canonical_source_url": "https://www.etnews.com/20261013000327",
+        "article_title": "삼성전자 노하우 전수받는 中企…스마트공장에 AI 접목 추진 - 전자신문",
+        "published_at": "2026-10-13T06:21:29Z",
+        "opportunities": []
+      },
+      {
+        "article_key": "4ce29e6cd758bc1867b4bc39",
+        "decision": "opportunity",
+        "reason": "ITmedia interviews Japan Oracle on Applied Engineering and debates FDE outcome-based compensation; an independently buildable customer acceptance/proof workflow is hypothesized, marked as editorial commentary rather than new legal obligation.",
+        "canonical_source_url": "https://www.itmedia.co.jp/enterprise/articles/2610/13/news058.html",
+        "article_title": "「FDEは“成果報酬”にすべきだ」 日本オラクル社長に筆者の持論をぶつけてみた - ITmedia",
+        "published_at": "2026-10-13T03:00:00Z",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-369679286a746af5:4ce29e6cd758bc1867b4bc39:01",
+            "canonical_key": "enterprise-customer-buying-forward-deployed-engineering-services|evidence-fde-project-milestone-and-commercial-outcome-before-acceptance|pilot-baseline-acceptance-milestone-benefit-and-signed-review-ledger",
+            "idea_name": "FDE Deliverable Outcome Acceptance Ledger",
+            "core_job": "Document measurable business outcomes and handover signoff for embedded technical engineering vendor projects",
+            "target_customer": "Enterprise CIO/IT procurement executives buying FDE/Applied Engineering services",
+            "product_mechanism": "Statement-of-work baseline → deliverable/operational KPI → customer-supplied evidence and human signoff → milestone/acceptance report",
+            "why_now": "October 13 ITmedia report evaluates Japan Oracle's Applied Engineering initiative and argues performance-based FDE compensation might better align incentives; this is an opinion, not enacted policy",
+            "before_state": "FDE success and client responsibility are evaluated through vague service statements and subjective claims",
+            "after_state": "Versioned SOW-to-outcome evidence and signoff, without any LLM inference or code execution",
+            "canonical_source_urls": [
+              "https://www.itmedia.co.jp/enterprise/articles/2610/13/news058.html"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.itmedia.co.jp/enterprise/articles/2610/13/news058.html",
+                "observation": "ITmedia interviews Japan Oracle representatives about Applied Engineering and raises outcome-based billing; opinion attribution is explicit."
+              }
+            ],
+            "scope_hint": "Dünya"
+          }
+        ]
+      }
+    ]
+  },
+  "source_review_date": "2026-10-14",
+  "caveat": "Four raw opportunities are unvalidated, not catalog qualified."
+}
