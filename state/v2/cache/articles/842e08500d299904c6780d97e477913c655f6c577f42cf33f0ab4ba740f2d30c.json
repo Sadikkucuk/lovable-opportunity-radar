@@ -1,0 +1,32 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "842e08500d299904c6780d97e477913c655f6c577f42cf33f0ab4ba740f2d30c",
+  "decision": {
+    "article_key": "0a70f285f0fa059c71735443",
+    "decision": "opportunity",
+    "reason": "Teknisk Ukeblad October 13 describes collision of two maintenance trains in Romeriksporten during summer track works; railway worksite movement handoff and safe-permission evidence is a distinct preliminary software hypothesis. Details of actual cause remain unverified.",
+    "opportunities": [
+      {
+        "raw_id": "manualv3-20261014-e3b7-05",
+        "canonical_key": "rail-maintenance-site-coordinators|document-work-train-movement-authorization-and-overlapping-track-occupancy|track-segment-permit-shift-handover-and-conflict-evidence-ledger",
+        "idea_name": "Rail Work Train Shift-Permit Ledger",
+        "core_job": "Record authorized maintenance-train movements and conflicting worksite track reservations for human pre-shift review",
+        "target_customer": "Rail maintenance contractors and rail infrastructure worksite safety coordinators",
+        "product_mechanism": "User-entered track section/shift/train/crew plan -> conflicting reservations flag -> route possession and dispatch-authority checklist -> human signoff -> incident and deviation evidence export; advisory only, no live signalling",
+        "why_now": "13 October 2026 reporting of a rail maintenance train collision creates a documented operational safety review trigger; accident cause is not established.",
+        "before_state": "Track works shift movement approvals and contractor handovers can be dispersed across radio, paper and spreadsheet logs.",
+        "after_state": "One auditable manual shift occupancy and work-train movement approval register highlights conflicting entries prior to a human decision.",
+        "canonical_source_urls": [
+          "https://www.tu.no/samferdsel/to-arbeidstog-kolliderte-i-romeriksporten/7145583"
+        ]
+      }
+    ],
+    "source_check": {
+      "rss_title": "To arbeidstog kolliderte i Romeriksporten - Teknisk Ukeblad",
+      "canonical_article_url": "https://www.tu.no/samferdsel/to-arbeidstog-kolliderte-i-romeriksporten/7145583",
+      "verification": "publisher_search_excerpt_only"
+    }
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-e3b7f65e26aa8d00/001.json",
+  "valid_until": "2026-11-13T09:47:47Z"
+}

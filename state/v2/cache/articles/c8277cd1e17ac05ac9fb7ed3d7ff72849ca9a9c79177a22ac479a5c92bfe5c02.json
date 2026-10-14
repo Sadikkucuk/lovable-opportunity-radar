@@ -1,0 +1,32 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "c8277cd1e17ac05ac9fb7ed3d7ff72849ca9a9c79177a22ac479a5c92bfe5c02",
+  "decision": {
+    "article_key": "0a364d94a6204ddb9077d4c5",
+    "decision": "opportunity",
+    "reason": "FreightWaves SONAR source confirms intermodal contract rates decreased $1.68 -> $1.61/mile while truck spot and contractual prices moved differently. This supplies a concrete shipper mode-selection scenario; first-party market evidence only, no customer proof.",
+    "opportunities": [
+      {
+        "raw_id": "manualv3-20261014-e3b7-04",
+        "canonical_key": "freight-shippers-and-forwarders|compare-truck-contract-spot-and-intermodal-route-costs-before-tender|manual-lane-rate-scenario-and-award-evidence-ledger",
+        "idea_name": "Intermodal Lane Award Scenario Ledger",
+        "core_job": "Compare user-provided contract/spot/intermodal lane costs and service-risk assumptions before tender award",
+        "target_customer": "Shippers, 3PL transportation procurement teams and freight forwarders",
+        "product_mechanism": "Upload historical lane CSV -> enter mode-specific current contracted quotes and transit/missed-delivery exposure -> deterministic normalized landed cost and SLA comparisons -> signed tender decision evidence",
+        "why_now": "SONAR 13 October 2026 reported declining intermodal contract prices against firm carrier pricing power, creating a scenario-review trigger.",
+        "before_state": "Carrier bids and intermodal alternatives are reviewed in separate spreadsheets without decision assumptions or approvals.",
+        "after_state": "Lane-level comparison and signed scenario record explain mode/tender award under changing rates.",
+        "canonical_source_urls": [
+          "https://www.freightwaves.com/news/sonar-pricing-power-index-slips-to-70-as-intermodal-contract-rates-fall"
+        ]
+      }
+    ],
+    "source_check": {
+      "rss_title": "SONAR Pricing Power Index Slips to 70 as Intermodal Contract Rates Fall - FreightWaves",
+      "canonical_article_url": "https://www.freightwaves.com/news/sonar-pricing-power-index-slips-to-70-as-intermodal-contract-rates-fall",
+      "verification": "publisher_page_read"
+    }
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-e3b7f65e26aa8d00/001.json",
+  "valid_until": "2026-11-13T09:47:47Z"
+}
