@@ -1,0 +1,182 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-308385a69eb4c84f",
+  "input_hash": "308385a69eb4c84f93d0d299844926bd5715e15bf8136807cb6eba905c8c15e0",
+  "token": "39c8cf22-c923-49be-9e59-d4b28af7b0b3",
+  "finished_at": "2026-10-14T03:21:25.676Z",
+  "outcome": "done",
+  "reason": "10 donmuş haber tek tek kaynak/olay tarihi/JTBD ile incelendi; ROM bundle hak kanıtı, Türkiye–Mısır konfeksiyon üretim kararı ve Şarköy depolamalı RES 10 günlük ÇED görüş yanıtları için 3 erken fırsat. Diğer 7 kayıt iş ilanı, mevcut harici model, finansal haber, sadece yeni araç lansmanı, genel AI tahmini ya da genel enerji iyileştirme beyanı olduğundan gerekçeli no_opportunity. ESA başvurusu yaptırım, ÇED halk görüşü onay, Xpeng planı satış ve ENVER senaryosu kesin gerçekleşme gibi gösterilmedi.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "de127dffaf336ac31873a6f1",
+        "decision": "no_opportunity",
+        "reason": "IT之家'nin 13 Ekim Amazon'da bir milyonun üzerinde depo robotu olduğunu aktardığı metin okundu; kaynak Ars/şirket beyanlarını aktarıyor ve insan çalışan sayısının 1,5 milyonu geçtiğini not ediyor. DELTA üretim ölçeği ve insan-robot çalışma güvenliği; ancak tek işletmenin zaten olgun otomasyon altyapısı, independent yeni işe girişen niş alıcı ve satın alınabilir yeni yazılım gereksinimini tek başına kanıtlamaz. Robot saha kabul ve güvenlik iş akışları önceki catchup adaylarında mevcut; kanıtı olmayan kopya oluşturulmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "de6254419444ad83d4b2713a",
+        "decision": "opportunity",
+        "reason": "Ars Technica 13 Ekim özgün tam metin ve ESA'nın USTR başvurusu: hak sahibine ait olmayan binlerce ROM içeren SD kartları emülatör el cihazlarıyla satan üçüncü taraf satıcılar hedefleniyor; cihaz üreticisinin bunları kendisinin paketlediği kanıtlanmamış. Notorious Markets listesine ALINMA henüz gerçekleşmedi; ESA yalnız önerdi ve dahil edilme doğrudan otomatik yasak demek değil. BEFORE pazar yeri satıcısının ROM/SD aksesuarının içerik lisans kaydı ve satıcı SKU'su karışabilir; AFTER özelleştirilmiş bundle ilanları ve hak sahibinden izin kayıtlarının buyer review öncesi denetlenmesi gerekebilir. Lisans sahipliği hukuk uzmanına ait; otomatik korsanlık hükmü yok.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-308385a69eb4c84f:de6254419444ad83d4b2713a:01",
+            "canonical_key": "retro-handheld-resellers-and-marketplace-compliance-teams|preflight-rom-bundle-content-rights-and-sku-evidence|offline-sku-rom-license-source-and-remediation-review-ledger",
+            "idea_name": "Retro Oyun ROM Bundle Lisans Kanıt Defteri",
+            "core_job": "Retro oyun cihazı satan mağazalarda SD kart/ROM bundle SKU'larının içerik listesi, lisans/izin iddiası, tedarikçi kanıtı ve insan yayına alma kararını kayıt altına almak",
+            "target_customer": "Emülatör cihazları ve retro oyun SD kart aksesuarı satan e-ticaret distribütörleri ile pazaryeri uyum ekipleri",
+            "buyer": "Perakende pazar yeri IP uyum ve tedarik kontrol yöneticisi",
+            "product_mechanism": "Manuel cihaz SKU + SD kart paket/içerik manifestosu CSV, eser/hak sahibi, lisans belge URL'si, tedarikçi beyanı, indirme kaynak URL ve insan incelemesiyle eksik hak kanıtı raporu oluşturan deterministik tarayıcı defteri; ROM dosyasını dağıtmaz veya kopya koruma kırmaz",
+            "why_now": "ESA Ekim 2026 USTR başvurusunda üçüncü taraf ROM ön yüklü SD kart satıcı paketleri konusunda Notorious Markets incelemesi istedi.",
+            "before_state": "Cihaz üreticisi beyanı, bağımsız SD kart satıcısı ve oyuna ait dağıtım lisansı kaydı ayrı tutulur.",
+            "after_state": "Her satış SKU'sunun içerik manifestosu, belge durumu, sorumlu inceleme ve gerekiyorsa ilandan kaldırma aksiyonu izlenir.",
+            "canonical_source_urls": [
+              "https://arstechnica.com/gaming/2026/10/esa-targets-anbernic-emulation-handhelds-as-superfake-piracy-enablers/"
+            ],
+            "supporting_article_ids": [
+              "8488f5d7b0b6dc752e7d6f08"
+            ],
+            "source_observations": [
+              {
+                "url": "https://arstechnica.com/gaming/2026/10/esa-targets-anbernic-emulation-handhelds-as-superfake-piracy-enablers/",
+                "observation": "ESA USTR'ye Notorious Markets dahil etme talebi sundu, henüz dahil edilme/otomatik ithalat yasağı değil; orijinal marka üreticisi ile ROM SD kart sunan satıcı ayrımı açık."
+              }
+            ],
+            "scope_hint": "Dünya, özellikle ABD'ye satış",
+            "local_evidence": {
+              "signals": [
+                "ROM lisans kaydı ile market listing bundle manifestosu arasındaki farklı satıcı sorumluluğu gerçek ve belgelenebilir sorun."
+              ],
+              "unknowns": [
+                "Bazı homebrew/lisanslı ROM içerikleri tamamen yasal olabilir; hukuk kararı ve ülke lisans farkı uzman incelemesi gerektirir.",
+                "Marketplaces'in dahili IP policy yazılımı ve global/TR doğrudan rakipleri incelenmeli.",
+                "USTR talebinin kabul edildiği varsayılmadı."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "de98648b7403935d4b2340a4",
+        "decision": "no_opportunity",
+        "reason": "YourStory 13 Ekim özgün metninde Zoho'dan Sridhar Vembu AI'nin altı ay içinde yazılımcıların yüzde 90'ından iyi kod yazabileceğini öngörüyor. Bu kişisel tahmindir; karşılaştırmalı bağımsız benchmark ve gerçekleşmiş iş gücü değişimi değildir. Girişim AI geliştirme araçlarının dış model gerektirmesi ve eğilimdeki belirsizlik nedeniyle ayrı sıfır dış runtime niş alıcı işi doğrulanmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "de9b33d9bf7da217db46b506",
+        "decision": "no_opportunity",
+        "reason": "Orano Cherbourg-en-Cotentin için L'Usine Nouvelle kaynaklı proje tasarımcısı işe alım ilanı; tek pozisyon duyurusu yeni nükleer tasarım standardı veya zorunlu veri/raporlama workflow'u değildir. Kaynak sayfa özünü gösterse de bağımsız düzenleyici olay desteklenmedi. Genel personel/aday takip ürünü daha önce var olan kategori; habere özgü JTBD yok.",
+        "opportunities": []
+      },
+      {
+        "article_key": "deee3d4bcaa729c03e96439c",
+        "decision": "no_opportunity",
+        "reason": "CnEVPost 13 Ekim özgün yazısı Xpeng Mona L05 modelinin 15 Ekim'de Çin'de debut ve ön satış planlandığını, nihai fiyat/tam lansmanın henüz açıklanmadığını doğruluyor. 13 Ekim'de satışa girmiş/tam teslim edilmiş araç değildir. Tek modelin duyurusu başvuru/ticari yazılım akışında farklılaşmış yeni alıcı işi sunmuyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "def2dc27d78d51dbcf32421d",
+        "decision": "opportunity",
+        "reason": "Ekonomim 13 Ekim tam özgün haberinde Çorap Sanayicileri Derneği başkanı Mısır tekstil/hazır giyim üretiminde altı fabrikayı ziyaret ettiğini, bunların dördünün Türk yatırımcıya ait olduğunu söylüyor; Mısır 2025 ihracatı 3,4 milyar USD ve 2026 beklentisi 4 milyar USD sektör beyanıdır, bağımsız garantili rakam değildir. BEFORE Türkiye'de yüksek işçilik ve sipariş kaybı. AFTER Mısır'daki alternatif fason/tesis taşınma fiyatlandırması ve menşe/ithalat/navlun karşılaştırması somut karar olabilir. Bazı ürünlerde rekabeti arttıran iş gücü ve lojistik koşulları gerçek ama operasyon ve ithalat hukuku şirket özelinde teyit edilmeli.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-308385a69eb4c84f:def2dc27d78d51dbcf32421d:01",
+            "canonical_key": "turkish-garment-hosiery-export-sourcing-teams|compare-tr-vs-egypt-production-lot-cost-and-delivery-risk|offline-yarn-labor-origin-freight-duty-and-leadtime-quote-workbook",
+            "idea_name": "Türkiye–Mısır Hazır Giyim Üretim Karar Defteri",
+            "core_job": "İhracat yapan çorap ve hazır giyim işletmesinde aynı müşteri siparişini Türkiye veya Mısır'da üretmenin nihai landed cost, teslim süresi, fire, asgari parti ve menşe riskini karşılaştırmak",
+            "target_customer": "Türkiye'de fason çorap/konfeksiyon yaptıran marka ve üretim-satın alma ekipleri",
+            "buyer": "Konfeksiyon üretim planlama ve ihracat finans yöneticisi",
+            "product_mechanism": "Kullanıcı girişli fason teklif/işçilik/ham madde maliyeti CSV, döviz, navlun, gümrük/mense belge türü, kapasite, minimum sipariş ve teslim ETA ile deterministik maliyet/teslim/risk senaryosu, izin-gereksinim eksik dosyası; harici kur/gümrük API'si yok",
+            "why_now": "13 Ekim ÇSD röportajı artan Türkiye hazır giyim maliyetleri ve Mısır'a yatırım/tedarik yönelişini aktarıyor.",
+            "before_state": "Yurtiçi fason fiyatı ile yurtdışı döviz, navlun, ara malzeme ve menşe koşulları farklı tablolarla karara bağlanıyor.",
+            "after_state": "Aynı ürün/kalite spesifikasyonu için iki ülke teklifinin müşteri nihai teslim ve ek maliyet riskleri tek hesapta izlenir.",
+            "canonical_source_urls": [
+              "https://www.ekonomim.com/amp/ekonomi/tum-dunya-uretim-icin-misirda-konuslaniyor-haberi-924234"
+            ],
+            "supporting_article_ids": [
+              "7a83942bcf859385e83f4d8e"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.ekonomim.com/amp/ekonomi/tum-dunya-uretim-icin-misirda-konuslaniyor-haberi-924234",
+                "observation": "ÇSD Başkanı Ender Doğan altı Mısır fabrika ziyaretini, dört Türk yatırımcı ve işçilik/uluslararası rekabet baskısını anlattı; ihracat büyüme rakamları konuşmacının sektör değerlendirmesidir."
+              }
+            ],
+            "scope_hint": "Türkiye ve Mısır (global alıcıya genişletilebilir)",
+            "local_evidence": {
+              "signals": [
+                "Aynı tekstil ürününü Türkiye/Mısır'da farklı üretim/lojistik/tarife maliyetlerinde teklif etmek tekrar eden gerçek ticari karar."
+              ],
+              "unknowns": [
+                "Türkiye'de kurulu apparel landed-cost/ERP fiyatlama rekabeti doğrulanmadı.",
+                "Ülke menşe kuralları/hammadde giriş çıkışı ve serbest bölge koşulları kullanıcı/uzman doğrulaması ister.",
+                "Arayüz kesin vergi avantajı vaat etmez."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "def70edd6234d852aba5ea42",
+        "decision": "no_opportunity",
+        "reason": "13 Ekim 财联社 haberinde Çin'in ilk wafer fab şirketinin ChiNext'e kote olması ve buna bağlı ETF/indeks değer hareketi yer alıyor. Bu yatırım/borsa duyurusu tekrarlanan ayrı iş akışı gereksinimi oluşturmaz; fon performansından garanti kazanç veya yeni semiconductor yatırım platformu çıkarılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "df59c7a06b5d304f814212d2",
+        "decision": "opportunity",
+        "reason": "Enerji Günlüğü 13 Ekim doğrulanan özgün haber, Tekirdağ Şarköy Çınarlı DRES projesinin 180 MW + 180 MWh ÇED raporunun ÇED Yönetmeliği madde 14 kapsamında 10 takvim günü halk görüşüne açıldığını açıkça aktarıyor. Bu proje izin veya kabul almış demek DEĞİL. BEFORE kamu yorumları, hassas alan/kuş göçü, gürültü ve saha yerleşimi hakkındaki rapor sayfaları ile farklı birim yanıtları dağınık. AFTER 10 günlük gerçek süre sınırında kamu itirazı, teknik rapor maddesi, plan revizyonu ve proje sahibinin kanıt yanıtının izlenmesi düzenleyici sürecin somut B2B işi olabilir. Resmî ÇED platformundaki gerçek ilan/deadline metni daha sonra Validation'da ayrıca okunmalı; herhangi bir kamu görüşünü resmi sisteme kendisi göndermeyecek.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-308385a69eb4c84f:df59c7a06b5d304f814212d2:01",
+            "canonical_key": "turkish-wind-storage-project-eia-consultants|reconcile-ten-day-public-comments-to-eia-report-responses|offline-eia-report-section-comment-owner-and-deadline-evidence-register",
+            "idea_name": "Depolamalı RES ÇED Halk Görüşü Yanıt Matrisi",
+            "core_job": "Depolamalı rüzgâr santrali ÇED halk görüşü süresinde gelen itirazları rapor bölüm/sayfa, etki alanı, uzman yanıtı, gerekirse revizyon ve kapanış kanıtına bağlamak",
+            "target_customer": "Türkiye'de depolamalı RES geliştiren proje sahipleri ve ÇED danışmanlık firmaları",
+            "buyer": "ÇED proje koordinatörü ve rüzgâr yatırım izinleri yöneticisi",
+            "product_mechanism": "Kullanıcının manuel yüklediği ÇED raporu madde/sayfa indeks CSV, kimliği varsa anonimleştirilmiş kamu görüşü, proje konum/etki türü, yanıt sahibi, son tarih, kaynak belge URL ve onay durumunu deterministik eşleyen dosya; resmî ÇED portal API/gönderimi yok",
+            "why_now": "13 Ekim Şarköy Çınarlı 180MW DRES/180MWh depolama projesinin ÇED raporu madde14 uyarınca 10 günlük kamu görüşüne açıldı.",
+            "before_state": "ÇED bölüm kayıtları, uzman cevapları ve kamu görüşleri e-postalar/tablolar üzerinden ayrı takip edilir.",
+            "after_state": "Yasal süre boyunca her görüş için yanıt/dosya versiyonu, karar sahibi ve güncellenen rapor referansı auditlenebilir.",
+            "canonical_source_urls": [
+              "https://www.enerjigunlugu.net/tekirdagdaki-cinarli-dres-cevre-raporu-halkin-gorusunde-70162h.htm"
+            ],
+            "supporting_article_ids": [
+              "4ca275b68ff38e8e68a694b8"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.enerjigunlugu.net/tekirdagdaki-cinarli-dres-cevre-raporu-halkin-gorusunde-70162h.htm",
+                "observation": "13 Ekim enerji yayını resmi ÇED maddesi ve 10 takvim günü görüş, 180MW/180MWh Çınarlı DRES Şarköy projesi, onay aşaması değil görüş toplama olduğunu açıklıyor."
+              }
+            ],
+            "scope_hint": "Türkiye, Tekirdağ Şarköy pilot uygulama",
+            "local_evidence": {
+              "signals": [
+                "Somut ÇED raporunun 10 günlük resmî görüş penceresi ve uzmanların madde bazlı cevaplama görevi."
+              ],
+              "unknowns": [
+                "Bakanlığın resmî görüş dönemi başlangıç ve son günü Validation'da doğrulanmalı; 13 Ekim haber tarihi tek başına başlangıç tarihi değildir.",
+                "Türkiye/global doğrudan ÇED/ESIA kamu görüş yönetimi yazılımı rakip sayısı bilinmiyor.",
+                "Görüş sahiplerinin kişisel verileri izinsiz depolanmamalıdır.",
+                "Resmî başvuru ve mevzuat yorumunu uzman yapmalı."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "article_key": "df5c42bcb536d8a5ff06357e",
+        "decision": "no_opportunity",
+        "reason": "Meta'nın 12 Ekim 2026 özgün şirket duyurusu Muse Wonder/Full modellerini Model API/Muse Code ile devreye aldığını, Active Memory/Focus reklam ettiği özelliklerini doğruluyor. Dış Meta model API kullanımı Radar ürünündeki harici LLM runtime yasağına takılır. Model adı/özellik yayını tek başına model çağırmadan farklılaşan niş operasyonel problem veya kanıtlanmış müşteri alımı yaratmaz.",
+        "opportunities": []
+      },
+      {
+        "article_key": "df8b30482303397ae5c03a9d",
+        "decision": "no_opportunity",
+        "reason": "PetroTürk 13 Ekim ENVER Başkanının sektör enerji kullanımının yaklaşık dörtte biri ulaştırma; yol taşımacılığında yüzde 10 verimlilikle yıllık 5 milyar dolar üzerinde tasarruf SENARYOSU açıkladığını yazıyor. Bu bütün ülke için kaba potansiyel varsayımı, doğrulanmış tasarruf değil. Uygulama düzeyinde filo yakıt tasarruf ve rota hesap sistemleri yaygın; yeni veri standardı, zorunlu kamusal giriş veya kendi alıcı iş akışı doğduğuna dair kanıt yok. Mevcut genel fleet fuel optimization fikirlerini kopyalamadım.",
+        "opportunities": []
+      }
+    ]
+  }
+}
