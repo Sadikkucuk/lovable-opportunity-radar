@@ -1,0 +1,1418 @@
+{
+  "schema_version": 1,
+  "kind": "manual_discovery_evidence_checkpoint",
+  "date": "2026-10-14",
+  "methodology": "Per-article triage preserving unverified when original source not read; opportunities only from independently opened published/official sources; no fake closed decisions",
+  "v2_claim_receipt_exists": false,
+  "controller_accepted": false,
+  "not_final_100_percent": true,
+  "batch_count": 15,
+  "article_count": 150,
+  "opportunity_raw_count": 8,
+  "decision_counts": {
+    "opportunity": 8,
+    "no_opportunity": 30,
+    "unverified": 112
+  },
+  "source_references": [
+    "https://tubitak.gov.tr/tr/duyuru/2209-universite-ogrencileri-arastirma-projeleri-destekleme-programi-ve-2209-b-universite-ogrencileri-sanayiye-yonelik-arastirma-projeleri-destegi-programi-2026-yili-cagrilari-acildi",
+    "https://cnevpost.com/2026/10/10/china-proposes-tighter-vehicle-design-rules/",
+    "https://www.samr.gov.cn/xw/sj/art/2026/art_91363d611a2046d0a1cb94c45d25bc3f.html",
+    "https://ir.freshworks.com/news/news-details/2026/Freshworks-to-Extend-Freshservice-into-AI-and-Software-Spend-Governance-with-Agreement-to-Acquire-Torii/default.aspx",
+    "https://www.taylorfarms.com/cyclospora-information-hub/",
+    "https://thedriven.io/2026/10/13/grit-in-the-gears-nrma-report-on-shortfalls-on-national-ev-charging-network-hidden-from-view/",
+    "https://www.qualitymag.com/events/10582-moving-ai-from-pilot-to-production-in-quality-operations",
+    "https://cnevpost.com/2026/10/13/xpeng-targets-1-million-sales-2030-half-europe/"
+  ],
+  "packs": [
+    {
+      "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-d63d36e740eb7151",
+      "input_hash": "d63d36e740eb7151833f98015b3a224075bb81df2c3740fc63ffa58fee78f132",
+      "lane": 4,
+      "article_count": 10,
+      "counts": {
+        "opportunity": 1,
+        "no_opportunity": 4,
+        "unverified": 5
+      },
+      "articles": [
+        {
+          "article_key": "5ab8987e49f023587fe321f7",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: 9月全球投放月报：B站、朝夕光年增投，益世界爆款小游戏进Top 5，一AI小游戏成黑马 - 36Kr",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "5aba6e3e48a3a63a436dcc22",
+          "decision": "opportunity",
+          "reason": "Independent original/official page confirmed an identifiable change or operational friction; market validation pending. Original CnEVPost article opened; EU expansion commitment not signed",
+          "source_review": "independent_original_page_read",
+          "source_url": "https://cnevpost.com/2026/10/13/xpeng-targets-1-million-sales-2030-half-europe/",
+          "opportunities": [
+            {
+              "raw_id": "manual-20261014-5aba6e3e48a3a63a436dcc22",
+              "idea_name": "EV OEM European Local-Capacity Ramp Matrix",
+              "canonical_key": "ev-oem-europe-expansion-programmes|compare-local-contract-manufacturing-capacity-to-volume-target|supplier-factory-volume-ramp-and-risk-ledger",
+              "core_job": "Avrupa'da yerel üretim hacmi hedefi ile fabrika/tedarikçi kapasite senaryosunu karşılaştırmak",
+              "target_customer": "Avrupa pazarına giren elektrikli araç OEM strateji ve contract manufacturing ekipleri",
+              "product_mechanism": "Kullanıcı yıllık hedef, fabrika adet/kapasite, model, tedarikçi ETA, OEM anlaşma varsayımlarını CSV girer; darboğaz ve ramp-up senaryolarını raporlar",
+              "why_now": "Xpeng 13 Ekim 2026 haberine göre Avrupa'da yıllık 500 bin ve küresel 1 milyon adet 2030 hedefi açıklayıp Magna kapasitesini genişletme seçeneklerini görüşüyor; taahhüt edilmiş yeni fabrika yok.",
+              "before_state": "Üretim hedefi, fabrika kapasitesi, model takvimi ve pazara giriş varsayımları ayrık",
+              "after_state": "Kapsite senaryoları ve kaynaklı onay dosyası",
+              "canonical_source_urls": [
+                "https://cnevpost.com/2026/10/13/xpeng-targets-1-million-sales-2030-half-europe/"
+              ],
+              "source_article_key": "5aba6e3e48a3a63a436dcc22",
+              "source_note": "Original CnEVPost article opened; EU expansion commitment not signed"
+            }
+          ]
+        },
+        {
+          "article_key": "5ad72b608f756cd73dba3ff3",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Jev 引爆决策 AI 模型新赛道，爆红后被卷入原创争议 - IT之家",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "5b216445e9d0b4fcb85ff761",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: NPCI Defers UPI MDR Implementation Till Post Diwali - Inc42",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "5b2b15e5846a4c12fd9a3f16",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Nvidia débarque au capital de Doctolib - Maddyness",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "5b2f0fc3b26fef54bd6e71df",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Schizophrénie : en décrochant une nouvelle approbation de la FDA, la biotech montpelliéraine Medincell s’assure un nouveau relais ",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "5b530ca7853037b88ac21e2d",
+          "decision": "no_opportunity",
+          "reason": "Drylab AI funding verified in Business Times and investor updates; financing round not itself product workflow delta",
+          "source_review": "article_page_read",
+          "opportunities": []
+        },
+        {
+          "article_key": "5b7d5eac8e275917d13ce538",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: 더존비즈온, NIA·레플릿과 공무원 대상 '공공데이터 AI 메이커톤' 개최 - 전자신문",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "5bb9fc83571425b7d1b9157e",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 上海：鼓励存量燃油小客车更新为新能源车辆 到2030年燃油小客车保有量进入峰值平台 - 财联社电报",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "5d6a69708adaec19c648849d",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: AI's Honest Path Forward: Making Workers More Effective - IndustryWeek",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        }
+      ]
+    },
+    {
+      "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-37392c063bbcafc0",
+      "input_hash": "37392c063bbcafc02414755ea7e93d0fadd753ca7b85fd0b4928efdf3d15c096",
+      "lane": 4,
+      "article_count": 10,
+      "counts": {
+        "opportunity": 0,
+        "no_opportunity": 4,
+        "unverified": 6
+      },
+      "articles": [
+        {
+          "article_key": "4d2470c4ab5a3cebad92dca9",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: Dog shelter worker awarded HK$89,000 over canine attack despite volunteer claim - South China Morning Post",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "4d24cb87bf844e8c8cc323d6",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Building the Digital Foundation for Manufacturing Innovation - IndustryWeek",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "4d2bea6c6ccd94430efd7c23",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Matematikçilerden OpenAI’a Tepki: Bilimsel Normlar Çiğnendi - ShiftDelete.Net",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "4d7be7e5b02b4e47cd666c05",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: «C’è chi, quando lo guardi, ti fa stare bene». Ma se oltre alle persone-medicina, imparassimo a creare brand-medicina? - StartupIt",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "4d9ed403a1a4ef66a0d7e317",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 와이즈넛, AI페스타 참가…대화로 AI 에이전트 제작 시연 - 지디넷코리아",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "4e04425ad3741459121dd276",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: Sennheiser Momentum True Wireless 5 vs. Bowers & Wilkins Pi8 : de ... - ZDNET",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "4e10a164a3cb0b83a360b051",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Aptadir Therapeutics, Giovanni Amabile: «Negli Stati Uniti nessuno ha creduto in noi. L’Italia sì» - StartupItalia",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "4e4413e7427ce8e7e79fb9bc",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: 华为首次公布麒麟9050 Pro 芯片详细架构图：在中国半导体业界支持下成功量产，未来属于开放合作 - IT之家",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "4e458e3fd7ac0bb868623896",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: Brutal session for chip stocks shows AI trade is turning - Reuters",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "4e838d1ab441b86ccfef5cff",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 英国机构呼吁加强前沿AI安全管理 - 新华网",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        }
+      ]
+    },
+    {
+      "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-37efa2fa94fab3c6",
+      "input_hash": "37efa2fa94fab3c6cd94d79414ef9e4bda84e722e4f1714de6db2cb539453f7b",
+      "lane": 1,
+      "article_count": 10,
+      "counts": {
+        "opportunity": 2,
+        "no_opportunity": 2,
+        "unverified": 6
+      },
+      "articles": [
+        {
+          "article_key": "8687d46ec19e98be1b9161ab",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: «Il grande inganno dell’AI»: conoscere il “nemico” per usarlo meglio - Il Sole 24 ORE",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "8690b472aea4ebdbd01a37b0",
+          "decision": "no_opportunity",
+          "reason": "TechCrunch original confirms tabletop fusion startup; hardware R&D achievement without Lovable standalone workflow",
+          "source_review": "article_page_read",
+          "opportunities": []
+        },
+        {
+          "article_key": "869c599578f4c82c4769304d",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: [KES2026]가전 넘어 작업 현장으로…中企, AI·로봇 솔루션 전시 - 전자신문",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "86fab574ffa9d717be4a2238",
+          "decision": "opportunity",
+          "reason": "Independent original/official page confirmed an identifiable change or operational friction; market validation pending. Official SAMR page opened; draft not final regulation",
+          "source_review": "independent_original_page_read",
+          "source_url": "https://www.samr.gov.cn/xw/sj/art/2026/art_91363d611a2046d0a1cb94c45d25bc3f.html",
+          "opportunities": [
+            {
+              "raw_id": "manual-20261014-86fab574ffa9d717be4a2238",
+              "idea_name": "China Coal Plant Eco-Tariff Draft Exception Ledger",
+              "canonical_key": "china-coal-power-generators|prepare-2026-samr-environmental-tariff-draft-exception-review|hourly-emission-threshold-deduction-reason-ledger",
+              "core_job": "Kömürlü santral işletmecilerinin saatlik emisyon aşımı, çevresel tarife kesintisi ve gerekçeli istisnaları taslak kurallara göre kanıtlaması",
+              "target_customer": "Çin kömürlü santral enerji ticareti ve çevre uyum ekipleri",
+              "product_mechanism": "Kullanıcının yüklediği saatlik konsantrasyon, tesis bakım, şebeke kesintisi ve belge CSV'sini taslak eşiklerle karşılaştıran açıklanabilir ihtilaf/kanıt defteri",
+              "why_now": "Çin SAMR 13 Ekim 2026 yayımladığı çevresel elektrik fiyatı gözetim taslağı için 20 Ekim'e dek görüş istiyor; aşım halinde kesinti ve mücbir sebep istisnası öneriliyor.",
+              "before_state": "Saatlik emisyon, kesinti ve istisna belgeleri birbirinden kopuk",
+              "after_state": "Saatlik kontrol ve onaylanabilir ihtilaf/uyum dosyası",
+              "canonical_source_urls": [
+                "https://www.samr.gov.cn/xw/sj/art/2026/art_91363d611a2046d0a1cb94c45d25bc3f.html"
+              ],
+              "source_article_key": "86fab574ffa9d717be4a2238",
+              "source_note": "Official SAMR page opened; draft not final regulation"
+            }
+          ]
+        },
+        {
+          "article_key": "875dcfc85c5fa25995a6146d",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: FlashBot Max : Solution de livraison autonome inter-étages sécurisé - L'Usine Nouvelle",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "8777af59ff1a86beaeff38d4",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 一家AI明星公司申请破产 - 第一财经",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "8793747fd21f1aa94b704e22",
+          "decision": "opportunity",
+          "reason": "Independent original/official page confirmed an identifiable change or operational friction; market validation pending. Freshworks corporate press release opened; direct competitors like Torii itself and many others require validation",
+          "source_review": "independent_original_page_read",
+          "source_url": "https://ir.freshworks.com/news/news-details/2026/Freshworks-to-Extend-Freshservice-into-AI-and-Software-Spend-Governance-with-Agreement-to-Acquire-Torii/default.aspx",
+          "opportunities": [
+            {
+              "raw_id": "manual-20261014-8793747fd21f1aa94b704e22",
+              "idea_name": "Shadow-AI SaaS Spend Evidence Baseline",
+              "canonical_key": "small-it-finance-teams|document-shadow-ai-subscriptions-and-license-spend|manual-vendor-license-renewal-approval-ledger",
+              "core_job": "KOBİ BT-finans ekiplerinin görünmeyen SaaS ve AI aboneliklerini sahip, lisans, yenileme ve masraf bazında açıklaması",
+              "target_customer": "Küçük ve orta ölçekli işletme BT-finans ekipleri",
+              "product_mechanism": "Kullanıcı lisans ve fatura CSV'si üzerinden sağlayıcı/ürün ve sahipliğini kaydeder; beklenen ödeme, lisans ve onay geçmişi üretir; hesaplara otomatik bağlanmaz",
+              "why_now": "Freshworks 12 Ekim 2026 Torii'yi satın almak için anlaşma yaptığını duyurdu; görünmeyen SaaS/AI maliyet yönetişimi sorununu açıkça tanımlıyor.",
+              "before_state": "Fatura, lisans ve AI kullanımı silolar halinde",
+              "after_state": "Manuel stok/harcama görünürlüğü ve yenileme kanıt kapısı",
+              "canonical_source_urls": [
+                "https://ir.freshworks.com/news/news-details/2026/Freshworks-to-Extend-Freshservice-into-AI-and-Software-Spend-Governance-with-Agreement-to-Acquire-Torii/default.aspx"
+              ],
+              "source_article_key": "8793747fd21f1aa94b704e22",
+              "source_note": "Freshworks corporate press release opened; direct competitors like Torii itself and many others require validation"
+            }
+          ]
+        },
+        {
+          "article_key": "87cb5562885d7fa19eeace70",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: AI 长视频时代来临：OpenAI GPT-6 Astra 助力生成时长从 1 分钟提升到 10 分钟 - IT之家",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "87ec58f1ff834d7ad356df38",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Pyrénées-Orientales : convention de coopération entre Enedis et la gendarmerie départementale - L'Usine Nouvelle",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "881e619dbc3713314e948e7c",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: [2026국감]AI 특허 심사 대기 21개월…'10개월 단축' 목표 현실 괴리 - 전자신문",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        }
+      ]
+    },
+    {
+      "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-3993cd6e6d270c2e",
+      "input_hash": "3993cd6e6d270c2e9c4f62cb9686b24468ebd53f4a8f260e6fea667582d4abfa",
+      "lane": 1,
+      "article_count": 10,
+      "counts": {
+        "opportunity": 0,
+        "no_opportunity": 2,
+        "unverified": 8
+      },
+      "articles": [
+        {
+          "article_key": "0b47d2cce84cfc592367b9d9",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: 行业纵横：AI互动影游会成为下一个短剧风口么？（胡涛） - 第一财经",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "0b6ae3211381cb6fd5f31a31",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: \"Şehrin Işıkları\"nda sonuçlar açıklandı - Enerji Günlüğü",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "0b85f8bfac6bba22eee2de2c",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Haut-Rhin : une aide publique pour la plateforme chimique de Chalampé - L'Usine Nouvelle",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "0bce9c500bc7b33b0be00b41",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 三佳科技：扇出型晶圆级封装相关研发工作正在持续推进 - 证券时报网",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "0c3d31d1ca7ccdae19080365",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 孙颖莎x海尔洗衣机：以AI智慧洗护方案破解赛场衣鞋洗护难题 - 新华网",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "0c528fd8d5dc201d1eca9871",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: AMD Unveils CPU-Centric Helion AI Rack for Agentic AI - THE ELEC, Korea Electronics Industry Media",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "0c937794d3eaef7eb7c143a3",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: ‘Brutal session’ for chip stocks shows AI trade is now turning - InnovationAus.com",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "0c9468521ad7c2756b6cf8fd",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Kommunikationsnetze als unterschätztes Risiko - Produktion Online",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "0c9ef63ccf0881dfc265dd8f",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 芯和半导体系统级EDA在CPO等AI产业关键场景形成客户验证 - 第一财经",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "0ca95d8f042c19fabe8bac58",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Trump says US still sharing intel, even as Ukraine reports attacks with no warnings - Reuters",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        }
+      ]
+    },
+    {
+      "job_id": "2026-10-11-a4dcde1ff5-discovery-2279a3d980a56e54",
+      "input_hash": "2279a3d980a56e548ce9a29ec565db5c7e077cce46edc19001457bbf2327975f",
+      "lane": 1,
+      "article_count": 10,
+      "counts": {
+        "opportunity": 1,
+        "no_opportunity": 1,
+        "unverified": 8
+      },
+      "articles": [
+        {
+          "article_key": "087c782e3cb3624bc6fb4fda",
+          "decision": "opportunity",
+          "reason": "Independent original/official page confirmed an identifiable change or operational friction; market validation pending. TÜBİTAK official original 2026-10-09; qualification and competitive research pending",
+          "source_review": "independent_original_page_read",
+          "source_url": "https://tubitak.gov.tr/tr/duyuru/2209-universite-ogrencileri-arastirma-projeleri-destekleme-programi-ve-2209-b-universite-ogrencileri-sanayiye-yonelik-arastirma-projeleri-destegi-programi-2026-yili-cagrilari-acildi",
+          "opportunities": [
+            {
+              "raw_id": "manual-20261014-087c782e3cb3624bc6fb4fda",
+              "idea_name": "TÜBİTAK 2209 Çağrı Kanıt Hazırlık Masası",
+              "canonical_key": "turkish-university-project-applicants|prepare-2209a-b-2026-applications-and-adviser-evidence|eligibility-budget-deadline-approval-checklist",
+              "core_job": "Öğrenci ve danışmanların 2209-A/B çağrısında uygunluk, proje bütçesi, form ve onay sürelerini eksiksiz hazırlaması",
+              "target_customer": "Türkiye üniversiteleri proje ofisleri, danışmanlar ve araştırma grupları",
+              "product_mechanism": "Öğrenci/proje envanteri, 2209-A/B ayrımı, başvuru, bütçe ve danışman onay checklisti, eksik kanıt uyarısı ve insan onaylı PDF çıktı",
+              "why_now": "TÜBİTAK 2026 2209 çağrıları 7 Ekim açıldı, 11 Kasım 2026 17:30 son başvuru; e-imza aşaması 16–23 Kasım.",
+              "before_state": "Farklı tarihler, danışman onayları ve gereklilikler eposta/dokümanlarda dağınık",
+              "after_state": "Yalın başvuru gerekliliği matrisi, kontrol kapısı ve onay/teslim kanıtı",
+              "canonical_source_urls": [
+                "https://tubitak.gov.tr/tr/duyuru/2209-universite-ogrencileri-arastirma-projeleri-destekleme-programi-ve-2209-b-universite-ogrencileri-sanayiye-yonelik-arastirma-projeleri-destegi-programi-2026-yili-cagrilari-acildi"
+              ],
+              "source_article_key": "087c782e3cb3624bc6fb4fda",
+              "source_note": "TÜBİTAK official original 2026-10-09; qualification and competitive research pending"
+            }
+          ]
+        },
+        {
+          "article_key": "087f2035b8ce8ff2163035a8",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Yapay Zeka Asistanlarıyla Sohbet Ederken Alınması Gereken 5 Kritik Önlem - Türk İnternet",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "089c5e107894cadab8f3b138",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Perficient launches AI tools for Medicare Advantage star ratings management - The Next Web",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "08b5f1b7a5f1819951161ef7",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Stack Overflow survey finds devs hooked on AI, but not totally sold on its judgment - The Register",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "08c73ed70f29b74bd93c016e",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: \"로봇 들이기 이렇게 어렵다\"…WSJ, 월마트 물류자동화 '시행착오' 조명 - 지디넷코리아",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "09072cf39ee6c5c6cdf01ee5",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Världens två första atomkärneur tickar – felar en sekund på 30 miljoner år - Ny Teknik",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "0935c94608e1f191d1d53a5e",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Körfez Bölgesi’nde Yatırım Destekleri - Fortune Turkey",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "094def4cac375efc6eb9c6bd",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: TypeSafe AI_TypeSafe AI最新动态 - IT之家",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "09e903227bbc19e28f64a3fe",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: 乘联分会：9月1-30日全国乘用车新能源市场零售114.1万辆 同比去年9月同期下降12% - 财联社电报",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "0a2add59b09a71322e7b8009",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 我国将开展适应人工智能发展促就业行动 - ThePaper.cn",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        }
+      ]
+    },
+    {
+      "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-3a31b8d8491bc8c4",
+      "input_hash": "3a31b8d8491bc8c4cf1cd32c0ac9e38b5f213e66135dd4284e7a829c80200bac",
+      "lane": 2,
+      "article_count": 10,
+      "counts": {
+        "opportunity": 1,
+        "no_opportunity": 2,
+        "unverified": 7
+      },
+      "articles": [
+        {
+          "article_key": "d8381b93e57113bb8e663574",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 华泰证券：AI有望重塑影视生产成本与IP开发模式 - 第一财经",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "d875501277b7b1434d0753e3",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: Apple初のスマートディスプレイ「HomeView」発表！「Siri AI」搭載で価格は299ドル 米国では11月13日発売 - GAME Watch",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "d89307147d6064c12cf17f32",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Industria: nel Mediterraneo Milano se la gioca con Istanbul e Barcellona - Il Sole 24 ORE",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "d91556306333e8fb2518236b",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: 类脑计算再升温：Flourish获5亿美元融资，用脑科学押注下一代AI范式 - 36 Kr",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "d91646af75067738443d08dd",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Større vindkraftutbygging kan forsyne de nye datasentrene, ifølge Statkraft - Tu.no",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "d988225ec64f542cb96e2df6",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 爱听音乐的人怎么选 AI 助听器：自然音质才是硬功夫 - IT之家",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "d9a4a9fbb32de95183188d84",
+          "decision": "opportunity",
+          "reason": "Independent original/official page confirmed an identifiable change or operational friction; market validation pending. First-party Taylor Farms information hub opened; no assumption causal source conclusively known",
+          "source_review": "independent_original_page_read",
+          "source_url": "https://www.taylorfarms.com/cyclospora-information-hub/",
+          "opportunities": [
+            {
+              "raw_id": "manual-20261014-d9a4a9fbb32de95183188d84",
+              "idea_name": "Produce Recall Sourcing Remediation Evidence Desk",
+              "canonical_key": "fresh-produce-importers|document-seasonal-sourcing-blocks-and-food-recall-remediation|supplier-lot-season-evidence-ledger",
+              "core_job": "Taze gıda tedarikçilerinin sezonluk kaynak kapatma, etkilenmiş lot, yeni tedarikçi ve geri çağırma delilini işletmesi",
+              "target_customer": "Salata, taze ürün ithalatçısı ve soğuk zincir satın alma/kalite ekipleri",
+              "product_mechanism": "Kullanıcının tedarikçi/lot/hasat tarihi, sınırlandırılan kaynak bölge, analiz/izleme ve müşteri tebliğ verilerini CSV ile alıp açıklanabilir önlem-kanıt listesi tutan web iş akışı",
+              "why_now": "Taylor Farms 2026 Cyclospora soruşturması ardından merkez Meksika tedarikini durdurduğunu ve yeniden güvenlik kontrollerine geçtiğini bildirdi; kesin kontaminasyon nedeni ortaya konmamıştır.",
+              "before_state": "Tedarik durdurma, lotlar, alternatif kaynak ve izlenebilirlik kararları farklı dosyalarda",
+              "after_state": "Lot-tedarikçi kaynağı, risk kararı ve izlenebilir kapanış",
+              "canonical_source_urls": [
+                "https://www.taylorfarms.com/cyclospora-information-hub/"
+              ],
+              "source_article_key": "d9a4a9fbb32de95183188d84",
+              "source_note": "First-party Taylor Farms information hub opened; no assumption causal source conclusively known"
+            }
+          ]
+        },
+        {
+          "article_key": "d9a8a704a855cd06fc885842",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: IMF上调明年全球经济增速预期至3.1%，警示人工智能盈利能力重估风险 - ThePaper.cn",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "d9ac94087cdd8f72ec0490cb",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 华虹牵手四大设备龙头 国产半导体设备市占率持续提升？丨行业风口 - 第一财经",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "d9bfe46dbeb1787cfabea91d",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 不服判决：Anthropic 硬刚美国政府 AI“供应链风险”认定 - IT之家",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        }
+      ]
+    },
+    {
+      "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-3b5b99b71873af45",
+      "input_hash": "3b5b99b71873af457a9e4460902a7600cc2d2855c0bab24782523f9835b11cbd",
+      "lane": 1,
+      "article_count": 10,
+      "counts": {
+        "opportunity": 1,
+        "no_opportunity": 1,
+        "unverified": 8
+      },
+      "articles": [
+        {
+          "article_key": "494c492fc1719631c520162d",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: OBCの「奉行Edge 発行請求書DXクラウド」、新オプションでFAXによる帳票送信に対応 - クラウド Watch",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "4954cdb5cb86c1c817d5a088",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: Latest Zero Prime Ventures news and analysis from startup Europe - Sifted",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "497470f7f0b311ab6d8fb723",
+          "decision": "opportunity",
+          "reason": "Independent original/official page confirmed an identifiable change or operational friction; market validation pending. Original webinar event page opened, not empirical proof of demand",
+          "source_review": "independent_original_page_read",
+          "source_url": "https://www.qualitymag.com/events/10582-moving-ai-from-pilot-to-production-in-quality-operations",
+          "opportunities": [
+            {
+              "raw_id": "manual-20261014-497470f7f0b311ab6d8fb723",
+              "idea_name": "Quality AI Pilot Production Acceptance Checklist",
+              "canonical_key": "manufacturing-qa-teams|capture-ai-pilot-validation-before-production|data-integrity-human-review-and-exception-gate",
+              "core_job": "Üretim kalite AI pilotlarında veri bütünlüğü, insan incelemesi, izlenebilirlik ve istisna kontrolü tamamlanmadan devreye alma yapılmasını engellemek",
+              "target_customer": "Üretici kalite, validasyon ve üretim BT ekipleri",
+              "product_mechanism": "Pilot envanteri, süreç bağlamı, test/acceptance CSV, insan onayı, kanıt bağlantısı, eksik koşul ve go-live checklisti",
+              "why_now": "Quality Magazine'in 10 Kasım 2026 için duyurduğu webinar, pilotların üretime geçişinde veri, doğrulama ve insan kontrolü sürtünmesini açıkça aktarıyor. Reklam duyurusu gerçek müşteri talebini tek başına kanıtlamaz.",
+              "before_state": "Pilot kalite gereklilikleri ve insan inceleme onayları dağınık",
+              "after_state": "Deterministik üretime geçiş hazırlık kapısı",
+              "canonical_source_urls": [
+                "https://www.qualitymag.com/events/10582-moving-ai-from-pilot-to-production-in-quality-operations"
+              ],
+              "source_article_key": "497470f7f0b311ab6d8fb723",
+              "source_note": "Original webinar event page opened, not empirical proof of demand"
+            }
+          ]
+        },
+        {
+          "article_key": "497cfeb9ae84c71b4d31a049",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 피엔티엠에스, 113억 규모 AI 건식분리막 기술개발 과제 수주 - 전자신문",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "49c709a644c7efccacde7c1f",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 정부, 내년 피지컬 AI 확 키운다…9천억→3조 1000억 - 지디넷코리아",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "49cc6db21a3b1f61acbab5b5",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 테이텀, 삼성SDS 공공클라우드 플랫폼CNAPP 서비스 등록 - 지디넷코리아",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "49ee5324ae91bd4732fdf0a3",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 校馆弦歌丨西安电子科技大学图书馆：半部电台传薪火 满馆书香育新人 - 新华网",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "4a268573455ed9746492fb17",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Kontext bei Architekturentscheidungen: „It Depends reicht nicht“ - heise online",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "4a303f8011dd02e0e9823ff7",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: FLIR A8481 Compact HD MWIR Science Camera - Quality Magazine",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "4a3fb11a5cd84e1b93776546",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 【科创之声】AI大战数学家，谁是赢家 - 中国经济网",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        }
+      ]
+    },
+    {
+      "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-3ceddcb81b0e30a0",
+      "input_hash": "3ceddcb81b0e30a02e4824f71f47c5d748251477a709e7ef133a6f5099ecbb28",
+      "lane": 3,
+      "article_count": 10,
+      "counts": {
+        "opportunity": 1,
+        "no_opportunity": 0,
+        "unverified": 9
+      },
+      "articles": [
+        {
+          "article_key": "2b1bc00b5c2003027c01c0d4",
+          "decision": "opportunity",
+          "reason": "Independent original/official page confirmed an identifiable change or operational friction; market validation pending. Opened news article. Redacted original report content not known.",
+          "source_review": "independent_original_page_read",
+          "source_url": "https://thedriven.io/2026/10/13/grit-in-the-gears-nrma-report-on-shortfalls-on-national-ev-charging-network-hidden-from-view/",
+          "opportunities": [
+            {
+              "raw_id": "manual-20261014-2b1bc00b5c2003027c01c0d4",
+              "idea_name": "EV Charger Rollout Barrier Evidence Register",
+              "canonical_key": "public-ev-charging-grant-recipients|document-charging-site-delivery-blockers-and-milestones|site-grant-permit-owner-issue-evidence-register",
+              "core_job": "Kamu destekli EV şarj istasyonu kurulumunda hibe, izin, saha hazır olma ve gecikme nedenlerini kanıtlı izlemek",
+              "target_customer": "Şarj ağları, kamu hibe proje yöneticileri ve EPC saha ekipleri",
+              "product_mechanism": "Saha/istasyon envanteri, hedef MW, izin, inşaat plan-gerçekleşen, risk sahibi, gecikme kanıtı ve kamu rapor paketi; canlı şarj API'si olmadan çalışır",
+              "why_now": "The Driven 13 Ekim 2026 NRMA 117 noktalık şarj programında gecikme ve ciddi biçimde redakte rapor olduğunu bildirdi; raporun gizli kısmına dair iddia kurulamaz.",
+              "before_state": "Saha planı, gecikme gerekçesi ve teslim kanıtları dağınık",
+              "after_state": "Saha bazında kanıta dayalı ilerleme/istisna kayıtları",
+              "canonical_source_urls": [
+                "https://thedriven.io/2026/10/13/grit-in-the-gears-nrma-report-on-shortfalls-on-national-ev-charging-network-hidden-from-view/"
+              ],
+              "source_article_key": "2b1bc00b5c2003027c01c0d4",
+              "source_note": "Opened news article. Redacted original report content not known."
+            }
+          ]
+        },
+        {
+          "article_key": "2b3fd190ea2c4aaee98577f2",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Energie: Wirtschaftsministerium will Gasreserve über Umlage finanzieren - Handelsblatt",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "2b4fe605d69caa8bfba6c29b",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Hypesound, quando i suoni danno il “boost” alla biotecnologia industriale - Il Sole 24 ORE",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "2b921ed17ab88e37aa2637d6",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: MS, 자체 AI칩 '마이아300' 공개…“내년 100만개 투입” - 전자신문",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "2bb4abdb57a4767b5384977e",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: “智象-司南”海河流域AI短临预报模型发布 - 新华网",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "2be516b5431647ef1009ea4f",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 9 年前英伟达 Tesla V100 老将再战：4 GPU 集群 AI 推理跑赢 2 台 DGX Spark - IT之家",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "2c365724557326f7d470d0a1",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 微软 Excel 引入 Copilot 交互式画布：AI 把零散数据变成可交互的决策看板 - IT之家",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "2c5eb740949a4c76e84b262e",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 2位は「八代市の免震庁舎、被害は『世界初』か 設計想定超えた『長周期パルス』」経営層の注目トップ10 - 日経クロステック",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "2c7c3b612a320edfbe85ccee",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Omc Med Energy, a Ravenna il tavolo dell'energia nel Mediterraneo - Il Sole 24 ORE",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "2c8a75bfd087e4b39fc7f7f3",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Winter Wear Steps Into The Rental Zone - Inc42",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        }
+      ]
+    },
+    {
+      "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-43c2239d9f21fbfe",
+      "input_hash": "43c2239d9f21fbfeed00bb3479ae1b76d12639f00d9ab222d2c21c21bb398766",
+      "lane": 2,
+      "article_count": 10,
+      "counts": {
+        "opportunity": 0,
+        "no_opportunity": 1,
+        "unverified": 9
+      },
+      "articles": [
+        {
+          "article_key": "b02c76647b0c46d162b34fce",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Sıfır Atıktan Karbon Emisyonu Önleme Sertifikasyonuna: Bölgesel Sanayi için Döngüsel Ekonomi Fırsatları Çalıştayı - Çorlu Ticaret ",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "b09bdccb227494ad1ecaeb16",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Mangler fortsatt to tredjedeler av stillingene til Nato-senter i Bodø - Tu.no",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "b0c8d3a0446a756133382a4b",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: 天阳科技拟采购2万张英伟达GPU产品 用于AI应用推理等 - 证券时报网",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "b11e5d9a9783b3699a84789d",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Physiker finden Formel: Wann lokale KI-Modelle plötzlich gefährlich werden - heise online",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "b18c5cd8e39cd92a564727fb",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 哀牢山迎来首位“机器人科考队员”，云深处山猫 M20S 拍到“冥界之花” - IT之家",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "b192ed6450c3c015c2d43e9b",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 曝梁文锋密集接触具身智能创业者，DeepSeek 拟入局具身智能 - IT之家",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "b1931b5aae18dd14ce83340a",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Whiterock deploys €82 million to support SME growth across Northern Ireland - EU-Startups",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "b1d4fa09decadb35b182a423",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Küba, petrol sektörünü yabancı yatırımlara açmak için eski yasaları yürürlükten kaldırdı - Bloomberght",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "b26618d254a847b05e91375d",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Facebook is giving users more control over their algorithm - TechCrunch",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "b2a1baa3456eee09696cb29b",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 「PCIM 2026」で見たパワー半導体最前線――電子版2026年10月号 - EE Times Japan",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        }
+      ]
+    },
+    {
+      "job_id": "2026-10-11-a4dcde1ff5-discovery-2ce0803161e64d31",
+      "input_hash": "2ce0803161e64d31e4e01b1f08baa36747b072579d0a8820089c0028118e7245",
+      "lane": 1,
+      "article_count": 10,
+      "counts": {
+        "opportunity": 1,
+        "no_opportunity": 2,
+        "unverified": 7
+      },
+      "articles": [
+        {
+          "article_key": "6d7d75f37818a6a100a32c56",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: AI家电，攻占黄金周 - OFweek",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "6d8625a34312af7d96102190",
+          "decision": "opportunity",
+          "reason": "Independent original/official page confirmed an identifiable change or operational friction; market validation pending. Original CnEVPost news opened; source reports MIIT draft, not enacted regulation",
+          "source_review": "independent_original_page_read",
+          "source_url": "https://cnevpost.com/2026/10/10/china-proposes-tighter-vehicle-design-rules/",
+          "opportunities": [
+            {
+              "raw_id": "manual-20261014-6d8625a34312af7d96102190",
+              "idea_name": "China OEM Design-Draft Safety Evidence Gate",
+              "canonical_key": "china-ev-oems|prepare-2027-miit-vehicle-design-draft-safety-evidence|door-screen-seat-requirement-and-test-matrix",
+              "core_job": "Yeni Çin MIIT araç güvenliği taslağına göre model varyantlarının kapı, ekran ve koltuk tasarım test delilini hazırlamak",
+              "target_customer": "Çin pazarına araç sunan OEM homologasyon, HMI tasarım ve güvenlik ekipleri",
+              "product_mechanism": "Kullanıcı tasarım varyantı ve test CSV'sini girer; taslak gereklilik kontrol listesi, 30.000km test hazırlığı ve eksik kanıt iş listesi hesaplanır; otomatik hukuki karar vermez",
+              "why_now": "MIIT 10 Ekim 2026 taslağı 10 Kasım'a kadar görüşe açık; yeni araç başvurularında 1 Ocak 2027 ve mevcut modellerde 1 Temmuz 2027 tarihleri öneriliyor, yürürlük kesinleşmiş değildir",
+              "before_state": "Varyant, fiziksel kumanda ve kapsam testlerinin dosya delilleri ayrık",
+              "after_state": "Madde-test-varyant-kanıt ve insan inceleme matrisi",
+              "canonical_source_urls": [
+                "https://cnevpost.com/2026/10/10/china-proposes-tighter-vehicle-design-rules/"
+              ],
+              "source_article_key": "6d8625a34312af7d96102190",
+              "source_note": "Original CnEVPost news opened; source reports MIIT draft, not enacted regulation"
+            }
+          ]
+        },
+        {
+          "article_key": "6e1a1dbc91272d39be8b37bf",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Coastal Machine & Supply will expand precision manufacturing facility in Louisiana - Plant Services",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "6e47c55df7bd23997c7b3804",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 我国将开展适应人工智能发展促就业行动 - ThePaper.cn",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "6f27c241859616a08e90e2a9",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 티씨케이, 반도체 식각 SiC 포커스링 특허 정정...디에스테크노 상대 분쟁 - 지디넷코리아",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "6f715a7968b2d900d49a5a1b",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 中共中央、国务院：加强原创性颠覆性科技创新 - 第一财经",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "6f80fd4ec20b4b496a592463",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: “鲲为科技”完成4亿元新一轮融资 - 36Kr",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "6ff8e39ed5ebbc4f9209b0e3",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: Esas Gayrimenkul, Middle East Council of Shopping Centres & Retailers MENA Awards’tan 4 ödülle döndü - Perakende.org",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "6ffb5d6174c1586e57c8ddb3",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: BYD reaches 150,000 commercial NEV production milestone as growth focus shifts to trucks - CnEVPost",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "70e897a848fe2bc9226ec33d",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Industria: Istat, produzione -1,3% ad agosto, +3,1% su anno - Il Sole 24 ORE",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        }
+      ]
+    },
+    {
+      "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-45419867286f3f22",
+      "input_hash": "45419867286f3f22ec2015beebae38a6d6478f9030171172190fc30cd3871987",
+      "lane": 1,
+      "article_count": 10,
+      "counts": {
+        "opportunity": 0,
+        "no_opportunity": 1,
+        "unverified": 9
+      },
+      "articles": [
+        {
+          "article_key": "bc969a902af9ce3deff24050",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 2026 Üçüncü Çeyrek Türkiye Yatırım Raporu - StartupCentrum",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "bcd445400d13da31b3c8c96e",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Batterie, per Bw Ess progetti in Italia da oltre 1 miliardo - Il Sole 24 ORE",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "bcf6bc0da7bc9adc62b217db",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: AI气象大模型公司获厚雪数千万投资，已建成自有卫星星座丨36氪首发 - 36Kr",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "bcfc7dea6047e6a02dec275b",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Nvidia's China AI-chip share falls as Huawei closes gap, report finds - Reuters",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "bd0b64ac581947fb0a5d2293",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 中古住宅を改修しやすく、国交省の新ルールが分かる記事5選 - 日経クロステック",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "bd1254e173210f7231b4212c",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Yeşil finansmanda faiz frenine rağmen eylem zamanı - Dünya Gazetesi",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "bd2644b6dc9db78868b5e8da",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: YourStory | Stories about startups & entrepreneurships - YourStory.com",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "bd717e4790cd8f3560ccf1bc",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Ankara Paradoksu ve Türkiye’nin sanayi gücü nerede birikiyor? - Ekonomim",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "bd87846e5ae10e0e1b97271a",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Build, Buy, Or Rent? How Indian CTOs Are Rethinking The AI Stack - Inc42",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "bd91c291355502f9526c408f",
+          "decision": "no_opportunity",
+          "reason": "TechCrunch original confirms Character.AI bankruptcy; standalone company bankruptcy without identified reusable software buyer workflow",
+          "source_review": "article_page_read",
+          "opportunities": []
+        }
+      ]
+    },
+    {
+      "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-45c98d1f9e27010e",
+      "input_hash": "45c98d1f9e27010e8437ce03517f363d3ae4e45988910ac617bcbbd90bf30566",
+      "lane": 3,
+      "article_count": 10,
+      "counts": {
+        "opportunity": 0,
+        "no_opportunity": 4,
+        "unverified": 6
+      },
+      "articles": [
+        {
+          "article_key": "45e500411c4a18464a479cbf",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: 半年净利暴增96%！重回中国台湾首富宝座, 郭台铭靠AI赚翻了 - OFweek",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "461cca0ccf5409727de7e68b",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: ‘AI is now a decision layer for customers’: Semrush on AI visibility - The Next Web",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "465baa400223f8f25305d39e",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 新能源消纳 | 从95%降到85%：新能源利用率红线为什么主动下移 - ThePaper.cn",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "467dab843e8245b33e4a2c18",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: 兴森科技：前三季度净利润同比预增204.2%—227.02% - 第一财经",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "46862681f67a40aace5057ca",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 'SLW 2026' 사흘간 8만7000명 찾았다…AI 도시혁신 교류 확대 - 전자신문",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "47026b1be664843f030ad10f",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Colt expands to 55 metro networks, boosts AI infrastructure connectivity - ET Datacenters",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "474c7a12585f63cdc7d6d25a",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: Samsung Electronics Showcases AI Ecosystem at KES 2026 - THE ELEC, Korea Electronics Industry Media",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "47827542632b68e9fb89ec74",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: ヘリカル型核融合、実証装置の建設進む 日本の「本命」は？ - 日経クロステック",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "47874e0c79827d151a54c3f7",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: プレミアム会員限定【見逃し配信】フィジカルAIの「学習データ」はどう作る？APTO高品氏が語るフィジカルAI時代のデータ戦略と社会実装 - ロボスタ",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "47887598731f330f99df821a",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Pyrénées-Orientales : partenariat entre MeetDeal et Genesis pour une présentation automobile à distance - L'Usine Nouvelle",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        }
+      ]
+    },
+    {
+      "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-463e9458ecb6bc51",
+      "input_hash": "463e9458ecb6bc51b5fb09073ec8e79d1ad2498a2e060701506b42d3dd8b1fde",
+      "lane": 4,
+      "article_count": 10,
+      "counts": {
+        "opportunity": 0,
+        "no_opportunity": 1,
+        "unverified": 9
+      },
+      "articles": [
+        {
+          "article_key": "d5608d3c5d1b2a97f69ceadf",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 「ひげそりは洗面台」を変えた、パナソニックの“小さいシェーバー”ヒットの理由 - MONOist",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "d5a3e142f7e89dcc66f96f42",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: [단독] 카카오, 웹툰·음원·카카오T에 스테이블코인 결제 연동…소설 원작 AI 애니 제작도 - 전자신문",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "d5b426fbe2b2b468bc7db736",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: ダイハツがアンモニア燃料の軽エンジンを開発、プラズマで水素を生成し燃焼促進：Japan Mobility Show Bizweek 2026 - MONOist",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "d5db819cdbc3f476c30ffddd",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 海外研选 | 德银：2030年前实现超级人工智能并非不可能 两大条件是关键 - 财联社",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "d5dfdb5d92493ba3de67f2a2",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: L’Etat devient le premier actionnaire d’Eramet, pour renforcer son approvisionnement en minerais et métaux critiques - L'Usine Nou",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "d61d4a35df5871d3c9f604bc",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: Tarn-et-Garonne : Maf Roda Agrobotic sponsor de la Morocco Avocado Conference 2026 - L'Usine Nouvelle",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "d62b9f0d3d05755434147c35",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Apporter ma pierre à cet édifice » : l'ancien patron d'Alstom prend la tête du plus grand projet de parc solaire en Europe - Les E",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "d630dd1de33859e152843bb0",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Bulut yatırımlarında doğru maliyet için toplam sahip olma maliyetine bakılmalı - ictmedia.com.tr",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "d63598b8076ab2d96a59fcd9",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: J'utilise Ubuntu depuis 22 ans — et la version 26.10 pourrait bien être la meilleure à ce jour - ZDNET",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "d657977f66c6a9e038730d66",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: DeepSeek's Liang Wenfeng Is Meeting Embodied AI Founders as the Company Weighs a Move Into Robotics - Pandaily",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        }
+      ]
+    },
+    {
+      "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-467226abb0f5264c",
+      "input_hash": "467226abb0f5264c7bdc88e0ca147f9e88c3d0e1453dc84443af51af792adc82",
+      "lane": 4,
+      "article_count": 10,
+      "counts": {
+        "opportunity": 0,
+        "no_opportunity": 2,
+        "unverified": 8
+      },
+      "articles": [
+        {
+          "article_key": "909b0ee3858a568f8d85aa88",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Lightspeed lays off staff as part of “organizational changes” - BetaKit",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "90ab7cc4334de18a62a86632",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: US chip stocks extend slide as China memory report, AI spending jitters hit sector - Reuters",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "91520240b01035d85b3a965a",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 鄂维南：工业AI落地，基础设施建设是核心 - 第一财经",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "918de8873e17984f0c56ad4a",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: Agrasar Ventures - Tech in Asia",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "919744a7af97e50efd0e1353",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Anthropic says new safeguards sharply reduce AI distillation attacks - ET CISO",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "91a860cb729dd79557dff8c6",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 카스퍼스키, 글로벌 보안 전문가 서밋 'SAS 2026' 개최 - 전자신문",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "92047d4db4ad94b9d89cd7f2",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 산업부, 반도체 메가프로젝트 전담국 ‘반도체혁신성장지원단’ 출범 - 지디넷코리아",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "920d34fc89ad076068d612ba",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Evinizdeki cihazlara sızıp çoğalabilir: Anthropic'ten yapay zeka uyarısı - Dünya Gazetesi",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "9294cd49ac9f17b99be705e8",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Bumble agrees to a $1.3B acquisition deal as online dating faces a reset - TechCrunch",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "92c45659a46c5560096a5181",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: IPアドレスからドメイン名を調べるDNSの「逆引き」、正引きの情報と照合 - 日経クロステック",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        }
+      ]
+    },
+    {
+      "job_id": "2026-10-11-a4dcde1ff5-discovery-4621348c9fae2673",
+      "input_hash": "4621348c9fae2673dcf422a664daac13565e7b99afb42156daee69751d1d6ee7",
+      "lane": 2,
+      "article_count": 10,
+      "counts": {
+        "opportunity": 0,
+        "no_opportunity": 3,
+        "unverified": 7
+      },
+      "articles": [
+        {
+          "article_key": "6614b32292118a8e70711a05",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Timeline Visualization - Tech in Asia",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "66bce6d7734037967ce5bb7f",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: Starfunding: 10 of Europe’s biggest celebrity-backed startup deals - EU-Startups",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "66d9d69a1e1f0cff4babd3eb",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Ex-OpenAI robotics lead’s factory startup in insolvency proceedings - Sifted",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "66f8112a39093a750ab023ed",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Reader’s Question: Holsters for the type-2 to type-2 cable and fitting them into the house - The Driven IO",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "66f8dcc238edb00f128d8548",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: [안광섭 AI 진테제] 트럼프가 'SI'를 외치는 이유 - 지디넷코리아",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "6720a38e1dc897d2237ca2ff",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: 豫光金铅：半导体光电新材料科创产业化基地项目目前处于前期筹备阶段 - 第一财经",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "6763797dcb42963cc625668b",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Carmen Munoz Dormoy, présidente de l’association Ingénieurs et scientifiques de France, l’engagement associatif chevillé au corps ",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "678127c465fe5a18a9e5e1ee",
+          "decision": "no_opportunity",
+          "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: Geely Galaxy launches Cruiser 700 to take on BYD, GWM in off-road SUV market - CnEVPost",
+          "source_review": "rss_headline_screen",
+          "opportunities": []
+        },
+        {
+          "article_key": "67ef0920b34671cdedc1af1d",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Moins de CO2 et plus d’efficience énergétique : Arkema a injecté 150 millions d’euros à Carling pour assurer le futur de ses produ",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        },
+        {
+          "article_key": "684f7ff6597806f818da8165",
+          "decision": "unverified",
+          "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Google'dan offline çalışan toplantı notu uygulaması: AI Edge Foresight - Webrazzi",
+          "source_review": "rss_headline_only",
+          "opportunities": []
+        }
+      ]
+    }
+  ]
+}
