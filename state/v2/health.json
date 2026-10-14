@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "controller_observed_at": "2026-10-14T12:18:15Z",
+  "controller_observed_at": "2026-10-14T12:19:44Z",
   "stale_after_minutes": 40,
   "state": "attention_required",
   "expected_start_at": "2026-10-14T03:01:00Z",
@@ -64,9 +64,11 @@
         "schema_version": 1,
         "worker": 4,
         "invocation_id": "c74ae778-28dd-4023-9769-1b045a1491cd",
-        "event": "started",
-        "at": "2026-10-14T12:17:59.038Z",
-        "path": "state/v2/worker-events/4/c74ae778-28dd-4023-9769-1b045a1491cd/000-started.json"
+        "event": "blocked",
+        "at": "2026-10-14T12:19:25.500Z",
+        "reason_code": "permission_denied",
+        "reason": "Discovery claim create_file çağrısı OpenAI güvenlik kontrolü tarafından engellendi; GitHub HTTP 401/403 alınmadı. Claim yolunda readback 404; araştırma ve receipt başlatılmadı.",
+        "path": "state/v2/worker-events/4/c74ae778-28dd-4023-9769-1b045a1491cd/999-blocked.json"
       },
       "receipts_this_invocation": 0,
       "write_and_receipt_verified": true,
@@ -118,10 +120,10 @@
     "window_minutes": 120.0,
     "stages": {
       "discovery": {
-        "completed_in_window": 26,
+        "completed_in_window": 25,
         "known_remaining": 362,
-        "observed_jobs_per_hour": 13.0,
-        "estimated_minutes_for_stage": 1670.8
+        "observed_jobs_per_hour": 12.5,
+        "estimated_minutes_for_stage": 1737.6
       },
       "merge": {
         "completed_in_window": 0,
@@ -160,6 +162,12 @@
     }
   ],
   "alerts": [
+    {
+      "code": "worker_blocked",
+      "worker": 4,
+      "severity": "critical",
+      "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
+    },
     {
       "code": "controller_rejected_record",
       "worker": null,
