@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "record_type": "manual_discovery_research_and_validation",
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-e3b7f65e26aa8d00",
+  "run_id": "2026-10-14-catchup-553b1f127fcf",
+  "input_hash": "e3b7f65e26aa8d0012e357a3bf3e873a2b8e1efb8ffe9f496dc42a1a582eeb80",
+  "reviewed_at": "2026-10-14T09:46:26.533Z",
+  "original_news_count": 10,
+  "article_counts": {
+    "opportunity": 3,
+    "no_opportunity": 6,
+    "unverified": 1
+  },
+  "formal_controller_status": "not_yet_submitted",
+  "news_decisions": [
+    {
+      "article_key": "09b3bbf511e90353ba1ebf25",
+      "decision": "no_opportunity",
+      "reason": "Verified 1688/Accio native AI assistant launch. Integration is a first-party product feature; no distinct confirmed customer work requiring zero-API independent SaaS was substantiated by the source.",
+      "opportunities": [],
+      "source_check": {
+        "rss_title": "1688 Opens Alibaba's Accio AI Workbench to All Buyers and Factories, Adding a Seller Assistant - Pandaily",
+        "canonical_article_url": "https://pandaily.com/alibaba-1688-fully-integrates-accio-ai-workbench-buyers-factories-seller-assistant",
+        "verification": "publisher_page_read"
+      }
+    },
+    {
+      "article_key": "09e0da74a63b8f7171e3d411",
+      "decision": "no_opportunity",
+      "reason": "WhatsApp's beta scheduled-message functionality is implemented natively in WhatsApp; announcement itself does not evidence a separate customer SaaS gap without WhatsApp API.",
+      "opportunities": [],
+      "source_check": {
+        "rss_title": "WhatsApp, mesaj zamanlama özelliğini test ediyor - Webrazzi",
+        "canonical_article_url": "https://webrazzi.com/2026/10/13/whatsapp-mesaj-zamanlama-ozelligini-test-ediyor/",
+        "verification": "publisher_page_read"
+      }
+    },
+    {
+      "article_key": "0a01fa9d2dccbfbedae45a76",
+      "decision": "opportunity",
+      "reason": "Original TechCrunch reported a clandestine recording device planted in an executive conference room and discovered through an internal investigation. Independently scoped buyer task: physical meeting-room equipment inspection and incident evidence tracking; actual buying demand and competitors not yet validated.",
+      "opportunities": [
+        {
+          "raw_id": "manualv3-20261014-e3b7-03",
+          "canonical_key": "enterprise-security-teams|document-and-approve-meeting-room-device-integrity-sweeps|room-device-inspection-and-tamper-evidence-ledger",
+          "idea_name": "Meeting Room Device Integrity Sweep Ledger",
+          "core_job": "Record who checked executive meeting-room devices and close suspicious peripheral findings with evidence",
+          "target_customer": "Enterprise physical security and information security coordinators",
+          "product_mechanism": "Room inventory -> numbered TV/USB/device and access checklist -> dated manual inspection -> suspicious attachment case -> human approval and evidence export",
+          "why_now": "A reported discovery of an unauthorized USB-connected recording device in a corporate executive room on 13 Oct 2026 highlights the inspection/incident evidence gap, not proof of universal demand.",
+          "before_state": "Office device inventories and periodic sweeps are scattered in spreadsheets, photographs and vendor tickets.",
+          "after_state": "A versioned per-room manual hardware check and escalation case record shows changes and accountable closures.",
+          "canonical_source_urls": [
+            "https://techcrunch.com/2026/10/13/fbi-arrests-openai-employee-accused-of-planting-hidden-recording-device-in-conference-room/"
+          ]
+        }
+      ],
+      "source_check": {
+        "rss_title": "FBI arrests OpenAI employee accused of planting hidden recording device in conference room - TechCrunch",
+        "canonical_article_url": "https://techcrunch.com/2026/10/13/fbi-arrests-openai-employee-accused-of-planting-hidden-recording-device-in-conference-room/",
+        "verification": "publisher_page_read"
+      }
+    },
+    {
+      "article_key": "0a364d94a6204ddb9077d4c5",
+      "decision": "opportunity",
+      "reason": "FreightWaves SONAR source confirms intermodal contract rates decreased $1.68 -> $1.61/mile while truck spot and contractual prices moved differently. This supplies a concrete shipper mode-selection scenario; first-party market evidence only, no customer proof.",
+      "opportunities": [
+        {
+          "raw_id": "manualv3-20261014-e3b7-04",
+          "canonical_key": "freight-shippers-and-forwarders|compare-truck-contract-spot-and-intermodal-route-costs-before-tender|manual-lane-rate-scenario-and-award-evidence-ledger",
+          "idea_name": "Intermodal Lane Award Scenario Ledger",
+          "core_job": "Compare user-provided contract/spot/intermodal lane costs and service-risk assumptions before tender award",
+          "target_customer": "Shippers, 3PL transportation procurement teams and freight forwarders",
+          "product_mechanism": "Upload historical lane CSV -> enter mode-specific current contracted quotes and transit/missed-delivery exposure -> deterministic normalized landed cost and SLA comparisons -> signed tender decision evidence",
+          "why_now": "SONAR 13 October 2026 reported declining intermodal contract prices against firm carrier pricing power, creating a scenario-review trigger.",
+          "before_state": "Carrier bids and intermodal alternatives are reviewed in separate spreadsheets without decision assumptions or approvals.",
+          "after_state": "Lane-level comparison and signed scenario record explain mode/tender award under changing rates.",
+          "canonical_source_urls": [
+            "https://www.freightwaves.com/news/sonar-pricing-power-index-slips-to-70-as-intermodal-contract-rates-fall"
+          ]
+        }
+      ],
+      "source_check": {
+        "rss_title": "SONAR Pricing Power Index Slips to 70 as Intermodal Contract Rates Fall - FreightWaves",
+        "canonical_article_url": "https://www.freightwaves.com/news/sonar-pricing-power-index-slips-to-70-as-intermodal-contract-rates-fall",
+        "verification": "publisher_page_read"
+      }
+    },
+    {
+      "article_key": "0a70f285f0fa059c71735443",
+      "decision": "opportunity",
+      "reason": "Teknisk Ukeblad October 13 describes collision of two maintenance trains in Romeriksporten during summer track works; railway worksite movement handoff and safe-permission evidence is a distinct preliminary software hypothesis. Details of actual cause remain unverified.",
+      "opportunities": [
+        {
+          "raw_id": "manualv3-20261014-e3b7-05",
+          "canonical_key": "rail-maintenance-site-coordinators|document-work-train-movement-authorization-and-overlapping-track-occupancy|track-segment-permit-shift-handover-and-conflict-evidence-ledger",
+          "idea_name": "Rail Work Train Shift-Permit Ledger",
+          "core_job": "Record authorized maintenance-train movements and conflicting worksite track reservations for human pre-shift review",
+          "target_customer": "Rail maintenance contractors and rail infrastructure worksite safety coordinators",
+          "product_mechanism": "User-entered track section/shift/train/crew plan -> conflicting reservations flag -> route possession and dispatch-authority checklist -> human signoff -> incident and deviation evidence export; advisory only, no live signalling",
+          "why_now": "13 October 2026 reporting of a rail maintenance train collision creates a documented operational safety review trigger; accident cause is not established.",
+          "before_state": "Track works shift movement approvals and contractor handovers can be dispersed across radio, paper and spreadsheet logs.",
+          "after_state": "One auditable manual shift occupancy and work-train movement approval register highlights conflicting entries prior to a human decision.",
+          "canonical_source_urls": [
+            "https://www.tu.no/samferdsel/to-arbeidstog-kolliderte-i-romeriksporten/7145583"
+          ]
+        }
+      ],
+      "source_check": {
+        "rss_title": "To arbeidstog kolliderte i Romeriksporten - Teknisk Ukeblad",
+        "canonical_article_url": "https://www.tu.no/samferdsel/to-arbeidstog-kolliderte-i-romeriksporten/7145583",
+        "verification": "publisher_search_excerpt_only"
+      }
+    },
+    {
+      "article_key": "0ace2efcc897cff54b905c75",
+      "decision": "no_opportunity",
+      "reason": "Inc42 article reports MakeO's INR 90 crore funding for existing aligner business expansion and acquisitions, but no software workflow delta or independently identified unserved buyer pain.",
+      "opportunities": [],
+      "source_check": {
+        "rss_title": "Toothsi Parent MakeO Raises ₹90 Cr For India, Southeast Asia Expansion - Inc42",
+        "canonical_article_url": "https://inc42.com/buzz/toothsi-parent-makeo-raises-%E2%82%B990-cr-for-india-southeast-asia-expansion/",
+        "verification": "publisher_page_read"
+      }
+    },
+    {
+      "article_key": "0ad086e67424e9a9f14c35c9",
+      "decision": "unverified",
+      "reason": "Japanese ID-photo leak headline is relevant, but Nikkei xTech full original article could not be inspected due site access restrictions; event scope and affected actors are not confirmed enough to extract a new opportunity.",
+      "opportunities": [],
+      "source_check": {
+        "rss_title": "「顔写真付き身分証明書画像」大量漏洩の衝撃、専門家が語るリスクと対策 - 日経クロステック",
+        "canonical_article_url": "https://xtech.nikkei.com/",
+        "verification": "original_page_blocked"
+      }
+    },
+    {
+      "article_key": "0ad498a01405d1c6f45ce51f",
+      "decision": "no_opportunity",
+      "reason": "October 8 event at Tsinghua is a startup/research investment showcase; verified government recap reports discussions and presenters but no defined changed user workflow warranting a distinct zero-external-runtime SaaS.",
+      "opportunities": [],
+      "source_check": {
+        "rss_title": "“X-Day”西丽湖路演社×“创投中国”AI for Science专场走进清华 - 36 Kr",
+        "canonical_article_url": "https://fdi.mofcom.gov.cn/come-zonghe-con.html?id=49183",
+        "verification": "government_page_read"
+      }
+    },
+    {
+      "article_key": "0b2602e669ff23561d90b787",
+      "decision": "no_opportunity",
+      "reason": "October Automation World product roundup lists established industrial network hardware and protocols. This is supplier product marketing, not itself verified unmet procurement/operations work.",
+      "opportunities": [],
+      "source_check": {
+        "rss_title": "October 2026 Product Roundup: Network Optimization - Automation World",
+        "canonical_article_url": "https://www.automationworld.com/products/product/55411434/october-product-roundup",
+        "verification": "publisher_page_read"
+      }
+    },
+    {
+      "article_key": "0b430cfda94b3790d26756c5",
+      "decision": "no_opportunity",
+      "reason": "Cailian Press publication is a US stock-market daily price performance recap, not a changed operational workflow; no software product gap substantiated.",
+      "opportunities": [],
+      "source_check": {
+        "rss_title": "04:00:42【美股三大指数集体收跌 半导体、存储股走低】 - 财联社",
+        "canonical_article_url": "https://www.cls.cn/detail/2503923",
+        "verification": "publisher_page_read"
+      }
+    }
+  ]
+}
