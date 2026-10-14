@@ -1,0 +1,166 @@
+{
+  "schema_version": 2,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-11abfaedc1661b05",
+  "input_hash": "11abfaedc1661b05c4cdceb9630b16dfcbd17e04c817e22c45425618771442d1",
+  "token": "990b080d-db37-4892-a753-a21e1711a015",
+  "finished_at": "2026-10-14T03:09:12.930Z",
+  "outcome": "done",
+  "reason": "10 makalenin tamamı araştırıldı; 3 fırsat, 5 fırsat değil ve 2 özgün kaynak doğrulanamadı kararı kaydedildi.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "fb1e79bd54ec3903853f75bf",
+        "decision": "unverified",
+        "reason": "ET CISO başlığı ve indeks kaydı bulundu; özgün makalenin atanmış tam metni güvenilir biçimde okunamadı. AI hızlandırmalı bağlantılı kurumlarda büyüyen saldırı etkisi tezi ikincil güvenlik yazılarıyla uyumlu olsa da bu makaleden ürün kanıtı çıkarılmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "fb83db89811d5deb305328da",
+        "decision": "no_opportunity",
+        "reason": "Şirket açıklamasına dayalı sonuç haberi; bakır kaplı laminat hacim/fiyat artışı ve kâr tahmini var, fakat Radar kapsamına uygun yeni ve ayrık bir yazılım iş akışı değişikliği göstermiyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "fbb9a5c8d75c5c0ce0c97401",
+        "decision": "no_opportunity",
+        "reason": "Bir bağlı ortaklığın 60 aylık GPU sunucu kiralama ihalesinde ikinci sağlayıcı olarak seçilmesi şirket/kontrat haberi; tek başına genellenebilir yeni yazılım müşteri işi çıkarmıyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "fbbf0548eb076e3db49f7d27",
+        "decision": "opportunity",
+        "reason": "OFweek kaynaklı erişilebilir uyarlama okundu; simülasyonda %89,4 başarıya karşı gerçek evlerde %12 başarı ve kaliteli beden verisinin paylaşılmaması, robot saha kanıtını ürün/model ekipleri arasında kontrollü devretme ihtiyacını gösteriyor.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-11abfaedc1661b05:fbbf0548eb076e3db49f7d27:01",
+            "canonical_key": "embodied-ai-robot-teams|prove-and-transfer-real-world-body-data-with-rights-and-context|local-field-dataset-register-test-context-and-release-signoff",
+            "idea_name": "Robot Saha Verisi Kanıt Defteri",
+            "core_job": "Robotun gerçek saha verisini test bağlamı, haklar ve sürüm onayıyla ekipler arasında devretmek",
+            "target_customer": "Beden/algoritma ekipleri ayrı olan robotik şirketleri",
+            "buyer": "Robotik veri lideri veya ürün güvence yöneticisi",
+            "product_mechanism": "Yerel dosya/CSV veri seti kaydı, test bağlamı, hak/izin alanları, sürüm karşılaştırması ve insan onaylı yayın paketi; harici runtime servisi yok",
+            "why_now": "Erişilebilir OFweek uyarlaması, simülasyon ve gerçek saha başarısı arasında büyük fark ile beden verisinin şirketler arasında paylaşılmamasını temel darboğaz olarak anlatıyor.",
+            "before_state": "Saha verisi, donanım koşulu ve kullanım hakkı ekipler arasında bağlamını kaybediyor.",
+            "after_state": "Her veri paketi donanım/test bağlamı ve izin kanıtıyla sürümlenip devrediliyor.",
+            "canonical_source_urls": [
+              "https://robotbelt.com/inside-chinas-embodied-ai-shake-out-why-the-brain-is-eating-e10/"
+            ],
+            "supporting_article_ids": [
+              "eeb02f558cfc8b0cf92b4637"
+            ],
+            "source_observations": [
+              {
+                "url": "https://robotbelt.com/inside-chinas-embodied-ai-shake-out-why-the-brain-is-eating-e10/",
+                "accessed_at": "2026-10-14T03:09:12.930Z",
+                "page_read": true,
+                "claim": "灵魂 - OFweek机器人网",
+                "observation": "OFweek kaynaklı uyarlama robotların simülasyonda %89,4, gerçek evlerde %12 başarı gösterdiğini ve kaliteli beden verisinin paylaşılmadığını bildiriyor."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_scope_evidence_hints": [],
+            "local_evidence": []
+          }
+        ]
+      },
+      {
+        "article_key": "fbc12cd761ce2c80dcaa62d5",
+        "decision": "opportunity",
+        "reason": "Özgün Impress makalesi okundu; Ibaraki şehir okullarında 13 Ekim 2026–31 Mart 2027 özel LLM pilotunda güvenlik, kullanılabilirlik, yetki ve süre etkisinin değerlendirilmesi somut bir pilot kanıt yönetimi işidir.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-11abfaedc1661b05:fbc12cd761ce2c80dcaa62d5:01",
+            "canonical_key": "public-schools-testing-private-ai|document-ai-pilot-safety-usability-and-time-savings|use-case-baseline-access-control-evidence-and-go-no-go-dossier",
+            "idea_name": "Okul AI Pilot Kanıt Dosyası",
+            "core_job": "Özel/yerel AI pilotunun süre kazancı, güvenlik, yetki ve öğretmen kabulünü kanıtlayarak devam kararını vermek",
+            "target_customer": "Belediye ve kamu okulu eğitim BT ekipleri",
+            "buyer": "Eğitim BT yöneticisi veya okul idaresi",
+            "product_mechanism": "Manuel kullanım senaryosu, süre baseline'ı, anket, yetki kontrol listesi, olay kaydı ve insan onaylı go/no-go raporu; ürün AI çalıştırmaz",
+            "why_now": "Ibaraki ve NTT West 13 Ekim 2026'da Mart 2027'ye kadar özel LLM ile okul idari işlerini, güvenlik ve kullanılabilirliği ölçen saha pilotuna başladı.",
+            "before_state": "Pilot bulguları anket, dosya ve teknik kontroller arasında dağınık kalıyor.",
+            "after_state": "Süre, fayda, erişim ve güvenlik kanıtları tek devam/sonlandırma dosyasında toplanıyor.",
+            "canonical_source_urls": [
+              "https://ai.watch.impress.co.jp/docs/news/2147779.html"
+            ],
+            "supporting_article_ids": [
+              "11fdab10ebc8e867977338e9"
+            ],
+            "source_observations": [
+              {
+                "url": "https://ai.watch.impress.co.jp/docs/news/2147779.html",
+                "accessed_at": "2026-10-14T03:09:12.930Z",
+                "page_read": true,
+                "claim": "NTTのNTT版大規模言語モデル「tsuzumi 2」を活用し校務AI実証を開始 - 株式会社インプレス",
+                "observation": "Makale pilot tarihlerini, belge arama/yazma kullanım senaryolarını, yerel çalışma ve rol bazlı erişim denetimini açıklıyor."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_scope_evidence_hints": [],
+            "local_evidence": []
+          }
+        ]
+      },
+      {
+        "article_key": "fbd2a0b17e01f36239d726cf",
+        "decision": "no_opportunity",
+        "reason": "Belediye başkanları fuarının beşinci edisyonu hakkında etkinlik haberi; somut teknoloji/regülasyon/iş akışı değişikliği kanıtlanmadı.",
+        "opportunities": []
+      },
+      {
+        "article_key": "fc1e36bd83f60a928e546544",
+        "decision": "no_opportunity",
+        "reason": "ASCOMP PC Internals adlı bir yazılım/ürün listeleme başlığı; yeni gelişme veya ayrık müşteri işi göstermiyor.",
+        "opportunities": []
+      },
+      {
+        "article_key": "fc52e4516c0c7fdda5d9fdec",
+        "decision": "no_opportunity",
+        "reason": "Nio ES9 teslimat istatistiği tam okundu; Eylül'de 7.706 araç ve aylık artış bir satış performansı göstergesi, yeni genellenebilir iş akışı değişikliği değil.",
+        "opportunities": []
+      },
+      {
+        "article_key": "fc56a63d2d5f2ad4e4b5c545",
+        "decision": "opportunity",
+        "reason": "ZDNET ve Reuters haberleri okundu; yüzlerce markette internetten erişilebilen eski soğutma kontrol yazılımlarının yamalanmaması gıda kaybına yol açtı. Çok markalı ekipman için çevrimdışı kanıtlı patch/izolasyon defteri ihtiyacı açık.",
+        "opportunities": [
+          {
+            "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-11abfaedc1661b05:fc56a63d2d5f2ad4e4b5c545:01",
+            "canonical_key": "supermarket-refrigeration-operators|prove-patch-isolation-and-reconnection-readiness-across-legacy-controllers|asset-firmware-exposure-remediation-and-signoff-register",
+            "idea_name": "Soğuk Zincir Kontrol Sistemi Yama Kanıt Defteri",
+            "core_job": "Eski soğutma kontrol cihazlarını yeniden internete bağlamadan önce sürüm, maruziyet, yama ve izolasyon kanıtını tamamlamak",
+            "target_customer": "Süpermarket zincirleri ve soğutma bakım firmaları",
+            "buyer": "OT güvenlik sorumlusu veya teknik bakım müdürü",
+            "product_mechanism": "Manuel/CSV varlık envanteri, firmware/EOL kaydı, internet maruziyeti kontrol kanıtı, VPN/yama aksiyonu ve insan onaylı yeniden bağlama raporu; canlı tarama/API yok",
+            "why_now": "13 Ekim 2026 haberleri Danfoss, Copeland ve Dixell sistemlerinde yüzlerce mağazayı etkileyen uzaktan müdahale ile ürün kaybını; eski firmware ve açık arayüzleri belgeliyor.",
+            "before_state": "Farklı marka kontrol cihazlarının sürüm, EOL ve izolasyon durumu bakım tablolarında dağınık.",
+            "after_state": "Her cihaz için yama/izolasyon kanıtı ve yeniden bağlama onayı görünür oluyor.",
+            "canonical_source_urls": [
+              "https://www.zdnet.fr/actualites/piratage-des-frigos-danfoss-nest-plus-le-seul-mis-en-cause-505690.htm"
+            ],
+            "supporting_article_ids": [
+              "66d7c8dcde1fee6c30fde209"
+            ],
+            "source_observations": [
+              {
+                "url": "https://www.zdnet.fr/actualites/piratage-des-frigos-danfoss-nest-plus-le-seul-mis-en-cause-505690.htm",
+                "accessed_at": "2026-10-14T03:09:12.930Z",
+                "page_read": true,
+                "claim": "Piratage des frigos : Danfoss n'est plus le seul mis en cause - ZDNET",
+                "observation": "ZDNET, çok sayıda markette Danfoss yanında Copeland/Dixell arayüzlerinin etkilendiğini; CERT-FR'nin internetten ayırma, VPN, sıfırlama ve yama önerdiğini aktarıyor."
+              }
+            ],
+            "scope_hint": "Dünya",
+            "local_scope_evidence_hints": [],
+            "local_evidence": []
+          }
+        ]
+      },
+      {
+        "article_key": "fc8d25e325d19c475fe3c85e",
+        "decision": "unverified",
+        "reason": "Yicai başlığı, ulusal embodied-AI pilot üssünün sınır devriyesi pilotunu ilerlettiğini söylüyor; özgün yazının atanmış tam metni veya birincil proje sayfası bulunamadığından olay ayrıntıları doğrulanamadı.",
+        "opportunities": []
+      }
+    ]
+  }
+}
