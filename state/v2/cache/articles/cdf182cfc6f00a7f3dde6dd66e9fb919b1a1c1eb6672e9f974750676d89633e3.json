@@ -1,0 +1,48 @@
+{
+  "policy_version": "radar-v2-no-runtime-services-20261010",
+  "content_hash": "cdf182cfc6f00a7f3dde6dd66e9fb919b1a1c1eb6672e9f974750676d89633e3",
+  "decision": {
+    "article_key": "4ef517ebdc019b57cf545cb1",
+    "decision": "opportunity",
+    "reason": "Reuters 13 Ekim 2026 kaynaklarına göre Fed/OCC/FDIC ve Avrupa denetçileri bankaların otonom ajan kullanımı, Çin menşe teknoloji bağımlılığı, kurtarma ve bağımsız yedek sistemleri hakkında daha fazla soru sormaya başladı. Bunlar henüz yeni resmî zorunlu AI kanunu değil; denetim görüşmesi/inceleme temasları. BEFORE Agent kullanım envanteri, üçüncü taraf teknoloji sözleşmesi ve bağımsız bare-metal kurtarma test delili ayrı risk/IT dosyalarında. AFTER banka risk ekibi sorulara tek, insan onaylı olay/agent → yetki sınırı → model sağlayıcı → RTO/RPO → yedek test senaryosu kanıt bağlantısıyla cevap hazırlamaya ihtiyaç duyabilir. Çalışma bu canlı modelleri kontrol etmez; kurumsal CSV/manuel kanıt matrisi tasarımlı. TR/global doğrudan bankai governance satıcıları Validation için açık.",
+    "opportunities": [
+      {
+        "raw_id": "2026-10-14-catchup-553b1f127fcf-discovery-070e1e6f9f7a6e3c:4ef517ebdc019b57cf545cb1:1",
+        "canonical_key": "bank-ai-model-risk-and-cyber-recovery-teams|answer-supervisory-agent-autonomy-and-independent-recovery-questions|offline-agent-provider-control-rto-evidence-matrix",
+        "idea_name": "Banka AI Ajan–Kurtarma Denetim Kanıt Matrisi",
+        "core_job": "Banka denetçilerinin kurumsal ajanların hangi kararlara yetkili olduğu, model/ülke teknoloji bağımlılığı, özerk eylem loglarının sınırı ve ana bankacılık sisteminden bağımsız kurtarma testi sorularına tutarlı kanıt dosyası hazırlamak",
+        "target_customer": "ABD/Avrupa bankalarının AI model riski, BT operasyonel dayanıklılık, üçüncü taraf risk ve iç denetim birimleri",
+        "buyer": "Banka AI model riski ve siber dayanıklılık yöneticisi",
+        "product_mechanism": "Kullanıcının sağladığı model/agent envanter CSV, risk rolü, vendor/ülke, yetkili action listesi, veri kapsamı, RTO/RPO hedefi, son offline bare-metal test sonucu, insan review/signoff ve açık eksiği deterministic çapraz-matriksle eşleyip PDF/CSV denetim dosyası üretme; bankaya canlı erişim veya çalışan LLM/API/DB zorunluluğu yok",
+        "why_now": "13 Ekim Reuters kaynakları ABD ve Avrupa banka denetçilerinin bankalarda agentic AI kontrol ve bağımsız cyber recovery sorgularını artırdığını bildirdi; kesinleşmiş yeni uyum standardı değil denetçi inceleme yoğunluğu.",
+        "before_state": "AI agent erişim yetkileri, üçüncü taraf cloud/model riski ve recovery disaster test belgeleri farklı takım sistemlerinde, aynı sorguya bağlı değil.",
+        "after_state": "Banka denetçisinin sorusu → etkilenen agent/bağımlılık → test raporu ve insan kanıt kabulü → açık eksik/risk yanıt taslağı açık biçimde eşlenir.",
+        "canonical_source_urls": [
+          "https://www.reuters.com/legal/litigation/banking-watchdogs-ramp-up-ai-scrutiny-stability-fears-mount-sources-say-2026-10-13/"
+        ],
+        "supporting_article_ids": [
+          "468c3900fc1b270e2a054247"
+        ],
+        "source_observations": [
+          {
+            "url": "https://www.reuters.com/legal/litigation/banking-watchdogs-ramp-up-ai-scrutiny-stability-fears-mount-sources-say-2026-10-13/",
+            "observation": "Reuters 13 Ekim altı kaynağa dayalı denetçi soruları; Fed, BoE/ECB agent AI kontrolü, Chinese-model risk, cyber recovery ve ana sistemden ayrı bare-metal recovery sorgularını ele alır, henüz zorunlu yeni kural konulduğunu iddia etmez."
+          }
+        ],
+        "scope_hint": "US+Europe; independent bank AI risk audit",
+        "local_evidence": {
+          "signals": [
+            "Banka denetçisinin sorusuna sağlayıcı/agent/geri dönüş altyapısı ve test kanıtını birleştirme ticari kalite işi vardır."
+          ],
+          "unknowns": [
+            "ABD/AB yerel MRM/GRC/AI governance yazılımı rekabeti muhtemelen kalabalıktır; TR sıfır ve global en fazla 3 kanıtlanmadı.",
+            "Statik CSV/manuel rapor bankaların gerçek audit trail bütünlük gereksinimini tek başına karşılamayabilir.",
+            "Karşılanmamış buyer ödeme ihtiyacı ayrıca kanıtlanmadı."
+          ]
+        }
+      }
+    ]
+  },
+  "receipt_path": "state/v2/results/2026-10-14-catchup-553b1f127fcf-discovery-070e1e6f9f7a6e3c/001.json",
+  "valid_until": "2026-11-13T02:40:45Z"
+}
