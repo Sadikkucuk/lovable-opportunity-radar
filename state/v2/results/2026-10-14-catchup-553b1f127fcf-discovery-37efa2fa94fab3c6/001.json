@@ -1,0 +1,119 @@
+{
+  "schema_version": 3,
+  "job_id": "2026-10-14-catchup-553b1f127fcf-discovery-37efa2fa94fab3c6",
+  "input_hash": "37efa2fa94fab3c6cd94d79414ef9e4bda84e722e4f1714de6db2cb539453f7b",
+  "token": "radar-manual-20261014-1548-37efa2fa94fab3c6-1",
+  "finished_at": "2026-10-14T10:49:41.714Z",
+  "outcome": "done",
+  "reason": "Original-source linked opportunities where available; 2 screened unrelated; 6 preserved as unverified with explicit source gaps.",
+  "result": {
+    "articles": [
+      {
+        "article_key": "8687d46ec19e98be1b9161ab",
+        "decision": "unverified",
+        "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: «Il grande inganno dell’AI»: conoscere il “nemico” per usarlo meglio - Il Sole 24 ORE",
+        "source_review": "rss_headline_only",
+        "opportunities": []
+      },
+      {
+        "article_key": "8690b472aea4ebdbd01a37b0",
+        "decision": "no_opportunity",
+        "reason": "TechCrunch original confirms tabletop fusion startup; hardware R&D achievement without Lovable standalone workflow",
+        "source_review": "article_page_read",
+        "opportunities": []
+      },
+      {
+        "article_key": "869c599578f4c82c4769304d",
+        "decision": "no_opportunity",
+        "reason": "RSS headline describes market commentary, funding, company/device promotion, event coverage or general industry trend rather than a specific independently established new software-operable buyer task. Based on headline screening; original page not claimed read: [KES2026]가전 넘어 작업 현장으로…中企, AI·로봇 솔루션 전시 - 전자신문",
+        "source_review": "rss_headline_screen",
+        "opportunities": []
+      },
+      {
+        "article_key": "86fab574ffa9d717be4a2238",
+        "decision": "opportunity",
+        "reason": "Independent original/official page confirmed an identifiable change or operational friction; market validation pending. Official SAMR page opened; draft not final regulation",
+        "source_review": "independent_original_page_read",
+        "source_url": "https://www.samr.gov.cn/xw/sj/art/2026/art_91363d611a2046d0a1cb94c45d25bc3f.html",
+        "opportunities": [
+          {
+            "raw_id": "manual-20261014-86fab574ffa9d717be4a2238",
+            "idea_name": "China Coal Plant Eco-Tariff Draft Exception Ledger",
+            "canonical_key": "china-coal-power-generators|prepare-2026-samr-environmental-tariff-draft-exception-review|hourly-emission-threshold-deduction-reason-ledger",
+            "core_job": "Kömürlü santral işletmecilerinin saatlik emisyon aşımı, çevresel tarife kesintisi ve gerekçeli istisnaları taslak kurallara göre kanıtlaması",
+            "target_customer": "Çin kömürlü santral enerji ticareti ve çevre uyum ekipleri",
+            "product_mechanism": "Kullanıcının yüklediği saatlik konsantrasyon, tesis bakım, şebeke kesintisi ve belge CSV'sini taslak eşiklerle karşılaştıran açıklanabilir ihtilaf/kanıt defteri",
+            "why_now": "Çin SAMR 13 Ekim 2026 yayımladığı çevresel elektrik fiyatı gözetim taslağı için 20 Ekim'e dek görüş istiyor; aşım halinde kesinti ve mücbir sebep istisnası öneriliyor.",
+            "before_state": "Saatlik emisyon, kesinti ve istisna belgeleri birbirinden kopuk",
+            "after_state": "Saatlik kontrol ve onaylanabilir ihtilaf/uyum dosyası",
+            "canonical_source_urls": [
+              "https://www.samr.gov.cn/xw/sj/art/2026/art_91363d611a2046d0a1cb94c45d25bc3f.html"
+            ],
+            "source_article_key": "86fab574ffa9d717be4a2238",
+            "source_note": "Official SAMR page opened; draft not final regulation"
+          }
+        ]
+      },
+      {
+        "article_key": "875dcfc85c5fa25995a6146d",
+        "decision": "unverified",
+        "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: FlashBot Max : Solution de livraison autonome inter-étages sécurisé - L'Usine Nouvelle",
+        "source_review": "rss_headline_only",
+        "opportunities": []
+      },
+      {
+        "article_key": "8777af59ff1a86beaeff38d4",
+        "decision": "unverified",
+        "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: 一家AI明星公司申请破产 - 第一财经",
+        "source_review": "rss_headline_only",
+        "opportunities": []
+      },
+      {
+        "article_key": "8793747fd21f1aa94b704e22",
+        "decision": "opportunity",
+        "reason": "Independent original/official page confirmed an identifiable change or operational friction; market validation pending. Freshworks corporate press release opened; direct competitors like Torii itself and many others require validation",
+        "source_review": "independent_original_page_read",
+        "source_url": "https://ir.freshworks.com/news/news-details/2026/Freshworks-to-Extend-Freshservice-into-AI-and-Software-Spend-Governance-with-Agreement-to-Acquire-Torii/default.aspx",
+        "opportunities": [
+          {
+            "raw_id": "manual-20261014-8793747fd21f1aa94b704e22",
+            "idea_name": "Shadow-AI SaaS Spend Evidence Baseline",
+            "canonical_key": "small-it-finance-teams|document-shadow-ai-subscriptions-and-license-spend|manual-vendor-license-renewal-approval-ledger",
+            "core_job": "KOBİ BT-finans ekiplerinin görünmeyen SaaS ve AI aboneliklerini sahip, lisans, yenileme ve masraf bazında açıklaması",
+            "target_customer": "Küçük ve orta ölçekli işletme BT-finans ekipleri",
+            "product_mechanism": "Kullanıcı lisans ve fatura CSV'si üzerinden sağlayıcı/ürün ve sahipliğini kaydeder; beklenen ödeme, lisans ve onay geçmişi üretir; hesaplara otomatik bağlanmaz",
+            "why_now": "Freshworks 12 Ekim 2026 Torii'yi satın almak için anlaşma yaptığını duyurdu; görünmeyen SaaS/AI maliyet yönetişimi sorununu açıkça tanımlıyor.",
+            "before_state": "Fatura, lisans ve AI kullanımı silolar halinde",
+            "after_state": "Manuel stok/harcama görünürlüğü ve yenileme kanıt kapısı",
+            "canonical_source_urls": [
+              "https://ir.freshworks.com/news/news-details/2026/Freshworks-to-Extend-Freshservice-into-AI-and-Software-Spend-Governance-with-Agreement-to-Acquire-Torii/default.aspx"
+            ],
+            "source_article_key": "8793747fd21f1aa94b704e22",
+            "source_note": "Freshworks corporate press release opened; direct competitors like Torii itself and many others require validation"
+          }
+        ]
+      },
+      {
+        "article_key": "87cb5562885d7fa19eeace70",
+        "decision": "unverified",
+        "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: AI 长视频时代来临：OpenAI GPT-6 Astra 助力生成时长从 1 分钟提升到 10 分钟 - IT之家",
+        "source_review": "rss_headline_only",
+        "opportunities": []
+      },
+      {
+        "article_key": "87ec58f1ff834d7ad356df38",
+        "decision": "unverified",
+        "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: Pyrénées-Orientales : convention de coopération entre Enedis et la gendarmerie départementale - L'Usine Nouvelle",
+        "source_review": "rss_headline_only",
+        "opportunities": []
+      },
+      {
+        "article_key": "881e619dbc3713314e948e7c",
+        "decision": "unverified",
+        "reason": "RSS feed contains only repeated headline (no article body). Potential actionable delta cannot be confirmed or ruled out without an accessible original page: [2026국감]AI 특허 심사 대기 21개월…'10개월 단축' 목표 현실 괴리 - 전자신문",
+        "source_review": "rss_headline_only",
+        "opportunities": []
+      }
+    ]
+  }
+}
