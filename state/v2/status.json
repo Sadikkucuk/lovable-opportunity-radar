@@ -2,10 +2,10 @@
   "schema_version": 2,
   "policy_version": "radar-v2-no-runtime-services-20261010",
   "protected_records": 89,
-  "catalog_count": 91,
+  "catalog_count": 100,
   "counts": {
     "done": 341,
-    "ready": 1214,
+    "ready": 1623,
     "unverified": 7
   },
   "evidence_research": {
@@ -188,6 +188,23 @@
       "publication_status": "github_release_available",
       "site_delivery": "not_observed_by_controller",
       "state_changed_at": "2026-10-15T23:33:53Z"
+    },
+    {
+      "run_id": "2026-10-17-c8bb86a104",
+      "processing_status": "in_progress",
+      "job_counts": {
+        "ready": 409
+      },
+      "validation_decisions": {},
+      "article_decisions": {
+        "no_opportunity": 9,
+        "opportunity": 5
+      },
+      "articles_processed": 14,
+      "articles_expected": 4099,
+      "publication_status": "github_release_available",
+      "site_delivery": "not_observed_by_controller",
+      "state_changed_at": "2026-10-16T23:17:10Z"
     }
   ],
   "errors": [
@@ -199,10 +216,58 @@
     "state": "attention_required",
     "alerts": [
       {
+        "code": "worker_not_started",
+        "worker": 1,
+        "severity": "critical",
+        "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
+      },
+      {
+        "code": "worker_heartbeat_missing",
+        "worker": 1,
+        "severity": "critical",
+        "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
+      },
+      {
+        "code": "worker_not_started",
+        "worker": 2,
+        "severity": "critical",
+        "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
+      },
+      {
+        "code": "worker_heartbeat_missing",
+        "worker": 2,
+        "severity": "critical",
+        "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
+      },
+      {
+        "code": "worker_not_started",
+        "worker": 3,
+        "severity": "critical",
+        "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
+      },
+      {
+        "code": "worker_not_started",
+        "worker": 4,
+        "severity": "critical",
+        "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
+      },
+      {
         "code": "worker_blocked",
         "worker": 4,
         "severity": "critical",
         "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
+      },
+      {
+        "code": "worker_not_started",
+        "worker": 5,
+        "severity": "critical",
+        "user_action": "Görev geçmişindeki hata veya bağlantı/onay isteğini kontrol edin."
+      },
+      {
+        "code": "queue_no_progress",
+        "worker": null,
+        "severity": "critical",
+        "user_action": "30 dakikadır doğrulanmış sonuç yok. Son kaydı ve Worker görev geçmişini inceleyin; erişim/kota nedenini varsaymayın."
       },
       {
         "code": "controller_rejected_record",
@@ -212,6 +277,6 @@
       }
     ],
     "last_verified_progress_at": "2026-10-14T10:51:12Z",
-    "controller_observed_at": "2026-10-16T08:46:54Z"
+    "controller_observed_at": "2026-10-16T23:17:10Z"
   }
 }
