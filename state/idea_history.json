@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Persistent semantic idea history used to suppress duplicate opportunities across daily radar runs.",
-  "updated_at": "2026-10-11T10:21:54Z",
+  "updated_at": "2026-10-16T09:56:59Z",
   "ideas": [
     {
       "canonical_key": "competition-organizer|enforce-ai-use-policy-on-submissions|declaration-rule-engine-review-evidence",
@@ -1390,6 +1390,237 @@
         "Batteries are now cheaper than natural gas turbines used at many data centers"
       ],
       "radar_v2_job_id": "2026-10-10-migration-validation-28e1620977577167"
+    },
+    {
+      "canonical_key": "manufacturer-procurement|verify-supplier-invoices-against-contract-terms|csv-contract-rule-dispute-evidence",
+      "idea_name": "Clause2Invoice — Sözleşme/Fatura Fark Masası",
+      "core_job": "Sözleşme fiyatı, kur ve süre şartlarına aykırı tedarikçi faturaları manuel incelemede kaçabiliyor.",
+      "target_customer": "Kurumsal satın alma, finans ve muhasebe ekipleri",
+      "product_mechanism": "CSV fatura satırlarını müşterinin onaylı sözleşme koşullarıyla kural tabanlı eşleştirip fark ve itiraz delili üretir.",
+      "first_reported_at": "2026-10-16",
+      "last_seen_at": "2026-10-16",
+      "times_seen": 1,
+      "status": "user_selected_pending_validation",
+      "source_titles": [
+        "AI invoice-fraud fintech bags seed funding"
+      ],
+      "radar_v3_provenance": {
+        "checkpoint": "CP22",
+        "codes": "CP20-N08",
+        "review_score_not_probability": 92,
+        "linked_existing_idea_numbers": [
+          3,
+          62
+        ],
+        "quality_gate": "pending_business_and_mvp_validation",
+        "no_family_catalog": true
+      }
+    },
+    {
+      "canonical_key": "recycled-plastics-manufacturer|approve-recyclate-lots-against-specifications|coa-threshold-quarantine-evidence",
+      "idea_name": "RePlast Lot Passport — Geri Dönüşüm Parti Onayı",
+      "core_job": "Geri dönüştürülmüş polimer partilerinin kalite değerleri tutarsız; hatalı lot üretime giriyor.",
+      "target_customer": "Geri dönüştürülmüş hammadde kullanan plastik enjeksiyon ve ambalaj üreticileri",
+      "product_mechanism": "Her lotun COA, numune, MFI/nem/renk toleransı ve müşteri spesifikasyonunu eşleştirir; karantina/ret ve kanıt PDF oluşturur.",
+      "first_reported_at": "2026-10-16",
+      "last_seen_at": "2026-10-16",
+      "times_seen": 1,
+      "status": "user_selected_pending_validation",
+      "source_titles": [
+        "From Slush to sustainable materials: Ambio raises €5.1M for AI-powered plastics procurement"
+      ],
+      "radar_v3_provenance": {
+        "checkpoint": "CP22",
+        "codes": "CP21-N11",
+        "review_score_not_probability": 90,
+        "linked_existing_idea_numbers": [
+          19,
+          38,
+          40,
+          70
+        ],
+        "quality_gate": "pending_business_and_mvp_validation",
+        "no_family_catalog": true
+      }
+    },
+    {
+      "canonical_key": "turkiye-retailer|preflight-installment-promotions|dated-rule-engine-channel-financing-diff",
+      "idea_name": "TaksitRoute TR — Kampanya Taksit Ön Kontrolü",
+      "core_job": "Fiyat, ürün kategorisi ve finansman yöntemine göre farklılaşan taksit sınırları kampanyalarda yanlış uygulanabiliyor.",
+      "target_customer": "Elektronik perakendecileri, zincir mağazalar ve satış operasyonları",
+      "product_mechanism": "Yürürlük tarihli kategori/fiyat/finansman kurallarını manuel mevzuat kaynağıyla yönetip kampanya yayımlanmadan önce kontrol eder.",
+      "first_reported_at": "2026-10-16",
+      "last_seen_at": "2026-10-16",
+      "times_seen": 1,
+      "status": "user_selected_pending_validation",
+      "source_titles": [
+        "Perakende işletmelerin tüketicilere yönelik taksitli satışlarına ilişkin duyuru"
+      ],
+      "radar_v3_provenance": {
+        "checkpoint": "CP22",
+        "codes": "CP20-N01",
+        "review_score_not_probability": 89,
+        "linked_existing_idea_numbers": [
+          12,
+          64
+        ],
+        "quality_gate": "pending_business_and_mvp_validation",
+        "no_family_catalog": true
+      }
+    },
+    {
+      "canonical_key": "multinational-erp-owner|manage-localization-change-requests|country-delta-matrix-change-evidence",
+      "idea_name": "LocalDelta ERP — Ülke Mevzuat Farkları Masası",
+      "core_job": "Global ERP şablonu ile ülke vergi/rapor/operasyon kuralları arasında farklar izlenemiyor.",
+      "target_customer": "Çok ülkede üretim yapan şirketlerin ERP iş birimleri",
+      "product_mechanism": "Global süreç ile müşteri tarafından sağlanan ülke kurallarını fark matrisi, onay akışı ve CR/RTM çıktısına çevirir.",
+      "first_reported_at": "2026-10-16",
+      "last_seen_at": "2026-10-16",
+      "times_seen": 1,
+      "status": "user_selected_pending_validation",
+      "source_titles": [
+        "Çok ülkeli üretimde ERP’nin yeni rolü: global standart, yerel uyum"
+      ],
+      "radar_v3_provenance": {
+        "checkpoint": "CP22",
+        "codes": "CP20-N06",
+        "review_score_not_probability": 87,
+        "linked_existing_idea_numbers": [
+          24,
+          36,
+          40
+        ],
+        "quality_gate": "pending_business_and_mvp_validation",
+        "no_family_catalog": true
+      }
+    },
+    {
+      "canonical_key": "eu-exporting-supplier|prepare-dpp-product-data-evidence|supplier-field-gap-validation-case",
+      "idea_name": "DPP Preflight TR — Dijital Ürün Pasaportu Hazırlığı",
+      "core_job": "Ürün pasaportu veri alanları ve tedarikçi belgelerinin hangi ürün grubunda eksik olduğu belli değil.",
+      "target_customer": "AB’ye ürün sunan üretici ve tedarikçiler",
+      "product_mechanism": "Sektörüne göre doğrulanmış gereksinim sürümünü ürün ve tedarikçi veri alanlarıyla eşleştirir; hazır olma/eksik listesini çıkarır.",
+      "first_reported_at": "2026-10-16",
+      "last_seen_at": "2026-10-16",
+      "times_seen": 1,
+      "status": "user_selected_pending_validation",
+      "source_titles": [
+        "AB Dijital Ürün Pasaportu soru toplama duyurusu"
+      ],
+      "radar_v3_provenance": {
+        "checkpoint": "CP22",
+        "codes": "CP20-N02",
+        "review_score_not_probability": 86,
+        "linked_existing_idea_numbers": [
+          65,
+          70,
+          80
+        ],
+        "quality_gate": "pending_business_and_mvp_validation",
+        "no_family_catalog": true
+      }
+    },
+    {
+      "canonical_key": "heavy-duty-fleet|prevent-wrong-engine-oil-at-service|engine-oem-oil-approval-matrix",
+      "idea_name": "OilMismatch Radar — Filo Motor/Yağ Uygunluk Matrisi",
+      "core_job": "Değişen CL-4/FB-4 yağ sınıflarında yanlış motor-yağ eşleşmesi ekipman ve garanti riski yaratabilir.",
+      "target_customer": "Ağır vasıta filoları ve bakım servisleri",
+      "product_mechanism": "OEM tarafından sağlanan onay listesiyle motor modeli, model yılı, yağ sınıfı ve SKU eşleştirmesi yapar; uygunsuzu uyarır.",
+      "first_reported_at": "2026-10-16",
+      "last_seen_at": "2026-10-16",
+      "times_seen": 1,
+      "status": "user_selected_pending_validation",
+      "source_titles": [
+        "The Heavy-Duty Oil Standard Is Changing In January"
+      ],
+      "radar_v3_provenance": {
+        "checkpoint": "CP22",
+        "codes": "CP20-N04",
+        "review_score_not_probability": 85,
+        "linked_existing_idea_numbers": [
+          18,
+          27
+        ],
+        "quality_gate": "pending_business_and_mvp_validation",
+        "no_family_catalog": true
+      }
+    },
+    {
+      "canonical_key": "grid-interconnection-applicant|preflight-application-document-completeness|requirements-checklist-evidence",
+      "idea_name": "GridQueue Preflight — Şebeke Başvuru Dosya Kontrolü",
+      "core_job": "Şebeke bağlantı dosyaları form, güç değeri, çizim ve imza eksikleri nedeniyle geri dönüyor.",
+      "target_customer": "Elektrik bağlantı veya üretim tesisi başvurusu yapan proje geliştiricileri",
+      "product_mechanism": "İlgili şebeke işletmecisinin sürümlü başvuru kontrol listesini kullanıp belge, tarih ve parametre uyumunu ön kontrolden geçirir.",
+      "first_reported_at": "2026-10-16",
+      "last_seen_at": "2026-10-16",
+      "times_seen": 1,
+      "status": "user_selected_pending_validation",
+      "source_titles": [
+        "Utilities can use AI to solve grid backlogs: AWS energy lead"
+      ],
+      "radar_v3_provenance": {
+        "checkpoint": "CP22",
+        "codes": "CP21-N12",
+        "review_score_not_probability": 84,
+        "linked_existing_idea_numbers": [
+          67,
+          73,
+          75
+        ],
+        "quality_gate": "pending_business_and_mvp_validation",
+        "no_family_catalog": true
+      }
+    },
+    {
+      "canonical_key": "pharma-logistics-shipper|prepare-multicarrier-cold-chain-bookings|temperature-lane-readiness-exception",
+      "idea_name": "PharmaCold Preflight — Çok Taşıyıcılı Soğuk Zincir",
+      "core_job": "Taşıyıcılar arası sıcaklık, ambalaj, kayıt cihazı ve rezervasyon kanıtları parçalıdır; sevkiyat öncesi risk görünmez.",
+      "target_customer": "İlaç sevkiyatı planlayan üretici, forwarder ve lojistik ekipleri",
+      "product_mechanism": "Gönderi sıcaklık profili, paketleme, taşıyıcı slotu ve QA onayını birleştirip istisna/yeniden planlama kaydı açar.",
+      "first_reported_at": "2026-10-16",
+      "last_seen_at": "2026-10-16",
+      "times_seen": 1,
+      "status": "user_selected_pending_validation",
+      "source_titles": [
+        "FedEx digitizes booking process for European cold-chain pharma shipments"
+      ],
+      "radar_v3_provenance": {
+        "checkpoint": "CP22",
+        "codes": "CP20-N05+CP21-N17",
+        "review_score_not_probability": 84,
+        "linked_existing_idea_numbers": [
+          7,
+          21
+        ],
+        "quality_gate": "pending_business_and_mvp_validation",
+        "no_family_catalog": true
+      }
+    },
+    {
+      "canonical_key": "water-intensive-manufacturer|plan-production-during-water-disruption|line-water-priority-scenario-evidence",
+      "idea_name": "WaterShift Continuity — Fabrika Su Kesintisi Planı",
+      "core_job": "Su kesintisi sırasında üretim hatlarının ne kadar sürede duracağı ve hangi siparişlerin öncelikleneceği önceden planlanmıyor.",
+      "target_customer": "Su yoğun proseslerle çalışan imalat tesisleri",
+      "product_mechanism": "Hat başına su tüketimi, tank, alternatif kaynak ve sipariş önceliğine göre vardiya ve üretim senaryosu oluşturur.",
+      "first_reported_at": "2026-10-16",
+      "last_seen_at": "2026-10-16",
+      "times_seen": 1,
+      "status": "user_selected_pending_validation",
+      "source_titles": [
+        "Avrupa sanayisinde su kıtlığının üretim sürekliliğine etkisi"
+      ],
+      "radar_v3_provenance": {
+        "checkpoint": "CP22",
+        "codes": "CP20-N03+CP21-N18",
+        "review_score_not_probability": 82,
+        "linked_existing_idea_numbers": [
+          40,
+          62,
+          86
+        ],
+        "quality_gate": "pending_business_and_mvp_validation",
+        "no_family_catalog": true
+      }
     }
   ]
 }

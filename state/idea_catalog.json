@@ -2,7 +2,7 @@
   "schema_version": 1,
   "site_name": "AIStartup",
   "description": "Canonical persistent idea catalog consumed by the AIStartup web application.",
-  "updated_at": "2026-10-11T10:21:54Z",
+  "updated_at": "2026-10-16T09:56:59Z",
   "ideas": [
     {
       "canonical_key": "competition-organizer|enforce-ai-use-policy-on-submissions|declaration-rule-engine-review-evidence",
@@ -6667,6 +6667,805 @@
         "job_id": "2026-10-10-migration-validation-28e1620977577167",
         "receipt_path": "state/v2/results/2026-10-10-migration-validation-28e1620977577167/002.json",
         "policy_version": "radar-v2-no-runtime-services-20261010"
+      }
+    },
+    {
+      "canonical_key": "manufacturer-procurement|verify-supplier-invoices-against-contract-terms|csv-contract-rule-dispute-evidence",
+      "idea_name": "Clause2Invoice — Sözleşme/Fatura Fark Masası",
+      "scope_tier": "Dünya",
+      "scope_reason": "Birden fazla ülkedeki kurumların veri girişi ve manuel mevzuat/şart parametreleriyle kullanabileceği iş akışı.",
+      "news_source": "Startup Daily",
+      "news_title": "AI invoice-fraud fintech bags seed funding",
+      "news_date": "2026-10-15",
+      "news_url": "https://www.startupdaily.net/topic/funding/ai-invoice-fraud-fintech-bags-5-3-million-in-seed-round/",
+      "source_links": [
+        {
+          "label": "Tetikleyici kaynak",
+          "url": "https://www.startupdaily.net/topic/funding/ai-invoice-fraud-fintech-bags-5-3-million-in-seed-round/"
+        },
+        {
+          "label": "Destek kaynağı 1",
+          "url": "https://redowl.ai/"
+        }
+      ],
+      "core_idea": "CSV fatura satırlarını müşterinin onaylı sözleşme koşullarıyla kural tabanlı eşleştirip fark ve itiraz delili üretir.",
+      "user_story": "Kurumsal satın alma, finans ve muhasebe ekipleri olarak Sözleşme fiyatı, kur ve süre şartlarına aykırı tedarikçi faturaları manuel incelemede kaçabiliyor. CSV fatura satırlarını müşterinin onaylı sözleşme koşullarıyla kural tabanlı eşleştirip fark ve itiraz delili üretir.",
+      "before_state": "Sözleşme fiyatı, kur ve süre şartlarına aykırı tedarikçi faturaları manuel incelemede kaçabiliyor.",
+      "after_state": "CSV al → ilgili maddeyi/kur/tarihi bul → fiyat ve miktarı hesapla → farkı gerekçelendir → insan onaylı itiraz paketi oluştur.",
+      "why_now": "15 Ekim 2026 haber/kurumsal gelişmeleri bu operasyon problemini görünür kılıyor; pazar talebi ve ürün başarısı henüz doğrulanmadı.",
+      "target_customer": "Kurumsal satın alma, finans ve muhasebe ekipleri",
+      "buyer": "CFO, satın alma veya muhasebe müdürü",
+      "market": "Global",
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": null,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Dar, denetlenebilir ve insan onaylı karar iş akışı; büyük kurumsal platformların tüm işlevlerini ikame etmez.",
+      "business_models": [
+        {
+          "model": "paid pilot",
+          "estimate": "Müşteriye özel teklif"
+        },
+        {
+          "model": "source-code license / tailored implementation",
+          "estimate": "Kapsam görüşmesinden sonra"
+        }
+      ],
+      "lovable_credits_total": null,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "İş akışı arayüzü ve temel uygulama",
+          "cost": "Kullanıcının mevcut kredileri"
+        },
+        {
+          "name": "CSV / JSON",
+          "purpose": "İçe aktarma ve kurallı hesaplama",
+          "cost": "Zorunlu ücretli API yok"
+        },
+        {
+          "name": "Client-side JavaScript",
+          "purpose": "Kurallar ve raporlama",
+          "cost": "Açık kaynak/yerel"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Fatura CSV, sözleşme ücret/kural tablosu, kural çalıştırma, fark kuyruğu, onay, itiraz PDF",
+      "working_logic": "CSV al → ilgili maddeyi/kur/tarihi bul → fiyat ve miktarı hesapla → farkı gerekçelendir → insan onaylı itiraz paketi oluştur.",
+      "build_time": "2–4 hafta (analitik tahmin)",
+      "marketing_strategy": "İlgili operasyon/uyum karar vericisine örnek veriyle kısa pilot ve kaynak kod devri teklifi.",
+      "first_customer_plan": "Kurumsal satın alma, finans ve muhasebe ekipleri içinde CFO, satın alma veya muhasebe müdürü ile ücretli pilot değerlendirmesi; geliştirme seçimi henüz verilmedi.",
+      "main_risk": "İlk MVP taranmış PDF sözleşmelerden otomatik madde çıkarmaz; OCR ve dış AI servisleri zorunlu değildir.",
+      "validation_assumption": "Bir müşterinin 100 geçmiş faturasıyla hesap ve itiraz çıktısını mutabık kıl.",
+      "evidence_strength": "News-and-desk-research only; customer pilot not completed",
+      "competition_confidence": "Not numerically verified; legacy competitor cap waived",
+      "verification_status": "user_selected_pending_validation",
+      "status": "published",
+      "first_reported_at": "2026-10-15",
+      "last_updated_at": "2026-10-16",
+      "source_system": "github_radar_manual_v3",
+      "development_selection_status": "not_selected",
+      "radar_v3_provenance": {
+        "checkpoint": "CP22",
+        "codes": "CP20-N08",
+        "review_score_not_probability": 92,
+        "linked_existing_idea_numbers": [
+          3,
+          62
+        ],
+        "quality_gate": "pending_business_and_mvp_validation",
+        "no_family_catalog": true
+      }
+    },
+    {
+      "canonical_key": "recycled-plastics-manufacturer|approve-recyclate-lots-against-specifications|coa-threshold-quarantine-evidence",
+      "idea_name": "RePlast Lot Passport — Geri Dönüşüm Parti Onayı",
+      "scope_tier": "Dünya",
+      "scope_reason": "Birden fazla ülkedeki kurumların veri girişi ve manuel mevzuat/şart parametreleriyle kullanabileceği iş akışı.",
+      "news_source": "Tech.eu",
+      "news_title": "From Slush to sustainable materials: Ambio raises €5.1M for AI-powered plastics procurement",
+      "news_date": "2026-10-15",
+      "news_url": "https://tech.eu/2026/10/15/from-slush-to-sustainable-materials-ambio-raises-eur51m-for-ai-powered-plastics-procurement/",
+      "source_links": [
+        {
+          "label": "Tetikleyici kaynak",
+          "url": "https://tech.eu/2026/10/15/from-slush-to-sustainable-materials-ambio-raises-eur51m-for-ai-powered-plastics-procurement/"
+        },
+        {
+          "label": "Destek kaynağı 1",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R1616"
+        }
+      ],
+      "core_idea": "Her lotun COA, numune, MFI/nem/renk toleransı ve müşteri spesifikasyonunu eşleştirir; karantina/ret ve kanıt PDF oluşturur.",
+      "user_story": "Geri dönüştürülmüş hammadde kullanan plastik enjeksiyon ve ambalaj üreticileri olarak Geri dönüştürülmüş polimer partilerinin kalite değerleri tutarsız; hatalı lot üretime giriyor. Her lotun COA, numune, MFI/nem/renk toleransı ve müşteri spesifikasyonunu eşleştirir; karantina/ret ve kanıt PDF oluşturur.",
+      "before_state": "Geri dönüştürülmüş polimer partilerinin kalite değerleri tutarsız; hatalı lot üretime giriyor.",
+      "after_state": "Lot+COA yükle → spesifikasyona göre eşik hesapla → uygunsuzlukları işaretle → kalite onayı al → lot kanıtı sakla.",
+      "why_now": "15 Ekim 2026 haber/kurumsal gelişmeleri bu operasyon problemini görünür kılıyor; pazar talebi ve ürün başarısı henüz doğrulanmadı.",
+      "target_customer": "Geri dönüştürülmüş hammadde kullanan plastik enjeksiyon ve ambalaj üreticileri",
+      "buyer": "Kalite güvence ve satın alma müdürü",
+      "market": "Global",
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": null,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Dar, denetlenebilir ve insan onaylı karar iş akışı; büyük kurumsal platformların tüm işlevlerini ikame etmez.",
+      "business_models": [
+        {
+          "model": "paid pilot",
+          "estimate": "Müşteriye özel teklif"
+        },
+        {
+          "model": "source-code license / tailored implementation",
+          "estimate": "Kapsam görüşmesinden sonra"
+        }
+      ],
+      "lovable_credits_total": null,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "İş akışı arayüzü ve temel uygulama",
+          "cost": "Kullanıcının mevcut kredileri"
+        },
+        {
+          "name": "CSV / JSON",
+          "purpose": "İçe aktarma ve kurallı hesaplama",
+          "cost": "Zorunlu ücretli API yok"
+        },
+        {
+          "name": "Client-side JavaScript",
+          "purpose": "Kurallar ve raporlama",
+          "cost": "Açık kaynak/yerel"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Tedarikçi/lot kaydı, CSV COA, tolerans kontrolü, kabul/ret/karantina, denetim raporu",
+      "working_logic": "Lot+COA yükle → spesifikasyona göre eşik hesapla → uygunsuzlukları işaretle → kalite onayı al → lot kanıtı sakla.",
+      "build_time": "2–3 hafta (tahmin)",
+      "marketing_strategy": "İlgili operasyon/uyum karar vericisine örnek veriyle kısa pilot ve kaynak kod devri teklifi.",
+      "first_customer_plan": "Geri dönüştürülmüş hammadde kullanan plastik enjeksiyon ve ambalaj üreticileri içinde Kalite güvence ve satın alma müdürü ile ücretli pilot değerlendirmesi; geliştirme seçimi henüz verilmedi.",
+      "main_risk": "Gıda teması ve yasal uygunluk için yetkili laboratuvar raporunun yerine geçmez.",
+      "validation_assumption": "20 gerçek lotun sonuçlarını kalite personelinin kararlarıyla karşılaştır.",
+      "evidence_strength": "News-and-desk-research only; customer pilot not completed",
+      "competition_confidence": "Not numerically verified; legacy competitor cap waived",
+      "verification_status": "user_selected_pending_validation",
+      "status": "published",
+      "first_reported_at": "2026-10-15",
+      "last_updated_at": "2026-10-16",
+      "source_system": "github_radar_manual_v3",
+      "development_selection_status": "not_selected",
+      "radar_v3_provenance": {
+        "checkpoint": "CP22",
+        "codes": "CP21-N11",
+        "review_score_not_probability": 90,
+        "linked_existing_idea_numbers": [
+          19,
+          38,
+          40,
+          70
+        ],
+        "quality_gate": "pending_business_and_mvp_validation",
+        "no_family_catalog": true
+      }
+    },
+    {
+      "canonical_key": "turkiye-retailer|preflight-installment-promotions|dated-rule-engine-channel-financing-diff",
+      "idea_name": "TaksitRoute TR — Kampanya Taksit Ön Kontrolü",
+      "scope_tier": "Türkiye",
+      "scope_reason": "Türkiye'deki perakende satış ve finansman ayrımlarına odaklanır.",
+      "news_source": "T.C. Ticaret Bakanlığı",
+      "news_title": "Perakende işletmelerin tüketicilere yönelik taksitli satışlarına ilişkin duyuru",
+      "news_date": "2026-10-15",
+      "news_url": "https://ticaret.gov.tr/duyurular/perakende-isletmelerin-tuketicilere-yonelik-taksitli-satislarina-iliskin-duyuru",
+      "source_links": [
+        {
+          "label": "Tetikleyici kaynak",
+          "url": "https://ticaret.gov.tr/duyurular/perakende-isletmelerin-tuketicilere-yonelik-taksitli-satislarina-iliskin-duyuru"
+        },
+        {
+          "label": "Destek kaynağı 1",
+          "url": "https://ticaret.gov.tr/haberler/ticaret-bakanligindan-bddk-kararlariyla-uyumlu-yeni-duzenleme-15-10-2026"
+        }
+      ],
+      "core_idea": "Yürürlük tarihli kategori/fiyat/finansman kurallarını manuel mevzuat kaynağıyla yönetip kampanya yayımlanmadan önce kontrol eder.",
+      "user_story": "Elektronik perakendecileri, zincir mağazalar ve satış operasyonları olarak Fiyat, ürün kategorisi ve finansman yöntemine göre farklılaşan taksit sınırları kampanyalarda yanlış uygulanabiliyor. Yürürlük tarihli kategori/fiyat/finansman kurallarını manuel mevzuat kaynağıyla yönetip kampanya yayımlanmadan önce kontrol eder.",
+      "before_state": "Fiyat, ürün kategorisi ve finansman yöntemine göre farklılaşan taksit sınırları kampanyalarda yanlış uygulanabiliyor.",
+      "after_state": "Ürün ve satış biçimi gir → yürürlük tarihli kurala eşleştir → uygun süreyi bul → hatayı raporla → insan onayını kaydet.",
+      "why_now": "15 Ekim 2026 haber/kurumsal gelişmeleri bu operasyon problemini görünür kılıyor; pazar talebi ve ürün başarısı henüz doğrulanmadı.",
+      "target_customer": "Elektronik perakendecileri, zincir mağazalar ve satış operasyonları",
+      "buyer": "Ticari operasyon ve uyum yöneticisi",
+      "market": "Türkiye",
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": null,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Dar, denetlenebilir ve insan onaylı karar iş akışı; büyük kurumsal platformların tüm işlevlerini ikame etmez.",
+      "business_models": [
+        {
+          "model": "paid pilot",
+          "estimate": "Müşteriye özel teklif"
+        },
+        {
+          "model": "source-code license / tailored implementation",
+          "estimate": "Kapsam görüşmesinden sonra"
+        }
+      ],
+      "lovable_credits_total": null,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "İş akışı arayüzü ve temel uygulama",
+          "cost": "Kullanıcının mevcut kredileri"
+        },
+        {
+          "name": "CSV / JSON",
+          "purpose": "İçe aktarma ve kurallı hesaplama",
+          "cost": "Zorunlu ücretli API yok"
+        },
+        {
+          "name": "Client-side JavaScript",
+          "purpose": "Kurallar ve raporlama",
+          "cost": "Açık kaynak/yerel"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Kural sürümleri, kategori/fiyat/form türü giriş ekranı, azami taksit/uyarı, rapor ve denetim izi",
+      "working_logic": "Ürün ve satış biçimi gir → yürürlük tarihli kurala eşleştir → uygun süreyi bul → hatayı raporla → insan onayını kaydet.",
+      "build_time": "2–3 hafta (tahmin)",
+      "marketing_strategy": "İlgili operasyon/uyum karar vericisine örnek veriyle kısa pilot ve kaynak kod devri teklifi.",
+      "first_customer_plan": "Elektronik perakendecileri, zincir mağazalar ve satış operasyonları içinde Ticari operasyon ve uyum yöneticisi ile ücretli pilot değerlendirmesi; geliştirme seçimi henüz verilmedi.",
+      "main_risk": "Senetli satış, kredi kartı ve tüketici finansmanı aynı kural alanı değildir; hukuk/uyum onayı gerekir.",
+      "validation_assumption": "En az üç gerçek örnek satışın sonucunu uyum uzmanıyla test et.",
+      "evidence_strength": "News-and-desk-research only; customer pilot not completed",
+      "competition_confidence": "Not numerically verified; legacy competitor cap waived",
+      "verification_status": "user_selected_pending_validation",
+      "status": "published",
+      "first_reported_at": "2026-10-15",
+      "last_updated_at": "2026-10-16",
+      "source_system": "github_radar_manual_v3",
+      "development_selection_status": "not_selected",
+      "radar_v3_provenance": {
+        "checkpoint": "CP22",
+        "codes": "CP20-N01",
+        "review_score_not_probability": 89,
+        "linked_existing_idea_numbers": [
+          12,
+          64
+        ],
+        "quality_gate": "pending_business_and_mvp_validation",
+        "no_family_catalog": true
+      }
+    },
+    {
+      "canonical_key": "multinational-erp-owner|manage-localization-change-requests|country-delta-matrix-change-evidence",
+      "idea_name": "LocalDelta ERP — Ülke Mevzuat Farkları Masası",
+      "scope_tier": "Dünya",
+      "scope_reason": "Birden fazla ülkedeki kurumların veri girişi ve manuel mevzuat/şart parametreleriyle kullanabileceği iş akışı.",
+      "news_source": "Turk-Internet",
+      "news_title": "Çok ülkeli üretimde ERP’nin yeni rolü: global standart, yerel uyum",
+      "news_date": "2026-10-15",
+      "news_url": "https://turk-internet.com/cok-ulkeli-uretimde-erpnin-yeni-rolu-global-standart-yerel-uyum/",
+      "source_links": [
+        {
+          "label": "Tetikleyici kaynak",
+          "url": "https://turk-internet.com/cok-ulkeli-uretimde-erpnin-yeni-rolu-global-standart-yerel-uyum/"
+        }
+      ],
+      "core_idea": "Global süreç ile müşteri tarafından sağlanan ülke kurallarını fark matrisi, onay akışı ve CR/RTM çıktısına çevirir.",
+      "user_story": "Çok ülkede üretim yapan şirketlerin ERP iş birimleri olarak Global ERP şablonu ile ülke vergi/rapor/operasyon kuralları arasında farklar izlenemiyor. Global süreç ile müşteri tarafından sağlanan ülke kurallarını fark matrisi, onay akışı ve CR/RTM çıktısına çevirir.",
+      "before_state": "Global ERP şablonu ile ülke vergi/rapor/operasyon kuralları arasında farklar izlenemiyor.",
+      "after_state": "Global standart al → ülke kural kaydını bağla → işlevsel farkı hesapla → etki ve sorumlu belirt → onaylı değişiklik dosyası çıkar.",
+      "why_now": "15 Ekim 2026 haber/kurumsal gelişmeleri bu operasyon problemini görünür kılıyor; pazar talebi ve ürün başarısı henüz doğrulanmadı.",
+      "target_customer": "Çok ülkede üretim yapan şirketlerin ERP iş birimleri",
+      "buyer": "ERP ürün sahibi, IT direktörü, süreç uyum yöneticisi",
+      "market": "Global",
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": null,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Dar, denetlenebilir ve insan onaylı karar iş akışı; büyük kurumsal platformların tüm işlevlerini ikame etmez.",
+      "business_models": [
+        {
+          "model": "paid pilot",
+          "estimate": "Müşteriye özel teklif"
+        },
+        {
+          "model": "source-code license / tailored implementation",
+          "estimate": "Kapsam görüşmesinden sonra"
+        }
+      ],
+      "lovable_credits_total": null,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "İş akışı arayüzü ve temel uygulama",
+          "cost": "Kullanıcının mevcut kredileri"
+        },
+        {
+          "name": "CSV / JSON",
+          "purpose": "İçe aktarma ve kurallı hesaplama",
+          "cost": "Zorunlu ücretli API yok"
+        },
+        {
+          "name": "Client-side JavaScript",
+          "purpose": "Kurallar ve raporlama",
+          "cost": "Açık kaynak/yerel"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "CSV global süreç listesi, ülke varyantı, mevzuat kanıt URL'si, fark kaydı, değişiklik talebi ve RTM dışa aktarımı",
+      "working_logic": "Global standart al → ülke kural kaydını bağla → işlevsel farkı hesapla → etki ve sorumlu belirt → onaylı değişiklik dosyası çıkar.",
+      "build_time": "3–5 hafta (tahmin)",
+      "marketing_strategy": "İlgili operasyon/uyum karar vericisine örnek veriyle kısa pilot ve kaynak kod devri teklifi.",
+      "first_customer_plan": "Çok ülkede üretim yapan şirketlerin ERP iş birimleri içinde ERP ürün sahibi, IT direktörü, süreç uyum yöneticisi ile ücretli pilot değerlendirmesi; geliştirme seçimi henüz verilmedi.",
+      "main_risk": "Mevzuat yorumunu otomatik hukuki doğruluk iddiasıyla sunmaz; kural sahibi kurumdur.",
+      "validation_assumption": "Bir gerçek ERP süreci ve ülke farkından onaylı CR örneği üret.",
+      "evidence_strength": "News-and-desk-research only; customer pilot not completed",
+      "competition_confidence": "Not numerically verified; legacy competitor cap waived",
+      "verification_status": "user_selected_pending_validation",
+      "status": "published",
+      "first_reported_at": "2026-10-15",
+      "last_updated_at": "2026-10-16",
+      "source_system": "github_radar_manual_v3",
+      "development_selection_status": "not_selected",
+      "radar_v3_provenance": {
+        "checkpoint": "CP22",
+        "codes": "CP20-N06",
+        "review_score_not_probability": 87,
+        "linked_existing_idea_numbers": [
+          24,
+          36,
+          40
+        ],
+        "quality_gate": "pending_business_and_mvp_validation",
+        "no_family_catalog": true
+      }
+    },
+    {
+      "canonical_key": "eu-exporting-supplier|prepare-dpp-product-data-evidence|supplier-field-gap-validation-case",
+      "idea_name": "DPP Preflight TR — Dijital Ürün Pasaportu Hazırlığı",
+      "scope_tier": "Dünya",
+      "scope_reason": "Birden fazla ülkedeki kurumların veri girişi ve manuel mevzuat/şart parametreleriyle kullanabileceği iş akışı.",
+      "news_source": "T.C. Ticaret Bakanlığı / AB Komisyonu",
+      "news_title": "AB Dijital Ürün Pasaportu soru toplama duyurusu",
+      "news_date": "2026-10-15",
+      "news_url": "https://dabm.ticaret.gov.tr/urun-guvenligi/duyurular/ab-dijital-urun-pasaportu-dpp-soru-toplama-anketi",
+      "source_links": [
+        {
+          "label": "Tetikleyici kaynak",
+          "url": "https://dabm.ticaret.gov.tr/urun-guvenligi/duyurular/ab-dijital-urun-pasaportu-dpp-soru-toplama-anketi"
+        },
+        {
+          "label": "Destek kaynağı 1",
+          "url": "https://single-market-economy.ec.europa.eu/news/digital-product-passport-registry-now-live-2026-07-20_en"
+        }
+      ],
+      "core_idea": "Sektörüne göre doğrulanmış gereksinim sürümünü ürün ve tedarikçi veri alanlarıyla eşleştirir; hazır olma/eksik listesini çıkarır.",
+      "user_story": "AB’ye ürün sunan üretici ve tedarikçiler olarak Ürün pasaportu veri alanları ve tedarikçi belgelerinin hangi ürün grubunda eksik olduğu belli değil. Sektörüne göre doğrulanmış gereksinim sürümünü ürün ve tedarikçi veri alanlarıyla eşleştirir; hazır olma/eksik listesini çıkarır.",
+      "before_state": "Ürün pasaportu veri alanları ve tedarikçi belgelerinin hangi ürün grubunda eksik olduğu belli değil.",
+      "after_state": "Ürün grubunu seç → yürürlük ve alan listesini bağla → tedarikçi verisini eşleştir → boşlukları göster → düzeltme takibi aç.",
+      "why_now": "15 Ekim 2026 haber/kurumsal gelişmeleri bu operasyon problemini görünür kılıyor; pazar talebi ve ürün başarısı henüz doğrulanmadı.",
+      "target_customer": "AB’ye ürün sunan üretici ve tedarikçiler",
+      "buyer": "İhracat uyum ve tedarik zinciri yöneticisi",
+      "market": "Global",
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": null,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Dar, denetlenebilir ve insan onaylı karar iş akışı; büyük kurumsal platformların tüm işlevlerini ikame etmez.",
+      "business_models": [
+        {
+          "model": "paid pilot",
+          "estimate": "Müşteriye özel teklif"
+        },
+        {
+          "model": "source-code license / tailored implementation",
+          "estimate": "Kapsam görüşmesinden sonra"
+        }
+      ],
+      "lovable_credits_total": null,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "İş akışı arayüzü ve temel uygulama",
+          "cost": "Kullanıcının mevcut kredileri"
+        },
+        {
+          "name": "CSV / JSON",
+          "purpose": "İçe aktarma ve kurallı hesaplama",
+          "cost": "Zorunlu ücretli API yok"
+        },
+        {
+          "name": "Client-side JavaScript",
+          "purpose": "Kurallar ve raporlama",
+          "cost": "Açık kaynak/yerel"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Ürün grubu matrisi, manuel gereksinim listesi, tedarikçi CSV daveti, eksik alan/kanıt listesi, tarihli kontrol raporu",
+      "working_logic": "Ürün grubunu seç → yürürlük ve alan listesini bağla → tedarikçi verisini eşleştir → boşlukları göster → düzeltme takibi aç.",
+      "build_time": "2–4 hafta (tahmin)",
+      "marketing_strategy": "İlgili operasyon/uyum karar vericisine örnek veriyle kısa pilot ve kaynak kod devri teklifi.",
+      "first_customer_plan": "AB’ye ürün sunan üretici ve tedarikçiler içinde İhracat uyum ve tedarik zinciri yöneticisi ile ücretli pilot değerlendirmesi; geliştirme seçimi henüz verilmedi.",
+      "main_risk": "DPP gereklilikleri sektör bazında değişir; otomatik tam hukuki uygunluk sertifikası üretmez.",
+      "validation_assumption": "Tek seçilmiş sektörde güncel AB uygulama ve alan gereksinimlerini resmi kaynakla doğrula.",
+      "evidence_strength": "News-and-desk-research only; customer pilot not completed",
+      "competition_confidence": "Not numerically verified; legacy competitor cap waived",
+      "verification_status": "user_selected_pending_validation",
+      "status": "published",
+      "first_reported_at": "2026-10-15",
+      "last_updated_at": "2026-10-16",
+      "source_system": "github_radar_manual_v3",
+      "development_selection_status": "not_selected",
+      "radar_v3_provenance": {
+        "checkpoint": "CP22",
+        "codes": "CP20-N02",
+        "review_score_not_probability": 86,
+        "linked_existing_idea_numbers": [
+          65,
+          70,
+          80
+        ],
+        "quality_gate": "pending_business_and_mvp_validation",
+        "no_family_catalog": true
+      }
+    },
+    {
+      "canonical_key": "heavy-duty-fleet|prevent-wrong-engine-oil-at-service|engine-oem-oil-approval-matrix",
+      "idea_name": "OilMismatch Radar — Filo Motor/Yağ Uygunluk Matrisi",
+      "scope_tier": "Dünya",
+      "scope_reason": "Birden fazla ülkedeki kurumların veri girişi ve manuel mevzuat/şart parametreleriyle kullanabileceği iş akışı.",
+      "news_source": "FreightWaves",
+      "news_title": "The Heavy-Duty Oil Standard Is Changing In January",
+      "news_date": "2026-10-15",
+      "news_url": "https://www.freightwaves.com/news/the-heavy-duty-oil-standard-is-changing-in-january-what-it-means-for-your-fleet-your-costs-and-your-equipment",
+      "source_links": [
+        {
+          "label": "Tetikleyici kaynak",
+          "url": "https://www.freightwaves.com/news/the-heavy-duty-oil-standard-is-changing-in-january-what-it-means-for-your-fleet-your-costs-and-your-equipment"
+        }
+      ],
+      "core_idea": "OEM tarafından sağlanan onay listesiyle motor modeli, model yılı, yağ sınıfı ve SKU eşleştirmesi yapar; uygunsuzu uyarır.",
+      "user_story": "Ağır vasıta filoları ve bakım servisleri olarak Değişen CL-4/FB-4 yağ sınıflarında yanlış motor-yağ eşleşmesi ekipman ve garanti riski yaratabilir. OEM tarafından sağlanan onay listesiyle motor modeli, model yılı, yağ sınıfı ve SKU eşleştirmesi yapar; uygunsuzu uyarır.",
+      "before_state": "Değişen CL-4/FB-4 yağ sınıflarında yanlış motor-yağ eşleşmesi ekipman ve garanti riski yaratabilir.",
+      "after_state": "Motor+OEM onayı gir → yağ sınıfıyla eşleştir → teknik uyum durumunu belirt → yanlış kullanım uyarısı ve stok aksiyonu oluştur.",
+      "why_now": "15 Ekim 2026 haber/kurumsal gelişmeleri bu operasyon problemini görünür kılıyor; pazar talebi ve ürün başarısı henüz doğrulanmadı.",
+      "target_customer": "Ağır vasıta filoları ve bakım servisleri",
+      "buyer": "Filo bakım müdürü ve bakım satın alma uzmanı",
+      "market": "Global",
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": null,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Dar, denetlenebilir ve insan onaylı karar iş akışı; büyük kurumsal platformların tüm işlevlerini ikame etmez.",
+      "business_models": [
+        {
+          "model": "paid pilot",
+          "estimate": "Müşteriye özel teklif"
+        },
+        {
+          "model": "source-code license / tailored implementation",
+          "estimate": "Kapsam görüşmesinden sonra"
+        }
+      ],
+      "lovable_credits_total": null,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "İş akışı arayüzü ve temel uygulama",
+          "cost": "Kullanıcının mevcut kredileri"
+        },
+        {
+          "name": "CSV / JSON",
+          "purpose": "İçe aktarma ve kurallı hesaplama",
+          "cost": "Zorunlu ücretli API yok"
+        },
+        {
+          "name": "Client-side JavaScript",
+          "purpose": "Kurallar ve raporlama",
+          "cost": "Açık kaynak/yerel"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Araç/motor envanteri, OEM spesifikasyonu, yağ SKU tablosu, uyum matrisi, stok dönüşüm ve uyarı raporu",
+      "working_logic": "Motor+OEM onayı gir → yağ sınıfıyla eşleştir → teknik uyum durumunu belirt → yanlış kullanım uyarısı ve stok aksiyonu oluştur.",
+      "build_time": "2–3 hafta (tahmin)",
+      "marketing_strategy": "İlgili operasyon/uyum karar vericisine örnek veriyle kısa pilot ve kaynak kod devri teklifi.",
+      "first_customer_plan": "Ağır vasıta filoları ve bakım servisleri içinde Filo bakım müdürü ve bakım satın alma uzmanı ile ücretli pilot değerlendirmesi; geliştirme seçimi henüz verilmedi.",
+      "main_risk": "OEM servis bülteni olmadan viskozite veya motor uyumu varsayılmaz.",
+      "validation_assumption": "En az iki OEM dokümanı ve 20 motor varyantıyla kontrol et.",
+      "evidence_strength": "News-and-desk-research only; customer pilot not completed",
+      "competition_confidence": "Not numerically verified; legacy competitor cap waived",
+      "verification_status": "user_selected_pending_validation",
+      "status": "published",
+      "first_reported_at": "2026-10-15",
+      "last_updated_at": "2026-10-16",
+      "source_system": "github_radar_manual_v3",
+      "development_selection_status": "not_selected",
+      "radar_v3_provenance": {
+        "checkpoint": "CP22",
+        "codes": "CP20-N04",
+        "review_score_not_probability": 85,
+        "linked_existing_idea_numbers": [
+          18,
+          27
+        ],
+        "quality_gate": "pending_business_and_mvp_validation",
+        "no_family_catalog": true
+      }
+    },
+    {
+      "canonical_key": "grid-interconnection-applicant|preflight-application-document-completeness|requirements-checklist-evidence",
+      "idea_name": "GridQueue Preflight — Şebeke Başvuru Dosya Kontrolü",
+      "scope_tier": "Dünya",
+      "scope_reason": "Birden fazla ülkedeki kurumların veri girişi ve manuel mevzuat/şart parametreleriyle kullanabileceği iş akışı.",
+      "news_source": "Utility Dive",
+      "news_title": "Utilities can use AI to solve grid backlogs: AWS energy lead",
+      "news_date": "2026-10-15",
+      "news_url": "https://www.utilitydive.com/news/utilities-need-ai-solve-grid-backlogs-aws-energy-lead-head/832816/",
+      "source_links": [
+        {
+          "label": "Tetikleyici kaynak",
+          "url": "https://www.utilitydive.com/news/utilities-need-ai-solve-grid-backlogs-aws-energy-lead-head/832816/"
+        }
+      ],
+      "core_idea": "İlgili şebeke işletmecisinin sürümlü başvuru kontrol listesini kullanıp belge, tarih ve parametre uyumunu ön kontrolden geçirir.",
+      "user_story": "Elektrik bağlantı veya üretim tesisi başvurusu yapan proje geliştiricileri olarak Şebeke bağlantı dosyaları form, güç değeri, çizim ve imza eksikleri nedeniyle geri dönüyor. İlgili şebeke işletmecisinin sürümlü başvuru kontrol listesini kullanıp belge, tarih ve parametre uyumunu ön kontrolden geçirir.",
+      "before_state": "Şebeke bağlantı dosyaları form, güç değeri, çizim ve imza eksikleri nedeniyle geri dönüyor.",
+      "after_state": "Başvuru türünü seç → gerekli belgeyi yükle → zorunlu alan/versiyon kontrolü yap → eksik dosya ve sorumluyu göster.",
+      "why_now": "15 Ekim 2026 haber/kurumsal gelişmeleri bu operasyon problemini görünür kılıyor; pazar talebi ve ürün başarısı henüz doğrulanmadı.",
+      "target_customer": "Elektrik bağlantı veya üretim tesisi başvurusu yapan proje geliştiricileri",
+      "buyer": "Proje geliştirme/izin yöneticisi",
+      "market": "Global",
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": null,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Dar, denetlenebilir ve insan onaylı karar iş akışı; büyük kurumsal platformların tüm işlevlerini ikame etmez.",
+      "business_models": [
+        {
+          "model": "paid pilot",
+          "estimate": "Müşteriye özel teklif"
+        },
+        {
+          "model": "source-code license / tailored implementation",
+          "estimate": "Kapsam görüşmesinden sonra"
+        }
+      ],
+      "lovable_credits_total": null,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "İş akışı arayüzü ve temel uygulama",
+          "cost": "Kullanıcının mevcut kredileri"
+        },
+        {
+          "name": "CSV / JSON",
+          "purpose": "İçe aktarma ve kurallı hesaplama",
+          "cost": "Zorunlu ücretli API yok"
+        },
+        {
+          "name": "Client-side JavaScript",
+          "purpose": "Kurallar ve raporlama",
+          "cost": "Açık kaynak/yerel"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Başvuru türü, gereksinim sürümü, belge envanteri, değer çelişkileri, kapanış takibi, rapor",
+      "working_logic": "Başvuru türünü seç → gerekli belgeyi yükle → zorunlu alan/versiyon kontrolü yap → eksik dosya ve sorumluyu göster.",
+      "build_time": "2–3 hafta (tahmin)",
+      "marketing_strategy": "İlgili operasyon/uyum karar vericisine örnek veriyle kısa pilot ve kaynak kod devri teklifi.",
+      "first_customer_plan": "Elektrik bağlantı veya üretim tesisi başvurusu yapan proje geliştiricileri içinde Proje geliştirme/izin yöneticisi ile ücretli pilot değerlendirmesi; geliştirme seçimi henüz verilmedi.",
+      "main_risk": "Şebeke işletmecisi kuralları ülke ve kuruluş bazında değişir; izin onayı veya teknik etüt otomasyonu garanti edilmez.",
+      "validation_assumption": "İade edilmiş beş gerçek başvuru üzerinde eksikleri doğrula.",
+      "evidence_strength": "News-and-desk-research only; customer pilot not completed",
+      "competition_confidence": "Not numerically verified; legacy competitor cap waived",
+      "verification_status": "user_selected_pending_validation",
+      "status": "published",
+      "first_reported_at": "2026-10-15",
+      "last_updated_at": "2026-10-16",
+      "source_system": "github_radar_manual_v3",
+      "development_selection_status": "not_selected",
+      "radar_v3_provenance": {
+        "checkpoint": "CP22",
+        "codes": "CP21-N12",
+        "review_score_not_probability": 84,
+        "linked_existing_idea_numbers": [
+          67,
+          73,
+          75
+        ],
+        "quality_gate": "pending_business_and_mvp_validation",
+        "no_family_catalog": true
+      }
+    },
+    {
+      "canonical_key": "pharma-logistics-shipper|prepare-multicarrier-cold-chain-bookings|temperature-lane-readiness-exception",
+      "idea_name": "PharmaCold Preflight — Çok Taşıyıcılı Soğuk Zincir",
+      "scope_tier": "Dünya",
+      "scope_reason": "Birden fazla ülkedeki kurumların veri girişi ve manuel mevzuat/şart parametreleriyle kullanabileceği iş akışı.",
+      "news_source": "FreightWaves / FedEx",
+      "news_title": "FedEx digitizes booking process for European cold-chain pharma shipments",
+      "news_date": "2026-10-15",
+      "news_url": "https://www.freightwaves.com/news/fedex-digitizes-booking-process-for-european-cold-chain-pharma-shipments",
+      "source_links": [
+        {
+          "label": "Tetikleyici kaynak",
+          "url": "https://www.freightwaves.com/news/fedex-digitizes-booking-process-for-european-cold-chain-pharma-shipments"
+        },
+        {
+          "label": "Destek kaynağı 1",
+          "url": "https://newsroom.fedex.com/newsroom/europe-english/fedex-europe-enhances-temperature-controlled-logistics-for-pharmaceuticals-with-digital-booking-portal"
+        },
+        {
+          "label": "Destek kaynağı 2",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2013.343.01.0001.01.ENG"
+        }
+      ],
+      "core_idea": "Gönderi sıcaklık profili, paketleme, taşıyıcı slotu ve QA onayını birleştirip istisna/yeniden planlama kaydı açar.",
+      "user_story": "İlaç sevkiyatı planlayan üretici, forwarder ve lojistik ekipleri olarak Taşıyıcılar arası sıcaklık, ambalaj, kayıt cihazı ve rezervasyon kanıtları parçalıdır; sevkiyat öncesi risk görünmez. Gönderi sıcaklık profili, paketleme, taşıyıcı slotu ve QA onayını birleştirip istisna/yeniden planlama kaydı açar.",
+      "before_state": "Taşıyıcılar arası sıcaklık, ambalaj, kayıt cihazı ve rezervasyon kanıtları parçalıdır; sevkiyat öncesi risk görünmez.",
+      "after_state": "Gönderi profili seç → taşıyıcı/ambalaj şartlarını denetle → eksik ve sıcaklık riski kaydı aç → QA onayıyla gönder.",
+      "why_now": "15 Ekim 2026 haber/kurumsal gelişmeleri bu operasyon problemini görünür kılıyor; pazar talebi ve ürün başarısı henüz doğrulanmadı.",
+      "target_customer": "İlaç sevkiyatı planlayan üretici, forwarder ve lojistik ekipleri",
+      "buyer": "İlaç lojistiği operasyon ve kalite güvence müdürü",
+      "market": "Global",
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": null,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Dar, denetlenebilir ve insan onaylı karar iş akışı; büyük kurumsal platformların tüm işlevlerini ikame etmez.",
+      "business_models": [
+        {
+          "model": "paid pilot",
+          "estimate": "Müşteriye özel teklif"
+        },
+        {
+          "model": "source-code license / tailored implementation",
+          "estimate": "Kapsam görüşmesinden sonra"
+        }
+      ],
+      "lovable_credits_total": null,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "İş akışı arayüzü ve temel uygulama",
+          "cost": "Kullanıcının mevcut kredileri"
+        },
+        {
+          "name": "CSV / JSON",
+          "purpose": "İçe aktarma ve kurallı hesaplama",
+          "cost": "Zorunlu ücretli API yok"
+        },
+        {
+          "name": "Client-side JavaScript",
+          "purpose": "Kurallar ve raporlama",
+          "cost": "Açık kaynak/yerel"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Sevkiyat kartı, sıcaklık bandı, ambalaj/cihaz kontrolü, taşıyıcı rezervasyon kaydı, istisna ve QA onayı",
+      "working_logic": "Gönderi profili seç → taşıyıcı/ambalaj şartlarını denetle → eksik ve sıcaklık riski kaydı aç → QA onayıyla gönder.",
+      "build_time": "3–4 hafta (tahmin)",
+      "marketing_strategy": "İlgili operasyon/uyum karar vericisine örnek veriyle kısa pilot ve kaynak kod devri teklifi.",
+      "first_customer_plan": "İlaç sevkiyatı planlayan üretici, forwarder ve lojistik ekipleri içinde İlaç lojistiği operasyon ve kalite güvence müdürü ile ücretli pilot değerlendirmesi; geliştirme seçimi henüz verilmedi.",
+      "main_risk": "Donanımsız gerçek zamanlı sıcaklık ölçümü iddia edilmez; GDP kalite onayı insanda kalır.",
+      "validation_assumption": "Üç taşıyıcı profili ve bir sapma vakasıyla QA kontrolü.",
+      "evidence_strength": "News-and-desk-research only; customer pilot not completed",
+      "competition_confidence": "Not numerically verified; legacy competitor cap waived",
+      "verification_status": "user_selected_pending_validation",
+      "status": "published",
+      "first_reported_at": "2026-10-15",
+      "last_updated_at": "2026-10-16",
+      "source_system": "github_radar_manual_v3",
+      "development_selection_status": "not_selected",
+      "radar_v3_provenance": {
+        "checkpoint": "CP22",
+        "codes": "CP20-N05+CP21-N17",
+        "review_score_not_probability": 84,
+        "linked_existing_idea_numbers": [
+          7,
+          21
+        ],
+        "quality_gate": "pending_business_and_mvp_validation",
+        "no_family_catalog": true
+      }
+    },
+    {
+      "canonical_key": "water-intensive-manufacturer|plan-production-during-water-disruption|line-water-priority-scenario-evidence",
+      "idea_name": "WaterShift Continuity — Fabrika Su Kesintisi Planı",
+      "scope_tier": "Dünya",
+      "scope_reason": "Birden fazla ülkedeki kurumların veri girişi ve manuel mevzuat/şart parametreleriyle kullanabileceği iş akışı.",
+      "news_source": "Schneider Electric / Türk İnternet",
+      "news_title": "Avrupa sanayisinde su kıtlığının üretim sürekliliğine etkisi",
+      "news_date": "2026-10-15",
+      "news_url": "https://www.se.com/de/de/about-us/newsroom/news/press-releases/studie-unter-europ%C3%A4ischen-industrieentscheidern-wasserknappheit-gef%C3%A4hrdet-wachstum-in-den-kommenden-f%C3%BCnf-jahren-6accf35c48c91889cf076043/",
+      "source_links": [
+        {
+          "label": "Tetikleyici kaynak",
+          "url": "https://www.se.com/de/de/about-us/newsroom/news/press-releases/studie-unter-europ%C3%A4ischen-industrieentscheidern-wasserknappheit-gef%C3%A4hrdet-wachstum-in-den-kommenden-f%C3%BCnf-jahren-6accf35c48c91889cf076043/"
+        },
+        {
+          "label": "Destek kaynağı 1",
+          "url": "https://www.wri.org/aqueduct"
+        }
+      ],
+      "core_idea": "Hat başına su tüketimi, tank, alternatif kaynak ve sipariş önceliğine göre vardiya ve üretim senaryosu oluşturur.",
+      "user_story": "Su yoğun proseslerle çalışan imalat tesisleri olarak Su kesintisi sırasında üretim hatlarının ne kadar sürede duracağı ve hangi siparişlerin öncelikleneceği önceden planlanmıyor. Hat başına su tüketimi, tank, alternatif kaynak ve sipariş önceliğine göre vardiya ve üretim senaryosu oluşturur.",
+      "before_state": "Su kesintisi sırasında üretim hatlarının ne kadar sürede duracağı ve hangi siparişlerin öncelikleneceği önceden planlanmıyor.",
+      "after_state": "Kapasite ve alternatif kaynağı yükle → kesinti süresi seç → etkilenen hatları hesapla → üretim önceliğini ve aksiyonu göster.",
+      "why_now": "15 Ekim 2026 haber/kurumsal gelişmeleri bu operasyon problemini görünür kılıyor; pazar talebi ve ürün başarısı henüz doğrulanmadı.",
+      "target_customer": "Su yoğun proseslerle çalışan imalat tesisleri",
+      "buyer": "Fabrika müdürü, üretim planlama ve bakım müdürü",
+      "market": "Global",
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": null,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Dar, denetlenebilir ve insan onaylı karar iş akışı; büyük kurumsal platformların tüm işlevlerini ikame etmez.",
+      "business_models": [
+        {
+          "model": "paid pilot",
+          "estimate": "Müşteriye özel teklif"
+        },
+        {
+          "model": "source-code license / tailored implementation",
+          "estimate": "Kapsam görüşmesinden sonra"
+        }
+      ],
+      "lovable_credits_total": null,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable",
+          "purpose": "İş akışı arayüzü ve temel uygulama",
+          "cost": "Kullanıcının mevcut kredileri"
+        },
+        {
+          "name": "CSV / JSON",
+          "purpose": "İçe aktarma ve kurallı hesaplama",
+          "cost": "Zorunlu ücretli API yok"
+        },
+        {
+          "name": "Client-side JavaScript",
+          "purpose": "Kurallar ve raporlama",
+          "cost": "Açık kaynak/yerel"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Hat/tüketim tablosu, depo/alternatif kapasite, kesinti saati, öncelik senaryosu, etki raporu ve aksiyon sahibi",
+      "working_logic": "Kapasite ve alternatif kaynağı yükle → kesinti süresi seç → etkilenen hatları hesapla → üretim önceliğini ve aksiyonu göster.",
+      "build_time": "3–4 hafta (tahmin)",
+      "marketing_strategy": "İlgili operasyon/uyum karar vericisine örnek veriyle kısa pilot ve kaynak kod devri teklifi.",
+      "first_customer_plan": "Su yoğun proseslerle çalışan imalat tesisleri içinde Fabrika müdürü, üretim planlama ve bakım müdürü ile ücretli pilot değerlendirmesi; geliştirme seçimi henüz verilmedi.",
+      "main_risk": "Su kalitesi/çevresel uygunluk veya gerçek üretim optimizasyonu otomatik olarak garanti edilmez.",
+      "validation_assumption": "Bir tesiste gerçek hat tüketimi ve tatbikat verisiyle senaryoyu kontrol et.",
+      "evidence_strength": "News-and-desk-research only; customer pilot not completed",
+      "competition_confidence": "Not numerically verified; legacy competitor cap waived",
+      "verification_status": "user_selected_pending_validation",
+      "status": "published",
+      "first_reported_at": "2026-10-15",
+      "last_updated_at": "2026-10-16",
+      "source_system": "github_radar_manual_v3",
+      "development_selection_status": "not_selected",
+      "radar_v3_provenance": {
+        "checkpoint": "CP22",
+        "codes": "CP20-N03+CP21-N18",
+        "review_score_not_probability": 82,
+        "linked_existing_idea_numbers": [
+          40,
+          62,
+          86
+        ],
+        "quality_gate": "pending_business_and_mvp_validation",
+        "no_family_catalog": true
       }
     }
   ],
