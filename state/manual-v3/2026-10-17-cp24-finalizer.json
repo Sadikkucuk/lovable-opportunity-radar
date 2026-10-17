@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "checkpoint": "CP24",
+  "date": "2026-10-16",
+  "created_at": "2026-10-17T06:53:12Z",
+  "baseline": 100,
+  "new_products": [
+    {
+      "code": "R24-04",
+      "canonical_key": "payment-provider|manage-unauthorized-payment-refund-deadline|notice-reimbursement-exception-evidence",
+      "idea_name": "PhishRefund Clock — Yetkisiz Ödeme İade Takibi",
+      "priority_score": 93
+    },
+    {
+      "code": "R24-01",
+      "canonical_key": "suez-ship-agent|preflight-25year-vessel-transit-eligibility|inspection-seatrial-sixmonth-evidence",
+      "idea_name": "Suez25 Preclear — Gemi Transit Ön Kontrolü",
+      "priority_score": 91
+    },
+    {
+      "code": "R24-03",
+      "canonical_key": "eps-importer|preflight-eu-2028-charger-cable-ecodesign|sku-power-test-technical-file",
+      "idea_name": "ChargeSpec Gate — USB-C ve Şarj Cihazı Teknik Kontrol",
+      "priority_score": 90
+    },
+    {
+      "code": "R24-02",
+      "canonical_key": "dryer-manufacturer|preflight-2027-repairability-energy-label|model-batch-label-form-gap",
+      "idea_name": "RepairLabel 2027 — Kurutma Makinesi Etiket Kontrolü",
+      "priority_score": 89
+    },
+    {
+      "code": "R24-09",
+      "canonical_key": "electronics-manufacturer|forecast-bom-component-price-changes|supplier-quotes-scenario-approval",
+      "idea_name": "ChipBOM PriceShock — Elektronik BOM Maliyet Analizi",
+      "priority_score": 87
+    },
+    {
+      "code": "R24-08",
+      "canonical_key": "logistics-buyer|validate-broker-financial-representations|reference-contract-deposit-control",
+      "idea_name": "BrokerClaim Proof — Lojistik Aracı Taahhüt Kanıtı",
+      "priority_score": 84
+    },
+    {
+      "code": "R24-07",
+      "canonical_key": "ev-fleet|track-oem-recall-vin-remediation-proof|vin-campaign-service-case-evidence",
+      "idea_name": "EV Recall Trace — Elektrikli Araç Geri Çağırma Dosyası",
+      "priority_score": 80
+    },
+    {
+      "code": "R24-14",
+      "canonical_key": "steel-exporter|estimate-eu-cbam-exposure-per-order|emission-price-margin-sensitivity",
+      "idea_name": "CBAM SteelMargin — Çelik İhracatı Karbon Marjı",
+      "priority_score": 79
+    }
+  ],
+  "existing_product_enhancements": [
+    {
+      "code": "R24-11",
+      "idea_name": "SurchargeDiff",
+      "parent_idea_number": 92,
+      "parent_canonical_key": "manufacturer-procurement|verify-supplier-invoices-against-contract-terms|csv-contract-rule-dispute-evidence",
+      "parent_idea_name": "Clause2Invoice — Sözleşme/Fatura Fark Masası",
+      "related_idea_numbers": [
+        7,
+        78
+      ],
+      "feature_scope": "Taşıyıcı tarife ve ek ücretlerini navlun sözleşmesiyle karşılaştırıp itiraz kanıtı üretme",
+      "news_url": "https://www.freightwaves.com/news/",
+      "action": "linked_enhancement",
+      "new_idea": false
+    },
+    {
+      "code": "R24-16",
+      "idea_name": "AdThreat Exposure Ledger",
+      "parent_idea_number": 82,
+      "parent_canonical_key": "financial-institutions-and-security-incident-teams|track-externally-reported-ai-assisted-attack-indicators-and-response-a|manual-ioc-intake-incident-timeline-asset-ownership-and-evidence-check",
+      "parent_idea_name": "AI Destekli Siber Saldırı Olay Defteri",
+      "related_idea_numbers": [
+        5
+      ],
+      "feature_scope": "Reklam kampanyası URL/alan adı ve casus yazılım şüphesinin olay kayıtları ile risk kapanışı",
+      "news_url": "https://www.forbes.com.tr/dunya/citizen-lab-den-carpici-rapor-israilli-sirket-siber-saldiri-icin-reklamlari-kullandi",
+      "action": "linked_enhancement",
+      "new_idea": false
+    },
+    {
+      "code": "R24-17",
+      "idea_name": "AgentAuth Probe Log",
+      "parent_idea_number": 81,
+      "parent_canonical_key": "enterprise-it-departments-using-multiple-agents|track-business-agent-ownership-allowed-systems-and-periodic-access-reviews|cross-vendor-agent-identity-and-access-recertification-register",
+      "parent_idea_name": "Kurumsal AI Agent Erişim Yenileme Masası",
+      "related_idea_numbers": [
+        89,
+        82
+      ],
+      "feature_scope": "AI ajanın yetki sınırını aşan erişim denemesini test, erişim reddi ve kontrol deliliyle kaydetme",
+      "news_url": "https://inc42.com/buzz/cert-in-flags-unauthorised-ai-agent-access-to-indian-organisations-systems/",
+      "action": "linked_enhancement",
+      "new_idea": false
+    },
+    {
+      "code": "R24-18",
+      "idea_name": "HazMat Shift Gate",
+      "parent_idea_number": 16,
+      "parent_canonical_key": "industrial-sme|close-safety-findings|corrective-action-evidence-ledger",
+      "parent_idea_name": "Safety Action Ledger — Endüstriyel Güvenlik Düzeltici Faaliyet",
+      "related_idea_numbers": [
+        65
+      ],
+      "feature_scope": "Vardiya bazlı tehlikeli madde depolama, ruhsat, yangın kontrolü ve düzeltici faaliyet kanıtı",
+      "news_url": "https://www.koreaherald.com/article/10904886",
+      "action": "linked_enhancement",
+      "new_idea": false
+    },
+    {
+      "code": "R24-19",
+      "idea_name": "Methane Delay Watch",
+      "parent_idea_number": 66,
+      "parent_canonical_key": "energy-importers|track-methane-rule-deadlines|supplier-evidence-workspace",
+      "parent_idea_name": "Metan İthalat Uyum Masası",
+      "related_idea_numbers": [],
+      "feature_scope": "AB metan tedarikçisi için önerilen/geçerli düzenleme sürümü ve etkilenen son tarih matrisi",
+      "news_url": "https://www.ekonomim.com/kuresel-ekonomi/yuksek-enerji-fiyatlari-abyi-yeni-onlemlere-itti-ilk-adim-metan-duzenlemesinde-erteleme-haberi-925224",
+      "action": "linked_enhancement",
+      "new_idea": false
+    },
+    {
+      "code": "R24-20",
+      "idea_name": "Industrial Decision Capture",
+      "parent_idea_number": 39,
+      "parent_canonical_key": "manufacturing-quality-teams|transfer-inspector-judgment|inspection-case-coaching-ledger",
+      "parent_idea_name": "Inspector Judgment Coach",
+      "related_idea_numbers": [
+        58,
+        24
+      ],
+      "feature_scope": "Uzman operatörün istisna kararı ve gerekçesini SOP sürümü, çalışan eğitim ve onay dosyasıyla saklama",
+      "news_url": "https://www.freightwaves.com/news/evos-raises-9m-to-build-ai-operators-for-industrial-businesses",
+      "action": "linked_enhancement",
+      "new_idea": false
+    },
+    {
+      "code": "R24-21",
+      "idea_name": "AI RunCost Witness",
+      "parent_idea_number": 31,
+      "parent_canonical_key": "smb-ai-buyer|prove-ai-use-case-value-before-renewal|cost-baseline-outcome-ledger",
+      "parent_idea_name": "AI Value Renewal — AI Yatırım Yenileme Karar Masası",
+      "related_idea_numbers": [
+        89
+      ],
+      "feature_scope": "AI kullanım ve bulut maliyetleriyle kurumun onaylı kullanım bütçesini ve fayda kararını karşılaştırma",
+      "news_url": "https://webrazzi.com/2026/10/16/bulut-ve-yapay-zeka-maliyet-yonetimi-girisimi-north-60-milyon-dolar-yatirim-aldi/",
+      "action": "linked_enhancement",
+      "new_idea": false
+    }
+  ],
+  "hold_candidates": [
+    {
+      "code": "R24-05",
+      "idea_name": "GasPermit Delta",
+      "decision": "HOLD",
+      "reason": "FERC LNG izni taslak durumda; nihai yürürlük kanıtı yok.",
+      "published": false
+    },
+    {
+      "code": "R24-06",
+      "idea_name": "FlagFee Exposure",
+      "decision": "HOLD",
+      "reason": "FMC İspanya bayrak ücretleri yalnızca öneri; yürürlük yok.",
+      "published": false
+    },
+    {
+      "code": "R24-10",
+      "idea_name": "LTL Identity Proof",
+      "decision": "HOLD",
+      "reason": "Carrier Logistics/LSP44 çözümünden anlamlı iş akışı farkı yeterince desteklenmiyor.",
+      "published": false
+    },
+    {
+      "code": "R24-12",
+      "idea_name": "ScreenAgent Opt-Out Desk",
+      "decision": "HOLD",
+      "reason": "Birincil SAEP protokolü ve gerçek uygulama izin mekanizması kontrol edilemedi.",
+      "published": false
+    },
+    {
+      "code": "R24-13",
+      "idea_name": "ExportTech Preflight",
+      "decision": "HOLD",
+      "reason": "Çin ihracat kontrolleri taslak; düzenleme kapsamı ve lisans verisi belirsiz.",
+      "published": false
+    },
+    {
+      "code": "R24-15",
+      "idea_name": "RobotOrder Proof",
+      "decision": "HOLD",
+      "reason": "Muhasebe iş akışının ayrı ürüne dönüştürülmesi için birincil kanıt ve fark yetersiz.",
+      "published": false
+    }
+  ],
+  "counts": {
+    "new": 8,
+    "merge": 7,
+    "hold": 6,
+    "total": 21
+  },
+  "quality": {
+    "original_100_unchanged": true,
+    "history_old_100_unchanged": true,
+    "all_eight_have_sources_and_detailed_mvp": true,
+    "competitor_count_limit_removed": true,
+    "external_paid_api_not_required_for_manual_mvp": true,
+    "product_family": false
+  },
+  "development_control": "user_managed"
+}

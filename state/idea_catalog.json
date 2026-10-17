@@ -2,7 +2,7 @@
   "schema_version": 1,
   "site_name": "AIStartup",
   "description": "Canonical persistent idea catalog consumed by the AIStartup web application.",
-  "updated_at": "2026-10-16T09:56:59Z",
+  "updated_at": "2026-10-17T06:53:12Z",
   "ideas": [
     {
       "canonical_key": "competition-organizer|enforce-ai-use-policy-on-submissions|declaration-rule-engine-review-evidence",
@@ -7466,6 +7466,709 @@
         ],
         "quality_gate": "pending_business_and_mvp_validation",
         "no_family_catalog": true
+      }
+    },
+    {
+      "canonical_key": "payment-provider|manage-unauthorized-payment-refund-deadline|notice-reimbursement-exception-evidence",
+      "idea_name": "PhishRefund Clock — Yetkisiz Ödeme İade Takibi",
+      "scope_tier": "Dünya",
+      "scope_reason": "Ülkeye özgü kural sürümleriyle uluslararası kuruluşlarda uygulanabilir.",
+      "news_source": "heise / AB Adalet Divanı",
+      "news_title": "ECJ: Banks must initially reimburse phishing losses",
+      "news_date": "2026-10-16",
+      "news_url": "https://www.heise.de/en/news/ECJ-Banks-must-initially-reimburse-phishing-losses-11490001.html",
+      "source_links": [
+        {
+          "label": "Güncel haber",
+          "url": "https://www.heise.de/en/news/ECJ-Banks-must-initially-reimburse-phishing-losses-11490001.html"
+        },
+        {
+          "label": "Resmî veya teknik kaynak 1",
+          "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-10/cp260147en.pdf"
+        }
+      ],
+      "core_idea": "Bildirim zamanını, işlem ve iade emrini, istisna dayanağını ve sonraki soruşturmayı sürümlü ödeme kurallarına bağlayan kanıt ve SLA masası.",
+      "user_story": "AB/AEA bankaları ve ödeme hizmeti sağlayıcılarının uyuşmazlık ekipleri olarak Yetkisiz işlem bildirimi, iade zamanlaması, olası istisna ve nihai sorumluluk araştırması ayrı operasyonlar; zaman ve kanıt kaybı riski doğurur. Bildirim zamanını, işlem ve iade emrini, istisna dayanağını ve sonraki soruşturmayı sürümlü ödeme kurallarına bağlayan kanıt ve SLA masası.",
+      "before_state": "Yetkisiz işlem bildirimi, iade zamanlaması, olası istisna ve nihai sorumluluk araştırması ayrı operasyonlar; zaman ve kanıt kaybı riski doğurur.",
+      "after_state": "Bildirimi al → yürürlükteki kuralı seç → iade süresini hesapla → istisna ve tahsil/soruşturmayı ayrı izle → sorumlu onayı oluştur.",
+      "why_now": "16 Ekim 2026 haberlerinin gündeme taşıdığı yeni operasyonel gereksinim ve kontrol ihtiyacı.",
+      "target_customer": "AB/AEA bankaları ve ödeme hizmeti sağlayıcılarının uyuşmazlık ekipleri",
+      "buyer": "Ödeme uyuşmazlığı operasyon yöneticisi",
+      "market": "Global",
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": null,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Mevcut büyük platformlarla rekabet etmekten çok somut bir ön kontrol, istisna ve kanıt sürecine odaklanır.",
+      "business_models": [
+        {
+          "model": "Kuruma özel kaynak kod satışı",
+          "estimate": "Kapsam teklifi"
+        },
+        {
+          "model": "Ücretli yazılım pilotu / lisans",
+          "estimate": "Kurum ölçeğine göre"
+        }
+      ],
+      "lovable_credits_total": null,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable / React",
+          "purpose": "Formlar, görev akışı, kontrol ekranı",
+          "cost": "Mevcut geliştirici aboneliği"
+        },
+        {
+          "name": "CSV / JSON işleme",
+          "purpose": "Girdi ve sürümlü kural kontrolü",
+          "cost": "Ücretli API zorunluluğu yok"
+        },
+        {
+          "name": "Yerel PDF üretimi",
+          "purpose": "Kanıt ve denetim raporu",
+          "cost": "Açık kaynak kütüphane"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Başvuru, işlem ve bildirim zamanı; kural sürümü; iade iş emri; istisna inceleme; denetim raporu.",
+      "working_logic": "Bildirimi al → yürürlükteki kuralı seç → iade süresini hesapla → istisna ve tahsil/soruşturmayı ayrı izle → sorumlu onayı oluştur.",
+      "build_time": "İlk manuel/CSV MVP tahmini 2–4 hafta; kurumsal entegrasyon hariç.",
+      "marketing_strategy": "Ödeme uyuşmazlığı operasyon yöneticisi için örnek veriyle ürün demosu; denetim ve operasyon maliyetini azaltan kuruma özel lisans/kod devri.",
+      "first_customer_plan": "AB/AEA bankaları ve ödeme hizmeti sağlayıcılarının uyuşmazlık ekipleri içinde Ödeme uyuşmazlığı operasyon yöneticisi ile operasyonel kontrol dosyası üzerinden pilot kapsamı.",
+      "main_risk": "Hukuki istisnalar için ödeme hukukçusunun kural onayı gerekir; otomatik hukuki tespit yapılamaz.",
+      "validation_assumption": "İstisna ve çalışma günü ayrımlarını örnek yetkisiz ödeme vakalarıyla doğrula.",
+      "evidence_strength": "CP24 kaynak makaleler ve mümkün olan birincil kaynak kontrolü",
+      "competition_confidence": "İşlevsel alternatifler incelendi; rakip sayısı üst sınırı uygulanmıyor.",
+      "verification_status": "user_selected_pending_validation",
+      "status": "published",
+      "first_reported_at": "2026-10-16",
+      "last_updated_at": "2026-10-17",
+      "source_system": "github_radar_manual_v3",
+      "development_selection_status": "not_selected",
+      "radar_v3_provenance": {
+        "checkpoint": "CP24",
+        "code": "R24-04",
+        "score_priority_not_probability": 93,
+        "near_catalog_numbers": [
+          3,
+          82
+        ],
+        "product_families_created": false
+      }
+    },
+    {
+      "canonical_key": "suez-ship-agent|preflight-25year-vessel-transit-eligibility|inspection-seatrial-sixmonth-evidence",
+      "idea_name": "Suez25 Preclear — Gemi Transit Ön Kontrolü",
+      "scope_tier": "Dünya",
+      "scope_reason": "Ülkeye özgü kural sürümleriyle uluslararası kuruluşlarda uygulanabilir.",
+      "news_source": "Deniz Haber / SCA",
+      "news_title": "Süveyş'te 25 yaş üstü gemilere zorunlu denetim",
+      "news_date": "2026-10-16",
+      "news_url": "https://www.denizhaber.com/suveyste-25-yas-ustu-gemilere-zorunlu-denetim/127631",
+      "source_links": [
+        {
+          "label": "Güncel haber",
+          "url": "https://www.denizhaber.com/suveyste-25-yas-ustu-gemilere-zorunlu-denetim/127631"
+        },
+        {
+          "label": "Resmî veya teknik kaynak 1",
+          "url": "https://kadmar.com/kadmar-circular-no-59-2026-sca-safety-security-requirements-for-vessels-aged-25-years-and-above/"
+        }
+      ],
+      "core_idea": "Gemi yaşı, son denetim, kusur kaydı, geçiş tarihi ve belge durumunu SCA kural sürümüyle eşleştirip eksikleri gösteren sefer hazırlık masası.",
+      "user_story": "Uluslararası gemi acenteleri, armatörler ve sefer operasyonları olarak Yaş sınırına bağlı transit muayenesi, deneme seyri, önceki kontrol istisnası ve evrak/ücret adımları farklı belgelerde dağılır. Gemi yaşı, son denetim, kusur kaydı, geçiş tarihi ve belge durumunu SCA kural sürümüyle eşleştirip eksikleri gösteren sefer hazırlık masası.",
+      "before_state": "Yaş sınırına bağlı transit muayenesi, deneme seyri, önceki kontrol istisnası ve evrak/ücret adımları farklı belgelerde dağılır.",
+      "after_state": "Yaş ve geçiş tarihini gir → güncel talimatı eşleştir → son denetim ve istisnayı kontrol et → eksik evrakları sorumluya ata.",
+      "why_now": "16 Ekim 2026 haberlerinin gündeme taşıdığı yeni operasyonel gereksinim ve kontrol ihtiyacı.",
+      "target_customer": "Uluslararası gemi acenteleri, armatörler ve sefer operasyonları",
+      "buyer": "Gemi acentesi transit müdürü",
+      "market": "Global",
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": null,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Mevcut büyük platformlarla rekabet etmekten çok somut bir ön kontrol, istisna ve kanıt sürecine odaklanır.",
+      "business_models": [
+        {
+          "model": "Kuruma özel kaynak kod satışı",
+          "estimate": "Kapsam teklifi"
+        },
+        {
+          "model": "Ücretli yazılım pilotu / lisans",
+          "estimate": "Kurum ölçeğine göre"
+        }
+      ],
+      "lovable_credits_total": null,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable / React",
+          "purpose": "Formlar, görev akışı, kontrol ekranı",
+          "cost": "Mevcut geliştirici aboneliği"
+        },
+        {
+          "name": "CSV / JSON işleme",
+          "purpose": "Girdi ve sürümlü kural kontrolü",
+          "cost": "Ücretli API zorunluluğu yok"
+        },
+        {
+          "name": "Yerel PDF üretimi",
+          "purpose": "Kanıt ve denetim raporu",
+          "cost": "Açık kaynak kütüphane"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Gemi ve sefer kartı, inşa tarihi, son denetim, olası altı aylık istisna, belge/ücret takibi, onay PDF.",
+      "working_logic": "Yaş ve geçiş tarihini gir → güncel talimatı eşleştir → son denetim ve istisnayı kontrol et → eksik evrakları sorumluya ata.",
+      "build_time": "İlk manuel/CSV MVP tahmini 2–4 hafta; kurumsal entegrasyon hariç.",
+      "marketing_strategy": "Gemi acentesi transit müdürü için örnek veriyle ürün demosu; denetim ve operasyon maliyetini azaltan kuruma özel lisans/kod devri.",
+      "first_customer_plan": "Uluslararası gemi acenteleri, armatörler ve sefer operasyonları içinde Gemi acentesi transit müdürü ile operasyonel kontrol dosyası üzerinden pilot kapsamı.",
+      "main_risk": "Resmî SCA transit izni veya teknik muayene sonucu üretmez; talimat sürümü acente tarafından onaylanır.",
+      "validation_assumption": "Üç gerçek sefer üzerinde acentenin kabul ve evrak sonuçlarıyla eşleştir.",
+      "evidence_strength": "CP24 kaynak makaleler ve mümkün olan birincil kaynak kontrolü",
+      "competition_confidence": "İşlevsel alternatifler incelendi; rakip sayısı üst sınırı uygulanmıyor.",
+      "verification_status": "user_selected_pending_validation",
+      "status": "published",
+      "first_reported_at": "2026-10-16",
+      "last_updated_at": "2026-10-17",
+      "source_system": "github_radar_manual_v3",
+      "development_selection_status": "not_selected",
+      "radar_v3_provenance": {
+        "checkpoint": "CP24",
+        "code": "R24-01",
+        "score_priority_not_probability": 91,
+        "near_catalog_numbers": [
+          7,
+          74,
+          78
+        ],
+        "product_families_created": false
+      }
+    },
+    {
+      "canonical_key": "eps-importer|preflight-eu-2028-charger-cable-ecodesign|sku-power-test-technical-file",
+      "idea_name": "ChargeSpec Gate — USB-C ve Şarj Cihazı Teknik Kontrol",
+      "scope_tier": "Türkiye",
+      "scope_reason": "Türk üretici veya ithalatçıların sektöre özgü mevzuat/teknik dosya kontrolünü yönetir.",
+      "news_source": "Ekonomim / AB Komisyonu",
+      "news_title": "Şarj cihazları ve kablolarında yeni kurallar",
+      "news_date": "2026-10-16",
+      "news_url": "https://www.ekonomim.com/gundem/sarj-cihazlari-ve-kablolarinda-yeni-donem-kurallar-degisiyor-haberi-925032",
+      "source_links": [
+        {
+          "label": "Güncel haber",
+          "url": "https://www.ekonomim.com/gundem/sarj-cihazlari-ve-kablolarinda-yeni-donem-kurallar-degisiyor-haberi-925032"
+        },
+        {
+          "label": "Resmî veya teknik kaynak 1",
+          "url": "https://energy-efficient-products.ec.europa.eu/product-list/external-power-supplies/eps-regulation-20252052-new_en"
+        },
+        {
+          "label": "Resmî veya teknik kaynak 2",
+          "url": "https://eur-lex.europa.eu/eli/reg/2025/2052/oj/eng"
+        }
+      ],
+      "core_idea": "Ürün sınıfı, geçiş tarihi ve teknik ölçüm belge listesini sürümlü kural tablosuyla eşleştirerek açık ve çelişkileri saptar.",
+      "user_story": "USB-C kablo ve harici güç kaynağı üreticileri/ithalatçıları olarak SKU gücü, konnektör türü, etiket, verimlilik testi ve teknik dosya gerekleri ürün varyantlarına göre değişir. Ürün sınıfı, geçiş tarihi ve teknik ölçüm belge listesini sürümlü kural tablosuyla eşleştirerek açık ve çelişkileri saptar.",
+      "before_state": "SKU gücü, konnektör türü, etiket, verimlilik testi ve teknik dosya gerekleri ürün varyantlarına göre değişir.",
+      "after_state": "Ürün türünü belirle → uygulanabilir teknik şart sürümünü aç → test/etiket/dosya alanlarını eşleştir → eksikleri raporla.",
+      "why_now": "16 Ekim 2026 haberlerinin gündeme taşıdığı yeni operasyonel gereksinim ve kontrol ihtiyacı.",
+      "target_customer": "USB-C kablo ve harici güç kaynağı üreticileri/ithalatçıları",
+      "buyer": "Ürün uygunluk ve elektronik test mühendisi",
+      "market": "Türkiye",
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": null,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Mevcut büyük platformlarla rekabet etmekten çok somut bir ön kontrol, istisna ve kanıt sürecine odaklanır.",
+      "business_models": [
+        {
+          "model": "Kuruma özel kaynak kod satışı",
+          "estimate": "Kapsam teklifi"
+        },
+        {
+          "model": "Ücretli yazılım pilotu / lisans",
+          "estimate": "Kurum ölçeğine göre"
+        }
+      ],
+      "lovable_credits_total": null,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable / React",
+          "purpose": "Formlar, görev akışı, kontrol ekranı",
+          "cost": "Mevcut geliştirici aboneliği"
+        },
+        {
+          "name": "CSV / JSON işleme",
+          "purpose": "Girdi ve sürümlü kural kontrolü",
+          "cost": "Ücretli API zorunluluğu yok"
+        },
+        {
+          "name": "Yerel PDF üretimi",
+          "purpose": "Kanıt ve denetim raporu",
+          "cost": "Açık kaynak kütüphane"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Ürün SKU, güç türü, konnektör sınıfı, laboratuvar sonucu, etiket, teknik dosya ve eksik raporu.",
+      "working_logic": "Ürün türünü belirle → uygulanabilir teknik şart sürümünü aç → test/etiket/dosya alanlarını eşleştir → eksikleri raporla.",
+      "build_time": "İlk manuel/CSV MVP tahmini 2–4 hafta; kurumsal entegrasyon hariç.",
+      "marketing_strategy": "Ürün uygunluk ve elektronik test mühendisi için örnek veriyle ürün demosu; denetim ve operasyon maliyetini azaltan kuruma özel lisans/kod devri.",
+      "first_customer_plan": "USB-C kablo ve harici güç kaynağı üreticileri/ithalatçıları içinde Ürün uygunluk ve elektronik test mühendisi ile operasyonel kontrol dosyası üzerinden pilot kapsamı.",
+      "main_risk": "Elektriksel laboratuvar testi veya resmî ürün belgelendirmesi sunmaz; güncel teknik ek uzman onayı gerektirir.",
+      "validation_assumption": "İki farklı güç sınıfı ve geçiş tarihinde ürün dosyası kontrolü.",
+      "evidence_strength": "CP24 kaynak makaleler ve mümkün olan birincil kaynak kontrolü",
+      "competition_confidence": "İşlevsel alternatifler incelendi; rakip sayısı üst sınırı uygulanmıyor.",
+      "verification_status": "user_selected_pending_validation",
+      "status": "published",
+      "first_reported_at": "2026-10-16",
+      "last_updated_at": "2026-10-17",
+      "source_system": "github_radar_manual_v3",
+      "development_selection_status": "not_selected",
+      "radar_v3_provenance": {
+        "checkpoint": "CP24",
+        "code": "R24-03",
+        "score_priority_not_probability": 90,
+        "near_catalog_numbers": [
+          80,
+          87,
+          65
+        ],
+        "product_families_created": false
+      }
+    },
+    {
+      "canonical_key": "dryer-manufacturer|preflight-2027-repairability-energy-label|model-batch-label-form-gap",
+      "idea_name": "RepairLabel 2027 — Kurutma Makinesi Etiket Kontrolü",
+      "scope_tier": "Türkiye",
+      "scope_reason": "Türk üretici veya ithalatçıların sektöre özgü mevzuat/teknik dosya kontrolünü yönetir.",
+      "news_source": "Enerji Günlüğü / AB Komisyonu",
+      "news_title": "Çamaşır kurutmada etiket ve tasarım değişikliği",
+      "news_date": "2026-10-16",
+      "news_url": "https://www.enerjigunlugu.net/camasir-kurutmada-etiket-ve-tasarim-degisti-70204h.htm",
+      "source_links": [
+        {
+          "label": "Güncel haber",
+          "url": "https://www.enerjigunlugu.net/camasir-kurutmada-etiket-ve-tasarim-degisti-70204h.htm"
+        },
+        {
+          "label": "Resmî veya teknik kaynak 1",
+          "url": "https://energy-efficient-products.ec.europa.eu/news/eu-adopts-repairability-index-tumble-dryers-2025-11-21_en"
+        }
+      ],
+      "core_idea": "Model varyantı, onarılabilirlik bilgisi, test dokümanı ve etiketi kural tarihine göre eşleştiren belge kalite kapısı.",
+      "user_story": "Kurutma makinesi üreticileri ve ithalatçıları olarak Ürün modeli, enerji etiketi sürümü, onarılabilirlik verileri ve bilgi formu arasındaki tutarsızlıklar satış öncesi fark edilemeyebilir. Model varyantı, onarılabilirlik bilgisi, test dokümanı ve etiketi kural tarihine göre eşleştiren belge kalite kapısı.",
+      "before_state": "Ürün modeli, enerji etiketi sürümü, onarılabilirlik verileri ve bilgi formu arasındaki tutarsızlıklar satış öncesi fark edilemeyebilir.",
+      "after_state": "Model ve kural sürümü gir → onarılabilirlik/etiket verisini testle eşleştir → uyumsuzluk ve eksik dosya listesi oluştur.",
+      "why_now": "16 Ekim 2026 haberlerinin gündeme taşıdığı yeni operasyonel gereksinim ve kontrol ihtiyacı.",
+      "target_customer": "Kurutma makinesi üreticileri ve ithalatçıları",
+      "buyer": "Ürün belgelendirme ve kalite yöneticisi",
+      "market": "Türkiye",
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": null,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Mevcut büyük platformlarla rekabet etmekten çok somut bir ön kontrol, istisna ve kanıt sürecine odaklanır.",
+      "business_models": [
+        {
+          "model": "Kuruma özel kaynak kod satışı",
+          "estimate": "Kapsam teklifi"
+        },
+        {
+          "model": "Ücretli yazılım pilotu / lisans",
+          "estimate": "Kurum ölçeğine göre"
+        }
+      ],
+      "lovable_credits_total": null,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable / React",
+          "purpose": "Formlar, görev akışı, kontrol ekranı",
+          "cost": "Mevcut geliştirici aboneliği"
+        },
+        {
+          "name": "CSV / JSON işleme",
+          "purpose": "Girdi ve sürümlü kural kontrolü",
+          "cost": "Ücretli API zorunluluğu yok"
+        },
+        {
+          "name": "Yerel PDF üretimi",
+          "purpose": "Kanıt ve denetim raporu",
+          "cost": "Açık kaynak kütüphane"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Model-varyant, sınıflandırma/test girdileri, etiket ve form yükleme, eksik belgeler ve onaylı rapor.",
+      "working_logic": "Model ve kural sürümü gir → onarılabilirlik/etiket verisini testle eşleştir → uyumsuzluk ve eksik dosya listesi oluştur.",
+      "build_time": "İlk manuel/CSV MVP tahmini 2–4 hafta; kurumsal entegrasyon hariç.",
+      "marketing_strategy": "Ürün belgelendirme ve kalite yöneticisi için örnek veriyle ürün demosu; denetim ve operasyon maliyetini azaltan kuruma özel lisans/kod devri.",
+      "first_customer_plan": "Kurutma makinesi üreticileri ve ithalatçıları içinde Ürün belgelendirme ve kalite yöneticisi ile operasyonel kontrol dosyası üzerinden pilot kapsamı.",
+      "main_risk": "Ürün testi veya hukuki uygunluk sertifikasının yerine geçmez; AB ve Türkiye geçiş hükümleri ayrı doğrulanır.",
+      "validation_assumption": "İki gerçek modelin rapor ve etiket belgelerini QA karşılaştırması.",
+      "evidence_strength": "CP24 kaynak makaleler ve mümkün olan birincil kaynak kontrolü",
+      "competition_confidence": "İşlevsel alternatifler incelendi; rakip sayısı üst sınırı uygulanmıyor.",
+      "verification_status": "user_selected_pending_validation",
+      "status": "published",
+      "first_reported_at": "2026-10-16",
+      "last_updated_at": "2026-10-17",
+      "source_system": "github_radar_manual_v3",
+      "development_selection_status": "not_selected",
+      "radar_v3_provenance": {
+        "checkpoint": "CP24",
+        "code": "R24-02",
+        "score_priority_not_probability": 89,
+        "near_catalog_numbers": [
+          87,
+          80
+        ],
+        "product_families_created": false
+      }
+    },
+    {
+      "canonical_key": "electronics-manufacturer|forecast-bom-component-price-changes|supplier-quotes-scenario-approval",
+      "idea_name": "ChipBOM PriceShock — Elektronik BOM Maliyet Analizi",
+      "scope_tier": "Dünya",
+      "scope_reason": "Ülkeye özgü kural sürümleriyle uluslararası kuruluşlarda uygulanabilir.",
+      "news_source": "EEFocus",
+      "news_title": "Q4 2026 global semiconductor price surge",
+      "news_date": "2026-10-16",
+      "news_url": "https://global.eefocus.com/article/q4-2026-global-semiconductor-price-surge-materials-chips-osat-passive-components-panels-implement-price-adjustments.html",
+      "source_links": [
+        {
+          "label": "Güncel haber",
+          "url": "https://global.eefocus.com/article/q4-2026-global-semiconductor-price-surge-materials-chips-osat-passive-components-panels-implement-price-adjustments.html"
+        },
+        {
+          "label": "Resmî veya teknik kaynak 1",
+          "url": "https://www.siliconexpert.com/proof/bom-risk-assessment/"
+        },
+        {
+          "label": "Resmî veya teknik kaynak 2",
+          "url": "https://www.z2data.com/products/part-risk-manager"
+        }
+      ],
+      "core_idea": "BOM CSV ile eski/yeni tedarikçi tekliflerini eşleştirip bileşen fiyat şokunu, toplam maliyet değişimini ve alternatif senaryo onayını hesaplar.",
+      "user_story": "Elektronik ürün üreticileri ve EMS satın alma birimleri olarak Parça teklifleri ve BOM revizyonları değiştiğinde kur ve tedarikçi farklarının ürün maliyetine etkisi geç belirlenir. BOM CSV ile eski/yeni tedarikçi tekliflerini eşleştirip bileşen fiyat şokunu, toplam maliyet değişimini ve alternatif senaryo onayını hesaplar.",
+      "before_state": "Parça teklifleri ve BOM revizyonları değiştiğinde kur ve tedarikçi farklarının ürün maliyetine etkisi geç belirlenir.",
+      "after_state": "BOM satırını eşleştir → teklif tarihi ve kuru normalize et → toplam birim fiyat etkisini hesapla → yüksek etkili parçaları sırala.",
+      "why_now": "16 Ekim 2026 haberlerinin gündeme taşıdığı yeni operasyonel gereksinim ve kontrol ihtiyacı.",
+      "target_customer": "Elektronik ürün üreticileri ve EMS satın alma birimleri",
+      "buyer": "Satın alma mühendisi ve ürün maliyet yöneticisi",
+      "market": "Global",
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": null,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Mevcut büyük platformlarla rekabet etmekten çok somut bir ön kontrol, istisna ve kanıt sürecine odaklanır.",
+      "business_models": [
+        {
+          "model": "Kuruma özel kaynak kod satışı",
+          "estimate": "Kapsam teklifi"
+        },
+        {
+          "model": "Ücretli yazılım pilotu / lisans",
+          "estimate": "Kurum ölçeğine göre"
+        }
+      ],
+      "lovable_credits_total": null,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable / React",
+          "purpose": "Formlar, görev akışı, kontrol ekranı",
+          "cost": "Mevcut geliştirici aboneliği"
+        },
+        {
+          "name": "CSV / JSON işleme",
+          "purpose": "Girdi ve sürümlü kural kontrolü",
+          "cost": "Ücretli API zorunluluğu yok"
+        },
+        {
+          "name": "Yerel PDF üretimi",
+          "purpose": "Kanıt ve denetim raporu",
+          "cost": "Açık kaynak kütüphane"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "BOM ve teklif CSV, kur senaryosu, parça bazlı fark, maliyet etkisi, tedarikçi varyantı, karar PDF.",
+      "working_logic": "BOM satırını eşleştir → teklif tarihi ve kuru normalize et → toplam birim fiyat etkisini hesapla → yüksek etkili parçaları sırala.",
+      "build_time": "İlk manuel/CSV MVP tahmini 2–4 hafta; kurumsal entegrasyon hariç.",
+      "marketing_strategy": "Satın alma mühendisi ve ürün maliyet yöneticisi için örnek veriyle ürün demosu; denetim ve operasyon maliyetini azaltan kuruma özel lisans/kod devri.",
+      "first_customer_plan": "Elektronik ürün üreticileri ve EMS satın alma birimleri içinde Satın alma mühendisi ve ürün maliyet yöneticisi ile operasyonel kontrol dosyası üzerinden pilot kapsamı.",
+      "main_risk": "Canlı fiyat API zorunlu değildir; muadil parça mühendislik onayı olmadan eşdeğer kabul edilmez.",
+      "validation_assumption": "50 kalem BOM için iki fiyat dönemi ve kur değişimiyle hesap mutabakatı.",
+      "evidence_strength": "CP24 kaynak makaleler ve mümkün olan birincil kaynak kontrolü",
+      "competition_confidence": "İşlevsel alternatifler incelendi; rakip sayısı üst sınırı uygulanmıyor.",
+      "verification_status": "user_selected_pending_validation",
+      "status": "published",
+      "first_reported_at": "2026-10-16",
+      "last_updated_at": "2026-10-17",
+      "source_system": "github_radar_manual_v3",
+      "development_selection_status": "not_selected",
+      "radar_v3_provenance": {
+        "checkpoint": "CP24",
+        "code": "R24-09",
+        "score_priority_not_probability": 87,
+        "near_catalog_numbers": [
+          90,
+          80,
+          28
+        ],
+        "product_families_created": false
+      }
+    },
+    {
+      "canonical_key": "logistics-buyer|validate-broker-financial-representations|reference-contract-deposit-control",
+      "idea_name": "BrokerClaim Proof — Lojistik Aracı Taahhüt Kanıtı",
+      "scope_tier": "Dünya",
+      "scope_reason": "Ülkeye özgü kural sürümleriyle uluslararası kuruluşlarda uygulanabilir.",
+      "news_source": "FreightWaves",
+      "news_title": "Jury hits Wyoming logistics broker with fraud verdict",
+      "news_date": "2026-10-16",
+      "news_url": "https://www.freightwaves.com/news/jury-hits-wyoming-logistics-broker-with-9-4m-fraud-verdict",
+      "source_links": [
+        {
+          "label": "Güncel haber",
+          "url": "https://www.freightwaves.com/news/jury-hits-wyoming-logistics-broker-with-9-4m-fraud-verdict"
+        }
+      ],
+      "core_idea": "Broker sözleşme, referans ve ödeme kanıtlarını vaat edilen hizmet ile eşleştiren, eksikleri insan kontrolüne yönlendiren tedarikçi hazırlık masası.",
+      "user_story": "Yük sahibi ve lojistik tedarikçi satın alma ekipleri olarak Broker yetkisi, mali güvence, depozito ve teslim taahhüdü kanıtları belgeler arasında kopuk kaldığında sahte beyan riski artar. Broker sözleşme, referans ve ödeme kanıtlarını vaat edilen hizmet ile eşleştiren, eksikleri insan kontrolüne yönlendiren tedarikçi hazırlık masası.",
+      "before_state": "Broker yetkisi, mali güvence, depozito ve teslim taahhüdü kanıtları belgeler arasında kopuk kaldığında sahte beyan riski artar.",
+      "after_state": "Broker beyanlarını kaydet → kanıt dosyalarını şartlarla karşılaştır → belgesiz iddiaları işaretle → onay zinciri oluştur.",
+      "why_now": "16 Ekim 2026 haberlerinin gündeme taşıdığı yeni operasyonel gereksinim ve kontrol ihtiyacı.",
+      "target_customer": "Yük sahibi ve lojistik tedarikçi satın alma ekipleri",
+      "buyer": "Lojistik tedarik ve risk sorumlusu",
+      "market": "Global",
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": null,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Mevcut büyük platformlarla rekabet etmekten çok somut bir ön kontrol, istisna ve kanıt sürecine odaklanır.",
+      "business_models": [
+        {
+          "model": "Kuruma özel kaynak kod satışı",
+          "estimate": "Kapsam teklifi"
+        },
+        {
+          "model": "Ücretli yazılım pilotu / lisans",
+          "estimate": "Kurum ölçeğine göre"
+        }
+      ],
+      "lovable_credits_total": null,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable / React",
+          "purpose": "Formlar, görev akışı, kontrol ekranı",
+          "cost": "Mevcut geliştirici aboneliği"
+        },
+        {
+          "name": "CSV / JSON işleme",
+          "purpose": "Girdi ve sürümlü kural kontrolü",
+          "cost": "Ücretli API zorunluluğu yok"
+        },
+        {
+          "name": "Yerel PDF üretimi",
+          "purpose": "Kanıt ve denetim raporu",
+          "cost": "Açık kaynak kütüphane"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Broker bilgi kartı, yetki ve banka/teminat kanıt listesi, kontrat, referans teyidi, risk işaretleri ve PDF.",
+      "working_logic": "Broker beyanlarını kaydet → kanıt dosyalarını şartlarla karşılaştır → belgesiz iddiaları işaretle → onay zinciri oluştur.",
+      "build_time": "İlk manuel/CSV MVP tahmini 2–4 hafta; kurumsal entegrasyon hariç.",
+      "marketing_strategy": "Lojistik tedarik ve risk sorumlusu için örnek veriyle ürün demosu; denetim ve operasyon maliyetini azaltan kuruma özel lisans/kod devri.",
+      "first_customer_plan": "Yük sahibi ve lojistik tedarikçi satın alma ekipleri içinde Lojistik tedarik ve risk sorumlusu ile operasyonel kontrol dosyası üzerinden pilot kapsamı.",
+      "main_risk": "Banka veya kredi bürosu tarafından resmî mali teminat teyidi yapmaz; otomatik dolandırıcılık kararı üretmez.",
+      "validation_assumption": "Beş broker başvuru dosyasını satın alma kontrolüyle eşleştir.",
+      "evidence_strength": "CP24 kaynak makaleler ve mümkün olan birincil kaynak kontrolü",
+      "competition_confidence": "İşlevsel alternatifler incelendi; rakip sayısı üst sınırı uygulanmıyor.",
+      "verification_status": "user_selected_pending_validation",
+      "status": "published",
+      "first_reported_at": "2026-10-16",
+      "last_updated_at": "2026-10-17",
+      "source_system": "github_radar_manual_v3",
+      "development_selection_status": "not_selected",
+      "radar_v3_provenance": {
+        "checkpoint": "CP24",
+        "code": "R24-08",
+        "score_priority_not_probability": 84,
+        "near_catalog_numbers": [
+          7,
+          74
+        ],
+        "product_families_created": false
+      }
+    },
+    {
+      "canonical_key": "ev-fleet|track-oem-recall-vin-remediation-proof|vin-campaign-service-case-evidence",
+      "idea_name": "EV Recall Trace — Elektrikli Araç Geri Çağırma Dosyası",
+      "scope_tier": "Dünya",
+      "scope_reason": "Ülkeye özgü kural sürümleriyle uluslararası kuruluşlarda uygulanabilir.",
+      "news_source": "heise",
+      "news_title": "Volkswagen prepares recall of several electric cars",
+      "news_date": "2026-10-16",
+      "news_url": "https://www.heise.de/en/news/Volkswagen-prepares-recall-of-several-electric-cars-11490721.html",
+      "source_links": [
+        {
+          "label": "Güncel haber",
+          "url": "https://www.heise.de/en/news/Volkswagen-prepares-recall-of-several-electric-cars-11490721.html"
+        }
+      ],
+      "core_idea": "Resmî OEM bildirimini VIN envanterine bağlayarak etkilenen araç, kullanıcı bildirimi, servise sevk ve kapanış kanıtını takip eder.",
+      "user_story": "Elektrikli araç filosu, ikinci el EV alım/satım ve servis operasyonları olarak OEM ön duyurusu, VIN kapsamı, geçici kullanım önlemleri ve servis kapanış belgesi farklı sistemlerde tutuluyor. Resmî OEM bildirimini VIN envanterine bağlayarak etkilenen araç, kullanıcı bildirimi, servise sevk ve kapanış kanıtını takip eder.",
+      "before_state": "OEM ön duyurusu, VIN kapsamı, geçici kullanım önlemleri ve servis kapanış belgesi farklı sistemlerde tutuluyor.",
+      "after_state": "OEM bülteni gir → VIN aralığını işaretle → önlem ve servis aksiyonunu ata → tamamlandı belgesini kontrol et.",
+      "why_now": "16 Ekim 2026 haberlerinin gündeme taşıdığı yeni operasyonel gereksinim ve kontrol ihtiyacı.",
+      "target_customer": "Elektrikli araç filosu, ikinci el EV alım/satım ve servis operasyonları",
+      "buyer": "Filo satış sonrası ve güvenlik sorumlusu",
+      "market": "Global",
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": null,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Mevcut büyük platformlarla rekabet etmekten çok somut bir ön kontrol, istisna ve kanıt sürecine odaklanır.",
+      "business_models": [
+        {
+          "model": "Kuruma özel kaynak kod satışı",
+          "estimate": "Kapsam teklifi"
+        },
+        {
+          "model": "Ücretli yazılım pilotu / lisans",
+          "estimate": "Kurum ölçeğine göre"
+        }
+      ],
+      "lovable_credits_total": null,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable / React",
+          "purpose": "Formlar, görev akışı, kontrol ekranı",
+          "cost": "Mevcut geliştirici aboneliği"
+        },
+        {
+          "name": "CSV / JSON işleme",
+          "purpose": "Girdi ve sürümlü kural kontrolü",
+          "cost": "Ücretli API zorunluluğu yok"
+        },
+        {
+          "name": "Yerel PDF üretimi",
+          "purpose": "Kanıt ve denetim raporu",
+          "cost": "Açık kaynak kütüphane"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "VIN CSV, kampanya ve bülten kaydı, servis görevleri, bildirim, kullanım tedbiri, onay PDF.",
+      "working_logic": "OEM bülteni gir → VIN aralığını işaretle → önlem ve servis aksiyonunu ata → tamamlandı belgesini kontrol et.",
+      "build_time": "İlk manuel/CSV MVP tahmini 2–4 hafta; kurumsal entegrasyon hariç.",
+      "marketing_strategy": "Filo satış sonrası ve güvenlik sorumlusu için örnek veriyle ürün demosu; denetim ve operasyon maliyetini azaltan kuruma özel lisans/kod devri.",
+      "first_customer_plan": "Elektrikli araç filosu, ikinci el EV alım/satım ve servis operasyonları içinde Filo satış sonrası ve güvenlik sorumlusu ile operasyonel kontrol dosyası üzerinden pilot kapsamı.",
+      "main_risk": "Geri çağırma hazırlık haberi kesin kampanya kapsamı değildir; resmi VIN ve servis bülteni esas alınır.",
+      "validation_assumption": "On araç için resmî OEM kampanya ve servis kayıtlarıyla eşleştir.",
+      "evidence_strength": "CP24 kaynak makaleler ve mümkün olan birincil kaynak kontrolü",
+      "competition_confidence": "İşlevsel alternatifler incelendi; rakip sayısı üst sınırı uygulanmıyor.",
+      "verification_status": "user_selected_pending_validation",
+      "status": "published",
+      "first_reported_at": "2026-10-16",
+      "last_updated_at": "2026-10-17",
+      "source_system": "github_radar_manual_v3",
+      "development_selection_status": "not_selected",
+      "radar_v3_provenance": {
+        "checkpoint": "CP24",
+        "code": "R24-07",
+        "score_priority_not_probability": 80,
+        "near_catalog_numbers": [
+          18,
+          80
+        ],
+        "product_families_created": false
+      }
+    },
+    {
+      "canonical_key": "steel-exporter|estimate-eu-cbam-exposure-per-order|emission-price-margin-sensitivity",
+      "idea_name": "CBAM SteelMargin — Çelik İhracatı Karbon Marjı",
+      "scope_tier": "Dünya",
+      "scope_reason": "Ülkeye özgü kural sürümleriyle uluslararası kuruluşlarda uygulanabilir.",
+      "news_source": "T.C. Ticaret Bakanlığı",
+      "news_title": "SKDM çelik ihracatçılarının maliyet rekabetine etkisi",
+      "news_date": "2026-10-16",
+      "news_url": "https://ticaret.gov.tr/blog/sektor-haberleri/sinirda-karbon-duzenleme-mekanizmasi-avrupa-birligindeki-demir-celik-ihracatcilarina-yeterli-korumayi-saglamayabilir",
+      "source_links": [
+        {
+          "label": "Güncel haber",
+          "url": "https://ticaret.gov.tr/blog/sektor-haberleri/sinirda-karbon-duzenleme-mekanizmasi-avrupa-birligindeki-demir-celik-ihracatcilarina-yeterli-korumayi-saglamayabilir"
+        }
+      ],
+      "core_idea": "Müşterinin emisyon ve maliyet girdileriyle ürün/sipariş marjı, karbon maliyeti ve alternatif senaryoları açıklanabilir hesaplar.",
+      "user_story": "AB pazarı için üretim yapan çelik ve emisyon yoğun ürün ihracatçıları olarak Karbon fiyatı, ürün emisyonu, satış fiyatı ve farklı tahsisat varsayımları ihracat siparişinin gerçek marjını değiştirir. Müşterinin emisyon ve maliyet girdileriyle ürün/sipariş marjı, karbon maliyeti ve alternatif senaryoları açıklanabilir hesaplar.",
+      "before_state": "Karbon fiyatı, ürün emisyonu, satış fiyatı ve farklı tahsisat varsayımları ihracat siparişinin gerçek marjını değiştirir.",
+      "after_state": "Ürün emisyon ve sipariş fiyatını gir → karbon/tahsisat varsayımını sürümle → ek maliyet ve net marjı hesapla → alternatifleri karşılaştır.",
+      "why_now": "16 Ekim 2026 haberlerinin gündeme taşıdığı yeni operasyonel gereksinim ve kontrol ihtiyacı.",
+      "target_customer": "AB pazarı için üretim yapan çelik ve emisyon yoğun ürün ihracatçıları",
+      "buyer": "İhracat finans ve sürdürülebilirlik müdürü",
+      "market": "Global",
+      "turkiye_direct_competitor_count": null,
+      "global_direct_competitor_count": null,
+      "direct_competitors": [],
+      "adjacent_competitors": [],
+      "market_gap": "Mevcut büyük platformlarla rekabet etmekten çok somut bir ön kontrol, istisna ve kanıt sürecine odaklanır.",
+      "business_models": [
+        {
+          "model": "Kuruma özel kaynak kod satışı",
+          "estimate": "Kapsam teklifi"
+        },
+        {
+          "model": "Ücretli yazılım pilotu / lisans",
+          "estimate": "Kurum ölçeğine göre"
+        }
+      ],
+      "lovable_credits_total": null,
+      "lovable_credit_breakdown": {},
+      "technologies": [
+        {
+          "name": "Lovable / React",
+          "purpose": "Formlar, görev akışı, kontrol ekranı",
+          "cost": "Mevcut geliştirici aboneliği"
+        },
+        {
+          "name": "CSV / JSON işleme",
+          "purpose": "Girdi ve sürümlü kural kontrolü",
+          "cost": "Ücretli API zorunluluğu yok"
+        },
+        {
+          "name": "Yerel PDF üretimi",
+          "purpose": "Kanıt ve denetim raporu",
+          "cost": "Açık kaynak kütüphane"
+        }
+      ],
+      "external_cash_cost": 0,
+      "mvp": "Ürün ve emisyon CSV, karbon fiyat varsayımı, tahsisat parametresi, kur, marj hesabı ve senaryo karşılaştırması.",
+      "working_logic": "Ürün emisyon ve sipariş fiyatını gir → karbon/tahsisat varsayımını sürümle → ek maliyet ve net marjı hesapla → alternatifleri karşılaştır.",
+      "build_time": "İlk manuel/CSV MVP tahmini 2–4 hafta; kurumsal entegrasyon hariç.",
+      "marketing_strategy": "İhracat finans ve sürdürülebilirlik müdürü için örnek veriyle ürün demosu; denetim ve operasyon maliyetini azaltan kuruma özel lisans/kod devri.",
+      "first_customer_plan": "AB pazarı için üretim yapan çelik ve emisyon yoğun ürün ihracatçıları içinde İhracat finans ve sürdürülebilirlik müdürü ile operasyonel kontrol dosyası üzerinden pilot kapsamı.",
+      "main_risk": "Resmî CBAM vergi hesaplaması veya sertifika sistemi değildir; müşterinin doğrulanmış emisyon verisi şarttır.",
+      "validation_assumption": "Üç senaryoda ihracat finans ekibinin hesap tablosuyla eşleştir.",
+      "evidence_strength": "CP24 kaynak makaleler ve mümkün olan birincil kaynak kontrolü",
+      "competition_confidence": "İşlevsel alternatifler incelendi; rakip sayısı üst sınırı uygulanmıyor.",
+      "verification_status": "user_selected_pending_validation",
+      "status": "published",
+      "first_reported_at": "2026-10-16",
+      "last_updated_at": "2026-10-17",
+      "source_system": "github_radar_manual_v3",
+      "development_selection_status": "not_selected",
+      "radar_v3_provenance": {
+        "checkpoint": "CP24",
+        "code": "R24-14",
+        "score_priority_not_probability": 79,
+        "near_catalog_numbers": [
+          65,
+          90
+        ],
+        "product_families_created": false
       }
     }
   ],

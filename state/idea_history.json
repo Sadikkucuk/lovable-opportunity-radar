@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Persistent semantic idea history used to suppress duplicate opportunities across daily radar runs.",
-  "updated_at": "2026-10-16T09:56:59Z",
+  "updated_at": "2026-10-17T06:53:12Z",
   "ideas": [
     {
       "canonical_key": "competition-organizer|enforce-ai-use-policy-on-submissions|declaration-rule-engine-review-evidence",
@@ -1620,6 +1620,201 @@
         ],
         "quality_gate": "pending_business_and_mvp_validation",
         "no_family_catalog": true
+      }
+    },
+    {
+      "canonical_key": "payment-provider|manage-unauthorized-payment-refund-deadline|notice-reimbursement-exception-evidence",
+      "idea_name": "PhishRefund Clock — Yetkisiz Ödeme İade Takibi",
+      "core_job": "Yetkisiz işlem bildirimi, iade zamanlaması, olası istisna ve nihai sorumluluk araştırması ayrı operasyonlar; zaman ve kanıt kaybı riski doğurur.",
+      "target_customer": "AB/AEA bankaları ve ödeme hizmeti sağlayıcılarının uyuşmazlık ekipleri",
+      "product_mechanism": "Bildirim zamanını, işlem ve iade emrini, istisna dayanağını ve sonraki soruşturmayı sürümlü ödeme kurallarına bağlayan kanıt ve SLA masası.",
+      "first_reported_at": "2026-10-16",
+      "last_seen_at": "2026-10-17",
+      "times_seen": 1,
+      "status": "published",
+      "source_titles": [
+        "ECJ: Banks must initially reimburse phishing losses"
+      ],
+      "radar_v3_provenance": {
+        "checkpoint": "CP24",
+        "code": "R24-04",
+        "score_priority_not_probability": 93,
+        "near_catalog_numbers": [
+          3,
+          82
+        ],
+        "product_families_created": false
+      }
+    },
+    {
+      "canonical_key": "suez-ship-agent|preflight-25year-vessel-transit-eligibility|inspection-seatrial-sixmonth-evidence",
+      "idea_name": "Suez25 Preclear — Gemi Transit Ön Kontrolü",
+      "core_job": "Yaş sınırına bağlı transit muayenesi, deneme seyri, önceki kontrol istisnası ve evrak/ücret adımları farklı belgelerde dağılır.",
+      "target_customer": "Uluslararası gemi acenteleri, armatörler ve sefer operasyonları",
+      "product_mechanism": "Gemi yaşı, son denetim, kusur kaydı, geçiş tarihi ve belge durumunu SCA kural sürümüyle eşleştirip eksikleri gösteren sefer hazırlık masası.",
+      "first_reported_at": "2026-10-16",
+      "last_seen_at": "2026-10-17",
+      "times_seen": 1,
+      "status": "published",
+      "source_titles": [
+        "Süveyş'te 25 yaş üstü gemilere zorunlu denetim"
+      ],
+      "radar_v3_provenance": {
+        "checkpoint": "CP24",
+        "code": "R24-01",
+        "score_priority_not_probability": 91,
+        "near_catalog_numbers": [
+          7,
+          74,
+          78
+        ],
+        "product_families_created": false
+      }
+    },
+    {
+      "canonical_key": "eps-importer|preflight-eu-2028-charger-cable-ecodesign|sku-power-test-technical-file",
+      "idea_name": "ChargeSpec Gate — USB-C ve Şarj Cihazı Teknik Kontrol",
+      "core_job": "SKU gücü, konnektör türü, etiket, verimlilik testi ve teknik dosya gerekleri ürün varyantlarına göre değişir.",
+      "target_customer": "USB-C kablo ve harici güç kaynağı üreticileri/ithalatçıları",
+      "product_mechanism": "Ürün sınıfı, geçiş tarihi ve teknik ölçüm belge listesini sürümlü kural tablosuyla eşleştirerek açık ve çelişkileri saptar.",
+      "first_reported_at": "2026-10-16",
+      "last_seen_at": "2026-10-17",
+      "times_seen": 1,
+      "status": "published",
+      "source_titles": [
+        "Şarj cihazları ve kablolarında yeni kurallar"
+      ],
+      "radar_v3_provenance": {
+        "checkpoint": "CP24",
+        "code": "R24-03",
+        "score_priority_not_probability": 90,
+        "near_catalog_numbers": [
+          80,
+          87,
+          65
+        ],
+        "product_families_created": false
+      }
+    },
+    {
+      "canonical_key": "dryer-manufacturer|preflight-2027-repairability-energy-label|model-batch-label-form-gap",
+      "idea_name": "RepairLabel 2027 — Kurutma Makinesi Etiket Kontrolü",
+      "core_job": "Ürün modeli, enerji etiketi sürümü, onarılabilirlik verileri ve bilgi formu arasındaki tutarsızlıklar satış öncesi fark edilemeyebilir.",
+      "target_customer": "Kurutma makinesi üreticileri ve ithalatçıları",
+      "product_mechanism": "Model varyantı, onarılabilirlik bilgisi, test dokümanı ve etiketi kural tarihine göre eşleştiren belge kalite kapısı.",
+      "first_reported_at": "2026-10-16",
+      "last_seen_at": "2026-10-17",
+      "times_seen": 1,
+      "status": "published",
+      "source_titles": [
+        "Çamaşır kurutmada etiket ve tasarım değişikliği"
+      ],
+      "radar_v3_provenance": {
+        "checkpoint": "CP24",
+        "code": "R24-02",
+        "score_priority_not_probability": 89,
+        "near_catalog_numbers": [
+          87,
+          80
+        ],
+        "product_families_created": false
+      }
+    },
+    {
+      "canonical_key": "electronics-manufacturer|forecast-bom-component-price-changes|supplier-quotes-scenario-approval",
+      "idea_name": "ChipBOM PriceShock — Elektronik BOM Maliyet Analizi",
+      "core_job": "Parça teklifleri ve BOM revizyonları değiştiğinde kur ve tedarikçi farklarının ürün maliyetine etkisi geç belirlenir.",
+      "target_customer": "Elektronik ürün üreticileri ve EMS satın alma birimleri",
+      "product_mechanism": "BOM CSV ile eski/yeni tedarikçi tekliflerini eşleştirip bileşen fiyat şokunu, toplam maliyet değişimini ve alternatif senaryo onayını hesaplar.",
+      "first_reported_at": "2026-10-16",
+      "last_seen_at": "2026-10-17",
+      "times_seen": 1,
+      "status": "published",
+      "source_titles": [
+        "Q4 2026 global semiconductor price surge"
+      ],
+      "radar_v3_provenance": {
+        "checkpoint": "CP24",
+        "code": "R24-09",
+        "score_priority_not_probability": 87,
+        "near_catalog_numbers": [
+          90,
+          80,
+          28
+        ],
+        "product_families_created": false
+      }
+    },
+    {
+      "canonical_key": "logistics-buyer|validate-broker-financial-representations|reference-contract-deposit-control",
+      "idea_name": "BrokerClaim Proof — Lojistik Aracı Taahhüt Kanıtı",
+      "core_job": "Broker yetkisi, mali güvence, depozito ve teslim taahhüdü kanıtları belgeler arasında kopuk kaldığında sahte beyan riski artar.",
+      "target_customer": "Yük sahibi ve lojistik tedarikçi satın alma ekipleri",
+      "product_mechanism": "Broker sözleşme, referans ve ödeme kanıtlarını vaat edilen hizmet ile eşleştiren, eksikleri insan kontrolüne yönlendiren tedarikçi hazırlık masası.",
+      "first_reported_at": "2026-10-16",
+      "last_seen_at": "2026-10-17",
+      "times_seen": 1,
+      "status": "published",
+      "source_titles": [
+        "Jury hits Wyoming logistics broker with fraud verdict"
+      ],
+      "radar_v3_provenance": {
+        "checkpoint": "CP24",
+        "code": "R24-08",
+        "score_priority_not_probability": 84,
+        "near_catalog_numbers": [
+          7,
+          74
+        ],
+        "product_families_created": false
+      }
+    },
+    {
+      "canonical_key": "ev-fleet|track-oem-recall-vin-remediation-proof|vin-campaign-service-case-evidence",
+      "idea_name": "EV Recall Trace — Elektrikli Araç Geri Çağırma Dosyası",
+      "core_job": "OEM ön duyurusu, VIN kapsamı, geçici kullanım önlemleri ve servis kapanış belgesi farklı sistemlerde tutuluyor.",
+      "target_customer": "Elektrikli araç filosu, ikinci el EV alım/satım ve servis operasyonları",
+      "product_mechanism": "Resmî OEM bildirimini VIN envanterine bağlayarak etkilenen araç, kullanıcı bildirimi, servise sevk ve kapanış kanıtını takip eder.",
+      "first_reported_at": "2026-10-16",
+      "last_seen_at": "2026-10-17",
+      "times_seen": 1,
+      "status": "published",
+      "source_titles": [
+        "Volkswagen prepares recall of several electric cars"
+      ],
+      "radar_v3_provenance": {
+        "checkpoint": "CP24",
+        "code": "R24-07",
+        "score_priority_not_probability": 80,
+        "near_catalog_numbers": [
+          18,
+          80
+        ],
+        "product_families_created": false
+      }
+    },
+    {
+      "canonical_key": "steel-exporter|estimate-eu-cbam-exposure-per-order|emission-price-margin-sensitivity",
+      "idea_name": "CBAM SteelMargin — Çelik İhracatı Karbon Marjı",
+      "core_job": "Karbon fiyatı, ürün emisyonu, satış fiyatı ve farklı tahsisat varsayımları ihracat siparişinin gerçek marjını değiştirir.",
+      "target_customer": "AB pazarı için üretim yapan çelik ve emisyon yoğun ürün ihracatçıları",
+      "product_mechanism": "Müşterinin emisyon ve maliyet girdileriyle ürün/sipariş marjı, karbon maliyeti ve alternatif senaryoları açıklanabilir hesaplar.",
+      "first_reported_at": "2026-10-16",
+      "last_seen_at": "2026-10-17",
+      "times_seen": 1,
+      "status": "published",
+      "source_titles": [
+        "SKDM çelik ihracatçılarının maliyet rekabetine etkisi"
+      ],
+      "radar_v3_provenance": {
+        "checkpoint": "CP24",
+        "code": "R24-14",
+        "score_priority_not_probability": 79,
+        "near_catalog_numbers": [
+          65,
+          90
+        ],
+        "product_families_created": false
       }
     }
   ]
